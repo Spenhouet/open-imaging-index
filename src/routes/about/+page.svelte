@@ -38,7 +38,8 @@
     <p>
       The summaries help you compare datasets and find candidates. They are not legal advice. Licenses change, and a
       summary can be wrong. Before you use a dataset, read its license or agreement: that text is what counts. Each
-      entry shows the date it was last checked. If you find a mistake, use the Report button on the page.
+      entry shows the date it was last checked. If you find a mistake, use the Report button on the page. The
+      <a href={link('disclaimer/')}>disclaimer</a> has the details.
     </p>
     <h2>Open source</h2>
     <p>

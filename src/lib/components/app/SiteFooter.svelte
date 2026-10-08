@@ -8,8 +8,9 @@
     <div class="max-w-sm space-y-3">
       <div class="flex items-center gap-2 font-semibold"><Logo class="size-6" />{SITE_NAME}</div>
       <p class="text-muted-foreground">
-        A community index of medical imaging datasets. Aggregate statistics only. License summaries are informational
-        and not legal advice: the dataset's own license or agreement is what counts.
+        A community index of medical imaging datasets. Aggregate statistics only. License summaries are interpretations,
+        not legal advice: read the dataset's own license before you use it.
+        <a class="text-primary hover:underline" href={link('disclaimer/')}>Disclaimer</a>
       </p>
     </div>
     <div class="space-y-2">
@@ -28,6 +29,7 @@
     <div class="space-y-2">
       <div class="font-medium">Project</div>
       <a class="block text-muted-foreground hover:text-foreground" href={link('about/')}>About</a>
+      <a class="block text-muted-foreground hover:text-foreground" href={link('disclaimer/')}>Disclaimer</a>
       <a class="block text-muted-foreground hover:text-foreground" href={REPO_URL}>GitHub</a>
       <a class="block text-muted-foreground hover:text-foreground" href={link('catalog.json')}>catalog.json</a>
     </div>

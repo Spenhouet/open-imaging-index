@@ -14,6 +14,8 @@ export function GET() {
 
 > Open, community-built index of medical imaging datasets. Each dataset has a description, aggregate cohort numbers (subjects per contrast, sex, age, condition, scanner) with their sources, and a breakdown of its license into the same yes/no rules (commercial use, model training, sharing data or trained models, agreements, ethics approval). Data is CC0.
 
+License breakdowns are interpretations, not legal advice. Anyone relying on them must read the original license text and confirm the terms; see [Disclaimer](${SITE_URL}/disclaimer/).
+
 ## Data for agents
 
 - [catalog.json](${SITE_URL}/catalog.json): every dataset, license and vocabulary in one JSON file

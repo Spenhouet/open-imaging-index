@@ -6,6 +6,7 @@
   import ChevronRight from '@lucide/svelte/icons/chevron-right';
   import Answer from '#lib/components/app/Answer.svelte';
   import CopyButton from '#lib/components/app/CopyButton.svelte';
+  import LegalNote from '#lib/components/app/LegalNote.svelte';
   import LicenseRules from '#lib/components/app/LicenseRules.svelte';
   import ModalityBadge from '#lib/components/app/ModalityBadge.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
@@ -346,6 +347,7 @@
 
       <section id="license" class="scroll-mt-28 pt-12">
         <h2 class="text-xl font-semibold tracking-tight">License and access</h2>
+        <LegalNote class="mt-4" />
         <div class="mt-4 surface p-5">
           <div class="flex flex-wrap items-start justify-between gap-4">
             <div>
@@ -376,7 +378,7 @@
         {#each d.licenses as use (use.license.id + (use.applies_to ?? ''))}
           {@const lic = use.license}
           <div class="mt-5 surface p-5">
-            <div class="flex flex-wrap items-start justify-between gap-3 border-b border-border pb-4">
+            <div class="grid gap-4 border-b border-border pb-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-8">
               <div class="max-w-2xl">
                 {#if use.applies_to}<div class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
                     For {use.applies_to}
@@ -387,11 +389,11 @@
                 <p class="mt-1 text-sm text-foreground/85">{lic.summary}</p>
                 {#if use.note}<p class="mt-2 text-sm text-muted-foreground">{use.note}</p>{/if}
               </div>
-              <div class="flex flex-col items-end gap-1 text-xs text-muted-foreground">
+              <div class="flex flex-col gap-1 text-xs text-muted-foreground sm:max-w-56 sm:items-end sm:text-right">
                 <a
                   href={use.url ?? lic.url}
-                  class="inline-flex items-center gap-1 font-medium text-primary hover:underline"
-                  >Full text <ArrowUpRight class="size-3.5" /></a
+                  class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                  >Original license text <ArrowUpRight class="size-3.5" /></a
                 >
                 {#if lic.version}<span>Version read: {lic.version}</span>{/if}
                 <span>Checked {lic.verified.date}</span>
@@ -413,10 +415,6 @@
             {/if}
           </div>
         {/each}
-        <p class="mt-3 text-xs text-muted-foreground">
-          This breakdown helps you compare datasets. It is not legal advice. The license text linked above is what
-          counts.
-        </p>
       </section>
 
       {#if meta.citation}
@@ -591,7 +589,7 @@
         </div>
 
         <div class="surface p-5">
-          <h2 class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">Can I...</h2>
+          <h2 class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">License at a glance</h2>
           <ul class="mt-3 space-y-2 text-sm">
             {#each keyRules as id (id)}
               {@const rule = vocab.licenseRules.rules.find((r) => r.id === id)}
@@ -606,6 +604,7 @@
           <a href="#license" class="mt-3 inline-block text-xs font-medium text-primary hover:underline"
             >All {vocab.licenseRules.rules.length} rules with quotes</a
           >
+          <LegalNote variant="inline" class="mt-2 border-t border-border pt-2" />
         </div>
 
         <p class="px-1 text-xs text-muted-foreground">

@@ -15,6 +15,7 @@ export function GET() {
     { path: 'vocabulary/' },
     { path: 'contribute/' },
     { path: 'about/' },
+    { path: 'disclaimer/' },
     ...datasets.map((d) => ({ path: `datasets/${d.id}/`, lastmod: d.meta.verified.date })),
     ...licenses.map((l) => ({ path: `licenses/${l.id}/`, lastmod: l.verified.date }))
   ];

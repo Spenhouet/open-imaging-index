@@ -5,6 +5,7 @@
   import Pencil from '@lucide/svelte/icons/pencil';
   import AnswerLegend from '#lib/components/app/AnswerLegend.svelte';
   import Answer from '#lib/components/app/Answer.svelte';
+  import LegalNote from '#lib/components/app/LegalNote.svelte';
   import LicenseRules from '#lib/components/app/LicenseRules.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
   import { editUrl, link } from '#lib/site.js';
@@ -41,7 +42,7 @@
     <p class="mt-3 max-w-3xl text-lg text-foreground/85">{lic.summary}</p>
     <div class="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
       <a href={lic.url} class="inline-flex items-center gap-1 font-medium text-primary hover:underline"
-        >Full text <ArrowUpRight class="size-4" /></a
+        >Original license text <ArrowUpRight class="size-4" /></a
       >
       <a
         href={editUrl(`licenses/${lic.id}.yaml`)}
@@ -71,7 +72,8 @@
     {/if}
   </header>
 
-  <div class="mt-8"><AnswerLegend /></div>
+  <LegalNote class="mt-8" />
+  <div class="mt-6"><AnswerLegend /></div>
   <div class="mt-5 surface p-6"><LicenseRules license={lic} {vocab} /></div>
 
   {#if lic.commercial_license}
@@ -101,5 +103,4 @@
     {/if}
   </section>
 
-  <p class="mt-10 text-xs text-muted-foreground">Not legal advice. The license text is what counts.</p>
 </div>

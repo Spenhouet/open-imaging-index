@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
   import ArrowLeftRight from '@lucide/svelte/icons/arrow-left-right';
+  import LegalNote from '#lib/components/app/LegalNote.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
   import BarList from '#lib/components/charts/BarList.svelte';
   import Columns from '#lib/components/charts/Columns.svelte';
@@ -252,6 +253,7 @@
   <div class="mt-8 grid gap-5 md:grid-cols-2">
     <section class="surface p-5">
       <h2 class="text-sm font-semibold">License terms across datasets</h2>
+      <LegalNote variant="inline" class="mt-0.5" />
       <ul class="mt-4 space-y-4">
         {#each ruleSummary as { rule, counts } (rule.id)}
           <li>

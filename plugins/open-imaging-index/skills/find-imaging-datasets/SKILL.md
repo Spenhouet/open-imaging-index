@@ -10,7 +10,7 @@ The Open Imaging Index (https://spenhouet.com/open-imaging-index/) lists medical
 ## Rules
 
 1. Work from the published catalog, then verify. The catalog says what the index recorded on its `verified.date`. Before you recommend a dataset for a decision (a grant, a product, a training run), open its homepage and license page and confirm the facts that decision depends on. Say which facts you confirmed online and which you only took from the index.
-2. Never present a license summary as legal advice. Every answer in the index links to the license text. For commercial use or model sharing, quote the license sentence and tell the person to read the full license.
+2. Never present a license summary as legal advice. Whenever your answer mentions what a license allows, include this sentence: "License answers are the Open Imaging Index's interpretation, not legal advice. Read the original license and confirm your use yourself (https://spenhouet.com/open-imaging-index/disclaimer/)." Every answer in the index links to the license text. For commercial use or model sharing, quote the license sentence and tell the person to read the full license.
 3. Never invent numbers. Use the numbers in the catalog or numbers you read in a source in this session. If a count is a range (see "Cohort numbers"), give the range, not a guess inside it.
 4. Never download data that needs registration or an agreement on the person's behalf, and never ask them for credentials.
 5. If nothing fits, say so. Do not stretch a weak match into a recommendation.

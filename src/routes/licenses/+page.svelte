@@ -2,6 +2,7 @@
   import { vocab } from '#lib/catalog/meta.js';
   import Answer from '#lib/components/app/Answer.svelte';
   import AnswerLegend from '#lib/components/app/AnswerLegend.svelte';
+  import LegalNote from '#lib/components/app/LegalNote.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
   import { link } from '#lib/site.js';
 
@@ -33,7 +34,8 @@
     </p>
   </div>
 
-  <div class="mt-8"><AnswerLegend /></div>
+  <LegalNote class="mt-8" />
+  <div class="mt-6"><AnswerLegend /></div>
 
   <div class="mt-4 overflow-x-auto surface">
     <table class="w-full text-sm">

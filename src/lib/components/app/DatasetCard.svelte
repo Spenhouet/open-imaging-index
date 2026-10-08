@@ -79,7 +79,10 @@
     <div class="mt-4 rounded-lg bg-accent/60 px-3 py-2"><MatchRange match={result.match} /></div>
   {/if}
 
-  <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-3 text-xs">
+  <div
+    class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-3 text-xs"
+    title="Our interpretation of the license, not legal advice. Read the original license before you use the data."
+  >
     {#each keyRules as r (r)}
       {@const rule = vocab.licenseRules.rules.find((x) => x.id === r)}
       {#if rule}

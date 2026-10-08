@@ -8,6 +8,7 @@
   import { label } from '#lib/catalog/vocab.js';
   import { cn } from '#lib/utils.js';
   import FacetGroup from './FacetGroup.svelte';
+  import LegalNote from './LegalNote.svelte';
 
   let {
     filters = $bindable(),
@@ -208,5 +209,6 @@
       <input type="checkbox" bind:checked={filters.lenient} class="accent-(--primary)" />
       Also count "conditional" answers as allowed
     </label>
+    <LegalNote variant="inline" class="mt-2 px-1.5" />
   </section>
 </div>
