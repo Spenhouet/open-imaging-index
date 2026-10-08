@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nigerian-brains-mri
+name: Nigerian Brains MRI
+full_name: A labeled Clinical-MRI dataset of Nigerian brains
+summary: >-
+  Clinical-quality structural brain MRI (T1w, T2w, FLAIR) of 88 Nigerian adults and adolescents: 31 with dementia, 22
+  with Parkinson's disease and 35 controls, from 0.3 T and 1.5 T scanners at three diagnostic centers, brain-extracted
+  and shared in BIDS on brainlife.io.
+homepage: https://doi.org/10.25663/brainlife.pub.61
+doi: 10.25663/brainlife.pub.61
+year: 2023
+updated: 2024
+version: brainlife.pub.61, release 1 (2024-12-12)
+status: active
+creators:
+  - name: University of Port Harcourt, Nigeria
+  - name: Pestilli lab, The University of Texas at Austin
+  - name: brainlife.io
+    url: https://brainlife.io
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [dementia, parkinsons, healthy]
+tasks: [classification, segmentation]
+formats: [BIDS]
+countries: [NG]
+vendors: [ge, canon, hitachi]
+field_strengths: [0.3, 1.5]
+size_gb: 3.3
+access:
+  type: signed_agreement
+  url: https://doi.org/10.25663/brainlife.pub.61
+licenses:
+  - license: LicenseRef-Nigerian-Brains-DUA
+    applies_to: All images and brain masks, released after the user signs the data use agreement.
+    note: The agreement text is not published. Its terms are known only from the Usage Notes of the data descriptor.
+  - license: CC-BY-4.0
+    applies_to: All images, as labelled on the brainlife.io publication pages (pub.61, and the brain masks in pub.55).
+citation:
+  text: >-
+    Wogu E, Filima P, Caron B, et al. A labeled Clinical-MRI dataset of Nigerian brains. Scientific Data 12, 518
+    (2025). doi:10.1038/s41597-025-04743-0
+sources:
+  wogu2025:
+    title: Wogu et al. 2025, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-04743-0
+    kind: paper
+  brainlife-pub61:
+    title: brainlife.io publication record of pub.61, release 1 (warehouse API)
+    url: https://brainlife.io/api/warehouse/pub?find=%7B%22doi%22%3A%2210.25663%2Fbrainlife.pub.61%22%7D
+    kind: website
+keywords: [African population, Nigeria, Parkinson's disease, dementia, low-field MRI, clinical MRI, brain masks]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
