@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-DPAU-DAA
+name: Dementias Platform Australia (DPAU) Data Access Agreement
+short_name: DPAU DAA
+url: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-07-dpau-data-access-agreement-20260902.pdf
+version: 'Version_20260902, with the DPAU Data Access Policy (Version 20260901)'
+summary: >-
+  Access for bona fide researchers to the cohorts hosted by Dementias Platform Australia at UNSW, after an application
+  reviewed by DPAU and each contributing study, with ethics approval and fees. Data may be used only for the approved
+  project, normally inside the DPAU analysis environment, may not be copied or distributed, and results may be used for
+  commercial gain only with approval of every contributing study. Publications go to DPAU and the studies 30 working
+  days before submission.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: utilise the results of research exclusively for public benefit and not for commercial gain, unless this was
+      expressly approved as part of our application process by each and all relevant CRS.
+    note: Only with express approval from every contributing research study (CRS) in the application.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. The application form lists machine learning as a project
+      type, and any use must stay within the approved application.
+  derivatives:
+    value: conditional
+    quote: Please detail any new variables that may be generated during your project, e.g. a summary score such as a
+      frailty index.
+    source: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-05-dpau_data_access_application_guidance.pdf
+    note: New variables are declared in the application and created within the approved project.
+  publication:
+    value: conditional
+    quote: DPAU Users wishing to publish results, Data and/or other information acquired/generated from their use of
+      the Approved CRS Data will inform DPAU and relevant CRS(s) with prior written notice (including a reasonable
+      summary of the proposed publication), together with a copy of such publication(s) at least thirty (30) working
+      days prior to submission of any such publication(s).
+    note: Contributing studies may object to or delay a publication (normally by at most 3 months) and may ask for
+      confidential information to be removed.
+  redistribute_original:
+    value: 'no'
+    quote: The DPAU Users understands and acknowledges that the data accessed from the DPAU may not be copied or
+      distributed in any form.
+  redistribute_derivatives:
+    value: conditional
+    quote: Summary figures and tables for the purposes of reporting on the analysis may be exported following
+      additional approval using File Out function, which may take 72 hours to complete.
+    source: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-05-dpau_data_access_application_process.pdf
+    note: Only summary outputs leave the analysis environment, after approval, and only through the publication
+      process. The agreement says nothing about sharing derived data such as labels.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: All intended publications arising from the use of the DPAU shall include an acknowledgement of DPAU and the
+      other acknowledgments set out in the “Procedures” section of this Schedule 1.
+    note: Contributing studies may also ask for named co-authors.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Once an application is approved by DPAU and the relevant CRS, DPAU will require the requesting the lead
+      researcher’s institution (which is usually the lead institution for their collaboration) and all project team
+      members seeking to access data on DPAU Analysis Environment to sign the Data Access Agreement.
+    source: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-05-dpau_data_access_policy.pdf
+  ethics_approval:
+    value: conditional
+    quote: All applications must include details of the ethics approval for the proposed project.
+    source: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-05-dpau_data_access_policy.pdf
+    note: If the applicant's organisation does not require ethics approval for the project, the application must say so
+      explicitly.
+  publication_review:
+    value: 'yes'
+    quote: DPAU Users wishing to publish results, Data and/or other information acquired/generated from their use of
+      the Approved CRS Data will inform DPAU and relevant CRS(s) with prior written notice (including a reasonable
+      summary of the proposed publication), together with a copy of such publication(s) at least thirty (30) working
+      days prior to submission of any such publication(s).
+  code_release:
+    value: conditional
+    quote: The DPAU Users will share all code, statistical scripts or otherwise with DPAU for the benefit of other users
+      of the DPAU.
+    note: Code goes to DPAU for other platform users, not necessarily to the public.
+  return_results:
+    value: conditional
+    quote: DPAU Userss should update DPAU as soon as the paper is submitted, accepted and published so DPAU is aware of
+      all results entering the public domain and there is sufficient notice to arrange any publicity of the findings.
+    note: Publications and code are reported to DPAU. The agreement does not ask for derived data to be returned.
+  delete_after_use:
+    value: conditional
+    quote: At the end of the period the access to the DPAU Analysis Environment will automatically terminate.
+    note: Data in the DPAU analysis environment cannot be downloaded, so access ends with the project. Data provisioned
+      outside that environment need a separate agreement, which is not published.
+  no_reidentification:
+    value: 'yes'
+    quote: not to attempt to establish the identity of any individual to which the data relates.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement and the access policy name no countries or regions.
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published. Commercial gain from results needs approval from every contributing study.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
