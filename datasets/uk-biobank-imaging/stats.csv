@@ -4,7 +4,8 @@ studies,,123990,ukb-showcase,"Data-Field 53, instances 2 and 3","sum of 102,521 
 subjects,contrast=T1w,87637,ukb-showcase,Data-Field 20252,participants with a released T1 NIfTI at either imaging visit (version Aug 2025)
 subjects,contrast=FLAIR,86602,ukb-showcase,Data-Field 20253,T2 FLAIR NIfTI
 subjects,contrast=dwi,85662,ukb-showcase,Data-Field 20250,multiband diffusion NIfTI
-subjects,contrast=T2starw,74493,ukb-showcase,Data-Field 20251,susceptibility-weighted brain images (NIfTI)
+subjects,contrast=swi,74493,ukb-showcase,Data-Field 20251,"susceptibility-weighted brain images (NIfTI) at either imaging visit: 74,147 at the first and 4,648 at the repeat visit (version Aug 2025). The raw SWI DICOM, Data-Field 20219, covers 86,634 participants (version Sep 2025)"
+subjects,contrast=Chimap,73820,ukb-showcase,Data-Field 26301,"quantitative susceptibility mapping images (NIfTI) derived from the SWI scan, either imaging visit (version Aug 2025)"
 age_mean,,66.5,ukb-showcase,"Data-Field 21003, instance 2","age at the first imaging visit, 102,489 participants (Showcase: 66.471)"
 age_sd,,7.8,ukb-showcase,"Data-Field 21003, instance 2",Showcase: 7.84919
 age_median,,67,ukb-showcase,"Data-Field 21003, instance 2",

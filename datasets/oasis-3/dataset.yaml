@@ -15,7 +15,7 @@ creators:
     url: https://sites.wustl.edu/oasisbrains/
 species: human
 modalities: [MR, PT, CT]
-contrasts: [T1w, T2w, FLAIR, asl, T2starw, angio, bold, dwi]
+contrasts: [T1w, T2w, FLAIR, asl, T2starw, swi, angio, bold, dwi]
 tracers: [pib, florbetapir, fdg, flortaucipir]
 anatomy: [brain]
 conditions: [healthy, cognitive_impairment, alzheimers]
@@ -43,6 +43,10 @@ sources:
     title: LaMontagne et al. 2019, OASIS-3 data descriptor (medRxiv preprint, describes an earlier release of 1098 participants)
     url: https://doi.org/10.1101/2019.12.13.19014902
     kind: paper
+  oasis3-data-dictionary:
+    title: OASIS-3 Imaging Methods and Data Dictionary, version 2.3 (data release 2.0, July 2022)
+    url: https://bpb-us-e2.wpmucdn.com/sites.wustl.edu/dist/6/4383/files/2024/04/OASIS-3_Imaging_Data_Dictionary_v2.3-a93c947a586e7367.pdf
+    kind: website
 related: []
 keywords: [Alzheimer's disease, ageing, amyloid PET, tau PET, longitudinal, brain MRI]
 verified:

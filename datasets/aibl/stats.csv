@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,2359,fowler2021,Introduction,"whole AIBL study (Inception cohort 1112 plus Enrichment cohort 1247, as of 10 April 2019); only the subset with MRI and PET is shared through LONI"
+subjects,condition=healthy,1487,fowler2021,Table 3,diagnosis at each participant's baseline; whole study
+subjects,condition=mci,413,fowler2021,Table 3,diagnosis at each participant's baseline; whole study
+subjects,condition=alzheimers,441,fowler2021,Table 3,diagnosis at each participant's baseline; whole study
+subjects,modality=MR,954,fowler2021,Table 10,participants with at least one structural MRI; whole study
+studies,modality=MR,2336,fowler2021,Table 10,"sum of the eight disjoint columns T0 to T7 (first to eighth MRI of a participant); whole study"
+age_mean,condition=healthy,71.1,fowler2021,Table 3,at baseline
+age_mean,condition=mci,73.8,fowler2021,Table 3,at baseline
+age_mean,condition=alzheimers,75.1,fowler2021,Table 3,at baseline
