@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oasis-4
+name: OASIS-4
+full_name: 'OASIS-4: Clinical Cohort'
+summary: >-
+  Clinical cohort of 663 people aged 21 to 94 evaluated for memory disorders and dementia at Washington University in
+  St. Louis, with 676 MR sessions plus clinical, CSF and neuropsychological data. Separate from OASIS-3.
+homepage: https://sites.wustl.edu/oasisbrains/home/oasis-4/
+doi: 10.1016/j.nicl.2020.102248
+# Year of the reference publication the providers ask users to cite. The first release date of OASIS-4 is not published.
+year: 2020
+status: active
+creators:
+  - name: Knight Alzheimer Disease Research Center, Washington University in St. Louis
+    url: https://sites.wustl.edu/oasisbrains/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [dementia]
+tasks: [classification]
+formats: [NIfTI, BIDS]
+countries: [US]
+access:
+  type: application
+  url: https://sites.wustl.edu/oasisbrains/home/access/
+licenses:
+  - license: LicenseRef-OASIS-DUA
+citation:
+  text: >-
+    Koenig LN, Day GS, Salter A, et al. Select Atrophied Regions in Alzheimer disease (SARA): An improved volumetric
+    model for identifying Alzheimer disease dementia. NeuroImage: Clinical 26, 102248 (2020).
+    doi:10.1016/j.nicl.2020.102248
+sources:
+  oasis4-page:
+    title: OASIS-4 page, OASIS Brains website
+    url: https://sites.wustl.edu/oasisbrains/home/oasis-4/
+    kind: website
+  koenig2020:
+    title: Koenig et al. 2020, NeuroImage Clinical (SARA; reference publication for OASIS-4)
+    url: https://doi.org/10.1016/j.nicl.2020.102248
+    kind: paper
+  oasis-scripts-readme:
+    title: OASIS download scripts README, NrgXnat/oasis-scripts on GitHub
+    url: https://github.com/NrgXnat/oasis-scripts
+    kind: website
+related: [oasis-3]
+keywords: [dementia, memory clinic, Alzheimer's disease, brain MRI, CSF biomarkers]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
