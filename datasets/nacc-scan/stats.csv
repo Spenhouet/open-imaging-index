@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,16412,scan-website,"SCAN Dashboard, Total row",Total number of unique SCAN participants with MRI and/or PET submitted by 38 ADRCs; dashboard as viewed on 2026-10-08. The page says the dashboard shows QC-passed data only; the column definitions say submitted images.
+subjects,modality=MR,14164,scan-website,"SCAN Dashboard, Total row",unique participants with MRI submitted; viewed 2026-10-08
+subjects,modality=PT,8788,scan-website,"SCAN Dashboard, Total row",unique participants with PET submitted; viewed 2026-10-08
+studies,modality=MR,19420,scan-website,"SCAN Dashboard, Total row",MRI exams; viewed 2026-10-08
+scans,modality=MR,62696,scan-website,"SCAN Dashboard, Total row",MRI series submitted; viewed 2026-10-08
+scans,modality=PT,16386,scan-website,"SCAN Dashboard, Total row",amyloid or tau PET scans submitted; viewed 2026-10-08

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nacc-scan
+name: NACC SCAN
+full_name: Standardized Centralized Alzheimer's & Related Dementias Neuroimaging (SCAN), NACC
+summary: >-
+  Standardized MRI and amyloid, tau and FDG PET collected since 2021 across the US Alzheimer's Disease Research
+  Centers, defaced and quality-checked centrally, with volumes and SUVRs, linked to NACC clinical data. Free on request
+  under the NACC data use agreement.
+homepage: https://scan.naccdata.org/
+# The SCAN MRI Researcher's Data Dictionary was first issued in April 2024; defaced images became requestable in
+# August 2024 (SCAN website, Updates).
+year: 2024
+status: active
+creators:
+  - name: National Alzheimer's Coordinating Center (NACC), University of Washington
+    url: https://www.naccdata.org/
+  - name: SCAN MRI and PET teams (Mayo Clinic, UC Davis, UC Berkeley, University of Michigan) and LONI
+    url: https://scan.naccdata.org/#team
+species: human
+modalities: [MR, PT]
+# MRI: T1w and FLAIR are required; the other contrasts come from the optional full protocol (SCAN MRI manual 5.1).
+contrasts: [T1w, FLAIR, T2w, T2starw, dwi, bold, asl]
+# Tracers accepted by the SCAN PET protocol that have a term in vocab/tracer.yaml. NAV4694, MK6240, PI2620 and GTP1 are
+# also accepted. Per-tracer counts are not published.
+tracers: [pib, florbetapir, florbetaben, flutemetamol, flortaucipir, fdg]
+anatomy: [brain]
+# Diagnostic groups of the NACC Uniform Data Set (NACC Data File FAQ). Per-group counts for SCAN are not published.
+conditions: [healthy, mci, dementia]
+tasks: [classification, regression, longitudinal, segmentation]
+countries: [US]
+# The SCAN MRI manual ships protocol files for Philips, GE and Siemens scanners.
+vendors: [ge, philips, siemens]
+access:
+  type: signed_agreement
+  url: https://www.naccdata.org/data-request-process/
+licenses:
+  - license: LicenseRef-NACC-DUA
+    note: >-
+      Images and numerical data come through the NACC Quick-Access data request. Publications using SCAN data must also
+      acknowledge the SCAN grant and centers as set out in the NACC publication guidelines.
+citation:
+  text: >-
+    No dataset paper. Use the NACC acknowledgement text from the data use agreement and the SCAN acknowledgement from
+    the NACC publication guidelines (https://www.naccdata.org/publish-with-nacc-data/).
+sources:
+  scan-website:
+    title: SCAN website (scan.naccdata.org), including the SCAN Public Dashboard
+    url: https://scan.naccdata.org/
+    kind: website
+  scan-mri-manual:
+    title: SCAN MRI Checklist, QuickStart Guide and Procedures Manual, revision 1.9, 23 June 2023
+    url: https://files.alz.washington.edu/scan/SCAN_MRI_Manual.pdf
+    kind: paper
+  scan-mri-rdd:
+    title: NACC SCAN & CLARiTI MRI Researcher's Data Dictionary (April 2024, revised September 2026)
+    url: https://files.alz.washington.edu/documentation/SCAN-MRI-Imaging-RDD.pdf
+    kind: paper
+  nacc-imaging-data:
+    title: NACC website, Imaging Data
+    url: https://www.naccdata.org/about-nacc-data/imaging-data/
+    kind: website
+related: []
+keywords: [Alzheimer's disease, dementia, ADRC, amyloid PET, tau PET, brain MRI, harmonized protocol]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
