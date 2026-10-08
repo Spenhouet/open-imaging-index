@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-HABS-HD-DUA
+name: Health and Aging Brain Study - Health Disparities (HABS-HD) Data Use Agreement
+short_name: HABS-HD DUA
+url: https://apps.unthsc.edu/itr/assets/documents/DUA/HABS_HD%20DUA.final.pdf
+version: 'HABS_HD DUA.final (UNT Health Science Center ITR), same text as the LONI HABS_HD agreement read 2026-10-08'
+summary: >-
+  Signed agreement after a proposal reviewed by the HABS-HD Data Access and Publications Committee. Use is limited to
+  scientific investigation, teaching or planning clinical research for the proposed project. Redistribution of
+  original or derived data is prohibited, manuscripts go to the committee before submission, and new data generated
+  from HABS-HD data must be deposited back. Access lasts 12 months and can be renewed.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: >-
+      I understand that HABS-HD data may be used only for the purpose of scientific investigation, teaching or the
+      planning of clinical research studies.
+    note: Commercial use is not mentioned. Any use must fall under these purposes and the approved proposal.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: conditional
+    quote: >-
+      I agree to deposit any new data generated from the use of HABS-HD raw data, imaging files, or ancillary studies
+      into the HABS-HD master database.
+    note: The agreement expects new data to be generated, but they must be deposited with HABS-HD and may not be redistributed.
+  publication:
+    value: conditional
+    quote: >-
+      I agree to submit a draft version of any proposed publication resulting from use of the HABS-HD De-Identified Data
+      to the Data Access and Publications Committee at the HSC Institute for Translational Research.
+    note: After the committee review, with the required acknowledgement and the HABS-HD Study Team on the by-line.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not further disclose these data beyond the uses outlined in this agreement and my HABS-HD proposal form
+      and understand that redistribution of data (original or derived) in any manner is prohibited.
+  redistribute_derivatives:
+    value: 'no'
+    quote: >-
+      I will not further disclose these data beyond the uses outlined in this agreement and my HABS-HD proposal form
+      and understand that redistribution of data (original or derived) in any manner is prohibited.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not say whether trained models count as derived data.
+  attribution:
+    value: 'yes'
+    quote: >-
+      I will include in any papers, abstracts, and presentations (oral and poster) resulting from their use of the
+      HABS-HD De-Identified Data the following Acknowledgement:
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Investigators will be asked to fill out a proposal and sign a data use agreement.
+    source: https://apps.unthsc.edu/itr/assets/documents/DataAccess/HABS_HD%20Data%20Access%20and%20Publication%20Policy.final.pdf
+  ethics_approval:
+    value: conditional
+    quote: Researchers must also obtain IRB approval from their own institutional review boards as appropriate.
+    source: https://apps.unthsc.edu/itr/assets/documents/DataAccess/HABS_HD%20Data%20Access%20and%20Publication%20Policy.final.pdf
+    note: Where the researcher's institution requires it.
+  publication_review:
+    value: 'yes'
+    quote: >-
+      I agree to submit a draft version of any proposed publication resulting from use of the HABS-HD De-Identified Data
+      to the Data Access and Publications Committee at the HSC Institute for Translational Research. The review is not
+      a scientific review but is intended to ensure that the items in this document are adhered to accordingly.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: >-
+      I agree to deposit any new data generated from the use of HABS-HD raw data, imaging files, or ancillary studies
+      into the HABS-HD master database.
+    note: Accepted publications must also be sent to HSC for archiving.
+  delete_after_use:
+    value: 'no'
+    note: No deletion duty is stated. Access is granted for 12 months and can be renewed.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the HABS-HD subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

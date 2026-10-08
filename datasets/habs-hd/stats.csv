@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,3840,petersen2025,"Results, Demographics",partners in data release 6 (1066 non-Hispanic Black; 1425 Hispanic; 1349 non-Hispanic White)
+subjects,sex=female,2379,petersen2025,Table 4,"sum of the three groups (672 + 940 + 767)"
+subjects,sex=male,1461,petersen2025,Table 4,"sum of the three groups (394 + 485 + 582)"
+subjects,condition=healthy,2788,petersen2025,Table 4,"cognitively unimpaired; sum of the three groups (687 + 1024 + 1077)"
+subjects,condition=mci,804,petersen2025,Table 4,"sum of the three groups (306 + 306 + 192)"
+subjects,condition=dementia,236,petersen2025,Table 4,"sum of the three groups (68 + 89 + 79)"
+subjects,contrast=FLAIR,3569,petersen2025,Table 6,"partners with a FLAIR-based white matter hyperintensity volume; sum of the three groups (930 + 1341 + 1298)"
+subjects,contrast=T1w,3427,petersen2025,Table 6,"partners with a T1w-based left parahippocampal measure; sum of the three groups (885 + 1294 + 1248)"
+subjects,tracer=florbetaben,2564,petersen2025,Table 6,"partners with an amyloid PET clinical read; sum of the three groups (1056 + 727 + 781)"
+subjects,tracer=pi2620,1532,petersen2025,Table 6,"partners with a tau PET clinical read; sum of the three groups (630 + 413 + 489)"
