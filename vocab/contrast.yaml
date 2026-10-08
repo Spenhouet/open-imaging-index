@@ -19,7 +19,16 @@ terms:
       mappings: { bids: FLAIR }
     }
   - { id: PDw, label: Proton density weighted, group: MR, mappings: { bids: PDw } }
-  - { id: T2starw, label: T2*-weighted, group: MR, synonyms: [GRE, SWI], mappings: { bids: T2starw } }
+  - { id: T2starw, label: T2*-weighted, group: MR, synonyms: [GRE, T2*-GRE], mappings: { bids: T2starw } }
+  - {
+      id: swi,
+      label: Susceptibility-weighted,
+      group: MR,
+      parent: T2starw,
+      description: 'Susceptibility-weighted imaging built from magnitude and phase of a gradient echo. BIDS has no suffix for it.',
+      synonyms: [SWI, SWAN]
+    }
+  - { id: Chimap, label: QSM susceptibility map, group: MR, synonyms: [QSM], mappings: { bids: Chimap } }
   - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }

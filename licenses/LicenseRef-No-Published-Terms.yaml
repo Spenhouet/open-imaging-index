@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-No-Published-Terms
+name: No published license or data use terms
+short_name: No published terms
+url: https://github.com/Spenhouet/open-imaging-index/blob/main/docs/standard.md#datasets-without-published-terms
+summary: >-
+  The data holder has published no license and no data use terms. Any use, sharing or commercial right has to be
+  agreed with the data holder, and nothing can be assumed to be allowed. Default copyright and data protection law
+  still apply.
+purpose: unspecified
+rules:
+  commercial_use:
+    value: unspecified
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: unspecified
+  ethics_approval:
+    value: unspecified
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

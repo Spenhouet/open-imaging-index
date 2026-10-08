@@ -148,6 +148,15 @@ Rules of thumb:
 
 The site combines the answers of all licenses of a dataset: the most restrictive one per rule when every license applies to some part, the friendliest one when they are alternatives (`license_combine: any`). Rules map to [GA4GH Data Use Ontology](https://github.com/EBISPOT/DUO) codes where one exists.
 
+### Datasets without published terms
+
+Some datasets are described in a paper but have no license and no data use terms: they are shared on request at the
+data holder's discretion (`access.type: on_request`) or not shared at all (`access.type: not_shared`). They use
+`licenses/LicenseRef-No-Published-Terms.yaml`, where every rule is `unspecified` and the purpose is `unspecified`.
+Use it only after checking the paper's data availability statement, the dataset website and the repository for a
+license. A plain "all rights reserved" or a data availability sentence without terms also counts as no published
+terms.
+
 ## Vocabularies
 
 Every file in `vocab/` lists terms with an `id`, a `label` and optional `description`, `synonyms`, `parent` (a broader term in the same file) and `mappings` to other vocabularies.

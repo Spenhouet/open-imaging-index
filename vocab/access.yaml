@@ -15,3 +15,13 @@ terms:
     }
   - { id: application, label: Application, description: A research proposal is reviewed and approved }
   - { id: paid, label: Paid, description: Access costs money }
+  - {
+      id: on_request,
+      label: On request,
+      description: 'Ask the authors or the data holder. No published process or terms, and access is at their discretion'
+    }
+  - {
+      id: not_shared,
+      label: Not shared,
+      description: 'The data are not available outside the institution or study that holds them'
+    }
