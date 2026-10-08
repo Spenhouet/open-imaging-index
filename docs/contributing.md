@@ -1,10 +1,16 @@
 # Contributing
 
-There are three ways to help, from least to most effort.
+There are three ways to help, from least to most effort. An AI agent can do the third for you, see below.
 
 1. **Suggest a dataset.** Open an issue with the "Suggest a dataset" form and paste the link. Someone else writes the entry.
 2. **Fix an entry.** Every dataset page has an "Edit on GitHub" link. Change the file in the browser and open a pull request.
 3. **Add a dataset.** Follow the steps below.
+
+## Contribute with an AI agent
+
+The repository ships an agent skill for contributions: `contribute-imaging-dataset`. Install it as described on the [agent skills page](https://spenhouet.com/open-imaging-index/skills/), then ask the agent, for example, "Add BraTS 2023 to the Open Imaging Index". The skill makes the agent verify every fact online, look up vocabulary ids, run `bun run validate` and open a pull request. It asks you for what only you know, such as your GitHub handle. Agents that work in a clone without the skill find the same rules through `AGENTS.md`.
+
+Pull requests written by agents are reviewed like any other. The person who asked the agent is responsible for the contribution.
 
 ## Add a dataset
 
@@ -26,7 +32,7 @@ There are three ways to help, from least to most effort.
 
 ## Licenses of this repository
 
-- Code: MIT.
-- Metadata, descriptions and license breakdowns: CC0 1.0. Quotes from license texts and dataset citations belong to their authors.
+- Code: MIT ([LICENSE](https://github.com/Spenhouet/open-imaging-index/blob/main/LICENSE)), for everything outside the data directories.
+- Data: CC0 1.0 ([LICENSE-DATA](https://github.com/Spenhouet/open-imaging-index/blob/main/LICENSE-DATA)) for `datasets/`, `licenses/`, `vocab/` and `docs/`. Your contribution is published under these terms. Quotes from license texts and dataset citations belong to their authors.
 
 The license summaries on this site help people find datasets. They are not legal advice. The license or agreement of each dataset is what counts.

@@ -1,0 +1,13 @@
+{
+  "name": "open-imaging-index",
+  "description": "Find medical imaging datasets by modality, cohort and license terms, and contribute verified dataset entries to the Open Imaging Index.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sebastian Penhouet",
+    "url": "https://github.com/Spenhouet"
+  },
+  "homepage": "https://spenhouet.com/open-imaging-index/skills/",
+  "repository": "https://github.com/Spenhouet/open-imaging-index",
+  "license": "MIT",
+  "keywords": ["medical imaging", "datasets", "MRI", "CT", "research data", "licenses"]
+}

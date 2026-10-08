@@ -7,6 +7,7 @@ export function GET() {
   const { datasets, licenses, vocab } = getCatalog();
   const body = {
     license: 'CC0-1.0',
+    license_note: 'Quotes from license texts and dataset citations belong to their authors.',
     datasets: datasets.map(({ readmeHtml: _html, licenses: uses, ...d }) => ({
       ...d,
       licenses: uses.map((u) => ({ id: u.license.id, applies_to: u.applies_to, url: u.url, note: u.note }))

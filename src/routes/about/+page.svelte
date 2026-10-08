@@ -42,8 +42,10 @@
     </p>
     <h2>Open source</h2>
     <p>
-      The code is MIT licensed, the metadata is CC0. Everything lives in <a href={REPO_URL}>one GitHub repository</a>,
-      and the whole catalog is available as <a href={link('catalog.json')}>catalog.json</a> for scripts and other tools.
+      The code is MIT licensed (<a href="{REPO_URL}/blob/main/LICENSE">LICENSE</a>). The data, meaning dataset entries,
+      license breakdowns, vocabularies and docs, is CC0 (<a href="{REPO_URL}/blob/main/LICENSE-DATA">LICENSE-DATA</a>).
+      Everything lives in <a href={REPO_URL}>one GitHub repository</a>, and the whole catalog is available as
+      <a href={link('catalog.json')}>catalog.json</a> for scripts and other tools.
     </p>
   </div>
 </article>

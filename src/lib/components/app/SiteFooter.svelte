@@ -23,6 +23,7 @@
       <a class="block text-muted-foreground hover:text-foreground" href={link('contribute/')}>Add a dataset</a>
       <a class="block text-muted-foreground hover:text-foreground" href={link('standard/')}>Data standard</a>
       <a class="block text-muted-foreground hover:text-foreground" href={link('vocabulary/')}>Vocabulary</a>
+      <a class="block text-muted-foreground hover:text-foreground" href={link('skills/')}>Agent skills</a>
     </div>
     <div class="space-y-2">
       <div class="font-medium">Project</div>
@@ -32,6 +33,8 @@
     </div>
   </div>
   <div class="mx-auto max-w-7xl px-4 pb-10 text-xs text-muted-foreground md:px-6">
-    Code MIT. Metadata CC0 1.0. Quoted license texts belong to their authors.
+    Code <a class="underline-offset-2 hover:underline" href="{REPO_URL}/blob/main/LICENSE">MIT</a>. Data
+    <a class="underline-offset-2 hover:underline" href="{REPO_URL}/blob/main/LICENSE-DATA">CC0 1.0</a>. Quoted license
+    texts and citations belong to their authors.
   </div>
 </footer>

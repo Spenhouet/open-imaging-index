@@ -19,7 +19,8 @@
       label: 'Standard',
       match: (p: string) => p.startsWith(link('standard/')) || p.startsWith(link('vocabulary/'))
     },
-    { href: link('contribute/'), label: 'Contribute', match: (p: string) => p.startsWith(link('contribute/')) }
+    { href: link('contribute/'), label: 'Contribute', match: (p: string) => p.startsWith(link('contribute/')) },
+    { href: link('skills/'), label: 'Agent skills', match: (p: string) => p.startsWith(link('skills/')) }
   ];
 
   let open = $state(false);
@@ -35,7 +36,7 @@
       <Logo class="size-7" />
       <span>{SITE_NAME}</span>
     </a>
-    <nav class="hidden items-center gap-1 md:flex" aria-label="Main">
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Main">
       {#each links as link (link.href)}
         <a
           href={link.href}
@@ -66,7 +67,7 @@
       </button>
       <button
         type="button"
-        class="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground hover:bg-accent md:hidden"
+        class="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground hover:bg-accent lg:hidden"
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
         onclick={() => (open = !open)}
@@ -76,7 +77,7 @@
     </div>
   </div>
   {#if open}
-    <nav class="border-t border-border px-4 py-2 md:hidden" aria-label="Main">
+    <nav class="border-t border-border px-4 py-2 lg:hidden" aria-label="Main">
       {#each links as link (link.href)}
         <a
           href={link.href}

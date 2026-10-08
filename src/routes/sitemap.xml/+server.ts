@@ -7,7 +7,9 @@ export function GET() {
   const { datasets, licenses } = getCatalog();
   const pages: { path: string; lastmod?: string }[] = [
     { path: '' },
+    { path: 'datasets/' },
     { path: 'explore/' },
+    { path: 'skills/' },
     { path: 'licenses/' },
     { path: 'standard/' },
     { path: 'vocabulary/' },

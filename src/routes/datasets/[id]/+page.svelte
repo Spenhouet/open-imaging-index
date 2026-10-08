@@ -178,13 +178,30 @@
   });
 
   const sourceLink = (key: string) => meta.sources[key];
+
+  // Search-friendly title: what people type, e.g. "BraTS 2021: brain MRI dataset, 2,040 subjects".
+  const seoTitle = $derived.by(() => {
+    const mods = [...new Set((d.facets.modality ?? []).map((m) => label(vocab, 'modality', m).replace(/ \(.*\)$/, '')))];
+    const anat = (d.facets.anatomy ?? []).slice(0, 2).map((a) => label(vocab, 'anatomy', a).toLowerCase());
+    const n = t('subjects');
+    const size = n ? `, ${formatNumber(n.value, n.approx)} subjects` : '';
+    return `${meta.name}: ${anat.join(' and ')} ${mods.join(' and ')} dataset${size}`;
+  });
+  const breadcrumbLd = $derived({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Datasets', item: `${SITE_URL}/datasets/` },
+      { '@type': 'ListItem', position: 2, name: meta.name, item: `${SITE_URL}/datasets/${d.id}/` }
+    ]
+  });
 </script>
 
-<Seo title="{meta.name}{meta.full_name ? `: ${meta.full_name}` : ''}" {description} path="datasets/{d.id}/" {jsonLd} />
+<Seo title={seoTitle} {description} path="datasets/{d.id}/" jsonLd={[jsonLd, breadcrumbLd]} />
 
 <div class="mx-auto max-w-7xl px-4 md:px-6">
   <nav class="flex items-center gap-1 pt-6 text-sm text-muted-foreground" aria-label="Breadcrumb">
-    <a href={link('')} class="hover:text-foreground">Datasets</a>
+    <a href={link('datasets/')} class="hover:text-foreground">Datasets</a>
     <ChevronRight class="size-3.5" />
     <span class="text-foreground">{meta.name}</span>
   </nav>

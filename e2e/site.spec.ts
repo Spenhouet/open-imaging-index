@@ -43,3 +43,15 @@ test('explore cross table links to the catalog', async ({ page }) => {
   await cell.click();
   await expect(page).toHaveURL(/modality=/);
 });
+
+test('skills page offers install commands and skill downloads', async ({ page, request }) => {
+  await page.goto('/skills/');
+  await expect(page.getByText('/plugin install open-imaging-index@open-imaging-index')).toBeVisible();
+  await page.getByRole('tab', { name: /Codex/ }).click();
+  await expect(page.getByText('npx skills add Spenhouet/open-imaging-index').first()).toBeVisible();
+  const zip = await request.get('/skills/find-imaging-datasets.zip');
+  expect(zip.status()).toBe(200);
+  expect((await zip.body()).subarray(0, 2).toString()).toBe('PK');
+  const llms = await request.get('/llms.txt');
+  expect(await llms.text()).toContain('# Open Imaging Index');
+});

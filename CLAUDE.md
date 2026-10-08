@@ -28,3 +28,7 @@ Static SvelteKit 3 site (adapter-static, every page prerendered) deployed to Git
 - Internal links go through `link('path/')` from `#lib/site.js`. Pages end with `/`.
 - Numbers in stats.csv come from public sources only, never from data under an agreement. See docs/standard.md.
 - Read DESIGN.md before touching UI.
+
+## Agent skills
+
+`plugins/open-imaging-index/` is a Claude Code plugin with two skills, listed by `.claude-plugin/marketplace.json`. The site's `/skills/` page renders them and serves a zip per skill. Run `claude plugin validate .` after editing either manifest. Data contributions follow `contribute-imaging-dataset/SKILL.md` (see AGENTS.md).
