@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: parktdi
+name: ParkTDI
+full_name: High-quality diffusion-weighted imaging of Parkinson's disease
+summary: >-
+  Motion-corrected 120-direction, two-shell diffusion MRI of 27 people with Parkinson's disease and 26 matched
+  controls from Liège, with normalized track density maps and clinical and neuropsychological scores.
+homepage: https://www.nitrc.org/projects/parktdi/
+doi: 10.1016/j.neuroimage.2014.06.033
+year: 2014
+status: active
+creators:
+  - name: Cyclotron Research Centre, University of Liège
+    url: https://www.nitrc.org/projects/parktdi/
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [parkinsons, healthy]
+tasks: [classification]
+formats: [NIfTI]
+countries: [BE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2
+access:
+  type: open
+  url: https://www.nitrc.org/frs/?group_id=835
+licenses:
+  - license: CC-BY-SA-4.0
+    note: >-
+      The NITRC project page names the license only as "Attribution Share Alike" and gives no version. The rule
+      answers of CC BY-SA 3.0 and 4.0 are the same in this index.
+citation:
+  text: >-
+    Ziegler E, Rouillard M, André E, Coolen T, Stender J, Balteau E, Phillips C, Garraux G. Mapping track density
+    changes in nigrostriatal and extranigral pathways in Parkinson's disease. NeuroImage 99:498-508 (2014).
+  bibtex: |
+    @article{ziegler2014,
+      title={Mapping track density changes in nigrostriatal and extranigral pathways in Parkinson's disease},
+      author={Ziegler, Erik and Rouillard, Maud and Andr{\'e}, Elodie and Coolen, Tim and Stender, Johan and Balteau, Evelyne and Phillips, Christophe and Garraux, Ga{\"e}tan},
+      journal={NeuroImage},
+      volume={99},
+      pages={498--508},
+      year={2014},
+      doi={10.1016/j.neuroimage.2014.06.033}
+    }
+sources:
+  ziegler2014:
+    title: Ziegler et al. 2014, NeuroImage
+    url: https://doi.org/10.1016/j.neuroimage.2014.06.033
+    kind: paper
+  nitrc-parktdi:
+    title: NITRC project page for parktdi
+    url: https://www.nitrc.org/projects/parktdi/
+    kind: website
+  nitrc-parktdi-downloads:
+    title: NITRC file releases for parktdi
+    url: https://www.nitrc.org/frs/?group_id=835
+    kind: website
+  pdclinicaldata:
+    title: PDClinicalData.csv demographics file (CC BY-SA), one row per subject
+    url: https://www.nitrc.org/frs/download.php/7117/PDClinicalData.csv
+    kind: computed
+related: []
+keywords: [Parkinson's disease, diffusion MRI, track density imaging, tractography, HARDI, multi-shell]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
