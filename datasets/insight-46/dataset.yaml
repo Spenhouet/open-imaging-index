@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: insight-46
+name: Insight 46
+full_name: 'Insight 46: neuroscience sub-study of the MRC National Survey of Health and Development (1946 British birth cohort)'
+summary: >-
+  Longitudinal PET-MRI sub-study of 502 members of the 1946 British birth cohort, scanned around age 70 and again two
+  years later on one 3 T PET/MR, with amyloid PET, structural, susceptibility, diffusion and perfusion MRI and life
+  course data. Access by application to NSHD.
+homepage: https://skylark.ucl.ac.uk/NSHD/exploring/insight-46/
+# Year the sub-study launched (2015, per the NSHD Skylark website). The date of the first data release was not
+# verified separately.
+year: 2015
+status: active
+creators:
+  - name: Dementia Research Centre, UCL Institute of Neurology
+    url: https://www.ucl.ac.uk/drc/
+  - name: MRC Unit for Lifelong Health and Ageing at UCL (custodian of the NSHD)
+    url: https://nshd.mrc.ac.uk/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, swi, Chimap, dwi, bold, asl, MP2RAGE]
+tracers: [florbetapir, florbetaben, mk6240]
+anatomy: [brain]
+tasks: [longitudinal, regression, segmentation]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://skylark.ucl.ac.uk/NSHD/forms/data-access-request-form/
+licenses:
+  - license: LicenseRef-NSHD-DSA
+    note: >-
+      The NSHD website lists derived Insight 46 variables (amyloid status, brain volumes, white matter hyperintensity
+      volume) as available. Whether raw images can be requested is not stated.
+citation:
+  text: >-
+    Lane CA, Parker TD, Cash DM, et al. Study protocol: Insight 46 - a neuroscience sub-study of the MRC National Survey
+    of Health and Development. BMC Neurology 17:75 (2017). doi:10.1186/s12883-017-0846-x. NSHD asks publications to
+    also cite the NSHD dataset DOIs that match the years of data used.
+sources:
+  murraysmith2024:
+    title: Murray-Smith H et al. 2024, Updating the study protocol, Insight 46 phases 2 and 3, BMC Neurology
+    url: https://doi.org/10.1186/s12883-023-03465-3
+    kind: paper
+  lane2017:
+    title: Lane CA et al. 2017, Study protocol, Insight 46, BMC Neurology
+    url: https://doi.org/10.1186/s12883-017-0846-x
+    kind: paper
+  james2018:
+    title: James SN et al. 2018, Recruitment and participation rates in Insight 46, BMC Research Notes
+    url: https://doi.org/10.1186/s13104-018-3995-0
+    kind: paper
+  skylark-insight46:
+    title: NSHD Skylark website, Insight 46 page
+    url: https://skylark.ucl.ac.uk/NSHD/exploring/insight-46/
+    kind: website
+related: []
+keywords: [Alzheimer's disease, preclinical, ageing, amyloid PET, tau PET, birth cohort, life course, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

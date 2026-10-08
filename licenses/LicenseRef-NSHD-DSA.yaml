@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NSHD-DSA
+name: Unit for Lifelong Health and Ageing at UCL, Framework Data Sharing Agreement (NSHD)
+short_name: NSHD DSA
+url: https://skylark.ucl.ac.uk/NSHD/wp-content/uploads/2026/01/LHA_Data-Sharing-Agreement_18Nov25.docx
+version: 'Framework Data Sharing Agreement, updated 18 November 2025'
+summary: >-
+  Signed between UCL and the researcher's institution after the NSHD Data Sharing Committee approves a project.
+  Non-commercial research within the approved project only, no passing on without written consent, manuscripts to UCL
+  ten business days before submission, derived data returned to UCL and all data deleted at the end. Processing
+  outside the UK needs to be agreed in the contract.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The Institution acknowledges and agrees that the use of Study Data is for non-commercial research purposes
+      only and such use is made available by UCL free of charge on an "as is" basis.
+    note: Commercial organisations may apply, but must confirm that their use is bona fide research and not commercial
+      exploitation (NSHD website, Accessing NSHD Data).
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must be part of the approved project.
+  derivatives:
+    value: conditional
+    quote: Derived Data any structured data and/or metadata derived or created by the Institution from the Study Data in
+      the course of carrying out Research, including all associated code, syntax, methodology and documentation
+      derived or created by the Institution from the Study Data in the course of carrying out Research.
+    note: Derived data are expected within the approved project. They become part of the Study Data, and their
+      intellectual property vests in UCL.
+  publication:
+    value: conditional
+    quote: The Institution shall not submit to a journal, publish or disseminate any Output containing information that
+      UCL considers to be confidential or potentially damaging to any of the Studies or any Study Participant.
+    note: After the advance review described under publication_review, with the NSHD acknowledgement and dataset DOIs,
+      and as open access.
+  redistribute_original:
+    value: 'no'
+    quote: Project Data are only used by the Researchers for purposes of the Research and are not used for any other
+      purpose or provided to any other person other than the Researchers without the prior written consent of UCL
+    note: Only with prior written consent from UCL.
+  redistribute_derivatives:
+    value: 'no'
+    quote: Project Data are only used by the Researchers for purposes of the Research and are not used for any other
+      purpose or provided to any other person other than the Researchers without the prior written consent of UCL
+    note: Project Data include Derived Data. UCL may itself make returned Derived Data available to third parties.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: The Studies and relevant funders must be acknowledged in all publications relating to Approved Projects.
+    note: Publications should also cite the matching NSHD dataset DOIs.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: A data sharing agreement must be in place, prior to the sharing of any data, between the applicant’s
+      institution and the LHA, and the applicant's institution must fully subscribe to the terms and conditions of the
+      agreement.
+    source: https://skylark.ucl.ac.uk/NSHD/about-nshd/accessing-nshd-data/
+    note: Each researcher also signs a confidentiality form and completes data security training. Approval by the NSHD
+      Data Sharing Committee comes first.
+  ethics_approval:
+    value: conditional
+    quote: 'ensure that all Research is conducted in accordance with: the Department of Health guidance: “UK Framework
+      For Health and Social Care Research” and “Governance Arrangements for NHS Research Ethics Committees” (where
+      applicable)'
+    note: The agreement does not itself require ethics approval for every project; it applies the UK research
+      governance framework where applicable.
+  publication_review:
+    value: 'yes'
+    quote: The Institution shall provide UCL with advance notice of any proposed Output and shall provide a copy to UCL
+      of any proposed Output at least ten Business Days before its intended submission to a journal, publication or
+      dissemination.
+  code_release:
+    value: 'no'
+    note: Code is part of Derived Data, which goes back to UCL (see return_results), but public release is not required.
+  return_results:
+    value: 'yes'
+    quote: promptly provide to UCL a copy of the Derived Data created by it in connection with the Approved Project (if
+      any) in such form and by such means as UCL may direct
+    note: UCL also receives a non-commercial licence to the results.
+  delete_after_use:
+    value: 'yes'
+    quote: promptly and securely delete or destroy all copies of the Project Data received or created by it in
+      connection with the Approved Project and certify in writing to UCL that the Institution has complied with the
+      requirements of this Clause 6.2.
+  no_reidentification:
+    value: 'yes'
+    quote: The Institution shall not, and shall ensure that the Researchers shall not, attempt to re-identify, trace or
+      contact any Study Participant, or use Study Data in any way that could infringe the rights of Study Participants
+      or otherwise adversely affect them.
+  geographic_restriction:
+    value: conditional
+    quote: Where Schedule 1 does not expressly state that Personal Data will be shared by UCL with the Institution for
+      use outside of the United Kingdom then the Institution shall not Process, or allow the Researchers to Process,
+      any Project Data outside of the United Kingdom.
+    note: Use outside the UK must be stated in Schedule 1 of the signed agreement; transfers to countries without a UK
+      adequacy decision add the EU Standard Contractual Clauses and the UK addendum.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
