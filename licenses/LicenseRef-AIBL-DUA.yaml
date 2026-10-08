@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-AIBL-DUA
+name: AIBL Data Use Agreement
+short_name: AIBL DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=AIBL
+version: 'Online agreement on the LONI IDA application page, read 2026-10-08 (the text states no version or date)'
+summary: >-
+  Scientific investigation, teaching or clinical study planning only, never commercial use. Data stay within your
+  organisation, proposed analyses must be notified in advance, every abstract and manuscript goes to the AIBL
+  Management Committee before submission, and the data must be destroyed when the agreement ends.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Under no circumstances are you permitted to use the AIBL Data for commercial purposes.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any training must stay within scientific investigation,
+      teaching or the planning of clinical studies.
+  derivatives:
+    value: conditional
+    quote: the AIBL Parties hold, or will hold, any and all Intellectual Property Rights in and to the AIBL materials;
+    note: The agreement expects modifications and alterations made by the user, but defines them as AIBL materials, so
+      the AIBL Parties own all intellectual property in them and the user holds none.
+  publication:
+    value: conditional
+    quote: You must submit all presentations, abstracts and manuscripts containing or referring to any AIBL Data to the
+      AIBL Management Committee prior to submission to a journal or making any public communication.
+    note: Allowed after the committee review (citation and acknowledgement check, up to 2 weeks) and with the required
+      AIBL author line, acknowledgement and methods text.
+  redistribute_original:
+    value: 'no'
+    quote: Except as expressly permitted by this Agreement, you must not disclose or make available the AIBL Data to
+      any other person.
+    note: Only employees of your own organisation bound by the agreement may receive the data, after notice to the AIBL
+      Parties.
+  redistribute_derivatives:
+    value: unspecified
+    quote: The AIBL Data is confidential information of the AIBL Parties and you agree to keep the AIBL Data
+      confidential and to not disclose the AIBL Data to any person, except as expressly permitted by this Agreement.
+    note: The agreement does not say whether derived data such as labels may be shared. Modifications count as AIBL
+      materials owned by the AIBL Parties.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: on the author line of the manuscript, after the named authors, include the phrase "and the Australian
+      Imaging Biomarkers and Lifestyle flagship study of ageing*" with the asterisk referring to the following statement
+      and list of names
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: 'By continuing to access the AIBL Data: you agree that you have read and understood the terms of this
+      Agreement; you agree to be legally bound by this Agreement'
+    note: Accepted as part of an online data use application on the LONI IDA. Where you access the data as an employee,
+      your organisation is bound too.
+  ethics_approval:
+    value: conditional
+    quote: You must comply with any rules and regulations imposed by your organisation/institution and its review board
+      in requesting, accessing and using the AIBL Data
+    note: The agreement does not itself require ethics approval, only compliance with what your institution's review
+      board requires.
+  publication_review:
+    value: 'yes'
+    quote: You must submit all presentations, abstracts and manuscripts containing or referring to any AIBL Data to the
+      AIBL Management Committee prior to submission to a journal or making any public communication.
+    note: The review is not scientific and is completed within 2 weeks; without a response you may proceed.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: you must upload the published abstracts onto the ADNI Website for registered users to see either after they
+      are accepted or after they are presented.
+    note: Published abstracts must be uploaded. You must also notify the AIBL Parties in advance of any proposed
+      analysis. The agreement does not ask for derived data.
+  delete_after_use:
+    value: 'yes'
+    quote: you must permanently destroy, and certify the destruction of, any copies of the AIBL Data in your
+      possession, custody or control.
+    note: Applies on expiry or termination of the agreement; data you have published under the agreement are exempt.
+  no_reidentification:
+    value: 'yes'
+    quote: You will receive access to de-identified AIBL Data and you must not attempt to establish the identity of, or
+      attempt to contact, any of the AIBL subjects used to generate the AIBL Data.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries where the data may be used. It is governed by the law of Victoria,
+      Australia.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
