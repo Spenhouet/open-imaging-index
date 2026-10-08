@@ -37,6 +37,7 @@ terms:
       mappings: { mondo: 'MONDO:0005098' }
     }
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
+  - { id: transient_ischemic_attack, label: Transient ischemic attack, synonyms: [TIA], mappings: { mondo: 'MONDO:0005264' } }
   - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
   - {
       id: intracerebral_hemorrhage,
@@ -63,6 +64,19 @@ terms:
       label: Amyloid-related imaging abnormalities,
       description: 'ARIA-E (edema, effusion) and ARIA-H (microbleeds, superficial siderosis), mostly seen under anti-amyloid antibody treatment. No MONDO or HPO term exists.',
       synonyms: [ARIA, ARIA-E, ARIA-H]
+    }
+  - {
+      id: enlarged_perivascular_spaces,
+      label: Enlarged perivascular spaces,
+      description: 'Fluid-filled spaces around small brain vessels that are large enough to be seen on MRI. A marker of cerebral small vessel disease.',
+      synonyms: [EPVS, PVS, dilated Virchow-Robin spaces],
+      mappings: { hp: 'HP:0012520' }
+    }
+  - {
+      id: lacunes,
+      label: Lacunes of presumed vascular origin,
+      description: 'Small fluid-filled cavities in deep grey or white matter, the imaging trace of a past small subcortical infarct or hemorrhage. A marker of cerebral small vessel disease. HP:0032325 (Lacunar stroke) names the clinical event, not the imaging finding, so no mapping is given.',
+      synonyms: [lacune, lacunar infarct]
     }
   - { id: traumatic_brain_injury, label: Traumatic brain injury, synonyms: [TBI], mappings: { mondo: 'MONDO:0858950' } }
   - {

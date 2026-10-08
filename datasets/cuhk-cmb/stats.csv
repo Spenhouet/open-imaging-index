@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,20,cmb3dcnn-data-readme,readme.txt,released subset of the 320-subject SWI-CMB set described in the paper
+subjects,contrast=swi,20,dou2016,Section III-A,all 320 SWI-CMB scans are SWI; the released 20 are part of that set
+subjects,field_strength=3,20,dou2016,Section III-A,all 320 SWI-CMB scans were acquired on one 3.0 T Philips system
+subjects,vendor=philips,20,dou2016,Section III-A,all 320 SWI-CMB scans were acquired on one 3.0 T Philips system

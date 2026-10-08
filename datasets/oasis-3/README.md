@@ -14,7 +14,10 @@ Identifiers were replaced and all dates are expressed as days since study entry.
 ## Acquisition
 
 All MRI was acquired on Siemens systems: a 1.5 T Vision, two 3 T TIM Trio scanners and a 3 T Biograph mMR PET-MR.
-Sequences include T1w, T2w, FLAIR, ASL, SWI, time-of-flight angiography, resting-state BOLD and diffusion. PET was done
+Sequences include T1w, T2w, FLAIR, ASL, SWI, time-of-flight angiography, resting-state BOLD and diffusion. SWI,
+meant for spotting microhaemorrhages, comes as magnitude, phase, minimum intensity projection and combined SWI images;
+the data dictionary lists 1,231 SWI scans, almost all at 3 T and from the 2018 release. T2star is listed as a scan type,
+but no count is published. PET was done
 on an ECAT HR+, a Biograph 40 PET/CT and the Biograph mMR. Images are converted to NIfTI with dcm2niix and organised in
 BIDS, with acquisition parameters in JSON sidecars.
 

@@ -21,7 +21,7 @@ modalities: [MR, PT]
 contrasts: [T1w, T2w, PDw, FLAIR, T2starw, dwi, bold, asl]
 tracers: [fdg, pib, florbetapir, flortaucipir]
 anatomy: [brain]
-conditions: [healthy, mci, alzheimers]
+conditions: [healthy, mci, alzheimers, cerebral_microbleeds, superficial_siderosis]
 tasks: [classification, regression, longitudinal, segmentation]
 formats: [DICOM, NIfTI]
 countries: [US, CA]
@@ -49,6 +49,22 @@ sources:
   mri:
     title: ADNI website, MRI protocols by phase
     url: https://adni.loni.usc.edu/data-samples/adni-data/neuroimaging/mri/
+    kind: website
+  jack2024:
+    title: Jack CR Jr et al. 2024, Overview of ADNI MRI, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.14166
+    kind: paper
+  adni3-mri-protocol:
+    title: ADNI-3 MRI protocol poster (sequence table)
+    url: https://adni.loni.usc.edu/wp-content/uploads/2017/07/ADNI3-MRI-protocols.pdf
+    kind: website
+  adni3-mri-analysis-manual:
+    title: ADNI3 MRI Analysis Manual, version 28 June 2018
+    url: https://adni.loni.usc.edu/wp-content/themes/freshnews-dev-v2/documents/mri/ADNI3_MRI_Analysis_Manual_20180202.pdf
+    kind: website
+  adnimerge-mch:
+    title: ADNIMERGE data dictionary, Jack Lab - ADNI MRI MCH (mayoadirl_mri_mch)
+    url: https://adni.bitbucket.io/reference/mayoadirl_mri_mch.html
     kind: website
   petersen2010:
     title: Petersen RC et al. 2010, ADNI clinical characterization, Neurology

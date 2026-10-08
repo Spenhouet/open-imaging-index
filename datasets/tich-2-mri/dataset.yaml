@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tich-2-mri
+name: TICH-2 MRI Sub-study
+full_name: Tranexamic Acid for Hyperacute Primary Intracerebral Haemorrhage 2 (TICH-2) trial MRI sub-study
+summary: >-
+  Multicentre brain MRI (DWI, FLAIR, T2*-GRE, T1w, T2w, optional SWI) of 219 patients with acute spontaneous
+  intracerebral haemorrhage in the TICH-2 tranexamic acid trial, with microbleed masks in a
+  labelled subset of 115 SWI scans. Shared on written request to the sub-study PI.
+homepage: https://doi.org/10.1136/bmjopen-2017-019930
+doi: 10.1136/bmjopen-2017-019930
+# Year of the published sub-study protocol; the data have no public release.
+year: 2018
+creators:
+  - name: TICH-2 MRI sub-study investigators, University of Nottingham (trial sponsor)
+    url: https://www.nottingham.ac.uk
+modalities: [MR]
+contrasts: [dwi, FLAIR, T2starw, swi, T1w, T2w]
+anatomy: [brain]
+conditions: [intracerebral_hemorrhage, cerebral_microbleeds]
+tasks: [segmentation, detection]
+access:
+  type: application
+  url: https://doi.org/10.3389/fninf.2023.1204186
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The data availability statement of Sundaresan et al. 2023 says the sub-study data "can be shared with bona fide
+      researchers and research groups on written request to the sub-study PI" (Rob Dineen, University of Nottingham),
+      that proposals are assessed by the PI, and that "a Data Transfer Agreement will be established before any data
+      are shared". The agreement text is not published.
+citation:
+  text: >-
+    Dineen RA, Pszczolkowski S, Flaherty K, Law ZK, Morgan PS, Roberts I, Werring DJ, Al-Shahi Salman R, England T,
+    Bath PM, Sprigg N. Does tranexamic acid lead to changes in MRI measures of brain tissue health in patients with
+    spontaneous intracerebral haemorrhage? Protocol for a MRI substudy nested within the double-blind randomised
+    controlled TICH-2 trial. BMJ Open 8(2), e019930 (2018). doi:10.1136/bmjopen-2017-019930
+sources:
+  dineen2018:
+    title: Dineen et al. 2018, BMJ Open, TICH-2 MRI sub-study protocol (PMC5879748)
+    url: https://doi.org/10.1136/bmjopen-2017-019930
+    kind: paper
+  pszczolkowski2022:
+    title: Pszczolkowski et al. 2022, JAMA Neurology, TICH-2 MRI sub-study results (PMC8938900)
+    url: https://doi.org/10.1001/jamaneurol.2022.0217
+    kind: paper
+  sundaresan2023:
+    title: Sundaresan et al. 2023, Frontiers in Neuroinformatics, microbleed segmentations (PMC10363739)
+    url: https://doi.org/10.3389/fninf.2023.1204186
+    kind: paper
+related: []
+keywords: [intracerebral haemorrhage, tranexamic acid, randomised trial, cerebral microbleeds, SWI, DWI lesions]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

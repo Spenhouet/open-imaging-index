@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: valdo-2021
+name: VALDO 2021
+full_name: 'Where is VALDO? VAscular Lesions DetectiOn and segmentation challenge at MICCAI 2021'
+summary: >-
+  Training data of the MICCAI 2021 VALDO challenge: brain MRI from the SABRE, Rotterdam Scan Study and ALFA cohorts
+  with manual labels of enlarged perivascular spaces (40 cases), cerebral microbleeds on T2* (72) and lacunes (40).
+homepage: https://valdo.grand-challenge.org/
+# Concept DOI of the Zenodo training data record; it resolves to the latest version (v0.2).
+doi: 10.5281/zenodo.4520772
+year: 2021
+version: v0.2
+status: active
+creators:
+  - name: University College London
+    url: https://www.ucl.ac.uk/
+  - name: Erasmus MC University Medical Center Rotterdam
+    url: https://www.erasmusmc.nl/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, T2starw]
+anatomy: [brain]
+conditions: [enlarged_perivascular_spaces, cerebral_microbleeds, lacunes]
+tasks: [segmentation, detection]
+formats: [NIfTI]
+countries: [GB, NL, ES]
+vendors: [philips, ge]
+field_strengths: [1.5, 3]
+# Sum of the four files of Zenodo record 4687995 (v0.2): Task1_v2, Task2_v2, Task3_v2 and README.md.
+size_gb: 6.3
+access:
+  type: open
+  url: https://doi.org/10.5281/zenodo.4687995
+  note: >-
+    Only the training set is on Zenodo, as one archive per task. The validation and test cases were never released.
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    note: >-
+      The Zenodo record text, the challenge paper and the challenge design document name CC BY-NC-SA 4.0. The license
+      field in the Zenodo metadata shows CC BY-NC 4.0. Users are asked to acknowledge the listed funders, cite the
+      cohort papers, and for Task 2 data add "for the ALFA Study" as corporate author with the listed contributors.
+citation:
+  text: >-
+    Sudre CH, Van Wijnen K, Dubost F, et al. Where is VALDO? VAscular Lesions Detection and segmentatiOn challenge at
+    MICCAI 2021. Medical Image Analysis 91, 103029 (2024). doi:10.1016/j.media.2023.103029
+sources:
+  sudre2022:
+    title: Sudre et al. 2022, challenge overview paper (arXiv 2208.07167v1; published in Medical Image Analysis 2024)
+    url: https://arxiv.org/abs/2208.07167
+    kind: paper
+  zenodo-4687995:
+    title: Zenodo record 4687995, VALDO 2021 training dataset v0.2 (description and README.md)
+    url: https://zenodo.org/records/4687995
+    kind: data
+  valdo-design-2021:
+    title: VALDO challenge design document (BIAS form, March 2021), Zenodo record 4600654
+    url: https://doi.org/10.5281/zenodo.4600654
+    kind: paper
+related: []
+keywords: [cerebral small vessel disease, microbleeds, perivascular spaces, lacunes, challenge, weak labels]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
