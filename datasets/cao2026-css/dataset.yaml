@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cao2026-css
+name: Cao 2026 In-house cSS Test Set
+full_name: In-house cortical superficial siderosis test set of Cao et al. (MICCAI 2026 SASHIMI workshop)
+summary: >-
+  In-house test set of 10 patients with confirmed cortical superficial siderosis on SWI or T2*-weighted MRI, with
+  manual lesion delineations validated by a neuroradiologist. Used to evaluate synthetic-data training for cSS
+  segmentation; not released.
+homepage: https://arxiv.org/abs/2610.01542
+doi: 10.48550/arXiv.2610.01542
+# Year of the paper that describes the data; the data have not been released.
+year: 2026
+creators:
+  - name: >-
+      Cao et al. 2026 author group (Friedrich-Alexander-Universität Erlangen-Nürnberg; Otto von Guericke University
+      Magdeburg); the paper does not say which site holds the scans
+modalities: [MR]
+contrasts: [T2starw, swi]
+anatomy: [brain]
+conditions: [superficial_siderosis]
+tasks: [segmentation]
+access:
+  type: on_request
+  url: https://arxiv.org/abs/2610.01542
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper calls the set in-house and has no data availability statement; no repository or data terms were found.
+      The paper's own license covers the text only.
+citation:
+  text: >-
+    Cao Y, Dash S, Zachariadis A, Schreiber S, Neumann K, Bernal J. Synthetic training for long-tail haemorrhagic
+    lesion segmentation in data-scarce settings. arXiv:2610.01542 (2026).
+sources:
+  cao2026:
+    title: Cao et al. 2026, arXiv:2610.01542v1 (MICCAI 2026 SASHIMI workshop)
+    url: https://arxiv.org/abs/2610.01542
+    kind: paper
+related: [valdo-2021]
+keywords: [cortical superficial siderosis, cerebral amyloid angiopathy, SWI, T2*, lesion segmentation, test set]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
