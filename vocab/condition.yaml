@@ -37,6 +37,7 @@ terms:
       mappings: { mondo: 'MONDO:0005098' }
     }
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
+  - { id: transient_ischemic_attack, label: Transient ischemic attack, synonyms: [TIA], mappings: { mondo: 'MONDO:0005264' } }
   - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
   - {
       id: intracerebral_hemorrhage,
