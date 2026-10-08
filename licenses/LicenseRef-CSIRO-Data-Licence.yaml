@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CSIRO-Data-Licence
+name: CSIRO Data Licence
+short_name: CSIRO Data Licence
+url: https://research.csiro.au/dap/licences/csiro-data-licence/
+version: Licence deed in the CSIRO Data Access Portal user guide, read 2026-10-08 (retired for new collections on 2021-07-15)
+summary: >-
+  A personal, non-transferable licence for non-commercial use of data on the CSIRO Data Access Portal. The data may
+  not be passed on, and no patent or other IP rights may be claimed over it. Free hardcopy products and non-editable
+  images based on the data may be shared, and CSIRO must not be presented as endorsing the use or its results.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      CSIRO grants you a royalty-free, non-exclusive, non-transferable licence to use the Data solely for your non
+      commercial purposes.
+  model_training:
+    value: conditional
+    note: The licence does not mention models. Training falls under use, which is allowed for non-commercial purposes.
+    quote: >-
+      CSIRO grants you a royalty-free, non-exclusive, non-transferable licence to use the Data solely for your non
+      commercial purposes.
+  derivatives:
+    value: conditional
+    note: The licence assumes use of the data in adapted form, within non-commercial purposes.
+    quote: >-
+      “commercial purpose” means to sell, hire, exchange or otherwise use or exploit the Data (whether in its original
+      or any adapted form, or incorporated in or used in the provision of any products or services) for profit or gain.
+  publication:
+    value: conditional
+    note: Free, non-editable outputs such as PDF papers may be distributed.
+    quote: >-
+      Notwithstanding the foregoing, you may create and distribute hardcopy products and non-editable digital images
+      (eg: pdf files) based on or containing the Data, provided they are distributed at no charge and revenue is not
+      generated to offset any free distribution (eg. advertising/sponsorship).
+  redistribute_original:
+    value: 'no'
+    quote: You may not distribute the Data to any other person
+  redistribute_derivatives:
+    value: conditional
+    note: >-
+      Only hardcopy products and non-editable digital images, free of charge. The licence does not address other
+      derived data such as labels or processed volumes.
+    quote: >-
+      Notwithstanding the foregoing, you may create and distribute hardcopy products and non-editable digital images
+      (eg: pdf files) based on or containing the Data, provided they are distributed at no charge
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: You must comply with any protocols concerning the attribution of rights in the Data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public collections under this licence download from the Data Access Portal without an account.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

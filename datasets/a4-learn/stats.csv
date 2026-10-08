@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,modality=MR,1787,jimenezmaggiora2026,Table 4,"participants with at least one MRI in the final dataset: A4 1163, LEARN 537, screen failures 87"
+subjects,tracer=florbetapir,4477,jimenezmaggiora2026,Table 4,"participants with at least one amyloid PET: A4 1167, LEARN 538, screen failures 2772"
+subjects,tracer=flortaucipir,452,jimenezmaggiora2026,Table 4,"participants with at least one tau PET: A4 393, LEARN 55, screen failures 4"
+studies,,14370,jimenezmaggiora2026,Table 2,"all MRI, amyloid PET and tau PET scans in the final longitudinal dataset (overall N)"
+studies,modality=MR,7133,jimenezmaggiora2026,Table 2,"final longitudinal MRI scans: A4 6091, LEARN 955, screen failures 87"
+studies,tracer=florbetapir,5661,jimenezmaggiora2026,Table 2,"final amyloid PET scans: A4 2100, LEARN 789, screen failures 2772"
+studies,tracer=flortaucipir,1576,jimenezmaggiora2026,Table 2,"final tau PET scans: A4 1402, LEARN 170, screen failures 4"
+subjects,condition=aria,361,sperling2023,Table 3,"A4 safety population of 1163 treated participants (572 solanezumab, 591 placebo): ARIA adverse events after the first dose, sum of the two disjoint groups (167 + 194)"
+subjects,condition=cerebral_microbleeds,347,sperling2023,Table 3,"A4 safety population: microhemorrhage adverse events, sum of the two disjoint groups (158 + 189)"
+subjects,condition=superficial_siderosis,38,sperling2023,Table 3,"A4 safety population: superficial siderosis adverse events, sum of the two disjoint groups (19 + 19)"
+age_min,,65,yaari2022,Methods,eligibility age range of A4 and LEARN screening
+age_max,,85,yaari2022,Methods,eligibility age range of A4 and LEARN screening

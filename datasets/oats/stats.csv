@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,623,sachdev2013,Abstract,"baseline cohort: 161 MZ and 124 DZ twin pairs, 1 MZ triplet set, 27 single twins and 23 non-twin siblings"
+subjects,country=AU,623,cheba-oats-page,,"recruited in New South Wales, Queensland and Victoria"
+studies,modality=MR,1126,unsw-news-2017,,"""1126 MRI brain scans"" obtained in the first ten years; counted as imaging sessions"
+subjects,modality=PT,207,cheba-oats-page,,amyloid PET sub-study 2012-2017 in New South Wales and Victoria
+scans,contrast=swi,23,hassanzadeh2025,Section 3.1.3,only the subset with cerebral microbleed labels (54 microbleeds); Section 3.6 of the same paper says 24 scans; the number of SWI scans in the whole cohort is not published
+age_min,,65,sachdev2013,Abstract,age at entry

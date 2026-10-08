@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,1037,sachdev2010,Abstract,baseline cohort of non-demented community-dwelling adults
+subjects,country=AU,1037,sachdev2010,Abstract,recruited from two areas of Sydney
+subjects,modality=MR,554,sachdev2010,Abstract,structural MRI at baseline; the CHeBA page says roughly half of the cohort had structural MRI
+scans,contrast=swi,30,hassanzadeh2025,Section 3.1.3,only the subset with cerebral microbleed labels (60 microbleeds); the number of SWI scans in the whole cohort is not published
+age_min,,70,sachdev2010,Abstract,age at baseline
+age_max,,90,sachdev2010,Abstract,age at baseline
