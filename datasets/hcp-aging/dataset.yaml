@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcp-aging
+name: HCP-Aging (Lifespan 2.0)
+full_name: Lifespan Human Connectome Project in Aging, Lifespan 2.0 Release
+summary: >-
+  Multimodal 3T MRI of 725 healthy adults aged 36 to 100+ from four US sites: T1w and T2w structural, high-resolution
+  hippocampal T2w, resting-state and task fMRI, two-shell diffusion and multi-delay ASL, with behavioral data, shared
+  through the NIMH Data Archive.
+homepage: https://www.humanconnectome.org/study/hcp-lifespan-aging
+doi: 10.1016/j.neuroimage.2018.09.060
+year: 2019
+updated: 2021
+version: Lifespan 2.0 Release (26 February 2021)
+status: active
+creators:
+  - name: Lifespan Human Connectome Project in Aging consortium (Washington University in St. Louis, University of Minnesota, Massachusetts General Hospital, UCLA, University of Oxford)
+    url: https://www.humanconnectome.org/study/hcp-lifespan-aging
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/general-query.html?q=query=featured-datasets:HCP%20Aging%20and%20Development
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      Access is granted by the NIH permissions committee that also handles ABCD data. The Data Use Certification must
+      be signed by an authorized institutional official, the institution must be registered in eRA Commons and hold an
+      active Federalwide Assurance, and access is renewed yearly. Study-specific clauses of that permission group are
+      not broken down here.
+citation:
+  text: >-
+    Harms MP, Somerville LH, Ances BM, Andersson J, Barch DM, Bastiani M, et al. Extending the Human Connectome Project
+    across ages: Imaging protocols for the Lifespan Development and Aging projects. NeuroImage 183:972-984 (2018).
+    doi:10.1016/j.neuroimage.2018.09.060
+sources:
+  harms2018:
+    title: Harms et al. 2018, Extending the Human Connectome Project across ages, NeuroImage (PMC6484842)
+    url: https://doi.org/10.1016/j.neuroimage.2018.09.060
+    kind: paper
+  hcp-aging-releases:
+    title: HCP Aging / AABC data releases page
+    url: https://www.humanconnectome.org/study/hcp-lifespan-aging/data-releases
+    kind: website
+  ls2-access-instructions:
+    title: Lifespan HCP 2.0 Release Data Access and Download Instructions (updated June 2022)
+    url: https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/LS_Release_2.0_Access_Instructions_June2022.pdf
+    kind: website
+  hca-completeness:
+    title: HCP-Aging Lifespan 2.0 subject completeness CSV (public download from humanconnectome.org), one row per released subject
+    url: https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/HCA_LS_2.0_subject_completeness.csv
+    kind: computed
+related: [hcp-young-adult]
+keywords: [connectome, aging, lifespan, resting-state fMRI, task fMRI, diffusion MRI, ASL, hippocampus, healthy adults]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
