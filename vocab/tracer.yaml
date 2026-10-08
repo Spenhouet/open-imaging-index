@@ -7,6 +7,7 @@ terms:
   - { id: florbetaben, label: '[18F]florbetaben', synonyms: [FBB, Neuraceq], description: Amyloid tracer }
   - { id: flutemetamol, label: '[18F]flutemetamol', synonyms: [Vizamyl], description: Amyloid tracer }
   - { id: flortaucipir, label: '[18F]flortaucipir', synonyms: [AV-1451, Tauvid], description: Tau tracer }
+  - { id: nav4694, label: '[18F]NAV4694', synonyms: [NAV4694], description: Amyloid tracer }
   - {
       id: psma,
       label: PSMA ligand,

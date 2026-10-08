@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,142,josephmathurin2022,Abstract (Methods); Table 1A,"mutation carriers in the analysis: gantenerumab 52, solanezumab 50, placebo 40; the Methods text says 144 were randomized (52 to solanezumab)"
+subjects,condition=alzheimers,142,josephmathurin2022,Abstract (Methods),"all are DIAD mutation carriers (PSEN1, PSEN2 or APP), CDR 0 to 1 at entry"
+subjects,condition=aria,22,josephmathurin2022,Table 1A,"participants with incident ARIA-H: sum of the four disjoint groups (placebo 4, solanezumab 6, gantenerumab without ARIA-E 6, gantenerumab with ARIA-E 6); 11 participants had ARIA-E, and how many of them are not in the ARIA-H count is not stated as a total"
+subjects,sex=female,72,josephmathurin2022,Table 1A,"sum of the four disjoint groups (placebo 22, solanezumab 29, gantenerumab without ARIA-E 17, gantenerumab with ARIA-E 4)"

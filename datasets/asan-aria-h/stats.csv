@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+scans,,565,kim2025,Method,SWI scans with 2 mm slices
+scans,contrast=swi,565,kim2025,Method,
+scans,condition=cerebral_microbleeds,429,kim2025,Method,positive cases; 136 scans are negative
+scans,country=KR,565,kim2025,Method,Asan Medical Center
+scans,sex=female,363,kim2025,Method,the abstract gives sex for the cohort; one scan per person is not stated
+scans,sex=male,202,kim2025,Method,
+scans,split=test,114,kim2025,Result,"86 positive (158 microbleeds) and 28 negative; train, validation and test were split 3:1:1"
+age_mean,,71.9,kim2025,Method,
+age_sd,,10.2,kim2025,Method,

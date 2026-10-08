@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cuhk-cmb
+name: CUHK SWI-CMB (public subset)
+full_name: CUHK SWI cerebral microbleed dataset released with the 3D CNN microbleed detection paper (Dou et al. 2016)
+summary: >-
+  3 T SWI brain MRI of 20 subjects with point annotations (voxel centroids) of cerebral microbleeds, released by
+  CUHK as a public subset of the 320-subject SWI-CMB set of stroke and normal ageing participants.
+homepage: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn.html
+doi: 10.1109/TMI.2016.2528129
+# Year of the paper; the data archive on the project page is dated April 2016.
+year: 2016
+status: active
+creators:
+  - name: Department of Computer Science and Engineering, The Chinese University of Hong Kong
+    url: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn.html
+species: human
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds, stroke, healthy]
+tasks: [detection]
+formats: [NIfTI]
+countries: [HK]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 0.64
+access:
+  type: open
+  url: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn-data.zip
+licenses:
+  - license: LicenseRef-CUHK-CMB-3DCNN-Terms
+    note: The terms are stated in readme.txt inside the data archive. The project page itself states no license.
+citation:
+  text: >-
+    Dou Q, Chen H, Yu L, Zhao L, Qin J, Wang D, Mok VC, Shi L, Heng PA. Automatic Detection of Cerebral Microbleeds
+    From MR Images via 3D Convolutional Neural Networks. IEEE Transactions on Medical Imaging 35(5), 1182-1195 (2016).
+    doi:10.1109/TMI.2016.2528129
+sources:
+  dou2016:
+    title: Dou et al. 2016, IEEE Transactions on Medical Imaging (author copy on the CUHK site)
+    url: https://doi.org/10.1109/TMI.2016.2528129
+    kind: paper
+  cmb3dcnn-data-readme:
+    title: readme.txt in cmb-3dcnn-data.zip, the released data archive
+    url: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn-data.zip
+    kind: data
+related: []
+keywords: [cerebral microbleeds, SWI, microbleed detection, stroke]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

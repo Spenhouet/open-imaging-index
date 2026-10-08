@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: asan-aria-h
+name: Asan Medical Center SWI Microbleed Set (ARIA-H)
+full_name: Asan Medical Center SWI microbleed dataset for ARIA-H severity assessment
+summary: >-
+  In-house set of 565 SWI brain MRI scans from Asan Medical Center, Seoul (429 with microbleeds), labelled by one
+  neuroradiologist to train microbleed detection for ARIA-H severity grading. Described in a 2025 AAIC abstract; not
+  publicly released.
+homepage: https://pmc.ncbi.nlm.nih.gov/articles/PMC12739263/
+doi: 10.1002/alz70856_100169
+# Year of the conference abstract; the data have not been released.
+year: 2025
+creators:
+  - name: VUNO Inc.
+  - name: Asan Medical Center, University of Ulsan College of Medicine
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds]
+tasks: [detection]
+countries: [KR]
+access:
+  type: on_request
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12739263/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The abstract has no data availability statement and no data sharing route is published. The CC BY 4.0 license of
+      the abstract covers the text only.
+citation:
+  text: >-
+    Kim S, Jung W, Lee SH, Suh CH. AI-based Microbleed Detection for ARIA Radiographic Severity Assessment. Alzheimer's
+    & Dementia 21(Suppl 2), e100169 (2025). doi:10.1002/alz70856_100169
+sources:
+  kim2025:
+    title: Kim et al. 2025, Alzheimer's & Dementia (AAIC 2025 poster abstract, PMC12739263)
+    url: https://doi.org/10.1002/alz70856_100169
+    kind: paper
+related: []
+keywords: [ARIA-H, cerebral microbleeds, SWI, anti-amyloid therapy, microbleed detection]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
