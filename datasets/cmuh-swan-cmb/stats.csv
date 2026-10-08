@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+studies,,205,hsu2026,Section 2.1,MRI examinations; the number of distinct patients is not reported
+studies,contrast=swi,205,hsu2026,Section 2.1,GE SWAN
+studies,condition=cerebral_microbleeds,104,hsu2026,Section 2.1,CMB-positive; 101 exams are CMB-negative
+studies,vendor=ge,205,hsu2026,Section 2.1,"Discovery MR750w, Optima MR450w, Signa HDxt, Signa Architect, Signa Voyager"
+studies,country=TW,205,hsu2026,Section 2.1,China Medical University Hospital
+studies,split=train,153,hsu2026,Table 1,"78 CMB-positive (687 lesions) and 75 CMB-negative; summed from Table 1, which is disjoint and complete"
+studies,split=test,52,hsu2026,Table 1,"hold-out test set: 26 CMB-positive (171 lesions) and 26 CMB-negative"
+studies,split=train;condition=cerebral_microbleeds,78,hsu2026,Table 1,
+studies,split=test;condition=cerebral_microbleeds,26,hsu2026,Table 1,

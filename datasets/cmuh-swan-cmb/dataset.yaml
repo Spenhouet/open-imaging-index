@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cmuh-swan-cmb
+name: CMUH SWAN Microbleed Set
+full_name: China Medical University Hospital SWAN cerebral microbleed dataset
+summary: >-
+  205 clinical GE SWAN brain MRI exams from China Medical University Hospital, Taiwan (104 with microbleeds, 101
+  without), with voxel-wise microbleed masks by one neurologist. Used for synthetic-to-real microbleed segmentation;
+  shared only through research collaboration.
+homepage: https://arxiv.org/abs/2610.00743
+doi: 10.48550/arXiv.2610.00743
+# Year of the preprint that describes the data; the data have not been released.
+year: 2026
+creators:
+  - name: Artificial Intelligence and Robotics Innovation Center, China Medical University Hospital
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds]
+tasks: [segmentation]
+countries: [TW]
+vendors: [ge]
+field_strengths: [1.5, 3]
+access:
+  type: on_request
+  url: https://github.com/Lukehsu1999/synthetic-to-real-cmb-detection
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The code repository states that the clinical images are not publicly distributed and points to the corresponding
+      author for research collaborations. No license or data use terms are published; the repository has no license
+      file.
+citation:
+  text: >-
+    Hsu T-L, Lai T-Y, Lin C-T, Huang C-H, Wang W-C. Synthetic-to-Real Transfer in Cerebral Microbleed Generation and
+    Segmentation. arXiv:2610.00743 (2026).
+sources:
+  hsu2026:
+    title: Hsu et al. 2026, arXiv:2610.00743v1
+    url: https://arxiv.org/abs/2610.00743
+    kind: paper
+  hsu2026-repo:
+    title: synthetic-to-real-cmb-detection GitHub repository, README (Data Availability)
+    url: https://github.com/Lukehsu1999/synthetic-to-real-cmb-detection
+    kind: website
+related: []
+keywords: [cerebral microbleeds, SWAN, susceptibility-weighted imaging, synthetic lesions, microbleed segmentation]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
