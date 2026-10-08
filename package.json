@@ -29,6 +29,7 @@
     "@sveltejs/kit": "^3.0.1",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/svelte-table": "^9.2.6",
     "@types/node": "^26.6.4",
     "bits-ui": "^2.19.5",
     "clsx": "^2.1.1",

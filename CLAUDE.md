@@ -16,11 +16,12 @@ Static SvelteKit 3 site (adapter-static, every page prerendered) deployed to Git
 - `src/lib/catalog/load.ts`: reads and validates everything from disk (server and scripts only).
 - `src/lib/catalog/stats.ts`: stats.csv parser and `estimate`, which bounds matching subjects for cohort filters (exact rows where reported, Fréchet bounds otherwise). Unit tested.
 - `src/lib/catalog/filter.ts`: catalog filtering, URL query state, facet counts.
-- `src/lib/catalog/pivot.ts`: cross tables for the Explore page.
+- `src/lib/catalog/cohort.ts`: the Explore page: pooled cohort, intended-use split, linked breakdowns (each chart ignores its own selection), coverage grid. Unit tested. `bun scripts/profile-explore.ts <summaries.json>` times it.
+- Loaded catalog data is kept in `$state.raw`: deep proxies over thousands of datasets made Explore 4 to 7 times slower.
 - `src/lib/server/`: catalog cache, docs rendering and the catalog overview for page loads.
 - `vite.catalog.ts`: serves the vocabulary and license list as `virtual:catalog-meta` (re-exported by `src/lib/catalog/meta.ts`), so it is bundled once instead of copied into every page.
 - Catalog data flow: the catalog page prerenders only the largest datasets plus an overview. The browser then loads `summaries.json` (all datasets, prerendered) for filtering, and Explore does the same. Results render 30 at a time.
-- `src/routes/`: catalog (`/`), `datasets/[id]`, `explore`, `licenses`, `licenses/[id]`, `standard` and `contribute` (rendered from `docs/*.md`), `vocabulary`, `about`, plus `catalog.json`, `sitemap.xml`, `robots.txt`.
+- `src/routes/`: catalog (`/`), `datasets/[id]`, `explore`, `licenses`, `licenses/[id]`, `standard` and `contribute` (rendered from `docs/*.md`), `vocabulary`, `about`, `compare` (shortlist side by side), `disclaimer`, `skills`, `datasets` (A to Z), plus `catalog.json`, `sitemap.xml`, `robots.txt`.
 
 ## Conventions
 

@@ -36,12 +36,24 @@ test('dataset page shows license rules with quotes and structured data', async (
   expect(JSON.parse(ld!)['@type']).toBe('Dataset');
 });
 
-test('explore cross table links to the catalog', async ({ page }) => {
-  await page.goto('/explore/?rows=modality&cols=access&measure=datasets');
-  const cell = page.locator('table a').first();
-  await expect(cell).toBeVisible();
-  await cell.click();
-  await expect(page).toHaveURL(/modality=/);
+test('explore builds a cohort with linked charts, a shortlist and a comparison', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (e) => errors.push(e.message));
+  await page.goto('/explore/');
+  await expect(page.locator('#cohort-title')).toBeVisible();
+  const before = await page.locator('#cohort-title + div').innerText();
+  await page.locator('section[aria-label=Breakdowns] button', { hasText: 'MRI' }).first().click();
+  await expect(page).toHaveURL(/modality=MR/);
+  await expect(page.locator('#cohort-title + div')).not.toHaveText(before);
+  await page.getByRole('button', { name: 'Commercial use', exact: true }).click();
+  await expect(page).toHaveURL(/need=commercial_use/);
+  const boxes = page.locator('section[aria-labelledby=table-title] tbody [role=checkbox]');
+  await boxes.nth(0).click();
+  await boxes.nth(1).click();
+  await page.getByRole('link', { name: /Compare \(2\)/ }).click();
+  await expect(page).toHaveURL(/compare\/\?ids=/);
+  await expect(page.locator('thead th')).toHaveCount(3);
+  expect(errors).toEqual([]);
 });
 
 test('skills page offers install commands and skill downloads', async ({ page, request }) => {

@@ -136,9 +136,14 @@ describe('estimate', () => {
     expect(estimate(c, 'subjects', [{ dim: 'condition', values: ['a', 'b'] }])).toMatchObject({ lo: 30, hi: 50 });
   });
 
-  it('gives an open range without a total', () => {
+  it('uses a reported row as the exact count, even without a total', () => {
     const c = ctx('subjects,sex=female,60,p,');
-    expect(estimate(c, 'subjects', [{ dim: 'sex', values: ['female'] }])).toMatchObject({ lo: 60, hi: Infinity });
+    expect(estimate(c, 'subjects', [{ dim: 'sex', values: ['female'] }])).toMatchObject({ lo: 60, hi: 60 });
+  });
+
+  it('gives an open range when nothing is reported for the value', () => {
+    const c = ctx('subjects,sex=male,40,p,');
+    expect(estimate(c, 'subjects', [{ dim: 'sex', values: ['female'] }])).toMatchObject({ lo: 0, hi: Infinity });
   });
 });
 
@@ -152,5 +157,27 @@ describe('combine', () => {
   it('takes the friendliest answer for alternative licenses', () => {
     expect(combine(['yes', 'no'], 'yes', 'any')).toBe('yes');
     expect(combine(['yes', 'no'], 'no', 'any')).toBe('no');
+  });
+});
+
+describe('estimate with dataset-level facets', () => {
+  it('counts every subject when all listed values are selected', () => {
+    const c = ctx('subjects,,100,p,', { anatomy: ['brain'] });
+    expect(estimate(c, 'subjects', [{ dim: 'anatomy', values: ['brain'] }])).toMatchObject({ lo: 100, hi: 100 });
+  });
+  it('treats modalities as alternatives when asked', () => {
+    const dims2 = { ...dims, modality: { id: 'modality', combine: 'all' as const, partition: false, values: 'vocab' } };
+    const { rows } = parseStats(
+      'measure,by,value,source,where,note\nsubjects,,100,p,,\nsubjects,modality=MR,60,p,,\nsubjects,modality=CT,50,p,,\n'
+    );
+    const c = { rows, dims: dims2, facets: { modality: ['CT', 'MR'] } };
+    expect(estimate(c, 'subjects', [{ dim: 'modality', values: ['MR'], combine: 'any' }])).toMatchObject({
+      lo: 60,
+      hi: 60
+    });
+    expect(estimate(c, 'subjects', [{ dim: 'modality', values: ['MR', 'CT'], combine: 'any' }])).toMatchObject({
+      lo: 100,
+      hi: 100
+    });
   });
 });

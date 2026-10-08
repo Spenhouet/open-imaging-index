@@ -29,7 +29,20 @@ export function label(vocab: VocabData, dim: string, id: string): string {
 }
 
 /** The id plus every narrower term below it, e.g. glioma -> glioma, glioblastoma. */
+const descendantCache = new WeakMap<VocabData, Map<string, string[]>>();
+
 export function withDescendants(vocab: VocabData, dim: string, id: string): string[] {
+  let cache = descendantCache.get(vocab);
+  if (!cache) descendantCache.set(vocab, (cache = new Map()));
+  const key = `${dim}\u0000${id}`;
+  const hit = cache.get(key);
+  if (hit) return hit;
+  const out = descendants(vocab, dim, id);
+  cache.set(key, out);
+  return out;
+}
+
+function descendants(vocab: VocabData, dim: string, id: string): string[] {
   const terms = vocab.terms[dim] ?? [];
   const out = [id];
   for (let i = 0; i < out.length; i++) {

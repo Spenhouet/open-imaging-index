@@ -159,8 +159,12 @@ export function cohortConstraints(f: FilterState, vocab: VocabData): Constraint[
   return c;
 }
 
+const dimsCache = new WeakMap<VocabData, Record<string, DimensionInfo>>();
+
 export function dimsInfo(vocab: VocabData): Record<string, DimensionInfo> {
-  return Object.fromEntries(vocab.dimensions.map((d) => [d.id, d]));
+  let dims = dimsCache.get(vocab);
+  if (!dims) dimsCache.set(vocab, (dims = Object.fromEntries(vocab.dimensions.map((d) => [d.id, d]))));
+  return dims;
 }
 
 function passesFacets(d: DatasetSummary, f: FilterState, vocab: VocabData, skip?: FacetId): boolean {
@@ -191,7 +195,8 @@ export function run(
   datasets: DatasetSummary[],
   search: MiniSearch,
   f: FilterState,
-  vocab: VocabData
+  vocab: VocabData,
+  options: { counts?: boolean } = {}
 ): { results: Result[]; facetCounts: Record<string, Map<string, number>> } {
   let scores: Map<string, number> | null = null;
   if (f.q.trim()) {
@@ -220,7 +225,7 @@ export function run(
 
   // Counts per facet value ignore that facet's own selection, so options never vanish when picked.
   const facetCounts: Record<string, Map<string, number>> = {};
-  for (const facet of FACETS) {
+  for (const facet of options.counts === false ? [] : FACETS) {
     const counts = new Map<string, number>();
     for (const d of base) {
       if (!passesFacets(d, f, vocab, facet.id)) continue;

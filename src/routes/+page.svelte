@@ -33,7 +33,7 @@
   const licenseNames = $derived(new Map(licenses.map((l) => [l.id, l.short_name ?? l.name])));
 
   // The HTML carries the largest datasets. The full catalog loads right after, so filters see everything.
-  let datasets = $state<DatasetSummary[]>(untrack(() => data.initial));
+  let datasets = $state.raw<DatasetSummary[]>(untrack(() => data.initial));
   let loaded = $state(false);
   let loadError = $state(false);
   const search = $derived(makeSearch(datasets));
@@ -291,6 +291,10 @@
         {/if}
         {#if hasCohort(filters)}· matching subjects estimated per dataset{/if}
       </p>
+
+      <a href={link('explore/') + toQuery(filters)} class="text-sm font-medium text-primary hover:underline"
+        >Explore this selection</a
+      >
 
       <label class="ml-auto flex items-center gap-2 text-sm text-muted-foreground">
         Sort

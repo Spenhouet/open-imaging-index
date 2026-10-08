@@ -9,6 +9,7 @@ export function GET() {
     { path: '' },
     { path: 'datasets/' },
     { path: 'explore/' },
+    { path: 'compare/' },
     { path: 'skills/' },
     { path: 'licenses/' },
     { path: 'standard/' },

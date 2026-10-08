@@ -31,7 +31,7 @@ Finding a medical imaging dataset usually means reading papers, websites and dat
 <table>
   <tr>
     <td width="50%"><a href="https://spenhouet.com/open-imaging-index/datasets/nih-chestxray14/"><img src="docs/assets/dataset.png" alt="Dataset page with sex, age and age-by-sex charts and a license summary"></a><br><sub>Dataset pages: cohort charts, every number with its source, the license rule by rule.</sub></td>
-    <td width="50%"><a href="https://spenhouet.com/open-imaging-index/explore/"><img src="docs/assets/explore.png" alt="Explore page with a cross table of contrasts by commercial use"></a><br><sub>Explore: cross-tabulate any two attributes across all datasets.</sub></td>
+    <td width="50%"><a href="https://spenhouet.com/open-imaging-index/explore/"><img src="docs/assets/explore.png" alt="Explore page: matching subjects across datasets with linked charts by modality, contrast and condition"></a><br><sub>Explore: build a cohort across datasets. Every chart filters the others.</sub></td>
   </tr>
 </table>
 

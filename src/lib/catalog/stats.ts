@@ -133,7 +133,8 @@ export function canonicalContrastSet(parts: string[]): string {
 // Cohort estimation ----------------------------------------------------------------------------
 
 export type Constraint =
-  | { dim: string; values: string[] }
+  /** `combine` overrides how the dimension combines several values, e.g. modalities chosen as alternatives. */
+  | { dim: string; values: string[]; combine?: 'all' | 'any' }
   /** Age range in years, [from, to). */
   | { dim: 'age'; range: [number, number] };
 
@@ -169,19 +170,36 @@ type Match =
  * group, the lower bound follows from the Fréchet inequality over a cover of the keys:
  * |A ∩ B| ≥ |A| + |B| − N.
  */
+const byMeasure = new WeakMap<StatRow[], Map<string, StatRow[]>>();
+
+/** A dataset's rows for one measure, cached because the estimator runs many times per dataset. */
+function rowsOf(rows: StatRow[], measure: string): StatRow[] {
+  let m = byMeasure.get(rows);
+  if (!m) byMeasure.set(rows, (m = new Map()));
+  let list = m.get(measure);
+  if (!list) m.set(measure, (list = rows.filter((r) => r.measure === measure)));
+  return list;
+}
+
+/** Dataset fields that list every value occurring in the data. */
+const EXHAUSTIVE = new Set(['modality', 'anatomy', 'vendor', 'field_strength', 'country']);
+
 export function estimate(ctx: EstimateContext, measure: string, constraints: Constraint[]): Estimate {
   const totalRow = ctx.rows.find((r) => r.measure === measure && Object.keys(r.by).length === 0);
   const N = totalRow ? totalRow.value : Infinity;
   const active = constraints.filter((c) => ('range' in c ? true : c.values.length > 0));
   if (!active.length) return { lo: totalRow ? N : 0, hi: N, total: N };
+  const dimInfo: Record<string, DimensionInfo> = { ...ctx.dims };
+  for (const c of active)
+    if ('values' in c && c.combine && dimInfo[c.dim]) dimInfo[c.dim] = { ...dimInfo[c.dim], combine: c.combine };
 
   const keysOf = (c: Constraint) =>
-    'range' in c || ctx.dims[c.dim]?.combine !== 'all' ? [c.dim] : c.values.map((v) => `${c.dim}:${v}`);
+    'range' in c || dimInfo[c.dim]?.combine !== 'all' ? [c.dim] : c.values.map((v) => `${c.dim}:${v}`);
   const allKeys = active.flatMap(keysOf);
   const atoms: Atom[] = allKeys.map((k) => ({ keys: [k], lo: 0, hi: N }));
   const single = (key: string) => atoms.find((a) => a.keys.length === 1 && a.keys[0] === key)!;
   const byDim = new Map(active.map((c) => [c.dim, c]));
-  const rows = ctx.rows.filter((r) => r.measure === measure);
+  const rows = rowsOf(ctx.rows, measure);
 
   // Facts from dataset.yaml: a value the dataset does not have at all means zero.
   for (const c of active) {
@@ -195,10 +213,14 @@ export function estimate(ctx: EstimateContext, measure: string, constraints: Con
       }
       continue;
     }
-    if (ctx.dims[c.dim]?.combine === 'all') {
+    if (dimInfo[c.dim]?.combine === 'all') {
       // Contrasts, modalities and tracers are always listed, so a missing one means the dataset has none.
       for (const v of c.values) if (!facet?.includes(v)) single(`${c.dim}:${v}`).hi = 0;
     } else if (facet && !c.values.some((v) => facet.includes(v))) single(c.dim).hi = 0;
+    // Every value the dataset lists is selected (e.g. a brain-only dataset, filtered for brain): all subjects match.
+    // Only for fields that list every value a subject can have. Conditions can leave out healthy controls.
+    else if (EXHAUSTIVE.has(c.dim) && facet?.length && facet.every((v) => c.values.includes(v)) && N !== Infinity)
+      single(c.dim).lo = N;
   }
 
   const matchEntry = (dim: string, value: string): Match => {
@@ -219,7 +241,7 @@ export function estimate(ctx: EstimateContext, measure: string, constraints: Con
       if (bin[1] <= c.range[0] || bin[0] >= c.range[1]) return { kind: 'miss' };
       return { kind: 'partial', keys: ['age'] };
     }
-    if (ctx.dims[dim]?.combine === 'all') {
+    if (dimInfo[dim]?.combine === 'all') {
       return c.values.includes(value) ? { kind: 'match', keys: [`${dim}:${value}`] } : { kind: 'skip' };
     }
     return c.values.includes(value) ? { kind: 'match', keys: [dim] } : { kind: 'miss' };
@@ -236,7 +258,7 @@ export function estimate(ctx: EstimateContext, measure: string, constraints: Con
 
   for (const [sig, groupRows] of groups) {
     const dims = sig.split(';');
-    const isPartition = dims.every((d) => ctx.dims[d]?.partition);
+    const isPartition = dims.every((d) => dimInfo[d]?.partition);
     const results = groupRows.map((r) => {
       const entries = Object.entries(r.by).map(([d, v]) => matchEntry(d, v));
       if (entries.some((e) => e.kind === 'skip')) return { row: r, kind: 'skip' as const, keys: [] as string[] };
@@ -250,7 +272,7 @@ export function estimate(ctx: EstimateContext, measure: string, constraints: Con
     if (!relevant.length) continue;
 
     // "All" dimensions give one atom per row: subjects with T1w, subjects with FLAIR.
-    if (dims.length === 1 && ctx.dims[dims[0]]?.combine === 'all' && dims[0] !== 'contrast_set') {
+    if (dims.length === 1 && dimInfo[dims[0]]?.combine === 'all' && dims[0] !== 'contrast_set') {
       for (const x of relevant) {
         if (x.kind !== 'match') continue;
         const a = single(x.keys[0]);
@@ -294,6 +316,12 @@ export function estimate(ctx: EstimateContext, measure: string, constraints: Con
           c.values.every((v) => listed.has(v) || (facet && !facet.includes(v)));
         if (complete) hi = matches.reduce((s, v) => s + v, 0);
       }
+      // One value asked per dimension and a row for exactly that combination: the row is the exact count.
+      const singleValued = dims.every((d) => {
+        const c = byDim.get(d === 'contrast_set' ? 'contrast' : d);
+        return c !== undefined && 'values' in c && (c.values.length === 1 || dimInfo[c.dim]?.combine === 'all');
+      });
+      if (singleValued && xs.length === 1 && xs[0].kind === 'match') hi = Math.min(hi, xs[0].row.value);
       atoms.push({ keys: k.split('|'), lo, hi: Math.min(hi, N) });
     }
   }

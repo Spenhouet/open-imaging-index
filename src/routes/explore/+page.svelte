@@ -1,298 +1,382 @@
 <script lang="ts">
-  import { datasetCount, licenses, vocab } from '#lib/catalog/meta.js';
-  import { onMount } from 'svelte';
+  import { onMount, untrack } from 'svelte';
   import { goto } from '$app/navigation';
-  import ArrowLeftRight from '@lucide/svelte/icons/arrow-left-right';
+  import ArrowRight from '@lucide/svelte/icons/arrow-right';
+  import Columns3 from '@lucide/svelte/icons/columns-3';
+  import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
+  import SlidersHorizontal from '@lucide/svelte/icons/sliders-horizontal';
+  import { licenses, vocab } from '#lib/catalog/meta.js';
+  import * as Sheet from '#lib/components/ui/sheet/index.js';
+  import CohortTable from '#lib/components/app/CohortTable.svelte';
+  import CopyButton from '#lib/components/app/CopyButton.svelte';
+  import CoverageGrid from '#lib/components/app/CoverageGrid.svelte';
+  import FilterPanel from '#lib/components/app/FilterPanel.svelte';
   import LegalNote from '#lib/components/app/LegalNote.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
-  import BarList from '#lib/components/charts/BarList.svelte';
-  import Columns from '#lib/components/charts/Columns.svelte';
+  import FacetBars from '#lib/components/charts/FacetBars.svelte';
   import {
-    ALL,
-    PIVOT_DIMS,
-    cellKey,
-    cellQuery,
-    pivot,
-    valueLabel,
-    valuesOf,
-    type Measure
-  } from '#lib/catalog/pivot.js';
-  import { tone } from '#lib/catalog/rules.js';
-  import { compact, formatNumber, label, modalityColor } from '#lib/catalog/vocab.js';
-  import { link } from '#lib/site.js';
+    CHARTS,
+    NEEDS,
+    breakdown,
+    coverage,
+    summarize,
+    toggle,
+    type Bar,
+    type ChartDef,
+    type Usability
+  } from '#lib/catalog/cohort.js';
+  import {
+    FACETS,
+    activeCount,
+    emptyFilters,
+    fromQuery,
+    makeSearch,
+    run,
+    toQuery,
+    type FilterState
+  } from '#lib/catalog/filter.js';
   import type { DatasetSummary } from '#lib/catalog/types.js';
+  import { compact, formatNumber, label, modalityColor } from '#lib/catalog/vocab.js';
+  import { SITE_URL, link } from '#lib/site.js';
   import { cn } from '#lib/utils.js';
 
   let { data } = $props();
-  // Loaded after the first paint, like the catalog. The page itself stays small.
-  let datasets = $state<DatasetSummary[]>([]);
+  const ov = $derived(data.overview);
+  const licenseNames = new Map(licenses.map((l) => [l.id, l.short_name ?? l.name]));
+
+  let datasets = $state.raw<DatasetSummary[]>([]);
   let loaded = $state(false);
-  const licenseNames = $derived(new Map(licenses.map((l) => [l.id, l.short_name ?? l.name])));
+  let filters = $state<FilterState>(emptyFilters());
+  let needs = $state<string[]>([]);
+  let picked = $state<string[]>([]);
+  let ready = false;
 
-  let rowDim = $state('contrast');
-  let colDim = $state<string>('rule:commercial_use');
-  let measure = $state<Measure>('subjects');
-
-  // URL parameters are read before the page writes its own state back to the URL.
-  let urlRead = $state(false);
+  // The URL carries the same filters as the catalog, plus the chosen uses and the shortlist.
   onMount(async () => {
     const p = new URLSearchParams(window.location.search);
-    if (PIVOT_DIMS.some((d) => d.id === p.get('rows'))) rowDim = p.get('rows')!;
-    if (p.get('cols') === 'none' || PIVOT_DIMS.some((d) => d.id === p.get('cols'))) colDim = p.get('cols')!;
-    if (p.get('measure') === 'datasets') measure = 'datasets';
-    urlRead = true;
+    filters = fromQuery(window.location.search);
+    needs = (p.get('need') ?? '').split(',').filter((n) => NEEDS.some((x) => x.id === n));
+    picked = (p.get('pick') ?? '').split(',').filter(Boolean);
+    ready = true;
     const res = await fetch(link('summaries.json'));
     if (res.ok) {
       datasets = await res.json();
       loaded = true;
     }
   });
+
+  const extra = $derived(
+    [needs.length ? `need=${needs.join(',')}` : '', picked.length ? `pick=${picked.join(',')}` : '']
+      .filter(Boolean)
+      .join('&')
+  );
+  const query = $derived.by(() => {
+    const base = toQuery(filters);
+    if (!extra) return base;
+    return base ? `${base}&${extra}` : `?${extra}`;
+  });
   $effect(() => {
-    const q = `?rows=${rowDim}&cols=${colDim}&measure=${measure}`;
-    if (urlRead && window.location.search !== q)
+    const q = query;
+    if (!untrack(() => ready)) return;
+    if (q !== window.location.search && !(q === '' && window.location.search === ''))
       goto(link('explore/') + q, { shallow: true, replace: true, reset: false });
   });
 
-  const table = $derived(pivot(datasets, rowDim, colDim === 'none' ? null : colDim, vocab));
-  const value = (c: { datasets: string[]; subjects: number } | undefined) =>
-    c ? (measure === 'datasets' ? c.datasets.length : c.subjects) : 0;
-  const max = $derived(Math.max(1, ...[...table.cells.values()].map(value)));
-
-  function cellHref(r: string, c: string): string | null {
-    const a = cellQuery(rowDim, r, vocab);
-    const b = colDim === 'none' ? {} : cellQuery(colDim, c, vocab);
-    if (!a || !b) return null;
-    const merged: Record<string, string> = { ...a };
-    for (const [k, v] of Object.entries(b)) merged[k] = merged[k] ? `${merged[k]},${v}` : v;
-    return link('') + '?' + new URLSearchParams(merged).toString().replace(/%2C/g, ',');
-  }
-
-  function swap() {
-    if (colDim === 'none') return;
-    [rowDim, colDim] = [colDim, rowDim];
-  }
-
-  // Overview charts.
-  const byModality = $derived.by(() => {
-    const m = new Map<string, number>();
-    for (const d of datasets) for (const v of d.facets.modality ?? []) m.set(v, (m.get(v) ?? 0) + 1);
-    return [...m]
-      .map(([k, v]) => ({ key: k, label: label(vocab, 'modality', k), value: v, color: modalityColor(k) }))
-      .sort((a, b) => b.value - a.value);
-  });
-  const subjectsByContrast = $derived.by(() => {
-    const m = new Map<string, number>();
-    for (const d of datasets)
-      for (const [k, v] of valuesOf(d, 'contrast', vocab)) if (v !== undefined) m.set(k, (m.get(k) ?? 0) + v);
-    return [...m]
-      .map(([k, v]) => ({ key: k, label: `${k}, ${label(vocab, 'contrast', k)}`, value: v }))
-      .sort((a, b) => b.value - a.value)
-      .slice(0, 12);
-  });
-  const byYear = $derived.by(() => {
-    const years = datasets.map((d) => d.meta.year);
-    if (!years.length) return [];
-    const lo = Math.min(...years);
-    const hi = Math.max(...years);
-    const out = [];
-    for (let y = lo; y <= hi; y++)
-      out.push({ key: String(y), label: `'${String(y).slice(2)}`, value: years.filter((x) => x === y).length });
-    return out;
-  });
-  const ruleSummary = $derived(
-    ['commercial_use', 'model_training', 'redistribute_original', 'share_model_weights', 'signed_agreement'].map(
-      (id) => {
-        const rule = vocab.licenseRules.rules.find((r) => r.id === id)!;
-        const counts = { good: 0, mixed: 0, unknown: 0, bad: 0 };
-        for (const d of datasets) counts[tone(d.rules[id], rule.good)]++;
-        return { rule, counts };
+  const search = $derived(makeSearch(datasets));
+  const summary = $derived(loaded ? summarize(datasets, search, filters, vocab, needs) : null);
+  const facetCounts = $derived(loaded ? run(datasets, search, filters, vocab).facetCounts : {});
+  // Charts recompute one at a time between frames, so a click updates the headline at once and the page
+  // never freezes, even with thousands of datasets. Older charts stay visible until their update arrives.
+  let charts = $state<{ chart: ChartDef; bars: Bar[] }[]>([]);
+  let pending = $state(false);
+  let run_id = 0;
+  $effect(() => {
+    if (!loaded) return;
+    const f = $state.snapshot(filters) as FilterState;
+    const id = ++run_id;
+    pending = true;
+    (async () => {
+      for (const [i, chart] of CHARTS.entries()) {
+        await new Promise((r) => setTimeout(r));
+        if (id !== run_id) return;
+        const bars = breakdown(datasets, search, f, vocab, chart);
+        if (id !== run_id) return;
+        charts[i] = { chart, bars };
       }
-    )
-  );
-  const toneColor = { good: 'var(--good)', mixed: 'var(--mixed)', unknown: 'var(--unknown)', bad: 'var(--bad)' };
-  const toneLabel = { good: 'In your favor', mixed: 'Conditional', unknown: 'Not stated', bad: 'Restricts you' };
-  const totalSubjects = $derived(datasets.reduce((s, d) => s + (d.totals.subjects ?? 0), 0));
+      pending = false;
+    })();
+  });
+  // Coverage ignores the filters, so it is computed once, after the first paint.
+  let gaps = $state<ReturnType<typeof coverage> | null>(null);
+  $effect(() => {
+    if (!loaded || gaps) return;
+    const all = datasets;
+    setTimeout(() => (gaps = coverage(all, vocab)), 50);
+  });
+  const emptyCounts = Object.fromEntries(FACETS.map((f) => [f.id, new Map<string, number>()]));
+
+  function keyLabel(chart: ChartDef, key: string) {
+    if (chart.kind === 'age') return key === '90' ? '90+' : `${key}-${Number(key) + 9}`;
+    if (chart.kind === 'contrast') return `${label(vocab, 'contrast', key)} (${key})`;
+    if (chart.kind === 'sex') return label(vocab, 'sex', key);
+    return label(vocab, chart.facet === 'access' ? 'access' : chart.id, key);
+  }
+  function keyColor(chart: ChartDef, key: string) {
+    if (chart.id === 'modality') return modalityColor(key);
+    if (chart.kind === 'sex') return key === 'female' ? 'var(--series-1)' : 'var(--series-2)';
+    return undefined;
+  }
+
+  const range = (r: { lo: number; hi: number }) =>
+    r.lo === r.hi ? formatNumber(r.lo) : `${compact(r.lo)} to ${compact(r.hi)}`;
+
+  const useInfo: { id: Usability; label: string; color: string; text: string }[] = [
+    {
+      id: 'usable',
+      label: 'Fits your use',
+      color: 'var(--good)',
+      text: 'Every chosen use is allowed by our reading of the license.'
+    },
+    {
+      id: 'unclear',
+      label: 'Check the terms',
+      color: 'var(--mixed)',
+      text: 'Conditional, or the license is silent on a chosen use.'
+    },
+    {
+      id: 'blocked',
+      label: 'Not allowed',
+      color: 'var(--bad)',
+      text: 'The license rules out at least one chosen use.'
+    }
+  ];
+
+  function flip(list: string[], id: string) {
+    return list.includes(id) ? list.filter((x) => x !== id) : [...list, id];
+  }
+  const reset = () => (filters = { ...emptyFilters(), q: filters.q });
+  let sheetOpen = $state(false);
 </script>
 
 <Seo
-  title="Explore medical imaging datasets"
-  description="Cross-tabulate {datasetCount} medical imaging datasets by contrast, condition, age, sex, scanner and license terms."
+  title="Explore: build a cohort across medical imaging datasets"
+  description="Combine filters across all medical imaging datasets in the index: matching subjects, contrasts, conditions, age, sex, scanners and countries, and which datasets fit your intended use."
   path="explore/"
 />
 
-<div class="mx-auto max-w-7xl px-4 pt-12 md:px-6">
+{#snippet filterPanel()}
+  <FilterPanel
+    bind:filters
+    {vocab}
+    facetCounts={loaded ? facetCounts : emptyCounts}
+    countsReady={loaded}
+    allFacetValues={ov.facetOptions}
+    contrastOptions={ov.contrastOptions}
+    {licenseNames}
+    onReset={reset}
+  />
+{/snippet}
+
+<div class="mx-auto max-w-7xl px-4 pt-10 md:px-6">
   <div class="max-w-3xl">
     <h1 class="text-3xl font-semibold tracking-tight md:text-4xl">Explore</h1>
-    <p class="mt-3 text-lg text-muted-foreground">
-      Combine any two attributes to see where the data is. Click a cell to list the datasets behind it.
+    <p class="mt-3 text-lg text-pretty text-muted-foreground">
+      Build a cohort across all datasets. Every chart filters the others, and the filters are shared with the catalog.
     </p>
   </div>
 
-  <section class="mt-8 surface p-5 md:p-6" aria-labelledby="pivot-title">
-    <h2 id="pivot-title" class="sr-only">Cross table</h2>
-    <div class="flex flex-wrap items-end gap-3">
-      <label class="text-xs font-medium text-muted-foreground">
-        Rows
-        <select
-          bind:value={rowDim}
-          class="mt-1 block h-9 rounded-lg border border-border bg-card px-2 text-sm text-foreground"
-        >
-          {#each PIVOT_DIMS as d (d.id)}<option value={d.id}>{d.label}</option>{/each}
-        </select>
-      </label>
-      <button
-        type="button"
-        onclick={swap}
-        class="mb-0.5 inline-flex size-8 items-center justify-center rounded-md text-muted-foreground hover:bg-accent hover:text-foreground"
-        aria-label="Swap rows and columns"
-        title="Swap rows and columns"><ArrowLeftRight class="size-4" /></button
-      >
-      <label class="text-xs font-medium text-muted-foreground">
-        Columns
-        <select
-          bind:value={colDim}
-          class="mt-1 block h-9 rounded-lg border border-border bg-card px-2 text-sm text-foreground"
-        >
-          <option value="none">Nothing (totals)</option>
-          {#each PIVOT_DIMS.filter((d) => d.id !== rowDim) as d (d.id)}<option value={d.id}>{d.label}</option>{/each}
-        </select>
-      </label>
-      <div class="text-xs font-medium text-muted-foreground">
-        Count
-        <div class="mt-1 inline-flex h-9 rounded-lg bg-muted p-0.5" role="group">
-          {#each [['subjects', 'Subjects'], ['datasets', 'Datasets']] as [id, text] (id)}
-            <button
-              type="button"
-              aria-pressed={measure === id}
-              class={cn(
-                'rounded-md px-3 text-sm font-medium',
-                measure === id ? 'bg-card text-foreground shadow-xs' : 'text-muted-foreground'
-              )}
-              onclick={() => (measure = id as Measure)}>{text}</button
-            >
-          {/each}
+  <div class="mt-8 grid gap-8 lg:grid-cols-[18rem_1fr]">
+    <aside class="hidden lg:block">
+      <div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 pb-8">{@render filterPanel()}</div>
+    </aside>
+
+    <div class="min-w-0 space-y-6">
+      <div class="flex flex-wrap items-center gap-2 lg:hidden">
+        <Sheet.Root bind:open={sheetOpen}>
+          <Sheet.Trigger
+            class="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-card px-3 text-sm font-medium"
+          >
+            <SlidersHorizontal class="size-4" /> Filters
+            {#if activeCount(filters)}<span
+                class="rounded-full bg-primary px-1.5 text-xs text-primary-foreground tabular"
+                >{activeCount(filters)}</span
+              >{/if}
+          </Sheet.Trigger>
+          <Sheet.Content side="left" class="w-[22rem] max-w-[90vw] overflow-y-auto p-5">
+            <Sheet.Title class="sr-only">Filters</Sheet.Title>
+            {@render filterPanel()}
+          </Sheet.Content>
+        </Sheet.Root>
+      </div>
+
+      {#if !summary}
+        <div class="grid gap-5 md:grid-cols-2" aria-label="Loading">
+          {#each { length: 4 } as _, i (i)}<div class="h-56 animate-pulse surface"></div>{/each}
         </div>
-      </div>
-    </div>
-
-    {#if !loaded}
-      <div class="mt-5 h-72 animate-pulse rounded-lg bg-muted" aria-label="Loading"></div>
-    {:else}
-      <div class="mt-5 overflow-x-auto">
-        <table class="w-full border-separate border-spacing-[2px] text-sm">
-          <thead>
-            <tr>
-              <th class="min-w-40 px-2 py-2 text-left text-xs font-medium text-muted-foreground">
-                {PIVOT_DIMS.find((d) => d.id === rowDim)?.label}
-                {#if colDim !== 'none'}<span class="font-normal">
-                    by {PIVOT_DIMS.find((d) => d.id === colDim)?.label}</span
-                  >{/if}
-              </th>
-              {#each table.cols as c (c)}
-                <th class="min-w-20 px-2 py-2 text-right text-xs font-medium text-muted-foreground"
-                  >{valueLabel(vocab, colDim, c, licenseNames)}</th
+      {:else}
+        <section class="surface p-5 md:p-6" aria-labelledby="cohort-title">
+          <div class="flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <h2 id="cohort-title" class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                Matching subjects
+              </h2>
+              <div class="mt-1 text-4xl font-semibold tracking-tight tabular md:text-5xl">{range(summary.total)}</div>
+              <p class="mt-2 text-sm text-muted-foreground">
+                across <span class="font-medium text-foreground">{summary.datasets.length}</span>
+                {summary.datasets.length === 1 ? 'dataset' : 'datasets'}{#if summary.unknown}, plus subjects in
+                  {summary.unknown}
+                  {summary.unknown === 1 ? 'dataset' : 'datasets'} that report no count{/if}
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {#if activeCount(filters)}
+                <button
+                  type="button"
+                  class="inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-card px-3 text-sm font-medium hover:bg-accent"
+                  onclick={reset}><RotateCcw class="size-3.5" /> Reset</button
                 >
-              {/each}
-            </tr>
-          </thead>
-          <tbody>
-            {#each table.rows as r (r)}
-              <tr>
-                <th class="px-2 py-1.5 text-left font-medium">
-                  {valueLabel(vocab, rowDim, r, licenseNames)}
-                  {#if rowDim === 'contrast'}<span class="ml-1 font-mono text-xs font-normal text-muted-foreground"
-                      >{r}</span
-                    >{/if}
-                </th>
-                {#each table.cols as c (c)}
-                  {@const cell = table.cells.get(cellKey(r, c))}
-                  {@const v = value(cell)}
-                  {@const href = cell ? cellHref(r, c) : null}
-                  <td class="p-0">
-                    {#if cell}
-                      <svelte:element
-                        this={href ? 'a' : 'div'}
-                        href={href ?? undefined}
-                        class={cn(
-                          'block rounded-[4px] bg-[color-mix(in_oklab,var(--series-1)_var(--a),transparent)] px-2 py-1.5 text-right tabular',
-                          href && 'transition-shadow hover:ring-2 hover:ring-primary/50',
-                          v / max > 0.55 ? 'text-white' : 'text-foreground'
-                        )}
-                        style="--a: {Math.round(8 + (v / max) * 82)}%"
-                        title="{cell.datasets.length} datasets{measure === 'subjects'
-                          ? `, ${formatNumber(cell.subjects)} subjects reported`
-                          : ''}{cell.unknown ? `, ${cell.unknown} without a count` : ''}"
-                      >
-                        {#if measure === 'subjects' && cell.subjects === 0 && cell.unknown}<span
-                            class="text-muted-foreground">?</span
-                          >{:else}{measure === 'datasets'
-                            ? v
-                            : compact(v)}{#if measure === 'subjects' && cell.unknown}<sup
-                              class="ml-0.5 text-[10px] opacity-70">+{cell.unknown}</sup
-                            >{/if}{/if}
-                      </svelte:element>
-                    {:else}
-                      <div class="px-2 py-1.5 text-right text-muted-foreground/40">·</div>
-                    {/if}
-                  </td>
-                {/each}
-              </tr>
-            {/each}
-          </tbody>
-        </table>
-      </div>
-    {/if}
-    <p class="mt-4 max-w-3xl text-xs text-muted-foreground">
-      Subject counts add up the numbers each dataset reports. Where datasets have a value but no count for it, the cell
-      shows <sup>+n</sup> for them, or <span class="font-medium">?</span> when no dataset reports a count. Subjects can appear
-      in several rows of overlapping attributes like contrast or condition, and combinations of two attributes count only
-      where a dataset reports them together.
-    </p>
-  </section>
+              {/if}
+              <CopyButton text="{SITE_URL}/explore/{query}" label="Copy link" />
+              <a
+                href={link('') + toQuery(filters)}
+                class="inline-flex h-9 items-center gap-1.5 rounded-lg bg-primary px-3 text-sm font-medium text-primary-foreground hover:opacity-90"
+                >Show in catalog <ArrowRight class="size-4" /></a
+              >
+            </div>
+          </div>
+          <p class="mt-4 text-xs text-muted-foreground">
+            A range means some datasets only report totals per attribute, so the exact overlap is unknown. Datasets can
+            share subjects, so the sum is an upper view of the pool.
+          </p>
+        </section>
 
-  <div class="mt-8 grid gap-5 md:grid-cols-2">
-    <section class="surface p-5">
-      <h2 class="text-sm font-semibold">License terms across datasets</h2>
-      <LegalNote variant="inline" class="mt-0.5" />
-      <ul class="mt-4 space-y-4">
-        {#each ruleSummary as { rule, counts } (rule.id)}
-          <li>
-            <div class="text-sm">{rule.label}</div>
-            <div class="mt-1.5 flex h-3 gap-[2px] overflow-hidden rounded-[4px]">
-              {#each Object.entries(counts) as [k, n] (k)}
-                {#if n}<div
+        <section class="surface p-5 md:p-6" aria-labelledby="use-title">
+          <h2 id="use-title" class="text-sm font-semibold">What do you want to do with the data?</h2>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {#each NEEDS as n (n.id)}
+              {@const on = needs.includes(n.id)}
+              <button
+                type="button"
+                aria-pressed={on}
+                class={cn(
+                  'rounded-full border px-3 py-1 text-sm transition-colors',
+                  on
+                    ? 'border-primary bg-primary text-primary-foreground'
+                    : 'border-border bg-card hover:border-primary/40'
+                )}
+                onclick={() => (needs = flip(needs, n.id))}>{n.label}</button
+              >
+            {/each}
+          </div>
+          {#if needs.length}
+            {@const sum = useInfo.reduce((s, u) => s + summary.byUse[u.id].range.hi, 0) || 1}
+            <div class="mt-5 flex h-3 gap-[2px] overflow-hidden rounded-[4px]" aria-hidden="true">
+              {#each useInfo as u (u.id)}
+                {#if summary.byUse[u.id].range.hi}
+                  <div
                     class="h-full w-(--w) bg-(--c)"
-                    style="--w: {(n / datasets.length) * 100}%; --c: {toneColor[k as keyof typeof toneColor]}"
-                    title="{toneLabel[k as keyof typeof toneLabel]}: {n}"
-                  ></div>{/if}
+                    style="--w: {(summary.byUse[u.id].range.hi / sum) * 100}%; --c: {u.color}"
+                  ></div>
+                {/if}
               {/each}
             </div>
-          </li>
-        {/each}
-      </ul>
-      <ul class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-        {#each Object.entries(toneLabel) as [k, l] (k)}
-          <li class="flex items-center gap-1.5">
-            <span class="size-2.5 rounded-full bg-(--c)" style="--c: {toneColor[k as keyof typeof toneColor]}"
-            ></span>{l}
-          </li>
-        {/each}
-      </ul>
-    </section>
-    <section class="surface p-5">
-      <h2 class="text-sm font-semibold">Datasets by modality</h2>
-      <div class="mt-4"><BarList items={byModality} unit="datasets" /></div>
-    </section>
-    <section class="surface p-5">
-      <h2 class="text-sm font-semibold">Subjects per contrast</h2>
-      <p class="mt-0.5 text-xs text-muted-foreground">
-        Summed over all datasets, {compact(totalSubjects)} subjects in total
-      </p>
-      <div class="mt-4"><BarList items={subjectsByContrast} /></div>
-    </section>
-    <section class="surface p-5">
-      <h2 class="text-sm font-semibold">First release year</h2>
-      <div class="mt-4"><Columns items={byYear} unit="datasets" /></div>
-    </section>
+            <dl class="mt-4 grid gap-3 sm:grid-cols-3">
+              {#each useInfo as u (u.id)}
+                <div>
+                  <dt class="flex items-center gap-1.5 text-sm font-medium">
+                    <span class="size-2.5 rounded-full bg-(--c)" style="--c: {u.color}"></span>{u.label}
+                  </dt>
+                  <dd class="mt-0.5 text-lg font-semibold tabular">{range(summary.byUse[u.id].range)}</dd>
+                  <dd class="text-xs text-muted-foreground">
+                    subjects in {summary.byUse[u.id].datasets}
+                    {summary.byUse[u.id].datasets === 1
+                      ? 'dataset'
+                      : 'datasets'}{#if summary.byUse[u.id].unknown}{` (${summary.byUse[u.id].unknown} without a count)`}{/if}.
+                    {u.text}
+                  </dd>
+                </div>
+              {/each}
+            </dl>
+          {:else}
+            <p class="mt-3 text-sm text-muted-foreground">
+              Pick one or more uses to split the cohort by what the licenses allow.
+            </p>
+          {/if}
+          <LegalNote variant="inline" class="mt-4" />
+        </section>
+
+        <section aria-label="Breakdowns" aria-busy={pending} class={cn('transition-opacity', pending && 'opacity-80')}>
+          <div class="grid gap-5 md:grid-cols-2">
+            {#each charts.filter(Boolean) as { chart, bars } (chart.id)}
+              {#if bars.length > 0}
+                <div class="surface p-4">
+                  <div class="flex items-baseline justify-between gap-2 px-2">
+                    <h2 class="text-sm font-semibold">{chart.label}</h2>
+                    <span class="text-xs text-muted-foreground">subjects, in datasets</span>
+                  </div>
+                  <div class="mt-3">
+                    <FacetBars
+                      {bars}
+                      labelOf={(k) => keyLabel(chart, k)}
+                      colorOf={(k) => keyColor(chart, k)}
+                      onToggle={(k) => (filters = toggle(filters, chart, k))}
+                      limit={chart.kind === 'age' ? 10 : 7}
+                    />
+                  </div>
+                </div>
+              {/if}
+            {/each}
+          </div>
+          <p class="mt-3 text-xs text-muted-foreground">
+            Solid bars are certain counts, light bars show how many more subjects there could be. Click a bar to filter
+            by it.
+          </p>
+        </section>
+
+        <section class="surface p-4 md:p-5" aria-labelledby="table-title">
+          <div class="flex flex-wrap items-center justify-between gap-3 px-1">
+            <h2 id="table-title" class="text-sm font-semibold">Datasets in this cohort</h2>
+            <div class="flex items-center gap-2 text-sm">
+              {#if picked.length}
+                <button type="button" class="text-muted-foreground hover:text-foreground" onclick={() => (picked = [])}
+                  >Clear shortlist</button
+                >
+              {/if}
+              <a
+                href={link('compare/') + (picked.length ? `?ids=${picked.join(',')}` : '')}
+                aria-disabled={picked.length < 2}
+                class={cn(
+                  'inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-card px-3 font-medium hover:bg-accent',
+                  picked.length < 2 && 'pointer-events-none opacity-50'
+                )}><Columns3 class="size-4" /> Compare {picked.length ? `(${picked.length})` : ''}</a
+              >
+            </div>
+          </div>
+          <p class="mt-1 px-1 text-xs text-muted-foreground">
+            Tick datasets to put them on a shortlist, then compare them side by side.
+          </p>
+          <div class="mt-3">
+            <CohortTable
+              rows={summary.datasets}
+              {vocab}
+              totalHi={summary.total.hi}
+              {picked}
+              hasNeeds={needs.length > 0}
+              onPick={(id) => (picked = flip(picked, id))}
+            />
+          </div>
+        </section>
+
+        {#if gaps}
+          <section class="surface p-4 md:p-5" aria-labelledby="gaps-title">
+            <h2 id="gaps-title" class="px-1 text-sm font-semibold">Coverage across the whole index</h2>
+            <p class="mt-1 px-1 text-xs text-muted-foreground">
+              Which conditions are covered in which modality, regardless of the filters above.
+            </p>
+            <div class="mt-4"><CoverageGrid data={gaps} {vocab} /></div>
+          </section>
+        {/if}
+      {/if}
+    </div>
   </div>
 </div>
