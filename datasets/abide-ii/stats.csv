@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,1114,indi-abide2,,"1114 datasets in 19 cross-sectional collections; the paper describes 1,044 from the 17 collections received by June 2016"
+subjects,condition=autism,521,indi-abide2,,
+subjects,condition=healthy,593,indi-abide2,,controls
+subjects,contrast=T1w,1044,dimartino2017,Table 1,"high-resolution MRI, 487 ASD + 557 controls, 17 collections in the paper"
+subjects,contrast=bold,1043,dimartino2017,Data Records (MRI data),"every individual except one in IP_1; Table 1 rows give 487 ASD + 556 controls, its printed control total is 523"
+subjects,contrast=dwi,284,dimartino2017,Table 1,"155 ASD + 129 controls in six collections"
+subjects,condition=autism;contrast=T1w,487,dimartino2017,Table 1,
+subjects,condition=healthy;contrast=T1w,557,dimartino2017,Table 1,
+subjects,condition=autism;contrast=bold,487,dimartino2017,Table 1,
+subjects,condition=autism;contrast=dwi,155,dimartino2017,Table 1,
+subjects,condition=healthy;contrast=dwi,129,dimartino2017,Table 1,
+subjects,field_strength=1.5,56,dimartino2017,Table 1,"IP_1 is the only 1.5 T collection, 22 ASD + 34 controls with high-resolution MRI"
+subjects,country=NL,54,indi-abide2,EMC_1 profile,Erasmus University Medical Center Rotterdam
+subjects,country=CH,37,indi-abide2,ETH_1 profile,ETH Zurich
+subjects,country=FR,56,indi-abide2,IP_1 profile,Institut Pasteur and Robert Debre Hospital
+subjects,country=BE,28,indi-abide2,KUL_3 profile,Katholieke Universiteit Leuven
+subjects,country=IE,42,indi-abide2,TCD_1 profile,Trinity Centre for Health Sciences
+age_median,,11.7,dimartino2017,Figure 1c,median across the 17 collections in the paper
+age_min,,5,indi-abide2,,
+age_max,,64,indi-abide2,,
