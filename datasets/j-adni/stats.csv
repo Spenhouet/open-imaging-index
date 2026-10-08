@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,537,nbdc-hum0043,Research overview,all participants enrolled in the longitudinal study; the release note says data of all 537 were released
+subjects,condition=healthy,154,nbdc-hum0043,Research overview,healthy elderly controls
+subjects,condition=mci,234,nbdc-hum0043,Research overview,late amnestic MCI
+subjects,condition=alzheimers,149,nbdc-hum0043,Research overview,mild Alzheimer's disease

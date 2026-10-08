@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: j-adni
+name: J-ADNI
+full_name: Japanese Alzheimer's Disease Neuroimaging Initiative
+summary: >-
+  Japanese multicentre longitudinal study of 537 older adults with normal cognition, late amnestic MCI or mild
+  Alzheimer's dementia, with structural MRI (1.5 T and 3 T), FDG and amyloid PET (PiB or BF-227), CSF, blood and cognitive data, run with
+  protocols harmonised to ADNI.
+homepage: https://humandbs.dbcls.jp/en/hum0043-latest
+# Year of the first release on the NBDC Human Database (hum0043-v1, 29 January 2016).
+year: 2016
+status: active
+creators:
+  - name: J-ADNI study group (PI Takeshi Iwatsubo, University of Tokyo)
+    url: https://humandbs.dbcls.jp/en/hum0043-latest
+species: human
+modalities: [MR, PT]
+contrasts: [T1w]
+tracers: [fdg, pib, bf227]
+anatomy: [brain]
+conditions: [healthy, mci, alzheimers]
+tasks: [classification, regression, longitudinal]
+formats: [NIfTI, ANALYZE]
+countries: [JP]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+size_gb: 310
+access:
+  type: application
+  url: https://humandbs.dbcls.jp/en/dataset/JGAD000051
+licenses:
+  - license: LicenseRef-NBDC-Controlled-Access
+    note: Dataset JGAD000051 is controlled-access with Type I (standard) security.
+citation:
+  text: >-
+    State the dataset accession number (JGAD000051) and acknowledge the J-ADNI project and the NBDC Human Database as
+    the NBDC guidelines require. Cohort reference: Iwatsubo T, et al. Japanese and North American Alzheimer's Disease
+    Neuroimaging Initiative studies: Harmonization for international trials. Alzheimer's & Dementia 14(8):1077-1087
+    (2018). doi:10.1016/j.jalz.2018.03.009
+sources:
+  nbdc-hum0043:
+    title: NBDC Human Database, research hum0043 (J-ADNI), overview and release note
+    url: https://humandbs.dbcls.jp/en/hum0043-latest
+    kind: website
+  nbdc-jgad000051:
+    title: NBDC Human Database, dataset JGAD000051
+    url: https://humandbs.dbcls.jp/en/dataset/JGAD000051
+    kind: website
+  iwatsubo2018:
+    title: Iwatsubo T et al. 2018, Japanese and North American ADNI studies, Alzheimer's & Dementia (abstract)
+    url: https://doi.org/10.1016/j.jalz.2018.03.009
+    kind: paper
+  fujishima2017:
+    title: Fujishima M et al. 2017, Sample size estimation from J-ADNI serial MRI, Journal of Alzheimer's Disease
+    url: https://doi.org/10.3233/JAD-160621
+    kind: paper
+  kasuga2026:
+    title: Kasuga K et al. 2026, Plasma p-tau217 in the J-ADNI cohort, Journal of Prevention of Alzheimer's Disease
+    url: https://doi.org/10.1016/j.tjpad.2026.100502
+    kind: paper
+  okada2020:
+    title: Okada Y et al. 2020, PiB visual interpretation in J-ADNI, Annals of Nuclear Medicine
+    url: https://doi.org/10.1007/s12149-019-01420-2
+    kind: paper
+  iwatsubo2022:
+    title: Iwatsubo T 2022, Molecular pathogenesis and disease-modifying therapies of Alzheimer's disease, JMA Journal
+    url: https://doi.org/10.31662/jmaj.2022-0079
+    kind: paper
+  jadni-file-list:
+    title: J-ADNI downloadable files, file list (open file on NBDC)
+    url: https://humandbs.dbcls.jp/files/hum0043/File_list_J-ADNI.pdf
+    kind: data
+  jadni-mri-qc:
+    title: J-ADNI MRI core data QC procedure, version 1.1 (Japanese, open file on NBDC)
+    url: https://humandbs.dbcls.jp/files/hum0043/J-ADNI_MRIQC_Ver1.1.pdf
+    kind: data
+related: [adni]
+keywords: [Alzheimer's disease, MCI, amyloid PET, FDG PET, longitudinal, brain MRI, Japan]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

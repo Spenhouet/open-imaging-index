@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NBDC-Controlled-Access
+name: NBDC Guidelines for Human Data Sharing, controlled-access data
+short_name: NBDC controlled access
+url: https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines
+version: 'NBDC Guidelines for Human Data Sharing ver. 9, April 1, 2024'
+summary: >-
+  Controlled-access data in the Japanese NBDC Human Database go to an approved principal investigator and collaborators
+  in the same organisation, for the purpose stated in the application, after local ethics approval and a security
+  checklist. No redistribution, no re-identification, yearly use reports, and deletion when the use ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: The use is limited to academic research or research that contributes to the improvement of public health.
+    note: Researchers at private-sector companies may apply and users may acquire intellectual property rights from
+      their results, but the use must be academic research or research that improves public health, and only for the
+      purpose stated in the approved application.
+  model_training:
+    value: unspecified
+    note: The guidelines do not mention machine learning. Any training must fall within the purpose stated in the
+      approved application.
+  derivatives:
+    value: conditional
+    quote: With regard to keeping secondary data (e.g., results of calculations or statistical analyses based on
+      controlled-access data) or distribution of processed data with no or very low personal identifiability or primary
+      data recoverability, see the section on the procedure for using controlled-access data
+    note: Derived data may be created during the approved use. Keeping secondary data after the use ends needs an
+      application, and all data that can restore the original must be deleted.
+  publication:
+    value: conditional
+    quote: Data users can freely make the result of the study for which data from the NBDC Human Database are used
+      public, as long as the responsibilities of data users and the limitation added for each data set are fulfilled.
+    note: Publications must state the dataset accession number and acknowledge the original project.
+  redistribute_original:
+    value: 'no'
+    quote: Redistribution of data is prohibited.
+  redistribute_derivatives:
+    value: conditional
+    quote: (Distribution of processed data with no or very low personal identifiability or primary data recoverability
+      does not constitute redistribution subject to prohibition. However, in principle, an application for retention of
+      secondary data or distribution of processed data is required.)
+    note: Only processed data that cannot identify people or restore the original data, and in principle only after an
+      application to the Human Data Review Board Office.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: When the research results including data downloaded from the NBDC Human Databases (the Japanese
+      Genotype-phenotype Archive, the NBDC Human data Archive, and so on) are made public in a publication or a
+      presentation, the data user must state the accession number of the data set used.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: The Human Data Review Board decides whether access to the controlled-access data may be granted.
+    note: The application needs a DDBJ account, an organisational e-mail address, the ethics approval and a completed
+      security checklist.
+  ethics_approval:
+    value: 'yes'
+    quote: before carrying out any medical or biological research involving human subjects using data obtained from the
+      NBDC Human Database, the data user must prepare the research protocol, go through a review by an Ethical Review
+      Committee of his/her affiliated or an equivalent organization, and obtain approval therefrom and authorization
+      from the head of his/her affiliated organization.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users report on their data use every year and when it ends, but do not have to return results or derived
+      data.
+  delete_after_use:
+    value: 'yes'
+    quote: When finished with using data, the data user must delete all data obtained from the NBDC Human Database
+  no_reidentification:
+    value: 'yes'
+    quote: Identification of individuals is prohibited.
+  geographic_restriction:
+    value: 'no'
+    note: The guidelines name no countries where the data may be used, and approved users of J-ADNI include
+      organisations outside Japan. Use must follow the Japanese ethical guidelines, and entrusting work to a contractor
+      outside Japan needs extra ethical procedures.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

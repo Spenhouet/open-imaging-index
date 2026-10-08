@@ -2,6 +2,7 @@
 terms:
   - { id: fdg, label: '[18F]FDG', synonyms: [FDG, fluorodeoxyglucose] }
   - { id: pib, label: '[11C]PiB', synonyms: [PiB, Pittsburgh compound B], description: Amyloid tracer }
+  - { id: bf227, label: '[11C]BF-227', synonyms: [BF-227, BF227], description: Amyloid tracer }
   - { id: florbetapir, label: '[18F]florbetapir', synonyms: [AV-45, Amyvid], description: Amyloid tracer }
   - { id: florbetaben, label: '[18F]florbetaben', synonyms: [FBB, Neuraceq], description: Amyloid tracer }
   - { id: flutemetamol, label: '[18F]flutemetamol', synonyms: [Vizamyl], description: Amyloid tracer }
