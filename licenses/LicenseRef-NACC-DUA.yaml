@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NACC-DUA
+name: NACC Data Use Agreement
+short_name: NACC DUA
+url: https://files.alz.washington.edu/documentation/nacc_data_use_agreement.pdf
+version: 'Data Use Agreement PDF, created 27 May 2022'
+summary: >-
+  Accepted with a NACC data request, for scientific investigation, teaching or planning clinical research. No
+  distribution to anyone outside the named analysis team, no re-identification of participants or centers, a fixed
+  acknowledgement text and a brief NACC administrative review of every manuscript before journal submission.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: If I receive an unrestricted data set for non-commercial entities and non-commercial research projects, I
+      understand that I am strictly prohibited from sharing these data with collaborators associated with commercial
+      companies for use by that company.
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to scientific investigation,
+      teaching or planning clinical research, and its wording implies that data sets for commercial entities differ
+      from the unrestricted set, but those terms are not published.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: I will acknowledge the NACC grant and Center support by including the following statement in the
+      acknowledgments section of the manuscript
+    note: With the NACC acknowledgement text and after the NACC administrative review of the manuscript.
+  redistribute_original:
+    value: 'no'
+    quote: I understand that distributing these data in any manner to a third party is strictly prohibited, and
+      therefore I will not distribute these data beyond the uses outlined in this agreement.
+    note: Collaborators and co-authors on the analysis named in the data request are not third parties.
+  redistribute_derivatives:
+    value: unspecified
+    quote: I understand that distributing these data in any manner to a third party is strictly prohibited, and
+      therefore I will not distribute these data beyond the uses outlined in this agreement.
+    note: The agreement does not say whether derived data count as "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will acknowledge the NACC grant and Center support by including the following statement in the
+      acknowledgments section of the manuscript
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: By clicking "Submit" below, I agree to the terms of this Data Use Agreement.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'yes'
+    quote: I will submit my manuscript to the NACC Publications System for the required brief administrative review and
+      for tracking purposes prior to submitting my manuscript to a journal.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users must answer NACC requests for updates on the status of their analysis, but need not return results.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact, any of the NACC subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+  note: The agreement refers to an unrestricted data set for non-commercial entities, which implies other terms for
+    commercial entities. No commercial terms are published.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
