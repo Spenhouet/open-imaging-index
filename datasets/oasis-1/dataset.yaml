@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oasis-1
+name: OASIS-1
+full_name: 'OASIS-1: Cross-Sectional MRI Data in Young, Middle Aged, Nondemented and Demented Older Adults'
+summary: >-
+  Cross-sectional T1-weighted brain MRI of 416 right-handed adults aged 18 to 96, 100 of them with very mild to
+  moderate Alzheimer's disease, with 3 or 4 repeated scans per session, averaged and atlas-registered images and
+  tissue segmentations.
+homepage: https://sites.wustl.edu/oasisbrains/home/oasis-1/
+doi: 10.1162/jocn.2007.19.9.1498
+year: 2007
+status: active
+creators:
+  - name: Washington University in St. Louis
+    url: https://sites.wustl.edu/oasisbrains/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy, alzheimers]
+tasks: [classification, regression, segmentation]
+formats: [ANALYZE]
+countries: [US]
+size_gb: 15.8
+access:
+  type: open
+  url: https://sites.wustl.edu/oasisbrains/home/oasis-1/
+licenses:
+  - license: LicenseRef-OASIS-DUA
+    note: >-
+      The OASIS access page states that all OASIS data are distributed under these terms, but the OASIS-1 archives
+      download directly from the dataset page without an access request.
+citation:
+  text: >-
+    Marcus DS, Wang TH, Parker J, Csernansky JG, Morris JC, Buckner RL. Open Access Series of Imaging Studies (OASIS):
+    Cross-Sectional MRI Data in Young, Middle Aged, Nondemented, and Demented Older Adults. Journal of Cognitive
+    Neuroscience 19, 1498-1507 (2007). doi:10.1162/jocn.2007.19.9.1498
+sources:
+  oasis1-page:
+    title: OASIS-1 page, OASIS Brains website
+    url: https://sites.wustl.edu/oasisbrains/home/oasis-1/
+    kind: website
+  oasis1-fact-sheet:
+    title: OASIS Fact Sheet, Cross-Sectional Data Across the Adult Lifespan (rev. 2007-8-20)
+    url: https://sites.wustl.edu/oasisbrains/files/2024/03/oasis_cross-sectional_facts-bcc7a002dfb104f4.pdf
+    kind: website
+  marcus2007:
+    title: Marcus et al. 2007, Journal of Cognitive Neuroscience (abstract)
+    url: https://doi.org/10.1162/jocn.2007.19.9.1498
+    kind: paper
+related: [oasis-3]
+keywords: [Alzheimer's disease, ageing, brain MRI, T1-weighted, cross-sectional, brain volume]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
