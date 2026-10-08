@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: amypad-pnhs
+name: AMYPAD PNHS
+full_name: Amyloid Imaging to Prevent Alzheimer's Disease (AMYPAD) Prognostic and Natural History Study
+summary: >-
+  European cohort of 3,368 older adults without dementia from 10 parent cohorts, with florbetaben or flutemetamol
+  amyloid PET for 1,620 and longitudinal multimodal brain MRI (T1w, FLAIR, T2*, SWI, diffusion, fMRI, ASL), plus
+  clinical, cognitive, CSF and genetic data. Access by reviewed request.
+homepage: https://amypad.eu/data/
+# First public external data release, June 2023 (AMYPAD data page).
+year: 2023
+# Raw and harmonised release v202606.
+updated: 2026
+version: v202606
+status: active
+creators:
+  - name: AMYPAD Consortium (Amsterdam UMC, location VUmc, data controller)
+    url: https://amypad.eu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, T2starw, FLAIR, swi, bold, dwi, asl]
+tracers: [florbetaben, flutemetamol]
+anatomy: [brain]
+conditions: [healthy, mci]
+tasks: [classification, regression, longitudinal, segmentation]
+formats: [NIfTI, BIDS]
+countries: [BE, FR, DE, ES, SE, CH, NL, GB]
+access:
+  type: application
+  url: https://fair.addi.ad-datainitiative.org/
+licenses:
+  - license: LicenseRef-AMYPAD-PNHS-DUA
+    note: >-
+      Requests need a one-page proposal reviewed by the AMYPAD Data Sharing and Publication Committee. Raw data and
+      single-cohort requests also need approval from each parent cohort. Tables are analysed in the AD Data
+      Initiative's AD Workbench, whose own terms of use are not covered here; images are provided through the Health-RI
+      XNAT platform.
+citation:
+  text: >-
+    Add "On behalf of the AMYPAD Consortium*" to the byline and include the EudraCT number 2018-002277-22, the dataset
+    version and DOI, and the IMI 2 grant 115952 funding statement (AMYPAD PNHS Publication Policy,
+    doi:10.5281/zenodo.21032996). MRI reference: Pieperhoff L, et al. AMYPAD-PNHS: A Pan-European, Multi-Site &
+    Multimodal MRI Dataset of Older Adults Without Dementia. Scientific Data (2026). doi:10.1038/s41597-026-07988-5
+sources:
+  amypad-data:
+    title: AMYPAD website, Data page (harmonised PNHS dataset)
+    url: https://amypad.eu/data/
+    kind: website
+  pieperhoff2026:
+    title: Pieperhoff L et al. 2026, AMYPAD-PNHS multimodal MRI dataset, Scientific Data (accelerated article preview)
+    url: https://doi.org/10.1038/s41597-026-07988-5
+    kind: paper
+  bollack2025:
+    title: Bollack A et al. 2025, Implementing robust amyloid PET quantification in multi-center studies, the AMYPAD approach
+    url: https://doi.org/10.1002/trc2.70190
+    kind: paper
+  amypad-dar:
+    title: AMYPAD PNHS Data Access Request procedure, June 2026 (Zenodo)
+    url: https://doi.org/10.5281/zenodo.21032898
+    kind: website
+  lopesalves2020:
+    title: Lopes Alves I et al. 2020, Quantitative amyloid PET in Alzheimer's disease, the AMYPAD PNHS, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.12069
+    kind: paper
+related: []
+keywords: [amyloid PET, Centiloid, preclinical Alzheimer's disease, longitudinal, brain MRI, multi-cohort, Europe]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

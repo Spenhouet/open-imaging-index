@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,3368,amypad-data,About the AMYPAD PNHS Data,harmonised dataset from 10 parent cohorts
+subjects,modality=PT,1620,amypad-data,About the AMYPAD PNHS Data,participants with a baseline amyloid PET (visual read; 1476 also have a Centiloid value)
+subjects,modality=MR,2759,pieperhoff2026,Abstract,"cognitively normal or MCI participants in the MRI dataset; longitudinal"

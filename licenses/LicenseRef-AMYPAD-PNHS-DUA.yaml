@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-AMYPAD-PNHS-DUA
+name: AMYPAD PNHS Data Use Agreement
+short_name: AMYPAD PNHS DUA
+url: https://doi.org/10.5281/zenodo.21032957
+version: 'DUA 202606, Zenodo record published 29 June 2026'
+summary: >-
+  Accepted with a data access request that the AMYPAD Data Sharing and Publication Committee reviews. Users act as
+  data processors, must not re-identify participants or pass the data on, may share derived data only at group level,
+  and must credit AMYPAD as set out in the PNHS Publication Policy.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: AMYPAD offers a way of accessing the PNHS data to academic researchers, institutions and companies from all
+      over the world.
+    source: https://amypad.eu/data/
+    note: The agreement does not mention commercial use. The data page names companies among eligible requesters, and
+      the access request document limits use to scientific research and education.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: 'yes'
+    quote: When sharing secondary or derivative data (e.g., group statistics or derived images), I will only do so if
+      they are on a group level, and cannot be deduced information from individual participants.
+  publication:
+    value: 'yes'
+    quote: We encourage the publication of any research arising from the AMYPAD Prognostic and Natural History Study
+      (PNHS).
+    source: https://doi.org/10.5281/zenodo.21032996
+  redistribute_original:
+    value: 'no'
+    quote: I will not redistribute these data or share access to these data with others, unless they have
+      independently applied and been granted access to these data, i.e., signed this Data Use Agreement.
+    note: This includes people at the user's own institution.
+  redistribute_derivatives:
+    value: conditional
+    quote: When sharing secondary or derivative data (e.g., group statistics or derived images), I will only do so if
+      they are on a group level, and cannot be deduced information from individual participants.
+    note: Only group-level derived data from which nothing about individual participants can be deduced. Per-subject
+      labels or segmentations do not meet this.
+  share_model_weights:
+    value: unspecified
+    note: Models are not mentioned. The group-level rule for derived data may apply to weights that could reveal
+      individual data.
+  attribution:
+    value: 'yes'
+    quote: I will reference the specific source of the accessed data when publicly presenting any results or algorithms
+      that benefited from their use
+    note: The Publication Policy requires the EudraCT number 2018-002277-22, the dataset version and DOI, the IMI 2
+      grant 115952 statement and the byline "On behalf of the AMYPAD Consortium*".
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: By accepting this agreement, I become a data processor (as defined under the GDPR law) of the data that I
+      have access to, and I am responsible for accessing these data under the following terms
+  ethics_approval:
+    value: conditional
+    quote: I will comply with all relevant rules and regulations imposed by my institution and my government.
+    note: The agreement does not itself ask for ethics approval, only compliance with institutional and national rules.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to establish or retrieve the identity of the study participants.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
