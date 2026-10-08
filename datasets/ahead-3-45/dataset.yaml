@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ahead-3-45
+name: AHEAD 3-45 screening data
+full_name: AHEAD 3-45 Study (A3 and A45 trials of lecanemab in preclinical Alzheimer's disease), screening data
+summary: >-
+  Screening data of the AHEAD 3-45 lecanemab prevention trials in cognitively unimpaired adults aged 55 to 80: 16,835
+  North American screens with amyloid PET imaging and cognitive testing. Post-randomization data are not shared.
+homepage: https://www.aheadstudydata.org/
+doi: 10.1002/alz.12748
+# The portal says pre-randomization data and imaging studies are being shared in 2025; the data use agreement is
+# dated October 2025. An exact first release date was not found.
+year: 2025
+status: active
+creators:
+  - name: Alzheimer's Clinical Trials Consortium (ACTC) and Alzheimer's Therapeutic Research Institute (ATRI),
+      University of Southern California
+    url: https://www.aheadstudydata.org/
+  - name: Eisai Inc. (study sponsor)
+species: human
+modalities: [PT]
+tracers: [nav4694]
+anatomy: [brain]
+conditions: [alzheimers, healthy]
+tasks: [classification, regression]
+countries: [US, CA]
+access:
+  type: application
+  url: https://www.aheadstudydata.org/
+licenses:
+  - license: LicenseRef-AHEAD-3-45-DUA
+citation:
+  text: >-
+    Rafii MS, Sperling RA, Donohue MC, et al. The AHEAD 3-45 Study: Design of a prevention trial for Alzheimer's
+    disease. Alzheimer's & Dementia 19(4):1227-1233 (2023). doi:10.1002/alz.12748. The data use agreement also requires
+    the AHEAD 3-45 acknowledgment statement.
+sources:
+  ahead-portal:
+    title: AHEAD 3-45 data portal home page (aheadstudydata.org)
+    url: https://www.aheadstudydata.org/
+    kind: website
+  rafii2023:
+    title: Rafii et al. 2023, The AHEAD 3-45 Study design, Alzheimer's & Dementia (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9929028/
+    kind: paper
+related: []
+keywords: [preclinical Alzheimer's disease, lecanemab, clinical trial, screening, amyloid PET, plasma biomarkers]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
