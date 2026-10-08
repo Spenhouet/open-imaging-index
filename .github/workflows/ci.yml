@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install --frozen-lockfile
+      - name: Validate datasets, licenses and vocabulary
+        run: bun run validate
+      - run: bun run check
+      - run: bun run lint
+      - run: bunx vitest --run
+      - run: bun run build
+      - run: bunx playwright install --with-deps chromium
+      - run: bunx playwright test

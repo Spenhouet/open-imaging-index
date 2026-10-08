@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-fastMRI-DUA
+name: NYU Langone Health fastMRI Dataset Sharing Agreement
+short_name: fastMRI DSA
+url: https://fastmri.med.nyu.edu/
+version: 'Text on fastmri.med.nyu.edu as read on 2026-10-07 (undated; the page notes the agreement is subject to updates)'
+summary: >-
+  NYU grants a royalty-free license for internal research or education only, after an online application with an
+  electronic signature. No selling, commercial exploitation or passing on of the data or of files derived from it,
+  except to people under your direct supervision and in cited academic publications. Copies must be destroyed when
+  the work is done.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Not DISTRIBUTE, PUBLISH, REPRODUCE, RETRANSMIT, COMMERCIALLY EXPLOIT, COPY OR OTHERWISE TRANSFER any portion
+      or all of the fastMRI Dataset or any subsequent variables or data files derived from the fastMRI Dataset to any
+      person or entity other than individuals under my direct supervision and other than for uses in academic
+      publications and presentations with citations as provided in paragraph 6 below.
+    note: The license covers "internal research or educational purposes only" and also forbids selling or monetizing
+      the data. The website adds that MLCommons/MLPerf benchmark use counts as non-commercial use.
+  model_training:
+    value: conditional
+    quote: The primary goal of fastMRI is to test whether machine learning can aid in the reconstruction of medical
+      images.
+    note: Training is the purpose of the dataset but, like any use, is limited to internal research or education. The
+      quote is from the acknowledgement text the agreement prescribes.
+  derivatives:
+    value: 'yes'
+    quote: Not DISTRIBUTE, PUBLISH, REPRODUCE, RETRANSMIT, COMMERCIALLY EXPLOIT, COPY OR OTHERWISE TRANSFER any portion
+      or all of the fastMRI Dataset or any subsequent variables or data files derived from the fastMRI Dataset to any
+      person or entity other than individuals under my direct supervision and other than for uses in academic
+      publications and presentations with citations as provided in paragraph 6 below.
+    note: The agreement assumes derived data files exist and restricts only their transfer.
+  publication:
+    value: conditional
+    quote: I agree all publications and presentations resulting from any use of the fastMRI Dataset must cite use of
+      the fastMRI Dataset as follows
+    note: Academic publications with the required citations. The website asks users to contact fastMRI for permission
+      to publish images from the dataset.
+  redistribute_original:
+    value: 'no'
+    quote: I will NOT SHARE THE DOWNLOAD LINK to the fastMRI Dataset with others.
+    note: Every other user must register individually. Transfer is allowed only to individuals under your direct
+      supervision, who must accept the same terms.
+  redistribute_derivatives:
+    value: 'no'
+    quote: Not DISTRIBUTE, PUBLISH, REPRODUCE, RETRANSMIT, COMMERCIALLY EXPLOIT, COPY OR OTHERWISE TRANSFER any portion
+      or all of the fastMRI Dataset or any subsequent variables or data files derived from the fastMRI Dataset to any
+      person or entity other than individuals under my direct supervision and other than for uses in academic
+      publications and presentations with citations as provided in paragraph 6 below.
+    note: Except within academic publications and presentations.
+  share_model_weights:
+    value: unspecified
+    note: Trained models are not mentioned. Whether weights count as "data files derived from the fastMRI Dataset" is
+      not stated.
+  attribution:
+    value: 'yes'
+    quote: In any published abstract, I will cite “NYU fastMRI” as the source of the data in the abstract.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: By entering my electronic signature here, I agree to the data use agreement above.
+  ethics_approval:
+    value: conditional
+    quote: Use the fastMRI Dataset in compliance with all laws, governmental regulations and guidelines, including
+      obtaining all approvals for the proposed use of the fastMRI Dataset to comply with federal, state, local and
+      institutional policies and regulations.
+    note: Whatever approvals your institution or law require for the proposed use.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'yes'
+    quote: When I have completed my work using the fastMRI Dataset, I will destroy all copies of the fastMRI Dataset
+      and retain no copies thereof.
+  no_reidentification:
+    value: 'yes'
+    quote: I will make no attempt to use the information in the fastMRI Dataset to identify the individual subjects or
+      to contact such individuals or link the fastMRI Dataset with any other dataset.
+  geographic_restriction:
+    value: conditional
+    quote: I will ensure that no one will be allowed to take or send fastMRI Dataset to any other location, unless prior
+      written permission is obtained from NYU.
+    note: No countries or regions are named, but the data may not be moved to another location without NYU's written
+      permission.
+verified:
+  date: '2026-10-07'
+  by: claude-research

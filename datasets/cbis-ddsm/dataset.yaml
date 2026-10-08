@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cbis-ddsm
+name: CBIS-DDSM
+full_name: Curated Breast Imaging Subset of the Digital Database for Screening Mammography
+summary: >-
+  Curated, DICOM-converted subset of the 1990s DDSM scanned-film mammograms: 1,566 women, 3,103 CC and MLO
+  mammograms with mass and calcification ROIs, BI-RADS descriptors, pathology labels and a fixed train/test split.
+homepage: https://www.cancerimagingarchive.net/collection/cbis-ddsm/
+doi: 10.7937/K9/TCIA.2016.7O02S9CY
+year: 2017
+version: '1'
+status: active
+creators:
+  - name: Rebecca Sawyer Lee, Francisco Gimenez, Assaf Hoogi, Daniel Rubin (Stanford University)
+    url: https://doi.org/10.1038/sdata.2017.177
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MG]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [classification, detection, segmentation]
+formats: [DICOM]
+countries: [US]
+size_gb: 163.51
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/cbis-ddsm/
+licenses:
+  - license: CC-BY-3.0
+    note: >-
+      TCIA lists the images and the four description CSV files under CC BY 3.0. Users must also agree to the TCIA
+      Data Usage Policy, which says users must "Not use the requested datasets, either alone or in concert with any
+      other information, to identify or contact individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/).
+citation:
+  text: >-
+    Sawyer-Lee R, Gimenez F, Hoogi A, Rubin D. Curated Breast Imaging Subset of Digital Database for Screening
+    Mammography (CBIS-DDSM) [Data set]. The Cancer Imaging Archive (2016). https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY.
+    Lee RS, et al. A curated mammography data set for use in computer-aided detection and diagnosis research.
+    Sci Data 4, 170177 (2017).
+sources:
+  tcia-cbis-ddsm:
+    title: TCIA collection page CBIS-DDSM
+    url: https://www.cancerimagingarchive.net/collection/cbis-ddsm/
+    kind: website
+  lee2017:
+    title: Lee et al. 2017, Scientific Data 4, 170177
+    url: https://doi.org/10.1038/sdata.2017.177
+    kind: paper
+  cbis-ddsm-case-csvs:
+    title: >-
+      Mass and calcification case description CSVs, training and test (open download, CC BY 3.0), counted per
+      participant id and per full-mammogram series
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/mass_case_description_train_set.csv
+    kind: computed
+related: [vindr-mammo]
+keywords: [mammography, breast cancer, mass segmentation, calcification, BI-RADS, scanned film]
+verified:
+  date: '2026-10-08'
+  by: claude-research

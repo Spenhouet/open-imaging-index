@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "values": {
+            "type": "string",
+            "enum": [
+              "vocab",
+              "contrast_set",
+              "age_range",
+              "number",
+              "country"
+            ]
+          },
+          "combine": {
+            "type": "string",
+            "enum": [
+              "all",
+              "any"
+            ]
+          },
+          "partition": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "description",
+          "values",
+          "combine",
+          "partition"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "dimensions"
+  ],
+  "additionalProperties": false
+}

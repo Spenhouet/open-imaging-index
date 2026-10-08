@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,656,taylor2017,Section 2.2,"""MRI, MEG, and behavioural data from 656 participants aged 18-87"""
+subjects,contrast=T1w,653,mrc-cbu-camcan,,Phase 2 Arm 1 raw MRI
+subjects,contrast=T2w,653,mrc-cbu-camcan,,
+subjects,contrast=dwi,642,mrc-cbu-camcan,,
+subjects,age=18-27,56,taylor2017,Section 1.2.2,youngest decade tested in Stage 2 (recruitment target was 100)
+subjects,sex=male;age=18-27,27,taylor2017,Section 1.2.2,
+age_min,,18,taylor2017,Section 2.2,
+age_max,,87,taylor2017,Section 2.2,

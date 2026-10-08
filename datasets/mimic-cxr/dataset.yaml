@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mimic-cxr
+name: MIMIC-CXR
+full_name: MIMIC Chest X-ray Database
+summary: >-
+  377,110 chest radiographs in DICOM format from 227,835 studies of 65,379 patients seen at the Beth Israel
+  Deaconess Medical Center emergency department (2011-2016), each study paired with its free-text radiology report.
+homepage: https://physionet.org/content/mimic-cxr/
+doi: 10.13026/4jqj-jw95
+year: 2019
+updated: 2024
+version: 2.1.0
+status: active
+creators:
+  - name: MIT Laboratory for Computational Physiology
+    url: https://lcp.mit.edu/
+  - name: Beth Israel Deaconess Medical Center, Boston
+species: human
+modalities: [DX]
+anatomy: [chest]
+tasks: [report_generation, classification]
+formats: [DICOM]
+countries: [US]
+access:
+  type: credentialed
+  url: https://physionet.org/content/mimic-cxr/2.1.0/
+  note: PhysioNet credentialed account, CITI "Data or Specimens Only Research" training and a signed data use agreement.
+licenses:
+  - license: LicenseRef-PhysioNet-CHDL-1.5.0
+    url: https://physionet.org/content/mimic-cxr/view-license/2.1.0/
+citation:
+  text: >-
+    Johnson AEW, Pollard TJ, Berkowitz SJ, et al. MIMIC-CXR, a de-identified publicly available database of
+    chest radiographs with free-text reports. Sci Data 6, 317 (2019). https://doi.org/10.1038/s41597-019-0322-0.
+    Johnson A, Pollard T, Mark R, Berkowitz S, Horng S. MIMIC-CXR Database (version 2.1.0). PhysioNet (2024).
+    https://doi.org/10.13026/4jqj-jw95
+sources:
+  johnson2019:
+    title: Johnson et al. 2019, Scientific Data (MIMIC-CXR data descriptor)
+    url: https://doi.org/10.1038/s41597-019-0322-0
+    kind: paper
+  physionet-mimic-cxr:
+    title: MIMIC-CXR Database v2.1.0 on PhysioNet
+    url: https://physionet.org/content/mimic-cxr/2.1.0/
+    kind: website
+related: [chexpert, nih-chestxray14]
+keywords: [chest X-ray, radiology reports, emergency department, vision-language]
+verified:
+  date: '2026-10-07'
+  by: claude-research

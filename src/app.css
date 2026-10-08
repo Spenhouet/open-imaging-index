@@ -1,0 +1,220 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Tokens. See DESIGN.md before adding colors. */
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.985 0.003 270);
+  --foreground: oklch(0.2 0.02 270);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.02 270);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.02 270);
+  --primary: oklch(0.48 0.17 274);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.955 0.01 270);
+  --secondary-foreground: oklch(0.27 0.03 270);
+  --muted: oklch(0.96 0.006 270);
+  --muted-foreground: oklch(0.5 0.02 270);
+  --accent: oklch(0.95 0.02 274);
+  --accent-foreground: oklch(0.3 0.08 274);
+  --destructive: oklch(0.58 0.2 25);
+  --border: oklch(0.915 0.008 270);
+  --input: oklch(0.89 0.01 270);
+  --ring: oklch(0.48 0.17 274);
+
+  /* License answers: status palette, always shown with an icon and a label. */
+  --good: #0ca30c;
+  --good-ink: #006300;
+  --mixed: #e39400;
+  --mixed-ink: #8a5200;
+  --bad: #d03b3b;
+  --bad-ink: #a32424;
+  --unknown: oklch(0.7 0.01 270);
+  --unknown-ink: oklch(0.45 0.015 270);
+
+  /* Categorical series, fixed order (validated reference palette). */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #4a3aa7;
+  --series-8: #e34948;
+  --series-other: oklch(0.72 0.01 270);
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+}
+
+.dark {
+  --background: oklch(0.16 0.012 270);
+  --foreground: oklch(0.96 0.005 270);
+  --card: oklch(0.205 0.014 270);
+  --card-foreground: oklch(0.96 0.005 270);
+  --popover: oklch(0.22 0.014 270);
+  --popover-foreground: oklch(0.96 0.005 270);
+  --primary: oklch(0.72 0.13 274);
+  --primary-foreground: oklch(0.16 0.03 274);
+  --secondary: oklch(0.26 0.015 270);
+  --secondary-foreground: oklch(0.96 0.005 270);
+  --muted: oklch(0.245 0.012 270);
+  --muted-foreground: oklch(0.7 0.015 270);
+  --accent: oklch(0.28 0.04 274);
+  --accent-foreground: oklch(0.9 0.04 274);
+  --destructive: oklch(0.65 0.19 25);
+  --border: oklch(0.29 0.012 270);
+  --input: oklch(0.33 0.012 270);
+  --ring: oklch(0.72 0.13 274);
+
+  --good: #0ca30c;
+  --good-ink: #3fcf3f;
+  --mixed: #fab219;
+  --mixed-ink: #fab219;
+  --bad: #e66767;
+  --bad-ink: #ef8a8a;
+  --unknown: oklch(0.5 0.01 270);
+  --unknown-ink: oklch(0.72 0.01 270);
+
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  --series-other: oklch(0.45 0.01 270);
+  --grid: #2c2c2a;
+  --axis: #383835;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-good: var(--good);
+  --color-good-ink: var(--good-ink);
+  --color-mixed: var(--mixed);
+  --color-mixed-ink: var(--mixed-ink);
+  --color-bad: var(--bad);
+  --color-bad-ink: var(--bad-ink);
+  --color-unknown: var(--unknown);
+  --color-unknown-ink: var(--unknown-ink);
+  --color-series-1: var(--series-1);
+  --color-series-2: var(--series-2);
+  --color-series-3: var(--series-3);
+  --color-series-4: var(--series-4);
+  --color-series-5: var(--series-5);
+  --color-series-6: var(--series-6);
+  --color-series-7: var(--series-7);
+  --color-series-8: var(--series-8);
+  --color-series-other: var(--series-other);
+  --color-grid: var(--grid);
+  --color-axis: var(--axis);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}
+
+@utility surface {
+  @apply rounded-xl bg-card shadow-xs ring-1 ring-border;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rendered markdown from READMEs and docs. */
+@utility prose-doc {
+  @apply text-[0.95rem] leading-7 text-foreground;
+  & :where(p, ul, ol, table, pre, blockquote) {
+    @apply my-4;
+  }
+  & :where(h1) {
+    @apply mt-2 mb-6 text-3xl font-semibold tracking-tight;
+  }
+  & :where(h2) {
+    @apply mt-10 mb-3 scroll-mt-24 text-xl font-semibold tracking-tight;
+  }
+  & :where(h3) {
+    @apply mt-8 mb-2 text-base font-semibold;
+  }
+  & :where(h4, h5, h6) {
+    @apply mt-6 mb-2 text-sm font-semibold;
+  }
+  & :where(a) {
+    @apply font-medium text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary;
+  }
+  & :where(ul) {
+    @apply list-disc pl-5;
+  }
+  & :where(ol) {
+    @apply list-decimal pl-5;
+  }
+  & :where(li) {
+    @apply my-1 pl-1;
+  }
+  & :where(code) {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.85em];
+  }
+  & :where(pre) {
+    @apply overflow-x-auto rounded-lg bg-muted p-4 text-sm leading-6;
+  }
+  & :where(pre code) {
+    @apply bg-transparent p-0;
+  }
+  & :where(table) {
+    @apply block w-full overflow-x-auto text-sm;
+  }
+  & :where(th) {
+    @apply border-b border-border px-3 py-2 text-left font-semibold whitespace-nowrap;
+  }
+  & :where(td) {
+    @apply border-b border-border/60 px-3 py-2 align-top;
+  }
+  & :where(blockquote) {
+    @apply border-l-2 border-primary/40 pl-4 text-muted-foreground;
+  }
+  & :where(strong) {
+    @apply font-semibold;
+  }
+  & > :first-child {
+    @apply mt-0;
+  }
+}

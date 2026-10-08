@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: kits23
+name: KiTS23
+full_name: 2023 Kidney and Kidney Tumor Segmentation Challenge
+summary: >-
+  Contrast-enhanced preoperative abdominal CT of 599 patients treated for suspected kidney cancer at M Health
+  Fairview (2010-2022), with kidney, tumor and cyst segmentations for 489 training cases and clinical metadata.
+homepage: https://kits-challenge.org/kits23/
+year: 2023
+updated: 2023
+version: 0.1.4
+status: active
+creators:
+  - name: KiTS challenge organizers, University of Minnesota (Heller N., Weight C. et al.)
+    url: https://kits-challenge.org/kits23/
+species: human
+modalities: [CT]
+contrasts: [ct_contrast]
+anatomy: [kidney, abdomen]
+conditions: [kidney_cancer]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [US]
+access:
+  type: open
+  url: https://github.com/neheller/kits23
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    applies_to: Image and segmentation data (downloaded from the Hugging Face repository neheller/KiTS-Challenge-Imaging).
+    note: >-
+      The kits23 GitHub repository code is MIT licensed. The README states that training a model solely to take part
+      in the challenge is not considered commercial use, and that commercial users should contact Nicholas Heller.
+citation:
+  text: >-
+    Heller N, Isensee F, Trofimova D, et al. The KiTS21 Challenge: Automatic segmentation of kidneys, renal tumors,
+    and renal cysts in corticomedullary-phase CT. arXiv:2307.01984 (2023). Cited as requested in the KiTS23
+    repository.
+sources:
+  kits23-page:
+    title: KiTS23 challenge page
+    url: https://kits-challenge.org/kits23/
+    kind: website
+  kits23-github:
+    title: neheller/kits23 GitHub repository README (license, dataset version)
+    url: https://github.com/neheller/kits23
+    kind: website
+  kits23-clinical-json:
+    title: dataset/kits23.json in neheller/kits23 (CC BY-NC-SA 4.0), clinical data of the 489 training cases, counted per case
+    url: https://github.com/neheller/kits23/blob/main/dataset/kits23.json
+    kind: computed
+related: []
+keywords: [kidney tumor segmentation, renal cell carcinoma, renal cyst, abdominal CT, challenge]
+verified:
+  date: '2026-10-07'
+  by: claude-research

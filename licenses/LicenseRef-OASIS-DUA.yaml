@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-OASIS-DUA
+name: OASIS Data Use Agreement
+short_name: OASIS DUA
+url: https://sites.wustl.edu/oasisbrains/files/2025/07/Data-Use-Agreement_July2025.pdf
+version: 'OASIS Data Use Agreement Terms, July 2025'
+summary: >-
+  Non-commercial academic research only, after an application reviewed by OASIS staff. No sharing with anyone,
+  collaborators included, without written permission; data must be destroyed or returned when the research ends.
+  Publications must acknowledge OASIS, and work using AV45 or AV1451 PET must go to Avid Radiopharmaceuticals for
+  review 30 days in advance.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: OASIS data are provided for non-commercial, academic research purposes only. Any commercial use, including
+      but not limited to the sale of data or commercial consulting, is strictly prohibited without explicit, prior
+      written authorization from OASIS.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any training must stay within non-commercial academic
+      research.
+  derivatives:
+    value: conditional
+    quote: Additionally, User will not use or further disclose any derivative works or derivative data of the OASIS
+      datasets, in any case in whole or in part, that could be used to reconstruct a facial image.
+    note: The agreement assumes derived data exist ("data derived from OASIS data") but forbids derivatives that could
+      reconstruct a face.
+  publication:
+    value: conditional
+    quote: User will acknowledge the use of OASIS data and data derived from OASIS data when publicly presenting any
+      results or algorithms that benefitted from their use.
+    note: With the OASIS acknowledgement and citation, and after Avid review for AV45 or AV1451 PET data.
+  redistribute_original:
+    value: 'no'
+    quote: User shall not share, distribute, or otherwise make available the OASIS data, in whole or in part, to any
+      third party, including collaborators, without prior written permission from OASIS.
+    note: Only with prior written permission from OASIS. Collaborators must apply themselves.
+  redistribute_derivatives:
+    value: unspecified
+    quote: User shall not share, distribute, or otherwise make available the OASIS data, in whole or in part, to any
+      third party, including collaborators, without prior written permission from OASIS.
+    note: The agreement does not say whether derived data such as labels count as OASIS data "in part". Derivatives
+      that could reconstruct a face must not be disclosed.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'Papers, book chapters, books, posters, oral presentations, and all other printed and digital presentations
+      of results derived from OASIS data should contain the following:'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: This file was downloaded after successfully submitting access request for the OASIS projects.
+    note: OASIS-3 access is granted on NITRC-IR after OASIS staff review the application.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: conditional
+    quote: All proposed publications or presentations using Florbetapir F18 (AV45) or Flortaucipir F18 (AV1451) PET
+      data must be submitted to Avid Radiopharmaceuticals for review and comment thirty days prior to such presentation
+      or publication for review of intellectual property interests.
+    note: Only for work that uses the amyloid (AV45) or tau (AV1451) PET data.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users must tell the Knight ADRC about their use of the data on request, but need not return results.
+  delete_after_use:
+    value: 'yes'
+    quote: Upon completion of the research or upon request by OASIS, User will securely destroy or return all copies of
+      the data.
+  no_reidentification:
+    value: 'yes'
+    quote: User will not use the OASIS datasets, either alone or in concert with any other information, to make any
+      effort to identify or contact individuals who are or may be the sources of the information in the dataset.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: conditional
+  note: Commercial use needs explicit, prior written authorization from OASIS. No commercial license offer is published.
+verified:
+  date: '2026-10-07'
+  by: claude-research

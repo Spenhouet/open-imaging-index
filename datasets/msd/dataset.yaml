@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: msd
+name: Medical Segmentation Decathlon
+full_name: Medical Segmentation Decathlon (MSD)
+summary: >-
+  Ten 3D segmentation tasks in one benchmark: brain tumours, heart, liver, hippocampus, prostate, lung, pancreas,
+  hepatic vessels, spleen and colon, with 2,633 CT and MRI volumes in NIfTI under CC BY-SA 4.0.
+homepage: http://medicaldecathlon.com/
+year: 2018
+status: active
+creators:
+  - name: Medical Segmentation Decathlon organisers (King's College London, Memorial Sloan Kettering Cancer Center and partners)
+    url: http://medicaldecathlon.com/
+species: human
+modalities: [MR, CT]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, ADC, ct_venous]
+anatomy: [brain, hippocampus, heart, liver, prostate, lung, pancreas, colon, spleen]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [US, GB, NL, DE, CA, IL, FR, CH, HU, IT, IN]
+vendors: [philips]
+access:
+  type: open
+  url: http://medicaldecathlon.com/
+  note: Download from AWS or Google Drive; one TAR file per task. Test labels are not released.
+licenses:
+  - license: CC-BY-SA-4.0
+citation:
+  text: >-
+    Simpson AL, Antonelli M, Bakas S, et al. A large annotated medical image dataset for the development and
+    evaluation of segmentation algorithms. arXiv:1902.09063 (2019). Antonelli M, Reinke A, Bakas S, et al. The
+    Medical Segmentation Decathlon. Nature Communications 13, 4128 (2022).
+sources:
+  simpson2019:
+    title: Simpson et al. 2019, dataset paper, arXiv 1902.09063
+    url: https://arxiv.org/abs/1902.09063
+    kind: paper
+  msd-website:
+    title: Medical Segmentation Decathlon website (task list)
+    url: http://medicaldecathlon.com/
+    kind: website
+  antonelli2022:
+    title: Antonelli et al. 2022, The Medical Segmentation Decathlon, Nature Communications
+    url: https://doi.org/10.1038/s41467-022-30695-9
+    kind: paper
+related: [brats-2021]
+keywords: [segmentation benchmark, multi-task, generalisation, nnU-Net]
+verified:
+  date: '2026-10-07'
+  by: claude-research

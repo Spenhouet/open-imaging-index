@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../schema/dimensions.schema.json
+#
+# Dimensions are the keys allowed in the `by` column of a dataset's stats.csv,
+# e.g. `contrast=T1w` or `sex=female;age=60-69`.
+#
+# combine: how several selected values of one dimension combine when filtering subjects.
+#   all = a subject must have every selected value (contrasts, modalities, tracers)
+#   any = a subject must have at least one of the selected values
+# partition: true when every subject has exactly one value (sex, age bin). The checker then
+#   requires that the counts of all values add up to no more than the total.
+# values: the vocabulary file (vocab/<id>.yaml) or a built-in value type.
+dimensions:
+  - id: modality
+    label: Modality
+    description: Imaging modality, as a DICOM Modality code (MR, CT, PT, ...).
+    values: vocab
+    combine: all
+    partition: false
+  - id: contrast
+    label: Contrast / sequence
+    description: >-
+      Image contrast. MR sequences use BIDS suffixes (T1w, T2w, FLAIR, dwi, ...). CT phases, stains and
+      ultrasound modes have their own terms. Counts mean subjects that have at least this contrast.
+    values: vocab
+    combine: all
+    partition: false
+  - id: contrast_set
+    label: Contrast combination
+    description: >-
+      The exact set of contrasts a subject has, joined with `+` in alphabetical order, e.g. `FLAIR+T1w+T2w`.
+      Each subject belongs to exactly one set. This is what allows exact answers to "how many subjects have
+      both T1w and FLAIR".
+    values: contrast_set
+    combine: all
+    partition: true
+  - id: tracer
+    label: PET tracer
+    description: Radiotracer used for PET or SPECT.
+    values: vocab
+    combine: all
+    partition: false
+  - id: anatomy
+    label: Anatomy
+    description: Body region or organ that was imaged. Mapped to UBERON.
+    values: vocab
+    combine: any
+    partition: false
+  - id: condition
+    label: Condition
+    description: >-
+      Disease, finding or group (including healthy controls). Mapped to MONDO, or to HPO for findings.
+      A subject can have several conditions.
+    values: vocab
+    combine: any
+    partition: false
+  - id: sex
+    label: Sex
+    description: Sex as reported by the dataset. Values follow the BIDS participants.tsv levels.
+    values: vocab
+    combine: any
+    partition: true
+  - id: age
+    label: Age
+    description: >-
+      Age bin in completed years. `60-69` covers everyone aged 60 up to their 70th birthday, `90+` everyone aged
+      90 or older. Decimal bounds are allowed for children, e.g. `0-0.5`.
+    values: age_range
+    combine: any
+    partition: true
+  - id: vendor
+    label: Scanner vendor
+    description: Scanner manufacturer. Raw DICOM Manufacturer strings are listed as synonyms.
+    values: vocab
+    combine: any
+    partition: false
+  - id: field_strength
+    label: Field strength
+    description: MR field strength in tesla, e.g. `1.5`, `3`, `7`.
+    values: number
+    combine: any
+    partition: false
+  - id: country
+    label: Country
+    description: Country of the acquisition site, as an ISO 3166-1 alpha-2 code (US, DE, CN, ...).
+    values: country
+    combine: any
+    partition: true
+  - id: split
+    label: Split
+    description: Official data split.
+    values: vocab
+    combine: any
+    partition: true
+  - id: view
+    label: View
+    description: Projection or view for radiographs and mammograms.
+    values: vocab
+    combine: any
+    partition: false

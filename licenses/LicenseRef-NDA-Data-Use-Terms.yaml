@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NDA-Data-Use-Terms
+name: NIMH Data Archive Data Use Terms and Conditions (Data Use Certification)
+short_name: NDA data use terms
+url: https://s3.amazonaws.com/nda.nih.gov/cms/prod/nda_data_use_terms.pdf
+version: NDA "Data Use Terms and Conditions" as served by the NDA content API, last updated 2024-08-05
+summary: >-
+  Terms every NIMH Data Archive data access request accepts. Data are for research, scholarship or teaching; they may
+  only be shared with collaborators who hold their own access; re-identification is forbidden; each publication needs
+  an NDA Study linked to the data and an acknowledgement; downloaded data must be deleted when the research ends or
+  after the one-year access period.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The terms allow "research and research development" and mention "any resulting commercial product(s)" in the
+      endorsement clause, but never state whether commercial use is permitted.
+    quote: >-
+      Recipients agree to use data for scientific investigation, scholarship or teaching, or other form of research
+      and research development.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: conditional
+    note: Derived data are expected, but derived subject-level data that could aid re-identification may not be shared.
+    quote: >-
+      Recipients agree to not publish or distribute any derived data that could aid in the reidentification of any of
+      the study participants (or their relatives), including structural MRI images or genomic data that have been
+      reprocessed using data obtained from NDA.
+  publication:
+    value: conditional
+    note: Each publication needs an NDA Study linking it to the data used, and an acknowledgement of the repository.
+    quote: >-
+      Recipients agree to create and share an NIMH Data Archive Study (https://nda.nih.gov/get/
+      manuscript-preparation.html) for each publication, computational pipeline, or other public disclosure of results
+      from the analysis of data accessed in the NIMH Data Archive, whether reporting positive or negative results,
+      thereby linking it to the underlying data.
+  redistribute_original:
+    value: 'no'
+    note: Sharing is allowed only with collaborators who are themselves listed on a valid certification for the same permission group.
+    quote: >-
+      Recipients agree to retain control over data and to not distribute, sell, or move data, with or without charge,
+      in any form, to any other individual, entity, or third-party system except to authorized collaborators as
+      specified below.
+  redistribute_derivatives:
+    value: conditional
+    note: >-
+      Only derived data that cannot aid re-identification; approval from the NDA Help Desk should be sought before
+      sharing subject-level derived data outside an NDA Study.
+    quote: >-
+      Before subject-level derived data are distributed outside of an NDA Study, approval should be sought from the
+      Help Desk.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Recipients agree to acknowledge the appropriate NIMH Data Archive data repository and the relevant Digital Object
+      Identifier(s) (DOI), which will be minted upon NIMH Data Archive Study creation, in any and all oral and written
+      presentations, disclosures, and publications
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    note: A data access request accepting these terms is required; for OAI it is approved automatically on submission.
+    quote: >-
+      I request access to shared data from the NIMH Data Archive for the purpose of scientific investigation,
+      scholarship or teaching, or other forms of research and research development as described in the following
+      NIMH Data Archive Data Use Certification (DUC).
+  ethics_approval:
+    value: conditional
+    note: >-
+      No IRB approval is demanded up front; the recipient must decide whether the project needs IRB consultation and
+      follow 45 CFR 46 where it applies. Some permission groups (not OAI) require IRB documentation.
+    quote: >-
+      Recipients are responsible for determining whether their proposed research with data from the NIMH Data Archive
+      necessitates consultation with their Institutional Review Board.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+    note: >-
+      Code does not have to be released, but computational pipelines and other disclosures must be registered as an
+      NDA Study linked to the data.
+  return_results:
+    value: 'yes'
+    quote: >-
+      Recipients submitting renewal data access requests agree to report their results and list each related NIMH
+      Data Archive Study in the Progress Report section below.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Recipients agree that data that has been downloaded from the NIMH Data Archive will be permanently deleted from
+      all local or cloud-based machines when research is completed or this DUC is expired, whichever comes first.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Recipients agree that data will not be used to attempt to establish the individual identities of any of the study
+      participants from whom data were obtained (or their relatives) and/or contact the individual study participant,
+      except as permitted by law
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: claude-research

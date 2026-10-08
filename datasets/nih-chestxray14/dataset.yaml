@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nih-chestxray14
+name: NIH ChestX-ray14
+full_name: NIH Clinical Center Chest X-ray Dataset (ChestX-ray8 / ChestX-ray14)
+summary: >-
+  112,120 frontal chest radiographs (PNG) of 30,805 patients from the NIH Clinical Center, with 14 thoracic
+  disease labels text-mined from reports, age, sex, view, an official patient-level split and ~1,000 bounding boxes.
+homepage: https://nihcc.app.box.com/v/ChestXray-NIHCC
+year: 2017
+updated: 2020
+status: active
+creators:
+  - name: NIH Clinical Center, Imaging Biomarkers and Computer-Aided Diagnosis Laboratory
+    url: https://clinicalcenter.nih.gov/
+  - name: National Library of Medicine
+    url: https://www.nlm.nih.gov/
+species: human
+modalities: [DX]
+anatomy: [chest]
+tasks: [classification, detection]
+formats: [PNG]
+countries: [US]
+access:
+  type: open
+  url: https://nihcc.app.box.com/v/ChestXray-NIHCC
+licenses:
+  - license: LicenseRef-NIHCC-ChestXray
+citation:
+  text: >-
+    Wang X, Peng Y, Lu L, Lu Z, Bagheri M, Summers RM. ChestX-ray8: Hospital-scale Chest X-ray Database and
+    Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases. IEEE CVPR 2017,
+    pp. 3462-3471.
+  bibtex: |
+    @InProceedings{wang2017chestxray,
+      author = {Wang, Xiaosong and Peng, Yifan and Lu, Le and Lu, Zhiyong and Bagheri, Mohammadhadi and Summers, Ronald},
+      title = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases},
+      booktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      pages = {3462--3471},
+      year = {2017}
+    }
+sources:
+  nihcc-readme:
+    title: README_CHESTXRAY.pdf in the NIH Clinical Center Box folder
+    url: https://nihcc.app.box.com/v/ChestXray-NIHCC/file/220660789610
+    kind: website
+  nihcc-data-entry-csv:
+    title: >-
+      Data_Entry_2017_v2020.csv with test_list.txt and train_val_list.txt (public Box folder, use unrestricted
+      per FAQ), counted per image and per unique Patient ID; joint cells below 10 dropped
+    url: https://nihcc.app.box.com/v/ChestXray-NIHCC/file/219760887468
+    kind: computed
+  wang2017:
+    title: Wang et al. 2017, ChestX-ray8 (CVPR), arXiv 1705.02315
+    url: https://arxiv.org/abs/1705.02315
+    kind: paper
+related: [mimic-cxr, chexpert]
+keywords: [chest X-ray, weak supervision, multi-label classification, localization]
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: isic-2020
+name: ISIC 2020
+full_name: SIIM-ISIC 2020 Melanoma Classification Challenge Dataset
+summary: >-
+  44,108 dermoscopic images of skin lesions from 2,746 patients at six centres (33,126 labelled training images of
+  2,056 patients, 584 of them histopathologically confirmed melanomas), with approximate age, sex and anatomic site.
+homepage: https://challenge.isic-archive.com/data/#2020
+doi: 10.34970/2020-ds01
+year: 2020
+status: active
+creators:
+  - name: International Skin Imaging Collaboration (ISIC)
+    url: https://www.isic-archive.com/
+  - name: Society for Imaging Informatics in Medicine (SIIM)
+    url: https://siim.org/
+species: human
+modalities: [XC]
+anatomy: [skin]
+conditions: [melanoma]
+tasks: [classification]
+formats: [DICOM, JPEG]
+countries: [US, ES, AT, AU, GR]
+access:
+  type: open
+  url: https://challenge.isic-archive.com/data/#2020
+licenses:
+  - license: CC-BY-NC-4.0
+    note: >-
+      The challenge data page lists the 2020 data under CC-BY-NC and asks that the aggregate data be cited as
+      "International Skin Imaging Collaboration. SIIM-ISIC 2020 Challenge Dataset", DOI 10.34970/2020-ds01.
+citation:
+  text: >-
+    International Skin Imaging Collaboration. SIIM-ISIC 2020 Challenge Dataset. https://doi.org/10.34970/2020-ds01
+    (2020). Rotemberg V, Kurtansky N, et al. A patient-centric dataset of images and metadata for identifying
+    melanomas using clinical context. Sci Data 8, 34 (2021).
+sources:
+  rotemberg2021:
+    title: Rotemberg et al. 2021, Scientific Data 8, 34 (Table 1)
+    url: https://doi.org/10.1038/s41597-021-00815-z
+    kind: paper
+  isic-challenge-2020:
+    title: ISIC Challenge data page, 2020 section
+    url: https://challenge.isic-archive.com/data/#2020
+    kind: website
+  isic2020-metadata-csv:
+    title: >-
+      ISIC_2020_Training_GroundTruth_v2.csv and ISIC_2020_Test_Metadata.csv (open download, CC BY-NC 4.0), counted
+      per image and per unique patient id; joint cells below 10 dropped
+    url: https://isic-archive.s3.amazonaws.com/challenges/2020/ISIC_2020_Training_GroundTruth_v2.csv
+    kind: computed
+related: []
+keywords: [melanoma, dermoscopy, skin lesion classification, patient context, challenge]
+verified:
+  date: '2026-10-08'
+  by: claude-research

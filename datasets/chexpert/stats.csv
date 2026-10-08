@@ -1,0 +1,102 @@
+measure,by,value,source,where,note
+subjects,,65240,irvin2019,Abstract,
+images,,224316,irvin2019,Abstract,
+subjects,split=train,64540,garbin2021,Table I,
+subjects,split=validation,200,garbin2021,Table I,
+subjects,split=test,500,garbin2021,p. 2 (Composition),The 2021 datasheet says the test set is not publicly available
+studies,split=train,187641,garbin2021,Table I,
+studies,split=validation,200,garbin2021,Table I,
+studies,split=test,500,irvin2019,p. 6 (Test Set),
+images,split=train,223414,garbin2021,Table I,
+images,split=validation,234,garbin2021,Table I,
+images,split=test,668,garbin2021,p. 2 (Composition),
+subjects,split=train;sex=female,28729,garbin2021,Table VII,
+subjects,split=train;sex=male,35811,garbin2021,Table VII,
+subjects,split=validation;sex=female,94,garbin2021,Table VII,
+subjects,split=validation;sex=male,106,garbin2021,Table VII,
+images,split=train;sex=female,90778,garbin2021,Table VII,
+images,split=train;sex=male,132636,garbin2021,Table VII,
+images,split=validation;sex=female,106,garbin2021,Table VII,
+images,split=validation;sex=male,128,garbin2021,Table VII,
+studies,split=train;age=0-1,3,garbin2021,Table VIII,Age at the time of the study; MeSH age groups
+studies,split=train;age=13-18,653,garbin2021,Table VIII,
+studies,split=train;age=19-44,34450,garbin2021,Table VIII,
+studies,split=train;age=45-64,69059,garbin2021,Table VIII,
+studies,split=train;age=65-79,52934,garbin2021,Table VIII,
+studies,split=train;age=80+,30542,garbin2021,Table VIII,
+studies,split=validation;age=13-18,1,garbin2021,Table VIII,
+studies,split=validation;age=19-44,33,garbin2021,Table VIII,
+studies,split=validation;age=45-64,75,garbin2021,Table VIII,
+studies,split=validation;age=65-79,57,garbin2021,Table VIII,
+studies,split=validation;age=80+,34,garbin2021,Table VIII,
+studies,split=train;sex=female;age=0-1,3,garbin2021,Table VIII,
+studies,split=train;sex=female;age=13-18,254,garbin2021,Table VIII,
+studies,split=train;sex=male;age=13-18,399,garbin2021,Table VIII,
+studies,split=train;sex=female;age=19-44,14395,garbin2021,Table VIII,
+studies,split=train;sex=male;age=19-44,20055,garbin2021,Table VIII,
+studies,split=train;sex=female;age=45-64,27026,garbin2021,Table VIII,
+studies,split=train;sex=male;age=45-64,42033,garbin2021,Table VIII,
+studies,split=train;sex=female;age=65-79,21653,garbin2021,Table VIII,
+studies,split=train;sex=male;age=65-79,31281,garbin2021,Table VIII,
+studies,split=train;sex=female;age=80+,14846,garbin2021,Table VIII,
+studies,split=train;sex=male;age=80+,15696,garbin2021,Table VIII,
+images,split=train;age=0-1,3,garbin2021,Table VIII,Age at the time of the study; MeSH age groups
+images,split=train;age=13-18,766,garbin2021,Table VIII,
+images,split=train;age=19-44,41696,garbin2021,Table VIII,
+images,split=train;age=45-64,82750,garbin2021,Table VIII,
+images,split=train;age=65-79,62433,garbin2021,Table VIII,
+images,split=train;age=80+,35766,garbin2021,Table VIII,
+images,split=validation;age=13-18,2,garbin2021,Table VIII,
+images,split=validation;age=19-44,38,garbin2021,Table VIII,
+images,split=validation;age=45-64,88,garbin2021,Table VIII,
+images,split=validation;age=65-79,64,garbin2021,Table VIII,
+images,split=validation;age=80+,42,garbin2021,Table VIII,
+images,split=train;sex=female;age=0-1,3,garbin2021,Table VIII,
+images,split=train;sex=female;age=13-18,290,garbin2021,Table VIII,
+images,split=train;sex=male;age=13-18,476,garbin2021,Table VIII,
+images,split=train;sex=female;age=19-44,16972,garbin2021,Table VIII,
+images,split=train;sex=male;age=19-44,24724,garbin2021,Table VIII,
+images,split=train;sex=female;age=45-64,31653,garbin2021,Table VIII,
+images,split=train;sex=male;age=45-64,51097,garbin2021,Table VIII,
+images,split=train;sex=female;age=65-79,24817,garbin2021,Table VIII,
+images,split=train;sex=male;age=65-79,37616,garbin2021,Table VIII,
+images,split=train;sex=female;age=80+,17043,garbin2021,Table VIII,
+images,split=train;sex=male;age=80+,18723,garbin2021,Table VIII,
+images,split=validation;sex=female;age=13-18,2,garbin2021,Table VIII,
+images,split=validation;sex=female;age=19-44,22,garbin2021,Table VIII,
+images,split=validation;sex=male;age=19-44,16,garbin2021,Table VIII,
+images,split=validation;sex=female;age=45-64,39,garbin2021,Table VIII,
+images,split=validation;sex=male;age=45-64,49,garbin2021,Table VIII,
+images,split=validation;sex=female;age=65-79,25,garbin2021,Table VIII,
+images,split=validation;sex=male;age=65-79,39,garbin2021,Table VIII,
+images,split=validation;sex=female;age=80+,18,garbin2021,Table VIII,
+images,split=validation;sex=male;age=80+,24,garbin2021,Table VIII,
+studies,split=train;condition=no_finding,16627,irvin2019,Table 1,Positive label from the report labeler; uncertain labels not counted
+studies,split=train;condition=cardiomegaly,23002,irvin2019,Table 1,"Positive only; 6,597 more uncertain"
+studies,split=train;condition=lung_opacity,92669,irvin2019,Table 1,Positive only
+studies,split=train;condition=pulmonary_edema,48905,irvin2019,Table 1,Positive only
+studies,split=train;condition=consolidation,12730,irvin2019,Table 1,Positive only
+studies,split=train;condition=pneumonia,4576,irvin2019,Table 1,Positive only
+studies,split=train;condition=atelectasis,29333,irvin2019,Table 1,Positive only
+studies,split=train;condition=pneumothorax,17313,irvin2019,Table 1,Positive only
+studies,split=train;condition=pleural_effusion,75696,irvin2019,Table 1,Positive only
+studies,split=train;condition=fracture,7270,irvin2019,Table 1,Positive only
+images,split=train;condition=no_finding,22381,garbin2021,Table IV,Positive label from the report labeler; uncertain labels not counted
+images,split=train;condition=cardiomegaly,27000,garbin2021,Table IV,Positive only
+images,split=train;condition=lung_opacity,105581,garbin2021,Table IV,Positive only
+images,split=train;condition=pulmonary_edema,52246,garbin2021,Table IV,Positive only
+images,split=train;condition=consolidation,14783,garbin2021,Table IV,Positive only
+images,split=train;condition=pneumonia,6039,garbin2021,Table IV,Positive only
+images,split=train;condition=atelectasis,33376,garbin2021,Table IV,Positive only
+images,split=train;condition=pneumothorax,19448,garbin2021,Table IV,Positive only
+images,split=train;condition=pleural_effusion,86187,garbin2021,Table IV,Positive only
+images,split=train;condition=fracture,9040,garbin2021,Table IV,Positive only
+images,split=validation;condition=no_finding,38,garbin2021,Table V,Radiologist consensus labels
+images,split=validation;condition=cardiomegaly,68,garbin2021,Table V,
+images,split=validation;condition=lung_opacity,126,garbin2021,Table V,
+images,split=validation;condition=pulmonary_edema,45,garbin2021,Table V,
+images,split=validation;condition=consolidation,33,garbin2021,Table V,
+images,split=validation;condition=pneumonia,8,garbin2021,Table V,
+images,split=validation;condition=atelectasis,80,garbin2021,Table V,
+images,split=validation;condition=pneumothorax,8,garbin2021,Table V,
+images,split=validation;condition=pleural_effusion,67,garbin2021,Table V,

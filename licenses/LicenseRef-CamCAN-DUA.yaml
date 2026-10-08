@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CamCAN-DUA
+name: CamCAN Project Terms and Conditions
+short_name: CamCAN DUA
+url: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
+version: 'Project Terms and Conditions on the MRC-CBU data portal CamCAN page, read October 2026'
+summary: >-
+  Managed access for non-commercial, ethical research described in an approved proposal; students cannot apply
+  themselves. Data must stay on the institution's server and may not be passed on. Publications must be open access,
+  and derived data plus the scripts that produced them must be shared on an open repository.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: I will use the data only for the purposes of non-commercial, ethical research in this application and to
+      seek the approval of CamCAN (via the CamCAN Administrator) for any other proposed use.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning. The project page warns that requests mentioning only "something
+      about AI and data mining" with a vague hypothesis are often rejected.
+    source: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
+  derivatives:
+    value: 'yes'
+    quote: Any derived data and processing scripts used to produce those derived data will also be made available on a
+      suitable open-access data repository.
+  publication:
+    value: conditional
+    quote: I agree to make any publications that arise from use of CamCAN data open-access.
+    note: Publications must be open access and include the mandatory CamCAN acknowledgement and methods text.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose these data beyond the uses outlined in this agreement.
+    note: Team members may use the data if they comply with the agreement; data must not be copied to external storage.
+  redistribute_derivatives:
+    value: 'yes'
+    quote: Any derived data and processing scripts used to produce those derived data will also be made available on a
+      suitable open-access data repository.
+    note: Sharing derived data openly is not only allowed but required.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will acknowledge the CamCAN project as a source of data and include language similar to the following
+  share_alike:
+    value: 'no'
+    note: No license is imposed on shared adaptations, but derived data must be placed on an open-access repository.
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the Cambridge Centre for Ageing Neuroscience (CamCAN) for the purpose
+      of scientific investigation or the planning of clinical research studies and agree to the following terms
+    note: Accepted with an online request including a ~200-word proposal, which CamCAN reviewers approve or reject.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: No approval is demanded by the terms themselves, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'yes'
+    quote: Any derived data and processing scripts used to produce those derived data will also be made available on a
+      suitable open-access data repository.
+  return_results:
+    value: conditional
+    quote: I also agree to make any such errors known to CamCAN as soon as possible.
+    note: Errors found in the data must be reported to CamCAN. Derived data go to an open repository rather than back
+      to CamCAN.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact, any of the CamCAN participants.
+  geographic_restriction:
+    value: conditional
+    quote: I will not copy data to external storage locations (such as dropbox, google drive or external harddrives) and
+      understand data must remain on my institution's server.
+    note: No countries are named, but the data must stay on the user's institutional server.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-07'
+  by: claude-research

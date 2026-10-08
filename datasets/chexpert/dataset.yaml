@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chexpert
+name: CheXpert
+full_name: 'CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison'
+summary: >-
+  224,316 chest radiographs of 65,240 Stanford Hospital patients (2002-2017) with 14 report-derived labels that
+  include an "uncertain" state, plus a radiologist-labelled validation set. Non-commercial research use only.
+homepage: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
+doi: 10.71718/y7pj-4v93
+year: 2019
+status: active
+creators:
+  - name: Stanford Machine Learning Group
+    url: https://stanfordmlgroup.github.io/competitions/chexpert/
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/
+species: human
+modalities: [DX]
+anatomy: [chest]
+tasks: [classification]
+formats: [JPEG]
+countries: [US]
+access:
+  type: registration
+  url: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
+  note: Register and accept the Stanford research use agreement. AIMI datasets are now downloaded through Redivis.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+citation:
+  text: >-
+    Irvin J, Rajpurkar P, Ko M, et al. CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and
+    Expert Comparison. AAAI 2019. https://arxiv.org/abs/1901.07031. Dataset DOI: https://doi.org/10.71718/y7pj-4v93
+sources:
+  irvin2019:
+    title: Irvin et al. 2019, CheXpert (AAAI), arXiv 1901.07031
+    url: https://arxiv.org/abs/1901.07031
+    kind: paper
+  garbin2021:
+    title: Garbin et al. 2021, Structured dataset documentation - a datasheet for CheXpert, arXiv 2105.03020
+    url: https://arxiv.org/abs/2105.03020
+    kind: paper
+  aimi-chexpert:
+    title: Stanford AIMI dataset page
+    url: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
+    kind: website
+related: [mimic-cxr, nih-chestxray14]
+keywords: [chest X-ray, uncertainty labels, multi-label classification]
+verified:
+  date: '2026-10-07'
+  by: claude-research

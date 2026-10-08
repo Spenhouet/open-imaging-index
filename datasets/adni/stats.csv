@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,2366,review2023,Section 1 (Introduction),"sum of the three baseline groups (868 CU + 1090 MCI + 408 AD) given in one sentence of the source; ADNI1 to ADNI3, as reported in 2023"
+subjects,condition=healthy,868,review2023,Section 1 (Introduction),cognitively unimpaired participants enrolled and followed since 2004 (as reported in 2023)
+subjects,condition=mci,1090,review2023,Section 1 (Introduction),enrolled and followed since 2004 (as reported in 2023)
+subjects,condition=alzheimers,408,review2023,Section 1 (Introduction),dementia diagnosed as AD; enrolled and followed since 2004 (as reported in 2023)

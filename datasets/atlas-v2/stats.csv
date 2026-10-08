@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,1271,liew2022,Abstract,one T1w MRI per subject from 44 cohorts; includes 316 hidden generalizability cases that are not released
+subjects,split=train,655,liew2022,Abstract,T1w and lesion masks released
+subjects,split=test,300,liew2022,Abstract,T1w released; masks hidden in R2.0 (released later in R2.1)
+subjects,contrast=T1w,1271,liew2022,"Methods, Data overview and Data characteristics",
+subjects,contrast_set=T1w,1271,liew2022,"Methods, Data overview and Data characteristics",
+subjects,condition=stroke,1271,liew2022,"Methods, Data overview and Data characteristics",

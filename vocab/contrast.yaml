@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# MR terms use BIDS suffixes where BIDS has one (mappings.bids). Everything else is a local term.
+terms:
+  # MR structural
+  - { id: T1w, label: T1-weighted, group: MR, mappings: { bids: T1w } }
+  - id: T1w_ce
+    label: T1-weighted, contrast enhanced
+    group: MR
+    synonyms: [T1c, T1Gd, T1-CE, T1 post-contrast]
+    description: Gadolinium-enhanced T1w. BIDS writes this as a T1w with the ce- entity.
+    mappings: { bids: 'ce-<label>_T1w' }
+  - { id: T2w, label: T2-weighted, group: MR, mappings: { bids: T2w } }
+  - {
+      id: FLAIR,
+      label: FLAIR,
+      group: MR,
+      description: Fluid-attenuated inversion recovery,
+      synonyms: [T2-FLAIR],
+      mappings: { bids: FLAIR }
+    }
+  - { id: PDw, label: Proton density weighted, group: MR, mappings: { bids: PDw } }
+  - { id: T2starw, label: T2*-weighted, group: MR, synonyms: [GRE, SWI], mappings: { bids: T2starw } }
+  - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
+  - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
+  - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }
+  - { id: angio, label: MR angiography, group: MR, synonyms: [TOF, MRA], mappings: { bids: angio } }
+  # MR diffusion, function, perfusion
+  - { id: dwi, label: Diffusion-weighted, group: MR, synonyms: [DWI, DTI], mappings: { bids: dwi } }
+  - { id: ADC, label: ADC map, group: MR, description: Apparent diffusion coefficient map, mappings: { bids: ADC } }
+  - { id: bold, label: BOLD fMRI, group: MR, synonyms: [fMRI, rs-fMRI], mappings: { bids: bold } }
+  - { id: asl, label: Arterial spin labeling, group: MR, mappings: { bids: asl } }
+  - { id: dce, label: DCE perfusion, group: MR, description: Dynamic contrast-enhanced MRI }
+  - { id: dsc, label: DSC perfusion, group: MR, description: Dynamic susceptibility contrast MRI }
+  - { id: cine, label: Cine MRI, group: MR, description: 'Cardiac cine imaging, e.g. balanced SSFP' }
+  - { id: lge, label: Late gadolinium enhancement, group: MR, synonyms: [LGE] }
+  # CT phases
+  - { id: ct_noncontrast, label: Non-contrast CT, group: CT, synonyms: [native CT, NCCT] }
+  - {
+      id: ct_contrast,
+      label: Contrast CT,
+      group: CT,
+      description: Contrast-enhanced CT where the phase is not specified
+    }
+  - { id: ct_arterial, label: Arterial phase CT, group: CT }
+  - { id: ct_venous, label: Portal venous phase CT, group: CT }
+  - { id: ct_delayed, label: Delayed phase CT, group: CT }
+  - { id: ct_angio, label: CT angiography, group: CT, synonyms: [CTA] }
+  - { id: ct_lowdose, label: Low-dose CT, group: CT, synonyms: [LDCT] }
+  # Pathology stains
+  - { id: he, label: H&E stain, group: SM, synonyms: [hematoxylin and eosin] }
+  - { id: ihc, label: Immunohistochemistry, group: SM, synonyms: [IHC] }
+  # Ultrasound
+  - { id: b_mode, label: B-mode, group: US }
+  - { id: doppler, label: Doppler, group: US }

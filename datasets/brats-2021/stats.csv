@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,2040,baid2021,Table 1,
+subjects,split=train,1251,baid2021,Table 1,
+subjects,split=validation,219,baid2021,Table 1,labels not released to participants
+subjects,split=test,570,baid2021,Table 1,held out
+subjects,condition=glioma,2040,baid2021,Abstract (p. 3),pre-operative baseline mpMRI of 2040 glioma patients
+subjects,contrast=T1w,2040,baid2021,Section 2.1.1 (p. 5),four structural scans (T1; T1Gd; T2; T2-FLAIR) per case
+subjects,contrast=T1w_ce,2040,baid2021,Section 2.1.1 (p. 5),
+subjects,contrast=T2w,2040,baid2021,Section 2.1.1 (p. 5),
+subjects,contrast=FLAIR,2040,baid2021,Section 2.1.1 (p. 5),
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,2040,baid2021,Section 2.1.3 (p. 9),"""2,000 glioma cases = 8,000 mpMRI scans"", four per case"
+scans,,~8000,baid2021,Section 2.1.3 (p. 9),"""2,000 glioma cases = 8,000 mpMRI scans"""

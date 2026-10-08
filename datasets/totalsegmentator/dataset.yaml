@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: totalsegmentator
+name: TotalSegmentator CT
+full_name: TotalSegmentator dataset v2 (segmentations of 117 anatomical structures in 1228 CT images)
+summary: >-
+  1,228 routine clinical CT series from University Hospital Basel, randomly sampled across body regions, scanners and
+  pathologies, with reviewed segmentations of 117 anatomical structures. Basis of the TotalSegmentator model.
+homepage: https://github.com/wasserth/TotalSegmentator
+doi: 10.5281/zenodo.10047292
+year: 2022
+updated: 2023
+version: 2.0.1
+status: active
+creators:
+  - name: Research and Analysis, Department of Radiology, University Hospital Basel (Wasserthal J., Segeroth M. et al.)
+    url: https://github.com/wasserth/TotalSegmentator
+species: human
+modalities: [CT]
+contrasts: [ct_noncontrast, ct_arterial, ct_venous, ct_delayed, ct_angio]
+anatomy: [whole_body, head, neck, chest, abdomen]
+tasks: [segmentation]
+formats: [NIfTI]
+vendors: [siemens, philips, ge]
+size_gb: 23.6
+access:
+  type: open
+  url: https://zenodo.org/records/10047292
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      License of Zenodo record 10.5281/zenodo.10047292. Some TotalSegmentator model subtasks (e.g. appendicular_bones,
+      tissue_types) are free only for non-commercial use; that restriction concerns the model weights, not this
+      dataset record.
+citation:
+  text: >-
+    Wasserthal J, Breit HC, Meyer MT, Pradella M, Hinck D, Sauter AW, Heye T, Boll DT, Cyriac J, Yang S, Bach M,
+    Segeroth M. TotalSegmentator: Robust Segmentation of 104 Anatomic Structures in CT Images. Radiology: Artificial
+    Intelligence 5(5):e230024 (2023). doi:10.1148/ryai.230024
+sources:
+  zenodo-10047292:
+    title: Zenodo record 10047292, TotalSegmentator dataset v2.0.1
+    url: https://zenodo.org/records/10047292
+    kind: website
+  wasserthal2022:
+    title: Wasserthal et al., TotalSegmentator (arXiv:2208.05868, describes dataset v1)
+    url: https://arxiv.org/abs/2208.05868
+    kind: paper
+  totalsegmentator-v201-meta:
+    title: meta.csv inside Totalsegmentator_dataset_v201.zip (CC BY 4.0), counted per row (one row per CT series)
+    url: https://zenodo.org/records/10047292/files/Totalsegmentator_dataset_v201.zip
+    kind: computed
+related: []
+keywords: [whole-body CT, organ segmentation, multi-organ, anatomical structures, nnU-Net]
+verified:
+  date: '2026-10-07'
+  by: claude-research

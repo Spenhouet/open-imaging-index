@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: CC-BY-NC-SA-4.0
+name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+short_name: CC BY-NC-SA 4.0
+url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+version: '4.0'
+summary: Non-commercial use only, with credit. Anything you share that is built on the data must use the same license.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: NonCommercial — You may not use the material for commercial purposes.
+  model_training:
+    value: conditional
+    note: Only for non-commercial purposes. Creative Commons' AI training guidance (2025) treats training as allowed
+      under the license conditions.
+  derivatives:
+    value: 'yes'
+    quote: Adapt — remix, transform, and build upon the material.
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: conditional
+    note: Only for non-commercial purposes.
+    quote: Share — copy and redistribute the material in any medium or format.
+  redistribute_derivatives:
+    value: conditional
+    note: Allowed only non-commercially and under the same license.
+    quote: Adapt — remix, transform, and build upon the material.
+  share_model_weights:
+    value: conditional
+    note: Allowed only non-commercially and under the same license. Based on Creative Commons' AI training guidance
+      (2025).
+    quote: making copies of the work in the process of training a model, as well as subsequent use and distribution
+      of the trained model, would need to be for noncommercial purposes.
+    source: https://creativecommons.org/wp-content/uploads/2025/05/Using-CC-licensed-Works-for-AI-Training.pdf
+  attribution:
+    value: 'yes'
+    quote: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes
+      were made.
+  share_alike:
+    value: 'yes'
+    quote: ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions
+      under the same license as the original.
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-07'
+  by: Spenhouet

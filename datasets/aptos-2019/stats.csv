@@ -1,0 +1,2 @@
+measure,by,value,source,where,note
+images,split=test,~13000,kaggle-aptos2019-data,Files,"Hidden private test set (""approximately"" 13000 images, 20 GB); training and public test counts are not stated in readable public documentation"

@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,4796,niams-oai-page,Cohort section,
+subjects,sex=female,~2780,niams-oai-page,Cohort section,"58% female, rounded"
+subjects,condition=knee_osteoarthritis,1389,nda-oai-study-details,Study protocol section,Progression cohort: symptomatic tibiofemoral knee OA at baseline
+subjects,condition=healthy,122,nda-oai-study-details,Study protocol section,"Control cohort: no symptoms, no radiographic OA, no risk factors"
+subjects,anatomy=knee,4796,niams-oai-page,Cohort section,Bilateral knee MRI and radiographs at in-clinic visits

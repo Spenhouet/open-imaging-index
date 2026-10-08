@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# Synonyms hold raw DICOM Manufacturer (0008,0070) strings.
+terms:
+  - { id: siemens, label: Siemens Healthineers, synonyms: [SIEMENS, Siemens] }
+  - { id: ge, label: GE HealthCare, synonyms: [GE MEDICAL SYSTEMS, GE] }
+  - { id: philips, label: Philips, synonyms: [Philips Medical Systems, Philips Healthcare] }
+  - { id: canon, label: Canon Medical, synonyms: [TOSHIBA, Toshiba] }
+  - { id: hitachi, label: Hitachi / Fujifilm, synonyms: [Hitachi Medical Corporation, FUJIFILM Healthcare] }
+  - { id: united_imaging, label: United Imaging, synonyms: [UIH] }
+  - { id: hologic, label: Hologic, synonyms: [HOLOGIC, Inc.] }
+  - { id: carestream, label: Carestream }
+  - { id: agfa, label: Agfa }
+  - { id: aperio, label: Leica Aperio, synonyms: [Aperio] }
+  - { id: hamamatsu, label: Hamamatsu }
+  - { id: 3dhistech, label: 3DHISTECH, synonyms: [3DHistech, 3D Histech] }
+  - { id: other, label: Other }

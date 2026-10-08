@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oasis-3
+name: OASIS-3
+full_name: 'OASIS-3: Longitudinal Multimodal Neuroimaging, Clinical, and Cognitive Dataset for Normal Aging and Alzheimer Disease'
+summary: >-
+  Retrospective longitudinal collection from the WUSTL Knight ADRC with MRI, amyloid, FDG and tau PET and CT for
+  about 1,378 cognitively normal and cognitively declining adults aged 42 to 95, with clinical and cognitive data.
+homepage: https://sites.wustl.edu/oasisbrains/home/oasis-3/
+doi: 10.1101/2019.12.13.19014902
+# Year of the data descriptor preprint (December 2019).
+year: 2019
+status: active
+creators:
+  - name: Knight Alzheimer Disease Research Center, Washington University in St. Louis
+    url: https://sites.wustl.edu/oasisbrains/
+species: human
+modalities: [MR, PT, CT]
+contrasts: [T1w, T2w, FLAIR, asl, T2starw, angio, bold, dwi]
+tracers: [pib, florbetapir, fdg, flortaucipir]
+anatomy: [brain]
+conditions: [healthy, cognitive_impairment, alzheimers]
+tasks: [classification, regression, longitudinal, segmentation]
+formats: [NIfTI, BIDS]
+countries: [US]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://sites.wustl.edu/oasisbrains/
+licenses:
+  - license: LicenseRef-OASIS-DUA
+    note: The tau PET sub-project OASIS-3_AV1451 needs a separate data request.
+citation:
+  text: >-
+    LaMontagne PJ, Benzinger TLS, Morris JC, et al. OASIS-3: Longitudinal Neuroimaging, Clinical, and Cognitive Dataset
+    for Normal Aging and Alzheimer Disease. medRxiv (2019). doi:10.1101/2019.12.13.19014902
+sources:
+  oasis3-page:
+    title: OASIS-3 page, OASIS Brains website
+    url: https://sites.wustl.edu/oasisbrains/home/oasis-3/
+    kind: website
+  lamontagne2019:
+    title: LaMontagne et al. 2019, OASIS-3 data descriptor (medRxiv preprint, describes an earlier release of 1098 participants)
+    url: https://doi.org/10.1101/2019.12.13.19014902
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, ageing, amyloid PET, tau PET, longitudinal, brain MRI]
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# DICOM Modality (0008,0060) codes.
+terms:
+  - { id: MR, label: MRI, description: Magnetic resonance imaging, mappings: { dicom: MR } }
+  - { id: CT, label: CT, description: Computed tomography, mappings: { dicom: CT } }
+  - { id: PT, label: PET, description: Positron emission tomography, mappings: { dicom: PT } }
+  - { id: NM, label: SPECT / nuclear medicine, description: Nuclear medicine including SPECT, mappings: { dicom: NM } }
+  - {
+      id: DX,
+      label: X-ray,
+      description: Projection radiography (DICOM DX). Filtering for it also finds computed radiography.,
+      synonyms: [radiograph, radiography, CXR],
+      mappings: { dicom: DX }
+    }
+  - {
+      id: CR,
+      label: X-ray (computed radiography),
+      parent: DX,
+      description: Computed radiography with imaging plates,
+      synonyms: [radiograph, X-ray],
+      mappings: { dicom: CR }
+    }
+  - { id: MG, label: Mammography, mappings: { dicom: MG } }
+  - { id: US, label: Ultrasound, mappings: { dicom: US } }
+  - { id: XA, label: X-ray angiography, mappings: { dicom: XA } }
+  - {
+      id: SM,
+      label: Pathology slides,
+      description: 'Slide microscopy, including whole-slide images',
+      synonyms: [WSI, histopathology],
+      mappings: { dicom: SM }
+    }
+  - { id: OP, label: Fundus photography, description: Ophthalmic photography, mappings: { dicom: OP } }
+  - { id: OPT, label: OCT, description: Ophthalmic optical coherence tomography, mappings: { dicom: OPT } }
+  - {
+      id: XC,
+      label: Photography,
+      description: 'External camera photography, e.g. dermatology',
+      synonyms: [dermoscopy],
+      mappings: { dicom: XC }
+    }
+  - { id: ES, label: Endoscopy, mappings: { dicom: ES } }

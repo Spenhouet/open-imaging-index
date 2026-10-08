@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,1206,hcp-s1200-manual,p. 8,subjects with behavioral and demographic measures
+subjects,condition=healthy,1206,hcp-s1200-manual,p. 12,healthy young adults
+subjects,modality=MR,1113,hcp-s1200-manual,p. 8,subjects with 3T MRI (at least structural MRI)
+subjects,field_strength=3,1113,hcp-s1200-manual,p. 8,
+subjects,field_strength=7,184,hcp-s1200-manual,p. 9,all 7T subjects were also scanned at 3T
+subjects,contrast=T1w,1113,hcp-s1200-manual,p. 8,"""at least structural MRI"""

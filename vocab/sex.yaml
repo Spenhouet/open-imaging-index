@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# BIDS participants.tsv levels.
+terms:
+  - { id: female, label: Female, synonyms: [F] }
+  - { id: male, label: Male, synonyms: [M] }
+  - { id: other, label: Other }
+  - { id: unknown, label: Unknown, synonyms: [n/a, not reported] }

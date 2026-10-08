@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,1566,tcia-cbis-ddsm,,Actual participants; DICOM metadata shows 6671 patient ids because each id encodes breast and view
+subjects,anatomy=breast,1566,tcia-cbis-ddsm,,
+images,,3103,cbis-ddsm-case-csvs,,"Full-mammogram DICOM series referenced in the four CSVs; 71 breast views appear twice, once as mass and once as calcification case"
+images,split=train,2458,cbis-ddsm-case-csvs,,
+images,split=test,645,cbis-ddsm-case-csvs,,The split is per abnormality; 31 participants have images in both splits
+images,view=CC,1460,cbis-ddsm-case-csvs,,
+images,view=MLO,1643,cbis-ddsm-case-csvs,,
+images,view=CC;split=train,1160,cbis-ddsm-case-csvs,,
+images,view=CC;split=test,300,cbis-ddsm-case-csvs,,
+images,view=MLO;split=train,1298,cbis-ddsm-case-csvs,,
+images,view=MLO;split=test,345,cbis-ddsm-case-csvs,,
+subjects,view=CC,1312,cbis-ddsm-case-csvs,,Participants with at least one image in this view
+subjects,view=MLO,1473,cbis-ddsm-case-csvs,,
+images,condition=breast_cancer,1375,cbis-ddsm-case-csvs,,Images with at least one abnormality of pathology MALIGNANT
+subjects,condition=breast_cancer,752,cbis-ddsm-case-csvs,,Participants with at least one abnormality of pathology MALIGNANT
+images,condition=breast_cancer;view=CC,649,cbis-ddsm-case-csvs,,
+images,condition=breast_cancer;view=MLO,726,cbis-ddsm-case-csvs,,

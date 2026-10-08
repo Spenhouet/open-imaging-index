@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-PhysioNet-CHDL-1.5.0
+name: PhysioNet Credentialed Health Data License 1.5.0
+short_name: PhysioNet CHDL 1.5.0
+url: https://physionet.org/about/licenses/physionet-credentialed-health-data-license-150/
+version: '1.5.0'
+summary: >-
+  Research-only license for credentialed PhysioNet users. You need human-subjects and HIPAA training and must
+  sign a data use agreement. You must not share the data, try to identify people, or skip releasing the code
+  behind your publications.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The license limits use to scientific research but does not say whether that research may be commercial.
+    quote: The LICENSEE will use the data for the sole purpose of lawful use in scientific research and no other.
+  model_training:
+    value: unspecified
+    note: >-
+      The license does not mention machine learning. PhysioNet's guidance says the agreement forbids sending the
+      data to third-party online services such as the ChatGPT web interface.
+    quote: >-
+      The PhysioNet Credentialed Data Use Agreement explicitly prohibits sharing access to the data with third
+      parties, including sending it through APIs provided by companies like OpenAI, or using it in online
+      platforms like ChatGPT.
+    source: https://physionet.org/news/post/gpt-responsible-use
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    note: >-
+      The license expects publications. You must not reveal anyone's identity in them and must release the code
+      behind them.
+    quote: >-
+      The LICENSEE will exercise all reasonable and prudent care to avoid disclosure of the identity of any
+      individual or institution referenced in PhysioNet restricted data in any publication or other
+      communication.
+  redistribute_original:
+    value: 'no'
+    quote: The LICENSEE will not share access to PhysioNet restricted data with anyone else.
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      The license does not mention derived data. Sharing access to the restricted data itself is forbidden.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+    note: >-
+      The license does not require citation. Project pages on PhysioNet ask users to cite the dataset
+      ("When using this resource, please cite").
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Only credentialed users who sign the DUA can access the files.
+    source: https://physionet.org/content/mimic-cxr/2.1.0/
+  ethics_approval:
+    value: 'no'
+    note: >-
+      No IRB approval is required, but the licensee must hold current training in human research subject
+      protection and HIPAA.
+    quote: >-
+      The LICENSEE will be responsible for ensuring that he or she maintains up to date certification in human
+      research subject protection and HIPAA regulations.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'yes'
+    quote: >-
+      The LICENSEE agrees to contribute code associated with publications arising from this data to a repository
+      that is open to the research community.
+  return_results:
+    value: 'no'
+    note: >-
+      Results do not have to be returned. Information that might identify someone must be reported to
+      PHI-report@physionet.org.
+  delete_after_use:
+    value: 'no'
+    note: Obligations continue after the agreement ends, but the text does not require deleting the data.
+    quote: >-
+      This agreement may be terminated by either party at any time, but the LICENSEE's obligations with respect
+      to PhysioNet data shall continue after termination.
+  no_reidentification:
+    value: 'yes'
+    quote: The LICENSEE will not attempt to identify any individual or institution referenced in PhysioNet restricted data.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-07'
+  by: claude-research

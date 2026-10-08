@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+terms:
+  - { id: PA, label: Posteroanterior }
+  - { id: AP, label: Anteroposterior }
+  - { id: lateral, label: Lateral }
+  - { id: CC, label: Craniocaudal, description: Mammography }
+  - { id: MLO, label: Mediolateral oblique, description: Mammography }

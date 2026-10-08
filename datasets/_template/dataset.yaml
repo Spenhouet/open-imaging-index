@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+#
+# Copy this folder to datasets/<id>/ and fill it in. Remove every comment line that starts with "#!".
+# Field reference: docs/standard.md. Allowed values: the files in vocab/.
+#
+#! Lowercase, digits and dashes. Must equal the folder name.
+id: my-dataset-2024
+name: My Dataset
+#! Optional long name.
+full_name: My Multi-Center Dataset of Something
+#! 50 to 320 characters. Shown in search results.
+summary: >-
+  What is in it, how many subjects, which modality and what it is good for, in one or two sentences.
+homepage: https://example.org/my-dataset
+#! Bare DOI if the dataset has one.
+doi: 10.1234/example
+year: 2024
+creators:
+  - name: Example Lab, Example University
+    url: https://example.org
+modalities: [MR]
+contrasts: [T1w, FLAIR]
+anatomy: [brain]
+conditions: [multiple_sclerosis]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 12
+access:
+  #! open | registration | signed_agreement | credentialed | application | paid
+  type: registration
+  url: https://example.org/my-dataset/download
+licenses:
+  #! File name in licenses/ without .yaml. Add a new file there for a custom agreement.
+  - license: CC-BY-4.0
+citation:
+  text: Doe J, et al. My Dataset. Scientific Data 11, 123 (2024).
+  bibtex: |
+    @article{doe2024,
+      title={My Dataset},
+      author={Doe, Jane and others},
+      journal={Scientific Data},
+      year={2024}
+    }
+#! One key per document: name the document (author and year, or the host and page), never its kind.
+#! Every row in stats.csv names one of these keys in its source column, plus where in it.
+sources:
+  doe2024:
+    title: Doe et al. 2024, Scientific Data
+    url: https://doi.org/10.1234/example
+    kind: paper
+  my-dataset-page:
+    title: Dataset website
+    url: https://example.org/my-dataset
+    kind: website
+related: []
+keywords: [lesion segmentation]
+verified:
+  date: '2026-01-31'
+  by: your-github-handle

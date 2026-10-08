@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(LicenseRef-)?[A-Za-z0-9.+-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "short_name": {
+      "description": "Label for badges, e.g. \"CC BY 4.0\"",
+      "type": "string",
+      "maxLength": 24
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Where the full license text lives"
+    },
+    "version": {
+      "description": "Version or date of the license text that was read",
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 600
+    },
+    "purpose": {
+      "type": "string",
+      "description": "Allowed purpose, see vocab/license-rules.yaml purposes"
+    },
+    "rules": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "conditional",
+              "unspecified"
+            ]
+          },
+          "note": {
+            "description": "Plain-language explanation, required for conditional answers",
+            "type": "string"
+          },
+          "quote": {
+            "description": "The sentence in the license text this answer is based on",
+            "type": "string"
+          },
+          "source": {
+            "description": "Where the quote comes from, if not the license text itself",
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "commercial_license": {
+      "description": "Whether the provider sells a separate commercial license",
+      "type": "object",
+      "properties": {
+        "available": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "conditional",
+            "unspecified"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "available"
+      ],
+      "additionalProperties": false
+    },
+    "verified": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+          "description": "Day someone last checked this entry against its sources (YYYY-MM-DD)"
+        },
+        "by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "GitHub handle of that person"
+        }
+      },
+      "required": [
+        "date",
+        "by"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "url",
+    "summary",
+    "purpose",
+    "rules",
+    "verified"
+  ],
+  "additionalProperties": false
+}

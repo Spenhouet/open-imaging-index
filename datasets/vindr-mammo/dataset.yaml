@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: vindr-mammo
+name: VinDr-Mammo
+full_name: 'VinDr-Mammo: A large-scale benchmark dataset for computer-aided diagnosis in full-field digital mammography'
+summary: >-
+  5,000 four-view full-field digital mammography exams (20,000 DICOM images) from two Hanoi hospitals, double read
+  by radiologists with breast-level BI-RADS and density, bounding boxes for findings and a fixed train/test split.
+homepage: https://physionet.org/content/vindr-mammo/1.0.0/
+doi: 10.13026/br2v-7517
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: VinBigData (Hieu T. Nguyen, Ha Q. Nguyen, Hieu H. Pham)
+    url: https://vindr.ai/
+  - name: Hanoi Medical University Hospital and Hospital 108
+species: human
+modalities: [MG]
+anatomy: [breast]
+tasks: [classification, detection]
+formats: [DICOM]
+countries: [VN]
+vendors: [siemens, other]
+access:
+  type: signed_agreement
+  url: https://physionet.org/content/vindr-mammo/1.0.0/
+licenses:
+  - license: LicenseRef-PhysioNet-RHDL-1.5.0
+    url: https://physionet.org/content/vindr-mammo/view-license/1.0.0/
+    note: >-
+      PhysioNet lists the PhysioNet Restricted Health Data License 1.5.0 and the matching data use agreement. The
+      Scientific Data paper instead names the PhysioNet Credentialed Health Data License 1.5.0; the PhysioNet project
+      page, which grants access, is taken as authoritative.
+citation:
+  text: >-
+    Nguyen HT, Nguyen HQ, Pham HH, et al. VinDr-Mammo: A large-scale benchmark dataset for computer-aided diagnosis in
+    full-field digital mammography. Sci Data 10, 277 (2023). Pham HH, Nguyen Trung H, Nguyen HQ. VinDr-Mammo (version
+    1.0.0). PhysioNet (2022). https://doi.org/10.13026/br2v-7517
+sources:
+  physionet:
+    title: VinDr-Mammo 1.0.0 project page on PhysioNet
+    url: https://physionet.org/content/vindr-mammo/1.0.0/
+    kind: website
+  nguyen2023:
+    title: Nguyen et al. 2023, Scientific Data 10, 277 (Tables 3 to 5)
+    url: https://doi.org/10.1038/s41597-023-02100-7
+    kind: paper
+related: [cbis-ddsm]
+keywords: [mammography, BI-RADS, breast density, full-field digital mammography, lesion detection]
+verified:
+  date: '2026-10-08'
+  by: claude-research

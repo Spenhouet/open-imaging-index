@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: camelyon16
+name: CAMELYON16
+full_name: Cancer Metastases in Lymph Nodes Challenge 2016
+summary: >-
+  About 400 H&E whole-slide images of sentinel lymph nodes from breast cancer patients at two Dutch hospitals,
+  labelled for metastases with detailed tumour outlines, released under CC0 for the CAMELYON16 challenge.
+homepage: https://camelyon16.grand-challenge.org/
+year: 2015
+status: active
+creators:
+  - name: Diagnostic Image Analysis Group, Radboud University Medical Center
+    url: https://camelyon16.grand-challenge.org/
+  - name: University Medical Center Utrecht
+species: human
+modalities: [SM]
+contrasts: [he]
+anatomy: [lymph_node]
+conditions: [breast_cancer, lymph_node_metastasis]
+tasks: [detection, segmentation, classification]
+formats: [TIFF]
+countries: [NL]
+vendors: [3dhistech, hamamatsu]
+access:
+  type: open
+  url: https://camelyon17.grand-challenge.org/Data/
+  note: Shared through GigaDB, the AWS Registry of Open Data and Baidu Pan together with CAMELYON17.
+licenses:
+  - license: CC0-1.0
+citation:
+  text: >-
+    Litjens G, Bandi P, Ehteshami Bejnordi B, et al. 1399 H&E-stained sentinel lymph node sections of breast
+    cancer patients: the CAMELYON dataset. GigaScience 7, giy065 (2018). https://doi.org/10.1093/gigascience/giy065
+sources:
+  litjens2018:
+    title: Litjens et al. 2018, GigaScience (CAMELYON data note)
+    url: https://doi.org/10.1093/gigascience/giy065
+    kind: paper
+  camelyon16-data-page:
+    title: CAMELYON16 challenge data page
+    url: https://camelyon16.grand-challenge.org/Data/
+    kind: website
+keywords: [computational pathology, breast cancer metastases, sentinel lymph node, whole-slide imaging]
+verified:
+  date: '2026-10-07'
+  by: claude-research

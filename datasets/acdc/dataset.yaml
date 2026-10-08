@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: acdc
+name: ACDC
+full_name: Automated Cardiac Diagnosis Challenge (MICCAI 2017)
+summary: >-
+  Short-axis cine cardiac MRI of 150 patients from the University Hospital of Dijon in five equal groups (normal,
+  previous infarction, dilated and hypertrophic cardiomyopathy, abnormal right ventricle), with expert LV, RV and
+  myocardium segmentations at end-diastole and end-systole.
+homepage: https://www.creatis.insa-lyon.fr/Challenge/acdc/
+doi: 10.1109/TMI.2018.2837502
+year: 2017
+status: active
+creators:
+  - name: Olivier Bernard, CREATIS, University of Lyon
+    url: https://www.creatis.insa-lyon.fr/Challenge/acdc/organizers.html
+  - name: Alain Lalande, Le2i, University of Burgundy, and University Hospital of Dijon
+  - name: Pierre-Marc Jodoin, VITAL lab, University of Sherbrooke
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions:
+  [healthy, myocardial_infarction, dilated_cardiomyopathy, hypertrophic_cardiomyopathy, abnormal_right_ventricle]
+tasks: [segmentation, classification]
+formats: [NIfTI]
+countries: [FR]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+size_gb: 2.5
+access:
+  type: open
+  url: https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb
+licenses:
+  - license: LicenseRef-ACDC-Terms
+citation:
+  text: >-
+    Bernard O, Lalande A, Zotti C, Cervenansky F, et al. Deep Learning Techniques for Automatic MRI Cardiac
+    Multi-structures Segmentation and Diagnosis: Is the Problem Solved? IEEE Transactions on Medical Imaging 37(11),
+    2514-2525 (2018). doi:10.1109/TMI.2018.2837502
+sources:
+  creatis-acdc:
+    title: ACDC challenge website, dataset pages (overview, training, testing)
+    url: https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html
+    kind: website
+  bernard2018:
+    title: Bernard et al. 2018, IEEE TMI (author version on the challenge site)
+    url: https://www.creatis.insa-lyon.fr/Challenge/acdc/files/tmi_2018_bernard.pdf
+    kind: paper
+related: []
+keywords: [cardiac MRI, cine MRI, ventricle segmentation, cardiomyopathy, ejection fraction, challenge]
+verified:
+  date: '2026-10-08'
+  by: claude-research

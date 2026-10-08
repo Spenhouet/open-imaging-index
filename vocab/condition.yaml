@@ -1,0 +1,185 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# MONDO ids (HP for findings), checked with the EBI OLS API. `parent` builds the filter tree:
+# filtering for glioma also finds glioblastoma.
+terms:
+  - { id: healthy, label: Healthy control, description: No known condition of interest, synonyms: [control, normal] }
+  # Neurological and psychiatric
+  - {
+      id: alzheimers,
+      label: Alzheimer's disease,
+      parent: dementia,
+      synonyms: [AD],
+      mappings: { mondo: 'MONDO:0004975' }
+    }
+  - { id: dementia, label: Dementia, mappings: { mondo: 'MONDO:0001627' } }
+  - {
+      id: frontotemporal_dementia,
+      label: Frontotemporal dementia,
+      parent: dementia,
+      synonyms: [FTD],
+      mappings: { mondo: 'MONDO:0017276' }
+    }
+  - {
+      id: mci,
+      label: Mild cognitive impairment,
+      synonyms: [MCI],
+      description: No MONDO term exists. Closest HPO term is the broader Cognitive impairment (HP:0100543).
+    }
+  - { id: cognitive_impairment, label: Cognitive impairment, mappings: { hp: 'HP:0100543' } }
+  - { id: parkinsons, label: Parkinson's disease, synonyms: [PD], mappings: { mondo: 'MONDO:0005180' } }
+  - { id: multiple_sclerosis, label: Multiple sclerosis, synonyms: [MS], mappings: { mondo: 'MONDO:0005301' } }
+  - {
+      id: stroke,
+      label: Stroke,
+      description: 'Stroke of any or unspecified type. Use ischemic_stroke when the dataset is limited to ischemic stroke.',
+      mappings: { mondo: 'MONDO:0005098' }
+    }
+  - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
+  - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
+  - { id: epilepsy, label: Epilepsy, mappings: { mondo: 'MONDO:0005027' } }
+  - { id: schizophrenia, label: Schizophrenia, mappings: { mondo: 'MONDO:0005090' } }
+  - { id: psychotic_disorder, label: Psychotic disorder, synonyms: [psychosis], mappings: { mondo: 'MONDO:0005485' } }
+  - { id: bipolar_disorder, label: Bipolar disorder, synonyms: [bipolar], mappings: { mondo: 'MONDO:0004985' } }
+  - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
+  - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
+  - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
+  # Tumors
+  - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
+  - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }
+  - { id: glioblastoma, label: Glioblastoma, parent: glioma, synonyms: [GBM], mappings: { mondo: 'MONDO:0018177' } }
+  - { id: meningioma, label: Meningioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0016642' } }
+  - { id: brain_metastasis, label: Brain metastases, parent: brain_tumor, mappings: { mondo: 'MONDO:1040026' } }
+  - { id: lung_cancer, label: Lung cancer, mappings: { mondo: 'MONDO:0008903' } }
+  - {
+      id: nsclc,
+      label: Non-small cell lung cancer,
+      parent: lung_cancer,
+      synonyms: [NSCLC],
+      mappings: { mondo: 'MONDO:0005233' }
+    }
+  - { id: pulmonary_nodule, label: Pulmonary nodule, synonyms: [lung nodule], mappings: { hp: 'HP:0033608' } }
+  - { id: breast_cancer, label: Breast cancer, mappings: { mondo: 'MONDO:0007254' } }
+  - { id: prostate_cancer, label: Prostate cancer, mappings: { mondo: 'MONDO:0008315' } }
+  - { id: liver_cancer, label: Liver cancer, mappings: { mondo: 'MONDO:0002691' } }
+  - {
+      id: hcc,
+      label: Hepatocellular carcinoma,
+      parent: liver_cancer,
+      synonyms: [HCC],
+      mappings: { mondo: 'MONDO:0007256' }
+    }
+  - { id: kidney_cancer, label: Kidney cancer, mappings: { mondo: 'MONDO:0002367' } }
+  - {
+      id: pancreatic_cancer,
+      label: Pancreatic ductal adenocarcinoma,
+      synonyms: [PDAC, pancreatic cancer],
+      mappings: { mondo: 'MONDO:0005184' }
+    }
+  - { id: colorectal_cancer, label: Colorectal cancer, mappings: { mondo: 'MONDO:0005575' } }
+  - {
+      id: head_neck_cancer,
+      label: Head and neck squamous cell carcinoma,
+      synonyms: [HNSCC],
+      mappings: { mondo: 'MONDO:0010150' }
+    }
+  - { id: melanoma, label: Melanoma, mappings: { mondo: 'MONDO:0005105' } }
+  - { id: skin_cancer, label: Skin cancer, mappings: { mondo: 'MONDO:0002898' } }
+  - {
+      id: melanocytic_nevus,
+      label: Melanocytic nevus,
+      synonyms: [nevus, naevus, mole],
+      mappings: { mondo: 'MONDO:0005073' }
+    }
+  - { id: seborrheic_keratosis, label: Seborrheic keratosis, mappings: { mondo: 'MONDO:0008420' } }
+  - { id: lymphoma, label: Lymphoma, mappings: { mondo: 'MONDO:0005062' } }
+  - {
+      id: pancreatic_neoplasm,
+      label: Pancreatic neoplasm,
+      description: 'Any pancreatic tumour or cystic neoplasm, e.g. IPMN, neuroendocrine tumour or PDAC',
+      synonyms: [pancreatic mass, pancreatic tumour],
+      mappings: { mondo: 'MONDO:0021040' }
+    }
+  - {
+      id: lymph_node_metastasis,
+      label: Lymph node metastasis,
+      synonyms: [nodal metastasis],
+      mappings: { mondo: 'MONDO:0005438' }
+    }
+  # Chest and other findings
+  - { id: pneumonia, label: Pneumonia, mappings: { mondo: 'MONDO:0005249' } }
+  - { id: covid19, label: COVID-19, mappings: { mondo: 'MONDO:0100096' } }
+  - { id: tuberculosis, label: Tuberculosis, mappings: { mondo: 'MONDO:0018076' } }
+  - { id: pneumothorax, label: Pneumothorax, mappings: { mondo: 'MONDO:0002076' } }
+  - { id: pleural_effusion, label: Pleural effusion, mappings: { hp: 'HP:0002202' } }
+  - { id: cardiomegaly, label: Cardiomegaly, mappings: { hp: 'HP:0001640' } }
+  - { id: atelectasis, label: Atelectasis, mappings: { hp: 'HP:0100750' } }
+  - {
+      id: consolidation,
+      label: Pulmonary consolidation,
+      synonyms: [consolidation, parenchymal consolidation],
+      mappings: { hp: 'HP:0032177' }
+    }
+  - { id: pulmonary_edema, label: Pulmonary edema, synonyms: [edema, oedema], mappings: { hp: 'HP:0100598' } }
+  - { id: emphysema, label: Pulmonary emphysema, synonyms: [emphysema], mappings: { mondo: 'MONDO:0004849' } }
+  - { id: pulmonary_fibrosis, label: Pulmonary fibrosis, synonyms: [fibrosis], mappings: { mondo: 'MONDO:0002771' } }
+  - {
+      id: pulmonary_infiltrates,
+      label: Pulmonary infiltrates,
+      synonyms: [infiltration, infiltrate],
+      mappings: { hp: 'HP:0002113' }
+    }
+  - { id: pulmonary_mass, label: Pulmonary mass, synonyms: [lung mass, mass], mappings: { hp: 'HP:0033821' } }
+  - {
+      id: lung_opacity,
+      label: Pulmonary opacity,
+      synonyms: [lung opacity, airspace opacity],
+      mappings: { hp: 'HP:0031457' }
+    }
+  - { id: pleural_thickening, label: Pleural thickening, mappings: { hp: 'HP:0031944' } }
+  - {
+      id: hernia,
+      label: Hernia,
+      description: 'Hernia of any kind, e.g. hiatus hernia seen on a chest radiograph',
+      mappings: { hp: 'HP:0100790' }
+    }
+  - id: no_finding
+    label: No finding
+    description: >-
+      Image or study in which none of the dataset's target findings were reported. Not the same as a healthy
+      control: other abnormalities may be present.
+    synonyms: [No Finding]
+  - { id: copd, label: COPD, mappings: { mondo: 'MONDO:0005002' } }
+  - { id: pulmonary_embolism, label: Pulmonary embolism, mappings: { mondo: 'MONDO:0005279' } }
+  - { id: cardiomyopathy, label: Cardiomyopathy, mappings: { mondo: 'MONDO:0004994' } }
+  - {
+      id: dilated_cardiomyopathy,
+      label: Dilated cardiomyopathy,
+      parent: cardiomyopathy,
+      synonyms: [DCM],
+      mappings: { mondo: 'MONDO:0005021' }
+    }
+  - {
+      id: hypertrophic_cardiomyopathy,
+      label: Hypertrophic cardiomyopathy,
+      parent: cardiomyopathy,
+      synonyms: [HCM],
+      mappings: { mondo: 'MONDO:0005045' }
+    }
+  - {
+      id: abnormal_right_ventricle,
+      label: Abnormal right ventricle,
+      synonyms: [ARV, RV abnormality],
+      description: 'Enlarged right ventricle or reduced right ventricular ejection fraction. No single upstream term; closest HPO terms are Abnormal right ventricle morphology (HP:0001707) and Abnormal right ventricular function (HP:0033118).'
+    }
+  - { id: myocardial_infarction, label: Myocardial infarction, mappings: { mondo: 'MONDO:0005068' } }
+  - { id: osteoarthritis, label: Osteoarthritis, mappings: { mondo: 'MONDO:0005178' } }
+  - {
+      id: knee_osteoarthritis,
+      label: Knee osteoarthritis,
+      parent: osteoarthritis,
+      mappings: { mondo: 'MONDO:0005416' }
+    }
+  - { id: fracture, label: Bone fracture, mappings: { mondo: 'MONDO:0005315' } }
+  - { id: diabetic_retinopathy, label: Diabetic retinopathy, mappings: { mondo: 'MONDO:0005266' } }
+  - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
+  - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }

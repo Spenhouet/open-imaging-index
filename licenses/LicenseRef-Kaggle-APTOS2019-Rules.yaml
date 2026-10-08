@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Kaggle-APTOS2019-Rules
+name: APTOS 2019 Blindness Detection Official Competition Rules (Kaggle)
+short_name: APTOS 2019 rules
+url: https://www.kaggle.com/competitions/aptos2019-blindness-detection/rules
+version: Rules page of Kaggle competition 14774 (page id 55032), read through Kaggle's page API on 2026-10-08
+summary: >-
+  Kaggle competition rules accepted when joining the competition. The data may be used only for non-commercial
+  purposes, including the competition and academic research and education, and must not be passed on to anyone who
+  has not accepted the rules. Residents of several sanctioned countries are excluded. The rules say nothing about
+  citation, derived data or publications.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      You may access and use the Competition Data for non-commercial purposes only, including for participating in
+      the Competition and on Kaggle.com forums, and for academic research and education.
+  model_training:
+    value: conditional
+    note: Building models is the purpose of the competition; outside it, only non-commercial academic research and education are allowed.
+    quote: >-
+      You may access and use the Competition Data for non-commercial purposes only, including for participating in
+      the Competition and on Kaggle.com forums, and for academic research and education.
+  derivatives:
+    value: unspecified
+    note: The rules do not mention derived data.
+  publication:
+    value: unspecified
+    note: Academic research is allowed, but the rules do not mention publishing results.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      You agree not to transmit, duplicate, publish, redistribute or otherwise provide or make available the
+      Competition Data to any party not participating in the Competition.
+  redistribute_derivatives:
+    value: unspecified
+    note: The rules do not mention derived data.
+  share_model_weights:
+    value: unspecified
+    note: >-
+      Weights are not mentioned. Code shared publicly during the competition is deemed licensed under an open source
+      license that does not limit commercial use "of such Competition Code or model containing or depending on such
+      Competition Code", and winners must open-source their winning submission; the data itself stays non-commercial.
+    quote: >-
+      By so sharing, you are deemed to have licensed the shared code under an Open Source Initiative-approved license
+      (see www.opensource.org) that in no event limits commercial use of such Competition Code or model containing or
+      depending on such Competition Code.
+  attribution:
+    value: unspecified
+    note: The rules do not ask for a citation or credit.
+  share_alike:
+    value: 'no'
+    note: >-
+      No share-alike duty for data. Code shared publicly or winning code must carry an open source license, which
+      concerns code, not the data.
+  signed_agreement:
+    value: 'yes'
+    note: The rules must be accepted on Kaggle (online) before the data can be downloaded.
+    quote: >-
+      You agree to use reasonable and suitable measures to prevent persons who have not formally agreed to these Rules
+      from gaining access to the Competition Data.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: conditional
+    note: Only prize winners must hand over their code and license it as open source; others may keep code private.
+    quote: >-
+      You hereby license and will license your winning Submission and the source code used to generate the Submission
+      under an Open Source Initiative-approved license (see www.opensource.org) that in no event limits commercial use
+      of such code or model containing or depending on such code.
+  return_results:
+    value: conditional
+    note: Only prize winners must deliver their model code and documentation to the sponsor.
+    quote: >-
+      deliver to the Competition Sponsor the final model's software code as used to generate the winning Submission
+      and associated documentation.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The rules set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'yes'
+    note: The eligibility clause excludes residents of the listed regions and sanctioned persons from entering.
+    quote: >-
+      Competitions are open to residents of the United States and worldwide, except that if you are a resident of
+      Crimea, Cuba, Iran, Syria, North Korea, Sudan, or are subject to U.S. export controls or sanctions, you may not
+      enter the Competition.
+verified:
+  date: '2026-10-08'
+  by: claude-research

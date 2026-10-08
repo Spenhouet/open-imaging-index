@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ADNI-DUA
+name: ADNI Data Use Agreement
+short_name: ADNI DUA
+url: https://adni.loni.usc.edu/wp-content/themes/adni_2023/documents/ADNI_Data_Use_Agreement.pdf
+version: 'Current DUA with Appendix A on AI tools, PDF created 22 April 2026'
+summary: >-
+  Access for scientific investigation, teaching or planning clinical research after an online application. No
+  redistribution of participant-level data, mandatory ADNI credit in the author line and a review of every manuscript
+  by the ADNI Data and Publications Committee before journal submission. Model training is allowed but the data must
+  not reach third-party AI services that retain inputs.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I request access to data collected by the Alzheimer's Disease Neuroimaging Initiative (ADNI) for the purpose
+      of scientific investigation, teaching, or the planning of clinical research studies.
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and
+      trial planning, and its definition of a team ("in my lab or company") shows that company researchers can apply.
+  model_training:
+    value: conditional
+    quote: The use of ADNI data in training models is both permitted and encouraged, provided that the process is
+      carried out in compliance with the DUA as outlined above.
+    note: Data may not be processed with third-party AI services or compute that retain inputs or use them to train
+      public models; an opt-out from such retention is explicitly not enough.
+  derivatives:
+    value: 'yes'
+    quote: Derived datasets containing participant-level data that I create and that I anticipate will benefit the
+      scientific community, will be submitted to the ADNI study PI (Dr. Michael Weiner) using the format described in
+      Derived Data Submission Form (available in the ADNI repository).
+  publication:
+    value: conditional
+    quote: Reports and publication of summary (not participant-level) data are allowed.
+    note: Only summary data, with ADNI in the by-line, the required methods and funding text, and after review by
+      the Data and Publications Committee.
+  redistribute_original:
+    value: 'no'
+    quote: I understand that redistribution of individual participant-level data in any manner is prohibited.
+  redistribute_derivatives:
+    value: conditional
+    quote: I understand derived datasets should only be shared through the ADNI-LONI and/or other NIA-designated data
+      repository.
+    note: Participant-level derived data can only be shared through ADNI-LONI after the study PI agrees. Summary data
+      may be published.
+  share_model_weights:
+    value: conditional
+    quote: However, investigators who intend on making the weights of a trained model publicly available should consider
+      whether the model could be used to easily reconstruct parts of the ADNI data set.
+    note: Not forbidden, but a model that could reproduce participant-level data would breach the ban on releasing such
+      data.
+  attribution:
+    value: 'yes'
+    quote: On the by-line of the manuscript, after the named authors, I will include ADNI as an author by using the
+      phrase "for the Alzheimer's Disease Neuroimaging Initiative*" with the asterisk referring to the following
+      statement and list of names
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the Alzheimer's Disease Neuroimaging Initiative (ADNI) for the purpose
+      of scientific investigation, teaching, or the planning of clinical research studies.
+    note: Accepted as part of an online data use application on the LONI IDA, which ADNI reviews.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'yes'
+    quote: I will submit all manuscripts to the ADNI Data and Publications Committee (DPC) prior to submitting them to a
+      journal.
+    note: The review checks citation and acknowledgement, not the science, and takes up to 2 weeks.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: Derived datasets containing participant-level data that I create and that I anticipate will benefit the
+      scientific community, will be submitted to the ADNI study PI (Dr. Michael Weiner) using the format described in
+      Derived Data Submission Form (available in the ADNI repository).
+    note: Applies to participant-level derived datasets you expect to be useful to others. Users must also answer
+      annual requests to update information about their use of ADNI data.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the ADNI participants.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,150,creatis-acdc,,One exam per patient
+studies,,150,creatis-acdc,,"150 exams, all from different patients"
+subjects,contrast=cine,150,creatis-acdc,,Short-axis SSFP cine
+subjects,split=train,100,creatis-acdc,,
+subjects,split=test,50,creatis-acdc,,Ground truth now public
+subjects,condition=healthy,30,creatis-acdc,,NOR group
+subjects,condition=myocardial_infarction,30,creatis-acdc,,MINF group: previous infarction with LVEF below 40%
+subjects,condition=dilated_cardiomyopathy,30,creatis-acdc,,DCM group
+subjects,condition=hypertrophic_cardiomyopathy,30,creatis-acdc,,HCM group
+subjects,condition=abnormal_right_ventricle,30,creatis-acdc,,RV group
+subjects,condition=healthy;split=train,20,creatis-acdc,,
+subjects,condition=myocardial_infarction;split=train,20,creatis-acdc,,
+subjects,condition=dilated_cardiomyopathy;split=train,20,creatis-acdc,,
+subjects,condition=hypertrophic_cardiomyopathy;split=train,20,creatis-acdc,,
+subjects,condition=abnormal_right_ventricle;split=train,20,creatis-acdc,,
+subjects,condition=healthy;split=test,10,creatis-acdc,,
+subjects,condition=myocardial_infarction;split=test,10,creatis-acdc,,
+subjects,condition=dilated_cardiomyopathy;split=test,10,creatis-acdc,,
+subjects,condition=hypertrophic_cardiomyopathy;split=test,10,creatis-acdc,,
+subjects,condition=abnormal_right_ventricle;split=test,10,creatis-acdc,,

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-HCP-Open-Access-Terms
+name: WU-Minn HCP Consortium Open Access Data Use Terms
+short_name: HCP Open Access
+url: https://www.humanconnectome.org/storage/app/media/data_use_terms/DataUseTerms-HCP-Open-Access-26Apr2013.pdf
+version: '2013-Apr-26'
+summary: >-
+  Accepted when registering on ConnectomeDB. Users must not try to identify participants, must follow their
+  institution's human-subjects rules and must acknowledge the HCP. Original and derived open access data may be
+  redistributed under the same terms. Restricted data (family structure, exact age and more) need separate terms.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The terms do not mention commercial use.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: 'yes'
+    quote: I may redistribute original WU-Minn HCP Open Access data and any derived data as long as the data are
+      redistributed under these same Data Use Terms.
+  publication:
+    value: 'yes'
+    quote: I will acknowledge the use of WU-Minn HCP data and data derived from WU-Minn HCP data when publicly
+      presenting any results or algorithms that benefitted from their use.
+    note: With the required acknowledgement. Restricted data elements have their own publication limits.
+  redistribute_original:
+    value: conditional
+    quote: I may redistribute original WU-Minn HCP Open Access data and any derived data as long as the data are
+      redistributed under these same Data Use Terms.
+    note: Every recipient must register with ConnectomeDB and accept the Open Access Data Use Terms.
+  redistribute_derivatives:
+    value: conditional
+    quote: I may redistribute original WU-Minn HCP Open Access data and any derived data as long as the data are
+      redistributed under these same Data Use Terms.
+    note: Under the same Data Use Terms.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'Papers, book chapters, books, posters, oral presentations, and all other printed and digital presentations
+      of results derived from HCP data should contain the following wording in the acknowledgments section: "Data
+      were provided [in part] by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van
+      Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH
+      Blueprint for Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington
+      University."'
+  share_alike:
+    value: 'yes'
+    quote: I may redistribute original WU-Minn HCP Open Access data and any derived data as long as the data are
+      redistributed under these same Data Use Terms.
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the Washington University - University of Minnesota Consortium of the
+      Human Connectome Project (WU-Minn HCP), and I agree to the following
+    note: Accepted online when registering on ConnectomeDB.
+  ethics_approval:
+    value: conditional
+    quote: This may mean that I need my research to be approved or declared exempt by a committee that oversees
+      research on human subjects, e.g. my IRB or Ethics Committee.
+    note: Only if your institution's rules require it. The HCP states that the released data are not considered
+      de-identified.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to establish the identity of or attempt to contact any of the included human subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,1378,oasis3-page,,summary text says 1378 participants; the counter on the same page shows 1379
+subjects,condition=healthy,755,oasis3-page,,cognitively normal adults
+subjects,condition=cognitive_impairment,622,oasis3-page,,"""individuals at various stages of cognitive decline"""
+studies,modality=MR,2842,oasis3-page,,MR sessions
+studies,modality=PT,2157,oasis3-page,,"PET sessions (PIB, AV45 and FDG); the 451 tau PET sessions are counted separately"
+studies,modality=CT,1472,oasis3-page,,CT sessions
+studies,tracer=flortaucipir,451,oasis3-page,,tau PET sessions in sub-project OASIS-3_AV1451
+age_min,,42,oasis3-page,,age range given for all participants
+age_max,,95,oasis3-page,,

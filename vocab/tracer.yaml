@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+terms:
+  - { id: fdg, label: '[18F]FDG', synonyms: [FDG, fluorodeoxyglucose] }
+  - { id: pib, label: '[11C]PiB', synonyms: [PiB, Pittsburgh compound B], description: Amyloid tracer }
+  - { id: florbetapir, label: '[18F]florbetapir', synonyms: [AV-45, Amyvid], description: Amyloid tracer }
+  - { id: florbetaben, label: '[18F]florbetaben', synonyms: [FBB, Neuraceq], description: Amyloid tracer }
+  - { id: flutemetamol, label: '[18F]flutemetamol', synonyms: [Vizamyl], description: Amyloid tracer }
+  - { id: flortaucipir, label: '[18F]flortaucipir', synonyms: [AV-1451, Tauvid], description: Tau tracer }
+  - {
+      id: psma,
+      label: PSMA ligand,
+      synonyms: [68Ga-PSMA-11, 18F-DCFPyL],
+      description: Prostate-specific membrane antigen tracers
+    }
+  - { id: fdopa, label: '[18F]FDOPA', synonyms: [F-DOPA] }
+  - { id: datscan, label: '[123I]ioflupane', synonyms: [DaTscan], description: SPECT dopamine transporter tracer }

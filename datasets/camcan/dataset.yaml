@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: camcan
+name: Cam-CAN
+full_name: Cambridge Centre for Ageing and Neuroscience, Stage 2 (CC700) imaging data
+summary: >-
+  Population-based adult lifespan cohort (18-87 years) from Cambridge, UK: about 650 cognitively healthy adults with
+  T1w, T2w, diffusion, magnetization transfer and resting, movie and task fMRI at 3T, plus MEG and cognitive tests.
+homepage: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
+# Year the repository paper (Taylor et al.) was accepted, which describes the repository as available. The exact
+# first release date was not found.
+year: 2015
+updated: 2019
+status: active
+creators:
+  - name: Cambridge Centre for Ageing and Neuroscience (Cam-CAN), University of Cambridge and MRC Cognition and Brain Sciences Unit
+    url: https://cam-can.mrc-cbu.cam.ac.uk/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
+licenses:
+  - license: LicenseRef-CamCAN-DUA
+citation:
+  text: >-
+    Shafto MA, Tyler LK, Dixon M, et al. The Cambridge Centre for Ageing and Neuroscience (Cam-CAN) study protocol: a
+    cross-sectional, lifespan, multidisciplinary examination of healthy cognitive ageing. BMC Neurology 14, 204 (2014).
+    doi:10.1186/s12883-014-0204-1. Also: Taylor JR, et al. NeuroImage 144:262-269 (2017).
+sources:
+  taylor2017:
+    title: Taylor et al. 2017, The Cam-CAN data repository, NeuroImage
+    url: https://doi.org/10.1016/j.neuroimage.2015.09.018
+    kind: paper
+  mrc-cbu-camcan:
+    title: MRC-CBU data portal, CamCAN project page (Phase 2 Arm 1 imaging data table)
+    url: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
+    kind: website
+related: []
+keywords: [ageing, lifespan, brain age, healthy adults, MEG, cognition, magnetization transfer]
+verified:
+  date: '2026-10-07'
+  by: claude-research

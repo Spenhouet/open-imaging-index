@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcp-young-adult
+name: HCP Young Adult (S1200)
+full_name: WU-Minn Human Connectome Project, Young Adult study, 1200 Subjects Release
+summary: >-
+  High-resolution 3T structural, resting-state and task fMRI and multi-shell diffusion MRI of 1,113 healthy young
+  adults from twin and sibling families (1,206 with behavioral data), plus 7T MRI for 184 and MEG for 95 of them.
+homepage: https://www.humanconnectome.org/study/hcp-young-adult
+doi: 10.1016/j.neuroimage.2013.05.041
+year: 2013
+updated: 2025
+version: S1200 (March 2017); HCP-Young Adult 2025 reprocessing (August 2025)
+status: active
+creators:
+  - name: WU-Minn Human Connectome Project Consortium (Washington University in St. Louis, University of Minnesota and partners)
+    url: https://www.humanconnectome.org/study/hcp-young-adult
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3, 7]
+access:
+  type: registration
+  url: https://db.humanconnectome.org/
+licenses:
+  - license: LicenseRef-HCP-Open-Access-Terms
+    applies_to: Open access data, which covers all imaging data and most behavioral and demographic data.
+    note: >-
+      Restricted data (for example family structure, twin status, age by year and handedness) need a separate
+      application under the WU-Minn HCP Restricted Data Use Terms (version 11 Feb 2022), which this entry does not
+      break down.
+citation:
+  text: >-
+    Van Essen DC, Smith SM, Barch DM, Behrens TEJ, Yacoub E, Ugurbil K, for the WU-Minn HCP Consortium. The WU-Minn Human
+    Connectome Project: An overview. NeuroImage 80:62-79 (2013). doi:10.1016/j.neuroimage.2013.05.041
+sources:
+  hcp-s1200-manual:
+    title: WU-Minn HCP 1200 Subjects Release Reference Manual (updated April 2018)
+    url: https://www.humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Reference_Manual.pdf
+    kind: website
+  hcp-young-adult-page:
+    title: HCP Young Adult study page
+    url: https://www.humanconnectome.org/study/hcp-young-adult
+    kind: website
+related: []
+keywords: [connectome, resting-state fMRI, task fMRI, diffusion MRI, twins, healthy adults, 7T]
+verified:
+  date: '2026-10-07'
+  by: claude-research

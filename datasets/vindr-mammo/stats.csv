@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+studies,,5000,nguyen2023,Methods: Data acquisition,Exams; the number of distinct women is not reported
+studies,split=train,4000,nguyen2023,Methods: Data stratification,
+studies,split=test,1000,nguyen2023,Methods: Data stratification,
+studies,anatomy=breast,5000,nguyen2023,Methods: Data acquisition,
+images,,20000,nguyen2023,Methods: Data acquisition,Four images per exam
+images,split=train,16000,nguyen2023,Table 3 (8000 breasts x 2 views),Four images per exam
+images,split=test,4000,nguyen2023,Table 3 (2000 breasts x 2 views),Four images per exam
+images,view=CC,10000,nguyen2023,Data Records,One CC and one MLO image per breast
+images,view=MLO,10000,nguyen2023,Data Records,One CC and one MLO image per breast

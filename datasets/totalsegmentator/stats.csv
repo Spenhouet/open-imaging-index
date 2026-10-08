@@ -1,0 +1,47 @@
+measure,by,value,source,where,note
+scans,,1228,zenodo-10047292,,"""In 1228 CT images we segmented 117 anatomical structures""; meta.csv has 1228 rows"
+scans,split=train,1082,totalsegmentator-v201-meta,,
+scans,split=validation,57,totalsegmentator-v201-meta,,split val
+scans,split=test,89,totalsegmentator-v201-meta,,
+scans,sex=female,510,totalsegmentator-v201-meta,,
+scans,sex=male,716,totalsegmentator-v201-meta,,
+scans,sex=unknown,2,totalsegmentator-v201-meta,,empty gender field
+scans,age=10-19,5,totalsegmentator-v201-meta,,
+scans,age=20-29,34,totalsegmentator-v201-meta,,
+scans,age=30-39,43,totalsegmentator-v201-meta,,
+scans,age=40-49,124,totalsegmentator-v201-meta,,
+scans,age=50-59,235,totalsegmentator-v201-meta,,
+scans,age=60-69,327,totalsegmentator-v201-meta,,
+scans,age=70-79,296,totalsegmentator-v201-meta,,
+scans,age=80-89,142,totalsegmentator-v201-meta,,
+scans,age=90+,21,totalsegmentator-v201-meta,,one series has no age
+scans,vendor=siemens,1085,totalsegmentator-v201-meta,,16 series have no manufacturer
+scans,vendor=philips,74,totalsegmentator-v201-meta,,
+scans,vendor=ge,53,totalsegmentator-v201-meta,,
+scans,condition=no_finding,404,totalsegmentator-v201-meta,,pathology = no_pathology; the v1 paper also reports 404 patients without signs of pathology
+scans,sex=female;age=20-29,14,totalsegmentator-v201-meta,,
+scans,sex=male;age=20-29,20,totalsegmentator-v201-meta,,
+scans,sex=female;age=30-39,20,totalsegmentator-v201-meta,,
+scans,sex=male;age=30-39,23,totalsegmentator-v201-meta,,
+scans,sex=female;age=40-49,58,totalsegmentator-v201-meta,,
+scans,sex=male;age=40-49,66,totalsegmentator-v201-meta,,
+scans,sex=female;age=50-59,96,totalsegmentator-v201-meta,,
+scans,sex=male;age=50-59,138,totalsegmentator-v201-meta,,
+scans,sex=female;age=60-69,127,totalsegmentator-v201-meta,,
+scans,sex=male;age=60-69,200,totalsegmentator-v201-meta,,
+scans,sex=female;age=70-79,112,totalsegmentator-v201-meta,,
+scans,sex=male;age=70-79,184,totalsegmentator-v201-meta,,
+scans,sex=female;age=80-89,65,totalsegmentator-v201-meta,,
+scans,sex=male;age=80-89,77,totalsegmentator-v201-meta,,
+scans,sex=female;age=90+,16,totalsegmentator-v201-meta,,
+scans,split=train;sex=female,445,totalsegmentator-v201-meta,,
+scans,split=train;sex=male,636,totalsegmentator-v201-meta,,
+scans,split=validation;sex=female,23,totalsegmentator-v201-meta,,
+scans,split=validation;sex=male,34,totalsegmentator-v201-meta,,
+scans,split=test;sex=female,42,totalsegmentator-v201-meta,,
+scans,split=test;sex=male,46,totalsegmentator-v201-meta,,
+age_mean,,63.4,totalsegmentator-v201-meta,,over 1227 series with an age
+age_sd,,15.0,totalsegmentator-v201-meta,,
+age_median,,65,totalsegmentator-v201-meta,,
+age_min,,15,totalsegmentator-v201-meta,,
+age_max,,98,totalsegmentator-v201-meta,,

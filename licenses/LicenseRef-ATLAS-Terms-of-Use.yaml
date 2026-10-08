@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ATLAS-Terms-of-Use
+name: ATLAS Terms of Use (University of Southern California)
+short_name: ATLAS Terms of Use
+url: https://goo.gl/forms/KwCljKSLWbbHWalD2
+version: 'Terms shown on the "Request for ATLAS Dataset" Google form linked from the INDI ATLAS page, read October 2026'
+summary: >-
+  Research or statistical use only, after submitting a request form that the ATLAS team reviews before sending a
+  per-person decryption key. No redistribution without written agreement of USC, no re-identification, and
+  publications must cite ATLAS and be reported to the ATLAS team.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: -To use these datasets solely for research or statistical purposes and not for investigation of specific
+      RESEARCH SUBJECTS
+    note: The terms limit use to research or statistics but do not mention commercial use. A definitions section
+      describes an authorized user as "A faculty member, staff member, or student at a member institution", without
+      saying who the member institutions are.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning; the dataset itself was released to develop segmentation
+      algorithms.
+  derivatives:
+    value: unspecified
+    note: The terms do not mention derived data.
+  publication:
+    value: conditional
+    quote: You agree to reference the recommended bibliographic citation(s) in any publication that employs these
+      resources.
+    note: Allowed with the recommended citations; citations of the published work must be sent to the ATLAS team.
+  redistribute_original:
+    value: 'no'
+    quote: -You agree not to redistribute data or other materials without the written agreement of USC.
+    note: Only with written agreement of USC. Each person must request their own decryption key.
+  redistribute_derivatives:
+    value: unspecified
+    quote: -You agree not to redistribute data or other materials without the written agreement of USC.
+    note: The terms do not say whether derived data such as new lesion masks count as "other materials".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: You agree to reference the recommended bibliographic citation(s) in any publication that employs these
+      resources.
+  share_alike:
+    value: conditional
+    quote: When sharing data or other materials in these approved ways, you must include all accompanying files with
+      the data, including terms of use.
+    note: Data shared with USC's written agreement must be passed on together with these terms.
+  signed_agreement:
+    value: 'yes'
+    quote: Please read the terms of use below. By submitting this form, you are agreeing to these terms of use.
+    note: The request form asks for name, position, affiliation and intended use; the ATLAS team reviews it before
+      sending a decryption key.
+  ethics_approval:
+    value: 'no'
+    note: The terms do not ask for IRB approval. They require compliance with the law and with research codes of
+      conduct, and violations may be reported to the user's IRB.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: Authors of publications based on ATLAS data are required to send citations of their published works to
+      the ATLAS team at USC for inclusion in a database of related publications (npnl@usc.edu).
+    note: Only citations of published work must be sent, not data or results.
+  delete_after_use:
+    value: conditional
+    quote: USC may revoke the existing agreement, demand the return of the data in question, and deny all future
+      access to USC data.
+    note: Only as a sanction if USC finds that the terms were violated. Nothing requires deletion when a project ends.
+  no_reidentification:
+    value: 'yes'
+    quote: -To make no use of the identity of any RESEARCH SUBJECT discovered inadvertently, and to advise the ATLAS
+      team of any such discovery (npnl@usc.edu)
+    note: The terms also state that any intentional identification of a research subject violates the promise of
+      confidentiality.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-07'
+  by: claude-research

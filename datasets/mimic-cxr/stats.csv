@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,65379,johnson2019,Abstract,
+studies,,227835,johnson2019,Abstract,One study = one radiology report with one or more images
+images,,377110,johnson2019,Abstract,DICOM images

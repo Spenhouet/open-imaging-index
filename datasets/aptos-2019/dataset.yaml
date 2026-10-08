@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aptos-2019
+name: APTOS 2019
+full_name: APTOS 2019 Blindness Detection (Kaggle competition)
+summary: >-
+  Retinal fundus photographs from Aravind Eye Hospital screening in rural India, each graded by a clinician for
+  diabetic retinopathy severity on a 0 to 4 scale, released for a 2019 Kaggle competition.
+homepage: https://www.kaggle.com/competitions/aptos2019-blindness-detection
+year: 2019
+status: active
+creators:
+  - name: Aravind Eye Hospital & PG Institute of Ophthalmology
+    url: https://www.kaggle.com/competitions/aptos2019-blindness-detection/rules
+  - name: Asia Pacific Tele-Ophthalmology Society (APTOS)
+    url: https://www.kaggle.com/organizations/APTOS-Ophthalmology
+species: human
+modalities: [OP]
+anatomy: [retina]
+conditions: [diabetic_retinopathy]
+tasks: [classification]
+countries: [IN]
+access:
+  type: registration
+  url: https://www.kaggle.com/competitions/aptos2019-blindness-detection/data
+licenses:
+  - license: LicenseRef-Kaggle-APTOS2019-Rules
+    note: >-
+      Kaggle lists the data license as "Subject to Competition Rules". Kaggle's own Terms of Service also apply to
+      every account holder.
+citation:
+  text: >-
+    APTOS 2019 Blindness Detection. Kaggle competition hosted for Aravind Eye Hospital and the Asia Pacific
+    Tele-Ophthalmology Society, 2019. https://www.kaggle.com/competitions/aptos2019-blindness-detection
+sources:
+  kaggle-aptos2019-data:
+    title: Kaggle competition data description page (read through Kaggle's page API)
+    url: https://www.kaggle.com/competitions/aptos2019-blindness-detection/data
+    kind: website
+related: []
+keywords: [diabetic retinopathy, fundus photography, grading, Kaggle, India, screening]
+verified:
+  date: '2026-10-08'
+  by: claude-research

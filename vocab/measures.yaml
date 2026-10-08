@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../schema/measures.schema.json
+#
+# Measures are the values allowed in the `measure` column of stats.csv.
+# kind: count = a number of things, summary = a statistic of a numeric variable.
+measures:
+  - id: subjects
+    label: Subjects
+    kind: count
+    description: Distinct people (or animals). Use this whenever the source reports patients, participants or cases that are people.
+  - id: studies
+    label: Studies
+    kind: count
+    description: Imaging sessions, exams or visits. A longitudinal subject has several.
+  - id: scans
+    label: Scans
+    kind: count
+    description: 3D volumes or series, e.g. one T1w volume.
+  - id: images
+    label: Images
+    kind: count
+    description: 2D images, e.g. radiographs, fundus photos or ultrasound frames.
+  - id: slides
+    label: Slides
+    kind: count
+    description: Whole-slide images in digital pathology.
+  - id: age_mean
+    label: Mean age
+    kind: summary
+    unit: years
+  - id: age_median
+    label: Median age
+    kind: summary
+    unit: years
+  - id: age_sd
+    label: Age SD
+    kind: summary
+    unit: years
+  - id: age_min
+    label: Minimum age
+    kind: summary
+    unit: years
+  - id: age_max
+    label: Maximum age
+    kind: summary
+    unit: years

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "label"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "good": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no"
+            ]
+          },
+          "duo": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "when": {
+                "type": "string",
+                "enum": [
+                  "yes",
+                  "no",
+                  "conditional",
+                  "unspecified"
+                ]
+              }
+            },
+            "required": [
+              "code",
+              "label",
+              "when"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "group",
+          "label",
+          "question",
+          "good"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "purposes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "duo": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "label"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "label"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "groups",
+    "rules",
+    "purposes"
+  ],
+  "additionalProperties": false
+}

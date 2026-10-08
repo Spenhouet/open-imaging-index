@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,1010,tcia-lidc-idri,,
+studies,,1308,tcia-lidc-idri,,CT and chest radiograph studies
+scans,modality=CT,1018,armato2011,"Section Materials and Methods, Patient image data",8 patients have two CT scans
+scans,modality=CT;vendor=ge,670,armato2011,"Section Materials and Methods, Patient image data",Seven GE LightSpeed models
+scans,modality=CT;vendor=siemens,205,armato2011,"Section Materials and Methods, Patient image data","Siemens Definition, Emotion and Sensation models"
+scans,modality=CT;vendor=philips,74,armato2011,"Section Materials and Methods, Patient image data",Four Philips Brilliance models
+scans,modality=CT;vendor=canon,69,armato2011,"Section Materials and Methods, Patient image data",Toshiba Aquilion

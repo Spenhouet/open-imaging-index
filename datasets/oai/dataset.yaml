@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oai
+name: Osteoarthritis Initiative
+full_name: Osteoarthritis Initiative (OAI)
+summary: >-
+  Longitudinal US cohort of 4,796 adults aged 45 to 79 with or at risk of knee osteoarthritis, with yearly bilateral
+  3T knee MRI and knee radiographs over up to eight years, clinical data and central image assessments.
+homepage: https://nda.nih.gov/oai/
+year: 2004
+status: active
+creators:
+  - name: National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS), NIH
+    url: https://www.niams.nih.gov/grants-funding/funded-research/osteoarthritis-initiative
+  - name: OAI clinical centres (University of Maryland, Ohio State University, University of Pittsburgh, Memorial Hospital of Rhode Island) and coordinating centre (UCSF)
+  - name: NIMH Data Archive (current host)
+    url: https://nda.nih.gov/oai/
+species: human
+modalities: [MR, DX]
+contrasts: [T2map]
+anatomy: [knee, hip]
+conditions: [knee_osteoarthritis]
+tasks: [longitudinal, classification, regression]
+formats: [DICOM]
+countries: [US]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://nda.nih.gov/oai/query-download
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      OAI data are requested through the NDA permission group "Osteoarthritis Initiative", whose requests "do not
+      require Institutional sponsorship and will be approved immediately upon submission"
+      (https://nda.nih.gov/api/nda/setup/permission-groups). The NDA web app shows the general NDA Terms of Data Use
+      at that step; the OAI-specific request page needs a login and could not be read.
+citation:
+  text: >-
+    Acknowledge the Osteoarthritis Initiative and the NIMH Data Archive as described in the NDA manuscript
+    preparation guidance (https://nda.nih.gov/get/manuscript-preparation.html).
+sources:
+  niams-oai-page:
+    title: NIAMS Osteoarthritis Initiative page (cohort and visits)
+    url: https://www.niams.nih.gov/grants-funding/funded-research/osteoarthritis-initiative
+    kind: website
+  nda-oai-study-details:
+    title: NDA OAI pages "Study details" and "Image acquisitions"
+    url: https://nda.nih.gov/oai/study-details
+    kind: website
+related: []
+keywords: [knee osteoarthritis, longitudinal cohort, knee MRI, cartilage, Kellgren-Lawrence, radiographs]
+verified:
+  date: '2026-10-08'
+  by: claude-research

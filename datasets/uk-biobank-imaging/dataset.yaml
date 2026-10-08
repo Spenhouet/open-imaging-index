@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: uk-biobank-imaging
+name: UK Biobank Imaging
+full_name: UK Biobank multi-modal imaging enhancement (brain, cardiac and abdominal MRI, DXA, carotid ultrasound)
+summary: >-
+  Brain, heart and abdominal MRI, whole-body DXA and carotid ultrasound of over 100,000 UK Biobank participants aged
+  about 44 to 87 at imaging, with repeat scans for a subset, linked to genetics and health records. Access by
+  application and fee.
+homepage: https://www.ukbiobank.ac.uk/
+# Debut date of the first imaging data-fields in the UK Biobank Showcase (e.g. Data-Field 20252: "Debut Oct 2015").
+year: 2015
+updated: 2025
+status: active
+creators:
+  - name: UK Biobank Limited
+    url: https://www.ukbiobank.ac.uk/
+species: human
+modalities: [MR, US]
+contrasts: [T1w, FLAIR, T2starw, dwi, bold, asl, cine, b_mode]
+anatomy: [brain, heart, abdomen, liver, kidney, pancreas, carotid_artery, whole_body]
+tasks: [regression, longitudinal, segmentation]
+formats: [DICOM, NIfTI]
+countries: [GB]
+vendors: [siemens, ge]
+field_strengths: [1.5, 3]
+access:
+  type: paid
+  url: https://community.ukbiobank.ac.uk/hc/en-gb/articles/15453619166749-How-to-Complete-an-access-application
+licenses:
+  - license: LicenseRef-UKB-MTA
+    note: >-
+      Access needs a registered researcher account, an approved application and payment of access charges. Individual
+      data are normally analysed on the UK Biobank Research Analysis Platform (UKB-RAP); downloads need an exemption.
+citation:
+  text: >-
+    Include "This research has been conducted using the UK Biobank Resource under application number [ ]." in the
+    acknowledgements and "UK Biobank" in the title or abstract (MTA clauses 5.14-5.15). Imaging reference: Littlejohns
+    TJ, et al. The UK Biobank imaging enhancement of 100,000 participants: rationale, data collection, management and
+    future directions. Nature Communications 11, 2624 (2020). doi:10.1038/s41467-020-15948-9
+sources:
+  littlejohns2020:
+    title: Littlejohns et al. 2020, The UK Biobank imaging enhancement of 100,000 participants, Nature Communications
+    url: https://doi.org/10.1038/s41467-020-15948-9
+    kind: paper
+  ukb-showcase:
+    title: UK Biobank Data Showcase, public data-field pages (versions Aug/Sep 2025)
+    url: https://biobank.ndph.ox.ac.uk/showcase/
+    kind: website
+  ukb-community-imaging:
+    title: UK Biobank Community, Imaging Data article
+    url: https://community.ukbiobank.ac.uk/hc/en-gb/articles/24618819821981-Imaging-Data
+    kind: website
+related: []
+keywords: [population cohort, brain MRI, cardiac MRI, body composition, DXA, carotid ultrasound, imaging-derived phenotypes, biobank]
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: atlas-v2
+name: ATLAS v2.0
+full_name: Anatomical Tracings of Lesions After Stroke, Release 2.0
+summary: >-
+  T1-weighted brain MRI with manually traced stroke lesion masks from 44 research cohorts in 11 countries: 1,271
+  subjects, of which 655 training cases with masks and 300 test scans without masks are released.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/atlas.html
+year: 2021
+version: R2.0
+status: superseded
+creators:
+  - name: Neural Plasticity and Neurorehabilitation Laboratory, University of Southern California (Liew S.-L. et al.)
+    url: https://github.com/npnl/ATLAS
+  - name: ENIGMA Stroke Recovery working group
+    url: https://enigma.ini.usc.edu/ongoing/enigma-stroke-recovery/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [stroke]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+field_strengths: [1.5, 3]
+access:
+  type: signed_agreement
+  url: https://fcon_1000.projects.nitrc.org/indi/retro/atlas.html
+licenses:
+  - license: LicenseRef-ATLAS-Terms-of-Use
+    applies_to: Preprocessed (MNI-152) release on INDI, decrypted with a key sent after the request form is reviewed.
+    note: >-
+      Native-space raw data are archived at ICPSR/ADDEP (doi:10.3886/ICPSR36684.v4) under what the data descriptor
+      calls "a more stringent restricted data use agreement". That agreement could not be read for this entry.
+citation:
+  text: >-
+    Liew SL, Lo BP, Donnelly MR, et al. A large, curated, open-source stroke neuroimaging dataset to improve lesion
+    segmentation algorithms. Scientific Data 9, 320 (2022). doi:10.1038/s41597-022-01401-7
+sources:
+  liew2022:
+    title: Liew et al. 2022, A large, curated, open-source stroke neuroimaging dataset (Scientific Data)
+    url: https://doi.org/10.1038/s41597-022-01401-7
+    kind: paper
+  indi-atlas-2021:
+    title: INDI ATLAS page as archived in December 2021 (R2.0)
+    url: https://web.archive.org/web/20211212215416/http://fcon_1000.projects.nitrc.org/indi/retro/atlas.html
+    kind: website
+related: []
+keywords: [stroke lesion segmentation, chronic stroke, rehabilitation, T1-weighted MRI, ISLES]
+verified:
+  date: '2026-10-07'
+  by: claude-research

@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=../schema/license-rules.schema.json
+#
+# The questions every file in licenses/ answers. Each answer is one of:
+#   yes, no, conditional (yes, but with a condition stated in the note), unspecified (the text is silent)
+# good: which answer is the friendlier one for a dataset user. The site colors answers with it.
+# duo: GA4GH Data Use Ontology code that applies when the answer equals `when`.
+groups:
+  - id: use
+    label: What you can do
+  - id: share
+    label: What you can share
+  - id: duties
+    label: What you must do
+  - id: limits
+    label: Limits
+rules:
+  - id: commercial_use
+    group: use
+    label: Commercial use
+    question: Can the data be used for commercial purposes, e.g. to develop a product?
+    good: yes
+    duo: { when: no, code: 'DUO:0000046', label: NCU }
+  - id: model_training
+    group: use
+    label: Train ML models
+    question: Can the data be used to train machine learning models?
+    good: yes
+    duo: { when: no, code: 'DUO:0000015', label: NMDS }
+  - id: derivatives
+    group: use
+    label: Create derived data
+    question: Can you create derived data, e.g. new labels, segmentations or processed images?
+    good: yes
+  - id: publication
+    group: use
+    label: Publish results
+    question: Can you publish results obtained with the data?
+    good: yes
+    duo: { when: no, code: 'DUO:0000024', label: MOR }
+  - id: redistribute_original
+    group: share
+    label: Share the data
+    question: Can you pass the original data on to others, e.g. re-host it?
+    good: yes
+  - id: redistribute_derivatives
+    group: share
+    label: Share derived data
+    question: Can you share derived data such as labels, segmentations or features?
+    good: yes
+  - id: share_model_weights
+    group: share
+    label: Share trained models
+    question: Can you publish or sell model weights trained on the data?
+    good: yes
+  - id: attribution
+    group: duties
+    label: Cite or credit
+    question: Must you cite the dataset or credit its creators?
+    good: no
+  - id: share_alike
+    group: duties
+    label: Share alike
+    question: Must shared adaptations use the same license?
+    good: no
+  - id: signed_agreement
+    group: duties
+    label: Sign an agreement
+    question: Must you sign or accept a data use agreement before access?
+    good: no
+  - id: ethics_approval
+    group: duties
+    label: Ethics approval
+    question: Must your project have ethics (IRB) approval?
+    good: no
+    duo: { when: yes, code: 'DUO:0000021', label: IRB }
+  - id: publication_review
+    group: duties
+    label: Manuscript review
+    question: Must manuscripts be sent to the data provider before publication?
+    good: no
+  - id: code_release
+    group: duties
+    label: Release code
+    question: Must code used in publications be released?
+    good: no
+  - id: return_results
+    group: duties
+    label: Return results
+    question: Must derived data or results be returned to the provider?
+    good: no
+    duo: { when: yes, code: 'DUO:0000029', label: RTN }
+  - id: delete_after_use
+    group: duties
+    label: Delete after use
+    question: Must the data be deleted when the project ends?
+    good: no
+    duo: { when: yes, code: 'DUO:0000025', label: TS }
+  - id: no_reidentification
+    group: limits
+    label: No re-identification
+    question: Is any attempt to identify individuals forbidden?
+    good: no
+  - id: geographic_restriction
+    group: limits
+    label: Location limits
+    question: Is use limited to certain countries or regions?
+    good: no
+    duo: { when: yes, code: 'DUO:0000022', label: GS }
+# Allowed values of `purpose` in license files.
+purposes:
+  - { id: any, label: Any purpose, duo: { code: 'DUO:0000004', label: NRES } }
+  - { id: research, label: Research, duo: { code: 'DUO:0000042', label: GRU } }
+  - { id: noncommercial, label: Non-commercial use, duo: { code: 'DUO:0000046', label: NCU } }
+  - { id: noncommercial_research, label: Non-commercial research, duo: { code: 'DUO:0000046', label: NCU } }
+  - { id: health_research, label: Health research, duo: { code: 'DUO:0000006', label: HMB } }
+  - { id: approved_project, label: Approved project only, duo: { code: 'DUO:0000027', label: PS } }

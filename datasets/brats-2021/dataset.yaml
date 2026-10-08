@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brats-2021
+name: BraTS 2021
+full_name: RSNA-ASNR-MICCAI Brain Tumor Segmentation Challenge 2021
+summary: >-
+  Pre-operative multi-parametric brain MRI (T1, contrast-enhanced T1, T2, FLAIR) of 2,040 adult glioma patients
+  from many institutions, with expert-approved tumor sub-region segmentations and MGMT promoter methylation labels.
+homepage: https://www.synapse.org/Synapse:syn25829067
+doi: 10.7937/jc8x-9874
+year: 2021
+status: active
+creators:
+  - name: RSNA, ASNR and MICCAI BraTS organizers (Baid U., Bakas S. et al.)
+    url: https://www.synapse.org/Synapse:syn25829067
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/analysis-result/rsna-asnr-miccai-brats-2021/
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [glioma]
+tasks: [segmentation, classification]
+formats: [NIfTI, DICOM]
+countries: [US, DE, CH, CA, HU, IN]
+size_gb: 142
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/analysis-result/rsna-asnr-miccai-brats-2021/
+# The same images are offered under two licenses: pick the copy whose terms fit.
+license_combine: any
+licenses:
+  - license: CC-BY-4.0
+    applies_to: >-
+      TCIA copy (DOI 10.7937/jc8x-9874): training and validation data of both tasks, 1,480 subjects, NIfTI and DICOM,
+      plus the BraTS-to-TCIA ID crosswalk.
+    url: https://www.cancerimagingarchive.net/analysis-result/rsna-asnr-miccai-brats-2021/
+  - license: CC-BY-NC-4.0
+    applies_to: >-
+      Synapse copy (now distributed as BraTS 2023 Adult Glioma, syn51156910), accepted through the post-challenge
+      Terms and Conditions.
+    url: https://www.synapse.org/Synapse:syn51156910/wiki/627000
+    note: >-
+      The Synapse terms state "The Data is subject to a CC-BY-NC license" and require an attribution statement
+      naming Synapse ID syn51156910. The same images are thus offered under CC BY 4.0 on TCIA and CC BY-NC on Synapse.
+      The original DICOM series in the source TCIA collections fall under the NIH Controlled Data Access Policy.
+citation:
+  text: >-
+    Baid U, et al. The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic
+    Classification. arXiv:2107.02314 (2021). Also cite Menze et al., IEEE TMI 34(10) 2015 and Bakas et al., Sci Data 4,
+    170117 (2017), and the TCIA dataset DOI 10.7937/jc8x-9874.
+sources:
+  baid2021:
+    title: Baid et al. 2021, The RSNA-ASNR-MICCAI BraTS 2021 Benchmark (arXiv:2107.02314v2, pages of that version)
+    url: https://arxiv.org/abs/2107.02314v2
+    kind: paper
+  tcia:
+    title: TCIA analysis result RSNA-ASNR-MICCAI-BraTS-2021
+    url: https://www.cancerimagingarchive.net/analysis-result/rsna-asnr-miccai-brats-2021/
+    kind: website
+  synapse:
+    title: BraTS 2023 Adult Glioma page on Synapse (states the training and validation data equal BraTS 2021)
+    url: https://www.synapse.org/Synapse:syn51156910/wiki/622351
+    kind: website
+related: []
+keywords: [brain tumor segmentation, glioma, MGMT, radiogenomics, challenge]
+verified:
+  date: '2026-10-07'
+  by: claude-research

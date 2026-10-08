@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Must equal the folder name"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 320,
+      "description": "One or two sentences shown in search results and as the page description"
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "doi": {
+      "type": "string",
+      "pattern": "^10\\.\\d{4,9}\\/\\S+$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1980,
+      "maximum": 2100,
+      "description": "Year of the first public release"
+    },
+    "updated": {
+      "description": "Year of the latest release",
+      "type": "integer",
+      "minimum": 1980,
+      "maximum": 2100
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "default": "active",
+      "type": "string",
+      "enum": [
+        "active",
+        "superseded",
+        "retired"
+      ]
+    },
+    "creators": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "species": {
+      "default": "human",
+      "type": "string"
+    },
+    "modalities": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contrasts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tracers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "anatomy": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      }
+    },
+    "vendors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "field_strengths": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "exclusiveMinimum": 0
+      }
+    },
+    "size_gb": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "access": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "See vocab/access.yaml"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "licenses": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "license": {
+            "type": "string",
+            "description": "File name in licenses/ without .yaml"
+          },
+          "applies_to": {
+            "description": "Which part of the data, if the dataset mixes licenses",
+            "type": "string"
+          },
+          "url": {
+            "description": "This dataset’s copy of the license, if it differs from the license file",
+            "type": "string",
+            "format": "uri"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "license"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "license_combine": {
+      "default": "all",
+      "description": "all: each license covers a different part, all apply (default). any: the same data is offered under alternative licenses, pick one",
+      "type": "string",
+      "enum": [
+        "all",
+        "any"
+      ]
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "bibtex": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9_-]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "paper",
+              "website",
+              "data",
+              "computed"
+            ],
+            "description": "computed = counted from openly licensed data, with the script linked in url"
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verified": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+          "description": "Day someone last checked this entry against its sources (YYYY-MM-DD)"
+        },
+        "by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "GitHub handle of that person"
+        }
+      },
+      "required": [
+        "date",
+        "by"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "summary",
+    "homepage",
+    "year",
+    "creators",
+    "modalities",
+    "anatomy",
+    "access",
+    "licenses",
+    "sources",
+    "verified"
+  ],
+  "additionalProperties": false
+}

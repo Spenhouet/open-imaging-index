@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+terms:
+  - { id: train, label: Training }
+  - { id: validation, label: Validation }
+  - { id: test, label: Test }

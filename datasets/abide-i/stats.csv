@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,1112,indi-abide1,,datasets from 1112 individuals
+subjects,condition=autism,539,indi-abide1,,
+subjects,condition=healthy,573,indi-abide1,,typical controls
+subjects,contrast=T1w,1112,dimartino2014,Abstract,each R-fMRI dataset comes with corresponding structural MRI
+subjects,contrast=bold,1112,dimartino2014,Abstract,
+subjects,contrast_set=bold+T1w,1112,dimartino2014,Abstract,
+age_median,,14.7,indi-abide1,,median across groups
+age_min,,6.5,indi-abide1,NYU site profile,typical-control range 6.5-31.8; the summary gives 7-64
+age_max,,64,indi-abide1,,

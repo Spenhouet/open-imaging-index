@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ACDC-Terms
+name: ACDC dataset license terms (CC BY-NC-SA 4.0 with additional terms)
+short_name: ACDC terms
+url: https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/66e290e0961576b1bad4ee3c/download
+version: LICENSE_TERMS.md in the ACDC collection of the Human Heart Project, dated 2024-09-12
+summary: >-
+  CC BY-NC-SA 4.0, narrowed by two extra terms: use is allowed strictly for non-commercial scientific research,
+  and the ACDC paper by Bernard et al. (IEEE TMI 2018) must be cited. Shared adaptations must keep the same license.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The ACDC dataset is available as free to use strictly only non-commercial scientific research purposes
+  model_training:
+    value: conditional
+    note: >-
+      Not mentioned in the terms. Allowed under CC BY-NC-SA 4.0 for non-commercial purposes, and the extra term
+      limits use to non-commercial scientific research.
+  derivatives:
+    value: conditional
+    note: Allowed by CC BY-NC-SA 4.0, within non-commercial scientific research.
+    quote: Adapt — remix, transform, and build upon the material.
+    source: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  publication:
+    value: conditional
+    note: Publishing results is expected; the ACDC paper must be cited.
+    quote: Participants must use the following citation when referencing the ACDC dataset.
+  redistribute_original:
+    value: conditional
+    note: Allowed by CC BY-NC-SA 4.0 non-commercially and under the same license; the extra terms do not mention sharing.
+    quote: Share — copy and redistribute the material in any medium or format.
+    source: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  redistribute_derivatives:
+    value: conditional
+    note: Allowed non-commercially and under the same license.
+    quote: >-
+      ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under
+      the same license as the original.
+    source: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  share_model_weights:
+    value: unspecified
+    note: >-
+      The terms do not mention models. Under CC BY-NC-SA 4.0 alone, Creative Commons' guidance would allow
+      non-commercial sharing, but the extra research-only term is not addressed.
+  attribution:
+    value: 'yes'
+    quote: Participants must use the following citation when referencing the ACDC dataset.
+  share_alike:
+    value: 'yes'
+    quote: >-
+      ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under
+      the same license as the original.
+    source: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  signed_agreement:
+    value: conditional
+    note: >-
+      The terms say users must agree to them, but the files on the Human Heart Project download without an account
+      or click-through.
+    quote: Participants must agree to comply with the terms of CC BY-NC-SA 4.0, and also agree to the specific terms
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: claude-research

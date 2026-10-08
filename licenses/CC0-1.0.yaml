@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: CC0-1.0
+name: Creative Commons Zero 1.0 Universal
+short_name: CC0
+url: https://creativecommons.org/publicdomain/zero/1.0/
+version: '1.0'
+summary: Public domain dedication. Do anything with the data, including commercial use, without asking and without
+  having to give credit.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
+      permission.
+  model_training:
+    value: 'yes'
+    note: Public domain dedication, no conditions.
+  derivatives:
+    value: 'yes'
+    quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
+      permission.
+  publication:
+    value: 'yes'
+    note: The dedication places no limits on publishing.
+  redistribute_original:
+    value: 'yes'
+    quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
+      permission.
+  redistribute_derivatives:
+    value: 'yes'
+    quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
+      permission.
+  share_model_weights:
+    value: 'yes'
+    note: Public domain dedication, no conditions.
+  attribution:
+    value: 'no'
+    note: Not legally required. Citing the dataset is still good scientific practice.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public domain dedication, no agreement.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-07'
+  by: Spenhouet

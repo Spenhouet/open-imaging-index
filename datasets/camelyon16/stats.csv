@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+slides,,399,litjens2018,Data description section,The challenge website states 400 whole-slide images
+slides,vendor=3dhistech,249,litjens2018,Table 3; Data collection section,Radboud UMC slides (3DHistech Pannoramic Flash II 250)
+slides,vendor=hamamatsu,150,litjens2018,Table 3; Data collection section,UMC Utrecht slides (Hamamatsu NanoZoomer-XR)
+slides,condition=lymph_node_metastasis,159,litjens2018,Table 3,Macro-metastases 82 + micro-metastases 77 (both centers); no isolated-tumour-cell-only slides
+slides,vendor=3dhistech;condition=lymph_node_metastasis,99,litjens2018,Table 3,Radboud UMC: 48 macro + 51 micro
+slides,vendor=hamamatsu;condition=lymph_node_metastasis,60,litjens2018,Table 3,UMC Utrecht: 34 macro + 26 micro
+slides,split=train,270,camelyon16-data-page,,"Two training releases: 170 (100 normal, 70 metastases) and 100 (60 normal, 40 metastases)"
+slides,split=train;condition=lymph_node_metastasis,110,camelyon16-data-page,,70 + 40

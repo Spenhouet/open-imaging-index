@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: CC-BY-3.0
+name: Creative Commons Attribution 3.0 Unported
+short_name: CC BY 3.0
+url: https://creativecommons.org/licenses/by/3.0/
+version: '3.0'
+summary: Older version of CC BY. Use, share and adapt the data for any purpose, including commercial use, as long
+  as you credit the creators.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: Share — copy and redistribute the material in any medium or format for any purpose, even commercially.
+  model_training:
+    value: 'yes'
+    note: Creative Commons' AI training guidance (2025) treats training as allowed under the license conditions.
+  derivatives:
+    value: 'yes'
+    quote: Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: 'yes'
+    quote: Share — copy and redistribute the material in any medium or format for any purpose, even commercially.
+  redistribute_derivatives:
+    value: 'yes'
+    quote: Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+  share_model_weights:
+    value: 'yes'
+    note: Credit the dataset when sharing the model. Based on Creative Commons' AI training guidance (2025).
+  attribution:
+    value: 'yes'
+    quote: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes
+      were made.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-07'
+  by: Spenhouet

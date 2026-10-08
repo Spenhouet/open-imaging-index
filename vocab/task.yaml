@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# What the annotations support. Used in dataset.yaml `tasks`.
+terms:
+  - { id: segmentation, label: Segmentation }
+  - { id: classification, label: Classification }
+  - { id: detection, label: Detection, description: Bounding boxes or points }
+  - { id: regression, label: Regression, description: 'e.g. brain age or clinical scores' }
+  - { id: registration, label: Registration, description: Landmarks or paired scans for alignment }
+  - { id: survival, label: Survival prediction }
+  - { id: report_generation, label: Report generation, description: Images paired with free-text reports }
+  - { id: reconstruction, label: Reconstruction, description: Raw k-space or sinogram data }
+  - { id: synthesis, label: Image synthesis, description: Paired modalities for translation }
+  - { id: longitudinal, label: Longitudinal analysis, description: Repeated scans of the same subjects }
+  - { id: normative, label: Normative modeling, description: Mostly healthy subjects for reference ranges }

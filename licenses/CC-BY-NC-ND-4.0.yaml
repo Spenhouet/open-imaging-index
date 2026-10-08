@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: CC-BY-NC-ND-4.0
+name: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+short_name: CC BY-NC-ND 4.0
+url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+version: '4.0'
+summary: Share the unchanged data with credit for non-commercial purposes. You may not share anything derived from
+  it, and Creative Commons advises against training models on it.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: NonCommercial — You may not use the material for commercial purposes.
+  model_training:
+    value: 'no'
+    note: Creative Commons' AI training guidance (2025) says NoDerivatives works should not be used as training
+      data under a conservative reading.
+    quote: CC-licensed work subject to the NoDerivatives restriction should not be used as training data if taking
+      this conservative approach.
+    source: https://creativecommons.org/wp-content/uploads/2025/05/Using-CC-licensed-Works-for-AI-Training.pdf
+  derivatives:
+    value: conditional
+    note: You may adapt the data for your own use, but you may not share what you made.
+    quote: NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified
+      material.
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: conditional
+    note: Only for non-commercial purposes.
+    quote: Share — copy and redistribute the material in any medium or format.
+  redistribute_derivatives:
+    value: 'no'
+    quote: NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified
+      material.
+  share_model_weights:
+    value: 'no'
+    note: Follows from the guidance not to train on NoDerivatives data.
+  attribution:
+    value: 'yes'
+    quote: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes
+      were made.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-07'
+  by: Spenhouet

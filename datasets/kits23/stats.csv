@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,599,kits23-page,,"""599 cases"", one preoperative scan per patient"
+subjects,split=train,489,kits23-page,,
+subjects,split=test,110,kits23-page,,labels not released
+subjects,contrast=ct_contrast,599,kits23-page,,corticomedullary or nephrogenic phase
+subjects,split=train;sex=female,182,kits23-clinical-json,,one further training case is recorded as transgender (not listed)
+subjects,split=train;sex=male,306,kits23-clinical-json,,
+subjects,split=train;age=20-29,10,kits23-clinical-json,,age at nephrectomy
+subjects,split=train;age=30-39,24,kits23-clinical-json,,
+subjects,split=train;age=40-49,55,kits23-clinical-json,,
+subjects,split=train;age=50-59,122,kits23-clinical-json,,
+subjects,split=train;age=60-69,156,kits23-clinical-json,,
+subjects,split=train;age=70-79,88,kits23-clinical-json,,
+subjects,split=train;age=80-89,25,kits23-clinical-json,,
+subjects,split=train;sex=female;age=30-39,11,kits23-clinical-json,,
+subjects,split=train;sex=male;age=30-39,13,kits23-clinical-json,,
+subjects,split=train;sex=female;age=40-49,17,kits23-clinical-json,,
+subjects,split=train;sex=male;age=40-49,38,kits23-clinical-json,,
+subjects,split=train;sex=female;age=50-59,42,kits23-clinical-json,,
+subjects,split=train;sex=male;age=50-59,80,kits23-clinical-json,,
+subjects,split=train;sex=female;age=60-69,65,kits23-clinical-json,,
+subjects,split=train;sex=male;age=60-69,91,kits23-clinical-json,,
+subjects,split=train;sex=female;age=70-79,30,kits23-clinical-json,,
+subjects,split=train;sex=male;age=70-79,57,kits23-clinical-json,,
+subjects,split=train;sex=male;age=80-89,16,kits23-clinical-json,,
+subjects,split=train;condition=kidney_cancer,439,kits23-clinical-json,,malignant = true on pathology; 43 benign and 7 unknown

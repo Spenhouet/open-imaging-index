@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+scans,,2633,simpson2019,Table 1,"Sum of the N column for the ten tasks (3D or 4D volumes, training and test)"
+scans,modality=MR,1222,simpson2019,Table 1,"Sum of N column: Task01 brain (750), Task04 hippocampus (394), Task05 prostate (48), Task02 heart (30)"
+scans,modality=CT,1411,simpson2019,Table 1,"Sum of N column: Task03 liver (201), Task08 hepatic vessels (443), Task07 pancreas (420), Task10 colon (190), Task06 lung (96), Task09 spleen (61)"
+scans,anatomy=brain,750,simpson2019,Table 1,Task01 BrainTumour; website split: 484 training + 266 test; multimodal MRI from BraTS 2016/2017
+scans,anatomy=hippocampus,394,simpson2019,Table 1,Task04 Hippocampus; website split: 263 training + 131 test; T1w MPRAGE
+scans,anatomy=prostate,48,simpson2019,Table 1,Task05 Prostate; website split: 32 training + 16 test; T2w and ADC
+scans,anatomy=heart,30,simpson2019,Table 1,Task02 Heart (left atrium); website split: 20 training + 10 test
+scans,anatomy=liver,644,simpson2019,Table 1,Task03 Liver (201) + Task08 HepaticVessel (443); website splits 131 + 70 and 303 + 140
+scans,anatomy=pancreas,420,simpson2019,Table 1,Task07 Pancreas; the website gives 282 training + 139 test
+scans,anatomy=colon,190,simpson2019,Table 1,Task10 Colon; website split: 126 training + 64 test
+scans,anatomy=lung,96,simpson2019,Table 1,Task06 Lung; website split: 64 training + 32 test
+scans,anatomy=spleen,61,simpson2019,Table 1,Task09 Spleen; website split: 41 training + 20 test
+scans,condition=glioma,750,simpson2019,p. 3 (Task01_BrainTumour),Glioblastoma or lower-grade glioma
+scans,condition=liver_cancer,644,simpson2019,"pp. 4 and 6 (Task03_Liver, Task08_HepaticVessel)",Primary and metastatic liver tumours (Task03 and Task08)
+scans,condition=pancreatic_neoplasm,420,simpson2019,pp. 5-6 (Task07_Pancreas),"IPMN, neuroendocrine tumours or PDAC"
+scans,condition=colorectal_cancer,190,simpson2019,p. 6 (Task10_Colon),Primary colon cancer
+scans,condition=nsclc,96,simpson2019,p. 5 (Task06_Lung),
+subjects,condition=healthy,90,simpson2019,p. 5 (Task04_Hippocampus),Task04 Hippocampus source cohort (195 labelled atlases)
+subjects,condition=psychotic_disorder,105,simpson2019,p. 5 (Task04_Hippocampus),"Task04: 56 schizophrenia, 32 schizoaffective, 17 schizophreniform"
+subjects,condition=schizophrenia,56,simpson2019,p. 5 (Task04_Hippocampus),

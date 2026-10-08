@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ixi
+name: IXI
+full_name: Information eXtraction from Images
+summary: >-
+  Nearly 600 brain MRI scans of healthy adults from three London hospitals, with T1w, T2w, PD, MR angiography
+  and diffusion images and basic demographics.
+homepage: https://brain-development.org/ixi-dataset/
+year: 2007
+status: active
+creators:
+  - name: Biomedical Image Analysis Group, Imperial College London
+    url: https://brain-development.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, PDw, angio, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, synthesis, regression]
+formats: [NIfTI]
+countries: [GB]
+vendors: [philips, ge]
+field_strengths: [1.5, 3]
+access:
+  type: open
+  url: https://brain-development.org/ixi-dataset/
+licenses:
+  - license: CC-BY-SA-3.0
+citation:
+  text: IXI Dataset, Biomedical Image Analysis Group, Imperial College London. https://brain-development.org/ixi-dataset/
+sources:
+  ixi-page:
+    title: IXI Dataset page
+    url: https://brain-development.org/ixi-dataset/
+    kind: website
+  demographics:
+    title: IXI.xls demographics spreadsheet (CC BY-SA 3.0), counted per unique subject with an age
+    url: http://biomedic.doc.ic.ac.uk/brain-development/downloads/IXI/IXI.xls
+    kind: computed
+keywords: [brain age, healthy controls, image synthesis, multi-contrast]
+verified:
+  date: '2026-10-07'
+  by: Spenhouet

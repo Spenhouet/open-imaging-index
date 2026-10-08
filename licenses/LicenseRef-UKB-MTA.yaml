@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-UKB-MTA
+name: UK Biobank Material Transfer Agreement (data only)
+short_name: UK Biobank MTA
+url: https://www.ukbiobank.ac.uk/wp-content/uploads/2025/01/Material-Transfer-Agreement.pdf
+version: 'New Applicant MTA - Data Only (2023), ACCESS_031_F v1.4, 26 October 2023'
+summary: >-
+  Access for an approved health-related research project in the public interest, open to academic and commercial
+  applicants, after paying access charges and signing the MTA. Data are analysed on the UK Biobank Research Analysis
+  Platform and may not be passed on. Results data, including trained model parameters, must be returned to UK Biobank,
+  manuscripts must be sent two weeks before publication, and data must be destroyed when the project ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: 'Applicant or Applicant Institution: the organization (e.g., University, company or other identifiable legal
+      entity) making the Application for access in respect of the Approved Research Project'
+    note: Companies can apply, but only for an approved project of health-related research in the public interest.
+      Patents on drugs, diagnostics and other technology are allowed; patents on the genotype-phenotype data are not
+      (clause 3.7).
+  model_training:
+    value: conditional
+    quote: Any parameters derived from the UK Biobank data for such a model (which are also the property of the
+      researcher) must be returned to UK Biobank as derived variables (part of the Results Data), which can then be
+      made available to other researchers in the normal way.
+    source: https://community.ukbiobank.ac.uk/hc/en-gb/articles/21922841787293-Use-of-Artificial-Intelligence-AI-applications-and-models
+    note: UK Biobank supports training AI models within an approved project. Trained parameters must be returned, and
+      participant-level data must never be fed into a publicly available generative AI model.
+  derivatives:
+    value: 'yes'
+    quote: Except as provided in clause 3.3, the Applicant shall own the IPRs in their Findings, the Results Data and
+      the Other Data.
+  publication:
+    value: conditional
+    quote: The Applicant shall use All Reasonable Endeavours to publish the Findings (and provide UK Biobank with a link
+      thereto) within six (6) months after the Completion Date for the Approved Research Project
+    note: Publishing is expected. No participant-level data, "UK Biobank" in the title or abstract, the required
+      acknowledgement, and a copy to UK Biobank two weeks in advance. Images in publications must not be
+      potentially identifying.
+  redistribute_original:
+    value: 'no'
+    quote: The Applicant shall not share, sub-license, disclose, transfer, sell, gift or supply the Materials to any
+      other person or unauthorised third party.
+  redistribute_derivatives:
+    value: conditional
+    quote: alternatively UK Biobank and the relevant Applicant may agree that the relevant Applicant retains the
+      Results Data on the basis that they are made publicly available to other Researchers and/or publicly available
+      generally
+    note: Results data and summary outputs may be shared; anything containing participant-level data may not
+      (clause 3.8). UK Biobank also receives a licence to all generated data.
+  share_model_weights:
+    value: conditional
+    quote: Thus researchers can also make the trained model available to third parties (on such terms as they see
+      reasonably fit, taking into account UK Biobank's de facto open access approach) with the following proviso
+    source: https://community.ukbiobank.ac.uk/hc/en-gb/articles/21922841787293-Use-of-Artificial-Intelligence-AI-applications-and-models
+    note: Not allowed if the model could retrieve or generate participant-level data, or give access equivalent to it.
+      Weights must also be returned to UK Biobank.
+  attribution:
+    value: 'yes'
+    quote: UK Biobank requires that any and all publications of Findings using UK Biobank data include the following
+      credit, which should be incorporated within the "Acknowledgements" of such publication
+  share_alike:
+    value: 'no'
+    note: No license is imposed on shared adaptations. The applicant must, however, grant UK Biobank a licence to all
+      generated data (clause 3.2).
+  signed_agreement:
+    value: 'yes'
+    quote: UK Biobank's approval of this Application is valid for 90 days during which time the Applicant must pay the
+      Access Charges and execute this Material Transfer Agreement ("MTA").
+    note: Follows registration and review of an application. Access charges apply.
+  ethics_approval:
+    value: conditional
+    quote: all applicable laws, regulations, guidelines and approvals, including without limitation the Human Tissue
+      Act 2004, the Data Protection Legislation and any approvals required from a Research Ethics Committee (or the
+      applicable equivalent in the jurisdiction where the Approved Research Project is to be conducted)
+    note: Use within the approved project falls under UK Biobank's own Research Tissue Bank approval; separate approval
+      only where local rules require it.
+  publication_review:
+    value: 'yes'
+    quote: The Applicant shall nevertheless provide a copy of any report of its Findings and any press release to UK
+      Biobank at least two (2) weeks before their expected date of first public presentation or publication in any
+      format
+    note: No approval is needed unless Annex 4 says otherwise, but UK Biobank may comment on reports likely to provoke
+      controversy.
+  code_release:
+    value: conditional
+    quote: 'Results Data: data and methodology (for example, the SAS/R/Stata scripts) which underlie the Findings, and
+      which would enable another competent researcher to generate the Findings'
+    note: Scripts belong to the Results Data that must be returned to UK Biobank, not necessarily published. Public
+      code must not contain participant data.
+  return_results:
+    value: 'yes'
+    quote: Within six (6) months after the publication of the Findings, the relevant Applicant shall provide to UK
+      Biobank the Results Data in such form and format as set out in clause 5.8 above
+    note: An annual project report is also required.
+  delete_after_use:
+    value: 'yes'
+    quote: The Materials shall then be destroyed or otherwise rendered permanently inaccessible by the Applicant
+      Institution in accordance with the MTA.
+  no_reidentification:
+    value: 'yes'
+    quote: developing, linking or re-engineering the Materials supplied to it so as to identify (directly or
+      indirectly) any Participant
+  geographic_restriction:
+    value: conditional
+    quote: The Applicant shall not process any Participant Level Data (nor permit any Participant Level Data to be
+      processed) in a territory outside of the UK (or where clause 9.4 applies, where processing occurs in a
+      subsequent territory) unless it has taken such measures as are necessary to ensure the transfer is in
+      compliance with Data Protection Legislation.
+    note: Researchers anywhere may apply, but transfers outside the UK must meet data protection law, embargoed
+      destinations are excluded (clause 2.1.4), and individual-level data normally stay on the UK Biobank Research
+      Analysis Platform.
+commercial_license:
+  available: unspecified
+  note: Commercial organisations use the same application, fee and MTA; no separate commercial license is described.
+verified:
+  date: '2026-10-07'
+  by: claude-research

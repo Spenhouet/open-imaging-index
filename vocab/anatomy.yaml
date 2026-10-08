@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# UBERON ids, checked with the EBI OLS API.
+terms:
+  - { id: brain, label: Brain, mappings: { uberon: 'UBERON:0000955' } }
+  - {
+      id: hippocampus,
+      label: Hippocampal formation,
+      parent: brain,
+      synonyms: [hippocampus],
+      mappings: { uberon: 'UBERON:0002421' }
+    }
+  - { id: head, label: Head, mappings: { uberon: 'UBERON:0000033' } }
+  - { id: neck, label: Neck, mappings: { uberon: 'UBERON:0000974' } }
+  - { id: carotid_artery, label: Carotid artery, parent: neck, synonyms: [common carotid artery], mappings: { uberon: 'UBERON:0005396' } }
+  - { id: spinal_cord, label: Spinal cord, mappings: { uberon: 'UBERON:0002240' } }
+  - { id: spine, label: Spine, mappings: { uberon: 'UBERON:0001130' } }
+  - { id: eye, label: Eye, mappings: { uberon: 'UBERON:0000970' } }
+  - { id: retina, label: Retina, parent: eye, mappings: { uberon: 'UBERON:0000966' } }
+  - { id: chest, label: Chest, synonyms: [thorax], mappings: { uberon: 'UBERON:0001443' } }
+  - { id: lung, label: Lung, parent: chest, mappings: { uberon: 'UBERON:0002048' } }
+  - { id: heart, label: Heart, parent: chest, mappings: { uberon: 'UBERON:0000948' } }
+  - { id: breast, label: Breast, mappings: { uberon: 'UBERON:0000310' } }
+  - { id: abdomen, label: Abdomen, mappings: { uberon: 'UBERON:0000916' } }
+  - { id: liver, label: Liver, parent: abdomen, mappings: { uberon: 'UBERON:0002107' } }
+  - { id: kidney, label: Kidney, parent: abdomen, mappings: { uberon: 'UBERON:0002113' } }
+  - { id: pancreas, label: Pancreas, parent: abdomen, mappings: { uberon: 'UBERON:0001264' } }
+  - { id: spleen, label: Spleen, parent: abdomen, mappings: { uberon: 'UBERON:0002106' } }
+  - { id: stomach, label: Stomach, parent: abdomen, mappings: { uberon: 'UBERON:0000945' } }
+  - { id: colon, label: Colon, parent: abdomen, mappings: { uberon: 'UBERON:0001155' } }
+  - { id: prostate, label: Prostate, mappings: { uberon: 'UBERON:0002367' } }
+  - { id: cervix, label: Cervix, mappings: { uberon: 'UBERON:0000002' } }
+  - { id: ovary, label: Ovary, mappings: { uberon: 'UBERON:0000992' } }
+  - { id: lymph_node, label: Lymph node, mappings: { uberon: 'UBERON:0000029' } }
+  - { id: knee, label: Knee, mappings: { uberon: 'UBERON:0001465' } }
+  - { id: hip, label: Hip, mappings: { uberon: 'UBERON:0001464' } }
+  - { id: skeleton, label: Skeleton, mappings: { uberon: 'UBERON:0004288' } }
+  - { id: skin, label: Skin, mappings: { uberon: 'UBERON:0002097' } }
+  - { id: trunk, label: Trunk, synonyms: [torso], mappings: { uberon: 'UBERON:0002100' } }
+  - {
+      id: upper_limb,
+      label: Upper limb,
+      synonyms: [upper extremity, arm, forelimb],
+      mappings: { uberon: 'UBERON:0002102' }
+    }
+  - {
+      id: lower_limb,
+      label: Lower limb,
+      synonyms: [lower extremity, leg, hindlimb],
+      mappings: { uberon: 'UBERON:0002103' }
+    }
+  - { id: whole_body, label: Whole body, mappings: { uberon: 'UBERON:0000468' } }

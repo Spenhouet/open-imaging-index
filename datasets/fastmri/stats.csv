@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+scans,,8344,zbontar2018,Section 1 (p. 2),raw volumes; the knee (1594) and brain (6970) sections add up to 8564
+scans,anatomy=knee,1594,zbontar2018,Section 4.2 (p. 7),fully sampled multi-coil raw knee scans (one volume each); DICOM exams are counted under studies
+scans,anatomy=knee;contrast=PDw,1594,zbontar2018,Section 4.2 (p. 7),coronal PD with fat suppression (798) and without (796)
+scans,anatomy=knee;field_strength=1.5,695,zbontar2018,Table 2 (p. 8),raw knee scans on Siemens Aera 1.5T; the rest on 3T Skyra (663) Prisma (83) and Biograph mMR (153)
+scans,anatomy=knee;split=train,973,zbontar2018,Table 4 (p. 10),raw knee volumes (multi-coil and single-coil)
+scans,anatomy=knee;split=validation,199,zbontar2018,Table 4 (p. 10),raw knee volumes (multi-coil and single-coil)
+scans,anatomy=knee;split=test,118,zbontar2018,Table 4 (p. 10),multi-coil test volumes; a further 108 single-coil test and 196 challenge volumes are held back
+scans,anatomy=brain,6970,zbontar2018,Section 4.3 (p. 7),fully sampled multi-coil raw brain scans; the website table now lists 7002
+scans,anatomy=brain;field_strength=1.5,3001,zbontar2018,Table 3 (p. 8),
+scans,anatomy=brain;field_strength=3,3969,zbontar2018,Table 3 (p. 8),
+scans,anatomy=brain;contrast=T1w;field_strength=1.5,375,zbontar2018,Table 3 (p. 8),T1 without contrast
+scans,anatomy=brain;contrast=T1w;field_strength=3,407,zbontar2018,Table 3 (p. 8),T1 without contrast
+scans,anatomy=brain;contrast=T1w_ce;field_strength=1.5,849,zbontar2018,Table 3 (p. 8),T1 POST
+scans,anatomy=brain;contrast=T1w_ce;field_strength=3,641,zbontar2018,Table 3 (p. 8),T1 POST
+scans,anatomy=brain;contrast=T2w;field_strength=1.5,1651,zbontar2018,Table 3 (p. 8),
+scans,anatomy=brain;contrast=T2w;field_strength=3,2515,zbontar2018,Table 3 (p. 8),
+scans,anatomy=brain;contrast=FLAIR;field_strength=1.5,126,zbontar2018,Table 3 (p. 8),
+scans,anatomy=brain;contrast=FLAIR;field_strength=3,406,zbontar2018,Table 3 (p. 8),
+studies,anatomy=knee,10012,knoll2020,"Description of the Dataset, DICOM Dataset","consecutive clinical knee DICOM image datasets (the website rounds to 10,000)"
+subjects,anatomy=knee,9290,knoll2020,"Description of the Dataset, DICOM Dataset",patients in the knee DICOM set only; patient counts for the raw data are not reported

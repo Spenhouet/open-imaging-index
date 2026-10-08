@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+# How hard it is to get the data, from easiest to hardest. Used in dataset.yaml `access.type`.
+terms:
+  - { id: open, label: Open download, description: Download without an account }
+  - { id: registration, label: Free registration, description: Create an account and accept terms online }
+  - {
+      id: signed_agreement,
+      label: Signed agreement,
+      description: 'Sign a data use agreement, often reviewed by the provider'
+    }
+  - {
+      id: credentialed,
+      label: Credentialed,
+      description: Identity check and ethics training (e.g. CITI) plus an agreement
+    }
+  - { id: application, label: Application, description: A research proposal is reviewed and approved }
+  - { id: paid, label: Paid, description: Access costs money }

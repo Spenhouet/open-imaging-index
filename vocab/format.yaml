@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/vocab.schema.json
+terms:
+  - { id: DICOM, label: DICOM }
+  - { id: NIfTI, label: NIfTI }
+  - { id: BIDS, label: BIDS, description: NIfTI files in the Brain Imaging Data Structure }
+  - { id: MHA, label: MetaImage, synonyms: [MHA, MHD] }
+  - { id: NRRD, label: NRRD }
+  - { id: PNG, label: PNG }
+  - { id: JPEG, label: JPEG }
+  - { id: TIFF, label: TIFF / OME-TIFF }
+  - { id: SVS, label: SVS, description: Aperio whole-slide format }
+  - { id: HDF5, label: HDF5 }
+  - { id: MINC, label: MINC }
+  - { id: ANALYZE, label: Analyze 7.5 }

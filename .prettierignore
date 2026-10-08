@@ -1,0 +1,10 @@
+bun.lock
+build
+.svelte-kit
+static
+schema/*.json
+test-results
+playwright-report
+datasets
+licenses
+vocab

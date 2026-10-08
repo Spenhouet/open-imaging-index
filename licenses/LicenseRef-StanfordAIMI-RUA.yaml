@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-StanfordAIMI-RUA
+name: Stanford University School of Medicine Dataset Research Use Agreement (AIMI)
+short_name: Stanford AIMI RUA
+url: https://stanfordaimi.azurewebsites.net/datasets/8cbd9ed4-2eb9-4565-affc-111cf4f7ebe2
+version: Text shown in the Stanford AIMI shared-datasets portal, read 2026-10-07 (no version number given)
+summary: >-
+  Free for personal, non-commercial research only. You may not share the data or the download link, may not
+  create derivative works, and must not try to re-identify patients. Stanford sells a separate commercial license.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Any commercial use, sale, or other monetization is prohibited.
+  model_training:
+    value: unspecified
+    note: >-
+      The agreement does not mention machine learning. Use is limited to personal, non-commercial research, and
+      the agreement forbids derivative works.
+  derivatives:
+    value: 'no'
+    quote: You must not modify, reverse engineer, decompile, or create derivative works from the [name] Dataset.
+    note: '[name] stands for the dataset name the portal inserts, e.g. CheXpert.'
+  publication:
+    value: unspecified
+    note: >-
+      The agreement does not address publishing results. Stanford AIMI asks users to acknowledge AIMI in
+      publications, which assumes results are published.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      YOU MAY NOT DISTRIBUTE, PUBLISH, OR REPRODUCE A COPY of any portion or all of the [name] Dataset to others
+      without specific prior written permission from the School of Medicine.
+  redistribute_derivatives:
+    value: 'no'
+    quote: >-
+      You may not otherwise copy, reproduce, retransmit, distribute, publish, commercially exploit or otherwise
+      transfer any material.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Users of AIMI datasets are expected to acknowledge Stanford AIMI in publications and presentations using
+      the following language:
+    source: https://aimi.stanford.edu/shared-datasets
+    note: The requirement is on the AIMI website, not in the agreement text.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      By registering for downloads from the [name] Dataset, you are agreeing to this Research Use Agreement, as
+      well as to the Terms of Use of the Stanford University School of Medicine website as posted and updated
+      periodically at http://www.stanford.edu/site/terms/.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+    note: >-
+      Only after a violation may Stanford ask the user to return all copies and keep none.
+    quote: >-
+      In the event that the School of Medicine determines that the recipient has violated this Research Use
+      Agreement or other impermissible use has been made, the School of Medicine may direct that the undersigned
+      data recipient immediately return all copies of the [name] Dataset and retain no copies thereof even if
+      you did not cause the violation or impermissible use.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      You will not make any attempt to re-identify any of the individual data subjects. Re-identification of
+      individuals is strictly prohibited.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: 'yes'
+  url: https://aimi.stanford.edu/datasets-commercial-use
+  note: >-
+    Companies can apply for a one-year license per dataset, reviewed by a Stanford committee. The page lists an
+    annual fee of USD 70,000 per dataset for agreements contracted in FY25.
+verified:
+  date: '2026-10-07'
+  by: claude-research

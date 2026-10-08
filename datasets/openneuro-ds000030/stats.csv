@@ -1,0 +1,48 @@
+measure,by,value,source,where,note
+subjects,,272,ds000030-participants,,272 rows; the OpenNeuro snapshot summary also lists 272 subjects
+subjects,condition=healthy,130,ds000030-participants,,diagnosis CONTROL; the paper also reports 130
+subjects,condition=schizophrenia,50,ds000030-participants,,diagnosis SCHZ; the paper also reports 50
+subjects,condition=bipolar_disorder,49,ds000030-participants,,diagnosis BIPOLAR; the paper also reports 49
+subjects,condition=adhd,43,ds000030-participants,,diagnosis ADHD; the paper also reports 43
+subjects,sex=female,117,ds000030-participants,,gender F
+subjects,sex=male,155,ds000030-participants,,gender M
+subjects,age=20-29,123,ds000030-participants,,
+subjects,age=30-39,62,ds000030-participants,,
+subjects,age=40-49,80,ds000030-participants,,
+subjects,age=50-59,7,ds000030-participants,,all aged exactly 50
+subjects,contrast=T1w,265,ds000030-participants,,T1w column = 1
+subjects,contrast=dwi,262,ds000030-participants,,dwi column = 1
+subjects,contrast=bold,272,ds000030-participants,,at least one of the eight fMRI task/rest columns = 1
+subjects,contrast_set=bold+dwi+T1w,262,ds000030-participants,,
+subjects,contrast_set=bold+T1w,3,ds000030-participants,,
+subjects,contrast_set=bold,7,ds000030-participants,,
+subjects,sex=female;age=20-29,55,ds000030-participants,,
+subjects,sex=male;age=20-29,68,ds000030-participants,,
+subjects,sex=female;age=30-39,27,ds000030-participants,,
+subjects,sex=male;age=30-39,35,ds000030-participants,,
+subjects,sex=female;age=40-49,31,ds000030-participants,,
+subjects,sex=male;age=40-49,49,ds000030-participants,,
+subjects,condition=healthy;sex=female,62,ds000030-participants,,
+subjects,condition=healthy;sex=male,68,ds000030-participants,,
+subjects,condition=schizophrenia;sex=female,12,ds000030-participants,,
+subjects,condition=schizophrenia;sex=male,38,ds000030-participants,,
+subjects,condition=bipolar_disorder;sex=female,21,ds000030-participants,,
+subjects,condition=bipolar_disorder;sex=male,28,ds000030-participants,,
+subjects,condition=adhd;sex=female,22,ds000030-participants,,
+subjects,condition=adhd;sex=male,21,ds000030-participants,,
+subjects,condition=healthy;age=20-29,72,ds000030-participants,,
+subjects,condition=healthy;age=30-39,27,ds000030-participants,,
+subjects,condition=healthy;age=40-49,30,ds000030-participants,,
+subjects,condition=schizophrenia;age=20-29,14,ds000030-participants,,
+subjects,condition=schizophrenia;age=30-39,13,ds000030-participants,,
+subjects,condition=schizophrenia;age=40-49,23,ds000030-participants,,
+subjects,condition=bipolar_disorder;age=20-29,16,ds000030-participants,,
+subjects,condition=bipolar_disorder;age=30-39,14,ds000030-participants,,
+subjects,condition=bipolar_disorder;age=40-49,17,ds000030-participants,,
+subjects,condition=adhd;age=20-29,21,ds000030-participants,,
+subjects,condition=adhd;age=40-49,10,ds000030-participants,,
+age_mean,,33.2,ds000030-participants,,
+age_sd,,9.4,ds000030-participants,,
+age_median,,31,ds000030-participants,,
+age_min,,21,ds000030-participants,,
+age_max,,50,ds000030-participants,,
