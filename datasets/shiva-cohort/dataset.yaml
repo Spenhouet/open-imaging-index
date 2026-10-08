@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: shiva-cohort
+name: SHIVA cohort
+full_name: 'RHU SHIVA cohort: stopping cognitive decline and dementia by fighting covert cerebral small vessel disease'
+summary: >-
+  Ongoing French cohort of adults over 60 with extensive or minimal white matter hyperintensities, built to find
+  imaging and circulating biomarkers of cerebral small vessel disease. 150 enrolled by March 2024, 3 T Siemens Prisma
+  MRI with T2*-GRE and optional SWI. Not public.
+homepage: https://rhu-shiva.com/en/
+# The cohort has no public release; year of the first paper found that describes its imaging data.
+year: 2024
+status: active
+creators:
+  - name: RHU SHIVA consortium, University of Bordeaux and Bordeaux University Hospital (coordinator Stéphanie Debette)
+    url: https://rhu-shiva.com/en/
+modalities: [MR]
+contrasts: [T2starw, swi]
+anatomy: [brain]
+conditions: [cerebral_small_vessel_disease, cerebral_microbleeds]
+countries: [FR]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1038/s41598-024-81870-5
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The SHIVA-CMB data availability statement says the cohort is not public because of French rules on sharing
+      medical images, and that de-identified data may be available on request to the PI, Stéphanie Debette. The
+      ClinicalTrials.gov record NCT05306834 states no plan to share individual participant data. No terms are
+      published.
+citation:
+  text: >-
+    Tsuchida A, Goubet M, Boutinaud P, et al. SHIVA-CMB: a deep-learning-based robust cerebral microbleed segmentation
+    tool trained on multi-source T2*GRE- and susceptibility-weighted MRI. Scientific Reports 14, 30901 (2024).
+    doi:10.1038/s41598-024-81870-5
+sources:
+  tsuchida2024:
+    title: Tsuchida et al. 2024, SHIVA-CMB, Scientific Reports (PMC11680838)
+    url: https://doi.org/10.1038/s41598-024-81870-5
+    kind: paper
+  nct05306834:
+    title: ClinicalTrials.gov NCT05306834, SHIVA study record
+    url: https://clinicaltrials.gov/study/NCT05306834
+    kind: website
+  rhu-shiva-home:
+    title: RHU SHIVA project website
+    url: https://rhu-shiva.com/en/
+    kind: website
+related: []
+keywords: [cerebral small vessel disease, white matter hyperintensities, cerebral microbleeds, T2*-weighted GRE, SWI, hypertension]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,150,tsuchida2024,"Methods, Datasets, SHIVA",enrolled as of March 2024; recruitment is ongoing and the registry gives an estimated enrolment of 400
+subjects,contrast=T2starw,150,tsuchida2024,"Methods, Datasets, SHIVA",every MRI session included a T2*-GRE
+subjects,contrast=swi,14,tsuchida2024,"Methods, Datasets, SHIVA",SWI was optional; 14 participants with both SWI and T2*-GRE were used in SHIVA-CMB and the total with SWI is not reported
+subjects,vendor=siemens,150,tsuchida2024,"Methods, Datasets, SHIVA",3 T Siemens Prisma scanners in Bordeaux or Paris
+subjects,field_strength=3,150,tsuchida2024,"Methods, Datasets, SHIVA",
+subjects,country=FR,150,tsuchida2024,"Methods, Datasets, SHIVA",

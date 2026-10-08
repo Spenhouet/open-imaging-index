@@ -78,6 +78,12 @@ terms:
       description: 'Small fluid-filled cavities in deep grey or white matter, the imaging trace of a past small subcortical infarct or hemorrhage. A marker of cerebral small vessel disease. HP:0032325 (Lacunar stroke) names the clinical event, not the imaging finding, so no mapping is given.',
       synonyms: [lacune, lacunar infarct]
     }
+  - {
+      id: cerebral_small_vessel_disease,
+      label: Cerebral small vessel disease,
+      description: 'Disease of the small arteries, arterioles, capillaries and venules of the brain, seen on MRI as white matter hyperintensities, lacunes, microbleeds and enlarged perivascular spaces. MONDO has only monogenic forms (brain small vessel disease 1 to 6, HTRA1-related), so no mapping is given.',
+      synonyms: [cSVD, SVD, small vessel disease]
+    }
   - { id: traumatic_brain_injury, label: Traumatic brain injury, synonyms: [TBI], mappings: { mondo: 'MONDO:0858950' } }
   - {
       id: cerebral_cavernous_malformation,
