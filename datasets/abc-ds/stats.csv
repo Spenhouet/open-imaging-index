@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,562,handen2025,Table 3,"sum of 503 adults with Down syndrome and 59 sibling controls, Freeze 4 (September 2023)"
+subjects,condition=down_syndrome,503,handen2025,Table 3,
+subjects,condition=healthy,59,handen2025,Table 3,sibling controls without Down syndrome; all cognitively stable
+subjects,condition=mci,59,handen2025,"Table 3; Results",MCI-DS at the first consensus conference
+subjects,condition=dementia,54,handen2025,"Table 3; Results",dementia (diagnosed as AD) at the first consensus conference
+subjects,condition=alzheimers,54,handen2025,Results,diagnosed with AD at baseline
+subjects,sex=female,277,handen2025,Table 3,"sum of 231 DS and 46 siblings"
+subjects,sex=male,285,handen2025,Table 3,"sum of 272 DS and 13 siblings"
+subjects,age=25-34,118,handen2025,Table 3,"age at baseline; sum of 104 DS and 14 siblings"
+subjects,age=35-44,190,handen2025,Table 3,"age at baseline; sum of 171 DS and 19 siblings"
+subjects,age=45-54,160,handen2025,Table 3,"age at baseline; sum of 147 DS and 13 siblings"
+subjects,age=55-64,82,handen2025,Table 3,"age at baseline; sum of 72 DS and 10 siblings"
+subjects,age=65+,12,handen2025,Table 3,"age at baseline; sum of 9 DS and 3 siblings"
+subjects,contrast=T1w,485,handen2025,Table 4,"with a T1w scan at the baseline visit; 426 DS and 59 siblings"
+subjects,contrast=FLAIR,469,handen2025,Table 4,"with a FLAIR scan at the baseline visit; 412 DS and 57 siblings"
+subjects,contrast=T2starw,380,handen2025,Table 4,"with a T2* scan at the baseline visit; 327 DS and 53 siblings"
+subjects,contrast=swi,180,handen2025,Table 4,"with an SWI scan at the baseline visit; 165 DS and 15 siblings"
+subjects,contrast=T2w,334,handen2025,Table 4,"with a T2 FSE scan at the baseline visit; 276 DS and 58 siblings"
+subjects,contrast=dwi,451,handen2025,Table 4,"with a DTI scan at the baseline visit; 395 DS and 56 siblings"
+subjects,contrast=asl,332,handen2025,Table 4,"with an ASL scan at the baseline visit; 277 DS and 55 siblings"
+scans,contrast=T1w,907,handen2025,Table 4,"all visits through Freeze 4; 824 DS and 83 siblings"
+scans,contrast=FLAIR,843,handen2025,Table 4,"all visits; 765 DS and 78 siblings"
+scans,contrast=T2starw,577,handen2025,Table 4,"all visits; 506 DS and 71 siblings"
+scans,contrast=swi,288,handen2025,Table 4,"all visits; 268 DS and 20 siblings"
+scans,contrast=T2w,482,handen2025,Table 4,"T2 FSE, all visits; 406 DS and 76 siblings"
+scans,contrast=dwi,794,handen2025,Table 4,"all visits; 717 DS and 77 siblings"
+scans,contrast=asl,489,handen2025,Table 4,"all visits; 415 DS and 74 siblings"
+scans,contrast=bold,690,handen2025,Table 4,"all visits; fMRI_1 (528 DS, 65 siblings) plus fMRI_2 (88 DS, 9 siblings)"
+subjects,tracer=flortaucipir,354,handen2025,Table 4,"baseline column of Table 4; 300 DS and 54 siblings"
+scans,tracer=flortaucipir,600,handen2025,Table 4,"all visits; 524 DS and 76 siblings"
+subjects,tracer=fdg,122,handen2025,Table 4,"97 DS and 25 siblings; FDG PET is done at one visit only"
+scans,tracer=fdg,122,handen2025,Table 4,"97 DS and 25 siblings"
