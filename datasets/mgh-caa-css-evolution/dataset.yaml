@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mgh-caa-css-evolution
+name: MGH CAA cohort, cSS evolution set
+full_name: Massachusetts General Hospital probable cerebral amyloid angiopathy cohort, cortical superficial siderosis evolution set
+summary: >-
+  Baseline and follow-up 1.5 T MRI with T2*-GRE or SWI of 118 patients with probable CAA without intracerebral
+  haemorrhage from Massachusetts General Hospital (2000-2015), with visual ratings of siderosis progression and new
+  microbleeds. Not publicly shared.
+homepage: https://doi.org/10.1161/STROKEAHA.118.023368
+doi: 10.1161/STROKEAHA.118.023368
+# Year of the paper that describes the set; the images have not been released.
+year: 2019
+creators:
+  - name: Massachusetts General Hospital, Boston
+species: human
+modalities: [MR]
+contrasts: [T2starw, swi, T2w, FLAIR]
+anatomy: [brain]
+conditions: [cerebral_amyloid_angiopathy, superficial_siderosis, cerebral_microbleeds]
+tasks: [longitudinal, classification]
+countries: [US]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://doi.org/10.1161/STROKEAHA.118.023368
+  note: >-
+    The paper states that the supporting data are in the article and its supplement; it offers no access to the
+    images. Any request goes to the authors.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The paper publishes no license or data use terms for the images or ratings.
+citation:
+  text: >-
+    Charidimou A, Boulouis G, Xiong L, et al. Cortical Superficial Siderosis Evolution. Stroke 50(4), 954-962 (2019).
+    doi:10.1161/STROKEAHA.118.023368
+sources:
+  charidimou2019:
+    title: Charidimou et al. 2019, Stroke (author manuscript PMC6433512)
+    url: https://doi.org/10.1161/STROKEAHA.118.023368
+    kind: paper
+related: []
+keywords: [cerebral amyloid angiopathy, cortical superficial siderosis, cerebral microbleeds, T2*-GRE, SWI, longitudinal]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

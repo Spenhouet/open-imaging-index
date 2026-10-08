@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,118,charidimou2019,Results,probable CAA without intracerebral haemorrhage with a baseline and at least one follow-up MRI
+subjects,sex=male,75,charidimou2019,Table 1,
+subjects,sex=female,43,charidimou2019,Table 1,118 patients minus 75 men; the paper reports men only
+subjects,condition=cerebral_amyloid_angiopathy,118,charidimou2019,Methods,probable CAA by the modified Boston criteria
+subjects,condition=superficial_siderosis,52,charidimou2019,Results,cortical superficial siderosis on the baseline MRI
+subjects,contrast=swi,21,charidimou2019,Methods,subset whose blood-sensitive sequences included SWI; the others had T2*-GRE
+subjects,field_strength=1.5,118,charidimou2019,Methods,baseline and follow-up MRI at 1.5 T
+subjects,country=US,118,charidimou2019,Methods,"Massachusetts General Hospital, Boston"
+age_mean,,73,charidimou2019,Table 1,age at MRI
+age_sd,,8.3,charidimou2019,Table 1,
