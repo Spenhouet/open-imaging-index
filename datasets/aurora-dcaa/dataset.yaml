@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aurora-dcaa
+name: AURORA (Leiden D-CAA cohort)
+full_name: AURORA natural history study of Dutch-type hereditary cerebral amyloid angiopathy, Leiden University Medical Center
+summary: >-
+  Prospective Leiden cohort of 120 presymptomatic and symptomatic carriers of Dutch-type hereditary cerebral amyloid
+  angiopathy with yearly 3 T and 7 T brain MRI (SWI, FLAIR, T2w), CSF and cognitive tests. Data on request from the
+  authors.
+homepage: https://www.lumc.nl/patientenzorg/meedoen-aan-wetenschappelijk-onderzoek/onderzoek-naar-hchwa-d/aurora/
+# Start of the study (2018); the data have not been publicly released.
+year: 2018
+creators:
+  - name: Departments of Neurology and Radiology, Leiden University Medical Center
+    url: https://www.lumc.nl/
+species: human
+modalities: [MR]
+contrasts: [swi, FLAIR, T2w, T1w, bold]
+anatomy: [brain]
+conditions: [cerebral_amyloid_angiopathy, cerebral_microbleeds, superficial_siderosis, intracerebral_hemorrhage]
+tasks: [classification, longitudinal, segmentation]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3, 7]
+access:
+  type: on_request
+  url: https://doi.org/10.1177/17474930241239801
+  note: >-
+    Papers from the cohort state that the data are available from the corresponding author on (reasonable) request and
+    are not public for privacy reasons. No access procedure or terms are published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+citation:
+  text: >-
+    van der Zwet RGJ, Koemans EA, Voigt S, et al. Sensitivity of the Boston criteria version 2.0 in Dutch-type
+    hereditary cerebral amyloid angiopathy. International Journal of Stroke 19(8), 942-946 (2024).
+    doi:10.1177/17474930241239801
+sources:
+  lumc-aurora-page:
+    title: AURORA study page, Leiden University Medical Center
+    url: https://www.lumc.nl/patientenzorg/meedoen-aan-wetenschappelijk-onderzoek/onderzoek-naar-hchwa-d/aurora/
+    kind: website
+  vanderzwet2024:
+    title: van der Zwet et al. 2024, International Journal of Stroke (PMC11408943)
+    url: https://doi.org/10.1177/17474930241239801
+    kind: paper
+  koemans2024:
+    title: Koemans et al. 2024, Stroke, Temporal ordering of biomarkers in D-CAA (PMC10962436)
+    url: https://doi.org/10.1161/STROKEAHA.123.044688
+    kind: paper
+  vanderplas2025:
+    title: van der Plas et al. 2025, Neurology, One-year radiologic progression in sporadic and hereditary CAA (PMC11995281)
+    url: https://doi.org/10.1212/WNL.0000000000213546
+    kind: paper
+  vanharten2023:
+    title: van Harten et al. 2023, NeuroImage Clinical, Quantitative measurement of cortical superficial siderosis (PMC10258504)
+    url: https://doi.org/10.1016/j.nicl.2023.103447
+    kind: paper
+related: []
+keywords: [cerebral amyloid angiopathy, Dutch-type hereditary CAA, HCHWA-D, cortical superficial siderosis, cerebral microbleeds, SWI, 7 T MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
