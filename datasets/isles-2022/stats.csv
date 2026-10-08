@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,400,hernandezpetzsche2022,Abstract,one MRI case per subject
+subjects,split=train,250,hernandezpetzsche2022,"Data Records, Data structure and file formats",released on Zenodo with lesion masks
+subjects,split=test,150,hernandezpetzsche2022,"Data Records, Data structure and file formats",not released; equal parts from the three centers
+subjects,contrast=FLAIR,400,hernandezpetzsche2022,"Methods, Subject selection",the protocol required at least FLAIR and DWI (with its ADC map)
+subjects,contrast=dwi,400,hernandezpetzsche2022,"Methods, Subject selection",
+subjects,contrast=ADC,400,hernandezpetzsche2022,"Methods, Subject selection",
+subjects,split=train;contrast_set=ADC+dwi+FLAIR,250,zenodo-7960856,Description,"each released training case has FLAIR, DWI (b=1000) and the ADC map"
+subjects,split=train;condition=ischemic_stroke,247,hernandezpetzsche2022,"Methods, Subject selection","250 training cases minus the 3 in which no infarct was found"
+subjects,split=train;country=DE,198,zenodo-7960856-center-ids,"columns case, center (center 1 = TUM Munich)",
+subjects,split=train;country=CH,52,zenodo-7960856-center-ids,"columns case, center (center 2 = University Hospital of Bern)",

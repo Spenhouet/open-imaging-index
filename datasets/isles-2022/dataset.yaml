@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: isles-2022
+name: ISLES 2022
+full_name: 'ISLES 2022: A multi-center magnetic resonance imaging stroke lesion segmentation dataset'
+summary: >-
+  Acute to subacute ischemic stroke MRI (FLAIR, DWI and ADC) with expert infarct masks from Munich, Bern and Hamburg:
+  400 cases for the ISLES 2022 challenge, of which the 250 training cases are on Zenodo under CC BY 4.0.
+homepage: https://isles22.grand-challenge.org/
+# Concept DOI of the Zenodo training data record; it resolves to the latest version (2.3.1).
+doi: 10.5281/zenodo.6695024
+year: 2022
+version: '2.3.1'
+status: active
+creators:
+  - name: Technical University of Munich, University Hospital (Hernandez Petzsche M.R., Kirschke J.S. et al.)
+  - name: University Hospital of Bern
+  - name: University Medical Center Hamburg-Eppendorf
+species: human
+modalities: [MR]
+contrasts: [FLAIR, dwi, ADC]
+anatomy: [brain]
+conditions: [ischemic_stroke]
+tasks: [segmentation]
+formats: [NIfTI, BIDS]
+countries: [DE, CH]
+vendors: [philips, siemens]
+field_strengths: [1.5, 3]
+# ISLES-2022.zip on Zenodo record 7960856 (version 2.3.1): 1,692,717,470 bytes.
+size_gb: 1.7
+access:
+  type: open
+  url: https://doi.org/10.5281/zenodo.7960856
+  note: >-
+    Only the 250 training cases are on Zenodo. The 150 test cases are used for challenge evaluation and are not
+    released.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Hernandez Petzsche MR, de la Rosa E, Hanning U, et al. ISLES 2022: A multi-center magnetic resonance imaging
+    stroke lesion segmentation dataset. Scientific Data 9, 762 (2022). doi:10.1038/s41597-022-01875-5
+sources:
+  hernandezpetzsche2022:
+    title: Hernandez Petzsche et al. 2022, ISLES 2022 data descriptor (Scientific Data)
+    url: https://doi.org/10.1038/s41597-022-01875-5
+    kind: paper
+  zenodo-7960856:
+    title: Zenodo record 7960856, ISLES 2022 training dataset version 2.3.1 (description and file list)
+    url: https://zenodo.org/records/7960856
+    kind: data
+  zenodo-7960856-center-ids:
+    title: center_ids.xlsx from Zenodo record 7960856 (CC BY 4.0), rows counted per value of the center column
+    url: https://zenodo.org/records/7960856/files/center_ids.xlsx
+    kind: computed
+related: [atlas-v2]
+keywords: [ischemic stroke, infarct segmentation, diffusion-weighted imaging, challenge, ISLES]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
