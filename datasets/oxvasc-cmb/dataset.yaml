@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oxvasc-cmb
+name: OXVASC T2*-GRE Microbleed Set
+full_name: Oxford Vascular Study (OXVASC) T2*-weighted GRE cerebral microbleed segmentation set
+summary: >-
+  3 T 2D T2*-weighted GRE brain MRI of 74 Oxford Vascular Study patients after minor stroke or TIA, with manual
+  voxel segmentations of 366 cerebral microbleeds in the 36 patients who had them. Shared on request to the OXVASC PI.
+homepage: https://www.ndcn.ox.ac.uk/research/oxvasc
+doi: 10.3389/fninf.2023.1204186
+# Year of the paper that describes the labelled set; the set has no public release.
+year: 2023
+creators:
+  - name: Wolfson Centre for the Prevention of Stroke and Dementia, University of Oxford (Oxford Vascular Study)
+    url: https://www.ndcn.ox.ac.uk/research/oxvasc
+modalities: [MR]
+contrasts: [T2starw]
+anatomy: [brain]
+conditions: [stroke, transient_ischemic_attack, cerebral_microbleeds]
+tasks: [segmentation, detection]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.3389/fninf.2023.1204186
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper's data availability statement says requests for OXVASC data are considered by the PI, Peter Rothwell,
+      in line with data protection laws. The OXVASC web page adds that fully anonymised data "may be shared with other
+      organisations outside the University of Oxford for research to improve healthcare delivery (not NHS data) and
+      subject to appropriate agreements being in place and approval by the Principal Investigator". No agreement text
+      is published.
+citation:
+  text: >-
+    Sundaresan V, Arthofer C, Zamboni G, Murchison AG, Dineen RA, Rothwell PM, Auer DP, Wang C, Miller KL, Tendler BC,
+    Alfaro-Almagro F, Sotiropoulos SN, Sprigg N, Griffanti L, Jenkinson M. Automated detection of cerebral microbleeds
+    on MR images using knowledge distillation framework. Frontiers in Neuroinformatics 17, 1204186 (2023).
+    doi:10.3389/fninf.2023.1204186
+sources:
+  sundaresan2023:
+    title: Sundaresan et al. 2023, Frontiers in Neuroinformatics (PMC10363739)
+    url: https://doi.org/10.3389/fninf.2023.1204186
+    kind: paper
+  oxvasc-page:
+    title: Oxford Vascular Study page, Nuffield Department of Clinical Neurosciences
+    url: https://www.ndcn.ox.ac.uk/research/oxvasc
+    kind: website
+related: []
+keywords: [cerebral microbleeds, T2*-weighted GRE, transient ischaemic attack, minor stroke, microbleed segmentation]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
