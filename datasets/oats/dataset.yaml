@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oats
+name: Older Australian Twins Study (OATS)
+full_name: Older Australian Twins Study
+summary: >-
+  Longitudinal UNSW study of 623 twins and siblings aged 65 and over, with brain MRI (including 1.5 T SWI), amyloid PET
+  in 207 and repeated cognitive and medical assessment. Data are released through Dementias Platform Australia.
+homepage: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/older-australian-twins-study-oats
+doi: 10.1375/twin.12.6.573
+# Year of the methodology paper. The study began in 2007; no date of a first data release is published.
+year: 2009
+status: active
+creators:
+  - name: Centre for Healthy Brain Ageing (CHeBA), UNSW Sydney
+    url: https://www.unsw.edu.au/cheba
+modalities: [MR, PT]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [healthy, cognitive_impairment, cerebral_microbleeds]
+tasks: [longitudinal, detection]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://www.unsw.edu.au/cheba/dpau/data-access-application
+licenses:
+  - license: LicenseRef-DPAU-DAA
+    note: >-
+      Application fees apply, and the OATS Governance Committee reviews each request. The DPAU analysis environment is
+      built for tabular data, not raw imaging; other MRI data are requested with details in the application.
+citation:
+  text: >-
+    Sachdev PS, Lammel A, Trollor JN, et al. A comprehensive neuropsychiatric study of elderly twins: the Older
+    Australian Twins Study. Twin Research and Human Genetics 12(6), 573-582 (2009). doi:10.1375/twin.12.6.573
+sources:
+  sachdev2009:
+    title: Sachdev et al. 2009, Twin Research and Human Genetics (OATS methodology)
+    url: https://doi.org/10.1375/twin.12.6.573
+    kind: paper
+  sachdev2013:
+    title: Sachdev et al. 2013, International Review of Psychiatry (OATS cohort update)
+    url: https://doi.org/10.3109/09540261.2013.870137
+    kind: paper
+  cheba-oats-page:
+    title: Older Australian Twins Study page, CHeBA, UNSW
+    url: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/older-australian-twins-study-oats
+    kind: website
+  unsw-news-2017:
+    title: UNSW news, Findings from the Older Australian Twins Study (December 2017)
+    url: https://www.unsw.edu.au/news/2017/12/findings-older-australian-twins-study
+    kind: website
+  hassanzadeh2025:
+    title: Hassanzadeh et al. 2025, NeuroImage Clinical, cerebral microbleed recognition in GRE and SWI (PMC12410576)
+    url: https://doi.org/10.1016/j.nicl.2025.103873
+    kind: paper
+related: []
+keywords: [twins, ageing, heritability, cerebral microbleeds, SWI, amyloid PET, Australia]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

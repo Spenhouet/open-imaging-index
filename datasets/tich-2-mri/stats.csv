@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,219,pszczolkowski2022,Abstract (Results),participants with analysable brain MRI from 50 centres; 96 randomised to tranexamic acid and 123 to placebo
+subjects,condition=intracerebral_hemorrhage,219,pszczolkowski2022,Abstract (Results),acute spontaneous intracerebral haemorrhage
+subjects,contrast=dwi,219,pszczolkowski2022,Results,analysable DWI data sets
+subjects,contrast=swi,115,sundaresan2023,Section 3.3,"SWI scans in the microbleed-labelled subset; SWI was optional in the protocol, and the number of all sub-study participants with SWI is not published"
+subjects,condition=cerebral_microbleeds,71,sundaresan2023,Section 3.3,"subjects with microbleed masks among the 115 SWI scans (849 microbleeds rated definite or possible, median 3 per subject); not counted for the other participants"
+subjects,sex=male,126,pszczolkowski2022,Abstract (Results),57.5%
+age_mean,,65.1,pszczolkowski2022,Abstract (Results),SD 13.8
+age_sd,,13.8,pszczolkowski2022,Abstract (Results),

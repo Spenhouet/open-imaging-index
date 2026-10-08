@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MESA-DMDA
+name: MESA Data and Materials Distribution Agreement
+short_name: MESA DMDA
+url: https://tools.mesa-nhlbi.org/MESA_Files/publications/MESA_DMDA_Version_11.06.2023_For_Review_Only.pdf
+version: 'NHLBI MESA DMDA, version date 2023-11-06'
+summary: >-
+  Signed per research project between the recipient institution, the MESA Coordinating Center and NHLBI after a MESA
+  proposal is approved. Use is limited to the approved project, IRB review and participant consent; data and
+  derivatives may not be passed on, results go back to MESA, and data are destroyed when the agreement ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: Recipient and Recipient’s PI agree not to claim, infer, or imply United States Government endorsement of the
+      Research Project, the entity, or personnel conducting the Research Project, or any resulting commercial
+      product(s) except as described in section 7.
+    note: The agreement allows for-profit recipients and mentions commercial products, but use stays limited to the
+      approved project and to what each participant's consent allows. BioLINCC describes consent for commercial use
+      of MESA data as tiered.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must be part of the approved Research Project.
+  derivatives:
+    value: conditional
+    quote: Recipient and Recipient’s PI agree that Data, Materials, their progeny, or derivatives thereof will not be
+      used in any experiments or procedures unless said experiments or procedures are disclosed and approved as part
+      of the Research Project.
+    note: Derived data ("Resultant Data") are expected, but only within the approved Research Project.
+  publication:
+    value: conditional
+    quote: Nothing in this section precludes Recipient from publishing results of the Research Project through the
+      usual channels of scientific publication.
+    note: With the MESA acknowledgement text, and after the review described under publication_review.
+  redistribute_original:
+    value: 'no'
+    quote: Except as provided in section 4.2 below, Recipient may not distribute Data or Materials to any other
+      individual or entity, regardless of the intended use of such Data or Materials.
+    note: Section 4.2 only covers transfers of biological materials to contracted labs for assays.
+  redistribute_derivatives:
+    value: 'no'
+    quote: Recipient and Recipient’s PI further agree not to transfer Data, Materials and their progeny, and
+      derivatives thereof, with or without charge, to any other entity or individual, except for Data and/or
+      Materials as provided for in section 4.2 above.
+    note: MESA and NHLBI may themselves distribute the Resultant Data returned to them.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Recipient and Recipient’s PI agree to acknowledge the contribution of MESA in any and all oral and written
+      presentations, disclosures, and publications resulting from any and all analyses of Data or Materials, in
+      accordance with the guidelines established by the study.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: 'Data: Dataset access requires a signed Data and Materials Distribution Agreement (DMDA).'
+    source: https://mesa-nhlbi.org/researchers/registration
+    note: A separate DMDA is needed for each research project, and the MESA website asks for an approved MESA proposal
+      first.
+  ethics_approval:
+    value: 'yes'
+    quote: Recipient and Recipient’s PI agrees to use the Data and/or Materials only in conjunction with the Research
+      Project that has been reviewed by the Recipient's Institutional Review Board (IRB) or similar human subjects
+      oversight body in accordance with Department of Health and Human Services regulations at 45 CFR Part 46.
+  publication_review:
+    value: 'yes'
+    quote: MESA and NHLBI request that the Recipient’s PI provide to the authorized representative for the MESA
+      Coordinating Center (named below) a copy of any abstract ten (10) days in advance of submission for publication
+      and any manuscript or other disclosure document thirty (30) days in advance of submission for publication, in
+      order to permit review and comment and ensure compliance with the confidentiality requirements of this DMDA.
+    note: Manuscripts with MESA investigators as co-authors must also be submitted for review by MESA (section 7.1).
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: Recipient and Recipient’s PI agree to provide Resultant Data to MESA in accordance with applicable NIH and
+      NHLBI data sharing policies in place as of the effective date of this agreement.
+    note: A report on the Resultant Data is also due every 12 months.
+  delete_after_use:
+    value: 'yes'
+    quote: Recipient agrees to destroy all copies of all Data received from MESA and consult with MESA and the NHLBI
+      regarding the disposition of all remaining Materials.
+    note: The agreement ends at project completion or after five years at the latest.
+  no_reidentification:
+    value: 'yes'
+    quote: Recipient and Recipient’s PI agree that Materials and/or Data will not be used, either alone or in
+      conjunction with any other information, in any effort to determine the individual identities of any of the
+      participants from whom Data and/or Materials were obtained or derived.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

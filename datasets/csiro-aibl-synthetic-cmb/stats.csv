@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+scans,,370,csiro-dap-50304-files,folders rCMB_DefiniteSubject and NoCMBSubject,"real SWI scans; the 3,700 copies with synthetic microbleeds are not counted"
+scans,contrast=swi,370,csiro-dap-50304-files,folders rCMB_DefiniteSubject and NoCMBSubject,
+scans,condition=cerebral_microbleeds,57,csiro-dap-50304-files,folder rCMB_DefiniteSubject,"real scans with definite microbleeds; the collection description says 75 scans with 175 microbleeds"
