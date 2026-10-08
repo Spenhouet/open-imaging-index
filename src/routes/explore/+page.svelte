@@ -47,15 +47,18 @@
   let datasets = $state.raw<DatasetSummary[]>([]);
   let loaded = $state(false);
   let filters = $state<FilterState>(emptyFilters());
-  let needs = $state<string[]>([]);
+  // Chosen uses are the license rule filters that NEEDS offers, so the panel and the cohort stay in sync.
+  const needs = $derived(filters.rules.filter((r) => NEEDS.some((n) => n.id === r)));
   let picked = $state<string[]>([]);
   let ready = false;
 
   // The URL carries the same filters as the catalog, plus the chosen uses and the shortlist.
   onMount(async () => {
     const p = new URLSearchParams(window.location.search);
-    filters = fromQuery(window.location.search);
-    needs = (p.get('need') ?? '').split(',').filter((n) => NEEDS.some((x) => x.id === n));
+    const f = fromQuery(window.location.search);
+    // Links from before uses became filters carry them in `need`.
+    const legacy = (p.get('need') ?? '').split(',').filter((n) => NEEDS.some((x) => x.id === n));
+    filters = { ...f, rules: [...new Set([...f.rules, ...legacy])] };
     picked = (p.get('pick') ?? '').split(',').filter(Boolean);
     ready = true;
     const res = await fetch(link('summaries.json'));
@@ -65,11 +68,7 @@
     }
   });
 
-  const extra = $derived(
-    [needs.length ? `need=${needs.join(',')}` : '', picked.length ? `pick=${picked.join(',')}` : '']
-      .filter(Boolean)
-      .join('&')
-  );
+  const extra = $derived(picked.length ? `pick=${picked.join(',')}` : '');
   const query = $derived.by(() => {
     const base = toQuery(filters);
     if (!extra) return base;
@@ -264,7 +263,7 @@
                     ? 'border-primary bg-primary text-primary-foreground'
                     : 'border-border bg-card hover:border-primary/40'
                 )}
-                onclick={() => (needs = flip(needs, n.id))}>{n.label}</button
+                onclick={() => (filters = { ...filters, rules: flip(filters.rules, n.id) })}>{n.label}</button
               >
             {/each}
           </div>
@@ -299,7 +298,7 @@
             </dl>
           {:else}
             <p class="mt-3 text-sm text-muted-foreground">
-              Pick one or more uses to split the cohort by what the licenses allow.
+              Pick one or more uses to keep only datasets whose licenses allow them.
             </p>
           {/if}
           <LegalNote variant="inline" class="mt-4" />
