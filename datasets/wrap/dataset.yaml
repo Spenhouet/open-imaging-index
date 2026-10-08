@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: wrap
+name: WRAP
+full_name: Wisconsin Registry for Alzheimer's Prevention
+summary: >-
+  Longitudinal US cohort enrolled at midlife and enriched for a parental history of Alzheimer's disease, with cognition
+  every two years and MRI (T1, T2, FLAIR), amyloid PET (PiB, NAV4694) and MK-6240 tau PET in subsets. Access by
+  application to the WRAP committee.
+homepage: https://wrap.wisc.edu/
+doi: 10.1016/j.dadm.2017.11.007
+# Year the registry was established (2001, per Johnson et al. 2018 and the WRAP website). The date of the first data
+# release to outside researchers was not found in a public source.
+year: 2001
+status: active
+creators:
+  - name: Wisconsin Alzheimer's Institute and Wisconsin Alzheimer's Disease Research Center, University of Wisconsin-Madison
+    url: https://wrap.wisc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, asl, dwi]
+tracers: [pib, nav4694, mk6240]
+anatomy: [brain]
+conditions: [healthy, mci, cognitive_impairment, dementia]
+tasks: [classification, longitudinal, regression]
+formats: [NIfTI]
+countries: [US]
+access:
+  type: application
+  url: https://wrap.wisc.edu/data-requests-2/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Approved requests are covered by a data use agreement whose text is not published. The WRAP Science Executive
+      Committee reviews applications, requests may be redirected to LONI, and projects using machine learning or AI
+      need a university cybersecurity risk evaluation.
+citation:
+  text: >-
+    Johnson SC, Koscik RL, Jonaitis EM, et al. The Wisconsin Registry for Alzheimer's Prevention: a review of findings
+    and current directions. Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring 10:130-142 (2018).
+    doi:10.1016/j.dadm.2017.11.007
+sources:
+  wrap-data-requests:
+    title: WRAP website, Data Requests page with statistics from the 31 May 2025 data freeze
+    url: https://wrap.wisc.edu/data-requests-2/
+    kind: website
+  johnson2018:
+    title: Johnson SC et al. 2018, The Wisconsin Registry for Alzheimer's Prevention, Alzheimer's & Dementia DADM
+    url: https://doi.org/10.1016/j.dadm.2017.11.007
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, preclinical, parental history, midlife, amyloid PET, tau PET, longitudinal, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
