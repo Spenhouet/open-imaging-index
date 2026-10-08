@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dlbs
+name: DLBS
+full_name: Dallas Lifespan Brain Study
+summary: >-
+  Longitudinal adult lifespan study from Dallas of 464 cognitively healthy adults aged 21 to 89 at entry, with up to
+  three waves of 3T MRI (T1w, FLAIR, DTI, ASL, task and resting fMRI), florbetapir and flortaucipir PET, in BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds004856
+doi: 10.18112/openneuro.ds004856.v1.3.0
+# First public snapshot (1.0.0) of the full three-wave release on OpenNeuro, 2024-08-05 (CHANGES file). An earlier
+# wave 1 subset was shared through INDI; its release date is not stated on the INDI page.
+year: 2024
+updated: 2025
+version: 1.3.0
+status: active
+creators:
+  - name: Center for Vital Longevity, University of Texas at Dallas, and University of Texas Southwestern Medical Center (Park DC, et al.)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/dlbs.html
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, dwi, asl, bold]
+tracers: [florbetapir, flortaucipir]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal, normative, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips, siemens]
+field_strengths: [3]
+size_gb: 227.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004856
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json and README of snapshot 1.3.0 state CC0. The older wave 1 subset on INDI is offered
+      under Creative Commons Attribution-NonCommercial.
+citation:
+  text: >-
+    Park DC, et al. The Dallas Lifespan Brain Study: A Comprehensive Adult Lifespan Data Set of Brain and Cognitive
+    Aging. Scientific Data 12, 846 (2025). doi:10.1038/s41597-025-04847-7
+sources:
+  park2025:
+    title: Park et al. 2025, The Dallas Lifespan Brain Study, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-04847-7
+    kind: paper
+  openneuro-ds004856-v1-3-0:
+    title: OpenNeuro ds004856 snapshot 1.3.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004856/versions/1.3.0
+    kind: website
+  indi-dlbs:
+    title: INDI retrospective release page for the DLBS (wave 1 subset)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/dlbs.html
+    kind: website
+  ds004856-participants:
+    title: participants.tsv of ds004856 (CC0), counted per row; ages from AgeCog_W1, sex from Sex
+    url: https://github.com/OpenNeuroDatasets/ds004856/blob/main/participants.tsv
+    kind: computed
+  ds004856-file-tree:
+    title: BIDS file tree of ds004856 (CC0), NIfTI files counted per suffix and tracer (acq-FLAIR T2w files counted as FLAIR)
+    url: https://github.com/OpenNeuroDatasets/ds004856
+    kind: computed
+related: []
+keywords: [ageing, lifespan, amyloid PET, tau PET, longitudinal, middle age, cognition, resting-state fMRI, ASL]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

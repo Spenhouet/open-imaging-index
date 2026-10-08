@@ -1,0 +1,54 @@
+measure,by,value,source,where,note
+subjects,,464,park2025,Table 2,epoch 1; participants.tsv also has 464 rows
+subjects,sex=female,287,park2025,Table 2,epoch 1; participants.tsv agrees
+subjects,sex=male,177,park2025,Table 2,epoch 1; participants.tsv agrees
+age_mean,,58.31,park2025,Table 2,age at epoch 1
+age_sd,,18.14,park2025,Table 2,age at epoch 1
+age_min,,21,park2025,Table 2,age at epoch 1
+age_max,,89,park2025,Table 2,age at epoch 1
+age_median,,62,ds004856-participants,AgeCog_W1,
+subjects,age=20-29,41,ds004856-participants,AgeCog_W1,
+subjects,age=30-39,48,ds004856-participants,AgeCog_W1,
+subjects,age=40-49,40,ds004856-participants,AgeCog_W1,
+subjects,age=50-59,82,ds004856-participants,AgeCog_W1,
+subjects,age=60-69,100,ds004856-participants,AgeCog_W1,
+subjects,age=70-79,96,ds004856-participants,AgeCog_W1,
+subjects,age=80-89,57,ds004856-participants,AgeCog_W1,
+subjects,sex=female;age=20-29,25,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=20-29,16,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=30-39,30,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=30-39,18,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=40-49,27,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=40-49,13,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=50-59,50,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=50-59,32,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=60-69,62,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=60-69,38,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=70-79,60,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=70-79,36,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=female;age=80-89,33,ds004856-participants,"Sex, AgeCog_W1",
+subjects,sex=male;age=80-89,24,ds004856-participants,"Sex, AgeCog_W1",
+subjects,condition=healthy,464,park2025,"Methods, Participants",cognitively healthy at entry (MMSE of at least 26)
+subjects,modality=MR,464,ds004856-file-tree,sub-*/ses-*/,
+subjects,contrast=T1w,464,ds004856-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,464,ds004856-file-tree,anat/*_acq-FLAIR_*_T2w.nii.gz,
+subjects,contrast=dwi,464,ds004856-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=asl,464,ds004856-file-tree,perf/*_asl.nii.gz,
+subjects,contrast=bold,464,ds004856-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w,464,ds004856-file-tree,,every subject has each contrast in at least one wave
+subjects,modality=PT,331,ds004856-file-tree,pet/*_pet.nii.gz,118 subjects have both tracers
+subjects,tracer=florbetapir,295,ds004856-file-tree,pet/*_trc-18FAV45_*,the paper also reports 295 at epoch 1
+subjects,tracer=flortaucipir,154,ds004856-file-tree,pet/*_trc-18FAV1451_*,
+subjects,tracer=florbetapir;sex=female,180,ds004856-file-tree,with participants.tsv Sex,
+subjects,tracer=florbetapir;sex=male,115,ds004856-file-tree,with participants.tsv Sex,
+subjects,tracer=flortaucipir;sex=female,95,ds004856-file-tree,with participants.tsv Sex,
+subjects,tracer=flortaucipir;sex=male,59,ds004856-file-tree,with participants.tsv Sex,
+studies,,969,ds004856-file-tree,sub-*/ses-*/,"imaging sessions: 464 wave 1, 309 wave 2, 196 wave 3"
+scans,,11210,ds004856-file-tree,sub-*/ses-*/*/*.nii.gz,all MRI and PET NIfTI files
+scans,contrast=T1w,967,ds004856-file-tree,anat/*_T1w.nii.gz,includes repeat MPRAGE runs
+scans,contrast=FLAIR,968,ds004856-file-tree,anat/*_acq-FLAIR_*_T2w.nii.gz,includes repeat FLAIR runs
+scans,contrast=dwi,955,ds004856-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=asl,746,ds004856-file-tree,perf/*_asl.nii.gz,
+scans,contrast=bold,6839,ds004856-file-tree,func/*_bold.nii.gz,"runs of five tasks: Scenes, Words, VentralVisual, rest and Hypercapnia"
+scans,tracer=florbetapir,551,park2025,"Methods, PET amyloid data acquisition","295 at epoch 1, 180 at epoch 2, 76 at epoch 3; the file tree also holds 551"
+scans,tracer=flortaucipir,184,ds004856-file-tree,pet/*_trc-18FAV1451_*,
