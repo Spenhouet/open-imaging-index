@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: clarity-ad
+name: Clarity AD (lecanemab phase 3 trial imaging)
+full_name: >-
+  Clarity AD, a randomized placebo-controlled phase 3 trial of lecanemab in early Alzheimer disease (NCT03887455),
+  trial MRI
+summary: >-
+  Serial safety MRI at 1.5 T or 3 T (3D T1w, FLAIR, T2*-GRE, T2w, DWI) of 1795 people with early Alzheimer disease in
+  the Eisai and Biogen lecanemab phase 3 trial, centrally read for ARIA. The images are not shared; the safety paper
+  states its data are not available.
+homepage: https://clinicaltrials.gov/study/NCT03887455
+doi: 10.1056/NEJMoa2212948
+# Year of the primary results publication; the images have no public release.
+year: 2023
+creators:
+  - name: Eisai (trial sponsor), co-funded by Biogen
+    url: https://www.eisai.com
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, T2starw, T2w, dwi]
+anatomy: [brain]
+conditions: [alzheimers, mci, aria, cerebral_microbleeds, superficial_siderosis]
+tasks: [longitudinal]
+# Countries with sites in the ClinicalTrials.gov location list.
+countries: [US, AU, CA, CN, DE, ES, FR, GB, IT, JP, KR, RU, SE, SG]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: not_shared
+  url: https://clinicalstudydatarequest.com/Study-Sponsors/Study-Sponsors-Eisai.aspx
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Clarity AD safety paper (Honig et al. 2024) gives as its data availability statement "Not available." Eisai
+      shares anonymized patient-level clinical data through ClinicalStudyDataRequest.com for "products and indications
+      submitted and approved by EMA and FDA, after 1st January 2014"; the items it lists are raw and analysis-ready
+      datasets, protocols, case report forms, analysis plans, dataset specifications and clinical study reports, with
+      no images. Eisai "will not share clinical data ... where agreement to disclosure clinical data is not gained with
+      a co-development/research/marketing/promotion partner for a compound/product" and may decline access "where
+      there is a potential conflict of interest or an actual or potential competitive risk". No terms for the images
+      are published.
+citation:
+  text: >-
+    van Dyck CH, Swanson CJ, Aisen P, et al. Lecanemab in Early Alzheimer's Disease. N Engl J Med 388(1):9-21 (2023).
+    doi:10.1056/NEJMoa2212948
+sources:
+  honig2024:
+    title: >-
+      Honig et al. 2024, Alzheimer's Research & Therapy, updated safety results from Clarity AD (PMC11084061, CC BY
+      4.0)
+    url: https://doi.org/10.1186/s13195-024-01441-8
+    kind: paper
+  vandyck2023:
+    title: van Dyck et al. 2023, NEJM, Clarity AD primary results
+    url: https://doi.org/10.1056/NEJMoa2212948
+    kind: paper
+  ctgov-nct03887455:
+    title: ClinicalTrials.gov record NCT03887455
+    url: https://clinicaltrials.gov/study/NCT03887455
+    kind: website
+  csdr-eisai:
+    title: ClinicalStudyDataRequest.com, sponsor-specific details for Eisai
+    url: https://clinicalstudydatarequest.com/Study-Sponsors/Study-Sponsors-Eisai.aspx
+    kind: website
+  eisai-disclosure:
+    title: Eisai, Clinical Trial Disclosure (data sharing policy)
+    url: https://www.eisai.com/innovation/research/clinical_trials/clinical/index.html
+    kind: website
+related: []
+keywords: [lecanemab, anti-amyloid therapy, ARIA, ARIA-E, ARIA-H, clinical trial, Alzheimer's disease]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
