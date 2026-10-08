@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,55378,cerri2026,Table 2,
+studies,,77589,cerri2026,Table 2,MRI sessions
+scans,,260927,cerri2026,Table 2,
+subjects,sex=female,20510,fomo260k-participants,"columns dataset, participant_id, sex",subjects with F in at least one session; 7 of them have other sessions without sex
+subjects,sex=male,18704,fomo260k-participants,"columns dataset, participant_id, sex",subjects with M in at least one session; 5 of them have other sessions without sex
+subjects,sex=unknown,16164,fomo260k-participants,"columns dataset, participant_id, sex",no sex recorded in any session
+studies,condition=healthy,~41000,cerri2026,Table 1,"""41K"" control sessions, of 64K sessions with disease metadata"
+studies,condition=brain_tumor,~16000,cerri2026,Table 1,"""16K"" sessions"
+studies,condition=stroke,~2600,cerri2026,Table 1,"""2.6K"" sessions"
+studies,condition=dementia,~300,cerri2026,Table 1,"""0.3K"" sessions"
+age_mean,,34.8,cerri2026,Dataset Composition and Demographics,age at each MRI session for the 57224 sessions with age information

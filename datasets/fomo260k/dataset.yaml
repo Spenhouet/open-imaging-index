@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fomo260k
+name: FOMO260K
+full_name: FOMO260K brain MRI dataset for large-scale self-supervised learning
+summary: >-
+  Openly downloadable aggregate of 260,927 minimally preprocessed brain MRI scans from 77,589 sessions and 55,378
+  subjects, pooled from 910 public sources, with clinical- and research-grade scans of many sequences for
+  self-supervised pretraining.
+homepage: https://huggingface.co/datasets/FOMO-MRI/FOMO260K
+doi: 10.57967/hf/8670
+year: 2026
+version: FOMO260K (arXiv:2506.14432v3, May 2026)
+status: active
+creators:
+  - name: Department of Computer Science, University of Copenhagen, and Pioneer Centre for AI (Cerri, Munk et al.)
+    url: https://huggingface.co/FOMO-MRI
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, T2starw, FLAIR, PDw, swi, dwi, ADC, MP2RAGE, T1map, T2map, angio, asl]
+anatomy: [brain]
+conditions: [healthy, brain_tumor, stroke, dementia]
+formats: [NIfTI]
+vendors: [siemens, philips]
+field_strengths: [1.5, 3]
+access:
+  type: open
+  url: https://huggingface.co/datasets/FOMO-MRI/FOMO260K
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    note: >-
+      The constituent datasets keep their own licenses (CC0, PDDL, CC BY, CC BY-SA, CC BY-NC, CC BY-NC-SA and "Open
+      Access", listed in Table 2 of the paper), and users must also cite the constituent datasets named in the
+      paper's Usage Notes.
+citation:
+  text: >-
+    Cerri S, Munk A, Llambias SN, Ambsdorf J, Machnio J, Nersesjan V, Hedeager Krag C, Liu P, Rocamora García P,
+    Mehdipour Ghazi M, Boesen M, Benros ME, Iglesias JE, Nielsen M. A large-scale heterogeneous 3D magnetic resonance
+    brain imaging dataset for self-supervised learning. arXiv:2506.14432 (2026).
+  bibtex: |
+    @article{Cerri2026large,
+      title={A large-scale heterogeneous 3D magnetic resonance brain imaging dataset for self-supervised learning},
+      author={Cerri, Stefano and Munk, Asbj{\o}rn and Llambias, Sebastian N{\o}rgaard and Ambsdorf, Jakob and Machnio, Julia and Nersesjan, Vardan and Hedeager Krag, Christian and Liu, Peirong and Rocamora Garc{\'\i}a, Pablo and Mehdipour Ghazi, Mostafa and Boesen, Mikael and Benros, Michael Eriksen and Iglesias, Juan Eugenio and Nielsen, Mads},
+      journal={arXiv preprint arXiv:2506.14432},
+      year={2026},
+      url={https://arxiv.org/abs/2506.14432}
+    }
+sources:
+  cerri2026:
+    title: Cerri et al., A large-scale heterogeneous 3D MRI brain imaging dataset for self-supervised learning, arXiv:2506.14432v3
+    url: https://arxiv.org/abs/2506.14432v3
+    kind: paper
+  fomo260k-card:
+    title: FOMO260K dataset card on Hugging Face
+    url: https://huggingface.co/datasets/FOMO-MRI/FOMO260K
+    kind: website
+  fomo260k-participants:
+    title: FOMO260K participants.tsv (CC BY-NC-SA 4.0, open download), one row per session, counted per unique dataset and participant_id
+    url: https://huggingface.co/datasets/FOMO-MRI/FOMO260K/resolve/main/participants.tsv
+    kind: computed
+related: [ixi]
+keywords: [self-supervised learning, foundation model, pretraining, brain MRI, clinical MRI, aggregated dataset]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
