@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cc-abide
+name: cc_abide
+full_name: Corpus callosum and brain segmentations from ABIDE
+summary: >-
+  Automated midsagittal corpus callosum and intracranial segmentations (NIfTI) for 1,102 ABIDE I T1-weighted MRI scans
+  of people with autism spectrum disorder and controls, with area, volume and scan-quality tables.
+homepage: https://www.nitrc.org/projects/cc_abide/
+year: 2015
+status: active
+creators:
+  - name: Heath Pardoe and colleagues, Comprehensive Epilepsy Center, New York University School of Medicine
+    url: https://sites.google.com/site/hpardoe/cc_abide
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain, corpus_callosum]
+conditions: [autism, healthy]
+tasks: [segmentation]
+formats: [NIfTI]
+size_gb: 0.2
+access:
+  type: open
+  url: https://www.nitrc.org/frs/?group_id=944
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Corpus callosum and brain segmentations, area and volume tables, scan ratings and R script.
+    note: >-
+      The NITRC project page names the license only as "Attribution" and gives no version. The rule answers of CC BY
+      3.0 and 4.0 are the same in this index.
+  - license: CC-BY-NC-SA-3.0
+    applies_to: >-
+      The midsagittal T1-weighted slices and the ABIDE phenotypic file bundled in the archives, which are taken from
+      ABIDE I.
+    note: >-
+      The archives contain material derived directly from ABIDE I images and phenotypes, which ABIDE releases under
+      CC BY-NC-SA 3.0. The original ABIDE terms are kept for that material.
+citation:
+  text: >-
+    Kucharsky Hiess R, Alter R, Sojoudi S, Ardekani BA, Kuzniecky R, Pardoe HR. Corpus callosum area and brain volume
+    in autism spectrum disorder: quantitative analysis of structural MRI from the ABIDE database. Journal of Autism and
+    Developmental Disorders 45(10):3107-3114 (2015). doi:10.1007/s10803-015-2468-8
+sources:
+  kucharskyhiess2015:
+    title: Kucharsky Hiess et al. 2015, Journal of Autism and Developmental Disorders
+    url: https://doi.org/10.1007/s10803-015-2468-8
+    kind: paper
+  nitrc-cc-abide:
+    title: cc_abide project page on NITRC
+    url: https://www.nitrc.org/projects/cc_abide/
+    kind: website
+  pardoe-cc-abide:
+    title: ABIDE corpus callosum and brain segmentation data, author page
+    url: https://sites.google.com/site/hpardoe/cc_abide
+    kind: website
+  cc-abide-bvol-zip:
+    title: abide.cc.bvol.20150121.zip (CC BY), counted per subject folder and segmentation file
+    url: https://www.nitrc.org/frs/download.php/7720/abide.cc.bvol.20150121.zip
+    kind: computed
+related: [abide-i]
+keywords: [autism, ASD, corpus callosum, intracranial volume, brain segmentation, midsagittal]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

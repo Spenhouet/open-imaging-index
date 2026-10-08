@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,1102,cc-abide-bvol-zip,*_brain_seg.nii.gz files,one intracranial segmentation per subject folder
+subjects,contrast=T1w,1102,cc-abide-bvol-zip,*_brain_seg.nii.gz files,segmentations derived from ABIDE I T1-weighted scans
+subjects,anatomy=brain,1102,cc-abide-bvol-zip,*_brain_seg.nii.gz files,intracranial segmentation
+subjects,anatomy=corpus_callosum,1100,cc-abide-bvol-zip,abide_cc.nii files,midsagittal corpus callosum segmentation

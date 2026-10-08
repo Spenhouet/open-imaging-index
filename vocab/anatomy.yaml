@@ -9,6 +9,7 @@ terms:
       synonyms: [hippocampus],
       mappings: { uberon: 'UBERON:0002421' }
     }
+  - { id: corpus_callosum, label: Corpus callosum, parent: brain, mappings: { uberon: 'UBERON:0002336' } }
   - { id: head, label: Head, mappings: { uberon: 'UBERON:0000033' } }
   - { id: neck, label: Neck, mappings: { uberon: 'UBERON:0000974' } }
   - { id: carotid_artery, label: Carotid artery, parent: neck, synonyms: [common carotid artery], mappings: { uberon: 'UBERON:0005396' } }
