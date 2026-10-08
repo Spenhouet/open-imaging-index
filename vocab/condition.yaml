@@ -19,6 +19,8 @@ terms:
       synonyms: [FTD],
       mappings: { mondo: 'MONDO:0017276' }
     }
+  - { id: vascular_dementia, label: Vascular dementia, parent: dementia, mappings: { mondo: 'MONDO:0004648' } }
+  - { id: down_syndrome, label: Down syndrome, synonyms: [trisomy 21], mappings: { mondo: 'MONDO:0008608' } }
   - {
       id: mci,
       label: Mild cognitive impairment,
@@ -36,6 +38,39 @@ terms:
     }
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
   - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
+  - {
+      id: intracerebral_hemorrhage,
+      label: Intracerebral hemorrhage,
+      parent: intracranial_hemorrhage,
+      synonyms: [spontaneous ICH, hemorrhagic stroke],
+      mappings: { mondo: 'MONDO:0013792' }
+    }
+  - {
+      id: cerebral_microbleeds,
+      label: Cerebral microbleeds,
+      description: 'Small hemosiderin deposits seen as hypointense foci on T2*-weighted or susceptibility-weighted MRI. No MONDO or HPO term exists.',
+      synonyms: [CMB, microhemorrhage, MCH]
+    }
+  - {
+      id: superficial_siderosis,
+      label: Superficial siderosis,
+      synonyms: [cortical superficial siderosis, cSS],
+      mappings: { mondo: 'MONDO:0016594', hp: 'HP:6001255' }
+    }
+  - { id: cerebral_amyloid_angiopathy, label: Cerebral amyloid angiopathy, synonyms: [CAA], mappings: { mondo: 'MONDO:0005620' } }
+  - {
+      id: aria,
+      label: Amyloid-related imaging abnormalities,
+      description: 'ARIA-E (edema, effusion) and ARIA-H (microbleeds, superficial siderosis), mostly seen under anti-amyloid antibody treatment. No MONDO or HPO term exists.',
+      synonyms: [ARIA, ARIA-E, ARIA-H]
+    }
+  - { id: traumatic_brain_injury, label: Traumatic brain injury, synonyms: [TBI], mappings: { mondo: 'MONDO:0858950' } }
+  - {
+      id: cerebral_cavernous_malformation,
+      label: Cerebral cavernous malformation,
+      synonyms: [CCM, cavernoma],
+      mappings: { mondo: 'MONDO:0000820' }
+    }
   - { id: epilepsy, label: Epilepsy, mappings: { mondo: 'MONDO:0005027' } }
   - { id: schizophrenia, label: Schizophrenia, mappings: { mondo: 'MONDO:0005090' } }
   - { id: psychotic_disorder, label: Psychotic disorder, synonyms: [psychosis], mappings: { mondo: 'MONDO:0005485' } }

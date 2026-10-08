@@ -114,3 +114,4 @@ purposes:
   - { id: noncommercial_research, label: Non-commercial research, duo: { code: 'DUO:0000046', label: NCU } }
   - { id: health_research, label: Health research, duo: { code: 'DUO:0000006', label: HMB } }
   - { id: approved_project, label: Approved project only, duo: { code: 'DUO:0000027', label: PS } }
+  - { id: unspecified, label: Not stated }
