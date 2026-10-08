@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,sex=female,1353,wrap-data-requests,WRAP Statistics: sex,31 May 2025 data freeze
+subjects,sex=male,570,wrap-data-requests,WRAP Statistics: sex,31 May 2025 data freeze
+subjects,condition=healthy,1691,wrap-data-requests,WRAP Statistics: cohort summary,"last diagnosis within the 31 May 2025 freeze: cognitively normal"
+subjects,condition=mci,120,wrap-data-requests,WRAP Statistics: cohort summary,last diagnosis within the 31 May 2025 freeze
+subjects,condition=cognitive_impairment,65,wrap-data-requests,WRAP Statistics: cohort summary,"last diagnosis within the 31 May 2025 freeze: ""Impaired-Other"", below MCI"
+subjects,condition=dementia,40,wrap-data-requests,WRAP Statistics: cohort summary,last diagnosis within the 31 May 2025 freeze
+subjects,modality=MR,954,wrap-data-requests,WRAP Statistics: multimodal biomarker counts,31 May 2025 data freeze
+subjects,tracer=mk6240,702,wrap-data-requests,WRAP Statistics: multimodal biomarker counts,people with tau PET; 31 May 2025 data freeze
+subjects,modality=MR;tracer=mk6240,664,wrap-data-requests,WRAP Statistics: multimodal biomarker counts,people with MRI and tau PET; 31 May 2025 data freeze
+subjects,modality=MR;condition=healthy,835,wrap-data-requests,WRAP Statistics: MRI,last diagnosis within the 31 May 2025 freeze
+subjects,modality=MR;condition=mci,70,wrap-data-requests,WRAP Statistics: MRI,last diagnosis within the 31 May 2025 freeze
+subjects,modality=MR;condition=cognitive_impairment,21,wrap-data-requests,WRAP Statistics: MRI,"last diagnosis within the 31 May 2025 freeze: ""Impaired-Other"""
+subjects,modality=MR;condition=dementia,26,wrap-data-requests,WRAP Statistics: MRI,last diagnosis within the 31 May 2025 freeze
+subjects,tracer=mk6240;condition=healthy,606,wrap-data-requests,WRAP Statistics: Tau PET,last diagnosis within the 31 May 2025 freeze
+subjects,tracer=mk6240;condition=mci,60,wrap-data-requests,WRAP Statistics: Tau PET,last diagnosis within the 31 May 2025 freeze
+subjects,tracer=mk6240;condition=cognitive_impairment,19,wrap-data-requests,WRAP Statistics: Tau PET,"last diagnosis within the 31 May 2025 freeze: ""Impaired-Other"""
+subjects,tracer=mk6240;condition=dementia,17,wrap-data-requests,WRAP Statistics: Tau PET,last diagnosis within the 31 May 2025 freeze
+age_mean,,55.72,wrap-data-requests,WRAP Statistics: cohort summary,age at first cognitive assessment; 31 May 2025 data freeze
+age_sd,,7.72,wrap-data-requests,WRAP Statistics: cohort summary,age at first cognitive assessment; 31 May 2025 data freeze
