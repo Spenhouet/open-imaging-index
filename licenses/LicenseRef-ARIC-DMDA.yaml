@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ARIC-DMDA
+name: ARIC Data and Materials Distribution Agreement
+short_name: ARIC DMDA
+url: https://aric.cscc.unc.edu/aric9/sites/default/files/publications/policies/ARIC%20DMDA%2012.15.2023.pdf
+version: 'NHLBI ARIC DMDA Template, version date 2023-12-15'
+summary: >-
+  Signed by the recipient institution after ARIC approves a manuscript or ancillary study proposal. Data may only be
+  used for that research project, with IRB review, and may not be passed on in any form. Manuscripts go to ARIC for
+  review, results are reported back yearly, and all data are destroyed when the agreement ends (at the latest after
+  five years).
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: Recipient and Recipient's PI agree not to claim, infer, or imply United States Government endorsement of the
+      Research Project, the entity, or personnel conducting the Research Project, or any resulting commercial
+      product(s) except as described in section 7.
+    note: The agreement neither allows nor forbids commercial use. Its signature page lets a "[for-profit]
+      corporation/institution" sign and section 16 mentions resulting commercial products, but use is limited to the approved research
+      project.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must be part of the approved research project.
+  derivatives:
+    value: conditional
+    quote: Recipient and Recipient's PI agree that Data, Materials, their progeny, or derivatives thereof will not be
+      used in any experiments or procedures unless said experiments or procedures are disclosed and approved as part of
+      the Research Project.
+    note: Only within the approved research project.
+  publication:
+    value: conditional
+    quote: Nothing in this section precludes Recipient from publishing results of the Research Project through the
+      usual channels of scientific publication.
+    note: With the ARIC acknowledgement and after ARIC review of abstracts and manuscripts.
+  redistribute_original:
+    value: 'no'
+    quote: Recipient and Recipient's PI further agree not to transfer Data, Materials and their progeny, and derivatives
+      thereof, with or without charge, to any other entity or individual, except for Data and/or Materials as provided
+      for in section 4.2 above.
+  redistribute_derivatives:
+    value: 'no'
+    quote: Recipient and Recipient's PI further agree not to transfer Data, Materials and their progeny, and derivatives
+      thereof, with or without charge, to any other entity or individual, except for Data and/or Materials as provided
+      for in section 4.2 above.
+    note: Resultant data go to ARIC, which may distribute them through NHLBI procedures.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Recipient and Recipient's PI agree to acknowledge the contribution of ARIC in any and all oral and written
+      presentations, disclosures, and publications resulting from any and all analyses of Data or Materials, in
+      accordance with the guidelines established by the study.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I agree to abide by the terms and conditions laid out in this agreement and acknowledge that I am steward of
+      the data and/or materials for the duration of this agreement
+    note: Signed by the recipient's PI, an authorized representative of the institution and the ARIC Coordinating
+      Center, after ARIC approves a manuscript or ancillary study proposal.
+  ethics_approval:
+    value: 'yes'
+    quote: Recipient and Recipient's PI agrees to use the Data and/or Materials only in conjunction with the Research
+      Project that has been reviewed by the Recipient's Institutional Review Board (IRB) or similar human subjects
+      oversight body in accordance with Department of Health and Human Services regulations at 45 CFR Part 46.
+  publication_review:
+    value: 'yes'
+    quote: If a manuscript results from the Research Project, then the manuscript must be submitted for review by ARIC.
+    note: Abstracts are requested 10 days and manuscripts 30 days before submission.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: Recipient and Recipient's PI agree to provide Resultant Data to ARIC in accordance with applicable NIH and
+      NHLBI data sharing policies in place as of the effective date of this agreement.
+    note: A report based on the resultant data is also due every 12 months.
+  delete_after_use:
+    value: 'yes'
+    quote: Recipient agrees to destroy all copies of all Data received from ARIC and consult with ARIC and the NHLBI
+      regarding the disposition of all remaining Materials.
+    note: The agreement ends at the latest five years after it takes effect.
+  no_reidentification:
+    value: 'yes'
+    quote: Recipient and Recipient's PI agree that Materials and/or Data will not be used, either alone or in
+      conjunction with any other information, in any effort to determine the individual identities of any of the
+      participants from whom Data and/or Materials were obtained or derived.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

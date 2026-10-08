@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,1928,graffradford2017,"Methods, Participants",visit 5 participants selected for MRI who completed the scan
+subjects,condition=healthy,1072,graffradford2017,Table 1,cognitively normal; analysis sample of 1677 non-demented participants
+subjects,condition=mci,605,graffradford2017,Table 1,mild cognitive impairment; analysis sample of 1677
+subjects,condition=cerebral_microbleeds,398,graffradford2017,Table 1,"sum of 136 deep or mixed and 262 strictly lobar (disjoint groups, definite CMBs only); analysis sample of 1677"
+subjects,sex=female,1006,graffradford2017,Table 1,analysis sample of 1677
+age_mean,,76,graffradford2017,Table 1,analysis sample of 1677
+age_sd,,5,graffradford2017,Table 1,analysis sample of 1677

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aric-ncs-mri
+name: ARIC-NCS brain MRI
+full_name: Atherosclerosis Risk in Communities Neurocognitive Study (ARIC-NCS), visit 5 brain MRI
+summary: >-
+  3 T brain MRI (MPRAGE, FLAIR, 2D T2* GRE) of 1,928 older adults from four US communities at ARIC visit 5 (2011-13),
+  with centrally read microbleeds, infarcts and white matter hyperintensities. Access through an approved ARIC proposal
+  and a data distribution agreement.
+homepage: https://aric.cscc.unc.edu/aric9/
+doi: 10.1161/STROKEAHA.117.018336
+# Images are not publicly released. Year of the Graff-Radford et al. paper that describes the microbleed reads.
+year: 2017
+status: active
+creators:
+  - name: ARIC Study and ARIC Neurocognitive Study investigators (NHLBI)
+    url: https://aric.cscc.unc.edu/aric9/
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, T2starw]
+anatomy: [brain]
+conditions: [healthy, mci, cerebral_microbleeds]
+tasks: [detection, classification, regression]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://aric.cscc.unc.edu/aric9/researchers/Obtain_Submit_Data
+licenses:
+  - license: LicenseRef-ARIC-DMDA
+    note: >-
+      External investigators need an approved ARIC manuscript or ancillary study proposal and a fee for dataset
+      preparation. The DMDA defines Data to include MRI scans; the ARIC website does not say how image files are
+      delivered.
+citation:
+  text: >-
+    Graff-Radford J, Simino J, Kantarci K, et al. Neuroimaging correlates of cerebral microbleeds: The ARIC Study
+    (Atherosclerosis Risk in Communities). Stroke 48(11):2964-2972 (2017). doi:10.1161/STROKEAHA.117.018336
+sources:
+  graffradford2017:
+    title: Graff-Radford et al. 2017, Neuroimaging correlates of cerebral microbleeds, The ARIC Study, Stroke (PMC5685663)
+    url: https://doi.org/10.1161/STROKEAHA.117.018336
+    kind: paper
+  aric-obtain-data:
+    title: ARIC website, Obtain/Submit Data
+    url: https://aric.cscc.unc.edu/aric9/researchers/Obtain_Submit_Data
+    kind: website
+related: []
+keywords: [cerebral microbleeds, small vessel disease, population cohort, ageing, T2* GRE, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
