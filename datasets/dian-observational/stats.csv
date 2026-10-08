@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,673,dian-obs-available,Participant Characteristics at Enrollment,"enrolled participants (510 asymptomatic, 163 symptomatic)"
+subjects,condition=alzheimers,397,dian-obs-available,Participant Characteristics at Enrollment (footnote),"mutation carriers (APP, PSEN1 or PSEN2), asymptomatic or symptomatic, among the 657 with confirmed mutation data as of 30 June 2023"
+subjects,condition=healthy,260,dian-obs-available,Participant Characteristics at Enrollment (footnote),"mutation non-carriers among the 657 with confirmed mutation data as of 30 June 2023; siblings serving as controls"
+subjects,contrast=T2starw,240,josephmathurin2021,Methods (Image Acquisition Protocol),"2D T2*-GRE at the baseline visit, in the 511 participants with Mayo Clinic reads from the 14th data freeze"
+subjects,contrast=swi,234,josephmathurin2021,Methods (Image Acquisition Protocol),"SWI at the baseline visit, in the same 511-participant analysis; 153 switched from SWI to T2*-GRE at follow-up"
+subjects,condition=cerebral_microbleeds,32,josephmathurin2021,Results (CMH Prevalence and Location),"cerebral microhemorrhages at baseline among the 511 analysed (26 carriers, 6 non-carriers)"
+subjects,condition=superficial_siderosis,4,josephmathurin2021,"Results (CMHs, Other ARIA-H, and White Matter Lesions)",among the 511 analysed
+subjects,condition=intracerebral_hemorrhage,2,josephmathurin2021,"Results (CMHs, Other ARIA-H, and White Matter Lesions)","macrohemorrhages, both in APP mutation carriers, among the 511 analysed"

@@ -7,7 +7,7 @@ import type MiniSearch from 'minisearch';
 
 // The Explore page: one cohort built from the catalog filters, summed over datasets and broken down by attribute.
 
-/** Uses a person may have in mind. They split the cohort, they do not filter it. */
+/** Uses a person may have in mind. Each is a license rule filter, see RULE_FILTERS. */
 export const NEEDS = [
   { id: 'commercial_use', label: 'Commercial use' },
   { id: 'model_training', label: 'Train models' },

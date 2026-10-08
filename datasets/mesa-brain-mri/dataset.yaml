@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mesa-brain-mri
+name: MESA Exam 6 Brain MRI
+full_name: Multi-Ethnic Study of Atherosclerosis (MESA) Atrial Fibrillation ancillary study brain MRI
+summary: >-
+  3 T brain MRI of 1,062 older adults from a multi-ethnic US community cohort, scanned 2018 to 2019 with T1w, T2w,
+  FLAIR, diffusion, ASL, multi-echo SWI/QSM and fMRI. Available through an approved MESA proposal and a signed DMDA.
+homepage: https://www.mesa-nhlbi.org/
+doi: 10.1161/JAHA.121.023159
+# Year of the brain MRI protocol paper, which states the data are available with an approved proposal. The date the
+# Coordinating Center first released the brain MRI data is not published.
+year: 2022
+status: active
+creators:
+  - name: MESA Coordinating Center (Collaborative Health Studies Coordinating Center), University of Washington
+    url: https://www.mesa-nhlbi.org/
+  - name: National Heart, Lung, and Blood Institute (NHLBI)
+    url: https://www.nhlbi.nih.gov/
+  - name: University of Pennsylvania Brain MRI Reading Center
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, asl, swi, bold]
+anatomy: [brain]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://mesa-nhlbi.org/researchers/publications
+licenses:
+  - license: LicenseRef-MESA-DMDA
+    note: >-
+      Access needs an approved MESA paper or ancillary study proposal with a senior MESA sponsor, then a DMDA for that
+      project. The DMDA covers images; the Coordinating Center does not publish which brain MRI files it releases.
+citation:
+  text: >-
+    Austin TR, Nasrallah IM, Erus G, et al. Association of Brain Volumes and White Matter Injury With Race, Ethnicity,
+    and Cardiovascular Risk Factors: The Multi-Ethnic Study of Atherosclerosis. J Am Heart Assoc 11(7), e023159
+    (2022). doi:10.1161/JAHA.121.023159
+sources:
+  austin2022:
+    title: Austin et al. 2022, J Am Heart Assoc (PMC9075451), MESA brain MRI protocol and participants
+    url: https://doi.org/10.1161/JAHA.121.023159
+    kind: paper
+  rashid2021:
+    title: Rashid et al. 2021, Scientific Reports (DEEPMIR, PMC8266884)
+    url: https://doi.org/10.1038/s41598-021-93427-x
+    kind: paper
+  mesa-publications-page:
+    title: MESA website, Publications page with the invitation to outside investigators and the DMDA
+    url: https://mesa-nhlbi.org/researchers/publications
+    kind: website
+related: []
+keywords: [community cohort, cerebral small vessel disease, cerebral microbleeds, iron deposits, QSM, SWI, ageing]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

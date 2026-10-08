@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: yonsei-gachon-cmb
+name: Yonsei/Gachon SWI Microbleed Dataset
+full_name: Yonsei MILAB and Gachon University Gil Medical Center cerebral microbleed SWI dataset
+summary: >-
+  3 T SWI, phase and magnitude brain MRI of 179 subjects from Gachon University Gil Medical Center with point labels
+  for 760 cerebral microbleeds. Offered with the 2020 paper, but the authors withdrew the data in 2021.
+homepage: https://github.com/Yonsei-MILab/Cerebral-Microbleeds-Detection
+doi: 10.1016/j.nicl.2020.102464
+# Year of the paper; the code repository linked to a download page from February 2020 until June 2021.
+year: 2020
+status: retired
+creators:
+  - name: Medical Imaging Laboratory (MILAB), Yonsei University
+    url: http://kimchi.yonsei.ac.kr/
+  - name: Gachon University Gil Medical Center
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds]
+tasks: [detection]
+countries: [KR]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://github.com/Yonsei-MILab/Cerebral-Microbleeds-Detection
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The repository README says the data can no longer be provided because of a patent transfer. The repository has
+      no license file.
+citation:
+  text: >-
+    Al-masni MA, Kim WR, Kim EY, Noh Y, Kim DH. Automated detection of cerebral microbleeds in MR images: A two-stage
+    deep learning approach. NeuroImage: Clinical 28, 102464 (2020). doi:10.1016/j.nicl.2020.102464
+sources:
+  almasni2020:
+    title: Al-masni et al. 2020, NeuroImage Clinical (PMC7575881)
+    url: https://doi.org/10.1016/j.nicl.2020.102464
+    kind: paper
+  yonsei-milab-cmb-repo:
+    title: Yonsei-MILab/Cerebral-Microbleeds-Detection repository README
+    url: https://github.com/Yonsei-MILab/Cerebral-Microbleeds-Detection
+    kind: website
+related: []
+keywords: [cerebral microbleeds, SWI, phase imaging, microbleed detection]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
