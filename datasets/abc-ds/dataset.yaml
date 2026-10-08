@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: abc-ds
+name: ABC-DS
+full_name: Alzheimer Biomarker Consortium - Down Syndrome (ABC-DS)
+summary: >-
+  Multi-site longitudinal study of Alzheimer's disease biomarkers in over 500 adults with Down syndrome and 59 sibling
+  controls in the US and UK, with MRI (T1w, FLAIR, T2*, SWI, DTI, ASL, fMRI), amyloid, tau and FDG PET, fluid
+  biomarkers, genetics and cognitive data.
+homepage: https://www.nia.nih.gov/research/abc-ds
+doi: 10.1002/dad2.12065
+# Handen et al. 2020 state that data from the first assessment cycle are available through LONI. An exact first
+# release date is not published.
+year: 2020
+status: active
+creators:
+  - name: Alzheimer Biomarker Consortium - Down Syndrome (NiAD and ADDS programs)
+    url: https://www.nia.nih.gov/research/abc-ds
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, swi, dwi, asl, bold]
+tracers: [pib, florbetapir, flortaucipir, fdg]
+anatomy: [brain]
+conditions: [down_syndrome, healthy, mci, dementia, alzheimers]
+tasks: [longitudinal, regression, classification]
+countries: [US, GB]
+access:
+  type: application
+  url: https://pitt.co1.qualtrics.com/jfe/form/SV_cu0pNCZZlrdSxUN
+licenses:
+  - license: LicenseRef-ABCDS-DUA
+citation:
+  text: >-
+    Handen BL, Lott IT, Christian BT, et al. The Alzheimer's Biomarker Consortium-Down Syndrome: Rationale and
+    methodology. Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring 12(1):e12065 (2020).
+    doi:10.1002/dad2.12065. The DUA also requires "for the Alzheimer's Biomarker Consortium on Down Syndrome study*"
+    on the by-line and the ABC-DS funding acknowledgement.
+sources:
+  handen2025:
+    title: Handen et al. 2025, The ABC-DS 10-year report, Alzheimer's & Dementia (data through Freeze 4, September 2023)
+    url: https://doi.org/10.1002/alz.70294
+    kind: paper
+related: []
+keywords: [Down syndrome, Alzheimer's disease, amyloid PET, tau PET, longitudinal, brain MRI, SWI, cerebral microbleeds]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

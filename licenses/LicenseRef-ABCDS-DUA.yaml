@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ABCDS-DUA
+name: Alzheimer Biomarker Consortium - Down Syndrome (ABC-DS) Data Use Agreement
+short_name: ABC-DS DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ABCDS
+version: 'ABC-DS Data Use Agreement on LONI IDA, read 2026-10-08'
+summary: >-
+  Agreement signed on LONI after a data request reviewed by the ABC-DS publication committee. Use is limited to
+  scientific investigation, teaching or planning clinical research within the approved application. Redistribution is
+  prohibited, manuscripts go to the ABC-DS Steering Committee before submission, and publications must carry the
+  ABC-DS by-line, methods text and funding acknowledgement.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: >-
+      I request access to data collected by the ABC-DS study for the purpose of scientific investigation, teaching or
+      the planning of clinical research studies.
+    note: Commercial use is not mentioned. Any use must fall under these purposes and the approved application.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: >-
+      I will submit all manuscripts to the ABC-DS Steering Committee prior to submitting to a journal. This review will
+      not be a scientific review, but is intended to ensure that sections 7-12 above are correctly implemented.
+    note: After the Steering Committee check, with the ABC-DS by-line, methods text and funding acknowledgement.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not further disclose these data beyond the uses outlined in this agreement and my data use application and
+      understand that redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    quote: >-
+      I will not further disclose these data beyond the uses outlined in this agreement and my data use application and
+      understand that redistribution of data in any manner is prohibited.
+    note: The agreement does not say whether derived data such as labels count as "data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      I will cite ABC-DS as the source of data and the ABC-DS funding sources (including grant numbers) in the abstract
+      as space allows.
+    note: Manuscripts must also add "for the Alzheimer's Biomarker Consortium on Down Syndrome study*" to the by-line.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Review and sign the ABC-DS Data Use Agreement
+    source: https://www.nia.nih.gov/research/abc-ds
+  ethics_approval:
+    value: conditional
+    quote: >-
+      I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: Only where the researcher's institution and its IRB require it.
+  publication_review:
+    value: 'yes'
+    quote: I will submit all manuscripts to the ABC-DS Steering Committee prior to submitting to a journal.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: >-
+      For example, if an investigator conducts an assay for a novel plasma-based biomarker using ABC-DS samples, they
+      are obligated to submit those results to be hosted on LONI.
+    source: https://doi.org/10.1002/alz.70294
+    note: >-
+      Stated in the ABC-DS 10-year report for results from ABC-DS samples. The data use agreement itself only requires
+      answering annual requests about use.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will receive access to de-identified data and will not attempt to establish the identity of or attempt to
+      contact any of the ABC-DS participants.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
