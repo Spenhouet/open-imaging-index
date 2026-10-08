@@ -164,7 +164,9 @@
 />
 
 <section class="border-b border-border bg-[radial-gradient(ellipse_at_top_left,var(--accent),transparent_65%)]">
-  <div class="mx-auto grid max-w-7xl gap-10 px-4 pt-12 pb-10 md:px-6 md:pt-16 lg:grid-cols-[1fr_22rem] lg:items-end">
+  <div
+    class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pt-12 pb-10 md:px-6 md:pt-16 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end"
+  >
     <div>
       <h1 class="text-4xl font-semibold tracking-tight text-balance md:text-5xl">
         Find the right medical imaging dataset.
@@ -240,7 +242,7 @@
   </div>
 </section>
 
-<div class="mx-auto grid max-w-7xl gap-8 px-4 pt-8 md:px-6 lg:grid-cols-[18rem_1fr]">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pt-8 md:px-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
   <aside class="hidden lg:block">
     <div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 pb-8">
       <FilterPanel
@@ -333,13 +335,13 @@
       </p>
     {/if}
     {#if waiting}
-      <div class="mt-5 grid gap-4 xl:grid-cols-2" aria-hidden="true">
+      <div class="mt-5 grid grid-cols-1 gap-4 xl:grid-cols-2" aria-hidden="true">
         {#each { length: 4 } as _, i (i)}
           <div class="h-64 animate-pulse surface"></div>
         {/each}
       </div>
     {:else if results.length}
-      <div class="mt-5 grid gap-4 xl:grid-cols-2">
+      <div class="mt-5 grid grid-cols-1 gap-4 xl:grid-cols-2">
         {#each visible as result (result.dataset.id)}
           <DatasetCard {result} {vocab} {licenseNames} />
         {/each}

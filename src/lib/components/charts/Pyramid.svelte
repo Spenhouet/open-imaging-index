@@ -28,7 +28,7 @@
     {#each [...bins].reverse() as bin (bin)}
       {@const l = left.values.get(bin)}
       {@const r = right.values.get(bin)}
-      <li class="grid grid-cols-[1fr_3.5rem_1fr] items-center gap-2 text-xs">
+      <li class="grid grid-cols-[minmax(0,1fr)_3.5rem_minmax(0,1fr)] items-center gap-2 text-xs">
         <div class="flex items-center justify-end gap-1.5">
           <span class="text-muted-foreground tabular">{l === undefined ? 'n/a' : formatNumber(l)}</span>
           {#if l !== undefined}

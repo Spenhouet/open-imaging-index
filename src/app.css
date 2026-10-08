@@ -193,6 +193,10 @@
   & :where(code) {
     @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.85em];
   }
+  /* Long URLs and identifiers must wrap on narrow screens. */
+  & :where(p, li, td, blockquote) :where(a, code) {
+    overflow-wrap: anywhere;
+  }
   & :where(pre) {
     @apply overflow-x-auto rounded-lg bg-muted p-4 text-sm leading-6;
   }

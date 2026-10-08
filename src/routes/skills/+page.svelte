@@ -65,7 +65,7 @@
     </p>
   </div>
 
-  <div class="mt-10 grid gap-5 md:grid-cols-2">
+  <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
     {#each data.skills as skill (skill.name)}
       {@const a = about[skill.name]}
       <article class="flex flex-col surface p-5">

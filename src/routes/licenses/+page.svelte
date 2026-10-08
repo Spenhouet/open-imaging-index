@@ -8,9 +8,10 @@
 
   let { data } = $props();
   const rules = $derived(vocab.licenseRules.rules);
+  const keyRules = ['commercial_use', 'model_training', 'redistribute_original', 'share_model_weights', 'signed_agreement', 'ethics_approval'];
   const purposes = $derived(new Map(vocab.licenseRules.purposes.map((p) => [p.id, p.label])));
   // Open licenses first, then by how many datasets use them.
-  const licenses = $derived(
+  const sortedLicenses = $derived(
     [...data.fullLicenses].sort(
       (a, b) =>
         Number(a.id.startsWith('LicenseRef')) - Number(b.id.startsWith('LicenseRef')) ||
@@ -37,12 +38,45 @@
   <LegalNote class="mt-8" />
   <div class="mt-6"><AnswerLegend /></div>
 
-  <div class="mt-4 overflow-x-auto surface">
+  <!-- Phones and tablets: one card per license with the answers people ask about most. -->
+  <ul class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2 lg:hidden">
+    {#each sortedLicenses as lic (lic.id)}
+      <li class="surface p-4">
+        <div class="flex items-start justify-between gap-3">
+          <div class="min-w-0">
+            <a href={link(`licenses/${lic.id}/`)} class="font-semibold hover:underline">{lic.short_name ?? lic.name}</a>
+            {#if lic.short_name}<div class="truncate text-xs text-muted-foreground">{lic.name}</div>{/if}
+          </div>
+          {#if data.usage[lic.id]}
+            <a class="shrink-0 text-xs font-medium text-primary hover:underline" href={link(`?license=${lic.id}`)}
+              >{data.usage[lic.id]} {data.usage[lic.id] === 1 ? 'dataset' : 'datasets'}</a
+            >
+          {/if}
+        </div>
+        <div class="mt-1 text-xs text-muted-foreground">{purposes.get(lic.purpose) ?? lic.purpose}</div>
+        <ul class="mt-3 grid grid-cols-1 gap-1.5 text-sm">
+          {#each keyRules as id (id)}
+            {@const rule = rules.find((r) => r.id === id)}
+            {#if rule && lic.rules[id]}
+              <li class="flex items-center justify-between gap-3">
+                <span class="min-w-0 truncate">{rule.label}</span>
+                <Answer value={lic.rules[id].value} good={rule.good} class="w-28 shrink-0" />
+              </li>
+            {/if}
+          {/each}
+        </ul>
+        <a href={link(`licenses/${lic.id}/`)} class="mt-3 inline-block text-xs font-medium text-primary hover:underline"
+          >All {rules.length} rules with quotes</a
+        >
+      </li>
+    {/each}
+  </ul>
+
+  <div class="mt-4 hidden overflow-x-auto surface lg:block">
     <table class="w-full text-sm">
       <thead>
         <tr class="border-b border-border">
-          <th class="sticky left-0 z-10 bg-card px-4 py-3 text-left font-semibold">License</th>
-          <th class="px-2 py-3 text-left text-xs font-medium text-muted-foreground">Purpose</th>
+          <th class="sticky left-0 z-10 w-40 bg-card px-3 py-3 text-left align-bottom font-semibold">License</th>
           {#each rules as r (r.id)}
             <th class="h-36 w-9 px-1 align-bottom">
               <span
@@ -55,15 +89,17 @@
         </tr>
       </thead>
       <tbody>
-        {#each licenses as lic (lic.id)}
+        {#each sortedLicenses as lic (lic.id)}
           <tr class="border-b border-border/60 last:border-0 hover:bg-accent/40">
-            <td class="sticky left-0 z-10 bg-card px-4 py-2.5">
-              <a href={link(`licenses/${lic.id}/`)} class="font-medium hover:underline">{lic.short_name ?? lic.name}</a>
-              {#if lic.short_name}<div class="max-w-56 truncate text-xs text-muted-foreground">{lic.name}</div>{/if}
+            <td class="sticky left-0 z-10 bg-card px-3 py-2">
+              <!-- Short name only, so the rule columns get the space. The full name is in the tooltip. -->
+              <a
+                href={link(`licenses/${lic.id}/`)}
+                class="block max-w-40 truncate font-medium hover:underline"
+                title={lic.name}>{lic.short_name ?? lic.name}</a
+              >
+              <div class="max-w-40 truncate text-xs text-muted-foreground">{purposes.get(lic.purpose) ?? lic.purpose}</div>
             </td>
-            <td class="px-2 py-2.5 text-xs whitespace-nowrap text-muted-foreground"
-              >{purposes.get(lic.purpose) ?? lic.purpose}</td
-            >
             {#each rules as r (r.id)}
               <td class="px-1 py-2.5 text-center">
                 {#if lic.rules[r.id]}<Answer
@@ -86,7 +122,7 @@
     </table>
   </div>
 
-  <div class="mt-10 grid gap-6 md:grid-cols-2">
+  <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
     {#each vocab.licenseRules.groups as g (g.id)}
       <div>
         <h2 class="text-sm font-semibold">{g.label}</h2>

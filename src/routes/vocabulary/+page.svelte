@@ -48,7 +48,7 @@
   path="vocabulary/"
 />
 
-<div class="mx-auto grid max-w-7xl gap-12 px-4 pt-12 md:px-6 lg:grid-cols-[14rem_1fr]">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 pt-12 md:px-6 lg:grid-cols-[14rem_minmax(0,1fr)]">
   <aside class="hidden lg:block">
     <nav class="sticky top-20 space-y-1 text-sm" aria-label="Vocabularies">
       <a

@@ -20,7 +20,7 @@
 
 <Seo title={doc.title} {description} {path} />
 
-<div class="mx-auto grid max-w-7xl gap-12 px-4 pt-12 md:px-6 lg:grid-cols-[14rem_1fr]">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 pt-12 md:px-6 lg:grid-cols-[14rem_minmax(0,1fr)]">
   <aside class="hidden lg:block">
     <nav class="sticky top-20 space-y-1 text-sm" aria-label="On this page">
       <div class="mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">On this page</div>

@@ -31,7 +31,7 @@
   );
 </script>
 
-<article class="group relative surface p-5 transition-shadow hover:shadow-md hover:ring-primary/30">
+<article class="group relative min-w-0 surface p-5 transition-shadow hover:shadow-md hover:ring-primary/30">
   <div class="flex flex-wrap items-center gap-1.5">
     {#each d.facets.modality ?? [] as m (m)}
       <ModalityBadge id={m} label={label(vocab, 'modality', m)} />

@@ -184,7 +184,7 @@
     </p>
   </div>
 
-  <div class="mt-8 grid gap-8 lg:grid-cols-[18rem_1fr]">
+  <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
     <aside class="hidden lg:block">
       <div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 pb-8">{@render filterPanel()}</div>
     </aside>
@@ -209,7 +209,7 @@
       </div>
 
       {#if !summary}
-        <div class="grid gap-5 md:grid-cols-2" aria-label="Loading">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2" aria-label="Loading">
           {#each { length: 4 } as _, i (i)}<div class="h-56 animate-pulse surface"></div>{/each}
         </div>
       {:else}
@@ -279,7 +279,7 @@
                 {/if}
               {/each}
             </div>
-            <dl class="mt-4 grid gap-3 sm:grid-cols-3">
+            <dl class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {#each useInfo as u (u.id)}
                 <div>
                   <dt class="flex items-center gap-1.5 text-sm font-medium">
@@ -305,7 +305,7 @@
         </section>
 
         <section aria-label="Breakdowns" aria-busy={pending} class={cn('transition-opacity', pending && 'opacity-80')}>
-          <div class="grid gap-5 md:grid-cols-2">
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
             {#each charts.filter(Boolean) as { chart, bars } (chart.id)}
               {#if bars.length > 0}
                 <div class="surface p-4">

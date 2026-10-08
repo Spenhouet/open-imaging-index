@@ -16,7 +16,7 @@
   const uid = $props.id();
 </script>
 
-<div class="grid gap-x-8 gap-y-6 md:grid-cols-2">
+<div class="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2">
   {#each vocab.licenseRules.groups as group (group.id)}
     <div>
       <h4 class="mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">{group.label}</h4>

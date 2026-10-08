@@ -4,7 +4,9 @@
 </script>
 
 <footer class="mt-24 border-t border-border">
-  <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 text-sm md:grid-cols-[2fr_1fr_1fr_1fr] md:px-6">
+  <div
+    class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 text-sm md:grid-cols-[2fr_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)] md:px-6"
+  >
     <div class="max-w-sm space-y-3">
       <div class="flex items-center gap-2 font-semibold"><Logo class="size-6" />{SITE_NAME}</div>
       <p class="text-muted-foreground">

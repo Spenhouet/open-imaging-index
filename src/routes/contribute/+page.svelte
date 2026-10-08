@@ -37,7 +37,7 @@
   description="Add a medical imaging dataset to the index, fix an entry or suggest a dataset. Three files per dataset, checked automatically."
 >
   {#snippet lead()}
-    <div class="mt-8 grid gap-3 sm:grid-cols-3">
+    <div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
       {#each ways as w (w.title)}
         <a
           href={w.href}

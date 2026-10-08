@@ -89,7 +89,7 @@
   <section class="mt-12">
     <h2 class="text-xl font-semibold tracking-tight">Datasets under this license</h2>
     {#if data.users.length}
-      <ul class="mt-4 grid gap-3 md:grid-cols-2">
+      <ul class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
         {#each data.users as u (u.id)}
           <li class="surface p-4">
             <a href={link(`datasets/${u.id}/`)} class="font-medium hover:underline">{u.name}</a>

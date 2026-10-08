@@ -207,7 +207,7 @@
     <span class="text-foreground">{meta.name}</span>
   </nav>
 
-  <header class="mt-5 grid gap-6 border-b border-border pb-8 lg:grid-cols-[1fr_auto] lg:items-end">
+  <header class="mt-5 grid grid-cols-1 gap-6 border-b border-border pb-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
     <div class="max-w-3xl">
       <div class="flex flex-wrap items-center gap-1.5">
         {#each d.facets.modality ?? [] as m (m)}<ModalityBadge id={m} label={label(vocab, 'modality', m)} />{/each}
@@ -241,7 +241,7 @@
     </div>
   </header>
 
-  <div class="mt-8 grid gap-10 lg:grid-cols-[1fr_20rem]">
+  <div class="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_20rem]">
     <div class="min-w-0">
       <nav
         class="sticky top-14 z-30 -mx-4 mb-2 flex gap-1 overflow-x-auto border-b border-border bg-background/90 px-4 py-2 backdrop-blur md:-mx-0 md:px-0"
@@ -269,7 +269,7 @@
               ? `${formatNumber(N)} subjects`
               : 'largest value'}.
           </p>
-          <div class="mt-6 grid gap-5 md:grid-cols-2">
+          <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
             {#if sexRows.length}
               <div class="surface p-5">
                 <h3 class="text-sm font-semibold">Sex</h3>
@@ -378,7 +378,7 @@
         {#each d.licenses as use (use.license.id + (use.applies_to ?? ''))}
           {@const lic = use.license}
           <div class="mt-5 surface p-5">
-            <div class="grid gap-4 border-b border-border pb-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-8">
+            <div class="grid grid-cols-1 gap-4 border-b border-border pb-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-8">
               <div class="max-w-2xl">
                 {#if use.applies_to}<div class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
                     For {use.applies_to}
@@ -422,8 +422,8 @@
           <h2 class="text-xl font-semibold tracking-tight">Citation</h2>
           {#if meta.citation.text}
             <div class="mt-4 flex items-start justify-between gap-4 surface p-4">
-              <p class="text-sm">{meta.citation.text}</p>
-              <CopyButton text={meta.citation.text} />
+              <p class="min-w-0 text-sm [overflow-wrap:anywhere]">{meta.citation.text}</p>
+              <div class="shrink-0"><CopyButton text={meta.citation.text} /></div>
             </div>
           {/if}
           {#if meta.citation.bibtex}
