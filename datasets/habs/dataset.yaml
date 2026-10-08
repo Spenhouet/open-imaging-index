@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: habs
+name: HABS
+full_name: Harvard Aging Brain Study (HABS) public dataset
+summary: >-
+  Longitudinal study at Massachusetts General Hospital of 358 older adults who were cognitively normal at entry, with
+  3 T MRI (T1w, FLAIR, SWI, DTI, resting-state fMRI), PiB, flortaucipir and FDG PET and up to 11 years of clinical
+  and cognitive follow-up.
+homepage: https://www.synapse.org/habs
+doi: 10.1016/j.neuroimage.2015.03.069
+# Data freeze 1.0 (baseline spreadsheets) was released in August 2014 (Dagley et al., Introduction).
+year: 2014
+updated: 2025
+version: '3.0.0'
+status: active
+creators:
+  - name: Harvard Aging Brain Study, Massachusetts General Hospital and Harvard Medical School
+    url: https://habs.mgh.harvard.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, swi, dwi, bold]
+tracers: [pib, flortaucipir, fdg]
+anatomy: [brain]
+conditions: [healthy, mci, dementia]
+tasks: [longitudinal, regression, classification]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.synapse.org/habs
+licenses:
+  - license: LicenseRef-HABS-DUA
+citation:
+  text: >-
+    Dagley A, LaPoint M, Huijbers W, Hedden T, McLaren DG, Chatwal JP, Papp KV, Amariglio RE, Blacker D, Rentz DM,
+    Johnson KA, Sperling RA, Schultz AP. Harvard Aging Brain Study: Dataset and accessibility. NeuroImage
+    144(Pt B):255-258 (2017). doi:10.1016/j.neuroimage.2015.03.069
+sources:
+  habs-synapse-data-details:
+    title: HABS public dataset on Synapse, Data Details page (release v3)
+    url: https://www.synapse.org/Synapse:syn53910452/wiki/631007
+    kind: website
+  habs-release-2-notes:
+    title: HABS public data release, readme for raw neuroimaging data, release 2.0 (2020-07-11)
+    url: https://habs.mgh.harvard.edu/wp-content/uploads/2020/08/HABS_ImageDataRelease_2.0_Notes.pdf
+    kind: website
+related: []
+keywords: [Alzheimer's disease, preclinical Alzheimer's disease, ageing, amyloid PET, tau PET, longitudinal, brain MRI, SWI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

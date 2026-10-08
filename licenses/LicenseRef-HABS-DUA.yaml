@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-HABS-DUA
+name: Harvard Aging Brain Study (HABS) Data Use Agreement
+short_name: HABS DUA
+url: https://www.synapse.org/Synapse:syn65660688
+version: 'HABS DUA Click Wrap v.2 on Synapse (access requirement 9606742, October 2025), with the HABS guidance on AI tools'
+summary: >-
+  Click-through agreement on Synapse after a reviewed request with an intended data use statement. Data may only be
+  used for the stated study, stay inside the recipient's institution and must be destroyed at the end. The data may
+  not be sold or commercialized, publications must acknowledge and cite HABS and be reported to the HABS data
+  committee, and use from listed countries of concern is barred.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: To not sell or otherwise commercialize the Data.
+    note: >-
+      Requests are open to academic, industry and student researchers, but the data themselves may not be sold or
+      commercialized. Whether a commercial product built with the data is allowed is not stated.
+  model_training:
+    value: conditional
+    quote: >-
+      The use of HABS data in training is both permitted and encouraged, provided that the process is carried out in
+      compliance with the DUA as outlined above.
+    source: https://www.synapse.org/Synapse:syn53910452/wiki/631009
+    note: >-
+      Training must not run on third-party computing services that retain or share user content, and the data must
+      not leave the recipient's institution.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: 'For use of Data that results in a publication or other public presentation, Recipient is required to:'
+    note: With the HABS acknowledgement, the Dagley et al. citation, the release version and a notice to the HABS data committee.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      Recipient shall not transfer the Data outside of Recipient's Institution (this can include the use of large
+      language models and other AI tools).
+    note: Collaborators inside the institution must agree to the terms and be named in an approved request.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data count as Data.
+  share_model_weights:
+    value: conditional
+    quote: >-
+      However, investigators who intend on making the weights of a trained model publicly available should consider
+      whether the model could be used to easily reconstruct parts of the HABS data set.
+    source: https://www.synapse.org/Synapse:syn53910452/wiki/631009
+    note: >-
+      The HABS guidance assumes weights may be published, and asks investigators to check that the model cannot
+      reproduce parts of the data. It does not address selling weights.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Acknowledge the HABS project and its funding sources in the Acknowledgments section using the following, a
+      substantially similar statement, or an updated statement/reference as provided on the study website or via the
+      chief data officer or PI;
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      By accepting this Agreement and submitting a request, Recipient certifies that they are accepting the terms on
+      behalf of Recipient Institution.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      By accepting this Agreement, Recipient warrants that all Institution-required approvals are in place for the use
+      of the Data. Such approvals may include, as applicable, Institutional Review Board ("IRB") approval and approval
+      of the terms and conditions of this Agreement.
+    note: IRB approval only where the recipient's institution requires it.
+  publication_review:
+    value: conditional
+    quote: >-
+      Notify the HABS data committee, via the chief data officer (at present Michael Properzi at
+      MPROPERZI@mgh.harvard.edu), of any publication submissions (including submission title, first and last author,
+      and the journal submitted to) related to Recipient's use of the Data to confirm that the acknowledgements above
+      have been faithfully executed in the manuscript.
+    note: Submissions must be reported to the HABS data committee, which checks the acknowledgements. No content review is described.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Recipients must answer requests about their use of the data and resulting publications, but need not return results.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Upon expiration or early termination of this Agreement, Recipient shall destroy the Data provided, however, that
+      Recipient may retain one (1) copy of the Data to the extent necessary to comply with the records retention
+      requirements under any law, and for the purposes of research integrity and verification.
+  no_reidentification:
+    value: 'yes'
+    quote: To not attempt to re-identify the Data in any way.
+  geographic_restriction:
+    value: 'yes'
+    quote: >-
+      I hereby represent and certify that I am not a Covered Person as that term is used in 28 CFR Part 202 and that I
+      am not located in any of the following countries while accessing or using the Data provided in this repository:
+      People's Republic of China (including Hong Kong and Macau), Cuba, Iran, North Korea, Russia, and Venezuela.
+    source: https://www.synapse.org/Synapse:syn65660688
+    note: From the HABS Bulk Data Rule Attestation that every requester signs (US 28 CFR Part 202).
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

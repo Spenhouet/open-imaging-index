@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,358,habs-synapse-data-details,Participants table,participants in public release v3
+subjects,sex=female,216,habs-synapse-data-details,Participants table,
+subjects,sex=male,142,habs-synapse-data-details,Participants table,
+subjects,condition=healthy,300,habs-synapse-data-details,Participants table,cognitively normal at the last visit; all participants were cognitively normal at enrolment
+subjects,condition=mci,43,habs-synapse-data-details,Participants table,diagnosis at the last visit
+subjects,condition=dementia,15,habs-synapse-data-details,Participants table,diagnosis at the last visit
+age_mean,,71.5,habs-synapse-data-details,Participants table,age at enrolment
+age_sd,,7.94,habs-synapse-data-details,Participants table,age at enrolment
+age_min,,50,habs-synapse-data-details,Participants,age at baseline
+age_max,,90,habs-synapse-data-details,Participants,age at baseline
+subjects,contrast=swi,289,habs-release-2-notes,"p. 2, SWI","release 2.0 (visits HAB_1.0 and HAB_4.0); SWI was dropped from HAB_6.0"
+scans,contrast=swi,508,habs-release-2-notes,"p. 2, SWI",release 2.0 observations
+subjects,contrast=FLAIR,289,habs-release-2-notes,"p. 3, FLAIR",release 2.0
+scans,contrast=FLAIR,706,habs-release-2-notes,"p. 3, FLAIR",release 2.0 observations
+subjects,contrast=dwi,287,habs-release-2-notes,"p. 3, DTI",release 2.0; 30-direction DTI
+scans,contrast=dwi,499,habs-release-2-notes,"p. 3, DTI",release 2.0 observations
+subjects,contrast=bold,289,habs-release-2-notes,"p. 3, Resting State fMRI",release 2.0
+scans,contrast=bold,1760,habs-release-2-notes,"p. 3, Resting State fMRI",release 2.0 observations (resting-state runs)
+scans,contrast=T1w,1209,habs-release-2-notes,"p. 2, T1 and T2 space imaging","release 2.0; sum of 513 MEMPRAGE and 696 ADNI-style MPRAGE observations, two separate sequences"
+subjects,tracer=fdg,285,habs-release-2-notes,"p. 4, FDG",release 2.0
+scans,tracer=fdg,494,habs-release-2-notes,"p. 4, FDG",release 2.0 observations
+subjects,tracer=pib,288,habs-release-2-notes,"p. 4, PiB",release 2.0
+scans,tracer=pib,696,habs-release-2-notes,"p. 4, PiB",release 2.0 observations
+subjects,tracer=flortaucipir,195,habs-release-2-notes,"p. 5, FTP",release 2.0
+scans,tracer=flortaucipir,343,habs-release-2-notes,"p. 5, FTP",release 2.0 observations
