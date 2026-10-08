@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: linchpin
+name: LINCHPIN CT and pathology set
+full_name: Lothian IntraCerebral Haemorrhage, Pathology, Imaging and Neurological Outcome (LINCHPIN) study, CT and neuropathology data
+summary: >-
+  Admission non-contrast head CT of 110 adults with first-ever intracerebral haemorrhage in Lothian, Scotland, who
+  died and had a research autopsy, with masked CT ratings, APOE genotype and CAA grading. The ratings are open; the CT
+  images are not shared.
+homepage: https://hdl.handle.net/10283/2919
+doi: 10.7488/ds/2230
+# The tabular CT, genetic and pathology data were deposited on Edinburgh DataShare in 2017 and became available on
+# 2022-10-13. The CT images have not been released.
+year: 2022
+creators:
+  - name: Centre for Clinical Brain Sciences, University of Edinburgh
+    url: https://www.ed.ac.uk/clinical-brain-sciences
+species: human
+modalities: [CT]
+contrasts: [ct_noncontrast]
+anatomy: [brain]
+conditions: [intracerebral_hemorrhage, cerebral_amyloid_angiopathy]
+tasks: [classification]
+countries: [GB]
+access:
+  type: on_request
+  url: https://doi.org/10.7488/ds/2230
+  note: >-
+    The table of CT ratings, APOE genotype and neuropathology ratings is an open download on Edinburgh DataShare. The
+    CT images are not part of that record, and no route to them is published.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: CT ratings, APOE genotype, neuropathology ratings and analysis code on Edinburgh DataShare
+  - license: LicenseRef-No-Published-Terms
+    applies_to: CT images
+citation:
+  text: >-
+    Rodrigues MA, Samarasekera N, Lerpiniere C, et al. The Edinburgh CT and genetic diagnostic criteria for lobar
+    intracerebral haemorrhage associated with cerebral amyloid angiopathy: model development and diagnostic test
+    accuracy study. Lancet Neurology 17(3), 232-240 (2018). doi:10.1016/S1474-4422(18)30006-1
+sources:
+  rodrigues2018:
+    title: Rodrigues et al. 2018, Lancet Neurology (PMC5818029)
+    url: https://doi.org/10.1016/S1474-4422(18)30006-1
+    kind: paper
+  datashare-linchpin-ct-pathology:
+    title: Rodrigues and Al-Shahi Salman, LINCHPIN CT and pathology data, Edinburgh DataShare record
+    url: https://doi.org/10.7488/ds/2230
+    kind: data
+  samarasekera2015:
+    title: Samarasekera et al. 2015, Stroke, LINCHPIN population-based incidence study
+    url: https://doi.org/10.1161/STROKEAHA.114.007953
+    kind: paper
+related: []
+keywords: [intracerebral haemorrhage, cerebral amyloid angiopathy, CT, autopsy, APOE, Edinburgh criteria]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,110,rodrigues2018,Results,adults with first-ever CT-diagnosed intracerebral haemorrhage who had a research autopsy (June 2010 to February 2016)
+subjects,sex=male,49,rodrigues2018,Results,
+subjects,sex=female,61,rodrigues2018,Results,110 participants minus 49 men; the paper reports men only
+subjects,condition=intracerebral_hemorrhage,110,rodrigues2018,Results,"lobar 62, deep 41, infratentorial 7"
+subjects,condition=cerebral_amyloid_angiopathy,42,rodrigues2018,Results and Figure 1,"moderate or severe CAA: 36 of 62 lobar and 6 of 48 non-lobar haemorrhages; the two groups are disjoint"
+subjects,contrast=ct_noncontrast,110,rodrigues2018,Results,non-contrast head CT that diagnosed the haemorrhage
+subjects,country=GB,110,rodrigues2018,Methods,"Lothian health board region, Scotland"
+age_median,,83,rodrigues2018,Results,IQR 76-87
