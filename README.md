@@ -110,7 +110,7 @@ Requires [Bun](https://bun.sh) and Node 22 or newer on `PATH` (SvelteKit 3 runs 
 ## License
 
 - **Code:** [MIT](LICENSE). Covers everything outside the data directories, including the agent skills in `plugins/`.
-- **Data:** [CC0 1.0](LICENSE-DATA). Covers `datasets/`, `licenses/`, `vocab/` and `docs/`. Quotes from license texts and dataset citations belong to their authors.
+- **Data:** [CC0 1.0](LICENSE-DATA). Covers `datasets/`, `licenses/`, `vocab/` and `docs/`. Quotes from license texts (the `quote` fields in `licenses/`) and dataset citations (the `citation` fields in `datasets/`) belong to their authors and are not covered by CC0.
 
 The license summaries help with finding and comparing datasets. They are not legal advice: the license or agreement of each dataset is what counts.
 
