@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MEMENTO-Charter
+name: Access to Memento data and Publication Charter
+short_name: MEMENTO Charter
+url: https://host.credim.u-bordeaux.fr/dnn-memento/Portals/0/Chercheurs/DOC/MEMENTO_Part2_Access_Data_Publication_Charter.pdf
+version: 'v4.0, May 1st 2019'
+summary: >-
+  Every use of MEMENTO data is a proposal that the MEMENTO principal investigators and scientific coordination
+  committee must approve. Raw MRI and PET images need specific authorisation, a contract may be required, and every
+  abstract and manuscript must be approved by the committee before submission and list the MEMENTO Study Group.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The charter does not mention commercial use. It describes the cohort as open to proposals "by any bona fide
+      researcher".
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: After queries have been satisfactorily dealt with by the authors and the final version of the manuscript has
+      been reviewed and approved by the Memento Scientific coordination committee, the author can submit the
+      manuscript.
+    note: Only after the committee has approved the manuscript or abstract.
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: A list of all those collaborating in Memento (“Memento Study Group”) should be added as an appendix to all
+      Memento publications.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: conditional
+    quote: In any case, the need for contract agreement will be discussed at the Scientific coordination committee level
+      and the contract finalised before the sub-analysis or ancillary study can start.
+    note: Every project needs written approval of a proposal; whether a contract is signed is decided case by case.
+  ethics_approval:
+    value: conditional
+    quote: Contrary to sub-studies, ancillary studies necessitate an extension of data collection and specific ethics
+      approval should thus be obtained according to regulation in force.
+    note: Only for ancillary studies that collect new data.
+  publication_review:
+    value: 'yes'
+    quote: No Memento proposal should be undertaken without prior discussion within the Memento study group and
+      authorisation of the Memento scientific coordination committee.
+    note: The charter defines abstracts and manuscripts as proposals, so each needs committee approval before
+      submission.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Authors send a copy of each submitted abstract or manuscript to the MEMENTO secretariat for records tracking
+      and report on progress when asked, but are not asked to return derived data.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The charter does not mention re-identification. It asks for data confidentiality and security to be
+      maintained.
+  geographic_restriction:
+    value: 'no'
+    note: The charter names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

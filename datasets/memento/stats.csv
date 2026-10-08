@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,2323,dufouil2017,Table 3,non-demented participants enrolled at 26 memory clinics between April 2011 and June 2014
+subjects,condition=mci,1943,dufouil2017,Table 4,"sum of the four disjoint MCI categories: single-domain amnestic 207, multi-domain amnestic 998, single-domain non-amnestic 392, multi-domain non-amnestic 346; another 370 had an isolated cognitive complaint"
+subjects,contrast=T2starw,1992,tsuchida2024,Table 1,participants with a baseline 2D T2*-GRE and expert visual microbleed counts used in SHIVA-CMB; the total with a T2*-GRE is not reported
+subjects,country=FR,2323,dufouil2017,"Methods, Study design",all recruited at French university-based memory clinics (CMRR)
+age_mean,,70.9,dufouil2017,Table 3,SD 8.7
+age_sd,,8.7,dufouil2017,Table 3,
