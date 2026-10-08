@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-A4-LEARN-DUA
+name: A4/LEARN Data Use Agreement
+short_name: A4/LEARN DUA
+url: https://www.a4studydata.org/dua
+version: 'Effective as of June 28, 2024'
+summary: >-
+  One-time, non-transferable license for the purposes stated in an approved data use application (scientific
+  investigation, teaching or planning clinical research). The data must not be commercialized or redistributed, AI
+  tools must keep inputs and model weights confidential, publications must credit A4/LEARN, and the data must be
+  destroyed after five years.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The Data Package shall not be commercialized.
+  model_training:
+    value: conditional
+    quote: I agree not to use AI tools, especially those with public-facing interfaces, that do not guarantee the
+      security and confidentiality of data inputs and model weights related to A4/LEARN data.
+    note: The agreement does not mention model training directly. AI tools may only be used if they keep the data and
+      related model weights confidential, and use must stay within the approved non-commercial purpose.
+  derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data may be created.
+  publication:
+    value: conditional
+    quote: I will cite Alzheimer’s Clinical Trial Consortium A4/LEARN as the source of the Data Package and the
+      A4/LEARN funding sources (National Institute on Aging/NIH, Eli Lilly and Co., Alzheimer's Association, GHR
+      Foundation, additional philanthropic donors) in the abstract as space allows.
+    note: Abstracts must cite A4/LEARN and its funders; manuscripts must include the acknowledgment statement given in
+      the agreement.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose the Data Package beyond the uses outlined in this Agreement and my data use
+      application and understand that redistribution of the Data Package, beyond the permitted uses, in any manner is
+      prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    quote: I will not further disclose the Data Package beyond the uses outlined in this Agreement and my data use
+      application and understand that redistribution of the Data Package, beyond the permitted uses, in any manner is
+      prohibited.
+    note: The agreement does not say whether derived data such as labels count as part of the Data Package.
+  share_model_weights:
+    value: unspecified
+    quote: I agree not to use AI tools, especially those with public-facing interfaces, that do not guarantee the
+      security and confidentiality of data inputs and model weights related to A4/LEARN data.
+    note: The agreement asks for confidentiality of model weights related to A4/LEARN data inside AI tools but does not
+      say whether trained weights may be published.
+  attribution:
+    value: 'yes'
+    quote: 'If I publish manuscripts using the Data Package I agree to the following: 10. I will include the following
+      acknowledgment statement:'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: This Data Use Agreement (“Agreement”) governs my request to access data, documentation, and analysis code
+      collected by the Anti-Amyloid Treatment in Asymptomatic Alzheimer's Disease (A4)/Longitudinal Evaluation of
+      Amyloid Risk and Neurodegeneration (LEARN) Study
+  ethics_approval:
+    value: unspecified
+    quote: The A4/LEARN data package, which includes the complete final longitudinal datasets from the A4 and LEARN
+      studies, is available to qualified researchers through a controlled-access process at
+      https://www.a4studydata.org/, subject to institutional approvals, data use agreements, and applicable regulatory
+      and ethical requirements.
+    source: https://doi.org/10.52294/001c.160128
+    note: The agreement itself does not ask for ethics approval; the data descriptor says access is subject to
+      institutional approvals without saying which.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users must report any use or disclosure not covered by the agreement within 48 hours, but need not return
+      results.
+  delete_after_use:
+    value: 'yes'
+    quote: Upon expiration I will immediately cease using the Data Package and destroy or otherwise dispose of the Data
+      Package.
+    note: The agreement runs for five years from submission.
+  no_reidentification:
+    value: 'yes'
+    quote: I will only receive access to the Data Package which includes de-identified data and will not attempt to
+      establish the identity of or attempt to contact any of the A4/LEARN participants.
+  geographic_restriction:
+    value: conditional
+    quote: if you are from a country embargoed by the United States, or are on the United States Treasury Department's
+      list of “Specially Designated Nationals,” you are not authorized to access or use the Site
+    source: https://www.a4studydata.org/terms-of-use
+    note: The data use agreement names no countries; the platform terms of use exclude users from US-embargoed
+      countries and on the US sanctions list.
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published; the agreement states the data package shall not be commercialized.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

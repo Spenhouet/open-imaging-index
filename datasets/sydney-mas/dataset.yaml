@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sydney-mas
+name: Sydney Memory and Ageing Study (MAS)
+full_name: Sydney Memory and Ageing Study
+summary: >-
+  Longitudinal UNSW cohort of 1,037 non-demented adults aged 70 to 90 from Eastern Sydney, with 3 T MRI (T1w, FLAIR,
+  SWI) in about half. Data are released through Dementias Platform Australia after an approved application.
+homepage: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/sydney-memory-and-ageing-study-mas
+doi: 10.1017/S1041610210001067
+# Year of the cohort description paper. The study began in 2005; no date of a first data release is published.
+year: 2010
+status: active
+creators:
+  - name: Centre for Healthy Brain Ageing (CHeBA), UNSW Sydney
+    url: https://www.unsw.edu.au/cheba
+modalities: [MR]
+contrasts: [T1w, FLAIR, swi, bold]
+anatomy: [brain]
+conditions: [healthy, cognitive_impairment, cerebral_microbleeds]
+tasks: [longitudinal, detection]
+countries: [AU]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.unsw.edu.au/cheba/dpau/data-access-application
+licenses:
+  - license: LicenseRef-DPAU-DAA
+    note: >-
+      Application fees apply. Raw MRI is requested in consultation with the CHeBA imaging team; the DPAU analysis
+      environment is built for tabular data, not raw imaging.
+citation:
+  text: >-
+    Sachdev PS, Brodaty H, Reppermund S, et al. The Sydney Memory and Ageing Study (MAS): methodology and baseline
+    medical and neuropsychiatric characteristics of an elderly epidemiological non-demented cohort of Australians aged
+    70-90 years. International Psychogeriatrics 22(8), 1248-1264 (2010). doi:10.1017/S1041610210001067
+sources:
+  sachdev2010:
+    title: Sachdev et al. 2010, International Psychogeriatrics (MAS methodology and baseline)
+    url: https://doi.org/10.1017/S1041610210001067
+    kind: paper
+  cheba-mas-page:
+    title: Sydney Memory and Ageing Study page, CHeBA, UNSW
+    url: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/sydney-memory-and-ageing-study-mas
+    kind: website
+  alqarni2023:
+    title: Alqarni et al. 2023, sex differences in 6-year WMH progression in MAS (arXiv preprint)
+    url: https://arxiv.org/abs/2307.08828
+    kind: paper
+  hassanzadeh2025:
+    title: Hassanzadeh et al. 2025, NeuroImage Clinical, cerebral microbleed recognition in GRE and SWI (PMC12410576)
+    url: https://doi.org/10.1016/j.nicl.2025.103873
+    kind: paper
+  dpau-application-guidance:
+    title: DPAU data access application guidance (May 2026), lists the MAS data categories
+    url: https://www.unsw.edu.au/content/dam/pdfs/medicine-health/dementias-platform/data-portal-supporting-documents/2026-05-dpau_data_access_application_guidance.pdf
+    kind: website
+related: []
+keywords: [ageing, mild cognitive impairment, cerebral microbleeds, SWI, cohort study, Australia]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

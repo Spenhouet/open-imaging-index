@@ -8,3 +8,5 @@ studies,modality=CT,1472,oasis3-page,,CT sessions
 studies,tracer=flortaucipir,451,oasis3-page,,tau PET sessions in sub-project OASIS-3_AV1451
 age_min,,42,oasis3-page,,age range given for all participants
 age_max,,95,oasis3-page,,
+studies,contrast=swi,1219,lamontagne2019,Table 3,"MR sessions with SWI in the earlier release described by the preprint (2168 MR sessions, 1098 participants): 2 at 1.5 T and 1217 at 3 T"
+scans,contrast=swi,1231,oasis3-data-dictionary,Table 4 (p. 12),"sum of the three disjoint rows of the scan type inventory: 2 at 1.5 T, 1217 at 3 T in the 2018 release and 12 at 3 T in the 2022 release"

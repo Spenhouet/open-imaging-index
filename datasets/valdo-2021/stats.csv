@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,contrast=T2starw,224,sudre2022,Table 2 and Section 2.4.2,"Task 2 (microbleeds): 72 training + 147 test + 5 validation cases, summed; the paper states there was no overlap between the three sets"
+subjects,contrast=T2starw;split=train,72,sudre2022,Table 2,Task 2 training set (on Zenodo)
+subjects,contrast=T2starw;split=test,147,sudre2022,Table 2,Task 2 test set (not released)
+subjects,contrast=T2starw;split=validation,5,sudre2022,Section 2.4.2,"Task 2 validation cases, all from RSS (not released)"
+subjects,contrast=T2starw;country=GB,31,sudre2022,Table 2,SABRE: 11 training + 20 test
+subjects,contrast=T2starw;country=NL,107,sudre2022,Table 2 and Section 2.4.2,RSS: 34 training + 68 test + 5 validation
+subjects,contrast=T2starw;country=ES,86,sudre2022,Table 2,ALFA: 27 training + 59 test
+subjects,contrast=T2starw;country=GB;split=train,11,sudre2022,Table 2,SABRE
+subjects,contrast=T2starw;country=NL;split=train,34,sudre2022,Table 2,RSS
+subjects,contrast=T2starw;country=ES;split=train,27,sudre2022,Table 2,ALFA
+subjects,contrast=T2starw;country=GB;split=test,20,sudre2022,Table 2,SABRE
+subjects,contrast=T2starw;country=NL;split=test,68,sudre2022,Table 2,RSS
+subjects,contrast=T2starw;country=ES;split=test,59,sudre2022,Table 2,ALFA
+subjects,contrast=T2starw;vendor=philips,31,sudre2022,Table 2 and Section 2.4.1,SABRE cases (Philips 3T)
+subjects,contrast=T2starw;vendor=ge,193,sudre2022,Table 2 and Section 2.4.1,RSS (GE 1.5T) 107 + ALFA (GE Discovery 3T) 86
+subjects,contrast=T2starw;field_strength=3,117,sudre2022,Table 2 and Section 2.4.1,SABRE 31 + ALFA 86
+subjects,contrast=T2starw;field_strength=1.5,107,sudre2022,Table 2 and Section 2.4.1,RSS 107
+subjects,contrast=FLAIR;split=train,40,sudre2022,Table 2,"Task 1 (perivascular spaces) and Task 3 (lacunes) each have 40 training cases (SABRE 6, RSS 34); the challenge design document says both tasks use the same training subjects"
+subjects,contrast=FLAIR;country=GB;split=train,6,sudre2022,Table 2,SABRE training cases of Tasks 1 and 3
+subjects,contrast=FLAIR;country=NL;split=train,34,sudre2022,Table 2,RSS training cases of Tasks 1 and 3

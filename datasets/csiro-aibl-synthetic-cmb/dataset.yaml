@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: csiro-aibl-synthetic-cmb
+name: AIBL Synthetic Cerebral Microbleeds on SWI
+full_name: Synthetic Cerebral Microbleed on SWI images (CSIRO Data Access Portal collection 50304)
+summary: >-
+  370 SWI brain scans from the AIBL study, 57 with expert-located cerebral microbleeds and 313 without, plus 3,700
+  copies with 10 synthetic microbleeds each and their locations, for training and benchmarking microbleed detectors.
+homepage: https://data.csiro.au/collection/csiro:50304
+doi: 10.25919/aegy-ny12
+# Published on the CSIRO Data Access Portal on 2021-05-11.
+year: 2021
+version: v1
+status: active
+creators:
+  - name: CSIRO
+    url: https://www.csiro.au/
+  - name: Austin Health, Heidelberg, Australia
+species: human
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds]
+tasks: [detection, classification]
+formats: [NIfTI]
+countries: [AU]
+size_gb: 17.7
+access:
+  type: open
+  url: https://data.csiro.au/collection/csiro:50304
+licenses:
+  - license: LicenseRef-CSIRO-Data-Licence
+citation:
+  text: >-
+    Momeni S, Fazlollahi A, Yates P, Rowe C, Gao Y, Liew AWC, Salvado O. Synthetic microbleeds generation for
+    classifier training without ground truth. Computer Methods and Programs in Biomedicine 207, 106127 (2021).
+    doi:10.1016/j.cmpb.2021.106127. Data: Momeni S, et al. (2021) Synthetic Cerebral Microbleed on SWI images. v1.
+    CSIRO. Data Collection. https://doi.org/10.25919/aegy-ny12
+sources:
+  csiro-dap-50304:
+    title: CSIRO Data Access Portal collection 50304 (description, lineage, licence, size)
+    url: https://data.csiro.au/collection/csiro:50304
+    kind: website
+  csiro-dap-50304-files:
+    title: >-
+      File list of collection 50304 from the Data Access Portal API (CSIRO Data Licence, no registration), NIfTI files
+      counted per folder
+    url: https://data.csiro.au/dap/ws/v2/collections/50304/data
+    kind: computed
+  momeni2021:
+    title: Momeni et al. 2021, Computer Methods and Programs in Biomedicine (abstract, PubMed 34051412)
+    url: https://doi.org/10.1016/j.cmpb.2021.106127
+    kind: paper
+related: []
+keywords: [cerebral microbleeds, SWI, synthetic data, data augmentation, AIBL]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

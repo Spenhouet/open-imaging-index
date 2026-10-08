@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-AHEAD-3-45-DUA
+name: AHEAD 3-45 Study Data Use Agreement
+short_name: AHEAD 3-45 DUA
+url: https://www.aheadstudydata.org/dua
+version: 'Effective as of October 2025 (the page reads "October X, 2025")'
+summary: >-
+  One-time, non-transferable license for an approved research proposal. No commercialization or redistribution,
+  strict confidentiality and AI-tool safeguards, safety findings must be reported to Eisai within 24 hours, Eisai and
+  USC get a license to any new invention and Eisai an option for an exclusive license, users from countries of concern
+  are excluded, and the data must be destroyed after five years.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The Data Package shall not be commercialized.
+  model_training:
+    value: conditional
+    quote: I agree that any use of artificial intelligence (AI) tools, including generative, analytical, or large
+      language models, in connection with the Data Package must be conducted in a manner that guarantees the security
+      and confidentiality of data inputs and outputs.
+    note: The agreement does not mention model training directly. Third-party or cloud AI platforms are allowed only
+      with contractual confidentiality, no use of inputs or outputs for training or product development, and secure
+      data handling.
+  derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data may be created.
+  publication:
+    value: conditional
+    quote: I will cite Alzheimer's Clinical Trial Consortium AHEAD 3-45 as the source of the Data Package and the AHEAD
+      3-45 funding sources (National Institute on Aging/NIH, Eisai Inc., Alzheimer's Association, GHR Foundation,
+      additional philanthropic donors) in the abstract as space allows.
+    note: Abstracts must cite AHEAD 3-45 and its funders; manuscripts must include the acknowledgment statement given in
+      the agreement. Eisai may make safety-relevant findings public before the researcher publishes.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose the Data Package beyond the uses outlined in this Agreement and my data use
+      application and understand that redistribution of the Data Package, beyond the permitted uses, in any manner is
+      prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    quote: Unauthorized disclosure, sharing, or use of the Data Package beyond the scope as described in the Research
+      Proposal is strictly prohibited.
+    note: The agreement does not say whether derived data such as labels count as part of the Data Package.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models or their weights.
+  attribution:
+    value: 'yes'
+    quote: 'If I publish manuscripts using the Data Package I agree to the following: 16. I will include the following
+      acknowledgment statement:'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: This Data Use Agreement ("Agreement") governs my request to access data, documentation, and analysis code
+      collected by the A Placebo-Controlled, Double-Blind, Parallel-Treatment Arm, 216 Week Study
+  ethics_approval:
+    value: 'no'
+    note: The agreement does not ask for ethics approval.
+  publication_review:
+    value: 'no'
+    note: No manuscript review, but safety-relevant findings must be reported to Eisai and ATRI (see return_results).
+  code_release:
+    value: conditional
+    quote: Promptly after a request, I shall provide access and reasonable assistance to Eisai Inc. to utilize and
+      implement any analytical tools for the sole purpose of reproducing the Research Proposal.
+    note: No public code release, but Eisai can ask for access to the analytical tools.
+  return_results:
+    value: conditional
+    quote: I agree to inform both Eisai Inc. and ATRI at the University of Southern California immediately, no later
+      than within twenty-four (24) hours, of any information concluded from the research conducted pursuant to the
+      Research Proposal that in the lead researcher's judgment could impact the risk-benefit assessment of Eisai's
+      product (lecanemab), including but not limited to, any safety concerns, identified as part of the analysis.
+    note: Findings that may affect the risk-benefit of lecanemab must be reported within 24 hours. New inventions must
+      be notified; the researcher's institution grants Eisai and USC a perpetual, royalty-free license to them and Eisai
+      an option to negotiate an exclusive license (clause 14).
+  delete_after_use:
+    value: 'yes'
+    quote: Upon expiration or earlier termination, I will immediately cease using the Data Package and destroy or
+      otherwise dispose of the Data Package in accordance with ISO/IEC 27001 standards for secure data destruction or
+      equivalent institutional policies.
+    note: The agreement runs for five years from acceptance; written certification of destruction on request.
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to establish the identity of or attempt to contact any of the AHEAD 3-45 participants.
+  geographic_restriction:
+    value: conditional
+    quote: I represent and warrant that neither I, my institution, nor any member of my research team are a 'covered
+      person' as defined under 28 CFR § 202, nor are we controlled by a 'country of concern' as defined therein.
+    note: As of September 30, 2025 the countries of concern are China (including Hong Kong and Macau), Cuba, Iran,
+      North Korea, Russia and Venezuela.
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published; the agreement states the data package shall not be commercialized.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
