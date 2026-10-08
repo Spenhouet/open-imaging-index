@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: a4-learn
+name: A4 and LEARN
+full_name: >-
+  Anti-Amyloid Treatment in Asymptomatic Alzheimer's Disease (A4) Study and Longitudinal Evaluation of Amyloid Risk and
+  Neurodegeneration (LEARN) Study
+summary: >-
+  Shared data package of the A4 solanezumab prevention trial and its amyloid-negative companion study LEARN: 7,133
+  longitudinal 3T MRI sessions with T2*-GRE, plus amyloid and tau PET, from cognitively unimpaired adults aged 65 to
+  85, with central MRI safety reads for microhemorrhages.
+homepage: https://www.a4studydata.org/
+doi: 10.52294/001c.160128
+# Screening and pre-randomization data were first released in December 2018 (Jimenez-Maggiora 2024); baseline imaging
+# followed in early 2020 and the final longitudinal data in July 2024 (Jimenez-Maggiora 2026).
+year: 2018
+updated: 2024
+status: active
+creators:
+  - name: Alzheimer's Therapeutic Research Institute (ATRI), University of Southern California
+    url: https://www.actcinfo.org/
+  - name: A4 and LEARN Study Teams (PIs Reisa A. Sperling and Paul S. Aisen)
+    url: https://www.a4studydata.org/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2starw, FLAIR, T2w, dwi, bold]
+tracers: [florbetapir, flortaucipir]
+anatomy: [brain]
+conditions: [alzheimers, healthy, aria, cerebral_microbleeds, superficial_siderosis]
+tasks: [longitudinal, classification, regression]
+formats: [NIfTI, BIDS]
+countries: [US, CA, JP, AU]
+vendors: [siemens, ge, philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.a4studydata.org/
+licenses:
+  - license: LicenseRef-A4-LEARN-DUA
+    note: >-
+      The same data package is also distributed through LONI IDA and Synapse; the agreement text checked here is the
+      one published on a4studydata.org.
+citation:
+  text: >-
+    Jimenez-Maggiora GA, Schultz AP, Donohue MC, Qiu H, Sperling RA, Aisen PS. Advancing open science in Alzheimer's
+    disease clinical trials: Sharing of A4 and LEARN neuroimaging data. Aperture Neuro 6(SI 1) (2026).
+    doi:10.52294/001c.160128. The data use agreement also requires the A4/LEARN acknowledgment statement.
+sources:
+  jimenezmaggiora2026:
+    title: Jimenez-Maggiora et al. 2026, Sharing of A4 and LEARN neuroimaging data, Aperture Neuro
+    url: https://doi.org/10.52294/001c.160128
+    kind: paper
+  jimenezmaggiora2024:
+    title: Jimenez-Maggiora et al. 2024, Sharing of baseline A4 and LEARN data, J Prev Alz Dis
+    url: https://doi.org/10.14283/jpad.2024.120
+    kind: paper
+  sperling2023:
+    title: Sperling et al. 2023, Trial of solanezumab in preclinical Alzheimer's disease, NEJM (PMC author manuscript)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10559996/
+    kind: paper
+  yaari2022:
+    title: Yaari et al. 2022, ARIA and other MRI findings in A4 and LEARN screening, J Prev Alz Dis
+    url: https://doi.org/10.14283/jpad.2022.56
+    kind: paper
+related: [adni]
+keywords:
+  [preclinical Alzheimer's disease, solanezumab, clinical trial, amyloid PET, tau PET, ARIA, microhemorrhage, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
