@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,73,zong2024,Section 3.1,
+scans,,101,zong2024,Section 3.1,SWI volumes; 26 patients have an enrolment and a 1-year follow-up scan
+images,,4089,zong2024,Section 3.1,2D slices of 768 x 768 pixels taken from the volumes
+subjects,condition=cerebral_cavernous_malformation,73,zong2024,Section 3.1,familial form
+subjects,contrast=swi,73,zong2024,Section 3.1,
+images,split=train,3289,zong2024,Section 3.1,random split at slice level
+images,split=validation,400,zong2024,Section 3.1,
+images,split=test,400,zong2024,Section 3.1,

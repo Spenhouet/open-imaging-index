@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sg-fccm
+name: SG-FCCM
+full_name: SWI dataset of familial cerebral cavernous malformations (Fuzhou University and Fujian Medical University)
+summary: >-
+  101 SWI brain volumes from 73 patients with familial cerebral cavernous malformations, 26 with a 1-year follow-up,
+  sliced into 4,089 2D images with lesion masks. Described in a paper with public code and weights; the data are not
+  released.
+homepage: https://arxiv.org/abs/2403.15803
+doi: 10.1109/TBME.2025.3539498
+# Year of the arXiv preprint. The data have not been released.
+year: 2024
+creators:
+  - name: College of Physics and Information Engineering, Fuzhou University
+  - name: Department of Neurosurgery, The First Affiliated Hospital, Fujian Medical University
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_cavernous_malformation]
+tasks: [segmentation, longitudinal]
+access:
+  type: on_request
+  url: https://github.com/6zrg/Quantitative-Statistics-of-FCCM
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The preprint has no data availability statement. The code repository shares code and U-Net weights but no images
+      or masks, and has no license file.
+citation:
+  text: >-
+    Zong R, Wang T, Li C, et al. Innovative Quantitative Analysis for Disease Progression Assessment in Familial
+    Cerebral Cavernous Malformations. IEEE Trans Biomed Eng 72(7), 2269-2282 (2025). doi:10.1109/TBME.2025.3539498
+sources:
+  zong2024:
+    title: Zong et al., arXiv 2403.15803v1 (2024), preprint of the IEEE TBME 2025 paper
+    url: https://arxiv.org/abs/2403.15803
+    kind: paper
+related: []
+keywords: [familial cerebral cavernous malformation, cavernoma, SWI, lesion segmentation, SAM-assisted annotation]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
