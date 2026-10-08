@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CUHK-CMB-3DCNN-Terms
+name: CUHK 3D CNN cerebral microbleed code and data release terms (readme.txt)
+short_name: CUHK CMB-3DCNN terms
+url: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn-data.zip
+version: readme.txt in cmb-3dcnn-data.zip (archive dated 2016-04-28), read 2026-10-08
+summary: >-
+  Not a formal license. A short notice in the data archive reserves all rights to The Chinese University of Hong Kong,
+  releases the code and data for research only, asks users to cite the TMI 2016 paper and to contact the authors
+  about any commercial use.
+purpose: research
+rules:
+  commercial_use:
+    value: 'no'
+    note: Commercial use needs prior contact with the authors; the notice grants no commercial rights.
+    quote: >-
+      Our code and data are ONLY released for research purpose. Any commercial intention, please first contact
+      qdou@cse.cuhk.edu.hk
+  model_training:
+    value: conditional
+    note: Allowed for research.
+    quote: >-
+      Also, please feel free to develop or test your own CMB detection systems using our released dataset.
+  derivatives:
+    value: unspecified
+    note: The notice does not mention derived data such as new labels or processed images.
+  publication:
+    value: 'yes'
+    quote: '*** If you plan to use our code or data in your work, please cite this paper. ***'
+  redistribute_original:
+    value: 'no'
+    note: The notice reserves all rights and grants no right to pass the data on.
+    quote: All rights preserved by The Chinese University of Hong Kong.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: '*** If you plan to use our code or data in your work, please cite this paper. ***'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: The archive downloads from the project page without registration.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
