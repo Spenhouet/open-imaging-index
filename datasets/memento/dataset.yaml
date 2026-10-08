@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: memento
+name: MEMENTO
+full_name: 'MEMENTO: cohort of outpatients from French research memory centres (deterMinants and Evolution of AlzheiMer''s disEase aNd relaTed disOrders)'
+summary: >-
+  French memory-clinic cohort of 2,323 non-demented adults with subjective complaints or mild cognitive impairment,
+  followed for 5 years with harmonised 1.5 T and 3 T brain MRI including 2D T2*-weighted GRE, optional FDG PET,
+  biobank and clinical data. Access by approved proposal.
+homepage: https://host.credim.u-bordeaux.fr/dnn-memento/Accueil.aspx
+doi: 10.48532/031000
+# Year of the DPUK data set DOI record (Dufouil, C. (2017). MEMENTO [Data set]).
+year: 2017
+status: active
+creators:
+  - name: MEMENTO coordinating centre, CIC 1401-EC Bordeaux; sponsor Bordeaux University Hospital (CHU de Bordeaux)
+    url: https://host.credim.u-bordeaux.fr/dnn-memento/Accueil.aspx
+  - name: Center for Automated Treatment of Images (CATI)
+    url: https://cati-neuroimaging.com
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, T2starw, T2w, bold, dwi]
+tracers: [fdg]
+anatomy: [brain]
+conditions: [mci]
+tasks: [longitudinal]
+countries: [FR]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://host.credim.u-bordeaux.fr/dnn-memento/Espacechercheurs/Proposerunprojet.aspx
+licenses:
+  - license: LicenseRef-MEMENTO-Charter
+    note: >-
+      Proposals go to the MEMENTO secretariat with the completed charter, or are filed online through the Dementias
+      Platform UK (DPUK), where analysis runs remotely on the DPUK portal and only aggregate results leave it under DPUK
+      and MEMENTO control. The DPUK route also falls under DPUK's own access terms, which this entry does not break
+      down. The charter says access to raw MRI and PET images held at CATI needs specific authorisation.
+citation:
+  text: >-
+    Dufouil C, Dubois B, Vellas B, et al. Cognitive and imaging markers in non-demented subjects attending a memory
+    clinic: study design and baseline findings of the MEMENTO cohort. Alzheimer's Research & Therapy 9, 67 (2017).
+    doi:10.1186/s13195-017-0288-0
+sources:
+  dufouil2017:
+    title: Dufouil et al. 2017, MEMENTO study design and baseline findings, Alzheimer's Research & Therapy (PMC5576287)
+    url: https://doi.org/10.1186/s13195-017-0288-0
+    kind: paper
+  tsuchida2024:
+    title: Tsuchida et al. 2024, SHIVA-CMB, Scientific Reports (PMC11680838)
+    url: https://doi.org/10.1038/s41598-024-81870-5
+    kind: paper
+  dpuk-memento:
+    title: MEMENTO entry, DPUK cohort directory
+    url: https://data.dpuk.ukserp.ac.uk/cohortdirectory/Item?fingerPrintID=MEMENTO
+    kind: website
+  memento-proposer-un-projet:
+    title: Proposer un projet, MEMENTO website (researcher access page)
+    url: https://host.credim.u-bordeaux.fr/dnn-memento/Espacechercheurs/Proposerunprojet.aspx
+    kind: website
+related: []
+keywords: [memory clinic, mild cognitive impairment, subjective cognitive complaint, Alzheimer's disease, cerebral microbleeds, T2*-weighted GRE, longitudinal]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
