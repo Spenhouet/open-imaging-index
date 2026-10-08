@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,428,tsuchida2024,"Methods, Datasets, BBS",patients over 18 with a first-ever minor to severe supratentorial cerebral infarct; also dataset 1 of Coutureau 2021
+subjects,condition=ischemic_stroke,428,tsuchida2024,"Methods, Datasets, BBS",
+subjects,condition=cerebral_microbleeds,92,tsuchida2024,"Methods, Datasets, BBS",patients with at least one microbleed among the 361 with a SWAN scan and visual microbleed rating
+subjects,contrast=swi,361,tsuchida2024,"Methods, Datasets, BBS",GE SWAN with visual microbleed rating; the total with a SWAN scan is not reported
+subjects,contrast=T2starw,159,tsuchida2024,Table 1,2D multi-echo T2*-GRE in 159 of the 162-patient SHIVA-CMB subsample; the cohort total is not reported
+subjects,contrast=dwi,237,matsulevits2024,"Methods, Dataset",patients with adequate baseline DWI; 3D FLAIR and 3D T1 and 1-year scores used in NeuralCup; the cohort total is not reported
+subjects,contrast=FLAIR,237,matsulevits2024,"Methods, Dataset",see the dwi row
+subjects,contrast=T1w,237,matsulevits2024,"Methods, Dataset",see the dwi row
+subjects,country=FR,428,tsuchida2024,"Methods, Datasets, BBS",acquired at Bordeaux University Hospital
+age_mean,,67.5,tsuchida2024,"Methods, Datasets, BBS",SD 14.1
+age_sd,,14.1,tsuchida2024,"Methods, Datasets, BBS",
