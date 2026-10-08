@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,1355,indi-fcp-classic,,"Sum of the n of all 35 samples listed on the page (33 sites); includes Durham_Madden (42, on request only) and Cleveland CCF (31, moved to INDI). The page text says 1200+"
+subjects,contrast=bold,1355,indi-fcp-classic,,every listed sample is a resting-state fMRI sample

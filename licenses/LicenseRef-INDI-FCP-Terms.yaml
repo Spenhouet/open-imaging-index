@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-INDI-FCP-Terms
+name: 1000 Functional Connectomes Project / INDI terms (Creative Commons Attribution Non-Commercial, no version stated)
+short_name: FCP/INDI terms
+url: https://www.nitrc.org/projects/fcon_1000/
+version: >-
+  License field "Attribution Non-Commercial" on the NITRC fcon_1000 project page (no Creative Commons version named)
+  and the access statement on the INDI home page, read 2026-10-08
+summary: >-
+  Non-commercial use only, after registering with the 1000 Functional Connectomes Project on NITRC. The NITRC project
+  lists a Creative Commons Attribution Non-Commercial license without a version: derived works must credit the
+  source and stay non-commercial but need not use the same license.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Upon successful registration, users will have full access to the datasets, and the right to unrestricted
+      usage of the datasets for non-commercial purposes, just as before.
+    source: https://fcon_1000.projects.nitrc.org/
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning. Any use is limited to non-commercial purposes.
+  derivatives:
+    value: conditional
+    quote: This license lets others remix, tweak, and build upon your work non-commercially, and although their new
+      works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the
+      same terms.
+    note: Only non-commercially and with credit.
+  publication:
+    value: unspecified
+    note: The terms do not mention publishing results.
+  redistribute_original:
+    value: unspecified
+    note: >-
+      The NITRC license description covers building upon the work, not passing on the original data. The INDI page
+      requires each user to register before access.
+  redistribute_derivatives:
+    value: conditional
+    quote: This license lets others remix, tweak, and build upon your work non-commercially, and although their new
+      works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the
+      same terms.
+    note: Derived works must credit the source and be non-commercial.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: This license lets others remix, tweak, and build upon your work non-commercially, and although their new
+      works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the
+      same terms.
+  share_alike:
+    value: 'no'
+    quote: This license lets others remix, tweak, and build upon your work non-commercially, and although their new
+      works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the
+      same terms.
+  signed_agreement:
+    value: conditional
+    quote: Given the increased amount of information provided in the INDI datasets, we are requiring that individuals
+      register with the 1000 Functional Connectomes Project website on NITRC to gain access to the INDI datasets.
+    source: https://fcon_1000.projects.nitrc.org/
+    note: Registration with NITRC is required. No separate agreement text is published.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms do not mention re-identification. The FCP page states that the data are anonymized under HIPAA
+      guidelines.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

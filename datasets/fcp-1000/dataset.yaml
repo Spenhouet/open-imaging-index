@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fcp-1000
+name: 1000 Functional Connectomes Project (FCP Classic)
+full_name: 1000 Functional Connectomes Project
+summary: >-
+  Resting-state fMRI with T1-weighted anatomical scans, age and sex from 1,200+ volunteers, pooled from 33 sites
+  worldwide in 2009 as the first open aggregate of resting-state data for functional connectivity research.
+homepage: https://fcon_1000.projects.nitrc.org/fcpClassic/FcpTable.html
+doi: 10.1073/pnas.0911855107
+year: 2009
+status: active
+creators:
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+  - name: Contributing site principal investigators (Biswal, Milham et al.)
+    url: https://www.nitrc.org/projects/fcon_1000/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI, BIDS]
+countries: [US, GB, CN, DE, NL, FI, AU, TW, CA]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://fcon_1000.projects.nitrc.org/fcpClassic/FcpTable.html
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The FCP page announces an unrestricted public release. Downloads from NITRC need a NITRC account, and the INDI
+      home page limits use to non-commercial purposes after registration.
+citation:
+  text: >-
+    Biswal BB, Mennes M, Zuo XN, et al. Toward discovery science of human brain function. Proceedings of the National
+    Academy of Sciences 107(10):4734-4739 (2010). doi:10.1073/pnas.0911855107
+sources:
+  indi-fcp-classic:
+    title: FCP Classic Data Sharing Samples table, FCP/INDI (per-site n, sex, ages, TR)
+    url: https://fcon_1000.projects.nitrc.org/fcpClassic/FcpTable.html
+    kind: website
+  biswal2010:
+    title: Biswal et al. 2010, PNAS
+    url: https://doi.org/10.1073/pnas.0911855107
+    kind: paper
+  indi-s3-fcon1000:
+    title: FCON1000 folder in the INDI public S3 bucket (file listing)
+    url: https://fcp-indi.s3.amazonaws.com/?list-type=2&prefix=data/Projects/FCON1000/&delimiter=/
+    kind: data
+related: [abide-i]
+keywords: [resting-state fMRI, functional connectivity, functional connectome, multi-site, INDI, FCP]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
