@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-EPAD-VIMI-Terms
+name: EPAD Terms and Conditions for accessing the V.IMI Dataset
+short_name: EPAD V.IMI Terms
+url: https://alzheimer.noemi.lu/wp-content/uploads/2021/06/EPAD_V.IMI-Dataset_Terms-and-Conditions-V2.0.pdf
+version: 'Document version 2.0, 1 June 2021'
+summary: >-
+  One-page terms accepted when requesting EPAD LCS data or images through the AD Data Initiative. The data serve
+  Alzheimer's disease research, analyses should follow the research question submitted with the request and be
+  published, data must not be passed to third parties, and publications must carry set acknowledgement elements.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: On behalf of my research group accessing the EPAD V.IMI Dataset, I acknowledge that this data is for the
+      advancement of scientific understanding of Alzheimer's disease.
+    note: The terms neither allow nor forbid commercial use. They tie use to Alzheimer's disease science and to the
+      research question submitted with the access request.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: 'yes'
+    quote: As such I will make every effort to ensure that the analysis undertakes from the data will comply with the
+      research question submitted as part of the access process and that this analysis will be published in peer
+      reviewed scientific journals.
+    note: Publication in peer-reviewed journals is expected, with the acknowledgement elements the terms list.
+  redistribute_original:
+    value: 'no'
+    quote: I also acknowledge that in accessing this data I will not pass these data onto a third party.
+    note: Third parties have to request access themselves through the EPAD access system.
+  redistribute_derivatives:
+    value: unspecified
+    quote: I also acknowledge that in accessing this data I will not pass these data onto a third party.
+    note: The terms do not say whether derived data such as labels or image-derived measures count as "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'The papers generated using EPAD data and/or samples must include the following elements:'
+    note: The elements are the ClinicalTrials.gov identifier NCT02804789, the V.IMI dataset DOI
+      10.34688/epadlcs_v.imi_20.10.30 and the IMI grant 115736 and Alzheimer's Association grant SG 21-818099-EPAD.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: On behalf of my research group accessing the EPAD V.IMI Dataset, I acknowledge that this data is for the
+      advancement of scientific understanding of Alzheimer's disease.
+    note: The terms are accepted as part of an access request on the AD Data Initiative portal, which the EPAD team
+      reviews.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: unspecified
+    quote: Please refer to the EPAD Policy document for Publications on the EPAD website.
+    note: The terms do not ask for a manuscript review themselves but point to a separate EPAD publication policy,
+      which could not be retrieved from the EPAD website.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms do not mention re-identification. Data protection law still applies.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

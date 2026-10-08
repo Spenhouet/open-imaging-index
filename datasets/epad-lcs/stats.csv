@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,2096,epad-dip-vimi,p. 2 (Section 2),all participants who consented and were entered into the eCRF; includes screen failures
+subjects,sex=female,1035,saunders2022,Table 1,"of the 1,828 non-screen-failed participants available for analysis (the table caption says 1,843)"
+subjects,sex=male,793,saunders2022,Table 1,"of the 1,828 non-screen-failed participants available for analysis (the table caption says 1,843)"
+subjects,condition=alzheimers,358,saunders2022,Results: Open access data,participants who meet criteria for preclinical AD (CSF amyloid positive at enrolment)
+subjects,modality=MR,1927,saunders2022,Table 2,MRI scans at the baseline visit (one per participant)
+studies,,2783,saunders2022,Table 2,"MRI sessions (the only imaging modality); sum of MRI scans at the disjoint visits baseline (1,927), 1 year (601), 2 years (249) and 3 years (6)"
+subjects,contrast=T1w,1356,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only: eligible participants with a complete set of core sequences"
+subjects,contrast=FLAIR,1356,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only: eligible participants with a complete set of core sequences"
+subjects,contrast=T2w,1356,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only: eligible participants with a complete set of core sequences (3D T1w, 3D FLAIR, 2D T2w, 2D T2*w)"
+subjects,contrast=T2starw,1356,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only: eligible participants with a complete set of core sequences (3D T1w, 3D FLAIR, 2D T2w, 2D T2*w)"
+scans,contrast=swi,756,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only, baseline; advanced sequences at 13 sites with 3 T scanners"
+scans,contrast=bold,842,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only, baseline resting-state fMRI"
+scans,contrast=dwi,831,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only, baseline"
+scans,contrast=asl,858,lorenzini2022,Results: The EPAD LCS baseline imaging dataset,"V1500.0 release only, baseline; 62.3% showed fat-saturation artefacts and are excluded from the processed data"
+age_mean,,65.7,saunders2022,Table 1,"of the 1,828 non-screen-failed participants"
+age_sd,,7.41,saunders2022,Table 1,

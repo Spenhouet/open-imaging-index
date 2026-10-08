@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: epad-lcs
+name: EPAD LCS
+full_name: European Prevention of Alzheimer's Dementia Longitudinal Cohort Study (data release V.IMI)
+summary: >-
+  European multi-site cohort of 2,096 adults aged 50 or over without dementia, many amyloid positive, with
+  longitudinal 3D T1w, FLAIR, T2w and T2*w MRI, SWI, fMRI, diffusion and ASL at a subset of sites, CSF biomarkers and
+  cognitive data. Access by request through the AD Data Initiative.
+homepage: https://ep-ad.org/index.php/open-source-data/
+doi: 10.34688/epadlcs_v.imi_20.10.30
+# Year of the first data release V500.0 (dataset DOI 10.34688/epadlcs_v500.0_19.05.10, Data Information Pack p. 17).
+year: 2019
+# Final release V.IMI of 30 October 2020.
+updated: 2020
+version: V.IMI
+status: active
+creators:
+  - name: European Prevention of Alzheimer's Dementia (EPAD) consortium
+    url: https://ep-ad.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, T2w, T2starw, swi, bold, dwi, asl]
+anatomy: [brain]
+conditions: [alzheimers]
+tasks: [classification, regression, longitudinal, segmentation]
+formats: [NIfTI]
+vendors: [siemens, philips, ge]
+access:
+  type: application
+  url: https://portal.addi.ad-datainitiative.org/
+licenses:
+  - license: LicenseRef-EPAD-VIMI-Terms
+    note: >-
+      Requests go through a workspace on the AD Data Initiative's AD Workbench, whose own terms of use also apply and
+      are not covered here. Imaging requests name the sequences and formats needed.
+citation:
+  text: >-
+    Include "EPAD LCS is registered at www.clinicaltrials.gov Identifier: NCT02804789", "Data used in preparation of
+    this article were obtained from the EPAD LCS data set V.IMI, doi:10.34688/epadlcs_v.imi_20.10.30" and the IMI
+    (grant 115736) and Alzheimer's Association (SG 21-818099-EPAD) funding statement. MRI reference: Lorenzini L, et
+    al. The Open-Access European Prevention of Alzheimer's Dementia (EPAD) MRI dataset and processing workflow.
+    NeuroImage: Clinical 35, 103106 (2022). doi:10.1016/j.nicl.2022.103106
+sources:
+  lorenzini2022:
+    title: Lorenzini L et al. 2022, The Open-Access EPAD MRI dataset and processing workflow, NeuroImage Clinical (V1500.0 release)
+    url: https://doi.org/10.1016/j.nicl.2022.103106
+    kind: paper
+  saunders2022:
+    title: Saunders S et al. 2022, The European Prevention of Alzheimer's Dementia Programme, Frontiers in Neurology
+    url: https://doi.org/10.3389/fneur.2022.1051543
+    kind: paper
+  epad-open-data:
+    title: EPAD website, Open-Source Data, Imaging, and Samples
+    url: https://ep-ad.org/index.php/open-source-data/
+    kind: website
+  epad-dip-vimi:
+    title: EPAD LCS Data Information Pack, V.IMI release of 30 October 2020
+    url: https://ep-ad.org/wp-content/uploads/2020/11/EPAD-LCS_DIP_vIMI_2020-10-30_v1_Final_SoF-1.pdf
+    kind: website
+related: []
+keywords: [preclinical Alzheimer's disease, amyloid, CSF biomarkers, longitudinal, brain MRI, microbleeds, prevention cohort]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
