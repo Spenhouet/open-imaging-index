@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: jhu-acute-stroke-mri
+name: JHU Acute Stroke MRI
+full_name: Annotated Clinical MRIs and Linked Metadata of Patients with Acute Stroke, Baltimore, Maryland, 2009-2019
+summary: >-
+  Clinical MRI of 2,888 patients admitted with acute or early subacute stroke to the Johns Hopkins Comprehensive Stroke
+  Center (2009-2019), with manual DWI lesion masks, native and MNI-space images and clinical metadata, in BIDS.
+homepage: https://www.icpsr.umich.edu/web/ICPSR/studies/38464
+doi: 10.3886/ICPSR38464
+year: 2022
+updated: 2025
+version: V6
+status: active
+creators:
+  - name: Johns Hopkins University School of Medicine (Faria A.V., Liu C.-F. et al.)
+species: human
+modalities: [MR]
+contrasts: [dwi, ADC, T1w, T2w, FLAIR, swi]
+anatomy: [brain]
+conditions: [stroke, ischemic_stroke, intracranial_hemorrhage]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens, philips, ge]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://www.icpsr.umich.edu/web/ICPSR/studies/38464
+  note: >-
+    Restricted-use collection at ICPSR. Requests need a Restricted Data Use Agreement, the reason for the request, and
+    IRB approval or a notice of exemption.
+licenses:
+  - license: LicenseRef-ICPSR-38464-Restricted
+citation:
+  text: >-
+    Liu CF, Leigh R, Johnson B, et al. A large public dataset of annotated clinical MRIs and metadata of patients with
+    acute stroke. Scientific Data 10, 548 (2023). doi:10.1038/s41597-023-02457-9. Faria AV. Annotated Clinical MRIs
+    and Linked Metadata of Patients with Acute Stroke, Baltimore, Maryland, 2009-2019. ICPSR (2025-10-08).
+    doi:10.3886/ICPSR38464.v6
+sources:
+  liu2023:
+    title: Liu et al. 2023, A large public dataset of annotated clinical MRIs and metadata of patients with acute stroke (Scientific Data)
+    url: https://doi.org/10.1038/s41597-023-02457-9
+    kind: paper
+  icpsr-38464:
+    title: ICPSR study 38464 page (version V6), as archived on 21 February 2026
+    url: https://web.archive.org/web/20260221082407/https://www.icpsr.umich.edu/web/ICPSR/studies/38464
+    kind: website
+related: [atlas-v2]
+keywords: [acute stroke, ischemic stroke, diffusion-weighted imaging, lesion segmentation, clinical MRI, NIHSS]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
