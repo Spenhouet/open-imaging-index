@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,1795,honig2024,Table 1,Core double-blind study: 897 placebo and 898 lecanemab
+subjects,sex=female,938,honig2024,Table 1,sum of the two Core arms (476 placebo + 462 lecanemab)
+subjects,sex=male,857,honig2024,Table 1,sum of the two Core arms (421 placebo + 436 lecanemab)
+subjects,condition=alzheimers,1795,honig2024,Table 1,"all Core participants had early Alzheimer disease: MCI due to Alzheimer disease or mild Alzheimer dementia"
+subjects,condition=mci,1107,honig2024,Table 1,sum of the two Core arms (555 placebo + 552 lecanemab)
