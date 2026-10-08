@@ -16,7 +16,7 @@ creators:
     url: https://www.ukbiobank.ac.uk/
 species: human
 modalities: [MR, US]
-contrasts: [T1w, FLAIR, T2starw, dwi, bold, asl, cine, b_mode]
+contrasts: [T1w, FLAIR, swi, Chimap, dwi, bold, asl, cine, b_mode]
 anatomy: [brain, heart, abdomen, liver, kidney, pancreas, carotid_artery, whole_body]
 tasks: [regression, longitudinal, segmentation]
 formats: [DICOM, NIfTI]
@@ -50,6 +50,10 @@ sources:
     title: UK Biobank Community, Imaging Data article
     url: https://community.ukbiobank.ac.uk/hc/en-gb/articles/24618819821981-Imaging-Data
     kind: website
+  sundaresan2023:
+    title: Sundaresan et al. 2023, Automated detection of cerebral microbleeds on MR images using knowledge distillation framework, Frontiers in Neuroinformatics
+    url: https://doi.org/10.3389/fninf.2023.1204186
+    kind: paper
 related: []
 keywords: [population cohort, brain MRI, cardiac MRI, body composition, DXA, carotid ultrasound, imaging-derived phenotypes, biobank]
 verified:
