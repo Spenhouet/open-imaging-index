@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+scans,,10,cmb-labeler-repo,README TEST SET,"""10 SWI datasets with radiotherapy-induced cerebral microbleed"""
+scans,contrast=swi,10,cmb-labeler-repo,README TEST SET,
+scans,condition=cerebral_microbleeds,10,cmb-labeler-repo,README TEST SET,radiotherapy-induced
+scans,vendor=ge,10,cmb-labeler-repo,README TEST SET,
+scans,field_strength=3,5,cmb-labeler-repo,README TEST SET,P01-P05
+scans,field_strength=7,5,cmb-labeler-repo,README TEST SET,P06-P10
