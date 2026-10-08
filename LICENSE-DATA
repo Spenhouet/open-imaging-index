@@ -1,28 +1,3 @@
-Open Imaging Index data license
-===============================
-
-This repository uses two licenses.
-
-1. Source code: MIT License, see LICENSE.
-   Covers everything that is not listed under 2, including src/, scripts/, e2e/, schema/, static/,
-   plugins/ (agent skills) and the build and configuration files.
-
-2. Data: Creative Commons Zero 1.0 Universal (CC0 1.0), full text below.
-   Covers the contents of these directories:
-     datasets/   dataset metadata, descriptions and aggregate statistics
-     licenses/   license breakdowns
-     vocab/      controlled vocabularies
-     docs/       the data standard and contribution guide
-
-   Exceptions: quotations from license and agreement texts (the `quote` fields in licenses/) and
-   dataset citations (the `citation` fields in datasets/) remain the property of their authors.
-   They are reproduced for reference and are not covered by CC0.
-
-The license breakdowns are informational and not legal advice. The license or agreement of each
-dataset is what governs its use.
-
---------------------------------------------------------------------------------
-
 Creative Commons Legal Code
 
 CC0 1.0 Universal
