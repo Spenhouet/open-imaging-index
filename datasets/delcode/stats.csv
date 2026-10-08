@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,1000,dzne-delcode,,"the page says DELCODE included a total of 1,000 participants; the design paper gives 1000 as the enrolment target"
+subjects,condition=healthy,141,jessen2018,Table 1,controls among the first 394 baseline participants
+subjects,condition=scd,126,jessen2018,Table 1,among the first 394 baseline participants
+subjects,condition=mci,65,jessen2018,Table 1,amnestic MCI among the first 394 baseline participants
+subjects,condition=alzheimers,40,jessen2018,Table 1,mild Alzheimer's dementia among the first 394 baseline participants
+subjects,sex=female,208,jessen2018,Table 1,"sum of the five disjoint groups (83 + 65 + 25 + 23 + 12) among the first 394 baseline participants, including 12 of 22 first-degree relatives"
+subjects,sex=female;condition=healthy,83,jessen2018,Table 1,among the first 394 baseline participants
+subjects,sex=female;condition=scd,65,jessen2018,Table 1,among the first 394 baseline participants
+subjects,sex=female;condition=mci,25,jessen2018,Table 1,among the first 394 baseline participants
+subjects,sex=female;condition=alzheimers,23,jessen2018,Table 1,among the first 394 baseline participants
+studies,tracer=florbetaben,25,jessen2018,Methods (PET),amyloid PET scans linked to the first 400 baseline datasets
+studies,tracer=fdg,16,jessen2018,Methods (PET),FDG PET scans linked to the first 400 baseline datasets
+age_mean,condition=healthy,68.6,jessen2018,Table 1,first 394 baseline participants
+age_mean,condition=scd,71.4,jessen2018,Table 1,first 394 baseline participants
+age_mean,condition=mci,72.8,jessen2018,Table 1,first 394 baseline participants
+age_mean,condition=alzheimers,72.8,jessen2018,Table 1,first 394 baseline participants

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: delcode
+name: DELCODE
+full_name: DZNE Longitudinal Cognitive Impairment and Dementia Study
+summary: >-
+  German multicentre memory-clinic cohort of about 1,000 people aged 60 and over with subjective cognitive decline,
+  MCI or mild Alzheimer's dementia, first-degree relatives and controls, with yearly 3 T MRI, cognition, CSF and amyloid
+  and FDG PET in a subset. Access by application to the DZNE.
+homepage: https://www.dzne.de/en/research/studies/clinical-studies/delcode/
+doi: 10.1186/s13195-017-0314-2
+# Year of the design paper. The study started in 2014 (DZNE website); the data have no public release.
+year: 2018
+status: active
+creators:
+  - name: German Center for Neurodegenerative Diseases (DZNE)
+    url: https://www.dzne.de/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, bold, dwi]
+tracers: [florbetaben, fdg]
+anatomy: [brain]
+conditions: [healthy, scd, mci, alzheimers]
+tasks: [classification, longitudinal, regression]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.dzne.de/en/research/research-areas/clinical-research/for-researchers/
+licenses:
+  - license: LicenseRef-DZNE-Clinical-Research-Regulations
+    note: >-
+      External researchers also sign a data use agreement with the DZNE. Its text is not published. The design paper
+      states that the data are not publicly available but may be provided upon reasonable request.
+citation:
+  text: >-
+    Jessen F, Spottke A, Boecker H, et al. Design and first baseline data of the DZNE multicenter observational study on
+    predementia Alzheimer's disease (DELCODE). Alzheimer's Research & Therapy 10:15 (2018).
+    doi:10.1186/s13195-017-0314-2
+sources:
+  dzne-delcode:
+    title: DZNE website, DELCODE study page
+    url: https://www.dzne.de/en/research/studies/clinical-studies/delcode/
+    kind: website
+  jessen2018:
+    title: Jessen F et al. 2018, Design and first baseline data of DELCODE, Alzheimer's Research & Therapy
+    url: https://doi.org/10.1186/s13195-017-0314-2
+    kind: paper
+  doerner2024:
+    title: Dörner M et al. 2024, Inferior frontal sulcal hyperintensities in DELCODE, Diagnostics
+    url: https://doi.org/10.3390/diagnostics14090940
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, subjective cognitive decline, memory clinic, MCI, amyloid PET, longitudinal, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
