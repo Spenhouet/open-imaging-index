@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aspree-neuro
+name: ASPREE-NEURO
+full_name: ASPREE-NEURO, the brain MRI sub-study of the ASPirin in Reducing Events in the Elderly trial
+summary: >-
+  Longitudinal 3 T brain MRI (T1w, FLAIR, SWI, diffusion, ASL, resting-state fMRI) of 559 healthy Australians aged 70
+  and over in a randomised aspirin trial, scanned at baseline, 1 and 3 years to track microbleeds and white matter
+  lesions. Access by ASPREE application.
+homepage: https://aspree.org/aus/about-the-aspree-project/sub-studies/
+doi: 10.1177/1747493016669848
+# Year of the protocol paper. No public release of the MRI data is documented.
+year: 2017
+status: active
+creators:
+  - name: ASPREE Investigator Group, School of Public Health and Preventive Medicine, Monash University
+    url: https://aspree.org/aus/
+  - name: Monash Biomedical Imaging, Monash University
+modalities: [MR]
+contrasts: [T1w, FLAIR, swi, dwi, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ams.aspree.org/public/request-data/access-aspree-data/
+licenses:
+  - license: LicenseRef-ASPREE-Data-Use-Policy
+    note: >-
+      Requests go through the ASPREE Access Management System. For sub-study data such as ASPREE-NEURO the applicant
+      contacts the sub-study chief investigator first, and the sub-study principal investigator must approve. The text
+      of the memorandum of understanding signed before access is not published.
+citation:
+  text: >-
+    Ward SA, Raniga P, Ferris NJ, et al. ASPREE-NEURO study protocol: A randomized controlled trial to determine the
+    effect of low-dose aspirin on cerebral microbleeds, white matter hyperintensities, cognition, and stroke in the
+    healthy elderly. Int J Stroke 12(1), 108-113 (2017). doi:10.1177/1747493016669848
+sources:
+  ward2017:
+    title: Ward et al. 2017, International Journal of Stroke (ASPREE-NEURO protocol, PMC6764436)
+    url: https://doi.org/10.1177/1747493016669848
+    kind: paper
+  aspree-substudies-page:
+    title: ASPREE Australia website, sub-studies page (ASPREE NEURO section)
+    url: https://aspree.org/aus/about-the-aspree-project/sub-studies/
+    kind: website
+  low2026:
+    title: Low et al. 2026, medRxiv (MedNet-CMB), uses ASPREE-NEURO scans for training
+    url: https://doi.org/10.64898/2026.05.19.26353364
+    kind: paper
+related: []
+keywords: [cerebral microbleeds, white matter hyperintensities, SWI, aspirin, randomised controlled trial, ageing]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

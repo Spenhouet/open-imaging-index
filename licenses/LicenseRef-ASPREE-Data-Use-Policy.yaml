@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ASPREE-Data-Use-Policy
+name: ASPREE Data Use Policy
+short_name: ASPREE data use policy
+url: https://ams.aspree.org/public/files/ASPREE_Data_Use_Policy_v1_0.pdf
+version: 'Version 1.0, 21 May 2020'
+summary: >-
+  ASPREE data go only to project proposals approved by the ASPREE International Executive Committee, with ethics
+  approval and a signed memorandum of understanding; sub-study data also need the sub-study principal investigator's
+  approval. Data stay in the ASPREE Safe Haven by default, and draft manuscripts are reviewed by the committee.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The policy neither allows nor forbids commercial use. It names collaboration and publishing research
+      findings as the aims of sharing.
+  model_training:
+    value: unspecified
+    note: The policy does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The policy does not address derived data.
+  publication:
+    value: conditional
+    quote: This approval is required prior to the submission of the work for presentation or publication of any form.
+    note: Only for an approved project proposal. Draft manuscripts go to the International Executive Committee for
+      review.
+  redistribute_original:
+    value: 'no'
+    quote: Each Principal Investigator will be responsible for managing this access to the ASPREE dataset in keeping
+      with the principles of this data use policy, including ensuring the data requested will be stored in a secured
+      environment and will not be shared with others except listed co-investigators on that analysis.
+    note: The default access route is the ASPREE Safe Haven. Extracts outside it need a data use agreement approved by
+      Monash University and the Berman Center.
+  redistribute_derivatives:
+    value: unspecified
+    note: The policy does not say whether derived data may be shared.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+    note: The policy has no citation or acknowledgement clause.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Access requires the signing of a MOU by the Investigator within the ASPREE Safe Haven.
+    note: Data extracts outside the Safe Haven need a data use agreement approved by Monash University and the Berman
+      Center (HHRI).
+  ethics_approval:
+    value: 'yes'
+    quote: Access to the safe haven will be provided to approved project proposals for research that has ethics
+      approval.
+  publication_review:
+    value: 'yes'
+    quote: If your application is successful, you will be granted reserved data access for six months, after which it
+      is expected that you will produce a draft manuscript for review by the International Executive Committee (if you
+      have not already published).
+    source: https://ams.aspree.org/public/request-data/access-aspree-data/
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The policy commits ASPREE to de-identifying released extracts but has no clause addressed to users. The MoU
+      text is not published.
+  geographic_restriction:
+    value: 'no'
+    note: The policy names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

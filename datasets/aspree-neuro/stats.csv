@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,559,ward2017,Sample size,final recruitment; MRI at baseline and 1 and 3 years after randomisation
+subjects,country=AU,559,ward2017,Methods (Participants),recruited at Melbourne ASPREE study centres
+subjects,field_strength=3,559,ward2017,Brain MRI,all scans on one 3 T Siemens Skyra
+subjects,vendor=siemens,559,ward2017,Brain MRI,Skyra
