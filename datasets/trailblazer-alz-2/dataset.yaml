@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: trailblazer-alz-2
+name: TRAILBLAZER-ALZ 2 (donanemab phase 3 trial imaging)
+full_name: >-
+  TRAILBLAZER-ALZ 2, a randomized placebo-controlled phase 3 trial of donanemab in early symptomatic Alzheimer
+  disease (NCT04437511), trial MRI and PET
+summary: >-
+  Serial safety MRI (FLAIR for ARIA-E, T2*-GRE for ARIA-H), volumetric MRI and amyloid and tau PET of 1736 people
+  with early symptomatic Alzheimer disease in Lilly's donanemab phase 3 trial. The images are not shared; Lilly
+  generally excludes MRI scans from its Vivli data sharing.
+homepage: https://clinicaltrials.gov/study/NCT04437511
+doi: 10.1001/jama.2023.13239
+# Year of the primary results publication; the images have no public release.
+year: 2023
+creators:
+  - name: Eli Lilly and Company (trial sponsor)
+    url: https://www.lilly.com
+species: human
+modalities: [MR, PT]
+contrasts: [FLAIR, T2starw]
+tracers: [florbetapir, flortaucipir]
+anatomy: [brain]
+conditions: [alzheimers, aria]
+tasks: [longitudinal]
+# Countries with sites in the ClinicalTrials.gov location list. The paper reports 8 countries; the registry lists
+# Puerto Rico separately from the United States.
+countries: [US, AU, CA, CZ, JP, NL, PL, PR, GB]
+access:
+  type: not_shared
+  url: https://vivli.org/ourmember/lilly/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Lilly shares anonymized participant-level tabular data from this trial through Vivli after review of a research
+      proposal and a signed data sharing agreement, but its Vivli member page states that "Lilly will generally not
+      share case narratives, documentation for event adjudication, images (e.g., x-rays, MRI scans), genetic/genomic,
+      or other "omic" data". The same page adds that "Data will not be provided to requestors where there is a
+      potential conflict of interest, data is to be used for a commercial purpose or there is an actual or potential
+      competitive risk" and "Data will not be provided to requestors to construct an AI-ML model that will serve as
+      the foundation for a commercial product." No terms for the images are published.
+citation:
+  text: >-
+    Sims JR, Zimmer JA, Evans CD, et al. Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2
+    Randomized Clinical Trial. JAMA 330(6):512-527 (2023). doi:10.1001/jama.2023.13239
+sources:
+  sims2023:
+    title: Sims et al. 2023, JAMA, TRAILBLAZER-ALZ 2 primary results (PMC10352931)
+    url: https://doi.org/10.1001/jama.2023.13239
+    kind: paper
+  zimmer2025:
+    title: >-
+      Zimmer et al. 2025, JAMA Neurology, ARIA with donanemab in TRAILBLAZER-ALZ and ALZ 2 (PMC11894547), with the
+      trial protocols and data sharing statement in its supplements
+    url: https://doi.org/10.1001/jamaneurol.2025.0065
+    kind: paper
+  ctgov-nct04437511:
+    title: ClinicalTrials.gov record NCT04437511
+    url: https://clinicaltrials.gov/study/NCT04437511
+    kind: website
+  vivli-lilly:
+    title: Vivli member page, Lilly (data sharing policy)
+    url: https://vivli.org/ourmember/lilly/
+    kind: website
+related: []
+keywords: [donanemab, anti-amyloid therapy, ARIA, ARIA-E, ARIA-H, clinical trial, Alzheimer's disease]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

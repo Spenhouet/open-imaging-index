@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,1736,sims2023,Abstract (Results),randomized participants (860 donanemab and 876 placebo)
+subjects,sex=female,996,sims2023,Abstract (Results),
+subjects,condition=alzheimers,1736,sims2023,Abstract (Design and Participants),"all participants had early symptomatic Alzheimer disease (MCI or mild dementia) with amyloid and tau pathology on PET"
+age_mean,,73.0,sims2023,Abstract (Results),
