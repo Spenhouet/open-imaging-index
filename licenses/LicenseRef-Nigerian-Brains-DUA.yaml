@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Nigerian-Brains-DUA
+name: Data Use Agreement for the labeled Clinical-MRI dataset of Nigerian brains
+short_name: Nigerian Brains DUA
+url: https://doi.org/10.1038/s41597-025-04743-0
+version: Agreement text not published. Terms as described in the Usage Notes of Wogu et al. 2025, read 2026-10-08
+summary: >-
+  Access is controlled: users are identified and authenticated and must sign a legally binding data use agreement
+  before they receive the data, taking on responsibilities and liabilities as data controllers. The agreement text
+  itself is not published, so every other rule is unspecified.
+purpose: unspecified
+rules:
+  commercial_use:
+    value: unspecified
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      All users will be asked to sign a DUA detailing their responsibilities and liabilities while the data is in their
+      possession.
+  ethics_approval:
+    value: unspecified
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

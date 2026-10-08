@@ -1,0 +1,36 @@
+measure,by,value,source,where,note
+subjects,,88,wogu2025,"Methods, Study participants",
+subjects,country=NG,88,wogu2025,"Methods, Study participants",all participants reside in Nigeria
+subjects,condition=dementia,31,wogu2025,Table 2,
+subjects,condition=parkinsons,22,wogu2025,Table 2,
+subjects,condition=healthy,35,wogu2025,Table 2,
+subjects,sex=female,35,wogu2025,Table 2,"sum of the three disjoint groups: 11 control, 8 PD, 16 dementia"
+subjects,sex=male,53,wogu2025,Table 2,"sum of the three disjoint groups: 24 control, 14 PD, 15 dementia"
+subjects,condition=healthy;sex=female,11,wogu2025,Table 2,
+subjects,condition=healthy;sex=male,24,wogu2025,Table 2,
+subjects,condition=parkinsons;sex=female,8,wogu2025,Table 2,
+subjects,condition=parkinsons;sex=male,14,wogu2025,Table 2,
+subjects,condition=dementia;sex=female,16,wogu2025,Table 2,
+subjects,condition=dementia;sex=male,15,wogu2025,Table 2,
+subjects,contrast=FLAIR,80,wogu2025,"Methods, Neuroimaging parameters",
+subjects,contrast=T1w_ce,64,wogu2025,"Methods, Neuroimaging parameters",gadolinium-enhanced T1w
+scans,,761,wogu2025,"Methods, Study participants","anatomical sequences (T1w, T2w, FLAIR)"
+scans,contrast=T1w,442,wogu2025,Table 4,"sum of all T1w rows, including 177 gadolinium-enhanced images; matches the brainlife.io release count"
+scans,contrast=T1w_ce,177,wogu2025,Table 4,sum of the ce-gadolinium rows
+scans,contrast=T2w,205,wogu2025,Table 4,sum of all T2w rows; matches the brainlife.io release count
+scans,contrast=FLAIR,114,wogu2025,Table 4,sum of all FLAIR rows; matches the brainlife.io release count
+scans,contrast=dwi,26,brainlife-pub61,"release 1, neuro/dwi set",listed in the release but not described in the data descriptor
+age_min,,12,wogu2025,Table 2,lowest of the three group minimums (control group)
+age_max,,86,wogu2025,Table 2,highest of the three group maximums (dementia group)
+age_mean,condition=healthy,34.14,wogu2025,Table 2,
+age_sd,condition=healthy,12.75,wogu2025,Table 2,
+age_min,condition=healthy,12,wogu2025,Table 2,
+age_max,condition=healthy,75,wogu2025,Table 2,
+age_mean,condition=parkinsons,61.14,wogu2025,Table 2,
+age_sd,condition=parkinsons,14.60,wogu2025,Table 2,
+age_min,condition=parkinsons,36,wogu2025,Table 2,
+age_max,condition=parkinsons,79,wogu2025,Table 2,
+age_mean,condition=dementia,65.26,wogu2025,Table 2,
+age_sd,condition=dementia,14.11,wogu2025,Table 2,
+age_min,condition=dementia,36,wogu2025,Table 2,
+age_max,condition=dementia,86,wogu2025,Table 2,
