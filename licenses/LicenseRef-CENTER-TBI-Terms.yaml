@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CENTER-TBI-Terms
+name: CENTER-TBI Terms and Conditions for Use of CENTER-TBI Data
+short_name: CENTER-TBI terms
+url: https://www.center-tbi.eu/manuals/SOP-Manual-DAPR-5.0_08052025.pdf
+version: 'SOP manual for data access and publication requests, version 5.0 of 2025-05-08, and the Data Access page read 2026-10-08'
+summary: >-
+  Access after a study plan proposal is approved by the CENTER-TBI Management Committee and a data use agreement is
+  signed with the researcher's institute. No commercial products and no redistribution; data stay within the research
+  team and are used only for the approved study. Manuscripts go to the Management Committee before submission, with
+  the CENTER-TBI group author and funding acknowledgement. The signed data use agreement itself is not published.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: CENTER-TBI data may not be used for commercial products or redistributed in any way.
+    source: https://www.center-tbi.eu/data
+  model_training:
+    value: unspecified
+    note: The published terms do not mention machine learning. Any use must be part of the approved study plan.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: Upon agreement, the manuscript is submitted to the journal.
+    note: Allowed after Management Committee approval of a Publication Submission Approval form, with the CENTER-TBI
+      group author, funding, ethics and dataset version statements.
+  redistribute_original:
+    value: 'no'
+    quote: CENTER-TBI data may not be used for commercial products or redistributed in any way.
+    source: https://www.center-tbi.eu/data
+  redistribute_derivatives:
+    value: 'no'
+    quote: Keep all the research information shared with confidential by not discussing or sharing the research
+      information in any form or format with anyone other than the CENTER-TBI researcher(s).
+    note: Read as covering information derived from the data. Published results are allowed through the publication
+      process.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'Acknowledge CENTER-TBI collaboration and funding in all research product as: “The research leading to these
+      results was supported by the European Union’s Seventh Framework Program (FP7/2007-2013) under grant agreement n°
+      602150 (CENTER-TBI).”'
+    note: Publications also carry the group author "and the CENTER-TBI Participants and Investigators".
+  share_alike:
+    value: unspecified
+    note: The signed data use agreement is not published.
+  signed_agreement:
+    value: 'yes'
+    quote: For all approved study plans a Data use agreement will need to be signed.
+  ethics_approval:
+    value: 'yes'
+    quote: Meet the requirements of the institution’s Ethical Review Board or corresponding committee.
+  publication_review:
+    value: 'yes'
+    quote: After final approval by the authors, the pre-final (draft) manuscript is submitted to the MC at least 14 days
+      prior to submission, together with the statistical script or code associated with the manuscript if requested.
+  code_release:
+    value: conditional
+    quote: Share scripts for data management and statistical analysis among CENTER-TBI researchers.
+    note: Scripts go to CENTER-TBI researchers and the Management Committee, not to the public.
+  return_results:
+    value: 'no'
+    note: The terms ask for scripts and pre-final manuscripts, not for derived data or results.
+  delete_after_use:
+    value: unspecified
+    note: The published terms are silent and the signed data use agreement is not published.
+  no_reidentification:
+    value: unspecified
+    note: The published terms are silent and the signed data use agreement is not published.
+  geographic_restriction:
+    value: unspecified
+    note: The published terms are silent and the signed data use agreement is not published.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
