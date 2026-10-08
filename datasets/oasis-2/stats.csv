@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,150,marcus2010,Abstract; Table 2,
+studies,,373,marcus2010,Abstract; Methods (Subjects),MR imaging sessions; each subject has two or more visits
+subjects,condition=healthy,72,marcus2010,Abstract; Table 3 note,nondemented (CDR 0) at every visit
+subjects,condition=alzheimers,78,marcus2010,Abstract; Table 2,"sum of two disjoint groups: 64 with CDR above 0 at the initial visit and 14 who converted from CDR 0 at a later visit"
+subjects,sex=female,88,marcus2010,Abstract; Table 2,
+subjects,sex=male,62,marcus2010,Abstract; Table 2,
+subjects,age=60-69,34,marcus2010,Table 2,age at initial visit
+subjects,age=70-79,71,marcus2010,Table 2,age at initial visit
+subjects,age=80-89,41,marcus2010,Table 2,age at initial visit
+subjects,age=90-99,4,marcus2010,Table 2,age at initial visit
+subjects,sex=female;age=60-69,20,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (17) and demented (3) columns"
+subjects,sex=male;age=60-69,14,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (6) and demented (8) columns"
+subjects,sex=female;age=70-79,40,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (24) and demented (16) columns"
+subjects,sex=male;age=70-79,31,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (11) and demented (20) columns"
+subjects,sex=female;age=80-89,25,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (17) and demented (8) columns"
+subjects,sex=male;age=80-89,16,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (9) and demented (7) columns"
+subjects,sex=female;age=90-99,3,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (2) and demented (1) columns"
+subjects,sex=male;age=90-99,1,marcus2010,Table 2,"age at initial visit; sum of the disjoint nondemented (0) and demented (1) columns"
+subjects,contrast=T1w,150,marcus2010,Methods (Image Acquisition),3 to 4 T1-weighted MP-RAGE scans per session
+subjects,contrast_set=T1w,150,marcus2010,Methods (Image Acquisition),T1-weighted MP-RAGE is the only sequence
+subjects,field_strength=1.5,150,marcus2010,Methods (Image Acquisition),all sessions on one 1.5 T Siemens Vision scanner
+subjects,vendor=siemens,150,marcus2010,Methods (Image Acquisition),
+age_min,,60,marcus2010,Abstract,
+age_max,,96,marcus2010,Abstract,
