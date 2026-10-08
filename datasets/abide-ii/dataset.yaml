@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: abide-ii
+name: ABIDE II
+full_name: Autism Brain Imaging Data Exchange II
+summary: >-
+  Resting-state fMRI and T1-weighted MRI, with diffusion MRI for six collections, plus phenotypic data for 1,114
+  people (521 with autism spectrum disorder, 593 controls, ages 5 to 64) from 19 collections in the US and Europe.
+homepage: https://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html
+doi: 10.1038/sdata.2017.10
+year: 2016
+status: active
+creators:
+  - name: ABIDE II consortium (directors Adriana Di Martino and Michael P. Milham)
+    url: https://fcon_1000.projects.nitrc.org/indi/abide/
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, FLAIR]
+anatomy: [brain]
+conditions: [autism, healthy]
+tasks: [classification, longitudinal]
+formats: [NIfTI]
+countries: [US, NL, CH, FR, BE, IE]
+vendors: [siemens, philips, ge]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://fcon_1000.projects.nitrc.org/indi/req_access.html
+licenses:
+  - license: CC-BY-NC-SA-3.0
+    note: >-
+      The INDI data access policy grants registered users unrestricted use of INDI datasets for non-commercial
+      purposes. The ABIDE II page source carries the same usage agreement as ABIDE I, naming CC BY-NC-SA 3.0, but in
+      a section that is not displayed. Users are asked to acknowledge the ABIDE II funding (NIMH 5R21MH107045).
+citation:
+  text: >-
+    Di Martino A, O'Connor D, Chen B, et al. Enhancing studies of the connectome in autism using the autism brain
+    imaging data exchange II. Scientific Data 4:170010 (2017). doi:10.1038/sdata.2017.10
+sources:
+  indi-abide2:
+    title: ABIDE II page, FCP/INDI (summary and per-collection profiles)
+    url: https://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html
+    kind: website
+  dimartino2017:
+    title: Di Martino et al. 2017, Scientific Data
+    url: https://doi.org/10.1038/sdata.2017.10
+    kind: paper
+related: [abide-i]
+keywords: [autism, ASD, resting-state fMRI, functional connectivity, multi-site, diffusion MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
