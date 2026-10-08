@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,1062,austin2022,Methods (Study Population),participants who completed brain MRI in 2018 to 2019
+subjects,field_strength=3,1062,austin2022,Methods (Brain MRI Acquisition and Processing),
+subjects,vendor=siemens,1062,austin2022,Methods (Brain MRI Acquisition and Processing),Prisma VE11C and Skyra VD11B
+subjects,country=US,1062,austin2022,Methods (Study Population),
+subjects,sex=female,549,austin2022,Table 1,counted among the 1036 participants with complete MRI measures
+age_mean,,72,austin2022,Table 1,at Exam 6 (2016 to 2018) for the 1036 participants with complete MRI measures
+age_sd,,8,austin2022,Table 1,same 1036 participants
