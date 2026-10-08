@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-DZNE-Clinical-Research-Regulations
+name: Regulations for use of Clinical Research databases, data and biomaterials of the DZNE
+short_name: DZNE use regulations
+url: https://www.dzne.de/fileadmin/Dateien/editors/documents/Klinische_Forschung/Formulare_Templates/Nutzungsordnung_Datenbanken_EN.pdf
+version: 'Version 2.0 of 25 September 2019'
+summary: >-
+  Data from DZNE clinical studies are released per project after a written application with an ethics vote is approved
+  by the study steering committee or the DZNE Clinical Board. External researchers sign a data use agreement. Direct
+  commercial use is excluded, publications go to the DZNE 30 days before submission and DZNE co-authorship is expected.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: The direct commercial use of the data and biomaterials is excluded. The use of the data and biomaterials for
+      indirect commercial use, e.g. for scientific cooperation between industry and scientific institutes is possible
+      upon approval.
+    note: Indirect commercial use (research with later profit-oriented intentions) needs approval and a licence fee.
+  model_training:
+    value: unspecified
+    note: The regulations do not mention machine learning. Use is limited to the approved project.
+  derivatives:
+    value: unspecified
+    note: The regulations do not address derived data.
+  publication:
+    value: conditional
+    quote: Unless the DZNE, having received a draft version of the publication from the data user, objects to the
+      publication within thirty (30) days, the feature may be published.
+    note: The DZNE may delay publication by up to 90 more days for a patent application.
+  redistribute_original:
+    value: unspecified
+    quote: Utilisation of the transferred data or the provided biomaterials shall exclusively be granted for the use
+      applied for under the conditions agreed in line with the application that may have been approved with
+      restrictions and shall be bound by the duration of the project and/or the validity of the Data Use Agreement
+      and/or Material Transfer Agreement.
+    note: The regulations only state that passing biomaterials to third parties needs an application. Sharing of data
+      is left to the unpublished data use agreement.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Participation of the DZNE in publications in the form of co-authorship is required by the DZNE in line with
+      the rules of good scientific practice and should correspond to the agreements made in advance.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: In the case of external researchers (researchers not connected to the DZNE) the transfer and use is set out
+      in a Data Use Agreement between the DZNE and the receiving institute.
+  ethics_approval:
+    value: 'yes'
+    quote: Valid ethic committee vote approving the intended activities
+  publication_review:
+    value: 'yes'
+    quote: All written publications concerning data from Clinical Research databases of the DZNE must, at least thirty
+      (30) days prior to submission for publication, be presented to the Clinical Board of the DZNE for evaluation.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Only an electronic copy of each publication must be sent to the DZNE.
+  delete_after_use:
+    value: unspecified
+    quote: Utilisation of the transferred data or the provided biomaterials shall exclusively be granted for the use
+      applied for under the conditions agreed in line with the application that may have been approved with
+      restrictions and shall be bound by the duration of the project and/or the validity of the Data Use Agreement
+      and/or Material Transfer Agreement.
+    note: Use ends with the project or the agreement, but the regulations do not say whether data must be deleted.
+  no_reidentification:
+    value: unspecified
+    note: The regulations do not address re-identification by data users. The unpublished data use agreement may.
+  geographic_restriction:
+    value: conditional
+    quote: The data protection officer of the DZNE shall, where appropriate, be consulted in the event of applications
+      by third countries whose data protection regulations are considered unsafe or if there are deviations from the
+      data protection concept.
+    note: No country is excluded, but applications from countries with weaker data protection get an extra review.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

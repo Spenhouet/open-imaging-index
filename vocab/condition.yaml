@@ -27,6 +27,7 @@ terms:
       synonyms: [MCI],
       description: No MONDO term exists. Closest HPO term is the broader Cognitive impairment (HP:0100543).
     }
+  - { id: scd, label: Subjective cognitive decline, synonyms: [SCD], mappings: { mondo: 'MONDO:0850292' } }
   - { id: cognitive_impairment, label: Cognitive impairment, mappings: { hp: 'HP:0100543' } }
   - { id: parkinsons, label: Parkinson's disease, synonyms: [PD], mappings: { mondo: 'MONDO:0005180' } }
   - { id: multiple_sclerosis, label: Multiple sclerosis, synonyms: [MS], mappings: { mondo: 'MONDO:0005301' } }
