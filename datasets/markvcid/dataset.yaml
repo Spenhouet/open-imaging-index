@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: markvcid
+name: MarkVCID
+full_name: MarkVCID consortium (Biomarkers for Vascular Contributions to Cognitive Impairment and Dementia), MarkVCID1 and MarkVCID2
+summary: >-
+  US multi-site study of small vessel disease biomarkers with a harmonized 3 T MRI protocol (ME-MPRAGE, 3D FLAIR, DWI,
+  3D multi-echo GRE, T2w, BOLD-CVR), clinical and cognitive data and biosamples. MarkVCID1 enrolled 653 participants.
+  Access by approved proposal and DUA.
+homepage: https://markvcid.partners.org/
+doi: 10.1002/alz.12216
+# Year of the neuroimaging protocol paper (Lu et al., Alzheimer's & Dementia 2021). MarkVCID1 data were collected
+# 2016-2020; the date data were first shared outside the consortium is not published.
+year: 2021
+status: active
+creators:
+  - name: MarkVCID Consortium (NINDS and NIA), coordinating center at Massachusetts General Hospital
+    url: https://markvcid.partners.org/
+species: human
+modalities: [MR]
+# Core MRI sequences of the protocol paper. pCASL is listed as an MRI data element in the MarkVCID1 data search form.
+contrasts: [T1w, FLAIR, dwi, T2starw, T2w, bold, asl]
+anatomy: [brain]
+# Syndromic diagnosis categories offered in the MarkVCID data search forms. Per-group counts are not published.
+conditions: [healthy, mci, dementia]
+tasks: [regression, classification, longitudinal]
+countries: [US]
+vendors: [siemens, philips, ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://markvcid.partners.org/search_data_form
+licenses:
+  - license: LicenseRef-MarkVCID-DUA
+    note: >-
+      A project proposal is reviewed by a subcommittee and approved by the Steering Committee before the DUA is signed.
+      Data are available about three weeks after approval and signature. Biosamples need a separate MTA.
+citation:
+  text: >-
+    Lu H, Kashani AH, Arfanakis K, et al. MarkVCID cerebral small vessel consortium: II. Neuroimaging protocols.
+    Alzheimer's & Dementia 17(4):716-725 (2021). doi:10.1002/alz.12216. Publications must use the methods,
+    acknowledgement and funding text of the MarkVCID DUA.
+sources:
+  lu2021:
+    title: Lu et al. 2021, MarkVCID cerebral small vessel consortium II, Neuroimaging protocols, Alzheimer's & Dementia (PMC8627001)
+    url: https://doi.org/10.1002/alz.12216
+    kind: paper
+  markvcid1-results:
+    title: MarkVCID website, MarkVCID1 Results (including MarkVCID1 Data Access)
+    url: https://markvcid.partners.org/markvcid1-results
+    kind: website
+  markvcid-overview:
+    title: MarkVCID website, Consortium Overview (MarkVCID2)
+    url: https://markvcid.partners.org/about/m2-consortium-overview
+    kind: website
+  markvcid-sharing-policy:
+    title: MarkVCID Data Sharing, Analysis, and Publications Policy (11 April 2024)
+    url: https://markvcid.partners.org/sites/default/files/markvcid2/protocols/MarkVCID_Sharing_Policy_v4.11.24_Final.pdf
+    kind: paper
+related: []
+keywords: [cerebral small vessel disease, VCID, vascular cognitive impairment, biomarkers, multi-echo GRE, cerebrovascular reactivity, brain MRI]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

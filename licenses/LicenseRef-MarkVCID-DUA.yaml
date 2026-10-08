@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MarkVCID-DUA
+name: MarkVCID External Data Use Agreement
+short_name: MarkVCID DUA
+url: https://markvcid.partners.org/sites/default/files/markvcid2/protocols/MarkVCID%20External%20DUA%20v4.11.24_Final_digital.pdf
+version: 'v.4.11.24 (11 April 2024)'
+summary: >-
+  Signed after the MarkVCID Steering Committee approves a project proposal. Data may only be used for that project,
+  not for any commercial, marketing or fundraising purpose, and may not leave the recipient's institution. Manuscripts
+  need mandatory MarkVCID acknowledgement text and a two-week check by the coordinating center, and the data are
+  destroyed when the project ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: To not sell Data or otherwise use or disclose Data for a commercial, marketing or fundraising purpose.
+    note: The consortium's sharing policy adds that scientific knowledge gained from the data may later be used to
+      develop products that could be sold.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Use is limited to the approved project.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: Recipient will submit all manuscripts to Holder prior to submitting to a journal.
+    note: With the mandatory MarkVCID methods, acknowledgement and funding text, after a non-scientific review by the
+      coordinating center that takes up to two weeks.
+  redistribute_original:
+    value: 'no'
+    quote: Recipient shall not transfer the Data outside of Recipient's Institution.
+    note: Colleagues inside the institution may get the data only after agreeing to the terms in writing.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Depending upon the length and focus of the article, it may be appropriate to include more or less than the
+      example below, however inclusion of some variation of the language shown below is mandatory and must be approved
+      by Consortium.
+    note: The consortium's sharing policy also asks external authors to include MarkVCID personnel who meet ICMJE
+      authorship criteria.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: If the request is approved by the Steering Committee, external users will sign a MarkVCID Data Use Agreement
+      to gain access to the data.
+    source: https://markvcid.partners.org/sites/default/files/markvcid2/protocols/MarkVCID_Sharing_Policy_v4.11.24_Final.pdf
+  ethics_approval:
+    value: conditional
+    quote: By accepting this Agreement, Recipient warrants that all Institution-required approvals are in place for the
+      use of the Data. Such approvals may include, as applicable, Institutional Review Board ("IRB") approval and
+      approval of the terms and conditions of this Agreement.
+    note: IRB approval is needed where the recipient's institution requires it.
+  publication_review:
+    value: 'yes'
+    quote: Recipient will submit all manuscripts to Holder prior to submitting to a journal. This review will not be a
+      scientific review, but is intended to ensure that items 1-3 above are correctly implemented.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: External investigators must report acceptance or rejection of manuscripts and send a copy on publication
+      (sharing policy), but need not return data or results.
+  delete_after_use:
+    value: 'yes'
+    quote: Upon expiration or early termination of this Agreement, Recipient shall destroy the Data provided, however,
+      that Recipient may retain one (1) copy of the Data to the extent necessary to comply with the records retention
+      requirements under any law, and for the purposes of research integrity and verification.
+  no_reidentification:
+    value: 'yes'
+    quote: To not to attempt to re-identify the Data.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
