@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,502,murraysmith2024,Table 1,phase 1 clinic visit (2015 to 2018); the website gives the same number
+subjects,sex=male,256,murraysmith2024,Table 1,phase 1 clinic visit
+subjects,sex=female,246,murraysmith2024,Table 1,phase 1 clinic visit
+subjects,modality=PT,471,murraysmith2024,Table 1,completed the phase 1 amyloid PET/MRI scan
+subjects,modality=MR,471,murraysmith2024,Table 1,completed the phase 1 amyloid PET/MRI scan
+subjects,tracer=florbetapir,471,murraysmith2024,Table 1,completed the phase 1 amyloid PET/MRI scan
+subjects,sex=male;modality=PT,241,murraysmith2024,Table 1,phase 1 PET/MRI scan
+subjects,sex=female;modality=PT,230,murraysmith2024,Table 1,phase 1 PET/MRI scan
+subjects,field_strength=3,471,murraysmith2024,Table 1,"phase 1 PET/MRI scan; all imaging on a 3 T Siemens Biograph mMR"
+subjects,vendor=siemens,471,murraysmith2024,Table 1,phase 1 PET/MRI scan
+studies,tracer=florbetapir,840,murraysmith2024,Table 1,"sum of the disjoint phase 1 (471) and phase 2 (369) amyloid PET/MRI scans"
+studies,tracer=florbetaben,111,murraysmith2024,Table 1,"phase 3 amyloid PET/MRI scans completed as of June 2023; phase 3 is ongoing"
+studies,tracer=mk6240,109,murraysmith2024,Table 1,"phase 3 tau PET/MRI scans completed as of June 2023; phase 3 is ongoing"
+age_median,,70.7,murraysmith2024,Table 1,at the phase 1 clinic visit
+age_min,,69.2,murraysmith2024,Table 1,at the phase 1 clinic visit
+age_max,,71.8,murraysmith2024,Table 1,at the phase 1 clinic visit
