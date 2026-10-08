@@ -3,3 +3,6 @@ subjects,,2366,review2023,Section 1 (Introduction),"sum of the three baseline gr
 subjects,condition=healthy,868,review2023,Section 1 (Introduction),cognitively unimpaired participants enrolled and followed since 2004 (as reported in 2023)
 subjects,condition=mci,1090,review2023,Section 1 (Introduction),enrolled and followed since 2004 (as reported in 2023)
 subjects,condition=alzheimers,408,review2023,Section 1 (Introduction),dementia diagnosed as AD; enrolled and followed since 2004 (as reported in 2023)
+scans,contrast=T2starw,6752,jack2024,Table 2,"T2* GRE series received: 4302 in ADNI GO/2 and 2450 in ADNI3 (none in ADNI1); 6623 passed QC"
+subjects,condition=cerebral_microbleeds,641,jack2024,Table 3,"one or more microbleeds on the Mayo Clinic GRE reads; ADNI GO/2 and ADNI3 only, as GRE was not acquired in ADNI1. The 56% in the table is of 1149 findings, not of participants"
+subjects,condition=superficial_siderosis,57,jack2024,Table 3,"Mayo Clinic GRE reads; ADNI GO/2 and ADNI3 only. The 5% in the table is of 1149 findings, not of participants"

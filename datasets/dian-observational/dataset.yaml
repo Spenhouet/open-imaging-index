@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dian-observational
+name: DIAN Observational Study
+full_name: Dominantly Inherited Alzheimer Network Observational Study (DIAN Obs)
+summary: >-
+  International longitudinal study of adult children of parents with an APP, PSEN1 or PSEN2 mutation, comparing
+  mutation carriers with non-carrier siblings using 3T MRI (incl. T2*-GRE or SWI with microbleed reads), PiB, FDG and
+  tau PET, fluids and cognition.
+homepage: https://dian.wustl.edu/observational-study/
+# Joseph-Mathurin et al. 2021 use data collected from January 2009 on (14th data freeze). The date of the first data
+# release to outside investigators was not found in a public source.
+year: 2009
+status: active
+creators:
+  - name: Dominantly Inherited Alzheimer Network (DIAN), Washington University School of Medicine in St. Louis
+    url: https://dian.wustl.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, swi, dwi, bold, asl]
+tracers: [pib, fdg]
+anatomy: [brain]
+conditions: [alzheimers, healthy, cerebral_microbleeds, superficial_siderosis, intracerebral_hemorrhage]
+tasks: [classification, regression, longitudinal]
+# Countries of the currently listed DIAN Obs sites.
+countries: [US, PR, AR, AU, BR, CO, DE, GB, JP, KR, MX, NL]
+field_strengths: [3]
+access:
+  type: application
+  url: https://dian.wustl.edu/dian-observational-data-request-form/
+licenses:
+  - license: LicenseRef-DIAN-Obs-Data-Terms
+    note: Raw imaging data must be justified in the request, and novel processing may be limited or charged.
+citation:
+  text: >-
+    Include "Dominantly Inherited Alzheimer Network (DIAN)" as an author and the acknowledgement text from the DIAN Obs
+    publication policy. Microbleed reads: Joseph-Mathurin N, et al. Longitudinal Accumulation of Cerebral
+    Microhemorrhages in Dominantly Inherited Alzheimer Disease. Neurology 96(12):e1632-e1645 (2021).
+    doi:10.1212/WNL.0000000000011542
+sources:
+  dian-obs-available:
+    title: DIAN website, DIAN Obs data and biospecimens available for request (enrolment table as of 30 June 2023)
+    url: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-and-biospecimens-available-for-request/
+    kind: website
+  josephmathurin2021:
+    title: Joseph-Mathurin et al. 2021, Longitudinal accumulation of cerebral microhemorrhages in DIAD, Neurology
+    url: https://doi.org/10.1212/WNL.0000000000011542
+    kind: paper
+related: []
+keywords: [autosomal dominant Alzheimer's disease, DIAD, ADAD, cerebral microbleeds, superficial siderosis, amyloid PET, longitudinal]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

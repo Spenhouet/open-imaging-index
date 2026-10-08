@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dian-tu-001
+name: DIAN-TU-001 (gantenerumab and solanezumab arms)
+full_name: >-
+  Dominantly Inherited Alzheimer Network Trials Unit trial DIAN-TU-001, gantenerumab and solanezumab drug arms
+summary: >-
+  Phase II/III placebo-controlled trial of gantenerumab or solanezumab in 142 carriers of dominantly inherited
+  Alzheimer disease mutations, with frequent 3T safety MRI (FLAIR, 2D T2*-GRE) centrally read for ARIA-E and ARIA-H,
+  PiB PET, CSF and cognition.
+homepage: https://dian.wustl.edu/for-investigators/diantu-investigator-resources/
+# Start of the trial (December 2012 per ClinicalTrials.gov NCT01760005). The date data were first released to outside
+# investigators was not found in a public source.
+year: 2012
+creators:
+  - name: Dominantly Inherited Alzheimer Network Trials Unit (DIAN-TU), Washington University School of Medicine in St. Louis
+    url: https://dian.wustl.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, T2starw]
+tracers: [pib]
+anatomy: [brain]
+conditions: [alzheimers, aria]
+tasks: [classification, regression, longitudinal]
+field_strengths: [3]
+access:
+  type: application
+  url: https://dian.wustl.edu/for-investigators/diantu-investigator-resources/dian-tu-biospecimen-request-form/
+licenses:
+  - license: LicenseRef-DIAN-TU-Sharing-Policy
+    note: >-
+      Raw imaging data need a justification in the request. Industry Collaborators (the study drug owners) may review
+      requests and manuscripts.
+citation:
+  text: >-
+    Follow the DIAN-TU Authorship and Citation Policy. ARIA reads: Joseph-Mathurin N, et al. Amyloid-Related Imaging
+    Abnormalities in the DIAN-TU-001 Trial of Gantenerumab and Solanezumab: Lessons from a Trial in Dominantly
+    Inherited Alzheimer Disease. Annals of Neurology 92(5):729-744 (2022). doi:10.1002/ana.26511
+sources:
+  josephmathurin2022:
+    title: Joseph-Mathurin et al. 2022, ARIA in the DIAN-TU-001 trial of gantenerumab and solanezumab, Annals of Neurology
+    url: https://doi.org/10.1002/ana.26511
+    kind: paper
+related: []
+keywords: [autosomal dominant Alzheimer's disease, DIAD, ARIA, ARIA-E, ARIA-H, anti-amyloid antibody, clinical trial, microbleeds]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

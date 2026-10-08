@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-DIAN-Obs-Data-Terms
+name: DIAN Observational Study Data Request Terms and Obligations
+short_name: DIAN Obs data terms
+url: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-request-terms-and-instructions/
+version: 'DIAN Obs Data Request Terms & Instructions web page, with the request form and publication policy, read 2026-10-08'
+summary: >-
+  Research use within a project approved by the DIAN Obs PI and core leaders, after IRB documentation, a signed Code
+  Access Agreement and a Data Use Agreement. No sharing with third parties without Steering Committee permission, all
+  generated data go back to DIAN, publications name DIAN as an author and manuscripts go to DIAN 4 weeks before
+  journal submission.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: 'CAA: a simple statement that the recipient of the data signs, verifying they will use the data only for
+      research purposes and will not attempt to identify any individual participant.'
+    source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-and-biospecimens-available-for-request/
+    note: The terms neither allow nor forbid commercial use. They limit use to research within the approved request,
+      and the request form lists industry as a possible funding source.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: conditional
+    quote: All generated data must be returned to the DIAN Obs Biostatistics Core for required processing, including
+      unblinding when applicable.
+    source: https://dian.wustl.edu/dian-observational-data-request-form/
+    note: Generating new data is expected, but everything generated goes back to DIAN and into the DIAN Obs repository.
+  publication:
+    value: conditional
+    quote: Acceptance of DIAN Obs data obligates the recipient to cite/reference the NIA grant (Dominantly Inherited
+      Alzheimer Network, U19AG032438) and the Alzheimer’s Association (SG-20-690363-DIAN) in any presentation or
+      publication that may result from this research.
+    note: With the required funding acknowledgement, DIAN as a consortium author, and after DIAN review of the
+      manuscript.
+  redistribute_original:
+    value: 'no'
+    quote: No sharing of data with a third party is allowed without permission of the DIAN Obs Steering Committee.
+    note: Only with permission of the DIAN Obs Steering Committee. Approval covers only the requesting laboratory.
+  redistribute_derivatives:
+    value: unspecified
+    quote: No sharing of data with a third party is allowed without permission of the DIAN Obs Steering Committee.
+    note: The terms do not say whether derived data such as labels count as DIAN Obs data. Generated data must be
+      returned to DIAN and deposited in the DIAN Obs repository.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: All publications based on DIAN Obs data or tissue must include “Dominantly Inherited Alzheimer Network
+      (DIAN)” as an author.
+    source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/publication-policy/
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Investigators requesting data also will be required to sign a data user agreement (DUA) and an
+      acknowledgment agreement, as specified below.
+    note: A signed Code Access Agreement and a Data Use Agreement between the institutions are both required.
+  ethics_approval:
+    value: 'yes'
+    quote: Recipient of data/biospecimens will provide documentation of IRB approval valid for the analysis of DIAN Obs
+      data/biospecimens (or acknowledgment from your IRB that receiving coded data/biospecimens without access to
+      identifiers is not considered “research” requiring review).
+    note: An IRB approval, or an IRB statement that the analysis of coded data is not human subjects research.
+  publication_review:
+    value: 'yes'
+    quote: at least 4 weeks prior to submission to a journal in order to allow time for review and response to
+      recommendations.
+    source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/publication-policy/
+    note: Manuscripts go to the DIAN Obs Administration Core at least 4 weeks before journal submission.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: All generated data must be returned to the DIAN Obs Biostatistics Core for required processing, including
+      unblinding when applicable.
+    source: https://dian.wustl.edu/dian-observational-data-request-form/
+    note: The form also requires that generated data be deposited in the DIAN Obs repository. Publications and
+      resulting grants must be reported to DIAN.
+  delete_after_use:
+    value: conditional
+    quote: Guarantee that individual mutation status data will be destroyed when analyses are complete.
+    source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-and-biospecimens-available-for-request/
+    note: Only individual mutation status data must be destroyed. Nothing is said about the other data.
+  no_reidentification:
+    value: 'yes'
+    quote: 'CAA: a simple statement that the recipient of the data signs, verifying they will use the data only for
+      research purposes and will not attempt to identify any individual participant.'
+    source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-and-biospecimens-available-for-request/
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

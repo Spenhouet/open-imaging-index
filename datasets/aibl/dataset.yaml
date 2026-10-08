@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aibl
+name: AIBL
+full_name: Australian Imaging, Biomarkers and Lifestyle Flagship Study of Ageing
+summary: >-
+  Longitudinal Australian cohort of older adults who are cognitively normal or have MCI or Alzheimer's dementia. The
+  subset with MRI and amyloid PET (PiB, florbetapir, flutemetamol) is shared through the LONI IDA, with demographic,
+  cognitive and blood data.
+homepage: https://aibl.org.au/
+# Year the study launched (14 November 2006, per the AIBL website). The date of the first data release on LONI was not
+# verified separately.
+year: 2006
+status: active
+creators:
+  - name: AIBL study group (CSIRO, University of Melbourne, Neurosciences Australia, Mental Health Research Institute of Victoria, Edith Cowan University)
+    url: https://aibl.org.au/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, PDw, T2w, FLAIR]
+tracers: [pib, florbetapir, flutemetamol]
+anatomy: [brain]
+conditions: [healthy, mci, alzheimers]
+tasks: [classification, regression, longitudinal]
+formats: [DICOM]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=AIBL
+licenses:
+  - license: LicenseRef-AIBL-DUA
+citation:
+  text: >-
+    Add "and the Australian Imaging Biomarkers and Lifestyle flagship study of ageing*" to the author line and use the
+    acknowledgement and methods text given in the AIBL Data Use Agreement. Cohort reference: Ellis KA, et al. The
+    Australian Imaging, Biomarkers and Lifestyle (AIBL) study of aging: methodology and baseline characteristics of 1112
+    individuals recruited for a longitudinal study of Alzheimer's disease. Int Psychogeriatr 21:672-687 (2009).
+    doi:10.1017/S1041610209009405
+sources:
+  fowler2021:
+    title: Fowler C et al. 2021, Fifteen years of the AIBL study, Journal of Alzheimer's Disease Reports
+    url: https://doi.org/10.3233/ADR-210005
+    kind: paper
+  aibl-loni-imaging:
+    title: AIBL data pages for LONI users, imaging data
+    url: https://data.aibl.org.au/adni/imaging.html
+    kind: website
+  aibl-website:
+    title: AIBL study website, home page
+    url: https://aibl.org.au/
+    kind: website
+  ellis2009:
+    title: Ellis KA et al. 2009, AIBL methodology and baseline characteristics, International Psychogeriatrics
+    url: https://doi.org/10.1017/S1041610209009405
+    kind: paper
+  yates2014:
+    title: Yates PA et al. 2014, Incidence of cerebral microbleeds in preclinical Alzheimer disease, Neurology
+    url: https://doi.org/10.1212/WNL.0000000000000285
+    kind: paper
+related: [adni]
+keywords: [Alzheimer's disease, ageing, amyloid PET, longitudinal, brain MRI, Australia]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
