@@ -26,12 +26,14 @@ jobs:
         with:
           bun-version: latest
       - run: bun install --frozen-lockfile
+      # Base URL and path come from the Pages settings, so a custom domain is picked up automatically.
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: bun run build
         env:
           NODE_ENV: production
-          BASE_PATH: '/${{ github.event.repository.name }}'
-          VITE_SITE_URL: 'https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}'
-      - uses: actions/configure-pages@v5
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}
       - uses: actions/upload-pages-artifact@v4
         with:
           path: ./build

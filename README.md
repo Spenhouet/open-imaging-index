@@ -2,14 +2,14 @@
 
 An open, community-built index of medical imaging datasets. Search by modality, contrast, condition and cohort, and see what each license allows, broken down into the same questions for every dataset, with the sentence each answer comes from.
 
-**Site:** https://spenhouet.github.io/open-imaging-index/
+**Site:** https://spenhouet.com/open-imaging-index/
 
 ## What is in it
 
 - One folder per dataset in [`datasets/`](datasets): a description, metadata and aggregate cohort numbers (subjects per contrast, sex, age bins, conditions, scanners). Never data about individual subjects.
 - One file per license in [`licenses/`](licenses), answering 17 questions such as "commercial use?", "train ML models?", "share trained models?", "sign an agreement?", each with a quote.
 - Controlled vocabularies in [`vocab/`](vocab), mapped to DICOM, BIDS, UBERON, MONDO and GA4GH DUO.
-- The whole catalog as [`catalog.json`](https://spenhouet.github.io/open-imaging-index/catalog.json).
+- The whole catalog as [`catalog.json`](https://spenhouet.com/open-imaging-index/catalog.json).
 
 ## Contribute
 

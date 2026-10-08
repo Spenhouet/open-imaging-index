@@ -6,6 +6,6 @@ authors:
   - family-names: Penhouet
     given-names: Sebastian
 repository-code: https://github.com/Spenhouet/open-imaging-index
-url: https://spenhouet.github.io/open-imaging-index/
+url: https://spenhouet.com/open-imaging-index/
 license: CC0-1.0
 keywords: [medical imaging, datasets, data catalog, licenses, MRI, CT]
