@@ -1,0 +1,40 @@
+measure,by,value,source,where,note
+subjects,,34139,wald2024,Section 2.1,"Table 1 and Appendix B.3 give 34,191; the metadata file has 34,139 unique dataset and subject pairs. The same person can appear in more than one OpenNeuro dataset."
+scans,,113921,wald2024,Appendix B.3,"3D volumes, including 653 PET and 40,221 volumes derived from 13,407 diffusion scans; the metadata file has 113,921 rows"
+scans,modality=PT,653,wald2024,Section 2.1,footnote 1
+scans,modality=MR,113268,openmind-metadata,modality,all rows except PET
+scans,contrast=T1w,42732,wald2024,Table 9,
+scans,contrast=T2w,22999,wald2024,Table 9,"includes 13,407 T2-weighted volumes derived from diffusion scans (metadata column derived_from)"
+scans,contrast=FLAIR,5583,wald2024,Table 9,
+scans,contrast=MP2RAGE,2859,wald2024,Table 9,"UNIT1 (927) and UNIT1_denoised (724) are listed separately"
+scans,contrast=ADC,1757,wald2024,Table 9,
+scans,contrast=swi,784,wald2024,Table 9,"minimum intensity projections (minIP, 687) are listed separately"
+scans,contrast=T1map,557,wald2024,Table 9,
+scans,contrast=angio,488,wald2024,Table 9,
+scans,contrast=PDw,473,wald2024,Table 9,
+scans,contrast=T2starw,409,wald2024,Table 9,"T2* maps (T2starmap, 76) are listed separately"
+scans,contrast=T2map,106,wald2024,Table 9,
+scans,contrast=dwi,55,wald2024,Table 9,"remaining DWI volumes; the 13,407 diffusion scans were converted into FA, MD and T2w volumes"
+scans,vendor=siemens,64415,openmind-metadata,manufacturer,
+scans,vendor=philips,14580,openmind-metadata,manufacturer,
+scans,vendor=ge,8114,openmind-metadata,manufacturer,"26,811 rows have no manufacturer"
+scans,field_strength=1.5,5948,openmind-metadata,magnetic_field_strength,
+scans,field_strength=3,75107,openmind-metadata,magnetic_field_strength,"75,069 rows with 3.0 plus 38 with 2.89362 (the nominal value some 3 T Siemens scanners report)"
+scans,field_strength=7,1329,openmind-metadata,magnetic_field_strength,"335 rows with 7.0 plus 994 with 6.98"
+scans,field_strength=9.4,86,openmind-metadata,magnetic_field_strength,"30,104 rows have no field strength; 1,342 rows with 3.95064 and 5 with 15000.0 are left out"
+subjects,sex=female,12543,openmind-metadata,"unique_id, sex",subjects whose images list female
+subjects,sex=male,10300,openmind-metadata,"unique_id, sex","subjects whose images list male; 11,296 subjects have no sex"
+subjects,condition=healthy,5262,openmind-metadata,"unique_id, health_status","3,285 subjects are listed as ill, the rest have no health status"
+subjects,age=0-9,591,openmind-metadata,"unique_id, age","age as given in the harmonized metadata; 20,951 subjects have an age"
+subjects,age=10-19,3060,openmind-metadata,"unique_id, age",
+subjects,age=20-29,11061,openmind-metadata,"unique_id, age",
+subjects,age=30-39,2437,openmind-metadata,"unique_id, age",
+subjects,age=40-49,971,openmind-metadata,"unique_id, age",
+subjects,age=50-59,910,openmind-metadata,"unique_id, age",
+subjects,age=60-69,983,openmind-metadata,"unique_id, age",
+subjects,age=70-79,676,openmind-metadata,"unique_id, age",
+subjects,age=80-89,257,openmind-metadata,"unique_id, age",
+subjects,age=90+,5,openmind-metadata,"unique_id, age",
+age_median,,24,openmind-metadata,"unique_id, age","20,951 subjects with an age"
+age_min,,2,openmind-metadata,"unique_id, age",
+age_max,,100,openmind-metadata,"unique_id, age",

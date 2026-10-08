@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openmind
+name: OpenMind
+full_name: 'The OpenMind Dataset: 3D head-and-neck MRI pooled from 800 OpenNeuro datasets for self-supervised learning'
+summary: >-
+  113,921 3D head and brain volumes (all MRI except 653 PET) from 800 OpenNeuro datasets and about 34,000 subjects,
+  with diffusion-derived maps, defacing and anatomy masks and harmonized metadata, for self-supervised pre-training.
+  CC BY 4.0 on Hugging Face.
+homepage: https://huggingface.co/datasets/MIC-DKFZ/OpenMind
+# Hugging Face repository created March 2025; the arXiv preprint describing it appeared in December 2024.
+year: 2025
+status: active
+creators:
+  - name: Division of Medical Image Computing, German Cancer Research Center (DKFZ) (Wald T, Ulrich C, et al.)
+    url: https://huggingface.co/MIC-DKFZ
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, MP2RAGE, PDw, T2starw, swi, T1map, T2map, angio, dwi, ADC]
+anatomy: [brain, head]
+formats: [NIfTI, BIDS]
+vendors: [siemens, philips, ge]
+field_strengths: [1.5, 3, 7, 9.4]
+access:
+  type: open
+  url: https://huggingface.co/datasets/MIC-DKFZ/OpenMind
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Hugging Face dataset card declares cc-by-4.0, and the paper (Table 1) lists the dataset as CC-BY-4.0. The
+      images come from OpenNeuro datasets that each carry their own license.
+citation:
+  text: >-
+    Wald T, Ulrich C, Suprijadi J, Ziegler S, Nohel M, Peretzke R, Köhler G, Maier-Hein KH. An OpenMind for 3D medical
+    vision self-supervised learning. arXiv:2412.17041 (2024).
+  bibtex: |
+    @article{wald2024openmind,
+      title={An OpenMind for 3D medical vision self-supervised learning},
+      author={Wald, Tassilo and Ulrich, Constantin and Suprijadi, Jonathan and Ziegler, Sebastian and Nohel, Michal and Peretzke, Robin and K{\"o}hler, Gregor and Maier-Hein, Klaus H.},
+      journal={arXiv preprint arXiv:2412.17041},
+      year={2024}
+    }
+sources:
+  wald2024:
+    title: Wald et al. 2024, An OpenMind for 3D medical vision self-supervised learning, arXiv:2412.17041v2
+    url: https://arxiv.org/abs/2412.17041
+    kind: paper
+  hf-openmind-card:
+    title: Hugging Face dataset card MIC-DKFZ/OpenMind
+    url: https://huggingface.co/datasets/MIC-DKFZ/OpenMind
+    kind: website
+  openmind-metadata:
+    title: >-
+      openneuro_metadata.csv of MIC-DKFZ/OpenMind (CC BY 4.0, no login), one row per image; subjects are unique
+      dataset and subject pairs from unique_id
+    url: https://huggingface.co/datasets/MIC-DKFZ/OpenMind/blob/main/openneuro_metadata.csv
+    kind: computed
+related: []
+keywords: [self-supervised learning, pre-training, foundation model, OpenNeuro, brain MRI, defacing masks, diffusion]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
