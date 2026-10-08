@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-AIMS-TBI-DUA
+name: AIMS-TBI Data Use Agreement (University of Utah)
+short_name: AIMS-TBI DUA
+url: https://docs.google.com/forms/d/e/1FAIpQLSfFT4l0vGXVOFz6Tyz4t_whNXHSRGv1J6y2iJUcZ0HLVsYo2Q/viewform
+version: 'Agreement text in the "AIMS-TBI data access 2026" Google Form, read 2026-10-08 (the 2025 form has the same text)'
+summary: >-
+  Signed through the challenge data access form with the University of Utah. Use is limited to research under the
+  University of Utah IRB 138479 or other purposes agreed in writing; the data may not be passed on, publications must
+  credit the University of Utah, and the data must be returned or destroyed when the permitted use ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: 'User, and any Authorized Party on User''s behalf, may use the Data only for the following purposes and for no
+      other purpose: research activities pertaining to IRB 138479 and any other research purposes as mutually agreed
+      upon in writing.'
+    note: The agreement does not mention commercial use, but limits use to research under IRB 138479 or purposes
+      agreed in writing with the University of Utah.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. The data are released for a segmentation challenge, but the
+      permitted use is research under IRB 138479 or purposes agreed in writing.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: In the event of any publication or presentation of User’s work using the Data supplied by University of
+      Utah, User agrees to acknowledge University of Utah and/or give credit to University of Utah scientists, as
+      scientifically appropriate, based on any contribution they may have made to the work.
+    note: Allowed with acknowledgement of the University of Utah.
+  redistribute_original:
+    value: 'no'
+    quote: Not to use or further disclose the Data or any information contained therein other than as permitted by this
+      Agreement or required by applicable law.
+  redistribute_derivatives:
+    value: unspecified
+    quote: Not to use or further disclose the Data or any information contained therein other than as permitted by this
+      Agreement or required by applicable law.
+    note: The agreement does not say whether derived data such as new labels or trained models count as information
+      contained in the Data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: In the event of any publication or presentation of User’s work using the Data supplied by University of
+      Utah, User agrees to acknowledge University of Utah and/or give credit to University of Utah scientists, as
+      scientifically appropriate, based on any contribution they may have made to the work.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: WHEREFORE, the parties, through their authorized representatives, hereby accept and agree to the terms and
+      conditions of this Agreement.
+    note: Signed by typing your name in the challenge data access form.
+  ethics_approval:
+    value: 'no'
+    note: The agreement refers to the organisers' IRB 138479 but does not ask the user for an approval of their own.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'yes'
+    quote: Promptly following the end of the permitted use (as defined in Section 3 above), to return all copies of the
+      Data to University of Utah or destroy any copies of them and certify to the destruction; or, if User represents
+      and University of Utah agrees that neither return nor destruction is feasible, to continue to extend the
+      protections of this Agreement to the Data.
+  no_reidentification:
+    value: 'no'
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
