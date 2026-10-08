@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,73,chen2019,Subjects and Image Acquisition,glioma patients after radiotherapy with confirmed radiation-induced microbleeds
+scans,,91,chen2019,Subjects and Image Acquisition,12 patients had serial imaging
+subjects,condition=cerebral_microbleeds,73,chen2019,Subjects and Image Acquisition,
+subjects,condition=glioma,73,chen2019,Subjects and Image Acquisition,
+subjects,contrast=swi,73,chen2019,Subjects and Image Acquisition,"31 patients scanned with 4-echo 3D TOF-SWI and 49 with standard SWI; the paper does not explain the overlap"
+subjects,field_strength=7,73,chen2019,Subjects and Image Acquisition,
+subjects,vendor=ge,73,chen2019,Subjects and Image Acquisition,
+subjects,split=train,54,chen2019,Table 1,
+subjects,split=validation,7,chen2019,Table 1,
+subjects,split=test,12,chen2019,Table 1,
