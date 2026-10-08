@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,82,hssayeni2020,Table 4,one non-contrast head CT per subject; demographics and labels cover all 82
+scans,,75,physionet-ct-ich,"Abstract, Data Description",CT volumes and masks released in NIfTI; subjects 59 to 65 are missing
+subjects,contrast=ct_noncontrast,82,hssayeni2020,Section 3.1,
+subjects,contrast_set=ct_noncontrast,82,hssayeni2020,Section 3.1,
+subjects,condition=traumatic_brain_injury,82,hssayeni2020,Section 3.1,inclusion criterion
+subjects,condition=intracranial_hemorrhage,36,hssayeni2020,Table 4,"any of intraventricular, intraparenchymal, subarachnoid, epidural or subdural hemorrhage"
+subjects,condition=intracerebral_hemorrhage,16,hssayeni2020,Table 4,intraparenchymal hemorrhage (IPH)
+subjects,condition=fracture,22,hssayeni2020,Table 4,skull fracture
+subjects,sex=male,46,hssayeni2020,Table 4,
+subjects,sex=female,36,hssayeni2020,Table 4,
+subjects,age=0-17,27,hssayeni2020,Table 4,age < 18 years
+subjects,age=18+,55,hssayeni2020,Table 4,age >= 18 years
+subjects,country=IQ,82,hssayeni2020,Section 3.1,Al Hilla Teaching Hospital
+subjects,vendor=siemens,82,hssayeni2020,Section 3.1,Siemens SOMATOM Definition AS
+age_mean,,27.8,hssayeni2020,Table 4,
+age_sd,,19.5,hssayeni2020,Table 4,
+age_max,,72,hssayeni2020,Table 4,youngest subject 1 day old

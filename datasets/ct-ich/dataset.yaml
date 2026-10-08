@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ct-ich
+name: CT-ICH (PhysioNet)
+full_name: Computed Tomography Images for Intracranial Hemorrhage Detection and Segmentation
+summary: >-
+  Non-contrast head CT of 82 patients with traumatic brain injury from Al Hilla Teaching Hospital, Iraq, with
+  radiologist hemorrhage masks and per-slice labels for five hemorrhage types and skull fracture; 75 scans are on
+  PhysioNet.
+homepage: https://physionet.org/content/ct-ich/
+# DOI of version 1.3.1 on PhysioNet. The latest-version DOI is 10.13026/g1kq-sc84.
+doi: 10.13026/4nae-zg36
+year: 2019
+updated: 2020
+version: 1.3.1
+status: active
+creators:
+  - name: Florida Atlantic University and University of Technology, Baghdad (Hssayeni M.D., Ghoraani B. et al.)
+  - name: Babylon Health Directorate, Babil, Iraq
+species: human
+modalities: [CT]
+contrasts: [ct_noncontrast]
+anatomy: [brain]
+conditions: [traumatic_brain_injury, intracranial_hemorrhage]
+tasks: [segmentation, classification]
+formats: [NIfTI]
+countries: [IQ]
+vendors: [siemens]
+access:
+  type: signed_agreement
+  url: https://physionet.org/content/ct-ich/1.3.1/
+  note: PhysioNet account and the PhysioNet Restricted Health Data Use Agreement 1.5.0, signed online.
+licenses:
+  - license: LicenseRef-PhysioNet-RHDL-1.5.0
+    url: https://physionet.org/content/ct-ich/view-license/1.3.1/
+    note: >-
+      PhysioNet lists the PhysioNet Restricted Health Data License 1.5.0 and the matching data use agreement. The
+      data descriptor in Data (2020) instead names the Creative Commons Attribution 4.0 license for version 1.3.0;
+      the PhysioNet project page, which grants access, is taken as authoritative.
+citation:
+  text: >-
+    Hssayeni MD, Croock MS, Salman AD, Al-khafaji HF, Yahya ZA, Ghoraani B. Intracranial Hemorrhage Segmentation
+    Using A Deep Convolutional Model. Data 5(1), 14 (2020). doi:10.3390/data5010014. Hssayeni M. Computed Tomography
+    Images for Intracranial Hemorrhage Detection and Segmentation (version 1.3.1). PhysioNet (2020).
+    doi:10.13026/4nae-zg36
+sources:
+  hssayeni2020:
+    title: Hssayeni et al. 2020, Intracranial Hemorrhage Segmentation Using A Deep Convolutional Model (Data 5, 14)
+    url: https://doi.org/10.3390/data5010014
+    kind: paper
+  physionet-ct-ich:
+    title: PhysioNet project page, version 1.3.1
+    url: https://physionet.org/content/ct-ich/1.3.1/
+    kind: website
+related: []
+keywords: [intracranial hemorrhage, head CT, traumatic brain injury, skull fracture, hemorrhage segmentation]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
