@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qsm-challenge-2
+name: QSM Reconstruction Challenge 2.0 (simulated)
+full_name: QSM Reconstruction Challenge 2.0, data provided to participants (in silico head phantom)
+summary: >-
+  Simulated data, not patient scans: four multi-echo gradient-echo magnitude and phase datasets at 1 mm from a
+  realistic in silico head phantom built from one volunteer's 7T MRI, with ground-truth susceptibility maps and tissue
+  segmentations for benchmarking QSM.
+homepage: https://zenodo.org/records/4559541
+doi: 10.5281/zenodo.4559541
+year: 2021
+version: v1 (Zenodo, 24 February 2021)
+status: active
+creators:
+  - name: QSM Challenge 2.0 committee (Bilgic, Langkammer, Marques, Meineke, Milovic, Schweser)
+    url: https://zenodo.org/records/4559541
+species: human
+modalities: [MR]
+contrasts: [T2starw, Chimap]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [reconstruction]
+formats: [NIfTI]
+countries: [NL]
+field_strengths: [7]
+size_gb: 1.58
+access:
+  type: open
+  url: https://zenodo.org/records/4559541
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Marques JP, Meineke J, Milovic C, Bilgic B, Chan KS, Hedouin R, van der Zwaag W, Langkammer C, Schweser F. QSM
+    reconstruction challenge 2.0: A realistic in silico head phantom for MRI data simulation and evaluation of
+    susceptibility mapping procedures. Magnetic Resonance in Medicine 86(1):526-542 (2021). doi:10.1002/mrm.28716
+sources:
+  marques2021:
+    title: Marques et al. 2021, QSM reconstruction challenge 2.0 in silico head phantom, Magnetic Resonance in Medicine (PMC8048665)
+    url: https://doi.org/10.1002/mrm.28716
+    kind: paper
+  zenodo-4559541:
+    title: Zenodo record 4559541, QSM Reconstruction Challenge 2.0 data and code provided to participants (file list and sizes)
+    url: https://zenodo.org/records/4559541
+    kind: website
+  zenodo-4559541-files:
+    title: Stage1.zip and Stage2.zip from Zenodo record 4559541 (CC BY 4.0, open download), file listings, checksums and NIfTI headers
+    url: https://zenodo.org/records/4559541/files/Stage2.zip
+    kind: computed
+related: []
+keywords: [quantitative susceptibility mapping, QSM, digital phantom, simulation, phase imaging, challenge, benchmark]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
