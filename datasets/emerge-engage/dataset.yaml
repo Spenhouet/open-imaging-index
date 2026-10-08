@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: emerge-engage
+name: EMERGE and ENGAGE (aducanumab phase 3 trial imaging)
+full_name: >-
+  EMERGE (221AD302, NCT02484547) and ENGAGE (221AD301, NCT02477800), two identically designed phase 3 trials of
+  aducanumab in early Alzheimer disease, trial MRI and PET
+summary: >-
+  Serial safety MRI at 1.5 T or 3 T (FLAIR for ARIA-E, T2*-GRE for ARIA-H) of 3285 people with early Alzheimer disease
+  in Biogen's two aducanumab phase 3 trials, with amyloid PET in a substudy. The images are not shared; Biogen does
+  not generally share imaging data.
+homepage: https://doi.org/10.14283/jpad.2022.30
+doi: 10.14283/jpad.2022.30
+# Year of the primary results publication; the images have no public release.
+year: 2022
+creators:
+  - name: Biogen (trial sponsor)
+    url: https://www.biogen.com
+species: human
+modalities: [MR, PT]
+contrasts: [FLAIR, T2starw]
+tracers: [florbetapir]
+anatomy: [brain]
+conditions: [alzheimers, mci, aria, cerebral_microbleeds, superficial_siderosis]
+tasks: [longitudinal]
+# Union of the site countries in the two ClinicalTrials.gov location lists (20, matching the paper).
+countries: [US, AT, AU, BE, CA, CH, DE, DK, ES, FI, FR, GB, IT, JP, KR, NL, PL, PT, SE, TW]
+field_strengths: [1.5, 3]
+access:
+  type: not_shared
+  url: https://vivli.org/ourmember/biogen/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Biogen's Vivli member page states that "Biogen does not generally share imaging data (e.g. DICOM files of images
+      from x-rays, ultrasounds, MRI scans, etc.)". For tabular data it lists "Biogen-sponsored interventional clinical
+      trials conducted in patients (phase I-IV) for products and indications submitted and approved in both the United
+      States and the European Union", shared after approval of a research proposal and "a Data Use Agreement signed by
+      the lead researcher and institution", and access is declined if "The research proposal's aim is considered
+      commercial or litigious". No terms for the images are published.
+citation:
+  text: >-
+    Budd Haeberlein S, Aisen PS, Barkhof F, et al. Two Randomized Phase 3 Studies of Aducanumab in Early Alzheimer's
+    Disease. J Prev Alzheimers Dis 9(2):197-210 (2022). doi:10.14283/jpad.2022.30
+sources:
+  buddhaeberlein2022:
+    title: Budd Haeberlein et al. 2022, J Prev Alzheimers Dis, EMERGE and ENGAGE primary results
+    url: https://doi.org/10.14283/jpad.2022.30
+    kind: paper
+  salloway2022:
+    title: >-
+      Salloway et al. 2022, JAMA Neurology, ARIA in EMERGE and ENGAGE (PMC8609465), with the trial protocols in
+      Supplement 1
+    url: https://doi.org/10.1001/jamaneurol.2021.4161
+    kind: paper
+  ctgov-nct02484547:
+    title: ClinicalTrials.gov record NCT02484547 (EMERGE)
+    url: https://clinicaltrials.gov/study/NCT02484547
+    kind: website
+  ctgov-nct02477800:
+    title: ClinicalTrials.gov record NCT02477800 (ENGAGE)
+    url: https://clinicaltrials.gov/study/NCT02477800
+    kind: website
+  vivli-biogen:
+    title: Vivli member page, Biogen (data sharing policy)
+    url: https://vivli.org/ourmember/biogen/
+    kind: website
+related: []
+keywords: [aducanumab, anti-amyloid therapy, ARIA, ARIA-E, ARIA-H, clinical trial, Alzheimer's disease]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

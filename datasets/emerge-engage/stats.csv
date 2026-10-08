@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,3285,salloway2022,Results,"safety population: participants with at least one dose in the placebo-controlled period of both trials; the primary paper gives 1638 in EMERGE and 1647 in ENGAGE"
+subjects,sex=female,1706,salloway2022,Results,
+subjects,condition=alzheimers,3285,buddhaeberlein2022,Abstract (Participants),"all participants had confirmed amyloid pathology and MCI due to Alzheimer disease or mild Alzheimer dementia"
+subjects,condition=mci,2661,salloway2022,Results,MCI due to Alzheimer disease
+subjects,modality=MR,3253,salloway2022,Methods (Statistical Analysis),"MRI safety population: participants with at least one post-baseline MRI"
+age_mean,,70.4,salloway2022,Results,
+age_sd,,7.45,salloway2022,Results,
