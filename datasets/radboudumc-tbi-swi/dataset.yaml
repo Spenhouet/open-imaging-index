@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: radboudumc-tbi-swi
+name: Radboudumc TBI SWI Microbleed Set
+full_name: Radboudumc moderate-to-severe traumatic brain injury SWI cerebral microbleed dataset
+summary: >-
+  Single-centre 3 T SWI and T1 MRI from Radboudumc, Nijmegen: 81 studies of 45 patients with moderate to severe
+  traumatic brain injury and 18 healthy controls, with microbleed segmentations and six-observer point annotations.
+  Not publicly released.
+homepage: https://doi.org/10.1016/j.nicl.2022.103027
+doi: 10.1016/j.nicl.2022.103027
+# Year of the paper; the data have not been released.
+year: 2022
+creators:
+  - name: Department of Radiology and Nuclear Medicine, Radboud University Medical Center, Nijmegen
+    url: https://www.radboudumc.nl
+modalities: [MR]
+contrasts: [swi, T1w]
+anatomy: [brain]
+conditions: [traumatic_brain_injury, cerebral_microbleeds, healthy]
+tasks: [segmentation, detection]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1016/j.nicl.2022.103027
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper has no data availability statement. A footnote says the MRI data without the test set "will be made
+      available on Zenodo (10.5281/zenodo.6535523)" for a challenge at traumatic-cmb.grand-challenge.org. On 2026-10-08
+      that DOI was not registered and the challenge site was not publicly reachable. The CC BY-NC-ND 4.0 license of the
+      article covers the text only.
+citation:
+  text: >-
+    Koschmieder K, Paul MM, van den Heuvel TLA, van der Eerden AW, van Ginneken B, Manniesing R. Automated detection of
+    cerebral microbleeds via segmentation in susceptibility-weighted images of patients with traumatic brain injury.
+    NeuroImage: Clinical 35, 103027 (2022). doi:10.1016/j.nicl.2022.103027
+sources:
+  koschmieder2022:
+    title: Koschmieder et al. 2022, NeuroImage Clinical (PMC9127224)
+    url: https://doi.org/10.1016/j.nicl.2022.103027
+    kind: paper
+related: []
+keywords: [traumatic brain injury, traumatic axonal injury, cerebral microbleeds, SWI, microbleed detection]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

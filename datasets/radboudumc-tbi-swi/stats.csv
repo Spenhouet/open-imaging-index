@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,63,koschmieder2022,Section 2.1.1,"45 TBI patients plus 18 healthy controls as stated in the text; Table 1 lists 24 + 12 + 10 = 46 TBI subjects across the splits"
+subjects,condition=traumatic_brain_injury,45,koschmieder2022,Section 2.1.1,moderate (GCS 9-12) to severe (GCS 3-8) TBI; Table 1 lists 46
+subjects,condition=healthy,18,koschmieder2022,Section 2.1.1,healthy volunteers
+studies,,81,koschmieder2022,Section 2.1.1 and Table 1,20 patients were scanned at two timepoints
+studies,condition=traumatic_brain_injury,63,koschmieder2022,Table 1,41 training + 12 validation + 10 test studies
+studies,condition=healthy,18,koschmieder2022,Table 1,4 training + 4 validation + 10 test
+studies,contrast=swi,81,koschmieder2022,Section 2.1.1 and Table 2,every study has an SWI scan
+studies,contrast=T1w,81,koschmieder2022,Section 2.1.1 and Table 2,"every study has a T1 MP-RAGE scan, not used by the deep learning models"
+studies,contrast_set=swi+T1w,81,koschmieder2022,Section 2.1.1,
+studies,field_strength=3,81,koschmieder2022,Section 2.1.1,
+studies,vendor=siemens,81,koschmieder2022,Section 2.1.1,Siemens Magnetom Trio
+studies,country=NL,81,koschmieder2022,Section 2.1.1,
+studies,split=train,45,koschmieder2022,Abstract and Table 1,41 TBI + 4 control studies from 24 TBI patients
+studies,split=validation,16,koschmieder2022,Abstract and Table 1,12 TBI + 4 control studies
+studies,split=test,20,koschmieder2022,Abstract and Table 1,10 TBI + 10 control studies
+studies,split=train;condition=traumatic_brain_injury,41,koschmieder2022,Table 1,
+studies,split=validation;condition=traumatic_brain_injury,12,koschmieder2022,Table 1,
+studies,split=test;condition=traumatic_brain_injury,10,koschmieder2022,Table 1,
+studies,split=test;condition=healthy,10,koschmieder2022,Table 1,
