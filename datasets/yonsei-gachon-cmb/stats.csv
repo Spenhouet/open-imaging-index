@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,179,almasni2020,Table 1,72 high-resolution (0.50 x 0.50 mm in-plane) and 107 low-resolution (0.80 x 0.80 mm in-plane) subjects
+subjects,contrast=swi,179,almasni2020,Section 2.2.1,"SWI computed from magnitude and phase, which are also part of the data"
+subjects,field_strength=3,179,almasni2020,Section 2.2.1,3 T Siemens Verio and Skyra
+subjects,vendor=siemens,179,almasni2020,Section 2.2.1,
+subjects,country=KR,179,almasni2020,Section 2.2.1,acquired at Gachon University Gil Medical Center
