@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ucsf-radiation-cmb-7t
+name: UCSF Radiation-Induced Microbleed 7 T SWI Set
+full_name: UCSF 7 T SWI dataset of radiation-induced cerebral microbleeds in glioma patients
+summary: >-
+  91 7 T SWI scans of 73 glioma patients with radiation-induced cerebral microbleeds at UCSF, with 2,835 true
+  microbleeds labelled among detector candidates. Described in a 2019 paper; no data release or sharing route.
+homepage: https://doi.org/10.1007/s10278-018-0146-z
+doi: 10.1007/s10278-018-0146-z
+# Year of the paper. The data have not been released.
+year: 2019
+creators:
+  - name: Lupo Lab, Department of Radiology and Biomedical Imaging, University of California San Francisco
+    url: https://github.com/LupoLab-UCSF
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds, glioma]
+tasks: [detection]
+vendors: [ge]
+field_strengths: [7]
+access:
+  type: on_request
+  url: https://doi.org/10.1007/s10278-018-0146-z
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper has no data availability statement and no data sharing route is published. The corresponding author
+      is Janine Lupo, UCSF.
+citation:
+  text: >-
+    Chen Y, Villanueva-Meyer JE, Morrison MA, Lupo JM. Toward Automatic Detection of Radiation-Induced Cerebral
+    Microbleeds Using a 3D Deep Residual Network. J Digit Imaging 32(5), 766-772 (2019).
+    doi:10.1007/s10278-018-0146-z
+sources:
+  chen2019:
+    title: Chen et al. 2019, Journal of Digital Imaging (PMC6737152)
+    url: https://doi.org/10.1007/s10278-018-0146-z
+    kind: paper
+related: []
+keywords: [radiation-induced microbleeds, cerebral microbleeds, 7 T, SWI, glioma, radiotherapy]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
