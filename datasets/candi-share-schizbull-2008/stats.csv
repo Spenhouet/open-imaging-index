@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,103,frazier2008,Abstract (Methods),"Sum of the four disjoint diagnostic groups (35, 19, 20 and 29)"
+subjects,condition=bipolar_disorder,54,frazier2008,Abstract (Methods),"Sum of 35 without psychosis and 19 with psychosis"
+subjects,condition=schizophrenia,20,frazier2008,Abstract (Methods),Schizophrenia spectrum (schizophrenia or schizoaffective disorder)
+subjects,condition=healthy,29,frazier2008,Abstract (Methods),
+subjects,sex=male,57,nitrc-ir-subjects,gender,
+subjects,sex=female,46,nitrc-ir-subjects,gender,
+subjects,age=0-9,39,nitrc-ir-subjects,age,
+subjects,age=10-19,64,nitrc-ir-subjects,age,
+subjects,contrast=T1w,103,nitrc-ir-experiments,scans per session,One anat scan per session
+subjects,field_strength=1.5,103,frazier2008,Abstract (Methods),
+studies,,103,nitrc-ir-experiments,rows,One MR session per subject
+scans,,103,nitrc-ir-experiments,scans per session,
+age_mean,,10.8,nitrc-ir-subjects,age,Ages listed in whole years
+age_sd,,3.1,nitrc-ir-subjects,age,
+age_median,,11,nitrc-ir-subjects,age,
+age_min,,4,nitrc-ir-subjects,age,
+age_max,,16,nitrc-ir-subjects,age,
+age_mean,condition=schizophrenia,13.5,frazier2008,Methods (Subjects),
+age_sd,condition=schizophrenia,2.9,frazier2008,Methods (Subjects),
+age_mean,condition=healthy,10.5,frazier2008,Methods (Subjects),
+age_sd,condition=healthy,2.9,frazier2008,Methods (Subjects),

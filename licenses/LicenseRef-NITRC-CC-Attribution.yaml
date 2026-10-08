@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NITRC-CC-Attribution
+name: NITRC project license "Creative Commons License > Attribution" (version not stated)
+short_name: CC Attribution (NITRC)
+url: https://www.nitrc.org/projects/cs_schizbull08/
+version: NITRC project page text, read 2026-10-08
+summary: >-
+  NITRC project pages can mark a project with the Creative Commons "Attribution" license without naming a version.
+  The page quotes the Creative Commons description: distribution, remixing and building upon the work are allowed,
+  also commercially, as long as the creators are credited. Questions the description does not address stay open.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as
+      they credit you for the original creation.
+  model_training:
+    value: unspecified
+    note: The description does not mention machine learning.
+  derivatives:
+    value: 'yes'
+    quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as
+      they credit you for the original creation.
+  publication:
+    value: unspecified
+    note: The description does not mention publishing results.
+  redistribute_original:
+    value: 'yes'
+    quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as
+      they credit you for the original creation.
+  redistribute_derivatives:
+    value: unspecified
+    note: The description allows remixing and building upon the work but does not say whether adaptations may be
+      distributed.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as
+      they credit you for the original creation.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
