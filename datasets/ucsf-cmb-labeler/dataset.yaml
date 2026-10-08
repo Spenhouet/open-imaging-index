@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ucsf-cmb-labeler
+name: UCSF CMB_labeler SWI test set
+full_name: Test set of the UCSF CMB_labeler cerebral microbleed detection tool (Lupo Lab, UCSF)
+summary: >-
+  10 unlabelled SWI brain volumes with radiotherapy-induced cerebral microbleeds, 5 from a 3 T and 5 from a 7 T GE
+  scanner, shipped with the UCSF CMB_labeler tool for trying out semi-automated microbleed detection.
+homepage: https://github.com/LupoLab-UCSF/CMB_labeler
+doi: 10.1016/j.nicl.2018.08.002
+# The test set zips were added to the repository on 2018-08-14.
+year: 2018
+status: active
+creators:
+  - name: Lupo Lab, Department of Radiology and Biomedical Imaging, University of California San Francisco
+    url: https://github.com/LupoLab-UCSF
+species: human
+modalities: [MR]
+contrasts: [swi]
+anatomy: [brain]
+conditions: [cerebral_microbleeds]
+formats: [NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3, 7]
+size_gb: 0.07
+access:
+  type: open
+  url: https://github.com/LupoLab-UCSF/CMB_labeler
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The repository's MIT license covers "this software and associated documentation files" and does not mention the
+      test set images, and the README states no terms for them. Use of the images has to be agreed with the authors.
+citation:
+  text: >-
+    Morrison MA, Payabvash S, Chen Y, Avadiappan S, Shah M, Zou X, Hess CP, Lupo JM. A user-guided tool for
+    semi-automated cerebral microbleed detection and volume segmentation: Evaluating vascular injury and data labelling
+    for machine learning. NeuroImage: Clinical 20, 498-505 (2018). doi:10.1016/j.nicl.2018.08.002
+sources:
+  cmb-labeler-repo:
+    title: LupoLab-UCSF/CMB_labeler repository README (test set section)
+    url: https://github.com/LupoLab-UCSF/CMB_labeler
+    kind: website
+  morrison2018:
+    title: Morrison et al. 2018, NeuroImage Clinical (PMC6104340)
+    url: https://doi.org/10.1016/j.nicl.2018.08.002
+    kind: paper
+related: []
+keywords: [cerebral microbleeds, SWI, 7 T MRI, radiation therapy, microbleed detection]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
