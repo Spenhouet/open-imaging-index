@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,973,adhd200consortium2012,Introduction,"sum of the 776 training datasets released on March 1, 2011 and the 197 unlabelled test datasets released on July 1, 2011 (disjoint: the test set held previously unreleased datasets)"
+subjects,split=train,776,adhd200consortium2012,Introduction,released March 1 2011 from eight sites
+subjects,split=test,197,adhd200consortium2012,Introduction,"released July 1 2011 from six sites, two of them not in the training set"
+subjects,condition=adhd,285,adhd200consortium2012,Introduction,training release only
+subjects,condition=healthy,491,adhd200consortium2012,Introduction,typically developing; training release only
+subjects,split=train;condition=adhd,285,adhd200consortium2012,Introduction,
+subjects,split=train;condition=healthy,491,adhd200consortium2012,Introduction,typically developing
+subjects,split=train;contrast=T1w,776,indi-adhd200,Summary,resting-state fMRI and anatomical datasets
+subjects,split=train;contrast=bold,776,indi-adhd200,Summary,
+subjects,split=train;contrast_set=bold+T1w,776,indi-adhd200,Summary,each training dataset pairs resting-state fMRI with an anatomical scan
+age_min,,7,adhd200consortium2012,Introduction,training release; Table 1 gives site ranges from 7 to 21.8
+age_max,,21,adhd200consortium2012,Introduction,training release; Table 1 gives site ranges from 7 to 21.8

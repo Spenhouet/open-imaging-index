@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ADHD-200-Usage-Agreement
+name: ADHD-200 Sample usage agreement (FCP/INDI)
+short_name: ADHD-200 Usage Agreement
+url: https://fcon_1000.projects.nitrc.org/indi/adhd200/
+version: Usage Agreement section of the ADHD-200 page and the linked NITRC "Attribution Non-Commercial" entry, read 2026-10-08
+summary: >-
+  Data use is unrestricted for non-commercial research. Users are asked to name the datasets they analysed and to
+  acknowledge their funding, and must register with NITRC and the 1000 Functional Connectomes Project to download.
+  The page links the NITRC "Attribution Non-Commercial" license entry, which describes Creative Commons BY-NC terms
+  without naming a version.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Consistent with the policies of the 1000 Functional Connectome Project, data usage is unrestricted for
+      non-commercial research purposes.
+  model_training:
+    value: unspecified
+    note: The text does not mention machine learning.
+  derivatives:
+    value: conditional
+    quote: >-
+      This license lets others remix, tweak, and build upon your work non-commercially, and although their new works
+      must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same
+      terms.
+    source: https://www.nitrc.org/include/glossary.php#546
+    note: Non-commercial only, with credit.
+  publication:
+    value: unspecified
+    note: The text does not address publishing results, though it asks that datasets used in analyses be named.
+  redistribute_original:
+    value: unspecified
+    note: Neither the usage agreement nor the linked license description says whether the original data may be passed on.
+  redistribute_derivatives:
+    value: conditional
+    quote: >-
+      This license lets others remix, tweak, and build upon your work non-commercially, and although their new works
+      must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same
+      terms.
+    source: https://www.nitrc.org/include/glossary.php#546
+    note: New works must credit the source and stay non-commercial.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      We kindly request that the specific datasets included in analyses be specified appropriately, and that their
+      funding sources be acknowledged.
+  share_alike:
+    value: 'no'
+    quote: they don’t have to license their derivative works on the same terms.
+    source: https://www.nitrc.org/include/glossary.php#546
+  signed_agreement:
+    value: 'no'
+    note: >-
+      Access requires a free NITRC account and an access request to INDI ("As per INDI protocol, we simply require that
+      user register with the NITRC and 1000 Functional Connectomes Project to gain access."), but no agreement text is
+      presented for signature.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
