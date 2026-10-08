@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brain-before-stroke
+name: Brain Before Stroke (BBS)
+full_name: Brain Before Stroke (BBS) prospective cohort of first-ever ischemic stroke, Bordeaux University Hospital
+summary: >-
+  Prospective cohort of 428 adults with a first-ever supratentorial ischemic stroke at Bordeaux University Hospital,
+  imaged on 3 T GE MRI 24 to 72 hours after onset (DWI, FLAIR, T1, SWAN, T2*-GRE) with 1-year outcomes. Shared on
+  request to the PI.
+homepage: https://pubmed.ncbi.nlm.nih.gov/33184231/
+# The cohort has no public release; year of the cohort paper that SHIVA-CMB cites for BBS.
+year: 2021
+creators:
+  - name: Neuroimagerie Diagnostique et Thérapeutique and Unité Neurovasculaire, CHU de Bordeaux (PI Thomas Tourdias)
+    url: https://www.chu-bordeaux.fr/
+modalities: [MR]
+contrasts: [dwi, FLAIR, T1w, swi, T2starw]
+anatomy: [brain]
+conditions: [ischemic_stroke, cerebral_microbleeds]
+tasks: [segmentation, detection, regression]
+countries: [FR]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1038/s41598-024-81870-5
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The SHIVA-CMB data availability statement says BBS is not public because of French rules on sharing medical
+      images, and that de-identified data may be available on request to the PI, Thomas Tourdias. No terms are
+      published. A 1-year-outcome subset with DWI, FLAIR, T1 and infarct masks is offered separately on request as the
+      NeuralCup challenge training set (neuralcup.bcblab.com); it is not covered by this entry.
+citation:
+  text: >-
+    Coutureau J, Asselineau J, Perez P, Kuchcinski G, Sagnier S, Renou P, Munsch F, Lopes R, Henon H, Bordet R, Dousset V,
+    Sibon I, Tourdias T. Cerebral Small Vessel Disease MRI Features Do Not Improve the
+    Prediction of Stroke Outcome. Neurology 96, e527-e537 (2021). doi:10.1212/WNL.0000000000011208
+sources:
+  tsuchida2024:
+    title: Tsuchida et al. 2024, SHIVA-CMB, Scientific Reports (PMC11680838)
+    url: https://doi.org/10.1038/s41598-024-81870-5
+    kind: paper
+  coutureau2021:
+    title: Coutureau et al. 2021, Neurology, abstract on PubMed (PMID 33184231)
+    url: https://doi.org/10.1212/WNL.0000000000011208
+    kind: paper
+  matsulevits2024:
+    title: Matsulevits et al. 2024, NeuralCup stroke outcome benchmark, bioRxiv preprint (PMC11507916)
+    url: https://doi.org/10.1101/2024.10.17.618691
+    kind: paper
+related: []
+keywords: [ischemic stroke, cerebral microbleeds, SWAN, T2*-weighted GRE, small vessel disease, stroke outcome prediction]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
