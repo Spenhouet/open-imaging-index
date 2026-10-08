@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: habs-hd
+name: HABS-HD
+full_name: 'Health and Aging Brain Study: Health Disparities (HABS-HD)'
+summary: >-
+  Community-based longitudinal study in Fort Worth, Texas, of about 3,840 non-Hispanic Black, Hispanic and
+  non-Hispanic White adults with 3 T MRI (T1w, FLAIR, DTI, GRE, ASL, fMRI), amyloid and tau PET, blood biomarkers,
+  genomics and cognitive testing.
+homepage: https://www.unthealth.edu/institute-for-translational-research/our-studies/habs-hd.html
+doi: 10.1002/trc2.70140
+# The ITR study page says the initial baseline data release was in 2021.
+year: 2021
+status: active
+creators:
+  - name: Institute for Translational Research, University of North Texas Health Science Center
+    url: https://www.unthealth.edu/institute-for-translational-research/index.html
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, dwi, T2starw, asl, bold]
+tracers: [florbetaben, pi2620]
+anatomy: [brain]
+conditions: [healthy, mci, dementia]
+tasks: [longitudinal, regression, classification, segmentation]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://apps.unthsc.edu/itr/researchers
+licenses:
+  - license: LicenseRef-HABS-HD-DUA
+citation:
+  text: >-
+    Petersen ME, Zhou Z, et al. Health and Aging Brain Study-Health Disparities (HABS-HD) methods and partner characteristics.
+    Alzheimer's & Dementia: Translational Research & Clinical Interventions 11(3):e70140 (2025).
+    doi:10.1002/trc2.70140. The DUA also requires "The Health and Aging Brain Study (HABS-HD) Study Team" on the
+    by-line and the NIA grant acknowledgement.
+sources:
+  petersen2025:
+    title: Petersen et al. 2025, HABS-HD methods and partner characteristics, Alzheimer's & Dementia TRCI (data release 6)
+    url: https://doi.org/10.1002/trc2.70140
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, health disparities, ageing, amyloid PET, tau PET, longitudinal, brain MRI, Hispanic, Black]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
