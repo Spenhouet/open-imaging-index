@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+scans,,892,aims-tbi-design-2026,Training and test case characteristics (b),final AIMS-TBI 2025 dataset; one case is one MRI timepoint and some patients have several
+scans,split=train,553,aims-tbi-design-2026,Training and test case characteristics (b),
+scans,split=validation,100,aims-tbi-design-2026,Training and test case characteristics (b),
+scans,split=test,239,aims-tbi-design-2026,Training and test case characteristics (b),hidden test set
+scans,contrast=T1w,892,aims-tbi-design-2026,Training and test case characteristics (c),all T1w data are annotated
