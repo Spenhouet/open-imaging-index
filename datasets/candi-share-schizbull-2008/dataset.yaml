@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: candi-share-schizbull-2008
+name: 'CANDI Share: Schizophrenia Bulletin 2008'
+full_name: Child and Adolescent NeuroDevelopment Initiative Share, Schizophrenia Bulletin 2008 data
+summary: >-
+  Preprocessed 1.5T T1-weighted brain MRI with whole-brain segmentations of 103 children and adolescents: 29
+  healthy controls, 20 with schizophrenia spectrum illness and 54 with bipolar disorder with or without psychosis.
+homepage: https://www.nitrc.org/projects/cs_schizbull08/
+doi: 10.1093/schbul/sbm120
+year: 2012
+version: '1.1'
+status: active
+creators:
+  - name: Child and Adolescent NeuroDevelopment Initiative (CANDI), University of Massachusetts Medical School
+    url: https://www.nitrc.org/projects/cs_schizbull08/
+  - name: Frazier JA, Kennedy DN, Makris N and colleagues (McLean Hospital, Center for Morphometric Analysis)
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy, schizophrenia, bipolar_disorder]
+tasks: [segmentation, classification]
+formats: [NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [1.5]
+access:
+  type: open
+  url: https://www.nitrc.org/ir/data/projects/cs_schizbull08
+licenses:
+  - license: LicenseRef-NITRC-CC-Attribution
+citation:
+  text: >-
+    Frazier JA, Hodge SM, Breeze JL, Giuliano AJ, Terry JE, Moore CM, Kennedy DN, Lopez-Larson MP, Caviness VS,
+    Seidman LJ, Zablotsky B, Makris N. Diagnostic and sex effects on limbic volumes in early-onset bipolar disorder
+    and schizophrenia. Schizophrenia Bulletin 34(1):37-46 (2008). doi:10.1093/schbul/sbm120
+sources:
+  frazier2008:
+    title: Frazier et al. 2008, Schizophrenia Bulletin
+    url: https://doi.org/10.1093/schbul/sbm120
+    kind: paper
+  nitrc-cs-schizbull08:
+    title: NITRC project page CANDI Share Schizophrenia Bulletin 2008
+    url: https://www.nitrc.org/projects/cs_schizbull08/
+    kind: website
+  nitrc-ir-subjects:
+    title: NITRC-IR subject listing of project cs_schizbull08 (open, no login), one row per subject
+    url: https://www.nitrc.org/ir/data/projects/cs_schizbull08/subjects?format=csv&columns=label,gender,age,group
+    kind: computed
+  nitrc-ir-experiments:
+    title: NITRC-IR session listing of project cs_schizbull08 (open, no login)
+    url: https://www.nitrc.org/ir/data/projects/cs_schizbull08/experiments?format=csv
+    kind: computed
+related: []
+keywords: [early-onset schizophrenia, pediatric bipolar disorder, limbic volumes, CANDI Share, brain segmentation]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent
