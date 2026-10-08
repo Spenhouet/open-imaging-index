@@ -76,7 +76,7 @@
     <table class="w-full text-sm">
       <thead>
         <tr class="border-b border-border">
-          <th class="sticky left-0 z-10 w-40 bg-card px-3 py-3 text-left align-bottom font-semibold">License</th>
+          <th class="sticky left-0 z-10 w-full min-w-56 bg-card px-4 py-3 text-left align-bottom font-semibold">License</th>
           {#each rules as r (r.id)}
             <th class="h-36 w-9 px-1 align-bottom">
               <span
@@ -85,20 +85,21 @@
               >
             </th>
           {/each}
-          <th class="px-3 py-3 text-right text-xs font-medium text-muted-foreground">Datasets</th>
+          <th class="w-16 px-3 py-3 text-right align-bottom text-xs font-medium whitespace-nowrap text-muted-foreground">Datasets</th>
         </tr>
       </thead>
       <tbody>
         {#each sortedLicenses as lic (lic.id)}
           <tr class="border-b border-border/60 last:border-0 hover:bg-accent/40">
-            <td class="sticky left-0 z-10 bg-card px-3 py-2">
-              <!-- Short name only, so the rule columns get the space. The full name is in the tooltip. -->
-              <a
-                href={link(`licenses/${lic.id}/`)}
-                class="block max-w-40 truncate font-medium hover:underline"
-                title={lic.name}>{lic.short_name ?? lic.name}</a
+            <!-- The name column takes all spare width, so the answers sit together on the right, next to Datasets. -->
+            <td class="sticky left-0 z-10 bg-card px-4 py-2">
+              <a href={link(`licenses/${lic.id}/`)} class="font-medium hover:underline" title={lic.name}
+                >{lic.short_name ?? lic.name}</a
               >
-              <div class="max-w-40 truncate text-xs text-muted-foreground">{purposes.get(lic.purpose) ?? lic.purpose}</div>
+              {#if lic.short_name}<div class="max-w-60 truncate text-xs text-muted-foreground xl:max-w-[26rem]" title={lic.name}>
+                  {lic.name}
+                </div>{/if}
+              <div class="text-xs text-muted-foreground">{purposes.get(lic.purpose) ?? lic.purpose}</div>
             </td>
             {#each rules as r (r.id)}
               <td class="px-1 py-2.5 text-center">
