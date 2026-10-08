@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,1,marques2021,Methods: Data acquisition,"one healthy volunteer whose 7T and 3T MRI was turned into the phantom; all images are simulated"
+scans,,4,zenodo-4559541-files,Stage2.zip folders Sim1Snr1 Sim1Snr2 Sim2Snr1 Sim2Snr2,"simulated datasets (2 phantom models x 2 variants labelled Snr1 and Snr2); Stage1.zip repeats Sim1Snr1 and Sim2Snr1 with identical checksums"
+scans,contrast=T2starw,4,zenodo-4559541-files,Magnitude.nii.gz and Phase.nii.gz,"simulated 4-echo gradient-echo magnitude and phase, 164 x 205 x 205 at 1 mm"
+scans,contrast=Chimap,2,zenodo-4559541-files,GT/Chi.nii.gz,"distinct ground-truth susceptibility maps, one per phantom model, each shared by two simulations"
