@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: center-tbi
+name: CENTER-TBI
+full_name: Collaborative European NeuroTrauma Effectiveness Research in Traumatic Brain Injury (CENTER-TBI) core study and imaging repository
+summary: >-
+  European prospective cohort of 4,509 patients with traumatic brain injury of all severities (2014-2017), with
+  admission CT for every patient, harmonised 3D T1, T2, FLAIR, DTI and T2*/SWI MRI in a subset, clinical data and
+  outcomes. Access after an approved study plan and a signed data use agreement.
+homepage: https://www.center-tbi.eu/
+# Version 1.0 of the Neurobot data release, per the CENTER-TBI SOP manual (appendix 4).
+year: 2018
+status: active
+creators:
+  - name: CENTER-TBI consortium (coordinating centre Antwerp University Hospital, Department of Neurosurgery)
+    url: https://www.center-tbi.eu/
+  - name: icometrix (imaging repository hosting)
+    url: https://icometrix.com/
+modalities: [CT, MR]
+contrasts: [T1w, T2w, FLAIR, dwi, T2starw, swi, bold]
+anatomy: [brain]
+conditions: [traumatic_brain_injury]
+tasks: [classification, regression]
+vendors: [ge, philips, siemens]
+access:
+  type: application
+  url: https://www.center-tbi.eu/data
+licenses:
+  - license: LicenseRef-CENTER-TBI-Terms
+citation:
+  text: >-
+    Add "and the CENTER-TBI Participants and Investigators" to the author list and use the funding, ethics and
+    methodology statements in appendix 5 of the CENTER-TBI SOP manual. Study reference: Maas AIR, Menon DK, Steyerberg
+    EW, et al. Collaborative European NeuroTrauma Effectiveness Research in Traumatic Brain Injury (CENTER-TBI): a
+    prospective longitudinal observational study. Neurosurgery 76(1):67-80 (2015). doi:10.1227/NEU.0000000000000575
+sources:
+  steyerberg2019:
+    title: Steyerberg EW et al. 2019, Case-mix, care pathways, and outcomes in CENTER-TBI, Lancet Neurology (accepted
+      manuscript, White Rose eprint 152694)
+    url: https://eprints.whiterose.ac.uk/id/eprint/152694/
+    kind: paper
+  center-tbi-data:
+    title: CENTER-TBI website, Data Access & Publication Requests
+    url: https://www.center-tbi.eu/data
+    kind: website
+  center-tbi-mri:
+    title: CENTER-TBI website, MRI Study Protocols (with GE, Philips and Siemens parameter sheets)
+    url: https://www.center-tbi.eu/project/mri-study-protocols
+    kind: website
+  maas2015:
+    title: Maas AIR et al. 2015, CENTER-TBI study protocol, Neurosurgery
+    url: https://doi.org/10.1227/NEU.0000000000000575
+    kind: paper
+related: []
+keywords: [traumatic brain injury, neurotrauma, CT, MRI, SWI, DTI, outcome prediction, multicentre cohort]
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

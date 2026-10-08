@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,4509,steyerberg2019,Results (Data collection) and Table 1,core study patients analysed (4559 enrolled); the separate registry of 22782 patients is not part of the imaging repository
+subjects,condition=traumatic_brain_injury,4509,steyerberg2019,Table 1,all severities; GCS 13-15 in most ER and admission stratum patients
+subjects,modality=CT,4509,steyerberg2019,Methods (Neuro-imaging repository),"CT obtained in all patients upon presentation; early CT of 4037 patients had central review"
+subjects,modality=MR,504,steyerberg2019,Results (Neuro-imaging repository),"first 504 early (<3 weeks) MRI studies analysed in 2019; MRI was done in a subset of centres and the full MRI count is not stated"
+subjects,sex=male,3022,steyerberg2019,Table 1,
+subjects,age=66+,1254,steyerberg2019,Table 1,aged >65 years
+age_median,,50,steyerberg2019,Table 1,IQR 30-66
