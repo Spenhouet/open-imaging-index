@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ICPSR-38464-Restricted
+name: ICPSR Terms of Use and Restricted Data Use Agreement for ICPSR 38464
+short_name: ICPSR 38464 RDUA
+url: https://www.icpsr.umich.edu/web/ICPSR/studies/38464/terms
+version: >-
+  ICPSR terms of use for study 38464 and the study's Restrictions statement, as archived on 21 February 2026 (study
+  version V6, 2025-10-08). The Restricted Data Use Agreement itself is not public and was not read.
+summary: >-
+  Restricted-use data. Access needs a Restricted Data Use Agreement, a stated reason for the request and IRB approval
+  or an exemption notice. The ICPSR terms limit use to research or statistics, forbid re-identification and
+  redistribution without ICPSR's written agreement, and require citing the data and reporting publications to ICPSR.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      To use these datasets solely for research or statistical purposes and not for investigation of specific
+      RESEARCH SUBJECTS, except when identification is authorized in writing by ICPSR
+    note: >-
+      The terms limit use to research or statistics but do not mention commercial use. The Restricted Data Use
+      Agreement may say more; it could not be read.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning; the data descriptor presents the dataset as training data for AI models.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      You agree to reference the recommended bibliographic citation in any publication that employs resources
+      provided by ICPSR.
+    note: Allowed with the recommended citation; citations of published work must be sent to ICPSR.
+  redistribute_original:
+    value: 'no'
+    quote: You agree not to redistribute data or other materials without the written agreement of ICPSR, unless
+    note: >-
+      Exceptions in the general terms cover official ICPSR representatives assisting authorized users and
+      collaboration with other authorized users. Whether they apply to restricted-use files depends on the Restricted
+      Data Use Agreement, which could not be read.
+  redistribute_derivatives:
+    value: unspecified
+    quote: You agree not to redistribute data or other materials without the written agreement of ICPSR, unless
+    note: The terms do not say whether derived data such as new lesion masks count as "other materials".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      You agree to reference the recommended bibliographic citation in any publication that employs resources
+      provided by ICPSR.
+  share_alike:
+    value: conditional
+    quote: >-
+      When sharing data or other materials in these approved ways, you must include all accompanying files with the
+      data, including terms of use.
+    note: Data shared in the approved ways must be passed on with these terms.
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Access to these data is restricted. Users interested in obtaining these data must complete a Restricted Data
+      Use Agreement, specify the reason for the request, and obtain IRB approval or notice of exemption for their
+      research.
+    source: https://web.archive.org/web/20260221082407/https://www.icpsr.umich.edu/web/ICPSR/studies/38464
+  ethics_approval:
+    value: 'yes'
+    quote: >-
+      Access to these data is restricted. Users interested in obtaining these data must complete a Restricted Data
+      Use Agreement, specify the reason for the request, and obtain IRB approval or notice of exemption for their
+      research.
+    source: https://web.archive.org/web/20260221082407/https://www.icpsr.umich.edu/web/ICPSR/studies/38464
+    note: IRB approval or a notice of exemption.
+  publication_review:
+    value: unspecified
+    note: The public terms do not ask for manuscript review; the Restricted Data Use Agreement could not be read.
+  code_release:
+    value: unspecified
+    note: The public terms do not ask for code release; the Restricted Data Use Agreement could not be read.
+  return_results:
+    value: conditional
+    quote: >-
+      Authors of publications based on ICPSR data are required to send citations of their published works to ICPSR
+      for inclusion in a database of related publications
+    note: Only citations of published work must be sent, not data or results.
+  delete_after_use:
+    value: conditional
+    quote: ICPSR may revoke the existing agreement, demand the return of the data in question, and deny all future access to ICPSR data.
+    note: >-
+      The public terms require return of the data only as a sanction for violations. Whether the Restricted Data Use
+      Agreement also requires deletion at project end is unknown.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      To make no use of the identity of any RESEARCH SUBJECT discovered inadvertently, and to advise ICPSR of any such
+      discovery
+    note: The terms also state that any intentional identification of a research subject violates the promise of confidentiality.
+  geographic_restriction:
+    value: conditional
+    quote: >-
+      you will not provide access to any data that are part of ICPSR to any person located in such countries unless
+      ICPSR approves such access in writing.
+    note: >-
+      Applies to ICPSR Membership-sponsored data and to China, Hong Kong, Macau, Russia, Iran, North Korea, Venezuela
+      and Cuba, under the US rule implementing Executive Order 14117. Use from those countries needs written approval.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-08'
+  by: Spenhouet-agent

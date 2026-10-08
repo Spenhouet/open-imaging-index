@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,2888,liu2023,"Methods, Cohort; Table 1",one clinical MRI per patient
+subjects,condition=stroke,2888,liu2023,"Methods, Cohort",clinical diagnosis of acute or early subacute stroke at admission
+subjects,condition=ischemic_stroke,1878,liu2023,Table 1,"radiological lesion type ""ischemic""; not necessarily the clinical stroke type"
+subjects,condition=intracranial_hemorrhage,540,liu2023,Table 1,"radiological lesion type ""hemorrhage"": any intra- or extra-parenchymal bleeding, including hemorrhagic transformation"
+subjects,sex=female,1361,liu2023,Table 1,
+subjects,sex=male,1527,liu2023,Table 1,
+subjects,contrast=dwi,2888,liu2023,"Methods, Cohort",inclusion required DWI; lesion masks are drawn on DWI
+subjects,contrast=FLAIR,2746,liu2023,"Methods, MRIs",passed visual quality control
+subjects,contrast=T2w,2581,liu2023,"Methods, MRIs",passed visual quality control
+subjects,contrast=swi,2106,liu2023,"Methods, MRIs",passed visual quality control
+subjects,field_strength=1.5,1766,liu2023,Table 1,
+subjects,field_strength=3,1122,liu2023,Table 1,
+subjects,country=US,2888,liu2023,"Methods, Cohort",Johns Hopkins Comprehensive Stroke Center
+age_mean,,62.16,liu2023,"Methods, Cohort",
+age_sd,,14.68,liu2023,"Methods, Cohort",
+age_median,,62,liu2023,Table 1,
+age_min,,18,liu2023,"Methods, Cohort",
+age_max,,99,liu2023,"Methods, Cohort",
