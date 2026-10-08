@@ -5,10 +5,10 @@ export const SITE_NAME = 'Open Imaging Index';
 export const SITE_TAGLINE = 'Find medical imaging datasets by modality, contrast, condition and cohort';
 export const REPO = 'Spenhouet/open-imaging-index';
 export const REPO_URL = `https://github.com/${REPO}`;
-export const SITE_URL = (import.meta.env.VITE_SITE_URL ?? 'https://spenhouet.com/open-imaging-index').replace(
-  /\/$/,
-  ''
-);
+// The Pages API reports custom domains as http://, while the site is served over HTTPS.
+export const SITE_URL = (import.meta.env.VITE_SITE_URL ?? 'https://spenhouet.com/open-imaging-index')
+  .replace(/^http:\/\/(?!localhost)/, 'https://')
+  .replace(/\/$/, '');
 
 export const editUrl = (path: string) => `${REPO_URL}/edit/main/${path}`;
 export const issueUrl = (title: string, body = '') =>
