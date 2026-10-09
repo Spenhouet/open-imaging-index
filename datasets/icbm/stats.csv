@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,853,ida-icbm-study,,subjects archived on the LONI IDA
+subjects,condition=healthy,853,ida-icbm-study,,cohort Normal Control
+subjects,modality=MR,850,ida-icbm-study,,modality MRI
+subjects,contrast=bold,325,ida-icbm-study,,modality fMRI
+subjects,contrast=dwi,327,ida-icbm-study,,modality DTI
+subjects,contrast=angio,320,ida-icbm-study,,modality MRA
+subjects,modality=PT,35,ida-icbm-study,,modality PET; tracer not stated
+age_min,,18,ida-icbm-study,,
+age_max,,89,ida-icbm-study,,
