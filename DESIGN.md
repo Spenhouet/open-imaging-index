@@ -31,5 +31,5 @@ All colors are tokens in `src/app.css` with light and dark values. Use them thro
 - Cards and panels use the `surface` utility.
 - Numbers that line up use `tabular`.
 - Data-driven geometry goes through CSS custom properties: `class="w-(--w)" style="--w: 40%"`.
-- Every chart has its numbers in text next to it or in the "All numbers" table.
+- Every chart shows its numbers on hover or in text next to it, and names its source document and location below it.
 - Check light and dark at 390 px and 1440 px before merging UI changes.

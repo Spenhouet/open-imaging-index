@@ -17,7 +17,7 @@
   import ComboMatrix from '#lib/components/charts/ComboMatrix.svelte';
   import Pyramid from '#lib/components/charts/Pyramid.svelte';
   import SplitBar from '#lib/components/charts/SplitBar.svelte';
-  import { contrastSetParts, formatBy, marginal, parseAgeBin, total } from '#lib/catalog/stats.js';
+  import { contrastSetParts, marginal, parseAgeBin, total } from '#lib/catalog/stats.js';
   import { countryName, formatNumber, label, modalityColor } from '#lib/catalog/vocab.js';
   import { SITE_NAME, SITE_URL, editUrl, issueUrl, link } from '#lib/site.js';
 
@@ -104,6 +104,7 @@
           dim,
           measure: measure!,
           title: vocab.dimensions.find((x) => x.id === dim)?.label ?? dim,
+          rows: list,
           total: t(measure!)?.value,
           items: list
             .map((r) => ({
@@ -146,7 +147,7 @@
       hasCohortStats && { id: 'cohort', label: 'Cohort' },
       { id: 'license', label: 'License and access' },
       meta.citation && { id: 'citation', label: 'Citation' },
-      { id: 'numbers', label: 'All numbers' }
+      { id: 'sources', label: 'Sources' }
     ].filter((s): s is { id: string; label: string } => !!s)
   );
 
@@ -180,7 +181,23 @@
     includedInDataCatalog: { '@type': 'DataCatalog', name: SITE_NAME, url: `${SITE_URL}/` }
   });
 
-  const sourceLink = (key: string) => meta.sources[key];
+  // The documents behind a chart, each with the places in it the numbers come from.
+  const citeOf = (rs: { source: string; where?: string }[]) => {
+    const by = new Map<string, Set<string>>();
+    for (const r of rs) {
+      const w = by.get(r.source) ?? new Set<string>();
+      if (r.where) w.add(r.where);
+      by.set(r.source, w);
+    }
+    return [...by].map(([key, w]) => ({ key, source: meta.sources[key], where: [...w].join(', ') }));
+  };
+  const ageRows = $derived([
+    ...marginal(rows, 'subjects', 'age'),
+    ...['age_mean', 'age_sd', 'age_median', 'age_min', 'age_max'].flatMap((m) => t(m) ?? [])
+  ]);
+  const pyramidRows = $derived(
+    rows.filter((r) => r.measure === 'subjects' && Object.keys(r.by).length === 2 && 'age' in r.by && 'sex' in r.by)
+  );
 
   // Search-friendly title: what people type, e.g. "BraTS 2021: brain MRI dataset, 2,040 subjects".
   const seoTitle = $derived.by(() => {
@@ -199,6 +216,21 @@
     ]
   });
 </script>
+
+{#snippet cite(rs: { source: string; where?: string }[])}
+  {@const list = citeOf(rs)}
+  {#if list.length}
+    <p
+      class="mt-4 truncate border-t border-border pt-3 text-xs text-muted-foreground"
+      title={list.map((c) => `${c.where ? `${c.where} in ` : ''}${c.source?.title ?? c.key}`).join('; ')}
+    >
+      {#each list as c, i (c.key)}{i ? '; ' : ''}{c.where ? `${c.where} in ` : 'From '}{#if c.source}<a
+            href={c.source.url}
+            class="text-primary hover:underline">{c.source.title}</a
+          >{:else}{c.key}{/if}{/each}
+    </p>
+  {/if}
+{/snippet}
 
 <Seo title={seoTitle} {description} path="datasets/{d.id}/" jsonLd={[jsonLd, breadcrumbLd]} />
 
@@ -290,6 +322,7 @@
                     Covers {formatNumber(sexRows.reduce((s, r) => s + r.value, 0))} of {formatNumber(N)} subjects.
                   </p>
                 {/if}
+                {@render cite(sexRows)}
               </div>
             {/if}
             {#if ageBins.length || ageSummary.mean !== undefined}
@@ -308,6 +341,7 @@
                 {:else}
                   <p class="mt-3 text-sm text-muted-foreground">No age bins reported.</p>
                 {/if}
+                {@render cite(ageRows)}
               </div>
             {/if}
             {#if pyramid}
@@ -323,6 +357,7 @@
                     right={{ label: 'Male', color: sexColors.male, values: pyramid.right }}
                   />
                 </div>
+                {@render cite(pyramidRows)}
               </div>
             {/if}
             {#if combos}
@@ -332,6 +367,7 @@
                   How many subjects have exactly each set of contrasts.
                 </p>
                 <div class="mt-4"><ComboMatrix contrasts={combos.contrasts} rows={combos.rows} /></div>
+                {@render cite(marginal(rows, 'subjects', 'contrast_set'))}
               </div>
             {/if}
             {#each breakdowns as b (b.dim)}
@@ -341,6 +377,7 @@
                   {b.measure}{b.dim === 'condition' || b.dim === 'contrast' ? ', values can overlap' : ''}
                 </p>
                 <div class="mt-4"><BarList items={b.items} total={b.total} unit={b.measure} /></div>
+                {@render cite(b.rows)}
               </div>
             {/each}
           </div>
@@ -438,67 +475,26 @@
         </section>
       {/if}
 
-      <section id="numbers" class="scroll-mt-28 pt-12">
-        <h2 class="text-xl font-semibold tracking-tight">All numbers</h2>
+      <section id="sources" class="scroll-mt-28 pt-12">
+        <h2 class="text-xl font-semibold tracking-tight">Sources</h2>
         <p class="mt-1 text-sm text-muted-foreground">
-          Every number on this page, as stored in
-          <a class="text-primary hover:underline" href={editUrl(`datasets/${d.id}/stats.csv`)}>stats.csv</a>, with its
-          source.
+          Every number on this page comes from one of these documents. Each chart names the table or page it is taken
+          from. The raw numbers are in
+          <a class="text-primary hover:underline" href={editUrl(`datasets/${d.id}/stats.csv`)}>stats.csv</a>.
         </p>
-        {#if rows.length}
-          <div class="mt-4 overflow-x-auto surface">
-            <table class="w-full text-sm">
-              <thead class="border-b border-border text-left text-xs text-muted-foreground">
-                <tr>
-                  <th class="px-4 py-2.5 font-medium">Measure</th>
-                  <th class="px-4 py-2.5 font-medium">Breakdown</th>
-                  <th class="px-4 py-2.5 text-right font-medium">Value</th>
-                  <th class="px-4 py-2.5 font-medium">Source</th>
-                </tr>
-              </thead>
-              <tbody>
-                {#each rows as r (r.line)}
-                  {@const s = sourceLink(r.source)}
-                  <tr class="border-b border-border/60 last:border-0">
-                    <td class="px-4 py-2 whitespace-nowrap"
-                      >{vocab.measures.find((m) => m.id === r.measure)?.label ?? r.measure}</td
-                    >
-                    <td class="px-4 py-2">
-                      {#if Object.keys(r.by).length}
-                        <span class="font-mono text-xs">{formatBy(r.by)}</span>
-                      {:else}<span class="text-muted-foreground">total</span>{/if}
-                      {#if r.note}<div class="text-xs text-muted-foreground">{r.note}</div>{/if}
-                    </td>
-                    <td class="px-4 py-2 text-right font-medium whitespace-nowrap tabular"
-                      >{formatNumber(r.value, r.approx)}</td
-                    >
-                    <td class="px-4 py-2 text-xs">
-                      {#if s}<a href={s.url} class="text-primary hover:underline" title={s.title}>{r.source}</a
-                        >{:else}{r.source}{/if}
-                      {#if r.where}<div class="whitespace-nowrap text-muted-foreground">{r.where}</div>{/if}
-                    </td>
-                  </tr>
-                {/each}
-              </tbody>
-            </table>
-          </div>
-        {:else}
-          <p class="mt-4 text-sm text-muted-foreground">
-            No numbers yet. <a class="text-primary hover:underline" href={link('contribute/')}>Add some</a>.
-          </p>
-        {/if}
-
-        <h3 class="mt-8 text-sm font-semibold">Sources</h3>
-        <p class="mt-1 text-xs text-muted-foreground">The keys used in the table above.</p>
-        <ul class="mt-2 space-y-1.5 text-sm">
+        <ul class="mt-4 space-y-1.5 text-sm">
           {#each Object.entries(meta.sources) as [key, s] (key)}
             <li class="flex flex-wrap items-baseline gap-2">
-              <span class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">{key}</span>
               <a href={s.url} class="text-primary hover:underline">{s.title}</a>
               <span class="text-xs text-muted-foreground">{s.kind}</span>
             </li>
           {/each}
         </ul>
+        {#if !rows.length}
+          <p class="mt-4 text-sm text-muted-foreground">
+            No numbers yet. <a class="text-primary hover:underline" href={link('contribute/')}>Add some</a>.
+          </p>
+        {/if}
       </section>
     </div>
 
