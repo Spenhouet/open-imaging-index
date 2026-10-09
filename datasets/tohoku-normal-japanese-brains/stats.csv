@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,1547,sato2003,Abstract,normal subjects
+subjects,condition=healthy,1547,sato2003,Abstract,
+subjects,country=JP,1547,sato2003,Abstract,the abstract describes the subjects as Japanese
+age_min,,16,sato2003,Abstract,
+age_max,,79,sato2003,Abstract,
