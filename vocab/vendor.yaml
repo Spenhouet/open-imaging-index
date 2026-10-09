@@ -13,4 +13,5 @@ terms:
   - { id: aperio, label: Leica Aperio, synonyms: [Aperio] }
   - { id: hamamatsu, label: Hamamatsu }
   - { id: 3dhistech, label: 3DHISTECH, synonyms: [3DHistech, 3D Histech] }
+  - { id: bruker, label: Bruker }
   - { id: other, label: Other }

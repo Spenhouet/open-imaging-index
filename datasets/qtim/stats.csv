@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,1202,ds004169-participants,,1202 rows; the OpenNeuro snapshot summary also lists 1202 subjects and the file tree has 1202 subject folders
+subjects,sex=female,732,ds004169-participants,sex,sex F
+subjects,sex=male,470,ds004169-participants,sex,sex M
+subjects,age=10-19,323,ds004169-participants,age,age in years rounded down at session 1
+subjects,age=20-29,878,ds004169-participants,age,age in years rounded down at session 1
+subjects,age=30-39,1,ds004169-participants,age,age 30 at session 1
+subjects,sex=female;age=10-19,179,ds004169-participants,"sex, age",
+subjects,sex=male;age=10-19,144,ds004169-participants,"sex, age",
+subjects,sex=female;age=20-29,552,ds004169-participants,"sex, age",
+subjects,sex=male;age=20-29,326,ds004169-participants,"sex, age",
+subjects,contrast=T1w,1202,ds004169-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,1195,ds004169-file-tree,func/*_bold.nii.gz,n-back and/or resting-state runs
+subjects,contrast=dwi,697,ds004169-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w,696,ds004169-file-tree,,
+subjects,contrast_set=bold+T1w,499,ds004169-file-tree,,
+subjects,contrast_set=T1w,6,ds004169-file-tree,,
+subjects,contrast_set=dwi+T1w,1,ds004169-file-tree,,
+studies,,1343,ds004169-file-tree,ses-* folders with NIfTI files,141 subjects have two sessions
+scans,,4540,ds004169-file-tree,*_T1w/_bold/_dwi.nii.gz,"sum of the disjoint T1w, bold and dwi image counts; deface masks not counted"
+scans,contrast=T1w,1342,ds004169-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,2453,ds004169-file-tree,func/*_bold.nii.gz,1311 n-back and 1142 resting-state runs
+scans,contrast=dwi,745,ds004169-file-tree,dwi/*_dwi.nii.gz,
+subjects,field_strength=4,1202,ds004169-file-tree,MagneticFieldStrength in the JSON sidecars,all 4540 imaging sidecars give 3.95 T
+age_mean,,21.2,ds004169-participants,age,age at session 1
+age_sd,,4.0,ds004169-participants,age,
+age_median,,21,ds004169-participants,age,
+age_min,,12,ds004169-participants,age,
+age_max,,30,ds004169-participants,age,
