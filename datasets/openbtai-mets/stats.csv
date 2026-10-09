@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,75,ocanatienda2023,Methods: Subject characteristics,
+studies,,637,ocanatienda2023,Methods: Subject characteristics,Longitudinal follow-up MRI studies
+scans,contrast=T1w_ce,593,ocanatienda2023,Methods: Image acquisition,Segmented post-contrast T1w sequences only
+scans,field_strength=1,8,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+scans,field_strength=1.5,550,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+scans,field_strength=3,35,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+scans,vendor=ge,225,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+scans,vendor=philips,197,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+scans,vendor=siemens,171,ocanatienda2023,Methods: Image acquisition,Of the 593 segmented post-contrast T1w sequences
+subjects,condition=brain_metastasis,75,ocanatienda2023,Methods: Subject characteristics,
+subjects,condition=nsclc,38,ocanatienda2023,Methods: Subject characteristics,Primary tumor
+subjects,condition=lung_cancer,43,ocanatienda2023,Methods: Subject characteristics,Primary tumor; sum of NSCLC (38) and SCLC (5)
+subjects,condition=breast_cancer,22,ocanatienda2023,Methods: Subject characteristics,Primary tumor
+subjects,condition=melanoma,6,ocanatienda2023,Methods: Subject characteristics,Primary tumor
+subjects,condition=kidney_cancer,1,ocanatienda2023,Methods: Subject characteristics,Primary tumor
+subjects,sex=female,47,openbtai-clinical,Sex column (1 = female),
+subjects,sex=male,28,openbtai-clinical,Sex column (2 = male),
