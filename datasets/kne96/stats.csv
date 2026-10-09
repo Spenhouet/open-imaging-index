@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,144,lee2016,Study population,right-handed cognitively normal (CDR 0) KLOSCAD participants
+subjects,condition=healthy,144,lee2016,Study population,cognitively normal by CDR 0
+subjects,contrast=T1w,144,lee2016,Image acquisition and preparation,3D T1-weighted SPGR
+subjects,field_strength=3,144,lee2016,Image acquisition and preparation,
+subjects,vendor=ge,144,lee2016,Image acquisition and preparation,GE SIGNA
+subjects,country=KR,144,lee2016,Study population,
+subjects,sex=male,72,lee2016,Table 1,sum of the disjoint construction (48) and validation (24) groups
+subjects,sex=female,72,lee2016,Table 1,sum of the disjoint construction (48) and validation (24) groups
+subjects,split=train,96,lee2016,Table 1,construction group used to build the KNE96 template
+subjects,split=validation,48,lee2016,Table 1,validation group
+subjects,split=train;sex=male,48,lee2016,Table 1,construction group; also the KNE48M template
+subjects,split=train;sex=female,48,lee2016,Table 1,construction group; also the KNE48F template
+subjects,split=validation;sex=male,24,lee2016,Table 1,
+subjects,split=validation;sex=female,24,lee2016,Table 1,
+age_min,,60,lee2016,Study population,inclusion criterion aged 60 years or older
+age_mean,split=train;sex=male,69.5,lee2016,Table 1,
+age_sd,split=train;sex=male,6.2,lee2016,Table 1,
+age_mean,split=train;sex=female,70.1,lee2016,Table 1,
+age_sd,split=train;sex=female,7.0,lee2016,Table 1,
+age_mean,split=validation;sex=male,71.5,lee2016,Table 1,
+age_sd,split=validation;sex=male,5.9,lee2016,Table 1,
+age_mean,split=validation;sex=female,72.8,lee2016,Table 1,
+age_sd,split=validation;sex=female,5.1,lee2016,Table 1,
