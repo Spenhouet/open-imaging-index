@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,155,desai2021,Section 4.1,patients at Stanford Healthcare
+scans,,155,aimi-skm-tea,,one qDESS knee scan per patient
+scans,split=train,86,aimi-skm-tea,,
+scans,split=validation,33,aimi-skm-tea,,
+scans,split=test,36,aimi-skm-tea,,patients who also had arthroscopic surgery (desai2021 Section 4.2)
+subjects,anatomy=knee,155,desai2021,Section 4.1,
+subjects,field_strength=3,155,desai2021,Section 4.1,two 3 T GE MR750 scanners
+subjects,vendor=ge,155,desai2021,Section 4.1,
