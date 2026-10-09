@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ptbp
+name: PTBP
+full_name: Pediatric Template of Brain Perfusion
+summary: >-
+  Brain MRI of 120 typically developing children aged 7 to 18 from UCLA, partly longitudinal (183 sessions), with
+  T1w, pCASL perfusion, 30-direction DTI and resting-state BOLD, plus a population template and IQ and
+  socioeconomic measures, under CC BY 4.0.
+homepage: https://figshare.com/articles/dataset/The_Pediatric_Template_of_Brain_Perfusion_PTBP_/923555
+doi: 10.6084/m9.figshare.923555
+year: 2014
+status: active
+creators:
+  - name: >-
+      Laboratory of Functional MRI Technology, University of California Los Angeles, and Department of
+      Radiology, University of Pennsylvania (Avants BB, Tustison NJ, Wang DJJ, et al.)
+    url: https://figshare.com/articles/dataset/The_Pediatric_Template_of_Brain_Perfusion_PTBP_/923555
+species: human
+modalities: [MR]
+contrasts: [T1w, asl, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 26.3
+access:
+  type: open
+  url: https://figshare.com/articles/dataset/PTBP_Nifti/1190933
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      Both figshare records (the template and summary files, 10.6084/m9.figshare.923555, and the subject images,
+      10.6084/m9.figshare.1190933) state CC BY 4.0.
+citation:
+  text: >-
+    Avants BB, Duda JT, Kilroy E, Krasileva K, Jann K, Kandel BT, Tustison NJ, Yan L, Jog M, Smith R, Wang Y,
+    Dapretto M, Wang DJJ. The pediatric template of brain perfusion. Scientific Data 2, 150003 (2015).
+    doi:10.1038/sdata.2015.3
+sources:
+  avants2015:
+    title: Avants et al. 2015, The pediatric template of brain perfusion, Scientific Data
+    url: https://www.nature.com/articles/sdata20153
+    kind: paper
+  figshare-ptbp-nifti:
+    title: PTBP_Nifti figshare record (subject images, 219 files, CC BY 4.0)
+    url: https://figshare.com/articles/dataset/PTBP_Nifti/1190933
+    kind: website
+  ptbp-data-index:
+    title: >-
+      ptbp_data_index.csv (CC BY 4.0), one row per session; contrasts from its Anatomy, PCASL, DWI and BOLD columns
+    url: https://ndownloader.figshare.com/files/1699489
+    kind: computed
+  ptbp-demographics:
+    title: >-
+      ptbp_summary_demographics.csv (CC BY 4.0), counted per subject at the first scan date; columns SubID,
+      ScanDate, AgeAtScan, Sex
+    url: https://ndownloader.figshare.com/files/1699436
+    kind: computed
+related: []
+keywords: [pediatric, brain development, arterial spin labeling, cerebral blood flow, brain template, DTI, resting-state fMRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
