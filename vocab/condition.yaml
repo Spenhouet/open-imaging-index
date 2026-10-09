@@ -117,6 +117,13 @@ terms:
   - { id: glioblastoma, label: Glioblastoma, parent: glioma, synonyms: [GBM], mappings: { mondo: 'MONDO:0018177' } }
   - { id: meningioma, label: Meningioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0016642' } }
   - { id: brain_metastasis, label: Brain metastases, parent: brain_tumor, mappings: { mondo: 'MONDO:1040026' } }
+  - {
+      id: vestibular_schwannoma,
+      label: Vestibular schwannoma,
+      synonyms: [acoustic neuroma, VS],
+      description: 'Benign nerve sheath tumor of the vestibular nerve. MONDO places it under peripheral nervous system neoplasms, not under brain neoplasms.',
+      mappings: { mondo: 'MONDO:0001569' }
+    }
   - { id: lung_cancer, label: Lung cancer, mappings: { mondo: 'MONDO:0008903' } }
   - {
       id: nsclc,

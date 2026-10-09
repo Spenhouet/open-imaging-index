@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: vestibular-schwannoma-seg
+name: Vestibular-Schwannoma-SEG
+full_name: >-
+  Segmentation of Vestibular Schwannoma from Magnetic Resonance Imaging: An Open Annotated Dataset and Baseline
+  Algorithm
+summary: >-
+  Gamma Knife planning MRI (contrast-enhanced T1 and high-resolution T2) of 242 patients with a unilateral vestibular
+  schwannoma from one London centre, with manual tumour and cochlea contours, RT dose, plan and structure files and
+  T1-T2 registration matrices.
+homepage: https://www.cancerimagingarchive.net/collection/vestibular-schwannoma-seg/
+doi: 10.7937/TCIA.9YTJ-5Q73
+year: 2021
+version: '2'
+status: active
+creators:
+  - name: >-
+      Queen Square Radiosurgery Centre and King's College London / University College London (Shapey J, Kujawa A,
+      Dorent R, Wang G, Vercauteren T et al.)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T1w_ce, T2w]
+anatomy: [brain]
+conditions: [vestibular_schwannoma]
+tasks: [segmentation, registration]
+formats: [DICOM]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [1.5]
+size_gb: 28.21
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/vestibular-schwannoma-seg/
+  note: >-
+    DICOM images and RT objects via the TCIA Data Retriever; registration matrices, JSON contours and the directory
+    name mapping as direct downloads. Scripts to convert the data to NIfTI are at https://github.com/KCL-BMEIS/VS_Seg.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/vestibular-schwannoma-seg/
+    note: >-
+      Every item on the TCIA collection page is listed under CC BY 4.0. TCIA also asks users to follow its Data Usage
+      Policy and Restrictions and to cite the dataset DOI.
+citation:
+  text: >-
+    Shapey J, Kujawa A, Dorent R, et al. Segmentation of vestibular schwannoma from MRI, an open annotated dataset and
+    baseline algorithm. Scientific Data 8, 286 (2021). https://doi.org/10.1038/s41597-021-01064-w. Data: Shapey J,
+    Kujawa A, Dorent R, et al. (2021). Segmentation of Vestibular Schwannoma from Magnetic Resonance Imaging: An Open
+    Annotated Dataset and Baseline Algorithm (version 2) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/TCIA.9YTJ-5Q73
+sources:
+  shapey2021:
+    title: Shapey et al. 2021, Scientific Data 8, 286
+    url: https://doi.org/10.1038/s41597-021-01064-w
+    kind: paper
+  tcia-vestibular-schwannoma-seg:
+    title: TCIA Vestibular-Schwannoma-SEG collection page (version 2, updated 2021/03/17)
+    url: https://www.cancerimagingarchive.net/collection/vestibular-schwannoma-seg/
+    kind: website
+  tcia-vestibular-schwannoma-seg-digest:
+    title: >-
+      TCIA series metadata digest for Vestibular-Schwannoma-SEG (open download, CC BY 4.0), one row per DICOM series
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Vestibular-Schwannoma-SEG-Feb-2021-manifes-nbia-digest.xlsx
+    kind: computed
+related: []
+keywords:
+  [vestibular schwannoma, acoustic neuroma, Gamma Knife, stereotactic radiosurgery, RTSTRUCT, RTDOSE, cochlea, CISS]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
