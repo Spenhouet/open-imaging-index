@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rest-meta-mdd
+name: REST-meta-MDD
+full_name: Data of the REST-meta-MDD Project from DIRECT Consortium
+summary: >-
+  Resting-state fMRI derivatives (R-fMRI indices and ROI time series) of 1300 patients with major depressive disorder
+  and 1128 controls from 25 cohorts at 17 Chinese hospitals, preprocessed with one DPARSF pipeline. Download is open,
+  the unzip password needs a signed agreement.
+homepage: https://www.scidb.cn/detail?dataSetId=cbeb3c7124bf47a6af7b3236a3aaf3a8
+doi: 10.57760/sciencedb.o00115.00013
+year: 2019
+updated: 2026
+version: V3
+status: active
+creators:
+  - name: DIRECT Consortium (Depression Imaging REsearch ConsorTium), 25 research groups from 17 hospitals in China
+  - name: The R-fMRI Lab (Chao-Gan Yan), Institute of Psychology, Chinese Academy of Sciences
+    url: http://rfmri.org/REST-meta-MDD
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [depression, healthy]
+tasks: [classification]
+countries: [CN]
+vendors: [siemens, ge, philips]
+field_strengths: [1.5, 3]
+# DataCite metadata of the ScienceDB record: 115514223968 bytes in 3 files.
+size_gb: 115.5
+access:
+  type: signed_agreement
+  url: https://www.scidb.cn/detail?dataSetId=cbeb3c7124bf47a6af7b3236a3aaf3a8
+  note: >-
+    The archives download from Science Data Bank without an account (FTP is recommended for the size), but they are
+    encrypted. The unzip password and the phenotypic information are sent after a scanned, signed copy of the data
+    use agreement is emailed to rfmrilab@gmail.com.
+licenses:
+  - license: CC-BY-NC-4.0
+    applies_to: The Science Data Bank record (license stated in its DataCite metadata)
+  - license: LicenseRef-REST-meta-MDD-DUA
+    applies_to: The decrypted R-fMRI indices and phenotypic information
+citation:
+  text: >-
+    Yan CG, Chen X, Li L, Castellanos FX, Bai TJ, Bo QJ, et al. Reduced default mode network functional connectivity
+    in patients with recurrent major depressive disorder. Proc Natl Acad Sci U S A 116(18):9078-9083 (2019).
+    doi:10.1073/pnas.1900390116. Chen X, Lu B, Li HX, et al. The DIRECT consortium and the REST-meta-MDD project:
+    towards neuroimaging biomarkers of major depressive disorder. Psychoradiology 2(1):32-42 (2022).
+    doi:10.1093/psyrad/kkac005
+sources:
+  yan2019:
+    title: Yan et al. 2019, Reduced default mode network functional connectivity in recurrent MDD, PNAS (PMC6500168)
+    url: https://doi.org/10.1073/pnas.1900390116
+    kind: paper
+  chen2022:
+    title: Chen et al. 2022, The DIRECT consortium and the REST-meta-MDD project, Psychoradiology (PMC10917197)
+    url: https://doi.org/10.1093/psyrad/kkac005
+    kind: paper
+  rfmri-rest-meta-mdd:
+    title: Data Sharing of the REST-meta-MDD Project from the DIRECT Consortium, rfmri.org page with Supplementary Table
+    url: http://rfmri.org/REST-meta-MDD
+    kind: website
+  scidb-rest-meta-mdd:
+    title: Science Data Bank record 10.57760/sciencedb.o00115.00013 and its DataCite metadata (V3)
+    url: https://doi.org/10.57760/sciencedb.o00115.00013
+    kind: website
+related: []
+keywords: [major depressive disorder, resting-state fMRI, functional connectivity, DPARSF, multi-site, R-fMRI indices, default mode network]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

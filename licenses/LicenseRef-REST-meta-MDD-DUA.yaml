@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-REST-meta-MDD-DUA
+name: Data Use Agreement of the Intermediate Results of the REST-meta-MDD Project from the DIRECT Consortium
+short_name: REST-meta-MDD DUA
+url: http://rfmri.org/sites/default/files/DIRECT_REST-meta-MDD_Data_Use_Agreement.pdf
+version: 'One-page PDF, undated, read 2026-10-09'
+summary: >-
+  A principal investigator signs the agreement and emails it to receive the unzip password and phenotypic data. Any
+  analysis is allowed within ethical limits, but the data and phenotypes may not be passed to third parties, an annual
+  progress report is due, and publications must cite two papers and list the DIRECT Consortium as an author.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The agreement does not mention commercial use. It allows "any analyses of interest while not violating ethics".
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: conditional
+    quote: The researchers can perform any analyses of interest while not violating ethics.
+    note: Machine learning is not named; the agreement allows any analysis that does not violate ethics.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention creating or handling derived data.
+  publication:
+    value: conditional
+    quote: >-
+      Please list the DIRECT Consortium as an author and cite the DIRECT Consortium paper in your work
+    note: Publications must also cite the 2019 PNAS paper of Yan et al.
+  redistribute_original:
+    value: 'no'
+    quote: The data user should not leak the data and phenotypic information to any other third parties.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data count as "the data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Please cite the PNAS paper in your work: Yan CG et al. Reduced default mode network functional connectivity in
+      patients with recurrent major depressive disorder.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Please email a scanned signed copy to rfmrilab@gmail.com to get unzip password and phenotypic information.
+  ethics_approval:
+    value: 'no'
+    note: >-
+      The agreement asks that analyses do not violate ethics but does not ask for approval by an ethics committee.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: The data user should submit an annual report of research progress on REST-meta-MDD data by the end of each year.
+    note: An annual progress report is required; returning derived data is not.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The agreement does not mention re-identification.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
