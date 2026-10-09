@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sald
+name: SALD
+full_name: Southwest University Adult Lifespan Dataset
+summary: >-
+  T1-weighted MPRAGE and 8-minute resting-state fMRI from 494 healthy Chinese adults aged 19 to 80, scanned at 3 T at
+  Southwest University, Chongqing. Shared openly through INDI in BIDS format with age, sex, handedness and QA measures.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/sald.html
+doi: 10.15387/fcp_indi.sald
+year: 2017
+status: active
+creators:
+  - name: Brain Imaging Center and Faculty of Psychology, Southwest University (Jiang Qiu)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/sald.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI, BIDS]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 23.5
+access:
+  type: open
+  url: https://fcon_1000.projects.nitrc.org/indi/retro/sald.html
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement. The
+      images and the phenotype file download from the public fcp-indi S3 bucket without an account. The data
+      descriptor asks users to cite it.
+citation:
+  text: >-
+    Wei D, Zhuang K, Ai L, Chen Q, Yang W, Liu W, Wang K, Sun J, Qiu J. Structural and functional brain scans from the
+    cross-sectional Southwest University adult lifespan dataset. Scientific Data 5, 180134 (2018).
+    doi:10.1038/sdata.2018.134
+sources:
+  wei2018:
+    title: Wei et al. 2018, Structural and functional brain scans from the cross-sectional Southwest University adult
+      lifespan dataset, Scientific Data
+    url: https://doi.org/10.1038/sdata.2018.134
+    kind: paper
+  indi-sald-page:
+    title: SALD release page, FCP/INDI Retrospective
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/sald.html
+    kind: website
+  sald-sub-information:
+    title: sub_information.xlsx phenotype file (CC BY-NC per the release page), sheet "demographic information"
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/SALD/sub_information.xlsx
+    kind: computed
+related: [camcan, indi-beijing-enhanced]
+keywords: [adult lifespan, ageing, resting-state fMRI, functional connectivity, INDI, Southwest University]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
