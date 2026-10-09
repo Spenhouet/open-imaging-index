@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,284,ds003949-participants,participant_id,284 unique ids; Table 2 of the paper and the OpenNeuro README also report 284
+subjects,condition=intracranial_aneurysm,157,ds003949-participants,group,group patient; Table 2 of the paper also reports 157
+subjects,condition=healthy,127,ds003949-participants,group,group control (no aneurysm); Table 2 of the paper also reports 127
+subjects,sex=female,170,dinoto2023,Table 2,
+subjects,sex=male,114,dinoto2023,Table 2,
+subjects,condition=intracranial_aneurysm;sex=female,104,dinoto2023,Table 2,
+subjects,condition=intracranial_aneurysm;sex=male,53,dinoto2023,Table 2,
+subjects,condition=healthy;sex=female,66,dinoto2023,Table 2,
+subjects,condition=healthy;sex=male,61,dinoto2023,Table 2,
+subjects,contrast=angio,284,ds003949-sidecars,sub-*/ses-*/anat/*_angio.nii.gz,every session has one TOF-MRA volume
+subjects,contrast=T1w,284,ds003949-sidecars,sub-*/ses-*/anat/*_T1w.nii.gz,every session has one T1w volume
+subjects,contrast_set=angio+T1w,284,ds003949-sidecars,sub-*/ses-*/anat/,
+studies,,296,ds003949-participants,rows,one row per TOF-MRA session; 11 subjects have more than one session
+studies,condition=intracranial_aneurysm,168,ds003949-participants,group,
+studies,condition=healthy,128,ds003949-participants,group,
+scans,,592,ds003949-sidecars,sub-*/ses-*/anat/*.nii.gz,296 TOF-MRA and 296 T1w volumes
+scans,contrast=angio,296,ds003949-sidecars,*_angio.nii.gz,
+scans,contrast=T1w,296,ds003949-sidecars,*_T1w.nii.gz,
+scans,contrast=angio;field_strength=3,239,ds003949-sidecars,*_angio.json MagneticFieldStrength,
+scans,contrast=angio;field_strength=1.5,57,ds003949-sidecars,*_angio.json MagneticFieldStrength,
+scans,contrast=angio;vendor=siemens,225,ds003949-sidecars,*_angio.json Manufacturer,"Verio, Skyra, TrioTim, Symphony, Aera and Prisma_fit"
+scans,contrast=angio;vendor=philips,71,ds003949-sidecars,*_angio.json Manufacturer,Intera
+age_mean,,51,dinoto2023,Table 2,
+age_sd,,16,dinoto2023,Table 2,
+age_mean,condition=intracranial_aneurysm,56,dinoto2023,Table 2,
+age_sd,condition=intracranial_aneurysm,14,dinoto2023,Table 2,
+age_mean,condition=healthy,46,dinoto2023,Table 2,
+age_sd,condition=healthy,17,dinoto2023,Table 2,
