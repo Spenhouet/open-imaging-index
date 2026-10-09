@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: imap-plus
+name: IMAP+ (Caen)
+full_name: >-
+  IMAP+: Imagerie Multimodale de la maladie d'Alzheimer à un stade Précoce (multimodal neuroimaging of early
+  Alzheimer's disease), Caen
+summary: >-
+  Single-centre French cohort of 242 young, middle-aged and older controls and people with subjective cognitive decline,
+  MCI or Alzheimer's disease, scanned with 3 T Philips MRI, FDG-PET and florbetapir amyloid PET at Cyceron, Caen. Shared
+  on request.
+homepage: https://clinicaltrials.gov/study/NCT01638949
+# The cohort has no public release; year the IMAP+ study was registered.
+year: 2012
+creators:
+  - name: Caen University Hospital (sponsor) and Inserm U1077, Cyceron, Caen (Gaël Chételat)
+    url: https://clinicaltrials.gov/study/NCT01638949
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR]
+tracers: [fdg, florbetapir]
+anatomy: [brain]
+conditions: [healthy, scd, mci, alzheimers]
+countries: [FR]
+vendors: [philips, ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.3389/fnagi.2022.899158
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Moulinet et al. (2022) state that "IMAP data are made available upon request to the sponsor (Caen University
+      Hospital) and the principal investigator". Garnier-Crussard et al. (2025) state that data are available on
+      reasonable request "pending approval by the study coordinator". No agreement or terms are published.
+citation:
+  text: >-
+    Moulinet I, Touron E, Mézenge F, Dautricourt S, De La Sayette V, Vivien D, Marchant NL, Poisnel G, Chételat G.
+    Depressive symptoms have distinct relationships with neuroimaging biomarkers across the Alzheimer's clinical
+    continuum. Frontiers in Aging Neuroscience 14, 899158 (2022). doi:10.3389/fnagi.2022.899158
+sources:
+  nct01638949:
+    title: ClinicalTrials.gov NCT01638949, IMAP+ study record
+    url: https://clinicaltrials.gov/study/NCT01638949
+    kind: website
+  nct01554202:
+    title: ClinicalTrials.gov NCT01554202, IMAP study record
+    url: https://clinicaltrials.gov/study/NCT01554202
+    kind: website
+  moulinet2022:
+    title: Moulinet et al. 2022, Frontiers in Aging Neuroscience
+    url: https://doi.org/10.3389/fnagi.2022.899158
+    kind: paper
+  garniercrussard2025:
+    title: Garnier-Crussard et al. 2025, Scientific Reports (PMC12583515)
+    url: https://doi.org/10.1038/s41598-025-23371-7
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, amyloid PET, florbetapir, FDG-PET, subjective cognitive decline, mild cognitive impairment, Cyceron]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

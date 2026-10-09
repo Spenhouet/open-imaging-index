@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,242,nct01638949,Study Design (Enrollment),actual enrolment of IMAP+; participants of the earlier IMAP protocol (NCT01554202) are not counted
+subjects,country=FR,242,nct01638949,Contacts and Locations,imaging at GIP Cyceron in Caen
+subjects,condition=healthy,56,moulinet2022,Table 1,"older controls in one analysis subset; the cohort also has young and middle-aged controls, whose number is not reported"
+subjects,condition=scd,35,moulinet2022,Table 1,count in one analysis subset; the cohort total is not reported
+subjects,condition=mci,28,moulinet2022,"Materials and Methods, Participants",count in one analysis subset; the cohort total is not reported
+subjects,condition=alzheimers,28,moulinet2022,"Materials and Methods, Participants",probable Alzheimer's dementia; count in one analysis subset; the cohort total is not reported
+subjects,tracer=fdg,147,moulinet2022,"Materials and Methods, Neuroimaging Data and Processing",at least; all 147 participants of this analysis subset had FDG-PET
+subjects,tracer=florbetapir,147,moulinet2022,"Materials and Methods, Neuroimaging Data and Processing",at least; all 147 participants of this analysis subset had florbetapir PET
+subjects,contrast=T1w,142,garniercrussard2025,Methods,at least; 3D T1-weighted FFE in all 142 participants of this analysis subset
+subjects,contrast=T2w,142,garniercrussard2025,Methods,at least; 2D T2-weighted spin echo in all 142 participants of this analysis subset
+subjects,contrast=FLAIR,142,garniercrussard2025,Methods,at least; 3D FLAIR in all 142 participants of this analysis subset
+subjects,vendor=philips,142,garniercrussard2025,Methods,at least; MRI on a Philips Achieva 3 T
+subjects,field_strength=3,142,garniercrussard2025,Methods,at least; Philips Achieva 3 T
+subjects,vendor=ge,142,garniercrussard2025,Methods,at least; PET on a GE Discovery RX VCT 64 PET-CT
