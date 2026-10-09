@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-kirp
+name: TCGA-KIRP
+full_name: The Cancer Genome Atlas Kidney Renal Papillary Cell Carcinoma Collection
+summary: >-
+  Pre-surgical CT, MRI and PET-CT of 33 patients with papillary renal cell carcinoma from four US centers, matched by
+  patient ID to the TCGA clinical, genomic and pathology data for radiogenomics research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-kirp/
+doi: 10.7937/K9/TCIA.2016.ACWOGBEF
+year: 2013
+updated: 2020
+version: '4'
+status: active
+creators:
+  - name: The Cancer Genome Atlas (TCGA) Research Network and four contributing US imaging sites
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR, PT]
+contrasts: [T1w, T1w_ce, T2w, dwi]
+anatomy: [kidney, abdomen]
+conditions: [kidney_cancer]
+tasks: [classification, survival]
+formats: [DICOM]
+countries: [US]
+size_gb: 10.27
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-kirp/
+  note: >-
+    Images download with the TCIA Data Retriever. Clinical, genomic and histopathology data for the same patient IDs
+    are held in the NCI Genomic Data Commons; a 2016 clinical data snapshot is linked from the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Linehan M, Gautam R, Kirk S, Lee Y, Roche C, Bonaccio E, Filippini J, Rieger-Christ K, Lemmerman J, Jarosz R.
+    (2016). The Cancer Genome Atlas Cervical Kidney Renal Papillary Cell Carcinoma Collection (TCGA-KIRP) (Version 4)
+    [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.ACWOGBEF
+sources:
+  tcia-tcga-kirp:
+    title: TCIA TCGA-KIRP collection page (version 4, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-kirp/
+    kind: website
+  tcia-tcga-kirp-digest:
+    title: >-
+      TCIA TCGA-KIRP series metadata digest (XLSX linked from the collection page, open, no login, CC BY 3.0), counted
+      per Patient ID, Study Instance UID, Modality and Manufacturer
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/doiJNLP-TCGA-KIRP-01-30-2017-nbia-digest.xlsx
+    kind: computed
+related: []
+keywords: [renal cell carcinoma, papillary, radiogenomics, TCGA, kidney tumor, abdominal MRI, abdominal CT]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
