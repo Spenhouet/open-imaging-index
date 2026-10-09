@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mitea
+name: MITEA
+full_name: MITEA (MR-Informed Three-dimensional Echocardiography Analysis)
+summary: >-
+  3D transthoracic echocardiography of 134 adults from Auckland (82 healthy, 52 with cardiac disease), scan and rescan
+  at end-diastole and end-systole, with left ventricular myocardium and cavity labels registered from each subject's
+  own cardiac MRI. 536 labelled volumes.
+homepage: https://www.cardiacatlas.org/mitea/
+doi: 10.3389/fcvm.2022.1016703
+year: 2023
+status: active
+creators:
+  - name: Auckland Bioengineering Institute, University of Auckland
+  - name: Cardiac Atlas Project (hosting)
+    url: https://www.cardiacatlas.org/
+species: human
+modalities: [US]
+anatomy: [heart]
+conditions:
+  [
+    healthy,
+    left_ventricular_hypertrophy,
+    cardiac_amyloidosis,
+    aortic_regurgitation,
+    hypertrophic_cardiomyopathy,
+    dilated_cardiomyopathy
+  ]
+tasks: [segmentation]
+countries: [NZ]
+vendors: [siemens]
+access:
+  type: application
+  url: https://www.cardiacatlas.org/mitea/
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    applies_to: All data
+    note: >-
+      The dataset page states that MITEA can be provided under CC BY-NC-SA 4.0 for research purposes and that
+      commercial or other use needs contact with the data contributors. The same page's intellectual property notice
+      says no part of the dataset may be copied, distributed or disclosed to others without consent.
+  - license: LicenseRef-CAP-Data-Distribution-Policy
+    applies_to: All data
+    note: >-
+      Access is requested through an online form that describes the intended research and data handling. The
+      requester must agree to the CAP Policy Statements, not to share the data outside their research group and to
+      use it only for the purpose stated in the request. Institutional email addresses are required.
+citation:
+  text: >-
+    Zhao D, Ferdian E, Maso Talou GD, Quill GM, Gilbert K, Wang VY, Babarenda Gamage TP, Pedrosa J, D'hooge J, Sutton
+    TM, Lowe BS, Legget ME, Ruygrok PN, Doughty RN, Camara O, Young AA, Nash MP. MITEA: A dataset for machine learning
+    segmentation of the left ventricle in 3D echocardiography using subject-specific labels from cardiac magnetic
+    resonance imaging. Front Cardiovasc Med 9, 1016703 (2023). https://doi.org/10.3389/fcvm.2022.1016703
+sources:
+  zhao2023:
+    title: Zhao et al. 2023, Frontiers in Cardiovascular Medicine (MITEA data descriptor)
+    url: https://doi.org/10.3389/fcvm.2022.1016703
+    kind: paper
+  cap-mitea:
+    title: Cardiac Atlas Project, MITEA page
+    url: https://www.cardiacatlas.org/mitea/
+    kind: website
+related: [sunnybrook-cardiac-data, mesa-cardiac-mri, determine]
+keywords:
+  [3D echocardiography, left ventricle segmentation, multimodal, cardiac MRI derived labels, scan-rescan, Cardiac Atlas Project]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

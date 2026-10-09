@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,134,zhao2023,Section 2,144 recruited; 10 excluded for poor 3D echo image quality
+subjects,modality=US,134,zhao2023,Section 2.1,Transthoracic real-time 3D echocardiography
+subjects,vendor=siemens,134,zhao2023,Section 2.1,Siemens ACUSON SC2000 with 4Z1c transducer
+subjects,country=NZ,134,zhao2023,Section 2,"Auckland, New Zealand"
+subjects,condition=healthy,82,zhao2023,Table 1,
+subjects,condition=left_ventricular_hypertrophy,14,zhao2023,Section 3.1,
+subjects,condition=cardiac_amyloidosis,12,zhao2023,Section 3.1,
+subjects,condition=aortic_regurgitation,10,zhao2023,Section 3.1,
+subjects,condition=hypertrophic_cardiomyopathy,8,zhao2023,Section 3.1,
+subjects,condition=dilated_cardiomyopathy,6,zhao2023,Section 3.1,
+subjects,sex=male,81,zhao2023,Table 1,
+subjects,sex=male;condition=healthy,42,zhao2023,Table 1,
+subjects,split=train,107,zhao2023,Section 2.4,Split used in the paper's nnU-Net experiment
+subjects,split=test,27,zhao2023,Section 2.4,Split used in the paper's nnU-Net experiment
+scans,,536,zhao2023,Section 2.3,"3D image volumes: 268 clips (scan and rescan per subject), each at end-diastole and end-systole"
+age_mean,,47,zhao2023,Table 1,
+age_sd,,20,zhao2023,Table 1,
+age_min,,18,zhao2023,Table 1,
+age_max,,84,zhao2023,Table 1,
