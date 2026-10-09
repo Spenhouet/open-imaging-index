@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,76,ds000208-participants,participant_id,76 rows and 76 subject folders in snapshot 1.0.1; the paper reports 17 study 1 and 39 study 2 patients plus 20 controls (Methods: Participants)
+subjects,condition=knee_osteoarthritis,56,ds000208-participants,type,type patient; 17 from study 1 (2-week placebo) and 39 from study 2 (3-month placebo or duloxetine)
+subjects,condition=healthy,20,ds000208-participants,type,type control
+subjects,sex=female,40,ds000208-participants,gender,
+subjects,sex=male,36,ds000208-participants,gender,
+subjects,age=40-49,9,ds000208-participants,Age,
+subjects,age=50-59,41,ds000208-participants,Age,
+subjects,age=60-69,21,ds000208-participants,Age,
+subjects,age=70-79,5,ds000208-participants,Age,
+subjects,condition=knee_osteoarthritis;sex=female,30,ds000208-participants,type; gender,
+subjects,condition=knee_osteoarthritis;sex=male,26,ds000208-participants,type; gender,
+subjects,condition=healthy;sex=female,10,ds000208-participants,type; gender,
+subjects,condition=healthy;sex=male,10,ds000208-participants,type; gender,
+subjects,condition=knee_osteoarthritis;age=50-59,28,ds000208-participants,type; Age,Cells below 10 left out
+subjects,condition=knee_osteoarthritis;age=60-69,17,ds000208-participants,type; Age,Cells below 10 left out
+subjects,condition=healthy;age=50-59,13,ds000208-participants,type; Age,Cells below 10 left out
+age_min,,44,ds000208-participants,Age,
+age_max,,78,ds000208-participants,Age,
+scans,,152,ds000208-file-tree,*.nii.gz,76 T1w and 76 bold files
+scans,contrast=T1w,76,ds000208-file-tree,anat/*_T1w.nii.gz,One per subject
+scans,contrast=bold,76,ds000208-file-tree,func/*_task-rest_bold.nii.gz,One resting-state run per subject
+subjects,contrast=T1w,76,ds000208-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,76,ds000208-file-tree,func/*_task-rest_bold.nii.gz,
+subjects,contrast_set=bold+T1w,76,ds000208-file-tree,sub-*/,Every subject has one T1w and one resting-state bold file
+subjects,field_strength=3,76,tetreault2016,"Methods, Brain Scanning Parameters (Studies 1 and 2)",3T Siemens Trio for all study 1 and 2 participants
+subjects,vendor=siemens,76,tetreault2016,"Methods, Brain Scanning Parameters (Studies 1 and 2)",3T Siemens Trio

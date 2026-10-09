@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000208
+name: Placebo response in knee osteoarthritis pain (ds000208)
+full_name: Brain connectivity predicts placebo response across chronic pain clinical trials
+summary: >-
+  Pretreatment T1w MRI and resting-state fMRI of 56 knee osteoarthritis pain patients from two placebo and duloxetine
+  trials plus 20 healthy controls, scanned at Northwestern University, with treatment arm and analgesic response, in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds000208
+doi: 10.18112/openneuro.ds000208.v1.0.1
+year: 2018
+updated: 2022
+version: 1.0.1
+status: active
+creators:
+  - name: Apkarian Lab, Northwestern University (Tetreault P, Mansour A, Vachon-Presseau E, Schnitzer TJ, Apkarian AV, Baliki MN)
+    url: https://openneuro.org/datasets/ds000208
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [knee_osteoarthritis, healthy]
+tasks: [classification, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000208
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Tétreault P, Mansour A, Vachon-Presseau E, Schnitzer TJ, Apkarian AV, Baliki MN. Brain connectivity predicts
+    placebo response across chronic pain clinical trials. PLoS Biology 14(10): e1002570 (2016).
+    doi:10.1371/journal.pbio.1002570
+sources:
+  tetreault2016:
+    title: Tétreault et al. 2016, Brain connectivity predicts placebo response across chronic pain clinical trials, PLoS Biology
+    url: https://doi.org/10.1371/journal.pbio.1002570
+    kind: paper
+  openneuro-ds000208-v101:
+    title: OpenNeuro ds000208 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds000208/versions/1.0.1
+    kind: website
+  ds000208-participants:
+    title: participants.tsv of ds000208 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds000208/blob/1.0.1/participants.tsv
+    kind: computed
+  ds000208-file-tree:
+    title: File tree of ds000208 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds000208/tree/1.0.1
+    kind: computed
+related: []
+keywords: [placebo response, chronic pain, osteoarthritis, duloxetine, clinical trial, resting-state fMRI, OpenPain]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
