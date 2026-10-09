@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MGB-Clinical-Brain-MRI-DUL
+name: Data Use License for the MGB Clinical Brain MRI Repository
+short_name: MGB Clinical MRI DUL
+url: https://zenodo.org/records/18701184
+version: 'Version 1.0, March 2026, as shown on the Zenodo record'
+summary: >-
+  Access only after the principal investigator approves a request on Zenodo and a data use agreement with Mass General
+  Brigham is executed. Use is limited to non-commercial research such as method development and model training; other
+  uses need written approval. No re-identification, no redistribution, minimum security controls, and access only
+  from countries approved under the U.S. Data Security Program.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Any other use (e.g., clinical decision-making, commercial product development, or training proprietary closed
+      models) requires explicit written approval from the MGB Contracting Office.
+    note: >-
+      The license allows only non-commercial research. Commercial use is possible only with separate written approval
+      from the MGB Contracting Office.
+  product_validation:
+    value: unspecified
+    note: >-
+      Benchmarking and algorithmic evaluation and validation are listed as permitted non-commercial research, and
+      commercial product development needs written approval, but testing or validating a product is not addressed.
+  model_training:
+    value: conditional
+    quote: model training, benchmarking, reproducibility testing
+    note: >-
+      Listed under permitted non-commercial research purposes. Training proprietary closed models needs explicit written approval from the MGB Contracting Office.
+  derivatives:
+    value: 'yes'
+    quote: >-
+      I agree to acknowledge the dataset and its authors in all publications, presentations, and derivative works using
+      the following citation format
+  publication:
+    value: 'yes'
+    quote: >-
+      I agree to acknowledge the dataset and its authors in all publications, presentations, and derivative works using
+      the following citation format
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not share, redistribute, repost, publish, or otherwise disseminate any portion of the dataset to any third
+      party.
+    note: Collaborators must request access through Zenodo themselves and be approved by the PI.
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      No portion of the dataset may be passed on, but the text does not say whether derived data such as segmentations
+      count as a portion of it.
+  share_model_weights:
+    value: unspecified
+    note: Training proprietary closed models needs written approval; sharing or selling weights is not addressed.
+  attribution:
+    value: 'yes'
+    quote: >-
+      I agree to acknowledge the dataset and its authors in all publications, presentations, and derivative works using
+      the following citation format
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      A Data Use Agreement (DUA) or institutional contract is required by Mass General Brigham (MGB) for access to this
+      dataset.
+    note: Access also needs review and approval of the individual request by the dataset's principal investigator.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      I will comply with all rules, policies, and oversight requirements of my home institution, including any
+      requirements for IRB/ethics review or data security approval.
+    note: The license asks for whatever IRB or ethics review the user's own institution requires.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to identify any individual whose data are included in this dataset.
+  geographic_restriction:
+    value: 'yes'
+    quote: >-
+      Access will only be granted to users in countries approved under the U.S. Department of Justice Data Security
+      Program (DSP) under Executive Order 14117.
+    note: Data must also stay on systems that meet the listed security controls, with no unapproved cloud storage.
+commercial_license:
+  available: conditional
+  note: Uses outside non-commercial research need explicit written approval from the MGB Contracting Office.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

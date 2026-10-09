@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mgb-clinical-brain-mri
+name: MGB Clinical Brain MRI Repository
+full_name: Repository of clinical brain scans with real-world variability
+summary: >-
+  15,926 uncurated, skull-stripped clinical brain MRI scans of 1,384 subjects taken straight from the Massachusetts
+  General Hospital PACS, with mixed sequences, resolutions and orientations plus age and gender. The "MGH dataset" of
+  the SynthSR paper. Access after PI approval and a data use agreement.
+homepage: https://zenodo.org/records/18701184
+doi: 10.5281/zenodo.18701184
+# The SynthSR paper (February 2023) states the data were on the public Martinos Center server. That server now points
+# to the Zenodo record (version 1.0, published 2026-02-19), where access is restricted.
+year: 2023
+updated: 2026
+version: '1.0'
+status: active
+creators:
+  - name: Juan Eugenio Iglesias and Sudeshna Das, Athinoula A. Martinos Center for Biomedical Imaging, Mass General Brigham
+    url: https://zenodo.org/records/18701184
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR]
+anatomy: [brain]
+tasks: [synthesis, segmentation]
+formats: [NIfTI]
+countries: [US]
+access:
+  type: signed_agreement
+  url: https://zenodo.org/records/18701184
+licenses:
+  - license: LicenseRef-MGB-Clinical-Brain-MRI-DUL
+citation:
+  text: >-
+    Iglesias JE, et al. Repository of Clinical Brain MRI Scans with Real World Variability, Mass General Brigham (2026).
+    Zenodo. doi:10.5281/zenodo.18701184. And: Iglesias JE, Billot B, Balbastre Y, Magdamo C, Arnold SE, Das S, Edlow
+    BL, Alexander DC, Golland P, Fischl B. SynthSR: A public AI tool to turn heterogeneous clinical brain scans into
+    high-resolution T1-weighted images for 3D morphometry. Science Advances 9(5):eadd3607 (2023).
+    doi:10.1126/sciadv.add3607
+sources:
+  zenodo-18701184:
+    title: Zenodo record 18701184, Repository of clinical brain scans with real-world variability, version 1.0
+    url: https://zenodo.org/records/18701184
+    kind: website
+  iglesias2023:
+    title: Iglesias JE et al. 2023, SynthSR, Science Advances
+    url: https://doi.org/10.1126/sciadv.add3607
+    kind: paper
+related: []
+keywords: [clinical MRI, PACS, uncurated, heterogeneous acquisitions, super-resolution, SynthSR, domain shift]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
