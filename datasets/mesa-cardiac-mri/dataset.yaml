@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mesa-cardiac-mri
+name: MESA Cardiac MRI (Cardiac Atlas Project)
+full_name: Multi-Ethnic Study of Atherosclerosis (MESA) baseline cardiac MRI, Cardiac Atlas Project share
+summary: >-
+  2,450 baseline cine cardiac MRI studies (1.5 T, gradient echo) of asymptomatic adults from the US MESA cohort, with
+  ~300 derived 3D left ventricular models, shared by the Cardiac Atlas Project after review by the MESA contributors.
+homepage: https://www.cardiacatlas.org/mesa/
+doi: 10.1093/bioinformatics/btr360
+# Year of the Cardiac Atlas Project database paper, which describes the MESA contribution as part of the database.
+# The date CAP first distributed MESA data to outside users is not published.
+year: 2011
+status: active
+creators:
+  - name: Cardiac Atlas Project, Auckland Bioengineering Institute, University of Auckland
+    url: https://www.cardiacatlas.org/
+  - name: MESA investigators (David A. Bluemke, National Institutes of Health; Joao Lima, Johns Hopkins University)
+    url: https://www.mesa-nhlbi.org/
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [healthy]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens, ge]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://www.cardiacatlas.org/mesa/
+licenses:
+  - license: LicenseRef-CAP-Data-Distribution-Policy
+    note: >-
+      Users submit a research project to the CAP Steering Committee, the MESA contributors review it, and the user
+      then signs a Data Distribution Agreement for MESA. That MESA-specific agreement is not published; the CAP user
+      policy sets the terms every such agreement follows. As of the verification date the CAP MESA page states the
+      dataset is temporarily unavailable while the data sharing agreement with the contributor is renewed.
+citation:
+  text: >-
+    Fonseca CG, Backhaus M, Bluemke DA, et al. The Cardiac Atlas Project: an imaging database for computational
+    modeling and statistical atlases of the heart. Bioinformatics 27(16), 2288-2295 (2011).
+    doi:10.1093/bioinformatics/btr360
+sources:
+  cap-mesa-page:
+    title: Cardiac Atlas Project website, MESA dataset page
+    url: https://www.cardiacatlas.org/mesa/
+    kind: website
+  fonseca2011:
+    title: Fonseca et al. 2011, Bioinformatics, The Cardiac Atlas Project
+    url: https://doi.org/10.1093/bioinformatics/btr360
+    kind: paper
+related: [mesa-brain-mri]
+keywords: [cardiac MRI, cine MRI, left ventricle, shape atlas, community cohort, atherosclerosis, asymptomatic]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
