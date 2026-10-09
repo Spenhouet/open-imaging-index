@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lumbar-spine-mri-sudirman
+name: Lumbar Spine MRI Dataset
+full_name: Lumbar Spine MRI Dataset (Sudirman et al.)
+summary: >-
+  Clinical 1.5 T lumbar spine MRI of 515 adults with symptomatic back pain from one hospital in Jordan, with
+  T1w and T2w sagittal and axial series as DICOM. Companion releases add axial segmentation labels and
+  radiologist notes.
+homepage: https://data.mendeley.com/datasets/k57fr854j2/2
+doi: 10.17632/k57fr854j2.2
+year: 2019
+version: '2'
+status: active
+creators:
+  - name: Sud Sudirman, Ala Al Kafri and colleagues, Liverpool John Moores University
+  - name: Universitas Multimedia Nusantara
+  - name: Irbid Specialty Hospital
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [spine]
+conditions: [back_pain]
+tasks: [segmentation]
+formats: [DICOM]
+countries: [JO]
+vendors: [siemens]
+field_strengths: [1.5]
+size_gb: 6.3
+access:
+  type: open
+  url: https://data.mendeley.com/datasets/k57fr854j2/2
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Sudirman S, Al Kafri A, Natalia F, Meidia H, Afriliana N, Al-Rashdan W, Bashtawi M, Al-Jumaily M. Lumbar
+    Spine MRI Dataset. Mendeley Data, V2 (2019). doi:10.17632/k57fr854j2.2. Al-Kafri AS, et al. Boundary
+    Delineation of MRI Images for Lumbar Spinal Stenosis Detection Through Semantic Segmentation Using Deep
+    Neural Networks. IEEE Access 7, 43487-43501 (2019).
+sources:
+  alkafri2019:
+    title: Al-Kafri et al. 2019, IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2019.2908002
+    kind: paper
+  mendeley-k57fr854j2:
+    title: Lumbar Spine MRI Dataset, Mendeley Data V2
+    url: https://data.mendeley.com/datasets/k57fr854j2/2
+    kind: website
+  mri-data-zip:
+    title: >-
+      MRI_Data.zip (CC BY 4.0), counted from the archive's file list and the DICOM header of the first
+      non-localizer image of each patient's first study
+    url: https://data.mendeley.com/public-files/datasets/k57fr854j2/files/eab74360-db27-4ec5-ade3-7b1b8d88e2db/file_downloaded
+    kind: computed
+related: []
+keywords: [lumbar spinal stenosis, intervertebral disc, low back pain, spine segmentation]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

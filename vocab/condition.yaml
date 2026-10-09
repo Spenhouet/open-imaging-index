@@ -342,3 +342,4 @@ terms:
   - { id: diabetic_retinopathy, label: Diabetic retinopathy, mappings: { mondo: 'MONDO:0005266' } }
   - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
   - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }
+  - { id: back_pain, label: Back pain, mappings: { hp: 'HP:0003418' } }
