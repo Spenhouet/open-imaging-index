@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-lihc
+name: TCGA-LIHC
+full_name: The Cancer Genome Atlas Liver Hepatocellular Carcinoma Collection
+summary: >-
+  Routine clinical CT, MRI and PET of 97 patients with hepatocellular carcinoma from four sites, matched by patient id
+  to the TCGA clinical, pathology and genomic data in the GDC, for radiogenomic research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-lihc/
+doi: 10.7937/K9/TCIA.2016.IMMQW8UQ
+year: 2014
+updated: 2020
+version: '5'
+status: active
+creators:
+  - name: >-
+      Erickson BJ, Kirk S, Lee Y, Bathe O, Kearns M, Gerdes C, Rieger-Christ K, Lemmerman J (Mayo Clinic, University
+      of North Carolina, Alberta Health Services, Lahey Hospital & Medical Center)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR, PT]
+anatomy: [liver]
+conditions: [hcc]
+tasks: [survival, longitudinal]
+formats: [DICOM]
+countries: [US, CA]
+vendors: [siemens, ge, philips, canon]
+size_gb: 56.38
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-lihc/
+  note: >-
+    DICOM images via the TCIA Data Retriever. Clinical, genomic and histopathology data of the same patients are in
+    the NCI Genomic Data Commons; a clinical snapshot is an open download from the collection page.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/tcga-lihc/
+    note: >-
+      TCIA lists the images under CC BY 3.0. Users must also follow the TCIA Data Usage Policy, which says users must
+      "Not use the requested datasets, either alone or in concert with any other information, to identify or contact
+      individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/). Publications are asked to
+      acknowledge the TCGA Research Network.
+citation:
+  text: >-
+    Erickson BJ, Kirk S, Lee Y, Bathe O, Kearns M, Gerdes C, Rieger-Christ K, Lemmerman J. (2016). The Cancer Genome
+    Atlas Liver Hepatocellular Carcinoma Collection (TCGA-LIHC) (Version 5) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.IMMQW8UQ
+sources:
+  tcia-tcga-lihc:
+    title: TCIA TCGA-LIHC collection page (version 5, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-lihc/
+    kind: website
+  tcia-tcga-lihc-series:
+    title: >-
+      TCIA NBIA API getSeries metadata for TCGA-LIHC (open, no account, CC BY 3.0), counted per patient id from the
+      Modality and Manufacturer fields
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=TCGA-LIHC
+    kind: computed
+  tcia-tcga-lihc-patients:
+    title: TCIA NBIA API getPatient metadata for TCGA-LIHC (open, no account, CC BY 3.0), PatientSex field
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=TCGA-LIHC
+    kind: computed
+  tcia-tcga-lihc-studies:
+    title: >-
+      TCIA NBIA API getPatientStudy metadata for TCGA-LIHC (open, no account, CC BY 3.0), PatientAge of each
+      patient's earliest study
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatientStudy?Collection=TCGA-LIHC
+    kind: computed
+related: []
+keywords: [hepatocellular carcinoma, liver cancer, TCGA, radiogenomics, abdominal CT, liver MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
