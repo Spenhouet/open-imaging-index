@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,8,spineweb-datasets-2024,Dataset 6,anonymized patients
+subjects,contrast=dixon,8,spineweb-datasets-2024,Dataset 6,"four aligned Dixon volumes per patient: in-phase, opposed-phase, fat and water"
+subjects,contrast_set=dixon,8,spineweb-datasets-2024,Dataset 6,the page lists only the four Dixon volumes per patient
+subjects,anatomy=intervertebral_disc,8,spineweb-datasets-2024,Dataset 6,"each patient has at least 7 lower-spine discs (T11 to L5), each with a manual binary mask"
+subjects,field_strength=1.5,8,spineweb-datasets-2024,Dataset 6,
+subjects,vendor=siemens,8,spineweb-datasets-2024,Dataset 6,

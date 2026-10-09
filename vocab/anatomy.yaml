@@ -15,6 +15,13 @@ terms:
   - { id: carotid_artery, label: Carotid artery, parent: neck, synonyms: [common carotid artery], mappings: { uberon: 'UBERON:0005396' } }
   - { id: spinal_cord, label: Spinal cord, mappings: { uberon: 'UBERON:0002240' } }
   - { id: spine, label: Spine, mappings: { uberon: 'UBERON:0001130' } }
+  - {
+      id: intervertebral_disc,
+      label: Intervertebral disc,
+      parent: spine,
+      synonyms: [intervertebral disk, IVD],
+      mappings: { uberon: 'UBERON:0001066' }
+    }
   - { id: eye, label: Eye, mappings: { uberon: 'UBERON:0000970' } }
   - { id: retina, label: Retina, parent: eye, mappings: { uberon: 'UBERON:0000966' } }
   - { id: chest, label: Chest, synonyms: [thorax], mappings: { uberon: 'UBERON:0001443' } }
