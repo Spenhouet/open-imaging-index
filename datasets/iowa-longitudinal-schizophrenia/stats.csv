@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,275,nda-collection-2125,General tab (Subjects Shared),Subjects shared through the NIMH Data Archive
+subjects,modality=MR,267,nda-collection-2125,Shared Data tab (Image),Subjects in the shared NDA Image data structure
