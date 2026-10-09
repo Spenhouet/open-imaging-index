@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gtu-lumbar-mri
+name: GTU Lumbar MRI Dataset
+full_name: Lumbar MRI Dataset of the Computer Vision Lab, Gebze Technical University
+summary: >-
+  Mid-sagittal T1- and T2-weighted lumbar spine MR slices of 80 subjects (64 with disc or vertebra pathologies), with
+  expert-marked centre points of the L1 to L5 vertebrae and the T12-L1 to L5-S1 discs for localization and labelling.
+homepage: https://bilmuh.gtu.edu.tr/vislab/pages/lumbar-mri-dataset.html
+doi: 10.1109/TBME.2013.2256460
+year: 2013
+status: active
+creators:
+  - name: Computer Vision Lab, Department of Computer Engineering, Gebze Technical University
+    url: https://bilmuh.gtu.edu.tr/vislab/
+  - name: Ayse Betul Oktay, Department of Computer Engineering, Istanbul Medeniyet University
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [spine]
+tasks: [detection]
+size_gb: 0.044
+access:
+  type: open
+  url: https://bilmuh.gtu.edu.tr/vislab/pages/lumbar-mri-dataset.html
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The dataset page links a public zip download and asks users to cite two papers, but states no license or terms
+      of use. The paper only says the data can be downloaded. Use beyond citation has to be agreed with the authors.
+citation:
+  text: >-
+    Oktay AB, Akgul YS. Simultaneous Localization of Lumbar Vertebrae and Intervertebral Discs With SVM-Based MRF. IEEE
+    Transactions on Biomedical Engineering 60(9), 2375-2383 (2013). doi:10.1109/TBME.2013.2256460
+  bibtex: |
+    @article{oktay2013,
+      title={Simultaneous Localization of Lumbar Vertebrae and Intervertebral Discs With SVM-Based MRF},
+      author={Oktay, Ayse Betul and Akgul, Yusuf Sinan},
+      journal={IEEE Transactions on Biomedical Engineering},
+      volume={60},
+      number={9},
+      pages={2375--2383},
+      year={2013},
+      doi={10.1109/TBME.2013.2256460}
+    }
+sources:
+  gtu-lumbar-mri-page:
+    title: GTU VisLab Lumbar MRI Dataset page
+    url: https://bilmuh.gtu.edu.tr/vislab/pages/lumbar-mri-dataset.html
+    kind: website
+  oktay2013:
+    title: Oktay and Akgul 2013, IEEE Transactions on Biomedical Engineering (author copy)
+    url: https://bilmuh.gtu.edu.tr/vislab/pdfs/2013/double_final.pdf
+    kind: paper
+related: []
+keywords: [lumbar spine, vertebra localization, intervertebral disc, vertebra labelling, sagittal MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
