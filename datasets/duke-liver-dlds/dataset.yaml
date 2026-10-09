@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: duke-liver-dlds
+name: Duke Liver Dataset (DLDS)
+full_name: Duke Liver Dataset (MRI)
+summary: >-
+  2146 abdominal MRI series of 105 patients scanned for suspected liver cirrhosis at Duke, with series-type labels
+  in 17 classes and manual whole-liver masks for 310 series, for MRI series classification and liver segmentation.
+homepage: https://zenodo.org/records/7774566
+doi: 10.5281/zenodo.7774566
+year: 2022
+updated: 2023
+version: 2.0.0
+status: active
+creators:
+  - name: Duke University School of Medicine (Macdonald J.A., Zhu Z., Konkel B., Mazurowski M., Wiggins W., Bashir M.)
+    url: https://zenodo.org/records/7774566
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, dwi, ADC]
+anatomy: [liver, abdomen]
+conditions: [liver_cirrhosis]
+tasks: [segmentation, classification]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens, ge]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://zenodo.org/records/7774566
+  note: >-
+    Files are restricted on Zenodo. Request access through the record's form, giving your affiliation and a short
+    description of the intended use; Duke University reviews the request.
+licenses:
+  - license: CC-BY-NC-ND-4.0
+    applies_to: All files of the Zenodo record (series classification and segmentation groupings).
+    note: >-
+      Requesters choose between CC BY-NC-ND 4.0 and a custom license negotiated with the Duke Office for Translation
+      & Commercialization, which can allow commercial use. Modifications contributed back must have their copyright
+      assigned to Duke University.
+citation:
+  text: >-
+    Macdonald JA, Zhu Z, Konkel B, Mazurowski MA, Wiggins WF, Bashir MR. Duke Liver Dataset: A Publicly Available
+    Liver MRI Dataset with Liver Segmentation Masks and Series Labels. Radiology: Artificial Intelligence
+    5(5):e220275 (2023). doi:10.1148/ryai.220275
+sources:
+  macdonald2023:
+    title: Macdonald et al. 2023, Radiology Artificial Intelligence (data resource article)
+    url: https://doi.org/10.1148/ryai.220275
+    kind: paper
+  zenodo-dlds-v2:
+    title: Zenodo record Duke Liver Dataset (MRI) v2 (description and access conditions)
+    url: https://zenodo.org/records/7774566
+    kind: website
+related: []
+keywords: [liver segmentation, MRI series classification, abdominal MRI, cirrhosis, sequence identification]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
