@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,346,tcia-prostatex,Data Access table,
+studies,,349,tcia-prostatex,Data Access table,
+scans,,18321,tcia-prostatex,Data Access table,DICOM series
+images,,309251,tcia-prostatex,Data Access table,DICOM images (slices)
+subjects,split=train,204,tcia-prostatex,"Detailed Description, PROSTATEx Challenge",PROSTATEx training cohort
+subjects,split=test,140,tcia-prostatex,"Detailed Description, PROSTATEx Challenge",PROSTATEx test cohort; reference standard released in version 2
+subjects,contrast=T2w,346,tcia-prostatex,Image Acquisition Details,the page states all studies include T2w
+subjects,contrast=PDw,346,tcia-prostatex,Image Acquisition Details,the page states all studies include proton density weighted imaging
+subjects,contrast=dce,346,tcia-prostatex,Image Acquisition Details,the page states all studies include DCE
+subjects,contrast=dwi,346,tcia-prostatex,Image Acquisition Details,"the page states all studies include DWI (b = 50, 400, 800)"
+subjects,contrast=ADC,346,tcia-prostatex,Image Acquisition Details,ADC map computed by the scanner software from the DWI
+subjects,contrast_set=ADC+dce+dwi+PDw+T2w,346,tcia-prostatex,Image Acquisition Details,
+subjects,field_strength=3,346,tcia-prostatex,Image Acquisition Details,Siemens MAGNETOM Trio and Skyra
+subjects,vendor=siemens,346,tcia-prostatex,Image Acquisition Details,
+subjects,country=NL,346,tcia-prostatex,Acknowledgements,all imaging at Radboudumc in Nijmegen
