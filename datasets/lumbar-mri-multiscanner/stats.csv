@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,34,alkhalil2022,Methods: Patient cohort,
+studies,,55,alkhalil2022,Tables 2 and 3,"34 first sessions plus 21 follow-up sessions on a different scanner model or protocol, counted from the per-patient rows"
+subjects,sex=female,20,alkhalil2022,Table 1,counted from the per-patient rows; the text gives 58.8% female
+subjects,sex=male,14,alkhalil2022,Table 1,counted from the per-patient rows
+age_mean,,60.4,alkhalil2022,Methods: Patient cohort,
+age_sd,,15.2,alkhalil2022,Methods: Patient cohort,
+age_min,,30.0,alkhalil2022,Methods: Patient cohort,
+age_max,,88.1,alkhalil2022,Methods: Patient cohort,
+subjects,age=30-39,3,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,age=40-49,7,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,age=50-59,7,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,age=60-69,5,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,age=70-79,8,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,age=80-89,4,alkhalil2022,Table 1,counted from the per-patient ages
+subjects,condition=low_back_pain,14,alkhalil2022,Table 1,"indication code 2: low back pain with or without radiculopathy from suspected degeneration; some rows list radiculopathy only"
+subjects,condition=discitis,4,alkhalil2022,Table 1,"rows with spondylodiscitis; a fifth patient in the same indication group was imaged for follow-up of an inflammatory lesion"
+subjects,condition=fracture,1,alkhalil2022,Table 1,sacral fracture
+subjects,contrast=T1w,34,alkhalil2022,Tables 2 and 3,non-contrast T1-weighted series; the masks were drawn on these
+subjects,contrast=T2w,34,alkhalil2022,Tables 2 and 3,T2-weighted TSE or T2-weighted Dixon series
+subjects,contrast=T1w_ce,22,alkhalil2022,Tables 2 and 3,contrast-enhanced T1-weighted series including one fat-saturated series
+subjects,contrast=STIR,7,alkhalil2022,Tables 2 and 3,
+subjects,contrast_set=T1w+T1w_ce+T2w,18,alkhalil2022,Tables 2 and 3,"union over both sessions, counted from the per-patient rows"
+subjects,contrast_set=T1w+T2w,9,alkhalil2022,Tables 2 and 3,"union over both sessions, counted from the per-patient rows"
+subjects,contrast_set=STIR+T1w+T1w_ce+T2w,4,alkhalil2022,Tables 2 and 3,"union over both sessions, counted from the per-patient rows"
+subjects,contrast_set=STIR+T1w+T2w,3,alkhalil2022,Tables 2 and 3,"union over both sessions, counted from the per-patient rows"
+subjects,vendor=philips,34,alkhalil2022,Methods: Patient cohort,every patient had at least one session on a Philips system
+subjects,vendor=siemens,15,alkhalil2022,Tables 2 and 3,counted from the per-patient rows
+subjects,vendor=ge,1,alkhalil2022,Tables 2 and 3,
+studies,vendor=philips,39,alkhalil2022,Methods: Magnetic resonance imaging,"70.9% of sessions; Achieva, Ingenia and Elition"
+studies,vendor=siemens,15,alkhalil2022,Methods: Magnetic resonance imaging,27.3% of sessions; seven scanner models
+studies,vendor=ge,1,alkhalil2022,Methods: Magnetic resonance imaging,one Signa session

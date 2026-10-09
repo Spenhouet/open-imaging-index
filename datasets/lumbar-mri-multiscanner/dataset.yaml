@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lumbar-mri-multiscanner
+name: Multi-scanner lumbar spine MRI segmentation database
+full_name: Multi-scanner and multi-modal lumbar vertebral body and intervertebral disc segmentation database
+summary: >-
+  Clinical lumbar spine MRI of 34 patients from 55 sessions on Philips, Siemens and GE scanners, with T1w, contrast
+  T1w, T2w, Dixon and STIR series and manual masks of the L1 to L5 vertebral bodies and four discs, for multi-domain
+  spine segmentation.
+homepage: https://osf.io/qx5rt/
+doi: 10.17605/OSF.IO/QX5RT
+year: 2022
+status: active
+creators:
+  - name: Klinikum rechts der Isar, Technical University of Munich
+  - name: Biomedical Engineering Department, Eindhoven University of Technology
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, STIR]
+anatomy: [spine]
+conditions: [low_back_pain, discitis, fracture]
+tasks: [segmentation, longitudinal]
+formats: [NIfTI]
+countries: [DE]
+vendors: [philips, siemens, ge]
+access:
+  type: open
+  url: https://osf.io/qx5rt/
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Al Khalil Y, Becherucci EA, Kirschke JS, Karampinos DC, Breeuwer M, Baum T, Sollmann N. Multi-scanner and
+    multi-modal lumbar vertebral body and intervertebral disc segmentation database. Sci Data 9, 97 (2022).
+    https://doi.org/10.1038/s41597-022-01222-8
+  bibtex: |
+    @article{alkhalil2022,
+      title = {Multi-scanner and multi-modal lumbar vertebral body and intervertebral disc segmentation database},
+      author = {Al Khalil, Yasmina and Becherucci, Edoardo A. and Kirschke, Jan S. and Karampinos, Dimitrios C. and Breeuwer, Marcel and Baum, Thomas and Sollmann, Nico},
+      journal = {Scientific Data},
+      volume = {9},
+      pages = {97},
+      year = {2022},
+      doi = {10.1038/s41597-022-01222-8}
+    }
+sources:
+  alkhalil2022:
+    title: Al Khalil et al. 2022, Scientific Data 9, 97
+    url: https://doi.org/10.1038/s41597-022-01222-8
+    kind: paper
+  osf-qx5rt:
+    title: OSF project page and wiki of the database
+    url: https://osf.io/qx5rt/
+    kind: website
+related: []
+keywords: [lumbar spine, vertebral body segmentation, intervertebral disc segmentation, Dixon MRI, multi-scanner, domain shift]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
