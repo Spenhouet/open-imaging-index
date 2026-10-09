@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Penn-CHOP-Connectome-Terms
+name: Penn-CHOP Developmental Connectome download form note and brainmrimap.org notice
+short_name: Penn-CHOP Connectome
+url: https://forms.gle/CH925CUGCHN9gQvJ7
+version: >-
+  Note on the "Data Download Form: Penn-CHOP Developmental Connectome" Google form and footer of
+  brainmrimap.org/developmental-connectome.html, read 2026-10-09
+summary: >-
+  Not a formal license. The download form states that the data are for research purposes only, and the dataset page
+  says all rights are reserved by the Huang lab. Nothing else is set out about sharing, citation or commercial use.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    note: Use is limited to research; the text does not say whether commercial research counts.
+    quote: 'Note: The data should be solely use for research purposes.'
+  product_validation:
+    value: unspecified
+    note: The text limits use to research purposes but does not address testing or validating a product.
+  model_training:
+    value: conditional
+    note: Allowed as part of research.
+    quote: 'Note: The data should be solely use for research purposes.'
+  derivatives:
+    value: unspecified
+    note: The text does not mention derived data such as new labels or processed images.
+  publication:
+    value: unspecified
+    note: The text does not address publishing results.
+  redistribute_original:
+    value: unspecified
+    note: >-
+      No term addresses passing the data on. The dataset page footer reserves all rights, but it is not clear whether
+      it covers the data or only the website.
+    quote: '© All rights reserved by Huang Lab.'
+    source: http://www.brainmrimap.org/developmental-connectome.html
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'no'
+    note: The current terms do not ask for a citation, although the dataset page lists the lab's related publications.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: >-
+      Access needs a short Google form (name, email, institution, principal investigator, purpose), but there is no
+      agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
