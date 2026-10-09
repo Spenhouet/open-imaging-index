@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,1151,tcia-prostate-mri-us-biopsy,Data Access table,Images row
+studies,,2799,tcia-prostate-mri-us-biopsy,Data Access table,Images row
+scans,,4819,tcia-prostate-mri-us-biopsy,Data Access table,"DICOM series, MR and US"
+images,,102397,tcia-prostate-mri-us-biopsy,Data Access table,DICOM images; each US series is one multi-frame image
+subjects,contrast=ADC,837,tcia-prostate-mri-us-biopsy,Diffusion-MRI-Supplement-To-Prostate-MRI-US-Biopsy,added in version 2
+subjects,contrast=dwi,837,tcia-prostate-mri-us-biopsy,Diffusion-MRI-Supplement-To-Prostate-MRI-US-Biopsy,"high b-value DWI, mostly calculated b=1400; added in version 2"
+subjects,modality=US,1151,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Modality",
+subjects,modality=MR,842,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Modality",
+scans,modality=US,1762,tcia-prostate-mri-us-biopsy-digest,"Series Instance UID, Modality",
+scans,modality=MR,3057,tcia-prostate-mri-us-biopsy-digest,"Series Instance UID, Modality",
+subjects,sex=male,1151,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Sex",
+subjects,vendor=eigen,1151,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Manufacturer",Artemis ultrasound series
+subjects,vendor=siemens,808,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Manufacturer",MR
+subjects,vendor=ge,26,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Manufacturer",MR from other institutions
+subjects,vendor=philips,9,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Manufacturer",MR from other institutions
+subjects,age=40-49,17,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",age at the first study with an age; 839 subjects have one
+subjects,age=50-59,166,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",age at the first study with an age
+subjects,age=60-69,402,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",age at the first study with an age
+subjects,age=70-79,233,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",age at the first study with an age
+subjects,age=80+,21,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",age at the first study with an age
+age_mean,,65.4,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",839 subjects with an age
+age_sd,,7.5,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",839 subjects with an age
+age_median,,65,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",839 subjects with an age
+age_min,,45,tcia-prostate-mri-us-biopsy-digest,"Patient ID, Patient Age, Study Date",839 subjects with an age

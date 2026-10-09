@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate-mri-us-biopsy
+name: Prostate-MRI-US-Biopsy
+full_name: Prostate MRI and Ultrasound With Pathology and Coordinates of Tracked Biopsy
+summary: >-
+  3D transrectal ultrasound of 1,151 men having MRI-ultrasound fusion prostate biopsy at UCLA, with T2-weighted and
+  diffusion MRI for most, prostate and target surfaces, tracked biopsy core coordinates and Gleason grades per core.
+homepage: https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/
+doi: 10.7937/TCIA.2020.A61IOC1A
+year: 2020
+updated: 2023
+version: '2'
+status: active
+creators:
+  - name: Natarajan S, Priester A, Margolis D, Huang J, Marks L (UCLA)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, US]
+contrasts: [T2w, dwi, ADC, b_mode]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, classification, registration, detection]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens, ge, philips, eigen, hitachi]
+size_gb: 80.21
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/
+  note: >-
+    DICOM images download with the TCIA Data Retriever or through the Imaging Data Commons. Biopsy and target
+    spreadsheets are direct downloads; STL surfaces and 3D Slicer biopsy overlays are Aspera downloads.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Natarajan, S., Priester, A., Margolis, D., Huang, J., & Marks, L. (2020). Prostate MRI and Ultrasound With
+    Pathology and Coordinates of Tracked Biopsy (Prostate-MRI-US-Biopsy) (version 2) [Data set]. The Cancer Imaging
+    Archive. https://doi.org/10.7937/TCIA.2020.A61IOC1A
+sources:
+  tcia-prostate-mri-us-biopsy:
+    title: TCIA Prostate-MRI-US-Biopsy collection page (version 2, updated 2023/10/20)
+    url: https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/
+    kind: website
+  tcia-prostate-mri-us-biopsy-digest:
+    title: >-
+      TCIA NBIA manifest digest for version 2 (CC BY 4.0, open download), counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Prostate-MRI-US-Biopsy-NBIA-manifest_v2_20231020-nbia-digest.xlsx
+    kind: computed
+keywords: [prostate biopsy, MRI-ultrasound fusion, targeted biopsy, Gleason grade, transrectal ultrasound, PI-RADS]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
