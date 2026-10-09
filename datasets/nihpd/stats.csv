@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,556,nda-collection-1151,shared_subject_count,subjects with shared data in the NDA collection (Release 5.0)
+subjects,country=US,556,nda-collection-1151,description,all six pediatric study centers are in the US (waber2012 Methods)
+subjects,condition=healthy,556,walker2016,1. Introduction,"medically healthy, psychiatrically normal children recruited by epidemiological sampling"
+scans,contrast=dwi,691,walker2016,2. DTI Acquisition Protocol,sum of 498 conventional 3 mm DTI scans (274 subjects) and 193 extended 2.5 mm DTI scans (152 subjects) that passed quality assessment

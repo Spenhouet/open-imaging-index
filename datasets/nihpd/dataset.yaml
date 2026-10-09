@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nihpd
+name: NIH Pediatric MRI (NIHPD)
+full_name: NIH MRI Study of Normal Brain Development (Pediatric MRI Data Repository)
+summary: >-
+  Longitudinal multisite MRI (T1w, T2w, PDw, DTI, MRS) of healthy children and adolescents from newborn to early
+  adulthood, recruited to match the US population and paired with clinical and behavioral measures, shared through
+  the NIMH Data Archive.
+homepage: https://nda.nih.gov/edit_collection.html?id=1151
+doi: 10.1016/j.neuroimage.2005.09.068
+# The Evans 2006 abstract states that the data will be available to the scientific community from July 2006.
+year: 2006
+status: active
+version: Release 5.0
+creators:
+  - name: Brain Development Cooperative Group, funded by NICHD, NIDA, NIMH and NINDS
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, PDw, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal]
+countries: [US]
+vendors: [siemens, ge]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=1151
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The data are held in NIMH Data Archive collection 1151. Walker et al. (2016) describe access through a Data Use
+      Certification that is valid for one year and renewed with a progress report.
+citation:
+  text: >-
+    Evans AC; Brain Development Cooperative Group. The NIH MRI study of normal brain development. NeuroImage
+    30(1):184-202 (2006). doi:10.1016/j.neuroimage.2005.09.068
+sources:
+  evans2006:
+    title: Evans et al. 2006, The NIH MRI study of normal brain development, NeuroImage (abstract)
+    url: https://doi.org/10.1016/j.neuroimage.2005.09.068
+    kind: paper
+  walker2016:
+    title: >-
+      Walker et al. 2016, The Diffusion Tensor Imaging (DTI) Component of the NIH MRI Study of Normal Brain Development
+      (PedsDTI), NeuroImage (author manuscript PMC6805138)
+    url: https://doi.org/10.1016/j.neuroimage.2015.05.083
+    kind: paper
+  almli2007:
+    title: >-
+      Almli et al. 2007, The NIH MRI study of normal brain development (Objective-2): newborns, infants, toddlers, and
+      preschoolers, NeuroImage (abstract)
+    url: https://doi.org/10.1016/j.neuroimage.2006.08.058
+    kind: paper
+  waber2012:
+    title: >-
+      Waber et al. 2012, Four-year longitudinal performance of a population-based sample of healthy children on a
+      neuropsychological battery, J Int Neuropsychol Soc (author manuscript PMC5402313)
+    url: https://doi.org/10.1017/s1355617711001536
+    kind: paper
+  nda-collection-1151:
+    title: NIMH Data Archive collection 1151 record (Pediatric MRI)
+    url: https://nda.nih.gov/api/collection/1151
+    kind: website
+related: [ping, hcp-development, bcp]
+keywords:
+  [
+    pediatric,
+    brain development,
+    normative,
+    children,
+    adolescents,
+    infants,
+    diffusion MRI,
+    MR spectroscopy,
+    longitudinal,
+    PedsMRI,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
