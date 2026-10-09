@@ -124,6 +124,7 @@ terms:
       synonyms: [HCC],
       mappings: { mondo: 'MONDO:0007256' }
     }
+  - { id: liver_cirrhosis, label: Liver cirrhosis, synonyms: [cirrhosis of liver], mappings: { mondo: 'MONDO:0005155' } }
   - { id: kidney_cancer, label: Kidney cancer, mappings: { mondo: 'MONDO:0002367' } }
   - {
       id: pancreatic_cancer,

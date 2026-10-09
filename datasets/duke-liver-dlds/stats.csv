@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,105,macdonald2023,Patients and Image Acquisition,
+subjects,sex=male,76,macdonald2023,Patients and Image Acquisition,
+subjects,sex=female,29,macdonald2023,Patients and Image Acquisition,
+age_min,,30,macdonald2023,Patients and Image Acquisition,age range 30-80 years
+age_max,,80,macdonald2023,Patients and Image Acquisition,age range 30-80 years
+subjects,condition=liver_cirrhosis,87,macdonald2023,Patients and Image Acquisition,imaging findings suggestive of cirrhosis; all 105 had a clinical indication of cirrhosis
+subjects,vendor=siemens,96,macdonald2023,Patients and Image Acquisition,counted as machines in the paper
+subjects,vendor=ge,9,macdonald2023,Patients and Image Acquisition,counted as machines in the paper
+subjects,field_strength=1.5,54,macdonald2023,Patients and Image Acquisition,
+subjects,field_strength=3,51,macdonald2023,Patients and Image Acquisition,
+scans,,2146,macdonald2023,Table,image series in 17 series types
+images,,113280,macdonald2023,Key Points,unique DICOM images across all series
+scans,contrast=ADC,99,macdonald2023,Table,axial ADC
+scans,contrast=dwi,113,macdonald2023,Table,axial DWI
+scans,contrast=T2w,428,macdonald2023,Table,"sum of axial T2w (318) and coronal T2w (110); MRCP (159) not counted"
+scans,contrast=T1w,220,macdonald2023,Table,"axial precontrast fat-suppressed T1w; in-phase (115) and opposed-phase (113) series not counted"
+scans,contrast=T1w_ce,668,macdonald2023,Table,"sum of the seven contrast-enhanced T1w series types (early, mid and late arterial, transitional, axial and coronal late dynamic, portal venous)"
