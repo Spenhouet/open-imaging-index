@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: m4raw
+name: M4Raw
+full_name: 'M4Raw: A multi-contrast, multi-repetition, multi-channel MRI k-space dataset for low-field MRI research'
+summary: >-
+  Raw four-channel brain k-space from 208 healthy volunteers scanned on a 0.3 T MRI system, with repeated T1w, T2w and
+  FLAIR acquisitions per subject, for low-field MRI reconstruction, denoising and parallel imaging research.
+homepage: https://github.com/mylyu/M4Raw
+doi: 10.5281/zenodo.7523690
+year: 2023
+version: '1.6'
+status: active
+creators:
+  - name: Shenzhen Technology University
+    url: https://github.com/mylyu/M4Raw
+  - name: Jinan University
+  - name: Shenzhen Samii Medical Center
+  - name: The University of Hong Kong
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [reconstruction]
+formats: [HDF5]
+countries: [CN]
+vendors: [other]
+field_strengths: [0.3]
+size_gb: 27.9
+access:
+  type: open
+  url: https://doi.org/10.5281/zenodo.8056074
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Lyu M, Mei L, Huang S, et al. M4Raw: A multi-contrast, multi-repetition, multi-channel MRI k-space dataset for
+    low-field MRI research. Sci Data 10, 264 (2023). https://doi.org/10.1038/s41597-023-02181-4
+  bibtex: |
+    @article{lyu_m4raw_2023,
+      title = {{M4Raw}: {A} multi-contrast, multi-repetition, multi-channel {MRI} k-space dataset for low-field {MRI} research},
+      volume = {10},
+      doi = {10.1038/s41597-023-02181-4},
+      number = {1},
+      journal = {Scientific Data},
+      author = {Lyu, Mengye and Mei, Lifeng and Huang, Shoujin and Liu, Sixing and Li, Yi and Yang, Kexin and Liu, Yilong and Dong, Yu and Dong, Linzheng and Wu, Ed X.},
+      year = {2023},
+      pages = {264},
+    }
+sources:
+  lyu2023:
+    title: Lyu et al. 2023, Scientific Data 10, 264
+    url: https://doi.org/10.1038/s41597-023-02181-4
+    kind: paper
+  zenodo-m4raw-v1-6:
+    title: Zenodo record of M4Raw V1.6 (release notes and files)
+    url: https://zenodo.org/records/8056074
+    kind: data
+  hf-m4raw-brain:
+    title: M4Raw Brain v1.6 dataset card on Hugging Face (by the first author)
+    url: https://huggingface.co/datasets/mylyu/M4Raw_brain
+    kind: website
+related: [fastmri]
+keywords: [low-field MRI, k-space, raw data, MRI reconstruction, denoising, parallel imaging, multi-repetition]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

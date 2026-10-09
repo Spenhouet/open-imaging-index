@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,208,hf-m4raw-brain,Release inventory,183 participants of the original cohort plus 25 test participants added in V1.6
+subjects,condition=healthy,208,hf-m4raw-brain,Release inventory,all participants are healthy volunteers
+subjects,contrast=T1w,208,hf-m4raw-brain,Release inventory,the 183 original participants also have a T1-weighted gradient echo series (366 files)
+subjects,contrast=T2w,208,hf-m4raw-brain,Release inventory,
+subjects,contrast=FLAIR,208,hf-m4raw-brain,Release inventory,
+subjects,contrast_set=FLAIR+T1w+T2w,208,hf-m4raw-brain,Release inventory,
+subjects,split=train,128,lyu2023,Subset partition,
+subjects,split=validation,30,lyu2023,Subset partition,
+subjects,split=test,25,zenodo-m4raw-v1-6,V1.6 release notes,new participants not in the paper; the remaining 25 original participants form a separate motion-corrupted subset
+subjects,sex=male,116,lyu2023,Imaging protocol,original cohort of 183 only; sex of the 25 test participants is not reported
+subjects,sex=female,67,lyu2023,Imaging protocol,original cohort of 183 only; sex of the 25 test participants is not reported
+subjects,field_strength=0.3,208,hf-m4raw-brain,Release inventory,one 0.3 T Oper-0.3 scanner (Ningbo Xingaoyi)
+age_mean,,20.1,lyu2023,Imaging protocol,original cohort of 183 only
+age_sd,,1.5,lyu2023,Imaging protocol,original cohort of 183 only
+age_min,,18,lyu2023,Imaging protocol,original cohort of 183 only
+age_max,,32,lyu2023,Imaging protocol,original cohort of 183 only
+scans,,2230,hf-m4raw-brain,Release inventory,"H5 files, one per single repetition of one contrast"
+scans,split=train,1024,lyu2023,Data Records,
+scans,split=validation,240,lyu2023,Data Records,
+scans,split=test,400,hf-m4raw-brain,Release inventory,"six T1w, six T2w and four FLAIR repetitions per participant"
