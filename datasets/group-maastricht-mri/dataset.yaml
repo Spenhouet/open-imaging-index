@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: group-maastricht-mri
+name: GROUP Maastricht MRI
+full_name: Genetic Risk and Outcome of Psychosis (GROUP) MRI study, Maastricht site
+summary: >-
+  3T brain MRI (T1-weighted, diffusion) from the Maastricht site of the Dutch GROUP psychosis cohort: 89 patients with
+  non-affective psychotic disorder, 95 unaffected siblings and 87 controls. A PSYSCAN legacy dataset, shared only on
+  request.
+homepage: https://doi.org/10.1371/journal.pone.0166651
+doi: 10.1371/journal.pone.0166651
+# Year of the first paper on the Maastricht GROUP MRI data (Habets et al., Biological Psychiatry 2011); the images
+# have no public release.
+year: 2011
+creators:
+  - name: Department of Psychiatry and Neuropsychology, Maastricht University Medical Centre
+    url: https://www.maastrichtuniversity.nl/
+  - name: Genetic Risk and Outcome of Psychosis (GROUP) investigators
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [psychotic_disorder, healthy]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1371/journal.pone.0166651
+  note: >-
+    The data availability statement of Frissen et al. (2017) says the data are baseline measures of the Maastricht
+    GROUP MRI study and gives a postal address and phone number at Maastricht University Medical Centre for contacting
+    the authors. The cohort website named in GROUP papers (group-project.nl) is now a parked domain. Morgan et al.
+    (2019) used the data as a PSYSCAN legacy dataset and published only derived regional measures.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Neither the Frissen et al. (2017) data availability statement nor the GROUP cohort paper (Korver et al. 2012)
+      states a license or data use terms for the images.
+citation:
+  text: >-
+    Korver N, Quee PJ, Boos HB, Simons CJ, de Haan L, GROUP investigators. Genetic Risk and Outcome of Psychosis
+    (GROUP), a multi-site longitudinal cohort study focused on gene-environment interaction: objectives, sample
+    characteristics, recruitment and assessment methods. International Journal of Methods in Psychiatric Research
+    21(3):205-221 (2012). doi:10.1002/mpr.1352
+sources:
+  frissen2017:
+    title: Frissen et al. 2017, PLOS ONE (PMC5207533)
+    url: https://doi.org/10.1371/journal.pone.0166651
+    kind: paper
+  habets2011:
+    title: Habets et al. 2011, Biological Psychiatry (PubMed abstract, PMID 20951979)
+    url: https://doi.org/10.1016/j.biopsych.2010.08.010
+    kind: paper
+  korver2012:
+    title: Korver et al. 2012, International Journal of Methods in Psychiatric Research (PMC6878383)
+    url: https://doi.org/10.1002/mpr.1352
+    kind: paper
+  morgan2019:
+    title: Morgan et al. 2019, PNAS (PMC6511038)
+    url: https://doi.org/10.1073/pnas.1820754116
+    kind: paper
+  morgan2019-figshare:
+    title: >-
+      Morgan et al. 2019 Figshare deposit Data_MS_SZ.zip (CC BY 4.0), Maastricht_GROUP folder, counted per subject row
+    url: https://doi.org/10.6084/m9.figshare.7908488.v1
+    kind: computed
+related: []
+keywords: [schizophrenia, psychosis, unaffected siblings, familial risk, cortical thickness, PSYSCAN, gene-environment interaction]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
