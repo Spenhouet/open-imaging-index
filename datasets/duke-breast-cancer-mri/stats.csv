@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,922,saha2018,Table 2,
+subjects,condition=breast_cancer,922,saha2018,"Materials and methods, Patient population",invasive breast cancer
+subjects,modality=MR,922,tcia-duke-breast-cancer-mri,Data Access (Version 3),
+subjects,sex=female,922,saha2018,"Materials and methods, Patient population",
+subjects,anatomy=breast,922,tcia-duke-breast-cancer-mri,Data Access (Version 3),
+subjects,country=US,922,tcia-duke-breast-cancer-mri,"Detailed Description, Population",Duke Hospital
+studies,,922,tcia-duke-breast-cancer-mri,Data Access (Version 3),
+scans,,5161,tcia-duke-breast-cancer-mri,Data Access (Version 3),DICOM series including 127 SEG series
+scans,modality=MR,5034,tcia-duke-breast-cancer-mri-digest,Modality,
+images,,773253,tcia-duke-breast-cancer-mri,Data Access (Version 3),DICOM files including 127 SEG objects
+age_median,,52.25,saha2018,Table 2,
+age_min,,21.75,saha2018,Table 2,
+age_max,,89.49,saha2018,Table 2,
+age_mean,,52.9,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+age_sd,,11.2,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=20-29,17,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=30-39,90,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=40-49,275,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=50-59,290,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=60-69,184,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=70-79,60,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,age=80-89,6,tcia-duke-breast-cancer-mri-clinical,Date of Birth (Days),age at diagnosis
+subjects,vendor=ge,628,tcia-duke-breast-cancer-mri-clinical,Manufacturer,
+subjects,vendor=siemens,294,tcia-duke-breast-cancer-mri-clinical,Manufacturer,
+subjects,field_strength=1.5,468,tcia-duke-breast-cancer-mri-clinical,Field Strength (Tesla),
+subjects,field_strength=3,453,tcia-duke-breast-cancer-mri-clinical,Field Strength (Tesla),one more subject reports 2.8936 T
+scans,vendor=ge,3485,tcia-duke-breast-cancer-mri-digest,"Modality, Manufacturer",MR series
+scans,vendor=siemens,1549,tcia-duke-breast-cancer-mri-digest,"Modality, Manufacturer",MR series

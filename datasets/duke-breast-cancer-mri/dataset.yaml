@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: duke-breast-cancer-mri
+name: Duke-Breast-Cancer-MRI
+full_name: Dynamic contrast-enhanced magnetic resonance images of breast cancer patients with tumor locations
+summary: >-
+  Pre-operative dynamic contrast-enhanced breast MRI of 922 women with biopsy-confirmed invasive breast cancer from
+  Duke Hospital, with radiologist tumor bounding boxes, 529 radiomic features, clinical, pathology, treatment and
+  outcome data, and breast and fibroglandular tissue masks for a subset.
+homepage: https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/
+doi: 10.7937/TCIA.e3sv-re93
+year: 2021
+updated: 2022
+version: '3'
+status: active
+creators:
+  - name: >-
+      Saha A, Harowicz MR, Grimm LJ, Weng J, Cain EH, Kim CE, Ghate SV, Walsh R, Mazurowski MA (Duke University
+      School of Medicine)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T1w, dce]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [detection, segmentation, classification, survival]
+formats: [DICOM, NRRD]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [1.5, 3]
+size_gb: 368.41
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/
+  note: >-
+    DICOM images and DICOM SEG masks download with the TCIA Data Retriever. Clinical, annotation box, radiomic
+    feature and file path tables are direct XLSX or CSV downloads; the NRRD breast and fibroglandular tissue masks
+    are Aspera downloads.
+licenses:
+  - license: CC-BY-NC-4.0
+    url: https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/
+    note: >-
+      Every item on the TCIA collection page is listed under CC BY-NC 4.0. TCIA also asks users to follow its Data
+      Usage Policy and to cite the dataset DOI.
+citation:
+  text: >-
+    Saha A, Harowicz MR, Grimm LJ, Weng J, Cain EH, Kim CE, Ghate SV, Walsh R, Mazurowski MA (2021). Dynamic
+    contrast-enhanced magnetic resonance images of breast cancer patients with tumor locations [Data set]. The Cancer
+    Imaging Archive. https://doi.org/10.7937/TCIA.e3sv-re93. Publication: Saha A, et al. A machine learning approach
+    to radiogenomics of breast cancer: a study of 922 subjects and 529 DCE-MRI features. British Journal of Cancer
+    119(4), 508-516 (2018). https://doi.org/10.1038/s41416-018-0185-8
+sources:
+  saha2018:
+    title: Saha et al. 2018, British Journal of Cancer 119, 508-516
+    url: https://doi.org/10.1038/s41416-018-0185-8
+    kind: paper
+  tcia-duke-breast-cancer-mri:
+    title: TCIA Duke-Breast-Cancer-MRI collection page (version 3, updated 2022/08/01)
+    url: https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/
+    kind: website
+  tcia-duke-breast-cancer-mri-clinical:
+    title: Duke-Breast-Cancer-MRI Clinical_and_Other_Features table (CC BY-NC 4.0, open download), 922 patients
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Clinical_and_Other_Features.xlsx
+    kind: computed
+  tcia-duke-breast-cancer-mri-digest:
+    title: TCIA NBIA manifest digest for the image series (CC BY-NC 4.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Duke-Breast-Cancer-MRI_v2_20220609-nbia-digest.xlsx
+    kind: computed
+related: []
+keywords:
+  [breast cancer, DCE-MRI, radiogenomics, radiomics, tumor detection, fibroglandular tissue, molecular subtype, recurrence]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
