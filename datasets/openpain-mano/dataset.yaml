@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openpain-mano
+name: 'OpenPain: Brain network change Mano'
+full_name: 'OpenPain Project: Classification and characterisation of brain network changes in chronic back pain'
+summary: >-
+  Resting-state fMRI and T1-weighted MRI of 41 adults with chronic low back pain and 56 matched controls from two
+  sites, Cambridge (UK) and Osaka (Japan), shared through the OpenPain Project for brain network and classification
+  studies.
+homepage: https://www.openpain.org/
+doi: 10.12688/wellcomeopenres.14069.2
+year: 2018
+creators:
+  - name: Center for Information and Neural Networks (CiNet), NICT, Osaka
+  - name: Computational and Biological Learning Laboratory, University of Cambridge
+  - name: OpenPain Project, Apkarian Lab, Northwestern University
+    url: https://www.openpain.org/
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [low_back_pain, healthy]
+tasks: [classification]
+countries: [GB, JP]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://openpain.org/html/agreement.html
+licenses:
+  - license: LicenseRef-OpenPain-DUA
+citation:
+  text: >-
+    Mano H, Kotecha G, Leibnitz K, Matsubara T, Sprenger C, Nakae A, Shenker N, Shibata M, Voon V, Yoshida W, Lee M,
+    Yanagida T, Kawato M, Rosa MJ, Seymour B. Classification and characterisation of brain network changes in chronic
+    back pain: A multicenter study. Wellcome Open Research 3:19 (2018).
+sources:
+  mano2018:
+    title: Mano et al. 2018, Wellcome Open Research 3:19 (version 2)
+    url: https://doi.org/10.12688/wellcomeopenres.14069.2
+    kind: paper
+related: []
+keywords: [chronic pain, resting-state fMRI, connectomics, multi-site]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
