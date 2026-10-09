@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ping
+name: PING
+full_name: Pediatric Imaging, Neurocognition, and Genetics (PING)
+summary: >-
+  Cross-sectional multisite 3T MRI (T1w, T2w, diffusion, resting-state fMRI), NIH Toolbox cognition and genome-wide
+  genotypes from 1,493 typically developing children and young people aged 3 to 21 at 10 US sites, shared through the
+  NIMH Data Archive.
+homepage: https://chd.ucsd.edu/research/ping.html
+doi: 10.1016/j.neuroimage.2015.04.057
+year: 2014
+status: active
+creators:
+  - name: PING Study consortium, Center for Human Development, University of California, San Diego
+    url: https://chd.ucsd.edu/research/ping.html
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [DICOM]
+countries: [US]
+vendors: [ge, siemens, philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2607
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The PING Data Resource is held in NIMH Data Archive collection 2607; the study page states that the data use
+      policy and the Data Use Certification are managed by NDA. Access before the move to NDA ran under a separate PING
+      Data Use Agreement, which is not broken down here.
+citation:
+  text: >-
+    Jernigan TL, Brown TT, Hagler DJ Jr, Akshoomoff N, Bartsch H, Newman E, et al. The Pediatric Imaging,
+    Neurocognition, and Genetics (PING) Data Repository. NeuroImage 124(Pt B):1149-1154 (2016).
+    doi:10.1016/j.neuroimage.2015.04.057
+sources:
+  jernigan2016:
+    title: Jernigan et al. 2016, The PING Data Repository, NeuroImage (author manuscript PMC4628902)
+    url: https://doi.org/10.1016/j.neuroimage.2015.04.057
+    kind: paper
+  chd-ping:
+    title: UC San Diego Center for Human Development, PING Study page
+    url: https://chd.ucsd.edu/research/ping.html
+    kind: website
+  nda-collection-2607:
+    title: NIMH Data Archive collection 2607 record (Pediatric Imaging, Neurocognition, and Genetics)
+    url: https://nda.nih.gov/api/collection/2607
+    kind: website
+related: []
+keywords: [pediatric, brain development, imaging genetics, typically developing children, diffusion MRI, resting-state fMRI, NIH Toolbox, genotyping]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
