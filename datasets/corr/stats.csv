@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,1629,zuo2014,Abstract,the Data Description page gives the same total
+subjects,condition=healthy,1629,zuo2014,Abstract,described as typical individuals
+subjects,contrast=bold,1629,zuo2014,Abstract,resting-state fMRI data from every individual
+scans,contrast=T1w,3357,corr-data-description,,"listed as anatomical scans; every structural sequence in Table 2 of the paper is T1-weighted, but the table does not cover all sites on the page"
+scans,contrast=bold,5093,corr-data-description,,resting functional scans; the paper gives the same number in the Abstract
+scans,contrast=dwi,1302,corr-data-description,,
+scans,contrast=asl,300,corr-data-description,,listed as CBF and ASL scans
