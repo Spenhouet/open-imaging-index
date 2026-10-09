@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: i2cvb-prostate
+name: I2CVB prostate mp-MRI
+full_name: I2CVB multi-parametric MRI dataset of the prostate
+summary: >-
+  Multi-parametric 3 T prostate MRI (T2-weighted, DCE, DWI with ADC maps, MR spectroscopic imaging) of 19 patients with
+  raised PSA and biopsy results, with radiologist masks of the prostate, its zones and the cancer. Files on Zenodo are
+  restricted.
+homepage: http://i2cvb.github.io/
+doi: 10.5281/zenodo.162231
+# Zenodo publication date of the full record (2016-10-20); a DCE-MRI subset was published on 2016-08-30.
+year: 2016
+creators:
+  - name: Initiative for Collaborative Computer Vision Benchmarking (I2CVB), Universitat de Girona and Université de Bourgogne
+    url: http://i2cvb.github.io/
+species: human
+modalities: [MR]
+contrasts: [T2w, dce, dwi, ADC]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, detection, classification]
+formats: [DICOM]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://zenodo.org/records/162231
+  note: >-
+    The Zenodo record is public but its files are restricted and the record does not accept access requests, so the
+    data have to be requested from the authors. The record is labelled CC BY 4.0. A 1.5 T GE subset is announced on the
+    website as coming soon.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    G. Lemaitre, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau, Computer-Aided Detection and
+    Diagnosis for prostate cancer based on mono and multi-parametric MRI: A Review, Computers in Biology and Medicine,
+    vol. 60, pp. 8-31, 2015. doi:10.1016/j.compbiomed.2015.02.009
+sources:
+  i2cvb-website:
+    title: I2CVB website, Prostate section
+    url: http://i2cvb.github.io/
+    kind: website
+  zenodo-162231:
+    title: Original multi-parametric MRI images of prostate, Zenodo record 162231
+    url: https://zenodo.org/records/162231
+    kind: website
+  lemaitre2016-thesis:
+    title: Lemaitre 2016, PhD thesis, Computer-aided diagnosis for prostate cancer using multi-parametric MRI
+    url: https://github.com/glemaitre/phd_thesis/blob/master/thesis.pdf
+    kind: paper
+  lemaitre2017-dce:
+    title: Lemaitre et al., Automatic prostate cancer detection through DCE-MRI images, preprint (Feb 2017)
+    url: https://github.com/glemaitre/dce-normalization/blob/master/main.pdf
+    kind: paper
+related: []
+keywords: [prostate cancer, multi-parametric MRI, mpMRI, DCE-MRI, ADC, MRSI, MR spectroscopy, zonal segmentation, computer-aided detection]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
