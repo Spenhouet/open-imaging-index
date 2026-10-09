@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CALM-Open-Terms
+name: CALM:Open data access conditions
+short_name: CALM:Open terms
+url: https://calm.mrc-cbu.cam.ac.uk/researchers/
+version: 'Access the CALM data page and CAM:IDE Data Access Portal FAQ, read 2026-10-09'
+summary: >-
+  Managed access for researchers at academic and clinical institutions, for non-commercial research only. The CALM
+  Management Committee reviews each application, and requesters accept terms and conditions in the request form.
+  Outputs must carry the CALM acknowledgement. The full terms are shown only in the request form and are not published.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The portal is open for applications from researchers based at academic and clinical institutions worldwide,
+      provided all proposed research data use is for non-commercial purposes only and researchers agree to follow
+      ethical terms and conditions of the CALM Management committee.
+    note: Applicants must also be based at an academic or clinical institution.
+  product_validation:
+    value: unspecified
+    note: The published text limits use to non-commercial research but does not address testing or validating a
+      product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: 'All outputs should include acknowledgement similar to the following:'
+    note: Outputs are expected; they must carry the CALM acknowledgement and cite the study protocol.
+  redistribute_original:
+    value: unspecified
+    note: The full terms and conditions are shown only in the request form and are not published.
+  redistribute_derivatives:
+    value: unspecified
+    note: The full terms and conditions are shown only in the request form and are not published.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'All outputs should include acknowledgement similar to the following:'
+    note: The acknowledgement names CALM, its funders (UK Medical Research Council and University of Cambridge), the
+      CALM website and the protocol paper by Holmes et al. (2019).
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: 'yes'
+    quote: They must then select which files they wish to request access to and complete the rest of the form,
+      providing personal details and agreeing to set terms and conditions.
+    source: https://portal.camide.cam.ac.uk/frequently-asked-questions
+    note: Terms are accepted in the online request form; the CALM Management Committee then approves or rejects the
+      request.
+  ethics_approval:
+    value: unspecified
+    note: Applicants must agree to the committee's ethical terms and conditions, which are not published; no
+      institutional ethics approval is named.
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+    note: The portal FAQ states that approved datasets can be downloaded for up to 30 days after approval, which limits
+      the download window, not the use.
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: 'no'
+    note: Applications are open to researchers at academic and clinical institutions worldwide.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,440,camide-calm-open,,"sum of the disjoint MRI subsamples of CALM 800 (345) and CALM 200 (95); the full release has 805 + 187 children, most without MRI"
+subjects,condition=neurodevelopmental_disorder,345,camide-calm-open,CALM 800,"MRI subsample of children referred for problems of attention, learning or memory, irrespective of diagnosis"
+age_min,,5,camide-calm-open,,age range of both release samples at assessment
+age_max,,18,camide-calm-open,,age range of both release samples at assessment

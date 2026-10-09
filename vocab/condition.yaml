@@ -105,6 +105,7 @@ terms:
   - { id: bipolar_disorder, label: Bipolar disorder, synonyms: [bipolar], mappings: { mondo: 'MONDO:0004985' } }
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
+  - { id: neurodevelopmental_disorder, label: Neurodevelopmental disorder, mappings: { mondo: 'MONDO:0700092' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
   - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
