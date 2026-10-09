@@ -242,6 +242,13 @@ terms:
       mappings: { mondo: 'MONDO:0005045' }
     }
   - {
+      id: arrhythmogenic_right_ventricular_cardiomyopathy,
+      label: Arrhythmogenic right ventricular cardiomyopathy,
+      parent: cardiomyopathy,
+      synonyms: [ARVC, ARVD, arrhythmogenic right ventricular dysplasia],
+      mappings: { mondo: 'MONDO:0016587' }
+    }
+  - {
       id: abnormal_right_ventricle,
       label: Abnormal right ventricle,
       synonyms: [ARV, RV abnormality],

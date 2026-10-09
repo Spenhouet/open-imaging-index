@@ -13,3 +13,4 @@ terms:
   - { id: HDF5, label: HDF5 }
   - { id: MINC, label: MINC }
   - { id: ANALYZE, label: Analyze 7.5 }
+  - { id: MAT, label: MATLAB MAT-file, synonyms: [.mat] }
