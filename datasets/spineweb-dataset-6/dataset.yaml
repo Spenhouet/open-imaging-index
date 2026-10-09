@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spineweb-dataset-6
+name: SpineWeb Dataset 6 (IVD Dixon MRI)
+full_name: 'SpineWeb Dataset 6: Intervertebral Disc Localization and Segmentation Multi-modality MRI Spine Image Database'
+summary: >-
+  1.5 T Siemens Dixon MRI of the lower spine of 8 anonymized patients, with aligned in-phase, opposed-phase, fat and
+  water volumes and manual binary masks of at least 7 intervertebral discs (T11 to L5) per patient. Shared on request.
+homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+# The SpineWeb page does not date the listing. Its preview image (images/dataset6_prev.png) was first archived by the
+# Internet Archive on 2016-06-02, the earliest evidence that the dataset was listed. An exact first release date is not
+# published.
+year: 2016
+creators:
+  - name: Guoyan Zheng, Institute for Surgical Technology and Biomechanics, University of Bern
+modalities: [MR]
+contrasts: [dixon]
+anatomy: [intervertebral_disc]
+tasks: [segmentation, detection]
+formats: [NIfTI]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The SpineWeb entry gives only a contact (Guoyan Zheng, University of Bern) and states no license, data use terms
+      or citation requirement for this dataset, unlike several other SpineWeb entries.
+sources:
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page, Dataset 6 section (Internet Archive copy of 13 June 2024)
+    url: http://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+related: []
+keywords: [intervertebral disc segmentation, intervertebral disc localization, Dixon MRI, lumbar spine, fat-water imaging]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
