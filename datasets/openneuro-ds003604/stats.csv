@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,322,wang2022,Methods: Participants,322 subject folders in the snapshot 1.0.7 file tree; 322 rows in participants.tsv
+subjects,sex=female,174,ds003604-participants,sex,sex Female
+subjects,sex=male,148,ds003604-participants,sex,sex Male
+subjects,contrast=T1w,322,ds003604-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,322,ds003604-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast=dwi,239,ds003604-file-tree,sub-*/ses-*/dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w,239,ds003604-file-tree,"anat, func and dwi folders",fieldmaps (phasediff) not counted as a contrast
+subjects,contrast_set=bold+T1w,83,ds003604-file-tree,"anat, func and dwi folders",
+studies,,524,ds003604-file-tree,sub-*/ses-* folders,"ses-5: 141, ses-7: 282, ses-9: 101; matches the cohort numbers in Background & Summary of the paper"
+scans,,5420,ds003604-file-tree,sub-*/ses-*/*/*.nii.gz,"all image files: 827 T1w, 3851 bold, 377 dwi and 365 phasediff field maps"
+scans,contrast=T1w,827,ds003604-file-tree,*_T1w.nii.gz,includes repeated T1w scans within a session
+scans,contrast=bold,3851,ds003604-file-tree,*_bold.nii.gz,task fMRI runs
+scans,contrast=dwi,377,ds003604-file-tree,*_dwi.nii.gz,
+age_min,,5.5,wang2022,Background & Summary,lower bound of the ses-5 enrollment age band (5.5 to 6.5 years)
+age_max,,10,wang2022,Background & Summary,upper bound of the ses-9 age band (8.5 to 10 years)

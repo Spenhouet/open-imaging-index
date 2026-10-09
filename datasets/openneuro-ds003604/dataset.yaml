@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003604
+name: Child Language Longitudinal (ds003604)
+full_name: A longitudinal neuroimaging dataset on language processing in children ages 5, 7, and 9 years old
+summary: >-
+  Longitudinal brain MRI of 322 children from Austin, Texas, scanned at ages 5, 7 and 9 with T1w, 64-direction
+  diffusion and four auditory language task fMRI scans, plus language and reading assessments, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003604
+doi: 10.18112/openneuro.ds003604.v1.0.7
+year: 2021
+updated: 2022
+version: 1.0.7
+status: active
+creators:
+  - name: Brain Development Lab, The University of Texas at Austin (Wang J, Lytle MN, Weiss Y, Yamasaki BL, Booth JR)
+    url: https://openneuro.org/datasets/ds003604
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 728.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003604
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.7 states "License" CC0; the paper's Data Records section also names CC0.
+citation:
+  text: >-
+    Wang J, Lytle MN, Weiss Y, Yamasaki BL, Booth JR. A longitudinal neuroimaging dataset on language processing in
+    children ages 5, 7, and 9 years old. Scientific Data 9, 4 (2022). doi:10.1038/s41597-021-01106-3
+sources:
+  wang2022:
+    title: Wang et al. 2022, A longitudinal neuroimaging dataset on language processing in children ages 5, 7, and 9 years old, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-01106-3
+    kind: paper
+  openneuro-ds003604-v107:
+    title: OpenNeuro ds003604 snapshot 1.0.7 (dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds003604/versions/1.0.7
+    kind: website
+  ds003604-participants:
+    title: participants.tsv of ds003604 snapshot 1.0.7 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003604/blob/1.0.7/participants.tsv
+    kind: computed
+  ds003604-file-tree:
+    title: File tree of ds003604 snapshot 1.0.7 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003604/tree/1.0.7
+    kind: computed
+related: []
+keywords: [language development, reading, children, pediatric, task fMRI, diffusion MRI, longitudinal]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
