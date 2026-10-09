@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bcp
+name: Baby Connectome Project (BCP)
+full_name: UNC/UMN Baby Connectome Project
+summary: >-
+  Longitudinal and cross-sectional 3T MRI (T1w, T2w, multi-shell diffusion, resting-state fMRI) with behavioral
+  assessments of typically developing children from birth to 5 years, scanned without sedation at UNC and UMN and
+  shared through the NIMH Data Archive.
+homepage: https://www.humanconnectome.org/study/lifespan-baby-connectome-project
+doi: 10.1016/j.neuroimage.2018.03.049
+# No dated public release was found; year of the protocol paper, which expected data sharing from spring 2019.
+year: 2019
+status: active
+creators:
+  - name: UNC/UMN Baby Connectome Project Consortium (University of North Carolina at Chapel Hill, University of Minnesota)
+    url: https://www.humanconnectome.org/study/lifespan-baby-connectome-project
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal, regression]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2848
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The BCP study page names the NDA Data Use Certification as the terms under which the data are shared. The data
+      are held in NIMH Data Archive collection 2848. Study-specific clauses of the permission group are not broken
+      down here.
+citation:
+  text: >-
+    Howell BR, Styner MA, Gao W, Yap PT, Wang L, Baluyot K, et al. The UNC/UMN Baby Connectome Project (BCP): An
+    overview of the study design and protocol development. NeuroImage 185:891-905 (2019).
+    doi:10.1016/j.neuroimage.2018.03.049
+sources:
+  howell2019:
+    title: Howell et al. 2019, The UNC/UMN Baby Connectome Project (BCP), NeuroImage (author manuscript PMC6151176)
+    url: https://doi.org/10.1016/j.neuroimage.2018.03.049
+    kind: paper
+  ccf-bcp-study:
+    title: Connectome Coordination Facility, Lifespan Baby Connectome Project study page
+    url: https://www.humanconnectome.org/study/lifespan-baby-connectome-project
+    kind: website
+  ccf-bcp-overview:
+    title: Connectome Coordination Facility, Lifespan Baby Connectome Project study overview
+    url: https://www.humanconnectome.org/study/lifespan-baby-connectome-project/overview
+    kind: website
+  nda-collection-2848:
+    title: NIMH Data Archive collection 2848 record (UNC/UMN Baby Connectome Project)
+    url: https://nda.nih.gov/api/collection/2848
+    kind: website
+related: [hcp-aging]
+keywords: [infant, early childhood, brain development, connectome, pediatric, diffusion MRI, resting-state fMRI, longitudinal, typically developing children]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

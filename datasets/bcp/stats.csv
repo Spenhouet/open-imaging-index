@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,420,nda-collection-2848,shared_subject_count,subjects with shared data in the NDA collection
+subjects,condition=healthy,420,nda-collection-2848,shared_subject_count,typically developing children by design (howell2019 Section 2.1)
+subjects,country=US,420,nda-collection-2848,shared_subject_count,all participants recruited at UNC and UMN (howell2019 Section 2.1)
+age_min,,0,ccf-bcp-study,Study Summary,"""500 Subjects, Age 0-5"" describes the planned cohort"
+age_max,,5,ccf-bcp-study,Study Summary,"""500 Subjects, Age 0-5"" describes the planned cohort"
