@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,318,openneuro-ds000221-v1,README,participants.tsv also has 318 rows
+studies,,427,ds000221-files,ses-01 and ses-02 folders,"228 LEMON sessions (ses-01) and 199 N&C sessions (ses-02); the README gives the same 228 and 199"
+subjects,sex=female,129,ds000221-participants,gender column,gender F
+subjects,sex=male,189,ds000221-participants,gender column,gender M
+subjects,contrast=T1w,318,ds000221-files,anat/*_T1w.nii.gz,"MP2RAGE uniform image, except one MPRAGE (sub-010025)"
+subjects,contrast=T1map,317,ds000221-files,anat/*_T1map.nii.gz,
+subjects,contrast=bold,318,ds000221-files,func/*_bold.nii.gz,resting state only
+subjects,contrast=FLAIR,305,ds000221-files,anat/*_FLAIR.nii.gz,low-resolution 2D or high-resolution 3D FLAIR
+subjects,contrast=T2w,226,ds000221-files,anat/*_T2w.nii.gz,the README also gives 226
+subjects,contrast=dwi,228,ds000221-files,dwi/*_dwi.nii.gz,the README also gives 228
+subjects,contrast=T2starw,112,ds000221-files,anat/*_GRE.nii.gz,"gradient-echo magnitude and phase for SWI and QSM; the README also gives 112"
+subjects,contrast_set=bold+dwi+FLAIR+T1map+T1w+T2w,113,ds000221-files,,
+subjects,contrast_set=bold+dwi+FLAIR+T1map+T1w+T2starw+T2w,112,ds000221-files,,
+subjects,contrast_set=bold+FLAIR+T1map+T1w,78,ds000221-files,,
+subjects,contrast_set=bold+T1map+T1w,11,ds000221-files,,
+subjects,contrast_set=bold+dwi+FLAIR+T1map+T1w,2,ds000221-files,,
+subjects,contrast_set=bold+dwi+T1map+T1w+T2w,1,ds000221-files,,
+subjects,contrast_set=bold+T1w,1,ds000221-files,,
+subjects,field_strength=3,318,mendes2019,Background & Summary,all MRI of the database on one Siemens Magnetom Verio 3T scanner
+subjects,vendor=siemens,318,mendes2019,Background & Summary,
+subjects,country=DE,318,mendes2019,MRI data acquisition,all MRI acquired at the Day Clinic for Cognitive Neurology in Leipzig

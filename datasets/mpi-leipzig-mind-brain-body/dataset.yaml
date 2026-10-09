@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mpi-leipzig-mind-brain-body
+name: MPI-Leipzig Mind-Brain-Body (LEMON, N&C)
+full_name: MPI-Leipzig Mind-Brain-Body database (LEMON and Neuroanatomy & Connectivity protocols), OpenNeuro ds000221
+summary: >-
+  3T brain MRI of 318 healthy adults from Leipzig: MP2RAGE T1w and T1 maps, resting-state fMRI, T2w, FLAIR, diffusion
+  and gradient-echo scans from the LEMON and Neuroanatomy & Connectivity protocols, in BIDS on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds000221
+doi: 10.18112/openneuro.ds000221.v1.0.0
+year: 2017
+updated: 2020
+version: 1.0.0
+status: active
+creators:
+  - name: Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig (Babayan A, Mendes N, Margulies DS, Villringer A, et al.)
+    url: https://openneuro.org/datasets/ds000221
+species: human
+modalities: [MR]
+contrasts: [T1w, T1map, T2w, FLAIR, T2starw, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression, normative]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 397.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000221
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0. Behavioral and phenotypic data hosted elsewhere (GWDG, Harvard Dataverse) are not part of this entry.
+citation:
+  text: >-
+    Babayan A, et al. A mind-brain-body dataset of MRI, EEG, cognition, emotion, and peripheral physiology in young
+    and old adults. Scientific Data 6, 180308 (2019). doi:10.1038/sdata.2018.308. Mendes N, et al. A functional
+    connectome phenotyping dataset including cognitive state and personality measures. Scientific Data 6, 180307
+    (2019). doi:10.1038/sdata.2018.307.
+sources:
+  babayan2019:
+    title: Babayan et al. 2019, A mind-brain-body dataset of MRI, EEG, cognition, emotion, and peripheral physiology in young and old adults, Scientific Data
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6371893/
+    kind: paper
+  mendes2019:
+    title: Mendes et al. 2019, A functional connectome phenotyping dataset including cognitive state and personality measures, Scientific Data
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6371896/
+    kind: paper
+  openneuro-ds000221-v1:
+    title: OpenNeuro ds000221 snapshot 1.0.0 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds000221/versions/1.0.0
+    kind: website
+  ds000221-participants:
+    title: participants.tsv of ds000221 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds000221/blob/master/participants.tsv
+    kind: computed
+  ds000221-files:
+    title: File listing of ds000221 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds000221
+    kind: computed
+related: []
+keywords: [LEMON, healthy aging, resting-state fMRI, MP2RAGE, quantitative T1, diffusion MRI, QSM, brain-body interaction]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
