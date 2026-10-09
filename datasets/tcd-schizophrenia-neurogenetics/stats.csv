@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,184,morgan2019-si,Section 1.2,"participants with T1w and diffusion MRI before quality control: 115 analysed plus 9 excluded for motion (5 patients, 4 controls) and 60 excluded for poor diffusion data (9 patients, 51 controls); sum of disjoint groups. Full study enrolment is not reported"
+subjects,modality=MR,184,morgan2019-si,Section 1.2,
+subjects,contrast=T1w,184,morgan2019-si,Section 1,only subjects with both T1w and diffusion images were included
+subjects,contrast=dwi,184,morgan2019-si,Section 1,only subjects with both T1w and diffusion images were included
+subjects,contrast=bold,115,lei2020,Table 1,"32 patients and 83 controls with T1w and resting-state fMRI (Dataset 4); overlap with the Morgan et al. sample is not reported"
+subjects,condition=schizophrenia,30,morgan2019-si,Section 1.2,analysed sample after quality control; Lei et al. (2020) report 32 patients with schizophrenia
+subjects,condition=schizoaffective_disorder,3,morgan2019-si,Section 1.2,analysed sample after quality control
+subjects,condition=healthy,82,morgan2019-si,Table S1,analysed sample after quality control; Lei et al. (2020) report 83 controls
+subjects,sex=male,59,morgan2019-figshare,Dublin/sex.dat (value 1),analysed sample of 115; Table S1 gives 35 male controls and 24 male patients
+subjects,sex=female,56,morgan2019-figshare,Dublin/sex.dat (value 2),analysed sample of 115
+subjects,condition=healthy;sex=male,35,morgan2019-si,Table S1,
+subjects,condition=healthy;sex=female,47,morgan2019-figshare,Dublin/group.dat and sex.dat,
+subjects,age=10-19,7,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+subjects,age=20-29,39,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+subjects,age=30-39,27,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+subjects,age=40-49,19,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+subjects,age=50-59,19,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+subjects,age=60-69,4,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+age_min,,19,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+age_median,,34,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+age_max,,64,morgan2019-figshare,Dublin/age.dat,analysed sample of 115
+age_mean,condition=healthy,33.5,morgan2019-si,Table S1,analysed sample
+subjects,field_strength=3,184,morgan2019-si,Section 1.2,
+subjects,vendor=philips,184,morgan2019-si,Section 1.2,Philips Intera Achieva 3T
+subjects,country=IE,184,morgan2019,Materials and Methods: Samples,
