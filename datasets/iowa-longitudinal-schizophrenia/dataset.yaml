@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: iowa-longitudinal-schizophrenia
+name: Iowa Longitudinal Study (NDA 2125)
+full_name: Phenomenology and Classification of Schizophrenia (Iowa Longitudinal Study)
+summary: >-
+  University of Iowa prospective study of first-episode schizophrenia patients followed for up to 18 years with
+  repeated 1.5T structural MRI, symptom ratings and cognitive tests. The NIMH Data Archive shares data from 275
+  subjects, 267 of them with images.
+homepage: https://nda.nih.gov/edit_collection.html?id=2125
+doi: 10.15154/z32v-tv80
+year: 2015
+status: active
+creators:
+  - name: Nancy C. Andreasen and colleagues, University of Iowa Carver College of Medicine
+    url: https://nda.nih.gov/edit_collection.html?id=2125
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, PDw]
+anatomy: [brain]
+conditions: [schizophrenia]
+tasks: [longitudinal, classification]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2125
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The data are held in NIMH Data Archive collection 2125 and are accessed under the NDA Data Use Certification.
+citation:
+  text: >-
+    Andreasen N. Phenomenology and Classification of Schizophrenia (Iowa Longitudinal Study). NIMH Data Archive
+    collection 2125 (2015). doi:10.15154/z32v-tv80
+sources:
+  nda-collection-2125:
+    title: NIMH Data Archive collection 2125 page, General, Shared Data and Data Expected tabs
+    url: https://nda.nih.gov/edit_collection.html?id=2125
+    kind: website
+  gupta1997:
+    title: Gupta et al. 1997, The Iowa Longitudinal Study of Recent Onset Psychosis, Schizophrenia Research
+    url: https://doi.org/10.1016/s0920-9964(96)00078-3
+    kind: paper
+  andreasen2011:
+    title: Andreasen et al. 2011, Progressive brain change in schizophrenia, Biological Psychiatry (author manuscript PMC3496792)
+    url: https://doi.org/10.1016/j.biopsych.2011.05.017
+    kind: paper
+related: []
+keywords: [schizophrenia, first-episode psychosis, longitudinal MRI, brain morphometry, NIMH Data Archive]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
