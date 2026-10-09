@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,133,bao2023,Table 1,Term-born neonates with a clinical diagnosis of HIE
+subjects,condition=hypoxic_ischemic_encephalopathy,133,bao2023,Table 1,
+subjects,contrast=ADC,133,bao2023,Data Records,"Skull-stripped ADC map, ZADC map and lesion mask per patient"
+subjects,contrast_set=ADC,133,bao2023,Data Records,
+subjects,sex=male,74,bao2023,Table 1A,
+subjects,sex=female,59,bao2023,Table 1A,
+subjects,age=0-0.5,133,bao2023,Retrospective Data Collection,"MRI acquired on postnatal day 0 to 14; mean age at scan 3.9 ± 2.7 days (Table 1A)"
+subjects,country=US,133,bao2023,Retrospective Data Collection,Massachusetts General Hospital
+subjects,field_strength=1.5,52,bao2023,Table 1D,GE 1.5T Signa
+subjects,field_strength=3,81,bao2023,Table 1D,Siemens 3T TrioTim or PrismaFit
+subjects,vendor=ge,52,bao2023,Table 1D,
+subjects,vendor=siemens,81,bao2023,Table 1D,
+subjects,split=train,85,bonbid-hie2023-data,Data,"The paper reports 89 training and 44 test cases; the challenge page splits off 4 validation cases"
+subjects,split=validation,4,bonbid-hie2023-data,Data,Sanity check of algorithm containers
+subjects,split=test,44,bonbid-hie2023-data,Data,
