@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nki-rockland-sample
+name: NKI-Rockland Sample (pilot, Phase I)
+full_name: Nathan Kline Institute (NKI) / Rockland Sample
+summary: >-
+  Pilot phase of the NKI-Rockland Sample: resting-state fMRI, diffusion MRI and MPRAGE scans of a lifespan community
+  convenience sample from Rockland County, New York, with psychiatric, cognitive and behavioral assessments, shared
+  weekly through INDI in 2010 and 2011.
+homepage: https://fcon_1000.projects.nitrc.org/indi/pro/nki.html
+doi: 10.3389/fnins.2012.00152
+year: 2010
+status: active
+creators:
+  - name: Nathan Kline Institute for Psychiatric Research (directors F. Xavier Castellanos, Bennett Leventhal, Michael Milham)
+    url: https://fcon_1000.projects.nitrc.org/indi/pro/nki.html
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+formats: [DICOM, NIfTI]
+countries: [US]
+vendors: [siemens]
+access:
+  type: registration
+  url: https://www.nitrc.org/project/request.php?group_id=296
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The usage agreement on the NKI/Rockland page names the Creative Commons Attribution Non-Commercial license
+      (no version) and links the NITRC license glossary. Downloads need a NITRC account and approved access to the
+      1000 Functional Connectomes Project.
+citation:
+  text: >-
+    Nooner KB, Colcombe SJ, Tobe RH, et al. The NKI-Rockland Sample: a model for accelerating the pace of discovery
+    science in psychiatry. Frontiers in Neuroscience 6:152 (2012). doi:10.3389/fnins.2012.00152
+sources:
+  indi-nki-rockland:
+    title: Nathan Kline Institute (NKI) / Rockland Sample page, FCP/INDI (summary, protocols, release table)
+    url: https://fcon_1000.projects.nitrc.org/indi/pro/nki.html
+    kind: website
+  nooner2012:
+    title: Nooner et al. 2012, Frontiers in Neuroscience
+    url: https://doi.org/10.3389/fnins.2012.00152
+    kind: paper
+related: [fcp-1000]
+keywords:
+  [NKI-RS, Rockland, lifespan, resting-state fMRI, diffusion tensor imaging, psychiatry, phenotyping, discovery science, INDI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
