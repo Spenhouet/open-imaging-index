@@ -5,7 +5,8 @@
   let {
     items,
     total,
-    unit = 'subjects'
+    unit = 'subjects',
+    limit = 8
   }: {
     items: {
       key: string;
@@ -18,7 +19,13 @@
     }[];
     total?: number;
     unit?: string;
+    /** Longer lists show this many bars until expanded. */
+    limit?: number;
   } = $props();
+
+  let expanded = $state(false);
+  const cut = $derived(items.length > limit + 2 && !expanded);
+  const shown = $derived(cut ? items.slice(0, limit) : items);
 
   const share = (v: number, t: number) => {
     const p = (v / t) * 100;
@@ -28,7 +35,7 @@
 </script>
 
 <ul class="space-y-2.5">
-  {#each items as item (item.key)}
+  {#each shown as item (item.key)}
     {@const pct = (item.value / max) * 100}
     <li
       class="group"
@@ -55,3 +62,11 @@
     </li>
   {/each}
 </ul>
+{#if items.length > limit + 2}
+  <button
+    type="button"
+    class="mt-3 text-xs font-medium text-primary hover:underline"
+    aria-expanded={expanded}
+    onclick={() => (expanded = !expanded)}>{expanded ? 'Show fewer' : `Show all ${items.length}`}</button
+  >
+{/if}

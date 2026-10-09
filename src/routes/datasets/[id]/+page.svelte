@@ -19,7 +19,7 @@
   import SplitBar from '#lib/components/charts/SplitBar.svelte';
   import CrossTable from '#lib/components/charts/CrossTable.svelte';
   import { formatBy, total } from '#lib/catalog/stats.js';
-  import { ageNote, datasetCharts, type Variant } from '#lib/catalog/charts.js';
+  import { ageNote, datasetCharts, type Breakdown, type Cross, type Variant } from '#lib/catalog/charts.js';
   import { countryName, formatNumber, label } from '#lib/catalog/vocab.js';
   import { SITE_NAME, SITE_URL, editUrl, issueUrl, link } from '#lib/site.js';
 
@@ -54,6 +54,37 @@
   let picked = $state<Record<string, string>>({});
   const pick = <T,>(key: string, vs: Variant<T>[]) => vs.find((v) => v.measure === picked[key]) ?? vs[0];
 
+  // Cross tables with up to two columns fit in half a row.
+  const narrow = (c: Cross) => c.variants[0].data.cols.length <= 2;
+
+  // Half-width cards, split into two columns by estimated height (in pixels).
+  type PoolItem = { key: string; kind: 'sex' | 'age' | 'b' | 'c'; est: number; b?: Breakdown; c?: Cross };
+  const listHeight = (n: number, notes: boolean) => {
+    const shown = n > 10 ? 8 : n;
+    return shown * (notes ? 60 : 42) + (n > 10 ? 30 : 0);
+  };
+  const pool = $derived.by(() => {
+    const out: PoolItem[] = [];
+    if (charts.sex.length) out.push({ key: 'sex', kind: 'sex', est: 150 + (charts.sexAgeNote ? 30 : 0) });
+    if (charts.ageBins.length || ageText) out.push({ key: 'age', kind: 'age', est: charts.ageBins.length ? 330 : 130 });
+    for (const b of charts.breakdowns) {
+      const items = b.variants[0].data;
+      out.push({ key: b.dim, kind: 'b', b, est: 120 + listHeight(items.length, items.some((i) => i.note)) });
+    }
+    for (const c of charts.crosses.filter(narrow))
+      out.push({ key: c.key, kind: 'c', c, est: 160 + c.variants[0].data.rows.length * 26 });
+    return out;
+  });
+  const columns = $derived.by(() => {
+    const cols: (PoolItem & { i: number })[][] = [[], []];
+    const h = [0, 0];
+    pool.forEach((it, i) => {
+      const k = h[0] <= h[1] ? 0 : 1;
+      cols[k].push({ ...it, i });
+      h[k] += it.est + 20;
+    });
+    return cols;
+  });
   const hasCohortStats = $derived(
     !!(
       charts.sex.length ||
@@ -167,6 +198,67 @@
   </div>
 {/snippet}
 
+{#snippet card(it: PoolItem)}
+  {#if it.kind === 'sex'}
+              {@const v = pick('sex', charts.sex)}
+              {@const sum = v.data.reduce((s, i) => s + i.value, 0)}
+              {@const all = t(v.measure)?.value}
+              <div class="surface p-5">
+                {@render head('sex', 'Sex', charts.sex)}
+                <div class="mt-4">
+                  <SplitBar
+                    items={v.data.map((i) => ({ ...i, color: sexColors[i.key] ?? 'var(--series-other)' }))}
+                  />
+                </div>
+                {#if all && sum < all * 0.98}
+                  <p class="mt-3 text-xs text-muted-foreground">
+                    Covers {formatNumber(sum)} of {formatNumber(all)} {v.measure}.
+                  </p>
+                {/if}
+                {#if charts.sexAgeNote}
+                  <p class="mt-3 text-xs text-muted-foreground tabular">{charts.sexAgeNote.text}.</p>
+                {/if}
+                {@render cite([...v.rows, ...(charts.sexAgeNote?.rows ?? [])])}
+              </div>
+  {:else if it.kind === 'age'}
+              {@const v = charts.ageBins.length ? pick('age', charts.ageBins) : null}
+              <div class="surface p-5">
+                {@render head('age', 'Age', charts.ageBins)}
+                {#if ageText}<p class="mt-0.5 text-xs text-muted-foreground tabular">{ageText}</p>{/if}
+                {#if v}
+                  <div class="mt-4"><Columns items={v.data} unit={v.measure} /></div>
+                {:else}
+                  <p class="mt-3 text-sm text-muted-foreground">No age bins reported.</p>
+                {/if}
+                {@render cite([...(v?.rows ?? []), ...Object.values(age).filter((r) => !!r)])}
+              </div>
+  {:else if it.b}
+    {@const b = it.b}
+              {@const v = pick(b.dim, b.variants)}
+              <div class="surface p-5">
+                {@render head(b.dim, b.title, b.variants)}
+                {#if b.dim === 'condition' || b.dim === 'contrast'}
+                  <p class="mt-0.5 text-xs text-muted-foreground">Groups can overlap</p>
+                {/if}
+                <div class="mt-4"><BarList items={v.data} total={t(v.measure)?.value} unit={v.measure} /></div>
+                {@render cite(v.rows)}
+              </div>
+  {:else if it.c}
+    {@const c = it.c}
+              {@const v = pick(c.key, c.variants)}
+              <div class="min-w-0 surface p-5">
+                {@render head(c.key, c.title, c.variants)}
+                <p class="mt-0.5 text-xs text-muted-foreground">
+                  Reported cross table. A dot marks a cell the source does not give.
+                </p>
+                <div class="mt-4">
+                  <CrossTable rows={v.data.rows} cols={v.data.cols} cells={v.data.cells} unit={v.measure} />
+                </div>
+                {@render cite(v.rows)}
+              </div>
+  {/if}
+{/snippet}
+
 {#snippet cite(rs: { source: string; where?: string }[])}
   {@const list = citeOf(rs)}
   {#if list.length}
@@ -253,45 +345,21 @@
               ? `${formatNumber(N)} subjects`
               : 'largest value'}.
           </p>
-          <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-            {#if charts.sex.length}
-              {@const v = pick('sex', charts.sex)}
-              {@const sum = v.data.reduce((s, i) => s + i.value, 0)}
-              {@const all = t(v.measure)?.value}
-              <div class="surface p-5">
-                {@render head('sex', 'Sex', charts.sex)}
-                <div class="mt-4">
-                  <SplitBar
-                    items={v.data.map((i) => ({ ...i, color: sexColors[i.key] ?? 'var(--series-other)' }))}
-                  />
-                </div>
-                {#if all && sum < all * 0.98}
-                  <p class="mt-3 text-xs text-muted-foreground">
-                    Covers {formatNumber(sum)} of {formatNumber(all)} {v.measure}.
-                  </p>
-                {/if}
-                {#if charts.sexAgeNote}
-                  <p class="mt-3 text-xs text-muted-foreground tabular">{charts.sexAgeNote.text}.</p>
-                {/if}
-                {@render cite([...v.rows, ...(charts.sexAgeNote?.rows ?? [])])}
+          <!-- Half-width cards go to whichever of two columns is shorter, so a long list leaves no hole next to it.
+               On phones the columns dissolve and the cards keep their order. -->
+          <div class="mt-6 flex flex-col gap-5 md:flex-row md:items-start">
+            {#each columns as col, k (k)}
+              <div class="contents md:flex md:min-w-0 md:flex-1 md:flex-col md:gap-5">
+                {#each col as it (it.key)}
+                  <div class="min-w-0" style:order={it.i}>{@render card(it)}</div>
+                {/each}
               </div>
-            {/if}
-            {#if charts.ageBins.length || ageText}
-              {@const v = charts.ageBins.length ? pick('age', charts.ageBins) : null}
-              <div class="surface p-5">
-                {@render head('age', 'Age', charts.ageBins)}
-                {#if ageText}<p class="mt-0.5 text-xs text-muted-foreground tabular">{ageText}</p>{/if}
-                {#if v}
-                  <div class="mt-4"><Columns items={v.data} unit={v.measure} /></div>
-                {:else}
-                  <p class="mt-3 text-sm text-muted-foreground">No age bins reported.</p>
-                {/if}
-                {@render cite([...(v?.rows ?? []), ...Object.values(age).filter((r) => !!r)])}
-              </div>
-            {/if}
+            {/each}
+          </div>
+          <div class="mt-5 space-y-5 empty:hidden">
             {#if charts.pyramid.length}
               {@const v = pick('pyramid', charts.pyramid)}
-              <div class="surface p-5 md:col-span-2">
+              <div class="surface p-5">
                 {@render head('pyramid', 'Age by sex', charts.pyramid)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
                   Reported cross table. Missing cells were not published (fewer than 10 or not reported).
@@ -308,7 +376,7 @@
             {/if}
             {#if charts.combos.length}
               {@const v = pick('combos', charts.combos)}
-              <div class="surface p-5 md:col-span-2">
+              <div class="surface p-5">
                 {@render head('combos', 'Contrast combinations', charts.combos)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
                   How many {v.measure} have exactly each set of contrasts.
@@ -317,20 +385,9 @@
                 {@render cite(v.rows)}
               </div>
             {/if}
-            {#each charts.breakdowns as b (b.dim)}
-              {@const v = pick(b.dim, b.variants)}
-              <div class="surface p-5">
-                {@render head(b.dim, b.title, b.variants)}
-                {#if b.dim === 'condition' || b.dim === 'contrast'}
-                  <p class="mt-0.5 text-xs text-muted-foreground">Groups can overlap</p>
-                {/if}
-                <div class="mt-4"><BarList items={v.data} total={t(v.measure)?.value} unit={v.measure} /></div>
-                {@render cite(v.rows)}
-              </div>
-            {/each}
-            {#each charts.crosses as c (c.key)}
+            {#each charts.crosses.filter((c) => !narrow(c)) as c (c.key)}
               {@const v = pick(c.key, c.variants)}
-              <div class={['min-w-0 surface p-5', v.data.cols.length > 2 && 'md:col-span-2']}>
+              <div class="min-w-0 surface p-5">
                 {@render head(c.key, c.title, c.variants)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
                   Reported cross table. A dot marks a cell the source does not give.
