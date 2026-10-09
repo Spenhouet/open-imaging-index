@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,15,spineweb-datasets-2024,Dataset 7,anonymized patients
+subjects,contrast=T2w,15,spineweb-datasets-2024,Dataset 7,3D T2-weighted turbo spin echo
+subjects,contrast_set=T2w,15,spineweb-datasets-2024,Dataset 7,the page lists only the T2-weighted TSE image per patient
+subjects,anatomy=intervertebral_disc,15,spineweb-datasets-2024,Dataset 7,"each patient has at least 7 lower-spine discs (T11 to L5), each with a manual binary mask"
+subjects,field_strength=1.5,15,spineweb-datasets-2024,Dataset 7,
+subjects,vendor=siemens,15,spineweb-datasets-2024,Dataset 7,Siemens Magnetom Sonata

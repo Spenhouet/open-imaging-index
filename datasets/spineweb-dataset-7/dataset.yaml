@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spineweb-dataset-7
+name: SpineWeb Dataset 7 (IVD T2 TSE MRI)
+full_name: 'SpineWeb Dataset 7: Intervertebral Disc Localization and Segmentation: 3D T2-weighted Turbo Spin Echo MR Image Database'
+summary: >-
+  3D T2-weighted turbo spin echo MRI of the lower spine of 15 anonymized patients from a 1.5 T Siemens Magnetom Sonata,
+  with manual binary masks of at least 7 intervertebral discs (T11 to L5) per patient. Shared on request.
+homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+# The SpineWeb page does not date the listing. Its preview image (images/dataset7_prev.png) was first archived by the
+# Internet Archive on 2016-06-02, the earliest evidence that the dataset was listed. An exact first release date is not
+# published.
+year: 2016
+creators:
+  - name: Guoyan Zheng, Institute for Surgical Technology and Biomechanics, University of Bern
+modalities: [MR]
+contrasts: [T2w]
+anatomy: [intervertebral_disc]
+tasks: [segmentation, detection]
+formats: [NIfTI]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The SpineWeb entry says to contact Guoyan Zheng (University of Bern) directly to obtain the data and states no
+      license, data use terms or citation requirement for this dataset.
+sources:
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page, Dataset 7 section (Internet Archive copy of 13 June 2024)
+    url: http://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+  chen2015:
+    title: Chen et al. 2015, Localization and Segmentation of 3D Intervertebral Discs in MR Images by Data Driven Estimation, IEEE TMI 34(8)
+    url: https://pubmed.ncbi.nlm.nih.gov/25700441/
+    kind: paper
+related: []
+keywords:
+  [intervertebral disc segmentation, intervertebral disc localization, T2-weighted MRI, turbo spin echo, lumbar spine]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
