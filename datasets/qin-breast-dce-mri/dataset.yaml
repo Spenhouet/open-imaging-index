@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qin-breast-dce-mri
+name: QIN Breast DCE-MRI
+full_name: >-
+  Variations of dynamic contrast-enhanced magnetic resonance imaging in evaluation of breast cancer therapy response: a
+  multicenter data analysis challenge (QIN Breast DCE-MRI)
+summary: >-
+  3 T bilateral breast DCE-MRI of 10 women with locally advanced breast cancer, scanned before and after the first
+  cycle of neoadjuvant chemotherapy at OHSU, with pathologic response status, shared on TCIA for a QIN pharmacokinetic
+  analysis challenge.
+homepage: https://www.cancerimagingarchive.net/collection/qin-breast-dce-mri/
+doi: 10.7937/K9/TCIA.2014.A2N1IXOX
+# Version 1 is dated 2014/07/02 on the collection page, version 2 2019/04/18.
+year: 2014
+updated: 2019
+version: '2'
+status: active
+creators:
+  - name: Oregon Health & Science University (PI Wei Huang), NCI Quantitative Imaging Network
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [dce]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [longitudinal, classification]
+formats: [DICOM, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 15.9
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/qin-breast-dce-mri/
+  note: >-
+    Images download with the TCIA Data Retriever without an account; the pathologic response sheet and the
+    population-averaged arterial input function are direct downloads from the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Huang W, Tudorica A, Chui S, Kemmer K, Naik A, Troxell M, Oh K, Roy N, Afzal A, Holtorf M. (2014). Variations of
+    dynamic contrast-enhanced magnetic resonance imaging in evaluation of breast cancer therapy response: a multicenter
+    data analysis challenge (QIN Breast DCE-MRI) (Version 2) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/k9/tcia.2014.a2n1ixox
+sources:
+  tcia-qin-breast-dce-mri:
+    title: TCIA QIN-BREAST-DCE-MRI collection page (version 2, updated 2019/04/18)
+    url: https://www.cancerimagingarchive.net/collection/qin-breast-dce-mri/
+    kind: website
+  huang2014:
+    title: Huang et al. 2014, Translational Oncology (PMC3998693)
+    url: https://doi.org/10.1593/tlo.13838
+    kind: paper
+  tcia-nbia-qin-breast-dce-mri-studies:
+    title: TCIA public NBIA API, getPatientStudy for collection QIN Breast DCE-MRI (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatientStudy?Collection=QIN%20Breast%20DCE-MRI
+    kind: computed
+  tcia-nbia-qin-breast-dce-mri-series:
+    title: TCIA public NBIA API, getSeries for collection QIN Breast DCE-MRI (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=QIN%20Breast%20DCE-MRI
+    kind: computed
+related: []
+keywords:
+  [breast cancer, DCE MRI, neoadjuvant chemotherapy, treatment response, pharmacokinetic modeling, TWIST, Quantitative Imaging Network]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
