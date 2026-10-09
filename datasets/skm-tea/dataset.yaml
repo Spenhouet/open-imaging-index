@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: skm-tea
+name: SKM-TEA
+full_name: Stanford Knee MRI with Multi-Task Evaluation
+summary: >-
+  Raw multi-coil k-space and scanner DICOM images of 155 quantitative double-echo steady-state (qDESS) knee MRI scans
+  from Stanford, with manual cartilage and meniscus masks and pathology bounding boxes for reconstruction,
+  segmentation and detection benchmarks.
+homepage: https://aimi.stanford.edu/datasets/skm-tea-knee-mri
+doi: 10.71718/2ghb-nv62
+year: 2021
+version: '1.0'
+status: active
+creators:
+  - name: >-
+      Desai A. D., Schmidt A. M., Rubin E. B., Sandino C. M., Black M. S., Mazzoli V., Stevens K. J., Boutin R.,
+      Ré C., Gold G. E., Hargreaves B. A., Chaudhari A. S. (Stanford University)
+    url: https://github.com/StanfordMIMI/skm-tea
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/
+species: human
+modalities: [MR]
+contrasts: [T2map]
+anatomy: [knee]
+tasks: [reconstruction, segmentation, detection]
+formats: [HDF5, DICOM, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 900
+access:
+  type: registration
+  url: https://stanford.redivis.com/datasets/5r8z-achpw6q4f
+  note: >-
+    Sign in and accept the Stanford research use agreement. The AIMI page links to Redivis for the download; the older
+    Stanford AIMI shared-datasets portal still lists the dataset.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+    url: https://stanfordaimi.azurewebsites.net/datasets/4aaeafb9-c6e6-4e3c-9188-3aaaf0e0a9e7
+    note: >-
+      The portal shows the Stanford University School of Medicine Research Use Agreement with "SKM-TEA" as the
+      dataset name. The paper (Appendix A.5) also says the public data are distributed under the Stanford School of
+      Medicine terms. The portal's metadata API names the Open Use of Data Agreement v1.0, but the agreement shown to
+      users is the research use agreement. The code repository is MIT licensed; that license does not cover the data.
+citation:
+  text: >-
+    Desai AD, Schmidt AM, Rubin EB, Sandino CM, Black MS, Mazzoli V, Stevens KJ, Boutin R, Ré C, Gold GE, Hargreaves
+    BA, Chaudhari AS. SKM-TEA: A Dataset for Accelerated MRI Reconstruction with Dense Image Labels for Quantitative
+    Clinical Evaluation. NeurIPS Datasets and Benchmarks Track (2021). arXiv:2203.06823. Dataset DOI:
+    https://doi.org/10.71718/2ghb-nv62
+  bibtex: |
+    @inproceedings{desai2021skm,
+      title={SKM-TEA: A Dataset for Accelerated MRI Reconstruction with Dense Image Labels for Quantitative Clinical Evaluation},
+      author={Desai, Arjun D and Schmidt, Andrew M and Rubin, Elka B and Sandino, Christopher Michael and Black, Marianne Susan and Mazzoli, Valentina and Stevens, Kathryn J and Boutin, Robert and Re, Christopher and Gold, Garry E and others},
+      booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 2)},
+      year={2021}
+    }
+sources:
+  desai2021:
+    title: Desai et al., SKM-TEA - A Dataset for Accelerated MRI Reconstruction with Dense Image Labels for Quantitative Clinical Evaluation (arXiv:2203.06823v1)
+    url: https://arxiv.org/abs/2203.06823
+    kind: paper
+  aimi-skm-tea:
+    title: Stanford AIMI SKM-TEA Knee MRI dataset page
+    url: https://aimi.stanford.edu/datasets/skm-tea-knee-mri
+    kind: website
+  github-skm-tea-dataset:
+    title: SKM-TEA dataset documentation (DATASET.md in the StanfordMIMI/skm-tea repository)
+    url: https://github.com/StanfordMIMI/skm-tea/blob/main/DATASET.md
+    kind: website
+related: [fastmri, oai]
+keywords: [knee MRI, qDESS, k-space, MRI reconstruction, cartilage segmentation, meniscus segmentation, T2 mapping]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
