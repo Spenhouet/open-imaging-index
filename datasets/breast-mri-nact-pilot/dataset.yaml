@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: breast-mri-nact-pilot
+name: Breast-MRI-NACT-Pilot
+full_name: >-
+  Single site breast DCE-MRI data and segmentations from patients undergoing neoadjuvant chemotherapy
+  (Breast-MRI-NACT-Pilot)
+summary: >-
+  Longitudinal 1.5 T sagittal breast DCE-MRI of 64 women with stage II or III breast cancer, scanned up to four times
+  during neoadjuvant chemotherapy at UCSF, with threshold-based tumor and breast tissue segmentations, SER maps and
+  recurrence-free survival data.
+homepage: https://www.cancerimagingarchive.net/collection/breast-mri-nact-pilot/
+doi: 10.7937/K9/TCIA.2016.QHsyhJKy
+# The NBIA API gives DateReleased 2016-01-30; version 3 is dated 2023/08/07 on the collection page.
+year: 2016
+updated: 2023
+version: '3'
+status: active
+creators:
+  - name: Breast Imaging Research Program, University of California San Francisco (David Newitt, Nola Hylton)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [dce, T2w, dwi]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [longitudinal, segmentation, survival]
+formats: [DICOM]
+countries: [US]
+vendors: [ge]
+field_strengths: [1.5]
+size_gb: 19.51
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/breast-mri-nact-pilot/
+  note: >-
+    Images and segmentations download with the TCIA Data Retriever; the clinical and recurrence-free survival workbook
+    is a direct download from the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Newitt, D., & Hylton, N. (2016). Single site breast DCE-MRI data and segmentations from patients undergoing
+    neoadjuvant chemotherapy (Version 3) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.QHsyhJKy
+sources:
+  tcia-breast-mri-nact-pilot:
+    title: TCIA Breast-MRI-NACT-Pilot collection page (version 3, updated 2023/08/07)
+    url: https://www.cancerimagingarchive.net/collection/breast-mri-nact-pilot/
+    kind: website
+  tcia-nact-pilot-clinical:
+    title: Breast-MRI-NACT-Pilot clinical and DFS workbook, SharedClinicalAndRFS.xls (CC BY 3.0, no login)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/SharedClinicalAndRFS.xls
+    kind: computed
+  tcia-nbia-nact-pilot-studies:
+    title: TCIA public NBIA API, getPatientStudy for collection Breast-MRI-NACT-Pilot (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatientStudy?Collection=Breast-MRI-NACT-Pilot
+    kind: computed
+  tcia-nbia-nact-pilot-series:
+    title: TCIA public NBIA API, getSeries for collection Breast-MRI-NACT-Pilot (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=Breast-MRI-NACT-Pilot
+    kind: computed
+related: []
+keywords:
+  [
+    breast cancer,
+    DCE MRI,
+    neoadjuvant chemotherapy,
+    treatment response,
+    functional tumor volume,
+    signal enhancement ratio,
+    recurrence-free survival,
+    QIN BMMR challenge,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,64,tcia-breast-mri-nact-pilot,Collection Snapshot,68 enrolled; 4 excluded (Summary)
+studies,,189,tcia-breast-mri-nact-pilot,Data Access,"Images and Segmentations row; the Included image data section speaks of 198 studies"
+images,,98936,tcia-breast-mri-nact-pilot,Data Access,"Images and Segmentations row, MR and SEG (2,224 series)"
+subjects,sex=female,64,tcia-nbia-nact-pilot-studies,PatientSex,
+subjects,modality=MR,64,tcia-nbia-nact-pilot-series,Modality,
+subjects,contrast=dce,64,tcia-breast-mri-nact-pilot,Summary,
+subjects,vendor=ge,64,tcia-breast-mri-nact-pilot,MRI acquisition,GE Signa (GENESIS_SIGNA in ManufacturerModelName)
+subjects,field_strength=1.5,64,tcia-breast-mri-nact-pilot,MRI acquisition,
+subjects,country=US,64,tcia-breast-mri-nact-pilot,Summary,University of California San Francisco
+subjects,condition=breast_cancer,64,tcia-breast-mri-nact-pilot,Summary,invasive breast cancer stage II or III
+subjects,age=20-29,1,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+subjects,age=30-39,12,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+subjects,age=40-49,25,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+subjects,age=50-59,18,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+subjects,age=60-69,6,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+subjects,age=70-79,2,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+age_mean,,48.2,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+age_sd,,9.6,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),"sample standard deviation, age at the first MRI"
+age_median,,48.4,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+age_min,,29.7,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
+age_max,,72.4,tcia-nact-pilot-clinical,AGE at MRI1 (yrs),age at the first MRI
