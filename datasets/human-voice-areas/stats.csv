@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,217,openneuro-ds000158-v1,,snapshot summary lists subjects 001 to 217; the paper and the DataShare copy have 218
+subjects,sex=male,117,pernet2015,Methods: Subjects,of the 218 subjects in the paper
+subjects,contrast=T1w,217,ds000158-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=bold,217,ds000158-file-tree,,one sub-*_task-passivelistening_bold.nii.gz per subject folder
+subjects,contrast_set=bold+T1w,217,ds000158-file-tree,,
+scans,,434,ds000158-file-tree,,217 T1w and 217 BOLD NIfTI files
+age_mean,,24.1,pernet2015,Methods: Subjects,of the 218 subjects in the paper
+age_sd,,7.0,pernet2015,Methods: Subjects,of the 218 subjects in the paper
