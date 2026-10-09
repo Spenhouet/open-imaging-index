@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rider-breast-mri
+name: RIDER Breast MRI
+full_name: Reference Image Database to Evaluate Therapy Response (RIDER) Breast MRI
+summary: >-
+  Repeat "coffee break" diffusion-weighted breast MRI of 5 breast cancer patients before neoadjuvant chemotherapy:
+  two exams about 15 minutes apart, each with b0, b800 and ADC series, plus an anatomical reference and a tumor VOI
+  mask, as DICOM.
+homepage: https://www.cancerimagingarchive.net/collection/rider-breast-mri/
+doi: 10.7937/K9/TCIA.2015.H1SXNUXL
+year: 2011
+version: '1'
+status: active
+creators:
+  - name: >-
+      University of Michigan (Meyer CR, Chenevert TL, Galbán CJ, Johnson TD, Hamstra DA, Rehemtulla A, Ross BD)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [dwi, ADC]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [registration, segmentation]
+formats: [DICOM]
+countries: [US]
+size_gb: 0.4
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/rider-breast-mri/
+  note: Download with the TCIA Data Retriever, or through the NCI Imaging Data Commons.
+licenses:
+  - license: CC-BY-3.0
+    note: >-
+      TCIA lists the images under CC BY 3.0. Users must also agree to the TCIA Data Usage Policy, which says users
+      must "Not use the requested datasets, either alone or in concert with any other information, to identify or
+      contact individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/).
+citation:
+  text: >-
+    Meyer CR, Chenevert TL, Galbán CJ, Johnson TD, Hamstra DA, Rehemtulla A, Ross BD. (2015). RIDER Breast MRI
+    [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2015.H1SXNUXL
+sources:
+  tcia-rider-breast-mri:
+    title: TCIA RIDER Breast MRI collection page (version 1, updated 2011/11/08)
+    url: https://www.cancerimagingarchive.net/collection/rider-breast-mri/
+    kind: website
+  meyer2009:
+    title: Meyer et al. 2009, ISMRM poster 2223, Parametric Response Mapping of primary breast cancer
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Meyer-et-al-2009-ISMRM-Poster.pdf
+    kind: paper
+  tcia-rider-breast-mri-digest:
+    title: >-
+      TCIA series metadata digest for RIDER Breast MRI (open download, CC BY 3.0), counted per study and series
+      description
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/doiJNLP-Fo0H1NtD-nbia-digest.xlsx
+    kind: computed
+related: []
+keywords: [RIDER, test-retest, coffee break, repeatability, diffusion MRI, ADC, parametric response mapping, neoadjuvant chemotherapy]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
