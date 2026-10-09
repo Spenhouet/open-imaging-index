@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,147,indi-cobre-page,Summary,"Sum of the two disjoint groups (72 patients, 75 controls)"
+subjects,condition=schizophrenia,72,indi-cobre-page,Summary,diagnosis by Structured Clinical Interview for DSM disorders (SCID)
+subjects,condition=healthy,75,indi-cobre-page,Summary,
+subjects,contrast=bold,147,indi-cobre-page,Data released for every participant,resting-state fMRI released for every participant
+subjects,contrast=T1w,147,indi-cobre-page,Data released for every participant,multi-echo MPRAGE released for every participant
+subjects,contrast_set=bold+T1w,147,indi-cobre-page,Data released for every participant,the page lists both scan types for every participant
+subjects,country=US,147,indi-cobre-page,Funding,collected by the Mind Research Network and the University of New Mexico
+subjects,vendor=siemens,147,aine2017,Methods (MRI/fMRI data collection),the paper names a Siemens 3 T TIM Trio at MRN for the COBRE MRI collection as a whole
+subjects,field_strength=3,147,aine2017,Methods (MRI/fMRI data collection),the paper names a Siemens 3 T TIM Trio at MRN for the COBRE MRI collection as a whole
+age_min,,18,indi-cobre-page,Summary,stated as the lower end of the age range in each group
+age_max,,65,indi-cobre-page,Summary,stated as the upper end of the age range in each group

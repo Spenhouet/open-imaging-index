@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cobre
+name: COBRE (INDI)
+full_name: Center for Biomedical Research Excellence (COBRE) schizophrenia sample
+summary: >-
+  Resting-state fMRI and multi-echo MPRAGE anatomical scans from 72 patients with schizophrenia and 75 healthy
+  controls aged 18 to 65, with age, sex, handedness and diagnosis, shared through INDI by the Mind Research Network.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/cobre.html
+year: 2013
+status: active
+creators:
+  - name: Mind Research Network and University of New Mexico (COBRE investigators)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/cobre.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+tasks: [classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://www.nitrc.org/project/request.php?group_id=296
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement.
+      Downloads need a NITRC account and membership in the 1000 Functional Connectomes Project on NITRC.
+citation:
+  text: >-
+    Aine CJ, Bockholt HJ, Bustillo JR, et al. Multimodal Neuroimaging in Schizophrenia: Description and Dissemination.
+    Neuroinformatics 15(4):343-364 (2017). doi:10.1007/s12021-017-9338-9
+sources:
+  indi-cobre-page:
+    title: COBRE release page, FCP/INDI (summary, acquisition parameters, data list, usage agreement)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/cobre.html
+    kind: website
+  indi-summer-of-sharing-2012:
+    title: INDI 2012 Summer of Sharing page (pledged contributions)
+    url: https://fcon_1000.projects.nitrc.org/indi/summerofsharing2012.html
+    kind: website
+  indi-retro-2012-10:
+    title: INDI retrospective data table as archived on 18 October 2012 (COBRE not listed)
+    url: https://web.archive.org/web/20121018011721/http://fcon_1000.projects.nitrc.org:80/indi/IndiRetro.html
+    kind: website
+  indi-retro-2013-05:
+    title: INDI retrospective data table as archived on 6 May 2013 (COBRE listed as released)
+    url: https://web.archive.org/web/20130506153223/http://fcon_1000.projects.nitrc.org:80/indi/IndiRetro.html
+    kind: website
+  aine2017:
+    title: Aine et al. 2017, Multimodal Neuroimaging in Schizophrenia, Neuroinformatics
+    url: https://doi.org/10.1007/s12021-017-9338-9
+    kind: paper
+related: [fcp-1000]
+keywords: [schizophrenia, resting-state fMRI, multi-echo MPRAGE, functional connectivity, INDI, Mind Research Network]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
