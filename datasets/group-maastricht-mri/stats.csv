@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,271,frissen2017,Methods: Participants,"89 patients, 95 siblings and 87 controls at baseline; the three groups are disjoint. Habets et al. (2011) report 88 patients, 98 siblings and 87 controls"
+subjects,modality=MR,271,frissen2017,Methods: Participants,
+subjects,contrast=T1w,271,frissen2017,Methods: MRI acquisition and processing,"MDEFT or MPRAGE, 1 mm isotropic; the sequence changed after a scanner update during data collection"
+subjects,contrast=dwi,151,morgan2019-figshare,PARC500_FA.dat (one row per subject),"fractional anisotropy from diffusion MRI for the 151 participants (83 cases, 68 controls) analysed by Morgan et al. (2019); diffusion data for the full sample are not reported"
+subjects,condition=psychotic_disorder,89,frissen2017,Table 1,"non-affective psychotic disorder (DSM-IV, CASH interview)"
+subjects,condition=healthy,87,frissen2017,Table 1,"controls without a first-degree relative with psychotic disorder; the 95 unaffected siblings of patients are not counted here"
+subjects,sex=male,142,frissen2017,Table 1,"60 patients, 49 siblings and 33 controls; sum of disjoint groups"
+subjects,condition=psychotic_disorder;sex=male,60,frissen2017,Table 1,
+subjects,condition=healthy;sex=male,33,frissen2017,Table 1,
+subjects,field_strength=3,271,frissen2017,Methods: MRI acquisition and processing,
+subjects,vendor=siemens,271,frissen2017,Methods: MRI acquisition and processing,
+subjects,country=NL,271,frissen2017,Methods: Participants,
