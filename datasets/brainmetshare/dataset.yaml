@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brainmetshare
+name: BrainMetShare
+summary: >-
+  Skull-stripped, co-registered 3D brain MRI (pre- and post-contrast T1, post-contrast FLAIR) of 156 Stanford
+  patients with brain metastases, with radiologist lesion masks for 105 cases. Non-commercial research use only.
+homepage: https://aimi.stanford.edu/brainmetshare
+doi: 10.71718/z66c-qr59
+year: 2020
+status: active
+creators:
+  - name: Grøvik E., Yi D., Iv M., Tong E., Rubin D. L., Zaharchuk G. (Stanford University)
+    url: https://aimi.stanford.edu/brainmetshare
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, FLAIR]
+anatomy: [brain]
+conditions: [brain_metastasis]
+tasks: [segmentation, detection]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://stanford.redivis.com/datasets/1emj-bjxt3p6s0
+  note: Register and accept the Stanford research use agreement. The data are downloaded through Redivis.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+    url: https://aimi.stanford.edu/brainmetshare
+    note: >-
+      The BrainMetShare page shows the Stanford University School of Medicine Research Use Agreement with "Brain Mets
+      Dataset" as the dataset name. It also states that the dataset is for non-clinical research use only and must
+      not be relied upon in patient care.
+citation:
+  text: >-
+    Grøvik E, Yi D, Iv M, Tong E, Rubin D, Zaharchuk G. Deep Learning Enables Automatic Detection and Segmentation of
+    Brain Metastases on Multisequence MRI. J Magn Reson Imaging 51(1):175-182 (2020).
+    https://doi.org/10.1002/jmri.26766. Dataset DOI: https://doi.org/10.71718/z66c-qr59
+sources:
+  grovik2020:
+    title: Grøvik et al. 2020, Deep Learning Enables Automatic Detection and Segmentation of Brain Metastases on Multisequence MRI (JMRI 51(1))
+    url: https://doi.org/10.1002/jmri.26766
+    kind: paper
+  aimi-brainmetshare:
+    title: Stanford AIMI BrainMetShare dataset page
+    url: https://aimi.stanford.edu/brainmetshare
+    kind: website
+  datacite-brainmetshare:
+    title: DataCite record of the BrainMetShare dataset DOI (issued 2020)
+    url: https://api.datacite.org/dois/10.71718/z66c-qr59
+    kind: website
+related: []
+keywords: [brain metastases, lesion segmentation, lesion detection, contrast-enhanced MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
