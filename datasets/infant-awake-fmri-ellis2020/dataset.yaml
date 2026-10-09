@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: infant-awake-fmri-ellis2020
+name: Awake Infant fMRI (Ellis 2020)
+full_name: Re-imagining fMRI for awake behaving infants (Princeton and Yale cohorts)
+summary: >-
+  Task fMRI and T1-weighted PETRA anatomical scans of 26 awake infants aged 4 to 33 months across 45 sessions,
+  from two cohorts scanned at Princeton and Yale by the Turk-Browne lab, released on Dryad under CC0.
+homepage: https://doi.org/10.5061/dryad.8gtht76k3
+doi: 10.5061/dryad.8gtht76k3
+year: 2020
+updated: 2021
+version: '8'
+status: active
+creators:
+  - name: Turk-Browne Lab, Yale University (Ellis CT, Skalaban LJ, Yates TS, Bejjanki VR, Córdova NI, Turk-Browne NB)
+    url: https://doi.org/10.5061/dryad.8gtht76k3
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 17.6
+access:
+  type: open
+  url: https://doi.org/10.5061/dryad.8gtht76k3
+licenses:
+  - license: CC0-1.0
+    url: https://doi.org/10.5061/dryad.8gtht76k3
+    note: The Dryad record (version 8) states the license https://spdx.org/licenses/CC0-1.0.html.
+citation:
+  text: >-
+    Ellis CT, Skalaban LJ, Yates TS, Bejjanki VR, Córdova NI, Turk-Browne NB. Re-imagining fMRI for awake behaving
+    infants. Nature Communications 11:4523 (2020). doi:10.1038/s41467-020-18286-y
+sources:
+  ellis2020:
+    title: Ellis et al. 2020, Re-imagining fMRI for awake behaving infants, Nature Communications
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7481790/
+    kind: paper
+  dryad-8gtht76k3:
+    title: Dryad record doi:10.5061/dryad.8gtht76k3 (version 8, 2021-08-31)
+    url: https://doi.org/10.5061/dryad.8gtht76k3
+    kind: website
+related: []
+keywords: [awake infant fMRI, developmental neuroscience, task fMRI, visual cortex, head motion, PETRA]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
