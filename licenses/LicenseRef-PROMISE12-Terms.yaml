@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-PROMISE12-Terms
+name: PROMISE12 data terms (LICENSE.TXT on Zenodo)
+short_name: PROMISE12 terms
+url: https://zenodo.org/records/8026660/files/LICENSE.TXT
+version: LICENSE.TXT in Zenodo records 8014041 and 8026660, published 2023-06-07
+summary: >-
+  A two-sentence notice that permits research use and requires citing the PROMISE12 overview paper by Litjens et al.
+  (Medical Image Analysis 2014). It says nothing about commercial use, redistribution or derived data. Zenodo lists
+  the license as "Other (Attribution)".
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The notice grants research use and is silent on commercial use.
+    quote: You can use this data for your research.
+  model_training:
+    value: unspecified
+    note: Not mentioned. Research use is permitted.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    note: Publishing research results is implied; the overview paper must be cited.
+    quote: If you do that it is mandatory to cite https://doi.org/10.1016/j.media.2013.12.002.
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: If you do that it is mandatory to cite https://doi.org/10.1016/j.media.2013.12.002.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The notice sets no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
