@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,92,tcia-prostate-diagnosis,Collection Snapshot,"The Data Access table lists 87 subjects, 87 studies, 348 series and 30,903 images"
+studies,,92,tcia-prostate-diagnosis-series,StudyInstanceUID,one MRI study per patient
+scans,,368,tcia-prostate-diagnosis-series,SeriesInstanceUID,DICOM series
+images,,32537,tcia-prostate-diagnosis-series,ImageCount,DICOM images (slices) summed over series
+subjects,modality=MR,92,tcia-prostate-diagnosis-series,"PatientID, Modality",
+subjects,vendor=philips,92,tcia-prostate-diagnosis-series,"PatientID, Manufacturer",all series from a Philips Achieva
+subjects,contrast=T2w,92,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription","T2W_TSE axial and coronal series"
+subjects,contrast=dce,92,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription","AX BLISS_GAD, AX BLISS_PRE and dyn_THRIVE series"
+subjects,contrast=T1w,80,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription","T1W_TSE_AX and T1W_TSE_AX_NO GAD series"
+subjects,contrast=T1w_ce,7,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription",T1W_TSE_AX_Gd series
+subjects,contrast_set=dce+T1w+T2w,80,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription",
+subjects,contrast_set=dce+T1w_ce+T2w,7,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription",
+subjects,contrast_set=dce+T2w,5,tcia-prostate-diagnosis-series,"PatientID, StudyInstanceUID, SeriesDescription",
