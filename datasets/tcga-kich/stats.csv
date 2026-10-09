@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,15,tcia-tcga-kich,Data Access table,
+studies,,15,tcia-tcga-kich,Data Access table,
+scans,,109,tcia-tcga-kich,Data Access table,DICOM series
+images,,9221,tcia-tcga-kich,Data Access table,DICOM images (slices)
+subjects,modality=CT,12,tcia-tcga-kich-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,modality=MR,3,tcia-tcga-kich-digest,"Metadata sheet, columns Patient ID and Modality",
+studies,modality=CT,12,tcia-tcga-kich-digest,"Metadata sheet, columns Study Instance UID and Modality",
+studies,modality=MR,3,tcia-tcga-kich-digest,"Metadata sheet, columns Study Instance UID and Modality",
+scans,modality=CT,69,tcia-tcga-kich-digest,"Metadata sheet, column Modality",DICOM series
+scans,modality=MR,40,tcia-tcga-kich-digest,"Metadata sheet, column Modality",DICOM series
+images,modality=CT,6304,tcia-tcga-kich-digest,"Metadata sheet, columns Modality and Image Count",
+images,modality=MR,2917,tcia-tcga-kich-digest,"Metadata sheet, columns Modality and Image Count",
+subjects,sex=male,11,tcia-tcga-kich-digest,"Metadata sheet, column Patient Sex",
+subjects,sex=female,4,tcia-tcga-kich-digest,"Metadata sheet, column Patient Sex",
+subjects,vendor=siemens,10,tcia-tcga-kich-digest,"Metadata sheet, column Manufacturer",
+subjects,vendor=ge,4,tcia-tcga-kich-digest,"Metadata sheet, column Manufacturer",GE MEDICAL SYSTEMS
+subjects,vendor=canon,1,tcia-tcga-kich-digest,"Metadata sheet, column Manufacturer",TOSHIBA
+subjects,age=20-29,1,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+subjects,age=30-39,3,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+subjects,age=40-49,4,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+subjects,age=50-59,4,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+subjects,age=60-69,2,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+subjects,age=70-79,1,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+age_mean,,48.7,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study
+age_sd,,13.1,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",sample standard deviation
+age_median,,47,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",
+age_min,,27,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",
+age_max,,74,tcia-tcga-kich-digest,"Metadata sheet, column Patient Age",
