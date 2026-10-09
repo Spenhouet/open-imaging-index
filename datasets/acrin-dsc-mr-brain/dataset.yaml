@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: acrin-dsc-mr-brain
+name: ACRIN-DSC-MR-Brain
+full_name: ACRIN-DSC-MR-Brain (ACRIN 6677/RTOG 0625)
+summary: >-
+  Longitudinal brain MRI of 123 patients with recurrent glioblastoma from the multicenter phase II trial ACRIN
+  6677/RTOG 0625 of bevacizumab with irinotecan or temozolomide, with optional DSC and DCE perfusion and spectroscopy,
+  plus clinical and survival data.
+homepage: https://www.cancerimagingarchive.net/collection/acrin-dsc-mr-brain/
+doi: 10.7937/tcia.2019.zr1pjf4i
+year: 2019
+version: '1'
+status: active
+creators:
+  - name: American College of Radiology Imaging Network (ACRIN) and Radiation Therapy Oncology Group (RTOG)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, CT]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi, T1map, dce, dsc]
+anatomy: [brain]
+conditions: [glioblastoma]
+tasks: [survival, longitudinal]
+formats: [DICOM]
+size_gb: 86.89
+access:
+  type: application
+  url: https://www.cancerimagingarchive.net/nih-controlled-data-access-policy/
+  note: >-
+    The images contain faces and are hosted on the NCI General Commons under dbGaP study phs004225. A principal
+    investigator at the level of a tenure-track professor or senior scientist requests access through dbGaP. The
+    clinical spreadsheets are an open download from the TCIA collection page.
+licenses:
+  - license: LicenseRef-dbGaP-DUC-phs004225
+    applies_to: All MR and CT images (123 subjects, 566 studies, 7,629 series).
+    url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004225
+  - license: CC-BY-4.0
+    applies_to: Clinical data (demographics, diagnosis, follow-up and measurement forms as XLSX, CSV and PDF, 2.2 MB).
+    url: https://www.cancerimagingarchive.net/collection/acrin-dsc-mr-brain/
+citation:
+  text: >-
+    Kinahan P, Muzi M, Bialecki B, Herman B, Coombs L. (2019). Data from ACRIN-DSC-MR-Brain [Data set]. The Cancer
+    Imaging Archive. https://doi.org/10.7937/tcia.2019.zr1pjf4i. Publication: Boxerman JL, Zhang Z, Safriel Y, et al.
+    Early post-bevacizumab progression on contrast-enhanced MRI as a prognostic marker for overall survival in
+    recurrent glioblastoma: results from the ACRIN 6677/RTOG 0625 Central Reader Study. Neuro Oncol 15:945-954
+    (2013). https://doi.org/10.1093/neuonc/not049
+sources:
+  tcia-acrin-dsc-mr-brain:
+    title: TCIA ACRIN-DSC-MR-Brain collection page (version 1, updated 2019/02/07)
+    url: https://www.cancerimagingarchive.net/collection/acrin-dsc-mr-brain/
+    kind: website
+  boxerman2013:
+    title: Boxerman et al. 2013, Neuro-Oncology (PMC3688018)
+    url: https://doi.org/10.1093/neuonc/not049
+    kind: paper
+keywords: [recurrent glioblastoma, bevacizumab, clinical trial, response assessment, RANO, perfusion MRI, MR spectroscopy]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
