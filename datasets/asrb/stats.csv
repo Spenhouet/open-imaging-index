@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,786,loughland2010,Abstract (Results),"sum of the two disjoint groups in the preliminary analyses (493 cases, 293 controls); whole bank at that time, not the MRI subset"
+subjects,condition=schizophrenia,493,loughland2010,Abstract (Results),"schizophrenia cases; preliminary analyses, whole bank"
+subjects,condition=healthy,293,loughland2010,Abstract (Results),"preliminary analyses, whole bank"
+age_mean,condition=schizophrenia,39.54,loughland2010,Abstract (Results),
+age_sd,condition=schizophrenia,11.1,loughland2010,Abstract (Results),
+age_mean,condition=healthy,37.38,loughland2010,Abstract (Results),
+age_sd,condition=healthy,13.12,loughland2010,Abstract (Results),

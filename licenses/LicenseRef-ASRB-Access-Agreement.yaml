@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ASRB-Access-Agreement
+name: Australian Schizophrenia Research Bank Guidelines for Researchers and Access Agreement
+short_name: ASRB Access Agreement
+url: https://web.archive.org/web/20170404012722/http://www.schizophreniaresearch.org.au/bank/wp-content/uploads/2013/12/ASRB-Guidelines-for-Researchers_-Final_Dec2013.pdf
+version: >-
+  ASRB Guidelines for Researchers, version December 2013 (archived copy). The Access Agreement Statement itself is not
+  published; NeuRA states the bank was retired in late 2022.
+summary: >-
+  Data go to specific schizophrenia research projects approved by the ASRB Access Committee, after ethics approval and
+  a signed access agreement, on a cost recovery basis. Data stay with the approved project team, the ASRB must appear on
+  the author line, and publications and annual reports go back to the bank.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: International researchers and commercial entities are able to access the entire ASRB samples/data. Priority
+      may still be given to Australian and/or non-commercial researchers.
+    note: Allowed from July 2011 for approved projects; fees for for-profit companies are set case by case.
+  model_training:
+    value: unspecified
+    note: The guidelines do not mention machine learning. Use is limited to the approved research project.
+  derivatives:
+    value: unspecified
+    quote: All materials remain the property of the ASRB, and any remaining samples and/or data must be returned on
+      request.
+    note: The guidelines do not address derived data. Any variation of the approved protocol or follow-up study needs
+      formal ASRB approval.
+  publication:
+    value: conditional
+    quote: It is a requirement that any publications or presentations arising from research that has accessed
+      volunteers, samples or data from the ASRB acknowledges the contribution of the ASRB.
+    note: Allowed with the ASRB on the author line and the fixed acknowledgement statement.
+  redistribute_original:
+    value: conditional
+    quote: Volunteers, samples and/or data received from the ASRB are for the exclusive use of the Principal
+      Investigator and acknowledged co-investigators on the approved project only, and cannot be provided, distributed
+      or sold to other researchers without prior authorisation.
+    note: Only with prior authorisation from the ASRB.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: The ASRB must be included in the author list for any publications arising from research that has accessed
+      the ASRB
+    note: The guidelines also prescribe an acknowledgement statement naming the ASRB funders.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: the researchers must sign the ASRB Access Agreement Statement regarding conditions of volunteer/sample/data
+      use, cost recovery, appropriate acknowledgement/authorship of the ASRB, and provision of reports and publications.
+  ethics_approval:
+    value: 'yes'
+    quote: Researchers wishing to access volunteers, samples and/or data from the ASRB must first have their study
+      independently reviewed and approved by a recognised Human Research Ethics Committee.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: The ASRB requires that a PDF copy of all resulting publications be forwarded to the ASRB Manager
+    note: Principal investigators also submit annual reports on outcomes and publications, and a final report and
+      quality assurance report at the end of the study.
+  delete_after_use:
+    value: conditional
+    quote: All materials remain the property of the ASRB, and any remaining samples and/or data must be returned on
+      request.
+    note: Data must be returned on request; the guidelines do not ask for deletion at the end of the project.
+  no_reidentification:
+    value: unspecified
+    note: The guidelines say identifying information is not released without participant permission, but do not forbid
+      re-identification attempts.
+  geographic_restriction:
+    value: conditional
+    quote: the actual analysis of data and/or samples must be carried out in an Australian institution, with the first
+      Chief Investigator on the application residing in Australia.
+    note: This applied to the July 2010 access phase. From July 2011 international researchers may access the data,
+      with priority possibly given to Australian researchers.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
