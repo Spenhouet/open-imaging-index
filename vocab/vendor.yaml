@@ -14,4 +14,5 @@ terms:
   - { id: hamamatsu, label: Hamamatsu }
   - { id: 3dhistech, label: 3DHISTECH, synonyms: [3DHistech, 3D Histech] }
   - { id: bruker, label: Bruker }
+  - { id: eigen, label: Eigen, description: Maker of the Artemis fusion biopsy system, synonyms: [Eigen] }
   - { id: other, label: Other }
