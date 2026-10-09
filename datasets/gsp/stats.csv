@@ -1,0 +1,46 @@
+measure,by,value,source,where,note
+subjects,,1570,holmes2015,Table 2,main release; 69 test-retest participants are distributed separately
+subjects,condition=healthy,1570,holmes2015,"Methods, Participants","no history of Axis I or neurological disorder, no psychotropic medication"
+subjects,modality=MR,1570,holmes2015,Table 2,
+subjects,field_strength=3,1570,holmes2015,"Methods, MRI data acquisition",
+subjects,vendor=siemens,1570,holmes2015,"Methods, MRI data acquisition",matched Siemens 3T Tim Trio scanners
+subjects,country=US,1570,holmes2015,"Methods, Participants",recruited from the Boston community
+subjects,contrast=T1w,1570,holmes2015,Abstract,multi-echo MPRAGE
+subjects,contrast=bold,1570,holmes2015,Table 2,resting state; 1139 subjects have two runs
+subjects,contrast_set=bold+T1w,1570,holmes2015,Abstract,
+subjects,sex=female,905,holmes2015,Table 3,sum of the female column (57.6% in Table 2)
+subjects,sex=male,665,holmes2015,Table 3,sum of the male column
+subjects,age=18-19,560,holmes2015,Table 3,sum of males and females
+subjects,age=20-21,509,holmes2015,Table 3,sum of males and females
+subjects,age=22-23,263,holmes2015,Table 3,sum of males and females
+subjects,age=24-25,109,holmes2015,Table 3,sum of males and females
+subjects,age=26-27,66,holmes2015,Table 3,sum of males and females
+subjects,age=28-29,28,holmes2015,Table 3,sum of males and females
+subjects,age=30-31,20,holmes2015,Table 3,sum of males and females
+subjects,age=32-33,11,holmes2015,Table 3,sum of males and females
+subjects,age=34-35,4,holmes2015,Table 3,sum of males and females
+subjects,sex=male;age=18-19,229,holmes2015,Table 3,
+subjects,sex=female;age=18-19,331,holmes2015,Table 3,
+subjects,sex=male;age=20-21,220,holmes2015,Table 3,
+subjects,sex=female;age=20-21,289,holmes2015,Table 3,
+subjects,sex=male;age=22-23,114,holmes2015,Table 3,
+subjects,sex=female;age=22-23,149,holmes2015,Table 3,
+subjects,sex=male;age=24-25,41,holmes2015,Table 3,
+subjects,sex=female;age=24-25,68,holmes2015,Table 3,
+subjects,sex=male;age=26-27,26,holmes2015,Table 3,
+subjects,sex=female;age=26-27,40,holmes2015,Table 3,
+subjects,sex=male;age=28-29,14,holmes2015,Table 3,
+subjects,sex=female;age=28-29,14,holmes2015,Table 3,
+subjects,sex=male;age=30-31,13,holmes2015,Table 3,
+subjects,sex=female;age=30-31,7,holmes2015,Table 3,
+subjects,sex=male;age=32-33,6,holmes2015,Table 3,
+subjects,sex=female;age=32-33,5,holmes2015,Table 3,
+subjects,sex=male;age=34-35,2,holmes2015,Table 3,
+subjects,sex=female;age=34-35,2,holmes2015,Table 3,
+age_mean,,21.5,holmes2015,Table 2,
+age_sd,,2.9,holmes2015,Table 2,
+age_min,,18,holmes2015,Table 2,
+age_max,,35,holmes2015,Table 2,
+scans,,4279,holmes2015,"Abstract; Data Records, Imaging data","1570 T1w plus 2709 BOLD runs, summed; main release only"
+scans,contrast=T1w,1570,holmes2015,"Data Records, Imaging data",one RMS-averaged multi-echo MPRAGE per subject in the main release
+scans,contrast=bold,2709,holmes2015,Abstract,"1570 first runs plus 1139 second runs, summed; main release only"

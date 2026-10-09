@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-GSP-Open-Access-Terms
+name: Brain Genomics Superstruct Project Open Access Data Use Terms
+short_name: GSP Open Access
+url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/25833
+version: '2014-Apr-22 (Terms of Use of the GSP Dataverse dataset, version 10.6)'
+summary: >-
+  Accepted on Harvard Dataverse before requesting the files. Users must not try to identify or contact participants
+  or link the data to other data about them, must follow their institution's human-subjects rules and must acknowledge
+  the GSP. Original and derived data may be passed on only under the same terms.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The terms do not mention commercial use.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: 'yes'
+    quote: I may redistribute original GSP Open Access data and any derived data as long as the data are redistributed
+      under these same Data Use Terms.
+  publication:
+    value: 'yes'
+    quote: I will acknowledge the use of GSP data and data derived from GSP data when publicly presenting any results or
+      algorithms that benefitted from their use.
+    note: With the required acknowledgement wording and citations of the GSP methods papers.
+  redistribute_original:
+    value: conditional
+    quote: I may redistribute original GSP Open Access data and any derived data as long as the data are redistributed
+      under these same Data Use Terms.
+    note: Only under the same Data Use Terms.
+  redistribute_derivatives:
+    value: conditional
+    quote: I may redistribute original GSP Open Access data and any derived data as long as the data are redistributed
+      under these same Data Use Terms.
+    note: Only under the same Data Use Terms.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Papers, book chapters, books, posters, oral presentations, and all other printed and digital presentations
+      of results derived from GSP data should contain the following wording in the acknowledgments section
+    note: The required wording names the Brain Genomics Superstruct Project of Harvard University and the Massachusetts
+      General Hospital and its principal investigators. The GSP should not be listed as an author for data use alone.
+  share_alike:
+    value: 'yes'
+    quote: I may redistribute original GSP Open Access data and any derived data as long as the data are redistributed
+      under these same Data Use Terms.
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected as part of the Brain Genomics Superstruct Project (GSP) of Harvard
+      University and the Massachusetts General Hospital, and I agree to the following
+    note: Accepted online on Harvard Dataverse; each restricted file is then requested and approved by email.
+  ethics_approval:
+    value: conditional
+    quote: This may mean that I need my research to be approved or declared exempt by a committee that oversees
+      research on human subjects e.g., my Internal Review Board or Ethics Committee.
+    note: Only if your institution's rules require it.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to establish the identity of or attempt to contact any of the included human subjects.
+    note: Linking the data to any other data that might contain information about the participants is also forbidden.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

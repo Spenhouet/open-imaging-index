@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gsp
+name: GSP
+full_name: Brain Genomics Superstruct Project
+summary: >-
+  Open access release of 1,570 healthy young adults aged 18 to 35 from Boston, each with a multi-echo MPRAGE T1w scan
+  and one or two eyes-open resting-state BOLD runs at 3T, plus FreeSurfer morphometrics, fMRI quality metrics and
+  behavioral measures, and 69 test-retest pairs.
+homepage: https://dataverse.harvard.edu/dataverse/GSP
+doi: 10.7910/DVN/25833
+# Publication date of the Dataverse dataset (2014-05-22); the data descriptor followed in 2015.
+year: 2014
+version: '10.6'
+status: active
+creators:
+  - name: Brain Genomics Superstruct Project, Harvard University and Massachusetts General Hospital (Buckner RL, Roffman JL, Smoller JW)
+    url: http://neuroinformatics.harvard.edu/gsp/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+# Sum of the file sizes listed for version 10.6 on Dataverse (imaging tar archives, CSV files and PDFs).
+size_gb: 117
+access:
+  type: signed_agreement
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/25833
+licenses:
+  - license: LicenseRef-GSP-Open-Access-Terms
+    note: >-
+      Covers the open access release on Dataverse. An extended set of more sensitive phenotypes is held on the LONI
+      Image Data Archive and needs separately signed GSP Restricted Data Use Terms, whose text is not public.
+citation:
+  text: >-
+    Holmes AJ, Hollinshead MO, O'Keefe TM, et al. Brain Genomics Superstruct Project initial data release with
+    structural, functional, and behavioral measures. Scientific Data 2, 150031 (2015). doi:10.1038/sdata.2015.31
+sources:
+  holmes2015:
+    title: Holmes et al. 2015, Brain Genomics Superstruct Project initial data release, Scientific Data
+    url: https://doi.org/10.1038/sdata.2015.31
+    kind: paper
+  dataverse-gsp-25833:
+    title: Harvard Dataverse dataset doi:10.7910/DVN/25833, version 10.6 (description, terms of use and file list)
+    url: https://doi.org/10.7910/DVN/25833
+    kind: website
+  nrg-gsp-page:
+    title: Neuroinformatics Research Group GSP open data release page (access steps)
+    url: http://neuroinformatics.harvard.edu/gsp/
+    kind: website
+related: []
+keywords: [resting-state fMRI, young adults, healthy adults, brain morphometry, personality, cognition, test-retest]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
