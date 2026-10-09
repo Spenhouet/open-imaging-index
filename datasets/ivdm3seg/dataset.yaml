@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ivdm3seg
+name: IVDM3Seg
+full_name: 'IVDM3Seg: Automatic Intervertebral Disc Localization and Segmentation from 3D Multi-modality MR (M3) Images (MICCAI 2018 challenge, SpineWeb Dataset 14)'
+summary: >-
+  1.5 T Siemens Dixon MRI of the lower spine from 12 subjects scanned at two stages of a prolonged bed rest study (24
+  scan sets, 96 volumes), with manual masks of at least 7 intervertebral discs. Training part of 8 subjects shared after
+  a signed agreement.
+homepage: https://ivdm3seg.weebly.com/
+year: 2018
+creators:
+  - name: Guoyan Zheng, University of Bern
+  - name: Daniel Belavy, Deakin University
+  - name: Shuo Li, University of Western Ontario
+modalities: [MR]
+contrasts: [dixon]
+anatomy: [intervertebral_disc]
+tasks: [segmentation, detection]
+formats: [NIfTI]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: signed_agreement
+  url: https://ivdm3seg.weebly.com/data.html
+licenses:
+  - license: LicenseRef-IVDM3Seg-Agreement
+    applies_to: Training data (16 scan sets of 8 subjects)
+    note: >-
+      The test data were kept by the organizers for the on-site competition and are not released. The SpineWeb entry
+      for Dataset 14 says to contact Dr. Zheng to obtain the data.
+citation:
+  text: >-
+    Chen C, Belavy D, Zheng G. 3D Intervertebral Disc Localization and Segmentation from MR Images by Data-Driven
+    Regression and Classification. MLMI 2014, LNCS 8679, pp. 50-58. doi:10.1007/978-3-319-10581-9_7
+sources:
+  ivdm3seg-data-page:
+    title: IVDM3Seg challenge website, Data page
+    url: https://ivdm3seg.weebly.com/data.html
+    kind: website
+  ivdm3seg-agreement:
+    title: IVDM3Seg database agreement (registration form)
+    url: https://ivdm3seg.weebly.com/uploads/6/1/4/4/61447179/database_multi-modalitymrispineimage_agreement.docx
+    kind: website
+  ivdm3seg-dates-page:
+    title: IVDM3Seg challenge website, Dates page
+    url: https://ivdm3seg.weebly.com/dates.html
+    kind: website
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page, Dataset 14 section (Internet Archive copy of 13 June 2024)
+    url: https://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+  zeng2019:
+    title: Zeng et al. 2019, Evaluation and Comparison of Automatic Intervertebral Disc Localization and Segmentation
+      methods with 3D Multi-modality MR Images, a Grand Challenge (CSI 2018, LNCS 11397)
+    url: https://doi.org/10.1007/978-3-030-13736-6_14
+    kind: paper
+related: []
+keywords:
+  [intervertebral disc segmentation, intervertebral disc localization, Dixon MRI, lumbar spine, bed rest, MICCAI 2018, SpineWeb]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

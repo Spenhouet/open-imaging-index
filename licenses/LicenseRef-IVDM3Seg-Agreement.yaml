@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-IVDM3Seg-Agreement
+name: Agreement on using the Intervertebral Disc Localization and Segmentation Multi-modality MRI Spine Image Database
+short_name: IVDM3Seg agreement
+url: https://ivdm3seg.weebly.com/uploads/6/1/4/4/61447179/database_multi-modalitymrispineimage_agreement.docx
+version: Registration form linked from the IVDM3Seg Data page, undated, read 2026-10-09
+summary: >-
+  A one-page registration form addressed to the Institute for Surgical Technology and Biomechanics, University of
+  Bern, that the user signs to receive a download link. It forbids passing on the link or the data, requires citing a
+  2014 MLMI paper in every publication and sending copies of those publications to the provider. It says nothing
+  about purpose or commercial use.
+purpose: unspecified
+rules:
+  commercial_use:
+    value: unspecified
+    note: The agreement does not mention commercial or non-commercial use.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    note: Publications must cite the named paper and copies must be sent to the data provider.
+    quote: >-
+      that I will include the following reference in any publication resulting from any use of this database
+  redistribute_original:
+    value: 'no'
+    quote: that I will not redistribute the database or its parts,
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      that I will include the following reference in any publication resulting from any use of this database: C. Chen,
+      D. Belavy and G. Zheng, “3D Intervertebral Disc Localization and Segmentation from MR Images by Data-driven
+      Regression and Classificaiton”, the 5th International Workshop on Machine Learning in Medical Imaging (MLMI
+      2014), pp. 50 – 58, 2014
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: 'By signing this document I agree:'
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+    note: Copies of publications go to the provider, but nothing asks for review before publication.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    note: Copies of publications that use the data, not derived data.
+    quote: and will supply the data provider with copies of such publications.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

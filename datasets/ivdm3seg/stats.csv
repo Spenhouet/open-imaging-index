@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,12,ivdm3seg-data-page,Data Description,each subject scanned at two stages of a prolonged bed rest study
+studies,,24,ivdm3seg-data-page,Data Description,"24 multi-modality data sets, one per subject per stage"
+scans,,96,ivdm3seg-data-page,Data Description,"four aligned Dixon volumes per data set: in-phase, opposed-phase, fat and water"
+subjects,contrast=dixon,12,ivdm3seg-data-page,Data Description,
+subjects,contrast_set=dixon,12,ivdm3seg-data-page,Data Description,the page lists only the four Dixon volumes per data set
+subjects,anatomy=intervertebral_disc,12,ivdm3seg-data-page,Data Description,at least 7 lower-spine discs per data set with manual binary masks
+subjects,field_strength=1.5,12,ivdm3seg-data-page,Data Description,
+subjects,vendor=siemens,12,ivdm3seg-data-page,Data Description,
+subjects,split=train,8,ivdm3seg-data-page,Training Data,
+studies,split=train,16,ivdm3seg-data-page,Training Data,
