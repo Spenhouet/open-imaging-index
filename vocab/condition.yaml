@@ -99,6 +99,12 @@ terms:
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
+  - {
+      id: cocaine_use_disorder,
+      label: Cocaine use disorder,
+      synonyms: [CUD, cocaine dependence, cocaine addiction],
+      mappings: { mondo: 'MONDO:0005186' }
+    }
   # Tumors
   - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
   - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }

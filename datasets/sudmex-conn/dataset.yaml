@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sudmex-conn
+name: SUDMEX CONN (ds003346)
+full_name: 'SUDMEX CONN: The Mexican MRI dataset of patients with cocaine use disorder'
+summary: >-
+  Brain MRI of 144 adults from Mexico City, people with cocaine use disorder and healthy controls, with T1w,
+  multishell diffusion and resting-state fMRI from one 3T Philips scanner, in BIDS on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds003346
+doi: 10.18112/openneuro.ds003346.v1.1.3
+year: 2020
+updated: 2026
+version: 1.1.3
+status: active
+creators:
+  - name: >-
+      Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz, Mexico City (Garza-Villarreal EA, Gonzalez-Olvera
+      JJ, et al.)
+    url: https://openneuro.org/datasets/ds003346
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [cocaine_use_disorder, healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 14.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003346
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.3 states "License" CC0. The snapshot also contains a LICENSE file with
+      the GNU GPL v3 text next to a README titled "Addimex_Conn, Repository of the Addiction Connectome project".
+citation:
+  text: >-
+    Angeles-Valdez D, Rasgado-Toledo J, Issa-Garcia V, et al. The Mexican magnetic resonance imaging dataset of
+    patients with cocaine use disorder: SUDMEX CONN. Scientific Data 9, 133 (2022). doi:10.1038/s41597-022-01251-3
+sources:
+  angelesvaldez2022:
+    title: Angeles-Valdez et al. 2022, The Mexican magnetic resonance imaging dataset of patients with cocaine use disorder, Scientific Data
+    url: https://www.nature.com/articles/s41597-022-01251-3
+    kind: paper
+  openneuro-ds003346-v113:
+    title: OpenNeuro ds003346 snapshot 1.1.3 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003346/versions/1.1.3
+    kind: website
+  ds003346-participants:
+    title: >-
+      participants.tsv of ds003346 snapshot 1.1.3 (CC0), counted over the 144 rows with an image folder; group,
+      sex and age columns
+    url: https://github.com/OpenNeuroDatasets/ds003346/blob/1.1.3/participants.tsv
+    kind: computed
+  ds003346-files:
+    title: File tree of ds003346 snapshot 1.1.3 (CC0), subjects with a T1w, dwi or bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003346/tree/1.1.3
+    kind: computed
+related: []
+keywords: [cocaine use disorder, addiction, substance use disorder, resting-state fMRI, diffusion MRI, HARDI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
