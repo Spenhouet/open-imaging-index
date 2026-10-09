@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aomic-id1000
+name: AOMIC-ID1000
+full_name: Amsterdam Open MRI Collection, ID1000 study
+summary: >-
+  Brain MRI of 928 healthy Dutch adults aged 19 to 26, sampled to match the population's educational level, with
+  three T1w and three diffusion runs and a movie-watching fMRI scan each, plus psychometric scores, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003097
+doi: 10.18112/openneuro.ds003097.v1.2.1
+# First OpenNeuro snapshot 1.0.0 dated 2020-09-03 in the CHANGES file; latest snapshot 1.2.1 dated 2021-02-04.
+year: 2020
+updated: 2021
+version: 1.2.1
+status: active
+creators:
+  - name: Department of Psychology and Spinoza Centre for Neuroimaging, University of Amsterdam (Snoek L, Scholte HS, et al.)
+    url: https://nilab-uva.github.io/AOMIC.github.io/
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 97.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003097
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.1 states "License" CC0.
+citation:
+  text: >-
+    Snoek L, van der Miesen MM, Beemsterboer T, van der Leij A, Eigenhuis A, Scholte HS. The Amsterdam Open MRI
+    Collection, a set of multimodal MRI datasets for individual difference analyses. Scientific Data 8, 85 (2021).
+    doi:10.1038/s41597-021-00870-6
+sources:
+  snoek2021:
+    title: Snoek et al. 2021, The Amsterdam Open MRI Collection, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-00870-6
+    kind: paper
+  openneuro-ds003097-v1-2-1:
+    title: OpenNeuro ds003097 snapshot 1.2.1 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003097/versions/1.2.1
+    kind: website
+  ds003097-participants:
+    title: participants.tsv of ds003097 snapshot 1.2.1 (CC0), counted per row; ages from age, sex from sex
+    url: https://github.com/OpenNeuroDatasets/ds003097/blob/1.2.1/participants.tsv
+    kind: computed
+  ds003097-file-tree:
+    title: BIDS file tree of ds003097 snapshot 1.2.1 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds003097/tree/1.2.1
+    kind: computed
+related: []
+keywords: [individual differences, young adults, movie watching, naturalistic fMRI, diffusion MRI, intelligence, personality]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
