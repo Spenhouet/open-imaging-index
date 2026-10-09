@@ -158,6 +158,14 @@ terms:
       synonyms: [PDAC, pancreatic cancer],
       mappings: { mondo: 'MONDO:0005184' }
     }
+  - { id: bladder_cancer, label: Bladder cancer, synonyms: [urinary bladder cancer], mappings: { mondo: 'MONDO:0001187' } }
+  - {
+      id: bladder_urothelial_carcinoma,
+      label: Bladder urothelial carcinoma,
+      parent: bladder_cancer,
+      synonyms: [bladder transitional cell carcinoma, BLCA],
+      mappings: { mondo: 'MONDO:0005611' }
+    }
   - { id: colorectal_cancer, label: Colorectal cancer, mappings: { mondo: 'MONDO:0005575' } }
   - {
       id: head_neck_cancer,
