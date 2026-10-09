@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-irp-dsst
+name: NIMH-IRP Data Science and Sharing Team collection
+full_name: NIMH-IRP Data Science and Sharing Team (NIMH Data Archive collection 2936)
+summary: >-
+  NIMH Data Archive collection of NIH intramural MRI releases with 447 shared subjects: 3T T1-weighted scans of 440
+  psychiatrically healthy children and adults from nuclear families (NIMH NHGRI data-sharing project) plus densely
+  sampled single-subject task fMRI at 3T and 7T.
+homepage: https://nda.nih.gov/edit_collection.html?id=2936
+doi: 10.15154/fprt-xg58
+year: 2018
+status: active
+creators:
+  - name: NIMH Intramural Research Program, Data Science and Sharing Team
+    url: https://nda.nih.gov/edit_collection.html?id=2936
+  - name: National Human Genome Research Institute (NHGRI)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [3, 7]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2936
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      Held in NIMH Data Archive collection 2936 under the NIMH Data Archive permission group. Access needs an approved
+      NDA data access request.
+sources:
+  nda-collection-2936:
+    title: NIMH Data Archive collection 2936 page (NIMH-IRP Data Science and Sharing Team), General, Experiments, Shared Data, Data Expected and Associated Studies tabs
+    url: https://nda.nih.gov/edit_collection.html?id=2936
+    kind: website
+  nda-study-547:
+    title: NDA Study 547, NIMH NHGRI data-sharing project (doi:10.15154/1463004)
+    url: https://nda.nih.gov/study.html?id=547
+    kind: website
+  nda-study-588:
+    title: NDA Study 588, Whole-brain, time-locked activation with simple tasks (doi:10.15154/1464517)
+    url: https://nda.nih.gov/study.html?id=588
+    kind: website
+  nda-study-589:
+    title: NDA Study 589, Task dependence, tissue specificity and spatial distribution of widespread activations at 7T (doi:10.15154/1464520)
+    url: https://nda.nih.gov/study.html?id=589
+    kind: website
+  white2018:
+    title: White et al. 2018, Automated quality assessment of structural magnetic resonance images in children, Hum Brain Mapp (PMC6866370)
+    url: https://doi.org/10.1002/hbm.23911
+    kind: paper
+  gonzalezcastillo2012:
+    title: Gonzalez-Castillo et al. 2012, Whole-brain, time-locked activation with simple tasks revealed using massive averaging and model-free analysis, PNAS (PMC3325687)
+    url: https://doi.org/10.1073/pnas.1121049109
+    kind: paper
+  gonzalezcastillo2015:
+    title: Gonzalez-Castillo et al. 2015, Task dependence, tissue specificity, and spatial distribution of widespread activations in large single-subject fMRI datasets at 7T, Cereb Cortex (PMC4635913)
+    url: https://doi.org/10.1093/cercor/bhu148
+    kind: paper
+related: []
+keywords: [healthy volunteers, family study, structural MRI, image quality, task fMRI, 7T, single-subject fMRI, NIH intramural]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
