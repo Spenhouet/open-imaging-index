@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NKI-RS-DUA
+name: Data Use Agreement for the Enhanced Nathan Kline Institute-Rockland Sample
+short_name: NKI-RS DUA
+url: https://rocklandsample.org/wp-content/uploads/2023/03/DUA.pdf
+version: 'Data Use Agreement - Enhanced NKI-RS, June 1, 2014 rev 1, read 2026-10-09'
+summary: >-
+  Research use within a Scope of Work, after the principal investigator and an institutional official sign the
+  agreement and the NKI-RS team approves it. Researchers at for-profit organizations may apply. The data may not be
+  passed on or sold, re-identification is forbidden, publications must be reported, and copies are destroyed when the
+  work ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: The Recipient Principal Investigator may be a researcher at a non-profit or for-profit organization or
+      corporation.
+    note: >-
+      Use is limited to research within the approved Scope of Work, and the data may not be sold. The agreement does
+      not forbid commercial use as such and mentions "resulting commercial product(s)" in its non-endorsement clause.
+  product_validation:
+    value: unspecified
+    note: The agreement limits use to the approved Scope of Work but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must fall within the approved Scope of Work.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address creating derived data. Use must stay within the approved Scope of Work.
+  publication:
+    value: 'yes'
+    quote: Prompt publication or other public disclosure of the results of the Scope of Work is encouraged.
+  redistribute_original:
+    value: 'no'
+    quote: Recipient agrees to retain control over data, and further agrees not to transfer data, with or without
+      charge, to any other entity or any individual.
+  redistribute_derivatives:
+    value: 'no'
+    quote: This applies to all versions of NKI-RS data.
+    note: >-
+      The sentence closes the clause that forbids transferring or selling the data, so modified versions of the data
+      may not be passed on either. Publishing results is encouraged.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: We do request that any usage of Rockland Sample data is recognized through appropriate citation
+    source: https://rocklandsample.org/for-researchers/step-3-accessing-the-data
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Access to the Enhanced Nathan Kline Institute – Rockland Sample (NKI-RS) requires successful completion and
+      execution of a Data Use Agreement (DUA).
+    note: >-
+      The principal investigator and an institutional official sign it, the signature is notarized, and the request
+      includes a scope of work and a CV. The NKI-RS team reviews each request.
+  ethics_approval:
+    value: conditional
+    quote: Recipient agrees to comply with all Recipient Institution’s applicable rules for the protection of human
+      subjects, which may include Department of Health and Human Services regulations at 45 C.F.R. Part 46, and other
+      federal and state laws for the use of this data
+    note: >-
+      The project page states that IRB approval is not required for transfer of the data; local IRB requirements
+      still apply.
+  publication_review:
+    value: 'no'
+    note: Manuscripts are not reviewed, but the recipient must report when and where a publication will appear.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: Recipient agrees to notify via email at rocklandsample@nki.rfmh.org as to when and where a publication (or
+      other public disclosure) of a report from the Scope of Work will appear.
+    note: Only notice of publications is required, not the return of derived data.
+  delete_after_use:
+    value: 'yes'
+    quote: Recipient agrees that upon termination of this DUA, or completion of the use of the data under this DUA, all
+      copies of the data will be destroyed or otherwise disposed of properly as permitted by law, except that Recipient
+      may retain one copy of the data solely for archival and compliance purposes.
+  no_reidentification:
+    value: 'yes'
+    quote: Recipient agrees that data will not be used, either alone or in conjunction with any other information, in
+      any effort whatsoever to establish the individual identities of any of the subjects from whom data were obtained.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
