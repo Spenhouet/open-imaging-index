@@ -1,0 +1,44 @@
+measure,by,value,source,where,note
+subjects,,120,tcia-tcga-blca,Data Access table,
+studies,,192,tcia-tcga-blca,Data Access table,
+scans,,1051,tcia-tcga-blca,Data Access table,DICOM series
+images,,111781,tcia-tcga-blca,Data Access table,DICOM images (slices)
+subjects,modality=CT,107,tcia-tcga-blca-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,modality=MR,20,tcia-tcga-blca-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,modality=PT,7,tcia-tcga-blca-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,modality=CR,7,tcia-tcga-blca-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,modality=DX,7,tcia-tcga-blca-digest,"Metadata sheet, columns Patient ID and Modality",
+studies,modality=CT,144,tcia-tcga-blca-digest,"Metadata sheet, columns Study Instance UID and Modality",distinct studies with at least one series of this modality
+studies,modality=MR,23,tcia-tcga-blca-digest,"Metadata sheet, columns Study Instance UID and Modality",distinct studies with at least one series of this modality
+studies,modality=PT,7,tcia-tcga-blca-digest,"Metadata sheet, columns Study Instance UID and Modality",distinct studies with at least one series of this modality
+studies,modality=CR,14,tcia-tcga-blca-digest,"Metadata sheet, columns Study Instance UID and Modality",distinct studies with at least one series of this modality
+studies,modality=DX,10,tcia-tcga-blca-digest,"Metadata sheet, columns Study Instance UID and Modality",distinct studies with at least one series of this modality
+scans,modality=CT,717,tcia-tcga-blca-digest,"Metadata sheet, column Modality",DICOM series
+scans,modality=MR,287,tcia-tcga-blca-digest,"Metadata sheet, column Modality",DICOM series
+scans,modality=PT,14,tcia-tcga-blca-digest,"Metadata sheet, column Modality",DICOM series
+scans,modality=CR,15,tcia-tcga-blca-digest,"Metadata sheet, column Modality",DICOM series
+scans,modality=DX,18,tcia-tcga-blca-digest,"Metadata sheet, column Modality",DICOM series
+images,modality=CT,99103,tcia-tcga-blca-digest,"Metadata sheet, columns Modality and Image Count",
+images,modality=MR,8403,tcia-tcga-blca-digest,"Metadata sheet, columns Modality and Image Count",
+images,modality=PT,4185,tcia-tcga-blca-digest,"Metadata sheet, columns Modality and Image Count",
+images,modality=CR,16,tcia-tcga-blca-digest,"Metadata sheet, columns Modality and Image Count",
+images,modality=DX,74,tcia-tcga-blca-digest,"Metadata sheet, columns Modality and Image Count",
+subjects,sex=male,71,tcia-tcga-blca-digest,"Metadata sheet, column Patient Sex",
+subjects,sex=female,18,tcia-tcga-blca-digest,"Metadata sheet, column Patient Sex",
+subjects,sex=unknown,31,tcia-tcga-blca-digest,"Metadata sheet, column Patient Sex",no Patient Sex value in any series
+subjects,vendor=ge,60,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer","GE MEDICAL SYSTEMS, GE Healthcare; subjects with at least one series from this vendor"
+subjects,vendor=siemens,40,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer",subjects with at least one series from this vendor
+subjects,vendor=philips,26,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer","Philips, Philips Medical Systems; subjects with at least one series from this vendor"
+subjects,vendor=canon,9,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer",TOSHIBA; subjects with at least one series from this vendor
+subjects,vendor=agfa,1,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer",subjects with at least one series from this vendor
+subjects,vendor=other,6,tcia-tcga-blca-digest,"Metadata sheet, column Manufacturer","FUJIFILM Corporation, FUJI PHOTO FILM; subjects with at least one series from this vendor"
+subjects,age=40-49,1,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",age at the earliest archived study; 32 subjects have no Patient Age
+subjects,age=50-59,15,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",age at the earliest archived study
+subjects,age=60-69,32,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",age at the earliest archived study
+subjects,age=70-79,23,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",age at the earliest archived study
+subjects,age=80-89,17,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",age at the earliest archived study
+age_mean,,69.0,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",88 subjects with a Patient Age; age at the earliest archived study
+age_sd,,10.1,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",sample standard deviation; 88 subjects
+age_median,,68,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",88 subjects
+age_min,,43,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",88 subjects
+age_max,,88,tcia-tcga-blca-digest,"Metadata sheet, columns Patient Age and Study Date",88 subjects

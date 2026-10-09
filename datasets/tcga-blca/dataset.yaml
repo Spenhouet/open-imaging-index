@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-blca
+name: TCGA-BLCA
+full_name: The Cancer Genome Atlas Urothelial Bladder Carcinoma Collection (TCGA-BLCA)
+summary: >-
+  Routine clinical CT, MRI, PET and radiographs of 120 patients with urothelial bladder carcinoma from The Cancer
+  Genome Atlas, whose patient IDs match the TCGA clinical, genomic and histopathology data for radiogenomic research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-blca/
+doi: 10.7937/K9/TCIA.2016.8LNG8XDR
+year: 2014
+updated: 2020
+version: '8'
+status: active
+creators:
+  - name: >-
+      Kirk S, Lee Y, Lucchesi FR, Aredes ND, Gruszauskas N, Catto J, Garcia K, Jarosz R, Duddalwar V, Varghese B,
+      Rieger-Christ K, Lemmerman J
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR, PT, CR, DX]
+anatomy: [bladder]
+conditions: [bladder_urothelial_carcinoma]
+formats: [DICOM]
+size_gb: 58.03
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-blca/
+  note: >-
+    Images download with the TCIA Data Retriever or from the NCI Imaging Data Commons. Clinical, genomic and
+    histopathology data for the same patient IDs are in the NCI Genomic Data Commons project TCGA-BLCA; a clinical
+    snapshot is an open download from the collection page.
+licenses:
+  - license: CC-BY-3.0
+    applies_to: All CT, MR, PET, CR and DX images (120 subjects, 192 studies, 1,051 series).
+    url: https://www.cancerimagingarchive.net/collection/tcga-blca/
+    note: >-
+      TCIA lists the images under CC BY 3.0. Users must also follow the TCIA Data Usage Policy, which says users must
+      "Not use the requested datasets, either alone or in concert with any other information, to identify or contact
+      individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/). Publications are asked to
+      acknowledge the TCGA Research Network.
+citation:
+  text: >-
+    Kirk S, Lee Y, Lucchesi FR, Aredes ND, Gruszauskas N, Catto J, Garcia K, Jarosz R, Duddalwar V, Varghese B,
+    Rieger-Christ K, Lemmerman J. (2016). The Cancer Genome Atlas Urothelial Bladder Carcinoma Collection (TCGA-BLCA)
+    (Version 8) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.8LNG8XDR
+sources:
+  tcia-tcga-blca:
+    title: TCIA TCGA-BLCA collection page (version 8, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-blca/
+    kind: website
+  tcia-tcga-blca-digest:
+    title: TCIA TCGA-BLCA series metadata digest, August 30 2019 manifest (CC BY 3.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/TCGA-BLCA-August-30-2019-NBIA-manifes-nbia-digest.xlsx
+    kind: computed
+keywords: [TCGA, radiogenomics, bladder cancer, urothelial carcinoma, transitional cell carcinoma]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
