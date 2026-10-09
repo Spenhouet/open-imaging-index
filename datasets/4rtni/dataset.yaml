@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: 4rtni
+name: 4RTNI
+full_name: Four Repeat Tauopathy Neuroimaging Initiative
+summary: >-
+  Longitudinal multi-site natural history study of progressive supranuclear palsy, corticobasal syndrome and related
+  4-repeat tauopathies with healthy controls, with 3T MRI, PET, biofluids and clinical ratings shared through LONI
+  after an approved application.
+homepage: https://ida.loni.usc.edu/login.jsp?project=4RTNI
+# Year enrollment began (4RTNI cycle 1 started 10 January 2011 per ClinicalTrials.gov NCT01804452; the data use
+# agreement says 4RTNI launched in early 2011). A separate first-release date on LONI was not verified.
+year: 2011
+creators:
+  - name: Memory and Aging Center, University of California, San Francisco (coordinating site, PI Adam Boxer)
+    url: https://memory.ucsf.edu/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (data dissemination)
+    url: https://ida.loni.usc.edu/
+species: human
+# PET follows from the cycle 2 registry outcomes (tau and amyloid PET); which PET series are on LONI was not verified.
+modalities: [MR, PT]
+contrasts: [T1w]
+tracers: [pib, florbetapir]
+anatomy: [brain]
+conditions: [progressive_supranuclear_palsy, corticobasal_degeneration, healthy]
+tasks: [classification, regression, longitudinal]
+countries: [US, CA]
+vendors: [siemens, ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=4RTNI
+licenses:
+  - license: LicenseRef-4RTNI-FTLDNI-DUA
+citation:
+  text: >-
+    The data use agreement requires the by-line phrase "for the 4-Repeat Tauopathy Neuroimaging Initiative*", the
+    statement "Data used in preparation of this article were obtained from the 4-Repeat Tauopathy Neuroimaging
+    Initiative (4RTNI) database (http://4rtni-ftldni.ini.usc.edu)", a methods paragraph on 4RTNI and the funding
+    acknowledgement (NIH grant R01 AG038791 and the Tau Research Consortium).
+sources:
+  dutt2016:
+    title: Dutt S et al. 2016, Progression of brain atrophy in PSP and CBS over 6 months and 1 year, Neurology
+    url: https://doi.org/10.1212/WNL.0000000000003305
+    kind: paper
+  garciacastro2026:
+    title: García-Castro J et al. 2026, Potential role of MRI to optimize clinical trial design for progressive
+      supranuclear palsy and corticobasal degeneration, The Journal of Prevention of Alzheimer's Disease
+    url: https://doi.org/10.1016/j.tjpad.2026.100486
+    kind: paper
+  ctgov-nct01804452:
+    title: ClinicalTrials.gov NCT01804452, 4 Repeat Tauopathy Neuroimaging Initiative (cycle 1)
+    url: https://clinicaltrials.gov/study/NCT01804452
+    kind: website
+  ctgov-nct02966145:
+    title: ClinicalTrials.gov NCT02966145, 4-Repeat Tauopathy Neuroimaging Initiative - Cycle 2
+    url: https://clinicaltrials.gov/study/NCT02966145
+    kind: website
+related: []
+keywords:
+  [progressive supranuclear palsy, corticobasal syndrome, 4-repeat tauopathy, tau PET, brainstem atrophy, longitudinal]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

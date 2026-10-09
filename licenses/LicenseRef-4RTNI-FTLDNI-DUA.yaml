@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-4RTNI-FTLDNI-DUA
+name: 4RTNI and FTLDNI Data Use Agreement
+short_name: 4RTNI DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=4RTNI
+version: 'Online agreement on the LONI IDA 4RTNI application page, read 2026-10-09'
+summary: >-
+  One click-through agreement covers both 4RTNI and FTLDNI data on the LONI IDA. Use is for scientific investigation,
+  teaching or planning clinical research, as stated in a data use application. Redistribution in any form is
+  prohibited, and publications must credit the initiative in the by-line, methods and funding text.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I request access to data collected by the 4-Repeat Tauopathy Neuroimaging Initiative (4RTNI) and
+      Neuroimaging in Frontotemporal Lobar Degeneration Neuroimaging Initiative (FLTDNI) for the purpose of scientific
+      investigation, teaching, or the planning of clinical research studies and I agree to the following terms
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and
+      trial planning.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning or model training.
+  derivatives:
+    value: 'yes'
+    quote: I will accurately provide the requested information for persons who will use these data and the analyses
+      that are planned using these data.
+    note: Analyses named in the data use application are expected. The agreement says nothing else about derived data.
+  publication:
+    value: conditional
+    quote: I will include language in the methods section of my manuscripts to accurately acknowledge the data
+      gathering by 4RTNI and/or FTLDNI personnel.
+    note: Allowed with the by-line credit, the mandatory methods text and the funding acknowledgement. Users must
+      also record the data version and check for updated data before submitting.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use
+      application. I understand that redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: 'no'
+    quote: I understand that redistribution of data in any manner is prohibited.
+    note: The ban is not limited to original data, so participant-level derived data cannot be shared either.
+      Published results follow the publication rules.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not address trained models.
+  attribution:
+    value: 'yes'
+    quote: After the named authors on the by-line of the manuscript, I will include the phrase "for the 4-Repeat
+      Tauopathy Neuroimaging Initiative*" (for 4RTNI), where the asterisk refers to the following statement and list of
+      names
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I understand that failure to abide by these guidelines will result in termination of my privileges to
+      access 4RTNI and FTLDNI data.
+    note: Accepted online ("I Agree") as part of the data use application on the LONI IDA.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board
+      (IRB) in requesting these data.
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access only to de-identified data and will not attempt to establish the identity of any
+      4RTNI or FTLDNI subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

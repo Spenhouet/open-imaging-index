@@ -30,6 +30,19 @@ terms:
   - { id: scd, label: Subjective cognitive decline, synonyms: [SCD], mappings: { mondo: 'MONDO:0850292' } }
   - { id: cognitive_impairment, label: Cognitive impairment, mappings: { hp: 'HP:0100543' } }
   - { id: parkinsons, label: Parkinson's disease, synonyms: [PD], mappings: { mondo: 'MONDO:0005180' } }
+  - {
+      id: progressive_supranuclear_palsy,
+      label: Progressive supranuclear palsy,
+      synonyms: [PSP],
+      mappings: { mondo: 'MONDO:0019037' }
+    }
+  - {
+      id: corticobasal_degeneration,
+      label: Corticobasal degeneration,
+      synonyms: [CBD, corticobasal syndrome, CBS],
+      description: 'Also used for corticobasal syndrome, the clinical presentation, when the pathology is not confirmed.',
+      mappings: { mondo: 'MONDO:0022308' }
+    }
   - { id: multiple_sclerosis, label: Multiple sclerosis, synonyms: [MS], mappings: { mondo: 'MONDO:0005301' } }
   - {
       id: stroke,
