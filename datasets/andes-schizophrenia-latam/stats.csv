@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,596,crossley2021,Results; Table 1,334 patients with schizophrenia and 262 healthy controls
+subjects,modality=MR,596,crossley2021,Table 1,
+subjects,contrast=T1w,596,crossley2021,Method: Preprocessing of images,T1-weighted images acquired at every site
+subjects,condition=schizophrenia,334,crossley2021,Table 1,"diagnosis of schizophrenia or schizophreniform disorder under age 50; site inclusion criteria in Table S1 of the supplement"
+subjects,condition=healthy,262,crossley2021,Table 1,
+age_mean,condition=schizophrenia,29.4,crossley2021,Table 1,
+age_sd,condition=schizophrenia,9.4,crossley2021,Table 1,
+age_mean,condition=healthy,28,crossley2021,Table 1,
+age_sd,condition=healthy,8.3,crossley2021,Table 1,
+subjects,country=AR,81,crossley2021,Table 1,"Buenos Aires: 37 patients and 44 controls"
+subjects,country=BR,249,crossley2021,Table 1,"sum of the two disjoint Brazilian sites: Porto Alegre (40 patients, 43 controls) and São Paulo (115 patients, 51 controls)"
+subjects,country=CL,101,crossley2021,Table 1,"Santiago: 52 patients and 49 controls; patients were inpatients aged 15 to 25 with a first episode of non-affective psychosis (Table S1)"
+subjects,country=CO,49,crossley2021,Table 1,"Medellín: 28 patients and 21 controls"
+subjects,country=MX,116,crossley2021,Table 1,"Mexico City, two samples: 62 patients and 54 controls"
+subjects,country=AR;condition=schizophrenia,37,crossley2021,Table 1,
+subjects,country=AR;condition=healthy,44,crossley2021,Table 1,
+subjects,country=BR;condition=schizophrenia,155,crossley2021,Table 1,sum of Porto Alegre (40) and São Paulo (115)
+subjects,country=BR;condition=healthy,94,crossley2021,Table 1,sum of Porto Alegre (43) and São Paulo (51)
+subjects,country=CL;condition=schizophrenia,52,crossley2021,Table 1,
+subjects,country=CL;condition=healthy,49,crossley2021,Table 1,
+subjects,country=CO;condition=schizophrenia,28,crossley2021,Table 1,
+subjects,country=CO;condition=healthy,21,crossley2021,Table 1,
+subjects,country=MX;condition=schizophrenia,62,crossley2021,Table 1,
+subjects,country=MX;condition=healthy,54,crossley2021,Table 1,
+subjects,vendor=ge,197,crossley2021-supp,Table S1,"Buenos Aires (GE 3 T, 81) and both Mexico City samples (GE Signa HDxt 3 T, 116); site counts from Table 1 of the paper"
+subjects,vendor=philips,233,crossley2021-supp,Table S1,"Santiago (Philips Ingenia 3 T, 101), Medellín (Philips Ingenia 3 T, 49) and Porto Alegre (Philips Achieva 1.5 T, 83); site counts from Table 1 of the paper"
+subjects,vendor=siemens,166,crossley2021-supp,Table S1,"São Paulo (Siemens Magnetom Sonata 1.5 T); site count from Table 1 of the paper"
+subjects,field_strength=3,347,crossley2021-supp,Table S1,"Buenos Aires, Santiago, Medellín and Mexico City; site counts from Table 1 of the paper"
+subjects,field_strength=1.5,249,crossley2021-supp,Table S1,"Porto Alegre and São Paulo; site counts from Table 1 of the paper"
