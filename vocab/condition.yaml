@@ -48,6 +48,12 @@ terms:
       mappings: { mondo: 'MONDO:0013792' }
     }
   - {
+      id: intracranial_aneurysm,
+      label: Intracranial aneurysm,
+      description: 'Focal dilatation of a cerebral artery, saccular or fusiform. No MONDO term covers both shapes; the closest is intracranial berry aneurysm (MONDO:0016483), which covers the saccular type only.',
+      synonyms: [brain aneurysm, cerebral aneurysm, UIA]
+    }
+  - {
       id: cerebral_microbleeds,
       label: Cerebral microbleeds,
       description: 'Small hemosiderin deposits seen as hypointense foci on T2*-weighted or susceptibility-weighted MRI. No MONDO or HPO term exists.',

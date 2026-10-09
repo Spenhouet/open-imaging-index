@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lausanne-tof-mra-aneurysm
+name: Lausanne TOF-MRA Aneurysm Cohort (ds003949)
+full_name: Lausanne TOF-MRA Aneurysm Cohort
+summary: >-
+  Brain TOF-MR angiography and T1w scans of 284 adults from Lausanne University Hospital: 157 patients with 198
+  unruptured intracranial aneurysms and 127 controls, with aneurysm masks for detection, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003949
+doi: 10.18112/openneuro.ds003949.v1.0.1
+year: 2021
+updated: 2022
+version: 1.0.1
+status: active
+creators:
+  - name: Department of Radiology, Lausanne University Hospital and University of Lausanne (Di Noto T, Richiardi J, et al.)
+    url: https://openneuro.org/datasets/ds003949
+species: human
+modalities: [MR]
+contrasts: [angio, T1w]
+anatomy: [brain]
+conditions: [intracranial_aneurysm, healthy]
+tasks: [detection, segmentation]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [siemens, philips]
+field_strengths: [1.5, 3]
+size_gb: 14.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003949
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0, and the paper's data availability statement says the dataset is on OpenNeuro under the CC0 license.
+citation:
+  text: >-
+    Di Noto T, Marie G, Tourbier S, Alemán-Gómez Y, Esteban O, Saliou G, Bach Cuadra M, Hagmann P, Richiardi J.
+    Towards Automated Brain Aneurysm Detection in TOF-MRA: Open Data, Weak Labels, and Anatomical Knowledge.
+    Neuroinformatics 21, 21-34 (2023). doi:10.1007/s12021-022-09597-0
+sources:
+  dinoto2023:
+    title: Di Noto et al. 2023, Towards Automated Brain Aneurysm Detection in TOF-MRA, Neuroinformatics
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9931814/
+    kind: paper
+  openneuro-ds003949-v101:
+    title: OpenNeuro ds003949 snapshot 1.0.1 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds003949/versions/1.0.1
+    kind: website
+  ds003949-participants:
+    title: participants.tsv of ds003949 1.0.1 (CC0), one row per session; subjects counted by unique participant_id
+    url: https://github.com/OpenNeuroDatasets/ds003949/blob/1.0.1/participants.tsv
+    kind: computed
+  ds003949-sidecars:
+    title: Raw anat files and JSON sidecars of ds003949 1.0.1 (CC0), counted per file
+    url: https://github.com/OpenNeuroDatasets/ds003949/tree/1.0.1
+    kind: computed
+related: []
+keywords: [intracranial aneurysm, TOF-MRA, aneurysm detection, weak labels, cerebrovascular]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
