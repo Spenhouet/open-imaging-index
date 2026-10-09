@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: api-adad-colombia
+name: API ADAD Colombia Trial
+full_name: >-
+  Alzheimer's Prevention Initiative Autosomal Dominant Alzheimer's Disease Colombia Trial (crenezumab, NCT01998841)
+summary: >-
+  Phase 2 prevention trial of crenezumab in 252 cognitively unimpaired members of the Colombian PSEN1 E280A kindred
+  (169 carriers, 83 non-carriers on placebo), with 5 to 8 years of serial 3T MRI, florbetapir and FDG PET and optional
+  GTP1 tau PET.
+homepage: https://alzheimerspreventioninitiative.com/api-studies/adad-colombia-trial/
+# The date data were first released was not found. The results paper (Lancet Neurol, 2026) states that all data were
+# made available before its publication, so 2026 is the earliest year a public source confirms availability.
+year: 2026
+creators:
+  - name: Banner Alzheimer's Institute
+    url: https://alzheimerspreventioninitiative.com/
+  - name: Grupo de Neurociencias de Antioquia, University of Antioquia
+  - name: Genentech / F. Hoffmann-La Roche
+species: human
+modalities: [MR, PT]
+contrasts: [T1w]
+tracers: [florbetapir, fdg, gtp1]
+anatomy: [brain]
+conditions: [alzheimers, healthy, aria]
+tasks: [longitudinal, classification, regression]
+countries: [CO]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=APIADAD
+licenses:
+  - license: LicenseRef-API-ADAD-DUA
+    note: >-
+      Requests are reviewed by an Independent Review Panel, and the requester signs a Data Transfer and Use Agreement.
+      The terms checked here are the ones shown on the LONI IDA application page.
+citation:
+  text: >-
+    Tariot PN, Lopera F, Rios-Romenets S, et al. Safety and efficacy of crenezumab in cognitively unimpaired carriers of
+    the PSEN1 Glu280Ala mutation at risk for autosomal-dominant Alzheimer's disease in Colombia (API ADAD Colombia
+    Trial): a phase 2, randomised, double-blind, placebo-controlled trial. Lancet Neurology 25(2):147-159 (2026).
+    doi:10.1016/S1474-4422(25)00426-0. The data use agreement also requires the acknowledgment text given by the
+    provider.
+sources:
+  tariot2026:
+    title: Tariot et al. 2026, Safety and efficacy of crenezumab in the API ADAD Colombia Trial, Lancet Neurology
+    url: https://doi.org/10.1016/S1474-4422(25)00426-0
+    kind: paper
+  bittner2026:
+    title: >-
+      Bittner et al. 2026, Baseline and placebo-related biomarker and cognitive findings in the API ADAD Colombia Trial,
+      eBioMedicine 2026
+    url: https://doi.org/10.1016/j.ebiom.2026.106390
+    kind: paper
+  api-adad-page:
+    title: Alzheimer's Prevention Initiative, ADAD Colombia Trial available data
+    url: https://alzheimerspreventioninitiative.com/api-studies/adad-colombia-trial/available-data/
+    kind: website
+related: [dian-tu-001, dian-observational]
+keywords:
+  [
+    autosomal dominant Alzheimer's disease,
+    PSEN1 E280A,
+    crenezumab,
+    preclinical Alzheimer's disease,
+    prevention trial,
+    amyloid PET,
+    tau PET,
+    ARIA
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
