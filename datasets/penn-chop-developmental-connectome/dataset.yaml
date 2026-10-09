@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: penn-chop-developmental-connectome
+name: Penn-CHOP Developmental Connectome
+full_name: Penn-CHOP Developmental Connectome data (preterm and term)
+summary: >-
+  Neonatal brain MRI from the Huang lab (CHOP and Penn): DTI-derived maps and resting-state fMRI of 23 healthy
+  term-born neonates scanned without sedation, shared after a short registration form for research use.
+homepage: http://www.brainmrimap.org/developmental-connectome.html
+# No release date is stated; earliest archived copy of the dataset page that describes the release (September 2018).
+year: 2018
+status: active
+creators:
+  - name: Laboratory of Neural MRI and Brain Connectivity (Hao Huang), Children's Hospital of Philadelphia and University of Pennsylvania
+    url: http://www.brainmrimap.org/
+species: human
+modalities: [MR]
+contrasts: [dwi, T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+# The dataset page gives the DTI (1.5 x 1.5 x 1.6 mm) and rs-fMRI (2.4 x 2.4 x 3 mm) acquisition resolutions of the lab's
+# neonatal cohort; the linked papers acquired them on a 3T Philips Achieva at Children's Medical Center Dallas.
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://forms.gle/CH925CUGCHN9gQvJ7
+  note: >-
+    A Google form asks for name, email, institution, principal investigator and purpose. After submitting it, the
+    form shows a Google Drive link to the data.
+licenses:
+  - license: LicenseRef-Penn-CHOP-Connectome-Terms
+    note: No formal license. The terms are a research-only note on the download form and the footer of the website.
+citation:
+  text: >-
+    Ouyang M, Jeon T, Sotiras A, Peng Q, Mishra V, Halovanic C, Chen M, Chalak L, Rollins N, Roberts TPL, Davatzikos
+    C, Huang H. Differential cortical microstructural maturation in the preterm human brain with diffusion kurtosis
+    and tensor imaging. PNAS 116(10), 4681-4688 (2019). doi:10.1073/pnas.1812156116
+sources:
+  brainmrimap-connectome-page:
+    title: Penn-CHOP Developmental Connectome page on brainmrimap.org
+    url: http://www.brainmrimap.org/developmental-connectome.html
+    kind: website
+  brainmrimap-connectome-page-2018:
+    title: Penn-CHOP developmental connectome data page on brainmrimap.org, archived copy of 2018-09-01
+    url: http://web.archive.org/web/20180901003249/http://brainmrimap.org/penn-chop-developmental-connectome-data-preterm-and-term.html
+    kind: website
+  ouyang2019:
+    title: Ouyang et al. 2019, Differential cortical microstructural maturation in the preterm human brain, PNAS
+    url: https://doi.org/10.1073/pnas.1812156116
+    kind: paper
+  cao2017:
+    title: Cao et al. 2017, Early development of functional network segregation in the preterm human brain, Cerebral Cortex
+    url: https://doi.org/10.1093/cercor/bhw038
+    kind: paper
+related: []
+keywords: [neonatal MRI, brain development, diffusion tensor imaging, resting-state fMRI, connectome, term-born neonates]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
