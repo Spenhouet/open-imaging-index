@@ -146,6 +146,13 @@ terms:
       mappings: { mondo: 'MONDO:0017885' }
     }
   - {
+      id: ccrcc,
+      label: Clear cell renal cell carcinoma,
+      parent: kidney_cancer,
+      synonyms: [ccRCC, clear cell renal carcinoma],
+      mappings: { mondo: 'MONDO:0005005' }
+    }
+  - {
       id: pancreatic_cancer,
       label: Pancreatic ductal adenocarcinoma,
       synonyms: [PDAC, pancreatic cancer],

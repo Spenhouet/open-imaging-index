@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,262,tcia-cptac-ccrcc,Summary table,"all subjects in the collection, radiology and pathology"
+subjects,modality=SM,222,tcia-cptac-ccrcc,Data Access (Version 14),"subjects with ccRCC tissue slide images"
+slides,,911,tcia-cptac-ccrcc,Data Access (Version 14),"783 ccRCC slides plus 128 non-ccRCC or rare kidney tumor slides (39 subjects), summed"
+subjects,modality=CT,59,tcia-cptac-ccrcc-digest,"Patient ID, Modality columns",ccRCC radiology subset (65 subjects) only
+subjects,modality=MR,10,tcia-cptac-ccrcc-digest,"Patient ID, Modality columns",ccRCC radiology subset (65 subjects) only
+studies,,97,tcia-cptac-ccrcc,Data Access (Version 14),"radiology only (pathology has no studies): 85 ccRCC plus 12 non-ccRCC or rare kidney tumor radiology studies, summed"
+scans,,866,tcia-cptac-ccrcc,Data Access (Version 14),"DICOM series: 727 ccRCC plus 139 non-ccRCC or rare kidney tumor, summed"
+images,,113359,tcia-cptac-ccrcc,Data Access (Version 14),"DICOM images: 99,098 ccRCC plus 14,261 non-ccRCC or rare kidney tumor, summed"
+subjects,vendor=ge,28,tcia-cptac-ccrcc-digest,"Patient ID, Manufacturer columns",ccRCC radiology subset only
+subjects,vendor=siemens,28,tcia-cptac-ccrcc-digest,"Patient ID, Manufacturer columns",ccRCC radiology subset only
+subjects,vendor=philips,8,tcia-cptac-ccrcc-digest,"Patient ID, Manufacturer columns",ccRCC radiology subset only
+subjects,vendor=canon,4,tcia-cptac-ccrcc-digest,"Patient ID, Manufacturer columns","ccRCC radiology subset only, recorded as TOSHIBA"
