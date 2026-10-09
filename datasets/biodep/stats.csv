@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,143,kitzbichler2021,Methods: Study design and sample,secondary (imaging) cohort participants with complete data; the papers do not give the size of the whole imaging cohort
+subjects,modality=MR,143,kitzbichler2021,Methods: Study design and sample,
+subjects,condition=healthy,53,kitzbichler2021,Methods: Study design and sample,healthy controls with CRP < 3 mg/L
+subjects,condition=depression,90,kitzbichler2021,Methods: Study design and sample,"55 cases with CRP < 3 mg/L and 35 with CRP > 3 mg/L; the two groups are disjoint"
+subjects,sex=female,84,kitzbichler2021,Table 1,"27 controls and 57 cases; counted in the 129 participants left after MRI quality control"
+subjects,sex=male,45,kitzbichler2021,Table 1,"19 controls and 26 cases; counted in the 129 participants left after MRI quality control"
+subjects,country=GB,143,kitzbichler2021-si,Methods: Study design and sample,"recruited at Brighton, Cambridge, Glasgow, King's College London and Oxford; scanned at Cambridge, King's College London or Oxford"
+subjects,modality=PT,76,schubert2021,Methods: Participants,"[11C]PK11195 PET/MR; the HRA summary describes the PET group as a subset of the imaging cohort, and the papers do not say how many are among the 143"
+subjects,tracer=pk11195,76,schubert2021,Methods: Participants,"51 depressed cases (36 women, 15 men) and 25 healthy controls (14 women, 11 men)"
+subjects,contrast=T1w,76,schubert2021,Methods: TSPO PET Data Acquisition and Analysis,"T1-weighted BRAVO acquired during PET; T1-weighted counts for the MRI-only participants are not reported"
+subjects,vendor=ge,76,schubert2021,Methods: TSPO PET Data Acquisition and Analysis,GE SIGNA PET/MR

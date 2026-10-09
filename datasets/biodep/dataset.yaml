@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: biodep
+name: BIODEP
+full_name: BIOmarkers in DEPression (BIODEP) study, Wellcome NIMA consortium
+summary: >-
+  UK multi-centre case-control study of inflammation in major depression: brain MRI (quantitative magnetization
+  transfer, multi-echo resting-state fMRI) of 143 adults aged 25 to 50 stratified by blood CRP, and [11C]PK11195 TSPO
+  PET/MR of 76. No published data sharing route.
+homepage: https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/biomarkers-in-depression-biodep/
+doi: 10.1038/s41380-021-01272-1
+# Year of the first paper on the BIODEP imaging data; the data have no public release.
+year: 2021
+creators:
+  - name: Wellcome Trust Consortium for Neuroimmunology of Mood Disorders and Alzheimer's Disease (NIMA)
+  - name: Department of Psychiatry, University of Cambridge
+    url: https://www.psychiatry.cam.ac.uk/
+modalities: [MR, PT]
+contrasts: [T1w, bold]
+tracers: [pk11195]
+anatomy: [brain]
+conditions: [depression, healthy]
+countries: [GB]
+vendors: [ge, siemens]
+access:
+  type: on_request
+  url: https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/biomarkers-in-depression-biodep/
+  note: >-
+    The NHS Health Research Authority summary names Edward T. Bullmore (University of Cambridge) as the study contact.
+    None of the imaging papers has a statement on access to the data.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The HRA research summary describes the study and its results but gives no data sharing terms. The data
+      availability statement of Kitzbichler et al. (2021) covers only the analysis software, and Schubert et al. (2021)
+      and Althubaity et al. (2022) have none. The study's page on the NIMA consortium website could not be reached.
+citation:
+  text: >-
+    Kitzbichler MG, Aruldass AR, Barker GJ, Wood TC, Dowell NG, Hurley SA, McLean J, Correia M, Clarke C, Pointon L,
+    Cavanagh J, Cowen P, Pariante C, Cercignani M, Bullmore ET, Harrison NA, NIMA Consortium. Peripheral inflammation is
+    associated with micro-structural and functional connectivity changes in depression-related brain networks.
+    Molecular Psychiatry 26, 7346-7354 (2021). doi:10.1038/s41380-021-01272-1
+sources:
+  kitzbichler2021:
+    title: Kitzbichler et al. 2021, Molecular Psychiatry (PMC8872995)
+    url: https://doi.org/10.1038/s41380-021-01272-1
+    kind: paper
+  kitzbichler2021-si:
+    title: Kitzbichler et al. 2021, Molecular Psychiatry, Supplementary Information
+    url: https://static-content.springer.com/esm/art%3A10.1038%2Fs41380-021-01272-1/MediaObjects/41380_2021_1272_MOESM1_ESM.pdf
+    kind: paper
+  schubert2021:
+    title: Schubert et al. 2021, Biological Psychiatry Cognitive Neuroscience and Neuroimaging (PMC8264953)
+    url: https://doi.org/10.1016/j.bpsc.2020.12.017
+    kind: paper
+  chamberlain2019:
+    title: Chamberlain et al. 2019, British Journal of Psychiatry
+    url: https://doi.org/10.1192/bjp.2018.66
+    kind: paper
+  hra-biodep:
+    title: NHS Health Research Authority research summary, BIOmarkers in DEPression (BIODEP)
+    url: https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/biomarkers-in-depression-biodep/
+    kind: website
+related: []
+keywords: [major depressive disorder, inflammation, C-reactive protein, TSPO PET, quantitative magnetization transfer, multi-echo fMRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
