@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chbmp
+name: CHBMP
+full_name: Cuban Human Brain Mapping Project, second wave
+summary: >-
+  Population-based multimodal data from 282 functionally healthy Cuban adults aged 18 to 68: 1.5 T T1w and diffusion
+  MRI for 203 of them, high-density resting-state EEG, cognitive tests and demographics, shared in BIDS on Synapse.
+homepage: https://www.synapse.org/#!Synapse:syn22324937
+doi: 10.7303/syn22324937
+year: 2021
+status: active
+creators:
+  - name: Cuban Neuroscience Center (CNEURO)
+  - name: McGill Centre for Integrative Neuroscience (MCIN), Montreal Neurological Institute
+    url: https://mcin.ca
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS]
+countries: [CU]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://doi.org/10.7303/syn22324937
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Downloading needs a Synapse account and membership in the Cuban Human Brain Mapping Project Users Team. The
+      request must state the requester's institution and intended data use, and an administrator decides on it. No
+      license or data use terms are published on Synapse or on the LORIS mirror. The CC BY 4.0 license of the data
+      descriptor covers the article, not the data.
+citation:
+  text: >-
+    Valdes-Sosa PA, Galan-Garcia L, Bosch-Bayard J, et al. The Cuban Human Brain Mapping Project, a young and middle
+    age population-based EEG, MRI, and cognition dataset. Scientific Data 8, 45 (2021). doi:10.1038/s41597-021-00829-7
+sources:
+  valdessosa2021:
+    title: Valdes-Sosa et al. 2021, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-00829-7
+    kind: paper
+keywords: [EEG, normative data, Latin America, Cuba, diffusion MRI, population-based sample, cognition]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

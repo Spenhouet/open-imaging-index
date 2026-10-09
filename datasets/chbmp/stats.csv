@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,282,valdessosa2021,"Methods, Participants",final sample of functionally healthy participants
+subjects,condition=healthy,282,valdessosa2021,"Methods, Participants",
+subjects,country=CU,282,valdessosa2021,"Methods, Recruitment and exclusion criteria","La Lisa municipality, Havana"
+subjects,sex=female,87,valdessosa2021,Table 2,
+subjects,sex=male,195,valdessosa2021,Table 2,
+subjects,modality=MR,203,valdessosa2021,"Methods, MRI procedure; Table 6",participants with useful MRI images
+subjects,contrast=dwi,201,valdessosa2021,"Methods, MRI procedure","148 with DWI variant 1, 53 with variant 2"
+subjects,field_strength=1.5,203,valdessosa2021,"Methods, MRI procedure",all MRI on one Siemens MAGNETOM Symphony
+subjects,vendor=siemens,203,valdessosa2021,"Methods, MRI procedure",
+age_mean,,31.9,valdessosa2021,"Methods, Participants",
+age_sd,,9.30,valdessosa2021,"Methods, Participants",
+age_min,,18,valdessosa2021,"Methods, Participants",
+age_max,,68,valdessosa2021,"Methods, Participants",
+age_mean,sex=female,36.5,valdessosa2021,"Methods, Participants",
+age_sd,sex=female,10.43,valdessosa2021,"Methods, Participants",
+age_mean,sex=male,29.9,valdessosa2021,"Methods, Participants",
+age_sd,sex=male,7.97,valdessosa2021,"Methods, Participants",
