@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,139,tcia-tcga-brca,Data Access table,
+studies,,164,tcia-tcga-brca,Data Access table,
+scans,,1877,tcia-tcga-brca,Data Access table,DICOM series
+images,,230167,tcia-tcga-brca,Data Access table,DICOM images (slices)
+subjects,modality=MR,137,tcia-api-tcga-brca-series,Modality; PatientID,
+subjects,modality=MG,5,tcia-api-tcga-brca-series,Modality; PatientID,
+studies,modality=MR,157,tcia-api-tcga-brca-series,Modality; StudyInstanceUID,
+studies,modality=MG,7,tcia-api-tcga-brca-series,Modality; StudyInstanceUID,
+scans,modality=MR,1858,tcia-api-tcga-brca-series,Modality,DICOM series
+scans,modality=MG,19,tcia-api-tcga-brca-series,Modality,DICOM series
+subjects,sex=female,139,tcia-api-tcga-brca-patients,PatientSex,DICOM header value
+subjects,vendor=ge,108,tcia-api-tcga-brca-series,Manufacturer; PatientID,patients with at least one GE series (MR or MG)
+subjects,vendor=siemens,16,tcia-api-tcga-brca-series,Manufacturer; PatientID,patients with at least one Siemens series
+subjects,vendor=philips,15,tcia-api-tcga-brca-series,Manufacturer; PatientID,patients with at least one Philips series
+subjects,vendor=other,2,tcia-api-tcga-brca-series,Manufacturer; PatientID,LORAD mammography units

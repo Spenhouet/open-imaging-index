@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-brca
+name: TCGA-BRCA
+full_name: The Cancer Genome Atlas Breast Invasive Carcinoma Collection
+summary: >-
+  Pre-surgical breast MRI and a few mammograms of 139 women with invasive breast carcinoma from seven US centers,
+  matched by patient ID to the TCGA clinical, genomic and pathology data for radiogenomics research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-brca/
+doi: 10.7937/K9/TCIA.2016.AB2NAZRP
+year: 2011
+updated: 2020
+version: '3'
+status: active
+creators:
+  - name: The Cancer Genome Atlas (TCGA) Research Network and seven contributing US imaging sites
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, MG]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [classification, survival]
+formats: [DICOM]
+countries: [US]
+vendors: [ge, siemens, philips, other]
+size_gb: 88.13
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-brca/
+  note: >-
+    Images download with the TCIA Data Retriever. Clinical, genomic and histopathology data for the same patient IDs
+    are held in the NCI Genomic Data Commons.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Lingle W, Erickson BJ, Zuley ML, Jarosz R, Bonaccio E, Filippini J, Net JM, Levi L, Morris EA, Figler GG, Elnajjar
+    P, Kirk S, Lee Y, Giger M, Gruszauskas N. (2016). The Cancer Genome Atlas Breast Invasive Carcinoma Collection
+    (TCGA-BRCA) (Version 3) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.AB2NAZRP
+sources:
+  tcia-tcga-brca:
+    title: TCIA TCGA-BRCA collection page (version 3, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-brca/
+    kind: website
+  tcia-api-tcga-brca-series:
+    title: >-
+      TCIA public NBIA API, series list of TCGA-BRCA (open, no login, CC BY 3.0), MR and MG series counted per
+      PatientID, Modality, StudyInstanceUID and Manufacturer; the 164 SR series of DICOM-SR-Breast-Clinical excluded
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=TCGA-BRCA
+    kind: computed
+  tcia-api-tcga-brca-patients:
+    title: TCIA public NBIA API, patient list of TCGA-BRCA (open, no login), counted per PatientSex
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=TCGA-BRCA
+    kind: computed
+related: []
+keywords: [breast cancer, invasive carcinoma, breast MRI, mammography, radiogenomics, TCGA]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
