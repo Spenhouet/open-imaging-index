@@ -351,3 +351,16 @@ terms:
   - { id: back_pain, label: Back pain, mappings: { hp: 'HP:0003418' } }
   - { id: low_back_pain, label: Low back pain, synonyms: [LBP], mappings: { hp: 'HP:0003419' } }
   - { id: discitis, label: Discitis, synonyms: [diskitis, spondylodiscitis], mappings: { hp: 'HP:0025679' } }
+  - { id: cervical_cancer, label: Cervical cancer, mappings: { mondo: 'MONDO:0002974' } }
+  - {
+      id: cervical_squamous_cell_carcinoma,
+      label: Cervical squamous cell carcinoma,
+      parent: cervical_cancer,
+      mappings: { mondo: 'MONDO:0006143' }
+    }
+  - {
+      id: endocervical_adenocarcinoma,
+      label: Endocervical adenocarcinoma,
+      parent: cervical_cancer,
+      mappings: { mondo: 'MONDO:0000554' }
+    }

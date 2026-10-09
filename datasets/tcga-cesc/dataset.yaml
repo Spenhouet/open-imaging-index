@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-cesc
+name: TCGA-CESC
+full_name: The Cancer Genome Atlas Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma Collection (TCGA-CESC)
+summary: >-
+  Pre-surgical clinical pelvic MRI of 54 patients with cervical squamous cell carcinoma or endocervical adenocarcinoma
+  from The Cancer Genome Atlas, whose patient IDs match the TCGA clinical, genomic and histopathology data.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-cesc/
+doi: 10.7937/K9/TCIA.2016.SQ4M8YP4
+year: 2014
+updated: 2020
+version: '3'
+status: active
+creators:
+  - name: Barretos Cancer Hospital, Barretos, Sao Paulo, Brazil
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+anatomy: [cervix]
+conditions: [cervical_squamous_cell_carcinoma, endocervical_adenocarcinoma]
+formats: [DICOM]
+countries: [BR]
+vendors: [ge, philips, siemens]
+size_gb: 9.5
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-cesc/
+  note: >-
+    Images download with the TCIA Data Retriever or from the NCI Imaging Data Commons. Clinical, genomic and
+    histopathology data for the same patient IDs are in the NCI Genomic Data Commons project TCGA-CESC.
+licenses:
+  - license: CC-BY-3.0
+    applies_to: All MR images (54 subjects, 57 studies, 488 series).
+citation:
+  text: >-
+    Lucchesi FR, Aredes ND. (2016). The Cancer Genome Atlas Cervical Squamous Cell Carcinoma and Endocervical
+    Adenocarcinoma Collection (TCGA-CESC) (Version 3) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.SQ4M8YP4
+sources:
+  tcia-tcga-cesc:
+    title: TCIA TCGA-CESC collection page (version 3, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-cesc/
+    kind: website
+  tcia-tcga-cesc-digest:
+    title: TCIA TCGA-CESC series metadata digest (CC BY 3.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/TCIA_TCGA-CESC_09-16-2015-nbia-digest.xlsx
+    kind: computed
+keywords: [TCGA, radiogenomics, cervical cancer, uterine cervix, pelvic MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
