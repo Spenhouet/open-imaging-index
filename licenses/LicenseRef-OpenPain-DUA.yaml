@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-OpenPain-DUA
+name: OpenPain Data Use Agreement
+short_name: OpenPain DUA
+url: https://openpain.org/html/agreement.html
+version: 'OpenPain Data Use Agreement web page, undated, read 2026-10-09'
+summary: >-
+  Access after registering on the OpenPain site and accepting the agreement online. Use is limited to scientific
+  investigation, teaching or planning clinical research. Data may not be disclosed beyond those uses, everyone who
+  uses or receives them must follow the agreement, re-identification is forbidden and publications must acknowledge
+  the OpenPain Project and its funders.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    quote: I request access to data collected by the OpenPain Project (OPP) for the purpose of scientific
+      investigation, teaching or the planning of clinical research studies and agree to the following terms
+    note: The agreement does not mention commercial use. Use is limited to scientific investigation, teaching or the
+      planning of clinical research studies.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product. Use is limited to scientific investigation,
+      teaching or the planning of clinical research studies.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: I will acknowledge the OPP project as a source of data and include language similar to the following
+    note: Abstracts and manuscripts must cite the OpenPain Project and its funding; group authorship of OPP must not
+      appear in the author line of abstracts.
+  redistribute_original:
+    value: conditional
+    quote: I will not further disclose these data beyond the uses outlined in this agreement.
+    note: The agreement allows sharing only with people who comply with it ("anyone with whom I share these data"
+      must comply with this data use agreement). Public re-hosting is a disclosure beyond the stated uses.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data count as "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will cite OPP as the source of data and the OPP funding sources in the abstract as space allows in the
+      acknowledgements.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the OpenPain Project (OPP) for the purpose of scientific
+      investigation, teaching or the planning of clinical research studies and agree to the following terms
+    note: The agreement is accepted online ("I AGREE") as part of the OpenPain user registration before download.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board
+      in requesting these data.
+    note: Approval is needed where the user's institution or its review board requires it.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users must report any use or disclosure not covered by the agreement within 15 days, but need not return
+      results.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt
+      to contact any of the OPP subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

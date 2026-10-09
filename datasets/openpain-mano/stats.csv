@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,97,mano2018,"Methods, Participants",41 patients and 56 controls as stated in the abstract and Participants section
+subjects,condition=low_back_pain,41,mano2018,"Methods, Participants",Chronic musculoskeletal low back pain for over 6 months
+subjects,condition=healthy,56,mano2018,"Methods, Participants",Age- sex- and IQ-matched adults without back pain
+subjects,country=GB,34,mano2018,"Methods, Participants","Cambridge, June 2013 to April 2014"
+subjects,country=JP,63,mano2018,"Methods, Participants","Osaka, April 2014 to March 2015"
+subjects,country=GB;condition=low_back_pain,17,mano2018,Table 1,
+subjects,country=GB;condition=healthy,17,mano2018,Table 1,
+subjects,country=JP;condition=low_back_pain,24,mano2018,Table 1,
+subjects,country=JP;condition=healthy,39,mano2018,Table 1,
+subjects,contrast=T1w,97,mano2018,"Methods, Resting-state fMRI data preprocessing",T1w and resting-state fMRI for each participant
+subjects,contrast=bold,97,mano2018,"Methods, Resting-state fMRI data preprocessing",T1w and resting-state fMRI for each participant
+subjects,contrast_set=bold+T1w,97,mano2018,"Methods, Resting-state fMRI data preprocessing",T1w and resting-state fMRI for each participant
+subjects,field_strength=3,97,mano2018,"Methods, MRI data acquisition",
+subjects,vendor=siemens,97,mano2018,"Methods, MRI data acquisition",Siemens 3T Magnetom Trio with TIM
+age_min,,20,mano2018,Table 1,Lowest of the four per-group age ranges
+age_max,,68,mano2018,Table 1,Highest of the four per-group age ranges
