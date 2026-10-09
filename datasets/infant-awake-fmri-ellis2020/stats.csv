@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,26,ellis2020,Discussion,"11 infants in Cohort I (Princeton) and 15 in Cohort II (Yale), Methods: Participants"
+studies,,45,ellis2020,Discussion,"23 sessions in Cohort I and 22 in Cohort II, Methods: Participants; sessions in which the infant would not lie down are not counted"
+subjects,sex=female,13,ellis2020,Methods: Participants,sum of 5 females in Cohort I and 8 in Cohort II (disjoint cohorts)
+subjects,age=0-2,26,ellis2020,Methods: Participants,Cohort I aged 6 to 33 months and Cohort II aged 4 to 10 months at scan
+subjects,contrast=bold,26,ellis2020,Methods: Participants,all counted sessions were fMRI sessions
+subjects,country=US,26,ellis2020,Methods: Participants,Princeton University and Yale University
+subjects,vendor=siemens,26,ellis2020,Results: Data quantity and quality,3T Siemens Skyra (Cohort I) and 3T Siemens Prisma (Cohort II)
+subjects,field_strength=3,26,ellis2020,Results: Data quantity and quality,
