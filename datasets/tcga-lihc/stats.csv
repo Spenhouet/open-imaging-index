@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,97,tcia-tcga-lihc,Data Access table,
+studies,,237,tcia-tcga-lihc,Data Access table,
+scans,,1688,tcia-tcga-lihc,Data Access table,DICOM series
+images,,125397,tcia-tcga-lihc,Data Access table,DICOM images (slices)
+subjects,modality=CT,75,tcia-tcga-lihc-series,Modality,
+subjects,modality=MR,40,tcia-tcga-lihc-series,Modality,
+subjects,modality=PT,1,tcia-tcga-lihc-series,Modality,
+studies,modality=CT,164,tcia-tcga-lihc-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+studies,modality=MR,73,tcia-tcga-lihc-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+studies,modality=PT,1,tcia-tcga-lihc-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+scans,modality=CT,777,tcia-tcga-lihc-series,Modality,DICOM series
+scans,modality=MR,910,tcia-tcga-lihc-series,Modality,DICOM series
+scans,modality=PT,1,tcia-tcga-lihc-series,Modality,DICOM series
+subjects,vendor=siemens,60,tcia-tcga-lihc-series,Manufacturer,"subjects with at least one series from this vendor; 2 subjects have series without a Manufacturer value"
+subjects,vendor=ge,55,tcia-tcga-lihc-series,Manufacturer,subjects with at least one series from this vendor
+subjects,vendor=philips,4,tcia-tcga-lihc-series,Manufacturer,subjects with at least one series from this vendor
+subjects,vendor=canon,3,tcia-tcga-lihc-series,Manufacturer,Toshiba; subjects with at least one series from this vendor
+subjects,sex=male,66,tcia-tcga-lihc-patients,PatientSex,
+subjects,sex=female,31,tcia-tcga-lihc-patients,PatientSex,
+subjects,age=20-29,4,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=30-39,3,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=40-49,7,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=50-59,20,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=60-69,37,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=70-79,20,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+subjects,age=80-89,6,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+age_mean,,61.4,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+age_sd,,13.5,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+age_median,,64,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+age_min,,20,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
+age_max,,85,tcia-tcga-lihc-studies,PatientAge,age at the earliest archived study
