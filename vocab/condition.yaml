@@ -313,6 +313,13 @@ terms:
       mappings: { mondo: 'MONDO:0005416' }
     }
   - { id: fracture, label: Bone fracture, mappings: { mondo: 'MONDO:0005315' } }
+  - { id: meniscal_tear, label: Meniscal tear, synonyms: [torn meniscus], mappings: { hp: 'HP:0032191' } }
+  - {
+      id: acl_tear,
+      label: Anterior cruciate ligament tear,
+      synonyms: [ACL tear, ACL rupture],
+      description: 'Partial or complete tear of the anterior cruciate ligament of the knee. No human term in MONDO or HPO.'
+    }
   - { id: diabetic_retinopathy, label: Diabetic retinopathy, mappings: { mondo: 'MONDO:0005266' } }
   - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
   - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }

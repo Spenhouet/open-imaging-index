@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+studies,,1370,bien2018,Methods - Dataset,knee MRI exams performed 2001-2012
+studies,split=train,1130,mrnet-page,Splits,
+studies,split=validation,120,mrnet-page,Splits,called tuning set in the paper
+studies,split=test,120,mrnet-page,Splits,hidden test set (validation set in the paper); not released
+subjects,split=train,1088,bien2018,Table 1,for the 1114 training exams with a patient identifier
+subjects,split=validation,111,mrnet-page,Splits,
+subjects,split=test,113,mrnet-page,Splits,
+studies,sex=female,569,bien2018,Abstract,"reported as female patients; the percentage (41.5%) is of the 1,370 exams"
+studies,split=train;sex=female,480,bien2018,Table 1,"reported as female patients; the percentage is of exams"
+studies,split=validation;sex=female,50,bien2018,Table 1,"reported as female patients; the percentage is of exams"
+studies,split=test;sex=female,39,bien2018,Table 1,"reported as female patients; the percentage is of exams"
+age_mean,,38.0,bien2018,Abstract,
+studies,condition=acl_tear,319,bien2018,Methods - Dataset,labels from clinical reports
+studies,condition=meniscal_tear,508,bien2018,Methods - Dataset,labels from clinical reports
+studies,split=train;condition=acl_tear,208,bien2018,Table 1,labels from clinical reports
+studies,split=validation;condition=acl_tear,54,bien2018,Table 1,labels from clinical reports
+studies,split=test;condition=acl_tear,57,bien2018,Table 1,labels from clinical reports; 58 by the radiologist reference standard
+studies,split=train;condition=meniscal_tear,397,bien2018,Table 1,labels from clinical reports
+studies,split=validation;condition=meniscal_tear,52,bien2018,Table 1,labels from clinical reports
+studies,split=test;condition=meniscal_tear,59,bien2018,Table 1,labels from clinical reports; 65 by the radiologist reference standard
+studies,field_strength=3,775,bien2018,Methods - Dataset,
+studies,field_strength=1.5,595,bien2018,Methods - Dataset,"1,370 minus the 775 exams at 3 T; the paper states the remaining exams used 1.5 T"
+studies,vendor=ge,1370,bien2018,Methods - Dataset,all exams on GE scanners

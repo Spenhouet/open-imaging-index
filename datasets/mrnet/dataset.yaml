@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mrnet
+name: MRNet
+full_name: 'MRNet: A Dataset of Knee MRIs'
+summary: >-
+  1,370 clinical knee MRI exams from Stanford University Medical Center (2001-2012) with report-derived labels for
+  abnormality, ACL tear and meniscal tear; 120 exams form a hidden test set. Non-commercial research use only.
+homepage: https://stanfordmlgroup.github.io/competitions/mrnet/
+doi: 10.71718/rcbp-8c35
+year: 2018
+version: '1.0'
+status: active
+creators:
+  - name: Stanford Machine Learning Group
+    url: https://stanfordmlgroup.github.io/competitions/mrnet/
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/datasets/mrnet-knee-mris
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, PDw]
+anatomy: [knee]
+conditions: [acl_tear, meniscal_tear]
+tasks: [classification]
+countries: [US]
+vendors: [ge]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://stanford.redivis.com/datasets/4a2c-4cpkzrn2c
+  note: >-
+    Register and accept the Stanford research use agreement. The data are downloaded through Redivis. The test set
+    is not released.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+    url: https://stanfordmlgroup.github.io/competitions/mrnet/agreement.html
+    note: >-
+      The MRNet page publishes the Stanford University School of Medicine Research Use Agreement with "MRNet
+      Dataset" as the dataset name. It also states that the dataset is for non-clinical research use only and must
+      not be relied upon in patient care.
+citation:
+  text: >-
+    Bien N, Rajpurkar P, Ball RL, et al. Deep-learning-assisted diagnosis for knee magnetic resonance imaging:
+    Development and retrospective validation of MRNet. PLoS Med 15(11): e1002699 (2018).
+    https://doi.org/10.1371/journal.pmed.1002699. Dataset DOI: https://doi.org/10.71718/rcbp-8c35
+sources:
+  bien2018:
+    title: Bien et al. 2018, Deep-learning-assisted diagnosis for knee MRI - development and retrospective validation of MRNet (PLoS Med 15(11))
+    url: https://doi.org/10.1371/journal.pmed.1002699
+    kind: paper
+  mrnet-page:
+    title: Stanford ML Group MRNet dataset and competition page
+    url: https://stanfordmlgroup.github.io/competitions/mrnet/
+    kind: website
+  datacite-mrnet:
+    title: DataCite record of the MRNet dataset DOI (publication year 2018)
+    url: https://api.datacite.org/dois/10.71718/rcbp-8c35
+    kind: website
+related: [fastmri, oai]
+keywords: [knee MRI, ACL tear, meniscal tear, abnormality detection, exam-level classification]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
