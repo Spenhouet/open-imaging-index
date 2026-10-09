@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,267,tcia-tcga-kirc,Data Access table,
+studies,,439,tcia-tcga-kirc,Data Access table,
+scans,,2654,tcia-tcga-kirc,Data Access table,DICOM series
+images,,192581,tcia-tcga-kirc,Data Access table,DICOM images (slices)
+subjects,modality=CT,237,tcia-api-tcga-kirc-series,Modality; PatientID,
+subjects,modality=MR,62,tcia-api-tcga-kirc-series,Modality; PatientID,
+subjects,modality=CR,1,tcia-api-tcga-kirc-series,Modality; PatientID,
+studies,modality=CT,366,tcia-api-tcga-kirc-series,Modality; StudyInstanceUID,
+studies,modality=MR,71,tcia-api-tcga-kirc-series,Modality; StudyInstanceUID,
+studies,modality=CR,2,tcia-api-tcga-kirc-series,Modality; StudyInstanceUID,
+scans,modality=CT,1736,tcia-api-tcga-kirc-series,Modality,DICOM series
+scans,modality=MR,914,tcia-api-tcga-kirc-series,Modality,DICOM series
+scans,modality=CR,4,tcia-api-tcga-kirc-series,Modality,DICOM series
+subjects,sex=male,178,tcia-api-tcga-kirc-patients,PatientSex,DICOM header value
+subjects,sex=female,89,tcia-api-tcga-kirc-patients,PatientSex,DICOM header value
+subjects,vendor=ge,212,tcia-api-tcga-kirc-series,Manufacturer; PatientID,patients with at least one GE series
+subjects,vendor=siemens,62,tcia-api-tcga-kirc-series,Manufacturer; PatientID,patients with at least one Siemens series
+subjects,vendor=philips,12,tcia-api-tcga-kirc-series,Manufacturer; PatientID,patients with at least one Philips series
+subjects,vendor=canon,2,tcia-api-tcga-kirc-series,Manufacturer; PatientID,Toshiba (TOSHIBA_MEC)
