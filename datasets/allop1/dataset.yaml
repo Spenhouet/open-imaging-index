@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: allop1
+name: ALLOP1
+full_name: Allopregnanolone Regenerative Therapeutic for MCI/AD, Phase I (NCT02221622)
+summary: >-
+  Single-site phase 1b/2a trial of intravenous allopregnanolone versus placebo in 24 people with MCI due to Alzheimer's
+  disease or mild Alzheimer's disease, with 3 T MRI (T1w, diffusion, resting-state fMRI) before and after 12 weeks of
+  treatment, held in the LONI IDA.
+homepage: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ALLOP1
+doi: 10.1002/trc2.12107
+# No dated public release was found; year of the primary safety and pharmacokinetics publication.
+year: 2020
+status: active
+creators:
+  - name: University of Southern California (trial site) and Center for Innovation in Brain Science, University of Arizona
+    url: https://clinicaltrials.gov/study/NCT02221622
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [mci, alzheimers]
+tasks: [longitudinal, regression]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ALLOP1
+licenses:
+  # The ALLOP1 data use application and its terms are only shown to logged-in IDA users; no terms are public.
+  - license: LicenseRef-No-Published-Terms
+citation:
+  text: >-
+    Hernandez GD, Solinsky CM, Mack WJ, et al. Safety, tolerability, and pharmacokinetics of allopregnanolone as a
+    regenerative therapeutic for Alzheimer's disease: A single and multiple ascending dose phase 1b/2a clinical trial.
+    Alzheimer's & Dementia: Translational Research & Clinical Interventions 6(1):e12107 (2020). doi:10.1002/trc2.12107
+sources:
+  hernandez2020:
+    title: >-
+      Hernandez et al. 2020, Safety, tolerability, and pharmacokinetics of allopregnanolone as a regenerative
+      therapeutic for Alzheimer's disease, Alzheimer's & Dementia TRCI
+    url: https://doi.org/10.1002/trc2.12107
+    kind: paper
+  raikes2022:
+    title: >-
+      Raikes et al. 2022, Exploratory imaging outcomes of a phase 1b/2a clinical trial of allopregnanolone, Alzheimer's
+      & Dementia TRCI
+    url: https://doi.org/10.1002/trc2.12258
+    kind: paper
+related: []
+keywords:
+  [allopregnanolone, clinical trial, Alzheimer's disease, mild cognitive impairment, hippocampal volume, longitudinal, brain MRI, ARIA]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

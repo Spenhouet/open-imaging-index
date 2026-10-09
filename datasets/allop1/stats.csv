@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,24,raikes2022,"Section 2.1; Table 1",participants who completed the trial (18 allopregnanolone and 6 placebo); 26 were randomized and 2 were replaced
+subjects,sex=female,12,raikes2022,Table 1,sum of 9 allopregnanolone and 3 placebo
+subjects,sex=male,12,raikes2022,Table 1,sum of 9 allopregnanolone and 3 placebo
+subjects,contrast=T1w,23,hernandez2020,Section 3.5,with baseline and post-treatment MRI; Raikes et al. 2022 (Section 2.1) report one participant without a T1-weighted image
+subjects,field_strength=3,24,raikes2022,Section 2.2,all imaging on one 3 T GE Signa HDxt scanner
+subjects,vendor=ge,24,raikes2022,Section 2.2,
+subjects,country=US,24,hernandez2020,Section 2.2,single site at the University of Southern California
+age_mean,,75.88,raikes2022,Section 2.1,
+age_sd,,7.17,raikes2022,Section 2.1,
+age_min,,60,raikes2022,Section 2.1,
+age_max,,89,raikes2022,Section 2.1,
