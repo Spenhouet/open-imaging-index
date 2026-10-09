@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,495,tcia-ucsf-pdgm,Data Access,"six of the 501 exam IDs are follow-up scans of other patients, so 495 patients"
+studies,,501,tcia-ucsf-pdgm,Data Access,
+scans,,12030,tcia-ucsf-pdgm,Data Access,"TCIA ""Series"" count of the NIfTI and BVEC files; includes derived diffusion maps and segmentations"
+subjects,field_strength=3,495,tcia-ucsf-pdgm,Image Acquisition,all preoperative MRI on one 3 T scanner
+subjects,vendor=ge,495,tcia-ucsf-pdgm,Image Acquisition,GE Discovery 750
+subjects,country=US,495,tcia-ucsf-pdgm,Patient Population,single medical center (UCSF)
+subjects,condition=glioma,495,ucsf-pdgm-metadata-v5,column Final pathologic diagnosis (WHO 2021),grade 2 to 4 diffuse gliomas
+subjects,condition=glioblastoma,368,ucsf-pdgm-metadata-v5,column Final pathologic diagnosis (WHO 2021),"Glioblastoma, IDH-wildtype"
+subjects,sex=female,199,ucsf-pdgm-metadata-v5,column Sex,
+subjects,sex=male,296,ucsf-pdgm-metadata-v5,column Sex,
+subjects,age=10-19,3,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=20-29,22,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=30-39,55,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=40-49,68,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=50-59,104,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=60-69,139,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=70-79,86,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,age=80+,18,ucsf-pdgm-metadata-v5,column Age at MRI,
+subjects,sex=female;age=30-39,23,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=female;age=40-49,18,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=female;age=50-59,46,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=female;age=60-69,61,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=female;age=70-79,33,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=20-29,14,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=30-39,32,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=40-49,50,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=50-59,58,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=60-69,78,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+subjects,sex=male;age=70-79,53,ucsf-pdgm-metadata-v5,columns Sex and Age at MRI,
+age_mean,,56.9,ucsf-pdgm-metadata-v5,column Age at MRI,
+age_median,,59,ucsf-pdgm-metadata-v5,column Age at MRI,
