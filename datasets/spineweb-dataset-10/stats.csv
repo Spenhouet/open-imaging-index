@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,20,spineweb-datasets-2024,Dataset 10,Listed as MR and CT images from 20 subjects
+subjects,anatomy=spine,20,spineweb-datasets-2024,Dataset 10,
