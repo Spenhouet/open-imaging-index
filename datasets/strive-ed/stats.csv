@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,85,westwater2021,Materials and Methods: Participants,"women eligible for the two-day inpatient session; 100 volunteers completed outpatient screening (Study design)"
+subjects,modality=MR,85,westwater2021,Materials and Methods: Study design,
+subjects,contrast=bold,84,westwater2021,Materials and Methods: Data analysis—fMRI,"prestress run available from 84; poststress 79, preneutral 80, postneutral 81"
+subjects,condition=eating_disorder,55,westwater2021,Table 1,"22 anorexia nervosa binge-eating/purging subtype plus 33 bulimia nervosa; sum of disjoint groups"
+subjects,condition=healthy,30,westwater2021,Table 1,
+subjects,sex=female,85,westwater2021,Materials and Methods: Participants,
+subjects,field_strength=3,85,westwater2021,Materials and Methods: Image acquisition,Siemens SkyraFit
+subjects,vendor=siemens,85,westwater2021,Materials and Methods: Image acquisition,
+subjects,country=GB,85,westwater2021,Materials and Methods: Participants,
+age_mean,,23.96,westwater2021,Materials and Methods: Participants,
+age_sd,,3.98,westwater2021,Materials and Methods: Participants,
+age_mean,condition=healthy,23.9,westwater2021,Table 1,
