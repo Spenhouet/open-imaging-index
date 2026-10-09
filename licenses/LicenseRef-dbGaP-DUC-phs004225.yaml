@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-dbGaP-DUC-phs004225
+name: NIH Data Use Certification Agreement for dbGaP study phs004225 (TCIA radiology data containing faces)
+short_name: dbGaP DUC phs004225
+url: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?view_pdf&stacc=phs004225.v1.p1
+version: 'Data Use Certification Agreement ver. January 25, 2025, with the phs004225.v1.p1 study addendum (GRU)'
+summary: >-
+  NIH controlled-access terms for TCIA images that contain faces. A senior investigator and their institution request
+  access for a described project through dbGaP, renewed yearly. No redistribution, no sale, no re-identification,
+  acknowledgement of the dataset DOI, and destruction of the data at project close-out. Consent group: general research
+  use.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: >-
+      there is no restriction on development of commercial products resulting from the knowledge gained from the
+      research project.
+    note: >-
+      Use must stay within the approved research project, and the data and Data Derivatives "may not be sold to any
+      individual at any point in time for any purpose."
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any training must fall within the approved research project.
+  derivatives:
+    value: conditional
+    quote: >-
+      The Requester and Approved Users acknowledge NIH’s expectation that they have reviewed and agree to manage the
+      requested controlled-access data and any Data Derivatives according to NIH’s expectations set forth in the
+      current NIH Security Best Practices for Users of Controlled-Access Data and the Requester’s IT security
+      requirements and policies.
+    note: Derived data may be created within the approved project but are bound by the same terms and destroyed at
+      close-out.
+  publication:
+    value: 'yes'
+    quote: >-
+      Approved Users are strongly encouraged to publish their results in peer-reviewed journals and to present research
+      findings at scientific meetings.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The Requester and Approved Users agree not to distribute controlled-access data and any Data Derivates to any
+      entity or individual not identified in the approved request without appropriate written approvals from the NIH.
+    note: Collaborators at other institutions need their own approved request.
+  redistribute_derivatives:
+    value: 'no'
+    quote: >-
+      The Requester and Approved Users agree not to distribute controlled-access data and any Data Derivates to any
+      entity or individual not identified in the approved request without appropriate written approvals from the NIH.
+    note: Only with written approval from the NIH.
+  share_model_weights:
+    value: unspecified
+    note: >-
+      The agreement does not mention models. Its definition of Data Derivatives ("Data derived from controlled-access
+      datasets") may cover them.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Approved Users are expected to acknowledge the persistent Digital Object Identifier (DOI) any time the data are
+      used.
+    note: From the study-specific addendum. The agreement also asks to acknowledge the submitting investigators, the
+      funder, the repository and the dbGaP accession number.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      A request submitted by a Principal Investigator to a NIH Data Access Committee for access to controlled-access
+      data from a NIH-designated data repository. The DAR is signed by the PI requesting the data and their
+      Institutional Signing Official.
+    note: The principal investigator must be at the level of a tenure-track professor or senior scientist, not a
+      student, postdoc or trainee. Access lasts one year and must be renewed or closed out.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      Approved Users may be required to have IRB approval if they have access to personal identifying information for
+      research participants in the original study at their institution, or through their Collaborators.
+    note: IRB approval is needed only when users have access to identifying information, as required by their institution.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: >-
+      In instances where NIH provides written notification that Data Derivatives should be transferred to a NIH
+      controlled-access data repository, the transfer must be completed prior to Project Close-out.
+    note: Also yearly progress updates listing publications and any intellectual property derived from the data.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Upon Project Close-out, the Requester and Approved Users agree to destroy all copies, versions, and Data
+      Derivatives of the data retrieved from NIH-designated data repositories
+    note: Encrypted copies of the minimum data needed for retention policies or to support published findings may be
+      kept.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Approved Users agree to make no attempt to identify or contact, either directly or indirectly, individual
+      participants or their families.
+  geographic_restriction:
+    value: 'yes'
+    quote: >-
+      As of April 4, 2025, NIH began prohibiting access to and ending any remaining ongoing projects involving NIH
+      Controlled-Access Data Repositories (CADRs) and associated data by researchers and institutions located in
+      countries of concern.
+    source: https://www.cancerimagingarchive.net/nih-controlled-data-access-policy/
+    note: The countries named are China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba and Venezuela.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

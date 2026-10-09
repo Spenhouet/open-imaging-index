@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,123,tcia-acrin-dsc-mr-brain,Data Access table,all enrolled trial patients (Boxerman et al. 2013)
+studies,,566,tcia-acrin-dsc-mr-brain,Data Access table,
+scans,,7629,tcia-acrin-dsc-mr-brain,Data Access table,"DICOM series, MR and CT"
+images,,717070,tcia-acrin-dsc-mr-brain,Data Access table,DICOM images (slices)
+subjects,sex=male,71,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
+subjects,sex=female,52,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
+age_mean,,55.6,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
+age_sd,,12,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
+age_median,,56,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,interquartile range 48 to 63.5
+age_min,,23,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
+age_max,,87,tcia-acrin-dsc-mr-brain,Demographic Summary of Available Imaging,
