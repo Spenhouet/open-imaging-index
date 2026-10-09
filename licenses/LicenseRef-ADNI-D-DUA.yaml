@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ADNI-D-DUA
+name: ADNI Depression Project Data Use Agreement
+short_name: ADNI-D DUA
+url: https://adni.loni.usc.edu/wp-content/uploads/2017/09/ADNI_Depression_Data_Use_Agreement_DB_20170913.pdf
+version: 'Rev September 13, 2017'
+summary: >-
+  Access for scientific investigation, teaching or planning clinical research after an online application. No
+  redistribution of the data, "for the ADNI Depression Project" in every manuscript author line and a review of every
+  manuscript by the ADNI Depression Data and Publications Committee before journal submission.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I request access to data collected by the ADNI Depression Project (ADNI-D) for the purpose of scientific
+      investigation, teaching or the planning of clinical research studies and agree to the following terms.
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and
+      the planning of clinical studies.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any training must stay within the stated purposes.
+  derivatives:
+    value: unspecified
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use
+      application and understand that redistribution of data in any manner is prohibited.
+    note: The agreement does not address creating derived data. Use is limited to the analyses named in the data use
+      application.
+  publication:
+    value: conditional
+    quote: I will submit all manuscripts to the ADNI Depression Data and Publications Committee (DPC) prior to
+      submitting to a journal.
+    note: Abstracts and manuscripts are expected; manuscripts need the ADNI Depression author line, methods and
+      funding text and the committee review.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use
+      application and understand that redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use
+      application and understand that redistribution of data in any manner is prohibited.
+    note: The agreement does not say whether derived data such as labels or features count as "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: On the by-line of the manuscript, after the named authors, I will include the phrase "for the ADNI
+      Depression Project*" with the asterisk referring to the following statement and list of names
+    note: Abstracts must cite ADNI Depression as the data source and its funding as space allows. Manuscripts also
+      need the methods and funding text from the agreement, and the ADNI author line when ADNI data are used too.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the ADNI Depression Project (ADNI-D) for the purpose of scientific
+      investigation, teaching or the planning of clinical research studies and agree to the following terms.
+    note: Accepted with an electronic signature as part of the data use application on the LONI IDA.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'yes'
+    quote: I will submit all manuscripts to the ADNI Depression Data and Publications Committee (DPC) prior to
+      submitting to a journal.
+    note: The review is not scientific; it checks the citation and acknowledgement items and takes up to 2 weeks.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: The agreement asks for no derived data or results. Users must describe the planned analyses and answer annual
+      requests to update that information.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the ADNI Depression subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
