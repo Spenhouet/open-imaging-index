@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-cpb-brain-development
+name: NIMH Child Psychiatry Branch Brain Development Study
+full_name: >-
+  Child Psychiatry Branch of the National Institute of Mental Health longitudinal structural MRI study of human brain
+  development
+summary: >-
+  Longitudinal structural brain MRI from the NIMH Child Psychiatry Branch since 1989: over 6000 scans of over 2000 youth,
+  about half typically developing and half with ADHD, autism or childhood-onset schizophrenia. No public release of
+  the images was found.
+homepage: https://doi.org/10.1038/npp.2014.236
+doi: 10.1038/npp.2014.236
+# Year of the cohort description paper; the images have no public release.
+year: 2015
+creators:
+  - name: Child Psychiatry Branch, National Institute of Mental Health
+    url: https://www.nimh.nih.gov/
+modalities: [MR]
+anatomy: [brain]
+conditions: [healthy, adhd, autism, schizophrenia]
+tasks: [longitudinal, normative]
+countries: [US]
+access:
+  type: not_shared
+  url: https://doi.org/10.1038/npp.2014.236
+  note: >-
+    The paper has no data availability statement, and no download or request procedure for the images was found.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: No license or data use terms are published for the images.
+citation:
+  text: >-
+    Giedd JN, Raznahan A, Alexander-Bloch A, Schmitt E, Gogtay N, Rapoport JL. Child Psychiatry Branch of the National
+    Institute of Mental Health Longitudinal Structural Magnetic Resonance Imaging Study of Human Brain Development.
+    Neuropsychopharmacology 40(1), 43-49 (2015). doi:10.1038/npp.2014.236
+sources:
+  giedd2015:
+    title: Giedd et al. 2015, Neuropsychopharmacology (PMC4262916)
+    url: https://doi.org/10.1038/npp.2014.236
+    kind: paper
+related: []
+keywords: [brain development, pediatric neuroimaging, longitudinal MRI, twins, childhood-onset schizophrenia]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

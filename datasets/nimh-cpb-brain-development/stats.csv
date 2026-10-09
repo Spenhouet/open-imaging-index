@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,~2000,giedd2015,Introduction,"The paper states ""over 2000 subjects"" as of August 2014, about half from clinical populations and half typically developing"
+scans,,~6000,giedd2015,Introduction,"The paper states "">6000 scans"" as of August 2014, including >800 scans from twins"
+subjects,condition=healthy,618,giedd2015,Introduction,Typically developing subjects aged 5 to 25 years used for the normative trajectories; not necessarily every typically developing participant
+scans,condition=healthy,1171,giedd2015,Introduction,Longitudinal scans of the 618 typically developing subjects aged 5 to 25 years
+subjects,condition=schizophrenia,102,giedd2015,Childhood-Onset Schizophrenia,Childhood-onset schizophrenia cases to date (onset of psychosis before age 13)
