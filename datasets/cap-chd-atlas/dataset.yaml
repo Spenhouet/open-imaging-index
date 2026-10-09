@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cap-chd-atlas
+name: Cardiac Atlas Project CHD Atlas
+full_name: Cardiac Atlas Project Congenital Heart Disease (CHD) Atlas
+summary: >-
+  De-identified cardiac MRI, clinical data and biventricular shape models of 1,183 children and adults with congenital
+  heart disease, mostly tetralogy of Fallot, from San Diego and Auckland, hosted by UC San Diego under a data use
+  agreement.
+homepage: https://capchd.ucsd.edu/
+year: 2018
+status: active
+creators:
+  - name: Cardiac Mechanics Research Group, University of California San Diego
+    url: https://cmrg.ucsd.edu
+  - name: University of Auckland
+    url: https://www.auckland.ac.nz
+  - name: Cardiac Atlas Project
+    url: https://www.cardiacatlas.org
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [congenital_heart_disease]
+tasks: [segmentation]
+formats: [DICOM]
+countries: [US, NZ]
+vendors: [siemens, ge]
+field_strengths: [1.5]
+access:
+  type: signed_agreement
+  url: https://capchd.ucsd.edu/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Access needs a data use agreement between the requesting institution and the data owners (UC San Diego and the
+      University of Auckland), signed by an institutional signatory. UC San Diego sends the agreement template on
+      request and does not publish its text. The general Cardiac Atlas Project user policy is not stated to cover
+      this database.
+citation:
+  text: >-
+    Gilbert K, Forsch N, Hegde S, Mauger C, Omens JH, Perry JC, Pontré B, Suinesiaputra A, Young AA, McCulloch AD.
+    Atlas-Based Computational Analysis of Heart Shape and Function in Congenital Heart Disease. J Cardiovasc Transl
+    Res 11(2), 123-132 (2018). doi:10.1007/s12265-017-9778-5
+sources:
+  capchd-home:
+    title: Cardiac Atlas Project Congenital Heart Disease database, home page
+    url: https://capchd.ucsd.edu/
+    kind: website
+  gilbert2018:
+    title: Gilbert et al. 2018, J Cardiovasc Transl Res (author manuscript in PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5910190/
+    kind: paper
+  govil2023:
+    title: Govil et al. 2023, Scientific Reports (TOF atlas subset)
+    url: https://doi.org/10.1038/s41598-023-28358-w
+    kind: paper
+related: []
+keywords: [cardiac MRI, congenital heart disease, tetralogy of Fallot, biventricular shape model, statistical shape atlas]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
