@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,1384,tcia-covid-19-ny-sbu,Data Access table,
+studies,,7361,tcia-covid-19-ny-sbu,Data Access table,
+images,,562376,tcia-covid-19-ny-sbu,Data Access table,DICOM instances over all modalities in 17950 series
+subjects,condition=covid19,1384,tcia-covid-19-ny-sbu,Summary,All patients PCR positive
+subjects,modality=CR,1343,sbu-nbia-digest,"Modality column, Patient ID column",
+subjects,modality=DX,157,sbu-nbia-digest,"Modality column, Patient ID column",
+subjects,modality=CT,458,sbu-nbia-digest,"Modality column, Patient ID column",
+subjects,modality=MR,4,sbu-nbia-digest,"Modality column, Patient ID column",
+subjects,modality=PT,4,sbu-nbia-digest,"Modality column, Patient ID column",
+subjects,modality=NM,5,sbu-nbia-digest,"Modality column, Patient ID column",
+studies,modality=CR,5526,sbu-nbia-digest,"Modality column, Study Instance UID column",
+studies,modality=DX,1214,sbu-nbia-digest,"Modality column, Study Instance UID column",
+studies,modality=CT,617,sbu-nbia-digest,"Modality column, Study Instance UID column",
+studies,modality=MR,4,sbu-nbia-digest,"Modality column, Study Instance UID column",
+studies,modality=PT,5,sbu-nbia-digest,"Modality column, Study Instance UID column",
+studies,modality=NM,5,sbu-nbia-digest,"Modality column, Study Instance UID column",
+images,modality=CR,11509,sbu-nbia-digest,"Modality column, Image Count column",One image per series
+images,modality=DX,2623,sbu-nbia-digest,"Modality column, Image Count column",One image per series
+scans,modality=CT,3730,sbu-nbia-digest,"Modality column, one row per series",
+scans,modality=MR,48,sbu-nbia-digest,"Modality column, one row per series",
+scans,modality=PT,12,sbu-nbia-digest,"Modality column, one row per series",
+scans,modality=NM,20,sbu-nbia-digest,"Modality column, one row per series",
+subjects,vendor=carestream,1365,sbu-nbia-digest,"Manufacturer column, Patient ID column",All CR and DX series
+subjects,vendor=ge,363,sbu-nbia-digest,"Manufacturer column, Patient ID column",
+subjects,vendor=canon,132,sbu-nbia-digest,"Manufacturer column, Patient ID column",Manufacturer TOSHIBA
+subjects,vendor=siemens,10,sbu-nbia-digest,"Manufacturer column, Patient ID column",Includes SIEMENS NM
+subjects,sex=male,760,sbu-clinical-csv,gender_concept_name column,
+subjects,sex=female,592,sbu-clinical-csv,gender_concept_name column,
+subjects,sex=unknown,32,sbu-clinical-csv,gender_concept_name column,Value NA
+subjects,age=18-59,765,sbu-clinical-csv,age.splits column,"Source bin [18,59]"
+subjects,age=60-74,350,sbu-clinical-csv,age.splits column,"Source bin (59,74]"
+subjects,age=75-90,269,sbu-clinical-csv,age.splits column,"Source bin (74,90]"
