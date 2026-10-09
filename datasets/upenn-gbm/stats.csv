@@ -1,0 +1,47 @@
+measure,by,value,source,where,note
+subjects,,630,bakas2022,"Methods, Data",
+subjects,condition=glioblastoma,630,bakas2022,Abstract,de novo glioblastoma
+subjects,modality=MR,630,tcia-upenn-gbm,Data Access (Version 2),
+subjects,modality=SM,34,tcia-upenn-gbm,Data Access (Version 2),subjects with histopathology slides
+studies,,671,bakas2022,Table 1,611 pre-operative baseline and 60 follow-up scan sessions
+subjects,sex=female,252,bakas2022,Table 1,
+subjects,sex=male,378,bakas2022,Table 1,
+subjects,age=18-29,14,bakas2022,Table 1,
+subjects,age=30-49,69,bakas2022,Table 1,
+subjects,age=50-69,367,bakas2022,Table 1,
+subjects,age=70+,180,bakas2022,Table 1,
+age_min,,18,bakas2022,"Methods, Clinical data",age range 18-89
+age_max,,89,bakas2022,"Methods, Clinical data",age range 18-89
+age_mean,,62.7,tcia-upenn-gbm-clinical,"ID, Age_at_scan_years",age at the first available scan of each of the 630 subjects
+age_median,,63.4,tcia-upenn-gbm-clinical,"ID, Age_at_scan_years",age at the first available scan of each of the 630 subjects
+age_sd,,12.5,tcia-upenn-gbm-clinical,"ID, Age_at_scan_years",age at the first available scan of each of the 630 subjects
+studies,contrast=T1w,671,bakas2022,Table 1,structural scans (T1; T1-Gd; T2; T2-FLAIR) in every session
+studies,contrast=T1w_ce,671,bakas2022,Table 1,
+studies,contrast=T2w,671,bakas2022,Table 1,
+studies,contrast=FLAIR,671,bakas2022,Table 1,
+studies,contrast=dwi,592,bakas2022,Table 1,DTI
+studies,contrast=dsc,534,bakas2022,Table 1,
+studies,contrast_set=dsc+dwi+FLAIR+T1w+T1w_ce+T2w,527,tcia-upenn-gbm-availability,"Structural imaging, DTI imaging, DSC imaging",
+studies,contrast_set=FLAIR+T1w+T1w_ce+T2w,72,tcia-upenn-gbm-availability,"Structural imaging, DTI imaging, DSC imaging",
+studies,contrast_set=dwi+FLAIR+T1w+T1w_ce+T2w,65,tcia-upenn-gbm-availability,"Structural imaging, DTI imaging, DSC imaging",
+studies,contrast_set=dsc+FLAIR+T1w+T1w_ce+T2w,7,tcia-upenn-gbm-availability,"Structural imaging, DTI imaging, DSC imaging",
+subjects,contrast=T1w,630,tcia-upenn-gbm-availability,"ID, Structural imaging",
+subjects,contrast=T1w_ce,630,tcia-upenn-gbm-availability,"ID, Structural imaging",
+subjects,contrast=T2w,630,tcia-upenn-gbm-availability,"ID, Structural imaging",
+subjects,contrast=FLAIR,630,tcia-upenn-gbm-availability,"ID, Structural imaging",
+subjects,contrast=dwi,554,tcia-upenn-gbm-availability,"ID, DTI imaging",in at least one session
+subjects,contrast=dsc,497,tcia-upenn-gbm-availability,"ID, DSC imaging",in at least one session
+subjects,contrast_set=dsc+dwi+FLAIR+T1w+T1w_ce+T2w,491,tcia-upenn-gbm-availability,"ID, Structural imaging, DTI imaging, DSC imaging",contrasts pooled over a subject's sessions
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,70,tcia-upenn-gbm-availability,"ID, Structural imaging, DTI imaging, DSC imaging",contrasts pooled over a subject's sessions
+subjects,contrast_set=dwi+FLAIR+T1w+T1w_ce+T2w,63,tcia-upenn-gbm-availability,"ID, Structural imaging, DTI imaging, DSC imaging",contrasts pooled over a subject's sessions
+subjects,contrast_set=dsc+FLAIR+T1w+T1w_ce+T2w,6,tcia-upenn-gbm-availability,"ID, Structural imaging, DTI imaging, DSC imaging",contrasts pooled over a subject's sessions
+studies,vendor=siemens,663,tcia-upenn-gbm-acquisition,Manufacturer,
+studies,vendor=ge,8,tcia-upenn-gbm-acquisition,Manufacturer,
+subjects,vendor=siemens,622,tcia-upenn-gbm-acquisition,"ID, Manufacturer",
+subjects,vendor=ge,8,tcia-upenn-gbm-acquisition,"ID, Manufacturer",
+studies,field_strength=3,596,tcia-upenn-gbm-acquisition,Magnetic Field Strength,one more session reports 2.89 T
+studies,field_strength=1.5,74,tcia-upenn-gbm-acquisition,Magnetic Field Strength,
+scans,,3680,tcia-upenn-gbm,Data Access (Version 2),MR DICOM series
+images,,828234,tcia-upenn-gbm,Data Access (Version 2),MR DICOM image files
+slides,,71,tcia-upenn-gbm,Data Access (Version 2),H&E whole-slide images in NDPI format
+slides,contrast=he,71,tcia-upenn-gbm,Description,
