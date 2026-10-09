@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,515,alkafri2019,"Section II.A, p. 43489",575 patients collected; 60 removed during data selection
+studies,,558,mri-data-zip,study folders,
+images,,48345,alkafri2019,"Section II.A, p. 43490",2D DICOM slices
+subjects,contrast=T1w,515,alkafri2019,"Section II.A, p. 43490",only studies with T1w and T2w in both sagittal and axial views were selected
+subjects,contrast=T2w,515,alkafri2019,"Section II.A, p. 43490",only studies with T1w and T2w in both sagittal and axial views were selected
+subjects,country=JO,515,alkafri2019,"Section II.A, p. 43489",Irbid Specialty Hospital
+subjects,vendor=siemens,515,mri-data-zip,DICOM Manufacturer,all MAGNETOM ESSENZA
+subjects,field_strength=1.5,515,mri-data-zip,DICOM MagneticFieldStrength,
+subjects,sex=female,198,mri-data-zip,DICOM PatientSex,
+subjects,sex=male,317,mri-data-zip,DICOM PatientSex,
+subjects,age=10-19,6,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=20-29,95,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=30-39,145,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=40-49,129,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=50-59,86,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=60-69,25,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=70-79,26,mri-data-zip,DICOM PatientAge,age at the first study
+subjects,age=80-89,3,mri-data-zip,DICOM PatientAge,age at the first study
+age_mean,,41.8,mri-data-zip,DICOM PatientAge,
+age_sd,,13.4,mri-data-zip,DICOM PatientAge,
+age_median,,40,mri-data-zip,DICOM PatientAge,
+age_min,,17,mri-data-zip,DICOM PatientAge,
+age_max,,89,mri-data-zip,DICOM PatientAge,
