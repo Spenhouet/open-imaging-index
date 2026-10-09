@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: indi-beijing-enhanced
+name: INDI Beijing Enhanced
+full_name: Beijing Normal University Enhanced Sample (INDI Retrospective)
+summary: >-
+  Resting-state fMRI, T1-weighted MPRAGE and 64-direction DTI from 180 healthy students at Beijing Normal University,
+  with Wechsler IQ scores for 55 of them. Extends the Beijing_Zang sample of the 1000 Functional Connectomes Project.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced.html
+year: 2010
+status: active
+creators:
+  - name: State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University (Yu-Feng Zang)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [CN]
+access:
+  type: registration
+  url: https://www.nitrc.org/project/request.php?group_id=296
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement. Downloads
+      need a NITRC account and membership in the 1000 Functional Connectomes Project on NITRC.
+sources:
+  indi-beijing-enhanced-page:
+    title: Beijing Enhanced Sample release page, FCP/INDI Retrospective (summary, data list, release notes)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced.html
+    kind: website
+  indi-beijing-enhanced-sequence:
+    title: Sequence information for BeijingEnhanced (PDF linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced/BeijingEnhancedSequence.pdf
+    kind: website
+  nitrc-fcp-news-2010-12:
+    title: 'FCP/INDI: More Data Releases and FCP One-Year Anniversary, NITRC news, 23 December 2010'
+    url: https://www.nitrc.org/forum/forum.php?forum_id=1848
+    kind: website
+related: [fcp-1000]
+keywords: [resting-state fMRI, DTI, IQ, functional connectivity, INDI, Beijing Normal University]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

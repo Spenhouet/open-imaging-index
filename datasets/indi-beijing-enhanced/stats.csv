@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,180,indi-beijing-enhanced-page,Summary,
+subjects,condition=healthy,180,indi-beijing-enhanced-page,Summary,healthy controls from a student community sample
+subjects,contrast=bold,180,indi-beijing-enhanced-page,Summary,8-minute resting-state scan released for every participant
+subjects,contrast=T1w,180,indi-beijing-enhanced-page,Summary,defaced MPRAGE released for every participant
+subjects,contrast=dwi,180,indi-beijing-enhanced-page,Summary,64-direction DTI released for every participant
+subjects,contrast_set=bold+dwi+T1w,180,indi-beijing-enhanced-page,Summary,the page lists all three scans for every participant
+subjects,country=CN,180,indi-beijing-enhanced-page,Summary,
