@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: breast-diagnosis
+name: BREAST-DIAGNOSIS
+summary: >-
+  1.5 T breast MRI (T2-weighted, STIR and dynamic contrast-enhanced series) of 88 women with breast cancer, DCIS,
+  benign findings or high risk, with mammography for some and PET/CT for a few, plus a clinical, pathology and BI-RADS
+  spreadsheet.
+homepage: https://www.cancerimagingarchive.net/collection/breast-diagnosis/
+doi: 10.7937/K9/TCIA.2015.SDNRQXXR
+year: 2011
+version: '1'
+status: active
+creators:
+  - name: B. Nicolas Bloch, Ashali Jain and C. Carl Jaffe
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, MG, CT, PT]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [classification, longitudinal]
+formats: [DICOM]
+vendors: [philips, hologic, ge]
+field_strengths: [1.5]
+size_gb: 60.87
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/breast-diagnosis/
+  note: >-
+    DICOM images via the TCIA Data Retriever; the clinical spreadsheet as a direct download from the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Bloch BN, Jain A, Jaffe CC. (2015). BREAST-DIAGNOSIS [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2015.SDNRQXXR
+sources:
+  tcia-breast-diagnosis:
+    title: TCIA BREAST-DIAGNOSIS collection page (version 1, updated 2011/11/09)
+    url: https://www.cancerimagingarchive.net/collection/breast-diagnosis/
+    kind: website
+  tcia-breast-diagnosis-series:
+    title: TCIA NBIA API series metadata for BREAST-DIAGNOSIS (CC BY 3.0, open, no account)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=BREAST-DIAGNOSIS&format=json
+    kind: computed
+  tcia-breast-diagnosis-patients:
+    title: TCIA NBIA API patient metadata for BREAST-DIAGNOSIS (CC BY 3.0, open, no account)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=BREAST-DIAGNOSIS&format=json
+    kind: computed
+  tcia-breast-diagnosis-clinical:
+    title: BREAST-DIAGNOSIS clinical spreadsheet, updated 7/16/11 (CC BY 3.0, open, no account)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/TCIA-Breast-clinical-data-public-7_16_11.xlsx
+    kind: computed
+related: []
+keywords: [breast cancer, breast MRI, DCE-MRI, STIR, DCIS, mammography, BI-RADS, receptor status, Oncotype DX]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
