@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,1188,drysdale2017,Abstract,data set 1 (711) plus data set 2 (477); excludes the separate GAD (39) and schizophrenia (41) cohorts
+subjects,modality=MR,1188,drysdale2017,Online Methods: MRI data acquisition,
+subjects,contrast=bold,1188,drysdale2017,Online Methods: MRI data acquisition,resting-state fMRI in all subjects
+subjects,contrast=T1w,1188,drysdale2017,Online Methods: MRI data acquisition,MP-RAGE or SPGR anatomical scan for parcellation and co-registration
+subjects,split=train,711,drysdale2017,Online Methods: Subjects,data set 1 (training set)
+subjects,split=test,477,drysdale2017,Online Methods: Subjects,data set 2 (independent replication set)
+subjects,condition=depression,458,drysdale2017,Online Methods: Subjects,"333 patients in data set 1 plus 125 in data set 2; the sum matches the stated total of 1,188"
+subjects,condition=healthy,730,drysdale2017,Online Methods: Subjects,"378 controls in data set 1 plus 352 in data set 2; the sum matches the stated total of 1,188"
+subjects,condition=depression;split=train,333,drysdale2017,Online Methods: Subjects,current major depressive episode
+subjects,condition=healthy;split=train,378,drysdale2017,Online Methods: Subjects,
+subjects,condition=depression;split=test,125,drysdale2017,Online Methods: Subjects,109 unipolar and 16 bipolar II
+subjects,condition=healthy;split=test,352,drysdale2017,Online Methods: Subjects,
+age_mean,condition=depression;split=train,40.6,drysdale2017,Online Methods: Subjects,
+age_mean,condition=healthy;split=train,38.0,drysdale2017,Online Methods: Subjects,
+age_mean,condition=depression;split=test,49.8,drysdale2017-si,Supplementary Table 3,
+age_mean,condition=healthy;split=test,32.1,drysdale2017-si,Supplementary Table 3,
+subjects,vendor=ge,220,drysdale2017-si,Supplementary Table 1,GE Signa 3T; Cornell 1 (96) and Toronto (124) patients of the cluster-discovery set; scanners of the other sites are not reported
+subjects,field_strength=3,220,drysdale2017-si,Supplementary Table 1,Cornell 1 and Toronto patients of the cluster-discovery set
