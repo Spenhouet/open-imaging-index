@@ -5,14 +5,3 @@ images,contrast=cine,7980,andreopoulos2008,Section 3.1,FIESTA cine sequences
 subjects,contrast=cine,33,andreopoulos2008,Section 3.1,
 subjects,vendor=ge,33,andreopoulos2008,Section 3.1,GE Genesis Signa scanner
 subjects,country=CA,33,andreopoulos2008,Section 3.1,Hospital for Sick Children
-subjects,condition=healthy,2,york-cardiac-metadata,Diagnosis/History,Entries recorded as NORMAL
-subjects,condition=arrhythmogenic_right_ventricular_cardiomyopathy,3,york-cardiac-metadata,Diagnosis/History,"Entries recorded as ARVD; 5 further entries record ARVD only as a rule-out (R/O ARVD) and are not counted"
-subjects,condition=left_ventricular_hypertrophy,2,york-cardiac-metadata,Diagnosis/History,Entries containing LVH
-subjects,condition=myocardial_infarction,2,york-cardiac-metadata,Diagnosis/History,Entries recorded as MI or RV-MI
-subjects,age=0-9,9,york-cardiac-metadata,Age,Age missing for 1 subject
-subjects,age=10-19,23,york-cardiac-metadata,Age,All subjects were under 18 (Section 3.1 of the paper)
-age_mean,,12.1,york-cardiac-metadata,Age,32 subjects with a recorded age
-age_sd,,4.1,york-cardiac-metadata,Age,Sample standard deviation
-age_median,,13,york-cardiac-metadata,Age,
-age_min,,2,york-cardiac-metadata,Age,
-age_max,,17,york-cardiac-metadata,Age,

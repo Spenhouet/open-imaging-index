@@ -8,9 +8,8 @@ Diagnostic Imaging of the Hospital for Sick Children in Toronto.
 
 Each of the 33 subjects has one sequence of exactly 20 frames over the cardiac cycle, with 8 to 15 short-axis slices,
 giving 7980 2D images in total. All subjects were younger than 18. The paper describes most of them as having heart
-abnormalities such as cardiomyopathy, aortic regurgitation, enlarged ventricles or ischemia. The public metadata file
-gives an age and a free-text diagnosis or history line per subject; it records two subjects as normal and covers a
-range of congenital and acquired conditions, several of them noted only as suspected. Images and contours are MATLAB
+abnormalities such as cardiomyopathy, aortic regurgitation, enlarged ventricles or ischemia. A metadata file gives the
+age and a short free-text diagnosis or history note per subject. Images and contours are MATLAB
 .mat files, one per subject, and the images are the raw values of the original 16-bit DICOM files.
 
 ## Acquisition
@@ -31,4 +30,4 @@ nearest the posterior interventricular sulcus. Small MATLAB scripts for overlayi
 - Single centre, single scanner, small paediatric cohort.
 - One annotator, with no reported second reading.
 - Only the left ventricle is outlined; slices where either border was not visible have no contours.
-- Diagnoses are short free-text notes, one subject has no age or diagnosis, and several entries are rule-outs.
+- Diagnoses are short free-text notes rather than coded categories, and no group sizes are reported.

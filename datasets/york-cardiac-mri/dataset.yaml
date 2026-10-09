@@ -18,7 +18,7 @@ species: human
 modalities: [MR]
 contrasts: [cine]
 anatomy: [heart]
-conditions: [healthy, arrhythmogenic_right_ventricular_cardiomyopathy, left_ventricular_hypertrophy, myocardial_infarction]
+conditions: [cardiomyopathy]
 tasks: [segmentation]
 formats: [MAT]
 countries: [CA]
@@ -42,10 +42,6 @@ sources:
     title: Tsotsos Lab datasets page, Cardiac MRI Dataset section
     url: http://jtl.lassonde.yorku.ca/software/datasets/
     kind: website
-  york-cardiac-metadata:
-    title: Dataset metadata file (metadata.txt, open download), counted from the Age and Diagnosis/History columns
-    url: https://data.nvision.eecs.yorku.ca/datasets/MRI/metadata.txt
-    kind: computed
 related: [sunnybrook-cardiac-data, acdc]
 keywords: [cardiac MRI, cine MRI, left ventricle segmentation, pediatric, congenital heart disease, active appearance model]
 verified:
