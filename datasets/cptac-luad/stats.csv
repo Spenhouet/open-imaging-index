@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,244,tcia-cptac-luad,Collection Snapshot,"all subjects in the collection, radiology and pathology"
+subjects,modality=SM,243,tcia-cptac-luad,Data Access (Version 13),subjects with tissue slide images
+slides,,1137,tcia-cptac-luad,Data Access (Version 13),
+studies,,75,tcia-cptac-luad,Data Access (Version 13),radiology only (38 subjects)
+scans,,448,tcia-cptac-luad,Data Access (Version 13),DICOM series
+images,,72555,tcia-cptac-luad,Data Access (Version 13),DICOM images
+subjects,modality=CT,37,tcia-cptac-luad-digest,"Patient ID, Modality columns",radiology subset (38 subjects) only
+subjects,modality=PT,11,tcia-cptac-luad-digest,"Patient ID, Modality columns",radiology subset (38 subjects) only
+subjects,modality=MR,2,tcia-cptac-luad-digest,"Patient ID, Modality columns",radiology subset (38 subjects) only
+subjects,sex=male,22,tcia-cptac-luad-digest,"Patient ID, Patient Sex columns","radiology subset only, 1 subject without a value"
+subjects,sex=female,15,tcia-cptac-luad-digest,"Patient ID, Patient Sex columns","radiology subset only, 1 subject without a value"
+subjects,vendor=siemens,18,tcia-cptac-luad-digest,"Patient ID, Manufacturer columns","radiology subset only, 4 subjects have series without a manufacturer"
+subjects,vendor=ge,17,tcia-cptac-luad-digest,"Patient ID, Manufacturer columns","radiology subset only, 4 subjects have series without a manufacturer"
+subjects,vendor=philips,10,tcia-cptac-luad-digest,"Patient ID, Manufacturer columns","radiology subset only, 4 subjects have series without a manufacturer"
+subjects,vendor=hitachi,1,tcia-cptac-luad-digest,"Patient ID, Manufacturer columns","radiology subset only, recorded as Hitachi Medical Corporation"
