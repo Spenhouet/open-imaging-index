@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,250,tcia-cptac-ucec,Collection Snapshot,"all subjects in the collection, radiology and pathology"
+subjects,modality=SM,250,tcia-cptac-ucec,Data Access (Version 13),subjects with tissue slide images
+slides,,887,tcia-cptac-ucec,Data Access (Version 13),SVS whole-slide images
+studies,,146,tcia-cptac-ucec,Data Access (Version 13),radiology only
+scans,,1959,tcia-cptac-ucec,Data Access (Version 13),DICOM series
+images,,187026,tcia-cptac-ucec,Data Access (Version 13),DICOM images
+subjects,modality=CT,75,tcia-api-cptac-ucec-series,Modality; PatientID,radiology subset (90 subjects)
+subjects,modality=MR,36,tcia-api-cptac-ucec-series,Modality; PatientID,radiology subset (90 subjects)
+subjects,modality=PT,3,tcia-api-cptac-ucec-series,Modality; PatientID,radiology subset (90 subjects)
+subjects,modality=US,2,tcia-api-cptac-ucec-series,Modality; PatientID,radiology subset (90 subjects)
+studies,modality=CT,107,tcia-api-cptac-ucec-series,Modality; StudyInstanceUID,
+studies,modality=MR,37,tcia-api-cptac-ucec-series,Modality; StudyInstanceUID,
+studies,modality=PT,3,tcia-api-cptac-ucec-series,Modality; StudyInstanceUID,
+studies,modality=US,2,tcia-api-cptac-ucec-series,Modality; StudyInstanceUID,
+scans,modality=CT,894,tcia-api-cptac-ucec-series,Modality,DICOM series
+scans,modality=MR,1056,tcia-api-cptac-ucec-series,Modality,DICOM series
+scans,modality=PT,7,tcia-api-cptac-ucec-series,Modality,DICOM series
+scans,modality=US,2,tcia-api-cptac-ucec-series,Modality,DICOM series
+subjects,sex=female,85,tcia-api-cptac-ucec-patients,PatientSex,radiology subset (90 subjects)
+subjects,sex=unknown,5,tcia-api-cptac-ucec-patients,PatientSex,"radiology subset (90 subjects), PatientSex empty"
+subjects,vendor=siemens,44,tcia-api-cptac-ucec-series,Manufacturer; PatientID,"radiology subset, recorded as SIEMENS; 27 subjects have no Manufacturer"
+subjects,vendor=ge,21,tcia-api-cptac-ucec-series,Manufacturer; PatientID,"radiology subset, recorded as GE MEDICAL SYSTEMS"
+subjects,vendor=canon,2,tcia-api-cptac-ucec-series,Manufacturer; PatientID,"radiology subset, recorded as TOSHIBA"
