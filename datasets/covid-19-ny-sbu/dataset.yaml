@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: covid-19-ny-sbu
+name: COVID-19-NY-SBU
+full_name: Stony Brook University COVID-19 Positive Cases
+summary: >-
+  Clinical imaging of 1,384 PCR-positive COVID-19 patients from Stony Brook Medicine, mostly portable chest
+  radiographs plus chest and abdominal CT and a few MRI, PET and nuclear medicine studies, linked to OMOP-based
+  clinical data on outcomes, ICU stay and ventilation.
+homepage: https://www.cancerimagingarchive.net/collection/covid-19-ny-sbu/
+doi: 10.7937/TCIA.BBAG-2923
+year: 2021
+version: '1'
+status: active
+creators:
+  - name: Joel Saltz, Mary Saltz, Prateek Prasanna, Richard Moffitt, Janos Hajagos, Erich Bremer, Joseph Balsamo, Tahsin Kurc (Stony Brook University)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CR, DX, CT, MR, PT, NM]
+anatomy: [chest, lung, abdomen]
+conditions: [covid19]
+tasks: [classification, survival]
+formats: [DICOM]
+countries: [US]
+size_gb: 511.48
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/covid-19-ny-sbu/
+  note: Images download with the TCIA Data Retriever; the clinical CSV and its field template download directly.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      TCIA lists the images, the clinical data and the clinical data template under CC BY 4.0. Users must also
+      agree to the TCIA Data Usage Policy, which says users must "Not use the requested datasets, either alone or
+      in concert with any other information, to identify or contact individual participants" and requires citing
+      the dataset DOI (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/).
+citation:
+  text: >-
+    Saltz J, Saltz M, Prasanna P, Moffitt R, Hajagos J, Bremer E, Balsamo J, Kurc T. (2021). Stony Brook
+    University COVID-19 Positive Cases [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/TCIA.BBAG-2923
+sources:
+  tcia-covid-19-ny-sbu:
+    title: TCIA collection page COVID-19-NY-SBU (version 1, 2021-08-11)
+    url: https://www.cancerimagingarchive.net/collection/covid-19-ny-sbu/
+    kind: website
+  sbu-nbia-digest:
+    title: >-
+      COVID-19-NY-SBU manifest NBIA digest (open download, CC BY 4.0), one row per series, counted per Patient
+      ID, Study Instance UID and series
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/COVID-19-NY-SBU-manifest_20210810-nbia-digest.xlsx
+    kind: computed
+  sbu-clinical-csv:
+    title: >-
+      COVID-19-NY-SBU clinical data deidentified_overlap_tcia.csv.cleaned.csv (open download, CC BY 4.0), one row
+      per patient
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/deidentified_overlap_tcia.csv.cleaned.csv_20210806.csv
+    kind: computed
+related: []
+keywords: [COVID-19, chest radiograph, portable chest X-ray, chest CT, prognosis, OMOP clinical data]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
