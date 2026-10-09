@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,112,vandyken2024,Abstract and Table 1,subjects with usable 7 T T1w and diffusion scans after exclusions; a larger number were scanned
+subjects,condition=psychotic_disorder,58,vandyken2024,Table 1,untreated first-episode psychosis with a schizophrenia spectrum diagnosis
+subjects,condition=schizophrenia,17,vandyken2024,Table 1,established-illness group only; first-episode patients diagnosed with schizophrenia are counted under psychotic disorder
+subjects,condition=healthy,37,vandyken2024,Table 1,
+subjects,sex=male,86,vandyken2024,Table 1,"sum of 24 controls, 48 first-episode and 14 established-illness men; the three groups are disjoint and complete"
+subjects,sex=female,26,vandyken2024,Table 1,"sum of 13 controls, 10 first-episode and 3 established-illness women; the three groups are disjoint and complete"
+subjects,condition=healthy;sex=male,24,vandyken2024,Table 1,
+subjects,condition=healthy;sex=female,13,vandyken2024,Table 1,
+subjects,condition=psychotic_disorder;sex=male,48,vandyken2024,Table 1,
+subjects,condition=psychotic_disorder;sex=female,10,vandyken2024,Table 1,
+subjects,condition=schizophrenia;sex=male,14,vandyken2024,Table 1,
+subjects,condition=schizophrenia;sex=female,3,vandyken2024,Table 1,
+subjects,contrast=MP2RAGE,112,vandyken2024,Methods (TOPSY Dataset),0.75 mm isotropic MP2RAGE T1w
+subjects,contrast=dwi,112,vandyken2024,Methods (TOPSY Dataset),"2 mm isotropic, 64 directions at b = 1000 in AP and PA"
+subjects,contrast_set=dwi+MP2RAGE,112,vandyken2024,Methods (TOPSY Dataset),contrasts analysed in this paper only
+subjects,field_strength=7,112,vandyken2024,Methods (TOPSY Dataset),
+subjects,vendor=siemens,112,vandyken2024,Methods (TOPSY Dataset),Siemens MAGNETOM Plus 7 T head-only scanner
+subjects,country=CA,112,vandyken2024,Methods (TOPSY Dataset),"London, Ontario"
+age_mean,condition=healthy,21.70,vandyken2024,Table 1,
+age_sd,condition=healthy,3.49,vandyken2024,Table 1,
+age_mean,condition=psychotic_disorder,22.76,vandyken2024,Table 1,
+age_sd,condition=psychotic_disorder,4.62,vandyken2024,Table 1,
+age_mean,condition=schizophrenia,28.81,vandyken2024,Table 1,
+age_sd,condition=schizophrenia,7.46,vandyken2024,Table 1,

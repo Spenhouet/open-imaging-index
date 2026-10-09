@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: topsy
+name: TOPSY 7T psychosis cohort
+full_name: Tracking Outcomes in Psychosis (TOPSY), 7 T MRI and MRS study of untreated first-episode psychosis, Western University
+summary: >-
+  Longitudinal 7 T brain MRI (MP2RAGE, diffusion, resting fMRI, anterior cingulate MR spectroscopy) of people with
+  untreated first-episode psychosis, established schizophrenia and healthy controls from London, Ontario. The images
+  are not publicly released.
+homepage: https://clinicaltrials.gov/study/NCT02882204
+# Study start on ClinicalTrials.gov (March 2016); the images have not been publicly released.
+year: 2016
+creators:
+  - name: Lawson Health Research Institute and Robarts Research Institute, Western University (Lena Palaniyappan)
+    url: https://clinicaltrials.gov/study/NCT02882204
+species: human
+modalities: [MR]
+contrasts: [MP2RAGE, dwi, bold]
+anatomy: [brain]
+conditions: [psychotic_disorder, schizophrenia, healthy]
+tasks: [classification, longitudinal]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [7]
+access:
+  type: on_request
+  url: https://talkbank.org/psychosis/access/English/Palaniyappan/TOPSY.html
+  note: >-
+    The ClinicalTrials.gov record states that individual participant data will not be shared. The speech recordings,
+    transcripts and clinical scores of part of the cohort are in the PsychosisBank TOPSY corpus, open to members
+    approved by the DISCOURSE Consortium for non-commercial research. That corpus lists audio as its media; its page
+    says the 7 T MRI data also exist but publishes no route to the images, and refers questions to the study lead.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: No license or data use terms for the MRI data are published on the trial record, in the papers or on the PsychosisBank page.
+citation:
+  text: >-
+    Dempster K, Jeon P, MacKinley M, Williamson P, Théberge J, Palaniyappan L. Early treatment response in first
+    episode psychosis: a 7-T magnetic resonance spectroscopic study of glutathione and glutamate. Molecular Psychiatry
+    25, 1640-1650 (2020). doi:10.1038/s41380-020-0704-x
+sources:
+  nct02882204:
+    title: ClinicalTrials.gov record NCT02882204, Tracking Outcomes in Psychosis (TOPSY)
+    url: https://clinicaltrials.gov/study/NCT02882204
+    kind: website
+  dempster2020:
+    title: Dempster et al. 2020, Molecular Psychiatry (PMC7387300)
+    url: https://doi.org/10.1038/s41380-020-0704-x
+    kind: paper
+  vandyken2024:
+    title: Van Dyken et al. 2024, Schizophrenia Bulletin Open, Cortical network disruption in early psychosis (PMC11207789)
+    url: https://doi.org/10.1093/schizbullopen/sgae010
+    kind: paper
+  bhullar2026:
+    title: Bhullar et al. 2026, Data in Brief, TOPSY picture description dataset (PMC13157082)
+    url: https://doi.org/10.1016/j.dib.2026.112788
+    kind: paper
+  psychosisbank-topsy:
+    title: PsychosisBank TOPSY corpus page
+    url: https://talkbank.org/psychosis/access/English/Palaniyappan/TOPSY.html
+    kind: website
+related: []
+keywords: [first-episode psychosis, schizophrenia, 7 T MRI, MR spectroscopy, glutathione, glutamate, anterior cingulate cortex, diffusion MRI, antipsychotic naive]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
