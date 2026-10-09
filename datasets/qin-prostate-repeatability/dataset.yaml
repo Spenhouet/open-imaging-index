@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qin-prostate-repeatability
+name: QIN-PROSTATE-Repeatability
+summary: >-
+  Test-retest multiparametric prostate MRI of 15 men with confirmed or suspected prostate cancer, scanned twice within
+  2 weeks at 3 T, with manual segmentations of gland, peripheral zone and suspected tumor and volume and ADC
+  measurements, all as DICOM.
+homepage: https://www.cancerimagingarchive.net/collection/qin-prostate-repeatability/
+doi: 10.7937/K9/TCIA.2018.MR1CKGND
+year: 2018
+updated: 2020
+version: '3'
+status: active
+creators:
+  - name: Brigham and Women's Hospital (Fedorov A, Schwier M, Clunie D, Herz C, Pieper S, Kikinis R, Tempany C, Fennessy F)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, ADC, dce]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, longitudinal]
+formats: [DICOM]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 14.86
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/qin-prostate-repeatability/
+  note: >-
+    Download with the TCIA Data Retriever. Version 3 (2020/11/09) lifted the earlier QIN access embargo; use must
+    follow the TCIA Data Usage Policies and Restrictions.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Fedorov A, Schwier M, Clunie D, Herz C, Pieper S, Kikinis R, Tempany C, Fennessy F. (2018). Data From
+    QIN-PROSTATE-Repeatability. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2018.MR1CKGND.
+    Publication: Fedorov A, Schwier M, Clunie D, et al. An annotated test-retest collection of prostate
+    multiparametric MRI. Scientific Data 5, 180281 (2018). https://doi.org/10.1038/sdata.2018.281
+sources:
+  tcia-qin-prostate-repeatability:
+    title: TCIA QIN-PROSTATE-Repeatability collection page (version 3, updated 2020/11/09)
+    url: https://www.cancerimagingarchive.net/collection/qin-prostate-repeatability/
+    kind: website
+  fedorov2018:
+    title: Fedorov et al. 2018, Scientific Data
+    url: https://doi.org/10.1038/sdata.2018.281
+    kind: paper
+  fedorov2017:
+    title: Fedorov et al. 2017, Investigative Radiology (PMC5544576)
+    url: https://doi.org/10.1097/RLI.0000000000000382
+    kind: paper
+keywords: [test-retest, repeatability, multiparametric MRI, endorectal coil, PI-RADS, DICOM SEG, quantitative imaging]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
