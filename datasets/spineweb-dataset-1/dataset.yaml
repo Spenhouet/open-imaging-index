@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spineweb-dataset-1
+name: SpineWeb Dataset 1
+full_name: 'SpineWeb Dataset 1: Cross Modality Spinal Images for Spine Workshop'
+summary: >-
+  30 pairs of lumbar spine CT and MR scans, each pair from the same subject, released on SpineWeb for its Spine Workshop.
+  No ground truth labels are provided. Shared after a request form with a research description.
+homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+year: 2013
+updated: 2014
+creators:
+  - name: SpineWeb
+    url: http://spineweb.digitalimaginggroup.ca/
+species: human
+modalities: [CT, MR]
+anatomy: [spine]
+access:
+  type: application
+  url: http://spineweb.digitalimaginggroup.ca/dataset.php
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The dataset page states no license or terms of use for Dataset 1. The request form asks for the applicant's
+      institution, a brief description of the research and the details of the project's principal investigator.
+sources:
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page as archived in June 2024
+    url: https://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+  spineweb-dataset-form-2013:
+    title: SpineWeb dataset request page as archived in November 2013
+    url: https://web.archive.org/web/20131122135445/http://spineweb.digitalimaginggroup.ca:80/dataset.html
+    kind: website
+  spineweb-home-2014:
+    title: SpineWeb home page as archived in July 2014
+    url: https://web.archive.org/web/20140707105223/http://spineweb.digitalimaginggroup.ca:80/
+    kind: website
+related: []
+keywords: [spine, lumbar spine, CT, MRI, paired CT and MR, cross-modality, SpineWeb, spine workshop]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
