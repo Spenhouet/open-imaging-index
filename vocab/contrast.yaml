@@ -19,6 +19,7 @@ terms:
       mappings: { bids: FLAIR }
     }
   - { id: PDw, label: Proton density weighted, group: MR, mappings: { bids: PDw } }
+  - { id: STIR, label: STIR, group: MR, description: Short tau inversion recovery (fat-suppressed), synonyms: [T2 STIR] }
   - { id: T2starw, label: T2*-weighted, group: MR, synonyms: [GRE, T2*-GRE], mappings: { bids: T2starw } }
   - {
       id: swi,

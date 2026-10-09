@@ -1,0 +1,43 @@
+measure,by,value,source,where,note
+subjects,,88,tcia-breast-diagnosis,Data Access,
+studies,,148,tcia-breast-diagnosis,Data Access,"imaging studies; several patients have more than one time point"
+scans,,429,tcia-breast-diagnosis,Data Access,"DICOM series; excludes the structured report series added later by the DICOM-SR-Breast-Clinical analysis result"
+images,,105050,tcia-breast-diagnosis,Data Access,DICOM images
+subjects,sex=female,88,tcia-breast-diagnosis-patients,PatientSex,
+subjects,modality=MR,84,tcia-breast-diagnosis-series,"PatientID, Modality",
+subjects,modality=MG,17,tcia-breast-diagnosis-series,"PatientID, Modality","includes surgical specimen radiographs"
+subjects,modality=CT,3,tcia-breast-diagnosis-series,"PatientID, Modality",PET/CT
+subjects,modality=PT,3,tcia-breast-diagnosis-series,"PatientID, Modality",PET/CT
+studies,modality=MR,112,tcia-breast-diagnosis-series,"StudyInstanceUID, Modality",
+studies,modality=MG,23,tcia-breast-diagnosis-series,"StudyInstanceUID, Modality",
+scans,modality=MR,345,tcia-breast-diagnosis-series,"SeriesInstanceUID, Modality",
+scans,modality=MG,58,tcia-breast-diagnosis-series,"SeriesInstanceUID, Modality",
+scans,modality=CT,18,tcia-breast-diagnosis-series,"SeriesInstanceUID, Modality",
+scans,modality=PT,8,tcia-breast-diagnosis-series,"SeriesInstanceUID, Modality",
+images,modality=MR,101145,tcia-breast-diagnosis-series,"ImageCount, Modality",
+images,modality=MG,65,tcia-breast-diagnosis-series,"ImageCount, Modality",
+images,modality=CT,2664,tcia-breast-diagnosis-series,"ImageCount, Modality",
+images,modality=PT,1176,tcia-breast-diagnosis-series,"ImageCount, Modality",
+subjects,vendor=philips,84,tcia-breast-diagnosis-series,"PatientID, Manufacturer","MR on Philips Achieva (81 subjects) and Intera (9 subjects)"
+subjects,vendor=hologic,17,tcia-breast-diagnosis-series,"PatientID, Manufacturer","mammography on Lorad Selenia and Lorad DSM"
+subjects,vendor=ge,3,tcia-breast-diagnosis-series,"PatientID, Manufacturer",GE Discovery STE PET/CT
+subjects,contrast=T2w,83,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",T2W_TSE series
+subjects,contrast=STIR,83,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",STIR and T2 STIR series
+subjects,contrast=dce,83,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription","BLISS dynamic series (with the pre-contrast BLISS_PRE phase) and DYN_THRIVE series"
+subjects,contrast=T1w,3,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",non-dynamic axial T1-weighted series
+subjects,contrast=dwi,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",DTI series
+subjects,contrast=ADC,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",ADC map series
+subjects,contrast_set=dce+STIR+T2w,76,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=dce+STIR+T1w+T2w,3,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=dce+dwi+STIR+T2w,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=ADC+dce+STIR+T2w,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=dce+STIR,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=dce+T2w,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,contrast_set=STIR+T2w,1,tcia-breast-diagnosis-series,"PatientID, Modality, SeriesDescription",
+subjects,view=CC,12,tcia-breast-diagnosis-series,"PatientID, SeriesDescription",mammography series labelled L CC or R CC
+subjects,view=MLO,5,tcia-breast-diagnosis-series,"PatientID, SeriesDescription",mammography series labelled L MLO or R MLO
+subjects,age=20-29,1,tcia-breast-diagnosis-clinical,Age decade,of 19 imaged subjects with an age decade in the spreadsheet
+subjects,age=40-49,8,tcia-breast-diagnosis-clinical,Age decade,of 19 imaged subjects with an age decade in the spreadsheet
+subjects,age=50-59,7,tcia-breast-diagnosis-clinical,Age decade,of 19 imaged subjects with an age decade in the spreadsheet
+subjects,age=60-69,2,tcia-breast-diagnosis-clinical,Age decade,of 19 imaged subjects with an age decade in the spreadsheet
+subjects,age=70-79,1,tcia-breast-diagnosis-clinical,Age decade,of 19 imaged subjects with an age decade in the spreadsheet
