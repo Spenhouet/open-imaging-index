@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spineweb-dataset-11
+name: SpineWeb Dataset 11 (anisotropic lumbar MRI)
+full_name: 'SpineWeb Dataset 11: High anisotropy MRIs of the lower back'
+summary: >-
+  17 anonymized routine lumbar spine MRI volumes (T1, T2 and TIRM) with strongly anisotropic voxels, from several
+  hospitals, with manual vertebral body segmentations as surface meshes. Released by the University of Siegen with
+  its vertebra segmentation code.
+homepage: https://www.cg.informatik.uni-siegen.de/en/spine-segmentation-and-analysis
+year: 2014
+creators:
+  - name: Dženan Zukić and Andreas Kolb, Computer Graphics and Multimedia Systems Group, University of Siegen
+    url: https://www.cg.informatik.uni-siegen.de/en/spine-segmentation-and-analysis
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, STIR]
+anatomy: [spine]
+tasks: [segmentation]
+formats: [DICOM]
+access:
+  type: open
+  url: https://www.cg.informatik.uni-siegen.de/en/spine-segmentation-and-analysis
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license is named for the images or segmentations. The paper states that the program code is released under an
+      open source license, without naming it, and the project page and paper ask users to cite the paper. No license
+      file was found next to the downloads.
+citation:
+  text: >-
+    Zukić D, Vlasák A, Egger J, Hořínek D, Nimsky C, Kolb A. Robust Detection and Segmentation for Diagnosis of
+    Vertebral Diseases using Routine MR Images. Computer Graphics Forum 33(6), 190-204 (2014).
+sources:
+  zukic2014:
+    title: Zukić et al. 2014, Computer Graphics Forum (author version hosted by the University of Siegen)
+    url: https://www.cg.informatik.uni-siegen.de/publicationPDFbyID?ID=603
+    kind: paper
+  siegen-spine-page:
+    title: University of Siegen, Spine segmentation and analysis project page
+    url: https://www.cg.informatik.uni-siegen.de/en/spine-segmentation-and-analysis
+    kind: website
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page, Dataset 11 section (Internet Archive copy of 13 June 2024)
+    url: https://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+related: []
+keywords:
+  [lumbar spine, vertebral body segmentation, vertebra detection, anisotropic MRI, routine clinical MRI, TIRM, SpineWeb]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+scans,,17,zukic2014,"Section 8.1, Open science","17 of the 26 evaluation datasets were released, each an anonymized MRI series with manual vertebral body segmentations; the SpineWeb page gives the same number"
+scans,modality=MR,17,spineweb-datasets-2024,Dataset 11,
+scans,anatomy=spine,17,spineweb-datasets-2024,Dataset 11,Lower back (lumbar spine)
