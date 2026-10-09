@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,68,tcia-qin-breast,Data Access (Version 2),"the summary table at the top of the page lists 67 subjects; the metadata digest has 68 Patient IDs"
+studies,,216,tcia-qin-breast,Data Access (Version 2),
+scans,,536,tcia-qin-breast,Data Access (Version 2),DICOM series
+images,,102451,tcia-qin-breast,Data Access (Version 2),DICOM images
+subjects,modality=CT,43,tcia-qin-breast-digest,"Patient ID, Modality columns",low-dose CT for PET attenuation correction
+subjects,modality=PT,43,tcia-qin-breast-digest,"Patient ID, Modality columns",
+subjects,modality=MR,41,tcia-qin-breast-digest,"Patient ID, Modality columns",
+subjects,tracer=fdg,43,tcia-qin-breast-digest,"Patient ID, Modality columns","all PET series; FDG named on the collection page"
+scans,modality=CT,110,tcia-qin-breast-digest,"Series Instance UID, Modality columns",
+scans,modality=PT,110,tcia-qin-breast-digest,"Series Instance UID, Modality columns",
+scans,modality=MR,316,tcia-qin-breast-digest,"Series Instance UID, Modality columns",
+subjects,contrast=dwi,41,tcia-qin-breast-digest,"Patient ID, Series Description columns",series descriptions containing DWI
+subjects,contrast=dce,41,tcia-qin-breast-digest,"Patient ID, Series Description columns",series descriptions containing dynamic
+subjects,contrast=T1map,41,tcia-qin-breast-digest,"Patient ID, Series Description columns","multi-flip-angle series for T1 mapping (series descriptions containing T1-map); no computed maps"
+subjects,contrast_set=dce+dwi+T1map,41,tcia-qin-breast-digest,"Patient ID, Series Description columns",every MR subject has all three
+subjects,vendor=ge,43,tcia-qin-breast-digest,"Patient ID, Manufacturer columns",GE Discovery STE PET/CT
+subjects,vendor=philips,41,tcia-qin-breast-digest,"Patient ID, Manufacturer columns",Philips Achieva MRI
+subjects,sex=female,53,tcia-qin-breast-digest,"Patient ID, Patient Sex columns","13 subjects have no sex value and 2 are recorded as O"

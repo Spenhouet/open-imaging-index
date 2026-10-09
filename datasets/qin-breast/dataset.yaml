@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qin-breast
+name: QIN-BREAST
+full_name: QIN-BREAST (Quantitative Imaging Network breast cancer neoadjuvant treatment response PET/CT and MRI)
+summary: >-
+  Longitudinal prone FDG PET/CT and quantitative 3 T breast MRI (DWI, DCE, multi-flip-angle T1 mapping) of 68 breast
+  cancer patients from Vanderbilt, scanned before, during and after neoadjuvant therapy, with pathological response
+  labels.
+homepage: https://www.cancerimagingarchive.net/collection/qin-breast/
+doi: 10.7937/K9/TCIA.2016.21JUEBH0
+# Version 1 is dated 2015/09/04 on the collection page. Version 2 (2020/01/10) lifted a restricted-access embargo
+# without changing files.
+year: 2015
+updated: 2020
+version: '2'
+status: active
+creators:
+  - name: Vanderbilt University (PI Thomas E. Yankeelov), NCI Quantitative Imaging Network
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, PT, MR]
+contrasts: [dwi, dce, T1map]
+tracers: [fdg]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [classification, longitudinal]
+formats: [DICOM]
+countries: [US]
+vendors: [ge, philips]
+field_strengths: [3]
+size_gb: 11.41
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/qin-breast/
+  note: >-
+    DICOM images are downloaded with the TCIA Data Retriever from a manifest file and are also available in the NCI
+    Imaging Data Commons. The treatment response spreadsheet is a direct download. No account is needed.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/qin-breast/
+    note: >-
+      The Data Access table lists CC BY 3.0 for both the images and the treatment response file. The page also requires
+      the data citation under the TCIA Data Usage Policy.
+citation:
+  text: >-
+    Li, X., Abramson, R. G., Arlinghaus, L. R., Chakravarthy, A. B., Abramson, V. G., Sanders, M., & Yankeelov, T. E.
+    (2016). Data From QIN-BREAST (Version 2) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.21JUEBH0
+sources:
+  tcia-qin-breast:
+    title: TCIA QIN-BREAST collection page (version 2, updated 2020/01/10)
+    url: https://www.cancerimagingarchive.net/collection/qin-breast/
+    kind: website
+  tcia-qin-breast-digest:
+    title: >-
+      TCIA QIN-BREAST radiology metadata digest (QIN-BREAST_2015-09-04-nbia-digest.xlsx, open download, CC BY 3.0),
+      counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/QIN-BREAST_2015-09-04-nbia-digest.xlsx
+    kind: computed
+  li2015:
+    title: Li et al. 2015, Investigative Radiology (PMC4471951)
+    url: https://doi.org/10.1097/RLI.0000000000000100
+    kind: paper
+related: []
+keywords: [breast cancer, neoadjuvant chemotherapy, treatment response, FDG PET/CT, DCE MRI, diffusion MRI, Quantitative Imaging Network]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
