@@ -107,6 +107,7 @@ terms:
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
   - { id: neurodevelopmental_disorder, label: Neurodevelopmental disorder, mappings: { mondo: 'MONDO:0700092' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
+  - { id: dysthymia, label: Dysthymic disorder, synonyms: [dysthymia, persistent depressive disorder], mappings: { mondo: 'MONDO:0001442' } }
   - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
   - { id: ptsd, label: Post-traumatic stress disorder, synonyms: [PTSD], mappings: { mondo: 'MONDO:0005146' } }
@@ -349,6 +350,7 @@ terms:
   - { id: diabetic_retinopathy, label: Diabetic retinopathy, mappings: { mondo: 'MONDO:0005266' } }
   - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
   - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }
+  - { id: chronic_pain, label: Chronic pain, mappings: { hp: 'HP:0012532' } }
   - { id: back_pain, label: Back pain, mappings: { hp: 'HP:0003418' } }
   - { id: low_back_pain, label: Low back pain, synonyms: [LBP], mappings: { hp: 'HP:0003419' } }
   - { id: discitis, label: Discitis, synonyms: [diskitis, spondylodiscitis], mappings: { hp: 'HP:0025679' } }

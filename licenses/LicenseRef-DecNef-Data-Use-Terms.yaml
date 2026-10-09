@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-DecNef-Data-Use-Terms
+name: DecNef Project Consortium Application Form for Data Usage
+short_name: DecNef Data Use Terms
+url: https://bicr-resource.atr.jp/static/pdf/Application_Form_for_Data_Usage_DecNef_r1.pdf
+version: 'Application_Form_for_Data_Usage_DecNef_r1, read 2026-10-09'
+summary: >-
+  Signed application approved by ATR, for principal investigators or researchers named by one. The data may not be
+  redistributed, must be kept password protected and may be used for research, technology development and education.
+  The repository page limits use to non-commercial purposes. ATR must be told about publications.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The brain data is allowed to use for noncommercial purpose only.
+    source: https://bicr-resource.atr.jp/srpbs1600/
+    note: >-
+      The form itself allows use "under the auspices of an academic, research, government or commercial entity", but
+      the repository page that hosts it and the data descriptor limit use to non-commercial purposes.
+  product_validation:
+    value: unspecified
+    note: >-
+      The form allows technology development and the page forbids commercial use, but neither addresses testing or
+      validating a product.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The terms do not mention derived data.
+  publication:
+    value: conditional
+    quote: I will contact ATR by email when I publish manuscripts, conference presentations, or other publicly
+      available documents.
+    note: Only study-specific subject IDs may be used when publishing data of individual subjects.
+  redistribute_original:
+    value: 'no'
+    quote: I will not redistribute the DNP Data.
+  redistribute_derivatives:
+    value: unspecified
+    note: The form forbids redistributing the data but does not mention derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will cite DNP Data using the expressions given on the DNP Database website
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I, the undersigned, understand that the DecNef-Project Consortium requires that the following Data Use Terms
+      be signed, submitted and approved before applicants may receive access to the Database
+    note: Applicants who are not principal investigators also need an application from their PI.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: ATR must be informed of publications by email, but no review before publication is required.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: unspecified
+    note: >-
+      The form requires secure storage and study-specific subject IDs in publications but does not forbid attempts to
+      identify participants.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

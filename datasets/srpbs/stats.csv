@@ -1,0 +1,37 @@
+measure,by,value,source,where,note
+subjects,,1627,tanaka2021,Table 3,"restricted release; 1,410 of them are in the unrestricted release (Table 4)"
+subjects,sex=male,958,tanaka2021,Table 3,
+subjects,sex=female,669,tanaka2021,Table 3,
+subjects,condition=healthy,950,tanaka2021,Table 3,
+subjects,condition=autism,125,tanaka2021,Table 3,
+subjects,condition=depression,255,tanaka2021,Table 3,
+subjects,condition=schizophrenia,147,tanaka2021,Table 3,schizophrenia spectrum disorders
+subjects,condition=chronic_pain,67,tanaka2021,Table 3,
+subjects,condition=stroke,10,tanaka2021,Table 3,
+subjects,condition=bipolar_disorder,41,tanaka2021,Table 3,
+subjects,condition=dysthymia,4,tanaka2021,Table 3,
+subjects,condition=healthy;sex=male,539,tanaka2021,Table 3,
+subjects,condition=healthy;sex=female,411,tanaka2021,Table 3,
+subjects,condition=autism;sex=male,109,tanaka2021,Table 3,"sum of the SWA and UTO site rows; the printed summary row repeats the depression split"
+subjects,condition=autism;sex=female,16,tanaka2021,Table 3,"sum of the SWA and UTO site rows; the printed summary row repeats the depression split"
+subjects,condition=depression;sex=male,135,tanaka2021,Table 3,
+subjects,condition=depression;sex=female,120,tanaka2021,Table 3,
+subjects,condition=schizophrenia;sex=male,86,tanaka2021,Table 3,
+subjects,condition=schizophrenia;sex=female,61,tanaka2021,Table 3,
+subjects,condition=chronic_pain;sex=male,39,tanaka2021,Table 3,
+subjects,condition=chronic_pain;sex=female,28,tanaka2021,Table 3,
+subjects,condition=stroke;sex=male,6,tanaka2021,Table 3,
+subjects,condition=stroke;sex=female,4,tanaka2021,Table 3,
+subjects,condition=bipolar_disorder;sex=male,26,tanaka2021,Table 3,
+subjects,condition=bipolar_disorder;sex=female,15,tanaka2021,Table 3,
+subjects,condition=dysthymia;sex=male,3,tanaka2021,Table 3,
+subjects,condition=dysthymia;sex=female,1,tanaka2021,Table 3,
+subjects,contrast=bold,1627,tanaka2021,Table 9,every participant folder holds rs-fMRI and T1w; field maps are optional
+subjects,contrast=T1w,1627,tanaka2021,Table 9,defaced
+subjects,contrast_set=bold+T1w,1627,tanaka2021,Table 9,
+subjects,field_strength=3,1627,bicr-srpbs1600,,
+subjects,country=JP,1627,tanaka2021,Table 3,
+subjects,vendor=ge,540,tanaka2021,Tables 3 and 5,"sum of the HUH, HRC and UTO site rows, the sites scanned on GE Signa HDxt or MR750w"
+subjects,vendor=siemens,1087,tanaka2021,Tables 3 and 5,sum of the other ten site rows
+age_mean,,38.2,tanaka2021,Table 3,
+age_sd,,14.8,tanaka2021,Table 3,

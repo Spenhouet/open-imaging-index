@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-SRPBS-Open-Terms
+name: SRPBS Multi-disorder MRI Dataset (unrestricted) Terms of Use
+short_name: SRPBS Open terms
+url: https://bicr-resource.atr.jp/srpbsopen/
+version: 'Terms of use on the DecNef Project Brain Data Repository and Synapse (syn22317081) pages, read 2026-10-09'
+summary: >-
+  Online registration on the DecNef Project Brain Data Repository or a Synapse account gives access. The data may not
+  be used commercially and may not be copied or redistributed. Publications must acknowledge the DecNef Project Brain
+  Data Repository, and co-researchers must register and accept the same terms.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: You may not use the dataset for commercial purposes.
+  product_validation:
+    value: unspecified
+    note: The terms forbid commercial use but do not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The terms do not mention derived data.
+  publication:
+    value: 'yes'
+    quote: If you publish manuscripts using this dataset, you agree to acknowledge the DecNef Project Brain Data
+      Repository as a source of data
+  redistribute_original:
+    value: 'no'
+    quote: You may not copy and redistribute the dataset.
+  redistribute_derivatives:
+    value: unspecified
+    note: The terms forbid redistributing the dataset but do not mention derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: If you publish manuscripts using this dataset, you agree to acknowledge the DecNef Project Brain Data
+      Repository as a source of data and include sentences that are similar to the following
+    note: The suggested sentence names the DecNef Project Brain Data Repository, the SRPBS consortium and AMED.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Note that parties wishing to use these data must review and agree to these terms, including those who access
+      shared copies of the data.
+    source: https://doi.org/10.1038/s41597-021-01004-8
+    note: Accepted through online registration on the repository or a Synapse account; no signed form.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: unspecified
+    note: The terms do not mention re-identification. The privacy policy states that the stored data are de-identified.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

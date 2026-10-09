@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: srpbs
+name: SRPBS Multi-disorder MRI
+full_name: SRPBS Multi-disorder MRI Dataset (DecNef Project Brain Data Repository)
+summary: >-
+  Resting-state fMRI, T1w and optional field maps at 3T from 1,627 Japanese participants (950 healthy controls and
+  patients with autism, depression, schizophrenia spectrum disorders, chronic pain and others) from 12 sites, with a
+  1,410-participant subset released after registration.
+homepage: https://www.synapse.org/#!Synapse:syn22317076
+doi: 10.1038/s41597-021-01004-8
+# The restricted release went online on 2019-07-31, the unrestricted release on 2020-01-30; both were updated in 2022.
+year: 2019
+updated: 2022
+status: active
+creators:
+  - name: DecNef Project consortium, Japanese Strategic Research Program for the Promotion of Brain Science (SRPBS)
+    url: https://bicr.atr.jp/decnefpro/
+  - name: Advanced Telecommunications Research Institute International (ATR)
+    url: https://bicr-resource.atr.jp/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy, autism, depression, schizophrenia, bipolar_disorder, dysthymia, chronic_pain, stroke]
+tasks: [classification]
+formats: [NIfTI]
+countries: [JP]
+vendors: [siemens, ge]
+field_strengths: [3]
+# Archive size of the restricted release (SRPBS_1600.tar.gz); the unrestricted SRPBS_OPEN.tar.gz is 75.4 GB.
+size_gb: 89.8
+access:
+  type: registration
+  url: https://bicr-resource.atr.jp/srpbsopen/
+  note: >-
+    Registration gives the unrestricted release of 1,410 participants. The full release of 1,627 participants needs a
+    signed application approved by ATR (https://bicr-resource.atr.jp/srpbs1600/). Both are also on Synapse.
+licenses:
+  - license: LicenseRef-SRPBS-Open-Terms
+    applies_to: >-
+      SRPBS Multi-disorder MRI Dataset (unrestricted), 1,410 participants who agreed to unrestricted release (Synapse
+      syn22317081).
+    url: https://bicr-resource.atr.jp/srpbsopen/
+  - license: LicenseRef-DecNef-Data-Use-Terms
+    applies_to: SRPBS Multi-disorder MRI Dataset (restricted), all 1,627 participants (Synapse syn22317079).
+    url: https://bicr-resource.atr.jp/srpbs1600/
+citation:
+  text: >-
+    Tanaka SC, Yamashita A, Yahata N, et al. A multi-site, multi-disorder resting-state magnetic resonance image
+    database. Scientific Data 8:227 (2021). doi:10.1038/s41597-021-01004-8
+sources:
+  tanaka2021:
+    title: Tanaka et al. 2021, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-01004-8
+    kind: paper
+  synapse-srpbs:
+    title: SRPBS project page on Synapse (syn22317076)
+    url: https://www.synapse.org/#!Synapse:syn22317076
+    kind: website
+  bicr-srpbs1600:
+    title: SRPBS Multidisorder MRI Dataset (restricted) page, DecNef Project Brain Data Repository
+    url: https://bicr-resource.atr.jp/srpbs1600/
+    kind: website
+related: []
+keywords: [resting-state fMRI, functional connectivity, psychiatric disorders, multi-site, harmonization, DecNef]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
