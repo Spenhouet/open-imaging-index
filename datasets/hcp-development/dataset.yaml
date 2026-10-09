@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcp-development
+name: HCP-Development (Lifespan 2.0)
+full_name: Lifespan Human Connectome Project in Development, Lifespan 2.0 Release
+summary: >-
+  Multimodal 3T MRI of 652 healthy children, adolescents and young adults aged 5 to 21 from four US sites: T1w and T2w
+  structural, resting-state and task fMRI, two-shell diffusion and multi-delay ASL, with behavioral data, shared
+  through the NIMH Data Archive.
+homepage: https://www.humanconnectome.org/study/hcp-lifespan-development
+doi: 10.1016/j.neuroimage.2018.08.050
+year: 2019
+updated: 2021
+version: Lifespan 2.0 Release (26 February 2021)
+status: active
+creators:
+  - name: Lifespan Human Connectome Project in Development consortium (Washington University in St. Louis, University of Minnesota, Harvard University, UCLA, University of Oxford)
+    url: https://www.humanconnectome.org/study/hcp-lifespan-development
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/general-query.html?q=query=featured-datasets:HCP%20Aging%20and%20Development
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The HCP-D data use terms page points to the NDA Data Use Certification. Access is granted by the NIH permissions
+      committee that also handles ABCD and HCP-Aging data; the certification must be signed by an authorized
+      institutional official and is renewed yearly. Study-specific clauses of that permission group are not broken down here.
+citation:
+  text: >-
+    Somerville LH, Bookheimer SY, Buckner RL, Burgess GC, Curtiss SW, Dapretto M, et al. The Lifespan Human Connectome
+    Project in Development: A large-scale study of brain connectivity development in 5-21 year olds. NeuroImage
+    183:456-468 (2018). doi:10.1016/j.neuroimage.2018.08.050
+sources:
+  somerville2018:
+    title: Somerville et al. 2018, The Lifespan Human Connectome Project in Development, NeuroImage (PMC6416053)
+    url: https://doi.org/10.1016/j.neuroimage.2018.08.050
+    kind: paper
+  harms2018:
+    title: Harms et al. 2018, Extending the Human Connectome Project across ages, NeuroImage (PMC6484842)
+    url: https://doi.org/10.1016/j.neuroimage.2018.09.060
+    kind: paper
+  hcp-development-releases:
+    title: HCP-Development data releases page
+    url: https://www.humanconnectome.org/study/hcp-lifespan-development/data-releases
+    kind: website
+  hcd-completeness:
+    title: HCP-Development Lifespan 2.0 subject completeness CSV (public download from humanconnectome.org, whose footer states that all information on the site is in the public domain), one row per released subject
+    url: https://www.humanconnectome.org/storage/app/media/documentation/LS2.0/HCD_LS_2.0_subject_completeness.csv
+    kind: computed
+related: [hcp-aging, hcp-young-adult]
+keywords: [connectome, development, lifespan, children, adolescents, resting-state fMRI, task fMRI, diffusion MRI, ASL, healthy]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

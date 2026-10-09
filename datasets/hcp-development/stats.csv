@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,652,hcp-development-releases,HCP-Development Lifespan 2.0 Release,healthy participants with visit 1 data
+subjects,condition=healthy,652,hcp-development-releases,HCP-Development Lifespan 2.0 Release,
+subjects,field_strength=3,652,harms2018,MRI hardware,all scanning on Siemens 3T Prisma
+subjects,vendor=siemens,652,harms2018,MRI hardware,
+subjects,sex=female,351,hcd-completeness,sex,
+subjects,sex=male,301,hcd-completeness,sex,
+subjects,age=5-9,111,hcd-completeness,interview_age,age in months converted to completed years
+subjects,age=10-14,266,hcd-completeness,interview_age,
+subjects,age=15-19,190,hcd-completeness,interview_age,
+subjects,age=20-21,85,hcd-completeness,interview_age,
+age_mean,,14.4,hcd-completeness,interview_age,
+age_min,,5,hcp-development-releases,HCP-Development Lifespan 2.0 Release,"""ages 5-21"""
+age_max,,21,hcp-development-releases,HCP-Development Lifespan 2.0 Release,"""ages 5-21"""
+subjects,contrast=T1w,652,hcd-completeness,T1_Count,
+subjects,contrast=T2w,652,hcd-completeness,T2_Count,
+subjects,contrast=bold,652,hcd-completeness,"RS-fMRI_Count, tMRI_PctCompl","all have resting-state fMRI, 647 also have task fMRI"
+subjects,contrast=dwi,643,hcd-completeness,dMRI_PctCompl,any diffusion data (632 with the full protocol)
+subjects,contrast=asl,627,hcd-completeness,PCASL_PctCompl,
+subjects,contrast_set=asl+bold+dwi+T1w+T2w,625,hcd-completeness,"T1_Count, T2_Count, RS-fMRI_Count, tMRI_PctCompl, dMRI_PctCompl, PCASL_PctCompl",
+subjects,contrast_set=bold+dwi+T1w+T2w,18,hcd-completeness,"T1_Count, T2_Count, RS-fMRI_Count, tMRI_PctCompl, dMRI_PctCompl, PCASL_PctCompl",combinations with fewer than 10 subjects are left out
