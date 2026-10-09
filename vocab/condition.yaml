@@ -105,6 +105,10 @@ terms:
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
+  - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
+  - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
+  - { id: ptsd, label: Post-traumatic stress disorder, synonyms: [PTSD], mappings: { mondo: 'MONDO:0005146' } }
+  - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
   - {
       id: cocaine_use_disorder,
       label: Cocaine use disorder,
