@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,9010,zhang2020,Abstract,"baseline participants assessed at 7 sites between November 2016 and May 2019; the cohort target was about 10,000 (sharma2020)"
+subjects,modality=MR,1278,zhang2020,Abstract,"neuroimaging subsample recruited at 6 of the 7 sites; the protocol paper gives this as about 15% of the baseline sample"
+subjects,field_strength=3,1278,zhang2020,"Methods, Neuroimaging",scanned in 4 scanning centres on five 3T scanners
+subjects,country=IN,9010,zhang2020,Abstract,
+subjects,sex=female,4699,zhang2020,Table 2,of the 8999 participants summarised in Table 2
+subjects,sex=male,4300,zhang2020,Table 2,of the 8999 participants summarised in Table 2
+age_mean,,14.55,zhang2020,Table 2,whole baseline cohort (N=8999); age missing for 5
+age_sd,,4.61,zhang2020,Table 2,whole baseline cohort (N=8999)
+age_min,,5.32,zhang2020,Table 2,whole baseline cohort (N=8999)
+age_max,,24.91,zhang2020,Table 2,whole baseline cohort (N=8999)

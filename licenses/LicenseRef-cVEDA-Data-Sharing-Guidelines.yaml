@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-cVEDA-Data-Sharing-Guidelines
+name: cVEDA Data Sharing and Publication Guidelines
+short_name: cVEDA guidelines
+url: https://cveda-project.org/assets/docs/cveda-data-sharing-and-publication-guidelines.pdf
+version: 'PDF created 22 July 2019, with the cVEDA Project Proposal Form'
+summary: >-
+  Researchers outside the consortium send a one-publication project proposal, naming a consortium liaison and the data
+  requested, to the cVEDA Project Executive Committee. Only the people named in an approved proposal get access.
+  Manuscripts must include named consortium members as authors.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The guidelines and the proposal form do not mention commercial use.
+  product_validation:
+    value: unspecified
+    note: >-
+      Use is limited to approved proposals, each sized to one publication, but the text does not address testing or
+      validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      All manuscripts using the cVEDA data must include particular consortium members in the author list and the
+      remaining in a supplementary document.
+    note: Each approved proposal is sized to result in one publication, which must carry the cVEDA author list.
+  redistribute_original:
+    value: unspecified
+    note: >-
+      Access is granted only to the individuals named on the proposal form, but the text does not address passing the
+      data on.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      All manuscripts using the cVEDA data must include particular consortium members in the author list and the
+      remaining in a supplementary document.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: >-
+      Access requires an approved project proposal, but neither the guidelines nor the proposal form ask for a signed
+      data use agreement.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: >-
+      The proposal is reviewed by the Project Executive Committee before access, but the text does not ask for the
+      manuscript to be sent for review. Consortium members are co-authors of every manuscript.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The text does not mention re-identification.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
