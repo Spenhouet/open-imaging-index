@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,719,tcia-ispy2,Summary table,
+studies,,2688,tcia-ispy2,Data Access (Version 1),719-patient image download
+scans,,32411,tcia-ispy2,Data Access (Version 1),"DICOM series, original and derived (maps and SEG masks)"
+images,,5586493,tcia-ispy2,Data Access (Version 1),DICOM images
+subjects,sex=female,719,tcia-ispy2,Demographic Summary of Available Imaging,
+age_mean,,48.9,tcia-ispy2,Demographic Summary of Available Imaging,
+age_sd,,11,tcia-ispy2,Demographic Summary of Available Imaging,
+age_median,,49,tcia-ispy2,Demographic Summary of Available Imaging,
+age_min,,24,tcia-ispy2,Demographic Summary of Available Imaging,
+age_max,,73,tcia-ispy2,Demographic Summary of Available Imaging,
+subjects,condition=breast_cancer,719,tcia-ispy2,Summary table,
+subjects,anatomy=breast,719,tcia-ispy2,Summary table,
+subjects,vendor=ge,426,tcia-ispy2-digest,"Patient ID, Manufacturer columns",recorded as GE MEDICAL SYSTEMS
+subjects,vendor=siemens,210,tcia-ispy2-digest,"Patient ID, Manufacturer columns",recorded as SIEMENS
+subjects,vendor=philips,83,tcia-ispy2-digest,"Patient ID, Manufacturer columns","recorded as Philips Medical Systems or Philips Healthcare; 3 further subjects have series with Manufacturer 0000000"
