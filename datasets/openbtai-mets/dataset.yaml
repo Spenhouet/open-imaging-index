@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openbtai-mets
+name: OpenBTAI Brain Metastases
+full_name: A comprehensive dataset of annotated brain metastasis MR images with clinical and radiomic data
+summary: >-
+  637 longitudinal brain MRI studies of 75 deceased patients with 260 brain metastases from Spanish hospitals,
+  with 593 semi-automatic segmentations on post-contrast T1w, clinical and treatment data, and morphological
+  and radiomic features.
+homepage: https://figshare.com/collections/A_comprehensive_dataset_of_annotated_brain_metastasis_images_with_clinical_and_radiomic_data/6194104
+doi: 10.6084/m9.figshare.c.6194104.v1
+year: 2023
+status: active
+creators:
+  - name: Mathematical Oncology Laboratory (MOLAB), University of Castilla-La Mancha
+    url: https://molab.es
+species: human
+modalities: [MR]
+contrasts: [T1w_ce, T1w, T2w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [brain_metastasis]
+tasks: [segmentation, detection, survival, longitudinal]
+formats: [DICOM, NIfTI]
+countries: [ES]
+vendors: [ge, philips, siemens]
+field_strengths: [1, 1.5, 3]
+size_gb: 46.7
+access:
+  type: open
+  url: https://figshare.com/collections/A_comprehensive_dataset_of_annotated_brain_metastasis_images_with_clinical_and_radiomic_data/6194104
+licenses:
+  - license: CC0-1.0
+citation:
+  text: >-
+    Ocaña-Tienda B, Pérez-Beteta J, Villanueva-García JD, et al. A comprehensive dataset of annotated brain
+    metastasis MR images with clinical and radiomic data. Scientific Data 10, 208 (2023).
+    https://doi.org/10.1038/s41597-023-02123-0
+sources:
+  ocanatienda2023:
+    title: Ocaña-Tienda et al. 2023, Scientific Data
+    url: https://doi.org/10.1038/s41597-023-02123-0
+    kind: paper
+  figshare-openbtai-mets:
+    title: Figshare collection with file listing and per-item license
+    url: https://figshare.com/collections/A_comprehensive_dataset_of_annotated_brain_metastasis_images_with_clinical_and_radiomic_data/6194104
+    kind: website
+  openbtai-clinical:
+    title: OpenBTAI_METS_ClinicalData.xlsx (CC0), counted per unique patient id
+    url: https://ndownloader.figshare.com/files/39603295
+    kind: computed
+related: []
+keywords: [brain metastasis, radiation necrosis, radiomics, stereotactic radiosurgery, longitudinal]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
