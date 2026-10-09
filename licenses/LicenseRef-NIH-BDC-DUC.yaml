@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NIH-BDC-DUC
+name: Data Use Certification for NIH Brain Development Cohorts (NBDC Data Hub)
+short_name: NIH BDC DUC
+url: https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/6852ddeaf0589dda767af337_General%20Individual%20v1.0.0.pdf
+version: General Individual DUC, Version v.1.0.0 (OMB No 0925-0780)
+summary: >-
+  Terms for ABCD and HBCD data on the NIH Brain Development Cohorts Data Hub. Access needs a DUC signed by the
+  researcher and an institutional business official at an NIH-recognized institution with a Federalwide Assurance,
+  a responsible-use training and yearly renewal. Use is limited to the research described in the request; no
+  redistribution, no re-identification, no stigmatizing research, a minimum cell size of 10 in public reports, and
+  deletion of downloaded data when the work ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The DUC allows research and research development for the stated purpose and mentions "any resulting commercial
+      product(s)" in the endorsement clause, but never states whether commercial use is permitted.
+    quote: >-
+      These data will be used by the Recipients for investigation, scholarship or teaching, or other forms of research
+      and research development in connection with the purpose indicated and described in the Research Data Use
+      Statement.
+  model_training:
+    value: unspecified
+    note: >-
+      Model training is not addressed. The DUC forbids moving data to any third-party system, naming large language
+      models such as ChatGPT as an example.
+    quote: >-
+      Recipients agree to retain control over data and to not share, distribute, sell, or move data, with or without
+      charge, in any form, to any other individual, entity, or third-party system, including large language models
+      (e.g., ChatGPT).
+  derivatives:
+    value: conditional
+    note: Derived data may be made, but nothing derived that could help identify participants may be published.
+    quote: >-
+      Recipients agree to not publish or disseminate any derived data that could aid in the identification of any of
+      the study participants (or their relatives).
+  publication:
+    value: conditional
+    note: >-
+      Publications must be registered on the platform, link to the data used, acknowledge the release DOI and keep a
+      minimum cell size of 10. Analyses that single out American Indian/Alaska Native participants need a second DUC.
+    quote: >-
+      Recipients agree to register any publications resulting from data accessed in the NIH Brain Development Cohorts
+      Data Sharing Platform once a DOI and/or PubMed ID is assigned to a publication using these data.
+  redistribute_original:
+    value: 'no'
+    note: Sharing is allowed only with authorized collaborators, and across institutions only through the platform.
+    quote: This includes raw data from any individual participant and any derived individual-level data.
+  redistribute_derivatives:
+    value: conditional
+    note: >-
+      Derived individual-level data may not be shared. Aggregate results may be reported publicly with at least 10
+      participants per cell.
+    quote: >-
+      To that end, Recipients agree to adhere to a minimum cell threshold of 10 in public reporting of data, including
+      scientific publications and presentations.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Recipients agree to acknowledge the relevant Digital Object Identifier(s) (DOI) in all oral and written
+      presentations, disclosures, and publications (including abstracts, as space allows) resulting from any and all
+      analyses of data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    note: >-
+      The institution must be NIH-recognized with a Federalwide Assurance; the researcher must pass a responsible-use
+      training with 90%; access lasts one year and is renewed with a new DUC.
+    quote: Authorization requires users to submit a signed DUC that includes signature by the user’s institution business official.
+  ethics_approval:
+    value: conditional
+    note: >-
+      No IRB approval document is demanded up front, but the research must be approved by the recipient's institution,
+      which must hold a Federalwide Assurance, and follow human-subjects rules such as 45 CFR 46 where they apply.
+    quote: >-
+      Recipients acknowledge that access, if provided, is for research that is approved by the Institution with which
+      they are affiliated, which must be operating under an active Federal Wide Assurance (FWA) issued by the
+      Department of Health & Human Services, Office for Human Research Protections (OHRP).
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+    note: Sharing code and registering planned analyses are strongly encouraged but not required.
+  return_results:
+    value: 'yes'
+    note: Publications are registered and linked to the data; renewals need a progress report according to the NBDC data access process page.
+    quote: >-
+      Recipients also agree to identify the data included in a publication, computational pipeline or other public
+      disclosure of results derived from the analysis of data accessed in the NIH Brain Development Cohorts Data
+      Sharing Platform, thereby linking it to the underlying data.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Recipients agree that data that have been downloaded will be permanently deleted from all local or cloud-based
+      machines when research is completed or this Agreement is expired, whichever comes first.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Recipients agree that data will not be used to establish the individual identities of any of the study
+      participants from whom data were obtained (or their relatives) and/or contact the individual study participant,
+      except as permitted by law.
+  geographic_restriction:
+    value: 'no'
+    note: >-
+      No countries are named. The text states the data are available to researchers around the world, provided their
+      institution is NIH-recognized and holds a Federalwide Assurance.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

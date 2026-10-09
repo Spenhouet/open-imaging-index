@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,11860,abcd-release-7-notes,Sample,"full cohort of 11,880 minus participants who withdrew consent to data sharing; not every participant has usable MRI at every visit"
+age_min,,9,nbdc-abcd-release-7,Abstract,age at baseline (9-10 years)
+age_max,,17,nbdc-abcd-release-7,Abstract,"age at the 7.5-year follow-up (16-17 years); imaging in this release runs through the 6-year follow-up"
