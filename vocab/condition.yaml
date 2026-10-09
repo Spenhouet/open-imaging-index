@@ -265,6 +265,33 @@ terms:
   - { id: myocardial_infarction, label: Myocardial infarction, mappings: { mondo: 'MONDO:0005068' } }
   - { id: heart_failure, label: Heart failure, mappings: { mondo: 'MONDO:0005252' } }
   - {
+      id: congenital_heart_disease,
+      label: Congenital heart disease,
+      synonyms: [CHD, congenital heart defect],
+      mappings: { mondo: 'MONDO:0005453' }
+    }
+  - {
+      id: tetralogy_of_fallot,
+      label: Tetralogy of Fallot,
+      parent: congenital_heart_disease,
+      synonyms: [TOF, ToF],
+      mappings: { mondo: 'MONDO:0008542' }
+    }
+  - {
+      id: aortic_coarctation,
+      label: Coarctation of the aorta,
+      parent: congenital_heart_disease,
+      synonyms: [aorta coarctation, CoA],
+      mappings: { mondo: 'MONDO:0007345' }
+    }
+  - {
+      id: hypoplastic_left_heart_syndrome,
+      label: Hypoplastic left heart syndrome,
+      parent: congenital_heart_disease,
+      synonyms: [HLHS],
+      mappings: { mondo: 'MONDO:0004933' }
+    }
+  - {
       id: left_ventricular_hypertrophy,
       label: Left ventricular hypertrophy,
       synonyms: [LVH],

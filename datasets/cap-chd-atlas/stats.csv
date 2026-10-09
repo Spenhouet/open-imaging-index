@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,1183,capchd-home,Current Database Summary,"Live counter, read on 2026-10-09"
+studies,,1273,capchd-home,Current Database Summary,Listed as study image sets
+age_min,,0,capchd-home,Current Database Summary,
+age_max,,86,capchd-home,Current Database Summary,
+age_mean,,16,capchd-home,Current Database Summary,
+subjects,condition=tetralogy_of_fallot,267,capchd-home,Current Database Summary,
+subjects,condition=no_finding,234,capchd-home,Current Database Summary,Listed as Normal CMR
+subjects,condition=aortic_coarctation,33,capchd-home,Current Database Summary,
+subjects,condition=hypoplastic_left_heart_syndrome,33,capchd-home,Current Database Summary,
