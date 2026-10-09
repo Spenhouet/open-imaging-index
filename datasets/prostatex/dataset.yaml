@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostatex
+name: PROSTATEx
+full_name: SPIE-AAPM-NCI PROSTATEx Challenge Data
+summary: >-
+  Multiparametric prostate MRI (T2w, proton density, DCE and DWI with ADC) of 346 men from Radboudumc on Siemens 3T
+  scanners, with lesion positions and clinical significance labels from the PROSTATEx and PROSTATEx-2 challenges.
+homepage: https://www.cancerimagingarchive.net/collection/prostatex/
+doi: 10.7937/K9TCIA.2017.MURS5CL
+year: 2017
+updated: 2022
+version: '2'
+status: superseded
+creators:
+  - name: Radboud University Medical Center (Radboudumc), Nijmegen
+    url: https://www.radboudumc.nl/en/research
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w, PDw, dce, dwi, ADC]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [classification, detection]
+formats: [DICOM, MHA]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 16.67
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostatex/
+  note: >-
+    DICOM images download with the TCIA Data Retriever or through the NCI Imaging Data Commons. Ktrans maps, lesion
+    information and thumbnails download through IBM Aspera or per challenge cohort from the collection page.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/prostatex/
+citation:
+  text: >-
+    Litjens G, Debats O, Barentsz J, Karssemeijer N, Huisman H. (2017). SPIE-AAPM PROSTATEx Challenge Data (Version 2)
+    [dataset]. The Cancer Imaging Archive. https://doi.org/10.7937/K9TCIA.2017.MURS5CL. Publication: Litjens G, Debats
+    O, Barentsz J, Karssemeijer N, Huisman H. Computer-Aided Detection of Prostate Cancer in MRI. IEEE Transactions on
+    Medical Imaging 33(5):1083-1092 (2014). https://doi.org/10.1109/tmi.2014.2303821
+sources:
+  tcia-prostatex:
+    title: TCIA PROSTATEx collection page (version 2, updated 2022/07/05)
+    url: https://www.cancerimagingarchive.net/collection/prostatex/
+    kind: website
+related: []
+keywords: [prostate cancer, multiparametric MRI, clinically significant prostate cancer, Gleason grade group, Ktrans, challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
