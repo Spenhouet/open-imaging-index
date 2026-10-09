@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,331,gollub2013,Table 1,"Four-site study cohort with data; the paper states that one site's data is not publicly released, without naming the site, so the shared subset is smaller"
+subjects,condition=schizophrenia,162,gollub2013,Table 1,"Four-site cohort; schizophrenia, schizoaffective or schizophreniform disorder"
+subjects,condition=healthy,169,gollub2013,Table 1,Four-site cohort
+subjects,contrast=T1w,327,gollub2013,Table 1,Four-site cohort; sMRI column (coronal T1w and T2w collected in each structural session)
+subjects,contrast=dwi,289,gollub2013,"Table 1; Diffusion Weighted Imaging Data",Four-site cohort
+subjects,condition=healthy;contrast=T1w,169,gollub2013,Table 1,Four-site cohort; sMRI column
+subjects,condition=schizophrenia;contrast=T1w,158,gollub2013,Table 1,Four-site cohort; sMRI column
+subjects,condition=healthy;contrast=dwi,153,gollub2013,Table 1,Four-site cohort
+subjects,condition=schizophrenia;contrast=dwi,136,gollub2013,Table 1,Four-site cohort
+subjects,sex=female,106,gollub2013,Table 2,"Sum of 64 female controls and 42 female patients; Table 2 lists 169 controls and 161 patients"
+subjects,sex=female;condition=healthy,64,gollub2013,Table 2,Four-site cohort
+subjects,sex=female;condition=schizophrenia,42,gollub2013,Table 2,Four-site cohort; Table 2 lists 161 patients
+age_mean,condition=healthy,31.5,gollub2013,Table 2,Four-site cohort
+age_sd,condition=healthy,11.1,gollub2013,Table 2,Four-site cohort
+age_mean,condition=schizophrenia,33.5,gollub2013,Table 2,Four-site cohort
+age_sd,condition=schizophrenia,10.8,gollub2013,Table 2,Four-site cohort
