@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,168,tcia-cptac-pda,Collection Snapshot,"all subjects in the collection, radiology and pathology"
+subjects,modality=SM,168,tcia-cptac-pda,Data Access (Version 15),subjects with tissue slide images
+slides,,557,tcia-cptac-pda,Data Access (Version 15),tissue slide images (SVS)
+studies,,134,tcia-cptac-pda,Data Access (Version 15),radiology only (110 subjects)
+scans,,1133,tcia-cptac-pda,Data Access (Version 15),radiology DICOM series
+images,,132852,tcia-cptac-pda,Data Access (Version 15),radiology DICOM images
+subjects,modality=CT,99,tcia-cptac-pda-digest,"Patient ID, Modality columns",radiology subset (110 subjects) only
+subjects,modality=MR,17,tcia-cptac-pda-digest,"Patient ID, Modality columns",radiology subset (110 subjects) only
+subjects,modality=US,3,tcia-cptac-pda-digest,"Patient ID, Modality columns",radiology subset (110 subjects) only
+subjects,modality=PT,2,tcia-cptac-pda-digest,"Patient ID, Modality columns",radiology subset (110 subjects) only
+subjects,sex=male,59,tcia-cptac-pda-digest,"Patient ID, Patient Sex columns",radiology subset (110 subjects) only
+subjects,sex=female,50,tcia-cptac-pda-digest,"Patient ID, Patient Sex columns",radiology subset (110 subjects) only
+subjects,sex=other,1,tcia-cptac-pda-digest,"Patient ID, Patient Sex columns","radiology subset (110 subjects) only, DICOM Patient Sex O"
+subjects,vendor=ge,63,tcia-cptac-pda-digest,"Patient ID, Manufacturer columns","radiology subset only; 275 of 1,133 series have no Manufacturer"
+subjects,vendor=siemens,20,tcia-cptac-pda-digest,"Patient ID, Manufacturer columns","radiology subset only; 275 of 1,133 series have no Manufacturer"
+subjects,vendor=canon,7,tcia-cptac-pda-digest,"Patient ID, Manufacturer columns","radiology subset only, recorded as TOSHIBA"
+subjects,vendor=philips,3,tcia-cptac-pda-digest,"Patient ID, Manufacturer columns",radiology subset only
