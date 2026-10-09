@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,10,tcia-qin-breast-dce-mri,Collection Snapshot,
+studies,,20,tcia-qin-breast-dce-mri,Data Access,"two visits per patient, before and after the first chemotherapy cycle"
+images,,76308,tcia-qin-breast-dce-mri,Data Access,"DICOM MR row (652 series); the Matlab KO row adds 20 series and 20 images"
+scans,,632,tcia-nbia-qin-breast-dce-mri-series,"Modality, SeriesInstanceUID","MR series, one per dynamic time frame, without the 40 key object series that hold the Matlab and NIfTI files; 28 frames per visit for one patient, 32 for the others"
+subjects,sex=female,10,tcia-nbia-qin-breast-dce-mri-studies,PatientSex,
+subjects,modality=MR,10,tcia-nbia-qin-breast-dce-mri-series,Modality,
+subjects,contrast=dce,10,tcia-qin-breast-dce-mri,Summary,
+subjects,contrast_set=dce,10,tcia-nbia-qin-breast-dce-mri-series,"Modality, SeriesDescription",all MR series are twist_20s_dyn_TRA dynamic frames
+subjects,vendor=siemens,10,tcia-nbia-qin-breast-dce-mri-series,Manufacturer,TrioTim (ManufacturerModelName)
+subjects,field_strength=3,10,tcia-qin-breast-dce-mri,Summary,
+subjects,country=US,10,tcia-qin-breast-dce-mri,Summary,Oregon Health & Science University
+subjects,condition=breast_cancer,10,tcia-qin-breast-dce-mri,Collection Snapshot,
+subjects,age=20-29,1,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+subjects,age=30-39,4,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+subjects,age=40-49,2,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+subjects,age=50-59,1,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+subjects,age=60-69,2,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+age_mean,,44.3,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+age_sd,,12.7,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,"sample standard deviation, age at the first study"
+age_median,,40,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+age_min,,27,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
+age_max,,65,tcia-nbia-qin-breast-dce-mri-studies,PatientAge,age at the first study
