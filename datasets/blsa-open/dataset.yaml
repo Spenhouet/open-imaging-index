@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: blsa-open
+name: BLSA Open
+full_name: Baltimore Longitudinal Study of Aging (BLSA) Open MRI data
+summary: >-
+  Open subset of the National Institute on Aging's Baltimore Longitudinal Study of Aging on the LONI IDA: defaced
+  longitudinal brain MRI of 118 participants scanned 2009 to 2020, with clinical and demographic data, for internal
+  non-commercial research.
+homepage: https://www.blsa.nih.gov/
+# The first public release date is not published. The IDA record dates the MRIs to 2009-2020, so 2020 is the earliest
+# possible release year.
+year: 2020
+status: active
+creators:
+  - name: Baltimore Longitudinal Study of Aging, Intramural Research Program, National Institute on Aging
+    url: https://www.blsa.nih.gov/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+anatomy: [brain]
+tasks: [longitudinal]
+countries: [US]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=BLSA_OPEN
+licenses:
+  - license: LicenseRef-BLSA-OPEN-DUA
+citation:
+  text: >-
+    The data use agreement requires this acknowledgement: "This [publication or presentation, as applicable] uses
+    research data from The Baltimore Longitudinal Study of Aging study (BLSA) that has been made available through the
+    LONI IDA and GAAIN. The BLSA is supported by the Intramural Research Program (IRP) of the National Institute on
+    Aging (NIA). The authors thank the investigators, staff, and participants of the BLSA study and the neuroimaging
+    sub-study for making the data available. BLSA investigators have not contributed to nor approved, and are not in
+    any way responsible for, the contents of this [publication or presentation, as applicable]."
+sources:
+  ida-blsa-open-study:
+    title: LONI IDA featured study record for BLSA_OPEN (subjects, cohort, modalities and description)
+    url: https://ida.loni.usc.edu/ajax2/xml/home/getStudy?project=BLSA_OPEN
+    kind: website
+  blsa-faq:
+    title: BLSA Frequently Asked Questions (OPEN data framework and access pathways)
+    url: https://www.blsa.nih.gov/faq
+    kind: website
+related: []
+keywords: [ageing, healthy aging, longitudinal, brain MRI, defaced, National Institute on Aging]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

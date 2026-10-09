@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-BLSA-OPEN-DUA
+name: BLSA_OPEN De-Identified Data Use Agreement
+short_name: BLSA_OPEN DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=BLSA_OPEN
+version: 'Online agreement on the LONI IDA application page, read 2026-10-09 (the text states no version or date)'
+summary: >-
+  Online agreement for de-identified Baltimore Longitudinal Study of Aging data owned by the National Institute on
+  Aging. Use is limited to internal, non-commercial research and excludes diagnostic, prognostic or treatment use in
+  people. No distribution to third parties, no re-identification, a fixed acknowledgement in every publication, and
+  misuse must be reported within 15 days.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      The Data will be used solely for the internal, non-commercial research purposes outlined in this agreement and my
+      data use application.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to internal, non-commercial research and rules out diagnostic, prognostic or treatment use in
+      human subjects, but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: >-
+      The agreement does not mention machine learning. Any training must stay within internal, non-commercial research
+      and the purposes in the data use application.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address creating derived data, beyond asking for the analyses that are planned.
+  publication:
+    value: conditional
+    quote: >-
+      In all presentations, abstracts, and manuscripts concerning my research using the Data, I agree to acknowledge the
+      contribution of the NIA as follows:
+    note: >-
+      Publication is expected, with the required acknowledgement. Before submitting any material for publication, users
+      must check the LONI IDA and GAAIN for updated data. No review before submission is required.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The Data will not be further distributed to any third party and I agree that appropriate safeguards are in place
+      to prevent unauthorized use of or access to the Data.
+    note: Team members and anyone the data are shared with must comply with the agreement.
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      The agreement does not say whether derived data such as labels may be shared. The ban on distribution covers "the
+      Data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      In all presentations, abstracts, and manuscripts concerning my research using the Data, I agree to acknowledge the
+      contribution of the NIA as follows:
+    note: The agreement gives the exact acknowledgement text, naming the BLSA, the LONI IDA, GAAIN and the NIA IRP.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      I request access to de-identified data collected by the National Institute on Aging from participants enrolled in
+      The Baltimore Longitudinal Study on Aging ("Data") for internal, non-commercial research purposes only and agree
+      to the following terms:
+    note: Accepted as part of an online data use application on the LONI IDA.
+  ethics_approval:
+    value: 'no'
+    note: >-
+      The agreement asks for compliance with applicable laws, regulations and policies but does not require approval by
+      an ethics board.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: >-
+      Upon request, I will provide information for persons who will use the Data and the analyses that are planned
+      using the Data. I will respond promptly and accurately to annual requests to update this information.
+    note: >-
+      Users must report the people using the data and the planned analyses, update this yearly, and report any use or
+      disclosure outside the agreement within 15 days. The agreement does not ask for results or derived data.
+  delete_after_use:
+    value: 'no'
+    note: >-
+      No deletion duty is stated. The data must be disposed of in compliance with applicable laws, regulations and
+      policies.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will not contact or make any effort to identify individuals who are, or may be, the sources of Data.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
