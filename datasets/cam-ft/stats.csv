@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,28,lombardo2012,"Materials and Methods, Participants",typically developing boys with foetal testosterone from amniocentesis
+subjects,sex=male,28,lombardo2012,"Materials and Methods, Participants",
+subjects,condition=healthy,28,lombardo2012,"Materials and Methods, Participants",typically developing; children with postnatal developmental abnormalities were excluded
+subjects,contrast=T1w,28,lombardo2012,"Materials and Methods, MRI Acquisition and Image Processing",3D MP-RAGE
+subjects,field_strength=3,28,lombardo2012,"Materials and Methods, MRI Acquisition and Image Processing",Siemens Tim Trio
+subjects,vendor=siemens,28,lombardo2012,"Materials and Methods, MRI Acquisition and Image Processing",
+subjects,country=GB,28,lombardo2012,"Materials and Methods, MRI Acquisition and Image Processing","Wolfson Brain Imaging Centre, Addenbrooke's Hospital, Cambridge"
+age_mean,,9.5,lombardo2012,"Materials and Methods, Participants",
+age_sd,,0.92,lombardo2012,"Materials and Methods, Participants",
+age_min,,8,lombardo2012,"Materials and Methods, Participants",
+age_max,,11,lombardo2012,"Materials and Methods, Participants",
