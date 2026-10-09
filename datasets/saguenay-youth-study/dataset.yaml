@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: saguenay-youth-study
+name: Saguenay Youth Study (SYS)
+full_name: Saguenay Youth Study, adolescents and their parents
+summary: >-
+  Two-generation French-Canadian cohort from the Saguenay-Lac-Saint-Jean founder population: brain and abdominal MRI
+  in 1,029 adolescents aged 12 to 18 and 664 of their parents, with genome-wide genotypes and cardiometabolic and
+  mental health phenotypes. Shared on request.
+homepage: https://doi.org/10.1093/ije/dyw023
+doi: 10.1093/ije/dyw023
+# Year of the design paper; the data have no public release.
+year: 2007
+creators:
+  - name: Saguenay Youth Study team (PIs Zdenka Pausova and Tomáš Paus)
+modalities: [MR]
+contrasts: [T1w, T2w, PDw, dwi, bold]
+anatomy: [brain, abdomen]
+countries: [CA]
+vendors: [philips, siemens]
+field_strengths: [1, 1.5]
+access:
+  type: on_request
+  url: https://doi.org/10.1093/ije/dyw023
+  note: >-
+    The cohort profile states that data are available on request to Dr Zdenka Pausova and Dr Tomáš Paus. The study
+    website named there (saguenay-youth-study.org) returns 404.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The cohort profile gives a request route but no terms of use. No license or data use agreement was found; the
+      study website is offline.
+citation:
+  text: >-
+    Pausova Z, Paus T, Abrahamowicz M, Bernard M, Gaudet D, Leonard G, Peron M, Pike GB, Richer L, Séguin JR,
+    Veillette S. Cohort Profile: The Saguenay Youth Study (SYS). International Journal of Epidemiology 46(2):e19
+    (2017). doi:10.1093/ije/dyw023
+sources:
+  pausova2017:
+    title: Pausova et al. 2017, Cohort Profile, International Journal of Epidemiology
+    url: https://doi.org/10.1093/ije/dyw023
+    kind: paper
+  pausova2007:
+    title: Pausova et al. 2007, Design of the Saguenay Youth Study, Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.20402
+    kind: paper
+  paus2015:
+    title: Paus et al. 2015, Saguenay Youth Study, a multi-generational approach, Developmental Cognitive Neuroscience
+    url: https://doi.org/10.1016/j.dcn.2014.10.003
+    kind: paper
+related: []
+keywords:
+  [
+    adolescence,
+    parents,
+    founder population,
+    maternal smoking during pregnancy,
+    brain development,
+    visceral fat,
+    magnetization transfer,
+    imaging genetics,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

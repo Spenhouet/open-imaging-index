@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,1693,pausova2017,Table 1,"sum of the two disjoint MRI arms: 1029 adolescents (Wave 1, 2003-12) and 664 parents (Wave 2, 2012-15). A further 962 parents had a partial Wave 1 assessment without MRI"
+subjects,modality=MR,1693,pausova2017,Table 1; What has been measured?,brain and abdominal MRI in the complete assessment of both arms
+subjects,anatomy=brain,1693,pausova2017,Table 1; What has been measured?,
+subjects,anatomy=abdomen,1693,pausova2017,Table 1; What has been measured?,abdominal MRI for visceral and subcutaneous fat
+subjects,contrast=T1w,1693,pausova2017,What has been measured?,T1-weighted brain images in both arms
+subjects,age=12-18,1029,pausova2017,Who is in the cohort?; Table 1,"adolescents; siblings aged 12 to 18 years were recruited, mean age 15.0 (SD 1.8)"
+subjects,country=CA,1693,pausova2017,Who is in the cohort?,Saguenay-Lac-Saint-Jean region of Quebec
