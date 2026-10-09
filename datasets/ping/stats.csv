@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,1493,jernigan2016,The PING Cohort,participants with acceptable data for at least two data types; over 1700 were enrolled
+subjects,sex=male,780,jernigan2016,The PING Cohort,
+subjects,condition=healthy,1493,jernigan2016,The PING Cohort,typically developing; neurological and several psychiatric disorders excluded
+subjects,country=US,1493,jernigan2016,Introduction,10 US sites
+subjects,modality=MR,1239,jernigan2016,The PING Cohort,participants with acceptable imaging data
+subjects,modality=MR;sex=male,645,jernigan2016,The PING Cohort,
+subjects,field_strength=3,1239,jernigan2016,Image Acquisition and Preprocessing,all scanners 3T
+age_min,,3,jernigan2016,Introduction,"""aged 3 to 21 years"""
+age_max,,21,jernigan2016,Introduction,some 20-year-olds turned 21 before data collection ended
