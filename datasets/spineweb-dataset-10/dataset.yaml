@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spineweb-dataset-10
+name: SpineWeb Dataset 10 (multi-modality vertebra recognition)
+full_name: 'SpineWeb Dataset 10: Multi-Modality Vertebra Recognition in Arbitrary Views using 3D Deformable Hierarchical Model'
+summary: >-
+  Spine MR and CT images of 20 subjects with manually annotated 3D vertebra center locations and 3D vertebra
+  orientations for every vertebra, released on SpineWeb as a reference for vertebra recognition. Shared after a request
+  form.
+homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
+# The SpineWeb news feed (spineweb-home-2015) dates the release of Dataset 10 to 5 April 2015.
+year: 2015
+creators:
+  - name: Yunliang Cai, Said Osman, Manas Sharma, Mark Landis and Shuo Li
+modalities: [CT, MR]
+anatomy: [spine]
+tasks: [detection]
+access:
+  type: application
+  url: http://spineweb.digitalimaginggroup.ca/dataset.php
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The SpineWeb entry states no license or terms of use for Dataset 10. It only says that publications using the data
+      may cite the paper by Cai et al. The request form asks for the applicant's institution, a brief description of the
+      research and the details of the project's principal investigator.
+citation:
+  text: >-
+    Yunliang Cai, Said Osman, Manas Sharma, Mark Landis, and Shuo Li, "Multi-Modality Vertebra Recognition in Arbitrary
+    Views using 3D Deformable Hierarchical Model", IEEE Transactions on Medical Imaging, 2015.
+sources:
+  spineweb-datasets-2024:
+    title: SpineWeb Datasets page, Dataset 10 section (Internet Archive copy of 13 June 2024)
+    url: https://web.archive.org/web/20240613042556/http://spineweb.digitalimaginggroup.ca/index.php?n=Main.Datasets
+    kind: website
+  spineweb-home-2015:
+    title: SpineWeb home page news feed (Internet Archive copy of 31 May 2015)
+    url: https://web.archive.org/web/20150531033157/http://spineweb.digitalimaginggroup.ca:80/spineweb/index.php?n=Main.HomePage
+    kind: website
+  cai2015:
+    title: Cai et al. 2015, IEEE Transactions on Medical Imaging 34(8)
+    url: https://doi.org/10.1109/TMI.2015.2392054
+    kind: paper
+related: [spineweb-dataset-1]
+keywords:
+  [vertebra recognition, vertebra localization, vertebra pose, vertebra labeling, spine, CT, MRI, multi-modality, SpineWeb]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
