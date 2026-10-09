@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gusto
+name: GUSTO
+full_name: Growing Up in Singapore Towards healthy Outcomes (GUSTO) birth cohort
+summary: >-
+  Singapore mother-offspring birth cohort of Chinese, Malay and Indian families recruited in pregnancy in 2009 and 2010,
+  with neonatal brain MRI (T2w, DTI at 1.5 T) and repeated child brain MRI (T1w, resting-state fMRI at 3 T) from 4.5 to
+  10.5 years. Data are shared through collaboration with the cohort investigators.
+homepage: https://gusto.sg/
+doi: 10.1093/ije/dyt125
+# No dated public release was found; year of the online publication of the cohort profile (August 2013).
+year: 2013
+status: active
+creators:
+  - name: GUSTO Study Group (National University of Singapore, KK Women's and Children's Hospital, A*STAR)
+    url: https://gusto.sg/about/
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, T1w, bold]
+anatomy: [brain]
+tasks: [longitudinal, regression]
+countries: [SG]
+vendors: [ge, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://gusto.sg/request-to-collaborate/
+  note: >-
+    Researchers who want data or biospecimens fill in an expression-of-interest form and must discuss the project and
+    reach an agreement with a GUSTO investigator. The collaboration guidelines and the data catalogue are hosted on
+    gustodatavault.sg.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The request page names collaboration guidelines and an agreement with the investigators, but no license or data
+      use terms could be read: the guidelines on gustodatavault.sg sit behind a bot check that blocked every attempt
+      to open them. The imaging papers state that the authors do not have permission to share the data.
+citation:
+  text: >-
+    Soh SE, Tint MT, Gluckman PD, Godfrey KM, Rifkin-Graboi A, Chan YH, Stünkel W, Holbrook JD, Kwek K, Chong YS, Saw
+    SM; GUSTO Study Group. Cohort profile: Growing Up in Singapore Towards healthy Outcomes (GUSTO) birth cohort study.
+    Int J Epidemiol 43(5):1401-1409 (2014). doi:10.1093/ije/dyt125
+sources:
+  soh2014:
+    title: Soh et al. 2014, Cohort profile, International Journal of Epidemiology (PubMed record 23912809)
+    url: https://pubmed.ncbi.nlm.nih.gov/23912809/
+    kind: paper
+  soh2012:
+    title: Soh et al. 2012, The methodology of the GUSTO cohort study, Asia Pacific Allergy
+    url: https://doi.org/10.5415/apallergy.2012.2.2.144
+    kind: paper
+  lopezvicente2024:
+    title: >-
+      López-Vicente et al. 2024, Prenatal stress, polygenic risk for ADHD and brain growth in childhood, Developmental
+      Psychobiology
+    url: https://doi.org/10.1002/dev.22481
+    kind: paper
+  broekman2014:
+    title: Broekman et al. 2014, Gestational age and neonatal brain microstructure in term born infants, PLoS ONE
+    url: https://doi.org/10.1371/journal.pone.0115229
+    kind: paper
+  koyama2025:
+    title: >-
+      Koyama et al. 2025, Maternal depressive symptoms in childhood and offspring brain volumetric change from age 4-10
+      years, Developmental Cognitive Neuroscience
+    url: https://doi.org/10.1016/j.dcn.2025.101531
+    kind: paper
+  koyama2024:
+    title: >-
+      Koyama et al. 2024, Harsh parenting, amygdala functional connectivity changes across childhood, and behavioral
+      problems, Psychological Medicine
+    url: https://doi.org/10.1017/S003329172400196X
+    kind: paper
+  gusto-request-to-collaborate:
+    title: GUSTO and S-PRESTO, Request to Collaborate page
+    url: https://gusto.sg/request-to-collaborate/
+    kind: website
+related: []
+keywords: [birth cohort, neonatal MRI, child brain development, pediatric, diffusion MRI, resting-state fMRI, longitudinal, Asian population, Singapore]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
