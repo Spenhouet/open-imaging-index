@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ICBM-DUA
+name: ICBM Data Use Agreement
+short_name: ICBM DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ICBM
+version: 'Online agreement on the LONI IDA application page, read 2026-10-09 (the text states no version or date)'
+summary: >-
+  Access for scientific investigation, teaching or planning clinical research after an online data use application.
+  No onward disclosure beyond the approved uses, no re-identification, and mandatory credit to ICBM in abstracts and
+  manuscripts. The text says nothing about commercial use, model training or sharing derived data.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I request access to data collected by the International Consortium for Brain Mapping (ICBM) for the purpose
+      of scientific investigation, teaching or the planning of clinical research studies
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and the
+      planning of clinical studies.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any training must stay within the stated purposes and the
+      analyses named in the data use application.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address creating derived data, beyond asking for the analyses that are planned.
+  publication:
+    value: conditional
+    quote: 'If I publish manuscripts using data from ICBM, I agree to the following: I will acknowledge the ICBM project
+      as a source of data and include language similar to the following'
+    note: Publication is expected, with the required acknowledgement and methods text. No review before submission is
+      required.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use
+      application.
+    note: Team members and anyone the data are shared with must comply with the agreement.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data such as labels may be shared. The ban on further disclosure
+      covers "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will acknowledge the ICBM project as a source of data and include language similar to the following
+    note: Abstracts must cite ICBM and its funding source as space allows. Manuscripts must include an acknowledgement
+      and a methods paragraph; some variation of the given methods text is mandatory. ICBM is not named as an author.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the International Consortium for Brain Mapping (ICBM) for the purpose
+      of scientific investigation, teaching or the planning of clinical research studies and agree to the following
+      terms
+    note: Accepted as part of an online data use application on the LONI IDA.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: The agreement does not itself require IRB approval, only compliance with what your institution's IRB requires.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: I will respond promptly and accurately to annual requests to update this information.
+    note: Users must report the people using the data and the planned analyses, and update this yearly. The agreement
+      does not ask for results or derived data.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the ICBM subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

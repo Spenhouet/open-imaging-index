@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: icbm
+name: ICBM
+full_name: International Consortium for Brain Mapping
+summary: >-
+  Brain imaging of 853 healthy adults aged 18 to 89 from the consortium that built the ICBM probabilistic reference
+  atlases, shared through the LONI IDA with structural MRI, diffusion, fMRI, MR angiography and a small PET subset.
+homepage: https://ida.loni.usc.edu/login.jsp?project=ICBM
+doi: 10.1098/rstb.2001.0915
+# Year of the descriptor paper. The date of the first data release on the LONI IDA was not found.
+year: 2001
+status: active
+creators:
+  - name: International Consortium for Brain Mapping (PI John Mazziotta, UCLA; Montreal Neurological Institute; University of Texas at San Antonio; Juelich/Heinrich Heine University)
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [bold, dwi, angio]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ICBM
+licenses:
+  - license: LicenseRef-ICBM-DUA
+citation:
+  text: >-
+    Acknowledge ICBM with the acknowledgement and methods text given in the ICBM Data Use Agreement. Reference:
+    Mazziotta J, et al. A probabilistic atlas and reference system for the human brain: International Consortium for
+    Brain Mapping (ICBM). Philos Trans R Soc Lond B Biol Sci 356:1293-1322 (2001). doi:10.1098/rstb.2001.0915
+sources:
+  ida-icbm-study:
+    title: LONI IDA featured study record for ICBM (subjects, cohorts, modalities and ages)
+    url: https://ida.loni.usc.edu/ajax2/xml/home/getStudy?project=ICBM
+    kind: website
+  mazziotta2001:
+    title: Mazziotta J et al. 2001, A probabilistic atlas and reference system for the human brain, Philosophical
+      Transactions of the Royal Society B
+    url: https://doi.org/10.1098/rstb.2001.0915
+    kind: paper
+related: []
+keywords: [brain atlas, healthy adults, normative, probabilistic atlas, reference system]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
