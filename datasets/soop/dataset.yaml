@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: soop
+name: Stroke Outcome Optimization Project (SOOP)
+full_name: 'Stroke Outcome Optimization Project: acute ischemic strokes from a comprehensive stroke center'
+summary: >-
+  Clinical brain MRI (T1w, FLAIR, diffusion TRACE and ADC) of 1,715 people admitted with suspected stroke in upstate
+  South Carolina in 2019-2020, 1,461 with acute ischemic stroke, with manual lesion masks and NIHSS, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004889
+doi: 10.18112/openneuro.ds004889.v1.1.2
+year: 2023
+updated: 2024
+version: 1.1.2
+status: active
+creators:
+  - name: Prisma Health-Upstate and University of South Carolina (Absher J, Rorden C, Newman-Norlund R et al.)
+    url: https://openneuro.org/datasets/ds004889
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi, ADC]
+anatomy: [brain]
+conditions: [ischemic_stroke]
+tasks: [segmentation, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips, ge, siemens]
+field_strengths: [1.5, 3]
+size_gb: 71.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004889
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.2 states "License" CC0, and the OpenNeuro snapshot metadata lists CC0.
+citation:
+  text: >-
+    Absher J, Goncher S, Newman-Norlund R, Perkins N, Yourganov G, Vargas J, Sivakumar S, Parti N, Sternberg S,
+    Teghipco A, Gibson M, Wilson S, Bonilha L, Rorden C. The stroke outcome optimization project: Acute ischemic
+    strokes from a comprehensive stroke center. Scientific Data 11, 839 (2024). doi:10.1038/s41597-024-03667-5
+sources:
+  absher2024:
+    title: Absher et al. 2024, The stroke outcome optimization project, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03667-5
+    kind: paper
+  openneuro-ds004889-v112:
+    title: OpenNeuro ds004889 snapshot 1.1.2 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004889/versions/1.1.2
+    kind: website
+  ds004889-participants:
+    title: participants.tsv of ds004889 snapshot 1.1.2 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004889/blob/1.1.2/participants.tsv
+    kind: computed
+  ds004889-file-tree:
+    title: File tree and JSON sidecars of ds004889 snapshot 1.1.2 (CC0), counted per subject
+    url: https://github.com/OpenNeuroDatasets/ds004889/tree/1.1.2
+    kind: computed
+related: [jhu-acute-stroke-mri, isles-2022, atlas-v2]
+keywords: [acute stroke, ischemic stroke, diffusion-weighted imaging, lesion segmentation, clinical MRI, NIHSS, outcome prediction]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

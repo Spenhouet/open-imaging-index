@@ -1,0 +1,42 @@
+measure,by,value,source,where,note
+subjects,,1715,absher2024,Abstract,1715 subject folders in the snapshot 1.1.2 file tree
+subjects,condition=ischemic_stroke,1461,absher2024,Abstract,"the Cohort section gives 1415 for the AIS sample with an etiology breakdown; the remaining 254 participants had stroke suspected and later excluded"
+subjects,contrast=T1w,1715,ds004889-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,1715,ds004889-file-tree,sub-*/anat/*_FLAIR.nii.gz,
+subjects,contrast=dwi,1715,ds004889-file-tree,sub-*/dwi/*_rec-TRACE_dwi.nii.gz,diffusion TRACE image
+subjects,contrast=ADC,1715,ds004889-file-tree,sub-*/dwi/*_rec-ADC_dwi.nii.gz,
+subjects,contrast_set=ADC+dwi+FLAIR+T1w,1715,ds004889-file-tree,anat and dwi folders,every subject has exactly one image of each
+subjects,vendor=philips,1676,ds004889-file-tree,Manufacturer in JSON sidecars,each subject's four images share one manufacturer
+subjects,vendor=ge,20,ds004889-file-tree,Manufacturer in JSON sidecars,
+subjects,vendor=siemens,19,ds004889-file-tree,Manufacturer in JSON sidecars,
+subjects,field_strength=1.5,1357,ds004889-file-tree,MagneticFieldStrength in JSON sidecars,
+subjects,field_strength=3,358,ds004889-file-tree,MagneticFieldStrength in JSON sidecars,
+subjects,country=US,1715,absher2024,"Methods, Cohort","Prisma Health-Upstate, Greenville, South Carolina"
+subjects,sex=female,538,absher2024,"Methods, Cohort",demographics given for 1106 stroke survivors; participants.tsv agrees
+subjects,sex=male,568,absher2024,"Methods, Cohort",demographics given for 1106 stroke survivors; participants.tsv agrees
+subjects,age=10-19,3,ds004889-participants,age,
+subjects,age=20-29,11,ds004889-participants,age,
+subjects,age=30-39,41,ds004889-participants,age,
+subjects,age=40-49,100,ds004889-participants,age,
+subjects,age=50-59,235,ds004889-participants,age,
+subjects,age=60-69,270,ds004889-participants,age,
+subjects,age=70-79,264,ds004889-participants,age,
+subjects,age=80+,182,ds004889-participants,age,ages above 89 are released as 89+
+subjects,sex=female;age=30-39,25,ds004889-participants,"sex, age",
+subjects,sex=male;age=30-39,16,ds004889-participants,"sex, age",
+subjects,sex=female;age=40-49,54,ds004889-participants,"sex, age",
+subjects,sex=male;age=40-49,46,ds004889-participants,"sex, age",
+subjects,sex=female;age=50-59,92,ds004889-participants,"sex, age",
+subjects,sex=male;age=50-59,143,ds004889-participants,"sex, age",
+subjects,sex=female;age=60-69,113,ds004889-participants,"sex, age",
+subjects,sex=male;age=60-69,157,ds004889-participants,"sex, age",
+subjects,sex=female;age=70-79,125,ds004889-participants,"sex, age",
+subjects,sex=male;age=70-79,139,ds004889-participants,"sex, age",
+subjects,sex=female;age=80+,124,ds004889-participants,"sex, age",
+subjects,sex=male;age=80+,58,ds004889-participants,"sex, age",
+scans,,6860,ds004889-file-tree,sub-*/*/*.nii.gz,"1715 each of T1w, FLAIR, TRACE and ADC; lesion masks not counted"
+age_mean,,64.8,absher2024,"Methods, Cohort",1106 stroke survivors with demographics; ages above 89 clamped to 89
+age_median,,65,absher2024,"Methods, Cohort",
+age_sd,,14,absher2024,"Methods, Cohort",
+age_min,,16,absher2024,"Methods, Cohort",
+age_max,,89,absher2024,"Methods, Cohort",clamped at 89 for privacy
