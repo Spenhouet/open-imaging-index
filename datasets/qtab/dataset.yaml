@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qtab
+name: QTAB (ds004146)
+full_name: Queensland Twin Adolescent Brain Project
+summary: >-
+  Longitudinal brain MRI of 417 Australian twins aged 9 to 14 at baseline, 304 rescanned 1 to 2.5 years later, with
+  MP2RAGE T1w, T2w, FLAIR, SWI, multi-shell diffusion, ASL and resting and task fMRI at 3T, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004146
+doi: 10.18112/openneuro.ds004146.v1.0.4
+year: 2022
+updated: 2022
+version: 1.0.4
+status: active
+creators:
+  - name: >-
+      Queensland Brain Institute and Centre for Advanced Imaging, University of Queensland (Strike LT, Hansell NK,
+      Miller JL, Chuang KH, Thompson PM, de Zubicaray GI, McMahon KL, Wright MJ)
+    url: https://openneuro.org/datasets/ds004146
+species: human
+modalities: [MR]
+contrasts: [T1w, MP2RAGE, T2w, FLAIR, swi, dwi, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 683.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004146
+licenses:
+  - license: CC0-1.0
+    applies_to: Imaging data and participants.tsv on OpenNeuro
+    note: >-
+      dataset_description.json of snapshot 1.0.4 states "License" CC0. The non-imaging phenotypes (zygosity, birth
+      details, cognition, mental health) are a separate restricted dataset that requires a data usage agreement and are
+      not covered by this entry.
+citation:
+  text: >-
+    Strike LT, Hansell NK, Chuang KH, et al. The Queensland Twin Adolescent Brain Project, a longitudinal study of
+    adolescent brain development. Scientific Data 10, 195 (2023). doi:10.1038/s41597-023-02038-w
+sources:
+  strike2023:
+    title: Strike et al. 2023, The Queensland Twin Adolescent Brain Project, Scientific Data
+    url: https://doi.org/10.1038/s41597-023-02038-w
+    kind: paper
+  openneuro-ds004146-v104:
+    title: OpenNeuro ds004146 snapshot 1.0.4 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004146/versions/1.0.4
+    kind: website
+  ds004146-participants:
+    title: participants.tsv of ds004146 snapshot 1.0.4 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004146/blob/1.0.4/participants.tsv
+    kind: computed
+  ds004146-files:
+    title: >-
+      File tree of ds004146 snapshot 1.0.4 (CC0), counted per subject and session from the NIfTI file names under sub-*
+    url: https://github.com/OpenNeuroDatasets/ds004146/tree/1.0.4
+    kind: computed
+related: []
+keywords: [twins, adolescence, brain development, MP2RAGE, longitudinal MRI, diffusion MRI, task fMRI, ASL]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
