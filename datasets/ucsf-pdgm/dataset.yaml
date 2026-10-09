@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ucsf-pdgm
+name: UCSF-PDGM
+full_name: The University of California San Francisco Preoperative Diffuse Glioma MRI
+summary: >-
+  Preoperative 3 T brain MRI of 495 patients with WHO grade 2 to 4 diffuse gliomas from one center, with SWI, ASL
+  and HARDI diffusion besides the standard four contrasts, tumor sub-region segmentations, IDH, MGMT and 1p/19q status
+  and survival data.
+homepage: https://www.cancerimagingarchive.net/collection/ucsf-pdgm/
+doi: 10.7937/tcia.bdgf-8v37
+year: 2022
+updated: 2025
+version: '5'
+status: active
+creators:
+  - name: Center for Intelligent Imaging, University of California San Francisco (Calabrese E. et al.)
+  - name: Center for Biomedical Image Computing and Analytics, University of Pennsylvania
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, swi, dwi, asl]
+anatomy: [brain]
+conditions: [glioma]
+tasks: [segmentation, classification, survival]
+formats: [NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 142
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/ucsf-pdgm/
+  note: >-
+    Images (NIfTI, skull-stripped and co-registered) download with the IBM Aspera Connect plugin; the clinical CSV is a
+    direct download. Original DICOM data are not provided.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/ucsf-pdgm/
+    note: >-
+      The TCIA page lists CC BY 4.0 for the images, the clinical data and the b-value and b-vector files. Users must
+      also follow the TCIA Data Usage Policy, which asks users to acknowledge the dataset and not to use it "to
+      identify or contact individual participants"
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/).
+citation:
+  text: >-
+    Calabrese E, Villanueva-Meyer JE, Rudie JD, Rauschecker AM, Baid U, Bakas S, Cha S, Mongan JT, Hess CP. The
+    University of California San Francisco Preoperative Diffuse Glioma MRI Dataset. Radiology: Artificial
+    Intelligence 4(6), e220058 (2022). https://doi.org/10.1148/ryai.220058. Data: Calabrese E, et al. (2022). The
+    University of California San Francisco Preoperative Diffuse Glioma MRI (UCSF-PDGM) (Version 5) [dataset]. The
+    Cancer Imaging Archive. https://doi.org/10.7937/tcia.bdgf-8v37
+sources:
+  tcia-ucsf-pdgm:
+    title: TCIA UCSF-PDGM collection page (version 5, updated 2025/05/30)
+    url: https://www.cancerimagingarchive.net/collection/ucsf-pdgm/
+    kind: website
+  ucsf-pdgm-metadata-v5:
+    title: >-
+      UCSF-PDGM-metadata_v5.csv clinical data (CC BY 4.0, direct download), counted per patient after dropping the six
+      follow-up exams whose IDs end in _FU
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/UCSF-PDGM-metadata_v5.csv
+    kind: computed
+related: [brats-2021]
+keywords: [glioma, glioblastoma, IDH, MGMT, 1p/19q, radiogenomics, tumor segmentation, HARDI, ASL, survival]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
