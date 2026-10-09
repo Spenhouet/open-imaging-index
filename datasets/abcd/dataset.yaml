@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: abcd
+name: ABCD Study (Release 7.0)
+full_name: Adolescent Brain Cognitive Development Study, Curated Data Release 7.0
+summary: >-
+  Longitudinal multisite 3T MRI of 11,860 US youth enrolled at ages 9 to 10 and scanned every two years: T1w, T2w,
+  multi-shell diffusion, resting-state and task fMRI, with genetics, mental and physical health, cognition and
+  substance use data, shared through the NIH Brain Development Cohorts Data Hub.
+homepage: https://abcdstudy.org/
+doi: 10.82525/8f3w-5260
+year: 2018
+updated: 2026
+version: Curated Data Release 7.0 (13 May 2026)
+status: active
+creators:
+  - name: ABCD Study consortium (21 US research sites, Data Analysis, Informatics and Resource Center at UC San Diego)
+    url: https://abcdstudy.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+tasks: [normative, regression]
+formats: [DICOM, NIfTI, BIDS]
+countries: [US]
+vendors: [siemens, ge, philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.nbdc-datahub.org/data-access-process
+licenses:
+  - license: LicenseRef-NIH-BDC-DUC
+    note: >-
+      Since June 2025 ABCD data are no longer requested through the NIMH Data Archive; release 6.0 and later are
+      accessed on the NBDC Data Hub under this DUC. Investigator-led group DUCs and a separate DUC for analyses that
+      single out American Indian/Alaska Native participants use the same terms.
+citation:
+  text: >-
+    Data used in the preparation of this article were obtained from the Adolescent Brain Cognitive Development (ABCD)
+    Study, held in the NIH Brain Development Cohorts Data Sharing Platform. ABCD Release 7.0,
+    doi:10.82525/8f3w-5260. Imaging protocol: Casey BJ, Cannonier T, Conley MI, et al. The Adolescent Brain Cognitive
+    Development (ABCD) study: Imaging acquisition across 21 sites. Developmental Cognitive Neuroscience 32:43-54
+    (2018). doi:10.1016/j.dcn.2018.03.001
+sources:
+  abcd-release-7-notes:
+    title: ABCD Data Documentation, 7.0 data release notes
+    url: https://docs.abcdstudy.org/latest/documentation/release_notes/7_0.html
+    kind: website
+  nbdc-abcd-release-7:
+    title: NBDC Data Hub, ABCD Release 7.0 landing page
+    url: https://www.nbdc-datahub.org/abcd-release-7-0
+    kind: website
+  abcd-data-sharing:
+    title: ABCD Study website, data sharing page
+    url: https://abcdstudy.org/scientists/data-sharing/
+    kind: website
+  casey2018:
+    title: Casey et al. 2018, Imaging acquisition across 21 sites, Developmental Cognitive Neuroscience (PMC5999559)
+    url: https://doi.org/10.1016/j.dcn.2018.03.001
+    kind: paper
+related: []
+keywords:
+  [adolescent brain development, longitudinal, children, resting-state fMRI, task fMRI, diffusion MRI, substance use]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
