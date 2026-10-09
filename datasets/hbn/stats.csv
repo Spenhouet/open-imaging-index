@@ -1,0 +1,48 @@
+measure,by,value,source,where,note
+subjects,,3421,hbn-metadata-r11,MRI_collected,"participants with MRI_collected = 1 in Metadata_R11.1.csv, which lists participants with phenotypic records; imaging was also released for some participants without them"
+subjects,sex=female,1214,hbn-metadata-r11,Sex,
+subjects,sex=male,2207,hbn-metadata-r11,Sex,
+subjects,age=5-9,1679,hbn-metadata-r11,Age,age in whole years as given in the file
+subjects,age=10-14,1269,hbn-metadata-r11,Age,age in whole years as given in the file
+subjects,age=15-19,424,hbn-metadata-r11,Age,age in whole years as given in the file
+subjects,age=20-29,49,hbn-metadata-r11,Age,age in whole years as given in the file
+subjects,sex=female;age=5-9,584,hbn-metadata-r11,Sex; Age,
+subjects,sex=female;age=10-14,439,hbn-metadata-r11,Sex; Age,
+subjects,sex=female;age=15-19,170,hbn-metadata-r11,Sex; Age,
+subjects,sex=female;age=20-29,21,hbn-metadata-r11,Sex; Age,
+subjects,sex=male;age=5-9,1095,hbn-metadata-r11,Sex; Age,
+subjects,sex=male;age=10-14,830,hbn-metadata-r11,Sex; Age,
+subjects,sex=male;age=15-19,254,hbn-metadata-r11,Sex; Age,
+subjects,sex=male;age=20-29,28,hbn-metadata-r11,Sex; Age,
+subjects,contrast=T1w,3338,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast=T2w,2641,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast=bold,3323,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast=dwi,2891,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast=PDw,1178,hbn-metadata-r11,MRI.* scan columns,"MT-off/MT-on magnetization transfer pair, BIDS suffix PD"
+subjects,contrast_set=bold+dwi+T1w+T2w,1516,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi+PDw+T1w+T2w,908,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi+PDw+T1w,254,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi+T1w,200,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+T1w,198,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+T1w+T2w,176,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold,59,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=T1w,41,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=T1w+T2w,28,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+PDw+T1w+T2w,7,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=dwi+PDw+T1w,4,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=dwi+T1w,2,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi+PDw+T2w,2,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=dwi+PDw+T1w+T2w,2,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+PDw+T1w,1,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi,1,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=dwi+T1w+T2w,1,hbn-metadata-r11,MRI.* scan columns,
+subjects,contrast_set=bold+dwi+T2w,1,hbn-metadata-r11,MRI.* scan columns,
+subjects,field_strength=1.5,343,alexander2017,"Methods, Magnetic resonance imaging (Test Phase)","mobile 1.5 T Siemens Avanto at Staten Island; the metadata file lists 343 participants for the Staten Island site"
+subjects,field_strength=3,3078,hbn-metadata-r11,MRI_Site,"Rutgers (3 T Tim Trio), CBIC and CUNY (3 T Prisma), scanners as named in alexander2017"
+subjects,vendor=siemens,3421,hbn-metadata-r11,MRI_Site,all four MRI sites use Siemens scanners (alexander2017)
+subjects,country=US,3421,hbn-metadata-r11,MRI_Site,all MRI sites are in the New York City area
+age_mean,,10.3,hbn-metadata-r11,Age,
+age_sd,,3.5,hbn-metadata-r11,Age,
+age_median,,10,hbn-metadata-r11,Age,
+age_min,,5,hbn-metadata-r11,Age,
+age_max,,22,hbn-metadata-r11,Age,

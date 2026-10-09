@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hbn
+name: Healthy Brain Network (HBN)
+full_name: Child Mind Institute Healthy Brain Network Biobank
+summary: >-
+  Structural, resting-state and movie fMRI and diffusion MRI, plus EEG and eye tracking, from a community-referred
+  sample of children and adolescents aged 5 to 21 in the New York City area, many with mental health or learning
+  disorders. 3,421 participants with MRI in the open metadata file.
+homepage: https://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/
+doi: 10.1038/sdata.2017.181
+year: 2017
+updated: 2022
+version: Release 11
+status: active
+creators:
+  - name: Child Mind Institute (principal investigator Michael P. Milham)
+    url: https://childmind.org
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi, PDw]
+anatomy: [brain]
+conditions: [adhd]
+tasks: [classification, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/MRI_EEG.html
+  note: >-
+    Imaging, EEG and eye-tracking data need no data use agreement. The non-BIDS downloads ask for a login with the
+    1000 Functional Connectomes Project on NITRC; BIDS MRI is offered through the Reproducible Brain Charts project.
+    Full phenotypic data, including diagnoses, need a data use agreement signed by an institutional official.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: >-
+      Imaging, EEG and eye-tracking data of participants who consented to commercial use (column Commercial_Use =
+      Yes in the metadata file), which covers participants enrolled from 6 December 2016 on.
+  - license: CC-BY-NC-SA-4.0
+    applies_to: >-
+      Imaging, EEG and eye-tracking data of participants without consent for commercial use (Commercial_Use = No in
+      the metadata file), including the first 701 participants enrolled.
+    note: >-
+      The full phenotypic data are not covered by either license and need the HBN data use agreement.
+citation:
+  text: >-
+    Alexander LM, Escalera J, Ai L, et al. An open resource for transdiagnostic research in pediatric mental health
+    and learning disorders. Scientific Data 4:170181 (2017). doi:10.1038/sdata.2017.181
+sources:
+  alexander2017:
+    title: Alexander et al. 2017, Scientific Data
+    url: https://doi.org/10.1038/sdata.2017.181
+    kind: paper
+  hbn-mri-eeg-page:
+    title: HBN data portal, MRI and EEG data page (download table and data license)
+    url: https://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/MRI_EEG.html
+    kind: website
+  hbn-metadata-r11:
+    title: >-
+      HBN Metadata_R11.1.csv (open download, CC BY 4.0 / CC BY-NC-SA 4.0), counted for participants with
+      MRI_collected = 1
+    url: https://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/File/metadata/Metadata_R11.1.csv
+    kind: computed
+related: []
+keywords: [pediatric, child psychiatry, transdiagnostic, ADHD, resting-state fMRI, naturalistic viewing, EEG, development]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
