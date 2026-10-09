@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate-diagnosis
+name: PROSTATE-DIAGNOSIS
+summary: >-
+  1.5 T endorectal-coil prostate MRI of 92 prostate cancer patients with T2-weighted, T1-weighted and dynamic
+  contrast-enhanced series, plus pathology and radiology reports and small sets of manual zonal and structure
+  segmentations.
+homepage: https://www.cancerimagingarchive.net/collection/prostate-diagnosis/
+doi: 10.7937/K9/TCIA.2015.FOQEUJVT
+year: 2013
+updated: 2021
+version: '2'
+status: active
+creators:
+  - name: B. Nicolas Bloch, Ashali Jain and C. Carl Jaffe
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w, T1w, T1w_ce, dce]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, classification]
+formats: [DICOM, NRRD, MHA]
+vendors: [philips]
+field_strengths: [1.5]
+size_gb: 5.67
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostate-diagnosis/
+  note: >-
+    DICOM images via the TCIA Data Retriever; clinical spreadsheet and segmentation archives as direct downloads from
+    the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Bloch BN, Jain A, Jaffe CC. (2015). Data From PROSTATE-DIAGNOSIS [Dataset]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2015.FOQEUJVT
+sources:
+  tcia-prostate-diagnosis:
+    title: TCIA PROSTATE-DIAGNOSIS collection page (version 2, updated 2021/08/09)
+    url: https://www.cancerimagingarchive.net/collection/prostate-diagnosis/
+    kind: website
+  tcia-prostate-diagnosis-series:
+    title: TCIA NBIA API series metadata for PROSTATE-DIAGNOSIS (CC BY 3.0, open, no account)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=PROSTATE-DIAGNOSIS&format=json
+    kind: computed
+related: []
+keywords: [prostate cancer, prostate MRI, endorectal coil, DCE-MRI, prostate zonal segmentation, NCI-ISBI 2013]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
