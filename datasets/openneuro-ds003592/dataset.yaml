@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003592
+name: Neurocognitive Aging ME-fMRI (ds003592)
+full_name: Neurocognitive aging data release with behavioral, structural and multi-echo functional MRI measures
+summary: >-
+  3T brain MRI of 301 healthy adults from Ithaca and Toronto, 181 aged 18 to 34 and 120 aged 60 to 89, with T1w,
+  two multi-echo resting-state fMRI runs and T2-FLAIR in most, plus cognitive and personality scores, in BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds003592
+doi: 10.18112/openneuro.ds003592.v1.0.13
+# First public snapshot (1.0.0) on OpenNeuro, 2021-03-30; latest snapshot 1.0.13, 2022-11-14.
+year: 2021
+updated: 2022
+version: 1.0.13
+status: active
+creators:
+  - name: Spreng RN, Turner GR, et al. (McGill University, York University, Cornell University)
+    url: https://openneuro.org/datasets/ds003592
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [US, CA]
+vendors: [ge, siemens]
+field_strengths: [3]
+size_gb: 111.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003592
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.13 states "License" CC0, and the data descriptor states that all data
+      are shared under CC0. The behavioral data on OSF (osf.io/yhzxe) are covered by the same statement.
+citation:
+  text: >-
+    Spreng RN, Setton R, Alter U, et al. Neurocognitive aging data release with behavioral, structural and multi-echo
+    functional MRI measures. Scientific Data 9, 119 (2022). doi:10.1038/s41597-022-01231-7
+sources:
+  spreng2022:
+    title: >-
+      Spreng et al. 2022, Neurocognitive aging data release with behavioral, structural and multi-echo functional MRI
+      measures, Scientific Data (PMC full text, with the 2024 author correction applied)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8964687/
+    kind: paper
+  openneuro-ds003592-v1-0-13:
+    title: OpenNeuro ds003592 snapshot 1.0.13 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003592/versions/1.0.13
+    kind: website
+  ds003592-participants:
+    title: participants.tsv of ds003592 (CC0), counted per row; ages from the age column (one value top-coded as 89+)
+    url: https://github.com/OpenNeuroDatasets/ds003592/blob/master/participants.tsv
+    kind: computed
+  ds003592-file-tree:
+    title: File listing of the ds003592 BIDS repository (CC0), subjects counted per T1w, FLAIR and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003592
+    kind: computed
+related: []
+keywords: [aging, multi-echo fMRI, resting-state fMRI, white matter hyperintensities, cognition, older adults]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
