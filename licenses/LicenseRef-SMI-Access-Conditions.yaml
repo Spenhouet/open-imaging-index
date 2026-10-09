@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-SMI-Access-Conditions
+name: Scottish Medical Imaging (SMI) access conditions (PBPP approval, Scottish National Safe Haven)
+short_name: SMI access conditions
+url: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/process-for-requesting-a-study/
+version: >-
+  Public Health Scotland SMI pages last updated 2025-08-19, and the access conditions described in Baxter et al.,
+  Radiology: Artificial Intelligence 6(1):e220266 (2024), both read 2026-10-09
+summary: >-
+  No published license. A project is approved by the NHS Scotland Public Benefit and Privacy Panel, then works on a
+  project-specific extract inside the Scottish National Safe Haven, paid on a cost recovery basis. AI development is
+  allowed, the data cannot be exported and outputs pass disclosure control. Commercial AI products may have to be
+  offered to NHS Scotland at a discount.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: If a group wishes to develop a commercial artificial intelligence (AI) product, providing the product at a
+      discounted price to NHS Scotland may be required because the product will have been trained on data from this
+      population.
+    source: https://doi.org/10.1148/ryai.220266
+    note: Commercial AI development is possible within an approved project; NHS Scotland may ask for discounted
+      access to the resulting product.
+  model_training:
+    value: 'yes'
+    quote: The NSH environment allows analysis and AI development, but the data itself cannot be exported.
+    source: https://doi.org/10.1148/ryai.220266
+    note: Within the approved project and inside the Scottish National Safe Haven.
+  derivatives:
+    value: 'yes'
+    quote: the software platform can store and share ground truth and annotations from one research project with
+      another (provisional on consent to share).
+    source: https://doi.org/10.1148/ryai.220266
+  publication:
+    value: conditional
+    quote: Access to the internet is controlled, and disclosure controls are applied to any data to be exported.
+    source: https://doi.org/10.1148/ryai.220266
+    note: Results leave the safe haven only after disclosure control.
+  redistribute_original:
+    value: 'no'
+    quote: The NSH environment allows analysis and AI development, but the data itself cannot be exported.
+    source: https://doi.org/10.1148/ryai.220266
+  redistribute_derivatives:
+    value: conditional
+    quote: Access to the internet is controlled, and disclosure controls are applied to any data to be exported.
+    source: https://doi.org/10.1148/ryai.220266
+    note: Annotations can be shared with other approved projects inside the platform, subject to consent to share.
+  share_model_weights:
+    value: 'no'
+    quote: We are researching effective disclosure control methods for AI models (17) to support extraction from the
+      NSH, but this process is not yet implemented in production.
+    source: https://doi.org/10.1148/ryai.220266
+    note: As of the 2024 paper, trained models could not be extracted from the safe haven.
+  attribution:
+    value: unspecified
+    note: The full terms of a PBPP approval are not published.
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: unspecified
+    note: Access requires an approved PBPP application; whether a separate data use agreement is signed is not
+      published.
+  ethics_approval:
+    value: unspecified
+    note: Public Health Scotland holds a generic ethics approval for the research database; project approval is by
+      the Public Benefit and Privacy Panel.
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+  no_reidentification:
+    value: 'yes'
+    quote: At present, no automated methods prevent three-dimensional reconstruction of a face from images of the head
+      (governance rules prohibit this)
+    source: https://doi.org/10.1148/ryai.220266
+  geographic_restriction:
+    value: conditional
+    quote: SMI data are available to researchers affiliated with U.K. public sector organizations, and requests can be
+      made to provide access to those outside the United Kingdom.
+    source: https://doi.org/10.1148/ryai.220266
+    note: Data stay in the Scottish National Safe Haven and are analysed there.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

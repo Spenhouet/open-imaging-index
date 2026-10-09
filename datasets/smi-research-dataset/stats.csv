@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,4271698,baxter2024,Table 2,"sum of the nine disjoint ethnicity rows of Table 2, whose percentages add up to 100%; the paper gives no single patient total"
+subjects,sex=female,2182123,baxter2024,p. 2 (Data Resource Collection),
+subjects,sex=male,2081040,baxter2024,p. 2 (Data Resource Collection),
+studies,,~57300000,baxter2024,p. 1 (Data Resource Collection),"57.3 million studies, all modalities, January 2010 to August 2018"
+studies,sex=female,13167604,baxter2024,p. 2 (Data Resource Collection),unique study identifiers of female patients
+studies,sex=male,11265313,baxter2024,p. 2 (Data Resource Collection),unique study identifiers of male patients
+studies,modality=CT,3261004,baxter2024,Table 1,
+studies,modality=MR,1539189,baxter2024,Table 1,
+studies,modality=CR,14182921,baxter2024,Table 1,computed radiography; not yet curated for research access at publication
+scans,,~94900000,baxter2024,p. 1 (Data Resource Collection),"94.9 million DICOM series across all modalities, including structured reports"
+scans,modality=CT,12909599,baxter2024,Table 1,DICOM series
+scans,modality=MR,15878418,baxter2024,Table 1,DICOM series
+images,,~2470000000,baxter2024,p. 1 (Data Resource Collection),"2.47 billion DICOM images, all modalities"
+images,modality=CT,1787245067,baxter2024,Table 1,DICOM images (slices)
+images,modality=MR,480422586,baxter2024,Table 1,DICOM images (slices)
+images,modality=CR,21193120,baxter2024,Table 1,DICOM images
