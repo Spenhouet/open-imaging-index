@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: acrin-contralateral-breast-mr
+name: ACRIN-Contralateral-Breast-MR
+full_name: ACRIN-Contralateral-Breast-MR (ACRIN 6667)
+summary: >-
+  Contrast-enhanced breast MRI of 984 women with recently diagnosed unilateral breast cancer from the multicenter
+  ACRIN 6667 trial, which screened the contralateral breast for occult cancer, with clinical, pathology and follow-up
+  forms.
+homepage: https://www.cancerimagingarchive.net/collection/acrin-contralateral-breast-mr/
+doi: 10.7937/Q1EE-J082
+year: 2021
+version: '1'
+status: active
+creators:
+  - name: American College of Radiology Imaging Network (ACRIN)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, CR]
+contrasts: [T1w, T1w_ce, dce, T2w]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [detection, classification]
+formats: [DICOM]
+size_gb: 199.59
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/acrin-contralateral-breast-mr/
+  note: >-
+    The images are downloaded with a TCIA manifest file and the NBIA Data Retriever, or through the NCI Imaging Data
+    Commons. The clinical CSV files are a direct download from the collection page. No account is needed.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/acrin-contralateral-breast-mr/
+citation:
+  text: >-
+    Kinahan P, Muzi M, Bialecki B, Herman B, Coombs L. (2021). ACRIN-Contralateral-Breast-MR (ACRIN 6667) [Data set].
+    The Cancer Imaging Archive. https://doi.org/10.7937/Q1EE-J082. Publication: Lehman CD, Gatsonis C, Kuhl CK, et
+    al. MRI evaluation of the contralateral breast in women with recently diagnosed breast cancer. N Engl J Med
+    356:1295-1303 (2007). https://doi.org/10.1056/NEJMoa065447
+sources:
+  tcia-acrin-contralateral-breast-mr:
+    title: TCIA ACRIN-Contralateral-Breast-MR collection page (version 1, updated 2021/03/05)
+    url: https://www.cancerimagingarchive.net/collection/acrin-contralateral-breast-mr/
+    kind: website
+  lehman2007:
+    title: Lehman et al. 2007, New England Journal of Medicine (abstract, PMID 17392300)
+    url: https://doi.org/10.1056/NEJMoa065447
+    kind: paper
+  acrin6667-protocol:
+    title: ACRIN 6667 study protocol (version 10/9/03)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/ACRIN-6667_Protocol.pdf
+    kind: website
+  tcia-acrin-6667-digest:
+    title: TCIA NBIA series metadata digest for ACRIN-Contralateral-Breast-MR (Feb 2021 manifest, CC BY 4.0)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/ACRIN-Contralateral-Breast-MR-Feb-2021-manifes-nbia-digest.xlsx
+    kind: computed
+keywords:
+  [contralateral breast cancer, breast MRI, DCE-MRI, clinical trial, occult cancer, screening, mammography]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
