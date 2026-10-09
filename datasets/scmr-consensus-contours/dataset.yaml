@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: scmr-consensus-contours
+name: SCMR Consensus Contours
+full_name: Society for Cardiovascular Magnetic Resonance Consensus Contour dataset (Cardiac Atlas Project)
+summary: >-
+  Short-axis cine cardiac MRI of 15 subjects (healthy, infarct, heart failure, LV hypertrophy) from GE, Siemens and
+  Philips scanners, with left ventricular myocardial contours from seven SCMR core labs fused into consensus contours
+  that are kept back for benchmarking.
+homepage: https://www.cardiacatlas.org/scmr-consensus-contours/
+doi: 10.1186/s12968-015-0170-9
+year: 2015
+status: active
+creators:
+  - name: Cardiac Atlas Project
+    url: https://www.cardiacatlas.org/
+  - name: Society for Cardiovascular Magnetic Resonance core laboratories
+    url: https://scmr.org
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [healthy, myocardial_infarction, heart_failure, left_ventricular_hypertrophy]
+tasks: [segmentation]
+formats: [DICOM]
+vendors: [ge, siemens, philips]
+access:
+  type: application
+  url: https://www.cardiacatlas.org/scmr-consensus-contours/request-scmr-consensus-data/
+licenses:
+  - license: LicenseRef-CAP-SCMR-Consensus-Request
+    applies_to: All data, terms consented to in the request form
+  - license: LicenseRef-CAP-Data-Distribution-Policy
+    applies_to: All data, CAP user policy accepted in the request form
+license_combine: all
+citation:
+  text: >-
+    Suinesiaputra A, Bluemke DA, Cowan BR, Friedrich MG, Kramer CM, Kwong R, Plein S, Schulz-Menger J, Westenberg JJM,
+    Young AA, Nagel E. Quantification of LV function and mass by cardiovascular magnetic resonance: multi-center
+    variability and consensus contours. Journal of Cardiovascular Magnetic Resonance 17, 63 (2015).
+    doi:10.1186/s12968-015-0170-9
+sources:
+  suinesiaputra2015:
+    title: Suinesiaputra et al. 2015, Journal of Cardiovascular Magnetic Resonance
+    url: https://doi.org/10.1186/s12968-015-0170-9
+    kind: paper
+  cap-scmr-consensus:
+    title: Cardiac Atlas Project, SCMR Consensus Contours page
+    url: https://www.cardiacatlas.org/scmr-consensus-contours/
+    kind: website
+related: [sunnybrook-cardiac-data]
+keywords: [cardiac MRI, cine MRI, left ventricle, myocardium segmentation, consensus contours, STAPLE, benchmark]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

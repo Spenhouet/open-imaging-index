@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CAP-SCMR-Consensus-Request
+name: Cardiac Atlas Project SCMR Consensus Contour data request terms
+short_name: CAP SCMR request form
+url: https://docs.google.com/forms/d/e/1FAIpQLScFTebsVYGmyUmTp8Ta5heeafbrnSE7MrFolB8uiaIxHNXh1g/viewform
+version: 'Online request form "SCMR Consensus Contour", read 2026-10-09'
+summary: >-
+  Requesters describe their use and data handling and must consent to three terms: use the data only to contour the
+  myocardium, accept the CAP Policy Statements, and not pass the data on outside their research group. Requests are
+  forwarded to the data contributors for a decision.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The form does not mention commercial use. The CAP user policy that requesters accept covers it.
+  model_training:
+    value: conditional
+    quote: I will only use the data for the purpose of contouring the myocardium
+    note: Use is limited to myocardial contouring. The consensus contours themselves are not shared, because the
+      dataset serves as an external validation set.
+  derivatives:
+    value: conditional
+    quote: I will only use the data for the purpose of contouring the myocardium
+    note: Contours drawn on the images are the expected output and can be submitted to CAP for a performance report.
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: 'no'
+    quote: I will not re-share the data to other parties outside my research group
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'no'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: We only share the data if you are consented to all options below
+    note: The consent covers the three terms of the form, including acceptance of the CAP Policy Statements.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
