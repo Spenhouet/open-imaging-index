@@ -1,0 +1,43 @@
+measure,by,value,source,where,note
+subjects,,301,spreng2022,Methods: Participants,the README of snapshot 1.0.13 and participants.tsv also list 301
+studies,,602,ds003592-file-tree,ses-1 and ses-2 folders,two resting-state sessions per subject
+subjects,age=18-34,181,spreng2022,Table 1,younger adults
+subjects,age=60-89,120,spreng2022,Table 1,older adults
+subjects,country=US,238,spreng2022,Table 1,"Cornell, Ithaca NY"
+subjects,country=CA,63,spreng2022,Table 1,"York University, Toronto"
+subjects,vendor=ge,238,spreng2022,Methods: Magnetic resonance imaging,GE Discovery MR750 at Cornell
+subjects,vendor=siemens,63,spreng2022,Methods: Magnetic resonance imaging,Siemens TimTrio at York University
+subjects,field_strength=3,301,spreng2022,Methods: Magnetic resonance imaging,
+subjects,condition=healthy,301,spreng2022,Methods: Participants,
+subjects,sex=female,169,spreng2022,Table 1,"sum of the four disjoint site by age group cells; participants.tsv lists 168 F, 132 M and 1 n/a"
+subjects,sex=male,132,spreng2022,Table 1,sum of the four disjoint site by age group cells
+subjects,sex=female;age=18-34,103,spreng2022,Table 1,sum of Cornell and York
+subjects,sex=male;age=18-34,78,spreng2022,Table 1,sum of Cornell and York
+subjects,sex=female;age=60-89,66,spreng2022,Table 1,sum of Cornell and York
+subjects,sex=male;age=60-89,54,spreng2022,Table 1,sum of Cornell and York
+subjects,country=US;age=18-34,154,spreng2022,Table 1,
+subjects,country=US;age=60-89,84,spreng2022,Table 1,
+subjects,country=CA;age=18-34,27,spreng2022,Table 1,
+subjects,country=CA;age=60-89,36,spreng2022,Table 1,
+subjects,country=US;sex=female,133,spreng2022,Table 1,sum of both age groups
+subjects,country=US;sex=male,105,spreng2022,Table 1,sum of both age groups
+subjects,country=CA;sex=female,36,spreng2022,Table 1,sum of both age groups
+subjects,country=CA;sex=male,27,spreng2022,Table 1,sum of both age groups
+subjects,country=US;sex=female;age=18-34,86,spreng2022,Table 1,
+subjects,country=US;sex=male;age=18-34,68,spreng2022,Table 1,
+subjects,country=US;sex=female;age=60-89,47,spreng2022,Table 1,
+subjects,country=US;sex=male;age=60-89,37,spreng2022,Table 1,
+subjects,country=CA;sex=female;age=18-34,17,spreng2022,Table 1,
+subjects,country=CA;sex=male;age=18-34,10,spreng2022,Table 1,
+subjects,country=CA;sex=female;age=60-89,19,spreng2022,Table 1,
+subjects,country=CA;sex=male;age=60-89,17,spreng2022,Table 1,
+subjects,contrast=T1w,301,ds003592-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,301,ds003592-file-tree,func/*_bold.nii.gz,all subjects have two multi-echo resting-state runs (spreng2022 Methods)
+subjects,contrast=FLAIR,251,ds003592-file-tree,anat/*_FLAIR.nii.gz,"the paper reports 258 (110 older, 148 younger) and the OpenNeuro README 246"
+subjects,contrast_set=bold+FLAIR+T1w,251,ds003592-file-tree,,
+subjects,contrast_set=bold+T1w,50,ds003592-file-tree,,
+subjects,contrast=FLAIR;age=18-34,142,ds003592-file-tree,,age group from participants.tsv agegroup column
+subjects,contrast=FLAIR;age=60-89,109,ds003592-file-tree,,age group from participants.tsv agegroup column
+age_median,,26,ds003592-participants,age,the one top-coded value 89+ counted as 89
+age_min,,18,spreng2022,Table 1,
+age_max,,89,spreng2022,Table 1,
