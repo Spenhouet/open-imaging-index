@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qtim
+name: QTIM (ds004169)
+full_name: Queensland Twin IMaging (QTIM)
+summary: >-
+  Brain MRI of 1,202 twins and siblings from Queensland aged 12 to 30, with T1w, n-back and resting-state fMRI and
+  diffusion scans on a 4 T scanner, a test-retest and a longitudinal subsample, in BIDS on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds004169
+doi: 10.18112/openneuro.ds004169.v1.0.8
+year: 2022
+updated: 2026
+version: 1.0.8
+status: active
+creators:
+  - name: >-
+      QIMR Berghofer Medical Research Institute and University of Queensland (Strike LT, Blokland GAM, Hansell NK,
+      Martin NG, Toga AW, Thompson PM, de Zubicaray GI, McMahon KL, Wright MJ)
+    url: https://openneuro.org/datasets/ds004169
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [bruker]
+field_strengths: [4]
+size_gb: 147.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004169
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.8 states "License" CC0. Zygosity and further phenotypes are not part of
+      the release and need a data transfer agreement and ethics approval from QIMR Berghofer.
+citation:
+  text: >-
+    Strike LT, Blokland GAM, Hansell NK, Martin NG, Toga AW, Thompson PM, de Zubicaray GI, McMahon KL, Wright MJ.
+    Queensland Twin IMaging (QTIM). OpenNeuro ds004169 (2022). doi:10.18112/openneuro.ds004169. The dataset asks to
+    also cite Strike et al. 2019 (T1w), Blokland et al. 2011 (n-back), Sinclair et al. 2015 (rest) and Shen et al.
+    2014 (diffusion).
+sources:
+  openneuro-ds004169-v108:
+    title: OpenNeuro ds004169 snapshot 1.0.8 (README, dataset_description.json, snapshot summary)
+    url: https://openneuro.org/datasets/ds004169/versions/1.0.8
+    kind: website
+  ds004169-participants:
+    title: participants.tsv of ds004169 snapshot 1.0.8 (CC0), counted per row from the sex and age columns
+    url: https://github.com/OpenNeuroDatasets/ds004169/blob/1.0.8/participants.tsv
+    kind: computed
+  ds004169-file-tree:
+    title: File tree of ds004169 snapshot 1.0.8 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds004169/tree/1.0.8
+    kind: computed
+  sinclair2015:
+    title: >-
+      Sinclair et al. 2015, Heritability of the network architecture of intrinsic brain functional connectivity,
+      NeuroImage
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4837693/
+    kind: paper
+  shen2014:
+    title: Shen et al. 2014, Investigating brain connectivity heritability in a twin study using diffusion imaging data, NeuroImage
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4291188/
+    kind: paper
+related: []
+keywords: [twins, heritability, imaging genetics, n-back, working memory, resting-state fMRI, diffusion MRI, test-retest, 4 T]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
