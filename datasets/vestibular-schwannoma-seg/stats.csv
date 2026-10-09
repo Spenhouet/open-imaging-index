@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,242,shapey2021,"Methods, Data overview",consecutive patients treated with Gamma Knife radiosurgery
+subjects,condition=vestibular_schwannoma,242,shapey2021,"Methods, Data overview",single unilateral sporadic vestibular schwannoma
+studies,,242,tcia-vestibular-schwannoma-seg,Data Access (Version 2),one planning MRI session per patient
+scans,,1936,tcia-vestibular-schwannoma-seg,Data Access (Version 2),"DICOM series, including RTDOSE, RTSTRUCT and RTPLAN objects"
+images,,48582,tcia-vestibular-schwannoma-seg,Data Access (Version 2),DICOM image files
+scans,modality=MR,484,shapey2021,"Methods, Data overview",MR image sets
+subjects,sex=female,147,shapey2021,"Methods, Data overview",
+subjects,sex=male,95,shapey2021,"Methods, Data overview",
+age_median,,56,shapey2021,"Methods, Data overview",
+age_min,,24,shapey2021,"Methods, Data overview",
+age_max,,84,shapey2021,"Methods, Data overview",
+age_mean,,55.5,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+age_sd,,12.7,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=20-29,6,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=30-39,27,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=40-49,38,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=50-59,72,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=60-69,68,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=70-79,27,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,age=80+,4,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Patient Age",
+subjects,contrast=T1w_ce,242,shapey2021,"Methods, Data overview",
+subjects,contrast=T2w,242,shapey2021,"Methods, Data overview",high-resolution T2 (3D CISS)
+subjects,contrast_set=T1w_ce+T2w,242,shapey2021,"Methods, Data overview",
+scans,contrast=T1w_ce,242,tcia-vestibular-schwannoma-seg-digest,"Modality, Series Description",
+scans,contrast=T2w,242,tcia-vestibular-schwannoma-seg-digest,"Modality, Series Description",
+subjects,vendor=siemens,242,tcia-vestibular-schwannoma-seg-digest,"Patient ID, Modality, Manufacturer",
+subjects,split=train,176,shapey2021,Code availability,random split used for the released baseline algorithm
+subjects,split=validation,20,shapey2021,Code availability,hyperparameter tuning set of the baseline algorithm
+subjects,split=test,46,shapey2021,Code availability,test set of the baseline algorithm
