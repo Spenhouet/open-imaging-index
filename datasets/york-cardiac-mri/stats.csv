@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,33,andreopoulos2008,Section 3.1,
+images,,7980,andreopoulos2008,Section 3.1,"2D short-axis images: 20 frames and 8 to 15 slices per subject"
+images,contrast=cine,7980,andreopoulos2008,Section 3.1,FIESTA cine sequences
+subjects,contrast=cine,33,andreopoulos2008,Section 3.1,
+subjects,vendor=ge,33,andreopoulos2008,Section 3.1,GE Genesis Signa scanner
+subjects,country=CA,33,andreopoulos2008,Section 3.1,Hospital for Sick Children

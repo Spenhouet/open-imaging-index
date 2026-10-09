@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-York-Cardiac-MRI-Terms
+name: York University Cardiac MRI Dataset terms of use (dataset web page)
+short_name: York Cardiac MRI terms
+url: http://jtl.lassonde.yorku.ca/software/datasets/
+version: Cardiac MRI Dataset section of the Tsotsos Lab datasets page, read 2026-10-09
+summary: >-
+  Not a formal license. The dataset page says use is free of charge, asks users to cite the 2008 Medical Image
+  Analysis paper, and states that the data is provided for research purposes only, without warranties or liability.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    note: Use is limited to research; the text does not say whether commercial research counts.
+    quote: >-
+      Disclaimer: The dataset is provided for research purposes only and there are no warranties provided nor
+      liabilities assumed by York University nor the researchers involved in the production of the dataset.
+  model_training:
+    value: conditional
+    note: Allowed as part of research.
+    quote: The dataset is provided for research purposes only
+  derivatives:
+    value: unspecified
+    note: The page does not mention derived data such as new labels or processed images.
+  publication:
+    value: 'yes'
+    quote: >-
+      Use is free of charge; We respectfully ask that if you use this dataset, you cite the above paper as its
+      source.
+  redistribute_original:
+    value: unspecified
+    note: The page does not say whether the data may be passed on.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: We respectfully ask that if you use this dataset, you cite the above paper as its source.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: The files download from the page without registration.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

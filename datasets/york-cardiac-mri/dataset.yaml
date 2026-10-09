@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: york-cardiac-mri
+name: York Cardiac MRI Dataset
+full_name: York University Cardiac MRI Dataset
+summary: >-
+  Short-axis cine cardiac MRI of 33 children and adolescents from the Hospital for Sick Children, Toronto, mostly with
+  heart abnormalities: 7980 images over 20 frames per subject, with manual LV endocardial and epicardial contours on
+  5011 images.
+homepage: http://jtl.lassonde.yorku.ca/software/datasets/
+doi: 10.1016/j.media.2007.12.003
+year: 2008
+status: active
+creators:
+  - name: Alexander Andreopoulos and John K. Tsotsos, York University
+    url: http://jtl.lassonde.yorku.ca/
+  - name: Department of Diagnostic Imaging, Hospital for Sick Children, Toronto (image data)
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [cardiomyopathy]
+tasks: [segmentation]
+formats: [MAT]
+countries: [CA]
+vendors: [ge]
+size_gb: 0.44
+access:
+  type: open
+  url: http://jtl.lassonde.yorku.ca/software/datasets/
+licenses:
+  - license: LicenseRef-York-Cardiac-MRI-Terms
+citation:
+  text: >-
+    Andreopoulos A, Tsotsos JK. Efficient and Generalizable Statistical Models of Shape and Appearance for Analysis
+    of Cardiac MRI. Medical Image Analysis 12(3), 335-357 (2008). doi:10.1016/j.media.2007.12.003
+sources:
+  andreopoulos2008:
+    title: Andreopoulos and Tsotsos 2008, Medical Image Analysis (author PDF once linked from the dataset page)
+    url: https://doi.org/10.1016/j.media.2007.12.003
+    kind: paper
+  yorku-datasets-page:
+    title: Tsotsos Lab datasets page, Cardiac MRI Dataset section
+    url: http://jtl.lassonde.yorku.ca/software/datasets/
+    kind: website
+related: [sunnybrook-cardiac-data, acdc]
+keywords: [cardiac MRI, cine MRI, left ventricle segmentation, pediatric, congenital heart disease, active appearance model]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
