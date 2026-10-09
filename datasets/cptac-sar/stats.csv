@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,88,tcia-cptac-sar,Collection Snapshot,"subjects in the collection snapshot, radiology and pathology"
+subjects,modality=SM,88,tcia-cptac-sar,Data Access (Version 10),subjects with tissue slide images
+slides,,300,tcia-cptac-sar,Data Access (Version 10),SVS tissue slide images
+studies,,33,tcia-cptac-sar,Data Access (Version 10),radiology only
+scans,,265,tcia-cptac-sar,Data Access (Version 10),DICOM series
+images,,29595,tcia-cptac-sar,Data Access (Version 10),DICOM images
+subjects,modality=CT,18,tcia-cptac-sar-series,"PatientID, Modality fields",radiology subset (24 subjects)
+subjects,modality=MR,11,tcia-cptac-sar-series,"PatientID, Modality fields",radiology subset (24 subjects)
+subjects,modality=PT,2,tcia-cptac-sar-series,"PatientID, Modality fields",radiology subset (24 subjects)
+subjects,vendor=ge,15,tcia-cptac-sar-series,"PatientID, Manufacturer fields","radiology subset; recorded as GE MEDICAL SYSTEMS"
+subjects,vendor=siemens,5,tcia-cptac-sar-series,"PatientID, Manufacturer fields",radiology subset
+subjects,vendor=philips,3,tcia-cptac-sar-series,"PatientID, Manufacturer fields",radiology subset

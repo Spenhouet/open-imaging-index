@@ -152,6 +152,7 @@ terms:
       synonyms: [ccRCC, clear cell renal carcinoma],
       mappings: { mondo: 'MONDO:0005005' }
     }
+  - { id: sarcoma, label: Sarcoma, mappings: { mondo: 'MONDO:0005089' } }
   - {
       id: pancreatic_cancer,
       label: Pancreatic ductal adenocarcinoma,
