@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: calm
+name: CALM
+full_name: Centre for Attention, Learning and Memory (CALM) cohort, CALM:Open release
+summary: >-
+  Cross-sectional cohort of children aged 5 to 18 from Cambridge, UK, with problems of attention, learning or memory
+  plus school-matched peers. 440 children have T1w, T2w, diffusion and resting-state fMRI at 3T, with cognitive tests.
+homepage: https://calm.mrc-cbu.cam.ac.uk/
+doi: 10.1186/s12887-018-1385-3
+# Year the CALM:Open managed access portal was announced on the CALM website (July 2023).
+year: 2023
+status: active
+creators:
+  - name: Centre for Attention, Learning and Memory (CALM), MRC Cognition and Brain Sciences Unit, University of Cambridge
+    url: https://calm.mrc-cbu.cam.ac.uk/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [neurodevelopmental_disorder]
+formats: [BIDS]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://portal.camide.cam.ac.uk/overview/1158
+licenses:
+  - license: LicenseRef-CALM-Open-Terms
+citation:
+  text: >-
+    Holmes J, Bryant A, The CALM Team, Gathercole SE. Protocol for a transdiagnostic study of children with problems
+    of attention, learning and memory (CALM). BMC Pediatrics 19, 10 (2019). doi:10.1186/s12887-018-1385-3
+sources:
+  holmes2019:
+    title: Holmes et al. 2019, CALM study protocol, BMC Pediatrics
+    url: https://doi.org/10.1186/s12887-018-1385-3
+    kind: paper
+  camide-calm-open:
+    title: CAM:IDE Data Access Portal, CALM:Open overview page
+    url: https://portal.camide.cam.ac.uk/overview/1158
+    kind: website
+related: []
+keywords: [children, adolescents, neurodevelopment, attention, learning difficulties, working memory, cognition]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
