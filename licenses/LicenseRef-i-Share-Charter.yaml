@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-i-Share-Charter
+name: Ancillary Studies Charter, University of Bordeaux / i-Share study
+short_name: i-Share Charter
+url: https://research.i-share.fr/wp-content/uploads/2020/12/ENR-EA-CHART_Ancillary-studies-charter-v2.0-du-23-10-2017.pdf
+version: 'ENR-EA-CHART v2.0, 26/10/2017'
+summary: >-
+  Every use of i-Share data, including the MRi-Share imaging platform, is an ancillary study that the i-Share executive
+  committee must approve. The lead researcher signs the charter, pays for access, may use the data only for the
+  declared analyses and by the named people, destroys the data at the end, and follows the publication rules, which
+  make the MRi platform lead a co-signatory of every article that uses its data.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The charter does not mention commercial use. It opens the data to "any researcher or research team, public of
+      private, French or overseas".
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+    note: The charter does not address derived data from existing data. Analyses are limited to those declared in the
+      application package.
+  publication:
+    value: conditional
+    quote: The rules of the publications below must be applied by any team or person with access to i‐Share cohort
+      data.
+    note: Publications must follow the charter's rules on authorship, study group naming and acknowledgments.
+  redistribute_original:
+    value: 'no'
+    quote: Transfer of data, provided by the i‐Share cohort coordination team, to any person other than those specified
+      in the application is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Acknowledgments regarding i‐Share must feature in the acknowledgments section of any article concerning data
+      from the study.
+    note: The charter also makes the MRi platform lead (B. Mazoyer) or a designee co-signatory of every article using
+      data from that platform, and asks for "on behalf of the i‐Share study group" after the author list.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: The lead researcher of the ancillary study must sign the declaration accepting the operating procedures for
+      ancillary studies of the i‐Share cohort which can be found on page 11 of this document.
+  ethics_approval:
+    value: conditional
+    quote: ethical aspect (an ethics opinion may be requested if needed)
+    note: The executive committee may ask for an ethics opinion. The signed declaration also commits the researcher to
+      French research regulations (public health code, Jardé law) and CNIL data protection rules.
+  publication_review:
+    value: conditional
+    quote: The lead researchers responsible for the "Biobank and genetics" (S. Debette) and "MRi" (B. Mazoyer) technical
+      platforms are co‐signatories for all articles using data from these platforms.
+    note: No separate manuscript review step is described, but articles using MRi data need the MRi platform lead or a
+      designee as co-author. The researcher must also give the coordinator everything needed to judge the analyses and
+      communication documents.
+  code_release:
+    value: conditional
+    quote: The lead researcher of the ancillary study agrees to facilitate these re‐analyses, such as by the transfer of
+      analysis programs.
+    note: Analysis programs go to the executive committee when it chooses to repeat the analyses. Public release is not
+      required.
+  return_results:
+    value: conditional
+    quote: The lead researcher of the ancillary study agrees to provide the lead research coordinator of the i‐Share
+      cohort with everything needed to judge the quality of the data collected, the analyses carried out, and promotion
+      and communication documents.
+    note: Studies that collect new data must also hand that data to the cohort team after a 12-month period of
+      exclusive use. Regular progress reports are required.
+  delete_after_use:
+    value: 'yes'
+    quote: At the end of the study, the requester is prohibited from any further use of the data files which were
+      transmitted to them by the i‐Share cohort coordination team and agrees to destroy this data.
+  no_reidentification:
+    value: conditional
+    quote: It is the responsibility of each ancillary study lead researcher to ensure the technical security and
+      confidentiality of data, and to specify the measures taken to avoid direct or indirect identification of
+      subjects, in accordance with Commission Nationale Informatique & Libertés (CNIL) recommendations.
+    note: The clause sits in the section on studies that collect new data. The signed declaration commits every
+      researcher to keep all i-Share information confidential.
+  geographic_restriction:
+    value: 'no'
+    note: The charter names no countries or regions and opens the data to teams "French or overseas". The i-Share site
+      adds that researchers may analyse the data at the Bordeaux site.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
