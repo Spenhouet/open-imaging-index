@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qin-prostate
+name: QIN-PROSTATE
+full_name: QIN PROSTATE (Quantitative Imaging Network prostate multiparametric MRI)
+summary: >-
+  Multiparametric 3 T prostate MRI (T1w, T2w, DWI and DCE, endorectal coil) of 22 prostate cancer patients from
+  Brigham and Women's Hospital, shared on TCIA for quantitative DCE analysis. TCIA retired the collection in April 2026.
+homepage: https://www.cancerimagingarchive.net/collection/qin-prostate/
+doi: 10.7937/K9/TCIA.2016.fADs26kG
+# Version 1 of the collection is dated 2014/07/02 on the collection page.
+year: 2014
+version: '1'
+status: retired
+creators:
+  - name: Brigham and Women's Hospital (PI Fiona Fennessy), NCI Quantitative Imaging Network
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, dce]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://www.cancerimagingarchive.net/collection/qin-prostate/
+  note: >-
+    The collection page states that the dataset was retired on 2026-04-13 and its Data Access table no longer lists
+    any download. The collection is not returned by the public TCIA NBIA API.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    url: https://www.cancerimagingarchive.net/collection/qin-prostate/
+    note: >-
+      TCIA lists the license of each collection in its Data Access table, which is empty for this retired collection.
+      The page still requires the data citation and links the TCIA Data Usage Policy
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/). The license under which the data
+      were distributed before retirement could not be confirmed from a current official source.
+citation:
+  text: >-
+    Fedorov A, Tempany C, Mulkern R, & Fennessy F. (2016). Data From QIN PROSTATE. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.fADs26kG
+sources:
+  tcia-qin-prostate:
+    title: TCIA QIN-PROSTATE collection page (version 1, updated 2014/07/02, retired 2026-04-13)
+    url: https://www.cancerimagingarchive.net/collection/qin-prostate/
+    kind: website
+  fedorov2014:
+    title: Fedorov et al. 2014, Magnetic Resonance Imaging (PMC3965600)
+    url: https://doi.org/10.1016/j.mri.2014.01.004
+    kind: paper
+keywords: [prostate cancer, multiparametric MRI, DCE MRI, arterial input function, endorectal coil, Quantitative Imaging Network]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
