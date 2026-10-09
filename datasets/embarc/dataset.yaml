@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: embarc
+name: EMBARC
+full_name: Establishing Moderators and Biosignatures of Antidepressant Response in Clinical Care (EMBARC)
+summary: >-
+  US four-site placebo-controlled trial of sertraline in 309 adults with early-onset or recurrent major depression plus
+  40 healthy controls, with 3T structural, task and resting-state fMRI, diffusion and ASL MRI before and one week into
+  treatment, shared through the NIMH Data Archive.
+homepage: https://nda.nih.gov/edit_collection.html?id=2199
+doi: 10.15154/e99n-np66
+year: 2017
+status: active
+creators:
+  - name: EMBARC investigators (UT Southwestern Medical Center, Columbia University, Massachusetts General Hospital, University of Michigan)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [depression, healthy]
+tasks: [classification, longitudinal]
+countries: [US]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2199
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      EMBARC is NIMH Data Archive collection 2199. Access needs an approved NDA data access request; study-specific
+      clauses of the permission group are not broken down here.
+citation:
+  text: >-
+    Trivedi MH, McGrath PJ, Fava M, Parsey RV, Kurian BT, Phillips ML, et al. Establishing moderators and biosignatures
+    of antidepressant response in clinical care (EMBARC): Rationale and design. J Psychiatr Res 78:11-23 (2016).
+    doi:10.1016/j.jpsychires.2016.03.001
+sources:
+  trivedi2016:
+    title: Trivedi et al. 2016, EMBARC rationale and design, J Psychiatr Res (author manuscript PMC6100771)
+    url: https://doi.org/10.1016/j.jpsychires.2016.03.001
+    kind: paper
+  cherry2019:
+    title: Cherry et al. 2019, Cerebral blood perfusion predicts response to sertraline versus placebo in EMBARC, eClinicalMedicine (PMC6543260)
+    url: https://doi.org/10.1016/j.eclinm.2019.04.007
+    kind: paper
+  nda-collection-2199:
+    title: NIMH Data Archive collection 2199 page (EMBARC), General and Data Expected tabs
+    url: https://nda.nih.gov/edit_collection.html?id=2199
+    kind: website
+related: []
+keywords: [major depressive disorder, antidepressant response, sertraline, bupropion, placebo-controlled trial, treatment moderators, task fMRI, arterial spin labeling, EEG]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

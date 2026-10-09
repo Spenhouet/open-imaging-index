@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,349,trivedi2016,Baseline Characteristics,sum of 309 randomized participants with MDD and 40 healthy controls; the NDA collection lists 336 shared subjects
+subjects,condition=depression,309,trivedi2016,Table 3,randomized participants with MDD (including 10 from the feasibility trial)
+subjects,condition=healthy,40,trivedi2016,Healthy Control Sample,test-retest reliability sample of 10 per clinical site
+subjects,country=US,349,trivedi2016,Study Participants,four US university sites
+subjects,modality=MR,330,nda-collection-2199,Data Expected,subjects shared in the Imaging data structure
+subjects,contrast=T1w,345,trivedi2016,Table 5,anatomical MRI at baseline: 305 with MDD and 40 controls
+subjects,contrast=bold,340,trivedi2016,Table 5,fMRI at baseline: 300 with MDD and 40 controls; Table 5 lists 309 with MDD at week 1
+subjects,contrast=dwi,270,trivedi2016,Table 5,DTI at baseline: 230 with MDD and 40 controls
+subjects,condition=depression;contrast=T1w,305,trivedi2016,Table 5,anatomical MRI at baseline; 272 at week 1
+subjects,condition=depression;contrast=bold,300,trivedi2016,Table 5,fMRI at baseline; Table 5 lists 309 at week 1
+subjects,condition=depression;contrast=dwi,230,trivedi2016,Table 5,DTI at baseline
+subjects,condition=healthy;contrast=T1w,40,trivedi2016,Table 5,baseline and week 1
+subjects,condition=healthy;contrast=bold,40,trivedi2016,Table 5,baseline and week 1
+subjects,condition=healthy;contrast=dwi,40,trivedi2016,Table 5,baseline only
+age_mean,condition=depression,37.31,trivedi2016,Table 3,
+age_sd,condition=depression,13.24,trivedi2016,Table 3,
