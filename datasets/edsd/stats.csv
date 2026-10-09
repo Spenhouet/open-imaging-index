@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,493,brueggen2017,Section 2.1,"sum of 139 AD, 160 MCI and 194 HC, three disjoint groups that make up the study sample as of March 2016"
+subjects,condition=alzheimers,139,brueggen2017,Section 2.1,as of March 2016
+subjects,condition=mci,160,brueggen2017,Section 2.1,as of March 2016
+subjects,condition=healthy,194,brueggen2017,Section 2.1,as of March 2016
+subjects,sex=female,247,brueggen2017,Table 1,"sum of 79 AD, 69 MCI and 99 HC"
+subjects,sex=male,246,brueggen2017,Table 1,"sum of 60 AD, 91 MCI and 95 HC"
+subjects,condition=alzheimers;sex=female,79,brueggen2017,Table 1,
+subjects,condition=alzheimers;sex=male,60,brueggen2017,Table 1,
+subjects,condition=mci;sex=female,69,brueggen2017,Table 1,
+subjects,condition=mci;sex=male,91,brueggen2017,Table 1,
+subjects,condition=healthy;sex=female,99,brueggen2017,Table 1,
+subjects,condition=healthy;sex=male,95,brueggen2017,Table 1,
+age_mean,condition=alzheimers,73,brueggen2017,Table 1,
+age_sd,condition=alzheimers,8,brueggen2017,Table 1,
+age_mean,condition=mci,73,brueggen2017,Table 1,
+age_sd,condition=mci,7,brueggen2017,Table 1,
+age_mean,condition=healthy,69,brueggen2017,Table 1,
+age_sd,condition=healthy,6,brueggen2017,Table 1,
+scans,,1305,brueggen2017,Section 2.2,"sum of 493 DTI, 512 T1-weighted and 300 FLAIR scans, the three image types the paper lists"
+scans,contrast=dwi,493,brueggen2017,Section 2.2,after quality control
+scans,contrast=T1w,512,brueggen2017,Section 2.2,"3D gradient echo T1-weighted, after quality control"
+scans,contrast=FLAIR,300,brueggen2017,Section 2.2,"after quality control, provided for a subsample only"
+scans,contrast=dwi;condition=alzheimers,139,brueggen2017,Table 3,
+scans,contrast=dwi;condition=mci,160,brueggen2017,Table 3,
+scans,contrast=dwi;condition=healthy,194,brueggen2017,Table 3,
+scans,contrast=dwi;field_strength=1.5,128,brueggen2017,Tables 3 and 4,"sum of the three 1.5 T scanners (Sonata 59, Avanto 29, Avanto 40)"
+scans,contrast=dwi;field_strength=3,365,brueggen2017,Tables 3 and 4,sum of the ten 3 T scanners
+scans,contrast=dwi;vendor=ge,18,brueggen2017,Table 3,GE Signa HDxt

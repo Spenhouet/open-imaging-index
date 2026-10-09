@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-EDSD-DUA
+name: European DTI Study on Dementia Data Usage Agreement
+short_name: EDSD DUA
+url: https://doi.org/10.1016/j.neuroimage.2016.03.067
+version: >-
+  Agreement text not published. Terms as described in Section 3 of Brueggen et al. 2017 and on the neuGRID2 data
+  portfolio page, read 2026-10-09
+summary: >-
+  Open to anyone with a scientific interest after registering and signing a data usage agreement, either on neuGRID or
+  by e-mail to DZNE Rostock. The agreement text itself is not published, so every rule other than the signature is
+  unspecified.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The published descriptions do not mention commercial use.
+  product_validation:
+    value: unspecified
+    note: >-
+      The agreement is not published, and the paper only says the data may be used by anyone with a scientific
+      interest. Testing or validating a product is not addressed.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      DICOM data from 9 centers can be downloaded from the portal Neugrid N4U (https://neugrid4you.eu/), where users are
+      required to register and sign a Data Usage Agreement.
+    note: Users of the DZNE Rostock server are also sent a Data Usage Agreement for signature.
+  ethics_approval:
+    value: unspecified
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
