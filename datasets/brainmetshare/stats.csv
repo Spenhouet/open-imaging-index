@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,156,grovik2020,Patient Population,consecutive patients imaged June 2016 to June 2018
+studies,,156,aimi-brainmetshare,Dataset Details,one whole-brain MRI study per patient
+subjects,split=train,105,aimi-brainmetshare,Assignment of Labels,released with lesion masks
+subjects,split=test,51,aimi-brainmetshare,Assignment of Labels,released without masks
+subjects,sex=female,105,grovik2020,Table 1,
+subjects,sex=male,51,grovik2020,Table 1,
+age_mean,,63,grovik2020,Patient Population,
+age_sd,,12,grovik2020,Patient Population,
+age_min,,29,grovik2020,Patient Population,
+age_max,,92,grovik2020,Patient Population,
+subjects,condition=brain_metastasis,156,grovik2020,Patient Population,at least one metastasis per patient
+subjects,condition=lung_cancer,99,grovik2020,Table 1,primary cancer
+subjects,condition=breast_cancer,33,grovik2020,Table 1,primary cancer
+subjects,condition=melanoma,7,grovik2020,Table 1,primary cancer (skin/melanoma)
+subjects,contrast=T1w,156,aimi-brainmetshare,Dataset Details,pre-contrast T1 spin echo (3D CUBE)
+subjects,contrast=T1w_ce,156,aimi-brainmetshare,Dataset Details,post-contrast T1 spin echo and post-contrast IR-prepped FSPGR
+subjects,contrast=FLAIR,156,aimi-brainmetshare,Dataset Details,post-contrast T2 FLAIR
+subjects,contrast_set=FLAIR+T1w+T1w_ce,156,aimi-brainmetshare,Dataset Details,all four sequences for every case
+subjects,field_strength=1.5,18,grovik2020,Patient Population,
+subjects,field_strength=3,138,grovik2020,Patient Population,
