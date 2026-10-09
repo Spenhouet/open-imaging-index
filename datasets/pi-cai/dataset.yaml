@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pi-cai
+name: PI-CAI
+full_name: 'PI-CAI (Prostate Imaging: Cancer AI) Public Training and Development Dataset'
+summary: >-
+  1500 biparametric prostate MRI exams (T2w, high b-value DWI, ADC) of 1476 men from three Dutch centers, with
+  clinically significant prostate cancer labels, lesion delineations and clinical variables, for csPCa detection.
+homepage: https://pi-cai.grand-challenge.org/
+doi: 10.5281/zenodo.6624726
+year: 2022
+version: '2.0'
+status: active
+creators:
+  - name: Diagnostic Image Analysis Group, Radboud University Medical Center
+    url: https://www.diagnijmegen.nl/
+  - name: University Medical Center Groningen
+  - name: Ziekenhuisgroep Twente
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, ADC]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [detection, segmentation, classification]
+formats: [MHA, NIfTI]
+countries: [NL]
+vendors: [siemens, philips]
+field_strengths: [1.5, 3]
+size_gb: 26.9
+access:
+  type: open
+  url: https://zenodo.org/records/6624726
+licenses:
+  - license: CC-BY-NC-4.0
+citation:
+  text: >-
+    Saha A, Bosma JS, Twilt JJ, et al. Artificial intelligence and radiologists in prostate cancer detection on MRI
+    (PI-CAI): an international, paired, non-inferiority, confirmatory study. Lancet Oncol 2024; 25: 879-887.
+    https://doi.org/10.1016/S1470-2045(24)00220-1
+sources:
+  zenodo-6624726:
+    title: 'Zenodo record 6624726 v2.0, PI-CAI Public Training and Development Dataset, README.md'
+    url: https://zenodo.org/records/6624726
+    kind: data
+  saha2022-protocol:
+    title: 'Saha et al. 2022, PI-CAI challenge study protocol (BIAS), Zenodo 6522364'
+    url: https://doi.org/10.5281/zenodo.6522364
+    kind: paper
+  pi-cai-data-page:
+    title: PI-CAI challenge data page
+    url: https://pi-cai.grand-challenge.org/DATA/
+    kind: website
+  picai-marksheet:
+    title: picai_labels clinical_information/marksheet.csv (CC BY-NC 4.0), one row per study
+    url: https://github.com/DIAGNijmegen/picai_labels/blob/main/clinical_information/marksheet.csv
+    kind: computed
+  saha2024:
+    title: Saha et al. 2024, The Lancet Oncology
+    url: https://doi.org/10.1016/S1470-2045(24)00220-1
+    kind: paper
+related: []
+keywords: [prostate cancer detection, biparametric MRI, csPCa, PI-RADS, ISUP, grand challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
