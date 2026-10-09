@@ -10,6 +10,7 @@ terms:
   - { id: mk6240, label: '[18F]MK-6240', synonyms: [MK-6240], description: Tau tracer }
   - { id: nav4694, label: '[18F]NAV4694', synonyms: [NAV4694], description: Amyloid tracer }
   - { id: pi2620, label: '[18F]PI-2620', synonyms: [PI-2620], description: Tau tracer }
+  - { id: gtp1, label: GTP1, synonyms: [Genentech Tau Probe 1], description: Tau tracer }
   - {
       id: psma,
       label: PSMA ligand,

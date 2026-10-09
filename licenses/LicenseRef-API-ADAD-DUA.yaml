@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-API-ADAD-DUA
+name: Alzheimer's Prevention Initiative ADAD Trial (API ADAD) Data Use Agreement
+short_name: API ADAD DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=APIADAD
+version: 'Text of the LONI IDA application page, read 2026-10-09'
+summary: >-
+  Data are given for a described project and may be used only for it, by the recipient's own staff. No disclosure to
+  third parties without written consent, no re-identification, manuscripts and abstracts go to the API Administrative
+  Review Committee for a 30-day review, analysis data must be returned on request, and an Authorized Official signs a
+  separate electronic agreement.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      I request access to data collected by the Alzheimer's Prevention Initiative of Autosomal Dominant Alzheimer's
+      Disease Trial (API ADAD) for the purpose of scientific investigation, teaching, or the planning of clinical
+      research studies and acknowledge and agree to the following terms of use:
+    note: The agreement names the purposes of access but neither allows nor forbids commercial use; any use is limited
+      to the described project.
+  product_validation:
+    value: unspecified
+    note: The text limits use to the described project but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning or model training.
+  derivatives:
+    value: conditional
+    quote: The Data will be used solely to conduct the Project, as described in this request, and solely by Recipient
+      Scientist and Recipient's faculty, employees, fellows, students, and agents ("Recipient Personnel") that have a
+      need to use, or provide a service in respect of, the Data in connection with the described Project
+    note: Derived data may be created only within the described project.
+  publication:
+    value: conditional
+    quote: Recipient is encouraged to make publicly available the results of the Project.
+    note: Results may be published after review by the API Administrative Review Committee (see publication_review).
+  redistribute_original:
+    value: 'no'
+    quote: Except as authorized by the data Provider or otherwise required by law, Recipient agrees to retain control
+      over the Data and shall not disclose, release, sell, rent, lease, loan, or otherwise grant access to the Data to
+      any third party, except Authorized Persons, without the prior written consent of Provider.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data such as labels may be shared, apart from returning them to
+      the provider on request.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models or their weights.
+  attribution:
+    value: 'yes'
+    quote: The text of the acknowledgement of the data Provider's contribution will be provided by the data Provider and
+      should be included in all written reports of disclosures related to the API ADAD data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Data Recipients approved for access will be asked for an Authorized Official to sign a separate electronic
+      agreement. Access and transfer of data is contingent upon execution of the signed electronic agreement.
+  ethics_approval:
+    value: 'no'
+    note: The agreement asks for compliance with applicable law and human subject research standards but not for ethics
+      approval documentation.
+  publication_review:
+    value: 'yes'
+    quote: Before Recipient submits a paper or abstract for publication or otherwise intends to publicly disclose
+      information about the results of the Project, the data Recipient shall submit the relevant materials to the
+      Provider's Administrative Review Committee (API ARC).
+    note: The committee has 30 days from receipt to review manuscripts, abstracts, posters or oral presentations.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: To further Alzheimer's Disease and related research and to maximize the utility of data generated in part or
+      in full with public funds, the data Recipient agrees to provide raw or generated data from the analysis to the
+      data Provider upon request for the purpose of incorporating into the shareable API ADAD database.
+  delete_after_use:
+    value: conditional
+    quote: Upon expiration or early termination of this Agreement, Recipient shall follow the disposition instructions
+      as given by the data Provider, however, that Recipient may retain one (1) copy of the Data to the extent necessary
+      to comply with the records retention requirements under any law, and for the purposes of research integrity and
+      verification.
+    note: The data are disposed of as the provider instructs when the agreement ends, but one copy may be kept for
+      records retention and research verification.
+  no_reidentification:
+    value: 'yes'
+    quote: The data Recipient shall not attempt to establish the identity or contact or attempt to contact any of the
+      API ADAD participants or any subjects of the Data.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

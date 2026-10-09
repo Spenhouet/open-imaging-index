@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,252,tariot2026,Abstract (Findings); Table 1,"enrolled: crenezumab-treated carriers 85, placebo-treated carriers 84, placebo-treated non-carriers 83"
+subjects,sex=female,160,tariot2026,Abstract (Findings),
+subjects,sex=male,92,tariot2026,Abstract (Findings),
+subjects,condition=alzheimers,169,tariot2026,Abstract (Findings); Table 1,"PSEN1 E280A mutation carriers, cognitively unimpaired at entry (preclinical autosomal dominant Alzheimer's disease); sum of the two disjoint carrier arms (85 + 84)"
+subjects,condition=healthy,83,tariot2026,Abstract (Findings); Table 1,"cognitively unimpaired non-carriers from the same kindred, all on placebo"
+subjects,condition=aria,6,tariot2026,Table 2,"incident ARIA-H in mutation carriers: crenezumab 4, placebo 2 (sum of disjoint arms); no ARIA-E; adverse events were reported for carriers only"
+subjects,modality=MR,252,bittner2026,Table 2,"baseline volumetric MRI (bilateral hippocampus) n = 85 + 84 + 83"
+subjects,contrast=T1w,252,bittner2026,Table 2; Methods (MRI acquisition and analyses),"3D T1 MP-RAGE used for volumetry; n from the baseline hippocampal volume row"
+subjects,field_strength=3,252,bittner2026,Methods (MRI acquisition and analyses),all MRI on one 3T Siemens Tim Trio at Hospital Pablo Tobon Uribe
+subjects,vendor=siemens,252,bittner2026,Methods (MRI acquisition and analyses),
+subjects,country=CO,252,tariot2026,Abstract (Methods),single centre in Medellin
+subjects,modality=PT,252,tariot2026,Methods (Procedures),"amyloid PET and FDG-PET were performed for all participants; tau PET was optional"
+subjects,tracer=florbetapir,252,tariot2026,Methods (Procedures),performed for all participants
+subjects,tracer=fdg,252,tariot2026,Methods (Procedures),performed for all participants
