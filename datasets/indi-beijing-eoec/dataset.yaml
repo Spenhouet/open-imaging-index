@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: indi-beijing-eoec
+name: INDI Beijing Eyes Open Eyes Closed
+full_name: Beijing Normal University Eyes Open Eyes Closed Sample (INDI)
+summary: >-
+  Three resting-state fMRI runs per participant, one eyes closed and two randomized between eyes open and eyes
+  closed, plus T1-weighted MPRAGE and 64-direction DTI, from 48 healthy students at Beijing Normal University.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC.html
+year: 2010
+status: active
+creators:
+  - name: State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University (Yu-Feng Zang)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [CN]
+vendors: [siemens]
+access:
+  type: registration
+  url: https://www.nitrc.org/project/request.php?group_id=296
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement. Downloads
+      need a NITRC account and membership in the 1000 Functional Connectomes Project on NITRC.
+sources:
+  indi-beijing-eoec-page:
+    title: Beijing Eyes Open Eyes Closed Sample release page, FCP/INDI (summary, data list, usage agreement)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC.html
+    kind: website
+  indi-beijing-eoec-rest-protocol:
+    title: Resting-state protocol printout, Siemens MAGNETOM TrioTim (PDF linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC/BeijingEOECREST.pdf
+    kind: website
+  indi-beijing-eoec-mprage-protocol:
+    title: MPRAGE protocol printout, Siemens MAGNETOM TrioTim (PDF linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC/BeijingEOECMPRAGE.pdf
+    kind: website
+  indi-beijing-eoec-dti-protocol:
+    title: DTI protocol printout, Siemens MAGNETOM TrioTim (PDF linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC/BeijingEOECDTI.pdf
+    kind: website
+  nitrc-fcp-news-2010-12:
+    title: 'FCP/INDI: More Data Releases and FCP One-Year Anniversary, NITRC news, 23 December 2010'
+    url: https://www.nitrc.org/forum/forum.php?forum_id=1848
+    kind: website
+related: [fcp-1000]
+keywords: [resting-state fMRI, eyes open, eyes closed, DTI, functional connectivity, INDI, Beijing Normal University]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
