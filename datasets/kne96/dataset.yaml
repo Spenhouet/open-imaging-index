@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: kne96
+name: KNE96 Korean Normal Elderly template cohort
+full_name: Korean Normal Elderly (KNE) brain MRI template study, KLOSCAD subsample
+summary: >-
+  3 T T1-weighted brain MRI of 144 cognitively normal Korean adults aged 60 or older from KLOSCAD. Scans of 96 built
+  the KNE96, KNE48M and KNE48F templates, 48 validated them. Only the templates were released; scans are not shared.
+homepage: https://doi.org/10.4306/pi.2016.13.1.135
+doi: 10.4306/pi.2016.13.1.135
+# The subject scans have no public release; year of the journal issue of the paper that describes them.
+year: 2016
+creators:
+  - name: Department of Psychiatry, Seoul National University College of Medicine
+  - name: Seoul National University Bundang Hospital
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, registration]
+countries: [KR]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.4306/pi.2016.13.1.135
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper offers only the three group templates for download, from a lab web page that now returns 404. It
+      states no terms for the subject scans and does not invite requests for them. The CC BY-NC 3.0 license of the
+      article covers the paper, not the data.
+citation:
+  text: >-
+    Lee H, Yoo BI, Han JW, Lee JJ, Oh SYW, Lee EY, Kim JH, Kim KW. Construction and Validation of Brain MRI Templates
+    from a Korean Normal Elderly Population. Psychiatry Investigation 13(1), 135-145 (2016).
+    doi:10.4306/pi.2016.13.1.135
+sources:
+  lee2016:
+    title: Lee et al. 2016, Psychiatry Investigation 13(1)
+    url: https://doi.org/10.4306/pi.2016.13.1.135
+    kind: paper
+related: []
+keywords: [brain template, elderly, Korean population, DARTEL, spatial normalization, KLOSCAD]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
