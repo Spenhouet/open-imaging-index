@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bonbid-hie
+name: BONBID-HIE
+full_name: 'BOston Neonatal Brain Injury Data for Hypoxic Ischemic Encephalopathy (BONBID-HIE): I. MRI and Manual
+  Lesion Annotation'
+summary: >-
+  Neonatal brain diffusion MRI from 133 term-born infants with hypoxic ischemic encephalopathy at Massachusetts
+  General Hospital: skull-stripped ADC maps, ZADC deviation maps and expert lesion masks, used in the MICCAI 2023
+  BONBID-HIE lesion segmentation challenge.
+homepage: https://zenodo.org/records/10602767
+doi: 10.5281/zenodo.10602767
+# Training data went public on Zenodo on 2023-07-01. The record with training, validation and test data dates from 2024.
+year: 2023
+updated: 2024
+creators:
+  - name: Boston Children's Hospital and Harvard Medical School (Rina Bao, P. Ellen Grant, Yangming Ou and colleagues)
+  - name: Massachusetts General Hospital
+modalities: [MR]
+contrasts: [ADC]
+anatomy: [brain]
+conditions: [hypoxic_ischemic_encephalopathy]
+tasks: [segmentation]
+formats: [MHA]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [1.5, 3]
+size_gb: 0.085
+access:
+  type: open
+  url: https://zenodo.org/records/10602767
+licenses:
+  # The Zenodo record's license field says CC BY-NC-ND 2.5, while its description text says CC BY 4.0. The paper,
+  # the challenge data page and the first Zenodo version say CC BY-NC-ND (2.0 link). The NoDerivs license is recorded.
+  - license: CC-BY-NC-ND-2.5
+citation:
+  text: >-
+    Bao R, Song Y, Bates SV, Weiss RJ, Foster AN, Jaimes Cobos C, Sotardi S, Zhang Y, Gollub RL, Grant PE, Ou Y.
+    BOston Neonatal Brain Injury Dataset for Hypoxic Ischemic Encephalopathy (BONBID-HIE): Part I. MRI and Manual
+    Lesion Annotation. bioRxiv 2023.06.30.546841 (2023).
+  bibtex: |
+    @article{bao2023boston,
+      title={BOston Neonatal Brain Injury Dataset for Hypoxic Ischemic Encephalopathy (BONBID-HIE): Part I. MRI and Manual Lesion Annotation},
+      author={Bao, Rina and Song, Ya'nan and Bates, Sara V and Weiss, Rebecca J and Foster, Anna N and Cobos, Camilo Jaimes and Sotardi, Susan and Zhang, Yue and Gollub, Randy L and Grant, P Ellen and others},
+      journal={bioRxiv},
+      year={2023},
+      publisher={Cold Spring Harbor Laboratory Preprints}
+    }
+sources:
+  bao2023:
+    title: Bao et al. 2023, bioRxiv preprint 2023.06.30.546841 (v1)
+    url: https://doi.org/10.1101/2023.06.30.546841
+    kind: paper
+  zenodo-bonbid-hie:
+    title: BONBID-HIE Zenodo record 10602767
+    url: https://zenodo.org/records/10602767
+    kind: website
+  bonbid-hie2023-data:
+    title: BONBID-HIE 2023 challenge data page (grand-challenge.org)
+    url: https://bonbid-hie2023.grand-challenge.org/data/
+    kind: website
+related: []
+keywords: [hypoxic ischemic encephalopathy, neonatal brain MRI, lesion segmentation, ADC, MICCAI challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: CC-BY-NC-ND-2.5
+name: Creative Commons Attribution-NonCommercial-NoDerivs 2.5 Generic
+short_name: CC BY-NC-ND 2.5
+url: https://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
+version: '2.5'
+summary: Older version of CC BY-NC-ND. Share the unchanged data with credit for non-commercial purposes. The legal code
+  grants no right to make derivative works, and Creative Commons advises against training models on NoDerivatives
+  material.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: You may not exercise any of the rights granted to You in Section 3 above in any manner that is primarily
+      intended for or directed toward commercial advantage or private monetary compensation.
+  product_validation:
+    value: unspecified
+    quote: >-
+      CC’s definition does not turn on the type of user: if you are a nonprofit or charitable organization, your use
+      of an NC-licensed work could still run afoul of the NC restriction, and if you are a for-profit entity, your
+      use of an NC-licensed work does not necessarily mean you have violated the term.
+    source: https://creativecommons.org/faq/
+    note: The NonCommercial term covers uses primarily intended for or directed toward commercial advantage or
+      private monetary compensation. The license does not mention testing or validating a product.
+  model_training:
+    value: 'no'
+    note: Creative Commons' AI training guidance (2025) says NoDerivatives works should not be used as training
+      data under a conservative reading.
+    quote: CC-licensed work subject to the NoDerivatives restriction should not be used as training data if taking
+      this conservative approach.
+    source: https://creativecommons.org/wp-content/uploads/2025/05/Using-CC-licensed-Works-for-AI-Training.pdf
+  derivatives:
+    value: 'no'
+    note: Section 3 of the legal code allows only modifications needed to use the work in other media and formats.
+      The current deed summarises the term as a ban on distributing modified material.
+    quote: The above rights include the right to make such modifications as are technically necessary to exercise
+      the rights in other media and formats, but otherwise you have no rights to make Derivative Works.
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: conditional
+    note: Only for non-commercial purposes, with a copy or link of the license.
+    quote: You must include a copy of, or the Uniform Resource Identifier for, this License with every copy or
+      phonorecord of the Work You distribute, publicly display, publicly perform, or publicly digitally perform.
+  redistribute_derivatives:
+    value: 'no'
+    quote: The above rights include the right to make such modifications as are technically necessary to exercise
+      the rights in other media and formats, but otherwise you have no rights to make Derivative Works.
+  share_model_weights:
+    value: 'no'
+    note: Follows from the guidance not to train on NoDerivatives data.
+  attribution:
+    value: 'yes'
+    quote: If you distribute, publicly display, publicly perform, or publicly digitally perform the Work, You must
+      keep intact all copyright notices for the Work and provide, reasonable to the medium or means You are
+      utilizing
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

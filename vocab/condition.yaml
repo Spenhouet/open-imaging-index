@@ -93,6 +93,13 @@ terms:
     }
   - { id: traumatic_brain_injury, label: Traumatic brain injury, synonyms: [TBI], mappings: { mondo: 'MONDO:0858950' } }
   - {
+      id: hypoxic_ischemic_encephalopathy,
+      label: Hypoxic ischemic encephalopathy,
+      description: 'Brain injury from reduced oxygen supply and blood flow, most often around birth in term neonates. MONDO and HPO have no matching term, so the NCIt code is given.',
+      synonyms: [HIE, neonatal hypoxic-ischemic encephalopathy],
+      mappings: { ncit: 'NCIT:C35549' }
+    }
+  - {
       id: cerebral_cavernous_malformation,
       label: Cerebral cavernous malformation,
       synonyms: [CCM, cavernoma],
