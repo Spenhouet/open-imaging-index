@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,54,tcia-tcga-cesc,Data Access table,
+studies,,57,tcia-tcga-cesc,Data Access table,
+scans,,488,tcia-tcga-cesc,Data Access table,DICOM series
+images,,19135,tcia-tcga-cesc,Data Access table,DICOM images (slices)
+subjects,modality=MR,54,tcia-tcga-cesc-digest,"Metadata sheet, columns Patient ID and Modality",
+subjects,sex=female,53,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Sex",DICOM Patient Sex
+subjects,sex=male,1,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Sex","DICOM Patient Sex as recorded in the header, which conflicts with the cervical cancer diagnosis"
+subjects,vendor=philips,25,tcia-tcga-cesc-digest,"Metadata sheet, column Manufacturer",Philips Medical Systems
+subjects,vendor=ge,22,tcia-tcga-cesc-digest,"Metadata sheet, column Manufacturer",GE MEDICAL SYSTEMS
+subjects,vendor=siemens,8,tcia-tcga-cesc-digest,"Metadata sheet, column Manufacturer",SIEMENS
+subjects,age=20-29,2,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+subjects,age=30-39,6,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+subjects,age=40-49,6,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+subjects,age=50-59,10,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+subjects,age=60-69,5,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+subjects,age=70-79,3,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+age_mean,,50.2,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+age_sd,,13.6,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age","sample standard deviation over the 32 patients with an age"
+age_median,,51,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+age_min,,26,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
+age_max,,79,tcia-tcga-cesc-digest,"Metadata sheet, column Patient Age",DICOM Patient Age at the imaging study; 32 of 54 patients have an age in the header
