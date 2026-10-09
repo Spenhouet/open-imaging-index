@@ -1,0 +1,2 @@
+measure,by,value,source,where,note
+subjects,field_strength=1.5,189,broekman2014,"Methods, Subjects","GUSTO infants who took part in the neonatal neuroimaging study, scanned at 5 to 17 days on a 1.5 T GE scanner (Methods, MRI Acquisition); child scans at 3 T are not counted cohort-wide in an open source"
