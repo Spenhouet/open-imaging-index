@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,98,makary2020,"Materials and Methods, Participants","Sum of the disjoint recruited groups: 40 SBP, 28 CLBP and 30 healthy controls"
+subjects,condition=low_back_pain,68,makary2020,"Materials and Methods, Participants","40 subacute back pain (pain for 6 to 16 weeks) plus 28 chronic low back pain (pain for at least 1 year)"
+subjects,condition=healthy,30,makary2020,"Materials and Methods, Participants",
+subjects,sex=female,47,makary2020-si,Table S1,"Sum of females per group: 16 SBP, 17 CLBP, 14 healthy controls"
+subjects,condition=low_back_pain;sex=female,33,makary2020-si,Table S1,16 SBP and 17 CLBP females
+subjects,condition=healthy;sex=female,14,makary2020-si,Table S1,
+subjects,country=US,98,makary2020,"Materials and Methods, Participants","Collected at Yale University, New Haven, July 2014 to April 2019"
+subjects,contrast=T1w,98,makary2020,"Materials and Methods, Scanning Parameters",T1w MPRAGE and two resting-state fMRI runs per participant
+subjects,contrast=bold,98,makary2020,"Materials and Methods, Scanning Parameters",T1w MPRAGE and two resting-state fMRI runs per participant
+subjects,contrast_set=bold+T1w,98,makary2020,"Materials and Methods, Scanning Parameters",T1w MPRAGE and two resting-state fMRI runs per participant
+subjects,field_strength=3,98,makary2020,"Materials and Methods, Scanning Parameters",
+subjects,vendor=siemens,98,makary2020,"Materials and Methods, Scanning Parameters",Siemens 3.0 T Trio with a 32-channel head coil
+age_mean,condition=healthy,31.1,makary2020,"Materials and Methods, Participants",Mean ± SEM 31.1 ± 2.0 years
