@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: b-snip
+name: B-SNIP 1
+full_name: Bipolar-Schizophrenia Network on Intermediate Phenotypes (B-SNIP 1)
+summary: >-
+  Five-site US study of 933 probands with schizophrenia, schizoaffective disorder or psychotic bipolar I disorder,
+  1,055 first-degree relatives and 459 healthy controls, with 3T structural, diffusion and resting-state MRI, EEG, eye
+  tracking and cognition, shared through the NIMH Data Archive.
+homepage: https://nda.nih.gov/edit_collection.html?id=2274
+doi: 10.15154/tnzs-a323
+year: 2014
+status: active
+creators:
+  - name: Bipolar-Schizophrenia Network on Intermediate Phenotypes (B-SNIP) consortium
+    url: http://b-snip.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [schizophrenia, schizoaffective_disorder, bipolar_disorder, psychotic_disorder, healthy]
+tasks: [classification]
+countries: [US]
+vendors: [ge, philips, siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2274
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      B-SNIP 1 is NIMH Data Archive collection 2274. Access needs an approved NDA data access request; study-specific
+      clauses of the permission group are not broken down here.
+citation:
+  text: >-
+    Tamminga CA, Ivleva EI, Keshavan MS, Pearlson GD, Clementz BA, Witte B, Morris DW, Bishop J, Thaker GK, Sweeney JA.
+    Clinical Phenotypes of Psychosis in the Bipolar-Schizophrenia Network on Intermediate Phenotypes (B-SNIP). Am J
+    Psychiatry 170(11):1263-1274 (2013). doi:10.1176/appi.ajp.2013.12101339
+sources:
+  tamminga2013:
+    title: Tamminga et al. 2013, Clinical Phenotypes of Psychosis in B-SNIP, Am J Psychiatry (author manuscript PMC12866513)
+    url: https://doi.org/10.1176/appi.ajp.2013.12101339
+    kind: paper
+  ivleva2013:
+    title: Ivleva et al. 2013, Gray Matter Volume as an Intermediate Phenotype for Psychosis (B-SNIP), Am J Psychiatry (PMC6487663)
+    url: https://doi.org/10.1176/appi.ajp.2013.13010126
+    kind: paper
+  nda-collection-2274:
+    title: NIMH Data Archive collection 2274 page (B-SNIP 1), General and Shared Data tabs
+    url: https://nda.nih.gov/edit_collection.html?id=2274
+    kind: website
+related: []
+keywords: [psychosis, schizophrenia, bipolar disorder, schizoaffective disorder, intermediate phenotypes, family study, resting-state fMRI, diffusion MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

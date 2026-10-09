@@ -100,6 +100,7 @@ terms:
     }
   - { id: epilepsy, label: Epilepsy, mappings: { mondo: 'MONDO:0005027' } }
   - { id: schizophrenia, label: Schizophrenia, mappings: { mondo: 'MONDO:0005090' } }
+  - { id: schizoaffective_disorder, label: Schizoaffective disorder, mappings: { mondo: 'MONDO:0005487' } }
   - { id: psychotic_disorder, label: Psychotic disorder, synonyms: [psychosis], mappings: { mondo: 'MONDO:0005485' } }
   - { id: bipolar_disorder, label: Bipolar disorder, synonyms: [bipolar], mappings: { mondo: 'MONDO:0004985' } }
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }

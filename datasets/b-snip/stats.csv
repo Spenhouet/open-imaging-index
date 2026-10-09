@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,2447,tamminga2013,Results,"sum of 933 probands, 1055 first-degree relatives and 459 healthy controls recruited through September 2012; the NDA collection lists 2440 shared subjects"
+subjects,sex=male,1025,tamminga2013,Table 1,sum of male counts over the seven groups; sex missing for some subjects
+subjects,condition=psychotic_disorder,933,tamminga2013,Results,probands only
+subjects,condition=schizophrenia,397,tamminga2013,Table 1,probands only
+subjects,condition=schizoaffective_disorder,224,tamminga2013,Table 1,probands only; 153 bipolar type and 71 depressed type
+subjects,condition=bipolar_disorder,312,tamminga2013,Table 1,probands with psychotic bipolar I disorder
+subjects,condition=healthy,459,tamminga2013,Table 1,
+subjects,condition=schizophrenia;sex=male,267,tamminga2013,Table 1,probands only
+subjects,condition=schizoaffective_disorder;sex=male,93,tamminga2013,Table 1,probands only
+subjects,condition=bipolar_disorder;sex=male,110,tamminga2013,Table 1,probands only
+subjects,condition=healthy;sex=male,210,tamminga2013,Table 1,
+subjects,country=US,2447,tamminga2013,Method,five US sites
+subjects,modality=MR,1098,nda-collection-2274,Shared Data,subjects in the shared NDA Image data structure
+age_mean,condition=schizophrenia,35.7,tamminga2013,Table 1,probands
+age_mean,condition=schizoaffective_disorder,36.6,tamminga2013,Table 1,probands
+age_mean,condition=bipolar_disorder,36.4,tamminga2013,Table 1,probands
+age_mean,condition=healthy,36.5,tamminga2013,Table 1,
