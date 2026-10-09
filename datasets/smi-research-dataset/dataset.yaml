@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: smi-research-dataset
+name: Scottish Medical Imaging (SMI) Archive
+full_name: Scottish Medical Imaging (SMI) Archive and SMI Research Dataset
+summary: >-
+  Population-scale copy of the Scottish national PACS: 57.3 million radiology studies (2010 to August 2018) of about
+  4.27 million patients, linkable to NHS Scotland health records. Approved projects analyse CT, MRI, PET and report
+  extracts inside the Scottish National Safe Haven.
+homepage: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/overview/
+# The Scottish Medical Imaging Service opened to researchers in April 2022 (EPCC announcement).
+year: 2022
+status: active
+creators:
+  - name: Public Health Scotland, electronic Data Research and Innovation Service (eDRIS)
+    url: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/overview/
+  - name: EPCC, University of Edinburgh
+    url: https://www.epcc.ed.ac.uk/
+  - name: Health Informatics Centre, University of Dundee
+modalities: [CT, MR, PT, CR, US]
+anatomy: [whole_body]
+formats: [DICOM]
+countries: [GB]
+access:
+  type: application
+  url: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/submit-a-research-proposal/
+licenses:
+  - license: LicenseRef-SMI-Access-Conditions
+citation:
+  text: >-
+    Baxter R, Nind T, Sutherland J, et al. The Scottish Medical Imaging Archive: 57.3 Million Radiology Studies Linked
+    to Their Medical Records. Radiology: Artificial Intelligence 6(1):e220266 (2024). doi:10.1148/ryai.220266
+  bibtex: |
+    @article{baxter2024,
+      title={The Scottish Medical Imaging Archive: 57.3 Million Radiology Studies Linked to Their Medical Records},
+      author={Baxter, Rob and Nind, Thomas and Sutherland, James and others},
+      journal={Radiology: Artificial Intelligence},
+      volume={6},
+      number={1},
+      pages={e220266},
+      year={2024},
+      doi={10.1148/ryai.220266}
+    }
+sources:
+  baxter2024:
+    title: Baxter R et al. 2024, The Scottish Medical Imaging Archive, Radiology Artificial Intelligence (CC BY 4.0,
+      version of record in the University of Dundee repository)
+    url: https://discovery.dundee.ac.uk/ws/portalfiles/portal/116776967/baxter-et-al-2023-the-scottish-medical-imaging-archive-57-3-million-radiology-studies-linked-to-their-medical-records.pdf
+    kind: paper
+  phs-smi-catalogue:
+    title: Public Health Scotland, Scottish Medical Imaging (SMI), SMI catalogue page
+    url: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/smi-catalogue/
+    kind: website
+  epcc-smi-service:
+    title: EPCC, Scottish Medical Imaging Service announcement
+    url: https://www.epcc.ed.ac.uk/whats-happening/articles/scottish-medical-imaging-service
+    kind: website
+related: []
+keywords:
+  [
+    clinical PACS,
+    real-world data,
+    population cohort,
+    record linkage,
+    trusted research environment,
+    radiology reports,
+    Scotland,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
