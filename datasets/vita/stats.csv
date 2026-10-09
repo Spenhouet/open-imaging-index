@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,532,krampla2004,Abstract,75-year-olds scanned at baseline between May 2000 and November 2002
+subjects,sex=female,318,krampla2004,Abstract,
+subjects,age=70-79,532,krampla2004,Abstract,all participants aged 75 at baseline
+subjects,country=AT,532,krampla2004,Abstract,residents of a defined area of Vienna
+subjects,condition=meningioma,9,krampla2004,Abstract,clinically silent meningiomas found on baseline MRI; all in women
+subjects,field_strength=1,68,kautzky2018,Materials and Methods,baseline MRI of the subsample with neuropathology; protocol for the full cohort not stated in this source
+subjects,vendor=siemens,68,kautzky2018,Materials and Methods,Siemens Impact Expert; neuropathology subsample
+subjects,contrast=T1w,68,kautzky2018,Materials and Methods,coronal 3D MPRAGE 1 mm; neuropathology subsample
+subjects,contrast=T2w,68,kautzky2018,Materials and Methods,turbo spin echo; neuropathology subsample
+subjects,contrast=PDw,68,kautzky2018,Materials and Methods,transverse proton density; neuropathology subsample

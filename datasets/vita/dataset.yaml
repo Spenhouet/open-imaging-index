@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: vita
+name: VITA Vienna Transdanube Aging study
+full_name: Vienna Transdanube Aging "VITA" study
+summary: >-
+  Population-based birth cohort of 75-year-olds from two districts of Vienna, examined from 2000 with 1.0 T brain MRI
+  (T1w MPRAGE, T2w, PDw), cognitive testing and blood markers, and followed every 30 months to study incident
+  dementia. Scans are not public.
+homepage: https://doi.org/10.1007/978-3-7091-6139-5_11
+doi: 10.1007/978-3-7091-6139-5_11
+# The scans have no public release; year of the study design paper.
+year: 2002
+creators:
+  - name: Ludwig Boltzmann Institute of Aging Research, Vienna
+  - name: Danube Hospital (Donauspital), Vienna
+modalities: [MR]
+contrasts: [T1w, T2w, PDw]
+anatomy: [brain]
+conditions: [alzheimers, cognitive_impairment, meningioma]
+tasks: [longitudinal]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [1]
+access:
+  type: on_request
+  url: https://doi.org/10.3389/fnagi.2018.00406
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No study website, license or data use terms were found. The 2018 VITA MRI paper states that the datasets analyzed
+      in it are available from the corresponding author on reasonable request; no wider sharing route is published.
+      The CC BY license of that article covers the text only.
+citation:
+  text: >-
+    Fischer P, Jungwirth S, Krampla W, Weissgram S, Kirchmeyr W, Schreiber W, Huber K, Rainer M, Bauer P, Tragl KH.
+    Vienna Transdanube Aging "VITA": study design, recruitment strategies and level of participation. Journal of Neural
+    Transmission Supplementum (62), 105-116 (2002). doi:10.1007/978-3-7091-6139-5_11
+sources:
+  fischer2002:
+    title: Fischer et al. 2002, Journal of Neural Transmission Supplementum 62 (study design)
+    url: https://doi.org/10.1007/978-3-7091-6139-5_11
+    kind: paper
+  krampla2004:
+    title: Krampla et al. 2004, Cancer 100(6) (meningioma frequency at age 75)
+    url: https://doi.org/10.1002/cncr.20088
+    kind: paper
+  akiguchi2014:
+    title: Akiguchi et al. 2014, Annals of Clinical and Translational Neurology 1(8) (DESH-iNPH)
+    url: https://doi.org/10.1002/acn3.87
+    kind: paper
+  kautzky2018:
+    title: Kautzky et al. 2018, Frontiers in Aging Neuroscience 10:406 (MRI prediction of AD neuropathology)
+    url: https://doi.org/10.3389/fnagi.2018.00406
+    kind: paper
+related: []
+keywords: [aging, birth cohort, population-based, dementia prediction, Vienna, meningioma, white matter lesions]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
