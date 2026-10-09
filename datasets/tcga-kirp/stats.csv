@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,33,tcia-tcga-kirp,Data Access table,
+studies,,47,tcia-tcga-kirp,Data Access table,
+scans,,376,tcia-tcga-kirp,Data Access table,DICOM series
+images,,26667,tcia-tcga-kirp,Data Access table,DICOM images (slices)
+subjects,modality=CT,23,tcia-tcga-kirp-digest,Modality; Patient ID,
+subjects,modality=MR,17,tcia-tcga-kirp-digest,Modality; Patient ID,
+subjects,modality=PT,2,tcia-tcga-kirp-digest,Modality; Patient ID,
+studies,modality=CT,27,tcia-tcga-kirp-digest,Modality; Study Instance UID,includes the CT series of the 2 PET-CT studies
+studies,modality=MR,20,tcia-tcga-kirp-digest,Modality; Study Instance UID,
+studies,modality=PT,2,tcia-tcga-kirp-digest,Modality; Study Instance UID,PET-CT
+scans,modality=CT,110,tcia-tcga-kirp-digest,Modality,DICOM series
+scans,modality=MR,260,tcia-tcga-kirp-digest,Modality,DICOM series
+scans,modality=PT,6,tcia-tcga-kirp-digest,Modality,DICOM series
+subjects,sex=male,28,tcia-tcga-kirp-digest,Patient Sex; Patient ID,DICOM header value
+subjects,sex=female,5,tcia-tcga-kirp-digest,Patient Sex; Patient ID,DICOM header value
+subjects,vendor=ge,14,tcia-tcga-kirp-digest,Manufacturer; Patient ID,patients with at least one GE series
+subjects,vendor=siemens,12,tcia-tcga-kirp-digest,Manufacturer; Patient ID,patients with at least one Siemens series
+subjects,vendor=philips,7,tcia-tcga-kirp-digest,Manufacturer; Patient ID,"patients with at least one Philips series (Philips, Philips Medical Systems)"
+subjects,vendor=canon,1,tcia-tcga-kirp-digest,Manufacturer; Patient ID,Toshiba
