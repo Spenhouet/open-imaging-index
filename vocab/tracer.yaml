@@ -18,4 +18,5 @@ terms:
     }
   - { id: fdopa, label: '[18F]FDOPA', synonyms: [F-DOPA] }
   - { id: datscan, label: '[123I]ioflupane', synonyms: [DaTscan], description: SPECT dopamine transporter tracer }
+  - { id: av133, label: '[18F]AV-133', synonyms: [AV-133, AV133], description: PET tracer for the vesicular monoamine transporter type 2 (VMAT2) }
   - { id: pk11195, label: '[11C]PK11195', synonyms: [PK11195, '(R)-[11C]PK11195'], description: TSPO tracer for microglial activation }

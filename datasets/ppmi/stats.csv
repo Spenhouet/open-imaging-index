@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,683,marek2018,Table 1,"initial phase only: sum of the three disjoint enrollment cohorts (423 PD + 196 healthy controls + 64 SWEDD, scans without evidence of dopaminergic deficit), enrolled from June 2010 over about 32 months; later expansion cohorts are not counted"
+subjects,condition=parkinsons,423,marek2018,Table 1,"untreated, within 2 years of diagnosis, with a dopaminergic deficit on DAT SPECT or VMAT-2 PET"
+subjects,condition=healthy,196,marek2018,Table 1,
+subjects,sex=male,443,marek2018,Table 1,sum of 277 PD + 126 healthy controls + 40 SWEDD
+subjects,sex=female,240,marek2018,Table 1,sum of 146 PD + 70 healthy controls + 24 SWEDD
+subjects,condition=parkinsons;sex=male,277,marek2018,Table 1,
+subjects,condition=parkinsons;sex=female,146,marek2018,Table 1,
+subjects,condition=healthy;sex=male,126,marek2018,Table 1,
+subjects,condition=healthy;sex=female,70,marek2018,Table 1,
+subjects,country=US,553,marek2018,Results,enrolled at 18 US sites; a further 124 were enrolled at 5 European sites whose countries the paper does not list
+subjects,country=AU,6,marek2018,Results,enrolled at 1 Australian site
+age_mean,condition=parkinsons,61.7,marek2018,Table 1,
+age_min,condition=parkinsons,33,marek2018,Table 1,
+age_max,condition=parkinsons,85,marek2018,Table 1,
+age_mean,condition=healthy,60.8,marek2018,Table 1,
+age_min,condition=healthy,31,marek2018,Table 1,
+age_max,condition=healthy,84,marek2018,Table 1,
+age_min,,31,marek2018,Table 1,lowest of the three cohort minimums (PD 33; healthy controls 31; SWEDD 38)
+age_max,,85,marek2018,Table 1,highest of the three cohort maximums (PD 85; healthy controls 84; SWEDD 79)

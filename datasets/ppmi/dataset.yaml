@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ppmi
+name: PPMI
+full_name: Parkinson's Progression Markers Initiative (now Parkinson's Precision Medicine Initiative)
+summary: >-
+  Longitudinal multi-site observational study of early untreated Parkinson's disease, prodromal and genetic at-risk
+  people and healthy controls, with DaTscan SPECT, MRI including DTI, biofluids, genetics and clinical assessments
+  shared through LONI.
+homepage: https://www.ppmi-info.org/
+doi: 10.1016/j.pneurobio.2011.09.005
+# Year enrollment began (1 June 2010, per Marek et al. 2018). The PPMI website says data are shared as they are
+# collected; a separate first-release date was not verified.
+year: 2010
+status: active
+creators:
+  - name: The Michael J. Fox Foundation for Parkinson's Research (sponsor)
+    url: https://www.michaeljfox.org/
+  - name: PPMI Steering Committee and study cores (PI Kenneth Marek)
+    url: https://www.ppmi-info.org/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (data management core)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, NM, PT]
+contrasts: [T1w, dwi, bold]
+tracers: [datscan, av133]
+anatomy: [brain]
+conditions: [parkinsons, healthy]
+tasks: [classification, regression, longitudinal]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=PPMI
+licenses:
+  - license: LicenseRef-PPMI-DUA
+citation:
+  text: >-
+    State "Data used in the preparation of this article was obtained on [YYYY-MM-DD] from the Parkinson's Progression
+    Markers Initiative (PPMI) database (www.ppmi-info.org/access-data-specimens/download-data), RRID:SCR_006431" and the
+    funding statement from the PPMI Publication Policy. Cohort reference: Marek K, et al. The Parkinson Progression
+    Marker Initiative (PPMI). Progress in Neurobiology 95(4):629-635 (2011). doi:10.1016/j.pneurobio.2011.09.005
+sources:
+  marek2011:
+    title: Marek K et al. 2011, The Parkinson Progression Marker Initiative (PPMI), Progress in Neurobiology
+    url: https://doi.org/10.1016/j.pneurobio.2011.09.005
+    kind: paper
+  marek2018:
+    title: Marek K et al. 2018, The Parkinson's progression markers initiative (PPMI) - establishing a PD biomarker
+      cohort, Annals of Clinical and Translational Neurology
+    url: https://doi.org/10.1002/acn3.644
+    kind: paper
+  ppmi-study-design:
+    title: PPMI website, Study Design
+    url: https://www.ppmi-info.org/study-design
+    kind: website
+  ppmi-study-cohorts:
+    title: PPMI website, Study Cohorts
+    url: https://www.ppmi-info.org/study-design/study-cohorts
+    kind: website
+  ppmi-data-user-guide:
+    title: PPMI Data User Guide, updated 6 August 2026
+    url: https://www.ppmi-info.org/sites/default/files/docs/PPMI%20Data%20User%20Guide.pdf
+    kind: website
+related: []
+keywords: [Parkinson's disease, DaTscan, dopamine transporter, prodromal, longitudinal, brain MRI, DTI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
