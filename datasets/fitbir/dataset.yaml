@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+#
+# FITBIR is a repository of many independent TBI studies. This entry describes its imaging holdings as one dataset:
+# every study is reached through the same data access request and agreement, and is stored with the same NINDS common
+# data elements and imaging form structures.
+id: fitbir
+name: FITBIR
+full_name: Federal Interagency Traumatic Brain Injury Research (FITBIR) Informatics System
+summary: >-
+  NIH repository of traumatic brain injury research studies with clinical assessments, MRI, CT, diffusion, fMRI and
+  PET data, stored with common data elements and linked across studies by participant GUIDs. Since August 2026 it
+  holds NIH-funded studies only. Access after a data access request.
+homepage: https://fitbir.nih.gov/
+# FITBIR has been funded by a DoD and NIH memorandum of understanding since 2012 (CoreTrustSeal self-assessment 2024,
+# section on funding). No earlier public release date is stated.
+year: 2012
+status: active
+creators:
+  - name: National Institutes of Health, Center for Information Technology (CIT)
+    url: https://www.cit.nih.gov/
+  - name: National Institute of Neurological Disorders and Stroke (NINDS)
+    url: https://www.ninds.nih.gov/
+  - name: US Army Medical Research and Development Command (USAMRDC), Department of Defense
+    url: https://mrdc.health.mil/
+  - name: Contributing study investigators
+    url: https://fitbir.nih.gov/content/submitted-data
+modalities: [MR, CT, PT]
+# Imaging form structures used by studies in the repository on 8 October 2026 (submitted-data statistics):
+# ImagingMR, ImagingCT, ImagingDiffusion, ImagingFunctionalMR, ImagingPET, ImagingMEG and ImagingDigitalPath.
+contrasts: [dwi, bold]
+anatomy: [brain]
+conditions: [traumatic_brain_injury]
+access:
+  type: application
+  url: https://fitbir.nih.gov/content/access-data
+licenses:
+  - license: LicenseRef-FITBIR-NTRR-DUA
+    note: >-
+      Each study keeps its own dataset identifier, which must be named in publications together with the submitting
+      investigators.
+citation:
+  text: >-
+    No dataset paper. Use the acknowledgement from the data use agreement: "Data and/or research tools used in the
+    preparation of this manuscript were obtained and analyzed from the controlled access datasets distributed from the
+    DOD, VA, and NIH-supported Informatics Systems." followed by the dataset identifiers used, and acknowledge the
+    submitting investigators and their funders.
+sources:
+  fitbir-coretrustseal-2024:
+    title: CIT, CoreTrustSeal self-assessment of the FITBIR Informatics System (certification period 2024-2027)
+    url: https://brics.cit.nih.gov/sites/brics/files/2024-07/2024-06-27-center-for-information-technology-cit-the-federal-interagency-traumatic-brain-injury-research-fitbir-informatics-system_final.pdf
+    kind: paper
+  fitbir-home:
+    title: FITBIR website, home page (notice on NIH-funded studies from 24 August 2026)
+    url: https://fitbir.nih.gov/
+    kind: website
+  fitbir-submitted-data:
+    title: FITBIR website, Submitted Data (repository totals, study list and form structure statistics by date)
+    url: https://fitbir.nih.gov/content/submitted-data
+    kind: website
+  fitbir-access-data:
+    title: FITBIR website, Access Data
+    url: https://fitbir.nih.gov/content/access-data
+    kind: website
+related: []
+keywords: [traumatic brain injury, concussion, TBI, common data elements, data repository, NIH, DoD, MRI, CT, DTI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
