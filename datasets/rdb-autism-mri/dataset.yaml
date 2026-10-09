@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rdb-autism-mri
+name: Robert Debré Hospital autism MRI
+full_name: Robert Debré Hospital (Paris) autism MRI cohort
+summary: >-
+  Unpublished 1.5T brain MRI (anatomical and resting-state fMRI) of 247 people from Robert Debré Hospital in Paris: 49
+  with autism spectrum disorder and 198 controls, many of them relatives of probands. Used as the hidden test site of
+  the IMPAC autism prediction challenge.
+homepage: https://doi.org/10.1016/j.neuroimage.2022.119171
+doi: 10.1016/j.neuroimage.2022.119171
+# Year of the first paper describing the cohort as a whole (Traut et al., NeuroImage 2022); the images have no public
+# release.
+year: 2022
+creators:
+  - name: Child and Adolescent Psychiatry Department, Robert Debré Hospital, AP-HP
+  - name: Human Genetics and Cognitive Functions, Institut Pasteur
+    url: https://research.pasteur.fr/
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [autism, healthy]
+tasks: [classification]
+countries: [FR]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1016/j.neuroimage.2022.119171
+  note: >-
+    Traut et al. (2022) call the Robert Debré data an unpublished dataset and kept it in the private test set of the
+    challenge, which participants never saw. Their data availability statement covers only the public ABIDE subset,
+    the code and the preprocessing scripts. 56 of the 247 subjects were also released as the IP_1 collection of ABIDE
+    II.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Neither the paper, its supplement nor the challenge repository (github.com/neuroanatomy/autism-challenge) states
+      a license or data use terms for the Robert Debré images.
+citation:
+  text: >-
+    Traut N, Heuer K, Lemaître G, et al. Insights from an autism imaging biomarker challenge: promises and threats to
+    biomarker discovery. NeuroImage 255:119171 (2022). doi:10.1016/j.neuroimage.2022.119171
+sources:
+  traut2022-preprint:
+    title: Traut et al. 2022, medRxiv preprint v3 (posted 31 March 2022) of the NeuroImage paper
+    url: https://doi.org/10.1101/2021.11.24.21266768
+    kind: paper
+  traut2022-supplement:
+    title: Traut et al. 2022, medRxiv supplemental material
+    url: https://www.medrxiv.org/content/medrxiv/early/2022/03/31/2021.11.24.21266768/DC1/embed/media-1.pdf
+    kind: paper
+related: [abide-ii]
+keywords: [autism spectrum disorder, ASD, IMPAC challenge, biomarker, functional connectivity, external validation, Paris]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
