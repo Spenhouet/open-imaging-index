@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CAP-DETERMINE-DDA
+name: Cardiac Atlas Project DETERMINE Data Distribution Agreement
+short_name: CAP DETERMINE DDA
+url: https://www.cardiacatlas.org/wp-content/uploads/2022/06/CAP-Data-Use-AgreementDETERMINE_Fully-Executed.pdf
+version: 'Coded Data Deposition Agreement between Northwestern University, UCLA and the University of Auckland, fully executed February 2010; CAP Policies and Procedures for Data Distribution to Users v1, 2009-06-25'
+summary: >-
+  DETERMINE data in the Cardiac Atlas Project go only to researchers whose project is approved by CAP and the
+  DETERMINE steering committee and who sign a recipient agreement with the same terms. Use is limited to the approved
+  project, publications are reviewed by the trial committee, commercial use needs permission, and data are deleted
+  at the end of the project.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: DETERMINE data will not be made available for commercial use without the permission of Holder, the Holder
+      Principal Investigator Alan Kadish, MD and the study sponsor, St. Jude Medical.
+    note: Commercial use needs the permission of Northwestern University, the trial principal investigator and the
+      sponsor.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must be part of the approved research project.
+  derivatives:
+    value: conditional
+    quote: The User will retain control over Data provided to User, and unmodified or modified derivatives thereof, in
+      a secure environment, and not transfer Data, and unmodified or modified derivatives thereof, with or without
+      charge, to any other entity or any individual in a manner not previously approved by the CAP.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+    note: Derived data are expected, but only within the approved research project.
+  publication:
+    value: conditional
+    quote: Any publication, presentation, or abstract that incorporates or relies on any DETERMINE trial data
+      ("Publication") shall be submitted to the DETERMINE Executive Steering Committee and the Principal Investigator,
+      Alan Kadish, M.D. for review and comment.
+    note: Publications are also subject to the DETERMINE Publication Policy in Exhibit A.
+  redistribute_original:
+    value: conditional
+    quote: The User will retain control over Data provided to User, and unmodified or modified derivatives thereof, in
+      a secure environment, and not transfer Data, and unmodified or modified derivatives thereof, with or without
+      charge, to any other entity or any individual in a manner not previously approved by the CAP.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+    note: Only with prior approval by CAP.
+  redistribute_derivatives:
+    value: conditional
+    quote: The User will retain control over Data provided to User, and unmodified or modified derivatives thereof, in
+      a secure environment, and not transfer Data, and unmodified or modified derivatives thereof, with or without
+      charge, to any other entity or any individual in a manner not previously approved by the CAP.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+    note: Only with prior approval by CAP.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: The User must acknowledge the Contributing Studies and their funding sources, as well as the CAP and its
+      funding source (NHLBI), in any and all oral and written presentations, disclosures, and publications resulting
+      from any and all analyses of Data reviewed under the DDAs.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: 'In addition to the Recipients, the individuals, or classes of individuals, who are permitted to use or
+      receive the Coded Data Set for purposes of the Research Project include: external researchers who have been
+      approved for specific research projects by both the Holder and the Recipients as described in separate
+      recipient data use agreements, which separate data use agreements will apply all the Terms and Conditions
+      contained in this Data Use Agreement to each external researcher.'
+    note: A research proposal must first be approved by the CAP Steering Committee and by the DETERMINE executive
+      steering committee.
+  ethics_approval:
+    value: 'no'
+    note: Neither text asks the user for IRB approval. The user must respect the participants' consent and HIPAA.
+  publication_review:
+    value: 'yes'
+    quote: Any publication, presentation, or abstract that incorporates or relies on any DETERMINE trial data
+      ("Publication") shall be submitted to the DETERMINE Executive Steering Committee and the Principal Investigator,
+      Alan Kadish, M.D. for review and comment.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: A plan for the archival of results must be given, which should include contribution of results to the CAP
+      project for other Users.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+    note: Copies of final manuscripts and abstracts should also be sent to CAP.
+  delete_after_use:
+    value: 'yes'
+    quote: When the Research Project is completed, the Data should be deleted from the User’s computers, unless other
+      arrangements are agreed upon or an extension is obtained.
+    source: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+  no_reidentification:
+    value: 'yes'
+    quote: Recipients will not attempt to re-identify the information contained in the Coded Data Set.
+  geographic_restriction:
+    value: 'no'
+    note: Neither text names countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
