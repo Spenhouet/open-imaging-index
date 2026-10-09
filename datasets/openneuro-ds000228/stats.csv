@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,155,ds000228-participants,participant_id,155 rows and 155 subject folders in snapshot 1.1.1; the paper reports 122 children and 33 adults (Methods: Participants)
+subjects,sex=female,84,ds000228-participants,Gender,Gender F; the paper reports 64 female children and 20 female adults
+subjects,sex=male,71,ds000228-participants,Gender,Gender M
+subjects,age=3-4,31,ds000228-participants,Age,
+subjects,age=5-6,34,ds000228-participants,Age,
+subjects,age=7-9,44,ds000228-participants,Age,
+subjects,age=10-12,13,ds000228-participants,Age,
+subjects,age=18-29,26,ds000228-participants,Age,
+subjects,age=30-39,7,ds000228-participants,Age,
+subjects,sex=female;age=3-4,18,ds000228-participants,Age and Gender,
+subjects,sex=male;age=3-4,13,ds000228-participants,Age and Gender,
+subjects,sex=female;age=5-6,16,ds000228-participants,Age and Gender,
+subjects,sex=male;age=5-6,18,ds000228-participants,Age and Gender,
+subjects,sex=female;age=7-9,23,ds000228-participants,Age and Gender,
+subjects,sex=male;age=7-9,21,ds000228-participants,Age and Gender,
+subjects,sex=female;age=18-29,18,ds000228-participants,Age and Gender,
+subjects,contrast=T1w,155,ds000228-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,155,ds000228-file-tree,sub-*/func/*_bold.nii.gz,one run of task-pixar per subject
+subjects,contrast_set=bold+T1w,155,ds000228-file-tree,"anat and func folders",
+subjects,vendor=siemens,155,richardson2018,Methods: fMRI data acquisition,all data acquired on a 3-Tesla Siemens Tim Trio
+subjects,field_strength=3,155,richardson2018,Methods: fMRI data acquisition,
+scans,,310,ds000228-file-tree,sub-*/*/*.nii.gz,155 T1w and 155 bold
+scans,contrast=T1w,155,ds000228-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,155,ds000228-file-tree,*_bold.nii.gz,168 volumes per run (paper Methods)
+age_min,,3.5,richardson2018,Methods: Participants,children aged 3.5 to 12 years (mean 6.7 SD 2.3); participants.tsv minimum 3.52
+age_max,,39,richardson2018,Methods: Participants,adults aged 18 to 39 years (mean 24.8 SD 5.3); participants.tsv maximum 39

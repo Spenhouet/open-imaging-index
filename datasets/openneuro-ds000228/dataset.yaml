@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000228
+name: Partly Cloudy movie fMRI (ds000228)
+full_name: MRI data of 3-12 year old children and adults during viewing of a short animated film
+summary: >-
+  Brain MRI of 122 children aged 3 to 12 and 33 adults scanned at MIT, each with one T1w scan and one fMRI run
+  recorded while watching the silent 5.6-minute Pixar short Partly Cloudy, with theory-of-mind scores, in BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds000228
+doi: 10.18112/openneuro.ds000228.v1.1.1
+year: 2018
+updated: 2023
+version: 1.1.1
+status: active
+creators:
+  - name: Saxe Lab, Massachusetts Institute of Technology (Richardson H, Lisandrelli G, Riobueno-Naylor A, Saxe R)
+    url: https://openneuro.org/datasets/ds000228
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 5.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000228
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.1 states "License" CC0.
+citation:
+  text: >-
+    Richardson H, Lisandrelli G, Riobueno-Naylor A, Saxe R. Development of the social brain from age three to twelve
+    years. Nature Communications 9, 1027 (2018). doi:10.1038/s41467-018-03399-2
+sources:
+  richardson2018:
+    title: Richardson et al. 2018, Development of the social brain from age three to twelve years, Nature Communications
+    url: https://doi.org/10.1038/s41467-018-03399-2
+    kind: paper
+  openneuro-ds000228-v111:
+    title: OpenNeuro ds000228 snapshot 1.1.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds000228/versions/1.1.1
+    kind: website
+  ds000228-participants:
+    title: participants.tsv of ds000228 snapshot 1.1.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds000228/blob/1.1.1/participants.tsv
+    kind: computed
+  ds000228-file-tree:
+    title: File tree of ds000228 snapshot 1.1.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds000228/tree/1.1.1
+    kind: computed
+related: []
+keywords: [naturalistic fMRI, movie watching, theory of mind, social cognition, brain development, children, pediatric]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
