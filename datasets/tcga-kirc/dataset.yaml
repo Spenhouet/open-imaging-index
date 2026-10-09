@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-kirc
+name: TCGA-KIRC
+full_name: The Cancer Genome Atlas Kidney Renal Clear Cell Carcinoma Collection
+summary: >-
+  Pre-surgical CT and MRI of 267 patients with clear cell renal cell carcinoma from seven US centers, matched by
+  patient ID to the TCGA clinical, genomic and pathology data for radiogenomics research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-kirc/
+doi: 10.7937/K9/TCIA.2016.V6PBVTDR
+year: 2012
+updated: 2020
+version: '3'
+status: active
+creators:
+  - name: The Cancer Genome Atlas (TCGA) Research Network and seven contributing US imaging sites
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR, CR]
+anatomy: [kidney]
+conditions: [kidney_cancer]
+tasks: [classification, survival]
+formats: [DICOM]
+countries: [US]
+size_gb: 91.56
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-kirc/
+  note: >-
+    Images download with the TCIA Data Retriever. Clinical, genomic and histopathology data for the same patient IDs
+    are held in the NCI Genomic Data Commons.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Akin O, Elnajjar P, Heller M, Jarosz R, Erickson BJ, Kirk S, Lee Y, Linehan MW, Gautam R, Vikram R, Garcia KM,
+    Roche C, Bonaccio E, Filippini J. (2016). The Cancer Genome Atlas Kidney Renal Clear Cell Carcinoma Collection
+    (TCGA-KIRC) (Version 3) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.V6PBVTDR
+sources:
+  tcia-tcga-kirc:
+    title: TCIA TCGA-KIRC collection page (version 3, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-kirc/
+    kind: website
+  tcia-api-tcga-kirc-series:
+    title: >-
+      TCIA public NBIA API, series list of TCGA-KIRC (open, no login, CC BY 3.0), counted per PatientID, Modality,
+      StudyInstanceUID and Manufacturer
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=TCGA-KIRC
+    kind: computed
+  tcia-api-tcga-kirc-patients:
+    title: TCIA public NBIA API, patient list of TCGA-KIRC (open, no login), counted per PatientSex
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=TCGA-KIRC
+    kind: computed
+related: []
+keywords: [renal cell carcinoma, clear cell, radiogenomics, TCGA, kidney tumor, abdominal CT]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
