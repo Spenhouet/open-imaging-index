@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate-3t
+name: PROSTATE-3T
+full_name: Prostate-3T (Radboud University Nijmegen Medical Centre)
+summary: >-
+  Axial T2-weighted 3T prostate MRI of 64 men from Radboud University Nijmegen Medical Centre, acquired for prostate
+  cancer detection and shared through TCIA for the NCI-ISBI 2013 prostate segmentation challenge, with central gland
+  and peripheral zone masks for 30 cases.
+homepage: https://www.cancerimagingarchive.net/collection/prostate-3t/
+doi: 10.7937/K9/TCIA.2015.QJTV5IL5
+year: 2013
+version: '1'
+status: active
+creators:
+  - name: Geert Litjens, Jurgen Futterer and Henkjan Huisman, Radboud University Nijmegen Medical Centre
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation]
+formats: [DICOM, NRRD, MHA]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.27
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostate-3t/
+  note: >-
+    Images download with the TCIA Data Retriever; the two segmentation archives are direct ZIP downloads from the
+    collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Litjens G, Futterer J, Huisman H. (2015). Data From Prostate-3T. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5
+sources:
+  tcia-prostate-3t:
+    title: TCIA Prostate-3T collection page (version 1, updated 2013/05/31)
+    url: https://www.cancerimagingarchive.net/collection/prostate-3t/
+    kind: website
+  tcia-isbi-mr-prostate-2013:
+    title: TCIA analysis result page NCI-ISBI 2013 Challenge, Automated Segmentation of Prostate Structures
+    url: https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/
+    kind: website
+  tcia-nbia-prostate-3t-studies:
+    title: TCIA public NBIA API, getPatientStudy for collection Prostate-3T (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatientStudy?Collection=PROSTATE-3T
+    kind: computed
+  tcia-nbia-prostate-3t-series:
+    title: TCIA public NBIA API, getSeries for collection Prostate-3T (CC BY 3.0, no login)
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=PROSTATE-3T
+    kind: computed
+related: []
+keywords: [prostate MRI, prostate zonal segmentation, central gland, peripheral zone, NCI-ISBI 2013 challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

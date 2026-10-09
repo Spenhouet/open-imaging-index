@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,64,tcia-prostate-3t,Collection Snapshot,"The Data Access table on the same page lists 59 subjects, studies and series and 1,161 images"
+studies,,64,tcia-nbia-prostate-3t-studies,StudyInstanceUID,one study per patient
+scans,,64,tcia-nbia-prostate-3t-series,SeriesInstanceUID,one axial T2-weighted series per patient
+images,,1258,tcia-nbia-prostate-3t-series,ImageCount,"DICOM slices; the Data Access table lists 1,161"
+subjects,sex=male,64,tcia-nbia-prostate-3t-studies,PatientSex,
+subjects,modality=MR,64,tcia-nbia-prostate-3t-series,Modality,
+subjects,contrast=T2w,64,tcia-nbia-prostate-3t-series,ProtocolName,all protocol names are t2_tse_tra variants
+subjects,contrast_set=T2w,64,tcia-nbia-prostate-3t-series,ProtocolName,
+subjects,vendor=siemens,64,tcia-nbia-prostate-3t-series,Manufacturer,"50 TrioTim, 14 Skyra (ManufacturerModelName)"
+subjects,field_strength=3,64,tcia-prostate-3t,Summary,
+subjects,country=NL,64,tcia-isbi-mr-prostate-2013,Summary,Radboud University Nijmegen Medical Centre
+subjects,age=50-59,16,tcia-nbia-prostate-3t-studies,PatientAge,
+subjects,age=60-69,37,tcia-nbia-prostate-3t-studies,PatientAge,
+subjects,age=70-79,11,tcia-nbia-prostate-3t-studies,PatientAge,
+age_mean,,63.5,tcia-nbia-prostate-3t-studies,PatientAge,
+age_sd,,6.3,tcia-nbia-prostate-3t-studies,PatientAge,
+age_median,,64,tcia-nbia-prostate-3t-studies,PatientAge,
+age_min,,51,tcia-nbia-prostate-3t-studies,PatientAge,
+age_max,,78,tcia-nbia-prostate-3t-studies,PatientAge,
