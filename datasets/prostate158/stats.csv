@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,158,adams2022-dib,Specifications Table,
+studies,,158,adams2022-cbm,Abstract,
+subjects,split=train,139,adams2022-dib,Characteristics of the Patient Cohort table,
+subjects,split=test,19,adams2022-dib,Characteristics of the Patient Cohort table,
+subjects,condition=prostate_cancer,102,adams2022-dib,Specifications Table,"Histologically verified; the remaining 56 patients served as controls"
+subjects,condition=prostate_cancer;split=train,83,adams2022-dib,Characteristics of the Patient Cohort table,
+subjects,condition=prostate_cancer;split=test,19,adams2022-dib,Characteristics of the Patient Cohort table,
+subjects,contrast=T2w,158,adams2022-cbm,Abstract,
+subjects,contrast=dwi,158,adams2022-cbm,Abstract,
+subjects,contrast=ADC,158,adams2022-cbm,Abstract,
+subjects,contrast_set=ADC+dwi+T2w,158,adams2022-cbm,Abstract,"All 158 MRIs comprise T2w, DWI and ADC maps"
+subjects,field_strength=3,158,adams2022-dib,Section 3.1,
+subjects,vendor=siemens,158,adams2022-dib,Section 3.1,Siemens VIDA and Skyra
+subjects,country=DE,158,adams2022-dib,Specifications Table,
+studies,split=train,139,prostate158-repo,Accessing the Prostate158 Data Set,"""139 MRIs"""
+studies,split=test,19,prostate158-repo,Accessing the Prostate158 Data Set,"""19 additional MRIs"""
+age_mean,,69,adams2022-dib,Characteristics of the Patient Cohort table,
+age_sd,,9,adams2022-dib,Characteristics of the Patient Cohort table,
+age_min,,35,adams2022-dib,Characteristics of the Patient Cohort table,The inclusion criteria state an age over 50
+age_max,,84,adams2022-dib,Characteristics of the Patient Cohort table,

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate158
+name: Prostate158
+full_name: Prostate158 expert-annotated biparametric 3T prostate MRI dataset
+summary: >-
+  Biparametric 3 T prostate MRI (T2w, DWI, ADC) of 158 men with suspected prostate cancer from Charité Berlin, with
+  expert segmentations of the central gland, peripheral zone and PI-RADS 4 to 5 lesions, split into 139 training and
+  19 test cases.
+homepage: https://prostate158.grand-challenge.org/
+doi: 10.5281/zenodo.6481141
+# The training data record on Zenodo was published on 2022-04-24.
+year: 2022
+status: active
+creators:
+  - name: Institute for Radiology, Charité - Universitätsmedizin Berlin (Adams L.C., Bressem K.K. et al.)
+    url: https://github.com/kbressem/prostate158
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, ADC]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, detection]
+formats: [NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2.98
+access:
+  type: open
+  url: https://doi.org/10.5281/zenodo.6481141
+licenses:
+  - license: LicenseRef-Prostate158-RUA
+    note: >-
+      The Research Use Agreement on the challenge data page applies to everyone who registers for downloads. The
+      Zenodo records carry no license field, and on 2026-10-09 both zip files downloaded without an account.
+citation:
+  text: >-
+    Adams LC, Makowski MR, Engel G, Rattunde M, Busch F, Asbach P, Niehues SM, Vinayahalingam S, van Ginneken B,
+    Litjens G, Bressem KK. Prostate158 - An expert-annotated 3T MRI dataset and algorithm for prostate cancer
+    detection. Computers in Biology and Medicine 148, 105817 (2022). doi:10.1016/j.compbiomed.2022.105817
+sources:
+  adams2022-dib:
+    title: Adams et al. 2022, Data in Brief 45, 108739, Dataset of prostate MRI annotated for anatomical zones and cancer
+    url: https://doi.org/10.1016/j.dib.2022.108739
+    kind: paper
+  adams2022-cbm:
+    title: Adams et al. 2022, Computers in Biology and Medicine 148, 105817 (abstract)
+    url: https://doi.org/10.1016/j.compbiomed.2022.105817
+    kind: paper
+  prostate158-repo:
+    title: kbressem/prostate158 GitHub repository README
+    url: https://github.com/kbressem/prostate158
+    kind: website
+  zenodo-6481141:
+    title: Prostate158 - Training data, Zenodo record
+    url: https://zenodo.org/records/6481141
+    kind: data
+  zenodo-6592345:
+    title: Prostate158 - test data, Zenodo record
+    url: https://zenodo.org/records/6592345
+    kind: data
+related: []
+keywords: [prostate cancer, prostate zonal segmentation, biparametric MRI, PI-RADS, lesion segmentation]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
