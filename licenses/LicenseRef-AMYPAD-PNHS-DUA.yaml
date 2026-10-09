@@ -17,6 +17,10 @@ rules:
     source: https://amypad.eu/data/
     note: The agreement does not mention commercial use. The data page names companies among eligible requesters, and
       the access request document limits use to scientific research and education.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific research and education, and companies may apply, but does not address
+      testing or validating a product.
   model_training:
     value: unspecified
   derivatives:

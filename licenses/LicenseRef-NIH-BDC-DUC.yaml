@@ -21,6 +21,11 @@ rules:
       These data will be used by the Recipients for investigation, scholarship or teaching, or other forms of research
       and research development in connection with the purpose indicated and described in the Research Data Use
       Statement.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to research and research development for the purpose in the Research Data Use Statement but
+      does not address testing or validating a product.
   model_training:
     value: unspecified
     note: >-

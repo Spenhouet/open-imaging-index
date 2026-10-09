@@ -57,14 +57,15 @@ Vocabulary values are ids, not free text: modalities are DICOM codes (`MR`, `CT`
 
 Match on `facets`, `rules` and `meta.access.type`. For license needs, check `rules`:
 
-| Need                           | Rule                    | Acceptable answer                                |
-| ------------------------------ | ----------------------- | ------------------------------------------------ |
-| Commercial use                 | `commercial_use`        | `yes` (report `conditional` separately)          |
-| Train models                   | `model_training`        | `yes` or `conditional` with the condition stated |
-| Publish or sell trained models | `share_model_weights`   | `yes`                                            |
-| Re-host or share the data      | `redistribute_original` | `yes`                                            |
-| No agreement to sign           | `signed_agreement`      | `no`                                             |
-| No ethics approval needed      | `ethics_approval`       | `no`                                             |
+| Need                                                                                             | Rule                    | Acceptable answer                                                     |
+| ------------------------------------------------------------------------------------------------ | ----------------------- | --------------------------------------------------------------------- |
+| Commercial use                                                                                   | `commercial_use`        | `yes` (report `conditional` separately)                               |
+| Test or validate a product (e.g. for regulatory clearance) without the data entering the product | `product_validation`    | `yes`. `unspecified` means the license does not say: ask the provider |
+| Train models                                                                                     | `model_training`        | `yes` or `conditional` with the condition stated                      |
+| Publish or sell trained models                                                                   | `share_model_weights`   | `yes`                                                                 |
+| Re-host or share the data                                                                        | `redistribute_original` | `yes`                                                                 |
+| No agreement to sign                                                                             | `signed_agreement`      | `no`                                                                  |
+| No ethics approval needed                                                                        | `ethics_approval`       | `no`                                                                  |
 
 `unspecified` means the license text is silent. Treat it as "ask the provider", never as yes.
 

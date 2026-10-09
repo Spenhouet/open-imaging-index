@@ -17,6 +17,10 @@ rules:
       I request access to data collected by the ABC-DS study for the purpose of scientific investigation, teaching or
       the planning of clinical research studies.
     note: Commercial use is not mentioned. Any use must fall under these purposes and the approved application.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning.

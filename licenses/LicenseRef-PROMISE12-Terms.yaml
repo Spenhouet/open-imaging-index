@@ -14,6 +14,9 @@ rules:
     value: unspecified
     note: The notice grants research use and is silent on commercial use.
     quote: You can use this data for your research.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: Not mentioned. Research use is permitted.

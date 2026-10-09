@@ -24,6 +24,7 @@ export type FacetId = (typeof FACETS)[number]['id'];
 /** License rules offered as quick filters, phrased from the user's side. */
 export const RULE_FILTERS = [
   { id: 'commercial_use', label: 'Commercial use allowed' },
+  { id: 'product_validation', label: 'Product validation allowed' },
   { id: 'model_training', label: 'Model training allowed' },
   { id: 'share_model_weights', label: 'Trained models shareable' },
   { id: 'redistribute_original', label: 'Data may be re-shared' },

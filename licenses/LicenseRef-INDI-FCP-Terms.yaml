@@ -17,6 +17,9 @@ rules:
     quote: Upon successful registration, users will have full access to the datasets, and the right to unrestricted
       usage of the datasets for non-commercial purposes, just as before.
     source: https://fcon_1000.projects.nitrc.org/
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial purposes but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning. Any use is limited to non-commercial purposes.

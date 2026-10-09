@@ -18,6 +18,11 @@ rules:
     note: The agreement allows for-profit recipients and mentions commercial products, but use stays limited to the
       approved project and to what each participant's consent allows. BioLINCC describes consent for commercial use
       of MESA data as tiered.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to the approved Research Project, allows for-profit recipients and mentions resulting
+      commercial products, but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any use must be part of the approved Research Project.

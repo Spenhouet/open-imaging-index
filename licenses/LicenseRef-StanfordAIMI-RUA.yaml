@@ -12,6 +12,12 @@ rules:
   commercial_use:
     value: 'no'
     quote: Any commercial use, sale, or other monetization is prohibited.
+  product_validation:
+    value: unspecified
+    quote: >-
+      To further amplify the impact of this valuable resource, commercial entities can now also license AIMI datasets.
+    source: https://aimi.stanford.edu/datasets-commercial-use
+    note: "The research use agreement does not address testing or validating a product. If Stanford counts it as commercial use, it needs a paid commercial license approved by a Stanford committee."
   model_training:
     value: unspecified
     note: >-

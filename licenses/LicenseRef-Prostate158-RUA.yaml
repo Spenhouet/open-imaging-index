@@ -13,6 +13,11 @@ rules:
   commercial_use:
     value: 'no'
     quote: Any commercial use, sale, or other form of monetization is prohibited.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to personal, non-commercial and non-clinical research but does not address testing or
+      validating a product.
   model_training:
     value: conditional
     note: >-

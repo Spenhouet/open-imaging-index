@@ -16,6 +16,12 @@ rules:
     quote: OASIS data are provided for non-commercial, academic research purposes only. Any commercial use, including
       but not limited to the sale of data or commercial consulting, is strictly prohibited without explicit, prior
       written authorization from OASIS.
+  product_validation:
+    value: unspecified
+    quote: >-
+      Any commercial use, including but not limited to the sale of data or commercial consulting, is strictly prohibited
+      without explicit, prior written authorization from OASIS.
+    note: "The agreement does not address testing or validating a product. If OASIS counts it as commercial use, it needs explicit, prior written authorization from OASIS."
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any training must stay within non-commercial academic

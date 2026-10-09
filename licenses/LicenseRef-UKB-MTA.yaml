@@ -18,6 +18,15 @@ rules:
     note: Companies can apply, but only for an approved project of health-related research in the public interest.
       Patents on drugs, diagnostics and other technology are allowed; patents on the genotype-phenotype data are not
       (clause 3.7).
+  product_validation:
+    value: conditional
+    quote: >-
+      For the avoidance of doubt, UK Biobank shall have no responsibility or Liability (including but without limitation
+      any product-related Liability) for any finding, product, test or treatment developed directly or indirectly by the
+      Applicant using the Materials.
+    note: >-
+      Companies may apply and develop products, but only within an Approved Research Project of health-related research
+      in the public interest.
   model_training:
     value: conditional
     quote: Any parameters derived from the UK Biobank data for such a model (which are also the property of the

@@ -12,6 +12,11 @@ rules:
     value: 'yes'
     quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
       permission.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking
+      permission.
   model_training:
     value: 'yes'
     note: Public domain dedication, no conditions.

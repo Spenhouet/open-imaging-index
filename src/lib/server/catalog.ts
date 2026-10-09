@@ -9,7 +9,7 @@ let cached: Catalog | null = null;
 export function getCatalog(): Catalog {
   if (cached && !dev) return cached;
   const { catalog, problems } = loadCatalog();
-  const errors = problems.filter((p) => p.level === 'error');
+  const errors = problems.filter((p) => p.level === 'error' && !p.ciOnly);
   if (errors.length) {
     const list = errors.map((p) => `  ${p.file}${p.line ? `:${p.line}` : ''}  ${p.message}`).join('\n');
     throw new Error(`The catalog has ${errors.length} errors. Run bun run validate.\n${list}`);

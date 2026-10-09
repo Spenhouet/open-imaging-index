@@ -15,6 +15,9 @@ rules:
     quote: >-
       Disclaimer: The dataset is provided for research purposes only and there are no warranties provided nor
       liabilities assumed by York University nor the researchers involved in the production of the dataset.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research purposes but does not address testing or validating a product.
   model_training:
     value: conditional
     note: Allowed as part of research.

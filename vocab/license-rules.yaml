@@ -20,6 +20,14 @@ rules:
     question: Can the data be used for commercial purposes, e.g. to develop a product?
     good: yes
     duo: { when: no, code: 'DUO:0000046', label: NCU }
+  - id: product_validation
+    group: use
+    label: Validate a product
+    question: >-
+      Can the data be used to test or validate a product, e.g. a performance study for regulatory clearance, when the
+      data itself does not become part of the product? Judged on its own: a non-commercial clause alone does not
+      answer it.
+    good: yes
   - id: model_training
     group: use
     label: Train ML models

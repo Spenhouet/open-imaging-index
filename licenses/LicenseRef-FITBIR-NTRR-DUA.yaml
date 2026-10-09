@@ -17,6 +17,10 @@ rules:
       Projects must be specified for research purposes only (not commercial) with the intention to enhance knowledge
       for the benefit of human health.
     source: https://fitbir.nih.gov/content/access-data
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial research within the approved project but does not address testing or
+      validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any use must fall within the approved research project.

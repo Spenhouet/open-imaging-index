@@ -16,6 +16,12 @@ rules:
     quote: >-
       You may access and use the Competition Data for non-commercial purposes only, including for participating in
       the Competition and on Kaggle.com forums, and for academic research and education.
+  product_validation:
+    value: unspecified
+    note: >-
+      The rules page could not be re-checked (Kaggle served a captcha). The data clause quoted for commercial use limits
+      use to non-commercial purposes, academic research and education and does not address testing or validating a
+      product.
   model_training:
     value: conditional
     note: Building models is the purpose of the competition; outside it, only non-commercial academic research and education are allowed.

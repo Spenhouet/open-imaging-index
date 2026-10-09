@@ -131,6 +131,7 @@
 
   const keyRules = [
     'commercial_use',
+    'product_validation',
     'model_training',
     'redistribute_original',
     'share_model_weights',

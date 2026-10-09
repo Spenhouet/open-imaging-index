@@ -14,6 +14,11 @@ rules:
     value: 'yes'
     quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as
       they credit you for the original creation.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long
+      as they credit you for the original creation.
   model_training:
     value: unspecified
     note: The description does not mention machine learning.

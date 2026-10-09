@@ -17,6 +17,10 @@ rules:
       of scientific investigation, teaching, or the planning of clinical research studies.
     note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and
       trial planning, and its definition of a team ("in my lab or company") shows that company researchers can apply.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
   model_training:
     value: conditional
     quote: The use of ADNI data in training models is both permitted and encouraged, provided that the process is

@@ -19,6 +19,9 @@ rules:
     note: The agreement neither allows nor forbids commercial use. Its signature page lets a "[for-profit]
       corporation/institution" sign and section 16 mentions resulting commercial products, but use is limited to the approved research
       project.
+  product_validation:
+    value: unspecified
+    note: The text limits use to the approved Research Project but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any use must be part of the approved research project.

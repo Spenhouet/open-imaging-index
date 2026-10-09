@@ -13,6 +13,10 @@ rules:
   commercial_use:
     value: 'no'
     quote: Under no circumstances are you permitted to use the AIBL Data for commercial purposes.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical studies and forbids
+      commercial purposes, but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any training must stay within scientific investigation,

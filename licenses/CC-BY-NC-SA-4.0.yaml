@@ -10,6 +10,15 @@ rules:
   commercial_use:
     value: 'no'
     quote: NonCommercial — You may not use the material for commercial purposes.
+  product_validation:
+    value: unspecified
+    quote: >-
+      CC’s definition does not turn on the type of user: if you are a nonprofit or charitable organization, your use
+      of an NC-licensed work could still run afoul of the NC restriction, and if you are a for-profit entity, your
+      use of an NC-licensed work does not necessarily mean you have violated the term.
+    source: https://creativecommons.org/faq/
+    note: The NonCommercial term covers uses primarily intended for or directed toward commercial advantage or
+      monetary compensation. The license does not mention testing or validating a product.
   model_training:
     value: conditional
     note: Only for non-commercial purposes. Creative Commons' AI training guidance (2025) treats training as allowed

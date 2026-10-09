@@ -13,6 +13,10 @@ rules:
   commercial_use:
     value: unspecified
     note: The terms do not mention commercial use.
+  product_validation:
+    value: unspecified
+    note: >-
+      The terms do not limit the purpose of use and do not address commercial use or testing or validating a product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning.

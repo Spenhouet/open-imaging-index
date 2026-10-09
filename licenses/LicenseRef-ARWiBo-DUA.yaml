@@ -16,6 +16,10 @@ rules:
       purpose of scientific or clinical investigation, and agree to the following terms
     note: Commercial use is not mentioned. Use is limited to scientific or clinical investigation within the approved
       application.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific or clinical investigation but does not address testing or validating a
+      product.
   model_training:
     value: conditional
     quote: I will not utilize AI tools, especially (but not exclusively) those with public-facing interfaces, which do

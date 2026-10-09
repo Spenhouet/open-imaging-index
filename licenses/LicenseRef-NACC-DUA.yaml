@@ -18,6 +18,11 @@ rules:
     note: The agreement neither allows nor forbids commercial use. It limits the purpose to scientific investigation,
       teaching or planning clinical research, and its wording implies that data sets for commercial entities differ
       from the unrestricted set, but those terms are not published.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to scientific investigation, teaching or planning of clinical research and bars sharing the
+      non-commercial data set with companies, but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning.

@@ -8,7 +8,7 @@
 
   let { data } = $props();
   const rules = $derived(vocab.licenseRules.rules);
-  const keyRules = ['commercial_use', 'model_training', 'redistribute_original', 'share_model_weights', 'signed_agreement', 'ethics_approval'];
+  const keyRules = ['commercial_use', 'product_validation', 'model_training', 'redistribute_original', 'share_model_weights', 'signed_agreement', 'ethics_approval'];
   const purposes = $derived(new Map(vocab.licenseRules.purposes.map((p) => [p.id, p.label])));
   // Open licenses first, then by how many datasets use them.
   const sortedLicenses = $derived(

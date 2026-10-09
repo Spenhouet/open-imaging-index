@@ -16,6 +16,11 @@ rules:
     quote: To not sell Data or otherwise use or disclose Data for a commercial, marketing or fundraising purpose.
     note: The consortium's sharing policy adds that scientific knowledge gained from the data may later be used to
       develop products that could be sold.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to the approved project and forbids commercial use of the data, but does not address testing
+      or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Use is limited to the approved project.

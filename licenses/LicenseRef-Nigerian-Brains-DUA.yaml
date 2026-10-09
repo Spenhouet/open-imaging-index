@@ -12,6 +12,11 @@ purpose: unspecified
 rules:
   commercial_use:
     value: unspecified
+  product_validation:
+    value: unspecified
+    note: >-
+      The data use agreement is not published, and the paper's usage notes do not address testing or validating a
+      product.
   model_training:
     value: unspecified
   derivatives:

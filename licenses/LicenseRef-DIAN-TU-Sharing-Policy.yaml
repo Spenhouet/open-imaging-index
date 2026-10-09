@@ -17,6 +17,9 @@ rules:
       individual participant.
     note: The policy neither allows nor forbids commercial use. It limits use to research approved by DIAN-TU, and
       Industry Collaborators may review requests that concern their study drug.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research approved by DIAN-TU but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The policy does not mention machine learning.

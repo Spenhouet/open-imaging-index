@@ -16,6 +16,12 @@ rules:
     note: Researchers at private-sector companies may apply and users may acquire intellectual property rights from
       their results, but the use must be academic research or research that improves public health, and only for the
       purpose stated in the approved application.
+  product_validation:
+    value: conditional
+    quote: The use of data is limited to research and/or development purposes only.
+    note: >-
+      Researchers at private-sector companies may apply. The use must be academic research or research that improves
+      public health, stated in an application approved by the Human Data Review Board.
   model_training:
     value: unspecified
     note: The guidelines do not mention machine learning. Any training must fall within the purpose stated in the

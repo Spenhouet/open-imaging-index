@@ -16,7 +16,15 @@ import {
 } from './schema';
 import { contrastSetParts, parseStats, type StatRow } from './stats';
 import type { Catalog, DatasetEntry } from './types';
-import { checkDataset, checkLicense, checkStats, checkVocab, type Problem, type VocabIndex } from './validate';
+import {
+  NEWER_RULES,
+  checkDataset,
+  checkLicense,
+  checkStats,
+  checkVocab,
+  type Problem,
+  type VocabIndex
+} from './validate';
 
 // Reads datasets/, licenses/ and vocab/ from disk. Server and scripts only.
 
@@ -115,6 +123,9 @@ export function loadCatalog(root = process.cwd()): LoadResult {
     const lic = readYaml(join(licDir, f), licenseSchema, rel, problems);
     if (!lic) continue;
     problems.push(...checkLicense(rel, lic, vocab));
+    // A rule added after this file was written shows as "Not stated" until someone answers it.
+    for (const id of NEWER_RULES)
+      lic.rules[id] ??= { value: 'unspecified', note: 'Not yet assessed for this license.' };
     licenses.push(lic);
   }
   const licenseById = new Map(licenses.map((l) => [l.id, l]));

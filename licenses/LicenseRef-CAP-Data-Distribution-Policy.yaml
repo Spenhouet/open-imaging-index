@@ -15,6 +15,12 @@ rules:
     quote: 'Commercial Use: The User cannot use Data for commercial use without the permission of the Contributing
       Studies.'
     note: Commercial use needs permission from each contributing study.
+  product_validation:
+    value: unspecified
+    quote: >-
+      Commercial Use: The User cannot use Data for commercial use without the permission of the Contributing
+      Studies.
+    note: "The policy does not address testing or validating a product. If the provider counts it as commercial use, it needs the permission of each contributing study."
   model_training:
     value: unspecified
     note: The policy does not mention machine learning. Any use must be part of the approved Research Project.

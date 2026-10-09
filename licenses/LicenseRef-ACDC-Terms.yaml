@@ -12,6 +12,10 @@ rules:
   commercial_use:
     value: 'no'
     quote: The ACDC dataset is available as free to use strictly only non-commercial scientific research purposes
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial scientific research but does not address testing or validating a
+      product.
   model_training:
     value: conditional
     note: >-

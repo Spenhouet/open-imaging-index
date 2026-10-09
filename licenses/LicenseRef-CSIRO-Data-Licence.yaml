@@ -15,6 +15,10 @@ rules:
     quote: >-
       CSIRO grants you a royalty-free, non-exclusive, non-transferable licence to use the Data solely for your non
       commercial purposes.
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial purposes, meaning no use or exploitation of the Data for profit or
+      gain, but does not address testing or validating a product.
   model_training:
     value: conditional
     note: The licence does not mention models. Training falls under use, which is allowed for non-commercial purposes.

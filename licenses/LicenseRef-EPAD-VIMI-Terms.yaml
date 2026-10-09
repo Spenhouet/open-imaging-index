@@ -16,6 +16,10 @@ rules:
       advancement of scientific understanding of Alzheimer's disease.
     note: The terms neither allow nor forbid commercial use. They tie use to Alzheimer's disease science and to the
       research question submitted with the access request.
+  product_validation:
+    value: unspecified
+    note: The text ties use to Alzheimer's disease science and the submitted research question but does not address
+      testing or validating a product.
   model_training:
     value: unspecified
   derivatives:

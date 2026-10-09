@@ -19,6 +19,11 @@ rules:
     quote: >-
       Recipients agree to use data for scientific investigation, scholarship or teaching, or other form of research
       and research development.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to scientific investigation, scholarship, teaching or other research and research development
+      but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning.

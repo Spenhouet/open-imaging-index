@@ -15,6 +15,11 @@ rules:
     value: unspecified
     note: The charter does not mention commercial use. It opens the data to "any researcher or research team, public of
       private, French or overseas".
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to approved ancillary studies, open to public or private researchers, but does not address
+      testing or validating a product.
   model_training:
     value: unspecified
   derivatives:

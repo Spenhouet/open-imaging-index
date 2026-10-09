@@ -10,6 +10,10 @@ rules:
   commercial_use:
     value: 'yes'
     quote: Share — copy and redistribute the material in any medium or format for any purpose, even commercially.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: Share — copy and redistribute the material in any medium or format for any purpose, even commercially.
   model_training:
     value: 'yes'
     note: Creative Commons' AI training guidance (2025) treats training as allowed under the license conditions.

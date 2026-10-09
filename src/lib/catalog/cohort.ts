@@ -10,6 +10,7 @@ import type MiniSearch from 'minisearch';
 /** Uses a person may have in mind. Each is a license rule filter, see RULE_FILTERS. */
 export const NEEDS = [
   { id: 'commercial_use', label: 'Commercial use' },
+  { id: 'product_validation', label: 'Validate a product' },
   { id: 'model_training', label: 'Train models' },
   { id: 'share_model_weights', label: 'Share trained models' },
   { id: 'redistribute_original', label: 'Re-share the data' },

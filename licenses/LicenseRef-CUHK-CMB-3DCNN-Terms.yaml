@@ -16,6 +16,11 @@ rules:
     quote: >-
       Our code and data are ONLY released for research purpose. Any commercial intention, please first contact
       qdou@cse.cuhk.edu.hk
+  product_validation:
+    value: conditional
+    quote: Also, please feel free to develop or test your own CMB detection systems using our released dataset.
+    note: Testing detection systems is welcomed, but the data are released only for research. Any commercial
+      intention needs prior contact with the authors (qdou@cse.cuhk.edu.hk).
   model_training:
     value: conditional
     note: Allowed for research.

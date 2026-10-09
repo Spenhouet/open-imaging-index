@@ -17,6 +17,11 @@ rules:
       Principal Investigator Alan Kadish, MD and the study sponsor, St. Jude Medical.
     note: Commercial use needs the permission of Northwestern University, the trial principal investigator and the
       sponsor.
+  product_validation:
+    value: unspecified
+    quote: DETERMINE data will not be made available for commercial use without the permission of Holder, the Holder
+      Principal Investigator Alan Kadish, MD and the study sponsor, St. Jude Medical.
+    note: "The agreement does not address testing or validating a product. If the provider counts it as commercial use, it needs the permission of Northwestern University, the trial principal investigator and St. Jude Medical."
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any use must be part of the approved research project.

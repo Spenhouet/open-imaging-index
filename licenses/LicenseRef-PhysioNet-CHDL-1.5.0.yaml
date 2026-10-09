@@ -15,6 +15,9 @@ rules:
     note: >-
       The license limits use to scientific research but does not say whether that research may be commercial.
     quote: The LICENSEE will use the data for the sole purpose of lawful use in scientific research and no other.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific research but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: >-

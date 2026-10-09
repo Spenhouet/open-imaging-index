@@ -20,6 +20,11 @@ rules:
     note: >-
       The terms limit use to research or statistics but do not mention commercial use. The Restricted Data Use
       Agreement may say more; it could not be read.
+  product_validation:
+    value: unspecified
+    note: >-
+      The ICPSR terms page (HTTP 403) and the Restricted Data Use Agreement could not be re-checked. The archived study
+      page only states the access restrictions.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning; the data descriptor presents the dataset as training data for AI models.

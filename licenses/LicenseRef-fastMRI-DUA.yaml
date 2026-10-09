@@ -19,6 +19,11 @@ rules:
       publications and presentations with citations as provided in paragraph 6 below.
     note: The license covers "internal research or educational purposes only" and also forbids selling or monetizing
       the data. The website adds that MLCommons/MLPerf benchmark use counts as non-commercial use.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to internal research or education (MLCommons benchmark results count as non-commercial) but
+      does not address testing or validating a product.
   model_training:
     value: conditional
     quote: The primary goal of fastMRI is to test whether machine learning can aid in the reconstruction of medical

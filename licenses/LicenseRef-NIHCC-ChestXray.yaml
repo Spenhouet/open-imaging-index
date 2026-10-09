@@ -13,6 +13,10 @@ rules:
     value: 'yes'
     note: The FAQ does not name commercial use, but places no restriction on use of any kind.
     quote: The usage of the data set is unrestricted.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: The usage of the data set is unrestricted.
   model_training:
     value: 'yes'
     note: The README presents the dataset for training deep neural networks; the FAQ places no restriction on use.

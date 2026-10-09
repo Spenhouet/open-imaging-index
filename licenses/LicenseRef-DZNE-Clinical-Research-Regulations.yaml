@@ -16,6 +16,12 @@ rules:
       indirect commercial use, e.g. for scientific cooperation between industry and scientific institutes is possible
       upon approval.
     note: Indirect commercial use (research with later profit-oriented intentions) needs approval and a licence fee.
+  product_validation:
+    value: conditional
+    quote: The licensing of research results or another way of providing data and biomaterials for research projects
+      with subsequent profit-oriented intentions is referred to as indirect commercial use.
+    note: Indirect commercial use is possible only with approval and a licence fee; direct commercial use is
+      excluded. The regulations do not mention product testing.
   model_training:
     value: unspecified
     note: The regulations do not mention machine learning. Use is limited to the approved project.

@@ -11,6 +11,9 @@ purpose: unspecified
 rules:
   commercial_use:
     value: unspecified
+  product_validation:
+    value: unspecified
+    note: No terms are published, so the question cannot be answered.
   model_training:
     value: unspecified
   derivatives:

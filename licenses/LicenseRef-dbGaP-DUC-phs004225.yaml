@@ -19,6 +19,12 @@ rules:
     note: >-
       Use must stay within the approved research project, and the data and Data Derivatives "may not be sold to any
       individual at any point in time for any purpose."
+  product_validation:
+    value: conditional
+    quote: >-
+      there is no restriction on development of commercial products resulting from the knowledge gained from the
+      research project.
+    note: Only as part of the research project in a Data Access Request approved by NIH; the data may not be sold.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any training must fall within the approved research project.

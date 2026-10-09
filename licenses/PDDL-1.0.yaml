@@ -12,6 +12,11 @@ rules:
     value: 'yes'
     quote: Recipients may use this work commercially, use technical protection measures, combine this data or
       database with other databases or data, and share their changes and additions or keep them secret.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: Recipients may use this work commercially, use technical protection measures, combine this data or database
+      with other databases or data, and share their changes and additions or keep them secret.
   model_training:
     value: 'yes'
     quote: These rights explicitly include commercial use, and do not exclude any field of endeavour.

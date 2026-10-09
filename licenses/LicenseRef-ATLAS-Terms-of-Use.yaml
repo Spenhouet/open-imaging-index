@@ -17,6 +17,10 @@ rules:
     note: The terms limit use to research or statistics but do not mention commercial use. A definitions section
       describes an authorized user as "A faculty member, staff member, or student at a member institution", without
       saying who the member institutions are.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research or statistical purposes but does not address testing or validating a
+      product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning; the dataset itself was released to develop segmentation

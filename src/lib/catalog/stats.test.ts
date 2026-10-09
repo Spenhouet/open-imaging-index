@@ -181,3 +181,49 @@ describe('estimate with dataset-level facets', () => {
     });
   });
 });
+
+import { checkLicense, type VocabIndex } from './validate';
+
+describe('checkLicense product_validation', () => {
+  const v = {
+    dimensions: [],
+    measures: [],
+    terms: {},
+    licenseRules: {
+      groups: [],
+      rules: [
+        { id: 'commercial_use', group: 'use', label: '', question: '', good: 'yes' },
+        { id: 'product_validation', group: 'use', label: '', question: '', good: 'yes' }
+      ],
+      purposes: [{ id: 'research', label: '' }]
+    }
+  } as unknown as VocabIndex;
+  const lic = (rules: Record<string, object>) =>
+    ({
+      id: 'X',
+      name: 'X',
+      url: 'https://example.org',
+      summary: 'x'.repeat(30),
+      purpose: 'research',
+      rules,
+      verified: { date: '2026-01-01', by: 'a' }
+    }) as never;
+  const nc = { value: 'no', quote: 'Non-commercial research only.' };
+
+  it('blocks pull requests without a judgment, but not the site build', () => {
+    const p = checkLicense('licenses/X.yaml', lic({ commercial_use: nc }), v);
+    expect(p.find((x) => x.message.includes('product_validation'))).toMatchObject({ level: 'error', ciOnly: true });
+  });
+  it('rejects a "no" that only reuses the non-commercial clause', () => {
+    const p = checkLicense('licenses/X.yaml', lic({ commercial_use: nc, product_validation: { ...nc } }), v);
+    expect(p.some((x) => x.level === 'error' && x.message.includes('commercial-use clause'))).toBe(true);
+  });
+  it('accepts "unspecified" next to a non-commercial clause', () => {
+    const p = checkLicense(
+      'licenses/X.yaml',
+      lic({ commercial_use: nc, product_validation: { value: 'unspecified' } }),
+      v
+    );
+    expect(p.filter((x) => x.level === 'error')).toEqual([]);
+  });
+});

@@ -21,6 +21,15 @@ rules:
     source: https://doi.org/10.1148/ryai.220266
     note: Commercial AI development is possible within an approved project; NHS Scotland may ask for discounted
       access to the resulting product.
+  product_validation:
+    value: conditional
+    quote: >-
+      In conclusion, the SMI data resource is available for international researchers and innovators to perform health
+      care research and for the development or validation of AI algorithms.
+    source: https://doi.org/10.1148/ryai.220266
+    note: >-
+      Only within a project approved by the Public Benefit and Privacy Panel and inside the Scottish National Safe
+      Haven; a commercial AI product may have to be offered to NHS Scotland at a discount.
   model_training:
     value: 'yes'
     quote: The NSH environment allows analysis and AI development, but the data itself cannot be exported.

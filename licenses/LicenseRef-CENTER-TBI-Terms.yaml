@@ -15,6 +15,10 @@ rules:
     value: 'no'
     quote: CENTER-TBI data may not be used for commercial products or redistributed in any way.
     source: https://www.center-tbi.eu/data
+  product_validation:
+    value: unspecified
+    note: The text limits use to the approved request and bans use for commercial products, but does not address
+      testing or validating a product.
   model_training:
     value: unspecified
     note: The published terms do not mention machine learning. Any use must be part of the approved study plan.

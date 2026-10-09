@@ -13,6 +13,11 @@ rules:
   commercial_use:
     value: unspecified
     note: The form does not mention commercial use. The CAP user policy that requesters accept covers it.
+  product_validation:
+    value: unspecified
+    quote: I will only use the data for the purpose of contouring the myocardium
+    note: The form limits use to contouring the myocardium under the CAP policy statements but does not address
+      testing or validating a product.
   model_training:
     value: conditional
     quote: I will only use the data for the purpose of contouring the myocardium

@@ -6,7 +6,15 @@ export interface Problem {
   line?: number;
   level: 'error' | 'warning';
   message: string;
+  /**
+   * Fails `bun run validate` (and so pull requests) but not the site build. Used for rules added after files were
+   * written, so a pull request tested before the change cannot break the deployed site.
+   */
+  ciOnly?: boolean;
 }
+
+/** Rules introduced after licenses existed. Missing answers block pull requests, the site shows "Not stated". */
+export const NEWER_RULES = ['product_validation'];
 
 export interface VocabIndex {
   dimensions: Dimension[];
@@ -82,8 +90,37 @@ export function checkLicense(file: string, lic: LicenseFile, vocab: VocabIndex):
     .replace(/\.yaml$/, '');
   if (lic.id !== expected) err(`id "${lic.id}" must equal the file name "${expected}"`);
   const ruleIds = vocab.licenseRules.rules.map((r) => r.id);
-  for (const id of ruleIds)
-    if (!(id in lic.rules)) err(`rule "${id}" is missing. Use value: unspecified if the text is silent`);
+  for (const id of ruleIds) {
+    if (id in lic.rules) continue;
+    if (id === 'product_validation')
+      problems.push({
+        file,
+        level: 'error',
+        ciOnly: true,
+        message:
+          'rule "product_validation" is missing. Judge it from the license text: can the data be used to test or validate a product without becoming part of it? Use unspecified when the text does not say. A non-commercial clause alone is not a "no"'
+      });
+    else err(`rule "${id}" is missing. Use value: unspecified if the text is silent`);
+  }
+  const pv = lic.rules.product_validation;
+  const cu = lic.rules.commercial_use;
+  if (pv?.value === 'no') {
+    if (!pv.quote)
+      err(
+        'product_validation is "no" without a quote. Quote the clause that rules out testing or validating a product'
+      );
+    else if (cu?.quote && pv.quote.trim() === cu.quote.trim())
+      err(
+        'product_validation is "no" based on the commercial-use clause. A non-commercial clause alone does not rule out validation: use unspecified, or quote a clause that addresses testing or validation'
+      );
+  }
+  if (cu?.value === 'yes' && pv && pv.value !== 'yes')
+    problems.push({
+      file,
+      level: 'warning',
+      message:
+        'commercial use is "yes" but product_validation is not. Commercial use normally covers validating a product'
+    });
   for (const id of Object.keys(lic.rules)) if (!ruleIds.includes(id)) err(`unknown rule "${id}"`);
   if (!vocab.licenseRules.purposes.some((p) => p.id === lic.purpose))
     err(`purpose "${lic.purpose}" is not one of ${vocab.licenseRules.purposes.map((p) => p.id).join(', ')}`);

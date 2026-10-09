@@ -17,6 +17,11 @@ rules:
       only and such use is made available by UCL free of charge on an "as is" basis.
     note: Commercial organisations may apply, but must confirm that their use is bona fide research and not commercial
       exploitation (NSHD website, Accessing NSHD Data).
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to non-commercial research (commercial organisations must confirm bona fide research, not
+      commercial exploitation) but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. Any use must be part of the approved project.

@@ -14,6 +14,10 @@ rules:
     value: 'no'
     quote: I will use the data only for the purposes of non-commercial, ethical research in this application and to
       seek the approval of CamCAN (via the CamCAN Administrator) for any other proposed use.
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial, ethical research in the application, with CamCAN approval for any
+      other use, but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning. The project page warns that requests mentioning only "something

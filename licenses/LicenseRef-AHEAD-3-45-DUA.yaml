@@ -14,6 +14,10 @@ rules:
   commercial_use:
     value: 'no'
     quote: The Data Package shall not be commercialized.
+  product_validation:
+    value: unspecified
+    note: The text limits use to the approved Research Proposal and bars commercializing the Data Package, but does
+      not address testing or validating a product.
   model_training:
     value: conditional
     quote: I agree that any use of artificial intelligence (AI) tools, including generative, analytical, or large

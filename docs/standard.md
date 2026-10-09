@@ -145,6 +145,7 @@ Rules of thumb:
 - `unspecified` is a real answer. Do not turn silence into `yes` or `no`.
 - A "no" for a duty (no signed agreement, no ethics approval) needs no quote. The evidence is that the text does not ask for it.
 - Where the provider sells a commercial license, record it under `commercial_license`.
+- `product_validation` asks whether the data may be used to test or validate a product (for example a performance study for regulatory clearance) when the data does not become part of the product. It is judged on its own: a non-commercial clause alone does not make it `no`. Answer `no` only with a quote that rules out testing, validation, regulatory use or use by companies, and `unspecified` when the text does not address it. The checker enforces this.
 
 The site combines the answers of all licenses of a dataset: the most restrictive one per rule when every license applies to some part, the friendliest one when they are alternatives (`license_combine: any`). Rules map to [GA4GH Data Use Ontology](https://github.com/EBISPOT/DUO) codes where one exists.
 

@@ -14,6 +14,9 @@ rules:
     value: unspecified
     note: The policy neither allows nor forbids commercial use. It names collaboration and publishing research
       findings as the aims of sharing.
+  product_validation:
+    value: unspecified
+    note: The text limits use to approved project proposals but does not address testing or validating a product.
   model_training:
     value: unspecified
     note: The policy does not mention machine learning.

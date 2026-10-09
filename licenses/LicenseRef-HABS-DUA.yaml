@@ -17,6 +17,11 @@ rules:
     note: >-
       Requests are open to academic, industry and student researchers, but the data themselves may not be sold or
       commercialized. Whether a commercial product built with the data is allowed is not stated.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text limits use to the approved Study and forbids selling or commercializing the data, but does not address
+      testing or validating a product.
   model_training:
     value: conditional
     quote: >-

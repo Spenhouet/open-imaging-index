@@ -17,6 +17,10 @@ rules:
       upon in writing.'
     note: The agreement does not mention commercial use, but limits use to research under IRB 138479 or purposes
       agreed in writing with the University of Utah.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research under IRB 138479 or other research purposes agreed in writing but does not
+      address testing or validating a product.
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. The data are released for a segmentation challenge, but the

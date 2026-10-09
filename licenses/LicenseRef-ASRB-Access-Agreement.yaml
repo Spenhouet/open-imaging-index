@@ -17,6 +17,10 @@ rules:
     quote: International researchers and commercial entities are able to access the entire ASRB samples/data. Priority
       may still be given to Australian and/or non-commercial researchers.
     note: Allowed from July 2011 for approved projects; fees for for-profit companies are set case by case.
+  product_validation:
+    value: unspecified
+    note: The text limits use to approved research projects, and commercial entities may apply, but does not address
+      testing or validating a product.
   model_training:
     value: unspecified
     note: The guidelines do not mention machine learning. Use is limited to the approved research project.

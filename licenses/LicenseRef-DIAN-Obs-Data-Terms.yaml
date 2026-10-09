@@ -18,6 +18,10 @@ rules:
     source: https://dian.wustl.edu/for-investigators/dian-observational-study-investigator-resources/data-and-biospecimens-available-for-request/
     note: The terms neither allow nor forbid commercial use. They limit use to research within the approved request,
       and the request form lists industry as a possible funding source.
+  product_validation:
+    value: unspecified
+    note: The text limits use to research within the approved request but does not address testing or validating a
+      product.
   model_training:
     value: unspecified
     note: The terms do not mention machine learning.

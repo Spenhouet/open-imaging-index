@@ -17,6 +17,11 @@ rules:
     quote: utilise the results of research exclusively for public benefit and not for commercial gain, unless this was
       expressly approved as part of our application process by each and all relevant CRS.
     note: Only with express approval from every contributing research study (CRS) in the application.
+  product_validation:
+    value: unspecified
+    quote: utilise the results of research exclusively for public benefit and not for commercial gain, unless this
+      was expressly approved as part of our application process by each and all relevant CRS.
+    note: "The agreement does not address testing or validating a product. If the provider counts it as commercial gain, it needs express approval from every relevant contributing research study."
   model_training:
     value: unspecified
     note: The agreement does not mention machine learning. The application form lists machine learning as a project
