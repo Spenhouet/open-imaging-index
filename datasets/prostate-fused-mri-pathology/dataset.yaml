@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate-fused-mri-pathology
+name: Prostate Fused-MRI-Pathology
+full_name: Fused Radiology-Pathology Prostate Dataset (PROSTATE-FUSED-MRI-PATHOLOGY)
+summary: >-
+  Pre-prostatectomy 3 T multiparametric prostate MRI of 28 men with prostate cancer, paired with H&E pseudo-whole-mount
+  histology of the excised glands, pathologist cancer annotations and registration files that map tumor extent onto
+  the MRI.
+homepage: https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/
+doi: 10.7937/K9/TCIA.2016.TLPMR1AM
+year: 2016
+updated: 2023
+version: '2'
+status: active
+creators:
+  - name: Anant Madabhushi, Case Western Reserve University
+  - name: Michael D. Feldman, Hospital of the University of Pennsylvania
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, SM]
+contrasts: [T1w, T1w_ce, T2w, dwi, dce, he]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation, registration]
+formats: [DICOM, TIFF, MHA]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 81.54
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/
+  note: >-
+    MRI as DICOM via the TCIA Data Retriever, whole-slide pathology images and annotations via IBM Aspera, and the
+    registration MATLAB files and correspondence tables as direct downloads.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/
+    note: >-
+      Every item on the TCIA collection page is listed under CC BY 3.0. TCIA also asks users to follow its Data Usage
+      Policy and to cite the dataset DOI.
+citation:
+  text: >-
+    Madabhushi A, Feldman M. (2016). Fused Radiology-Pathology Prostate Dataset (Prostate Fused-MRI-Pathology). The
+    Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.TLPMR1AM
+sources:
+  tcia-prostate-fused-mri-pathology:
+    title: TCIA PROSTATE-FUSED-MRI-PATHOLOGY collection page (version 2, updated 2023/04/10)
+    url: https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/
+    kind: website
+  tcia-nbia-series:
+    title: >-
+      TCIA public NBIA API, series and patient metadata of the collection (CC BY 3.0, no account needed), getSeries
+      and getPatientStudy
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=Prostate%20Fused-MRI-Pathology&format=json
+    kind: computed
+  singanamalli2016:
+    title: Singanamalli et al. 2016, Journal of Magnetic Resonance Imaging (PMC4691230)
+    url: https://doi.org/10.1002/jmri.24975
+    kind: paper
+keywords:
+  [prostate cancer, radiology-pathology fusion, whole-mount histology, MRI-histology registration, DCE MRI, Gleason score]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

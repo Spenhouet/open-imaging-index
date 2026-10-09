@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,28,tcia-prostate-fused-mri-pathology,Data Access table,
+studies,,28,tcia-prostate-fused-mri-pathology,Data Access table,MR studies
+scans,,324,tcia-prostate-fused-mri-pathology,Data Access table,"DICOM MR series, including localizers and derived ADC, FA and subtraction series"
+images,,32508,tcia-prostate-fused-mri-pathology,Data Access table,DICOM MR images (slices)
+subjects,modality=MR,28,tcia-prostate-fused-mri-pathology,Data Access table,
+subjects,modality=SM,16,tcia-prostate-fused-mri-pathology,Data Access table,subjects with annotated whole-slide pathology images
+images,modality=SM,114,tcia-prostate-fused-mri-pathology,Data Access table,annotated whole-slide pathology images (TIFF and XML)
+subjects,condition=prostate_cancer,28,tcia-prostate-fused-mri-pathology,Summary,
+subjects,field_strength=3,28,tcia-prostate-fused-mri-pathology,Summary,
+subjects,vendor=siemens,28,tcia-nbia-series,"Manufacturer, ManufacturerModelName",all 324 series from a Siemens Verio
+subjects,sex=male,28,tcia-nbia-series,"getPatientStudy, PatientSex",
+subjects,contrast=T2w,28,tcia-nbia-series,"PatientID, SeriesDescription",series descriptions starting with T2 (TSE and HASTE)
+subjects,contrast=dce,28,tcia-nbia-series,"PatientID, SeriesDescription, ImageCount","multiphase fl3d_vibe series with at least 200 images; for one subject only the subtracted dynamic series is present"
+subjects,contrast=T1w,25,tcia-nbia-series,"PatientID, SeriesDescription","non-dynamic pre-contrast T1 series (T1 axial, T1 VIBE in/opposed phase, T1 FLASH)"
+subjects,contrast=dwi,12,tcia-nbia-series,"PatientID, SeriesDescription",ep2d_diff or MDDW DTI series
+subjects,contrast=T1w_ce,7,tcia-nbia-series,"PatientID, SeriesDescription",non-dynamic post-contrast T1 series
+subjects,contrast_set=dce+T1w+T2w,13,tcia-nbia-series,"PatientID, SeriesDescription, ImageCount",
+subjects,contrast_set=dce+dwi+T1w+T1w_ce+T2w,7,tcia-nbia-series,"PatientID, SeriesDescription, ImageCount",
+subjects,contrast_set=dce+dwi+T1w+T2w,5,tcia-nbia-series,"PatientID, SeriesDescription, ImageCount",
+subjects,contrast_set=dce+T2w,3,tcia-nbia-series,"PatientID, SeriesDescription, ImageCount",
