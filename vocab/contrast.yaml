@@ -34,6 +34,11 @@ terms:
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }
   - { id: angio, label: MR angiography, group: MR, synonyms: [TOF, MRA], mappings: { bids: angio } }
+  - id: STIR
+    label: STIR
+    group: MR
+    description: Short tau inversion recovery, a fat-suppressed T2-weighted contrast. BIDS has no suffix for it.
+    synonyms: [short tau inversion recovery]
   # MR diffusion, function, perfusion
   - { id: dwi, label: Diffusion-weighted, group: MR, synonyms: [DWI, DTI], mappings: { bids: dwi } }
   - { id: ADC, label: ADC map, group: MR, description: Apparent diffusion coefficient map, mappings: { bids: ADC } }

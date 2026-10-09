@@ -191,6 +191,7 @@ terms:
     }
   - { id: seborrheic_keratosis, label: Seborrheic keratosis, mappings: { mondo: 'MONDO:0008420' } }
   - { id: lymphoma, label: Lymphoma, mappings: { mondo: 'MONDO:0005062' } }
+  - { id: soft_tissue_sarcoma, label: Soft tissue sarcoma, synonyms: [STS], mappings: { mondo: 'MONDO:0018078' } }
   - {
       id: pancreatic_neoplasm,
       label: Pancreatic neoplasm,
