@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-FITBIR-NTRR-DUA
+name: FITBIR and NTRR Informatics System Data Access Request and Data Use Agreement
+short_name: FITBIR DUA
+url: https://fitbir.nih.gov/sites/fitbir/files/inline-files/FITBIR_Data_Access_Request_2025_Final.1.pdf
+version: Data Access Request version 4.0, updated August 5, 2025
+summary: >-
+  Agreement shared by FITBIR and the National Trauma Research Repository. A senior investigator and the institutional
+  signing official sign it for one described research project, which a Data Access Committee approves for one year at a
+  time. Use is non-commercial and limited to that project; data may not be passed on, sold or used to identify
+  people, and must be destroyed at project close-out.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Projects must be specified for research purposes only (not commercial) with the intention to enhance knowledge
+      for the benefit of human health.
+    source: https://fitbir.nih.gov/content/access-data
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must fall within the approved research project.
+  derivatives:
+    value: unspecified
+    note: >-
+      The agreement does not address derived data. All use is limited to the research project described in the
+      request.
+  publication:
+    value: conditional
+    note: Publication of results is expected; the operations team must be told when and where it will appear.
+    quote: >-
+      Recipient agrees to notify the Operations team via email FITBIR: FITBIR-ops@mail.nih.gov or NTRR:
+      NTRR-ops@list.nih.gov as to when and where a publication (or other public disclosure) of a report from the
+      Research Project will appear.
+  redistribute_original:
+    value: 'no'
+    note: >-
+      Data may only move within a collaborative group whose members are all approved recipients, and may never be
+      sold.
+    quote: >-
+      The Institutional Requester and Approved Data Users/Recipients agree to retain control of NIH controlled-access
+      datasets accessed through the request and further agree not to distribute controlled-access data to any entity
+      or individual not identified in the submitted request.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not address sharing derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    note: The agreement gives a suggested acknowledgement text that names the dataset identifiers used.
+    quote: >-
+      Recipient agrees to acknowledge the contribution of the bioinformatics platform, the relevant Informatics System
+      dataset identifier(s) (a serial number), and the Submitter(s) in any and all oral and written presentations,
+      disclosures, and publications resulting from any and all analyses of data using the Informatics System tools,
+      whether or not Recipient is collaborating with Submitter(s).
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    note: >-
+      The requester must be a permanent employee at a level equivalent to a tenure-track professor or senior
+      researcher, with an institutional email address; external collaborators sign their own agreement.
+    quote: >-
+      Recipients seeking access to data or images from the Informatics System are expected to submit their DAR and
+      DUA, signed by the Data Access Requester and the Institutional Signing Official.
+  ethics_approval:
+    value: conditional
+    note: >-
+      The institution must hold an OHRP-approved assurance, and human subjects research must follow 45 CFR 46. The
+      request form asks whether human subjects are involved and for the IRB approval date.
+    quote: >-
+      Recipient acknowledges that access, if provided, is for research that is approved by the Institution, which must
+      be operating under an Office of Human Research Protections (OHRP)-approved Assurance.
+  publication_review:
+    value: 'no'
+    note: Publications must be reported to the operations team, but no review before publication is required.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    note: Access is renewed only after the annual update.
+    quote: >-
+      The recipient will upload an annual summary of research accomplishments derived from the use of the Informatics
+      System, along with an updated biographical sketch http://grants.nih.gov/grants/funding/2590/biosketchsample.pdf
+      or CV, and a progress report, to their Informatics System account.
+  delete_after_use:
+    value: 'yes'
+    note: Data may be kept only where law, regulation or government policy requires it.
+    quote: >-
+      Upon Project Close-out, the Institutional Requester and Approved Data Users/Recipients agree to destroy all
+      copies and versions of the dataset(s) retrieved from NIH controlled-access databases, regardless of the storage
+      medium or format.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Approved Data Recipients agree not to use controlled access data sets obtained through the DUA, either alone or
+      in concert with any other information, to identify or contact individual participants from whom data and/or
+      samples were collected.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
