@@ -1,0 +1,37 @@
+measure,by,value,source,where,note
+subjects,,494,wei2018,Methods: Participants,
+subjects,condition=healthy,494,wei2018,Abstract,healthy adults; current psychiatric or neurological disorders were exclusion criteria
+subjects,country=CN,494,wei2018,Abstract,all scanned at Southwest University in Chongqing
+subjects,field_strength=3,494,wei2018,Methods: Image Acquisitions,3.0 T Siemens Trio
+subjects,vendor=siemens,494,wei2018,Methods: Image Acquisitions,
+subjects,contrast=T1w,494,sald-sub-information,columns Sub_ID and T1Img,MPRAGE
+subjects,contrast=bold,493,sald-sub-information,columns Sub_ID and FunImg,8-minute resting-state scan; one subject has no functional image
+subjects,contrast_set=bold+T1w,493,sald-sub-information,columns FunImg and T1Img,
+subjects,contrast_set=T1w,1,sald-sub-information,columns FunImg and T1Img,
+subjects,sex=female,307,sald-sub-information,column Sex,"the paper states 308 females and 187 males, which adds up to 495"
+subjects,sex=male,187,sald-sub-information,column Sex,
+subjects,age=10-19,4,sald-sub-information,column Age,
+subjects,age=20-29,147,sald-sub-information,column Age,
+subjects,age=30-39,42,sald-sub-information,column Age,
+subjects,age=40-49,69,sald-sub-information,column Age,
+subjects,age=50-59,112,sald-sub-information,column Age,
+subjects,age=60-69,78,sald-sub-information,column Age,
+subjects,age=70-79,41,sald-sub-information,column Age,
+subjects,age=80-89,1,sald-sub-information,column Age,
+subjects,sex=female;age=20-29,92,sald-sub-information,columns Sex and Age,
+subjects,sex=female;age=30-39,22,sald-sub-information,columns Sex and Age,
+subjects,sex=female;age=40-49,48,sald-sub-information,columns Sex and Age,
+subjects,sex=female;age=50-59,72,sald-sub-information,columns Sex and Age,
+subjects,sex=female;age=60-69,43,sald-sub-information,columns Sex and Age,
+subjects,sex=female;age=70-79,26,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=20-29,55,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=30-39,20,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=40-49,21,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=50-59,40,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=60-69,35,sald-sub-information,columns Sex and Age,
+subjects,sex=male;age=70-79,15,sald-sub-information,columns Sex and Age,
+age_min,,19,wei2018,Methods: Participants,
+age_max,,80,wei2018,Methods: Participants,
+age_mean,,45.2,sald-sub-information,column Age,
+age_median,,48,sald-sub-information,column Age,
+age_sd,,17.4,sald-sub-information,column Age,
