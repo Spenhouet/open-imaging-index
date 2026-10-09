@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ispy2
+name: ISPY2
+full_name: I-SPY 2 Breast Dynamic Contrast Enhanced MRI Trial (ISPY2)
+summary: >-
+  Serial breast DCE-MRI and T2-weighted MRI of 719 women with locally advanced breast cancer in the I-SPY 2
+  neoadjuvant chemotherapy trial, with SER and enhancement maps, functional tumor volume masks and pathologic response.
+homepage: https://www.cancerimagingarchive.net/collection/ispy2/
+doi: 10.7937/TCIA.D8Z0-9T85
+year: 2022
+version: '1'
+status: active
+creators:
+  - name: I-SPY 2 TRIAL imaging group, University of California San Francisco (PI Nola M. Hylton)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w, dce]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [segmentation, classification, longitudinal]
+formats: [DICOM]
+field_strengths: [1.5, 3]
+size_gb: 1746
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/ispy2/
+  note: >-
+    DICOM images are downloaded with the TCIA Data Retriever from a manifest file. No account is needed. A second
+    manifest on the same page downloads the full I-SPY2 Imaging Cohort 1 (985 patients), which adds the 266 patients
+    of the separate ACRIN-6698 collection. The clinical spreadsheet for all 985 patients is an open XLSX download.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/ispy2/
+citation:
+  text: >-
+    Li, W., Newitt, D. C., Gibbs, J., Wilmes, L. J., Jones, E. F., Arasu, V. A., Strand, F., Onishi, N., Nguyen, A.
+    A.-T., Kornak, J., Joe, B. N., Price, E. R., Ojeda-Fournier, H., Eghtedari, M., Zamora, K. W., Woodard, S. A.,
+    Umphrey, H., Bernreuter, W., Nelson, M., ... Hylton, N. M. (2022). I-SPY 2 Breast Dynamic Contrast Enhanced MRI
+    Trial (ISPY2) (Version 1) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/TCIA.D8Z0-9T85
+sources:
+  tcia-ispy2:
+    title: TCIA ISPY2 collection page (version 1, updated 2022/05/02)
+    url: https://www.cancerimagingarchive.net/collection/ispy2/
+    kind: website
+  tcia-ispy2-digest:
+    title: >-
+      TCIA ISPY2 metadata digest for the 719-patient manifest (ISPY2-719-patients-only-manifest-Jan-2022-nbia-digest.xlsx,
+      open download), counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/ISPY2-719-patients-only-manifest-Jan-2022-nbia-digest.xlsx
+    kind: computed
+keywords:
+  [
+    breast cancer,
+    neoadjuvant chemotherapy,
+    DCE-MRI,
+    functional tumor volume,
+    pathologic complete response,
+    treatment response,
+    clinical trial,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
