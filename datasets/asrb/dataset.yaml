@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: asrb
+name: ASRB
+full_name: Australian Schizophrenia Research Bank
+summary: >-
+  Australian case-control bank of people with schizophrenia or schizoaffective disorder and healthy controls, with
+  clinical, cognitive and genetic data and, for a subset, 1.5T T1-weighted and diffusion MRI. Retired in 2022; data are
+  released to approved, ethics-cleared projects.
+homepage: https://neura.edu.au/resources-tools/asrb
+doi: 10.3109/00048674.2010.501758
+# The ASRB cost recovery review states that the bank "has been open for access since 2009".
+year: 2009
+status: retired
+creators:
+  - name: >-
+      Australian Schizophrenia Research Bank consortium (Schizophrenia Research Institute, University of Newcastle,
+      Hunter Area Pathology Service, Centre for Rural and Remote Health, University of Queensland, University of
+      Western Australia, University of Melbourne)
+  - name: Neuroscience Research Australia (NeuRA)
+    url: https://neura.edu.au/resources-tools/asrb
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+tasks: [classification]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://neura.edu.au/resources-tools/asrb
+licenses:
+  - license: LicenseRef-ASRB-Access-Agreement
+citation:
+  text: >-
+    Loughland C, Draganic D, McCabe K, et al. Australian Schizophrenia Research Bank: a database of comprehensive
+    clinical, endophenotypic and genetic data for aetiological studies of schizophrenia. Aust N Z J Psychiatry
+    44(11):1029-1035 (2010). doi:10.3109/00048674.2010.501758. The ASRB guidelines also require the ASRB in the author
+    line and a fixed acknowledgement statement.
+sources:
+  loughland2010:
+    title: Loughland C et al. 2010, Australian Schizophrenia Research Bank, Australian and New Zealand Journal of Psychiatry
+    url: https://doi.org/10.3109/00048674.2010.501758
+    kind: paper
+  neura-asrb:
+    title: NeuRA, Australian Schizophrenia Research Bank page
+    url: https://neura.edu.au/resources-tools/asrb
+    kind: website
+  asrb-guidelines-2013:
+    title: ASRB Guidelines for Researchers, version December 2013 (archived copy)
+    url: https://web.archive.org/web/20170404012722/http://www.schizophreniaresearch.org.au/bank/wp-content/uploads/2013/12/ASRB-Guidelines-for-Researchers_-Final_Dec2013.pdf
+    kind: website
+  asrb-cost-recovery-review:
+    title: ASRB Cost Recovery Rate Review (archived copy)
+    url: https://web.archive.org/web/20170404012720/http://www.schizophreniaresearch.org.au/bank/wp-content/uploads/2013/09/ASRB-Cost-recovery-review.pdf
+    kind: website
+related: []
+keywords: [schizophrenia, psychosis, case-control, biobank, brain MRI, diffusion MRI, Australia]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
