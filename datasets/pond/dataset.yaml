@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pond
+name: POND Imaging Data
+full_name: Province of Ontario Neurodevelopmental Disorders Network (POND) Imaging Data
+summary: >-
+  Controlled Brain-CODE release of 682 children and youth with autism, ADHD, OCD and other neurodevelopmental
+  conditions plus typically developing peers, with T1w, T2w, diffusion, fMRI, MRS and MEG data and clinical measures.
+homepage: https://www.braincode.ca/content/controlled-data-releases#dr006
+doi: 10.60955/n327-cd87
+# Release date on the Brain-CODE controlled data release page is 2022-02-22; the DOI record gives 2021.
+year: 2022
+version: '1.0'
+status: active
+creators:
+  - name: Province of Ontario Neurodevelopmental Disorders (POND) Network
+    url: https://pond-network.ca/
+  - name: Ontario Brain Institute, Brain-CODE
+    url: https://www.braincode.ca/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [autism, adhd, ocd, anxiety_disorder, neurodevelopmental_disorder, healthy]
+formats: [NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 303
+access:
+  type: application
+  url: https://www.braincode.ca/content/controlled-data-releases#dr006
+licenses:
+  - license: LicenseRef-Brain-CODE-DUA
+citation:
+  text: >-
+    Province of Ontario Neurodevelopmental Network (POND). Province of Ontario Neurodevelopmental Disorders Network
+    (POND) Imaging Data, version 1.0. Ontario Brain Institute, Brain-CODE. doi:10.60955/n327-cd87
+sources:
+  braincode-pond-imaging:
+    title: Brain-CODE Controlled Data Releases page, POND Imaging Data v1.0
+    url: https://www.braincode.ca/content/controlled-data-releases#dr006
+    kind: website
+  obi-2022-imaging-release:
+    title: Ontario Brain Institute news, release of POND imaging dataset (May 2022)
+    url: https://braininstitute.ca/news-events/2022/release-of-clinical-imaging-dataset-to-accelerate-research-on-neurodevelopmental-disorders
+    kind: website
+  seguin2022:
+    title: Seguin et al. 2022, amygdala subnuclei in ASD, ADHD and OCD (POND), Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.26005
+    kind: paper
+related: []
+keywords: [children, adolescents, neurodevelopment, autism, ADHD, OCD, MEG, MRS, Brain-CODE]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Brain-CODE-DUA
+name: Ontario Brain Institute Brain-CODE Platform Terms of Use and Data Use Agreement
+short_name: Brain-CODE DUA
+url: https://www.braincode.ca/sites/default/files/about/Brain-CODE-Governance-Policy-version-3.0-Sept-25-20.pdf
+version: >-
+  Brain-CODE Informatics Governance Policy, version 3.0, September 25, 2020, with its Appendix E (Platform Terms of
+  Use Agreement) and Appendix G (Zone 3 Data Use Agreement template) for controlled data releases.
+summary: >-
+  Controlled Brain-CODE data go to researchers whose data access request, with ethics approval, is approved by the
+  Data Access Committee and Steering Committee, after signing the terms of use and a data use agreement. Use is
+  limited to the requested study, commercial use needs OBI's written consent, and data stay confidential and are
+  destroyed at the end.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: I agree that I will only use Brain-CODE and the Data for the purpose of (i) conducting scientific research
+      (ii) participating in scientific research where the data derived therefrom will become Data or (iii) browsing
+      Data for my personal interest ((i), (ii) and (iii) collectively the "Permitted Purpose") and not for any other
+      purpose, including without limitation any commercial purpose, without the prior written consent of OBI.
+    note: Only with prior written consent of OBI. Researchers affiliated with a company may apply.
+  product_validation:
+    value: unspecified
+    note: The agreement limits use to the study described in the data access request and does not address testing or
+      validating a product.
+  model_training:
+    value: unspecified
+    note: The texts do not mention machine learning. Use is limited to the study described in the data access request.
+  derivatives:
+    value: conditional
+    quote: The ownership of any unique product, aggregation or analysis resulting from these Data will rest with the
+      Data User
+    note: Derived results are expected, within the study described in the data access request.
+  publication:
+    value: conditional
+    quote: I may use the Data for the Permitted Purpose provided I include the following language in any publication,
+      or any presentation or disclosure of the Data, or works derived from or including the Data
+    note: Allowed with the fixed acknowledgement. Row-level data must not be reported for groups of five or fewer
+      participants.
+  redistribute_original:
+    value: 'no'
+    quote: External Researcher shall keep all Data that it has downloaded or made copies of strictly confidential, and
+      will not share any such Data with anyone or permit anyone to access or view such Data.
+  redistribute_derivatives:
+    value: conditional
+    quote: Only derived data and/or finalized results without any linkage to participants may be deposited into these
+      repositories.
+    note: Refers to repositories a journal requires; derived data must have no linkage to participants.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: All publications, presentations, or disclosures of analyses based in part or in whole on Data in Brain- CODE
+      must acknowledge the ID Program/Data Producer name which have contributed to these Data, the OBI, the Brain-CODE
+      platform, and the Government of Ontario.
+    note: The policy prescribes the acknowledgement wording and asks users to reference the primary papers of the data
+      producers.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Data will be released on the condition that the External Researcher signs a Terms of Use Agreement and Data
+      Use Agreement with applicable confidentiality requirements
+  ethics_approval:
+    value: 'yes'
+    quote: OBI will review the submission to ensure completeness, that REB approval or exemption has been granted, and
+      verify the identity of the requestor.
+    note: A research ethics board approval or exemption is required.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: conditional
+    quote: External Researcher shall make results and processing methods available to other users through the
+      Brain-CODE platform in a timely manner
+    note: Processing methods are shared with other Brain-CODE users, not necessarily as public code.
+  return_results:
+    value: 'yes'
+    quote: External Researcher shall, upon request from OBI, provide updates related to use of the Data on an annual
+      basis by completing the Annual Update form. In addition, External Researcher shall make results and processing
+      methods available to other users through the Brain-CODE platform in a timely manner
+  delete_after_use:
+    value: 'yes'
+    quote: Upon expiration of this Agreement, External Researcher shall destroy all copies (whether physical or
+      electronic) that have been made of Data, and if requested by OBI, provide a certificate confirming the secure
+      destruction of Data under this obligation
+  no_reidentification:
+    value: 'yes'
+    quote: Under no circumstances will I attempt to attribute, link, connect, or associate any Data with any natural
+      person.
+  geographic_restriction:
+    value: 'no'
+    note: The policy states that external researchers can be local, national or international. Analysis normally takes
+      place inside the Brain-CODE workspace; local download needs a data transfer agreement.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
