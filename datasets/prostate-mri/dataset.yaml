@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prostate-mri
+name: PROSTATE-MRI
+summary: >-
+  Endorectal-coil 3T multiparametric prostate MRI (T2-weighted, diffusion, DCE) of 26 men with biopsy-proven prostate
+  cancer before robotic radical prostatectomy, with whole-mount histopathology cut in the MRI plane using a
+  patient-specific mold.
+homepage: https://www.cancerimagingarchive.net/collection/prostate-mri/
+doi: 10.7937/K9/TCIA.2016.6046GUDV
+year: 2011
+version: '1'
+status: active
+creators:
+  - name: National Cancer Institute, Bethesda, Maryland
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, SM]
+contrasts: [T2w, dwi, dce]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [registration, segmentation]
+formats: [DICOM, JPEG]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 3.6
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/prostate-mri/
+  note: >-
+    MR images download with the TCIA Data Retriever, histopathology JPEGs through IBM Aspera. Access was restricted
+    to users approved by the investigators until May 2018 and is open since then.
+licenses:
+  - license: CC-BY-3.0
+    note: >-
+      TCIA lists both the MR images and the histopathology images under CC BY 3.0. Users must also follow the TCIA
+      Data Usage Policy, which says users must "Not use the requested datasets, either alone or in concert with any
+      other information, to identify or contact individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/).
+citation:
+  text: >-
+    Choyke P, Turkbey B, Pinto P, Merino M, Wood B. (2016). Data From PROSTATE-MRI. The Cancer Imaging Archive.
+    http://doi.org/10.7937/K9/TCIA.2016.6046GUDv
+sources:
+  tcia-prostate-mri:
+    title: TCIA PROSTATE-MRI collection page (version 1, updated 2011/06/30)
+    url: https://www.cancerimagingarchive.net/collection/prostate-mri/
+    kind: website
+  prostate-mri-nbia-digest:
+    title: >-
+      NBIA metadata digest of the MR series (open download, CC BY 3.0), counted per Patient ID and Series
+      Description
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/PROSTATE-MRI-5-18-2018-doiJNLP-dKJJAqnS-nbia-digest.xlsx
+    kind: computed
+keywords: [prostate cancer, multiparametric MRI, endorectal coil, radical prostatectomy, whole-mount histopathology, radiology-pathology correlation]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

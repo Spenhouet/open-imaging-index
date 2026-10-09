@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,26,tcia-prostate-mri,Data Access table,
+studies,,26,tcia-prostate-mri,Data Access table,MR studies
+scans,,208,tcia-prostate-mri,Data Access table,"sum of the disjoint MR (182) and histopathology (26) series rows"
+images,,22062,tcia-prostate-mri,Data Access table,"sum of the disjoint MR (22,036) and histopathology (26) image rows"
+scans,modality=MR,182,tcia-prostate-mri,Data Access table,DICOM series
+images,modality=MR,22036,tcia-prostate-mri,Data Access table,DICOM images (slices)
+scans,modality=SM,26,tcia-prostate-mri,Data Access table,histopathology series
+images,modality=SM,26,tcia-prostate-mri,Data Access table,"whole-mount histopathology JPEGs, one per subject"
+subjects,modality=MR,26,tcia-prostate-mri,Data Access table,
+subjects,modality=SM,26,tcia-prostate-mri,Data Access table,
+subjects,sex=male,26,prostate-mri-nbia-digest,Patient Sex,
+subjects,field_strength=3,26,tcia-prostate-mri,,
+subjects,vendor=philips,26,prostate-mri-nbia-digest,Manufacturer,Philips Achieva
+subjects,country=US,26,tcia-prostate-mri,,"National Cancer Institute, Bethesda"
+subjects,contrast=T2w,26,prostate-mri-nbia-digest,Series Description,"T2 TSE axial, coronal and sagittal series"
+subjects,contrast=dwi,26,prostate-mri-nbia-digest,Series Description,two DWI series per subject
+subjects,contrast=dce,26,prostate-mri-nbia-digest,Series Description,dynamic series plus a pre-contrast series
+subjects,contrast_set=dce+dwi+T2w,26,prostate-mri-nbia-digest,Series Description,
