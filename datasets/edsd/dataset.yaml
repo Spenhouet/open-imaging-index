@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: edsd
+name: EDSD
+full_name: European DTI Study on Dementia
+summary: >-
+  Retrospective multicenter collection of DTI, 3D T1-weighted and FLAIR brain MRI from 139 patients with Alzheimer's
+  disease dementia, 160 with MCI and 194 healthy controls, acquired on 13 scanners at 11 European centers. Access via
+  neuGRID or DZNE Rostock after a signed data usage agreement.
+homepage: https://www.neugrid2.eu/index.php/data-portfolio/
+doi: 10.1016/j.neuroimage.2016.03.067
+# The data descriptor says the data were already public on neuGRID N4U as of March 2016 and gives no earlier release
+# date.
+year: 2016
+status: active
+creators:
+  - name: EDSD study group, coordinated by DZNE (German Center for Neurodegenerative Diseases), Rostock
+    url: https://www.dzne.de/en/about-us/sites/rostock-greifswald/
+species: human
+modalities: [MR]
+contrasts: [dwi, T1w, FLAIR]
+anatomy: [brain]
+conditions: [alzheimers, mci, healthy]
+formats: [DICOM, NIfTI]
+countries: [NL, IT, GB, IE, DE]
+vendors: [ge, siemens, philips]
+field_strengths: [1.5, 3]
+access:
+  type: signed_agreement
+  url: https://www.neugrid2.eu/index.php/form_datasets/
+licenses:
+  - license: LicenseRef-EDSD-DUA
+citation:
+  text: >-
+    Brueggen K, Grothe MJ, Dyrba M, et al. The European DTI Study on Dementia - A multicenter DTI and MRI study on
+    Alzheimer's disease and Mild Cognitive Impairment. NeuroImage 144(Pt B):305-308 (2017).
+    doi:10.1016/j.neuroimage.2016.03.067
+sources:
+  brueggen2017:
+    title: Brueggen K et al. 2017, The European DTI Study on Dementia - A multicenter DTI and MRI study on Alzheimer's
+      disease and Mild Cognitive Impairment, NeuroImage
+    url: https://doi.org/10.1016/j.neuroimage.2016.03.067
+    kind: paper
+  neugrid2-portfolio:
+    title: neuGRID2 data portfolio page, EDSD entry
+    url: https://www.neugrid2.eu/index.php/data-portfolio/
+    kind: website
+related: [arwibo]
+keywords: [Alzheimer's disease, MCI, diffusion tensor imaging, multicenter, neuGRID]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
