@@ -312,6 +312,18 @@ terms:
       synonyms: [LVH],
       mappings: { hp: 'HP:0001712' }
     }
+  - {
+      id: cardiac_amyloidosis,
+      label: Cardiac amyloidosis,
+      synonyms: [amyloid cardiomyopathy],
+      mappings: { hp: 'HP:0030843' }
+    }
+  - {
+      id: aortic_regurgitation,
+      label: Aortic regurgitation,
+      synonyms: [aortic valve insufficiency, aortic insufficiency],
+      mappings: { mondo: 'MONDO:0005648', hp: 'HP:0001659' }
+    }
   - { id: osteoarthritis, label: Osteoarthritis, mappings: { mondo: 'MONDO:0005178' } }
   - {
       id: knee_osteoarthritis,
