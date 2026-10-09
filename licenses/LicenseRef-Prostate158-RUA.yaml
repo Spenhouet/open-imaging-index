@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Prostate158-RUA
+name: Prostate158 Research Use Agreement
+short_name: Prostate158 RUA
+url: https://prostate158.grand-challenge.org/data/
+version: Research Use Agreement on the Prostate158 challenge data page, read 2026-10-09
+summary: >-
+  Personal, non-commercial research use only. Each user registers and agrees individually. The data may not be
+  passed on, modified or used to create derivative works, re-identification is forbidden, and the data must not be
+  used for patient care.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Any commercial use, sale, or other form of monetization is prohibited.
+  model_training:
+    value: conditional
+    note: >-
+      The challenge asks participants to train models and submit them for evaluation on the hidden test set, within
+      the personal, non-commercial research purpose of the agreement.
+    quote: >-
+      Once, trained, the models can be evaluated on the test dataset by uploading them to grand-challenge.org.
+    source: https://prostate158.grand-challenge.org/
+  derivatives:
+    value: 'no'
+    quote: >-
+      You may not modify, reverse engineer, decompile, or create derivative works based on the Prostate158 dataset.
+  publication:
+    value: unspecified
+    note: The agreement does not address publishing results obtained with the data.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      You may not distribute, publish, or reproduce a copy of any or all of the Prostate158 dataset to others without
+      the express prior written permission of the contest ORGANIZERS.
+  redistribute_derivatives:
+    value: 'no'
+    note: Creating derivative works is not allowed, and nothing in the agreement permits sharing them.
+    quote: >-
+      You may not otherwise copy, reproduce, transmit, distribute, publish, commercially exploit or otherwise
+      transfer the material.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not say whether trained model weights count as derivative works.
+  attribution:
+    value: unspecified
+    note: The agreement does not ask for a citation. It forbids removing copyright or proprietary notices.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    note: >-
+      Acceptance happens by registering for downloads. Every user in an organization registers individually.
+    quote: By registering for downloads of the Prostate158 dataset, you agree to this Research Use Agreement.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: conditional
+    note: Only after a breach of the agreement or other improper use, not at the end of a project.
+    quote: >-
+      the School of Medicine may order the undersigned Data Recipient to immediately return all copies of the
+      Prostate158 Data Set and not retain any copies, even if you did not cause the breach or improper use.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      You will not attempt to re-identify individual data subjects. Re-identification of individuals is strictly
+      prohibited.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
