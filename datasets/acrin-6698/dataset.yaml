@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: acrin-6698
+name: ACRIN 6698/I-SPY2 Breast DWI
+full_name: ACRIN 6698/I-SPY2 Breast DWI (ACRIN 6698 trial, NCT01564368)
+summary: >-
+  Serial breast MRI of 385 women with invasive breast cancer from the multicenter ACRIN 6698 trial, a diffusion
+  substudy of I-SPY 2, at up to four time points of neoadjuvant chemotherapy, with 4 b-value DWI, ADC maps, manual
+  tumor segmentations, DCE, test-retest scans and pCR outcome.
+homepage: https://www.cancerimagingarchive.net/collection/acrin-6698/
+doi: 10.7937/tcia.kk02-6d95
+year: 2021
+version: '1'
+status: active
+creators:
+  - name: American College of Radiology Imaging Network (ACRIN) and the I-SPY 2 Trial investigators
+  - name: Breast Imaging Research Program, University of California, San Francisco
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, ADC, dce]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [segmentation, classification, longitudinal]
+formats: [DICOM]
+countries: [US]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+size_gb: 841.95
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/acrin-6698/
+  note: >-
+    Images and segmentations download through the TCIA Data Retriever without an account. Separate download options
+    cover the 242-patient primary analysis cohort, the 71-patient test-retest set and the BMMR2 challenge training and
+    test sets.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/acrin-6698/
+citation:
+  text: >-
+    Newitt DC, Partridge SC, Zhang Z, Gibbs J, Chenevert T, Rosen M, Bolan P, Marques H, Romanoff J, Cimino L, Joe BN,
+    Umphrey H, Ojeda-Fournier H, Dogan B, Oh KY, Abe H, Drukteinis J, Esserman LJ, Hylton NM. (2021). ACRIN 6698/I-SPY2
+    Breast DWI [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/tcia.kk02-6d95
+sources:
+  tcia-acrin-6698:
+    title: TCIA ACRIN 6698/I-SPY2 Breast DWI collection page (version 1, updated 2021/12/17)
+    url: https://www.cancerimagingarchive.net/collection/acrin-6698/
+    kind: website
+  tcia-acrin-6698-digest:
+    title: >-
+      TCIA ACRIN 6698 radiology metadata digest (ACRIN-6698-I-SPY2-Breast-DWI-manifes-nbia-digest-1.xlsx, CC BY 4.0,
+      open download), counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/ACRIN-6698-I-SPY2-Breast-DWI-manifes-nbia-digest-1.xlsx
+    kind: computed
+  partridge2018:
+    title: Partridge et al. 2018, Radiology (PMC6283325)
+    url: https://doi.org/10.1148/radiol.2018180273
+    kind: paper
+  newitt2019:
+    title: Newitt et al. 2019, Journal of Magnetic Resonance Imaging (PMC6524146)
+    url: https://doi.org/10.1002/jmri.26539
+    kind: paper
+keywords:
+  [breast cancer, neoadjuvant chemotherapy, pathologic complete response, diffusion-weighted imaging, ADC, test-retest, BMMR2, I-SPY 2]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

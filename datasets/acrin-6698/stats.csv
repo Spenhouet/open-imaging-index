@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,385,tcia-acrin-6698,Data Access table,385 of 388 eligible patients; 3 had no analyzable MRI study
+studies,,1123,tcia-acrin-6698,Data Access table,
+scans,,18747,tcia-acrin-6698,Data Access table,"DICOM series, MR and SEG"
+images,,2911334,tcia-acrin-6698,Data Access table,DICOM images (slices)
+subjects,sex=female,385,tcia-acrin-6698-digest,"Patient ID, Patient Sex columns",the collection page summary lists 386 female against N = 385
+age_mean,,48.8,tcia-acrin-6698,Demographic Summary of Available Imaging,
+age_sd,,11,tcia-acrin-6698,Demographic Summary of Available Imaging,
+age_median,,49,tcia-acrin-6698,Demographic Summary of Available Imaging,interquartile range 41 to 56
+age_min,,23,tcia-acrin-6698,Demographic Summary of Available Imaging,
+age_max,,77,tcia-acrin-6698,Demographic Summary of Available Imaging,
+subjects,modality=MR,385,tcia-acrin-6698-digest,"Patient ID, Modality columns",
+subjects,vendor=ge,278,tcia-acrin-6698-digest,"Patient ID, Manufacturer columns","Signa HDxt, DISCOVERY MR750w, Optima MR450w"
+subjects,vendor=siemens,59,tcia-acrin-6698-digest,"Patient ID, Manufacturer columns","Avanto, TrioTim, Prisma_fit"
+subjects,vendor=philips,48,tcia-acrin-6698-digest,"Patient ID, Manufacturer columns","Achieva, Ingenia; 2 subjects have series from two vendors"
+subjects,split=train,117,tcia-acrin-6698,Data Access table,BMMR2 challenge training set
+subjects,split=test,74,tcia-acrin-6698,Data Access table,BMMR2 challenge test set
+subjects,country=US,385,newitt2019,Results,enrolled at 10 US institutions
