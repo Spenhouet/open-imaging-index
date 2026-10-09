@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sunnybrook-cardiac-data
+name: Sunnybrook Cardiac Data
+full_name: Sunnybrook Cardiac Data (SCD), MICCAI 2009 Cardiac MR Left Ventricle Segmentation Challenge
+summary: >-
+  Short-axis cine cardiac MRI of 45 patients from Sunnybrook Health Sciences Centre, Toronto (healthy, LV
+  hypertrophy, heart failure with and without infarction), with expert endocardial and epicardial LV contours at
+  end-diastole and end-systole. CC0.
+homepage: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+doi: 10.54294/g80ruo
+year: 2009
+status: active
+creators:
+  - name: Perry Radau, Sunnybrook Health Sciences Centre
+  - name: Cardiac Atlas Project (hosting)
+    url: https://www.cardiacatlas.org/
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [healthy, left_ventricular_hypertrophy, heart_failure, myocardial_infarction]
+tasks: [segmentation]
+formats: [DICOM]
+countries: [CA]
+vendors: [ge]
+field_strengths: [1.5]
+size_gb: 2.7
+access:
+  type: open
+  url: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+licenses:
+  - license: CC0-1.0
+citation:
+  text: >-
+    Radau P, Lu Y, Connelly K, Paul G, Dick AJ, Wright GA. Evaluation Framework for Algorithms Segmenting Short Axis
+    Cardiac MRI. The MIDAS Journal - Cardiac MR Left Ventricle Segmentation Challenge (2009).
+    http://hdl.handle.net/10380/3070
+sources:
+  cap-scd:
+    title: Cardiac Atlas Project, Sunnybrook Cardiac Data page
+    url: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+    kind: website
+  radau2009:
+    title: Radau et al. 2009, The MIDAS Journal (challenge website pages, MICCAI 2009 LV Segmentation Challenge)
+    url: https://doi.org/10.54294/g80ruo
+    kind: paper
+  cap-scd-patientdata:
+    title: SCD patient data spreadsheet (scd_patientdata.csv, CC0), counted from the Gender and Age columns
+    url: https://www.cardiacatlas.org/share/download.php?id=66&token=Y1D66ieUdbXFlqmZ4icHJheJy44MXUPY
+    kind: computed
+related: [acdc]
+keywords: [cardiac MRI, cine MRI, left ventricle segmentation, heart failure, LV hypertrophy, challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
