@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openpain-accumbens-signature
+name: 'OpenPain: Accumbens Chronic Pain Signature'
+full_name: 'OpenPain Project: Loss of nucleus accumbens low-frequency fluctuations is a signature of chronic pain (Yale)'
+summary: >-
+  T1-weighted MRI and resting-state fMRI of 40 subacute back pain patients, 28 chronic low back pain patients and 30
+  healthy controls from Yale, with about one-year follow-up scans of a subset, shared through the OpenPain Project.
+homepage: https://www.openpain.org/
+doi: 10.1073/pnas.1918682117
+year: 2020
+creators:
+  - name: Geha Lab, Department of Psychiatry, Yale School of Medicine and The John B. Pierce Laboratory
+  - name: OpenPain Project, Apkarian Lab, Northwestern University
+    url: https://www.openpain.org/
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [low_back_pain, healthy]
+tasks: [classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://openpain.org/html/agreement.html
+licenses:
+  - license: LicenseRef-OpenPain-DUA
+citation:
+  text: >-
+    Makary MM, Polosecki P, Cecchi GA, DeAraujo IE, Barron DS, Constable TR, Whang PG, Thomas DA, Mowafi H, Small DM,
+    Geha P. Loss of nucleus accumbens low-frequency fluctuations is a signature of chronic pain. Proc Natl Acad Sci
+    USA 117(18):10015-10023 (2020).
+sources:
+  makary2020:
+    title: Makary et al. 2020, PNAS 117(18):10015-10023
+    url: https://doi.org/10.1073/pnas.1918682117
+    kind: paper
+  makary2020-si:
+    title: Makary et al. 2020, PNAS, SI Appendix
+    url: https://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1918682117/-/DCSupplemental
+    kind: paper
+related: [openpain-mano]
+keywords: [chronic pain, subacute back pain, nucleus accumbens, resting-state fMRI, longitudinal]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
