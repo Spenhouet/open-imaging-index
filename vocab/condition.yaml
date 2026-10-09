@@ -126,6 +126,13 @@ terms:
     }
   - { id: kidney_cancer, label: Kidney cancer, mappings: { mondo: 'MONDO:0002367' } }
   - {
+      id: chromophobe_renal_cell_carcinoma,
+      label: Chromophobe renal cell carcinoma,
+      synonyms: [chRCC, KICH],
+      parent: kidney_cancer,
+      mappings: { mondo: 'MONDO:0017885' }
+    }
+  - {
       id: pancreatic_cancer,
       label: Pancreatic ductal adenocarcinoma,
       synonyms: [PDAC, pancreatic cancer],

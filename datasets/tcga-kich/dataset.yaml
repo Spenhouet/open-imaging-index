@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-kich
+name: TCGA-KICH
+full_name: The Cancer Genome Atlas Kidney Chromophobe Collection (TCGA-KICH)
+summary: >-
+  Pre-surgical clinical CT and MRI of 15 patients with chromophobe renal cell carcinoma from The Cancer Genome Atlas,
+  whose patient IDs match the TCGA clinical, genomic and histopathology data for radiogenomic research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-kich/
+doi: 10.7937/K9/TCIA.2016.YU3RBCZN
+year: 2014
+updated: 2020
+version: '3'
+status: active
+creators:
+  - name: National Cancer Institute Urologic Oncology Branch and Brigham and Women's Hospital
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR]
+anatomy: [kidney]
+conditions: [chromophobe_renal_cell_carcinoma]
+formats: [DICOM]
+countries: [US]
+size_gb: 4.56
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-kich/
+  note: >-
+    Images download with the TCIA Data Retriever or from the NCI Imaging Data Commons. Clinical, genomic and
+    histopathology data for the same patient IDs are in the NCI Genomic Data Commons project TCGA-KICH.
+licenses:
+  - license: CC-BY-3.0
+    applies_to: All CT and MR images (15 subjects, 15 studies, 109 series).
+citation:
+  text: >-
+    Linehan MW, Gautam R, Sadow CA, Levine S. (2016). The Cancer Genome Atlas Kidney Chromophobe Collection
+    (TCGA-KICH) (Version 3) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.YU3RBCZN
+sources:
+  tcia-tcga-kich:
+    title: TCIA TCGA-KICH collection page (version 3, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-kich/
+    kind: website
+  tcia-tcga-kich-digest:
+    title: TCIA TCGA-KICH series metadata digest (CC BY 3.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/TCIA_TCGA-KICH_09-16-2015-nbia-digest.xlsx
+    kind: computed
+keywords: [TCGA, radiogenomics, renal cell carcinoma, chromophobe, kidney tumor]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
