@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,5,tcia-rider-breast-mri,Data Access table,
+studies,,10,tcia-rider-breast-mri,Data Access table,two coffee-break exams per subject (t+0 and t+15 min)
+scans,,40,tcia-rider-breast-mri,Data Access table,"DICOM series, including ADC maps and VOI masks"
+images,,2400,tcia-rider-breast-mri,Data Access table,DICOM instances
+subjects,condition=breast_cancer,5,meyer2009,Introduction,primary breast cancer patients electing neoadjuvant chemotherapy
+subjects,anatomy=breast,5,tcia-rider-breast-mri,,
+subjects,contrast=dwi,5,tcia-rider-breast-mri-digest,Series Description,B0 and B800 series in both studies of every subject
+subjects,contrast=ADC,5,tcia-rider-breast-mri-digest,Series Description,ADC series in both studies of every subject
+scans,contrast=dwi,20,tcia-rider-breast-mri-digest,Series Description,10 B0 and 10 B800 series
+scans,contrast=ADC,10,tcia-rider-breast-mri-digest,Series Description,
