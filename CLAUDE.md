@@ -15,6 +15,7 @@ Static SvelteKit 3 site (adapter-static, every page prerendered) deployed to Git
 - `src/lib/catalog/validate.ts`: cross-file checks (vocabulary membership, stats consistency, small cells).
 - `src/lib/catalog/load.ts`: reads and validates everything from disk (server and scripts only).
 - `src/lib/catalog/stats.ts`: stats.csv parser and `estimate`, which bounds matching subjects for cohort filters (exact rows where reported, Fréchet bounds otherwise). Unit tested.
+- `src/lib/catalog/charts.ts`: turns a dataset's stats rows into the charts on its page. Each row lands in exactly one chart or in the "Other reported numbers" list, which a unit test checks for every dataset.
 - `src/lib/catalog/filter.ts`: catalog filtering, URL query state, facet counts.
 - `src/lib/catalog/cohort.ts`: the Explore page: pooled cohort, intended-use split, linked breakdowns (each chart ignores its own selection), coverage grid. Unit tested. `bun scripts/profile-explore.ts <summaries.json>` times it.
 - Loaded catalog data is kept in `$state.raw`: deep proxies over thousands of datasets made Explore 4 to 7 times slower.

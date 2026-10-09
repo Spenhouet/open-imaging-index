@@ -7,7 +7,15 @@
     total,
     unit = 'subjects'
   }: {
-    items: { key: string; label: string; value: number; approx?: boolean; color?: string; hint?: string }[];
+    items: {
+      key: string;
+      label: string;
+      value: number;
+      approx?: boolean;
+      color?: string;
+      hint?: string;
+      note?: string;
+    }[];
     total?: number;
     unit?: string;
   } = $props();
@@ -24,7 +32,9 @@
     {@const pct = (item.value / max) * 100}
     <li
       class="group"
-      title="{item.label}: {formatNumber(item.value, item.approx)} {unit}{item.hint ? ` (${item.hint})` : ''}"
+      title="{item.label}: {formatNumber(item.value, item.approx)} {unit}{item.hint ? ` (${item.hint})` : ''}{item.note
+        ? `, ${item.note}`
+        : ''}"
     >
       <div class="flex items-baseline justify-between gap-3 text-sm">
         <span class="min-w-0 truncate">{item.label}</span>
@@ -41,6 +51,7 @@
           style="--w: {Math.max(pct, 0.6)}%; --c: {item.color ?? 'var(--series-1)'}"
         ></div>
       </div>
+      {#if item.note}<div class="mt-1 text-xs text-muted-foreground tabular">{item.note}</div>{/if}
     </li>
   {/each}
 </ul>

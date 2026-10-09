@@ -17,8 +17,10 @@
   import ComboMatrix from '#lib/components/charts/ComboMatrix.svelte';
   import Pyramid from '#lib/components/charts/Pyramid.svelte';
   import SplitBar from '#lib/components/charts/SplitBar.svelte';
-  import { contrastSetParts, marginal, parseAgeBin, total } from '#lib/catalog/stats.js';
-  import { countryName, formatNumber, label, modalityColor } from '#lib/catalog/vocab.js';
+  import CrossTable from '#lib/components/charts/CrossTable.svelte';
+  import { formatBy, total } from '#lib/catalog/stats.js';
+  import { ageNote, datasetCharts, type Variant } from '#lib/catalog/charts.js';
+  import { countryName, formatNumber, label } from '#lib/catalog/vocab.js';
   import { SITE_NAME, SITE_URL, editUrl, issueUrl, link } from '#lib/site.js';
 
   let { data } = $props();
@@ -31,19 +33,12 @@
   const counts = $derived(
     (['subjects', 'studies', 'scans', 'images', 'slides'] as const).flatMap((m) => {
       const r = t(m);
-      return r ? [{ m, label: vocab.measures.find((x) => x.id === m)?.label ?? m, r }] : [];
+      return r ? [{ m, label: measureLabel(m), r }] : [];
     })
   );
   const N = $derived(t('subjects')?.value);
+  const measureLabel = (m: string) => vocab.measures.find((x) => x.id === m)?.label ?? m;
 
-  const ageBins = $derived(
-    marginal(rows, 'subjects', 'age')
-      .map((r) => ({ r, bin: parseAgeBin(r.by.age) }))
-      .filter((x) => x.bin)
-      .sort((a, b) => a.bin![0] - b.bin![0])
-      .map(({ r }) => ({ key: r.by.age, label: r.by.age, value: r.value, approx: r.approx }))
-  );
-  const sexRows = $derived(marginal(rows, 'subjects', 'sex'));
   const sexColors: Record<string, string> = {
     female: 'var(--series-1)',
     male: 'var(--series-2)',
@@ -51,83 +46,26 @@
     unknown: 'var(--series-other)'
   };
 
-  // Age by sex cross table, when reported for at least some bins.
-  const pyramid = $derived.by(() => {
-    const joint = rows.filter(
-      (r) => r.measure === 'subjects' && Object.keys(r.by).length === 2 && 'age' in r.by && 'sex' in r.by
-    );
-    if (joint.length < 2) return null;
-    const bins = [...new Set(joint.map((r) => r.by.age))].sort(
-      (a, b) => (parseAgeBin(a)?.[0] ?? 0) - (parseAgeBin(b)?.[0] ?? 0)
-    );
-    const values = (s: string) => new Map(joint.filter((r) => r.by.sex === s).map((r) => [r.by.age, r.value]));
-    return { bins, left: values('female'), right: values('male') };
-  });
+  const charts = $derived(datasetCharts(rows, vocab));
+  const age = $derived(charts.age);
+  const ageText = $derived(ageNote(age));
 
-  const combos = $derived.by(() => {
-    const sets = marginal(rows, 'subjects', 'contrast_set');
-    if (!sets.length) return null;
-    const contrasts = [...new Set(sets.flatMap((r) => contrastSetParts(r.by.contrast_set)))];
-    const order = (vocab.terms.contrast ?? []).map((x) => x.id);
-    contrasts.sort((a, b) => order.indexOf(a) - order.indexOf(b));
-    return {
-      contrasts,
-      rows: sets
-        .map((r) => ({ set: contrastSetParts(r.by.contrast_set), value: r.value, approx: r.approx }))
-        .sort((a, b) => b.value - a.value)
-    };
-  });
+  // The measure shown per chart, for charts reported in several (subjects, scans, images).
+  let picked = $state<Record<string, string>>({});
+  const pick = <T,>(key: string, vs: Variant<T>[]) => vs.find((v) => v.measure === picked[key]) ?? vs[0];
 
-  // One bar list per other dimension the dataset reports.
-  const otherDims = [
-    'modality',
-    'contrast',
-    'tracer',
-    'condition',
-    'anatomy',
-    'vendor',
-    'field_strength',
-    'country',
-    'split',
-    'view'
-  ];
-  const breakdowns = $derived(
-    otherDims.flatMap((dim) => {
-      const rs = marginal(rows, 'subjects', dim);
-      const measure = rs.length
-        ? 'subjects'
-        : ['images', 'scans', 'studies', 'slides'].find((m) => marginal(rows, m, dim).length);
-      const list = measure ? marginal(rows, measure, dim) : [];
-      if (!list.length) return [];
-      return [
-        {
-          dim,
-          measure: measure!,
-          title: vocab.dimensions.find((x) => x.id === dim)?.label ?? dim,
-          rows: list,
-          total: t(measure!)?.value,
-          items: list
-            .map((r) => ({
-              key: r.by[dim],
-              label: label(vocab, dim, r.by[dim]),
-              value: r.value,
-              approx: r.approx,
-              color: dim === 'modality' ? modalityColor(r.by[dim]) : undefined
-            }))
-            .sort((a, b) => b.value - a.value)
-        }
-      ];
-    })
+  const hasCohortStats = $derived(
+    !!(
+      charts.sex.length ||
+      charts.ageBins.length ||
+      age.mean ||
+      age.median ||
+      charts.combos.length ||
+      charts.breakdowns.length ||
+      charts.crosses.length ||
+      charts.other.length
+    )
   );
-
-  const ageSummary = $derived.by(() => {
-    const [mean, sd, median, min, max] = ['age_mean', 'age_sd', 'age_median', 'age_min', 'age_max'].map(
-      (m) => t(m)?.value
-    );
-    return { mean, sd, median, min, max };
-  });
-
-  const hasCohortStats = $derived(ageBins.length > 0 || sexRows.length > 0 || !!combos || breakdowns.length > 0);
   const access = $derived(vocab.terms.access?.find((a) => a.id === meta.access.type));
   const verifiedAgeDays = $derived(Math.floor((Date.now() - new Date(meta.verified.date).getTime()) / 86_400_000));
 
@@ -191,14 +129,6 @@
     }
     return [...by].map(([key, w]) => ({ key, source: meta.sources[key], where: [...w].join(', ') }));
   };
-  const ageRows = $derived([
-    ...marginal(rows, 'subjects', 'age'),
-    ...['age_mean', 'age_sd', 'age_median', 'age_min', 'age_max'].flatMap((m) => t(m) ?? [])
-  ]);
-  const pyramidRows = $derived(
-    rows.filter((r) => r.measure === 'subjects' && Object.keys(r.by).length === 2 && 'age' in r.by && 'sex' in r.by)
-  );
-
   // Search-friendly title: what people type, e.g. "BraTS 2021: brain MRI dataset, 2,040 subjects".
   const seoTitle = $derived.by(() => {
     const mods = [...new Set((d.facets.modality ?? []).map((m) => label(vocab, 'modality', m).replace(/ \(.*\)$/, '')))];
@@ -216,6 +146,26 @@
     ]
   });
 </script>
+
+{#snippet head(key: string, title: string, vs: Variant<unknown>[])}
+  <div class="flex flex-wrap items-center justify-between gap-2">
+    <h3 class="text-sm font-semibold">{title}</h3>
+    {#if vs.length > 1}
+      <div class="flex rounded-md bg-muted p-0.5 text-xs" role="group" aria-label="{title}: count">
+        {#each vs as v (v.measure)}
+          <button
+            type="button"
+            class="rounded px-2 py-0.5 font-medium text-muted-foreground aria-pressed:bg-card aria-pressed:text-foreground aria-pressed:shadow-sm"
+            aria-pressed={pick(key, vs).measure === v.measure}
+            onclick={() => (picked[key] = v.measure)}>{measureLabel(v.measure)}</button
+          >
+        {/each}
+      </div>
+    {:else if vs.length && vs[0].measure !== 'subjects'}
+      <span class="text-xs text-muted-foreground">{measureLabel(vs[0].measure)}</span>
+    {/if}
+  </div>
+{/snippet}
 
 {#snippet cite(rs: { source: string; where?: string }[])}
   {@const list = citeOf(rs)}
@@ -304,83 +254,135 @@
               : 'largest value'}.
           </p>
           <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-            {#if sexRows.length}
+            {#if charts.sex.length}
+              {@const v = pick('sex', charts.sex)}
+              {@const sum = v.data.reduce((s, i) => s + i.value, 0)}
+              {@const all = t(v.measure)?.value}
               <div class="surface p-5">
-                <h3 class="text-sm font-semibold">Sex</h3>
+                {@render head('sex', 'Sex', charts.sex)}
                 <div class="mt-4">
                   <SplitBar
-                    items={sexRows.map((r) => ({
-                      key: r.by.sex,
-                      label: label(vocab, 'sex', r.by.sex),
-                      value: r.value,
-                      color: sexColors[r.by.sex] ?? 'var(--series-other)'
-                    }))}
+                    items={v.data.map((i) => ({ ...i, color: sexColors[i.key] ?? 'var(--series-other)' }))}
                   />
                 </div>
-                {#if N && sexRows.reduce((s, r) => s + r.value, 0) < N * 0.98}
+                {#if all && sum < all * 0.98}
                   <p class="mt-3 text-xs text-muted-foreground">
-                    Covers {formatNumber(sexRows.reduce((s, r) => s + r.value, 0))} of {formatNumber(N)} subjects.
+                    Covers {formatNumber(sum)} of {formatNumber(all)} {v.measure}.
                   </p>
                 {/if}
-                {@render cite(sexRows)}
+                {#if charts.sexAgeNote}
+                  <p class="mt-3 text-xs text-muted-foreground tabular">{charts.sexAgeNote.text}.</p>
+                {/if}
+                {@render cite([...v.rows, ...(charts.sexAgeNote?.rows ?? [])])}
               </div>
             {/if}
-            {#if ageBins.length || ageSummary.mean !== undefined}
+            {#if charts.ageBins.length || ageText}
+              {@const v = charts.ageBins.length ? pick('age', charts.ageBins) : null}
               <div class="surface p-5">
-                <div class="flex items-baseline justify-between gap-2">
-                  <h3 class="text-sm font-semibold">Age</h3>
-                  <span class="text-xs text-muted-foreground tabular">
-                    {#if ageSummary.mean !== undefined}mean {ageSummary.mean}{#if ageSummary.sd !== undefined}
-                        ± {ageSummary.sd}{/if}{/if}
-                    {#if ageSummary.min !== undefined && ageSummary.max !== undefined}
-                      · range {ageSummary.min} to {ageSummary.max}{/if}
-                  </span>
-                </div>
-                {#if ageBins.length}
-                  <div class="mt-4"><Columns items={ageBins} /></div>
+                {@render head('age', 'Age', charts.ageBins)}
+                {#if ageText}<p class="mt-0.5 text-xs text-muted-foreground tabular">{ageText}</p>{/if}
+                {#if v}
+                  <div class="mt-4"><Columns items={v.data} unit={v.measure} /></div>
                 {:else}
                   <p class="mt-3 text-sm text-muted-foreground">No age bins reported.</p>
                 {/if}
-                {@render cite(ageRows)}
+                {@render cite([...(v?.rows ?? []), ...Object.values(age).filter((r) => !!r)])}
               </div>
             {/if}
-            {#if pyramid}
+            {#if charts.pyramid.length}
+              {@const v = pick('pyramid', charts.pyramid)}
               <div class="surface p-5 md:col-span-2">
-                <h3 class="text-sm font-semibold">Age by sex</h3>
+                {@render head('pyramid', 'Age by sex', charts.pyramid)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
-                  Reported cross table. Missing cells were not published (fewer than 10 subjects or not reported).
+                  Reported cross table. Missing cells were not published (fewer than 10 or not reported).
                 </p>
                 <div class="mt-4">
                   <Pyramid
-                    bins={pyramid.bins}
-                    left={{ label: 'Female', color: sexColors.female, values: pyramid.left }}
-                    right={{ label: 'Male', color: sexColors.male, values: pyramid.right }}
+                    bins={v.data.bins}
+                    left={{ label: 'Female', color: sexColors.female, values: v.data.left }}
+                    right={{ label: 'Male', color: sexColors.male, values: v.data.right }}
                   />
                 </div>
-                {@render cite(pyramidRows)}
+                {@render cite(v.rows)}
               </div>
             {/if}
-            {#if combos}
+            {#if charts.combos.length}
+              {@const v = pick('combos', charts.combos)}
               <div class="surface p-5 md:col-span-2">
-                <h3 class="text-sm font-semibold">Contrast combinations</h3>
+                {@render head('combos', 'Contrast combinations', charts.combos)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
-                  How many subjects have exactly each set of contrasts.
+                  How many {v.measure} have exactly each set of contrasts.
                 </p>
-                <div class="mt-4"><ComboMatrix contrasts={combos.contrasts} rows={combos.rows} /></div>
-                {@render cite(marginal(rows, 'subjects', 'contrast_set'))}
+                <div class="mt-4"><ComboMatrix contrasts={v.data.contrasts} rows={v.data.rows} /></div>
+                {@render cite(v.rows)}
               </div>
             {/if}
-            {#each breakdowns as b (b.dim)}
+            {#each charts.breakdowns as b (b.dim)}
+              {@const v = pick(b.dim, b.variants)}
               <div class="surface p-5">
-                <h3 class="text-sm font-semibold">{b.title}</h3>
+                {@render head(b.dim, b.title, b.variants)}
+                {#if b.dim === 'condition' || b.dim === 'contrast'}
+                  <p class="mt-0.5 text-xs text-muted-foreground">Groups can overlap</p>
+                {/if}
+                <div class="mt-4"><BarList items={v.data} total={t(v.measure)?.value} unit={v.measure} /></div>
+                {@render cite(v.rows)}
+              </div>
+            {/each}
+            {#each charts.crosses as c (c.key)}
+              {@const v = pick(c.key, c.variants)}
+              <div class={['min-w-0 surface p-5', v.data.cols.length > 2 && 'md:col-span-2']}>
+                {@render head(c.key, c.title, c.variants)}
                 <p class="mt-0.5 text-xs text-muted-foreground">
-                  {b.measure}{b.dim === 'condition' || b.dim === 'contrast' ? ', values can overlap' : ''}
+                  Reported cross table. A dot marks a cell the source does not give.
                 </p>
-                <div class="mt-4"><BarList items={b.items} total={b.total} unit={b.measure} /></div>
-                {@render cite(b.rows)}
+                <div class="mt-4">
+                  <CrossTable rows={v.data.rows} cols={v.data.cols} cells={v.data.cells} unit={v.measure} />
+                </div>
+                {@render cite(v.rows)}
               </div>
             {/each}
           </div>
+          {#if charts.other.length}
+            <details class="group/other mt-5 surface">
+              <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold">
+                <span>
+                  Other reported numbers
+                  <span class="ml-1 font-normal text-muted-foreground tabular">{charts.other.length}</span>
+                </span>
+                <ChevronRight class="size-4 text-muted-foreground transition-transform group-open/other:rotate-90" />
+              </summary>
+              <div class="overflow-x-auto border-t border-border">
+                <table class="w-full text-sm">
+                  <tbody>
+                    {#each charts.other as r (r.line)}
+                      {@const s = meta.sources[r.source]}
+                      <tr class="border-b border-border/60 last:border-0">
+                        <td class="px-5 py-2">
+                          {measureLabel(r.measure)}
+                          {#if Object.keys(r.by).length}
+                            <span class="text-muted-foreground"
+                              >· {Object.entries(r.by)
+                                .map(([k, x]) => label(vocab, k, x))
+                                .join(', ')}</span
+                            >
+                          {/if}
+                          {#if r.note}<div class="text-xs text-muted-foreground">{r.note}</div>{/if}
+                        </td>
+                        <td class="px-3 py-2 text-right font-medium whitespace-nowrap tabular"
+                          >{formatNumber(r.value, r.approx)}</td
+                        >
+                        <td class="px-5 py-2 text-xs text-muted-foreground" title={formatBy(r.by)}>
+                          {r.where}{r.where ? ' in ' : ''}{#if s}<a href={s.url} class="text-primary hover:underline"
+                              >{s.title}</a
+                            >{:else}{r.source}{/if}
+                        </td>
+                      </tr>
+                    {/each}
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          {/if}
         </section>
       {/if}
 
@@ -513,15 +515,10 @@
             </dl>
           {/if}
           <dl class="mt-4 space-y-2.5 border-t border-border pt-4 text-sm">
-            {#if ageSummary.mean !== undefined || ageSummary.min !== undefined}
+            {#if ageText}
               <div class="flex justify-between gap-3">
                 <dt class="text-muted-foreground">Age</dt>
-                <dd class="text-right tabular">
-                  {#if ageSummary.mean !== undefined}{ageSummary.mean} mean{/if}{#if ageSummary.min !== undefined && ageSummary.max !== undefined}{ageSummary.mean !==
-                    undefined
-                      ? ', '
-                      : ''}{ageSummary.min} to {ageSummary.max}{/if}
-                </dd>
+                <dd class="text-right tabular">{ageText}</dd>
               </div>
             {/if}
             {#if (d.facets.contrast ?? []).length}
