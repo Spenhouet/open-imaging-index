@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nki-rockland-enhanced
+name: Enhanced NKI-Rockland Sample (Rockland Sample I)
+full_name: Enhanced Nathan Kline Institute-Rockland Sample (NKI-RS)
+summary: >-
+  Multiband resting-state fMRI, 137-direction diffusion MRI, structural MRI and task scans of about 1,500
+  community-ascertained participants aged 6 to 85 from Rockland County, New York (2011 to 2020). Images are open; the
+  deep phenotyping needs a signed data use agreement.
+homepage: https://rocklandsample.org/for-researchers/rockland-sample-i-2011-2022
+doi: 10.3389/fnins.2012.00152
+year: 2013
+status: active
+creators:
+  - name: Nathan S. Kline Institute for Psychiatric Research, NKI-Rockland Sample team (principal investigator Michael P. Milham)
+    url: https://rocklandsample.org/
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, bold, dwi, asl]
+anatomy: [brain]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+access:
+  type: open
+  url: https://rocklandsample.org/accessing-the-neuroimaging-data-releases
+  note: >-
+    The neuroimaging release (MRI, cardiac and respiratory recordings during scanning, age, sex and handedness) is a
+    public Amazon S3 bucket that needs no account and no agreement. The full phenotypic release (diagnostic interviews,
+    item-level questionnaires, neuropsychology, laboratory measures, actigraphy) needs a data usage agreement signed
+    and notarized by an institutional official, then access through LORIS or COINS.
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    applies_to: >-
+      Neuroimaging release: MRI, physiological recordings during scanning and age, sex and handedness.
+    note: >-
+      The Enhanced NKI-RS pages publish no license of their own for the open release. It was announced and distributed
+      as an FCP/INDI release (earlier through NITRC with 1000 Functional Connectomes Project registration), and the
+      INDI home page grants unrestricted non-commercial use of INDI datasets. The S3 bucket itself states no license.
+  - license: LicenseRef-NKI-RS-DUA
+    applies_to: >-
+      Full phenotypic release, with the imaging data, through LORIS or COINS.
+citation:
+  text: >-
+    Nooner KB, Colcombe SJ, Tobe RH, et al. The NKI-Rockland Sample: a model for accelerating the pace of discovery
+    science in psychiatry. Frontiers in Neuroscience 6:152 (2012). doi:10.3389/fnins.2012.00152. The project also
+    asks users to cite Tobe et al., Scientific Data 9:300 (2022), and MacKay-Brandt et al., medRxiv (2025).
+sources:
+  rocklandsample-rs1:
+    title: Rockland Sample I (2011-2020) page, rocklandsample.org
+    url: https://rocklandsample.org/for-researchers/rockland-sample-i-2011-2022
+    kind: website
+  rocklandsample-rs2:
+    title: Rockland Sample II (2021-present) page, rocklandsample.org
+    url: https://rocklandsample.org/for-researchers/rockland-sample-ii-2021-present
+    kind: website
+  rocklandsample-neuroimaging-access:
+    title: Accessing the Neuroimaging Data Releases, rocklandsample.org
+    url: https://rocklandsample.org/accessing-the-neuroimaging-data-releases
+    kind: website
+  rocklandsample-mri-protocol:
+    title: NKI-RS I MRI protocol printout (Siemens MAGNETOM TrioTim, protocol prc190, 2020-06-22)
+    url: https://rocklandsample.org/wp-content/uploads/2026/04/MRI_protocol_prc_190F_20200622.pdf
+    kind: website
+  indi-enhanced-neurodata:
+    title: Enhanced NKI-RS neuroimaging release page, FCP/INDI (scan list and NITRC release table)
+    url: https://fcon_1000.projects.nitrc.org/indi/enhanced/neurodata.html
+    kind: website
+  nitrc-enhanced-lite-release:
+    title: 'FCP/INDI: 181 Multiband R-fMRI/DTI Datasets Released, NITRC news, 7 January 2013'
+    url: https://www.nitrc.org/forum/forum.php?forum_id=3712
+    kind: website
+  nooner2012:
+    title: Nooner et al. 2012, Frontiers in Neuroscience
+    url: https://doi.org/10.3389/fnins.2012.00152
+    kind: paper
+related: [nki-rockland-sample, fcp-1000]
+keywords:
+  [
+    NKI-RS,
+    Enhanced NKI-RS,
+    Rockland Sample,
+    lifespan,
+    multiband,
+    resting-state fMRI,
+    diffusion MRI,
+    community sample,
+    psychiatry,
+    INDI,
+  ]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
