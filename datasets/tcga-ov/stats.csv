@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,143,tcia-tcga-ov,Data Access table,
+studies,,322,tcia-tcga-ov,Data Access table,
+scans,,844,tcia-tcga-ov,Data Access table,DICOM series
+images,,53662,tcia-tcga-ov,Data Access table,DICOM images (slices)
+subjects,modality=CT,143,tcia-tcga-ov-digest,Modality; Patient ID,
+subjects,modality=MR,1,tcia-tcga-ov-digest,Modality; Patient ID,
+studies,modality=CT,321,tcia-tcga-ov-digest,Modality; Study Instance UID,
+studies,modality=MR,1,tcia-tcga-ov-digest,Modality; Study Instance UID,
+scans,modality=CT,820,tcia-tcga-ov-digest,Modality,DICOM series
+scans,modality=MR,23,tcia-tcga-ov-digest,Modality,DICOM series
+subjects,sex=female,143,tcia-tcga-ov-digest,Patient Sex; Patient ID,DICOM header value
+subjects,age=30-39,2,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study; 2 patients have no age in the header
+subjects,age=40-49,24,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study
+subjects,age=50-59,40,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study
+subjects,age=60-69,40,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study
+subjects,age=70-79,30,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study
+subjects,age=80-89,5,tcia-tcga-ov-digest,Patient Age; Patient ID,age at the earliest study
+subjects,vendor=ge,111,tcia-tcga-ov-digest,Manufacturer; Patient ID,patients with at least one GE series
+subjects,vendor=siemens,45,tcia-tcga-ov-digest,Manufacturer; Patient ID,"patients with at least one Siemens series (SIEMENS, Siemens)"
+subjects,vendor=philips,2,tcia-tcga-ov-digest,Manufacturer; Patient ID,patients with at least one Philips series
+subjects,vendor=canon,2,tcia-tcga-ov-digest,Manufacturer; Patient ID,Toshiba
+subjects,vendor=other,5,tcia-tcga-ov-digest,Manufacturer; Patient ID,Imatron electron-beam CT
