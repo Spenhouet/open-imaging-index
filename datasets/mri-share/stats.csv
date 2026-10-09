@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,1832,tsuchida2020,Table 1,"final sample: 1,870 were scanned, 1 withdrew, 1 scan failed and 36 with incidental findings needing referral were excluded"
+subjects,sex=female,1320,tsuchida2020,Table 1,
+subjects,sex=male,512,tsuchida2020,Table 1,
+subjects,age=18-25,1722,tsuchida2020,Table 1,under 26 years old
+subjects,sex=female;age=18-25,1252,tsuchida2020,Table 1,under 26 years old
+subjects,sex=male;age=18-25,470,tsuchida2020,Table 1,under 26 years old
+age_mean,,22.1,tsuchida2020,Table 1,
+age_sd,,2.3,tsuchida2020,Table 1,
+age_min,,18.1,tsuchida2020,Table 1,
+age_max,,34.9,tsuchida2020,Table 1,
+subjects,contrast=T1w,1832,tsuchida2020,Table 2,3D MPRAGE 1.0 mm isotropic
+subjects,contrast=FLAIR,1832,tsuchida2020,Table 2,3D SPACE FLAIR 1.0 mm isotropic
+subjects,contrast=swi,1830,tsuchida2020,Table 2,2D axial 0.8 x 0.8 x 3.0 mm
+subjects,contrast=dwi,1823,tsuchida2020,Table 2,"multi-shell, b = 300, 1000 and 2000 s/mm2"
+subjects,contrast=bold,1814,tsuchida2020,Table 2,"resting-state fMRI, ~15 min; excludes 17 missing or incomplete runs and 1 run with a wrong TR"
+subjects,contrast_set=FLAIR+T1w,2,tsuchida2020,"Data Acquisition, MRI acquisition","SWI, DWI and rs-fMRI missing"
+subjects,vendor=siemens,1832,tsuchida2020,"Data Acquisition, MRI acquisition",one Siemens 3T Prisma with a 64-channel head coil
+subjects,field_strength=3,1832,tsuchida2020,"Data Acquisition, MRI acquisition",
+subjects,country=FR,1832,tsuchida2020,"Data Acquisition, MRI acquisition",Bordeaux

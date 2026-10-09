@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mri-share
+name: MRi-Share
+full_name: 'MRi-Share: brain MRI substudy of the i-Share student health cohort'
+summary: >-
+  Multimodal 3 T brain MRI of 1,832 healthy university students aged 18 to 35 in Bordeaux, France, scanned 2015 to
+  2017 with a UK Biobank-like protocol: T1w, FLAIR, SWI, multi-shell diffusion and 15 min resting-state fMRI. Access by
+  approved i-Share collaboration.
+homepage: https://www.gin.cnrs.fr/en/grants/mri-share-en/
+doi: 10.1007/s00429-021-02334-4
+# The images have no public release; year of the peer-reviewed data descriptor.
+year: 2021
+creators:
+  - name: Groupe d'Imagerie Neurofonctionnelle (GIN-IMN, UMR 5293), University of Bordeaux, CNRS and CEA (lead Bernard Mazoyer)
+    url: https://www.gin.cnrs.fr/en/
+  - name: i-Share study, University of Bordeaux (coordinator Christophe Tzourio)
+    url: https://research.i-share.fr/
+modalities: [MR]
+contrasts: [T1w, FLAIR, swi, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+countries: [FR]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://research.i-share.fr/complete-process-procedures/
+licenses:
+  - license: LicenseRef-i-Share-Charter
+    applies_to: De-identified raw and processed MRi-Share images and data dictionaries.
+    note: >-
+      The data descriptor says the images cannot go to a public repository under French rules and that requests go to
+      the i-Share Scientific Collaborations Coordinator with a letter of intent, followed by an application package
+      reviewed by the PI, the Steering Committee and operational staff. The i-Share site asks applicants to sign the
+      i-Share ancillary studies charter, and the charter makes requesters fund the cost of access. Global
+      image-derived phenotypes of 1,831 participants (age, sex and 15 summary measures, no images) are open on Dryad
+      under CC0 and are not covered by this entry.
+citation:
+  text: >-
+    Tsuchida A, Laurent A, Crivello F, et al. The MRi-Share database: brain imaging in a cross-sectional cohort of 1870
+    university students. Brain Structure and Function 226, 2057-2085 (2021). doi:10.1007/s00429-021-02334-4
+sources:
+  tsuchida2020:
+    title: Tsuchida et al. 2020, The MRi-Share database, bioRxiv preprint v1
+    url: https://doi.org/10.1101/2020.06.17.154666
+    kind: paper
+  tsuchida2021:
+    title: Tsuchida et al. 2021, The MRi-Share database, Brain Structure and Function
+    url: https://doi.org/10.1007/s00429-021-02334-4
+    kind: paper
+  gin-mri-share:
+    title: GIN-IMN MRi-Share project page
+    url: https://www.gin.cnrs.fr/en/grants/mri-share-en/
+    kind: website
+  i-share-procedures:
+    title: i-Share research site, complete process and procedures for collaboration
+    url: https://research.i-share.fr/complete-process-procedures/
+    kind: website
+  dryad-mri-share-idps:
+    title: 'Dryad: Data from The MRi-Share database, global imaging-derived phenotypes (CC0)'
+    url: https://doi.org/10.5061/dryad.q573n5tj2
+    kind: data
+related: []
+keywords:
+  [young adults, university students, normative brain imaging, UK Biobank protocol, diffusion MRI, resting-state fMRI, SWI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
