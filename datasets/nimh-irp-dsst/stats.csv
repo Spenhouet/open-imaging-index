@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,447,nda-collection-2936,General tab (Subjects Shared),
+subjects,modality=MR,447,nda-collection-2936,Shared Data tab,subjects in the shared Image data structure
+subjects,condition=healthy,440,nda-study-547,Cohorts,NIMH NHGRI data-sharing project release; its description gives 441 individuals from 321 nuclear families
+subjects,contrast=T1w,440,nda-study-547,Abstract,one T1w scan per subject in the NIMH NHGRI release; anatomical scans of the six fMRI subjects are not counted
+subjects,condition=healthy;sex=male,252,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
+subjects,condition=healthy;sex=female,190,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
+age_mean,condition=healthy,22.4,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
+age_sd,condition=healthy,14.7,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
+age_min,condition=healthy,5.3,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
+age_max,condition=healthy,77.6,white2018,Table 1,NHGRI cohort as analysed in the paper (442 subjects)
