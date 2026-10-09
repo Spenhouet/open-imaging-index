@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: promise12
+name: PROMISE12
+full_name: 'Prostate MR Image Segmentation 2012 (MICCAI Grand Challenge)'
+summary: >-
+  100 transverse T2-weighted prostate MRI scans from four centres in Norway, the US, the UK and the Netherlands, with
+  reference segmentations of the prostate, from the PROMISE12 segmentation challenge held at MICCAI 2012.
+homepage: https://promise12.grand-challenge.org/
+doi: 10.5281/zenodo.8014040
+year: 2012
+status: active
+creators:
+  - name: Geert Litjens, Bram van Ginneken, Henkjan Huisman and colleagues, Radboud University Nijmegen Medical Centre
+  - name: Robert Toth and Anant Madabhushi, Rutgers University
+  - name: Dean Barratt, University College London
+species: human
+modalities: [MR]
+contrasts: [T2w]
+anatomy: [prostate]
+conditions: [prostate_cancer]
+tasks: [segmentation]
+formats: [MHA]
+countries: [NO, US, GB, NL]
+vendors: [siemens, ge]
+field_strengths: [1.5, 3]
+size_gb: 0.64
+access:
+  type: open
+  url: https://zenodo.org/records/8026660
+licenses:
+  - license: LicenseRef-PROMISE12-Terms
+citation:
+  text: >-
+    Litjens G, Toth R, van de Ven W, Hoeks C, Kerkstra S, van Ginneken B, et al. Evaluation of prostate segmentation
+    algorithms for MRI: the PROMISE12 challenge. Medical Image Analysis 18(2), 359-373 (2014).
+    doi:10.1016/j.media.2013.12.002
+sources:
+  litjens2014:
+    title: Litjens et al. 2014, Medical Image Analysis (author manuscript, PMC4137968)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4137968/
+    kind: paper
+  promise12-details:
+    title: PROMISE12 challenge website, Details page
+    url: https://promise12.grand-challenge.org/Details/
+    kind: website
+  zenodo-8026660:
+    title: 'PROMISE12 data on Zenodo, record 8026660 (training_data.zip, test_data.zip, livechallenge_test_data.zip)'
+    url: https://zenodo.org/records/8026660
+    kind: data
+related: []
+keywords: [prostate MRI, prostate segmentation, T2-weighted, endorectal coil, multi-centre, challenge]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

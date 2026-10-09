@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+scans,,100,litjens2014,Section 2.1,"Transverse T2-weighted MR images, 25 per centre"
+scans,contrast=T2w,100,litjens2014,Section 2.1,
+scans,split=train,50,litjens2014,Section 2.1,Released with reference segmentations
+scans,split=test,50,litjens2014,Section 2.1,"Sum of the 30 online test cases and the 20 live challenge cases, two disjoint sets; reference segmentations for both are now public"
+scans,country=NO,25,litjens2014,Table 1,Haukeland University Hospital; 1.5 T with endorectal coil
+scans,country=US,25,litjens2014,Table 1,Beth Israel Deaconess Medical Center; 3 T with endorectal coil
+scans,country=GB,25,litjens2014,Table 1,"University College London; 1.5 T and 3 T, no endorectal coil"
+scans,country=NL,25,litjens2014,Table 1,"Radboud University Nijmegen Medical Centre; 3 T, no endorectal coil"
+scans,vendor=siemens,75,litjens2014,Table 1,"Sum of HK, UCL and RUNMC, 25 each"
+scans,vendor=ge,25,litjens2014,Table 1,BIDMC
