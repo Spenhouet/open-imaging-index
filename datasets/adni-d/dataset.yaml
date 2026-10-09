@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: adni-d
+name: ADNI-D
+full_name: Alzheimer's Disease Neuroimaging Initiative Depression Project (ADNI-D)
+summary: >-
+  US two-site ADNI companion study of adults aged 65 and over with current major depression, with 3T MRI (T1w, FLAIR,
+  T2* GRE, DTI, ASL, fMRI), florbetapir amyloid PET and repeated cognitive testing, shared through the LONI IDA after
+  an approved application.
+homepage: https://adni.loni.usc.edu/about/related-collaborative-studies/
+# Year the project was launched, per the ADNI-D Data Use Agreement. The date of the first public data release was not
+# verified separately.
+year: 2013
+status: active
+creators:
+  - name: ADNI Depression Project (PI R. Scott Mackin), University of California, San Francisco
+    url: https://adni.loni.usc.edu/about/related-collaborative-studies/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, dwi, asl, bold]
+tracers: [florbetapir]
+anatomy: [brain]
+conditions: [depression, mci]
+tasks: [classification]
+countries: [US]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ADNID
+licenses:
+  - license: LicenseRef-ADNI-D-DUA
+citation:
+  text: >-
+    Add "for the ADNI Depression Project*" to the author line and use the methods and funding text given in the ADNI
+    Depression Data Use Agreement. Cohort reference: Mackin RS, et al. Late-Life Depression Is Associated With Reduced
+    Cortical Amyloid Burden: Findings From the Alzheimer's Disease Neuroimaging Initiative Depression Project. Biol
+    Psychiatry 89(8):757-765 (2021). doi:10.1016/j.biopsych.2020.06.017
+sources:
+  mackin2021:
+    title: Mackin RS et al. 2021, Late-life depression is associated with reduced cortical amyloid burden, Biological Psychiatry (author manuscript PMC10165941)
+    url: https://doi.org/10.1016/j.biopsych.2020.06.017
+    kind: paper
+  adnid-protocol-2014:
+    title: ADNI-D study protocol, 19 November 2014
+    url: https://adni.loni.usc.edu/wp-content/uploads/2017/09/ADNID_Approved_Protocol_11.19.14.pdf
+    kind: website
+  adnid-procedures-manual-2017:
+    title: ADNI-D procedures manual, 15 February 2017
+    url: https://adni.loni.usc.edu/wp-content/uploads/2017/09/ADNI_D_Procedures_Manual_2.15.17.pdf
+    kind: website
+  adni-related-studies:
+    title: ADNI website, Related & Collaborative Studies (ADNI-D section)
+    url: https://adni.loni.usc.edu/about/related-collaborative-studies/
+    kind: website
+related: [adni]
+keywords: [late-life depression, major depressive disorder, amyloid PET, Alzheimer's disease risk, cognitive decline, brain MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

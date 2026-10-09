@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,119,mackin2021,Table 1,"participants with late-life major depression analysed in the paper; the total enrolment in ADNI-D is not reported. The 119 non-depressed comparison participants come from ADNI, not ADNI-D"
+subjects,condition=depression,119,mackin2021,Table 1,current DSM-IV major depressive disorder with HDRS-17 of 15 or more
+subjects,condition=mci,39,mackin2021,Table 1,met ADNI criteria for MCI (33%)
+subjects,sex=female,80,mackin2021,Table 1,
+subjects,modality=PT,119,mackin2021,Methods (Amyloid burden),florbetapir PET coregistered to a structural MRI
+subjects,tracer=florbetapir,119,mackin2021,Methods (Amyloid burden),
+subjects,country=US,119,mackin2021,Methods (Procedures),UCSF and University of Pittsburgh
+age_mean,,70.9,mackin2021,Table 1,
+age_sd,,5.3,mackin2021,Table 1,
+age_min,,65,mackin2021,Table 1,
+age_max,,91,mackin2021,Table 1,
