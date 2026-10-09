@@ -1,0 +1,38 @@
+measure,by,value,source,where,note
+subjects,,144,ds003346-files,,144 subject folders; participants.tsv has 145 rows including sub-161 which CHANGES says was deleted (defacing problems). The paper's final sample is 138 (74 CUD and 64 HC) of 145 scanned
+subjects,condition=cocaine_use_disorder,74,ds003346-participants,group,group 2 (CUD); the paper also reports 74
+subjects,condition=healthy,64,ds003346-participants,group,group 1 (HC); the paper also reports 64. 6 further subjects have no group
+subjects,sex=male,116,ds003346-participants,sex,sex 1
+subjects,sex=female,20,ds003346-participants,sex,sex 2; 8 subjects have no sex
+subjects,age=10-19,7,ds003346-participants,age,all aged 18 or 19
+subjects,age=20-29,56,ds003346-participants,age,
+subjects,age=30-39,54,ds003346-participants,age,
+subjects,age=40-49,18,ds003346-participants,age,
+subjects,age=50-59,1,ds003346-participants,age,8 subjects have no age
+subjects,contrast=T1w,144,ds003346-files,anat,
+subjects,contrast=bold,141,ds003346-files,func,resting state
+subjects,contrast=dwi,135,ds003346-files,dwi,one subject has two dwi runs
+subjects,contrast_set=bold+dwi+T1w,135,ds003346-files,,
+subjects,contrast_set=bold+T1w,6,ds003346-files,,
+subjects,contrast_set=T1w,3,ds003346-files,,
+subjects,condition=cocaine_use_disorder;sex=male,65,ds003346-participants,group and sex,Table 1 of the paper reports 66
+subjects,condition=healthy;sex=male,51,ds003346-participants,group and sex,Table 1 of the paper also reports 51
+subjects,condition=healthy;sex=female,11,ds003346-participants,group and sex,Table 1 of the paper also reports 11
+subjects,condition=cocaine_use_disorder;sex=female,9,angelesvaldez2022,Table 1,
+subjects,condition=cocaine_use_disorder;age=20-29,29,ds003346-participants,group and age,
+subjects,condition=cocaine_use_disorder;age=30-39,34,ds003346-participants,group and age,
+subjects,condition=healthy;age=20-29,27,ds003346-participants,group and age,
+subjects,condition=healthy;age=30-39,20,ds003346-participants,group and age,
+subjects,condition=healthy;age=40-49,11,ds003346-participants,group and age,
+subjects,sex=male;age=20-29,48,ds003346-participants,sex and age,
+subjects,sex=male;age=30-39,46,ds003346-participants,sex and age,
+subjects,sex=male;age=40-49,14,ds003346-participants,sex and age,
+subjects,condition=cocaine_use_disorder;contrast_set=bold+dwi+T1w,69,ds003346-participants,group; contrast sets from the file tree,
+subjects,condition=healthy;contrast_set=bold+dwi+T1w,60,ds003346-participants,group; contrast sets from the file tree,
+age_mean,,30.8,ds003346-participants,age,136 subjects with an age
+age_sd,,7.7,ds003346-participants,age,
+age_median,,30,ds003346-participants,age,
+age_min,,18,ds003346-participants,age,
+age_max,,50,ds003346-participants,age,
+age_mean,condition=healthy,30.6,angelesvaldez2022,Table 1,SD 8.26
+age_mean,condition=cocaine_use_disorder,31,angelesvaldez2022,Table 1,SD 7.20
