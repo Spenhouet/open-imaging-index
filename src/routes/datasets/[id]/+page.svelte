@@ -4,6 +4,7 @@
   import Pencil from '@lucide/svelte/icons/pencil';
   import Flag from '@lucide/svelte/icons/flag';
   import ChevronRight from '@lucide/svelte/icons/chevron-right';
+  import AccessBadge from '#lib/components/app/AccessBadge.svelte';
   import Answer from '#lib/components/app/Answer.svelte';
   import CopyButton from '#lib/components/app/CopyButton.svelte';
   import LegalNote from '#lib/components/app/LegalNote.svelte';
@@ -353,7 +354,7 @@
           <div class="flex flex-wrap items-start justify-between gap-4">
             <div>
               <div class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">Access</div>
-              <div class="mt-1 text-lg font-semibold">{access?.label ?? meta.access.type}</div>
+              <AccessBadge type={meta.access.type} {vocab} class="mt-2 px-2.5 py-1 text-sm" />
               {#if access?.description}<p class="text-sm text-muted-foreground">{access.description}</p>{/if}
               {#if meta.access.note}<p class="mt-2 max-w-xl text-sm">{meta.access.note}</p>{/if}
             </div>

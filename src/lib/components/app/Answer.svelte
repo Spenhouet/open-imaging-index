@@ -23,7 +23,7 @@
 </script>
 
 <span
-  class={cn('inline-flex items-center gap-1.5 whitespace-nowrap', className)}
+  class={cn('inline-flex max-w-full items-center gap-1.5 whitespace-nowrap', className)}
   title={label ? `${label}: ${words[value]}` : words[value]}
 >
   {#if t === 'good'}<Check class={cn('size-4 shrink-0', icon[t])} />
@@ -31,7 +31,7 @@
   {:else if t === 'mixed'}<Alert class={cn('size-4 shrink-0', icon[t])} />
   {:else}<Help class={cn('size-4 shrink-0', icon[t])} />{/if}
   {#if label}
-    <span class="text-foreground/90">{label}</span>
+    <span class="min-w-0 truncate text-foreground/90">{label}</span>
   {/if}
   {#if !compact}
     <span class={cn('font-medium', ink[t])}>{words[value]}</span>

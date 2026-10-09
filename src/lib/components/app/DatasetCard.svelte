@@ -3,6 +3,7 @@
   import type { VocabData } from '#lib/catalog/types.js';
   import { compact, label } from '#lib/catalog/vocab.js';
   import { link } from '#lib/site.js';
+  import AccessBadge from './AccessBadge.svelte';
   import Answer from './Answer.svelte';
   import MatchRange from './MatchRange.svelte';
   import ModalityBadge from './ModalityBadge.svelte';
@@ -11,13 +12,15 @@
     $props();
 
   const d = $derived(result.dataset);
-  const keyRules = ['commercial_use', 'model_training', 'redistribute_original'] as const;
+  const keyRules = ['commercial_use', 'product_validation', 'model_training'] as const;
   const shortLabels: Record<string, string> = {
     commercial_use: 'Commercial',
-    model_training: 'Training',
-    redistribute_original: 'Re-share'
+    product_validation: 'Validation',
+    model_training: 'Training'
   };
-  const access = $derived(vocab.terms.access?.find((a) => a.id === d.meta.access.type));
+  const licenseText = $derived(
+    d.licenseIds.map((id) => licenseNames.get(id) ?? id).join(d.meta.license_combine === 'any' ? ' or ' : ' + ')
+  );
   const contrasts = $derived(d.facets.contrast ?? []);
   const counts = $derived(
     (['subjects', 'studies', 'scans', 'images', 'slides'] as const)
@@ -80,20 +83,23 @@
   {/if}
 
   <div
-    class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-3 text-xs"
+    class="mt-4 border-t border-border pt-3 text-xs"
     title="Our interpretation of the license, not legal advice. Read the original license before you use the data."
   >
-    {#each keyRules as r (r)}
-      {@const rule = vocab.licenseRules.rules.find((x) => x.id === r)}
-      {#if rule}
-        <Answer value={d.rules[r]} good={rule.good} label={shortLabels[r]} compact />
-      {/if}
-    {/each}
-    <span class="rounded-md bg-muted px-1.5 py-0.5 font-medium text-muted-foreground" title={access?.description}
-      >{access?.label ?? d.meta.access.type}</span
-    >
-    <span class="ml-auto truncate text-muted-foreground">
-      {d.licenseIds.map((id) => licenseNames.get(id) ?? id).join(d.meta.license_combine === 'any' ? ' or ' : ' + ')}
-    </span>
+    <!-- Three fixed columns, so the answers line up across cards and never wrap. -->
+    <ul class="grid grid-cols-3 gap-2" aria-label="License at a glance">
+      {#each keyRules as r (r)}
+        {@const rule = vocab.licenseRules.rules.find((x) => x.id === r)}
+        {#if rule}
+          <li class="min-w-0 overflow-hidden">
+            <Answer value={d.rules[r]} good={rule.good} label={shortLabels[r]} compact />
+          </li>
+        {/if}
+      {/each}
+    </ul>
+    <div class="mt-2.5 flex items-center gap-3">
+      <AccessBadge type={d.meta.access.type} {vocab} />
+      <span class="min-w-0 flex-1 truncate text-right text-muted-foreground" title={licenseText}>{licenseText}</span>
+    </div>
   </div>
 </article>

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { createRawSnippet } from 'svelte';
   import {
     createColumnHelper,
     createPaginatedRowModel,
@@ -18,6 +17,7 @@
   import ArrowDown from '@lucide/svelte/icons/arrow-down';
   import ArrowUp from '@lucide/svelte/icons/arrow-up';
   import * as Table from '#lib/components/ui/table/index.js';
+  import AccessBadge from './AccessBadge.svelte';
   import { Checkbox } from '#lib/components/ui/checkbox/index.js';
   import type { Contribution, Usability } from '#lib/catalog/cohort.js';
   import type { VocabData } from '#lib/catalog/types.js';
@@ -59,9 +59,6 @@
     blocked: 'bg-bad/12 text-bad-ink'
   };
 
-  const text = (value: string, cls = '') =>
-    createRawSnippet(() => ({ render: () => `<span class="${cls}">${value.replace(/</g, '&lt;')}</span>` }));
-
   const columns = helper.columns([
     helper.display({ id: 'pick', header: '', cell: ({ row }) => renderSnippet(pickCell, row.original) }),
     helper.accessor((r) => r.dataset.meta.name, {
@@ -78,14 +75,7 @@
     helper.accessor((r) => (vocab.terms.access ?? []).findIndex((t) => t.id === r.dataset.meta.access.type), {
       id: 'access',
       header: 'Access',
-      cell: ({ row }) =>
-        renderSnippet(
-          text(
-            vocab.terms.access?.find((t) => t.id === row.original.dataset.meta.access.type)?.label ??
-              row.original.dataset.meta.access.type,
-            'text-sm text-muted-foreground whitespace-nowrap'
-          )
-        )
+      cell: ({ row }) => renderSnippet(accessCell, row.original)
     }),
     helper.accessor((r) => ['usable', 'unclear', 'blocked'].indexOf(r.usability), {
       id: 'use',
@@ -156,6 +146,10 @@
       {:else}{compact(e.lo)} to {compact(e.hi)}{/if}
     </span>
   </div>
+{/snippet}
+
+{#snippet accessCell(r: Contribution)}
+  <AccessBadge type={r.dataset.meta.access.type} {vocab} />
 {/snippet}
 
 {#snippet useCell(r: Contribution)}
