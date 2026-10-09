@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: narratives
+name: Narratives (ds002345)
+full_name: The Narratives fMRI dataset for evaluating models of naturalistic language comprehension
+summary: >-
+  Story-listening fMRI of 345 healthy adults from Princeton: 891 BOLD runs across 27 spoken stories, with T1w (some
+  T2w) anatomy, audio stimuli and time-stamped transcripts, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002345
+doi: 10.18112/openneuro.ds002345.v1.1.4
+year: 2019
+updated: 2020
+version: 1.1.4
+status: active
+creators:
+  - name: Hasson and Norman Labs, Princeton Neuroscience Institute (Nastase SA, Hasson U, et al.)
+    url: https://github.com/snastase/narratives
+species: human
+modalities: [MR]
+contrasts: [bold, T1w, T2w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 141.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002345
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.4 states "License" CC0; the paper states that all MRI data and metadata
+      are released under CC0.
+citation:
+  text: >-
+    Nastase SA, Liu YF, Hillman H, et al. The "Narratives" fMRI dataset for evaluating models of naturalistic language
+    comprehension. Scientific Data 8, 250 (2021). doi:10.1038/s41597-021-01033-3
+sources:
+  nastase2021:
+    title: Nastase et al. 2021, The "Narratives" fMRI dataset for evaluating models of naturalistic language comprehension, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-01033-3
+    kind: paper
+  openneuro-ds002345-v114:
+    title: OpenNeuro ds002345 snapshot 1.1.4 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds002345/versions/1.1.4
+    kind: website
+  ds002345-participants:
+    title: participants.tsv of ds002345 1.1.4 (CC0), counted per row from the sex column
+    url: https://github.com/OpenNeuroDatasets/ds002345/blob/1.1.4/participants.tsv
+    kind: computed
+  ds002345-files:
+    title: File listing of ds002345 1.1.4 (CC0), counted from sub-*/anat and sub-*/func NIfTI files
+    url: https://github.com/OpenNeuroDatasets/ds002345/tree/1.1.4
+    kind: computed
+related: []
+keywords: [naturalistic fMRI, language comprehension, story listening, speech, intersubject correlation]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,345,nastase2021,Methods: Participants,participants.tsv and the OpenNeuro snapshot summary also list 345 subjects
+subjects,condition=healthy,345,nastase2021,Methods: Participants,all subjects reported normal hearing and no history of neurological disorders
+subjects,sex=female,204,nastase2021,Methods: Participants,reported female; participants.tsv also gives 204 F
+subjects,sex=male,141,ds002345-participants,sex column,sex M
+subjects,contrast=bold,345,ds002345-files,sub-*/func/*_bold.nii.gz,
+subjects,contrast=T1w,345,ds002345-files,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,46,ds002345-files,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,46,ds002345-files,sub-*/anat and sub-*/func,
+subjects,contrast_set=bold+T1w,299,ds002345-files,sub-*/anat and sub-*/func,
+subjects,field_strength=3,345,nastase2021,Methods: MRI data acquisition,3 T Siemens Magnetom Skyra and Prisma
+subjects,vendor=siemens,345,nastase2021,Methods: MRI data acquisition,
+subjects,country=US,345,nastase2021,Methods: Participants,"recruited in Princeton, NJ"
+scans,,1298,ds002345-files,sub-*/anat and sub-*/func NIfTI files,"sum of 873 BOLD, 378 T1w and 47 T2w files, which are disjoint and are all NIfTI files under anat and func"
+scans,contrast=bold,873,ds002345-files,sub-*/func/*_bold.nii.gz,the paper reports 891 functional scans (Abstract)
+scans,contrast=T1w,378,ds002345-files,sub-*/anat/*_T1w.nii.gz,
+scans,contrast=T2w,47,ds002345-files,sub-*/anat/*_T2w.nii.gz,
+age_mean,,22.2,nastase2021,Methods: Participants,
+age_sd,,5.1,nastase2021,Methods: Participants,
+age_min,,18,nastase2021,Methods: Participants,
+age_max,,53,nastase2021,Methods: Participants,
