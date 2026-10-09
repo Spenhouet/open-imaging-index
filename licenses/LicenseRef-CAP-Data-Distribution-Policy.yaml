@@ -14,7 +14,7 @@ rules:
     value: conditional
     quote: 'Commercial Use: The User cannot use Data for commercial use without the permission of the Contributing
       Studies.'
-    note: Commercial use needs permission from each contributing study, here the MESA contributors.
+    note: Commercial use needs permission from each contributing study.
   model_training:
     value: unspecified
     note: The policy does not mention machine learning. Any use must be part of the approved Research Project.

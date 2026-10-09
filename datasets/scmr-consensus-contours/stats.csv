@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,15,suinesiaputra2015,Methods: Participants,
+subjects,contrast=cine,15,suinesiaputra2015,Methods: Participants,Short-axis SSFP cine
+subjects,condition=healthy,5,suinesiaputra2015,Methods: Participants,Healthy volunteers
+subjects,condition=myocardial_infarction,6,suinesiaputra2015,Methods: Participants,
+subjects,condition=heart_failure,2,suinesiaputra2015,Methods: Participants,
+subjects,condition=left_ventricular_hypertrophy,2,suinesiaputra2015,Methods: Participants,
+subjects,sex=male,11,suinesiaputra2015,Table 1,Counted from the per-case gender column
+subjects,sex=female,4,suinesiaputra2015,Table 1,Counted from the per-case gender column
+subjects,vendor=ge,8,suinesiaputra2015,Table 1,"Counted from the per-case vendor column; the Methods text gives 4 GE, 5 Siemens and 6 Philips"
+subjects,vendor=siemens,5,suinesiaputra2015,Table 1,Counted from the per-case vendor column
+subjects,vendor=philips,2,suinesiaputra2015,Table 1,"Counted from the per-case vendor column; the Methods text gives 6"
+subjects,age=40-49,1,suinesiaputra2015,Table 1,Counted from the per-case age column
+subjects,age=50-59,5,suinesiaputra2015,Table 1,Counted from the per-case age column
+subjects,age=60-69,4,suinesiaputra2015,Table 1,Counted from the per-case age column
+subjects,age=70-79,5,suinesiaputra2015,Table 1,Counted from the per-case age column
+age_mean,,61.7,suinesiaputra2015,Table 1,Computed from the 15 per-case ages
+age_median,,63,suinesiaputra2015,Table 1,Computed from the 15 per-case ages
+age_min,,42,suinesiaputra2015,Table 1,
+age_max,,77,suinesiaputra2015,Table 1,
