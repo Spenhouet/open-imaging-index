@@ -247,6 +247,13 @@ terms:
       description: 'Enlarged right ventricle or reduced right ventricular ejection fraction. No single upstream term; closest HPO terms are Abnormal right ventricle morphology (HP:0001707) and Abnormal right ventricular function (HP:0033118).'
     }
   - { id: myocardial_infarction, label: Myocardial infarction, mappings: { mondo: 'MONDO:0005068' } }
+  - { id: heart_failure, label: Heart failure, mappings: { mondo: 'MONDO:0005252' } }
+  - {
+      id: left_ventricular_hypertrophy,
+      label: Left ventricular hypertrophy,
+      synonyms: [LVH],
+      mappings: { hp: 'HP:0001712' }
+    }
   - { id: osteoarthritis, label: Osteoarthritis, mappings: { mondo: 'MONDO:0005178' } }
   - {
       id: knee_osteoarthritis,

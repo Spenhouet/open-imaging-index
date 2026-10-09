@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,45,cap-scd,,45 cine MRI exams
+subjects,contrast=cine,45,radau2009,p. 5,Short-axis SSFP cine
+subjects,field_strength=1.5,45,radau2009,p. 5,GE Signa 1.5 T
+subjects,vendor=ge,45,radau2009,p. 5,
+subjects,country=CA,45,cap-scd,,Sunnybrook Health Sciences Centre
+subjects,condition=healthy,9,cap-scd,Pathology group table,N group: EF above 55% and no hypertrophy
+subjects,condition=left_ventricular_hypertrophy,12,cap-scd,Pathology group table,HYP group: EF above 55% and LV mass index above 83 g/m2
+subjects,condition=heart_failure,24,cap-scd,Pathology group table,"Sum of the disjoint HF (12) and HF-I (12) groups, both with EF below 40%"
+subjects,condition=myocardial_infarction,12,cap-scd,Pathology group table,HF-I group: heart failure with late gadolinium enhancement
+subjects,split=train,15,radau2009,p. 5,Original 2009 challenge split
+subjects,split=validation,15,radau2009,p. 5,Original 2009 challenge testing set
+subjects,split=test,15,radau2009,p. 5,Original 2009 challenge on-line contest set
+subjects,sex=male,32,cap-scd-patientdata,Gender,
+subjects,sex=female,13,cap-scd-patientdata,Gender,
+subjects,age=20-29,2,cap-scd-patientdata,Age,
+subjects,age=30-39,1,cap-scd-patientdata,Age,
+subjects,age=40-49,8,cap-scd-patientdata,Age,
+subjects,age=50-59,8,cap-scd-patientdata,Age,
+subjects,age=60-69,11,cap-scd-patientdata,Age,
+subjects,age=70-79,10,cap-scd-patientdata,Age,
+subjects,age=80-89,5,cap-scd-patientdata,Age,
+age_mean,,61.1,cap-scd-patientdata,Age,
+age_sd,,15.2,cap-scd-patientdata,Age,Sample standard deviation
+age_median,,61,cap-scd-patientdata,Age,
+age_min,,23,cap-scd-patientdata,Age,
+age_max,,88,cap-scd-patientdata,Age,
