@@ -14,7 +14,7 @@ test('catalog filters by cohort and keeps the filters in the URL', async ({ page
   await expect(page.locator('[aria-live=polite]')).not.toContainText('Loading');
   const filtered = await page.locator('article').count();
   expect(filtered).toBeLessThan(all);
-  await expect(page.locator('article').first()).toContainText('matching subjects');
+  await expect(page.locator('article').first()).toContainText('Matching');
 
   await page.reload();
   await expect(page.locator('article')).toHaveCount(filtered);
