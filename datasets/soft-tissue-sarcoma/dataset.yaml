@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: soft-tissue-sarcoma
+name: Soft-tissue-Sarcoma
+full_name: >-
+  A radiomics model from joint FDG-PET and MRI texture features for the prediction of lung metastases in soft-tissue
+  sarcomas of the extremities (Soft-tissue-Sarcoma)
+summary: >-
+  Pre-treatment FDG PET/CT and T1-weighted plus fat-suppressed T2-weighted or STIR MRI of 51 patients with soft-tissue
+  sarcoma of the extremities from McGill, with tumor contours, clinical data and lung metastasis outcome labels.
+homepage: https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma/
+doi: 10.7937/K9/TCIA.2015.7GO2GSKS
+year: 2015
+version: '1'
+status: active
+creators:
+  - name: McGill University (Martin Vallières, Carolyn R. Freeman, Sonia R. Skamene, Issam El Naqa)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, PT, MR]
+contrasts: [T1w, T2w, STIR]
+tracers: [fdg]
+anatomy: [lower_limb, upper_limb]
+conditions: [soft_tissue_sarcoma]
+tasks: [segmentation, classification, survival]
+formats: [DICOM]
+countries: [CA]
+vendors: [ge, philips, siemens]
+size_gb: 9.87
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma/
+  note: >-
+    DICOM images and RTSTRUCT contours are downloaded with the TCIA Data Retriever from a manifest file and are also
+    available in the NCI Imaging Data Commons. The clinical spreadsheet is a direct download. No account is needed.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma/
+    note: >-
+      The Data Access table lists CC BY 3.0 for both the images with radiation therapy structures and the clinical
+      data. The page also requires the data citation under the TCIA Data Usage Policy.
+citation:
+  text: >-
+    Vallières, M., Freeman, C. R., Skamene, S. R., & El Naqa, I. (2015). A radiomics model from joint FDG-PET and MRI
+    texture features for the prediction of lung metastases in soft-tissue sarcomas of the extremities
+    (Soft-tissue-Sarcoma) [Dataset]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2015.7GO2GSKS
+sources:
+  tcia-soft-tissue-sarcoma:
+    title: TCIA Soft-tissue-Sarcoma collection page (version 1, updated 2015/06/01)
+    url: https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma/
+    kind: website
+  tcia-sts-clinical:
+    title: >-
+      TCIA Soft-tissue-Sarcoma clinical data (INFOclinical_STS.xlsx, open download, CC BY 3.0), sheet Clinical
+      Information, one row per patient
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/INFOclinical_STS.xlsx
+    kind: computed
+  tcia-sts-digest:
+    title: >-
+      TCIA Soft-tissue-Sarcoma radiology metadata digest (doiJNLP-zgVcrK7I-nbia-digest.xlsx, open download, CC BY
+      3.0), counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/doiJNLP-zgVcrK7I-nbia-digest.xlsx
+    kind: computed
+  vallieres2015:
+    title: Vallières et al. 2015, Physics in Medicine and Biology 60(14)
+    url: https://doi.org/10.1088/0031-9155/60/14/5471
+    kind: paper
+related: []
+keywords: [soft-tissue sarcoma, radiomics, lung metastases, FDG PET/CT, MRI, RTSTRUCT, outcome prediction]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,37 @@
+measure,by,value,source,where,note
+subjects,,51,tcia-soft-tissue-sarcoma,Data Access (Version 1),
+studies,,102,tcia-soft-tissue-sarcoma,Data Access (Version 1),one PET/CT study and one MR study per patient
+scans,,612,tcia-soft-tissue-sarcoma,Data Access (Version 1),"DICOM series, including RTSTRUCT and the MR series registered to PET"
+images,,38283,tcia-soft-tissue-sarcoma,Data Access (Version 1),DICOM images
+subjects,condition=soft_tissue_sarcoma,51,vallieres2015,Abstract,histologically proven STS of the extremities
+subjects,modality=CT,51,tcia-sts-digest,"Patient ID, Modality columns",CT of the PET/CT exam
+subjects,modality=PT,51,tcia-sts-digest,"Patient ID, Modality columns",
+subjects,modality=MR,51,tcia-sts-digest,"Patient ID, Modality columns",
+subjects,tracer=fdg,51,tcia-soft-tissue-sarcoma,Detailed Description,
+scans,modality=CT,51,tcia-sts-digest,"Series Instance UID, Modality columns",
+scans,modality=PT,51,tcia-sts-digest,"Series Instance UID, Modality columns",
+scans,modality=MR,204,tcia-sts-digest,"Series Instance UID, Modality columns","102 clinical MR series plus 102 copies registered and resampled to PET"
+subjects,contrast=T1w,51,tcia-soft-tissue-sarcoma,Detailed Description,axial T1-weighted for all patients
+subjects,contrast=T2w,26,tcia-soft-tissue-sarcoma,Detailed Description,T2-weighted fat-saturated
+subjects,contrast=STIR,25,tcia-soft-tissue-sarcoma,Detailed Description,used where no T2-weighted fat-saturated series was available
+subjects,contrast_set=T1w+T2w,26,tcia-sts-digest,"Patient ID, Series Description columns",registered series Aligned_T1toPET and Aligned_T2FStoPET
+subjects,contrast_set=STIR+T1w,25,tcia-sts-digest,"Patient ID, Series Description columns",registered series Aligned_T1toPET and Aligned_STIRtoPET
+subjects,vendor=ge,51,tcia-sts-digest,"Patient ID, Manufacturer columns","GE Discovery ST PET/CT for all; 33 subjects also have GE MRI"
+subjects,vendor=philips,9,tcia-sts-digest,"Patient ID, Manufacturer columns",MRI
+subjects,vendor=siemens,8,tcia-sts-digest,"Patient ID, Manufacturer columns",MRI
+subjects,country=CA,51,tcia-soft-tissue-sarcoma,"Detailed Description, Acknowledgements","all PET/CT scans at the McGill University Health Centre, Montreal; 39 MRI exams came from an outside institution"
+subjects,sex=female,27,tcia-sts-clinical,"Patient ID, Sex columns",
+subjects,sex=male,24,tcia-sts-clinical,"Patient ID, Sex columns",
+subjects,age=10-19,2,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=20-29,5,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=30-39,2,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=40-49,8,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=50-59,9,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=60-69,15,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=70-79,8,tcia-sts-clinical,"Patient ID, Age columns",
+subjects,age=80-89,2,tcia-sts-clinical,"Patient ID, Age columns",
+age_mean,,54.8,tcia-sts-clinical,Age column,
+age_sd,,17.0,tcia-sts-clinical,Age column,
+age_median,,59,tcia-sts-clinical,Age column,
+age_min,,16,tcia-sts-clinical,Age column,
+age_max,,83,tcia-sts-clinical,Age column,
