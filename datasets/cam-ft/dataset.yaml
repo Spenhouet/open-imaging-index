@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cam-ft
+name: Cambridge Foetal Testosterone (CAM-FT) study, MRI cohort
+full_name: Cambridge Foetal Testosterone longitudinal study, structural MRI cohort of 8 to 11 year old boys
+summary: >-
+  3 T T1-weighted brain MRI of 28 typically developing boys aged 8 to 11 from Cambridgeshire whose foetal testosterone
+  was measured in amniotic fluid at amniocentesis, used to relate prenatal testosterone to regional grey matter volume.
+  Not publicly shared.
+homepage: https://www.autismresearchcentre.com/projects/foetal-testosterone-longitudinal-study/
+doi: 10.1523/JNEUROSCI.4389-11.2012
+# Year of the paper that describes the MRI cohort; the images have not been released.
+year: 2012
+creators:
+  - name: Autism Research Centre, Department of Psychiatry, University of Cambridge
+    url: https://www.autismresearchcentre.com/projects/foetal-testosterone-longitudinal-study/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1523/JNEUROSCI.4389-11.2012
+  note: >-
+    Neither the paper nor the Autism Research Centre project page offers access to the images or states how to request
+    them. Any request goes to the authors.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The paper and the project page publish no license or data use terms for the MRI data.
+citation:
+  text: >-
+    Lombardo MV, Ashwin E, Auyeung B, Chakrabarti B, Taylor K, Hackett G, Bullmore ET, Baron-Cohen S. Fetal
+    testosterone influences sexually dimorphic gray matter in the human brain. J Neurosci 32(2), 674-680 (2012).
+    doi:10.1523/JNEUROSCI.4389-11.2012
+sources:
+  lombardo2012:
+    title: Lombardo et al. 2012, J Neurosci 32(2) 674-680 (author manuscript PMC3306238)
+    url: https://doi.org/10.1523/JNEUROSCI.4389-11.2012
+    kind: paper
+  arc-ft-project:
+    title: Autism Research Centre project page, Prenatal sex steroid hormones and autism
+    url: https://www.autismresearchcentre.com/projects/foetal-testosterone-longitudinal-study/
+    kind: website
+related: []
+keywords: [foetal testosterone, fetal testosterone, amniocentesis, sexual dimorphism, voxel-based morphometry, children]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
