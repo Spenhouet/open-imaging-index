@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: andes-schizophrenia-latam
+name: ANDES schizophrenia MRI (six Latin American cities)
+full_name: Latin American Network for the Study of Early Psychosis (ANDES), multi-site structural MRI sample
+summary: >-
+  T1-weighted brain MRI of 334 patients with schizophrenia and 262 healthy controls from six cities in Argentina,
+  Brazil, Chile, Colombia and Mexico, pooled by the ANDES network, with neighbourhood income and homicide rates. Shared
+  on request only.
+homepage: https://doi.org/10.1192/bjp.2020.143
+doi: 10.1192/bjp.2020.143
+# Year of the first paper on the pooled ANDES imaging sample; the data have no public release.
+year: 2020
+creators:
+  - name: Latin American Network for the Study of Early Psychosis (ANDES)
+  - name: Department of Psychiatry, Pontificia Universidad Católica de Chile
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+countries: [AR, BR, CL, CO, MX]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: on_request
+  url: https://doi.org/10.1192/bjp.2020.143
+  note: >-
+    The data availability statement says the data are available from the corresponding author (Nicolas A. Crossley),
+    subject to permission from the senior author of each site, upon reasonable request.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper's data availability statement gives no terms beyond a reasonable request and per-site permission. The
+      ANDES network page cited in the paper (www.cyted.org/redes/ANDES) and the CYTED network page return 404.
+citation:
+  text: >-
+    Crossley NA, Zugman A, Reyes-Madrigal F, Czepielewski LS, Castro MN, Diaz-Zuluaga AM, Pineda-Zapata JA, Reckziegel
+    R, Gadelha A, Jackowski A, Noto C, Alliende LM, Iruretagoyena B, Ossandon T, Ramirez-Mahaluf JP, Castañeda CP,
+    Gonzalez-Valderrama A, Nachar R, León-Ortiz P, Undurraga J, López-Jaramillo C, Guinjoan SM, Gama CS, de la
+    Fuente-Sandoval C, Bressan RA, ANDES Network. Structural brain abnormalities in schizophrenia in adverse
+    environments: examining the effect of poverty and violence in six Latin American cities. The British Journal of
+    Psychiatry 218(2), 112-118 (2021). doi:10.1192/bjp.2020.143
+sources:
+  crossley2021:
+    title: Crossley et al. 2021, The British Journal of Psychiatry
+    url: https://doi.org/10.1192/bjp.2020.143
+    kind: paper
+  crossley2021-supp:
+    title: Crossley et al. 2021, The British Journal of Psychiatry, Supplementary Information
+    url: https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0007125020001439/resource/name/S0007125020001439sup001.zip
+    kind: paper
+related: []
+keywords: [schizophrenia, first-episode psychosis, grey matter volume, poverty, environmental violence, Latin America, ComBat]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
