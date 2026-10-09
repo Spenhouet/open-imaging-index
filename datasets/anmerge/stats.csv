@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,1702,birkenbihl2021,Table 1,"773 AddNeuroMed, 665 DCR and 264 ART participants"
+subjects,condition=healthy,793,birkenbihl2021,Table 1,diagnosis at baseline
+subjects,condition=mci,397,birkenbihl2021,Table 1,diagnosis at baseline
+subjects,condition=alzheimers,512,birkenbihl2021,Table 1,diagnosis at baseline
+subjects,contrast=T1w,453,birkenbihl2021,Table 2,participants with at least one MRI variable (FreeSurfer features) in ANMerge
+subjects,field_strength=1.5,453,birkenbihl2021,"Table 2; Methods, Magnetic resonance imaging","1.5 T T1-weighted MRI at months 0, 3 and 12"
+age_mean,,76.4,birkenbihl2021,Table 1,at baseline
+age_sd,,6.9,birkenbihl2021,Table 1,at baseline
+age_mean,condition=healthy,74.5,birkenbihl2021,Table 1,at baseline
+age_sd,condition=healthy,6.4,birkenbihl2021,Table 1,at baseline
+age_mean,condition=mci,76.0,birkenbihl2021,Table 1,at baseline
+age_sd,condition=mci,6.5,birkenbihl2021,Table 1,at baseline
+age_mean,condition=alzheimers,78.6,birkenbihl2021,Table 1,at baseline
+age_sd,condition=alzheimers,7.2,birkenbihl2021,Table 1,at baseline

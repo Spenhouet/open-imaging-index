@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: anmerge
+name: ANMerge
+full_name: 'ANMerge: curated release of the AddNeuroMed Alzheimer''s disease cohort'
+summary: >-
+  Curated release of the European AddNeuroMed cohort with the DCR and ART cohorts: 1,702 participants (healthy, MCI,
+  Alzheimer's disease) with clinical data, genotypes, blood transcriptomics and proteomics, and 1.5 T T1w MRI with
+  FreeSurfer features for 453 participants.
+homepage: https://www.synapse.org/Synapse:syn22252881
+doi: 10.7303/syn22252881
+# The ANMerge folder on Synapse was created in July 2020; the medRxiv preprint (August 2020) points to it.
+year: 2020
+status: active
+creators:
+  - name: AddNeuroMed Consortium
+  - name: Fraunhofer Institute for Algorithms and Scientific Computing (SCAI)
+    url: https://www.scai.fraunhofer.de/
+  - name: Department of Psychiatry, University of Oxford
+    url: https://www.psych.ox.ac.uk/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy, mci, alzheimers]
+tasks: [longitudinal, classification, regression]
+formats: [NIfTI]
+countries: [FI, GR, GB, PL, IT, FR]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://www.synapse.org/Synapse:syn22252881
+licenses:
+  - license: LicenseRef-AddNeuroMed-DUC
+citation:
+  text: >-
+    Birkenbihl C, Westwood S, Shi L, Nevado-Holgado A, Westman E, Lovestone S, AddNeuroMed Consortium,
+    Hofmann-Apitius M. ANMerge: A Comprehensive and Accessible Alzheimer's Disease Patient-Level Dataset. Journal of
+    Alzheimer's Disease 79(1):423-431 (2021). doi:10.3233/JAD-200948
+sources:
+  birkenbihl2021:
+    title: Birkenbihl et al. 2021, Journal of Alzheimer's Disease
+    url: https://doi.org/10.3233/JAD-200948
+    kind: paper
+  synapse-addneuromed-mri:
+    title: AddNeuroMed MRI folder on Synapse, folder description
+    url: https://www.synapse.org/Synapse:syn2795021
+    kind: website
+related: [adni]
+keywords: [Alzheimer's disease, mild cognitive impairment, AddNeuroMed, longitudinal, structural MRI, FreeSurfer, multi-omics]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

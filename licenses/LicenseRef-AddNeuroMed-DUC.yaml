@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-AddNeuroMed-DUC
+name: AddNeuroMed Data Use Certificate and Synapse access terms
+short_name: AddNeuroMed DUC
+url: https://www.synapse.org/AccessRequirement:AR_ID=4988775
+version: >-
+  Synapse access requirements 4988775 (version 50, November 2025) and 4988776 (version 7, February 2022). The
+  AddNeuroMed Controlled Access Data Use Certificate (v1 PDF, syn53651150) needs a Synapse login to download and was
+  not read.
+summary: >-
+  Access after a reviewed request on Synapse: a Data Use Certificate signed by an institutional official, a short
+  research proposal with data security measures, and confirmation of ethics review. Publications must carry the
+  AddNeuroMed acknowledgement. The certificate itself is not public, so most permissions are unknown.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The public access terms do not mention commercial use. The Data Use Certificate could not be read.
+  product_validation:
+    value: unspecified
+    note: The public access terms do not address testing or validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      Publications based on the use of this data must include the following acknowledgement statement - The
+      AddNeuroMed data are from a public - private partnership supported by EFPIA companies and SMEs as part of InnoMed
+      (Innovative Medicines in Europe), an Integrated Project funded by the European Union of the Sixth Framework
+      program priority FP6 2004-LIFESCIHEALTH-5.
+    source: https://www.synapse.org/AccessRequirement:AR_ID=4988776
+    note: The statement continues with the names of the clinical, imaging and bioinformatics leads.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The security measures you will have in place to prevent accidental data leakage or redistribution of the data.
+    note: >-
+      The research proposal must describe how redistribution is prevented. The exact clause in the Data Use
+      Certificate could not be read.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Agree to acknowledge the AddNeuroMed team in publications based on use of the data.
+  share_alike:
+    value: unspecified
+    note: The Data Use Certificate could not be read.
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Have the document signed by an authorized institutional signing official and all collaborating
+      investigators/data requesters from your institution.
+    note: Requesters from another institution submit a separate certificate co-signed by their own official.
+  ethics_approval:
+    value: 'yes'
+    quote: >-
+      As part of the DUC, the signing official confirms that the research proposal has undergone ethical review and
+      approval (or waiver/exemption) from an ethics committee or Institutional Review Board for the research
+      described in the proposal.
+  publication_review:
+    value: unspecified
+    note: The public access terms do not ask for manuscript review; the Data Use Certificate could not be read.
+  code_release:
+    value: unspecified
+    note: The public access terms do not ask for code release; the Data Use Certificate could not be read.
+  return_results:
+    value: unspecified
+    note: The Data Use Certificate could not be read.
+  delete_after_use:
+    value: unspecified
+    note: Access approval on Synapse expires after one year; the Data Use Certificate could not be read.
+  no_reidentification:
+    value: unspecified
+    note: The Data Use Certificate could not be read.
+  geographic_restriction:
+    value: unspecified
+    note: The Data Use Certificate could not be read.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
