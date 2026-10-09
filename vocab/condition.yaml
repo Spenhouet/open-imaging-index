@@ -135,6 +135,7 @@ terms:
   - { id: pulmonary_nodule, label: Pulmonary nodule, synonyms: [lung nodule], mappings: { hp: 'HP:0033608' } }
   - { id: breast_cancer, label: Breast cancer, mappings: { mondo: 'MONDO:0007254' } }
   - { id: prostate_cancer, label: Prostate cancer, mappings: { mondo: 'MONDO:0008315' } }
+  - { id: ovarian_cancer, label: Ovarian cancer, mappings: { mondo: 'MONDO:0008170' } }
   - { id: liver_cancer, label: Liver cancer, mappings: { mondo: 'MONDO:0002691' } }
   - {
       id: hcc,

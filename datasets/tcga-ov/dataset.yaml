@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-ov
+name: TCGA-OV
+full_name: The Cancer Genome Atlas Ovarian Cancer Collection
+summary: >-
+  Pre-surgical and follow-up clinical CT, plus MRI of one patient, of 143 women with ovarian serous cystadenocarcinoma
+  from eight US centers, matched by patient ID to the TCGA clinical, genomic and pathology data for radiogenomics.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-ov/
+doi: 10.7937/K9/TCIA.2016.NDO1MDFQ
+year: 2013
+updated: 2020
+version: '4'
+status: active
+creators:
+  - name: The Cancer Genome Atlas (TCGA) Research Network and eight contributing US imaging sites
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR]
+contrasts: [T1w, T1w_ce, T2w, dwi]
+anatomy: [ovary, abdomen]
+conditions: [ovarian_cancer]
+tasks: [classification, survival]
+formats: [DICOM]
+countries: [US]
+vendors: [ge, siemens, philips, canon, other]
+size_gb: 28.3
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-ov/
+  note: >-
+    Images download with the TCIA Data Retriever. Clinical, genomic and histopathology data for the same patient IDs
+    are held in the NCI Genomic Data Commons; a 2016 clinical data snapshot is linked from the collection page.
+licenses:
+  - license: CC-BY-3.0
+citation:
+  text: >-
+    Holback C, Jarosz R, Prior F, Mutch DG, Bhosale P, Garcia K, Lee Y, Kirk S, Sadow CA, Levine S, Sala E, Elnajjar
+    P, Morgan T, Erickson BJ. (2016). The Cancer Genome Atlas Ovarian Cancer Collection (TCGA-OV) (Version 4) [Data
+    set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.NDO1MDFQ
+sources:
+  tcia-tcga-ov:
+    title: TCIA TCGA-OV collection page (version 4, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-ov/
+    kind: website
+  tcia-tcga-ov-digest:
+    title: >-
+      TCIA TCGA-OV series metadata digest (XLSX linked from the collection page, open, no login, CC BY 3.0), counted
+      per Patient ID, Study Instance UID, Modality, Patient Sex, Patient Age and Manufacturer
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/TCIA_TCGA-OV_09-16-2015-nbia-digest.xlsx
+    kind: computed
+related: []
+keywords: [ovarian cancer, serous cystadenocarcinoma, radiogenomics, TCGA, abdominal CT, pelvic CT, debulking]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
