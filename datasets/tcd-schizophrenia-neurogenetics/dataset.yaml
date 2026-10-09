@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcd-schizophrenia-neurogenetics
+name: TCD Schizophrenia Neuroimaging Genetics
+full_name: >-
+  A structural and functional MRI investigation of genetics, cognition and emotion in schizophrenia (Trinity College
+  Institute of Neuroscience, Dublin)
+summary: >-
+  3T brain MRI (T1-weighted, diffusion, resting-state fMRI) of patients with schizophrenia and healthy controls from a
+  Science Foundation Ireland neuroimaging genetics study at Trinity College Dublin. A PSYSCAN legacy dataset; images
+  are not shared.
+homepage: https://doi.org/10.1073/pnas.1820754116
+doi: 10.1073/pnas.1820754116
+# Year of the earliest paper found that names the study (Morgan et al., PNAS, April 2019); the images have no public
+# release and no study website was found.
+year: 2019
+creators:
+  - name: Trinity College Institute of Neuroscience and Department of Psychiatry, Trinity College Dublin
+    url: https://www.tcd.ie/
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [schizophrenia, schizoaffective_disorder, healthy]
+countries: [IE]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1002/hbm.24863
+  note: >-
+    The data availability statement of Lei et al. (2020), where the sample is Dataset 4, says the data are unavailable
+    due to research data confidentiality. Morgan et al. (2019) used the sample as a PSYSCAN legacy dataset and
+    published only derived regional cortical measures with age, sex and group on Figshare under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Neither Morgan et al. (2019) nor Lei et al. (2020) states a license or data use terms for the images. The CC BY
+      4.0 Figshare deposit covers derived regional measures only.
+citation:
+  text: >-
+    Morgan SE, Seidlitz J, Whitaker KJ, Romero-Garcia R, Clifton NE, Scarpazza C, van Amelsvoort T, Marcelis M, van Os
+    J, Donohoe G, Mothersill D, Corvin A, Pocklington A, Raznahan A, McGuire P, Vertes PE, Bullmore ET. Cortical
+    patterning of abnormal morphometric similarity in psychosis is associated with brain expression of
+    schizophrenia-related genes. PNAS 116(19):9604-9609 (2019). doi:10.1073/pnas.1820754116
+sources:
+  morgan2019:
+    title: Morgan et al. 2019, PNAS (PMC6511038)
+    url: https://doi.org/10.1073/pnas.1820754116
+    kind: paper
+  morgan2019-si:
+    title: Morgan et al. 2019, PNAS, SI Appendix (pnas.1820754116.sapp.pdf)
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6511038/supplementaryFiles
+    kind: paper
+  morgan2019-figshare:
+    title: >-
+      Morgan et al. 2019 Figshare deposit Data_MS_SZ.zip (CC BY 4.0), Dublin folder, counted per subject row
+    url: https://doi.org/10.6084/m9.figshare.7908488.v1
+    kind: computed
+  lei2020:
+    title: Lei et al. 2020, Human Brain Mapping (PMC7268084)
+    url: https://doi.org/10.1002/hbm.24863
+    kind: paper
+related: [group-maastricht-mri, cobre]
+keywords: [schizophrenia, psychosis, neuroimaging genetics, diffusion MRI, resting-state fMRI, PSYSCAN, morphometric similarity]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
