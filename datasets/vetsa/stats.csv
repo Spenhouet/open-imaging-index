@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,526,kremen2013,Magnetic Resonance Imaging (MRI),twins with 3D structural MRI at wave 1; a second MRI at the wave 2 follow-up
+subjects,sex=male,526,kremen2013,VETSA Sample,all VETSA participants are men
+subjects,country=US,526,kremen2013,VETSA Sample,
+subjects,contrast=T1w,526,kremen2013,Magnetic Resonance Imaging (MRI),3D structural MRI at wave 1
+subjects,field_strength=1.5,474,kremen2010,Image Acquisition,wave 1 participants with analysable MRI at the time of that report
+subjects,vendor=siemens,474,kremen2010,Image Acquisition,wave 1 participants with analysable MRI at the time of that report
+age_mean,,55.8,kremen2010,Participants,474 wave 1 participants with analysable MRI
+age_sd,,2.6,kremen2010,Participants,474 wave 1 participants with analysable MRI
+age_min,,51,kremen2010,Participants,474 wave 1 participants with analysable MRI
+age_max,,59,kremen2010,Participants,474 wave 1 participants with analysable MRI

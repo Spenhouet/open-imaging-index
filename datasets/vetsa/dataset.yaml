@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: vetsa
+name: VETSA
+full_name: Vietnam Era Twin Study of Aging
+summary: >-
+  Longitudinal behavioral genetic study of cognitive and brain aging in male US veteran twins first seen in their 50s.
+  Structural 1.5 T T1w MRI of 526 twins at wave 1, with fMRI and ASL added at follow-up. Images by request and data use
+  agreement.
+homepage: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/index.html
+doi: 10.1017/thg.2012.86
+# Year of the cohort overview paper. Non-imaging wave 1 to 3 data were archived at NACDA in 2025; no public release of
+# the MRI scans is documented.
+year: 2012
+status: active
+creators:
+  - name: VETSA investigators, Department of Psychiatry, University of California San Diego
+    url: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/index.html
+  - name: Boston University
+  - name: VA San Diego Center of Excellence for Stress and Mental Health
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, asl]
+anatomy: [brain]
+tasks: [longitudinal]
+countries: [US]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/researchers.html
+licenses:
+  - license: LicenseRef-VETSA-DUA
+    note: >-
+      Data not in the public NACDA archive are requested with the VETSA Data Request Form; if the request is approved,
+      the researcher signs the VETSA Data Use Agreement before data are sent. A separate VET Registry data security
+      policy is also signed.
+citation:
+  text: >-
+    Kremen WS, Franz CE, Lyons MJ. VETSA: The Vietnam Era Twin Study of Aging. Twin Research and Human Genetics
+    16(1), 399-402 (2013). doi:10.1017/thg.2012.86
+sources:
+  kremen2013:
+    title: Kremen et al. 2013, Twin Research and Human Genetics (VETSA overview)
+    url: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/_files/A.1.72_Kremen_VETSA_overview.pdf
+    kind: paper
+  kremen2010:
+    title: Kremen et al. 2010, NeuroImage (VETSA MRI study, PMC3397915)
+    url: https://doi.org/10.1016/j.neuroimage.2009.09.043
+    kind: paper
+  vetsa-researchers-page:
+    title: VETSA website, For Researchers page
+    url: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/researchers.html
+    kind: website
+  nacda-38836:
+    title: VETSA, United States, 2002-2019, NACDA/ICPSR study 38836 (non-imaging waves 1 to 3)
+    url: https://doi.org/10.3886/ICPSR38836
+    kind: website
+related: []
+keywords: [twins, heritability, cognitive aging, midlife, veterans, cortical thickness]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-VETSA-DUA
+name: Vietnam Era Twin Study of Aging (VETSA) Data Use Agreement
+short_name: VETSA DUA
+url: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/_files/External-Data-Use-Agreement-for-Users-of-VETSA-data-4-6-2015.pdf
+version: External Data Use Agreement for Users of VETSA data, dated 4-6-2015 in the file name
+summary: >-
+  Signed agreement for VETSA data released after an approved data request. Use is limited to research, statistical or
+  teaching purposes and to the analyses agreed with the VETSA PIs; redistribution is prohibited, publications credit
+  VETSA in the author list, abstracts go to the team before submission, and data are destroyed after an agreed time.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: The agreement does not mention commercial use. Use is limited to research, statistical or teaching purposes.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    quote: I will not disclose these data beyond the uses agreed on with the VETSA PIs and understand that
+      redistribution of the data is prohibited.
+    note: Derived data are not addressed. Use is limited to the analyses agreed with the VETSA PIs.
+  publication:
+    value: conditional
+    quote: I understand that new or additional manuscripts or major divergences from the original proposal will be
+      discussed with and approved by the VETSA PIs.
+    note: Allowed for the agreed analyses, with VETSA in the author list and the funding and acknowledgement text from
+      the addendum.
+  redistribute_original:
+    value: 'no'
+    quote: I will not disclose these data beyond the uses agreed on with the VETSA PIs and understand that
+      redistribution of the data is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not address sharing derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: If I publish articles, abstracts or give presentations with the VETSA data, I will cite VETSA in the
+      authorship list and as the source of data and funding sources and give appropriate acknowledgements for the
+      sources of the data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Please read, sign, date, and return the form.
+  ethics_approval:
+    value: 'yes'
+    quote: I will comply with rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: The form also asks for the status of IRB approval.
+  publication_review:
+    value: conditional
+    quote: I agree that prior to submission, I will send an abstract/description to the VETSA team of each paper that
+      will be submitted for publication. This is for tracking purposes, not critical review of the paper.
+    note: An abstract or description is sent before submission, for tracking and not for review.
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: I understand that, on an annual basis, I will provide the VETSA PIs an update on progress toward agreed on
+      analyses/papers.
+    note: Annual progress updates are required; returning derived data is not asked for.
+  delete_after_use:
+    value: 'yes'
+    quote: I will destroy any received data within a timeframe agreed upon by VETSA study PI(s).
+  no_reidentification:
+    value: 'yes'
+    quote: I will use these datasets solely for research, statistical or teaching purposes and not for investigation of
+      specific research subjects.
+    note: Identities discovered by chance may not be used and must be reported to the VETSA PIs.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
