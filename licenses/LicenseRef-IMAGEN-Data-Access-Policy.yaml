@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-IMAGEN-Data-Access-Policy
+name: IMAGEN Data Access Policy
+short_name: IMAGEN DAP
+url: https://imagen-project.org/s/IMAGEN-Data-Access-Policy0811.pdf
+version: 'PDF dated 28 October 2024, with the IMAGEN Proposal Form terms and conditions'
+summary: >-
+  Researchers send a one-manuscript proposal, sponsored by an IMAGEN principal investigator, to the IMAGEN Executive
+  Committee. Only the people named in an approved proposal get a database account. Manuscripts must include named
+  consortium members as authors, and researchers outside the EU sign a GDPR data sharing agreement.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The policy and the proposal form do not mention commercial use.
+  product_validation:
+    value: unspecified
+    note: >-
+      Use is limited to approved proposals, each sized to one publication, but the text does not address testing or
+      validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      All manuscripts using the IMAGEN data must include particular consortium members in the author list and the
+      remaining in a supplementary document.
+    note: Each approved proposal covers one manuscript, which must carry the IMAGEN author list.
+  redistribute_original:
+    value: unspecified
+    note: >-
+      The policy grants database access only to the people named on the proposal but does not address passing data on.
+      The Transfer Impact Assessment that institutions outside the EU fill in marks onward transfers by the importer
+      as not possible.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      All manuscripts using the IMAGEN data must include particular consortium members in the author list and the
+      remaining in a supplementary document.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I have read and agree to the IMAGEN Data Access Policy.
+    source: https://imagen-project.org/s/IMAGEN_ProposalFormUPDATEUNDAKTUELL.docx
+    note: >-
+      Ticked on the proposal form. Researchers from outside the EU also sign a GDPR data sharing agreement: "For
+      researchers from outside the EU, a GDPR data sharing agreement must be signed."
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: >-
+      The proposal is reviewed by the IMAGEN Executive Committee before access, but the text does not ask for the
+      manuscript to be sent for review. Consortium members are co-authors of every manuscript.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: >-
+      The text does not mention re-identification. Applicants agree to comply with the EU General Data Protection
+      Regulation.
+  geographic_restriction:
+    value: conditional
+    quote: For researchers from outside the EU, a GDPR data sharing agreement must be signed.
+    note: >-
+      Use is not limited to any region, but researchers outside the EU sign a GDPR data sharing agreement, and those in
+      countries without an EU adequacy decision also complete a Transfer Impact Assessment approved by their legal
+      department or data protection officer.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

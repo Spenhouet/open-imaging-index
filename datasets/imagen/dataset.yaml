@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: imagen
+name: IMAGEN
+full_name: 'IMAGEN study: reinforcement-related behaviour in normal brain function and psychopathology'
+summary: >-
+  Longitudinal European cohort of over 2,000 adolescents recruited at age 14 at 8 sites in the UK, Ireland, France and
+  Germany, with MRI (T1w, T2w, FLAIR, diffusion, task and resting-state fMRI) at ages 14, 19 and 22 to 23, genomics and
+  psychiatric assessments, shared on approved proposals.
+homepage: https://imagen-project.org/
+doi: 10.25720/p1ma-genq
+year: 2010
+version: '2.7'
+status: active
+creators:
+  - name: IMAGEN Consortium
+    url: https://imagen-project.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, bold]
+anatomy: [brain]
+tasks: [longitudinal, regression]
+formats: [NIfTI]
+countries: [GB, IE, FR, DE]
+vendors: [siemens, philips, ge, bruker]
+access:
+  type: application
+  url: https://imagen-project.org/dataaccess
+licenses:
+  - license: LicenseRef-IMAGEN-Data-Access-Policy
+    note: >-
+      Each proposal names an IMAGEN principal investigator and covers one manuscript. Applicants tick their agreement
+      to the Data Access Policy and to the EU GDPR on the proposal form; institutions outside the EU without an
+      adequacy decision also complete a Transfer Impact Assessment and sign a GDPR data sharing agreement.
+citation:
+  text: >-
+    Schumann G, Loth E, Banaschewski T, et al. The IMAGEN study: reinforcement-related behaviour in normal brain
+    function and psychopathology. Molecular Psychiatry 15(12):1128-1139 (2010). doi:10.1038/mp.2010.4. Dataset:
+    IMAGEN Consortium, IMAGEN study dataset, doi:10.25720/p1ma-genq
+sources:
+  imagen-dataset-page:
+    title: IMAGEN project website, The IMAGEN Dataset page
+    url: https://imagen-project.org/the-imagen-dataset
+    kind: website
+  imagen-data-access-page:
+    title: IMAGEN project website, Proposal and Data Access Policy page
+    url: https://imagen-project.org/dataaccess
+    kind: website
+  imagen-dataset-doi-page:
+    title: IMAGEN dataset DOI landing page with data release history (imagen-europe.com)
+    url: https://imagen-europe.com/resources/imagen-dataset/
+    kind: website
+  imagen-databank-organization:
+    title: 'IMAGEN Consortium, IMAGEN databank organization (imagen2/imagen_documents on GitHub)'
+    url: https://github.com/imagen2/imagen_documents/blob/main/IMAGEN_databank_organization.pdf
+    kind: website
+  imagen-mri-protocols:
+    title: IMAGEN Consortium, MRI protocols per acquisition centre and time point (imagen2/imagen_mri on GitHub)
+    url: https://github.com/imagen2/imagen_mri
+    kind: website
+  schumann2010:
+    title: Schumann et al. 2010, The IMAGEN study, Molecular Psychiatry
+    url: https://doi.org/10.1038/mp.2010.4
+    kind: paper
+related: []
+keywords:
+  [adolescence, brain development, imaging genetics, reward processing, impulsivity, substance use, task fMRI, longitudinal]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
