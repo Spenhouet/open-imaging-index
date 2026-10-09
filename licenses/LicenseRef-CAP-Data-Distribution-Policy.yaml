@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CAP-Data-Distribution-Policy
+name: Cardiac Atlas Project Policies and Procedures for Data Distribution to Users
+short_name: CAP User Policy
+url: https://www.cardiacatlas.org/wp-content/uploads/2022/10/CAPPolicyStatementUsers.pdf
+version: 'v1, 2009-06-25'
+summary: >-
+  Users submit a research project to the CAP Steering Committee and each contributing study, then sign a Data
+  Distribution Agreement per study. Data may be used only for that project, not passed on without CAP approval, not
+  used commercially without the contributors' permission, and are deleted when the project ends.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: 'Commercial Use: The User cannot use Data for commercial use without the permission of the Contributing
+      Studies.'
+    note: Commercial use needs permission from each contributing study, here the MESA contributors.
+  model_training:
+    value: unspecified
+    note: The policy does not mention machine learning. Any use must be part of the approved Research Project.
+  derivatives:
+    value: conditional
+    quote: Intellectual property developed by Users, not relating to the design of any Contributing Study (for example
+      pertaining to the characterization of cardiac images, cardiac wall motion, or the development of computational
+      atlases), will remain the property of the User or the User’s host institution.
+    note: Derived work is expected, but only within the approved Research Project.
+  publication:
+    value: conditional
+    quote: 'Publication: The User must comply with the publication policy stated in the DDA for each Contributing
+      Study.'
+    note: With the publication policy of each contributing study's agreement, which CAP does not publish.
+  redistribute_original:
+    value: conditional
+    quote: The User will retain control over Data provided to User, and unmodified or modified derivatives thereof, in a
+      secure environment, and not transfer Data, and unmodified or modified derivatives thereof, with or without
+      charge, to any other entity or any individual in a manner not previously approved by the CAP.
+    note: Only with prior approval by CAP.
+  redistribute_derivatives:
+    value: conditional
+    quote: The User will retain control over Data provided to User, and unmodified or modified derivatives thereof, in a
+      secure environment, and not transfer Data, and unmodified or modified derivatives thereof, with or without
+      charge, to any other entity or any individual in a manner not previously approved by the CAP.
+    note: Only with prior approval by CAP.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'Acknowledgements: The User must acknowledge the Contributing Studies and their funding sources, as well as
+      the CAP and its funding source (NHLBI), in any and all oral and written presentations, disclosures, and
+      publications resulting from any and all analyses of Data reviewed under the DDAs.'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: If the proposal is approved by all Contributing Studies, the User will be required to sign and abide by a
+      Data Distribution (DDA) agreement for each of the Contributing Studies involved.
+  ethics_approval:
+    value: 'no'
+    note: The policy does not ask for ethics approval, but says each study's agreement may vary according to its
+      ethical approvals. The study-specific agreements are not published.
+  publication_review:
+    value: conditional
+    quote: 'Publication: The User must comply with the publication policy stated in the DDA for each Contributing
+      Study.'
+    note: Review before publication depends on the contributing study's agreement, which CAP does not publish. Copies
+      of final manuscripts or abstracts go to CAP.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: A plan for the archival of results must be given, which should include contribution of results to the CAP
+      project for other Users.
+  delete_after_use:
+    value: 'yes'
+    quote: When the Research Project is completed, the Data should be deleted from the User’s computers, unless other
+      arrangements are agreed upon or an extension is obtained.
+  no_reidentification:
+    value: 'yes'
+    quote: 'Non-identification: The User must agree that the Data will not be used, either alone or in conjunction with
+      any other information, in any effort to determine the individual identities of any of the participants from
+      whom Data were obtained.'
+  geographic_restriction:
+    value: 'no'
+    note: The policy names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
