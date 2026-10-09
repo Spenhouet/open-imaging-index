@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: human-voice-areas
+name: Human Voice Areas (ds000158)
+full_name: >-
+  The human Voice Areas: spatial organisation and inter-individual variability in temporal and extra-temporal
+  cortices
+summary: >-
+  Brain MRI of 217 healthy young adults from Glasgow, each with one T1-weighted scan and one 10-minute passive
+  listening fMRI run of the voice localizer (vocal vs non-vocal sound blocks), in BIDS on OpenNeuro.
+homepage: https://openneuro.org/datasets/ds000158
+doi: 10.18112/openneuro.ds000158.v1.0.0
+year: 2015
+updated: 2019
+version: 1.0.0
+status: active
+creators:
+  - name: Voice Neurocognition Laboratory, Institute of Neuroscience and Psychology, University of Glasgow (Pernet CR, Belin P, et al.)
+    url: https://openneuro.org/datasets/ds000158
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 15.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000158
+licenses:
+  - license: PDDL-1.0
+    applies_to: OpenNeuro copy (ds000158, snapshot 1.0.0), BIDS with events files, 217 subjects.
+    url: https://openneuro.org/datasets/ds000158/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" PDDL.
+  - license: CC-BY-4.0
+    applies_to: Edinburgh DataShare copy (doi:10.7488/ds/280), two tar archives of subjects 1 to 218 plus stimuli.
+    url: https://doi.org/10.7488/ds/280
+    note: The DataShare record states "Creative Commons Attribution 4.0 International Public License".
+license_combine: any
+citation:
+  text: >-
+    Pernet CR, McAleer P, Latinus M, Gorgolewski KJ, Charest I, Bestelmeyer PEG, Watson RH, Fleming D, Crabbe F,
+    Valdes-Sosa M, Belin P. The human voice areas: spatial organization and inter-individual variability in temporal
+    and extra-temporal cortices. NeuroImage 119:164-174 (2015). doi:10.1016/j.neuroimage.2015.06.050
+sources:
+  pernet2015:
+    title: Pernet et al. 2015, The human voice areas, NeuroImage
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4768083/
+    kind: paper
+  openneuro-ds000158-v1:
+    title: OpenNeuro ds000158 snapshot 1.0.0 (dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds000158/versions/1.0.0
+    kind: website
+  ds000158-file-tree:
+    title: File tree of ds000158 (PDDL), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds000158
+    kind: computed
+  datashare-ds280:
+    title: Edinburgh DataShare record doi:10.7488/ds/280
+    url: https://doi.org/10.7488/ds/280
+    kind: website
+related: []
+keywords: [voice localizer, auditory cortex, temporal voice areas, task fMRI, passive listening]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

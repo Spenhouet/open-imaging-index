@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: PDDL-1.0
+name: Open Data Commons Public Domain Dedication and License v1.0
+short_name: PDDL
+url: https://opendatacommons.org/licenses/pddl/1-0/
+version: '1.0'
+summary: Public domain dedication for databases and their contents. Use, change and share the data for any purpose,
+  including commercial use, without having to give credit.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: Recipients may use this work commercially, use technical protection measures, combine this data or
+      database with other databases or data, and share their changes and additions or keep them secret.
+  model_training:
+    value: 'yes'
+    quote: These rights explicitly include commercial use, and do not exclude any field of endeavour.
+  derivatives:
+    value: 'yes'
+    quote: The Open Data Commons – Public Domain Dedication and Licence is a document intended to allow you to freely
+      share, modify, and use this work for any purpose and without any restrictions.
+  publication:
+    value: 'yes'
+    note: The dedication places no limits on publishing.
+  redistribute_original:
+    value: 'yes'
+    quote: The Open Data Commons – Public Domain Dedication and Licence is a document intended to allow you to freely
+      share, modify, and use this work for any purpose and without any restrictions.
+  redistribute_derivatives:
+    value: 'yes'
+    quote: Recipients may use this work commercially, use technical protection measures, combine this data or
+      database with other databases or data, and share their changes and additions or keep them secret.
+  share_model_weights:
+    value: 'yes'
+    note: Public domain dedication, no conditions.
+  attribution:
+    value: 'no'
+    note: >-
+      The text states "It is not a requirement that recipients provide further users with a copy of this licence or
+      attribute the original creator of the data or database as a source." Community norms that ask for citation are
+      not part of the license. Citing the dataset is still good scientific practice.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public domain dedication, no agreement.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
