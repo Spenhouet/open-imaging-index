@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,80,oktay2013,Section V,
+subjects,condition=healthy,16,oktay2013,Section V,pathology-free; the other 64 subjects have disc or vertebra pathologies
+subjects,contrast=T1w,80,gtu-lumbar-mri-page,Data Description,one T1-weighted mid-sagittal image per subject (s_T1.mat)
+subjects,contrast=T2w,80,gtu-lumbar-mri-page,Data Description,one T2-weighted mid-sagittal image per subject (s_T2.mat)
+subjects,contrast_set=T1w+T2w,80,gtu-lumbar-mri-page,Data Description,
+images,,160,gtu-lumbar-mri-page,Data Description,"80 subjects times one T1 and one T2 mid-sagittal image, summed from the file naming"
+images,contrast=T1w,80,gtu-lumbar-mri-page,Data Description,
+images,contrast=T2w,80,gtu-lumbar-mri-page,Data Description,
