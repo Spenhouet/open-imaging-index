@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: drysdale2017-depression-biotypes
+name: Depression Biotypes Multisite rsfMRI (Drysdale 2017)
+full_name: Multisite resting-state fMRI sample of the depression biotypes study (Weill Cornell, Drysdale et al. 2017)
+summary: >-
+  Pooled resting-state fMRI and T1-weighted MRI of 1,188 adults (458 with major depression, 730 healthy controls)
+  from 17 sites, led by Weill Cornell, used to define four connectivity biotypes of depression. Patient sites
+  share data at the investigators' discretion.
+homepage: https://doi.org/10.1038/nm.4246
+doi: 10.1038/nm.4246
+# Year of the paper (published online 5 December 2016); the pooled sample has no public release.
+year: 2016
+creators:
+  - name: Drysdale AT, Liston C, et al., Feil Family Brain and Mind Research Institute, Weill Cornell Medical College
+  - name: Site principal investigators at Weill Cornell, Toronto Western Hospital, Stanford University, Emory University and Harvard Medical School
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [depression, healthy]
+countries: [US, CA, CN, DE]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1038/nm.4246
+  note: >-
+    The data availability statement says that data from the sites outside the 1000 Functional Connectomes Project are
+    available at the discretion of the site principal investigators named in Supplementary Table 2 (Cornell 1: Dubin
+    and Liston; Toronto: Downar; Emory 1: Mayberg; Stanford 1: Etkin; Stanford 2: Schatzberg). Control and COBRE data
+    from NKI, Atlanta, Cambridge, Cleveland, ICBM, New York, COBRE, Beijing, Milwaukee and Leipzig are public through
+    the 1000 Functional Connectomes Project.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: >-
+      Patient and control scans from the investigator-held sites (Cornell 1, Cornell 2, Emory 1, Stanford 1, Stanford 2,
+      Toronto and Harvard).
+    note: >-
+      The paper's data availability statement leaves sharing to the site investigators and states no terms.
+  - license: LicenseRef-INDI-FCP-Terms
+    applies_to: >-
+      Scans from the sites the paper names as publicly available through the 1000 Functional Connectomes Project (NKI,
+      Atlanta, Cambridge, Cleveland, ICBM, New York, COBRE, Beijing, Milwaukee and Leipzig).
+citation:
+  text: >-
+    Drysdale AT, Grosenick L, Downar J, Dunlop K, Mansouri F, Meng Y, Fetcho RN, Zebley B, Oathes DJ, Etkin A,
+    Schatzberg AF, Sudheimer K, Keller J, Mayberg HS, Gunning FM, Alexopoulos GS, Fox MD, Pascual-Leone A, Voss HU,
+    Casey BJ, Dubin MJ, Liston C. Resting-state connectivity biomarkers define neurophysiological subtypes of
+    depression. Nature Medicine 23(1):28-38 (2017). doi:10.1038/nm.4246
+sources:
+  drysdale2017:
+    title: Drysdale et al. 2017, Nature Medicine (author manuscript PMC5624035)
+    url: https://doi.org/10.1038/nm.4246
+    kind: paper
+  drysdale2017-si:
+    title: Drysdale et al. 2017, Nature Medicine, Supplementary Information
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnm.4246/MediaObjects/41591_2017_BFnm4246_MOESM22_ESM.pdf
+    kind: paper
+related: [fcp-1000]
+keywords: [major depressive disorder, depression biotypes, resting-state fMRI, functional connectivity, multi-site, rTMS]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
