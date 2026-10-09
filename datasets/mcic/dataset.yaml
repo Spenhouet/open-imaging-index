@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mcic
+name: MCIC
+full_name: MIND Clinical Imaging Consortium (MCIC) collection
+summary: >-
+  Four-site US study of 162 people with schizophrenia and 169 matched controls with raw DICOM T1w, T2w, diffusion and
+  task fMRI plus clinical and cognitive data. Data from three of the sites are shared through COINS under a data use
+  agreement.
+homepage: https://www.nitrc.org/projects/mcic/
+doi: 10.1007/s12021-013-9184-3
+year: 2013
+status: active
+creators:
+  - name: MIND Clinical Imaging Consortium (Mind Research Network, University of New Mexico, University of Minnesota, Massachusetts General Hospital, University of Iowa)
+    url: https://www.nitrc.org/projects/mcic/
+  - name: Gollub RL, Calhoun VD, Andreasen NC and colleagues
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+tasks: [classification]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens, ge]
+field_strengths: [1.5, 3]
+access:
+  type: signed_agreement
+  url: https://coins.trendscenter.org/
+licenses:
+  - license: LicenseRef-MCIC-DUA
+citation:
+  text: >-
+    Gollub RL, Shoemaker JM, King MD, et al. The MCIC collection: a shared repository of multi-modal, multi-site brain
+    image data from a clinical investigation of schizophrenia. Neuroinformatics 11(3):367-388 (2013).
+    doi:10.1007/s12021-013-9184-3
+sources:
+  gollub2013:
+    title: Gollub et al. 2013, Neuroinformatics (author manuscript PMC3727653)
+    url: https://doi.org/10.1007/s12021-013-9184-3
+    kind: paper
+  nitrc-mcic:
+    title: NITRC project page MCIC - schizophrenic and matched control data
+    url: https://www.nitrc.org/projects/mcic/
+    kind: website
+  coins-home:
+    title: COINS home page, Data Exchange section
+    url: https://coins.trendscenter.org/
+    kind: website
+related: []
+keywords: [schizophrenia, first-episode psychosis, multi-site MRI, task fMRI, diffusion MRI, COINS]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

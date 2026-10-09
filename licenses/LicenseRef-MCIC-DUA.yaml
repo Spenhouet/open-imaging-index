@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MCIC-DUA
+name: MCIC Data Use Agreement
+short_name: MCIC DUA
+url: https://www.nitrc.org/projects/mcic/
+version: >-
+  Agreement text not published. Terms as described in the Information Sharing Statement of Gollub et al. 2013 and
+  on the NITRC project page, read 2026-10-09
+summary: >-
+  Users request the data through the COINS Data Exchange and must accept the MCIC Data Use Agreement before they can
+  download. The data providers describe the data as free to use without restrictions and ask, without requiring it,
+  that users cite the paper and the sharing site. The agreement text itself is not published, so most rules are
+  unspecified.
+purpose: unspecified
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The paper and the NITRC page state that the data "may be freely used with no restrictions", but the agreement
+      users must accept is not published, so its conditions cannot be checked.
+    quote: The MCIC imaging and clinical data are available through the COINS database and may be freely used with no restrictions.
+    source: https://www.nitrc.org/projects/mcic/
+  product_validation:
+    value: unspecified
+    note: The agreement is not published, and the published statements do not address testing or validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      The paper says only that anyone wishing to distribute derived data will be encouraged to include the original
+      images; the agreement terms on sharing are not published.
+    quote: Anyone wishing to distribute derived data will be encouraged to include the original images.
+    source: https://doi.org/10.1007/s12021-013-9184-3
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+    note: Citation is encouraged, not stated as a requirement.
+    quote: >-
+      Users are encouraged to cite Gollub RL, et al, Neuroinformatics 2013 and the data sharing web site
+      (http://coins.mrn.org/dataexchange).
+    source: https://www.nitrc.org/projects/mcic/
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: 'yes'
+    quote: The user will be required to accept the conditions of the MCIC Data Use Agreement before accessing the data.
+    source: https://www.nitrc.org/projects/mcic/
+  ethics_approval:
+    value: unspecified
+  publication_review:
+    value: unspecified
+  code_release:
+    value: unspecified
+  return_results:
+    value: unspecified
+  delete_after_use:
+    value: unspecified
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: unspecified
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
