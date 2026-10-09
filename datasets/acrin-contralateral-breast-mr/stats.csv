@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,984,tcia-acrin-contralateral-breast-mr,Data Access table,969 of them were included in the trial's primary analysis
+studies,,1103,tcia-acrin-contralateral-breast-mr,Data Access table,
+scans,,10184,tcia-acrin-contralateral-breast-mr,Data Access table,"DICOM series, MR and CR"
+images,,626782,tcia-acrin-contralateral-breast-mr,Data Access table,DICOM images (slices)
+subjects,sex=female,984,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,
+subjects,condition=breast_cancer,984,tcia-acrin-contralateral-breast-mr,Detailed Description,all women had recently diagnosed unilateral breast cancer
+age_mean,,53.2,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,
+age_sd,,11,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,
+age_median,,53,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,interquartile range 45 to 60
+age_min,,25,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,
+age_max,,86,tcia-acrin-contralateral-breast-mr,Demographic Summary of Available Imaging,
+subjects,vendor=ge,492,tcia-acrin-6667-digest,"Patient ID, Manufacturer",subjects with at least one series from this vendor
+subjects,vendor=siemens,287,tcia-acrin-6667-digest,"Patient ID, Manufacturer",subjects with at least one series from this vendor
+subjects,vendor=philips,177,tcia-acrin-6667-digest,"Patient ID, Manufacturer",subjects with at least one series from this vendor
