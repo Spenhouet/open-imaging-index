@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,180,weiner2017,Table 1,"interim baseline sample: sum of the four disjoint groups (63 no TBI/PTSD, 63 PTSD only, 22 TBI only, 32 TBI and PTSD); enrollment was ongoing"
+subjects,condition=ptsd,95,weiner2017,Table 1,"sum of the disjoint PTSD-only (63) and TBI plus PTSD (32) groups; interim sample"
+subjects,condition=traumatic_brain_injury,54,weiner2017,Table 1,"sum of the disjoint TBI-only (22) and TBI plus PTSD (32) groups; interim sample"
+subjects,modality=MR,120,weiner2017,Table 3,"participants with MRI volumetrics in the interim analysis: sum of 52 + 37 + 16 + 15 across the four groups"
+subjects,tracer=florbetapir,146,weiner2017,Table 4,"participants with florbetapir cortical SUVR in the interim analysis: sum of 54 + 52 + 19 + 21 across the four groups"

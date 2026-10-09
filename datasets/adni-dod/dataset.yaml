@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: adni-dod
+name: DOD ADNI
+full_name: >-
+  Effects of TBI and PTSD on Alzheimer's Disease in Vietnam Veterans (Department of Defense ADNI, Brain Aging in
+  Vietnam War Veterans)
+summary: >-
+  ADNI-run study of older Vietnam War veterans with traumatic brain injury, PTSD, both or neither, with 3T MRI
+  (structural, diffusion, resting-state fMRI), florbetapir amyloid PET, tau PET, CSF, genetics and cognitive testing
+  to test whether TBI or PTSD raises the risk of Alzheimer's disease.
+homepage: https://adni.loni.usc.edu/about/related-collaborative-studies/
+# Year of the procedures manual version 1.0 (7 December 2012), before enrollment began. The date of the first public
+# data release was not verified.
+year: 2012
+creators:
+  - name: Alzheimer's Disease Neuroimaging Initiative (PI Michael W. Weiner), funded by the US Department of Defense
+    url: https://adni.loni.usc.edu/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, T2starw, dwi, bold]
+tracers: [florbetapir]
+anatomy: [brain]
+conditions: [traumatic_brain_injury, ptsd, mci]
+tasks: [classification, regression, longitudinal]
+countries: [US]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ADNIDOD
+licenses:
+  - license: LicenseRef-ADNIDOD-DUA
+citation:
+  text: >-
+    Add "for the Alzheimer's Disease Neuroimaging Initiative*" to the author line and use the methods and funding text
+    (including DOD award W81XWH-12-2-0012) given in the ADNIDOD Data Use Agreement. Study reference: Weiner MW, et al.
+    Effects of traumatic brain injury and posttraumatic stress disorder on development of Alzheimer's disease in
+    Vietnam Veterans using the Alzheimer's Disease Neuroimaging Initiative: Preliminary report. Alzheimer's & Dementia:
+    TRCI 3(2):177-188 (2017). doi:10.1016/j.trci.2017.02.005
+sources:
+  weiner2017:
+    title: Weiner MW et al. 2017, DOD ADNI preliminary report, Alzheimer's & Dementia TRCI
+    url: https://doi.org/10.1016/j.trci.2017.02.005
+    kind: paper
+  dod-adni-grant:
+    title: DOD ADNI approved grant application (project summary and methods)
+    url: https://adni.loni.usc.edu/wp-content/uploads/2013/09/DOD_ADNI_Approved_Full_Grant.pdf
+    kind: website
+  dod-adni-procedures-manual:
+    title: DOD ADNI Procedures Manual, version 1.0, 7 December 2012
+    url: https://adni.loni.usc.edu/wp-content/uploads/2013/09/DOD-ADNI-PM-12.7.12-FINAL.pdf
+    kind: website
+  adni-related-studies:
+    title: ADNI website, Related collaborative studies (DOD-ADNI)
+    url: https://adni.loni.usc.edu/about/related-collaborative-studies/
+    kind: website
+related: [adni]
+keywords: [Vietnam veterans, traumatic brain injury, PTSD, Alzheimer's disease, amyloid PET, brain MRI, DTI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
