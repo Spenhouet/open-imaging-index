@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tractoinferno
+name: TractoInferno
+full_name: 'TractoInferno: A large-scale, open-source, multi-site database for machine learning dMRI tractography'
+summary: >-
+  Processed brain MRI of 284 healthy adults from six 3T sites: T1w, single-shell diffusion, DTI maps, fODFs, tissue
+  masks and reference tractograms of 30 white matter bundles, split for training and benchmarking machine learning
+  tractography. CC0 on OpenNeuro.
+homepage: https://openneuro.org/datasets/ds003900
+doi: 10.18112/openneuro.ds003900.v1.1.1
+year: 2021
+updated: 2022
+version: 1.1.1
+status: active
+creators:
+  - name: Computer Science Department, University of Sherbrooke (Poulin P, Theaud G, Jodoin PM, Descoteaux M, et al.)
+    url: https://github.com/scil-vital/TractoInferno
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [FR, GB, US, SE, CA]
+vendors: [siemens, philips, ge]
+field_strengths: [3]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003900/versions/1.1.1
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.1 states "License" CC0.
+citation:
+  text: >-
+    Poulin P, Theaud G, Rheault F, et al. TractoInferno - A large-scale, open-source, multi-site database for machine
+    learning dMRI tractography. Scientific Data 9, 725 (2022). doi:10.1038/s41597-022-01833-1
+sources:
+  poulin2022:
+    title: Poulin et al. 2022, TractoInferno, Scientific Data 9, 725
+    url: https://doi.org/10.1038/s41597-022-01833-1
+    kind: paper
+  openneuro-ds003900-v111:
+    title: OpenNeuro ds003900 snapshot 1.1.1 (dataset_description.json, README and CHANGES)
+    url: https://openneuro.org/datasets/ds003900/versions/1.1.1
+    kind: website
+  ds003900-file-tree:
+    title: File tree of the ds003900 repository (CC0), subject folders under derivatives/trainset, validset and testset
+    url: https://github.com/OpenNeuroDatasets/ds003900/tree/master/derivatives
+    kind: computed
+related: [openneuro-ds000030]
+keywords: [tractography, diffusion MRI, white matter bundles, fODF, DTI, machine learning tractography, multi-site]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

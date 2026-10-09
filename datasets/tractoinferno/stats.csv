@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,284,poulin2022,Abstract,"284 of 354 subjects remained after quality control; the file tree also holds 284 subject folders"
+subjects,split=train,198,ds003900-file-tree,derivatives/trainset,subject folders; the paper describes a 70/20/10 split
+subjects,split=validation,58,ds003900-file-tree,derivatives/validset,subject folders
+subjects,split=test,28,ds003900-file-tree,derivatives/testset,subject folders
+subjects,contrast=T1w,284,ds003900-file-tree,anat/*__T1w.nii.gz,every subject folder holds one
+subjects,contrast=dwi,284,ds003900-file-tree,dwi/*__dwi.nii.gz,every subject folder holds one
+subjects,contrast_set=dwi+T1w,284,ds003900-file-tree,anat and dwi folders,
+subjects,condition=healthy,284,poulin2022,"Methods, Datasets",only healthy subjects were included
+subjects,field_strength=3,284,poulin2022,Abstract,all sites used 3T scanners
