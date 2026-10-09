@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ADNIDOD-DUA
+name: ADNIDOD Data Use Agreement
+short_name: ADNIDOD DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ADNIDOD
+version: 'ADNIDOD Data Use Agreement as shown on the LONI IDA application page, read 9 October 2026'
+summary: >-
+  Access for scientific investigation, teaching or planning clinical research after an online application on the LONI
+  IDA. No redistribution of the data in any manner, ADNI credit in the author line with DOD ADNI named in the funding
+  text, and review of every manuscript by the ADNI Data and Publications Committee before journal submission.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I request access to data collected by the Alzheimer's Disease Neuroimaging Initiative (ADNI) for the purpose
+      of scientific investigation, teaching or the planning of clinical research studies and agree to the following
+      terms.
+    note: The agreement neither allows nor forbids commercial use. It limits the purpose to research, teaching and
+      planning of clinical research.
+  product_validation:
+    value: unspecified
+    note: The text limits use to scientific investigation, teaching or the planning of clinical research studies but
+      does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention training models.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address creating derived data. It expects analysis and publication but says nothing
+      about derived datasets.
+  publication:
+    value: conditional
+    quote: 'If I publish manuscripts using data from ADNI, I agree to the following:'
+    note: With ADNI in the by-line, the required methods and funding text, and after review by the Data and
+      Publications Committee.
+  redistribute_original:
+    value: 'no'
+    quote: I will not further disclose these data beyond the uses outlined in this agreement and my data use application
+      and understand that redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement bans redistribution of the data in any manner but does not say whether derived data count as
+      the data.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models or their weights.
+  attribution:
+    value: 'yes'
+    quote: On the by-line of the manuscript, after the named authors, I will include the phrase "for the Alzheimer's
+      Disease Neuroimaging Initiative*" with the asterisk referring to the following statement and list of names
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I request access to data collected by the Alzheimer's Disease Neuroimaging Initiative (ADNI) for the purpose
+      of scientific investigation, teaching or the planning of clinical research studies and agree to the following
+      terms.
+    note: Accepted as part of an online data use application on the LONI IDA.
+  ethics_approval:
+    value: conditional
+    quote: I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting these data.
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'yes'
+    quote: I will submit all manuscripts to the ADNI Data and Publications Committee (DPC) prior to submitting to a
+      journal.
+    note: The review checks citation and acknowledgement, not the science, and takes up to 2 weeks.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: No duty to return data or results. Users must answer annual requests to update information about the people
+      using the data and the planned analyses.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the ADNI subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
