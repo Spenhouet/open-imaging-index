@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,1039,nda-collection-19,shared_subject_count,subjects with shared data in the NDA collection
+subjects,country=US,1039,nda-collection-19,description,all clinical sites are in the US (wolff2012 Methods)

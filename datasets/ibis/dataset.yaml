@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ibis
+name: Infant Brain Imaging Study (IBIS)
+full_name: Infant Brain Imaging Study Network, Longitudinal MRI Study of Infants at Risk for Autism
+summary: >-
+  Longitudinal 3T MRI (T1w, T2w, 25-direction DTI) and behavioral assessments of infant siblings of children with
+  autism and low-risk controls, scanned in natural sleep at 6, 12 and 24 months at four US sites and shared through
+  the NIMH Data Archive.
+homepage: https://ibis-network.com/
+doi: 10.1176/appi.ajp.2011.11091447
+# No dated public release was found; year of the Wolff et al. paper, the first IBIS imaging publication cited here.
+year: 2012
+status: active
+creators:
+  - name: Infant Brain Imaging Study (IBIS) Network, an NIH Autism Center of Excellence
+    url: https://ibis-network.com/our-team/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi]
+anatomy: [brain]
+conditions: [autism]
+tasks: [longitudinal, classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=19
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The data are held in NIMH Data Archive collection 19 and are requested through NDA, whose data use terms every
+      access request accepts. Study-specific clauses of the permission group are not broken down here.
+citation:
+  text: >-
+    Wolff JJ, Gu H, Gerig G, Elison JT, Styner M, Gouttard S, et al.; IBIS Network. Differences in white matter fiber
+    tract development present from 6 to 24 months in infants with autism. Am J Psychiatry 169(6):589-600 (2012).
+    doi:10.1176/appi.ajp.2011.11091447
+sources:
+  wolff2012:
+    title: >-
+      Wolff et al. 2012, Differences in white matter fiber tract development present from 6 to 24 months in infants
+      with autism, Am J Psychiatry (author manuscript PMC3377782)
+    url: https://doi.org/10.1176/appi.ajp.2011.11091447
+    kind: paper
+  hazlett2012:
+    title: >-
+      Hazlett et al. 2012, Brain volume findings in 6-month-old infants at high familial risk for autism, Am J
+      Psychiatry (author manuscript PMC3744332)
+    url: https://doi.org/10.1176/appi.ajp.2012.11091425
+    kind: paper
+  ibis-network-site:
+    title: IBIS Network website
+    url: https://ibis-network.com/
+    kind: website
+  nda-collection-19:
+    title: NIMH Data Archive collection 19 record (Longitudinal MRI Study of Infants at Risk for Autism)
+    url: https://nda.nih.gov/api/collection/19
+    kind: website
+related: [bcp]
+keywords: [infant, autism, infant siblings, familial risk, brain development, pediatric, diffusion MRI, longitudinal, early prediction]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
