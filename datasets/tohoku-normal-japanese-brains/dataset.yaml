@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tohoku-normal-japanese-brains
+name: Tohoku normal Japanese brain database
+full_name: Neuroanatomical database of normal Japanese brains, IDAC, Tohoku University
+summary: >-
+  Brain MRI of 1,547 normal Japanese subjects aged 16 to 79 years, collected at Tohoku University to build age- and
+  sex-specific reference brains and to study age effects on gray and white matter. No public release or terms.
+homepage: https://pubmed.ncbi.nlm.nih.gov/14622886/
+# The data have no public release; year of the paper that describes the database.
+year: 2003
+creators:
+  - name: Institute of Development, Aging and Cancer (IDAC), Tohoku University
+modalities: [MR]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+countries: [JP]
+access:
+  type: on_request
+  url: https://doi.org/10.1016/j.neunet.2003.06.004
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No dataset website, download page or license was found. The paper is not open access and its abstract has no
+      data availability statement, so any access is at the discretion of the Tohoku University group.
+citation:
+  text: >-
+    Sato K, Taki Y, Fukuda H, Kawashima R. Neuroanatomical database of normal Japanese brains. Neural Networks 16(9),
+    1301-1310 (2003). doi:10.1016/j.neunet.2003.06.004
+sources:
+  sato2003:
+    title: Sato et al. 2003, Neural Networks, abstract on PubMed (PMID 14622886)
+    url: https://doi.org/10.1016/j.neunet.2003.06.004
+    kind: paper
+related: []
+keywords: [normal brain, Japanese population, reference brain, voxel-based morphometry, brain aging]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
