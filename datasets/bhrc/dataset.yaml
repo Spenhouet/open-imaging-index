@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bhrc
+name: Brazilian High Risk Cohort (BHRC)
+full_name: Brazilian High Risk Cohort Study for Childhood Psychiatric Disorders
+summary: >-
+  Longitudinal brain MRI (T1w, diffusion, resting-state and task fMRI) of 1,321 young people from a school-based
+  cohort in São Paulo and Porto Alegre enriched for risk of mental disorders, scanned in up to four waves from 2010 to
+  2025, with linked psychiatric and genetic data.
+homepage: https://bhrc.com.br/
+doi: 10.1002/mpr.1459
+year: 2017
+creators:
+  - name: Brazilian High Risk Cohort Study (National Institute of Developmental Psychiatry for Children and Adolescents, INPD)
+    url: https://osf.io/ktz5h/
+  - name: Universidade de São Paulo (USP)
+    url: https://www.usp.br
+  - name: Universidade Federal do Rio Grande do Sul (UFRGS)
+    url: https://www.ufrgs.br
+  - name: Universidade Federal de São Paulo (UNIFESP)
+    url: https://www.unifesp.br
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, bold]
+anatomy: [brain]
+conditions: [adhd, anxiety_disorder, depression, ocd, ptsd, eating_disorder, bipolar_disorder, psychotic_disorder]
+tasks: [longitudinal, regression, classification]
+formats: [BIDS, NIfTI]
+countries: [BR]
+vendors: [ge]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://bhrc.com.br/
+  note: >-
+    Researchers register on the BHRC data portal with an institutional email, submit a proposal naming the variables
+    they need, and after approval by the review committee have a Data Transfer Agreement signed by their institution.
+    Access lasts one year and can be renewed. The BIDS imaging dataset is requested in the proposal's "Additional Data
+    Needs" section.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Access is governed by a Data Transfer Agreement that approved applicants download from the portal. Its text is not
+      published, and neither the portal nor the OSF project states a license for the data.
+citation:
+  text: >-
+    Salum GA, Gadelha A, Pan PM, et al. High risk cohort study for psychiatric disorders in childhood: rationale,
+    design, methods and preliminary results. International Journal of Methods in Psychiatric Research 24(1):58-73
+    (2015). doi:10.1002/mpr.1459
+sources:
+  salum2015:
+    title: Salum et al. 2015, International Journal of Methods in Psychiatric Research
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6878239/
+    kind: paper
+  bhrc-data-portal:
+    title: BHRC Data Portal, home page
+    url: https://bhrc.com.br/
+    kind: website
+  bhrc-osf:
+    title: BHRC OSF project and wiki
+    url: https://osf.io/ktz5h/
+    kind: website
+  bhrc-guide-neuroimaging:
+    title: BHRC Research Data Guide, chapter 10 BHRC neuroimaging data (last updated March 16, 2026)
+    url: https://lucastoshioito.github.io/BHRC/02r02_neuroimaging.html
+    kind: website
+related: []
+keywords: [child psychiatry, high-risk cohort, development, longitudinal, resting-state fMRI, Brazil]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

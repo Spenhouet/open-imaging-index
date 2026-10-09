@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,1321,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",probands with neuroimaging data at any wave; parents scanned in Wave 3 are not included
+studies,,2455,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table","sum of the per-wave samples (Wave 0 743, Wave 1 466, Wave 2 418, Wave 3 828), one imaging session per participant and wave"
+subjects,sex=male,710,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",sex at birth
+subjects,sex=female,611,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",sex at birth
+subjects,country=BR,1321,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, State",São Paulo (666) and Rio Grande do Sul (655)
+subjects,field_strength=3,828,bhrc-guide-neuroimaging,"Sections 10.2 and 10.3.2",Wave 3 probands; Waves 0 to 2 used 1.5 T scanners
+subjects,condition=adhd,267,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+subjects,condition=anxiety_disorder,457,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave, any anxiety disorder"
+subjects,condition=depression,374,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+subjects,condition=ocd,41,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+subjects,condition=ptsd,104,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+subjects,condition=eating_disorder,61,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+subjects,condition=bipolar_disorder,22,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","reported as bipolar disorder or mania, lifetime at any wave"
+subjects,condition=psychotic_disorder,5,bhrc-guide-neuroimaging,"Section 10.2.2, Lifetime column","lifetime DSM-IV diagnosis by DAWBA at any wave"
+age_mean,,23.3,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",age at each participant's most recent imaging assessment
+age_sd,,2.6,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",age at each participant's most recent imaging assessment
+age_median,,23.5,bhrc-guide-neuroimaging,"Section 10.2, Demographic Characteristics table, Overall",age at each participant's most recent imaging assessment
