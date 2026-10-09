@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lcbc
+name: LCBC
+full_name: Center for Lifespan Changes in Brain and Cognition (LCBC) longitudinal sample, University of Oslo
+summary: >-
+  In-house longitudinal lifespan cohort from Oslo: 4,352 MRI scans of 2,017 cognitively healthy participants aged 4
+  to 93 at recruitment, on Siemens 1.5 T and 3 T scanners, with DTI and amyloid PET in subsets. Not public; data on
+  request to the PI.
+homepage: https://www.lcbc.uio.no/english/
+# The cohort has no public release; year of the earliest LCBC cohort paper read for this entry (Fjell et al. 2008).
+year: 2008
+creators:
+  - name: Center for Lifespan Changes in Brain and Cognition, Department of Psychology, University of Oslo (Walhovd KB, Fjell AM)
+    url: https://www.lcbc.uio.no/english/
+modalities: [MR, PT]
+contrasts: [T1w, dwi]
+tracers: [flutemetamol]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal, normative, regression]
+countries: [NO]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+access:
+  type: on_request
+  url: https://doi.org/10.1038/s41593-026-02363-4
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Roe et al. 2026 state that LCBC participants have not consented to share their data publicly online and that
+      LCBC data are available on request to A. M. Fjell, given appropriate ethical and data protection approvals.
+      Sørensen et al. 2021 give the same conditions. No data use terms are published on the LCBC website.
+citation:
+  text: >-
+    Sørensen Ø, Walhovd KB, Fjell AM. A recipe for accurate estimation of lifespan brain trajectories, distinguishing
+    longitudinal and cohort effects. NeuroImage 226, 117596 (2021). doi:10.1016/j.neuroimage.2020.117596
+sources:
+  sorensen2021:
+    title: Sørensen, Walhovd and Fjell 2021, NeuroImage (arXiv:2007.13446v2)
+    url: https://arxiv.org/abs/2007.13446
+    kind: paper
+  sorensen2021-supplement:
+    title: Supplementary material to Sørensen et al. 2021 (OSF xnuhz, supplementary.pdf)
+    url: https://osf.io/xnuhz/
+    kind: paper
+  roe2026:
+    title: Roe et al. 2026, Cortical thickness changes precede high levels of amyloid by at least 7 years, Nature Neuroscience (PMC13533846)
+    url: https://doi.org/10.1038/s41593-026-02363-4
+    kind: paper
+  fjell2008:
+    title: Fjell et al. 2008, The relationship between diffusion tensor imaging and volumetry as measures of white matter properties, NeuroImage (PMC2808804)
+    url: https://doi.org/10.1016/j.neuroimage.2008.06.005
+    kind: paper
+  walhovd2022-supplement:
+    title: Walhovd et al. 2022, Prenatal development has stable and consistent effects on the human brain throughout the lifespan, bioRxiv supplementary information
+    url: https://doi.org/10.1101/2022.12.02.514196
+    kind: paper
+related: []
+keywords: [lifespan, brain development, ageing, longitudinal, cognitively healthy, FreeSurfer, amyloid PET, Norway]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

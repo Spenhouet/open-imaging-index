@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,2017,sorensen2021,"Section 1, Figure 3",healthy participants in the LCBC longitudinal studies as analysed in 2021; first scans from 2006-12-11 to 2020-01-06 (Table S1 of the supplement)
+scans,,4352,sorensen2021,"Section 1, Figure 3",MRI scans with FreeSurfer volumes; includes same-day double scans on two scanners
+subjects,sex=female,1212,sorensen2021-supplement,Table S1,
+subjects,sex=male,805,sorensen2021-supplement,Table S1,
+subjects,condition=healthy,2017,sorensen2021-supplement,Section S1.2,cognitively healthy; screened by health interview and MMSE
+subjects,country=NO,2017,sorensen2021-supplement,Section S1.1,
+age_mean,,30.1,sorensen2021-supplement,Table S1,age at recruitment
+age_min,,4.13,sorensen2021-supplement,Table S1,age at recruitment
+age_max,,93.4,sorensen2021-supplement,Table S1,age at recruitment
+subjects,contrast=T1w,425,roe2026,"Methods, Participants, LCBC",adults aged 30 to 89 with 2 to 7 T1w timepoints (1511 scans) used by Roe et al.; the cohort total is not reported
+subjects,modality=PT,178,roe2026,"Methods, Participants, LCBC",[18F]flutemetamol amyloid PET (242 scans) in participants with longitudinal MRI; the cohort total is not reported
+subjects,tracer=flutemetamol,178,roe2026,"Methods, PET analysis",see the modality=PT row
+subjects,contrast=dwi,100,fjell2008,"Methods, Sample",adults aged 40 to 60 with DTI on 1.5 T Siemens Avanto; the cohort total is not reported
