@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcga-ucec
+name: TCGA-UCEC
+full_name: The Cancer Genome Atlas Uterine Corpus Endometrial Carcinoma Collection
+summary: >-
+  Routine clinical CT, MRI, PET and radiographs of 65 women with endometrial carcinoma from three US sites, matched by
+  patient id to the TCGA clinical, pathology and genomic data in the GDC, for radiogenomic research.
+homepage: https://www.cancerimagingarchive.net/collection/tcga-ucec/
+doi: 10.7937/K9/TCIA.2016.GKJ0ZWAC
+year: 2015
+updated: 2020
+version: '4'
+status: active
+creators:
+  - name: >-
+      Erickson BJ, Mutch D, Lippmann L, Jarosz R (Mayo Clinic, Washington University in St. Louis, MD Anderson
+      Cancer Center)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [CT, MR, PT, CR]
+anatomy: [uterus]
+conditions: [endometrial_carcinoma]
+tasks: [survival, longitudinal]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens, ge, philips, canon]
+size_gb: 37.85
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/tcga-ucec/
+  note: >-
+    DICOM images via the TCIA Data Retriever. Clinical, genomic and histopathology data of the same patients are in
+    the NCI Genomic Data Commons; a clinical snapshot is an open download from the collection page.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/tcga-ucec/
+    note: >-
+      TCIA lists the images under CC BY 3.0. Users must also follow the TCIA Data Usage Policy, which says users must
+      "Not use the requested datasets, either alone or in concert with any other information, to identify or contact
+      individual participants" and must cite the dataset DOI
+      (https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/). Publications are asked to
+      acknowledge the TCGA Research Network.
+citation:
+  text: >-
+    Erickson BJ, Mutch D, Lippmann L, Jarosz R. (2016). The Cancer Genome Atlas Uterine Corpus Endometrial Carcinoma
+    Collection (TCGA-UCEC) (Version 4) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/K9/TCIA.2016.GKJ0ZWAC
+sources:
+  tcia-tcga-ucec:
+    title: TCIA TCGA-UCEC collection page (version 4, updated 2020/05/29)
+    url: https://www.cancerimagingarchive.net/collection/tcga-ucec/
+    kind: website
+  tcia-tcga-ucec-series:
+    title: >-
+      TCIA NBIA API getSeries metadata for TCGA-UCEC (open, no account, CC BY 3.0), counted per patient id from the
+      Modality and Manufacturer fields
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=TCGA-UCEC
+    kind: computed
+  tcia-tcga-ucec-patients:
+    title: TCIA NBIA API getPatient metadata for TCGA-UCEC (open, no account, CC BY 3.0), PatientSex field
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=TCGA-UCEC
+    kind: computed
+  tcia-tcga-ucec-studies:
+    title: >-
+      TCIA NBIA API getPatientStudy metadata for TCGA-UCEC (open, no account, CC BY 3.0), PatientAge of each
+      patient's earliest study
+    url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatientStudy?Collection=TCGA-UCEC
+    kind: computed
+related: []
+keywords: [endometrial cancer, uterine cancer, TCGA, radiogenomics, abdominal CT, pelvic MRI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

@@ -160,6 +160,12 @@ terms:
     }
   - { id: colorectal_cancer, label: Colorectal cancer, mappings: { mondo: 'MONDO:0005575' } }
   - {
+      id: endometrial_carcinoma,
+      label: Endometrial carcinoma,
+      synonyms: [endometrial cancer, uterine corpus endometrial carcinoma, UCEC],
+      mappings: { mondo: 'MONDO:0002447' }
+    }
+  - {
       id: head_neck_cancer,
       label: Head and neck squamous cell carcinoma,
       synonyms: [HNSCC],

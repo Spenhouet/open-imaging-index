@@ -1,0 +1,34 @@
+measure,by,value,source,where,note
+subjects,,65,tcia-tcga-ucec,Data Access table,
+studies,,226,tcia-tcga-ucec,Data Access table,
+scans,,912,tcia-tcga-ucec,Data Access table,DICOM series
+images,,77214,tcia-tcga-ucec,Data Access table,DICOM images (slices)
+subjects,modality=CT,65,tcia-tcga-ucec-series,Modality,
+subjects,modality=MR,8,tcia-tcga-ucec-series,Modality,
+subjects,modality=PT,5,tcia-tcga-ucec-series,Modality,
+subjects,modality=CR,1,tcia-tcga-ucec-series,Modality,
+studies,modality=CT,217,tcia-tcga-ucec-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+studies,modality=MR,8,tcia-tcga-ucec-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+studies,modality=PT,11,tcia-tcga-ucec-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+studies,modality=CR,1,tcia-tcga-ucec-series,Modality,distinct StudyInstanceUID with at least one series of this modality
+scans,modality=CT,764,tcia-tcga-ucec-series,Modality,DICOM series
+scans,modality=MR,108,tcia-tcga-ucec-series,Modality,DICOM series
+scans,modality=PT,37,tcia-tcga-ucec-series,Modality,DICOM series
+scans,modality=CR,3,tcia-tcga-ucec-series,Modality,DICOM series
+subjects,vendor=siemens,44,tcia-tcga-ucec-series,Manufacturer,"SIEMENS and SIEMENS NM; subjects with at least one series from this vendor"
+subjects,vendor=ge,36,tcia-tcga-ucec-series,Manufacturer,subjects with at least one series from this vendor
+subjects,vendor=canon,6,tcia-tcga-ucec-series,Manufacturer,Toshiba; subjects with at least one series from this vendor
+subjects,vendor=philips,4,tcia-tcga-ucec-series,Manufacturer,subjects with at least one series from this vendor
+subjects,sex=female,65,tcia-tcga-ucec-patients,PatientSex,
+subjects,age=30-39,1,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=40-49,6,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=50-59,16,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=60-69,22,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=70-79,17,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=80-89,1,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+subjects,age=90-99,1,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out; recorded as 090Y"
+age_mean,,62.9,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+age_sd,,10.7,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+age_median,,64,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+age_min,,30,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"
+age_max,,90,tcia-tcga-ucec-studies,PatientAge,"age at the earliest archived study; 64 of 65 subjects, one subject whose earliest study has no PatientAge is left out"

@@ -31,6 +31,7 @@ terms:
   - { id: prostate, label: Prostate, mappings: { uberon: 'UBERON:0002367' } }
   - { id: cervix, label: Cervix, mappings: { uberon: 'UBERON:0000002' } }
   - { id: ovary, label: Ovary, mappings: { uberon: 'UBERON:0000992' } }
+  - { id: uterus, label: Uterus, mappings: { uberon: 'UBERON:0000995' } }
   - { id: lymph_node, label: Lymph node, mappings: { uberon: 'UBERON:0000029' } }
   - { id: knee, label: Knee, mappings: { uberon: 'UBERON:0001465' } }
   - { id: hip, label: Hip, mappings: { uberon: 'UBERON:0001464' } }
