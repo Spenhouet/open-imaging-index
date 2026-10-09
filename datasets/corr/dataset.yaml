@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: corr
+name: CoRR
+full_name: Consortium for Reliability and Reproducibility
+summary: >-
+  Test-retest MRI from 1,629 typical individuals across 18 institutions: 5,093 resting-state fMRI scans plus T1-weighted,
+  diffusion and ASL scans, aggregated by INDI to measure reliability and reproducibility of connectome metrics.
+homepage: https://fcon_1000.projects.nitrc.org/indi/CoRR/html/
+doi: 10.1038/sdata.2014.49
+year: 2014
+status: active
+creators:
+  - name: Consortium for Reliability and Reproducibility (founders Xi-Nian Zuo and Michael P. Milham)
+    url: https://fcon_1000.projects.nitrc.org/indi/CoRR/html/
+  - name: 1000 Functional Connectomes Project / International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [CN, US, DE, CA]
+vendors: [siemens, ge, philips]
+field_strengths: [3, 7]
+access:
+  type: registration
+  url: https://fcon_1000.projects.nitrc.org/indi/CoRR/html/download.html
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      CoRR is shared through INDI. Downloads from NITRC need a NITRC login and registration with the 1000 Functional
+      Connectomes Project / INDI group; the INDI home page grants non-commercial use after registration. COINS also
+      requires a user login.
+citation:
+  text: >-
+    Zuo XN, Anderson JS, Bellec P, et al. An open science resource for establishing reliability and reproducibility
+    in functional connectomics. Scientific Data 1:140049 (2014). doi:10.1038/sdata.2014.49
+sources:
+  zuo2014:
+    title: Zuo et al. 2014, Scientific Data (data descriptor)
+    url: https://doi.org/10.1038/sdata.2014.49
+    kind: paper
+  corr-data-description:
+    title: CoRR Data Description page, FCP/INDI (dataset and scan totals, site list)
+    url: https://fcon_1000.projects.nitrc.org/indi/CoRR/html/samples.html
+    kind: website
+related: [fcp-1000, adhd-200, abide-i]
+keywords: [test-retest, reliability, reproducibility, resting-state fMRI, functional connectomics, diffusion MRI, multi-site, INDI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
