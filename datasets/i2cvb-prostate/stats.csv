@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,19,lemaitre2016-thesis,"Section 4.2.2, p. 96",3 T Siemens set; a DCE-MRI preprint by the same group describes 20 patients from the same scanner
+subjects,condition=prostate_cancer,17,lemaitre2016-thesis,"Section 4.2.2, p. 96","biopsy-proven; 12 peripheral zone, 3 central gland, 2 both"
+subjects,condition=healthy,2,lemaitre2016-thesis,"Section 4.2.2, p. 96",negative biopsy
+subjects,field_strength=3,19,lemaitre2016-thesis,"Section 4.2.2, p. 96",
+subjects,vendor=siemens,19,lemaitre2016-thesis,"Section 4.2.2, p. 96",Siemens Magnetom Trio TIM
