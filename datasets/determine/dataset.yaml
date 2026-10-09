@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: determine
+name: DETERMINE (Cardiac Atlas Project)
+full_name: Defibrillators to Reduce Risk by Magnetic Resonance Imaging Evaluation, Cardiac Atlas Project collection
+summary: >-
+  Cardiac MRI of 450 patients with coronary artery disease and myocardial infarction from the multicentre DETERMINE
+  trial, hosted by the Cardiac Atlas Project: cine SSFP and late gadolinium enhancement images with core-lab contours
+  and 3D left ventricular models, shared under a per-project agreement.
+homepage: https://www.cardiacatlas.org/determine/
+year: 2011
+status: active
+creators:
+  - name: DETERMINE investigators (contributor Daniel C. Lee, Northwestern University)
+    url: https://www.cardiacatlas.org/determine/
+  - name: Cardiac Atlas Project (University of Auckland and University of California Los Angeles)
+    url: https://www.cardiacatlas.org/
+species: human
+modalities: [MR]
+contrasts: [cine, lge]
+anatomy: [heart]
+conditions: [myocardial_infarction]
+tasks: [segmentation]
+formats: [DICOM]
+vendors: [siemens, ge, philips]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://www.cardiacatlas.org/determine/
+licenses:
+  - license: LicenseRef-CAP-DETERMINE-DDA
+citation:
+  text: >-
+    Fonseca CG, Backhaus M, Bluemke DA, Britten RD, Chung JD, Cowan BR, Dinov ID, Finn JP, Hunter PJ, Kadish AH, Lee
+    DC, Lima JAC, Medrano-Gracia P, Shivkumar K, Suinesiaputra A, Tao W, Young AA. The Cardiac Atlas Project: an
+    imaging database for computational modeling and statistical atlases of the heart. Bioinformatics 27(16),
+    2288-2295 (2011). doi:10.1093/bioinformatics/btr360
+sources:
+  cap-determine:
+    title: Cardiac Atlas Project, DETERMINE dataset page
+    url: https://www.cardiacatlas.org/determine/
+    kind: website
+  fonseca2011:
+    title: Fonseca et al. 2011, Bioinformatics (author copy on the Cardiac Atlas Project site)
+    url: https://cardiacatlasproject.isd.kcl.ac.uk/wp-content/uploads/2022/11/Fonseca_Bioinformatics_2011.pdf
+    kind: paper
+related: []
+keywords: [cardiac MRI, cine MRI, late gadolinium enhancement, myocardial infarction, left ventricle, shape atlas]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
