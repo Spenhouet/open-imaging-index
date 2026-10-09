@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: slim
+name: SLIM
+full_name: Southwest University Longitudinal Imaging Multimodal Brain Data Repository
+summary: >-
+  Longitudinal test-retest MRI of 594 healthy Chinese undergraduates scanned up to three times over about three and a
+  half years at 3 T: T1-weighted MPRAGE, resting-state fMRI and diffusion imaging, with behavioral and QA measures.
+homepage: https://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html
+doi: 10.15387/fcp_indi.retro.slim
+year: 2017
+status: active
+creators:
+  - name: Brain Imaging Center and Faculty of Psychology, Southwest University (Jiang Qiu)
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal, normative]
+formats: [NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 124.4
+access:
+  type: open
+  url: https://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement, and the
+      data descriptor names CC-BY-NC as the data license. The images and phenotype files download from the public
+      fcp-indi S3 bucket without an account. The data descriptor asks users to cite it and acknowledge the original
+      authors and lab.
+citation:
+  text: >-
+    Liu W, Wei D, Chen Q, Yang W, Meng J, Wu G, Bi T, Zhang Q, Zuo XN, Qiu J. Longitudinal test-retest neuroimaging
+    data from healthy young adults in southwest China. Scientific Data 4, 170017 (2017). doi:10.1038/sdata.2017.17
+sources:
+  liu2017:
+    title: Liu et al. 2017, Longitudinal test-retest neuroimaging data from healthy young adults in southwest China,
+      Scientific Data
+    url: https://doi.org/10.1038/sdata.2017.17
+    kind: paper
+  indi-slim-page:
+    title: SWU SLIM release page, FCP/INDI Retrospective
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html
+    kind: website
+  slim-phenodata:
+    title: >-
+      Phenotype files swu_slim_phenodata_time1.tsv, swu_slim_phenodata_time2.tsv and swu_slim_phenodata_time3.tsv
+      (CC BY-NC per the release page) in the public SLIM folder of the fcp-indi S3 bucket
+    url: https://fcp-indi.s3.amazonaws.com/?prefix=data/Projects/INDI/SLIM/
+    kind: computed
+related: [sald, corr]
+keywords: [longitudinal, test-retest, young adults, resting-state fMRI, diffusion MRI, INDI, Southwest University]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

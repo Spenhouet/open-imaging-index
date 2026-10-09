@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,594,slim-phenodata,column Match_ID in all three files,"unique ids; the paper gives 121 subjects with three sessions, 211 with two and 263 with one, which adds up to 595"
+studies,,1048,slim-phenodata,rows of all three files,"580, 240 and 228 sessions at time points 1, 2 and 3, the same as the paper"
+subjects,sex=female,330,slim-phenodata,column Sex,
+subjects,sex=male,264,slim-phenodata,column Sex,four rows carry stray characters after the word male and are counted as male
+subjects,contrast=T1w,594,slim-phenodata,column anat,MPRAGE in at least one session
+subjects,contrast=bold,592,slim-phenodata,column func,8-minute resting-state scan in at least one session
+subjects,contrast=dwi,594,slim-phenodata,column DTI,30-direction DTI in at least one session
+studies,contrast=T1w,1048,slim-phenodata,column anat,
+studies,contrast=bold,1045,slim-phenodata,column func,
+studies,contrast=dwi,1029,slim-phenodata,column DTI,
+studies,contrast_set=bold+dwi+T1w,1026,slim-phenodata,"columns anat, func and DTI",
+studies,contrast_set=bold+T1w,19,slim-phenodata,"columns anat, func and DTI",
+studies,contrast_set=dwi+T1w,3,slim-phenodata,"columns anat, func and DTI",
+subjects,age=10-19,189,slim-phenodata,swu_slim_phenodata_time1.tsv column age_at_Scan1,age at the first scan; only the 580 subjects scanned at time point 1 have an age
+subjects,age=20-29,391,slim-phenodata,swu_slim_phenodata_time1.tsv column age_at_Scan1,age at the first scan
+subjects,sex=female;age=10-19,122,slim-phenodata,swu_slim_phenodata_time1.tsv columns Sex and age_at_Scan1,age at the first scan
+subjects,sex=male;age=10-19,67,slim-phenodata,swu_slim_phenodata_time1.tsv columns Sex and age_at_Scan1,age at the first scan
+subjects,sex=female;age=20-29,201,slim-phenodata,swu_slim_phenodata_time1.tsv columns Sex and age_at_Scan1,age at the first scan
+subjects,sex=male;age=20-29,190,slim-phenodata,swu_slim_phenodata_time1.tsv columns Sex and age_at_Scan1,age at the first scan
+age_min,,17,liu2017,Methods: Overall design,at time point 1
+age_max,,27,liu2017,Methods: Overall design,at time point 1
+age_mean,,20.08,liu2017,Methods: Overall design,at time point 1
+age_median,,20,liu2017,Methods: Overall design,at time point 1
+age_sd,,1.3,slim-phenodata,swu_slim_phenodata_time1.tsv column age_at_Scan1,at time point 1
