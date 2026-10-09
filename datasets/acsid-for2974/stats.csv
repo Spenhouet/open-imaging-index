@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,83,krikova2026,Abstract,male participants enrolled in the RP3 appetitive conditioning and extinction fMRI study (25 with gaming disorder; 23 with risky gaming; 35 non-problematic users); the only imaging sample size found for the research unit. Sample sizes of the other fMRI subprojects are not published
+subjects,sex=male,83,krikova2026,Abstract,
+subjects,contrast=bold,83,krikova2026,Abstract,BOLD responses recorded in acquisition; extinction and extinction recall
+subjects,contrast=T1w,31,krikova2024,Section 2.6,structural T1-weighted scans reported for the 31 analysed healthy controls of the RP3 project; not reported for the full sample
+subjects,vendor=siemens,31,krikova2024,Section 2.6,Siemens MAGNETOM Prisma with a 64-channel head coil; scanner not stated in the abstract of Krikova 2026
+subjects,field_strength=3,31,krikova2024,Section 2.6,

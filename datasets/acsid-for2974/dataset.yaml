@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: acsid-for2974
+name: ACSID (FOR2974)
+full_name: 'FOR2974: Affective and cognitive mechanisms of specific Internet-use disorders (ACSID)'
+summary: >-
+  German multi-site DFG research unit on gaming, pornography, buying-shopping and social-networks use disorders. Some
+  subprojects add task fMRI, e.g. an appetitive conditioning and extinction study in 83 men on 3 T Siemens MRI.
+  Images are not public; data on request.
+homepage: https://osf.io/n5cd7/
+# The imaging data have no public release; year of the first paper found that reports fMRI data of the research unit.
+year: 2024
+status: active
+creators:
+  - name: DFG Research Unit FOR2974 (spokesperson Matthias Brand, University of Duisburg-Essen)
+    url: https://www.uni-due.de/for2974/index_eng.php
+  - name: Department of Psychotherapy and Systems Neuroscience and Bender Institute for Neuroimaging, Justus Liebig University Giessen (fMRI subproject RP3)
+    url: https://www.uni-giessen.de/
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1002/hbm.26711
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The data availability statement of Krikova et al. 2024 says the data are available on request from the
+      corresponding author and are not public because of privacy or ethical restrictions. The OSF project holds
+      preregistrations and study materials but no imaging data, and states no license. No terms are published.
+citation:
+  text: >-
+    Brand M, Müller A, Stark R, Steins-Loeber S, Klucken T, Montag C, Diers M, Wolf OT, Rumpf HJ, Wölfling K, Wegmann E.
+    Addiction Research Unit: Affective and cognitive mechanisms of specific Internet-use disorders. Addiction Biology
+    26(6), e13087 (2021). doi:10.1111/adb.13087
+sources:
+  osf-for2974:
+    title: 'OSF project n5cd7, FOR2974: Affective and cognitive mechanisms of specific Internet-use disorders (ACSID)'
+    url: https://osf.io/n5cd7/
+    kind: website
+  for2974-home:
+    title: FOR2974 research unit website, University of Duisburg-Essen
+    url: https://www.uni-due.de/for2974/index_eng.php
+    kind: website
+  for2974-subprojects-fp2:
+    title: FOR2974 website, subprojects of the second funding period
+    url: https://www.uni-due.de/for2974/teilprojekte-fp2.php
+    kind: website
+  brand2021:
+    title: Brand et al. 2021, Addiction Biology
+    url: https://doi.org/10.1111/adb.13087
+    kind: paper
+  krikova2024:
+    title: Krikova et al. 2024, Human Brain Mapping (PMC11128778)
+    url: https://doi.org/10.1002/hbm.26711
+    kind: paper
+  krikova2026:
+    title: Krikova et al. 2026, Behavioural Brain Research
+    url: https://doi.org/10.1016/j.bbr.2026.116341
+    kind: paper
+related: []
+keywords:
+  [internet-use disorders, gaming disorder, pornography use disorder, behavioral addiction, task fMRI, cue reactivity, appetitive conditioning]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
