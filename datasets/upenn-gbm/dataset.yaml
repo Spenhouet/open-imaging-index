@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: upenn-gbm
+name: UPENN-GBM
+full_name: University of Pennsylvania Glioblastoma Imaging, Genomics, and Radiomics
+summary: >-
+  Multi-parametric brain MRI (T1, contrast-enhanced T1, T2, FLAIR, DTI, DSC) of 630 de novo glioblastoma patients
+  from the University of Pennsylvania, with tumor sub-region segmentations, survival, IDH and MGMT data, radiomic
+  features and a few H&E slides.
+homepage: https://www.cancerimagingarchive.net/collection/upenn-gbm/
+doi: 10.7937/TCIA.709X-DN49
+year: 2021
+updated: 2022
+version: '2'
+status: active
+creators:
+  - name: Center for Biomedical Image Computing and Analytics (CBICA), University of Pennsylvania (Bakas S., Davatzikos C. et al.)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, SM]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi, dsc, he]
+anatomy: [brain]
+conditions: [glioblastoma]
+tasks: [segmentation, survival, classification, longitudinal]
+formats: [DICOM, NIfTI, NDPI]
+countries: [US]
+vendors: [siemens, ge]
+field_strengths: [1.5, 3]
+size_gb: 357.42
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/upenn-gbm/
+  note: >-
+    DICOM via the TCIA Data Retriever; pre-processed NIfTI images, segmentations and histopathology slides via IBM
+    Aspera; clinical, acquisition and radiomic tables as direct CSV downloads.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/upenn-gbm/
+    note: >-
+      Every item on the TCIA collection page is listed under CC BY 4.0. TCIA also asks users to follow its Data Usage
+      Policy and to cite the dataset DOI.
+citation:
+  text: >-
+    Bakas S, Sako C, Akbari H, et al. The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI,
+    clinical, genomics, & radiomics. Scientific Data 9, 453 (2022). https://doi.org/10.1038/s41597-022-01560-7.
+    Data: Bakas S, et al. (2021). Multi-parametric magnetic resonance imaging (mpMRI) scans for de novo Glioblastoma
+    (GBM) patients from the University of Pennsylvania Health System (UPENN-GBM) (Version 2) [Data set]. The Cancer
+    Imaging Archive. https://doi.org/10.7937/TCIA.709X-DN49
+sources:
+  bakas2022:
+    title: Bakas et al. 2022, Scientific Data 9, 453
+    url: https://doi.org/10.1038/s41597-022-01560-7
+    kind: paper
+  tcia-upenn-gbm:
+    title: TCIA UPENN-GBM collection page (version 2, updated 2022-10-24)
+    url: https://www.cancerimagingarchive.net/collection/upenn-gbm/
+    kind: website
+  tcia-upenn-gbm-clinical:
+    title: UPENN-GBM clinical table v2.1 (CC BY 4.0, open download), age at the first available scan per subject
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/UPENN-GBM_clinical_info_v2.1.csv
+    kind: computed
+  tcia-upenn-gbm-availability:
+    title: UPENN-GBM data availability per subject table (CC BY 4.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/UPENN-GBM_data_availability.csv
+    kind: computed
+  tcia-upenn-gbm-acquisition:
+    title: UPENN-GBM image acquisition parameters table (CC BY 4.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/UPENN-GBM_acquisition.csv
+    kind: computed
+related: [brats-2021]
+keywords: [glioblastoma, brain tumor segmentation, radiogenomics, radiomics, overall survival, IDH, MGMT, perfusion, DTI]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

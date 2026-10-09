@@ -9,6 +9,7 @@ terms:
   - { id: JPEG, label: JPEG }
   - { id: TIFF, label: TIFF / OME-TIFF }
   - { id: SVS, label: SVS, description: Aperio whole-slide format }
+  - { id: NDPI, label: NDPI, description: Hamamatsu NanoZoomer whole-slide format }
   - { id: HDF5, label: HDF5 }
   - { id: MINC, label: MINC }
   - { id: ANALYZE, label: Analyze 7.5 }
