@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,48,indi-beijing-eoec-page,Summary,
+subjects,condition=healthy,48,indi-beijing-eoec-page,Summary,healthy controls from a student community sample
+subjects,contrast=bold,48,indi-beijing-eoec-page,Summary,three resting-state runs per participant
+subjects,contrast=T1w,48,indi-beijing-eoec-page,Summary,defaced MPRAGE released for every participant
+subjects,contrast=dwi,48,indi-beijing-eoec-page,Summary,64-direction DTI for every participant
+subjects,contrast_set=bold+dwi+T1w,48,indi-beijing-eoec-page,Summary,the page lists all three scan types for every participant
+subjects,country=CN,48,indi-beijing-eoec-page,Summary,
+subjects,vendor=siemens,48,indi-beijing-eoec-rest-protocol,p. 1,protocol printouts name a Siemens MAGNETOM TrioTim
