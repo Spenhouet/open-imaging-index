@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: arwibo
+name: ARWiBo
+full_name: Alzheimer's Disease Repository Without Borders
+summary: >-
+  Cross-sectional repository from IRCCS Fatebenefratelli, Brescia, Italy, with data of more than 2700 people (healthy
+  elderly controls, MCI and Alzheimer's disease): 1.0 T and 1.5 T structural MRI, DTI, fMRI, FDG PET, SPECT, EEG and
+  clinical data. Access by application through neuGRID.
+homepage: http://www.arwibo.it
+doi: 10.1016/j.jalz.2009.04.1235
+# Year of the reference paper the data use agreement cites for ARWiBo. The website does not give a release date.
+year: 2009
+status: active
+creators:
+  - name: Laboratory of Alzheimer's Neuroimaging and Epidemiology, IRCCS Fatebenefratelli, Brescia
+    url: http://www.arwibo.it
+species: human
+modalities: [MR, PT, NM]
+contrasts: [T1w, T2w, PDw, T2starw, FLAIR, dwi, bold]
+tracers: [fdg]
+anatomy: [brain]
+conditions: [healthy, mci, alzheimers]
+countries: [IT]
+field_strengths: [1, 1.5]
+access:
+  type: application
+  url: https://neugrid2.eu/
+licenses:
+  - license: LicenseRef-ARWiBo-DUA
+citation:
+  text: >-
+    Frisoni GB, Prestia A, Zanetti O, et al. Markers of Alzheimer's disease in a population attending a memory clinic.
+    Alzheimer's & Dementia 5(4):307-317 (2009). doi:10.1016/j.jalz.2009.04.1235
+sources:
+  arwibo-home:
+    title: ARWiBo website, home page (Explore data panel)
+    url: http://www.arwibo.it
+    kind: website
+  arwibo-dua:
+    title: ARWiBo Data Use Agreement and Publication Policy
+    url: http://www.arwibo.it/pdf/agreement_policy.pdf
+    kind: website
+  frisoni2009:
+    title: Frisoni GB et al. 2009, Markers of Alzheimer's disease in a population attending a memory clinic, Alzheimer's
+      & Dementia
+    url: https://doi.org/10.1016/j.jalz.2009.04.1235
+    kind: paper
+related: []
+keywords: [Alzheimer's disease, MCI, memory clinic, brain MRI, FDG PET, SPECT, EEG, neuGRID]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

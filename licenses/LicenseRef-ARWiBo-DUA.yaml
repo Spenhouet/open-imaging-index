@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ARWiBo-DUA
+name: ARWiBo Data Use Agreement and Publication Policy
+short_name: ARWiBo DUA
+url: http://www.arwibo.it/pdf/agreement_policy.pdf
+version: 'Undated PDF, file created 1 July 2025'
+summary: >-
+  Data are released to approved investigators for scientific or clinical investigation after an application and a data
+  use agreement. Raw data may not be redistributed, sharing derived data needs the PI's agreement, AI tools without
+  data containment guarantees are not allowed, and manuscripts go to ARWiBo staff before submission.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: I request access to data stored in the Alzheimer's Disease Repository Without Borders (ARWiBo) for the
+      purpose of scientific or clinical investigation, and agree to the following terms
+    note: Commercial use is not mentioned. Use is limited to scientific or clinical investigation within the approved
+      application.
+  model_training:
+    value: conditional
+    quote: I will not utilize AI tools, especially (but not exclusively) those with public-facing interfaces, which do
+      not offer guarantees regarding the containment of data inputs for ARWiBo data.
+    note: Only AI tools that keep the data contained may be used, and only for the approved analyses.
+  derivatives:
+    value: conditional
+    quote: I will not disclose any derived datasets beyond the uses outlined in this agreement.
+    note: Derived datasets may be made for the uses in the agreement and the data use application.
+  publication:
+    value: conditional
+    quote: Reports and publication of summary (not participant-level) data are allowed.
+    note: Publications need the group authorship line, the methods and funding acknowledgements, and review by ARWiBo
+      staff before submission.
+  redistribute_original:
+    value: 'no'
+    quote: I understand that redistribution of primary (i.e., raw unprocessed individual participant-level) data in any
+      manner is prohibited.
+  redistribute_derivatives:
+    value: conditional
+    quote: I understand that the distribution of secondary data (e.g. post-processed images) should be agreed with the
+      Principal Investigator of ARWiBo, who will determine if and how data may be distributed.
+    note: Sharing derived data such as processed images needs the agreement of the ARWiBo Principal Investigator.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models.
+  attribution:
+    value: 'yes'
+    quote: I will cite ARWiBo as the source of data as the editorial policy allows.
+    note: Manuscripts also add "and the Alzheimer's Disease Repository Without Borders Investigators" to the by-line.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Users will complete a web-based application form and a Data Use Agreement.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'yes'
+    quote: 'I will submit all manuscripts to the ARWiBo staff at the following e-mail box: info@arwibo.it prior to submit
+      it to a journal.'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: I will provide a copy of the manuscript to the ARWiBo staff upon publication of the manuscript.
+    note: Only publications and annual updates on manuscripts are returned, not derived data.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the ARWiBo subjects.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
