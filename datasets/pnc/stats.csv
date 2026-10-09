@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,1000,satterthwaite2016,Table 1,"imaging subsample in dbGaP as described in 2015; the dbGaP page states that the second release added image data of over 500 subjects, without an imaging total"
+subjects,contrast=T1w,1000,satterthwaite2016,Table 1,MPRAGE
+subjects,contrast=asl,942,satterthwaite2016,Table 1,pCASL
+subjects,contrast=dwi,885,satterthwaite2016,Table 1,64 directions in two runs of 32
+subjects,field_strength=3,1000,satterthwaite2016,Multi-modal neuroimaging,single Siemens TIM Trio
+subjects,vendor=siemens,1000,satterthwaite2016,Multi-modal neuroimaging,
+subjects,country=US,1000,satterthwaite2016,Study overview,greater Philadelphia area
+age_min,,8,satterthwaite2016,Study overview,"""children ages 8-21"""
+age_max,,21,satterthwaite2016,Study overview,"""children ages 8-21"""

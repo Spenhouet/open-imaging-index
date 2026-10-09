@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pnc
+name: Philadelphia Neurodevelopmental Cohort (PNC)
+full_name: 'Philadelphia Neurodevelopmental Cohort (dbGaP: Neurodevelopmental Genomics: Trajectories of Complex Phenotypes)'
+summary: >-
+  Community cohort of youth aged 8 to 21 from the Philadelphia area with genotypes, psychiatric and cognitive
+  phenotypes, and single-scanner 3T multimodal MRI (T1w, ASL, diffusion, resting-state and task fMRI) of a 1,000-subject
+  subsample, shared through dbGaP.
+homepage: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607
+doi: 10.1016/j.neuroimage.2015.03.056
+year: 2014
+version: phs000607.v3.p2
+status: active
+creators:
+  - name: Brain Behavior Laboratory, Perelman School of Medicine, University of Pennsylvania
+  - name: Center for Applied Genomics, Children's Hospital of Philadelphia
+species: human
+modalities: [MR]
+contrasts: [T1w, asl, bold, dwi]
+anatomy: [brain]
+tasks: [normative, regression]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login
+  note: >-
+    Imaging, genotype and phenotype data are released together under dbGaP study phs000607. A principal investigator
+    with eRA Commons credentials submits a Data Access Request with a research use statement, signed by their
+    institution and reviewed by the NIH Joint Addiction, Aging, and Mental Health Data Access Committee.
+licenses:
+  - license: LicenseRef-dbGaP-DUC-phs000607
+    url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607
+citation:
+  text: >-
+    Satterthwaite TD, Connolly JJ, Ruparel K, et al. The Philadelphia Neurodevelopmental Cohort: A publicly available
+    resource for the study of normal and abnormal brain development in youth. NeuroImage 124:1115-1119 (2016).
+    https://doi.org/10.1016/j.neuroimage.2015.03.056. Neuroimaging data: Satterthwaite TD, Elliott MA, Ruparel K, et
+    al. Neuroimaging of the Philadelphia Neurodevelopmental Cohort. NeuroImage 86:544-553 (2014).
+    https://doi.org/10.1016/j.neuroimage.2013.07.064
+sources:
+  dbgap-phs000607:
+    title: dbGaP study page phs000607.v3.p2, Neurodevelopmental Genomics, Trajectories of Complex Phenotypes
+    url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607
+    kind: website
+  satterthwaite2016:
+    title: Satterthwaite et al. 2016, NeuroImage (PMC4591095)
+    url: https://doi.org/10.1016/j.neuroimage.2015.03.056
+    kind: paper
+  satterthwaite2014:
+    title: Satterthwaite et al. 2014, Neuroimaging of the Philadelphia Neurodevelopmental Cohort, NeuroImage (PMC3947233)
+    url: https://doi.org/10.1016/j.neuroimage.2013.07.064
+    kind: paper
+related: []
+keywords: [neurodevelopment, adolescence, psychosis spectrum, genomics, arterial spin labeling, resting-state fMRI, n-back]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

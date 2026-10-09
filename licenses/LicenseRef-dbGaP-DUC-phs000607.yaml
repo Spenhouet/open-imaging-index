@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-dbGaP-DUC-phs000607
+name: NIH Data Use Certification Agreement for dbGaP study phs000607 (Philadelphia Neurodevelopmental Cohort)
+short_name: dbGaP DUC phs000607
+url: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?view_pdf&stacc=phs000607.v3.p2
+version: 'Data Use Certification Agreement ver. January 25, 2025, with the phs000607.v3.p2 study addendum (GRU-NPU)'
+summary: >-
+  NIH controlled-access terms for the PNC on dbGaP. A senior investigator and their institution request access for a
+  described project, renewed yearly. The consent group allows use by not-for-profit organizations only and limits
+  research to genotype-phenotype associations. No redistribution, no sale, no re-identification, acknowledgement of
+  the investigators, funder and accession, and destruction of the data at project close-out.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Non-profit use only.
+    note: >-
+      From the data use limitation of the study addendum (consent group GRU-NPU). The model agreement allows commercial
+      products built on knowledge gained from the research, but the addendum overrides it for this study, and the data
+      and Data Derivatives "may not be sold to any individual at any point in time for any purpose."
+  product_validation:
+    value: 'no'
+    quote: Use of the data is limited to not-for-profit organizations.
+    note: >-
+      From the study addendum. The clause limits who may use the data, so companies cannot use it to test or validate a
+      product. Any use must also fall within a Data Access Request approved by NIH.
+  model_training:
+    value: unspecified
+    note: >-
+      The agreement does not mention machine learning. Any training must fall within the approved research project,
+      and the addendum restricts research to genotype-phenotype and molecular phenotype-phenotype associations.
+  derivatives:
+    value: conditional
+    quote: >-
+      The Requester and Approved Users acknowledge NIH’s expectation that they have reviewed and agree to manage the
+      requested controlled-access data and any Data Derivatives according to NIH’s expectations set forth in the
+      current NIH Security Best Practices for Users of Controlled-Access Data and the Requester’s IT security
+      requirements and policies.
+    note: Derived data may be created within the approved project but are bound by the same terms and destroyed at
+      close-out.
+  publication:
+    value: 'yes'
+    quote: >-
+      Approved Users are strongly encouraged to publish their results in peer-reviewed journals and to present research
+      findings at scientific meetings.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The Requester and Approved Users agree not to distribute controlled-access data and any Data Derivates to any
+      entity or individual not identified in the approved request without appropriate written approvals from the NIH.
+    note: Collaborators at other institutions need their own approved request.
+  redistribute_derivatives:
+    value: 'no'
+    quote: >-
+      The Requester and Approved Users agree not to distribute controlled-access data and any Data Derivates to any
+      entity or individual not identified in the approved request without appropriate written approvals from the NIH.
+    note: Only with written approval from the NIH.
+  share_model_weights:
+    value: unspecified
+    note: >-
+      The agreement does not mention models. Its definition of Data Derivatives ("Data derived from controlled-access
+      datasets") may cover them.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Approved Users further agree that the acknowledgment shall include the dbGaP accession number to the specific
+      version of the dataset(s) analyzed.
+    note: >-
+      Acknowledge the submitting investigators, the funder and the repository. The addendum asks publications to cite
+      Satterthwaite et al. 2014 for the neuroimaging data and further papers for clinical, cognitive and genotype data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      A request submitted by a Principal Investigator to a NIH Data Access Committee for access to controlled-access
+      data from a NIH-designated data repository. The DAR is signed by the PI requesting the data and their
+      Institutional Signing Official.
+    note: The principal investigator must be at the level of a tenure-track professor or senior scientist, not a
+      student, postdoc or trainee. Access lasts one year and must be renewed or closed out.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      Approved Users may be required to have IRB approval if they have access to personal identifying information for
+      research participants in the original study at their institution, or through their Collaborators.
+    note: IRB approval is needed only when users have access to identifying information, as required by their institution.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: conditional
+    quote: >-
+      In instances where NIH provides written notification that Data Derivatives should be transferred to a NIH
+      controlled-access data repository, the transfer must be completed prior to Project Close-out.
+    note: Also yearly progress updates listing publications and any intellectual property derived from the data.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Upon Project Close-out, the Requester and Approved Users agree to destroy all copies, versions, and Data
+      Derivatives of the data retrieved from NIH-designated data repositories
+    note: Encrypted copies of the minimum data needed for retention policies or to support published findings may be
+      kept.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Approved Users agree to make no attempt to identify or contact, either directly or indirectly, individual
+      participants or their families.
+  geographic_restriction:
+    value: 'yes'
+    quote: >-
+      Specifically, as of April 4, 2025, NIH is prohibiting access to NIH Controlled-Access Data Repositories and
+      associated data by institutions located in countries of concern.
+    source: https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html
+    note: The countries named are China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba and Venezuela.
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
