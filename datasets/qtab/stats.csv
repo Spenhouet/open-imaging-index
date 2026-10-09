@@ -1,0 +1,40 @@
+measure,by,value,source,where,note
+subjects,,417,ds004146-participants,,417 rows; the paper reports 422 twins recruited of whom 417 were scanned at session 1
+studies,,721,ds004146-files,,417 session 1 and 304 session 2 folders; the paper reports 304 participants at session 2
+subjects,condition=healthy,417,strike2023,"Methods, Recruitment of the QTAB cohort","community twin sample; serious medical, neurological and psychiatric conditions including ASD and ADHD were excluded"
+subjects,sex=female,202,ds004146-participants,,sex F
+subjects,sex=male,215,ds004146-participants,,sex M
+subjects,age=0-9,85,ds004146-participants,,age at session 1 (completed years)
+subjects,age=10-19,332,ds004146-participants,,age at session 1 (completed years)
+subjects,sex=female;age=0-9,39,ds004146-participants,,age at session 1
+subjects,sex=female;age=10-19,163,ds004146-participants,,age at session 1
+subjects,sex=male;age=0-9,46,ds004146-participants,,age at session 1
+subjects,sex=male;age=10-19,169,ds004146-participants,,age at session 1
+age_mean,,11.3,strike2023,"Methods, QTAB Protocol and participants",session 1 imaging sample of 417
+age_sd,,1.4,strike2023,"Methods, QTAB Protocol and participants",session 1 imaging sample of 417
+age_min,,9.0,strike2023,"Methods, QTAB Protocol and participants",session 1; participants.tsv lists two participants aged 8 (rounded down)
+age_max,,14.4,strike2023,"Methods, QTAB Protocol and participants",session 1
+subjects,contrast=T1w,417,ds004146-files,,MP2RAGE UNIT1 image in at least one session
+subjects,contrast=T2w,408,ds004146-files,,whole-brain 3D T2w; hippocampal TSE slabs not counted
+subjects,contrast=FLAIR,410,ds004146-files,,
+subjects,contrast=swi,412,ds004146-files,,
+subjects,contrast=dwi,415,ds004146-files,,
+subjects,contrast=bold,413,ds004146-files,,resting state or task fMRI
+subjects,contrast=asl,413,ds004146-files,,
+subjects,contrast_set=asl+bold+dwi+FLAIR+swi+T1w+T2w,404,ds004146-files,,union over both sessions
+subjects,contrast_set=asl+bold+dwi+swi+T1w,4,ds004146-files,,union over both sessions
+subjects,contrast_set=asl+bold+dwi+FLAIR+swi+T1w,2,ds004146-files,,union over both sessions
+subjects,contrast_set=bold+dwi+T1w+T2w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=dwi+FLAIR+T1w+T2w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=T1w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=bold+dwi+T1w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=asl+dwi+FLAIR+swi+T1w+T2w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=asl+FLAIR+swi+T1w+T2w,1,ds004146-files,,union over both sessions
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w,1,ds004146-files,,union over both sessions
+studies,contrast=T1w,720,ds004146-files,,sessions with a UNIT1 image; one session 2 folder has only the MP2RAGE inversion images
+studies,contrast=T2w,655,ds004146-files,,whole-brain 3D T2w
+studies,contrast=FLAIR,673,ds004146-files,,
+studies,contrast=swi,686,ds004146-files,,
+studies,contrast=dwi,718,ds004146-files,,
+studies,contrast=bold,712,ds004146-files,,
+studies,contrast=asl,703,ds004146-files,,
