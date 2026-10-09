@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,28,indi-beijing-short-tr-page,Data Release Table,"Sum of the n of the nine release packages (3, 3, 3, 3, 4, 4, 3, 3, 2); the page computes its total from the same values"
+subjects,condition=healthy,28,indi-beijing-short-tr-page,Summary,healthy college-aged volunteers
+subjects,contrast=bold,28,indi-beijing-short-tr-page,Summary,one TR 2 s and one TR 0.4 s resting-state run per participant
+subjects,contrast=T1w,28,indi-beijing-short-tr-page,Summary,defaced MPRAGE released for every participant
+subjects,contrast=dwi,28,indi-beijing-short-tr-page,Summary,64-direction DTI for every participant
+subjects,contrast_set=bold+dwi+T1w,28,indi-beijing-short-tr-page,Summary,the page lists all scan types for every participant
+subjects,country=CN,28,indi-beijing-short-tr-page,Summary,
+subjects,vendor=siemens,28,indi-beijing-short-tr-scaninfo-tr400,Manufacturer,Siemens TrioTim on every scan parameter page
+subjects,field_strength=3,28,indi-beijing-short-tr-scaninfo-tr400,MagneticFieldStrength,3 T on every scan parameter page

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: indi-beijing-short-tr
+name: INDI Beijing Short TR
+full_name: Beijing Normal University Short TR Sample (INDI)
+summary: >-
+  Resting-state fMRI acquired twice per person, at TR 0.4 s and TR 2 s, with T1-weighted MPRAGE and 64-direction DTI,
+  from 28 healthy college-aged volunteers at Beijing Normal University on a 3 T Siemens scanner.
+homepage: https://fcon_1000.projects.nitrc.org/indi/pro/BeijingShortTR.html
+year: 2010
+status: active
+creators:
+  - name: State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University (Yu-Feng Zang)
+    url: https://fcon_1000.projects.nitrc.org/indi/pro/BeijingShortTR.html
+  - name: International Neuroimaging Data-sharing Initiative (INDI)
+    url: https://fcon_1000.projects.nitrc.org/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://www.nitrc.org/project/request.php?group_id=296
+licenses:
+  - license: LicenseRef-INDI-FCP-Terms
+    note: >-
+      The release page states "Creative Commons License: Attribution - Non-Commercial" as its usage agreement. Downloads
+      need a NITRC account and membership in the 1000 Functional Connectomes Project on NITRC.
+sources:
+  indi-beijing-short-tr-page:
+    title: Beijing Short TR Sample release page, FCP/INDI Prospective (summary, data release table, usage agreement)
+    url: https://fcon_1000.projects.nitrc.org/indi/pro/BeijingShortTR.html
+    kind: website
+  indi-beijing-short-tr-scaninfo-tr2000:
+    title: Scan parameters of the TR 2000 ms resting-state run (DICOM header page linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/ScanInfo/beijing_short_tr/ge_func_31x31x35_240_RS.html
+    kind: website
+  indi-beijing-short-tr-scaninfo-tr400:
+    title: Scan parameters of the TR 400 ms resting-state run (DICOM header page linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/ScanInfo/beijing_short_tr/ge_func_tr400_31x31x6_0_1200_RS.html
+    kind: website
+  indi-beijing-short-tr-scaninfo-mprage:
+    title: Scan parameters of the MPRAGE (DICOM header page linked from the release page)
+    url: https://fcon_1000.projects.nitrc.org/indi/ScanInfo/beijing_short_tr/t1_mprage_sag.html
+    kind: website
+  indi-beijing-eoec-dti-protocol:
+    title: DTI protocol printout of the Beijing EOEC sample, linked from the Short TR release page for the DTI scan
+    url: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC/BeijingEOECDTI.pdf
+    kind: website
+  nitrc-fcp-news-2010-12:
+    title: 'FCP/INDI: More Data Releases and FCP One-Year Anniversary, NITRC news, 23 December 2010'
+    url: https://www.nitrc.org/forum/forum.php?forum_id=1848
+    kind: website
+related: [fcp-1000]
+keywords: [resting-state fMRI, short TR, fast fMRI, DTI, functional connectivity, INDI, Beijing Normal University]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
