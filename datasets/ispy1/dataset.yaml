@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ispy1
+name: ISPY1
+full_name: Multi-center breast DCE-MRI data and segmentations from patients in the I-SPY 1/ACRIN 6657 trials
+summary: >-
+  Serial 1.5 T breast DCE-MRI of 222 women with stage 2 or 3 breast cancer from the multicenter I-SPY 1/ACRIN 6657
+  trial, scanned at up to four time points during neoadjuvant chemotherapy, with tumor segmentations, pathologic
+  response and recurrence-free survival data.
+homepage: https://www.cancerimagingarchive.net/collection/ispy1/
+doi: 10.7937/K9/TCIA.2016.HdHpgJLK
+year: 2016
+version: '2'
+status: active
+creators:
+  - name: I-SPY 1 Network and ACRIN 6657 Trial Team
+  - name: Breast Imaging Research Program, University of California, San Francisco
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [dce, T2w]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [segmentation, classification, survival, longitudinal]
+formats: [DICOM]
+countries: [US]
+field_strengths: [1.5]
+size_gb: 78.36
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/ispy1/
+  note: >-
+    Images and segmentations download without an account through the TCIA Data Retriever or the NCI Imaging Data
+    Commons. The clinical and outcome spreadsheets are direct downloads. Curated subsets (Levels 1, 2a and 3) are
+    offered as separate downloads.
+licenses:
+  - license: CC-BY-3.0
+    url: https://www.cancerimagingarchive.net/collection/ispy1/
+citation:
+  text: >-
+    David Newitt, Nola Hylton, on behalf of the I-SPY 1 Network and ACRIN 6657 Trial Team. (2016). Multi-center
+    breast DCE-MRI data and segmentations from patients in the I-SPY 1/ACRIN 6657 trials. The Cancer Imaging
+    Archive. https://doi.org/10.7937/K9/TCIA.2016.HdHpgJLK
+sources:
+  tcia-ispy1:
+    title: TCIA ISPY1 collection page (version 2, updated 2016/09/28)
+    url: https://www.cancerimagingarchive.net/collection/ispy1/
+    kind: website
+  ispy1-clinical-xlsx:
+    title: >-
+      I-SPY-1-All-Patient-Clinical-and-Outcome-Data.xlsx (open download, CC BY 3.0), sheet TCIA Patient Clinical
+      Subset
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/I-SPY-1-All-Patient-Clinical-and-Outcome-Data.xlsx
+    kind: computed
+related: []
+keywords: [breast cancer, neoadjuvant chemotherapy, DCE-MRI, functional tumor volume, pathologic complete response, clinical trial, I-SPY]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent

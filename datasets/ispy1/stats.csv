@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,222,tcia-ispy1,Data Access table,
+studies,,847,tcia-ispy1,Data Access table,"MRI studies, up to four time points per subject"
+scans,,9032,tcia-ispy1,Data Access table,"DICOM series, MR images and segmentations"
+images,,387680,tcia-ispy1,Data Access table,DICOM images (slices)
+subjects,sex=female,222,tcia-ispy1,Demographic Summary of Available Imaging,
+age_mean,,47.8,tcia-ispy1,Demographic Summary of Available Imaging,
+age_sd,,9,tcia-ispy1,Demographic Summary of Available Imaging,
+age_median,,49,tcia-ispy1,Demographic Summary of Available Imaging,interquartile range 42 to 54
+age_min,,24,tcia-ispy1,Demographic Summary of Available Imaging,
+age_max,,68,tcia-ispy1,Demographic Summary of Available Imaging,
+subjects,age=20-29,4,ispy1-clinical-xlsx,age,"221 subjects with clinical data; subject 1079 has none"
+subjects,age=30-39,39,ispy1-clinical-xlsx,age,
+subjects,age=40-49,79,ispy1-clinical-xlsx,age,
+subjects,age=50-59,77,ispy1-clinical-xlsx,age,
+subjects,age=60-69,22,ispy1-clinical-xlsx,age,
