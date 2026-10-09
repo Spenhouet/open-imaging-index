@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: strive-ed
+name: STRIvE eating disorders MRI
+full_name: STRIvE-ED stress and eating disorders inpatient MRI study (University of Cambridge)
+summary: >-
+  3T brain MRI (T1-weighted, task fMRI, 1H-MRS) of 85 women from Cambridge, UK: 22 with anorexia nervosa
+  (binge/purge subtype), 33 with bulimia nervosa and 30 controls, scanned on two days under acute stress and a control
+  task. Images are not shared.
+homepage: https://doi.org/10.1523/JNEUROSCI.2853-20.2021
+doi: 10.1523/JNEUROSCI.2853-20.2021
+# Year of the first peer-reviewed imaging paper on the cohort (Westwater et al., J Neurosci, May 2021); the images have
+# no public release and no study website was found.
+year: 2021
+creators:
+  - name: Department of Psychiatry, University of Cambridge
+    url: https://www.psychiatry.cam.ac.uk/
+  - name: Cambridgeshire and Peterborough NHS Foundation Trust
+    url: https://www.cpft.nhs.uk/
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [eating_disorder, healthy]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1523/JNEUROSCI.2853-20.2021
+  note: >-
+    Neither Westwater et al. (2021, J Neurosci) nor Westwater et al. (2022, Translational Psychiatry) has a data
+    availability statement, and no download or request procedure for the images was found. The public GitHub
+    repository mwestwater/STRIvE-ED holds only the stimulus code of the stress and control tasks.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: No license or data use terms are published for the images.
+citation:
+  text: >-
+    Westwater ML, Mancini F, Gorka AX, Shapleske J, Serfontein J, Grillon C, Ernst M, Ziauddeen H, Fletcher PC. Prefrontal responses during
+    proactive and reactive inhibition are differentially impacted by stress in anorexia and bulimia nervosa. J Neurosci
+    41(20):4487-4499 (2021). doi:10.1523/JNEUROSCI.2853-20.2021
+sources:
+  westwater2021:
+    title: Westwater et al. 2021, Journal of Neuroscience (PMC8152613)
+    url: https://doi.org/10.1523/JNEUROSCI.2853-20.2021
+    kind: paper
+  westwater2022:
+    title: Westwater et al. 2022, Translational Psychiatry (PMC8924163)
+    url: https://doi.org/10.1038/s41398-022-01872-7
+    kind: paper
+keywords:
+  [anorexia nervosa, bulimia nervosa, binge eating, acute stress, inhibitory control, stop-signal task, MR spectroscopy, STRIvE]
+verified:
+  date: '2026-10-09'
+  by: Spenhouet-agent
