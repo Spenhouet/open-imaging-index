@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,30,spineweb-datasets-2024,Dataset 1,"Listed as 30 pairs of CT and MR, each pair from the same subject"
+subjects,modality=CT,30,spineweb-datasets-2024,Dataset 1,
+subjects,modality=MR,30,spineweb-datasets-2024,Dataset 1,
+subjects,anatomy=spine,30,spineweb-datasets-2024,Dataset 1,Lumbar spine
