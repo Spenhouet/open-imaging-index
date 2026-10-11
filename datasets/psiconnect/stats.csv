@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,65,novelli2025,Methods: Participants,65 psychedelic-naive adults recruited; participants.tsv and the sub-* folders also number 65
+subjects,contrast=T1w,65,ds006110-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T2w,65,ds006110-file-tree,,subjects with a *_T2w.nii.gz; T2w acquired at baseline only
+subjects,contrast=bold,65,ds006110-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w+T2w,65,ds006110-file-tree,,
+studies,,127,ds006110-file-tree,,MRI sessions with raw NIfTI: 65 baseline (ses-01) and 62 psilocybin (ses-02); the paper reports fMRI for 64 baseline and 61 psilocybin participants
+scans,,2204,ds006110-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below; fieldmaps not counted"
+scans,contrast=T1w,119,ds006110-file-tree,,65 baseline and 54 psilocybin-session T1w images
+scans,contrast=T2w,65,ds006110-file-tree,,
+scans,contrast=bold,2020,ds006110-file-tree,,NIfTI files: 505 fMRI runs with four echoes each
+subjects,field_strength=3,65,novelli2025,Methods: Structural MRI acquisition,Siemens 3 T Magnetom Skyra at Monash Biomedical Imaging
+subjects,vendor=siemens,65,novelli2025,Methods: Structural MRI acquisition,
+subjects,country=AU,65,novelli2025,Methods: Structural MRI acquisition,"Monash Biomedical Imaging, Monash University, Australia"
+subjects,condition=healthy,65,novelli2025,Methods: Participants,screened for psychiatric and major neurological disorders
+subjects,age=10-19,2,ds006110-participants,age,both aged 19
+subjects,age=20-29,16,ds006110-participants,age,
+subjects,age=30-39,14,ds006110-participants,age,
+subjects,age=40-49,23,ds006110-participants,age,
+subjects,age=50-59,10,ds006110-participants,age,
+age_mean,,37.8,ds006110-participants,age,age at the baseline session
+age_median,,40,ds006110-participants,age,
+age_min,,19,ds006110-participants,age,
+age_max,,54,ds006110-participants,age,
