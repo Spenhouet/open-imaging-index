@@ -1,0 +1,51 @@
+measure,by,value,source,where,note
+subjects,,363,openneuro-ds007045-v2,README,raw MRI for 363 patients; participants.tsv also has 363 rows; the paper describes the earlier 337-patient release
+subjects,condition=glioblastoma,363,filimonova2026,Methods: Participants and study design,histopathologically confirmed IDH-wildtype glioblastoma is an inclusion criterion
+subjects,country=IT,203,openneuro-ds007045-v2,README,"sum of the disjoint site counts for Bologna (171), Bari (3), Foggia (8), Turin (14) and Messina (7)"
+subjects,country=DE,110,openneuro-ds007045-v2,README,Städtisches Klinikum Karlsruhe
+subjects,country=RU,39,openneuro-ds007045-v2,README,Federal Neurosurgery Center Novosibirsk
+subjects,country=ES,11,openneuro-ds007045-v2,README,Hospital Joan XXIII Tarragona
+subjects,contrast=T1w,363,ds007045-participants,anat file listing (run-01_T1w),
+subjects,contrast=T1w_ce,363,ds007045-participants,anat file listing (run-02_T1w),post-gadolinium T1w stored as run-02
+subjects,contrast=T2w,363,ds007045-participants,anat file listing (T2w),
+subjects,contrast=FLAIR,363,ds007045-participants,anat file listing (FLAIR),
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,363,ds007045-participants,anat file listing,every subject has exactly these four raw volumes
+scans,,1452,ds007045-participants,anat file listing,raw defaced volumes (4 per subject); preprocessed derivatives and masks not counted
+subjects,sex=female,147,ds007045-participants,column sex,sex 0
+subjects,sex=male,216,ds007045-participants,column sex,sex 1
+subjects,age=20-29,1,ds007045-participants,column age,
+subjects,age=30-39,12,ds007045-participants,column age,
+subjects,age=40-49,42,ds007045-participants,column age,
+subjects,age=50-59,88,ds007045-participants,column age,
+subjects,age=60-69,118,ds007045-participants,column age,
+subjects,age=70-79,85,ds007045-participants,column age,
+subjects,age=80+,17,ds007045-participants,column age,
+subjects,field_strength=3,247,ds007045-participants,column field_strength,
+subjects,field_strength=1.5,115,ds007045-participants,column field_strength,"written as ""1,5"""
+subjects,field_strength=1,1,ds007045-participants,column field_strength,Philips Panorama HFO
+subjects,vendor=siemens,256,ds007045-participants,column scanner_model,
+subjects,vendor=philips,87,ds007045-participants,column scanner_model,
+subjects,vendor=ge,20,ds007045-participants,column scanner_model,
+subjects,sex=female;age=40-49,15,ds007045-participants,columns sex and age,
+subjects,sex=female;age=50-59,32,ds007045-participants,columns sex and age,
+subjects,sex=female;age=60-69,53,ds007045-participants,columns sex and age,
+subjects,sex=female;age=70-79,34,ds007045-participants,columns sex and age,
+subjects,sex=male;age=40-49,27,ds007045-participants,columns sex and age,
+subjects,sex=male;age=50-59,56,ds007045-participants,columns sex and age,
+subjects,sex=male;age=60-69,65,ds007045-participants,columns sex and age,
+subjects,sex=male;age=70-79,51,ds007045-participants,columns sex and age,
+subjects,sex=male;age=80+,10,ds007045-participants,columns sex and age,
+subjects,sex=female;field_strength=3,103,ds007045-participants,columns sex and field_strength,
+subjects,sex=male;field_strength=3,144,ds007045-participants,columns sex and field_strength,
+subjects,sex=female;field_strength=1.5,44,ds007045-participants,columns sex and field_strength,
+subjects,sex=male;field_strength=1.5,71,ds007045-participants,columns sex and field_strength,
+subjects,vendor=siemens;field_strength=3,195,ds007045-participants,columns scanner_model and field_strength,
+subjects,vendor=siemens;field_strength=1.5,61,ds007045-participants,columns scanner_model and field_strength,
+subjects,vendor=philips;field_strength=3,49,ds007045-participants,columns scanner_model and field_strength,
+subjects,vendor=philips;field_strength=1.5,37,ds007045-participants,columns scanner_model and field_strength,
+subjects,vendor=ge;field_strength=1.5,17,ds007045-participants,columns scanner_model and field_strength,
+age_mean,,62.0,ds007045-participants,column age,
+age_sd,,11.6,ds007045-participants,column age,
+age_median,,63,ds007045-participants,column age,
+age_min,,29,ds007045-participants,column age,
+age_max,,89,ds007045-participants,column age,
