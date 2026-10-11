@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: empathic-pain-task
+name: Empathic Pain Task (ds006243)
+full_name: 'Empathic Pain Task: fMRI after loving-kindness meditation or muscle relaxation training'
+summary: >-
+  Preprocessed task fMRI of adults who completed four weeks of loving-kindness meditation or progressive muscle
+  relaxation, scanned while they received or watched a partner receive pressure pain, to test how loneliness relates to
+  neural empathy. Shared as MNI-space BOLD with event timings.
+homepage: https://openneuro.org/datasets/ds006243
+doi: 10.18112/openneuro.ds006243.v1.1.2
+year: 2025
+version: 1.1.2
+status: active
+creators:
+  - name: Georgetown University (Dressel M, Nero N, Freeburg P, Somers M, VanMeter AS, Rhoads SA, Marsh AA)
+    url: https://openneuro.org/datasets/ds006243
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: []
+tasks: []
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 26.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006243
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.2 states "License" CC0.
+citation:
+  text: >-
+    Dressel M, Nero N, Freeburg P, Somers M, VanMeter AS, Rhoads SA, Marsh AA. Empathic Pain Task (ds006243, version
+    1.1.2). OpenNeuro (2025). doi:10.18112/openneuro.ds006243.v1.1.2
+sources:
+  openneuro-ds006243-v1-1-2:
+    title: OpenNeuro ds006243 snapshot 1.1.2 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006243/versions/1.1.2
+    kind: website
+  ds006243-file-tree:
+    title: File tree of ds006243 snapshot 1.1.2 (CC0), NIfTI files counted per subject and template space
+    url: https://github.com/OpenNeuroDatasets/ds006243/tree/1.1.2
+    kind: computed
+  dressel2025:
+    title: >-
+      Dressel et al. 2025, Lonelier people feel less empathic despite intact neural empathy responses after meditation
+      training, PsyArXiv preprint
+    url: https://doi.org/10.31234/osf.io/5jpf7_v2
+    kind: paper
+related: []
+keywords:
+  [empathy for pain, loneliness, loving-kindness meditation, progressive muscle relaxation, pressure pain, task fMRI, fMRIPrep]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
