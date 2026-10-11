@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,54,openneuro-ds001131-v1-0-0,snapshot summary,54 subjects in snapshot 1.0.0; the README splits them into three groups of 18
+subjects,condition=healthy,54,openneuro-ds001131-v1-0-0,README,all subjects are listening volunteers with no patient group
+subjects,sex=female,27,ds001131-participants,sex,
+subjects,sex=male,27,ds001131-participants,sex,
+subjects,age=10-19,23,ds001131-participants,age,
+subjects,age=20-29,28,ds001131-participants,age,
+subjects,age=30-39,3,ds001131-participants,age,
+subjects,sex=female;age=10-19,11,ds001131-participants,age and sex,
+subjects,sex=male;age=10-19,12,ds001131-participants,age and sex,
+subjects,sex=female;age=20-29,14,ds001131-participants,age and sex,
+subjects,sex=male;age=20-29,14,ds001131-participants,age and sex,
+subjects,contrast=T1w,54,ds001131-files,anat,one T1w file per subject
+subjects,contrast=bold,54,ds001131-files,func,
+subjects,contrast_set=bold+T1w,54,ds001131-files,anat and func,
+subjects,field_strength=3,54,openneuro-ds001131-v1-0-0,task-*_bold.json,MagneticFieldStrength 3 in all four task sidecars
+subjects,vendor=siemens,54,openneuro-ds001131-v1-0-0,task-*_bold.json,Siemens Skyra in all four task sidecars
+subjects,country=US,36,yeshurun2017-preprint,Methods,the 36 story-listening subjects of the preprint were scanned under Princeton University approval
+scans,,126,ds001131-files,anat and func,sum of the disjoint T1w (54) and bold (72) NIfTI files
+scans,contrast=T1w,54,ds001131-files,anat,
+scans,contrast=bold,72,ds001131-files,func,18 runs each for the milky vodka synonyms and scrambled tasks
+age_mean,,21.0,ds001131-participants,age,
+age_sd,,3.4,ds001131-participants,age,
+age_median,,20,ds001131-participants,age,
+age_min,,18,ds001131-participants,age,
+age_max,,34,ds001131-participants,age,
