@@ -1,0 +1,34 @@
+measure,by,value,source,where,note
+subjects,,277,li2025,Abstract,
+scans,,831,li2025,Abstract,"T1w, T2w and contrast-enhanced T1w per patient"
+subjects,condition=nasopharyngeal_carcinoma,277,li2025,Methods,Histopathologically confirmed primary NPC without prior radiotherapy or chemotherapy
+subjects,contrast=T1w,277,li2025,Abstract,
+subjects,contrast=T2w,277,li2025,Abstract,
+subjects,contrast=T1w_ce,277,li2025,Abstract,
+subjects,contrast_set=T1w+T1w_ce+T2w,277,li2025,Abstract,"831 scans, three sequences for each of 277 patients"
+subjects,country=CN,277,li2025,Methods,The First People's Hospital of Foshan
+subjects,vendor=philips,146,li2025,Table 3,Philips Achieva
+subjects,sex=female,74,info-diagnoses-csv,gender,
+subjects,sex=male,203,info-diagnoses-csv,gender,Table 4 of the paper lists 204 men across clinical stages that sum to 278
+subjects,age=20-29,13,info-diagnoses-csv,age,
+subjects,age=30-39,41,info-diagnoses-csv,age,
+subjects,age=40-49,80,info-diagnoses-csv,age,
+subjects,age=50-59,74,info-diagnoses-csv,age,
+subjects,age=60-69,44,info-diagnoses-csv,age,
+subjects,age=70-79,22,info-diagnoses-csv,age,
+subjects,age=80+,3,info-diagnoses-csv,age,
+subjects,sex=female;age=30-39,10,info-diagnoses-csv,"gender, age",
+subjects,sex=female;age=40-49,23,info-diagnoses-csv,"gender, age",
+subjects,sex=female;age=50-59,24,info-diagnoses-csv,"gender, age",
+subjects,sex=female;age=60-69,12,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=20-29,12,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=30-39,31,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=40-49,57,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=50-59,50,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=60-69,32,info-diagnoses-csv,"gender, age",
+subjects,sex=male;age=70-79,18,info-diagnoses-csv,"gender, age",
+age_mean,,50.6,info-diagnoses-csv,age,
+age_sd,,12.8,info-diagnoses-csv,age,
+age_median,,50,info-diagnoses-csv,age,
+age_min,,20,info-diagnoses-csv,age,
+age_max,,91,info-diagnoses-csv,age,

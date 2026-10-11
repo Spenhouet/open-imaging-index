@@ -222,6 +222,7 @@ terms:
       synonyms: [HNSCC],
       mappings: { mondo: 'MONDO:0010150' }
     }
+  - { id: nasopharyngeal_carcinoma, label: Nasopharyngeal carcinoma, synonyms: [NPC], mappings: { mondo: 'MONDO:0015459' } }
   - { id: melanoma, label: Melanoma, mappings: { mondo: 'MONDO:0005105' } }
   - { id: skin_cancer, label: Skin cancer, mappings: { mondo: 'MONDO:0002898' } }
   - {

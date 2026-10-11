@@ -13,6 +13,7 @@ terms:
   - { id: head, label: Head, mappings: { uberon: 'UBERON:0000033' } }
   - { id: neck, label: Neck, mappings: { uberon: 'UBERON:0000974' } }
   - { id: carotid_artery, label: Carotid artery, parent: neck, synonyms: [common carotid artery], mappings: { uberon: 'UBERON:0005396' } }
+  - { id: nasopharynx, label: Nasopharynx, parent: head, mappings: { uberon: 'UBERON:0001728' } }
   - { id: spinal_cord, label: Spinal cord, mappings: { uberon: 'UBERON:0002240' } }
   - { id: spine, label: Spine, mappings: { uberon: 'UBERON:0001130' } }
   - {
