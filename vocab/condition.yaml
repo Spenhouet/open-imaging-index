@@ -423,6 +423,7 @@ terms:
     }
   - { id: diabetic_retinopathy, label: Diabetic retinopathy, mappings: { mondo: 'MONDO:0005266' } }
   - { id: type_2_diabetes, label: Type 2 diabetes mellitus, synonyms: [T2DM, type 2 diabetes], mappings: { mondo: 'MONDO:0005148' } }
+  - { id: type_1_diabetes, label: Type 1 diabetes mellitus, synonyms: [T1D, T1DM, type 1 diabetes], mappings: { mondo: 'MONDO:0005147' } }
   - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
   - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }
   - { id: chronic_pain, label: Chronic pain, mappings: { hp: 'HP:0012532' } }
