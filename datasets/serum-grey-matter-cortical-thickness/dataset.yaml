@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: serum-grey-matter-cortical-thickness
+name: SerumGreyMatterCorticalThickness (ds002380)
+full_name: Serum Grey Matter Cortical Thickness
+summary: >-
+  Structural brain MRI of male US military veterans who served after September 2001, collected to test whether
+  serum neuroactive steroid levels relate to cortical gray matter thickness. One T1-weighted scan per person; about
+  half have post-traumatic stress disorder.
+homepage: https://openneuro.org/datasets/ds002380
+doi: 10.18112/openneuro.ds002380.v1.0.1
+year: 2020
+version: 1.0.1
+status: active
+creators:
+  - name: VA Mid-Atlantic MIRECC and Duke University (Morey RA)
+    url: https://openneuro.org/datasets/ds002380
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [ptsd]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 4.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002380/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds002380/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Morey RA, Davis SL, Haswell CC, et al. Widespread Cortical Thickness Is Associated With Neuroactive Steroid
+    Levels. Frontiers in Neuroscience 13:1118 (2019). doi:10.3389/fnins.2019.01118
+sources:
+  morey2019:
+    title: Morey et al. 2019, Widespread Cortical Thickness Is Associated With Neuroactive Steroid Levels, Frontiers in Neuroscience
+    url: https://doi.org/10.3389/fnins.2019.01118
+    kind: paper
+  openneuro-ds002380-v1:
+    title: OpenNeuro ds002380 snapshot 1.0.1 (README, CHANGES, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds002380/versions/1.0.1
+    kind: website
+  ds002380-file-tree:
+    title: File tree of ds002380 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds002380
+    kind: computed
+related: []
+keywords: [neuroactive steroids, allopregnanolone, cortical thickness, veterans, PTSD]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
