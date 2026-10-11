@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005215
+name: Scrambled movie narrative fMRI (ds005215)
+full_name: Hippocampal Systems for Event Encoding and Sequencing during Ongoing Narrative Comprehension
+summary: >-
+  Brain fMRI of young adults watching a temporally scrambled animated movie and then recounting its inferred original
+  story aloud, collected to study how the hippocampus encodes and orders narrative events. 65 participants with a T1w
+  scan and one BOLD run each.
+homepage: https://openneuro.org/datasets/ds005215
+doi: 10.18112/openneuro.ds005215.v1.0.4
+# Snapshot 1.0.0 on OpenNeuro, 2024-06-04; current snapshot 1.0.4, 2026-01-06.
+year: 2024
+version: 1.0.4
+status: active
+creators:
+  - name: Park J, Song H, Shim WM (Sungkyunkwan University)
+    url: https://openneuro.org/datasets/ds005215
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [KR]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 15.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005215/versions/1.0.4
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.4 states "License" CC0.
+citation:
+  text: >-
+    Park J, Song H, Shim WM. Hippocampal systems for event encoding and sequencing during ongoing narrative
+    comprehension. Communications Biology 8, 954 (2025). doi:10.1038/s42003-025-08377-1
+  bibtex: |
+    @article{park2025,
+      title={Hippocampal systems for event encoding and sequencing during ongoing narrative comprehension},
+      author={Park, Jiwoong and Song, Hayoung and Shim, Won Mok},
+      journal={Communications Biology},
+      volume={8},
+      pages={954},
+      year={2025},
+      doi={10.1038/s42003-025-08377-1}
+    }
+sources:
+  park2025:
+    title: Park, Song and Shim 2025, Communications Biology
+    url: https://doi.org/10.1038/s42003-025-08377-1
+    kind: paper
+  openneuro-ds005215-v1-0-4:
+    title: OpenNeuro ds005215 snapshot 1.0.4 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005215/versions/1.0.4
+    kind: website
+  ds005215-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds005215 BIDS repository (CC0), subjects counted per T1w and bold NIfTI
+      file
+    url: https://github.com/OpenNeuroDatasets/ds005215
+    kind: computed
+related: []
+keywords: [naturalistic fMRI, movie watching, free recall, narrative comprehension, event segmentation, hippocampus]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

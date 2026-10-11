@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,65,park2025,Results; Methods (Participants),"71 recruited, 6 excluded for artifact or head motion; the release holds 65 sub-* folders"
+studies,,65,ds005215-file-tree,sub-* folders,one MRI session per subject
+scans,,130,ds005215-file-tree,anat/ and func/ NIfTI files,65 T1w and 65 bold volumes
+subjects,country=KR,65,ds005215-file-tree,anat/*_T1w.json (InstitutionName),SKKU
+subjects,vendor=siemens,65,ds005215-file-tree,anat/*_T1w.json (Manufacturer),Siemens Prisma
+subjects,field_strength=3,65,ds005215-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,contrast=T1w,65,ds005215-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,65,ds005215-file-tree,func/*_bold.nii.gz,one task-filmrecall run per subject
+subjects,contrast_set=bold+T1w,65,ds005215-file-tree,,
