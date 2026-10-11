@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-TRACK-TBI-DTA
+name: TRACK-TBI NET Research Collaboration Policy with its Data Transfer Agreement and Human Material Transfer Agreement
+short_name: TRACK-TBI DTA/HMTA
+url: https://tracktbi.ucsf.edu/sites/tracktbi.ucsf.edu/files/TRACK-TBI%20Research%20Collaboration%20Policy_10-25-2022_Final_Current.pdf
+version: 'Research Collaboration Policy of 2022-10-25, with appendix 2 (DTA/HMTA) and appendix 3 (Publication and Authorship Guideline)'
+summary: >-
+  Access after the TRACK-TBI Executive Committee approves a research collaboration proposal and the user's institution
+  signs a data transfer agreement with UCSF. Data are used only for the approved research proposal, may not be sold or
+  passed on without Executive Committee authorization, and must be returned or destroyed at the end. Publications are
+  reviewed and carry the TRACK-TBI Investigators group author.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: Access to TRACK-TBI and/or access to Clinical Data, Biospecimens, and/or Imaging Studies is provided to Data
+      User for the purpose of ongoing collaboration in TBI research and will be used only as described in Research
+      Proposal.
+    note: Use is limited to the approved research proposal, and sale of all or part of the data is expressly
+      prohibited. The text does not otherwise address commercial use.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product. The guideline mentions regulatory
+      submissions only for studies run by TRACK-TBI NET itself.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning. Any use must be part of the approved research proposal.
+  derivatives:
+    value: conditional
+    quote: This Agreement addresses the terms and conditions pursuant to which the Data User is permitted to obtain,
+      use, reuse, and disclose the Clinical Data, Biospecimens, and Imaging Studies, or derivatives of any.
+    note: Derivative data files may be made within the approved project, and copies go back to UCSF.
+  publication:
+    value: conditional
+    quote: Any publications that emerge from use of TRACK-TBI data and material are subject to the review and
+      authorship acknowledgments set forth in the TRACK-TBI DUA/HTMA (Appendix 2) and Publication and Authorship
+      Guideline (Appendix 3).
+    note: Allowed after review, with the TRACK-TBI Investigators group author and the funding acknowledgement.
+  redistribute_original:
+    value: conditional
+    quote: Except as otherwise required by law, any transfer to or from third parties of Clinical Data, Biospecimens,
+      and/or Imaging Studies is prohibited without authorization from the TRACK-TBI Executive Committee
+    note: Transfer is allowed only to subcontractors or collaborators named in the research proposal, under an
+      agreement no less strict, or with Executive Committee authorization. Sale is prohibited.
+  redistribute_derivatives:
+    value: conditional
+    quote: Except as otherwise required by law, any transfer to or from third parties of Clinical Data, Biospecimens,
+      and/or Imaging Studies is prohibited without authorization from the TRACK-TBI Executive Committee
+    note: The agreement covers derivatives of the data as well as the original files. Published results are allowed
+      through the publication process.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'Following the list of primary authors, all publications using TRACK-TBI data will bear the following
+      attribution: “and the TRACK-TBI Investigators” listed in alphabetic order.'
+    note: Publications also carry a funding acknowledgement.
+  share_alike:
+    value: conditional
+    quote: Data User may transfer to, and permit the use of such by the subcontractors or collaborators listed in
+      Research Proposal to aid in the performance of the Research Project under a data transfer and human materials
+      transfer agreement with terms that are no less strict than the terms of this Agreement.
+    note: Applies when data pass to named subcontractors or collaborators; their agreement must be at least as strict.
+  signed_agreement:
+    value: 'yes'
+    quote: The DUA/HTMA must be endorsed by the Organization Principal Investigator for the collaborating entity, and
+      its institutional signatory, as well as UCSF.
+  ethics_approval:
+    value: 'yes'
+    quote: Data User certifies to the best of its knowledge that it has obtained Institutional Review Board approval to
+      use the Clinical Data, Biospecimen data, and/or Imaging data.
+  publication_review:
+    value: 'yes'
+    quote: Any publications that emerge from use of TRACK-TBI data and material are subject to the review and
+      authorship acknowledgments set forth in the TRACK-TBI DUA/HTMA (Appendix 2) and Publication and Authorship
+      Guideline (Appendix 3).
+  code_release:
+    value: 'no'
+    note: The agreement asks for a report with methods and a minimal dataset, not for code.
+  return_results:
+    value: 'yes'
+    quote: The Research Completion Report shall include a recitation of the findings of the project, and a copy of all
+      derivative data that Data User develops in the course of the project.
+  delete_after_use:
+    value: 'yes'
+    quote: Upon termination of this Agreement, Data User shall at UCSF’s option, return or destroy (and confirm in
+      writing such destruction), the Clinical Data, Biospecimen data, and/or Imaging data and all copies
+  no_reidentification:
+    value: 'yes'
+    quote: Data User will receive access to de-identified data and will not attempt to establish the identity of, or
+      attempt to contact any of the individuals, whose data are contained in the TRACK-TBI dataset.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

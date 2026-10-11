@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,2697,madhok2022,Abstract and Results,TBI participants enrolled at 18 US level 1 trauma centres; friend and orthopaedic control groups are not included
+subjects,condition=traumatic_brain_injury,2697,madhok2022,Abstract and Results,all TBI severities
+subjects,modality=CT,1935,yuh2021,Abstract (Results),"patients with mild TBI (GCS 13-15) and head CT within 24 hours of injury; CT of patients with GCS 3-12 is not counted here"
+subjects,modality=MR,592,palacios2022,Methods (Participants) and Figure 1,"patients with mild TBI who had 3T MRI at both 2 weeks and 6 months after injury, at 11 sites; the total number of patients with MRI is not stated"
+subjects,field_strength=3,592,palacios2022,Methods (MRI acquisition),"3T MRI on 13 scanners at 11 sites; same subset as the MRI row"
