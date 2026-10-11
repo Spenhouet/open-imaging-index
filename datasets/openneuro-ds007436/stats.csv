@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,58,bedi2025,Methods: Participants,64 scanned; 6 removed for scanner problems or head motion; the release holds 58 subject folders
+subjects,condition=healthy,58,bedi2025,Methods: Participants,no reported psychiatric or neurological disorders
+subjects,contrast=T1w,58,ds007436-file-tree,anat,one MPRAGE T1w file per subject
+subjects,contrast=bold,58,ds007436-file-tree,func,six task-learn runs per subject
+subjects,contrast_set=bold+T1w,58,ds007436-file-tree,anat and func,four fieldmap runs per subject are not counted as a contrast
+subjects,vendor=philips,58,bedi2025,Methods: MRI acquisition and preprocessing,Philips Achieva 3T with 32-channel head coil
+subjects,field_strength=3,58,bedi2025,Methods: MRI acquisition and preprocessing,
+subjects,country=CH,58,bedi2025,Methods: Procedure,"scanned at the University Hospital Zurich"
+scans,,406,ds007436-file-tree,anat and func,"sum of the disjoint T1w (58) and bold (348) NIfTI files; 928 fieldmap magnitude and phase images not included"
+scans,contrast=T1w,58,ds007436-file-tree,anat,
+scans,contrast=bold,348,ds007436-file-tree,func,
