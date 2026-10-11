@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,57,noven2021,2.1 Participants,57 university students; participants.tsv has 57 rows
+subjects,condition=healthy,57,noven2021,2.1 Participants,right-handed students without psychiatric history
+subjects,sex=female,42,noven2021,2.1 Participants,
+subjects,sex=male,15,noven2021,2.1 Participants,
+subjects,age=20-29,57,ds003508-participants,age,ages 20 to 27
+age_min,,20,noven2021,2.1 Participants,
+age_max,,27,noven2021,2.1 Participants,
+age_mean,,22.7,noven2021,2.1 Participants,
+age_sd,,2.05,ds003508-participants,age,
+age_median,,22,ds003508-participants,age,
+subjects,sex=female;age=20-29,42,ds003508-participants,sex and age,
+subjects,sex=male;age=20-29,15,ds003508-participants,sex and age,
+scans,,279,ds003508-file-tree,sub-*/*/*.nii.gz,"57 T1w, 57 PDw and 165 diffusion runs"
+scans,contrast=T1w,57,ds003508-file-tree,anat/*_T1w.nii.gz,3D T1-weighted TFE at 0.8 mm isotropic
+scans,contrast=PDw,57,ds003508-file-tree,anat/*_PD.nii.gz,low flip angle gradient echo at 1.6 mm isotropic stored with the BIDS suffix PD
+scans,contrast=dwi,165,ds003508-file-tree,dwi/*_dwi.nii.gz,"per subject a single-shell b=2000 run (acq-dti), a multi-shell run (acq-dki) and a reversed phase-encoding b=0 run"
+subjects,contrast=T1w,57,ds003508-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=PDw,57,ds003508-file-tree,anat/*_PD.nii.gz,
+subjects,contrast=dwi,55,ds003508-file-tree,dwi/*_dwi.nii.gz,sub-003 and sub-045 have no diffusion files
+subjects,contrast_set=dwi+PDw+T1w,55,ds003508-file-tree,sub-*/,
+subjects,contrast_set=PDw+T1w,2,ds003508-file-tree,sub-*/,
+subjects,field_strength=7,57,noven2021,2.3 MRI acquisition,7 T Philips Achieva; every T1w sidecar states MagneticFieldStrength 7
+subjects,vendor=philips,57,noven2021,2.3 MRI acquisition,7 T Philips Achieva
+subjects,country=SE,57,openneuro-ds003508-v1-0-0,sidecar InstitutionName and dataset_description.json Acknowledgments,"scanned at Lund University Bioimaging Center, Sweden (InstitutionName Lund MR 7T)"
