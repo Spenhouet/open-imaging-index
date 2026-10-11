@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001894
+name: Multisensory Lexical Processing in Children (ds001894)
+full_name: Longitudinal Brain Correlates of Multisensory Lexical Processing in Children
+summary: >-
+  Longitudinal brain MRI, rhyming-task fMRI and diffusion imaging of school-aged children with a wide range of reading
+  skill, collected to study reading development. 188 children from the Chicago area, 49 rescanned about 2.5 years
+  later, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds001894
+doi: 10.18112/openneuro.ds001894.v1.4.2
+year: 2019
+updated: 2022
+version: 1.4.2
+status: active
+creators:
+  - name: Brain Development Lab, Northwestern University (Lytle MN, McNorgan C, Booth JR)
+    url: https://openneuro.org/datasets/ds001894
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 230.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001894
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.4.2 states "License" CC0; the paper's Data Records and Usage Notes also name CC0.
+citation:
+  text: >-
+    Lytle MN, McNorgan C, Booth JR. A longitudinal neuroimaging dataset on multisensory lexical processing in
+    school-aged children. Scientific Data 6, 329 (2019). doi:10.1038/s41597-019-0338-5
+sources:
+  lytle2019:
+    title: Lytle et al. 2019, A longitudinal neuroimaging dataset on multisensory lexical processing in school-aged children, Scientific Data
+    url: https://doi.org/10.1038/s41597-019-0338-5
+    kind: paper
+  openneuro-ds001894-v142:
+    title: OpenNeuro ds001894 snapshot 1.4.2 (dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds001894/versions/1.4.2
+    kind: website
+  ds001894-participants:
+    title: participants.tsv of ds001894 snapshot 1.4.2 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001894/blob/1.4.2/participants.tsv
+    kind: computed
+  ds001894-file-tree:
+    title: File tree of ds001894 snapshot 1.4.2 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds001894/tree/1.4.2
+    kind: computed
+related: []
+keywords: [reading development, dyslexia, children, pediatric, task fMRI, diffusion MRI, longitudinal, multisensory]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
