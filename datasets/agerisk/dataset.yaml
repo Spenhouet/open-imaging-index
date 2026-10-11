@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: agerisk
+name: AgeRisk (ds004711)
+summary: >-
+  Brain fMRI of healthy adults doing a balloon risk-taking task and a delay discounting task, collected
+  to study how risk preference, impulsivity and self-control change across the adult lifespan. 187 people from
+  Basel, Switzerland, aged 16 to 81, with a T1-weighted scan each.
+homepage: https://openneuro.org/datasets/ds004711
+doi: 10.18112/openneuro.ds004711.v1.0.0
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: Center for Cognitive and Decision Sciences, University of Basel (Tisdall L, Mata R)
+    url: https://openneuro.org/datasets/ds004711
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 23.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004711/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004711/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Tisdall L, Mata R. Age differences in the neural basis of decision-making under uncertainty. Cognitive, Affective,
+    & Behavioral Neuroscience 23:788-808 (2023). doi:10.3758/s13415-022-01060-6
+sources:
+  tisdall2023:
+    title: Tisdall and Mata 2023, Age differences in the neural basis of decision-making under uncertainty, CABN
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10390623/
+    kind: paper
+  openneuro-ds004711-v1:
+    title: OpenNeuro ds004711 snapshot 1.0.0 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004711/versions/1.0.0
+    kind: website
+  ds004711-participants:
+    title: participants.tsv of ds004711 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004711/blob/main/participants.tsv
+    kind: computed
+  ds004711-file-tree:
+    title: File tree of ds004711 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004711
+    kind: computed
+related: []
+keywords:
+  [risk preference, impulsivity, self-control, Balloon Analogue Risk Task, delay discounting, task fMRI, lifespan]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
