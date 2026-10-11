@@ -1,0 +1,28 @@
+measure,by,value,source,where,note
+subjects,,66,ds002330-participants,,66 rows; the OpenNeuro snapshot 1.1.0 summary also lists 66 subjects
+subjects,condition=healthy,66,ds002330-participants,,all participants are healthy adults per the dataset name and paper title
+subjects,sex=female,36,ds002330-participants,,sex female
+subjects,sex=male,29,ds002330-participants,,sex male
+subjects,sex=other,1,ds002330-participants,,sex Other
+subjects,age=20-29,47,ds002330-participants,,
+subjects,age=30-39,19,ds002330-participants,,
+subjects,sex=female;age=20-29,27,ds002330-participants,,
+subjects,sex=male;age=20-29,20,ds002330-participants,,
+subjects,contrast=T1w,66,ds002330-file-tree,,one T1w file per subject
+subjects,contrast=T2w,66,ds002330-file-tree,,one T2w file per subject
+subjects,contrast=dwi,66,ds002330-file-tree,,two dwi runs per subject (acq-lr and acq-rl)
+subjects,contrast=bold,66,ds002330-file-tree,,two resting-state runs per subject
+subjects,contrast_set=bold+dwi+T1w+T2w,66,ds002330-file-tree,,
+subjects,field_strength=3,66,openneuro-ds002330-v1-1-0,sidecar JSON files,MagneticFieldStrength 3 in all sidecars
+subjects,vendor=siemens,66,openneuro-ds002330-v1-1-0,sidecar JSON files,Siemens TrioTim in all sidecars
+subjects,country=CA,66,openneuro-ds002330-v1-1-0,sidecar JSON files,InstitutionName Queen's University in Kingston
+scans,,396,ds002330-file-tree,,sum of the disjoint T1w (66) T2w (66) dwi (132) and bold (132) NIfTI files; the 132 field map files are not counted
+scans,contrast=T1w,66,ds002330-file-tree,,
+scans,contrast=T2w,66,ds002330-file-tree,,
+scans,contrast=dwi,132,ds002330-file-tree,,
+scans,contrast=bold,132,ds002330-file-tree,,
+age_mean,,26.6,ds002330-participants,,
+age_sd,,4.3,ds002330-participants,,
+age_median,,25,ds002330-participants,,
+age_min,,20,ds002330-participants,,
+age_max,,35,ds002330-participants,,
