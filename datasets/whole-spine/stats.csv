@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,62,ds005616-participants,participant_id,"62 ids; the README and the ISMRM 2025 abstract state 60 participants, 59 subject folders hold raw images and 60 subjects have simulated field maps"
+subjects,sex=female,18,ds005616-participants,sex,
+subjects,sex=male,32,ds005616-participants,sex,
+subjects,sex=unknown,12,ds005616-participants,sex,"sex n/a; the README states 10 with undisclosed sex out of 60"
+subjects,age=20-29,36,ds005616-participants,age,
+subjects,age=30-39,12,ds005616-participants,age,
+subjects,age=40-49,1,ds005616-participants,age,
+subjects,age=50-59,1,ds005616-participants,age,12 participants have no age
+subjects,sex=female;age=20-29,11,ds005616-participants,"sex, age",cells below 10 left out
+subjects,sex=male;age=20-29,25,ds005616-participants,"sex, age",
+subjects,condition=healthy,53,ds005616-participants,pathology,pathology HC; the other 9 have pathology n/a
+subjects,country=FR,23,ds005616-participants,institution,"institution amu (Marseille, France, per the image sidecars)"
+subjects,country=CA,39,ds005616-participants,institution,"institution unf (Montreal, Canada, per the image sidecars)"
+subjects,contrast=T1w,58,ds005616-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,56,ds005616-file-tree,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast_set=T1w+T2w,55,ds005616-file-tree,sub-*/anat/,
+subjects,contrast_set=T1w,3,ds005616-file-tree,sub-*/anat/,
+subjects,contrast_set=T2w,1,ds005616-file-tree,sub-*/anat/,
+subjects,field_strength=3,60,openneuro-ds005616-readme,Dataset Description,
+age_mean,,27.1,openneuro-ds005616-readme,Participants,
+age_sd,,6.5,openneuro-ds005616-readme,Participants,
+age_min,,21,openneuro-ds005616-readme,Participants,
+age_max,,56,openneuro-ds005616-readme,Participants,
+age_median,,24,ds005616-participants,age,50 participants with age
