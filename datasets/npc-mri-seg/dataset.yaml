@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: npc-mri-seg
+name: NPC MRI Segmentation
+full_name: A dataset of primary nasopharyngeal carcinoma MRI with multi-modalities segmentation
+summary: >-
+  Head MRI of untreated patients with primary nasopharyngeal carcinoma, with radiologist tumor masks on T1-weighted,
+  T2-weighted and contrast-enhanced T1-weighted scans, released for tumor segmentation research together with staging,
+  Epstein-Barr virus markers and 5-year progression-free survival.
+homepage: https://zenodo.org/records/13131827
+doi: 10.5281/zenodo.13131827
+# The Zenodo concept record was first published on 2024-03-31; the current version with the files on 2024-08-25.
+year: 2024
+status: active
+creators:
+  - name: The First People's Hospital of Foshan, China (Li Y., Chen Q., Li M., Wang K., Tang J., Chen N. et al.)
+    url: https://doi.org/10.1038/s41597-025-05815-x
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, T1w_ce]
+anatomy: [nasopharynx]
+conditions: [nasopharyngeal_carcinoma]
+tasks: [segmentation, survival]
+formats: [DICOM, NIfTI]
+countries: [CN]
+vendors: [ge, philips]
+field_strengths: [1.5, 3]
+# Sum of the three files on the Zenodo record (primary_data.zip, images.zip, inner_reliability.zip).
+size_gb: 5.65
+access:
+  type: open
+  url: https://zenodo.org/records/13131827
+licenses:
+  - license: CC-BY-4.0
+    note: The Zenodo record and the data descriptor both state CC BY 4.0.
+citation:
+  text: >-
+    Li Y, Chen Q, Li M, Si L, Guo Y, Xiong Y, Wang Q, Qin Y, Xu L, van der Smagt P, Wang K, Tang J, Chen N. A dataset
+    of primary nasopharyngeal carcinoma MRI with multi-modalities segmentation. Scientific Data 12, 1450 (2025).
+    doi:10.1038/s41597-025-05815-x
+sources:
+  li2025:
+    title: Li et al. 2025, Scientific Data, A dataset of primary nasopharyngeal carcinoma MRI with multi-modalities segmentation
+    url: https://doi.org/10.1038/s41597-025-05815-x
+    kind: paper
+  zenodo-13131827:
+    title: Zenodo record 13131827 (CC BY 4.0)
+    url: https://zenodo.org/records/13131827
+    kind: data
+  info-diagnoses-csv:
+    title: >-
+      data/info_diagnoses.csv inside primary_data.zip of the Zenodo record (CC BY 4.0), one row per patient, counted
+      on 2026-10-11
+    url: https://zenodo.org/records/13131827/files/primary_data.zip
+    kind: computed
+related: []
+keywords:
+  [nasopharyngeal carcinoma, gross tumor volume, head and neck cancer, tumor segmentation, Epstein-Barr virus, TNM stage]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
