@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: uva-7t-rsfmri-subcortex
+name: Amsterdam-Trondheim 7T resting-state fMRI
+full_name: A high-resolution 7 Tesla resting-state fMRI dataset optimized for studying the subcortex
+summary: >-
+  Resting-state brain fMRI with T1-weighted scans and cardiac and respiratory recordings from healthy young adults,
+  acquired at 7 tesla with a short echo time to study spontaneous activity of small subcortical nuclei. 56 people,
+  shared as fMRIPrep-preprocessed images.
+homepage: https://uvaauas.figshare.com/articles/dataset/_b_A_high-resolution_7_Tesla_resting-state_fMRI_dataset_optimized_for_studying_the_subcortex_b_/25690692
+doi: 10.21942/uva.25690692.v1
+year: 2024
+version: '1'
+status: active
+creators:
+  - name: Integrative Model-based Cognitive Neuroscience research unit, University of Amsterdam (Groot JM, Forstmann BU et al.)
+    url: https://doi.org/10.21942/uva.25690692.v1
+  - name: Norwegian 7T MR Center, St. Olavs Hospital and NTNU, Trondheim
+    url: https://www.ntnu.edu/mh/7tmr
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [NO]
+vendors: [siemens]
+field_strengths: [7]
+size_gb: 257.5
+access:
+  type: open
+  url: https://doi.org/10.21942/uva.25690692.v1
+licenses:
+  - license: CC-BY-4.0
+    url: https://uvaauas.figshare.com/articles/dataset/_b_A_high-resolution_7_Tesla_resting-state_fMRI_dataset_optimized_for_studying_the_subcortex_b_/25690692
+    note: The Figshare record and dataset_description.json both state CC BY 4.0.
+citation:
+  text: >-
+    Groot JM, Miletic S, Isherwood SJS, Tse DHY, Habli S, Haberg AK, Bazin PL, Mittner M, Forstmann BU. A
+    high-resolution 7 Tesla resting-state fMRI dataset optimized for studying the subcortex. Data in Brief 55:110668
+    (2024). doi:10.1016/j.dib.2024.110668
+sources:
+  groot2024:
+    title: Groot et al. 2024, A high-resolution 7 Tesla resting-state fMRI dataset optimized for studying the subcortex, Data in Brief
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11263741/
+    kind: paper
+  figshare-25690692:
+    title: Figshare record 10.21942/uva.25690692.v1 (description, file list, dataset_description.json)
+    url: https://api.figshare.com/v2/articles/25690692
+    kind: website
+  figshare-25690692-demographics:
+    title: demographics.csv of the Figshare record (CC BY 4.0)
+    url: https://ndownloader.figshare.com/files/49263919
+    kind: computed
+related: []
+keywords: [resting-state fMRI, ultra-high field, subcortex, iron-rich nuclei, MP2RAGE, physiological noise, fMRIPrep]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

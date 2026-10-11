@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,56,groot2024,Section 4.1,
+subjects,contrast=T1w,56,groot2024,Specifications Table,MP2RAGE-derived T1-weighted image per subject
+subjects,contrast=bold,56,groot2024,Specifications Table,two 15 min eyes-open resting-state runs per subject
+subjects,contrast_set=bold+T1w,56,groot2024,Specifications Table,
+subjects,field_strength=7,56,groot2024,Section 4.2,
+subjects,sex=female,33,groot2024,Section 4.1,
+subjects,sex=male,23,figshare-25690692-demographics,sex,
+subjects,age=18-25,35,figshare-25690692-demographics,age_range,age bins as given in the file
+subjects,age=26-30,7,figshare-25690692-demographics,age_range,age bins as given in the file
+subjects,age=31-35,10,figshare-25690692-demographics,age_range,age bins as given in the file
+subjects,age=36-40,4,figshare-25690692-demographics,age_range,age bins as given in the file
+subjects,sex=female;age=18-25,25,figshare-25690692-demographics,"sex, age_range",cells below 10 left out
+subjects,sex=male;age=18-25,10,figshare-25690692-demographics,"sex, age_range",cells below 10 left out
+age_mean,,26.16,groot2024,Section 4.1,
+age_sd,,5.46,groot2024,Section 4.1,
+age_min,,19,groot2024,Section 4.1,
+age_max,,39,groot2024,Section 4.1,
