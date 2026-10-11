@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,141,zenodo-11162697,README,healthy children in the image release of 9 May 2024; the Dryad abstract of the 10 July 2025 version states 200
+subjects,condition=healthy,141,zenodo-11162697,README,
+subjects,contrast=T2w,141,mipg-thorax-dmri,Summary,"described as T2-weighted; the sequence is true-FISP (balanced SSFP), per the record's methods"
+subjects,field_strength=3,141,zenodo-11162697,Methods,
+subjects,vendor=siemens,141,zenodo-11162697,Methods,Siemens Verio
+studies,,141,mipg-thorax-dmri,Summary,
+scans,,282,mipg-thorax-dmri,Summary,"listed as 282 images: one 3D volume at end expiration and one at end inspiration per subject"
