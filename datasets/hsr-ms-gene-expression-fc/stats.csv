@@ -1,0 +1,44 @@
+measure,by,value,source,where,note
+subjects,,772,preziosa2026,Study design and population,558 MS patients and 214 healthy controls
+subjects,modality=MR,772,preziosa2026,MRI acquisition,
+subjects,contrast=bold,772,preziosa2026,MRI acquisition,resting-state fMRI in every participant
+subjects,contrast=T1w,772,preziosa2026,MRI acquisition,3D T1-weighted fast field echo on both scanners
+subjects,contrast=PDw,444,preziosa2026,MRI acquisition,"dual-echo turbo spin echo on Scanner 1 (Achieva): 334 MS patients and 110 controls"
+subjects,contrast=T2w,444,preziosa2026,MRI acquisition,"dual-echo turbo spin echo on Scanner 1 (Achieva): 334 MS patients and 110 controls"
+subjects,contrast=FLAIR,328,preziosa2026,MRI acquisition,"3D FLAIR on Scanner 2 (Ingenia): 224 MS patients and 104 controls"
+subjects,contrast_set=bold+PDw+T1w+T2w,444,preziosa2026,MRI acquisition,Scanner 1 (Achieva)
+subjects,contrast_set=bold+FLAIR+T1w,328,preziosa2026,MRI acquisition,Scanner 2 (Ingenia)
+subjects,condition=multiple_sclerosis,558,preziosa2026,Table 1,"365 relapsing-remitting, 133 secondary progressive, 60 primary progressive"
+subjects,condition=healthy,214,preziosa2026,Table 1,
+subjects,sex=female,458,preziosa2026,Table 1,sum of 116 controls and 342 MS patients
+subjects,sex=male,314,preziosa2026,Table 1,sum of 98 controls and 216 MS patients
+subjects,condition=multiple_sclerosis;sex=female,342,preziosa2026,Table 1,
+subjects,condition=multiple_sclerosis;sex=male,216,preziosa2026,Table 1,
+subjects,condition=healthy;sex=female,116,preziosa2026,Table 1,
+subjects,condition=healthy;sex=male,98,preziosa2026,Table 1,
+subjects,age=10-19,8,preziosa2026-mendeley,Age (years),all 8 are 18 or 19 years old
+subjects,age=20-29,163,preziosa2026-mendeley,Age (years),
+subjects,age=30-39,190,preziosa2026-mendeley,Age (years),
+subjects,age=40-49,209,preziosa2026-mendeley,Age (years),
+subjects,age=50-59,139,preziosa2026-mendeley,Age (years),
+subjects,age=60-69,54,preziosa2026-mendeley,Age (years),
+subjects,age=70-79,9,preziosa2026-mendeley,Age (years),
+subjects,condition=multiple_sclerosis;age=20-29,95,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=multiple_sclerosis;age=30-39,142,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=multiple_sclerosis;age=40-49,168,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=multiple_sclerosis;age=50-59,104,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=multiple_sclerosis;age=60-69,34,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=healthy;age=20-29,68,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=healthy;age=30-39,48,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=healthy;age=40-49,41,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=healthy;age=50-59,35,preziosa2026-mendeley,Group-HC-PT and Age (years),
+subjects,condition=healthy;age=60-69,20,preziosa2026-mendeley,Group-HC-PT and Age (years),
+age_min,,18,preziosa2026-mendeley,Age (years),18.05 years
+age_median,,41.7,preziosa2026-mendeley,Age (years),
+age_mean,,41.6,preziosa2026-mendeley,Age (years),
+age_max,,77,preziosa2026-mendeley,Age (years),77.37 years
+age_median,condition=multiple_sclerosis,42.4,preziosa2026,Table 1,IQR 33.3 to 50.6
+age_median,condition=healthy,38.4,preziosa2026,Table 1,IQR 27.4 to 50.9
+subjects,field_strength=3,772,preziosa2026,MRI acquisition,
+subjects,vendor=philips,772,preziosa2026,MRI acquisition,"Achieva (444) and Ingenia (328), Philips Medical Systems"
+subjects,country=IT,772,preziosa2026,Study design and population,"IRCCS San Raffaele Scientific Institute, Milan"
