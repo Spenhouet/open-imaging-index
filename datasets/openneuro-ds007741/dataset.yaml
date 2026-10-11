@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007741
+name: SCAN anorexia nervosa T1w MRI (ds007741)
+full_name: SCAN structural T1-weighted brain MRI of women with anorexia nervosa and healthy comparison women
+summary: >-
+  Structural T1-weighted brain MRI of young women with anorexia nervosa and healthy comparison women, from a King's
+  College London study of emotional and facial responses to films. 141 women in BIDS under CC0, with clinical
+  questionnaire scores.
+homepage: https://openneuro.org/datasets/ds007741
+doi: 10.18112/openneuro.ds007741.v1.0.0
+# Snapshot 1.0.0 on OpenNeuro, 2026-05-03.
+year: 2026
+version: 1.0.0
+creators:
+  - name: >-
+      Leppanen J, Bailey O, Halls D, Allen K, Tchanturia K, Williams S (King's College London Centre for Neuroimaging
+      Sciences)
+    url: https://openneuro.org/datasets/ds007741
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [anorexia_nervosa, healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 1.26
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007741
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Leppanen J, Bailey O, Halls D, Allen K, Tchanturia K, Williams S. Evoked emotions in anorexia nervosa: neural and
+    behavioural correlates of social-emotional processing. Translational Psychiatry 16, 128 (2026).
+    doi:10.1038/s41398-026-03819-8
+sources:
+  leppanen2026:
+    title: >-
+      Leppanen et al. 2026, Evoked emotions in anorexia nervosa: neural and behavioural correlates of social-emotional
+      processing, Translational Psychiatry
+    url: https://doi.org/10.1038/s41398-026-03819-8
+    kind: paper
+  openneuro-ds007741-v1-0-0:
+    title: OpenNeuro ds007741 snapshot 1.0.0 (dataset_description.json, file listing and snapshot size)
+    url: https://openneuro.org/datasets/ds007741/versions/1.0.0
+    kind: website
+  ds007741-phenotype:
+    title: >-
+      phenotype/SCAN_demo_clinical_data.tsv and anat/ file listing of ds007741 (CC0); columns participant_id, group
+      and age, restricted to the 141 subjects with a T1w image
+    url: https://github.com/OpenNeuroDatasets/ds007741
+    kind: computed
+related: []
+keywords: [anorexia nervosa, eating disorders, structural MRI, emotion processing, women]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
