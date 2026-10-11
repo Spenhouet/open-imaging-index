@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,68,ds006736-file-tree,,68 sub-* folders; the README also states N=68
+subjects,contrast=T1w,68,ds006736-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T2w,63,ds006736-file-tree,,subjects with a *_T2w.nii.gz
+subjects,contrast=bold,68,ds006736-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w+T2w,63,ds006736-file-tree,,AP and PA spin-echo fieldmaps (66 subjects) are not counted as a contrast
+subjects,contrast_set=bold+T1w,5,ds006736-file-tree,,
+subjects,field_strength=3,68,ds006736-file-tree,,MagneticFieldStrength in every *_T1w.json sidecar
+subjects,vendor=siemens,68,ds006736-file-tree,,Siemens MAGNETOM Prisma in every *_T1w.json sidecar
+scans,,533,ds006736-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below; fieldmap images not included"
+scans,contrast=T1w,68,ds006736-file-tree,,
+scans,contrast=T2w,63,ds006736-file-tree,,
+scans,contrast=bold,402,ds006736-file-tree,,"one run per task: preTestRest 68, ipad 68, freeRecall 67, postTestRest 67, yoke 66, localizer 66"
