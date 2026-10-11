@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: t1d-executive-function-fmri
+name: Executive Function fMRI in Type 1 Diabetes
+full_name: >-
+  Executive Functioning-Related Neural Processes in Emerging Adults with Type 1 Diabetes: A Functional Magnetic
+  Resonance Imaging Study
+summary: >-
+  Brain MRI with Go/No-Go task and resting-state fMRI of emerging adults with type 1 diabetes and healthy peers,
+  collected to study the neural processes behind executive functioning and response inhibition in young people with
+  diabetes.
+homepage: https://openneuro.org/datasets/ds006156
+doi: 10.18112/openneuro.ds006156.v1.0.2
+# CHANGES file: 1.0.0 dated 2025-04-23 (initial upload); 1.0.2 dated 2026-10-02 re-uploaded subjects that had not been defaced.
+year: 2025
+updated: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: Brigham Young University (Chad D. Jensen, Hannah McDaniel, Monica Martinez, Chris Jones, C. Brock Kirwan)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [type_1_diabetes, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 6.14
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006156
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Jensen CD, McDaniel H, Martinez M, Jones C, Kirwan CB. Executive Functioning-Related Neural Processes in Emerging
+    Adults with Type 1 Diabetes: A Functional Magnetic Resonance Imaging Study. OpenNeuro (2025).
+    doi:10.18112/openneuro.ds006156.v1.0.2
+sources:
+  openneuro-ds006156-v1-0-2:
+    title: OpenNeuro ds006156 snapshot 1.0.2 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006156/versions/1.0.2
+    kind: website
+  ds006156-participants:
+    title: participants.tsv of ds006156 (CC0), counted per row (age, sex and group columns)
+    url: https://github.com/OpenNeuroDatasets/ds006156/blob/main/participants.tsv
+    kind: computed
+  ds006156-file-tree:
+    title: >-
+      BIDS file tree of ds006156 (CC0), raw NIfTI files under sub-*/ counted per suffix, scanner fields read from the
+      T1w JSON sidecars
+    url: https://github.com/OpenNeuroDatasets/ds006156/tree/main
+    kind: computed
+related: []
+keywords: [type 1 diabetes, executive function, response inhibition, Go/No-Go, task fMRI, resting-state fMRI, emerging adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

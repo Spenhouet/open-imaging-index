@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,64,ds006156-participants,participant_id,64 rows; the file tree also has 64 sub-* folders
+subjects,condition=type_1_diabetes,31,ds006156-participants,group,group t1d
+subjects,condition=healthy,33,ds006156-participants,group,group con
+subjects,sex=female,36,ds006156-participants,sex,
+subjects,sex=male,28,ds006156-participants,sex,
+subjects,condition=type_1_diabetes;sex=female,17,ds006156-participants,group and sex,
+subjects,condition=type_1_diabetes;sex=male,14,ds006156-participants,group and sex,
+subjects,condition=healthy;sex=female,19,ds006156-participants,group and sex,
+subjects,condition=healthy;sex=male,14,ds006156-participants,group and sex,
+subjects,age=10-19,10,ds006156-participants,age,ages 18 and 19
+subjects,age=20-29,54,ds006156-participants,age,ages 20 to 25
+age_min,,18,ds006156-participants,age,
+age_median,,21,ds006156-participants,age,
+age_mean,,21.6,ds006156-participants,age,
+age_max,,25,ds006156-participants,age,
+subjects,contrast=T1w,64,ds006156-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast=bold,64,ds006156-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,64,ds006156-file-tree,,
+scans,,320,ds006156-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,64,ds006156-file-tree,,
+scans,contrast=bold,256,ds006156-file-tree,,three Go/No-Go runs and one resting-state run per subject
+subjects,field_strength=3,64,ds006156-file-tree,T1w JSON sidecars,MagneticFieldStrength 3 in every sidecar
+subjects,vendor=siemens,64,ds006156-file-tree,T1w JSON sidecars,Siemens TrioTim in every sidecar
+subjects,country=US,64,ds006156-file-tree,T1w JSON sidecars,"InstitutionName Brigham Young University, Provo, Utah, in every sidecar"
