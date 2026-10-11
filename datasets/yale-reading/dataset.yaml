@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: yale-reading
+name: Yale Reading Dataset (ds005339)
+full_name: Yale_reading_dataset
+summary: >-
+  Structural, diffusion and functional brain MRI of children, adolescents and young adults across a wide range of
+  reading ability, pooled from reading development and reading disability studies to relate brain structure and
+  function to reading skill and age.
+homepage: https://openneuro.org/datasets/ds005339
+doi: 10.18112/openneuro.ds005339.v1.0.0
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Nabin Koirala and Vincent Gracco
+    url: https://openneuro.org/datasets/ds005339
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US, IL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 55.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005339/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005339/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Koirala N, Gracco V. Yale_reading_dataset. OpenNeuro, version 1.0.0 (2026).
+    doi:10.18112/openneuro.ds005339.v1.0.0
+sources:
+  openneuro-ds005339-v100:
+    title: OpenNeuro ds005339 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005339/versions/1.0.0
+    kind: website
+  ds005339-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds005339 snapshot 1.0.0 (CC0), NIfTI files counted per subject and session
+      folder, sidecar fields InstitutionName, Manufacturer and MagneticFieldStrength
+    url: https://github.com/OpenNeuroDatasets/ds005339/tree/1.0.0
+    kind: computed
+related: []
+keywords: [reading, reading disability, dyslexia, language, development, task fMRI, resting-state fMRI, diffusion MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
