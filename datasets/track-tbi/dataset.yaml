@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: track-tbi
+name: TRACK-TBI
+full_name: Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI)
+summary: >-
+  Head CT, research brain MRI, blood samples and outcomes from patients with traumatic brain injury of all
+  severities, collected at US level 1 trauma centres to improve TBI diagnosis, prognosis and outcome measures for
+  clinical trials. Access after an approved collaboration proposal and data transfer agreement.
+homepage: https://tracktbi.ucsf.edu/
+# First published Research Collaboration Policy with its data use agreement for outside users is dated 2015-09-24.
+year: 2015
+status: active
+creators:
+  - name: TRACK-TBI Investigators (contact PI Geoffrey Manley, Brain and Spinal Injury Center, UCSF)
+    url: https://tracktbi.ucsf.edu/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (image archive)
+    url: https://ida.loni.usc.edu/
+modalities: [CT, MR]
+contrasts: [T1w, T2starw, dwi, bold, FLAIR, T2w]
+anatomy: [brain]
+conditions: [traumatic_brain_injury]
+countries: [US]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=TRACKTBI
+licenses:
+  - license: LicenseRef-TRACK-TBI-DTA
+citation:
+  text: >-
+    Publications using TRACK-TBI data add "and the TRACK-TBI Investigators" after the primary authors and acknowledge
+    the funding source, as set out in the TRACK-TBI NET Publication and Authorship Guideline.
+sources:
+  madhok2022:
+    title: Madhok DY et al. 2022, Outcomes in patients with mild traumatic brain injury without acute intracranial
+      traumatic injury, JAMA Network Open
+    url: https://doi.org/10.1001/jamanetworkopen.2022.23245
+    kind: paper
+  yuh2021:
+    title: Yuh EL et al. 2021, Pathological computed tomography features associated with adverse outcomes after mild
+      traumatic brain injury, JAMA Neurology
+    url: https://doi.org/10.1001/jamaneurol.2021.2120
+    kind: paper
+  palacios2022:
+    title: Palacios EM et al. 2022, Diffusion tensor imaging reveals elevated diffusivity of white matter
+      microstructure that is independently associated with long-term outcome after mild traumatic brain injury,
+      Journal of Neurotrauma
+    url: https://doi.org/10.1089/neu.2021.0408
+    kind: paper
+  tracktbi-home:
+    title: TRACK-TBI website, home page
+    url: https://tracktbi.ucsf.edu/
+    kind: website
+  tracktbi-mri-manual:
+    title: TRACK-TBI 3T MRI Technical Procedures Manual, version 3 of 2018-07-27
+    url: https://tracktbi.ucsf.edu/sites/tracktbi.ucsf.edu/files/V3_TRACK-TBI_MRI_Manual_27JULY2018.pdf
+    kind: website
+related: [fitbir, center-tbi]
+keywords: [traumatic brain injury, concussion, mild TBI, CT, MRI, DTI, resting-state fMRI, outcome prediction, multicentre cohort]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
