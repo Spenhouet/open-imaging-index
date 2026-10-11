@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: precision-aging-network
+name: PAN HML MRI
+full_name: 'Precision Aging Network: Closing the Gap Between Cognitive Healthspan and Human Lifespan'
+summary: >-
+  Brain MRI of cognitively unimpaired adults aged 50 to 79, collected to find what drives risk of and resilience to
+  age-related cognitive decline. Structural, susceptibility, diffusion, perfusion and resting-state scans from four US
+  sites, with two-year follow-up for some participants.
+homepage: https://openneuro.org/datasets/ds007522
+doi: 10.18112/openneuro.ds007522.v2.0.1
+# First public snapshot 1.0.0 on 2026-05-19 (CHANGES file).
+year: 2026
+updated: 2026
+version: 2.0.1
+status: active
+creators:
+  - name: Precision Aging Network (Barnes CA, Huentelman MJ, Chen Z, Ryan L, Rundek T, et al.)
+    url: https://precisionagingnetwork.org
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, T2w, T2starw, dwi, asl, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens, philips]
+field_strengths: [3]
+size_gb: 526.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007522
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json and README of snapshot 2.0.1 state CC0 for the MRI data on OpenNeuro. Cognitive,
+      biomarker, survey and derived MRI data of the same study are on the PAN data portal under the Precision Aging
+      Network data use agreement and are not part of this entry.
+citation:
+  text: >-
+    Barnes CA, Huentelman MJ, Chen Z, Ryan L, Rundek T, et al. Precision Aging Network: Closing the Gap Between
+    Cognitive Healthspan and Human Lifespan. OpenNeuro ds007522, version 2.0.1 (2026).
+    doi:10.18112/openneuro.ds007522.v2.0.1. Publications should include the Precision Aging Network writing block and
+    funding statement given in the README.
+sources:
+  openneuro-ds007522-v2-0-1:
+    title: OpenNeuro ds007522 snapshot 2.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds007522/versions/2.0.1
+    kind: website
+  barnes2025:
+    title: Barnes and Najafi 2025, The Precision Aging Network, Gerontology
+    url: https://doi.org/10.1159/000548488
+    kind: paper
+  pan-data-portal:
+    title: Precision Aging Network data access page
+    url: https://precisionagingnetwork.org/access-pan-study-data-for-research/
+    kind: website
+  ds007522-participants:
+    title: participants.tsv of ds007522 snapshot 2.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds007522/blob/2.0.1/participants.tsv
+    kind: computed
+  ds007522-file-tree:
+    title: >-
+      BIDS file tree and per-subject sessions.tsv of ds007522 snapshot 2.0.1 (CC0), NIfTI files counted per suffix and
+      scanner models per session
+    url: https://github.com/OpenNeuroDatasets/ds007522/tree/2.0.1
+    kind: computed
+related: []
+keywords: [ageing, cognitive aging, precision aging, QSM, multi-echo GRE, ASL, resting-state fMRI, longitudinal, multi-site]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

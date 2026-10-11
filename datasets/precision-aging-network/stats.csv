@@ -1,0 +1,54 @@
+measure,by,value,source,where,note
+subjects,,969,openneuro-ds007522-v2-0-1,CHANGES,version 2.0.0; participants.tsv also has 969 rows
+studies,,1064,openneuro-ds007522-v2-0-1,CHANGES,"imaging sessions, including 79 longitudinal follow-up sessions; the file tree also holds 1064"
+subjects,sex=female,673,ds007522-participants,sex,
+subjects,sex=male,296,ds007522-participants,sex,
+age_mean,,63.91,ds007522-participants,age,
+age_sd,,7.82,ds007522-participants,age,
+age_median,,64,ds007522-participants,age,
+age_min,,49,ds007522-participants,age,
+age_max,,79,ds007522-participants,age,
+subjects,age=40-49,2,ds007522-participants,age,
+subjects,age=50-59,300,ds007522-participants,age,
+subjects,age=60-69,412,ds007522-participants,age,
+subjects,age=70-79,255,ds007522-participants,age,
+subjects,sex=female;age=50-59,220,ds007522-participants,"sex, age",
+subjects,sex=male;age=50-59,80,ds007522-participants,"sex, age",
+subjects,sex=female;age=60-69,287,ds007522-participants,"sex, age",
+subjects,sex=male;age=60-69,125,ds007522-participants,"sex, age",
+subjects,sex=female;age=70-79,164,ds007522-participants,"sex, age",
+subjects,sex=male;age=70-79,91,ds007522-participants,"sex, age",
+subjects,condition=healthy,969,openneuro-ds007522-v2-0-1,"README, Participant Recruitment & Eligibility",no diagnosis of memory loss or dementia at enrolment
+subjects,country=US,969,ds007522-participants,site,"four sites: Tucson 267, Atlanta 249, Miami 234, Baltimore 219"
+subjects,field_strength=3,969,openneuro-ds007522-v2-0-1,README,3T MRI
+subjects,vendor=siemens,750,ds007522-file-tree,sub-*/sub-*_sessions.tsv (manufacturer_model),"Skyra (Tucson), Prisma Fit (Atlanta), Vida (Miami)"
+subjects,vendor=philips,219,ds007522-file-tree,sub-*/sub-*_sessions.tsv (manufacturer_model),Ingenia Elition X (Baltimore)
+subjects,modality=MR,969,ds007522-file-tree,sub-*/ses-*/,
+subjects,contrast=T1w,968,ds007522-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,955,ds007522-file-tree,anat/*_FLAIR.nii.gz,
+subjects,contrast=T2w,618,ds007522-file-tree,anat/*_T2w.nii.gz,high-resolution hippocampal T2w (acq-hippo); 86 of them also have an acq-space T2w
+subjects,contrast=T2starw,932,ds007522-file-tree,anat/*_T2starw.nii.gz,five-echo GRE with magnitude and phase
+subjects,contrast=dwi,963,ds007522-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=asl,951,ds007522-file-tree,perf/*_asl.nii.gz,78 also have a series of six acq-pcasl runs with different labeling settings
+subjects,contrast=bold,963,ds007522-file-tree,func/*_task-rest_bold.nii.gz,resting state
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w+T2starw+T2w,611,ds007522-file-tree,,contrasts pooled over all sessions of a subject
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w+T2starw,309,ds007522-file-tree,,
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w,23,ds007522-file-tree,,
+subjects,contrast_set=bold+dwi+T1w,5,ds007522-file-tree,,
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2starw+T2w,4,ds007522-file-tree,,
+subjects,contrast_set=asl+bold+dwi+T1w,4,ds007522-file-tree,,
+subjects,contrast_set=asl+bold+FLAIR+T1w+T2starw+T2w,3,ds007522-file-tree,,
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2starw,3,ds007522-file-tree,,
+subjects,contrast_set=dwi+T1w,3,ds007522-file-tree,,
+subjects,contrast_set=asl+dwi+FLAIR+T1w+T2starw,1,ds007522-file-tree,,
+subjects,contrast_set=FLAIR+T1w+T2starw,1,ds007522-file-tree,,
+subjects,contrast_set=bold,1,ds007522-file-tree,,
+subjects,contrast_set=T1w,1,ds007522-file-tree,,
+scans,,24025,ds007522-file-tree,sub-*/ses-*/*/*.nii.gz,"all NIfTI files, including field maps, M0 scans and each echo and part of the T2starw series"
+scans,contrast=T1w,1060,ds007522-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=FLAIR,1033,ds007522-file-tree,anat/*_FLAIR.nii.gz,
+scans,contrast=T2w,713,ds007522-file-tree,anat/*_T2w.nii.gz,619 acq-hippo and 94 acq-space
+scans,contrast=T2starw,938,ds007522-file-tree,anat/*_echo-1_part-mag_T2starw.nii.gz,one per five-echo series
+scans,contrast=dwi,1040,ds007522-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=asl,1027,ds007522-file-tree,perf/*_asl.nii.gz,acq-prod and acq-pcasl series; the six-run acq-pcasl series of 78 sessions are not counted
+scans,contrast=bold,1038,ds007522-file-tree,func/*_task-rest_bold.nii.gz,
