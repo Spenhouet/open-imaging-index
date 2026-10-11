@@ -24,7 +24,12 @@ test('catalog filters by cohort and keeps the filters in the URL', async ({ page
 test('search finds a dataset by condition synonym', async ({ page }) => {
   await page.goto('/?q=alzheimer');
   // The prerendered page shows no loading state before hydration, so wait for a matching result itself.
-  await expect(page.locator('article h3').filter({ hasText: /ADNI|OASIS/ }).first()).toBeVisible();
+  await expect(
+    page
+      .locator('article h3')
+      .filter({ hasText: /ADNI|OASIS/ })
+      .first()
+  ).toBeVisible();
 });
 
 test('dataset page shows license rules with quotes and structured data', async ({ page }) => {
