@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gulf-war-illness
+name: Gulf War Illness MRI (SFVAMC)
+full_name: Gulf War Illness
+summary: >-
+  Structural brain MRI of US veterans of the 1991 Gulf War with and without Gulf War illness, from a study testing
+  whether the illness brings brain changes not explained by post-traumatic stress disorder, alcohol use or depression.
+  T1-weighted, proton density and T2-weighted images.
+homepage: https://datadryad.org/dataset/doi:10.7272/Q66Q1V54
+doi: 10.7272/Q66Q1V54
+year: 2013
+status: active
+creators:
+  - name: Michael W. Weiner, Center for Imaging of Neurodegenerative Diseases, San Francisco VA Medical Center
+species: human
+modalities: [MR]
+contrasts: [T1w, PDw, T2w]
+anatomy: [brain]
+conditions: [gulf_war_illness]
+formats: [ANALYZE]
+countries: [US]
+vendors: [siemens]
+field_strengths: [1.5]
+size_gb: 16.4
+access:
+  type: open
+  url: https://datadryad.org/dataset/doi:10.7272/Q66Q1V54
+licenses:
+  - license: CC0-1.0
+citation:
+  text: Weiner MW. Gulf War Illness. Dryad (2013). doi:10.7272/Q66Q1V54
+sources:
+  dryad-q66q1v54:
+    title: Dryad record, Gulf War Illness (doi:10.7272/Q66Q1V54)
+    url: https://datadryad.org/dataset/doi:10.7272/Q66Q1V54
+    kind: website
+  dryad-q66q1v54-files:
+    title: File listing of the Dryad record (CC0), counted per subject ID and file in the image folders
+    url: https://datadryad.org/api/v2/versions/30642/files
+    kind: computed
+  weiner2011:
+    title: Weiner et al. 2011, The relationship between Gulf War illness, brain N-acetylaspartate, and PTSD, Military Medicine
+    url: https://doi.org/10.7205/milmed-d-10-00332
+    kind: paper
+  chao2010:
+    title: Chao et al. 2010, Effects of low-level exposure to sarin and cyclosarin during the 1991 Gulf War on brain function and structure, NeuroToxicology
+    url: https://doi.org/10.1016/j.neuro.2010.05.006
+    kind: paper
+  apfel2011:
+    title: Apfel et al. 2011, Hippocampal volume differences in Gulf War veterans with current versus lifetime PTSD symptoms, Biological Psychiatry
+    url: https://doi.org/10.1016/j.biopsych.2010.09.044
+    kind: paper
+keywords: [Gulf War illness, veterans, post-traumatic stress disorder, hippocampal volume, sarin exposure, military health]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

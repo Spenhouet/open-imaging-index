@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,262,dryad-q66q1v54-files,"All_T1, All_PD, All_T2 folders",unique G-numbered subject IDs in the image file names
+subjects,contrast=T1w,260,dryad-q66q1v54-files,All_T1 folder,
+subjects,contrast=PDw,262,dryad-q66q1v54-files,All_PD folder,
+subjects,contrast=T2w,262,dryad-q66q1v54-files,All_T2 folder,
+subjects,contrast_set=PDw+T1w+T2w,260,dryad-q66q1v54-files,"All_T1, All_PD, All_T2 folders",
+subjects,contrast_set=PDw+T2w,2,dryad-q66q1v54-files,"All_T1, All_PD, All_T2 folders",
+scans,,1477,dryad-q66q1v54-files,"All_T1, All_PD, All_T2 folders",Analyze .img volumes; file names carry suffixes X1 to X3 per subject
+scans,contrast=T1w,467,dryad-q66q1v54-files,All_T1 folder,
+scans,contrast=PDw,505,dryad-q66q1v54-files,All_PD folder,
+scans,contrast=T2w,505,dryad-q66q1v54-files,All_T2 folder,
