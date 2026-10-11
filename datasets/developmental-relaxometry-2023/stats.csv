@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,73,romascano2024,"Methods, Study population","80 recruited, 7 excluded for motion artifacts; 73 subject folders in snapshot 1.0.2"
+subjects,condition=healthy,73,romascano2024,"Methods, Study population",Children without neurological or learning disorders as reported by the parents
+subjects,sex=female,37,ds004611-participants,participants.tsv sex,The paper reports 36 females among the 73
+subjects,sex=male,36,ds004611-participants,participants.tsv sex,
+subjects,age=0-9,42,ds004611-participants,sessions.tsv age,Age in years floored to completed years
+subjects,age=10-19,31,ds004611-participants,sessions.tsv age,
+subjects,sex=female;age=0-9,22,ds004611-participants,participants.tsv sex; sessions.tsv age,
+subjects,sex=male;age=0-9,20,ds004611-participants,participants.tsv sex; sessions.tsv age,
+subjects,sex=female;age=10-19,15,ds004611-participants,participants.tsv sex; sessions.tsv age,
+subjects,sex=male;age=10-19,16,ds004611-participants,participants.tsv sex; sessions.tsv age,
+age_min,,3.4,romascano2024,"Methods, Study population",
+age_max,,17.2,romascano2024,"Methods, Study population",
+age_mean,,9.70,ds004611-participants,sessions.tsv age,The paper reports mean 9.17 (SD 2.58) for the 73
+age_sd,,2.83,ds004611-participants,sessions.tsv age,Sample standard deviation
+age_median,,9.30,ds004611-participants,sessions.tsv age,
+studies,,73,ds004611-file-tree,sub-*/ses-*/,"One session per subject, labelled ses-1 (59) or ses-2 (14)"
+scans,,356,ds004611-file-tree,sub-*/ses-*/anat/*.nii.gz,
+scans,contrast=MP2RAGE,219,ds004611-file-tree,anat/*_MP2RAGE.nii.gz and *_UNIT1.nii.gz,"Two inversion images and one uniform image per subject"
+scans,contrast=T1map,73,ds004611-file-tree,anat/*_T1map.nii.gz,
+scans,contrast=T2map,64,ds004611-file-tree,anat/*_T2map.nii.gz,
+subjects,contrast=MP2RAGE,73,ds004611-file-tree,anat/*_MP2RAGE.nii.gz,
+subjects,contrast=T1map,73,ds004611-file-tree,anat/*_T1map.nii.gz,
+subjects,contrast=T2map,64,romascano2024,"Methods, Study population",8 removed for flow artifacts and 1 with missing T2 map; matches 64 T2map files
+subjects,contrast_set=MP2RAGE+T1map+T2map,64,ds004611-file-tree,sub-*/ses-*/anat/,
+subjects,contrast_set=MP2RAGE+T1map,9,romascano2024,"Methods, Study population",Subjects without a shared T2 map; matches the file tree
+subjects,field_strength=3,73,romascano2024,"Methods, MR image acquisition",Siemens MAGNETOM Prisma Fit with a 64-channel head coil
+subjects,vendor=siemens,73,romascano2024,"Methods, MR image acquisition",
+subjects,country=CH,73,romascano2024,"Methods, Study population",Monocentric study approved by the Vaud ethics committee (CER-VD); scanned at CHUV Lausanne

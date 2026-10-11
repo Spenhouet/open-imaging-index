@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: developmental-relaxometry-2023
+name: Developmental Relaxometry 2023 (ds004611)
+full_name: 'Developmental Relaxometry 2023: normative volumes and relaxation times at 3T during brain development'
+summary: >-
+  Quantitative T1 and T2 relaxation maps of the brain from healthy children aged 3 to 17, collected to build normative
+  developmental curves of regional volumes and relaxation times that a short clinical protocol can be compared
+  against. Includes MP2RAGE images and regional normative model outputs.
+homepage: https://openneuro.org/datasets/ds004611
+doi: 10.18112/openneuro.ds004611.v1.0.2
+year: 2024
+version: 1.0.2
+status: active
+creators:
+  - name: Department of Radiology, Lausanne University Hospital and University of Lausanne, with Siemens Healthineers Advanced Clinical Imaging Technology, Lausanne (Romascano D, Piredda GF, Denervaud S, et al.)
+species: human
+modalities: [MR]
+contrasts: [MP2RAGE, T1map, T2map]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1.78
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004611
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Romascano D, Piredda GF, Caneschi S, Hilbert T, Corredor R, Maréchal B, Kober T, Ledoux JB, Fornari E, Hagmann P,
+    Denervaud S. Normative volumes and relaxation times at 3T during brain development. Scientific Data 11, 429 (2024).
+    https://doi.org/10.1038/s41597-024-03267-3
+sources:
+  romascano2024:
+    title: Romascano et al. 2024, Normative volumes and relaxation times at 3T during brain development, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03267-3
+    kind: paper
+  openneuro-ds004611-v102:
+    title: OpenNeuro ds004611 snapshot 1.0.2 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004611/versions/1.0.2
+    kind: website
+  ds004611-file-tree:
+    title: File tree of ds004611 snapshot 1.0.2 (CC0), files counted per subject and suffix
+    url: https://github.com/OpenNeuroDatasets/ds004611/tree/1.0.2
+    kind: computed
+  ds004611-participants:
+    title: participants.tsv and sub-*/sub-*_sessions.tsv of ds004611 snapshot 1.0.2 (CC0), sex and age counted
+    url: https://github.com/OpenNeuroDatasets/ds004611/blob/1.0.2/participants.tsv
+    kind: computed
+related: []
+keywords: [relaxometry, quantitative MRI, T1 mapping, T2 mapping, MP2RAGE, GRAPPATINI, brain development, pediatric, normative model]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
