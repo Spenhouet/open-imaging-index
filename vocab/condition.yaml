@@ -391,6 +391,13 @@ terms:
   - { id: low_back_pain, label: Low back pain, synonyms: [LBP], mappings: { hp: 'HP:0003419' } }
   - { id: fibromyalgia, label: Fibromyalgia, parent: chronic_pain, mappings: { mondo: 'MONDO:0005546' } }
   - {
+      id: trigeminal_neuralgia,
+      label: Trigeminal neuralgia,
+      parent: chronic_pain,
+      synonyms: [TN, tic douloureux],
+      mappings: { mondo: 'MONDO:0008599' }
+    }
+  - {
       id: cervical_myelopathy,
       label: Cervical myelopathy,
       synonyms: [degenerative cervical myelopathy, DCM, cervical spondylotic myelopathy, CSM],

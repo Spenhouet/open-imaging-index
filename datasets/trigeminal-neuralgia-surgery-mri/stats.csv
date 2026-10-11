@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,172,ds005713-readme,,"Sum of 119 patients and 53 healthy volunteers, two disjoint groups. The file tree of snapshot 2.0.2 holds 120 patient and 55 control baseline folders. The paper (snapshot 1.0.1) reports 112 patients and 48 controls."
+subjects,condition=trigeminal_neuralgia,119,ds005713-readme,,primary trigeminal neuralgia; the paper reports 112 for snapshot 1.0.1
+subjects,condition=healthy,53,ds005713-readme,,the paper reports 48 for snapshot 1.0.1
+studies,,240,ds005713-file-tree,sub-* folders,"120 patient baseline, 55 control and 65 patient follow-up (sub-*fu) folders"
+scans,,1745,ds005713-file-tree,sub-*/*/*.nii.gz,"357 T1w, 217 T2w, 937 dwi (64-direction runs plus b0-only runs for distortion correction) and 234 bold images"
+scans,contrast=T1w,357,ds005713-file-tree,*_T1w.nii.gz,
+scans,contrast=T2w,217,ds005713-file-tree,*_T2w.nii.gz,
+scans,contrast=dwi,937,ds005713-file-tree,*_dwi.nii.gz,
+scans,contrast=bold,234,ds005713-file-tree,*_bold.nii.gz,resting state
+age_min,,30,filimonova2025,"Methods, Participants and study design",snapshot 1.0.1 cohort; surgical patients aged 30 to 84
+age_max,,84,filimonova2025,"Methods, Participants and study design",snapshot 1.0.1 cohort
