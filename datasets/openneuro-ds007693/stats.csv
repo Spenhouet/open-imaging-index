@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,57,openneuro-ds007693-v1,README,"README states N = 57; the snapshot summary lists 57 subject folders, and the paper reports 57 enrolled participants who all completed the fMRI session"
+subjects,contrast=T1w,57,ds007693-file-listing,anat/sub-*_T1w.nii.gz,
+subjects,contrast=bold,57,ds007693-file-listing,func/sub-*_task-auction*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,57,ds007693-file-listing,anat and func NIfTI files,
+subjects,condition=healthy,57,hutelin2026,Methods (Recruitment and screening),"healthy-weight adults without metabolic, neurologic or psychiatric disorders"
+subjects,sex=male,18,hutelin2026,Extended Data Table 1,
+subjects,country=US,57,hutelin2026,Methods (Recruitment and screening),"recruited in Roanoke, Virginia"
+subjects,field_strength=3,57,hutelin2026,Methods (MRI acquisition parameters),
+subjects,vendor=siemens,57,hutelin2026,Methods (MRI acquisition parameters),Siemens MAGNETOM Prisma
+scans,,415,ds007693-file-listing,sub-*/*/*.nii.gz,"57 T1w, 228 BOLD runs and 130 EPI field maps"
+scans,contrast=T1w,57,ds007693-file-listing,anat/sub-*_T1w.nii.gz,
+scans,contrast=bold,228,ds007693-file-listing,func/sub-*_task-auction*_bold.nii.gz,four auction runs per subject
+age_mean,,26.21,hutelin2026,Extended Data Table 1,
+age_sd,,6.85,hutelin2026,Extended Data Table 1,

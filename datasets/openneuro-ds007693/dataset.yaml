@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007693
+name: Ultraprocessed food valuation fMRI (ds007693)
+full_name: Ultraprocessed foods elicit distinct metabolic and neural responses when compared to non-ultraprocessed foods
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy-weight adults bidding on pictures of ultraprocessed and
+  non-ultraprocessed foods, from a Virginia Tech study of food processing and reward. 57 adults aged 18 to 45, four
+  auction runs each, 3T Siemens Prisma, BIDS, under CC0.
+homepage: https://openneuro.org/datasets/ds007693
+doi: 10.18112/openneuro.ds007693.v1.0.0
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: DiFeliceantonio lab, Fralin Biomedical Research Institute, Virginia Tech (Hutelin Z, DiFeliceantonio AG, et al.)
+    url: https://openneuro.org/datasets/ds007693
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 84.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007693
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Hutelin Z, Ahrens M, Baugh ME, Nartey E, Herald DL III, Hanlon AL, DiFeliceantonio AG. Metabolic and neural
+    responses to ultraprocessed foods: a randomized, controlled, crossover study. Nature Metabolism (2026).
+    doi:10.1038/s42255-026-01619-4. Dataset: OpenNeuro ds007693, doi:10.18112/openneuro.ds007693.v1.0.0.
+sources:
+  hutelin2026:
+    title: Hutelin et al. 2026, Metabolic and neural responses to ultraprocessed foods, Nature Metabolism
+    url: https://doi.org/10.1038/s42255-026-01619-4
+    kind: paper
+  openneuro-ds007693-v1:
+    title: OpenNeuro ds007693 snapshot 1.0.0 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds007693/versions/1.0.0
+    kind: website
+  ds007693-file-listing:
+    title: File listing of ds007693 snapshot 1.0.0 (CC0), counted per subject folder from anat and func NIfTI files
+    url: https://s3.amazonaws.com/openneuro.org?prefix=ds007693/&list-type=2
+    kind: computed
+related: []
+keywords: [task fMRI, food reward, ultraprocessed food, nutrition, valuation, auction task]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
