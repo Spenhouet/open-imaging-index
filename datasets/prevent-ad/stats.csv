@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,349,tremblaymercier2021,Section 2.3.3,"participants who consented to sharing; one shares only in the open tier, so the registered tier has 348"
+subjects,sex=female,247,tremblaymercier2021,Section 2.3.3,
+subjects,sex=male,102,tremblaymercier2021,Section 2.3.3,
+subjects,modality=MR,347,villeneuve2025,Table 1,"shared participants with T1w MRI, 2011 to 2023; 308 of them have MRI in the open tier (Tremblay-Mercier 2021, Section 3.1)"
+subjects,contrast=T1w,347,villeneuve2025,Table 1,shared participants
+subjects,contrast=T2w,286,villeneuve2025,Table 1,shared participants
+subjects,contrast=dwi,346,villeneuve2025,Table 1,shared participants
+subjects,contrast=bold,347,villeneuve2025,Table 1,"shared participants with resting-state fMRI; 293 also have task fMRI"
+subjects,contrast=FLAIR,344,villeneuve2025,Table 1,shared participants
+subjects,contrast=T2starw,342,villeneuve2025,Table 1,shared participants
+subjects,contrast=asl,342,villeneuve2025,Table 1,shared participants
+subjects,tracer=nav4694,232,villeneuve2025,Table 1,"shared participants, registered tier, one cross-sectional scan each"
+subjects,tracer=flortaucipir,229,villeneuve2025,Table 1,"shared participants, registered tier, one cross-sectional scan each"
+subjects,condition=mci,102,villeneuve2025,Section 3.2,classified as MCI at one or more time points by research consensus
+studies,contrast=T1w,2082,villeneuve2025,Table 1,shared visits
+studies,contrast=T2w,566,villeneuve2025,Table 1,shared visits
+studies,contrast=dwi,1303,villeneuve2025,Table 1,shared visits
+studies,contrast=FLAIR,973,villeneuve2025,Table 1,shared visits
+studies,contrast=T2starw,1260,villeneuve2025,Table 1,shared visits
+studies,contrast=asl,1137,villeneuve2025,Table 1,shared visits
+age_mean,,63.6,tremblaymercier2021,Section 2.3.3,age at baseline
+age_sd,,5.1,tremblaymercier2021,Section 2.3.3,age at baseline
