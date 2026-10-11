@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,65,openneuro-ds005226-v1-0-8,README: Summary,participants.tsv also has 65 rows
+subjects,contrast=T1w,65,ds005226-file-tree,,subjects with a sub-*_T1w.nii
+subjects,contrast=bold,65,ds005226-file-tree,,subjects with at least one *_bold.nii
+subjects,contrast_set=bold+T1w,65,ds005226-file-tree,,
+scans,,325,ds005226-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,65,ds005226-file-tree,,
+scans,contrast=bold,260,ds005226-file-tree,,two occluded-image task runs and two resting-state runs per subject
+subjects,sex=female,33,ds005226-participants,sex,
+subjects,sex=male,32,ds005226-participants,sex,
+subjects,age=20-29,65,ds005226-participants,age,ages 20 to 25
+subjects,field_strength=3,65,ds005226-file-tree,MagneticFieldStrength,all T1w and bold sidecars
+subjects,vendor=siemens,65,ds005226-file-tree,Manufacturer,Siemens Prisma model in all sidecars
+subjects,country=CN,65,ds005226-file-tree,InstitutionAddress,Zhengzhou in all sidecars
+age_mean,,22.09,ds005226-participants,age,
+age_min,,20,ds005226-participants,age,
+age_max,,25,ds005226-participants,age,
+age_median,,22,ds005226-participants,age,
