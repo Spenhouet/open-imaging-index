@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,61,rogers2020,Participants,29 young and 32 older adults; participants.tsv and the OpenNeuro 1.0.1 summary also list 61
+subjects,condition=healthy,61,rogers2020,Participants,all participants self-reported healthy
+subjects,sex=female,36,rogers2020,Participants,19 young and 17 older women; participants.tsv also has 36 F
+subjects,sex=male,24,ds002382-participants,sex,sex M
+subjects,sex=other,1,ds002382-participants,sex,sex O
+subjects,age=10-19,1,ds002382-participants,age,
+subjects,age=20-29,27,ds002382-participants,age,
+subjects,age=30-39,1,ds002382-participants,age,
+subjects,age=60-69,14,ds002382-participants,age,
+subjects,age=70-79,14,ds002382-participants,age,
+subjects,age=80-89,4,ds002382-participants,age,
+subjects,sex=female;age=20-29,18,ds002382-participants,age and sex,
+subjects,sex=female;age=60-69,10,ds002382-participants,age and sex,
+subjects,contrast=T1w,61,ds002382-file-tree,anat,one T1w file per subject
+subjects,contrast=T2w,61,ds002382-file-tree,anat,one T2w file per subject
+subjects,contrast=bold,61,ds002382-file-tree,func,four task runs per subject (LISTEN01 LISTEN02 REPEAT01 REPEAT02)
+subjects,contrast_set=bold+T1w+T2w,61,ds002382-file-tree,anat and func,
+subjects,field_strength=3,61,rogers2020,MRI Data Acquisition and Processing,Siemens Prisma at 3 T
+subjects,vendor=siemens,61,rogers2020,MRI Data Acquisition and Processing,Siemens Prisma at 3 T
+subjects,country=US,61,rogers2020,Participants,recruited and scanned at Washington University in St. Louis
+scans,,366,ds002382-file-tree,anat and func,sum of the disjoint T1w (61) T2w (61) and bold (244) NIfTI files
+scans,contrast=T1w,61,ds002382-file-tree,anat,
+scans,contrast=T2w,61,ds002382-file-tree,anat,
+scans,contrast=bold,244,ds002382-file-tree,func,
+age_mean,,48.4,ds002382-participants,age,
+age_sd,,24.0,ds002382-participants,age,
+age_median,,65,ds002382-participants,age,
+age_min,,19,ds002382-participants,age,
+age_max,,81,ds002382-participants,age,

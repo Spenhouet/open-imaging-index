@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002382
+name: Spoken word perception in aging fMRI (ds002382)
+full_name: The neural basis of spoken word perception in older adults
+summary: >-
+  Structural and sparse-sampling task fMRI of healthy young and older adults who listened to or repeated spoken words,
+  collected to compare auditory cortex activity across age. 61 adults from St. Louis, USA, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002382
+doi: 10.18112/openneuro.ds002382.v1.0.1
+# First public snapshot (1.0.0) on OpenNeuro, 2020-01-09; latest snapshot 1.0.1, 2022-04-04.
+year: 2020
+updated: 2022
+version: 1.0.1
+status: active
+creators:
+  - name: Rogers CS, Jones MS, McConkey S, Spehar B, Van Engen KJ, Sommers MS, Peelle JE (Washington University in St. Louis)
+    url: https://openneuro.org/datasets/ds002382
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 61.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002382
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Rogers CS, Jones MS, McConkey S, Spehar B, Van Engen KJ, Sommers MS, Peelle JE. Age-related differences in auditory
+    cortex activity during spoken word recognition. Neurobiology of Language 1, 452-473 (2020). doi:10.1162/nol_a_00021
+sources:
+  rogers2020:
+    title: Rogers et al. 2020, Age-related differences in auditory cortex activity during spoken word recognition, Neurobiology of Language
+    url: https://doi.org/10.1162/nol_a_00021
+    kind: paper
+  openneuro-ds002382-v1-0-1:
+    title: OpenNeuro ds002382 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds002382/versions/1.0.1
+    kind: website
+  ds002382-participants:
+    title: participants.tsv of ds002382 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds002382/blob/main/participants.tsv
+    kind: computed
+  ds002382-file-tree:
+    title: File listing of ds002382 snapshot 1.0.1 (CC0), counted per anat and func NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds002382
+    kind: computed
+related: []
+keywords: [speech perception, spoken word recognition, cognitive aging, auditory cortex, sparse imaging, task fMRI, multiband, older adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
