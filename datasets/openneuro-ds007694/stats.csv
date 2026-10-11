@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,139,ds007694-participants,participant_id,the paper's analysed sample was 141; 139 are shared
+studies,,139,ds007694-file-tree,sub-* folders,one session per subject
+scans,,411,ds007694-file-tree,"anat/*_T1w.nii.gz, func/*_bold.nii.gz, perf/*_asl.nii.gz","imaging volumes only; 276 MRS NIfTI files (svs and mrsref) and derivatives not counted"
+subjects,modality=MR,139,ds007694-file-tree,sub-* folders,
+subjects,contrast=T1w,137,ds007694-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,137,ds007694-file-tree,func/*_task-rest_bold.nii.gz,resting state
+subjects,contrast=asl,137,ds007694-file-tree,perf/*_asl.nii.gz,pulsed ASL
+subjects,contrast_set=asl+bold+T1w,136,ds007694-file-tree,anat/func/perf NIfTI files,
+subjects,contrast_set=bold+T1w,1,ds007694-file-tree,anat/func/perf NIfTI files,
+subjects,contrast_set=asl,1,ds007694-file-tree,anat/func/perf NIfTI files,
+subjects,vendor=siemens,139,ds007694-file-tree,Manufacturer in JSON sidecars,Siemens Prisma
+subjects,field_strength=3,139,iseli2025,"Methods, Multimodal Neuroimaging","same 3 T scanner for all brain measures; MagneticFieldStrength 3 in all T1w and ASL sidecars"
+subjects,country=CH,139,iseli2025,"Methods, Multimodal Neuroimaging",University Hospital Basel
+subjects,condition=healthy,139,openneuro-ds007694-v1-0-2,README,healthy participants from the general population with high or low schizotypy
+subjects,sex=female,97,ds007694-participants,sex,
+subjects,sex=male,41,ds007694-participants,sex,
+subjects,sex=other,1,ds007694-participants,sex,coded O
+subjects,age=10-19,19,ds007694-participants,age,
+subjects,age=20-29,120,ds007694-participants,age,
+age_mean,,21.9,ds007694-participants,age,
+age_median,,22,ds007694-participants,age,
+age_sd,,1.9,ds007694-participants,age,
+age_min,,18,ds007694-participants,age,
+age_max,,25,ds007694-participants,age,
