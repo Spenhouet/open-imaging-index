@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: knight-2022
+name: KNIGHT
+full_name: >-
+  KNIGHT Challenge - Kidney clinical Notes and Imaging to Guide and Help personalize Treatment and biomarkers discovery
+summary: >-
+  Preoperative contrast CT and clinical records of kidney tumor patients, labelled with the postoperative American
+  Urological Association risk group to predict before surgery who is a candidate for adjuvant therapy. Reuses the
+  KiTS21 training cases.
+homepage: https://github.com/neheller/KNIGHT
+doi: 10.1371/journal.pone.0323240
+year: 2021
+status: active
+creators:
+  - name: KNIGHT challenge organizers, IBM Research and University of Minnesota (Heller N., Weight C. et al.)
+    url: https://github.com/neheller/KNIGHT
+species: human
+modalities: [CT]
+contrasts: [ct_arterial]
+anatomy: [kidney, abdomen]
+conditions: [kidney_cancer]
+tasks: [classification]
+formats: [NIfTI]
+countries: [US]
+access:
+  type: open
+  url: https://github.com/neheller/KNIGHT
+licenses:
+  - license: MIT
+    applies_to: >-
+      Clinical data and risk group labels (knight/data/knight.json) and the download script in the KNIGHT GitHub
+      repository.
+  - license: CC-BY-NC-SA-4.0
+    applies_to: >-
+      CT imaging of the same KiTS case ids, as distributed through the Hugging Face repository
+      neheller/KiTS-Challenge-Imaging that the KiTS repositories download from.
+    note: >-
+      The KNIGHT repository states no license for the imaging. Its download script points to a storage bucket that no
+      longer exists.
+license_combine: all
+citation:
+  text: >-
+    Barros V, Abdallah N, Ozery-Flato M, et al. Preoperative kidney tumor risk estimation with AI: From logistic
+    regression to transformer. PLOS ONE (2025). doi:10.1371/journal.pone.0323240
+sources:
+  knight-github:
+    title: neheller/KNIGHT GitHub repository README (data access, prediction target, inference-time attributes)
+    url: https://github.com/neheller/KNIGHT
+    kind: website
+  barros2025:
+    title: Barros et al. 2025, PLOS ONE, preoperative kidney tumor risk estimation (KNIGHT challenge outcomes)
+    url: https://doi.org/10.1371/journal.pone.0323240
+    kind: paper
+  knight-clinical-json:
+    title: knight/data/knight.json in neheller/KNIGHT (MIT), clinical data of the 300 training cases, counted per case
+    url: https://github.com/neheller/KNIGHT/blob/main/knight/data/knight.json
+    kind: computed
+related: [kits23]
+keywords: [kidney tumor, renal mass, risk classification, adjuvant therapy, clinical data, challenge, ISBI 2022]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
