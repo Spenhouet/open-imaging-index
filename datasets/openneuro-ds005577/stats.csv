@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,70,openneuro-ds005577-v100,README: Participants,"35 adults with dyslexia and 35 without; 70 sub-* folders and 70 rows in participants.tsv"
+subjects,condition=dyslexia,35,openneuro-ds005577-v100,README: Participants,
+subjects,condition=healthy,35,openneuro-ds005577-v100,README: Participants,no diagnosis of language or reading impairment
+subjects,sex=female,43,ds005577-file-tree,participants.tsv: sex,self-rated
+subjects,sex=male,27,ds005577-file-tree,participants.tsv: sex,self-rated
+subjects,age=10-19,19,ds005577-file-tree,participants.tsv: age,age at scanning; youngest 17
+subjects,age=20-29,39,ds005577-file-tree,participants.tsv: age,age at scanning
+subjects,age=30-39,12,ds005577-file-tree,participants.tsv: age,age at scanning; oldest 37
+subjects,condition=dyslexia;sex=female,21,ds005577-file-tree,participants.tsv: group and sex,
+subjects,condition=dyslexia;sex=male,14,ds005577-file-tree,participants.tsv: group and sex,
+subjects,condition=healthy;sex=female,22,ds005577-file-tree,participants.tsv: group and sex,
+subjects,condition=healthy;sex=male,13,ds005577-file-tree,participants.tsv: group and sex,
+subjects,contrast=T1w,70,ds005577-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=dwi,70,ds005577-file-tree,sub-*/dwi/*_dwi.nii.gz,
+subjects,contrast=bold,70,ds005577-file-tree,sub-*/func/*_bold.nii.gz,all three tasks for every subject
+subjects,contrast_set=bold+dwi+T1w,70,ds005577-file-tree,"anat, dwi and func folders",field maps not counted as a contrast
+studies,,70,ds005577-file-tree,sub-* folders,one session per subject (no session folders)
+scans,,630,ds005577-file-tree,sub-*/*/*.nii.gz,"all raw image files: 70 T1w, 70 dwi, 210 bold and 280 field map images (70 reverse phase-encoded b0, 70 phasediff, 140 magnitude)"
+scans,contrast=T1w,70,ds005577-file-tree,*_T1w.nii.gz,
+scans,contrast=dwi,70,ds005577-file-tree,*_dir-AP_dwi.nii.gz,
+scans,contrast=bold,210,ds005577-file-tree,*_bold.nii.gz,"70 each for the lexical decision (task-read), visual rhyme decision (task-rhyme) and covert letter fluency (task-wgen) tasks"
+scans,contrast=T1w;vendor=siemens,70,ds005577-file-tree,T1w sidecars: Manufacturer,all Prisma_fit
+scans,contrast=T1w;field_strength=3,70,ds005577-file-tree,T1w sidecars: MagneticFieldStrength,
+scans,contrast=T1w;country=BE,70,ds005577-file-tree,T1w sidecars: InstitutionName,"UGent (30) and UZ Gent (40); README names Ghent University Hospital"

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005577
+name: Adult Dyslexia Functional and Structural MRI (ds005577)
+full_name: Functional and structural differences in adults with dyslexia
+summary: >-
+  Structural, diffusion and task fMRI of young adults with and without dyslexia, collected in Ghent to compare brain
+  structure and language-task activation between groups. 70 participants (35 dyslexia, 35 controls) in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds005577
+doi: 10.18112/openneuro.ds005577.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: Helena Verhelst, Emma Karlsson, Robin Gerrits and Guy Vingerhoets
+    url: https://openneuro.org/datasets/ds005577
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [dyslexia, healthy]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 46.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005577/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005577/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Verhelst H, Karlsson E, Gerrits R, Vingerhoets G. Functional and structural differences in adults with dyslexia.
+    OpenNeuro, version 1.0.0 (2024). doi:10.18112/openneuro.ds005577.v1.0.0
+sources:
+  openneuro-ds005577-v100:
+    title: >-
+      OpenNeuro ds005577 snapshot 1.0.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005577/versions/1.0.0
+    kind: website
+  ds005577-file-tree:
+    title: >-
+      File tree, participants.tsv and JSON sidecars of ds005577 snapshot 1.0.0 (CC0), raw NIfTI files counted per
+      subject folder, sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds005577/tree/1.0.0
+    kind: computed
+related: []
+keywords: [dyslexia, reading, language, lexical decision, rhyme judgement, verbal fluency, diffusion MRI, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
