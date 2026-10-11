@@ -1,0 +1,36 @@
+measure,by,value,source,where,note
+subjects,,72,bezmaternykh2021,Section 2.1 and Table 1,"51 patients with depression, 21 healthy controls"
+scans,,144,openneuro-ds002748-v1-0-5,file listing,one T1w and one resting-state BOLD run per subject
+subjects,contrast=T1w,72,openneuro-ds002748-v1-0-5,file listing,sub-*/anat/*_T1w.nii.gz
+subjects,contrast=bold,72,openneuro-ds002748-v1-0-5,file listing,sub-*/func/*_task-rest_bold.nii.gz
+subjects,contrast_set=bold+T1w,72,openneuro-ds002748-v1-0-5,file listing,
+subjects,condition=depression,51,bezmaternykh2021,Section 2.1 and Table 1,"mild (F32.0) or moderate (F32.1) depressive episode, or dysthymia (F34.1)"
+subjects,condition=healthy,21,bezmaternykh2021,Section 2.1 and Table 1,
+subjects,sex=female,53,bezmaternykh2021,Table 1,15 controls and 38 patients
+subjects,sex=male,19,bezmaternykh2021,Table 1,6 controls and 13 patients
+subjects,condition=depression;sex=female,38,bezmaternykh2021,Table 1,
+subjects,condition=depression;sex=male,13,bezmaternykh2021,Table 1,
+subjects,condition=healthy;sex=female,15,bezmaternykh2021,Table 1,
+subjects,condition=healthy;sex=male,6,bezmaternykh2021,Table 1,
+subjects,country=RU,72,bezmaternykh2021,Section 2.2,scanned at the International Tomography Center in Novosibirsk
+subjects,vendor=philips,72,bezmaternykh2021,Section 2.2,Philips Ingenia
+subjects,field_strength=3,72,bezmaternykh2021,Section 2.2,
+subjects,age=10-19,1,ds002748-participants,age column,
+subjects,age=20-29,27,ds002748-participants,age column,
+subjects,age=30-39,26,ds002748-participants,age column,
+subjects,age=40-49,14,ds002748-participants,age column,
+subjects,age=50-59,4,ds002748-participants,age column,
+subjects,condition=depression;age=20-29,21,ds002748-participants,group and age columns,
+subjects,condition=depression;age=30-39,16,ds002748-participants,group and age columns,
+subjects,condition=depression;age=40-49,10,ds002748-participants,group and age columns,
+subjects,condition=healthy;age=30-39,10,ds002748-participants,group and age columns,
+subjects,sex=female;age=20-29,21,ds002748-participants,gender and age columns,
+subjects,sex=female;age=30-39,17,ds002748-participants,gender and age columns,
+subjects,sex=female;age=40-49,11,ds002748-participants,gender and age columns,
+age_mean,,33.08,ds002748-participants,age column,
+age_min,,19,ds002748-participants,age column,
+age_max,,55,ds002748-participants,age column,
+age_mean,condition=depression,33.1,bezmaternykh2021,Table 1,participants.tsv gives 32.78
+age_mean,condition=healthy,33.8,bezmaternykh2021,Table 1,
+age_sd,condition=depression,9.5,bezmaternykh2021,Table 1,
+age_sd,condition=healthy,8.5,bezmaternykh2021,Table 1,

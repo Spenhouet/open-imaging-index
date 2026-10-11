@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002748
+name: Depression eyes-closed resting-state fMRI (ds002748)
+full_name: Resting state with closed eyes for patients with depression and healthy participants
+summary: >-
+  Eyes-closed resting-state fMRI and T1-weighted brain MRI of adults with mild to moderate depression and healthy
+  volunteers, collected in Novosibirsk to compare brain network connectivity between the groups. 72 participants in
+  BIDS under CC0, with depression and rumination scores.
+homepage: https://openneuro.org/datasets/ds002748
+doi: 10.18112/openneuro.ds002748.v1.0.5
+# First snapshot (1.0.0) on OpenNeuro, 2020-04-27; latest snapshot 1.0.5, 2021-08-03.
+year: 2020
+updated: 2021
+version: 1.0.5
+status: active
+creators:
+  - name: >-
+      Bezmaternykh DD, Melnikov ME, Savelov AA, Petrovskii ED (Institute of Molecular Biology and Biophysics and
+      International Tomography Center SB RAS, Novosibirsk)
+    url: https://openneuro.org/datasets/ds002748
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [depression, healthy]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 2.44
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002748
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Bezmaternykh DD, Melnikov MY, Savelov AA, Kozlova LI, Petrovskiy ED, Natarova KA, Shtark MB. Brain Networks
+    Connectivity in Mild to Moderate Depression: Resting State fMRI Study with Implications to Nonpharmacological
+    Treatment. Neural Plasticity 2021, 8846097 (2021). doi:10.1155/2021/8846097
+sources:
+  bezmaternykh2021:
+    title: >-
+      Bezmaternykh et al. 2021, Brain Networks Connectivity in Mild to Moderate Depression: Resting State fMRI Study
+      with Implications to Nonpharmacological Treatment, Neural Plasticity
+    url: https://doi.org/10.1155/2021/8846097
+    kind: paper
+  openneuro-ds002748-v1-0-5:
+    title: >-
+      OpenNeuro ds002748 snapshot 1.0.5 (dataset_description.json, README, task-rest_bold.json, file listing and
+      snapshot size)
+    url: https://openneuro.org/datasets/ds002748/versions/1.0.5
+    kind: website
+  ds002748-participants:
+    title: participants.tsv of ds002748 snapshot 1.0.5 (CC0); columns participant_id, age, gender and group
+    url: https://github.com/OpenNeuroDatasets/ds002748/blob/1.0.5/participants.tsv
+    kind: computed
+related: []
+keywords: [depression, resting-state fMRI, functional connectivity, default mode network, rumination]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
