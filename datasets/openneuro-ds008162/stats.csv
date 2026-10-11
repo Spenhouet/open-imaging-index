@@ -1,0 +1,39 @@
+measure,by,value,source,where,note
+subjects,,71,ds008162-participants,participant_id,all participants with task fMRI data; 5 are flagged as excluded from analyses in the exclusion column
+studies,,71,ds008162-file-tree,sub-* folders,one MRI visit per subject (no session folders)
+scans,,819,ds008162-file-tree,"anat, dwi and func NIfTI files","73 T1w, 70 T2w, 71 dwi and 605 BOLD runs; single-band references and field maps not counted"
+subjects,modality=MR,71,ds008162-file-tree,sub-*/anat and sub-*/func,
+subjects,contrast=T1w,71,ds008162-file-tree,anat/*_T1w.nii.gz,MPRAGE; one subject has three T1w images
+subjects,contrast=T2w,70,ds008162-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,71,ds008162-file-tree,func/*_bold.nii.gz,task (drawLH and drawRH) and resting-state runs
+subjects,contrast=dwi,71,ds008162-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,70,ds008162-file-tree,anat/ dwi/ func/ NIfTI files,
+subjects,contrast_set=bold+dwi+T1w,1,ds008162-file-tree,anat/ dwi/ func/ NIfTI files,
+scans,contrast=T1w,73,ds008162-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,70,ds008162-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=dwi,71,ds008162-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=bold,605,ds008162-file-tree,func/*_bold.nii.gz,"213 drawLH, 204 drawRH and 188 resting-state runs"
+subjects,vendor=siemens,71,openneuro-ds008162-v1-0-3,README (Experimental location),Siemens Prisma
+subjects,field_strength=3,71,openneuro-ds008162-v1-0-3,README (Experimental location),
+subjects,country=US,71,openneuro-ds008162-v1-0-3,dataset_description.json InstitutionName,Washington University in St. Louis
+subjects,condition=traumatic_neuropathy,25,ds008162-participants,isPatient = 1,chronic unilateral peripheral nerve injury to the right hand or arm
+subjects,condition=healthy,46,ds008162-participants,isPatient = 0,
+subjects,sex=female,46,ds008162-participants,sex,
+subjects,sex=male,24,ds008162-participants,sex,
+subjects,sex=other,1,ds008162-participants,sex,
+subjects,condition=traumatic_neuropathy;sex=female,12,ds008162-participants,"isPatient, sex",
+subjects,condition=traumatic_neuropathy;sex=male,13,ds008162-participants,"isPatient, sex",
+subjects,condition=healthy;sex=female,34,ds008162-participants,"isPatient, sex",
+subjects,condition=healthy;sex=male,11,ds008162-participants,"isPatient, sex",
+subjects,age=20-29,18,ds008162-participants,age,
+subjects,age=30-39,21,ds008162-participants,age,
+subjects,age=40-49,2,ds008162-participants,age,
+subjects,age=50-59,13,ds008162-participants,age,
+subjects,age=60-69,11,ds008162-participants,age,
+subjects,age=70-79,5,ds008162-participants,age,
+subjects,age=80-89,1,ds008162-participants,age,
+age_mean,,44.6,ds008162-participants,age,age in years with decimals
+age_median,,39.2,ds008162-participants,age,
+age_sd,,17.8,ds008162-participants,age,
+age_min,,20,ds008162-participants,age,completed years
+age_max,,82,ds008162-participants,age,completed years

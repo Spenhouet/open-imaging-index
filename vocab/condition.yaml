@@ -460,3 +460,9 @@ terms:
     }
   - { id: plexiform_neurofibroma, label: Plexiform neurofibroma, synonyms: [PNF], mappings: { mondo: 'MONDO:0003304' } }
   - { id: gulf_war_illness, label: Gulf War illness, synonyms: [GWI, Gulf War syndrome, Persian Gulf syndrome], mappings: { mondo: 'MONDO:0005907' } }
+  - {
+      id: traumatic_neuropathy,
+      label: Traumatic neuropathy,
+      synonyms: [peripheral nerve injury, PNI, traumatic nerve injury],
+      mappings: { mondo: 'MONDO:0100634' }
+    }

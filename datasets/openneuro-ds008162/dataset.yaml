@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds008162
+name: Precision Drawing fMRI, Nerve Injury (ds008162)
+full_name: Precision drawing during task fMRI in healthy adults and individuals with peripheral nerve injury
+summary: >-
+  Task fMRI of right-handed adults drawing with each hand on an MRI-compatible tablet, collected to study how the
+  non-dominant left hand learns precision drawing in healthy people and after peripheral nerve injury to the right
+  arm. Adds resting-state fMRI, T1w, T2w, diffusion MRI and drawing kinematics.
+homepage: https://openneuro.org/datasets/ds008162
+doi: 10.18112/openneuro.ds008162.v1.0.3
+# First public snapshot (1.0.0) on OpenNeuro, 2026-07-09; latest snapshot 1.0.3, 2026-07-09.
+year: 2026
+updated: 2026
+version: 1.0.3
+status: active
+creators:
+  - name: Kim T, Kapil N, Gassass S, Fletcher S, Dobbins IG, McAvoy MP, Wang Y, Philip BA (Washington University School of Medicine)
+    url: https://openneuro.org/datasets/ds008162
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [head, brain]
+conditions: [traumatic_neuropathy, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 142.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008162
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Namarta Kapil, Taewon Kim, Mark P. McAvoy, and Benjamin A. Philip (2026). Precision drawing during task fMRI in
+    healthy adults and individuals with peripheral nerve injury. OpenNeuro. [Dataset] doi:
+    10.18112/openneuro.ds008162.v1.0.3
+sources:
+  openneuro-ds008162-v1-0-3:
+    title: OpenNeuro ds008162 snapshot 1.0.3 (dataset_description.json, README, participants.json and snapshot size)
+    url: https://openneuro.org/datasets/ds008162/versions/1.0.3
+    kind: website
+  kapil2025:
+    title: >-
+      Kapil N et al. Neural mechanisms of handedness for precision drawing: hand-dependent engagement of cortical
+      networks for bimanual control and tool use. bioRxiv 2025
+    url: https://doi.org/10.1101/2025.11.18.689091
+    kind: paper
+  ds008162-participants:
+    title: participants.tsv of the ds008162 BIDS repository (CC0), columns isPatient, sex and age
+    url: https://github.com/OpenNeuroDatasets/ds008162/blob/main/participants.tsv
+    kind: computed
+  ds008162-file-tree:
+    title: File listing and JSON sidecars of the ds008162 BIDS repository (CC0), subjects counted per NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds008162
+    kind: computed
+related: []
+keywords: [handedness, precision drawing, motor control, peripheral nerve injury, task fMRI, resting-state fMRI, DBSI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
