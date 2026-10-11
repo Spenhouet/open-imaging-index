@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,54,openneuro-ds006243-v1-1-2,README: Participants,"29 loving-kindness meditation, 25 progressive muscle relaxation; 54 subject folders in the snapshot; the preprint (dressel2025, Methods: Participants) reports 54 of 108 trial completers scanned"
+scans,,216,ds006243-file-tree,sub-*/func/*_bold.nii.gz,"108 preprocessed runs (two per subject), each resampled to MNI152NLin2009cAsym and MNI152NLin6Asym"
+scans,contrast=bold,216,ds006243-file-tree,sub-*/func/*_bold.nii.gz,two runs per subject in two template spaces
+subjects,contrast=bold,54,ds006243-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold,54,ds006243-file-tree,sub-*/,no anatomical images are shared
+subjects,field_strength=3,54,dressel2025,Methods: fMRI acquisition,3T Siemens TIM Trio
+subjects,vendor=siemens,54,dressel2025,Methods: fMRI acquisition,3T Siemens TIM Trio
+subjects,country=US,54,dressel2025,Methods: Participants,recruited in the Washington DC area; scanned at Georgetown University
