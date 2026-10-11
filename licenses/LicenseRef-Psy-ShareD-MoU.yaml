@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Psy-ShareD-MoU
+name: Psy-ShareD Data Sharing Memorandum of Understanding and Terms and Conditions of Use
+short_name: Psy-ShareD MoU
+url: https://psyshared.com/files/Psy-ShareD%20MoU.pdf
+version: >-
+  Psy-ShareD Partnership Data Sharing Memorandum of Understanding and the Terms and Conditions on the Psy-ShareD Data
+  page, as published in October 2026. The Data Use Agreement that King's College London signs with each recipient
+  institution is not published.
+summary: >-
+  Access goes to a specific project after a Data Access Request is approved by the Psy-ShareD Data Management
+  Committee and the contributing sites, followed by a Data Use Agreement with King's College London and local ethics
+  approval. Data may not go to third parties not named in the request, manuscripts go to the partnership before
+  submission, and site PIs and the Psy-ShareD Partnership join the author line. Since 1 June 2026 approved requests
+  pay a data processing charge. The Johns Hopkins dataset carries extra terms.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      JHU’s express written permission is required before Data User is permitted to use the Licenced Dataset for any
+      Commercial Purpose, including licencing the Licenced Dataset to a third party or commercialisation of any
+      Project IPR developed from the use of the Licenced Dataset.
+    source: https://psyshared.com/Data.html
+    note: >-
+      The MoU does not address commercial use; the website describes the database as accessible to UK and
+      international academic institutions. For the Johns Hopkins dataset (PSYD_1601) commercial use needs JHU's written
+      permission.
+  product_validation:
+    value: unspecified
+    note: The published terms do not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: >-
+      The published terms do not mention machine learning. Analyses must stay within the analysis plan of the approved
+      request.
+  derivatives:
+    value: unspecified
+    quote: >-
+      To attempt to avoid overlap between studies/papers resulting from different analysis plans, the data analyses and
+      results reported in the manuscript are limited to those described in the analysis plan.
+    note: The published terms do not address derived data beyond limiting analyses to the approved plan.
+  publication:
+    value: conditional
+    quote: >-
+      In addition, all Psy-ShareD Partners who are site PIs and Co-Is for datasets that have been used in each
+      publication will be listed on the primary author line. The Psy-ShareD Partnership (rather than all individual
+      partners) will also be listed on the primary author line.
+    note: >-
+      With the required co-authors, after the partnership's review of the manuscript, and within the approved analysis
+      plan. Johns Hopkins also reviews drafts that use its dataset.
+  redistribute_original:
+    value: conditional
+    quote: >-
+      Data Users are required to complete a Data Use Agreement (DUA) with KCL and are not permitted to share Psy-ShareD
+      data with third parties unless specified in the Data Access Request Form.
+    note: Only to parties named in the approved Data Access Request Form.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      The Psy-ShareD Partnership will be linked to an expanded author list published within the paper and/or a URL
+      containing all partner information. These conditions are mandatory.
+    note: The MoU also asks for an acknowledgement of UK Medical Research Council award MR/X010651/1.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Data Users are required to complete a Data Use Agreement (DUA) with KCL and are not permitted to share Psy-ShareD
+      data with third parties unless specified in the Data Access Request Form.
+  ethics_approval:
+    value: 'yes'
+    quote: >-
+      Data Users are responsible for ethical approvals required by their local institution and required to provide
+      details (i.e., approval numbers/codes) in the Data Access Request form.
+  publication_review:
+    value: 'yes'
+    quote: >-
+      We request that the manuscript will be submitted to the Psy-ShareD Partnership (Psy_ShareD@kcl.ac.uk) prior to
+      circulating it to all co-authors and prior to submitting to a journal.
+    note: >-
+      The partnership reviews within 2 weeks. For the Johns Hopkins dataset, JHU has 30 days to review manuscripts and
+      10 days for abstracts.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: unspecified
+    quote: >-
+      The DUA agreement sets out the terms and conditions of data use as well as the agreed duration for data use.
+    source: https://psyshared.com/Data.html
+    note: The agreed duration is set in the unpublished Data Use Agreement; what happens to the data afterwards is not stated.
+  no_reidentification:
+    value: unspecified
+    note: >-
+      The published terms do not address re-identification. Data arrive anonymised with Psy-ShareD IDs; the Data Use
+      Agreement itself is not published.
+  geographic_restriction:
+    value: conditional
+    quote: >-
+      The Data User must comply with the following laws during its use of the dataset and conduct of the project: The
+      United States Foreign Corrupt Practices Act, United States anti-boycott laws, the Export Administration
+      Regulations (Department of Commerce), the International Traffic in Arms Regulations, and the economic sanctions
+      programs administered by the Department of the Treasury’s Office of Foreign Assets Control
+    source: https://psyshared.com/Data.html
+    note: >-
+      Only the Johns Hopkins dataset (PSYD_1601) carries US export control and sanctions terms. Otherwise the website
+      opens the database to UK and international academic institutions.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

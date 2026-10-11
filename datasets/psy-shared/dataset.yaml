@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: psy-shared
+name: Psy-ShareD
+full_name: Psychosis MRI Shared Data Resource
+summary: >-
+  Structural T1-weighted brain MRI with linked clinical, demographic and cognitive data from people with
+  schizophrenia, first-episode psychosis, clinical high risk for psychosis, bipolar disorder and healthy controls,
+  pooled from legacy studies at sites on four continents for neuroanatomical research on psychosis.
+homepage: https://psyshared.com/
+year: 2025
+updated: 2026
+status: active
+creators:
+  - name: Psy-ShareD Partnership
+    url: https://psyshared.com/
+  - name: King's College London, Institute of Psychiatry, Psychology and Neuroscience
+    url: https://www.kcl.ac.uk/
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions:
+  [schizophrenia, psychotic_disorder, clinical_high_risk_psychosis, bipolar_disorder, depression, adhd, healthy]
+countries: [GB, IN, DE, US, JP, IT, MX, CH, SG, ES, NL, CN]
+vendors: [ge, siemens, philips]
+field_strengths: [1.5, 3]
+access:
+  type: application
+  url: https://psyshared.com/Data.html?tab=access
+licenses:
+  - license: LicenseRef-Psy-ShareD-MoU
+    note: >-
+      Every site record on KCL Figshare points to the same Psy-ShareD Data Access Request. Approved requests sign a
+      Data Use Agreement with King's College London. Since 1 June 2026 a data processing charge applies (GBP 30.31 per
+      GB, at least GBP 400). The Johns Hopkins dataset (PSYD_1601) carries extra terms on commercial use, publication
+      review and US export and sanctions law.
+citation:
+  text: >-
+    Allen P, Zurita M, Easmin R, et al., the Psy-ShareD Partnership. The Psychosis MRI Shared Data Resource
+    (Psy-ShareD). Human Brain Mapping 46(3):e70165 (2025). doi:10.1002/hbm.70165
+sources:
+  allen2025:
+    title: Allen et al. 2025, The Psychosis MRI Shared Data Resource (Psy-ShareD), Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.70165
+    kind: paper
+  psyshared-data:
+    title: Psy-ShareD Data page (data catalogue, access, terms and conditions)
+    url: https://psyshared.com/Data.html
+    kind: website
+  psyshared-mou:
+    title: Psy-ShareD Data Sharing Memorandum of Understanding
+    url: https://psyshared.com/files/Psy-ShareD%20MoU.pdf
+    kind: website
+  kcl-figshare-psyd1701:
+    title: KCL Figshare record PSYD_1701 KYOTO_1 (one of the per-site Psy-ShareD catalogue records)
+    url: https://doi.org/10.18742/33033956
+    kind: website
+related: []
+keywords:
+  [psychosis, schizophrenia, first-episode psychosis, clinical high risk, structural MRI, FreeSurfer, multi-site, harmonisation]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

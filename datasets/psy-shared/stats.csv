@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+scans,,6974,psyshared-data,Data Catalogue table (TOTAL),"Counts in the catalogue include follow-up scans; one row per dataset, 56 datasets"
+scans,vendor=siemens,2803,psyshared-data,Data Catalogue table (SCANNER column),Sum of the catalogue rows with a Siemens scanner
+scans,vendor=ge,2721,psyshared-data,Data Catalogue table (SCANNER column),Sum of the catalogue rows with a GE scanner
+scans,vendor=philips,1450,psyshared-data,Data Catalogue table (SCANNER column),Sum of the catalogue rows with a Philips scanner
+scans,field_strength=3,5417,psyshared-data,Data Catalogue table (SCANNER column),Sum of the catalogue rows listed as 3T; three rows (374 scans) give no field strength
+scans,field_strength=1.5,1183,psyshared-data,Data Catalogue table (SCANNER column),Sum of the catalogue rows listed as 1.5T
