@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: grmpy
+name: GRMPY (ds008579)
+summary: >-
+  Brain MRI with resting-state and task fMRI, diffusion, perfusion and angiography of adolescents and young adults
+  with irritability or borderline personality disorder and typically developing peers, with clinical diagnoses and
+  extensive questionnaires.
+homepage: https://openneuro.org/datasets/ds008579
+doi: 10.18112/openneuro.ds008579.v1.0.0
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      University of Pennsylvania (Singleton SP, Sevchik BL, Rush S, Brook JBH, Cieslak M, Flook EA, Horien C, Meisler
+      SL, Salo T, Tong TT, Calkins ME, Gur RE, Gur RC, Leibenluft E, Ruparel K, Shinohara RT, Roalf DR, Wolf DH,
+      Satterthwaite TD)
+    url: https://openneuro.org/datasets/ds008579
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, angio, dwi, bold, asl]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 170.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008579
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Singleton SP, Sevchik BL, Rush S, Brook JBH, Cieslak M, Flook EA, Horien C, Meisler SL, Salo T, Tong TT, Calkins
+    ME, Gur RE, Gur RC, Leibenluft E, Ruparel K, Shinohara RT, Roalf DR, Wolf DH, Satterthwaite TD. GRMPY. OpenNeuro
+    ds008579, version 1.0.0 (2026). doi:10.18112/openneuro.ds008579.v1.0.0
+sources:
+  ds008579-participants:
+    title: participants.tsv and participants.json of ds008579 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds008579/blob/1.0.0/participants.tsv
+    kind: computed
+  ds008579-file-tree:
+    title: File tree and JSON sidecars of ds008579 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds008579/tree/1.0.0
+    kind: computed
+related: []
+keywords: [irritability, borderline personality disorder, psychosis spectrum, n-back, resting-state fMRI, arterial spin labeling, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
