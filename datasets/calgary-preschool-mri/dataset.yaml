@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: calgary-preschool-mri
+name: Calgary Preschool MRI
+full_name: Calgary Preschool MRI Dataset
+summary: >-
+  Longitudinal brain MRI of typically developing young children, followed from age 2 into the early school years to
+  chart brain development and its links to cognition. Structural, diffusion, perfusion and resting-state fMRI from 143
+  children over 679 sessions, in BIDS.
+homepage: https://portal.conp.ca/dataset?id=projects/Calgary-Preschool-MRI-Dataset
+doi: 10.17605/OSF.IO/AXZ5R
+# Data descriptor (Reynolds et al. 2020) already points to the OSF project; the BIDS release 1.0 dates from 2026-02-23.
+year: 2020
+updated: 2026
+version: 1.0 (2026-02-23)
+status: active
+creators:
+  - name: Developmental Neuroimaging Lab, University of Calgary (Catherine Lebel)
+    url: https://www.developmentalneuroimaginglab.ca/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold, asl]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 334
+access:
+  type: open
+  url: https://osf.io/axz5r/
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The OSF project that hosts the files and the CONP DATS.json both state CC BY 4.0. The dataset_description.json of
+      the BIDS release lists "PDDL" instead.
+citation:
+  text: >-
+    Reynolds JE, Long X, Paniukov D, Bagshawe M, Lebel C. Calgary Preschool magnetic resonance imaging (MRI) dataset.
+    Data in Brief 29, 105224 (2020). doi:10.1016/j.dib.2020.105224
+sources:
+  reynolds2020:
+    title: Reynolds et al. 2020, Calgary Preschool magnetic resonance imaging (MRI) dataset, Data in Brief (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7016255/
+    kind: paper
+  conp-calgary-preschool:
+    title: CONP repository of the Calgary Preschool MRI Dataset (README, DATS.json, dataset_description.json)
+    url: https://github.com/CONP-PCNO/Calgary-Preschool-MRI-Dataset
+    kind: website
+  calgary-preschool-participants:
+    title: >-
+      participants.tsv of the CONP release (CC BY 4.0), one row per session; sex per participant, age column in years
+    url: https://github.com/CONP-PCNO/Calgary-Preschool-MRI-Dataset/blob/master/participants.tsv
+    kind: computed
+  calgary-preschool-file-tree:
+    title: >-
+      File listing of the CONP BIDS repository (CC BY 4.0), subjects and sessions counted per T1w, T2w, dwi, bold and
+      asl NIfTI file
+    url: https://github.com/CONP-PCNO/Calgary-Preschool-MRI-Dataset/tree/master
+    kind: computed
+related: []
+keywords: [early childhood, brain development, pediatric, longitudinal, diffusion MRI, arterial spin labeling, ihMT]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

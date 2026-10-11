@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,143,conp-calgary-preschool,DATS.json description,participants.tsv also lists 143 participants
+studies,,679,conp-calgary-preschool,DATS.json description,1 to 28 sessions per child per DATS.json; participants.tsv has 679 rows and 1 to 27 per child
+subjects,sex=female,72,calgary-preschool-participants,sex,
+subjects,sex=male,71,calgary-preschool-participants,sex,
+subjects,country=CA,143,conp-calgary-preschool,README: Overview,
+subjects,vendor=ge,143,conp-calgary-preschool,README: Data acquisition,GE Discovery MR750w
+subjects,field_strength=3,143,conp-calgary-preschool,README: Data acquisition,
+subjects,contrast=T1w,143,calgary-preschool-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,142,calgary-preschool-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=dwi,143,calgary-preschool-file-tree,dwi/*_dwi.nii.gz,b=750 for 143 children and b=2000 for 111
+subjects,contrast=bold,126,calgary-preschool-file-tree,func/*_bold.nii.gz,
+subjects,contrast=asl,140,calgary-preschool-file-tree,perf/*_asl.nii.gz,
+subjects,contrast_set=asl+bold+dwi+T1w+T2w,126,calgary-preschool-file-tree,,over all sessions of a child
+subjects,contrast_set=asl+dwi+T1w+T2w,14,calgary-preschool-file-tree,,over all sessions of a child
+subjects,contrast_set=dwi+T1w+T2w,2,calgary-preschool-file-tree,,over all sessions of a child
+subjects,contrast_set=dwi+T1w,1,calgary-preschool-file-tree,,over all sessions of a child
+studies,contrast=T1w,670,calgary-preschool-file-tree,anat/*_T1w.nii.gz,
+studies,contrast=T2w,659,calgary-preschool-file-tree,anat/*_T2w.nii.gz,
+studies,contrast=dwi,675,calgary-preschool-file-tree,dwi/*_dwi.nii.gz,
+studies,contrast=bold,590,calgary-preschool-file-tree,func/*_bold.nii.gz,
+studies,contrast=asl,589,calgary-preschool-file-tree,perf/*_asl.nii.gz,
+studies,age=1-2,40,calgary-preschool-participants,age,age at the session
+studies,age=3-4,279,calgary-preschool-participants,age,age at the session
+studies,age=5-6,170,calgary-preschool-participants,age,age at the session
+studies,age=7-8,100,calgary-preschool-participants,age,age at the session
+studies,age=9-10,60,calgary-preschool-participants,age,age at the session
+studies,age=11-12,30,calgary-preschool-participants,age,age at the session
+age_min,,1.95,calgary-preschool-participants,age,youngest session
+age_max,,12.99,calgary-preschool-participants,age,oldest session
+age_mean,,4.04,calgary-preschool-participants,age,age at each child's first session
+age_sd,,1.20,calgary-preschool-participants,age,age at each child's first session
