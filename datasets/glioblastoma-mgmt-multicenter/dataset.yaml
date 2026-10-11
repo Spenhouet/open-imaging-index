@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: glioblastoma-mgmt-multicenter
+name: Multi-Institutional Glioblastoma MRI with MGMT (ds007045)
+full_name: >-
+  Real-world Multi-Institutional Glioblastoma MRI Dataset with Standardized Preprocessing, Expert-Validated
+  Segmentation, and MGMT Promoter Profiling
+summary: >-
+  Preoperative brain MRI (T1w, contrast T1w, T2w, FLAIR) of 363 adults with IDH-wildtype glioblastoma from eight
+  hospitals in Italy, Germany, Russia and Spain, with neuroradiologist-checked tumor masks and MGMT promoter
+  methylation status for every patient, under CC0.
+homepage: https://openneuro.org/datasets/ds007045
+doi: 10.18112/openneuro.ds007045.v2.0.1
+year: 2025
+updated: 2026
+version: 2.0.1
+status: active
+creators:
+  - name: >-
+      Federal Neurosurgical Center Novosibirsk and Novosibirsk State University AI Research Center, with Italian,
+      German and Spanish partner hospitals (Filimonova E, Leone A, et al.)
+    url: https://openneuro.org/datasets/ds007045
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [glioblastoma]
+tasks: [segmentation, classification]
+formats: [BIDS, NIfTI]
+countries: [IT, DE, RU, ES]
+vendors: [siemens, philips, ge]
+field_strengths: [1, 1.5, 3]
+size_gb: 19.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007045
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.1 states "License" CC0.
+citation:
+  text: >-
+    Filimonova E, Leone A, Carbone F, et al. Glioblastoma MRI Dataset with Standardized Preprocessing,
+    Expert-Validated Segmentation, and MGMT Profiling. Scientific Data 13, 1213 (2026).
+    https://doi.org/10.1038/s41597-026-07953-2
+sources:
+  filimonova2026:
+    title: >-
+      Filimonova et al. 2026, Glioblastoma MRI Dataset with Standardized Preprocessing, Expert-Validated
+      Segmentation, and MGMT Profiling, Scientific Data (describes the 337-patient release 1.0.1)
+    url: https://doi.org/10.1038/s41597-026-07953-2
+    kind: paper
+  openneuro-ds007045-v2:
+    title: OpenNeuro ds007045 snapshot 2.0.1 (README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds007045/versions/2.0.1
+    kind: website
+  ds007045-participants:
+    title: >-
+      participants.tsv of ds007045 snapshot 2.0.1 (CC0), counted per row; contrasts from the anat file listing of the
+      same snapshot
+    url: https://github.com/OpenNeuroDatasets/ds007045/blob/main/participants.tsv
+    kind: computed
+related: [ucsf-pdgm, upenn-gbm]
+keywords: [glioblastoma, MGMT, radiogenomics, tumor segmentation, BraTS labels, multi-center, MNI152]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
