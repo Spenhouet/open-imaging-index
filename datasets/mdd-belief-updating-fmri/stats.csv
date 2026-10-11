@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,131,scidb-35202,Description,"69 unmedicated patients with MDD plus 62 healthy controls evaluated with task fMRI; the record does not say which files or subjects the deposited file holds"
+subjects,condition=depression,69,scidb-35202,Description,unmedicated patients with major depressive disorder
+subjects,condition=healthy,62,scidb-35202,Description,
