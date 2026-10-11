@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,62,coutino2025,Abstract,62 subject folders in snapshot 1.0.1
+subjects,condition=glaucoma,31,coutino2025,Abstract,asymmetric glaucoma
+subjects,condition=healthy,31,coutino2025,Abstract,
+subjects,sex=female,29,ds006837-participants,Sex,
+subjects,sex=male,33,ds006837-participants,Sex,
+subjects,condition=glaucoma;sex=female,14,ds006837-participants,Group; Sex,
+subjects,condition=glaucoma;sex=male,17,ds006837-participants,Group; Sex,
+subjects,condition=healthy;sex=female,15,ds006837-participants,Group; Sex,
+subjects,condition=healthy;sex=male,16,ds006837-participants,Group; Sex,
+subjects,age=20-29,4,ds006837-participants,Age,
+subjects,age=40-49,5,ds006837-participants,Age,
+subjects,age=50-59,24,ds006837-participants,Age,
+subjects,age=60-69,23,ds006837-participants,Age,
+subjects,age=70-79,6,ds006837-participants,Age,
+subjects,condition=glaucoma;age=60-69,14,ds006837-participants,Group; Age,other group and age cells below 10 left out
+subjects,condition=healthy;age=50-59,17,ds006837-participants,Group; Age,other group and age cells below 10 left out
+age_mean,,57.2,ds006837-participants,Age,
+age_median,,58,ds006837-participants,Age,
+age_min,,20,ds006837-participants,Age,
+age_max,,75,ds006837-participants,Age,
+subjects,contrast=T1w,62,openneuro-ds006837-v101,sub-*/anat,
+subjects,contrast=FLAIR,59,openneuro-ds006837-v101,sub-*/anat,
+subjects,contrast=dwi,62,openneuro-ds006837-v101,sub-*/dwi,
+subjects,contrast_set=dwi+FLAIR+T1w,59,openneuro-ds006837-v101,sub-*,fieldmap EPI images are not counted as a contrast
+subjects,contrast_set=dwi+T1w,3,openneuro-ds006837-v101,sub-*,
+subjects,vendor=ge,62,openneuro-ds006837-v101,README.md: MRI Acquisition,GE Discovery MR750 with 32-channel head coil
+subjects,field_strength=3,62,openneuro-ds006837-v101,README.md: MRI Acquisition,
+subjects,country=MX,62,openneuro-ds006837-v101,README.md: Overview,"Instituto de Neurobiología, UNAM, Querétaro"
+scans,,244,openneuro-ds006837-v101,sub-*,"sum of the disjoint T1w, FLAIR and dwi NIfTI counts below; fieldmaps not included"
+scans,contrast=T1w,62,openneuro-ds006837-v101,sub-*/anat,
+scans,contrast=FLAIR,59,openneuro-ds006837-v101,sub-*/anat,
+scans,contrast=dwi,123,openneuro-ds006837-v101,sub-*/dwi,MUSE series for 62 subjects and hyperband series for 61

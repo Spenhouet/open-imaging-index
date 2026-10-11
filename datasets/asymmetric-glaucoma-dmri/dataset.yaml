@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: asymmetric-glaucoma-dmri
+name: Asymmetric glaucoma visual pathway diffusion MRI (ds006837)
+full_name: >-
+  Disentangling crossing fibers with advanced dMRI methods reveals bundle-specific degeneration across the visual
+  system in asymmetric glaucoma
+summary: >-
+  Multi-shell diffusion and structural brain MRI of adults with glaucoma that affects one eye more than the other and
+  of age-matched healthy controls, collected to measure white matter degeneration along the visual pathway, including
+  fiber crossings in the optic chiasm. 62 participants scanned in Mexico.
+homepage: https://openneuro.org/datasets/ds006837
+doi: 10.18112/openneuro.ds006837.v1.0.1
+year: 2025
+updated: 2026
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Instituto de Neurobiología, Universidad Nacional Autónoma de México, and Instituto Mexicano de Oftalmología
+      (Coutiño D, Guerrero J, Domínguez-Frausto CA, García-Guillén M, Coronado-Leija R, Ramírez-Manzanares A,
+      Hernández-Gutiérrez E, Descoteaux M, Ayala M, Badillo M, Concha L)
+    url: https://openneuro.org/datasets/ds006837
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [glaucoma, healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 33.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006837
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Coutiño D, Guerrero J, Domínguez-Frausto CA, García-Guillén M, Coronado-Leija R, Ramírez-Manzanares A,
+    Hernández-Gutiérrez E, Descoteaux M, Ayala M, Badillo M, Concha L. End-to-end evaluation of white matter
+    microstructure of the visual pathway in asymmetric glaucoma. bioRxiv (2025). doi:10.1101/2025.10.20.683506
+sources:
+  coutino2025:
+    title: >-
+      Coutiño et al. 2025, End-to-end evaluation of white matter microstructure of the visual pathway in asymmetric
+      glaucoma, bioRxiv preprint 2025.10.20.683506 v1
+    url: https://doi.org/10.1101/2025.10.20.683506
+    kind: paper
+  openneuro-ds006837-v101:
+    title: OpenNeuro ds006837 snapshot 1.0.1 (dataset_description.json, README.md, CHANGES, file tree and sidecars)
+    url: https://openneuro.org/datasets/ds006837/versions/1.0.1
+    kind: website
+  ds006837-participants:
+    title: participants.tsv of OpenNeuro ds006837 snapshot 1.0.1 (CC0)
+    url: https://openneuro.org/crn/datasets/ds006837/snapshots/1.0.1/files/participants.tsv
+    kind: computed
+keywords:
+  [glaucoma, visual pathway, optic chiasm, optic radiation, crossing fibers, multi-shell diffusion, fixel-based analysis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
