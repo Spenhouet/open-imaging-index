@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: feedback-pacing-memory-fmri
+name: Feedback and Learning Pace Memory fMRI
+full_name: The Effects of Feedback Availability and Valence on Memory Performance in Self-Paced and Fixed-Paced Learning
+summary: >-
+  Task fMRI study of participants learning items at their own pace or at a fixed pace, with or without feedback
+  and with reward or punishment feedback. Only group-level SPM results and behavioral tables are public; individual
+  scans are not shared.
+homepage: https://www.scidb.cn/en/detail?dataSetId=1ab6f3708438496abc57d38ecb11a23c
+doi: 10.57760/sciencedb.32426
+year: 2026
+version: V2
+status: active
+creators:
+  - name: Liangzhi Jia, Guizhou Normal University
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+formats: [NIfTI]
+# DataCite metadata of the ScienceDB record: 112087788 bytes in 173 files, all derived results.
+size_gb: 0.11
+access:
+  type: not_shared
+  url: https://www.scidb.cn/en/detail?dataSetId=1ab6f3708438496abc57d38ecb11a23c
+  note: >-
+    The public Science Data Bank record holds only derived files: six group-level SPM models (learning, judgment of
+    learning and test phase, each for feedback versus no feedback and for reward versus punishment) with beta,
+    contrast, t and F maps, masks and SPM.mat files, region-of-interest extractions, figures, and behavioral accuracy
+    tables. No raw, preprocessed or per-subject images are deposited and no other route to them is given.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Group-level SPM results and behavioral tables on Science Data Bank
+    url: https://creativecommons.org/licenses/by/4.0/
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Individual fMRI scans, which are not shared
+    note: No release or terms are stated for the participants' scans themselves.
+citation:
+  text: >-
+    jia liang zhi. The Effects of Feedback Availability and Valence on Memory Performance in Self-Paced and Fixed-Paced
+    Learning. V2. Science Data Bank, 2026. doi:10.57760/sciencedb.32426
+sources:
+  scidb-32426:
+    title: Science Data Bank record 10.57760/sciencedb.32426, its file listing and DataCite metadata (V2)
+    url: https://doi.org/10.57760/sciencedb.32426
+    kind: website
+related: []
+keywords: [self-paced learning, experimenter-paced learning, feedback, reward and punishment, memory, judgment of learning, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

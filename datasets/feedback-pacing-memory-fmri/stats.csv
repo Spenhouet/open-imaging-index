@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,60,scidb-32426,Description,participants with behavioral performance and fMRI results; the record holds only group-level results
+subjects,contrast=bold,60,scidb-32426,Description,task fMRI during learning time allocation tasks
