@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: api-generation-study-2
+name: API Generation Study 2 (GS2)
+full_name: >-
+  Alzheimer's Prevention Initiative Generation Study 2, a randomized placebo-controlled trial of umibecestat (CNP520)
+  in cognitively unimpaired APOE4 carriers (NCT03131453)
+summary: >-
+  Brain MRI (safety, volumetric and resting-state functional) and amyloid and tau PET from a prevention trial of the
+  BACE1 inhibitor umibecestat in cognitively unimpaired APOE4 carriers aged 60 to 75. 1145 participants randomized at
+  sites in 25 countries.
+homepage: https://alzheimerspreventioninitiative.com/api-studies/generation-program/
+# The date data were first released was not found. The resource abstract (Alzheimer's & Dementia, December 2025)
+# states the Generation Program data are shared, so 2025 is the earliest year a public source confirms availability.
+year: 2025
+creators:
+  - name: Banner Alzheimer's Institute
+    url: https://alzheimerspreventioninitiative.com/
+  - name: Novartis Pharma AG
+  - name: Amgen
+species: human
+modalities: [MR, PT]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [alzheimers]
+tasks: [longitudinal, classification, regression]
+countries: [US, GB, CA, JP, ES, DE, FR, IL, KR, IT, PT, AU, CN, CH, MX, ZA, TW, AR, BE, CL, FI, NL, IS, PR, SG]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=GS2
+licenses:
+  - license: LicenseRef-API-GS2-DUA
+    note: >-
+      The LONI IDA request is forwarded to the Generation Program team, and approved requests need a signed Data
+      Transfer Agreement whose text is not public. The terms checked here are the ones shown on the LONI IDA
+      application page.
+citation:
+  text: >-
+    Lopez Lopez C, Tariot PN, Caputo A, et al. The Alzheimer's Prevention Initiative Generation Program: Study design of
+    two randomized controlled trials for individuals at risk for clinical onset of Alzheimer's disease. Alzheimer's &
+    Dementia: Translational Research & Clinical Interventions 5:216-227 (2019). doi:10.1016/j.trci.2019.02.005
+sources:
+  lopezlopez2019:
+    title: >-
+      Lopez Lopez et al. 2019, The Alzheimer's Prevention Initiative Generation Program: study design of two randomized
+      controlled trials, Alzheimer's & Dementia: TRCI
+    url: https://doi.org/10.1016/j.trci.2019.02.005
+    kind: paper
+  ctgov-nct03131453:
+    title: ClinicalTrials.gov record NCT03131453 (GS2) with posted results
+    url: https://clinicaltrials.gov/study/NCT03131453
+    kind: website
+  brown2025:
+    title: >-
+      Brown et al. 2025, A resource of data and samples in cognitively unimpaired 60-75-year-olds at increased risk of
+      Alzheimer's disease based on their APOE4 status, Alzheimer's & Dementia 21(S1):e107073
+    url: https://doi.org/10.1002/alz70855_107073
+    kind: paper
+  api-generation-data-page:
+    title: Alzheimer's Prevention Initiative, Generation Program available data
+    url: https://alzheimerspreventioninitiative.com/api-studies/generation-program/available-data/
+    kind: website
+related: [api-adad-colombia]
+keywords:
+  [
+    APOE4,
+    preclinical Alzheimer's disease,
+    prevention trial,
+    umibecestat,
+    BACE inhibitor,
+    amyloid PET,
+    tau PET,
+    resting-state fMRI
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

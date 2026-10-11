@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-API-GS2-DUA
+name: Alzheimer's Prevention Initiative Generation Study 2 (GS2) Data Use Agreement
+short_name: API GS2 DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=GS2
+version: 'Text of the LONI IDA application page, read 2026-10-11'
+summary: >-
+  Access is requested for scientific investigation, teaching or planning clinical research. The request is passed to
+  the Generation Program team, which follows up with further steps, and approved requests need a formally executed
+  Data Transfer Agreement whose terms are not published.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      I request access to anonymized data collected for the Generation Study 2 (GS2) for the purpose of scientific
+      investigation, teaching or the planning of clinical research studies and agree to the following terms.
+    note: The page names the purposes of access but neither allows nor forbids commercial use. The Data Transfer
+      Agreement may say more but is not public.
+  product_validation:
+    value: unspecified
+    note: The page does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The page does not mention machine learning or model training.
+  derivatives:
+    value: unspecified
+    note: The page does not address derived data.
+  publication:
+    value: unspecified
+    note: The page does not address publishing results.
+  redistribute_original:
+    value: unspecified
+    note: The page does not address sharing the data with third parties; the Data Transfer Agreement is not public.
+  redistribute_derivatives:
+    value: unspecified
+    note: The page does not address sharing derived data.
+  share_model_weights:
+    value: unspecified
+    note: The page does not mention trained models or their weights.
+  attribution:
+    value: unspecified
+    note: The page does not ask for an acknowledgment or citation.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Approved requests also require formal execution of a Data Transfer Agreement before accessing Generation
+      Program study data.
+  ethics_approval:
+    value: unspecified
+    note: The page does not mention ethics approval.
+  publication_review:
+    value: unspecified
+    note: The page does not mention a review before publication.
+  code_release:
+    value: 'no'
+  return_results:
+    value: unspecified
+    note: The page does not mention returning results.
+  delete_after_use:
+    value: unspecified
+    note: The page does not mention deleting the data.
+  no_reidentification:
+    value: unspecified
+    note: The page calls the data anonymized but sets no rule on re-identification.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

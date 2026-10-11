@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,1145,ctgov-nct03131453,Participant Flow,"randomized: umibecestat 50 mg 456, umibecestat 15 mg 233, placebo 456; one participant was misrandomized and is left out of the baseline table (1144)"
+subjects,sex=female,720,ctgov-nct03131453,Baseline Characteristics,of 1144 in the baseline table
+subjects,sex=male,424,ctgov-nct03131453,Baseline Characteristics,of 1144 in the baseline table
+subjects,age=60-64,201,ctgov-nct03131453,Baseline Characteristics,"reported as <=64; eligibility starts at 60 years"
+subjects,age=65-69,425,ctgov-nct03131453,Baseline Characteristics,
+subjects,age=70+,518,ctgov-nct03131453,Baseline Characteristics,"reported as >70; the three bins sum to the 1144 in the baseline table, so this bin includes age 70; eligibility ends at 75 years"
