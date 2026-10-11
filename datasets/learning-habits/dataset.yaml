@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: learning-habits
+name: Learning Habits
+full_name: learning-habits (OpenNeuro ds008039)
+summary: >-
+  Task fMRI and T1-weighted brain MRI of 70 participants who learned binary reward choices between stimulus pairs and
+  were then tested, collected to study how habitual choice forms during learning. Includes phase and magnitude
+  fieldmaps for every run.
+homepage: https://openneuro.org/datasets/ds008039
+doi: 10.18112/openneuro.ds008039.v1.0.0
+# CHANGES file: snapshot 1.0.0 dated 2026-06-26, initial release.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Zurich Center for Neuroeconomics, University of Zurich (Fluhr H, Timokhov V, Nebe S)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+# README: study led at the Zurich Center for Neuroeconomics, University of Zurich.
+countries: [CH]
+vendors: [philips]
+field_strengths: [3]
+# OpenNeuro snapshot 1.0.0 size: 25,840,475,361 bytes.
+size_gb: 25.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008039
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Fluhr H, Timokhov V, Nebe S. learning-habits. OpenNeuro [Dataset] (2026). doi:10.18112/openneuro.ds008039.v1.0.0
+sources:
+  openneuro-ds008039-v1-0-0:
+    title: OpenNeuro ds008039 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds008039/versions/1.0.0
+    kind: website
+  ds008039-participants:
+    title: participants.tsv of ds008039 snapshot 1.0.0 (CC0), counted per row; the file has no other columns
+    url: https://github.com/OpenNeuroDatasets/ds008039/blob/1.0.0/participants.tsv
+    kind: computed
+  ds008039-file-tree:
+    title: BIDS file tree of ds008039 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds008039/tree/1.0.0
+    kind: computed
+keywords: [habit formation, reinforcement learning, reward learning, decision making, task fMRI, neuroeconomics]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
