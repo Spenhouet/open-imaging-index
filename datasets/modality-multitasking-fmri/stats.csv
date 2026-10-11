@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,58,ds005038-file-tree,sub-*/,58 subject folders; participants.tsv lists 71 participants (the full sample in mueckstein2025 Methods: Participants) and 13 without updated consent are not released
+studies,,113,ds005038-file-tree,sub-*/ses-pre and ses-post,58 pre-practice and 55 post-practice sessions; three subjects have no post session
+subjects,sex=female,32,ds005038-participants,sex,
+subjects,sex=male,26,ds005038-participants,sex,
+subjects,age=10-19,10,ds005038-participants,age,18 and 19 years
+subjects,age=20-29,48,ds005038-participants,age,20 to 28 years
+age_min,,18,ds005038-participants,age,
+age_max,,28,ds005038-participants,age,
+age_mean,,22.6,ds005038-participants,age,from whole-year values
+age_sd,,2.78,ds005038-participants,age,from whole-year values
+age_median,,23,ds005038-participants,age,
+scans,,1712,ds005038-file-tree,sub-*/ses-*/*/*.nii.gz,"59 T1w, 1296 bold and 357 fieldmap images (119 each of magnitude1, magnitude2 and phasediff)"
+scans,contrast=T1w,59,ds005038-file-tree,anat/*_T1w.nii.gz,one per subject at the pre session plus one post-session T1w for one subject
+scans,contrast=bold,1296,ds005038-file-tree,func/*_bold.nii.gz,"pre: 464 single-task, 116 dual-task, 116 localizer, 58 rest; post: 432 single-task, 110 dual-task"
+subjects,contrast=T1w,58,ds005038-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,58,ds005038-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,58,ds005038-file-tree,sub-*/,
+subjects,vendor=siemens,58,ds005038-participants,scanner,"42 Siemens Magnetom Prisma (one row spelled Primsa) and 16 Siemens Magnetom TIM Trio, as defined in participants.json"
+subjects,field_strength=3,58,ds005038-participants,scanner,both scanners are 3T per participants.json
+subjects,country=DE,58,mueckstein2025,Methods: Experimental overview,MRI sessions took place at the CCNB in Berlin
