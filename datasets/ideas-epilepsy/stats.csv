@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,542,ds005602-file-tree,,542 subject folders; ds007401 has the same 542 subject identifiers
+subjects,condition=epilepsy,442,taylor2025,Section 2.2,drug-resistant focal epilepsy with resective surgery
+subjects,condition=healthy,100,taylor2025,Section 2.2,controls scanned on the same scanners
+subjects,contrast=T1w,542,ds005602-file-tree,,subjects with *_T1w.nii.gz
+subjects,contrast=FLAIR,493,ds005602-file-tree,,subjects with *_FLAIR.nii.gz
+subjects,contrast=dwi,314,ds007401-file-tree,,subjects with *_dwi.nii.gz
+subjects,condition=epilepsy;contrast=T1w,442,taylor2025,Table 1,
+subjects,condition=epilepsy;contrast=FLAIR,410,ds005602-file-tree,,"patient folders with *_FLAIR.nii.gz; taylor2025 gives 411 in Table 1 and 420 in Section 2.4"
+subjects,condition=healthy;contrast=FLAIR,83,ds005602-file-tree,,"control folders (sub-4001 to sub-4100) with *_FLAIR.nii.gz"
+subjects,condition=epilepsy;contrast=dwi,216,taylor2026,Abstract,
+subjects,condition=healthy;contrast=dwi,98,taylor2026,Abstract,
+subjects,contrast_set=dwi+FLAIR+T1w,282,ds007401-file-tree,,"one patient (sub-101) has T1w and FLAIR only in ds005602 and is counted here"
+subjects,contrast_set=FLAIR+T1w,211,ds007401-file-tree,,
+subjects,contrast_set=dwi+T1w,32,ds007401-file-tree,,
+subjects,contrast_set=T1w,17,ds007401-file-tree,,
+subjects,condition=epilepsy;contrast_set=dwi+FLAIR+T1w,200,ds007401-file-tree,,
+subjects,condition=epilepsy;contrast_set=FLAIR+T1w,210,ds007401-file-tree,,
+subjects,condition=epilepsy;contrast_set=dwi+T1w,16,ds007401-file-tree,,
+subjects,condition=epilepsy;contrast_set=T1w,16,ds007401-file-tree,,
+subjects,condition=healthy;contrast_set=dwi+FLAIR+T1w,82,ds007401-file-tree,,
+subjects,condition=healthy;contrast_set=dwi+T1w,16,ds007401-file-tree,,
+scans,,1349,ds007401-file-tree,,"sum of the disjoint T1w, FLAIR and dwi counts below"
+scans,contrast=T1w,542,ds005602-file-tree,,one T1w per subject
+scans,contrast=FLAIR,493,ds005602-file-tree,,one FLAIR per subject
+scans,contrast=dwi,314,ds007401-file-tree,,one dwi per subject
