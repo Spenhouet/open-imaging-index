@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,61,ziv2026,Section 2.1,61 children recruited; snapshot 1.0.0 has 61 subject folders (CHANGES: 61 Participants)
+subjects,sex=male,31,ziv2026,Table 1,
+subjects,condition=healthy,61,ziv2026,Section 2.1,"children with premature birth, adoption, psychiatric, neurological or learning disorders were excluded"
+subjects,contrast=T1w,61,openneuro-ds007185-v100,sub-*/ses-*/anat,one T1w per subject
+subjects,contrast=bold,61,openneuro-ds007185-v100,sub-*/ses-*/func,task-animal runs; two runs for 60 subjects and one for one subject
+subjects,contrast_set=bold+T1w,61,openneuro-ds007185-v100,sub-*,
+subjects,vendor=siemens,61,openneuro-ds007185-v100,*_T1w.json and *_bold.json,all 182 sidecars give Manufacturer Siemens and ManufacturersModelName Prisma
+subjects,field_strength=3,61,openneuro-ds007185-v100,*_T1w.json and *_bold.json,MagneticFieldStrength 3 in all sidecars
+subjects,country=US,61,ziv2026,Section 2.1,recruited from the greater Philadelphia area
+studies,,61,openneuro-ds007185-v100,sub-*/ses-*,one session folder per subject (ses-01 for 59 and ses-03 for 2)
+scans,,182,openneuro-ds007185-v100,sub-*,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,61,openneuro-ds007185-v100,*_T1w.nii.gz,multi-echo MEMPRAGE RMS image
+scans,contrast=bold,121,openneuro-ds007185-v100,*_bold.nii.gz,
+age_mean,,6.95,ziv2026,Section 2.1,SD 0.84 years
+age_sd,,0.84,ziv2026,Section 2.1,
+age_min,,5.25,ziv2026,Section 2.1,
+age_max,,8.79,ziv2026,Section 2.1,

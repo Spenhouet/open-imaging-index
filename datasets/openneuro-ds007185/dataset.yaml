@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007185
+name: Neural Responses to Curiosity in Young Children (ds007185)
+full_name: Neural Responses to Curiosity in Young Children
+summary: >-
+  Brain fMRI of 5- to 8-year-old children listening to short stories about animals they had rated as more or less
+  exciting to learn about, collected to study how state curiosity shapes memory and brain activity. 61 children
+  scanned in Philadelphia, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds007185
+doi: 10.18112/openneuro.ds007185.v1.0.0
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      University of Pennsylvania (Ziv MS, Ellwood-Lowe ME, Botdorf M, Nishio M, Bonawitz E,
+      Mackey AP)
+    url: https://openneuro.org/datasets/ds007185
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007185
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ziv MS, Ellwood-Lowe ME, Botdorf M, Nishio M, Bonawitz E, Mackey AP. Neural responses to state curiosity in young
+    children. Developmental Cognitive Neuroscience 78, 101687 (2026). doi:10.1016/j.dcn.2026.101687
+sources:
+  ziv2026:
+    title: >-
+      Ziv et al. 2026, Neural responses to state curiosity in young children, Developmental Cognitive Neuroscience 78,
+      101687
+    url: https://doi.org/10.1016/j.dcn.2026.101687
+    kind: paper
+  openneuro-ds007185-v100:
+    title: OpenNeuro ds007185 snapshot 1.0.0 (dataset_description.json, CHANGES, snapshot summary, file tree and sidecars)
+    url: https://openneuro.org/datasets/ds007185/versions/1.0.0
+    kind: website
+keywords: [curiosity, memory, learning, cognitive development, children, pediatric, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
