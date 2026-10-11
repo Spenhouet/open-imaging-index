@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,66,chang2015,"Section 2.1, Study Subjects","healthy subjects in the analysis, after excluding 4 of 70 imaged; the Dryad abstract says 67; subjList_NoRpt.txt also lists 66 folders"
+subjects,condition=healthy,66,chang2015,"Section 2.1, Study Subjects",
+subjects,sex=female,30,chang2015,"Section 2.1, Study Subjects",gender_NoRpt.txt gives the same split
+subjects,sex=male,36,chang2015,"Section 2.1, Study Subjects",
+subjects,field_strength=3,66,chang2015,"Section 2.2, Image Acquisition",
+subjects,vendor=siemens,66,chang2015,"Section 2.2, Image Acquisition",Siemens 3T TIM Trio at both sites
+subjects,contrast=T1w,66,dryad-q6d798bd-files,T1.nii.gz per subject folder,MPRAGE
+subjects,contrast=dwi,66,dryad-q6d798bd-files,"DTI, HARDI1 and HARDI2 folders per subject folder","b = 1000 s/mm2 with 30 directions and b = 3000 s/mm2 with 64 directions"
+subjects,contrast_set=dwi+T1w,66,dryad-q6d798bd-files,every session folder,
+subjects,country=US,66,dataverse-28730-subject-lists,site_NoRpt.txt,UCSF and CHOP
+subjects,age=0-9,5,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=10-19,26,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=20-29,11,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=30-39,12,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=40-49,9,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=50-59,2,dataverse-28730-subject-lists,ages_NoRpt.txt,
+subjects,age=60-69,1,dataverse-28730-subject-lists,ages_NoRpt.txt,
+age_min,,7,dataverse-28730-subject-lists,ages_NoRpt.txt,the paper gives an age range of 7 to 63
+age_max,,64,dataverse-28730-subject-lists,ages_NoRpt.txt,the paper gives an age range of 7 to 63
+age_mean,,24.7,dataverse-28730-subject-lists,ages_NoRpt.txt,
+age_median,,21.5,dataverse-28730-subject-lists,ages_NoRpt.txt,
+age_sd,,13.5,dataverse-28730-subject-lists,ages_NoRpt.txt,sample standard deviation
+studies,,75,dryad-q6d798bd-files,session folders,66 unique-subject sessions plus 9 extra test-retest sessions
+scans,,300,dryad-q6d798bd-files,NIfTI image files,four image files per session
+scans,contrast=T1w,75,dryad-q6d798bd-files,T1.nii.gz files,
+scans,contrast=dwi,225,dryad-q6d798bd-files,"DTI.nii.gz, HARDI1.nii.gz and HARDI2.nii.gz files","three diffusion series per session; the bval files show HARDI1 and HARDI2 split the b = 3000 s/mm2 shell"
