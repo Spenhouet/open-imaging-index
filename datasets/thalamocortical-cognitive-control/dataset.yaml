@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: thalamocortical-cognitive-control
+name: Thalamocortical Hierarchical Cognitive Control
+full_name: Thalamocortical contributions to hierarchical cognitive control
+summary: >-
+  Brain MRI and task fMRI of healthy young adults performing a hierarchical context-switching task, collected to study
+  how the thalamus represents and updates task context. Covers 59 participants with eight task runs each.
+homepage: https://openneuro.org/datasets/ds005600
+doi: 10.18112/openneuro.ds005600.v1.1.0
+# CHANGES file: 1.0.0 (2024-10-26) initial upload, 1.1.0 (2024-10-26) updated the name.
+year: 2024
+version: 1.1.0
+creators:
+  - name: University of Iowa (Chen X, Leach S, Hollis J, Cellier D, Hwang K)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 100.23
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005600
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Chen X, Leach SC, Hollis J, Cellier D, Hwang K. The thalamus encodes and updates context representations during
+    hierarchical cognitive control. PLoS Biology 22(12), e3002937 (2024). doi:10.1371/journal.pbio.3002937
+sources:
+  chen2024:
+    title: >-
+      Chen et al. 2024, The thalamus encodes and updates context representations during hierarchical cognitive
+      control, PLoS Biology
+    url: https://doi.org/10.1371/journal.pbio.3002937
+    kind: paper
+  openneuro-ds005600-v1-1-0:
+    title: OpenNeuro ds005600 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds005600/versions/1.1.0
+    kind: website
+  ds005600-file-tree:
+    title: File tree of ds005600 snapshot 1.1.0 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005600
+    kind: computed
+keywords: [thalamus, hierarchical cognitive control, context switching, task fMRI, healthy adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
