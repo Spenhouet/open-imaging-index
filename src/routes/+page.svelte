@@ -77,6 +77,25 @@
     shown = PAGE;
   });
   const visible = $derived(results.slice(0, shown));
+
+  // Infinite scroll: render the next page while the end of the list is still about two screens away, so the cards are
+  // there before the reader gets to them. Re-observing after each page keeps adding pages until the marker is far
+  // enough ahead again.
+  const LOOKAHEAD = '0px 0px 1500px 0px';
+  let sentinel = $state<HTMLElement>();
+  const hasMore = $derived(loaded && results.length > shown);
+  $effect(() => {
+    if (!sentinel || !hasMore) return;
+    void shown;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) shown += PAGE;
+      },
+      { rootMargin: LOOKAHEAD }
+    );
+    io.observe(sentinel);
+    return () => io.disconnect();
+  });
   const resultCount = $derived(loaded ? results.length : ov.count);
 
   const emptyCounts = Object.fromEntries(FACETS.map((f) => [f.id, new Map<string, number>()]));
@@ -347,16 +366,18 @@
         {/each}
       </div>
       {#if results.length > shown || (!loaded && ov.count > results.length)}
-        <div class="mt-6 flex justify-center">
-          <button
-            type="button"
-            disabled={!loaded}
-            class="rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent disabled:opacity-60"
-            onclick={() => (shown += PAGE)}
-          >
-            {#if loaded}Show {Math.min(PAGE, results.length - shown)} more of {results.length - shown}{:else}Loading all {ov.count}
-              datasets...{/if}
-          </button>
+        <div bind:this={sentinel} class="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
+          {#if loaded}
+            <span class="tabular">Showing {shown} of {results.length}</span>
+            <!-- Fallback for keyboard users and when scrolling does not trigger loading. -->
+            <button
+              type="button"
+              class="rounded-md px-2 py-1 text-xs font-medium text-primary hover:underline"
+              onclick={() => (shown += PAGE)}>Show more</button
+            >
+          {:else}
+            <span>Loading all {ov.count} datasets...</span>
+          {/if}
         </div>
       {/if}
     {:else}

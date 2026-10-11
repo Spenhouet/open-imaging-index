@@ -69,3 +69,19 @@ test('skills page offers install commands and skill downloads', async ({ page, r
   const llms = await request.get('/llms.txt');
   expect(await llms.text()).toContain('# Open Imaging Index');
 });
+
+test('catalog loads more datasets while scrolling, before the end of the list is reached', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('[aria-live=polite]')).not.toContainText('Loading');
+  const total = Number(await page.locator('[aria-live=polite] .tabular').innerText());
+  await expect(page.locator('article')).toHaveCount(30);
+  for (let i = 0; i < 400 && (await page.locator('article').count()) < total; i++) {
+    await page.mouse.wheel(0, 800);
+    // The last rendered card must still be below the screen while more are left to show.
+    const ahead = await page.evaluate(
+      () => [...document.querySelectorAll('article')].pop()!.getBoundingClientRect().bottom - innerHeight
+    );
+    expect(ahead).toBeGreaterThan(0);
+  }
+  await expect(page.locator('article')).toHaveCount(total);
+});
