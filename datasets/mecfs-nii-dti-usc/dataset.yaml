@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mecfs-nii-dti-usc
+name: ME/CFS diffusion neuroinflammation imaging maps (UniSC)
+full_name: >-
+  Dataset of preprocessed NII- and DTI-derived metrics from patients with ME/CFS and health controls with sedentary
+  lifestyles
+summary: >-
+  Per-subject white matter diffusion MRI maps (neuroinflammation imaging and tensor metrics) of adults with myalgic
+  encephalomyelitis/chronic fatigue syndrome (ME/CFS) and matched sedentary controls, shared to replicate a study of
+  white matter neuroinflammation and its links to symptoms.
+homepage: https://zenodo.org/records/16916830
+doi: 10.5281/zenodo.16916830
+year: 2025
+version: '1'
+creators:
+  - name: Qiang Yu, University of the Sunshine Coast
+    url: https://orcid.org/0000-0002-2664-8310
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [me_cfs, healthy]
+formats: [NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1.1
+access:
+  type: open
+  url: https://zenodo.org/records/16916830
+  note: >-
+    One zip archive with a folder per participant holding eleven preprocessed parametric maps (seven NII-derived and
+    four DTI-derived) registered to MNI 152 space, plus a spreadsheet of demographics and symptom scores. The raw
+    diffusion-weighted images are not part of the release.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Yu Q, Kothe KJ, Kwiatek RA, Del Fante P, Bonner A, Calhoun VD, Shan Z. Evidence of White Matter Neuroinflammation
+    in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Diffusion-Based Neuroinflammation Imaging Study. Human
+    Brain Mapping 47(4), e70505 (2026). doi:10.1002/hbm.70505
+sources:
+  yu2026:
+    title: Yu et al. 2026, Human Brain Mapping 47(4), e70505
+    url: https://doi.org/10.1002/hbm.70505
+    kind: paper
+  zenodo-16916830:
+    title: Zenodo record 16916830, version 1
+    url: https://zenodo.org/records/16916830
+    kind: website
+related: []
+keywords:
+  [
+    myalgic encephalomyelitis,
+    chronic fatigue syndrome,
+    neuroinflammation,
+    diffusion tensor imaging,
+    neuroinflammation imaging,
+    white matter,
+    TBSS
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

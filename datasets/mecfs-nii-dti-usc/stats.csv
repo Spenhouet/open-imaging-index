@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,134,yu2026,Participant Characteristics,67 ME/CFS patients and 67 healthy controls
+subjects,condition=me_cfs,67,yu2026,Table 1,diagnosed with Canadian Consensus Criteria
+subjects,condition=healthy,67,yu2026,Table 1,healthy controls with sedentary lifestyles
+subjects,sex=female,106,yu2026,Table 1,sum of 54 ME/CFS and 52 control women
+subjects,sex=male,28,yu2026,Table 1,sum of 13 ME/CFS and 15 control men
+subjects,condition=me_cfs;sex=female,54,yu2026,Table 1,
+subjects,condition=me_cfs;sex=male,13,yu2026,Table 1,
+subjects,condition=healthy;sex=female,52,yu2026,Table 1,
+subjects,condition=healthy;sex=male,15,yu2026,Table 1,
+subjects,contrast=dwi,134,yu2026,Participant Characteristics,"derived DTI and NII maps, raw DWI not shared"
+subjects,field_strength=3,134,yu2026,MRI Acquisition,Siemens Skyra 3T
+subjects,vendor=siemens,134,yu2026,MRI Acquisition,
+subjects,country=AU,134,yu2026,Materials and Methods,"University of the Sunshine Coast ethics approval, Australian New Zealand Clinical Trials Registry"
+age_min,,19,yu2026,Table 1,youngest control; youngest ME/CFS patient 24
+age_max,,65,yu2026,Table 1,
