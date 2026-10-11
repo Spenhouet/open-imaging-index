@@ -1,0 +1,37 @@
+measure,by,value,source,where,note
+subjects,,158,openneuro-ds005270-v1-0-0,README (Subjects),158 sub-* folders in the file tree
+studies,,158,ds005270-file-tree,sub-* folders,one MRI session per subject
+scans,,1100,ds005270-file-tree,anat/ dwi/ and func/ NIfTI files,"T1w, FLAIR, dwi and bold volumes"
+subjects,condition=healthy,158,openneuro-ds005270-v1-0-0,README (Subjects),screened healthy and cognitively normal (MMSE > 26)
+subjects,country=CA,158,openneuro-ds005270-v1-0-0,README (Subjects),recruited from the greater Toronto area
+subjects,vendor=siemens,158,openneuro-ds005270-v1-0-0,README (Apparatus),Siemens Trio 3T at Baycrest Health Sciences
+subjects,field_strength=3,158,openneuro-ds005270-v1-0-0,README (Apparatus),
+subjects,contrast=T1w,158,ds005270-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,158,ds005270-file-tree,anat/*_FLAIR.nii.gz,
+subjects,contrast=dwi,153,ds005270-file-tree,dwi/*_dwi.nii.gz,README lists five subjects without dwi
+subjects,contrast=bold,158,ds005270-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+dwi+FLAIR+T1w,153,ds005270-file-tree,,
+subjects,contrast_set=bold+FLAIR+T1w,5,ds005270-file-tree,,
+scans,contrast=bold,631,ds005270-file-tree,func/*_bold.nii.gz,"rest, go/no-go and n-back for 158 subjects, task switching for 157"
+subjects,sex=female,99,ds005270-file-tree,participants.tsv (sex),
+subjects,sex=male,59,ds005270-file-tree,participants.tsv (sex),
+subjects,age=20-29,29,ds005270-file-tree,participants.tsv (age),
+subjects,age=30-39,29,ds005270-file-tree,participants.tsv (age),
+subjects,age=40-49,22,ds005270-file-tree,participants.tsv (age),
+subjects,age=50-59,22,ds005270-file-tree,participants.tsv (age),
+subjects,age=60-69,26,ds005270-file-tree,participants.tsv (age),
+subjects,age=70-79,22,ds005270-file-tree,participants.tsv (age),
+subjects,age=80-89,8,ds005270-file-tree,participants.tsv (age),
+subjects,sex=female;age=20-29,16,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=30-39,17,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=40-49,14,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=50-59,16,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=60-69,17,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=70-79,12,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=male;age=20-29,13,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=male;age=30-39,12,ds005270-file-tree,participants.tsv (sex; age),
+subjects,sex=male;age=70-79,10,ds005270-file-tree,participants.tsv (sex; age),
+age_mean,,49.3,ds005270-file-tree,participants.tsv (age),
+age_median,,49,ds005270-file-tree,participants.tsv (age),
+age_min,,20,ds005270-file-tree,participants.tsv (age),
+age_max,,86,ds005270-file-tree,participants.tsv (age),
