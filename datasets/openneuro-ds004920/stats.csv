@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,59,smith2024,Section 4.1,all participants with brain data
+studies,,59,ds004920-file-tree,sub-* folders,one session per subject (no session folders)
+scans,,474,ds004920-file-tree,"sub-*/anat/*_T1w.nii.gz, sub-*/func/*_bold.nii.gz","59 T1w and 415 BOLD runs; single-band reference images (415) and B0 field maps (58 subjects) not counted"
+subjects,modality=MR,59,ds004920-file-tree,sub-* folders,
+subjects,contrast=T1w,59,ds004920-file-tree,anat/*_T1w.nii.gz,"MPRAGE, defaced with PyDeface"
+subjects,contrast=bold,59,ds004920-file-tree,func/*_bold.nii.gz,"subjects with at least one run per task: doors 59, socialdoors 58, ugdg 58, mid 56, sharedreward 52"
+subjects,contrast_set=bold+T1w,59,ds004920-file-tree,anat and func NIfTI files,field maps are not counted as a contrast
+scans,contrast=T1w,59,ds004920-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,415,ds004920-file-tree,func/*_bold.nii.gz,"116 ugdg, 102 sharedreward, 80 mid, 59 doors and 58 socialdoors runs"
+subjects,vendor=siemens,59,smith2024,Section 4.4,"Siemens Prisma 3T with a 20-channel head coil; Manufacturer Siemens, ManufacturersModelName Prisma in the sidecars"
+subjects,field_strength=3,59,smith2024,Section 4.4,
+subjects,country=US,59,smith2024,Specifications table,"Temple University, Philadelphia, Pennsylvania"
+subjects,sex=female,45,smith2024,Section 4.1,participants.tsv records self-reported gender (Woman)
+subjects,sex=male,14,smith2024,Section 4.1,participants.tsv records self-reported gender (Man)
+subjects,age=18-19,20,ds004920-participants,age,age at the appointment in completed years
+subjects,age=20-29,39,ds004920-participants,age,
+age_mean,,20.89,smith2024,Section 4.1,
+age_sd,,1.75,smith2024,Section 4.1,
+age_min,,18.19,smith2024,Section 4.1,
+age_max,,26.28,smith2024,Section 4.1,
