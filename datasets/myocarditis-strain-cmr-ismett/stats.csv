@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,70,novo2022,Abstract (Methods),patients with acute myocarditis and preserved LVEF; the Zenodo record gives the same count
+subjects,condition=myocarditis,70,novo2022,Abstract (Methods),acute myocarditis with preserved left ventricular ejection fraction
+age_mean,,31,novo2022,Abstract (Methods),
+age_sd,,14,novo2022,Abstract (Methods),
