@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,54,ds004665-participants,participant_id,"54 rows; the snapshot summary also lists 54 subjects"
+scans,,216,ds004665-file-tree,"anat/, dwi/ and func/ NIfTI files","54 T1w, 54 T2w, 54 dwi and 54 bold volumes"
+scans,contrast=T1w,54,ds004665-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,54,ds004665-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=dwi,54,ds004665-file-tree,dwi/*_acq-dti_dwi.nii.gz,
+scans,contrast=bold,54,ds004665-file-tree,func/*_task-resting_bold.nii.gz,one resting-state run per subject
+subjects,contrast=T1w,54,ds004665-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,54,ds004665-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=dwi,54,ds004665-file-tree,dwi/*_acq-dti_dwi.nii.gz,
+subjects,contrast=bold,54,ds004665-file-tree,func/*_task-resting_bold.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,54,ds004665-file-tree,,
+subjects,condition=healthy,54,openneuro-ds004665-v1-0-0,README,healthy older and younger adults
+subjects,sex=female,32,ds004665-participants,sex,coded Female or F
+subjects,sex=male,22,ds004665-participants,sex,coded Male or M
+subjects,age=10-19,5,ds004665-participants,age,
+subjects,age=20-29,15,ds004665-participants,age,
+subjects,age=50-59,3,ds004665-participants,age,
+subjects,age=60-69,12,ds004665-participants,age,
+subjects,age=70-79,16,ds004665-participants,age,
+subjects,age=80-89,3,ds004665-participants,age,"sex by age cells are all below 10, left out"
+subjects,country=US,54,ds004665-participants,scanner_site,"sites byu (Brigham Young University, Provo) and u_of_utah, both in Utah"
+subjects,vendor=siemens,54,ds004665-file-tree,*_T1w.json Manufacturer,Siemens TrioTim in every sidecar
+subjects,field_strength=3,54,ds004665-file-tree,*_T1w.json MagneticFieldStrength,
+age_median,,66.5,ds004665-participants,age,
+age_min,,18,ds004665-participants,age,
+age_max,,83,ds004665-participants,age,

@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004665
+name: Hippocampal pattern separation in aging MRI (ds004665)
+full_name: Structural and functional correlates of behavioral pattern separation in the hippocampus and medial temporal lobe
+summary: >-
+  Structural, diffusion and resting-state brain MRI of healthy younger and older adults, collected to relate hippocampal
+  subfield volumes, white matter and connectivity to how well people tell similar memories apart. 54 participants from
+  Utah at 3T, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004665
+doi: 10.18112/openneuro.ds004665.v1.0.0
+# First and only snapshot (1.0.0) on OpenNeuro, 2023-08-08.
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: Doxey CR, Kirwan CB (Brigham Young University)
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 3.97
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004665
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Doxey CR, Kirwan CB. Structural and functional correlates of behavioral pattern separation in the hippocampus and
+    medial temporal lobe. Hippocampus 25(4):524-533 (2015). doi:10.1002/hipo.22389
+sources:
+  doxey2015:
+    title: >-
+      Doxey and Kirwan 2015, Structural and functional correlates of behavioral pattern separation in the hippocampus
+      and medial temporal lobe, Hippocampus (abstract and author affiliation)
+    url: https://doi.org/10.1002/hipo.22389
+    kind: paper
+  openneuro-ds004665-v1-0-0:
+    title: OpenNeuro ds004665 snapshot 1.0.0 (dataset_description.json, README, CHANGES, BIDS sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds004665/versions/1.0.0
+    kind: website
+  ds004665-participants:
+    title: participants.tsv of ds004665 (CC0), counted per row from the age, sex and scanner_site columns
+    url: https://github.com/OpenNeuroDatasets/ds004665/blob/main/participants.tsv
+    kind: computed
+  ds004665-file-tree:
+    title: >-
+      File listing and BIDS sidecars of the ds004665 repository (CC0), counted per T1w, T2w, dwi and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004665
+    kind: computed
+related: []
+keywords:
+  [pattern separation, mnemonic discrimination, hippocampal subfields, aging, diffusion tensor imaging, resting-state fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
