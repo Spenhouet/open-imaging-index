@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-BDSP-CHDL-1.5.0
+name: BDSP Credentialed Health Data License 1.5.0
+short_name: BDSP CHDL 1.5.0
+url: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-license/1.0/
+version: '1.5.0, with the BDSP Credentialed Health Data Use Agreement (read 2026-10-11)'
+summary: >-
+  Non-commercial research license for credentialed users of the Brain Data Science Platform, who need human-subjects
+  and HIPAA training and must sign the data use agreement. You must not share the data or record-level derivatives,
+  try to identify people, or use the data for products or commercial AI models, and must release the code behind
+  your publications.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The LICENSEE will not use BDSP data for commercial purposes.
+  product_validation:
+    value: 'no'
+    quote: >-
+      The Recipient shall not use the data, or any record-level derivatives, for any commercial purpose, including:
+      product development; product validation; commercialization; marketing; advertising; sale or licensing of
+      products, services, models, or datasets;
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  model_training:
+    value: conditional
+    note: >-
+      Training is allowed within the approved non-commercial research purpose. The data must not go to services that
+      train models outside it, and commercial or proprietary AI/ML models are excluded.
+    quote: >-
+      The Recipient shall not upload or transmit the data to any platform, model, or service that would permit
+      unapproved third-party access or use the data for model training outside the approved research purpose.
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  derivatives:
+    value: conditional
+    note: >-
+      The agreement refers to record-level derivatives and limits them to the non-commercial research purpose; they
+      may not be passed to third parties.
+    quote: >-
+      The Recipient shall not use the data, or any record-level derivatives, for any commercial purpose
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  publication:
+    value: conditional
+    note: >-
+      Publications must not reveal anyone's identity, and the code behind them must be released.
+    quote: >-
+      The LICENSEE will exercise all reasonable and prudent care to avoid disclosure of the identity of any
+      individual or institution referenced in BDSP restricted data in any publication or other communication.
+  redistribute_original:
+    value: 'no'
+    quote: The LICENSEE will not share access to BDSP restricted data with anyone else.
+  redistribute_derivatives:
+    value: 'no'
+    note: Applies to record-level derivatives and extracts.
+    quote: >-
+      The Recipient shall not sell, rent, lease, license, sublicense, broker, transfer, disclose, publish,
+      redistribute, or otherwise provide access to the data, login credentials, downloads, record-level extracts,
+      or record-level derivatives to any third party.
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  share_model_weights:
+    value: unspecified
+    note: >-
+      Selling or licensing models for a commercial purpose is excluded. The texts do not say whether trained weights
+      may be published for research.
+    quote: >-
+      The Recipient shall not use the data, or any record-level derivatives, for any commercial purpose, including:
+      product development; product validation; commercialization; marketing; advertising; sale or licensing of
+      products, services, models, or datasets;
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  attribution:
+    value: unspecified
+    note: >-
+      The license does not require citation. BDSP project pages ask users to cite the dataset ("When using this
+      resource, please cite").
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: Only credentialed users who sign the DUA can access the files.
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/1.0/
+  ethics_approval:
+    value: 'no'
+    note: >-
+      No IRB approval is required, but the licensee must hold current training in human research subject protection
+      and HIPAA.
+    quote: >-
+      The LICENSEE will be responsible for ensuring that he or she maintains up to date certification in human
+      research subject protection and HIPAA regulations.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'yes'
+    quote: >-
+      The LICENSEE agrees to contribute code associated with publications arising from this data to a repository
+      that is open to the research community.
+  return_results:
+    value: 'no'
+    note: >-
+      Results do not have to be returned. Information that might identify someone must be reported to
+      PHI-report@bdsp.io.
+  delete_after_use:
+    value: conditional
+    note: When access is terminated, BDSP can require the data and record-level derivatives to be returned or destroyed.
+    quote: >-
+      Upon termination, the Recipient shall cease use of the data and, at BDSP's direction, return, destroy, or
+      certify destruction of all data and record-level derivatives, except to the extent retention is required by
+      applicable law or approved in writing by BDSP.
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+  no_reidentification:
+    value: 'yes'
+    quote: The LICENSEE will not attempt to identify any individual or institution referenced in BDSP restricted data.
+  geographic_restriction:
+    value: conditional
+    note: >-
+      Access is not restricted by nationality, but requests involving a country of concern or covered person under
+      the US Department of Justice Data Security Program (28 C.F.R. Part 202) get additional review, and the data
+      must not be passed to them.
+    quote: >-
+      The Recipient will not provide access to the data, record-level derivatives, credentials, or any copy of the
+      data to any country of concern, covered person, foreign person, institution, sponsor, collaborator,
+      contractor, or other third party, except as expressly approved in writing by BDSP.
+    source: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-dua/1.0/
+commercial_license:
+  available: conditional
+  note: >-
+    The BIND data descriptor states that commercial entities may get access
+    through a separate institutional agreement with the participating hospitals; its terms are not published.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
