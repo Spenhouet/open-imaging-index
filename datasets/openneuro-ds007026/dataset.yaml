@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007026
+name: Stress and risk task fMRI (ds007026)
+full_name: stressrisk_openNeuro
+summary: >-
+  Task fMRI of adults performing a risky-choice task over two scanning sessions, released by the Ruff group under the
+  title stressrisk. 55 subjects, 52 T1-weighted scans and 630 BOLD runs at 3T, in BIDS under CC0, without participant
+  demographics.
+homepage: https://openneuro.org/datasets/ds007026
+doi: 10.18112/openneuro.ds007026.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Renkert MF, de Hollander G, Aydogan G, Bedi S, Ruff CC
+    url: https://openneuro.org/datasets/ds007026
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+field_strengths: [3]
+size_gb: 64.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007026
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Renkert MF, de Hollander G, Aydogan G, Bedi S, Ruff CC. stressrisk_openNeuro. OpenNeuro ds007026, version 1.0.0
+    (2025). doi:10.18112/openneuro.ds007026.v1.0.0.
+sources:
+  openneuro-ds007026-v1:
+    title: OpenNeuro ds007026 snapshot 1.0.0 (dataset_description.json, CHANGES, task-risk_bold.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds007026/versions/1.0.0
+    kind: website
+  ds007026-file-listing:
+    title: File listing of ds007026 snapshot 1.0.0 (CC0), counted per subject and session folder from anat and func NIfTI files
+    url: https://github.com/OpenNeuroDatasets/ds007026
+    kind: computed
+related: []
+keywords: [task fMRI, risk, decision making, risky choice, stress]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

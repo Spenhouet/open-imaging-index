@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,55,openneuro-ds007026-v1,snapshot summary (subjects),55 subject folders; numbering runs to sub-61 with gaps
+subjects,contrast=T1w,52,ds007026-file-listing,sub-*/ses-1/anat/*_T1w.nii,"sub-22, sub-48 and sub-57 have no T1w"
+subjects,contrast=bold,54,ds007026-file-listing,sub-*/ses-*/func/*_bold.nii,sub-15 has only a T1w
+subjects,contrast_set=bold+T1w,51,ds007026-file-listing,anat and func NIfTI files,
+subjects,contrast_set=bold,3,ds007026-file-listing,anat and func NIfTI files,
+subjects,contrast_set=T1w,1,ds007026-file-listing,anat and func NIfTI files,
+subjects,field_strength=3,55,openneuro-ds007026-v1,task-risk_bold.json (MagneticFieldStrength),
+studies,,105,ds007026-file-listing,sub-*/ses-* folders,"55 ses-1 and 50 ses-2 folders"
+scans,,1300,ds007026-file-listing,sub-*/ses-*/*/*.nii,"52 T1w, 630 BOLD runs and 618 EPI field maps"
+scans,contrast=T1w,52,ds007026-file-listing,sub-*/ses-1/anat/*_T1w.nii,
+scans,contrast=bold,630,ds007026-file-listing,sub-*/ses-*/func/*_bold.nii,"624 runs labelled task-risk and 6 labelled task-task (sub-03, ses-1)"
