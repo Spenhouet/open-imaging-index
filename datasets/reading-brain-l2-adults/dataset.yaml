@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: reading-brain-l2-adults
+name: Reading Brain Project L2 Adults (ds003872)
+full_name: The Reading Brain Project L2 Adults
+summary: >-
+  Brain MRI of adult native Mandarin speakers reading English science texts, collected to study second-language
+  reading comprehension, with T1w, diffusion, resting-state fMRI and naturalistic reading fMRI with simultaneous eye
+  tracking for 56 people.
+homepage: https://openneuro.org/datasets/ds003872
+doi: 10.18112/openneuro.ds003872.v1.0.0
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: Brain, Language, and Computation Lab, Pennsylvania State University (Li P, Hsu C-T, Schloss B, et al.)
+    url: http://blclab.org/reading_brain
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US, CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 68.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003872
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Li P, Hsu C-T, Schloss B, Yu A, Ma L, Scotto M, Seyfried F, Gu C. The Reading Brain Project L2 Adults. OpenNeuro,
+    version 1.0.0 (2021). doi:10.18112/openneuro.ds003872.v1.0.0. The creators also ask to cite Li and Clariana (2019),
+    Journal of Neurolinguistics 50, 94-105, and Follmer et al. (2018), Reading and Writing 31, 185-214.
+sources:
+  openneuro-ds003872-v100:
+    title: OpenNeuro ds003872 snapshot 1.0.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003872/versions/1.0.0
+    kind: website
+  ds003872-demographics:
+    title: L2_adults_demographics.tsv of ds003872 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003872/blob/1.0.0/L2_adults_demographics.tsv
+    kind: computed
+  ds003872-file-tree:
+    title: File tree and JSON sidecars of ds003872 snapshot 1.0.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds003872/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [
+    reading comprehension,
+    second language,
+    bilingualism,
+    Mandarin Chinese,
+    eye tracking,
+    naturalistic reading,
+    resting-state fMRI,
+    diffusion MRI,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

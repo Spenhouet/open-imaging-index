@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,56,openneuro-ds003872-v100,README and snapshot summary,56 subject folders; L2_adults_demographics.tsv also has 56 rows
+subjects,contrast=T1w,56,ds003872-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=dwi,56,ds003872-file-tree,,one sub-*_acq-multiband_dwi.nii.gz per subject folder
+subjects,contrast=bold,56,ds003872-file-tree,,one resting-state run and five reading task runs per subject folder
+subjects,contrast_set=bold+dwi+T1w,56,ds003872-file-tree,,
+subjects,country=US,28,openneuro-ds003872-v100,README,"collected in Hershey, PA; the demographics file labels 28 subjects L2_PSU"
+subjects,country=CN,28,openneuro-ds003872-v100,README,"collected in Beijing; the demographics file labels 28 subjects L2_Beijing"
+scans,,448,ds003872-file-tree,,"sum of the disjoint T1w, dwi and bold NIfTI counts below; field maps are not counted"
+scans,contrast=T1w,56,ds003872-file-tree,,
+scans,contrast=dwi,56,ds003872-file-tree,,
+scans,contrast=bold,336,ds003872-file-tree,,56 resting-state and 280 reading task runs
+subjects,sex=female,30,ds003872-demographics,Gender column,F
+subjects,sex=male,26,ds003872-demographics,Gender column,M
+subjects,age=10-19,4,ds003872-demographics,Age(Year;Month) column,
+subjects,age=20-29,41,ds003872-demographics,Age(Year;Month) column,
+subjects,age=30-39,11,ds003872-demographics,Age(Year;Month) column,
+age_mean,,25.14,ds003872-demographics,Age(Year;Month) column,ages in whole years
+age_sd,,4.74,ds003872-demographics,Age(Year;Month) column,
+age_min,,19,ds003872-demographics,Age(Year;Month) column,
+age_median,,24,ds003872-demographics,Age(Year;Month) column,
+age_max,,38,ds003872-demographics,Age(Year;Month) column,
