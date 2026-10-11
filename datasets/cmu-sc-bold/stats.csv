@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,60,ashourvan2019,Methods: Participants,
+subjects,sex=male,28,ashourvan2019,Methods: Participants,
+subjects,sex=female,32,ashourvan2019,Methods: Participants,
+subjects,condition=healthy,60,ashourvan2019,Methods: Participants,neurologically healthy adults
+age_min,,18,ashourvan2019,Methods: Participants,
+age_max,,45,ashourvan2019,Methods: Participants,
+age_mean,,26.5,ashourvan2019,Methods: Participants,
+subjects,contrast=T1w,60,ashourvan2019,Methods: MRI acquisition,MPRAGE
+subjects,contrast=dwi,60,ashourvan2019,Methods: MRI acquisition,"257-direction diffusion spectrum imaging, b-max 5000 s/mm2"
+subjects,contrast=bold,56,figshare-cmu-sc-bold,Description: MRI acquisition,"resting-state fMRI collected for 56 participants; 3 excluded for head motion, 53 analysed"
+subjects,contrast_set=bold+dwi+T1w,56,figshare-cmu-sc-bold,Description: MRI acquisition,"T1w and DSI for all 60, resting-state fMRI for 56"
+subjects,contrast_set=dwi+T1w,4,figshare-cmu-sc-bold,Description: MRI acquisition,"T1w and DSI for all 60, resting-state fMRI for 56"
+subjects,field_strength=3,60,ashourvan2019,Methods: MRI acquisition,Siemens Verio 3T
+subjects,vendor=siemens,60,ashourvan2019,Methods: MRI acquisition,"Siemens Verio, 32-channel head coil"
+subjects,country=US,60,ashourvan2019,Methods: Participants,"recruited around Pittsburgh, Pennsylvania and at the U.S. Army Research Laboratory, Aberdeen, Maryland; scanned at Carnegie Mellon University"
