@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,58,ds004086-file-tree,sub-*/,58 subject folders; sub-001 and sub-056 of the 60 enrolled are not released
+subjects,condition=healthy,58,van2022,Section 2.1,healthy young adults recruited from the campus community
+subjects,country=US,58,openneuro-ds004086-v1-2-0,README: EXPERIMENTAL LOCATION,"MRI Research Facility at Brigham Young University in Provo, Utah"
+scans,,406,ds004086-file-tree,sub-*/**/*.nii.gz,"58 T1w, 232 bold and 116 field map EPI files (one AP and one PA per subject)"
+scans,contrast=T1w,58,ds004086-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,232,ds004086-file-tree,func/*_bold.nii.gz,4 runs of the recognition task per subject
+subjects,contrast=T1w,58,ds004086-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,58,ds004086-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,58,ds004086-file-tree,sub-*/,
+subjects,field_strength=3,58,van2022,Section 2.4,Siemens Trio 3T with a 12-channel head coil
+subjects,vendor=siemens,58,van2022,Section 2.4,Siemens Trio 3T

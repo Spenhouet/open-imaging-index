@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: triple-dissociation-revisited
+name: Triple Dissociation Revisited
+full_name: >-
+  Evidence for a single rather than a triple dissociation in the medial temporal lobe: an fMRI recognition memory
+  replication study
+summary: >-
+  Brain MRI and task fMRI of healthy young adults doing a word recognition memory test with confidence ratings,
+  collected to replicate reported medial temporal lobe signals of recollection, familiarity and novelty.
+homepage: https://openneuro.org/datasets/ds004086
+doi: 10.18112/openneuro.ds004086.v1.2.0
+year: 2022
+version: 1.2.0
+status: active
+creators:
+  - name: Brigham Young University (Julie Van, Samuel Nielson, C. Brock Kirwan)
+    url: https://openneuro.org/datasets/ds004086
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 9.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004086
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.0 states "License" CC0.
+citation:
+  text: >-
+    Van J, Nielsen SE, Kirwan CB. Evidence for a single rather than a triple dissociation in the medial temporal lobe:
+    An fMRI recognition memory replication study. Neuroimage: Reports 2(4), 100135 (2022).
+    https://doi.org/10.1016/j.ynirp.2022.100135
+sources:
+  van2022:
+    title: Van, Nielsen and Kirwan 2022, Neuroimage Reports 2(4) 100135
+    url: https://doi.org/10.1016/j.ynirp.2022.100135
+    kind: paper
+  openneuro-ds004086-v1-2-0:
+    title: OpenNeuro ds004086 snapshot 1.2.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004086/versions/1.2.0
+    kind: website
+  ds004086-file-tree:
+    title: File tree of ds004086 snapshot 1.2.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds004086/versions/1.2.0/file-display
+    kind: computed
+related: []
+keywords: [recognition memory, medial temporal lobe, hippocampus, recollection, familiarity, replication, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
