@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,138,icpsr37094,Abstract,all Neuroscience Project participants: Main Refresher 93 and Milwaukee Refresher 45; not all completed the MRI session
+subjects,country=US,138,icpsr37094,Abstract,
+subjects,contrast=T1w,127,midus-mr1-p5-restricted,"p. 2, Introduction table",
+subjects,contrast=dwi,118,midus-mr1-p5-restricted,"p. 2, Introduction table",
+subjects,contrast=asl,112,midus-mr1-p5-restricted,"p. 2, Introduction table",
