@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-L-CID-Data-Access
+name: Leiden-CID (L-CID) data access procedure
+short_name: L-CID data access
+url: https://www.developmentmatters.nl/data-access/
+version: '(Meta) data access page of the Leiden-CID study, read 2026-10-11; the data sharing protocol, request form and data sharing agreement templates are announced as coming soon'
+summary: >-
+  Access for bona fide researchers doing non-commercial, publicly funded research. A data request form is reviewed by
+  the Research Data Access Committee, then a data sharing agreement is signed. Users share a publication package
+  within one month of publishing, and access is revoked two months after publication. The agreement text itself is not
+  published.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: All bona fide researchers that carry non-commercial, publicly-funded research can get access to our data.
+  product_validation:
+    value: unspecified
+    note: The published text limits access to non-commercial, publicly funded research but does not address testing or
+      validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: 'yes'
+    quote: To maintain an open science culture, we ask for a publication package to be shared when an article using our
+      data gets published.
+  redistribute_original:
+    value: unspecified
+    note: The conditions on data use and sharing are set in the data sharing agreement, which is not published.
+  redistribute_derivatives:
+    value: unspecified
+    note: The conditions on data use and sharing are set in the data sharing agreement, which is not published.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+    note: The page says the agreement lists rules, rights and citations, but the citation requirement itself is not
+      published.
+  share_alike:
+    value: unspecified
+  signed_agreement:
+    value: 'yes'
+    quote: Once approval is granted, data sharing is subject to the signature of our Data Sharing Agreement.
+  ethics_approval:
+    value: conditional
+    quote: 'The publication package should include: A published manuscript. Used tasks and questionnaires. Raw data.
+      Computer code. Processed data files. Supplementary information. An approved ethics protocol.'
+    note: An approved ethics protocol is part of the publication package that is shared after publication; the page
+      does not say it is needed before access.
+  publication_review:
+    value: 'no'
+    note: Users are asked to share the DOIs of the preprint and the published article, not to send manuscripts for
+      review before publication.
+  code_release:
+    value: conditional
+    quote: 'The publication package should include: A published manuscript. Used tasks and questionnaires. Raw data.
+      Computer code. Processed data files. Supplementary information. An approved ethics protocol.'
+    note: The package goes to the L-CID data manager within one month of publication and is then made semi-publicly
+      available on Dataverse.
+  return_results:
+    value: 'yes'
+    quote: This is why we ask for the publication package to be shared within one month of the publication of the
+      article.
+    note: The package includes processed data files and code.
+  delete_after_use:
+    value: 'yes'
+    quote: Two months after publication, the author will lose access to the data that was used. Additionally, an email
+      will be sent, requesting that any data that may still be in the author's possession (e.g. when the publication
+      package was made) will be removed.
+    note: Access can also be revoked when the data have not been used within two years.
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: conditional
+    quote: For researchers within the EEA where GDPR applies, access will generally be granted provided that all other
+      conditions are met, while for researchers outside of the EEA, an additional evaluation by the privacy office will
+      be needed.
+    note: Researchers outside the European Economic Area need an extra review by the privacy office.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

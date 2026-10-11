@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,488,achterberg2019,Section 3.3.1,"children of the middle childhood cohort who started the MRI protocol at wave 1 (512 included, aged 7 to 9); the number scanned across all waves and both cohorts is not published"
+subjects,contrast=bold,488,achterberg2019,Table 1,"first run of the Social Network Aggression Task at middle childhood cohort wave 1; 442 had a resting-state run"
+age_min,,7,lcid-catalogue-mri,Waves,"youngest wave with MRI (middle childhood cohort wave 1 and early childhood cohort wave 5, ages 7 to 9)"
+age_max,,15,lcid-catalogue-mri,Waves,"middle childhood cohort wave 7, ages 14 to 15"
