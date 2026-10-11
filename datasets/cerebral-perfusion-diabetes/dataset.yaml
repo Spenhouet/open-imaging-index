@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cerebral-perfusion-diabetes
+name: Cerebral Perfusion and Cognitive Decline in Type 2 Diabetes
+summary: >-
+  Brain MRI with arterial spin labeling perfusion of older adults with type 2 diabetes and healthy controls, collected
+  to study how diabetes affects cerebral blood flow regulation and cognition. Images are not shared; derived MRI
+  measures and physiological recordings are public.
+homepage: https://physionet.org/content/cerebral-perfusion-diabetes/
+doi: 10.13026/whjz-e968
+# First PhysioNet release (version 1.0.0, January 2021). The images themselves have no public release.
+year: 2021
+updated: 2022
+version: 1.0.1
+creators:
+  - name: Vera Novak, Beth Israel Deaconess Medical Center
+  - name: Rodrigo Quispe, Beth Israel Deaconess Medical Center
+  - name: Charles Saunders, Boston University
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, asl, dwi]
+anatomy: [brain]
+conditions: [type_2_diabetes, healthy]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://physionet.org/content/cerebral-perfusion-diabetes/
+  note: >-
+    The PhysioNet release holds no MRI images. It contains per-subject tables of derived MRI measures (regional gray
+    and white matter volumes, white matter hyperintensities, regional perfusion), clinical and cognitive data, and
+    transcranial Doppler, ECG and gait recordings, all openly downloadable under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC BY 4.0 license of the PhysioNet project
+      covers only the released tables and physiological recordings.
+citation:
+  text: >-
+    Novak, V., Quispe, R., & Saunders, C. (2022). Cerebral perfusion and cognitive decline in type 2 diabetes (version
+    1.0.1). PhysioNet. https://doi.org/10.13026/whjz-e968
+sources:
+  physionet-cerebral-perfusion-diabetes:
+    title: PhysioNet project page, Cerebral perfusion and cognitive decline in type 2 diabetes, version 1.0.1
+    url: https://physionet.org/content/cerebral-perfusion-diabetes/1.0.1/
+    kind: website
+  ge75-protocol:
+    title: GE-75_protocol.pdf, study protocol shipped with the PhysioNet release
+    url: https://physionet.org/files/cerebral-perfusion-diabetes/1.0.1/GE-75_protocol.pdf
+    kind: website
+  novak2011:
+    title: Novak et al. 2011, Diabetes Care 34(11):2438-2441
+    url: https://doi.org/10.2337/dc11-0969
+    kind: paper
+  ge75-summary-table:
+    title: >-
+      GE-75_data_summary_table.csv (PhysioNet, CC BY 4.0), counted per subject row
+    url: https://physionet.org/files/cerebral-perfusion-diabetes/1.0.1/data_description/GE-75_data_summary_table.csv
+    kind: computed
+related: []
+keywords: [type 2 diabetes, cerebral blood flow, arterial spin labeling, vasoreactivity, cognitive decline]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
