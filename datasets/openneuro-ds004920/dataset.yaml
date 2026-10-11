@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004920
+name: Social and Nonsocial Reward fMRI (ds004920)
+full_name: An fMRI dataset of social and nonsocial reward processing in young adults
+summary: >-
+  Task fMRI and T1-weighted MRI from young adults playing four social and monetary reward games, collected to relate
+  brain reward responses to trait reward sensitivity, substance use and mood symptoms. Twenty questionnaires, BIDS,
+  CC0.
+homepage: https://openneuro.org/datasets/ds004920
+doi: 10.18112/openneuro.ds004920.v1.1.1
+year: 2024
+version: 1.1.1
+status: active
+creators:
+  - name: David V. Smith, Johanna Jarcho and colleagues (DVS Lab, Temple University)
+    url: https://github.com/DVS-Lab/ISTART-DataInBrief
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 55.78
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004920/versions/1.1.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004920/versions/1.1.1
+    note: dataset_description.json of snapshot 1.1.1 states "License" CC0.
+citation:
+  text: >-
+    Smith DV, Wyngaarden J, Sharp CJ, Sazhin D, Zaff O, Fareri D, Jarcho J. An fMRI dataset of social and nonsocial
+    reward processing in young adults. Data in Brief 53, 110197 (2024). doi:10.1016/j.dib.2024.110197
+  bibtex: |
+    @article{smith2024,
+      title={An fMRI dataset of social and nonsocial reward processing in young adults},
+      author={Smith, David V. and Wyngaarden, James and Sharp, Cooper J. and Sazhin, Daniel and Zaff, Ori and Fareri, Dominic and Jarcho, Johanna},
+      journal={Data in Brief},
+      volume={53},
+      pages={110197},
+      year={2024},
+      doi={10.1016/j.dib.2024.110197}
+    }
+sources:
+  smith2024:
+    title: Smith et al. 2024, An fMRI dataset of social and nonsocial reward processing in young adults, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2024.110197
+    kind: paper
+  openneuro-ds004920-v1-1-1:
+    title: OpenNeuro ds004920 snapshot 1.1.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004920/versions/1.1.1
+    kind: website
+  ds004920-participants:
+    title: participants.tsv of the ds004920 BIDS repository (CC0), column age
+    url: https://github.com/OpenNeuroDatasets/ds004920/blob/main/participants.tsv
+    kind: computed
+  ds004920-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds004920 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds004920
+    kind: computed
+related: []
+keywords:
+  [
+    social reward,
+    reward sensitivity,
+    monetary incentive delay,
+    ultimatum game,
+    dictator game,
+    shared reward,
+    substance use,
+    task fMRI,
+    young adults,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
