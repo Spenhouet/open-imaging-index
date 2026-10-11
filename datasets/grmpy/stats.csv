@@ -1,0 +1,47 @@
+measure,by,value,source,where,note
+subjects,,231,ds008579-participants,participant_id,231 rows; 231 subject folders in the file tree
+subjects,sex=female,140,ds008579-participants,sex,sex 1
+subjects,sex=male,90,ds008579-participants,sex,sex 0
+subjects,sex=other,1,ds008579-participants,sex,sex 2
+subjects,age=10-19,69,ds008579-participants,age,
+subjects,age=20-29,158,ds008579-participants,age,
+subjects,age=30-39,4,ds008579-participants,age,
+subjects,sex=female;age=10-19,30,ds008579-participants,"sex, age",
+subjects,sex=female;age=20-29,107,ds008579-participants,"sex, age",
+subjects,sex=male;age=10-19,39,ds008579-participants,"sex, age",
+subjects,sex=male;age=20-29,51,ds008579-participants,"sex, age",
+subjects,condition=irritability,136,ds008579-participants,group,"study group I (irritability); 60 are in the typically developing group TD and 35 in the borderline personality disorder group BPD"
+subjects,condition=borderline_personality_disorder,16,ds008579-participants,dx_brderpd,diagnostic flag; the BPD study group has 35 participants
+subjects,condition=healthy,62,ds008579-participants,dx_none,no psychiatric diagnosis; diagnostic flags are n/a for 12 participants
+subjects,condition=clinical_high_risk_psychosis,77,ds008579-participants,dx_prodromal,prodromal / clinical high risk diagnostic flag
+subjects,condition=psychotic_disorder,11,ds008579-participants,dx_psychosis,
+subjects,condition=schizophrenia,6,ds008579-participants,dx_scz,
+subjects,condition=bipolar_disorder,10,ds008579-participants,dx_bp,
+subjects,condition=depression,39,ds008579-participants,dx_mdd,
+subjects,condition=anxiety_disorder,83,ds008579-participants,dx_anx,
+subjects,condition=adhd,18,ds008579-participants,dx_adhd,
+subjects,condition=ptsd,20,ds008579-participants,dx_ptsd,
+subjects,contrast=T1w,230,ds008579-file-tree,sub-*/ses-1/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,231,ds008579-file-tree,sub-*/ses-1/anat/*_T2w.nii.gz,
+subjects,contrast=angio,231,ds008579-file-tree,sub-*/ses-1/anat/*_angio.nii.gz,3D time-of-flight angiography
+subjects,contrast=bold,231,ds008579-file-tree,sub-*/ses-1/func/*_bold.nii.gz,
+subjects,contrast=asl,214,ds008579-file-tree,sub-*/ses-1/perf/*_asl.nii.gz,
+subjects,contrast=dwi,177,ds008579-file-tree,sub-*/ses-1/dwi/*_dwi.nii.gz,
+subjects,contrast_set=angio+asl+bold+dwi+T1w+T2w,169,ds008579-file-tree,"anat, dwi, func and perf folders","field maps, M0 scans and minIP projections not counted as contrasts"
+subjects,contrast_set=angio+asl+bold+T1w+T2w,45,ds008579-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=angio+bold+T1w+T2w,9,ds008579-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=angio+bold+dwi+T1w+T2w,7,ds008579-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=angio+bold+dwi+T2w,1,ds008579-file-tree,"anat, dwi, func and perf folders",
+scans,,3534,ds008579-file-tree,sub-*/ses-1/*/*.nii.gz,"all image files: 230 T1w, 231 T2w, 231 angio, 693 minIP projections, 693 bold, 214 asl, 195 m0scan, 177 dwi and 870 field map images (magnitude1, magnitude2, phasediff, epi)"
+studies,,231,ds008579-file-tree,sub-*/ses-1,one session per subject
+scans,contrast=T1w,230,ds008579-file-tree,*_T1w.nii.gz,
+scans,contrast=T2w,231,ds008579-file-tree,*_T2w.nii.gz,
+scans,contrast=angio,231,ds008579-file-tree,*_angio.nii.gz,plus 693 minIP projection images
+scans,contrast=bold,693,ds008579-file-tree,*_bold.nii.gz,"231 multiband and 215 single-band resting-state runs, 199 fractal n-back runs and 48 face task runs"
+scans,contrast=asl,214,ds008579-file-tree,*_asl.nii.gz,
+scans,contrast=dwi,177,ds008579-file-tree,*_dwi.nii.gz,
+age_min,,12.55,ds008579-participants,age,
+age_max,,30.87,ds008579-participants,age,
+age_median,,22.21,ds008579-participants,age,
+age_mean,,22.0,ds008579-participants,age,
+age_sd,,3.5,ds008579-participants,age,
