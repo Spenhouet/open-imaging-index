@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007988
+name: Immersive virtual prism adaptation fMRI (ds007988)
+full_name: Immersive virtual prism adaptation reshapes visual field representations in the inferior parietal lobule
+summary: >-
+  Pre- and post-adaptation task fMRI with a T1w scan of 58 healthy adults who adapted to a rightward visual shift in
+  immersive virtual reality or through optical prisms, or did a matched control. Lausanne, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds007988
+doi: 10.18112/openneuro.ds007988.v1.0.0
+# Single public snapshot 1.0.0 on OpenNeuro, 2026-07-06.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Farron N, Wilf M, Perez-Marcos D, Perrin H, Serino A, Clarke S, Crottaz-Herbette S (Lausanne University Hospital, CHUV)
+    url: https://openneuro.org/datasets/ds007988
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007988
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Farron N, Wilf M, Perez-Marcos D, Perrin H, Serino A, Clarke S, Crottaz-Herbette S. Immersive virtual prism
+    adaptation reshapes visual field representations in the inferior parietal lobule. OpenNeuro ds007988, version
+    1.0.0 (2026). doi:10.18112/openneuro.ds007988.v1.0.0
+sources:
+  openneuro-ds007988-v1-0-0:
+    title: OpenNeuro ds007988 snapshot 1.0.0 (dataset_description.json and README)
+    url: https://openneuro.org/datasets/ds007988/versions/1.0.0
+    kind: website
+  ds007988-file-tree:
+    title: File listing of ds007988 snapshot 1.0.0 (CC0), counted per subject, session and anat or func NIfTI file
+    url: https://openneuro.org/datasets/ds007988/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords: [prism adaptation, immersive virtual reality, visuomotor adaptation, visual detection, inferior parietal lobule, spatial attention, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

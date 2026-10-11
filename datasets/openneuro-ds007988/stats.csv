@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,58,ds007988-file-tree,sub-* folders,"sub-01 to sub-58; the README group list also sums to 58 (16 iVR-shift, 14 iVR-ctrl, 14 OD-shift, 14 OD-ctrl) while its study description says 56"
+subjects,condition=healthy,58,openneuro-ds007988-v1-0-0,README Study description,described as healthy participants
+subjects,contrast=T1w,58,ds007988-file-tree,ses-01/anat,one T1w file per subject
+subjects,contrast=bold,58,ds007988-file-tree,ses-01/func and ses-02/func,one detection run per session for every subject
+subjects,contrast_set=bold+T1w,58,ds007988-file-tree,anat and func,
+studies,,116,ds007988-file-tree,ses-* folders,pre-adaptation (ses-01) and post-adaptation (ses-02) session for every subject
+scans,,174,ds007988-file-tree,anat and func,sum of the disjoint T1w (58) and bold run (116) counts
+scans,contrast=T1w,58,ds007988-file-tree,ses-01/anat,
+scans,contrast=bold,116,ds007988-file-tree,func,"counted as runs; each run is stored as 202 single-volume NIfTI files"
