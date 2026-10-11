@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,215,banda-manual-11,1.0 Overview,adolescents with clinical and behavioral data; NDA collection 3037 lists 215 shared subjects
+subjects,modality=MR,207,banda-release-11,Release 1.1 data,unprocessed imaging of all modalities; minimally preprocessed data for up to 203
+subjects,country=US,215,banda-manual-11,2.0 Participating Sites,five sites in the greater Boston area
+subjects,field_strength=3,207,banda-manual-11,4.2 MRI characterization,Siemens Prisma 3T with a 64-channel head coil at the Martinos Center
+subjects,vendor=siemens,207,banda-manual-11,4.2 MRI characterization,
+subjects,contrast=T1w,207,banda-completeness-11,t1_Count,
+subjects,contrast=T2w,203,banda-completeness-11,t2_Count,
+subjects,contrast=bold,206,banda-completeness-11,"rs_fMRI_Count, tmri_PctCompl",206 with resting-state fMRI and 205 with task fMRI
+subjects,contrast=dwi,207,banda-completeness-11,dmri_PctCompl,
+subjects,contrast_set=bold+dwi+T1w+T2w,202,banda-completeness-11,"t1_Count, t2_Count, rs_fMRI_Count, tmri_PctCompl, dmri_PctCompl",
+subjects,contrast_set=bold+dwi+T1w,4,banda-completeness-11,"t1_Count, t2_Count, rs_fMRI_Count, tmri_PctCompl, dmri_PctCompl",
+subjects,contrast_set=dwi+T1w+T2w,1,banda-completeness-11,"t1_Count, t2_Count, rs_fMRI_Count, tmri_PctCompl, dmri_PctCompl",
+age_min,,14,banda-manual-11,1.0 Overview,age at imaging
+age_max,,17,banda-manual-11,1.0 Overview,age at imaging
