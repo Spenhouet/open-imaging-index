@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002731
+name: False memory audio-visual DRM fMRI (ds002731)
+full_name: Multiple interactive memory representations underlie the induction of false memory
+summary: >-
+  Task fMRI and T1-weighted brain MRI of 59 healthy Chinese college students who studied word lists by ear or by eye
+  and were tested visually in a Deese-Roediger-McDermott false memory paradigm. Released in BIDS under CC0 with
+  encoding and retrieval runs.
+homepage: https://openneuro.org/datasets/ds002731
+doi: 10.18112/openneuro.ds002731.v1.0.2
+# Re-upload of ds001650, whose first snapshot (1.0.0) is dated 2019-01-14 in CHANGES; ds002731 was published on
+# OpenNeuro 2020-05-19 and its latest snapshot 1.0.2 is dated 2021-10-16.
+year: 2019
+updated: 2021
+version: 1.0.2
+status: active
+creators:
+  - name: >-
+      Zhu B, Chen C, Shao X, Liu W, Ye Z, Zhuang L, Zheng L, Loftus EF, Xue G (State Key Laboratory of Cognitive
+      Neuroscience and Learning, Beijing Normal University)
+    url: https://openneuro.org/datasets/ds002731
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 13.98
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002731
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Zhu B, Chen C, Shao X, Liu W, Ye Z, Zhuang L, Zheng L, Loftus EF, Xue G. Multiple interactive memory
+    representations underlie the induction of false memory. PNAS 116(9):3466-3475 (2019). doi:10.1073/pnas.1817925116
+sources:
+  zhu2019:
+    title: Zhu et al. 2019, Multiple interactive memory representations underlie the induction of false memory, PNAS
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6397536/
+    kind: paper
+  openneuro-ds002731-v1-0-2:
+    title: >-
+      OpenNeuro ds002731 snapshot 1.0.2 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds002731/versions/1.0.2
+    kind: website
+  ds002731-participants:
+    title: participants.tsv of ds002731 snapshot 1.0.2 (CC0), rows of the 59 subjects with image folders
+    url: https://github.com/OpenNeuroDatasets/ds002731/blob/1.0.2/participants.tsv
+    kind: computed
+  ds002731-file-tree:
+    title: File tree of ds002731 snapshot 1.0.2 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds002731/tree/1.0.2
+    kind: computed
+related: []
+keywords: [false memory, Deese-Roediger-McDermott, episodic memory, encoding, retrieval, auditory, visual, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
