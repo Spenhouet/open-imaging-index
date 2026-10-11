@@ -165,6 +165,12 @@ terms:
   - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
   - { id: ptsd, label: Post-traumatic stress disorder, synonyms: [PTSD], mappings: { mondo: 'MONDO:0005146' } }
+  - {
+      id: childhood_trauma,
+      label: Childhood trauma exposure,
+      synonyms: [childhood maltreatment, child abuse, childhood violence exposure],
+      description: 'Exposure to abuse or interpersonal violence in childhood. An exposure, not a diagnosis. No MONDO or HPO term exists.',
+    }
   - { id: borderline_personality_disorder, label: Borderline personality disorder, synonyms: [BPD], mappings: { mondo: 'MONDO:0001156' } }
   - { id: irritability, label: Irritability, mappings: { hp: 'HP:0000737' } }
   - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
