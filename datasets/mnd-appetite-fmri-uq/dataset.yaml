@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mnd-appetite-fmri-uq
+name: MND appetite fMRI (ds005874)
+full_name: An fMRI Dataset for Appetite Neural Correlates in People Living with Motor Neuron Disease
+summary: >-
+  Brain MRI and task and resting-state fMRI of people with motor neuron disease and non-neurodegenerative controls,
+  scanned fasted and again after a liquid meal while viewing food and non-food pictures, to study how the disease
+  alters brain responses linked to appetite.
+homepage: https://openneuro.org/datasets/ds005874
+doi: 10.18112/openneuro.ds005874.v1.1.0
+year: 2025
+updated: 2025
+version: 1.1.0
+status: active
+creators:
+  - name: Steyn/Ngo Lab, The University of Queensland (Chang J, Shaw TB, Steyn FJ, Ngo ST, et al.)
+    url: https://openneuro.org/datasets/ds005874
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, bold, dwi]
+anatomy: [brain]
+conditions: [motor_neuron_disease, healthy]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 80.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005874
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Chang J, Lv J, Guo CC, et al. An fMRI dataset for appetite neural correlates in people living with Motor Neuron
+    Disease. Scientific Data 12, 466 (2025). doi:10.1038/s41597-025-04828-w
+sources:
+  chang2025:
+    title: Chang et al. 2025, An fMRI dataset for appetite neural correlates in people living with Motor Neuron Disease, Scientific Data 12, 466
+    url: https://doi.org/10.1038/s41597-025-04828-w
+    kind: paper
+  openneuro-ds005874-v1-1-0:
+    title: OpenNeuro ds005874 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005874/versions/1.1.0
+    kind: website
+  ds005874-participants:
+    title: participants.tsv and phenotype/case_phenotype.tsv of ds005874 snapshot 1.1.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005874/blob/1.1.0/participants.tsv
+    kind: computed
+  ds005874-file-tree:
+    title: File tree of ds005874 snapshot 1.1.0 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005874/tree/1.1.0
+    kind: computed
+related: []
+keywords:
+  [
+    amyotrophic lateral sclerosis,
+    primary lateral sclerosis,
+    appetite,
+    food cue reactivity,
+    fasting and postprandial,
+    task fMRI,
+    resting-state fMRI,
+    physiological recordings
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
