@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: climate-brain
+name: CLIMATE BRAIN
+full_name: CLIMATE BRAIN - Questionnaires, Tasks and the Neuroimaging Dataset
+summary: >-
+  Brain MRI and task fMRI of healthy young Polish adults who read anger- and hope-evoking climate change stories and made
+  pro-environmental choices, collected to study climate emotions and decisions. Includes climate questionnaires, raw and
+  fMRIPrep data.
+homepage: https://openneuro.org/datasets/ds005460
+doi: 10.18112/openneuro.ds005460.v2.0.0
+# CHANGES file: snapshot 1.0.0 dated 2024-09-12; snapshot 2.0.0 dated 2025-02-14 added the raw anat, fmap and func data.
+year: 2024
+updated: 2025
+version: 2.0.0
+status: active
+creators:
+  - name: Nencki Institute of Experimental Biology, SWPS University and NTNU (Zaremba D, Kossowski B, Wypych M, Jednoróg K, Michałowski JM, Klöckner CA, Wierzba M, Marchewka A)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [PL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 56.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005460
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Zaremba D, Kossowski B, Wypych M, Jednoróg K, Michałowski JM, Klöckner CA, Wierzba M, Marchewka A. CLIMATE BRAIN -
+    Questionnaires, Tasks and the Neuroimaging Dataset. Scientific Data (2025). doi:10.1038/s41597-025-05038-0
+sources:
+  zaremba2025:
+    title: Zaremba et al. 2025, CLIMATE BRAIN - Questionnaires, Tasks and the Neuroimaging Dataset, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-05038-0
+    kind: paper
+  openneuro-ds005460-v2-0-0:
+    title: OpenNeuro ds005460 snapshot 2.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005460/versions/2.0.0
+    kind: website
+  ds005460-participants:
+    title: participants.tsv of ds005460 snapshot 2.0.0 (CC0), counted per row; ages from age, sex from sex
+    url: https://github.com/OpenNeuroDatasets/ds005460/blob/2.0.0/participants.tsv
+    kind: computed
+  ds005460-file-tree:
+    title: BIDS file tree of ds005460 snapshot 2.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005460/tree/2.0.0
+    kind: computed
+keywords: [climate change, climate emotions, pro-environmental behaviour, decision making, task fMRI, emotion, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

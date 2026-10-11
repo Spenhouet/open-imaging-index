@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,160,zaremba2025,Methods: Subject characteristics,participants.tsv of snapshot 2.0.0 also has 160 rows
+subjects,contrast=T1w,160,ds005460-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast=bold,160,ds005460-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,160,ds005460-file-tree,,spin-echo EPI fieldmap pairs (160 subjects) are not counted as a contrast
+scans,,800,ds005460-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; 320 fieldmap EPI images not included"
+scans,contrast=T1w,160,ds005460-file-tree,,
+scans,contrast=bold,640,ds005460-file-tree,,"four runs per subject: three of the story-reading task, one of the Carbon Emission Task"
+subjects,sex=female,80,zaremba2025,Methods: Subject characteristics,participants.tsv sex 0 also gives 80
+subjects,sex=male,80,zaremba2025,Methods: Subject characteristics,participants.tsv sex 1 also gives 80
+subjects,age=10-19,2,ds005460-participants,,
+subjects,age=20-29,158,ds005460-participants,,
+subjects,sex=female;age=20-29,79,ds005460-participants,,
+subjects,sex=male;age=20-29,79,ds005460-participants,,
+subjects,field_strength=3,160,zaremba2025,Methods: Image acquisition,
+subjects,vendor=siemens,160,zaremba2025,Methods: Image acquisition,3T Siemens Prisma
+subjects,country=PL,160,zaremba2025,Methods: Subject characteristics,
+subjects,condition=healthy,160,zaremba2025,Methods: Subject characteristics,no history of neurological or psychiatric disorders
+age_mean,,22.54,ds005460-participants,,the paper rounds the mean to 22
+age_sd,,1.76,zaremba2025,Methods: Subject characteristics,
+age_min,,19,zaremba2025,Methods: Subject characteristics,
+age_max,,26,zaremba2025,Methods: Subject characteristics,
+age_median,,22,ds005460-participants,,
