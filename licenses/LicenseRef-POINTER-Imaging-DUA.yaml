@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-POINTER-Imaging-DUA
+name: POINTER Imaging Data Use Agreement
+short_name: POINTER Imaging DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=POINTER
+version: 'Text of the LONI IDA data use agreement page, read 2026-10-11'
+summary: >-
+  Access to de-identified data for scientific investigation, teaching or planning clinical research after a data use
+  application on the LONI IDA. No redistribution of the data, mandatory study credit in the by-line, and approval of
+  abstracts and review of manuscripts by the POINTER publications committee.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      I request access to data collected by the U.S. POINTER Neuroimaging Ancillary (POINTER Imaging) for the purpose
+      of scientific investigation, teaching, or the planning of clinical research studies and agree to the following
+      terms.
+    note: The agreement names the purposes of access but neither allows nor forbids commercial use.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning or model training.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address creating derived data.
+  publication:
+    value: conditional
+    quote: >-
+      If I publish manuscripts using data from the POINTER Imaging study, I agree to the following:
+    note: >-
+      Publishing is allowed with the required by-line, methods text and funding acknowledgment, after the ESPP
+      committee approves abstracts and reviews manuscripts.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not further disclose these data beyond the uses outlined in this agreement and the site's data use
+      application for the parent trial, and understand that redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement forbids redistributing the data but does not address derived data.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models or their weights.
+  attribution:
+    value: 'yes'
+    quote: >-
+      On the by-line of the manuscript, after the named authors, I will include the phrase "for the U.S. POINTER
+      Neuroimaging Ancillary Study and the U.S. POINTER Study*"
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      I request access to data collected by the U.S. POINTER Neuroimaging Ancillary (POINTER Imaging) for the purpose
+      of scientific investigation, teaching, or the planning of clinical research studies and agree to the following
+      terms.
+    note: Accepted as part of an online data use application on the LONI IDA.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      I will comply with any rules and regulations imposed by my institution and its institutional review board in
+      requesting access to POINTER data.
+    note: The agreement does not itself require IRB approval, only compliance with whatever your institution's IRB
+      requires.
+  publication_review:
+    value: 'yes'
+    quote: I will submit all manuscripts to the U.S. POINTER ESPP prior to submitting to a journal.
+    note: >-
+      The review checks attribution and acknowledgments, not the science, and takes up to 2 weeks. Abstracts and the
+      planned data use also need ESPP approval.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: >-
+      Users must answer annual requests to update their data use application, but the agreement does not ask for
+      results or derived data.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will receive access to de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the subjects of the POINTER Imaging study.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+commercial_license:
+  available: unspecified
+  note: No commercial license offer is published.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

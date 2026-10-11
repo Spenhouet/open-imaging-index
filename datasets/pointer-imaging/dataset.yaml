@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pointer-imaging
+name: POINTER Imaging
+full_name: >-
+  U.S. POINTER Neuroimaging Ancillary Study, the imaging arm of the U.S. Study to Protect Brain Health Through
+  Lifestyle Intervention to Reduce Risk
+summary: >-
+  Amyloid and tau PET with multimodal brain MRI from older adults at risk of cognitive decline, collected in a
+  two-year randomized trial of multidomain lifestyle interventions. 1052 participants enrolled at five U.S. sites,
+  with MRI at baseline, year 1 and year 2.
+homepage: https://www.alz.org/us-pointer/imaging
+# The date data were first released was not found. The baseline paper (Alzheimer's & Dementia, January 2025) says the
+# data will be shared through LONI; the LONI IDA data use application page, read 2026-10-11, is the earliest public
+# source seen that confirms the data are distributed.
+year: 2026
+creators:
+  - name: University of California, Berkeley
+    url: https://jagustlab.neuro.berkeley.edu/pointer-imaging
+  - name: U.S. POINTER Study Group
+  - name: Alzheimer's Association
+    url: https://www.alz.org/us-pointer/imaging
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, dwi, asl, T2starw]
+tracers: [florbetaben, mk6240]
+anatomy: [brain]
+conditions: [alzheimers, cerebral_microbleeds]
+tasks: [longitudinal, regression, classification]
+countries: [US]
+vendors: [siemens, ge, philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=POINTER
+licenses:
+  - license: LicenseRef-POINTER-Imaging-DUA
+citation:
+  text: >-
+    Harrison TM, Ward T, Taggett J, et al. The POINTER Imaging baseline cohort: Associations between multimodal
+    neuroimaging biomarkers, cardiovascular health, and cognition. Alzheimer's & Dementia 21(1):e14399 (2025).
+    doi:10.1002/alz.14399
+sources:
+  harrison2025:
+    title: >-
+      Harrison et al. 2025, The POINTER Imaging baseline cohort: associations between multimodal neuroimaging
+      biomarkers, cardiovascular health, and cognition, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.14399
+    kind: paper
+  loni-pointer-dua:
+    title: LONI Image and Data Archive, POINTER Data Use Agreement
+    url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=POINTER
+    kind: website
+  berkeley-pointer-imaging:
+    title: Jagust Lab, UC Berkeley, POINTER Imaging project page
+    url: https://jagustlab.neuro.berkeley.edu/pointer-imaging
+    kind: website
+related: []
+keywords:
+  [
+    U.S. POINTER,
+    lifestyle intervention,
+    preclinical Alzheimer's disease,
+    cardiovascular risk,
+    amyloid PET,
+    tau PET,
+    white matter hyperintensities,
+    arterial spin labeling
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
