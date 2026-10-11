@@ -1,0 +1,53 @@
+measure,by,value,source,where,note
+subjects,,170,schuch2023,Abstract,85 people with FCD type II and 85 healthy controls
+subjects,condition=focal_cortical_dysplasia,85,schuch2023,Table 1,histologically verified or radiologically suspected FCD type II
+subjects,condition=epilepsy,85,schuch2023,Table 1,all people with FCD have epilepsy
+subjects,condition=healthy,85,schuch2023,Table 1,
+subjects,sex=female,78,schuch2023,Table 1,sum of 35 people with FCD and 43 controls
+subjects,sex=male,92,schuch2023,Table 1,sum of 50 people with FCD and 42 controls
+subjects,condition=focal_cortical_dysplasia;sex=female,35,schuch2023,Table 1,
+subjects,condition=focal_cortical_dysplasia;sex=male,50,schuch2023,Table 1,
+subjects,condition=healthy;sex=female,43,schuch2023,Table 1,
+subjects,condition=healthy;sex=male,42,schuch2023,Table 1,
+subjects,age=11-15,5,ds004199-participants,age_scan,age at MRI; the file gives five-year categories only
+subjects,age=16-20,18,ds004199-participants,age_scan,
+subjects,age=21-25,51,ds004199-participants,age_scan,
+subjects,age=26-30,36,ds004199-participants,age_scan,
+subjects,age=31-35,12,ds004199-participants,age_scan,
+subjects,age=36-40,8,ds004199-participants,age_scan,
+subjects,age=41-45,10,ds004199-participants,age_scan,
+subjects,age=46-50,11,ds004199-participants,age_scan,
+subjects,age=51-55,10,ds004199-participants,age_scan,
+subjects,age=56-60,6,ds004199-participants,age_scan,
+subjects,age=61-65,3,ds004199-participants,age_scan,
+subjects,condition=focal_cortical_dysplasia;age=16-20,18,ds004199-participants,group and age_scan,cells below 10 left out
+subjects,condition=focal_cortical_dysplasia;age=21-25,20,ds004199-participants,group and age_scan,cells below 10 left out
+subjects,condition=focal_cortical_dysplasia;age=26-30,14,ds004199-participants,group and age_scan,cells below 10 left out
+subjects,condition=healthy;age=21-25,31,ds004199-participants,group and age_scan,cells below 10 left out
+subjects,condition=healthy;age=26-30,22,ds004199-participants,group and age_scan,cells below 10 left out
+subjects,split=train,142,ds004199-participants,split,split column added in snapshot 1.0.6
+subjects,split=test,28,ds004199-participants,split,all test subjects are people with FCD
+subjects,condition=focal_cortical_dysplasia;split=train,57,ds004199-participants,group and split,
+subjects,condition=focal_cortical_dysplasia;split=test,28,ds004199-participants,group and split,
+subjects,condition=healthy;split=train,85,ds004199-participants,group and split,
+subjects,contrast=T1w,170,schuch2023,Table 2,
+subjects,contrast=FLAIR,170,schuch2023,Table 2,"7 people with FCD have a 2D FLAIR, all others an isotropic 3D FLAIR"
+subjects,contrast_set=FLAIR+T1w,170,ds004199-file-tree,sub-*/anat/*.nii.gz,one T1w and one FLAIR file per subject
+subjects,field_strength=3,170,schuch2023,Methods: Imaging data,Siemens Magnetom Trio
+subjects,vendor=siemens,170,schuch2023,Methods: Imaging data,
+subjects,country=DE,170,schuch2023,Methods: Dataset selection,University Hospital Bonn
+scans,,340,ds004199-file-tree,sub-*/anat/*_T1w.nii.gz and *_FLAIR.nii.gz,lesion masks not counted
+scans,contrast=T1w,170,ds004199-file-tree,sub-*/anat/*_T1w.nii.gz,
+scans,contrast=FLAIR,170,ds004199-file-tree,sub-*/anat/*_FLAIR.nii.gz,
+age_mean,condition=focal_cortical_dysplasia,28.9,schuch2023,Table 1,age at MRI
+age_sd,condition=focal_cortical_dysplasia,12.4,schuch2023,Table 1,
+age_median,condition=focal_cortical_dysplasia,25,schuch2023,Table 1,
+age_min,condition=focal_cortical_dysplasia,12,schuch2023,Methods: Demographics and clinical characteristics,
+age_max,condition=focal_cortical_dysplasia,65,schuch2023,Methods: Demographics and clinical characteristics,
+age_mean,condition=healthy,33.3,schuch2023,Table 1,age at MRI
+age_sd,condition=healthy,11.9,schuch2023,Table 1,
+age_median,condition=healthy,28,schuch2023,Table 1,
+age_min,condition=healthy,22,schuch2023,Methods: Demographics and clinical characteristics,
+age_max,condition=healthy,62,schuch2023,Methods: Demographics and clinical characteristics,
+age_min,,12,schuch2023,Methods: Demographics and clinical characteristics,minimum over both disjoint groups
+age_max,,65,schuch2023,Methods: Demographics and clinical characteristics,maximum over both disjoint groups

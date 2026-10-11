@@ -121,6 +121,12 @@ terms:
       mappings: { mondo: 'MONDO:0000820' }
     }
   - { id: epilepsy, label: Epilepsy, mappings: { mondo: 'MONDO:0005027' } }
+  - {
+      id: focal_cortical_dysplasia,
+      label: Focal cortical dysplasia,
+      synonyms: [FCD],
+      mappings: { mondo: 'MONDO:0019009' }
+    }
   - { id: schizophrenia, label: Schizophrenia, mappings: { mondo: 'MONDO:0005090' } }
   - { id: schizoaffective_disorder, label: Schizoaffective disorder, mappings: { mondo: 'MONDO:0005487' } }
   - { id: psychotic_disorder, label: Psychotic disorder, synonyms: [psychosis], mappings: { mondo: 'MONDO:0005485' } }
