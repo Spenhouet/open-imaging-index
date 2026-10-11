@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,215,gao2022,"Methods, Quality assurance",241 volunteers were scanned; 26 were excluded by quality control and 215 were released
+subjects,condition=healthy,215,gao2022,"Methods, Quality assurance",healthy right-handed volunteers
+subjects,sex=female,156,gao2022,"Methods, Quality assurance",
+subjects,sex=male,59,isyb-subinfo,Gender,
+subjects,age=10-19,32,isyb-subinfo,Age,all aged 18 or 19
+subjects,age=20-29,182,isyb-subinfo,Age,
+subjects,age=30-39,1,isyb-subinfo,Age,aged 30
+subjects,sex=female;age=10-19,24,isyb-subinfo,"Gender, Age",
+subjects,sex=female;age=20-29,132,isyb-subinfo,"Gender, Age",
+subjects,sex=male;age=20-29,50,isyb-subinfo,"Gender, Age",
+age_mean,,22.55,gao2022,"Methods, Quality assurance",
+age_sd,,2.68,gao2022,"Methods, Quality assurance",
+age_min,,18,gao2022,"Methods, Quality assurance",
+age_max,,30,gao2022,"Methods, Quality assurance",
+subjects,contrast=T1w,215,scidb-isyb-files,anat T1w,
+subjects,contrast=bold,215,scidb-isyb-files,func task-rest_bold,
+subjects,contrast=dwi,215,scidb-isyb-files,dwi,
+subjects,contrast=asl,215,scidb-isyb-files,perf asl,each with a cerebral blood flow map (cbf)
+subjects,contrast_set=asl+bold+dwi+T1w,215,scidb-isyb-files,"anat, func, dwi and perf",three-plane localizer runs stored as T2w are not counted as a contrast
+subjects,vendor=ge,215,gao2022,"Methods, Image acquisition",GE MR750
+subjects,field_strength=3,215,gao2022,"Methods, Image acquisition",
+subjects,country=CN,215,gao2022,"Methods, Participant recruitment","Institute of Psychology, Chinese Academy of Sciences, Beijing"
