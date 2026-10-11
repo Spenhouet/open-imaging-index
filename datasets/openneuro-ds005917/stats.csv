@@ -1,0 +1,40 @@
+measure,by,value,source,where,note
+subjects,,58,openneuro-ds005917-v1-1-0,README: MRI Data Description,58 rows in participants.tsv and 58 subject folders
+subjects,condition=depression,33,openneuro-ds005917-v1-1-0,README: MRI Data Description,Group 1 (MDD)
+subjects,condition=bipolar_disorder,3,openneuro-ds005917-v1-1-0,README: MRI Data Description,Group 2 (BP); recruitment ended early
+subjects,condition=healthy,22,openneuro-ds005917-v1-1-0,README: MRI Data Description,Group 3 (HC)
+subjects,sex=female,34,ds005917-participants,sex,
+subjects,sex=male,22,ds005917-participants,sex,
+subjects,sex=unknown,2,ds005917-participants,sex,n/a in participants.tsv
+subjects,age=20-29,18,ds005917-participants,age,
+subjects,age=30-39,20,ds005917-participants,age,
+subjects,age=40-49,11,ds005917-participants,age,
+subjects,age=50-59,6,ds005917-participants,age,
+subjects,age=60-69,1,ds005917-participants,age,
+subjects,sex=female;age=30-39,12,ds005917-participants,sex and age,Cells below 10 left out
+subjects,condition=depression;sex=female,19,ds005917-participants,group and sex,Cells below 10 left out
+subjects,condition=depression;sex=male,13,ds005917-participants,group and sex,Cells below 10 left out
+subjects,condition=healthy;sex=female,13,ds005917-participants,group and sex,Cells below 10 left out
+subjects,condition=depression;age=30-39,13,ds005917-participants,group and age,Cells below 10 left out
+age_min,,20,ds005917-participants,age,56 subjects with a recorded age
+age_max,,66,ds005917-participants,age,
+age_mean,,35.2,ds005917-participants,age,
+age_sd,,10.16,ds005917-participants,age,
+age_median,,32,ds005917-participants,age,
+studies,,236,ds005917-file-tree,sub-*/ses-*/,sessions with MRI images; 105 sessions hold MR spectroscopy
+scans,,2151,ds005917-file-tree,sub-*/ses-*/{anat;dwi;func}/*.nii.gz,"232 T1w, 233 T2w, 215 dwi and 1471 bold files; MR spectroscopy not counted"
+scans,contrast=T1w,232,ds005917-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,233,ds005917-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=dwi,215,ds005917-file-tree,dwi/*_dwi.nii.gz,each acquisition stored as two parts (acq-g1 and acq-g2)
+scans,contrast=bold,1471,ds005917-file-tree,func/*_bold.nii.gz,"451 dot probe, 452 emotional faces, 318 n-back and 250 resting-state runs"
+subjects,contrast=T1w,58,ds005917-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,56,ds005917-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=dwi,52,ds005917-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=bold,58,ds005917-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,52,ds005917-file-tree,sub-*/,
+subjects,contrast_set=bold+T1w+T2w,4,ds005917-file-tree,sub-*/,
+subjects,contrast_set=bold+T1w,2,ds005917-file-tree,sub-*/,
+subjects,field_strength=3,58,openneuro-ds005917-v1-1-0,README: MRI Data Description and anat/dwi sidecars,3 T GE Signa HDx with 8-channel head coil
+subjects,vendor=ge,58,openneuro-ds005917-v1-1-0,README: MRI Data Description and anat/dwi sidecars,Manufacturer GE; ManufacturersModelName Signa_HDxt
+subjects,field_strength=7,30,ds005917-file-tree,mrs/*_svs.nii.gz,MR spectroscopy only; 7 T Siemens with 32-channel head coil per README
+subjects,vendor=siemens,30,ds005917-file-tree,mrs/*_svs.nii.gz,MR spectroscopy only; svs sidecars state Manufacturer SIEMENS
