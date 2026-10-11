@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: 7tamibrain
+name: 7TAMIbrain
+full_name: 7TAMIbrain, 7T MRI atlas of deep grey nuclei
+summary: >-
+  Quantitative T1 maps of the brain from young healthy adults, collected at 7 tesla to build a high-resolution atlas of
+  deep grey nuclei and normative T1 values, with per-subject atlas label maps of the thalamic and basal ganglia nuclei.
+homepage: https://openneuro.org/datasets/ds003967
+doi: 10.18112/openneuro.ds003967.v1.0.0
+# OpenNeuro snapshot 1.0.0 dated 2021-12-17 in the CHANGES file; it is the only snapshot.
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Olivier Girard, Ludovic de Rochefort, Maxime Guye, Jean-Philippe Ranjeva, Arnaud Le Troter
+    url: https://openneuro.org/datasets/ds003967
+species: human
+modalities: [MR]
+contrasts: [T1map]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation, normative]
+formats: [BIDS, NIfTI]
+# The ethics approval in dataset_description.json is from a French committee (CPP sud Mediterranee 2).
+countries: [FR]
+field_strengths: [7]
+size_gb: 1.17
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003967
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Brun G, Testud B, Girard OM, Lehmann P, de Rochefort L, Besson P, Massire A, Ridley B, Girard N, Guye M, Ranjeva JP,
+    Le Troter A. Automatic segmentation of deep grey nuclei using a high-resolution 7T magnetic resonance imaging
+    atlas, Quantification of T1 values in healthy volunteers. European Journal of Neuroscience 55(2), 438-460 (2022).
+    doi:10.1111/ejn.15575
+sources:
+  brun2022:
+    title: >-
+      Brun et al. 2022, Automatic segmentation of deep grey nuclei using a high-resolution 7T MRI atlas, European
+      Journal of Neuroscience
+    url: https://doi.org/10.1111/ejn.15575
+    kind: paper
+  openneuro-ds003967-v1-0-0:
+    title: OpenNeuro ds003967 snapshot 1.0.0 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003967/versions/1.0.0
+    kind: website
+  ds003967-participants:
+    title: participants.tsv of ds003967 snapshot 1.0.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds003967/blob/1.0.0/participants.tsv
+    kind: computed
+  ds003967-file-tree:
+    title: >-
+      BIDS file tree of ds003967 snapshot 1.0.0 (CC0), raw T1map NIfTI files under sub-*/ and label maps under
+      derivatives/atlases/
+    url: https://github.com/OpenNeuroDatasets/ds003967/tree/1.0.0
+    kind: computed
+related: []
+keywords: [7T MRI, MP2RAGE, T1 mapping, deep grey nuclei, thalamic nuclei, brain atlas, CIT168, Morel atlas]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
