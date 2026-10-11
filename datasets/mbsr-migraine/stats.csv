@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,147,openneuro-ds005016-v1-1-3,README,112 patients and 35 matched healthy controls
+subjects,condition=migraine,112,openneuro-ds005016-v1-1-3,README,participants sub-7000 to sub-7168
+subjects,condition=healthy,35,openneuro-ds005016-v1-1-3,README,participants sub-7500 to sub-7538
+subjects,contrast=T1w,147,ds005016-file-tree,,subjects with at least one T1w NIfTI
+subjects,contrast=bold,147,ds005016-file-tree,,"resting-state, thermal pain and MSIT runs"
+subjects,contrast=dwi,145,ds005016-file-tree,,
+subjects,contrast_set=bold+dwi+T1w,145,ds005016-file-tree,,
+subjects,contrast_set=bold+T1w,2,ds005016-file-tree,,
+subjects,sex=female,128,ds005016-participants,sex,
+subjects,sex=male,18,ds005016-participants,sex,
+subjects,sex=unknown,1,ds005016-participants,sex,n/a in participants.tsv
+subjects,condition=migraine;sex=female,98,ds005016-participants,"participant_id, sex",patient ids from the README ranges
+subjects,condition=migraine;sex=male,14,ds005016-participants,"participant_id, sex",patient ids from the README ranges
+subjects,condition=healthy;sex=female,30,ds005016-participants,"participant_id, sex",control ids from the README ranges
+studies,,348,ds005016-file-tree,,"subject-session folders with NIfTI files: 146 ses-01, 98 ses-02, 104 ses-03"
+scans,,2379,ds005016-file-tree,,"347 T1w, 338 dwi, 347 resting-state, 661 pain and 686 MSIT BOLD NIfTI files"
