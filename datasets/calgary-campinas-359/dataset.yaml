@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: calgary-campinas-359
+name: Calgary-Campinas-359 (CC-359)
+full_name: Calgary-Campinas Public Brain MR Dataset
+summary: >-
+  T1-weighted brain MRI of healthy adults from three scanner vendors at 1.5 T and 3 T, released to develop and compare
+  skull stripping and other segmentation methods across scanners, with consensus brain masks and raw k-space data for
+  reconstruction research.
+homepage: https://sites.google.com/view/calgary-campinas-dataset/home
+doi: 10.1016/j.neuroimage.2017.08.021
+year: 2017
+status: active
+creators:
+  - name: University of Calgary
+    url: https://sites.google.com/view/calgary-campinas-dataset/home
+  - name: Medical Image Computing Lab, University of Campinas
+    url: https://sites.google.com/view/calgary-campinas-dataset/home
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation, reconstruction]
+formats: [NIfTI, HDF5]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: open
+  url: https://github.com/conpdatasets/calgary-campinas
+licenses:
+  - license: CC-BY-ND-4.0
+citation:
+  text: >-
+    Souza R, Lucena O, Garrafa J, Gobbi D, Saluzzi M, Appenzeller S, Rittner L, Frayne R, Lotufo R. An open,
+    multi-vendor, multi-field-strength brain MR dataset and analysis of publicly available skull stripping methods
+    agreement. NeuroImage 170 (2018): 482-494.
+sources:
+  souza2018:
+    title: Souza et al. 2018, NeuroImage 170:482-494 (abstract)
+    url: https://doi.org/10.1016/j.neuroimage.2017.08.021
+    kind: paper
+  cc-download-page:
+    title: Calgary-Campinas dataset download page
+    url: https://sites.google.com/view/calgary-campinas-dataset/download
+    kind: website
+  conp-calgary-campinas:
+    title: CONP DataLad repository README for Calgary-Campinas
+    url: https://github.com/conpdatasets/calgary-campinas
+    kind: website
+related: []
+keywords: [skull stripping, brain extraction, multi-vendor, k-space, MRI reconstruction, hippocampus]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
