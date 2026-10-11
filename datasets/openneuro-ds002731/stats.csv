@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,59,zhu2019,Methods: Participants,"30 auditory-learning visual-test (AV) and 29 visual-learning visual-test (VV); the file tree has 59 subject folders, while participants.tsv lists 67 rows"
+subjects,condition=healthy,59,zhu2019,Methods: Participants,right-handed college students with no history of psychiatric or neurological disease
+subjects,sex=female,28,zhu2019,Methods: Participants,participants.tsv rows of the 59 imaged subjects agree
+subjects,sex=male,31,zhu2019,Methods: Participants,participants.tsv rows of the 59 imaged subjects agree
+subjects,age=10-19,5,ds002731-participants,age column,ages 18 and 19
+subjects,age=20-29,54,ds002731-participants,age column,
+subjects,sex=female;age=20-29,24,ds002731-participants,sex and age columns,Cells below 10 left out
+subjects,sex=male;age=20-29,30,ds002731-participants,sex and age columns,Cells below 10 left out
+age_mean,,21.25,zhu2019,Methods: Participants,
+age_sd,,1.45,zhu2019,Methods: Participants,
+age_min,,18,zhu2019,Methods: Participants,
+age_max,,25,zhu2019,Methods: Participants,
+age_median,,21,ds002731-participants,age column,
+scans,,413,ds002731-file-tree,*.nii.gz,59 T1w and 354 bold files
+scans,contrast=T1w,59,ds002731-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,354,ds002731-file-tree,func/*_bold.nii.gz,three encoding and three retrieval runs per subject
+subjects,contrast=T1w,59,ds002731-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,59,ds002731-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,59,ds002731-file-tree,sub-*/,
+subjects,country=CN,59,zhu2019,Methods: fMRI Data Collection and Preprocessing,Beijing Normal University Brain Imaging Center
+subjects,vendor=siemens,59,zhu2019,Methods: fMRI Data Collection and Preprocessing,Siemens Magnetom Trio
+subjects,field_strength=3,59,zhu2019,Methods: fMRI Data Collection and Preprocessing,3.0 T
