@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,187,ds007606-file-tree,sub-* folders,187 subject folders; 184 have session 01 and 76 have session 02
+subjects,sex=female,187,halls2022,Section 2.1,"The study recruited 191 participants, all female; the release subjects come from this sample"
+subjects,condition=anorexia_nervosa,116,ds007606-phenotype-tp1,BMI_group,"AAN (acute anorexia nervosa) 58 and WR (weight-restored after anorexia nervosa) 58; the phenotype file has 183 rows, 179 of them in the image release"
+subjects,condition=healthy,67,ds007606-phenotype-tp1,BMI_group,HC
+subjects,age=10-19,113,ds007606-phenotype-tp1,Age,age at the first time point; 183 phenotype rows
+subjects,age=20-29,70,ds007606-phenotype-tp1,Age,age at the first time point; 183 phenotype rows
+subjects,condition=anorexia_nervosa;age=10-19,71,ds007606-phenotype-tp1,"BMI_group, Age",
+subjects,condition=anorexia_nervosa;age=20-29,45,ds007606-phenotype-tp1,"BMI_group, Age",
+subjects,condition=healthy;age=10-19,42,ds007606-phenotype-tp1,"BMI_group, Age",
+subjects,condition=healthy;age=20-29,25,ds007606-phenotype-tp1,"BMI_group, Age",
+subjects,contrast=T1w,187,ds007606-file-tree,sub-*/ses-*/anat/*_T1w.nii*,"six files named T1w have sidecar series descriptions of FLAIR (4), T2 FRFSE (1) or a reformat (1)"
+studies,,260,ds007606-file-tree,sub-*/ses-* folders,184 first time point and 76 second time point sessions
+scans,,260,ds007606-file-tree,sub-*/ses-*/anat/*.nii*,one image per session
+age_min,,12,ds007606-phenotype-tp1,Age,first time point
+age_max,,27,ds007606-phenotype-tp1,Age,first time point
+age_median,,18,ds007606-phenotype-tp1,Age,first time point
+age_mean,,19.0,ds007606-phenotype-tp1,Age,first time point
+age_sd,,3.3,ds007606-phenotype-tp1,Age,first time point

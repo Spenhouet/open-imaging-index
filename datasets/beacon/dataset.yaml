@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: beacon
+name: BEACON Anorexia Nervosa MRI (ds007606)
+full_name: Brain imaging of Emotion And Cognition of adolescents with Anorexia Nervosa (BEACON)
+summary: >-
+  Structural brain MRI of young women with acute anorexia nervosa, women weight-restored after anorexia nervosa and
+  healthy controls, collected to study brain differences in anorexia nervosa and their link to autistic
+  characteristics, with a follow-up scan about two and a half years later.
+homepage: https://openneuro.org/datasets/ds007606
+doi: 10.18112/openneuro.ds007606.v1.0.0
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      King's College London (Tchanturia K, Williams S, Leppanen J, Halls D, Sader M)
+    url: https://openneuro.org/datasets/ds007606
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [anorexia_nervosa, healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 5.33
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007606
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Tchanturia K, Williams S, Leppanen J, Halls D, Sader M. BEACON. OpenNeuro ds007606, version 1.0.0 (2026).
+    doi:10.18112/openneuro.ds007606.v1.0.0
+sources:
+  ds007606-description:
+    title: dataset_description.json and CHANGES of OpenNeuro ds007606 snapshot 1.0.0
+    url: https://github.com/OpenNeuroDatasets/ds007606/blob/1.0.0/dataset_description.json
+    kind: website
+  ds007606-file-tree:
+    title: File tree and T1w JSON sidecars of ds007606 snapshot 1.0.0 (CC0), NIfTI files counted per subject and session
+    url: https://github.com/OpenNeuroDatasets/ds007606/tree/1.0.0
+    kind: computed
+  ds007606-phenotype-tp1:
+    title: phenotype/BEACON_Sociodemographics_TP1.tsv of ds007606 snapshot 1.0.0 (CC0), counted per row
+    url: https://s3.amazonaws.com/openneuro.org/ds007606/phenotype/BEACON_Sociodemographics_TP1.tsv
+    kind: computed
+  halls2022:
+    title: >-
+      Halls et al. 2022, Examining the relationship between autistic spectrum disorder characteristics and structural
+      brain differences seen in anorexia nervosa, European Eating Disorders Review
+    url: https://doi.org/10.1002/erv.2910
+    kind: paper
+  sader2025:
+    title: >-
+      Sader et al. 2025, Neuroanatomical associations with autistic characteristics in those with acute anorexia
+      nervosa and weight-restored individuals, Psychological Medicine
+    url: https://doi.org/10.1017/s0033291725001047
+    kind: paper
+related: []
+keywords: [anorexia nervosa, weight restoration, autistic traits, eating disorders, adolescents, longitudinal]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

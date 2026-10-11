@@ -142,6 +142,7 @@ terms:
   - { id: borderline_personality_disorder, label: Borderline personality disorder, synonyms: [BPD], mappings: { mondo: 'MONDO:0001156' } }
   - { id: irritability, label: Irritability, mappings: { hp: 'HP:0000737' } }
   - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
+  - { id: anorexia_nervosa, label: Anorexia nervosa, parent: eating_disorder, mappings: { mondo: 'MONDO:0005351' } }
   - {
       id: cocaine_use_disorder,
       label: Cocaine use disorder,
