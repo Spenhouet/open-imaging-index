@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,63,denys2024,Table 2,63 sub-* folders in the raw data; the OpenNeuro README also reports 63
+subjects,condition=intracranial_aneurysm,63,denys2024,Table 2,every patient has at least one intracranial aneurysm; 85 aneurysms in total
+subjects,country=AU,63,denys2024,"Methods, Data overview",Metro North Hospital and Health Service in Brisbane
+subjects,contrast=angio,63,ds005096-sidecars,sub-*/ses-*/anat/*_angio.nii.gz,
+subjects,contrast_set=angio,63,ds005096-sidecars,sub-*/ses-*/anat/,TOF-MRA is the only raw image type
+subjects,sex=female,38,ds005096-demographics,Gender,
+subjects,sex=male,25,ds005096-demographics,Gender,
+subjects,age=10-19,1,ds005096-demographics,Age at First Scan,
+subjects,age=30-39,6,ds005096-demographics,Age at First Scan,
+subjects,age=40-49,9,ds005096-demographics,Age at First Scan,
+subjects,age=50-59,21,ds005096-demographics,Age at First Scan,
+subjects,age=60-69,12,ds005096-demographics,Age at First Scan,
+subjects,age=70-79,12,ds005096-demographics,Age at First Scan,
+subjects,age=80-89,2,ds005096-demographics,Age at First Scan,
+subjects,vendor=siemens,52,ds005096-sidecars,*_angio.json Manufacturer,subjects with at least one Siemens scan; some subjects were scanned on several vendors
+subjects,vendor=philips,10,ds005096-sidecars,*_angio.json Manufacturer,
+subjects,vendor=ge,6,ds005096-sidecars,*_angio.json Manufacturer,
+subjects,field_strength=3,58,ds005096-sidecars,*_angio.json MagneticFieldStrength,
+subjects,field_strength=1.5,10,ds005096-sidecars,*_angio.json MagneticFieldStrength,
+studies,,122,ds005096-sidecars,sub-*/ses-*/,sessions with at least one TOF-MRA volume; 24 subjects have follow-up sessions (Table 2 of the paper)
+scans,,126,ds005096-sidecars,sub-*/ses-*/anat/*_angio.nii.gz,Table 1 of the paper counts 143 scans
+scans,contrast=angio,126,ds005096-sidecars,*_angio.nii.gz,
+scans,vendor=siemens,101,ds005096-sidecars,*_angio.json Manufacturer,
+scans,vendor=philips,17,ds005096-sidecars,*_angio.json Manufacturer,
+scans,vendor=ge,8,ds005096-sidecars,*_angio.json Manufacturer,
+scans,field_strength=3,112,ds005096-sidecars,*_angio.json MagneticFieldStrength,
+scans,field_strength=1.5,14,ds005096-sidecars,*_angio.json MagneticFieldStrength,
+age_mean,,56.7,ds005096-demographics,Age at First Scan,age at first scan
+age_sd,,13.3,ds005096-demographics,Age at First Scan,sample standard deviation
+age_median,,58,ds005096-demographics,Age at First Scan,
+age_min,,19,ds005096-demographics,Age at First Scan,
+age_max,,82,ds005096-demographics,Age at First Scan,

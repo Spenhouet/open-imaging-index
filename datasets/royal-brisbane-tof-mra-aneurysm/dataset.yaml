@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: royal-brisbane-tof-mra-aneurysm
+name: Royal Brisbane TOF-MRA Aneurysm Database (ds005096)
+full_name: Royal Brisbane_TOFMRA_Intracranial Aneurysm_Database
+summary: >-
+  Clinical brain MR angiography of patients with intracranial aneurysms, with neuroradiologist aneurysm and parent
+  artery masks and 3D models, released to support aneurysm detection, flow modelling and surgical training. Includes
+  repeat surveillance scans for part of the cohort.
+homepage: https://openneuro.org/datasets/ds005096
+doi: 10.18112/openneuro.ds005096.v1.0.3
+year: 2024
+updated: 2024
+version: 1.0.3
+status: active
+creators:
+  - name: Royal Brisbane and Women's Hospital, The University of Queensland and Queensland University of Technology (de Nys CM, Allenby MC, et al.)
+    url: https://openneuro.org/datasets/ds005096
+species: human
+modalities: [MR]
+contrasts: [angio]
+anatomy: [brain]
+conditions: [intracranial_aneurysm]
+tasks: [segmentation, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [siemens, philips, ge]
+field_strengths: [1.5, 3]
+size_gb: 7.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005096
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    de Nys CM, Liang ES, Prior M, Woodruff MA, Novak JI, Murphy AR, Li Z, Winter CD, Allenby MC. Time-of-Flight MRA of
+    Intracranial Aneurysms with Interval Surveillance, Clinical Segmentation and Annotations. Scientific Data 11, 555
+    (2024). doi:10.1038/s41597-024-03397-8
+sources:
+  denys2024:
+    title: de Nys et al. 2024, Time-of-Flight MRA of Intracranial Aneurysms with Interval Surveillance, Clinical Segmentation and Annotations, Scientific Data
+    url: https://www.nature.com/articles/s41597-024-03397-8
+    kind: paper
+  openneuro-ds005096-v103:
+    title: OpenNeuro ds005096 snapshot 1.0.3 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds005096/versions/1.0.3
+    kind: website
+  ds005096-sidecars:
+    title: Raw anat files and JSON sidecars of ds005096 1.0.3 (CC0), counted per file
+    url: https://github.com/OpenNeuroDatasets/ds005096/tree/1.0.3
+    kind: computed
+  ds005096-demographics:
+    title: Patient Demographics sheet of the spreadsheet shipped with ds005096 1.0.3 (CC0), one row per subject
+    url: https://github.com/OpenNeuroDatasets/ds005096/blob/1.0.3/Clinical%20Annotations_MR%20Specifications_Demographics_Image%20Quality%20Analysis.xlsx
+    kind: computed
+related: [lausanne-tof-mra-aneurysm]
+keywords: [intracranial aneurysm, TOF-MRA, aneurysm segmentation, interval surveillance, computational fluid dynamics, cerebrovascular]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
