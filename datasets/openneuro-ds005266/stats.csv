@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,68,ds005266-file-tree,sub-* folders and participants.tsv,"the README states 69 participants, the release holds 68"
+studies,,68,ds005266-file-tree,sub-* folders,one MRI session per subject
+scans,,536,ds005266-file-tree,anat/ and func/ NIfTI files,68 T1w and 468 bold volumes
+subjects,condition=healthy,68,ds005266-file-tree,participants.tsv (Group),all in group control
+subjects,country=US,68,ds005266-file-tree,anat/*_T1w.json (InstitutionName),UCSB Brain Imaging Center
+subjects,vendor=siemens,68,ds005266-file-tree,anat/*_T1w.json (Manufacturer),Siemens Prisma fit
+subjects,field_strength=3,68,ds005266-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,contrast=T1w,68,ds005266-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,68,ds005266-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,68,ds005266-file-tree,,
+scans,contrast=bold,468,ds005266-file-tree,func/*_bold.nii.gz,"seven runs for 66 subjects, four for one and two for one"
+subjects,sex=female,52,ds005266-file-tree,participants.tsv (Gender),
+subjects,sex=male,15,ds005266-file-tree,participants.tsv (Gender),
+subjects,sex=other,1,ds005266-file-tree,participants.tsv (Gender),nonbinary
+subjects,age=10-19,23,ds005266-file-tree,participants.tsv (Age),
+subjects,age=20-29,44,ds005266-file-tree,participants.tsv (Age),
+subjects,age=30-39,1,ds005266-file-tree,participants.tsv (Age),
+age_mean,,20.5,ds005266-file-tree,participants.tsv (Age),
+age_min,,18,ds005266-file-tree,participants.tsv (Age),
+age_max,,30,ds005266-file-tree,participants.tsv (Age),
+subjects,sex=female;age=10-19,20,ds005266-file-tree,participants.tsv (Gender; Age),
+subjects,sex=female;age=20-29,32,ds005266-file-tree,participants.tsv (Gender; Age),
+subjects,sex=male;age=20-29,11,ds005266-file-tree,participants.tsv (Gender; Age),
+age_median,,20,ds005266-file-tree,participants.tsv (Age),
