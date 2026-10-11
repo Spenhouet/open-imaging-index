@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,166,kable2017,Materials and Methods: Participants and eligibility,randomized participants; participants.tsv and the snapshot summary also list 166
+studies,,293,ds002843-file-tree,ses-scan1 and ses-scan2 folders,166 baseline and 127 post-training sessions
+subjects,condition=healthy,166,kable2017,Materials and Methods: Participants and eligibility,healthy adults aged 18 to 35 screened for IQ and MRI safety
+subjects,field_strength=3,166,kable2017,Materials and Methods: Neuroimaging and primary outcomes,Siemens Trio 3 T
+subjects,vendor=siemens,166,kable2017,Materials and Methods: Neuroimaging and primary outcomes,Siemens Trio 3 T
+subjects,country=US,166,kable2017,Materials and Methods,University of Pennsylvania
+subjects,sex=male,98,ds002843-participants,sex,
+subjects,sex=female,68,ds002843-participants,sex,
+subjects,age=10-19,28,ds002843-participants,age,ages 18 and 19
+subjects,age=20-29,114,ds002843-participants,age,
+subjects,age=30-39,24,ds002843-participants,age,ages 30 to 34
+subjects,sex=male;age=10-19,16,ds002843-participants,sex and age,
+subjects,sex=female;age=10-19,12,ds002843-participants,sex and age,
+subjects,sex=male;age=20-29,67,ds002843-participants,sex and age,
+subjects,sex=female;age=20-29,47,ds002843-participants,sex and age,
+subjects,sex=male;age=30-39,15,ds002843-participants,sex and age,female cell below 10 left out
+age_mean,,24.5,ds002843-participants,age,
+age_median,,24,ds002843-participants,age,
+age_min,,18,ds002843-participants,age,
+age_max,,34,ds002843-participants,age,
+subjects,contrast=T1w,166,ds002843-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,166,ds002843-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,166,ds002843-file-tree,func/*_bold.nii.gz,"delay discounting, risky choice and resting-state runs"
+subjects,contrast=dwi,153,ds002843-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,153,ds002843-file-tree,,any session
+subjects,contrast_set=bold+T1w+T2w,13,ds002843-file-tree,,any session
