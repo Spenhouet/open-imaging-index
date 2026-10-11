@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: episurg
+name: EPISURG
+full_name: >-
+  EPISURG: a dataset of postoperative magnetic resonance images (MRI) for quantitative analysis of resection
+  neurosurgery for refractory epilepsy
+summary: >-
+  Postoperative brain MRI of people with drug-resistant focal epilepsy after resective surgery, released to train and
+  evaluate automatic segmentation of the resection cavity. Includes preoperative scans for most patients and manual
+  cavity masks from three raters on a subset.
+homepage: https://rdr.ucl.ac.uk/articles/dataset/EPISURG_a_dataset_of_postoperative_magnetic_resonance_images_MRI_for_quantitative_analysis_of_resection_neurosurgery_for_refractory_epilepsy/9996158
+doi: 10.5522/04/9996158.v1
+year: 2020
+version: v1
+status: active
+creators:
+  - name: Fernando Pérez-García, Roman Rodionov, Ali Alim-Marvasti, Rachel Sparks, John S. Duncan, Sébastien Ourselin
+  - name: University College London and National Hospital for Neurology and Neurosurgery, London
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [epilepsy]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [GB]
+size_gb: 5.8
+access:
+  type: open
+  url: https://doi.org/10.5522/04/9996158.v1
+  note: >-
+    A single EPISURG.zip downloads from the UCL Research Data Repository without an account. The record carries a
+    CC BY-NC-SA 4.0 license, and its description adds data use terms that every user must follow.
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    applies_to: The whole UCL Research Data Repository record (license stated in the record metadata)
+  - license: LicenseRef-EPISURG-DUA
+    applies_to: The whole record (terms stated in the record description)
+citation:
+  text: >-
+    Pérez-García F, Rodionov R, Alim-Marvasti A, Sparks R, Duncan JS, Ourselin S. Simulation of Brain Resection for
+    Cavity Segmentation Using Self-supervised and Semi-supervised Learning. MICCAI 2020, LNCS 12263, Springer (2020).
+    doi:10.1007/978-3-030-59716-0_12. And: Pérez-García F, Rodionov R, Alim-Marvasti A, Sparks R, Duncan JS, Ourselin
+    S. EPISURG: MRI dataset for quantitative analysis of resective neurosurgery for refractory epilepsy. University
+    College London (2020). doi:10.5522/04/9996158.v1
+sources:
+  episurg-rdr:
+    title: EPISURG record on the UCL Research Data Repository (v1)
+    url: https://rdr.ucl.ac.uk/articles/dataset/EPISURG_a_dataset_of_postoperative_magnetic_resonance_images_MRI_for_quantitative_analysis_of_resection_neurosurgery_for_refractory_epilepsy/9996158
+    kind: website
+  perezgarcia2020:
+    title: Pérez-García et al. 2020, Simulation of Brain Resection for Cavity Segmentation (MICCAI 2020, arXiv:2006.15693)
+    url: https://arxiv.org/abs/2006.15693
+    kind: paper
+  perezgarcia2021:
+    title: Pérez-García et al. 2021, A self-supervised learning strategy for postoperative brain cavity segmentation simulating resections (IJCARS, arXiv:2105.11239)
+    url: https://arxiv.org/abs/2105.11239
+    kind: paper
+keywords: [resection cavity, epilepsy surgery, postoperative MRI, self-supervised learning, defaced]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

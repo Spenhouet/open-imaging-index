@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,430,episurg-rdr,,patients with a postoperative MRI
+subjects,contrast=T1w,430,episurg-rdr,,
+subjects,condition=epilepsy,430,episurg-rdr,,
+subjects,country=GB,430,episurg-rdr,,"National Hospital for Neurology and Neurosurgery, London"
+scans,,699,episurg-rdr,,"sum of 430 postoperative and 269 preoperative T1-weighted images, the only two image types in the release"
+scans,contrast=T1w,699,episurg-rdr,,"430 postoperative and 269 preoperative"
