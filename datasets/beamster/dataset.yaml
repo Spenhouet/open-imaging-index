@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: beamster
+name: BEAMSTER
+full_name: >-
+  BEAMSTER: Brain Metastases Segmentation for Stereotactic Radiotherapy, A Retrospective MRI Dataset with Expert
+  Segmentations
+summary: >-
+  Contrast-enhanced T1-weighted brain MRI of patients treated with stereotactic radiotherapy for brain metastases,
+  with radiation oncologist lesion masks, shared for developing automatic detection and segmentation. 140 patients,
+  260 lesions, many of them small.
+homepage: https://figshare.com/articles/dataset/BEAMSTER_Brain_Metastases_Segmentation_for_Stereotactic_Radiotherapy_A_Retrospective_MRI_Dataset_with_Expert_Segmentations/29365844
+doi: 10.6084/m9.figshare.29365844.v1
+year: 2026
+version: '1'
+status: active
+creators:
+  - name: Nohel M., Reguli S., Kaplanova R., Jackaniova J., Chmelik J., Knybel L.
+    url: https://doi.org/10.6084/m9.figshare.29365844.v1
+species: human
+modalities: [MR]
+contrasts: [T1w_ce]
+anatomy: [brain]
+conditions: [brain_metastasis]
+tasks: [segmentation, detection, survival]
+formats: [NIfTI]
+vendors: [siemens]
+field_strengths: [1.5, 3]
+size_gb: 4.34
+access:
+  type: open
+  url: https://figshare.com/articles/dataset/BEAMSTER_Brain_Metastases_Segmentation_for_Stereotactic_Radiotherapy_A_Retrospective_MRI_Dataset_with_Expert_Segmentations/29365844
+  note: Direct download from figshare without an account.
+licenses:
+  - license: CC-BY-4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+citation:
+  text: >-
+    Nohel M, Reguli S, Kaplanova R, Jackaniova J, Chmelik J, Knybel L. BEAMSTER: Brain Metastases Segmentation for
+    Stereotactic Radiotherapy, A Retrospective MRI Dataset with Expert Segmentations. figshare, dataset (2026).
+    https://doi.org/10.6084/m9.figshare.29365844.v1
+sources:
+  figshare-beamster:
+    title: BEAMSTER figshare record v1 (description, license, file list and README.txt)
+    url: https://api.figshare.com/v2/articles/29365844
+    kind: website
+  beamster-clinical-table:
+    title: Table_clinical_data.csv (CC BY 4.0), counted per patient row
+    url: https://ndownloader.figshare.com/files/65149503
+    kind: computed
+  beamster-voxel-table:
+    title: image_voxel_parameters.csv (CC BY 4.0), counted per patient row
+    url: https://ndownloader.figshare.com/files/65149497
+    kind: computed
+related: []
+keywords: [brain metastases, stereotactic radiotherapy, radiosurgery, lesion segmentation, contrast-enhanced MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

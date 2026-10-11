@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,140,figshare-beamster,Description,
+scans,,140,beamster-voxel-table,Patient ID,one MRI volume per patient
+subjects,contrast=T1w_ce,140,figshare-beamster,Description,contrast-enhanced T1-weighted MRI
+subjects,contrast_set=T1w_ce,140,figshare-beamster,Description,
+subjects,condition=brain_metastasis,140,figshare-beamster,Description,260 annotated metastatic lesions in total
+subjects,sex=male,77,beamster-clinical-table,Sex,
+subjects,sex=female,63,beamster-clinical-table,Sex,
+subjects,age=20-29,2,beamster-clinical-table,Age (years),
+subjects,age=30-39,3,beamster-clinical-table,Age (years),
+subjects,age=40-49,23,beamster-clinical-table,Age (years),
+subjects,age=50-59,20,beamster-clinical-table,Age (years),
+subjects,age=60-69,50,beamster-clinical-table,Age (years),
+subjects,age=70-79,31,beamster-clinical-table,Age (years),
+subjects,age=80-89,11,beamster-clinical-table,Age (years),
+age_min,,25,beamster-clinical-table,Age (years),
+age_max,,86,beamster-clinical-table,Age (years),
+subjects,vendor=siemens,140,beamster-clinical-table,MRI Scanner Type,"Magnetom Avanto, Sola or Prisma"
+subjects,field_strength=1.5,130,beamster-clinical-table,MRI Scanner Type,Avanto 126 and Sola 4 (1.5 T per README.txt)
+subjects,field_strength=3,10,beamster-clinical-table,MRI Scanner Type,Prisma (3 T per README.txt)
+subjects,condition=lung_cancer,42,beamster-clinical-table,Origin,"primary tumor; sum of non-small cell lung cancer (31), Ca Bronchi (10) and Ca Pulmonis (1)"
+subjects,condition=melanoma,21,beamster-clinical-table,Origin,primary tumor
+subjects,condition=kidney_cancer,15,beamster-clinical-table,Origin,primary tumor (Ca Renis)
+subjects,condition=breast_cancer,13,beamster-clinical-table,Origin,primary tumor (Ca Mammae)
+subjects,condition=colorectal_cancer,2,beamster-clinical-table,Origin,primary tumor; Ca Recti (1) and Ca Sigmoidei (1)
+subjects,condition=ovarian_cancer,1,beamster-clinical-table,Origin,primary tumor (Ca Ovarii)
