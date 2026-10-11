@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,141,leppanen2026,Materials and methods: Participants,"71 AN, 70 HC; the snapshot holds one T1w image for each of 141 subjects"
+scans,,141,ds007741-phenotype,sub-*/anat/*_T1w.nii.gz,one T1w volume per subject
+subjects,contrast=T1w,141,ds007741-phenotype,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast_set=T1w,141,ds007741-phenotype,sub-*/anat/*_T1w.nii.gz,
+subjects,condition=anorexia_nervosa,71,leppanen2026,Materials and methods: Participants,includes weight-restored participants who did not consider themselves recovered
+subjects,condition=healthy,70,leppanen2026,Materials and methods: Participants,
+subjects,sex=female,141,leppanen2026,Materials and methods: Participants,
+subjects,country=GB,141,leppanen2026,Materials and methods: Participants,recruited in London; scanned at King's College London
+subjects,vendor=ge,141,leppanen2026,Materials and methods: MRI data acquisition,GE Discovery MR750
+subjects,field_strength=3,141,leppanen2026,Materials and methods: MRI data acquisition,
+subjects,age=10-19,41,ds007741-phenotype,age column,ages 18 and 19
+subjects,age=20-29,100,ds007741-phenotype,age column,
+subjects,condition=anorexia_nervosa;age=10-19,22,ds007741-phenotype,group and age columns,
+subjects,condition=anorexia_nervosa;age=20-29,49,ds007741-phenotype,group and age columns,
+subjects,condition=healthy;age=10-19,19,ds007741-phenotype,group and age columns,
+subjects,condition=healthy;age=20-29,51,ds007741-phenotype,group and age columns,
+age_mean,,21.32,ds007741-phenotype,age column,
+age_min,,18,ds007741-phenotype,age column,
+age_max,,27,ds007741-phenotype,age column,the paper states an inclusion range of 18 to 26
+age_mean,condition=anorexia_nervosa,21.24,ds007741-phenotype,group and age columns,
+age_mean,condition=healthy,21.4,ds007741-phenotype,group and age columns,
