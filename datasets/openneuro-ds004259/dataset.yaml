@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004259
+name: Numerosity perception and risk attitude fMRI (ds004259)
+full_name: Individual risk attitudes arise from noise in neurocognitive magnitude representations
+summary: >-
+  Brain fMRI of healthy young adults judging which of two coin clouds holds more coins, collected to test whether
+  noise in how the brain codes numerical magnitude explains individual risk aversion in separate financial choices.
+  64 adults scanned in Zurich, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004259
+doi: 10.18112/openneuro.ds004259.v1.0.0
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Zurich Center for Neuroeconomics, University of Zurich (Barretto-García M, de Hollander G, Grueschow M,
+      Polanía R, Woodford M, Ruff CC)
+    url: https://openneuro.org/datasets/ds004259
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 20.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004259
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Barretto-García M, de Hollander G, Grueschow M, Polanía R, Woodford M, Ruff CC. Individual risk attitudes arise
+    from noise in neurocognitive magnitude representations. Nature Human Behaviour 7, 1551-1567 (2023).
+    doi:10.1038/s41562-023-01643-4
+sources:
+  barrettogarcia2022:
+    title: >-
+      Barretto-García et al. 2022, Individual risk attitudes arise from noise in neurocognitive magnitude
+      representations, bioRxiv preprint 2022.08.22.504413 v1
+    url: https://doi.org/10.1101/2022.08.22.504413
+    kind: paper
+  barrettogarcia2023:
+    title: >-
+      Barretto-García et al. 2023, Individual risk attitudes arise from noise in neurocognitive magnitude
+      representations, Nature Human Behaviour
+    url: https://doi.org/10.1038/s41562-023-01643-4
+    kind: paper
+  openneuro-ds004259-v100:
+    title: OpenNeuro ds004259 snapshot 1.0.0 (dataset_description.json, CHANGES, snapshot summary and file tree)
+    url: https://openneuro.org/datasets/ds004259/versions/1.0.0
+    kind: website
+keywords: [numerosity, magnitude perception, risk attitude, decision making, neuroeconomics, population receptive field]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
