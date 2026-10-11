@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcp-aging-pvs
+name: HCP-Aging perivascular space labels
+full_name: Precise perivascular space segmentation on T2-weighted magnetic resonance imaging from Human Connectome Project-Aging
+summary: >-
+  Brain T2-weighted MRI of healthy adults aged 36 to 100 with refined masks of white matter perivascular spaces, made to
+  train and test automatic segmentation of these small fluid-filled channels. 200 people selected from HCP-Aging for an
+  even spread of age and sex.
+homepage: https://openneuro.org/datasets/ds005595
+doi: 10.18112/openneuro.ds005595.v1.0.0
+year: 2024
+version: OpenNeuro ds005595 v1.0.0 (24 October 2024)
+status: active
+creators:
+  - name: Yaqiong Chai, Hosung Kim and colleagues, University of Southern California
+    url: https://doi.org/10.1101/2025.03.19.25324269
+species: human
+modalities: [MR]
+contrasts: [T2w]
+anatomy: [brain]
+conditions: [healthy, enlarged_perivascular_spaces]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.04
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005595
+licenses:
+  - license: CC0-1.0
+    note: >-
+      License stated in dataset_description.json of the OpenNeuro release. The source images also remain available
+      through HCP-Aging on the NIMH Data Archive under that study's own data use terms.
+citation:
+  text: >-
+    Chai Y, Zhang H, Robles C, Kim AS, et al. Precise perivascular space segmentation on magnetic resonance imaging from
+    Human Connectome Project-Aging. medRxiv (2025). doi:10.1101/2025.03.19.25324269
+sources:
+  chai2025:
+    title: Chai et al. 2025, Precise perivascular space segmentation on MRI from HCP-Aging, medRxiv preprint (PMC11957161)
+    url: https://doi.org/10.1101/2025.03.19.25324269
+    kind: paper
+  ds005595-participants:
+    title: participants.tsv of OpenNeuro ds005595 (CC0), counted per row; sex from sex, ages from age
+    url: https://github.com/OpenNeuroDatasets/ds005595/blob/main/participants.tsv
+    kind: computed
+  ds005595-file-tree:
+    title: BIDS file tree of OpenNeuro ds005595 (CC0), T2w images and PVS masks counted per subject
+    url: https://github.com/OpenNeuroDatasets/ds005595
+    kind: computed
+related: [hcp-aging]
+keywords: [perivascular spaces, Virchow-Robin spaces, small vessel disease, aging, healthy adults, semi-supervised labels]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
