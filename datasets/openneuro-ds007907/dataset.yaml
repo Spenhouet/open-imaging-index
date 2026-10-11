@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007907
+name: Skull Bone Marrow TSPO PET in Chronic Pain (ds007907)
+full_name: Elevated translocator protein in skull bone marrow is linked to human chronic pain
+summary: >-
+  Head PET of the immune marker translocator protein (TSPO) and T1-weighted brain MRI of people with chronic low back
+  pain or knee osteoarthritis and healthy controls, collected to study immune activation in skull bone marrow in
+  chronic pain. Includes skull masks and SUV maps.
+homepage: https://openneuro.org/datasets/ds007907
+doi: 10.18112/openneuro.ds007907.v1.0.2
+# First public snapshot (1.0.0) on OpenNeuro, 2026-06-30; latest snapshot 1.0.2, 2026-07-02.
+year: 2026
+updated: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: Mohammadian M, Loggia ML (Massachusetts General Hospital)
+    url: https://openneuro.org/datasets/ds007907
+species: human
+modalities: [MR, PT]
+contrasts: [T1w]
+tracers: [pbr28]
+anatomy: [head, brain]
+conditions: [chronic_pain, low_back_pain, knee_osteoarthritis, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.45
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007907
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Mohammadian M, Efthimiou N, Gabriel K, Brusaferri L, Cooper-Hohn J, Kim M, Murphy JP, Alshelh Z, Grmek G,
+    Schnieders JH, Chane CA, Carmichael TG, Yang D, Schubert JJ, Turkheimer FE, Cazuza RA, Grace PM, Catana C,
+    Stufflebeam SM, Edwards RR, Napadow V, Sullivan K, Nahrendorf M, Price TJ, Gilman JM, Loggia ML. Evidence for a
+    role of skull bone marrow in human chronic pain. Sci Transl Med. In press. doi:10.1126/scitranslmed.aed8729
+sources:
+  openneuro-ds007907-v1-0-2:
+    title: >-
+      OpenNeuro ds007907 snapshot 1.0.2 (dataset_description.json, README, participants.json, CHANGES and snapshot
+      size)
+    url: https://openneuro.org/datasets/ds007907/versions/1.0.2
+    kind: website
+  ds007907-participants:
+    title: participants.tsv of the ds007907 BIDS repository (CC0), columns age, sex, group and pain_hc
+    url: https://github.com/OpenNeuroDatasets/ds007907/blob/main/participants.tsv
+    kind: computed
+  ds007907-file-tree:
+    title: File listing and JSON sidecars of the ds007907 BIDS repository (CC0), subjects counted per NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds007907
+    kind: computed
+related: []
+keywords: [TSPO, translocator protein, skull bone marrow, neuroinflammation, chronic pain, PET/MR]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

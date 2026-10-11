@@ -1,0 +1,36 @@
+measure,by,value,source,where,note
+subjects,,147,ds007907-participants,participant_id,each subject has one T1w and one PET image
+studies,,147,ds007907-file-tree,sub-* folders,one PET/MR session per subject
+scans,,294,ds007907-file-tree,anat/*_T1w.nii.gz and pet/*_pet.nii.gz,one T1w and one static PET SUV image per subject; derivatives not counted
+subjects,modality=MR,147,ds007907-file-tree,anat/*_T1w.nii.gz,
+subjects,modality=PT,147,ds007907-file-tree,pet/*_pet.nii.gz,
+subjects,contrast=T1w,147,ds007907-file-tree,anat/*_T1w.nii.gz,defaced MPRAGE
+subjects,contrast_set=T1w,147,ds007907-file-tree,anat/*_T1w.nii.gz,
+subjects,tracer=pbr28,147,ds007907-file-tree,pet/*_pet.json TracerName,
+subjects,vendor=siemens,147,ds007907-file-tree,ManufacturersModelName in T1w and PET sidecars,Siemens Biograph mMR PET/MR
+subjects,field_strength=3,147,openneuro-ds007907-v1-0-2,README (Imaging modalities),
+subjects,condition=chronic_pain,125,ds007907-participants,pain_hc = Pain,chronic low back pain or knee osteoarthritis
+subjects,condition=low_back_pain,88,ds007907-participants,group = IGN_CLBP or PBRCBD,"chronic low back pain: IGNITE study 51, CBD trial pre-treatment scan 37"
+subjects,condition=knee_osteoarthritis,37,ds007907-participants,group = PBRKOA_KOA,
+subjects,condition=healthy,22,ds007907-participants,group = PBRKOA_HC,
+subjects,sex=female,79,ds007907-participants,sex,
+subjects,sex=male,68,ds007907-participants,sex,
+subjects,condition=low_back_pain;sex=female,52,ds007907-participants,"group, sex",
+subjects,condition=low_back_pain;sex=male,36,ds007907-participants,"group, sex",
+subjects,condition=knee_osteoarthritis;sex=female,16,ds007907-participants,"group, sex",
+subjects,condition=knee_osteoarthritis;sex=male,21,ds007907-participants,"group, sex",
+subjects,condition=healthy;sex=female,11,ds007907-participants,"group, sex",
+subjects,condition=healthy;sex=male,11,ds007907-participants,"group, sex",
+subjects,age=10-19,1,ds007907-participants,age,
+subjects,age=20-29,16,ds007907-participants,age,
+subjects,age=30-39,18,ds007907-participants,age,
+subjects,age=40-49,21,ds007907-participants,age,
+subjects,age=50-59,25,ds007907-participants,age,
+subjects,age=60-69,42,ds007907-participants,age,
+subjects,age=70-79,22,ds007907-participants,age,
+subjects,age=80-89,2,ds007907-participants,age,
+age_mean,,53.5,ds007907-participants,age,age in years at time of scan
+age_median,,56,ds007907-participants,age,
+age_sd,,16.4,ds007907-participants,age,
+age_min,,19,ds007907-participants,age,
+age_max,,85,ds007907-participants,age,
