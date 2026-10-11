@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002330
+name: Creativity predictors MRI (ds002330)
+full_name: Neuroimaging predictors of creativity in healthy adults
+summary: >-
+  Structural, diffusion and resting-state brain MRI of healthy young adults, collected to test which brain features
+  predict creativity, with divergent thinking, creative behaviour and creative achievement scores for each person. 66
+  adults from Kingston, Canada, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002330
+doi: 10.18112/openneuro.ds002330.v1.1.0
+# First public snapshot (1.0.0) on OpenNeuro, 2019-11-21; latest snapshot 1.1.0, 2020-01-14.
+year: 2019
+updated: 2020
+version: 1.1.0
+status: active
+creators:
+  - name: Sunavsky A, Poppenk J (Centre for Neuroscience Studies, Queen's University)
+    url: https://openneuro.org/datasets/ds002330
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 51.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002330
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Sunavsky A, Poppenk J. Neuroimaging predictors of creativity in healthy adults. NeuroImage 206, 116292 (2020).
+    doi:10.1016/j.neuroimage.2019.116292
+sources:
+  sunavsky2020:
+    title: Sunavsky and Poppenk 2020, Neuroimaging predictors of creativity in healthy adults, NeuroImage (abstract)
+    url: https://doi.org/10.1016/j.neuroimage.2019.116292
+    kind: paper
+  openneuro-ds002330-v1-1-0:
+    title: OpenNeuro ds002330 snapshot 1.1.0 (dataset_description.json, CHANGES, sidecar JSON files and snapshot size)
+    url: https://openneuro.org/datasets/ds002330/versions/1.1.0
+    kind: website
+  ds002330-participants:
+    title: participants.tsv of ds002330 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds002330/blob/master/participants.tsv
+    kind: computed
+  ds002330-file-tree:
+    title: File listing of the ds002330 BIDS repository (CC0), counted per anat, dwi and func NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds002330
+    kind: computed
+related: []
+keywords:
+  [creativity, divergent thinking, resting-state fMRI, diffusion MRI, individual differences, multiband, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
