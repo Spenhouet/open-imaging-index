@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004261
+name: Misinformation false memory fMRI (ds004261)
+full_name: >-
+  Cross-stage neural pattern similarity in the hippocampus predicts false memory derived from post-event inaccurate
+  information
+summary: >-
+  Task fMRI and T1-weighted brain MRI of 57 healthy Chinese college students who viewed picture stories, later read
+  narratives with misleading details and took a memory test the next day, to study how misinformation creates false
+  memory. Released in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004261
+doi: 10.18112/openneuro.ds004261.v2.0.0
+# Snapshot 1.0.0 is dated 2022-09-04, but OpenNeuro gives the publish date 2023-03-24; snapshot 2.0.0 (2023-04-25)
+# added all fMRI data.
+year: 2023
+updated: 2023
+version: 2.0.0
+status: active
+creators:
+  - name: >-
+      Shao X, Li A, Chen C, Loftus EF, Zhu B (State Key Laboratory of Cognitive Neuroscience and Learning, Beijing
+      Normal University)
+    url: https://openneuro.org/datasets/ds004261
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 115.99
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004261
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Shao X, Li A, Chen C, Loftus EF, Zhu B. Cross-stage neural pattern similarity in the hippocampus predicts false
+    memory derived from post-event inaccurate information. Nature Communications 14:2299 (2023).
+    doi:10.1038/s41467-023-38046-y
+sources:
+  shao2023:
+    title: >-
+      Shao et al. 2023, Cross-stage neural pattern similarity in the hippocampus predicts false memory derived from
+      post-event inaccurate information, Nature Communications
+    url: https://www.nature.com/articles/s41467-023-38046-y
+    kind: paper
+  openneuro-ds004261-v2-0-0:
+    title: OpenNeuro ds004261 snapshot 2.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004261/versions/2.0.0
+    kind: website
+  ds004261-participants:
+    title: participants.tsv of ds004261 snapshot 2.0.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004261/blob/2.0.0/participants.tsv
+    kind: computed
+  ds004261-file-tree:
+    title: File tree of ds004261 snapshot 2.0.0 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds004261/tree/2.0.0
+    kind: computed
+related: [openneuro-ds002731]
+keywords: [false memory, misinformation effect, episodic memory, hippocampus, pattern similarity, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
