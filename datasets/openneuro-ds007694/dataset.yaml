@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007694
+name: GRACE Schizotypy Gut-Brain MRI (ds007694)
+full_name: >-
+  GRACE: A Multimodal Observational Case-Control Study Exploring Gut Microbiota-Hippocampus Alterations in Individuals
+  With High Positive Schizotypy From the General Population
+summary: >-
+  Brain MRI (T1-weighted, resting-state fMRI, arterial spin labeling) and hippocampal proton spectroscopy of young
+  healthy adults with high or low positive schizotypy, collected to study links between gut microbiota and the
+  hippocampus.
+homepage: https://openneuro.org/datasets/ds007694
+doi: 10.18112/openneuro.ds007694.v1.0.2
+# Snapshots 1.0.0, 1.0.1 and 1.0.2 were all published on OpenNeuro on 2026-04-23.
+year: 2026
+updated: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: Iseli GC, Coynel D, Schmidt A (University of Basel)
+    url: https://openneuro.org/datasets/ds007694
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 8.77
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007694
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.2 states "License" CC0. Its HowToAcknowledge field asks users to cite
+      the original publication and to contact the authors about co-authorship for substantial reuse.
+citation:
+  text: >-
+    Iseli GC, Vázquez-Castellanos JF, Coynel D, Stone JM, Zurita Soler M, Allen P, Zelaya F, Derrien M, Lang UE,
+    Debbané M, Ettinger U, Raes J, Schmidt A. A Multimodal Observational Case-Control Study Exploring Gut
+    Microbiota-Hippocampus Alterations in Individuals With High Positive Schizotypy From the General Population. Biol
+    Psychiatry Glob Open Sci. 2025;5(6):100567. doi:10.1016/j.bpsgos.2025.100567
+sources:
+  openneuro-ds007694-v1-0-2:
+    title: OpenNeuro ds007694 snapshot 1.0.2 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds007694/versions/1.0.2
+    kind: website
+  ds007694-participants:
+    title: participants.tsv of the ds007694 BIDS repository (CC0), columns age, sex and group
+    url: https://github.com/OpenNeuroDatasets/ds007694/blob/main/participants.tsv
+    kind: computed
+  ds007694-file-tree:
+    title: File listing and JSON sidecars of the ds007694 BIDS repository (CC0), subjects counted per NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds007694
+    kind: computed
+  iseli2025:
+    title: Iseli et al. 2025, Biological Psychiatry Global Open Science 5(6):100567
+    url: https://doi.org/10.1016/j.bpsgos.2025.100567
+    kind: paper
+related: []
+keywords:
+  [schizotypy, psychosis proneness, gut microbiota, hippocampus, MR spectroscopy, MEGA-PRESS, GABA, glutamate, resting-state fMRI, perfusion]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
