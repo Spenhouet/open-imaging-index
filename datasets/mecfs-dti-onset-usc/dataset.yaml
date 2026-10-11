@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mecfs-dti-onset-usc
+name: ME/CFS post-infectious vs gradual onset DTI maps (UniSC)
+full_name: >-
+  Dataset of preprocessed DTI metrics from patients with post-infectious and gradual onset ME/CFS and health controls
+  with sedentary lifestyles
+summary: >-
+  Per-subject white matter diffusion tensor maps of adults with post-infectious or gradual onset myalgic
+  encephalomyelitis/chronic fatigue syndrome (ME/CFS) and sedentary controls, shared to replicate a study comparing
+  white matter changes between the two onset types.
+homepage: https://zenodo.org/records/12791948
+doi: 10.5281/zenodo.12791948
+year: 2024
+creators:
+  - name: Qiang Yu, University of the Sunshine Coast
+    url: https://orcid.org/0000-0002-2664-8310
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [me_cfs, healthy]
+formats: [NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.59
+access:
+  type: open
+  url: https://zenodo.org/records/12791948
+  note: >-
+    One zip archive with four preprocessed DTI maps per participant (fractional anisotropy, mean, axial and radial
+    diffusivity) and a spreadsheet of demographics and symptom scores. The raw diffusion-weighted images are not part
+    of the release.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Yu Q, Kwiatek RA, Del Fante P, Bonner A, Calhoun VD, Bateman GA, Yamamura T, Shan Z. Distinct white matter
+    alteration patterns in post-infectious and gradual onset chronic fatigue syndrome revealed by diffusion MRI.
+    Scientific Reports 15, 24256 (2025). doi:10.1038/s41598-025-09379-z
+sources:
+  yu2025:
+    title: Yu et al. 2025, Scientific Reports 15, 24256
+    url: https://doi.org/10.1038/s41598-025-09379-z
+    kind: paper
+  zenodo-12791948:
+    title: Zenodo record 12791948
+    url: https://zenodo.org/records/12791948
+    kind: website
+related: []
+keywords:
+  [
+    myalgic encephalomyelitis,
+    chronic fatigue syndrome,
+    post-infectious,
+    diffusion tensor imaging,
+    axial diffusivity,
+    white matter,
+    TBSS
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

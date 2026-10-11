@@ -499,3 +499,7 @@ terms:
       isolated spelling deficits without a reading deficit.
     synonyms: [disorder of written expression, spelling disorder, isolated spelling deficit]
     mappings: { mondo: 'MONDO:0000599' }
+  - id: me_cfs
+    label: Myalgic encephalomyelitis/chronic fatigue syndrome
+    synonyms: [ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, CFS]
+    mappings: { mondo: 'MONDO:0005404' }
