@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,64,barrettogarcia2022,Materials and Methods: Participants,snapshot 1.0.0 has 64 subject folders
+subjects,sex=female,26,barrettogarcia2022,Materials and Methods: Participants,
+subjects,condition=healthy,64,barrettogarcia2022,Materials and Methods: Participants,no psychiatric or neurological disorders; all right-handed
+subjects,contrast=T1w,64,openneuro-ds004259-v100,sub-*/anat,one T1w per subject
+subjects,contrast=bold,64,openneuro-ds004259-v100,sub-*/func,task-numrisk runs
+subjects,contrast_set=bold+T1w,64,openneuro-ds004259-v100,sub-*,fieldmap magnitude and phase-difference images (62 subjects) are not counted as a contrast
+subjects,vendor=philips,64,barrettogarcia2022,Materials and Methods: MRI acquisition and pre-processing,Philips Achieva with 32-channel head coil
+subjects,field_strength=3,64,barrettogarcia2022,Materials and Methods: MRI acquisition and pre-processing,
+subjects,country=CH,64,barrettogarcia2022,Materials and Methods: Participants,protocol approved by the Canton of Zurich ethics committee
+scans,,449,openneuro-ds004259-v100,sub-*,sum of the disjoint T1w and bold NIfTI counts below; fieldmap images not included
+scans,contrast=T1w,64,openneuro-ds004259-v100,sub-*/anat,
+scans,contrast=bold,385,openneuro-ds004259-v100,sub-*/func,six runs for 63 subjects and seven files for sub-28
+age_min,,18,barrettogarcia2022,Materials and Methods: Participants,stated as an age range of 18 to 35
+age_max,,35,barrettogarcia2022,Materials and Methods: Participants,stated as an age range of 18 to 35
