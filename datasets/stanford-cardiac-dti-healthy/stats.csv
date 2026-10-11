@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,48,stanford-sdr-yh756nh8583-files,file names Healthy_Volunteer_*_Analysis.zip and *_Processing.zip,48 distinct participant ids with one Analysis and one Processing archive each
+subjects,condition=healthy,48,stanford-sdr-yh756nh8583,Abstract,
+subjects,contrast=dwi,48,stanford-sdr-yh756nh8583-files,file names Healthy_Volunteer_*_Analysis.zip,each participant folder holds processed cardiac diffusion tensor data
+subjects,field_strength=3,48,stanford-sdr-yh756nh8583,Abstract,
+subjects,vendor=siemens,48,stanford-sdr-yh756nh8583,Abstract,MAGNETOM Vida Fit
+age_mean,,39.4,stanford-sdr-yh756nh8583,Abstract,
+age_sd,,13,stanford-sdr-yh756nh8583,Abstract,

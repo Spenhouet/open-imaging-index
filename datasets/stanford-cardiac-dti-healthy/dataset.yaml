@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: stanford-cardiac-dti-healthy
+name: Stanford Healthy Cardiac DTI
+full_name: Human Cardiac Diffusion MRI Data in Healthy Volunteers on Commercial MRI Hardware
+summary: >-
+  Processed cardiac diffusion tensor MRI of healthy volunteers, shared as a reference for myocardial fiber
+  architecture and as a benchmark for cardiac diffusion processing methods, with left ventricle segmentations and
+  diffusion metric maps.
+homepage: https://purl.stanford.edu/yh756nh8583
+doi: 10.25740/yh756nh8583
+year: 2026
+status: active
+creators:
+  - name: Ariel Hannum, Tyler Cork, Luigi Perotti and Daniel Ennis, Stanford University
+    url: https://purl.stanford.edu/yh756nh8583
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [heart]
+conditions: [healthy]
+tasks: [segmentation, normative]
+formats: [NIfTI, NRRD, MAT]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 138
+access:
+  type: open
+  url: https://purl.stanford.edu/yh756nh8583
+licenses:
+  - license: ODC-By-1.0
+sources:
+  stanford-sdr-yh756nh8583:
+    title: Stanford Digital Repository record yh756nh8583, abstract, description and access conditions (version 5)
+    url: https://purl.stanford.edu/yh756nh8583
+    kind: website
+  stanford-sdr-yh756nh8583-files:
+    title: >-
+      Public file listing of Stanford Digital Repository record yh756nh8583 (ODC-By 1.0), participant folders counted
+      from the file names and file sizes summed
+    url: https://purl.stanford.edu/yh756nh8583.xml
+    kind: computed
+related: []
+keywords:
+  [cardiac diffusion tensor imaging, cDTI, myocardial microstructure, myofiber orientation, left ventricle, CarDpy]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
