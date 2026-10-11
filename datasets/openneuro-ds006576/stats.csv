@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,69,mcdevitt2026,Methods: Participants,"final sample, 23 per group (wake, NREM-only nap, nap with REM); 74 complete data sets were collected; the OpenNeuro README and participants.tsv also list 69"
+subjects,condition=healthy,69,mcdevitt2026,Methods: Participants,healthy nonsmoking adults
+subjects,sex=female,37,ds006576-file-tree,participants.tsv: sex,
+subjects,sex=male,32,ds006576-file-tree,participants.tsv: sex,
+subjects,contrast=T1w,69,ds006576-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,69,ds006576-file-tree,sub-*/ses-01/anat/*_T2w.nii.gz,
+subjects,contrast=bold,69,ds006576-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,69,ds006576-file-tree,anat and func folders,"FLASH images and EPI field maps not counted as contrasts"
+studies,,207,ds006576-file-tree,sub-*/ses-* folders,"three MRI sessions per subject (ses-00, ses-01, ses-02)"
+scans,contrast=T1w,204,ds006576-file-tree,*_T1w.nii.gz,"three sessions lack a T1w: sub-160 ses-00, sub-170 ses-00, sub-178 ses-01 (also stated in the README)"
+scans,contrast=T2w,69,ds006576-file-tree,*_T2w.nii.gz,one per subject in ses-01
+scans,contrast=bold,1243,ds006576-file-tree,*_bold.nii.gz,"414 study, 276 reward, 139 decision, 138 localizer, 138 familiarization, 69 postfaces and 69 postscenes runs"
+scans,,2149,ds006576-file-tree,sub-*/ses-*/*/*.nii.gz,"all raw image files: 204 T1w, 69 T2w, 207 FLASH, 1243 bold and 426 EPI field maps"
+subjects,vendor=siemens,69,mcdevitt2026,Methods: MRI acquisition,3 T Siemens Skyra with a 64-channel head coil
+subjects,field_strength=3,69,mcdevitt2026,Methods: MRI acquisition,
+subjects,country=US,69,mcdevitt2026,Methods: Participants,Princeton University community

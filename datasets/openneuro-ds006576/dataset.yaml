@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006576
+name: REM Sleep and Hippocampal Memory Differentiation (ds006576)
+full_name: The role of REM sleep in neural differentiation of memories in the hippocampus
+summary: >-
+  Task fMRI, structural brain MRI and nap EEG of healthy young adults, collected to test whether rapid eye movement
+  (REM) sleep drives the differentiation of hippocampal memory representations after a violated prediction.
+homepage: https://openneuro.org/datasets/ds006576
+doi: 10.18112/openneuro.ds006576.v1.0.5
+year: 2025
+updated: 2026
+version: 1.0.5
+status: active
+creators:
+  - name: Elizabeth A. McDevitt, Ghootae Kim, Nicholas B. Turk-Browne and Kenneth A. Norman
+    url: https://openneuro.org/datasets/ds006576
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 697.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006576/versions/1.0.5
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006576/versions/1.0.5
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    McDevitt EA, Kim G, Turk-Browne NB, Norman KA. The Role of Rapid Eye Movement Sleep in Neural Differentiation of
+    Memories in the Hippocampus. Journal of Cognitive Neuroscience 38(1):126-143 (2026). doi:10.1162/jocn.a.82
+sources:
+  mcdevitt2026:
+    title: >-
+      McDevitt et al. 2026, The Role of Rapid Eye Movement Sleep in Neural Differentiation of Memories in the
+      Hippocampus, Journal of Cognitive Neuroscience (PMC12499895)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12499895/
+    kind: paper
+  openneuro-ds006576-v105:
+    title: OpenNeuro ds006576 snapshot 1.0.5 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006576/versions/1.0.5
+    kind: website
+  ds006576-file-tree:
+    title: >-
+      File tree, participants.tsv (columns sex and group) of ds006576 snapshot 1.0.5 (CC0), raw NIfTI
+      files counted per subject and session folder
+    url: https://github.com/OpenNeuroDatasets/ds006576/tree/1.0.5
+    kind: computed
+related: []
+keywords: [sleep, REM sleep, nap, memory, hippocampus, statistical learning, prediction error, task fMRI, EEG]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
