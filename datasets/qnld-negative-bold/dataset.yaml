@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qnld-negative-bold
+name: QNLD Negative BOLD
+full_name: The Multimodal Dataset to Investigate Task-Evoked Negative BOLD Response and Neurodegeneration
+summary: >-
+  Brain MRI, task and resting-state fMRI, and FDG, amyloid and tau PET from cognitively normal young and older adults,
+  collected to study task-evoked brain deactivation (the negative BOLD response) and its link to aging and Alzheimer's
+  pathology.
+homepage: https://openneuro.org/datasets/ds006148
+doi: 10.18112/openneuro.ds006148.v1.0.7
+# First OpenNeuro snapshot 1.0.0 dated 2025-04-23; latest snapshot 1.0.7 dated 2026-06-05 (CHANGES file and OpenNeuro API).
+year: 2025
+updated: 2026
+version: 1.0.7
+status: active
+creators:
+  - name: Quantitative Neuroimaging Laboratory, Brain Health Imaging Institute, Weill Cornell Medicine (Ghaderi Yazdi B, Razlighi QR, et al.)
+    url: https://github.com/QuantitativeNeuroimagingLaboratory
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, dwi, bold, asl, swi, Chimap]
+tracers: [fdg, florbetaben, mk6240]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+# Snapshot 1.0.7 size reported by the OpenNeuro API (2,626,576,125,821 bytes), including derivatives.
+size_gb: 2626.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006148
+  note: >-
+    Imaging and cognitive data download from OpenNeuro without an account. Per the data descriptor, demographics (age
+    in years, sex, education, race and ethnicity) are controlled access and need a data use agreement (DUA.pdf in the
+    dataset) signed by the requesting institution and approved by Weill Cornell Medicine. The dataset README asks users
+    to send the filled DUA to the lab before using the data for research projects.
+licenses:
+  - license: CC0-1.0
+    applies_to: The imaging and cognitive data on OpenNeuro (dataset_description.json of snapshot 1.0.7 states "License" CC0).
+    note: >-
+      The controlled-access demographic data are governed by a separate Data Transfer and Use Agreement with Weill
+      Cornell Medicine, which this entry does not break down.
+citation:
+  text: >-
+    Ghaderi Yazdi B, Ozoria S, Hojjati SH, Chernek P, Calimag J, Wang XH, Razlighi QR. A Multimodal Dataset to
+    Investigate Task-Evoked Negative BOLD Response and Neurodegeneration. Scientific Data 13, 744 (2026).
+    doi:10.1038/s41597-026-07081-x
+sources:
+  ghaderiyazdi2026:
+    title: Ghaderi Yazdi et al. 2026, A Multimodal Dataset to Investigate Task-Evoked Negative BOLD Response and Neurodegeneration, Scientific Data
+    url: https://doi.org/10.1038/s41597-026-07081-x
+    kind: paper
+  openneuro-ds006148-v1-0-7:
+    title: OpenNeuro ds006148 snapshot 1.0.7 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006148/versions/1.0.7
+    kind: website
+related: []
+keywords:
+  [negative BOLD response, task fMRI, brain deactivation, aging, amyloid PET, tau PET, FDG PET, neuropsychology, BIDS]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

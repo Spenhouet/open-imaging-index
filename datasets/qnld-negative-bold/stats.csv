@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,259,ghaderiyazdi2026,Data Records (Data Overview),participants with at least one scan; 356 consented
+subjects,sex=male,132,ghaderiyazdi2026,Table 1,sum of the disjoint young (32) and elderly (100) groups
+subjects,sex=female,127,ghaderiyazdi2026,Table 1,sum of the disjoint young (30) and elderly (97) groups
+subjects,age=20-40,62,ghaderiyazdi2026,Table 1,young group; mean 27.8 (SD 5.3) years
+subjects,age=60-80,197,ghaderiyazdi2026,Table 1,elderly group; mean 68.6 (SD 5.7) years
+subjects,contrast=T1w,258,ghaderiyazdi2026,Table 2,MPRAGE
+subjects,contrast=FLAIR,255,ghaderiyazdi2026,Table 2,
+subjects,contrast=dwi,243,ghaderiyazdi2026,Table 2,dMRI
+subjects,contrast=asl,252,ghaderiyazdi2026,Table 2,pCASL
+subjects,contrast=Chimap,238,ghaderiyazdi2026,Table 2,QSM/SWI row
+subjects,contrast=swi,238,ghaderiyazdi2026,Table 2,QSM/SWI row
+subjects,tracer=fdg,251,ghaderiyazdi2026,Table 3,59 young and 192 elderly
+subjects,tracer=florbetaben,232,ghaderiyazdi2026,Table 3,48 young and 184 elderly
+subjects,tracer=mk6240,236,ghaderiyazdi2026,Table 3,52 young and 184 elderly
+scans,,5407,ghaderiyazdi2026,Data Records (Data Overview),"sum of the disjoint 4688 MRI and fMRI scans and 719 PET scans"
+scans,modality=MR,4688,ghaderiyazdi2026,Data Records (Data Overview),MRI and fMRI scans uploaded
+scans,modality=PT,719,ghaderiyazdi2026,Data Records (Data Overview),
+scans,tracer=fdg,251,ghaderiyazdi2026,Table 3,
+scans,tracer=florbetaben,232,ghaderiyazdi2026,Table 3,
+scans,tracer=mk6240,236,ghaderiyazdi2026,Table 3,
+scans,contrast=bold,3190,ghaderiyazdi2026,Tables 7 and 8,"sum of the disjoint 2903 task fMRI and 287 resting-state fMRI scans"
