@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MIDUS-Brain-Imaging-DUA
+name: MIDUS Brain Imaging Data Research Plan and Data Use Agreement
+short_name: MIDUS brain imaging DUA
+url: https://midus.wisc.edu/wp-content/uploads/2026/10/MIDUS_BrainImaging_ResearchPlanDataUseAgreement_20261001.pdf
+version: Form dated 2026-10-01 (file MIDUS_BrainImaging_ResearchPlanDataUseAgreement_20261001.pdf)
+summary: >-
+  Raw MIDUS brain imaging data go to a principal investigator who submits a research plan and signs this agreement
+  with the MIDUS Administrative Core. Only the named study team may use the data, which may not be copied or shared,
+  re-identification is forbidden, published findings must be aggregate with no cells under about 10, and publications
+  must acknowledge MIDUS and be reported to the Core.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The agreement neither allows nor forbids commercial use.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The agreement does not address derived data.
+  publication:
+    value: conditional
+    quote: >-
+      In addition, any findings made available to the public (i.e., publications, reports, working papers) must
+      present data at the aggregate level. No findings can be released in which an exceedingly small number of
+      observations (e.g., <10) is represented by any data value.
+    note: Only aggregate findings may be published, with no value based on a very small number of people.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      These data will not be duplicated or shared with other researchers, including researchers at my institution.
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      The agreement forbids sharing the data and limits public findings to aggregate values, but does not say whether
+      derived data such as labels or features may be shared.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      I will acknowledge MIDUS and/or MIDUS funding in any publications resulting from these data. I will also notify
+      the MIDUS Administrative Core of any publications.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Researchers requesting to download MIDUS brain imaging data must complete, sign and return this Research Plan
+      and Data Use Agreement to the MIDUS Admin Core (midus_brainimaging@aging.wisc.edu).
+    note: >-
+      Each study team member also signs a copy, collaborators at other institutions apply separately, and access
+      must be re-requested after a change of institution.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: Publications are reported to the MIDUS Administrative Core, but the agreement does not ask for manuscripts before publication.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: No attempt will be made by my staff or me to identify individual respondents for any purpose.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions; permission is tied to the investigator's current institution.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
