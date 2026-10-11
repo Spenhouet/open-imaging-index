@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nifd
+name: NIFD (FTLDNI)
+full_name: Neuroimaging in Frontotemporal Dementia (Frontotemporal Lobar Degeneration Neuroimaging Initiative)
+summary: >-
+  Longitudinal brain MRI, PET, biofluids and clinical ratings from people with frontotemporal lobar degeneration
+  and age-matched healthy controls, collected to find imaging markers that track progression for future treatment
+  trials. Shared through LONI after an approved application.
+homepage: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NIFD
+# Start of the study: the LONI data use agreement says FTLDNI "started in 2010"; the grant started 2009-09-30 and
+# Staffaroni et al. 2019 say it "was begun in 2009". A separate first-release date on LONI was not verified.
+year: 2010
+creators:
+  - name: Memory and Aging Center, University of California, San Francisco (coordinating site, PI Howard Rosen)
+    url: https://memory.ucsf.edu/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (data dissemination)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+# T1w: the LONI page says imaging methods match 4RTNI (1 mm T1-weighted MPRAGE or IR-SPGR) and the grant aims
+# measure gray matter volume. dwi and asl are named in the grant aims and in Staffaroni et al. 2019.
+contrasts: [T1w, dwi, asl]
+# Planned in the grant: FDG-PET for all, PIB-PET for all patients. Which PET series are on LONI was not verified.
+tracers: [fdg, pib]
+anatomy: [brain]
+conditions: [frontotemporal_dementia, healthy]
+tasks: [classification, regression, longitudinal]
+countries: [US]
+# Sites and scanners as reported by Staffaroni et al. 2019 (UCSF and MGH on Siemens Tim Trio, Mayo Clinic
+# Rochester on GE, all 3T); that sample also includes participants from a second UCSF study.
+vendors: [siemens, ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NIFD
+licenses:
+  - license: LicenseRef-4RTNI-FTLDNI-DUA
+citation:
+  text: >-
+    The data use agreement requires the by-line phrase "for the Frontotemporal Lobar Degeneration Neuroimaging
+    Initiative" with its footnote, a methods paragraph acknowledging the data gathering by FTLDNI, and the funding
+    acknowledgement (NIH grant R01 AG032306, coordinated through the UCSF Memory and Aging Center, disseminated by the
+    Laboratory for Neuro Imaging at USC).
+sources:
+  loni-nifd-application:
+    title: LONI IDA, NIFD data use application and agreement
+    url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NIFD
+    kind: website
+  reporter-r01ag032306:
+    title: NIH RePORTER, R01 AG032306, The Frontotemporal Lobar Degeneration Neuroimaging Initiative (Rosen HJ)
+    url: https://reporter.nih.gov/project-details/7730204
+    kind: website
+  staffaroni2019:
+    title: Staffaroni AM et al. 2019, Longitudinal multimodal imaging and clinical endpoints for frontotemporal dementia
+      clinical trials, Brain
+    url: https://doi.org/10.1093/brain/awy319
+    kind: paper
+related: [4rtni]
+keywords:
+  [
+    frontotemporal dementia,
+    behavioral variant frontotemporal dementia,
+    primary progressive aphasia,
+    FDG PET,
+    arterial spin labeling,
+    diffusion MRI,
+    longitudinal,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
