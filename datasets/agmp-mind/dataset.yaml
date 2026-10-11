@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: agmp-mind
+name: MIND diet trial brain MRI (AGMP_MIND)
+full_name: >-
+  Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) randomized diet trial (NCT02817074), brain MRI
+  substudy
+summary: >-
+  Brain MRI from a three-year randomized trial testing the MIND diet against a control diet in cognitively unimpaired,
+  overweight older adults with a family history of dementia. 267 people scanned at baseline, 201 again at year 3. The
+  images are not publicly released.
+homepage: https://www.synapse.org/Synapse:syn53239120
+doi: 10.1056/NEJMoa2302368
+# Year of the primary results publication; the images have no public release.
+year: 2023
+creators:
+  - name: Rush University Medical Center
+    url: https://www.rush.edu
+  - name: Harvard T.H. Chan School of Public Health
+    url: https://www.hsph.harvard.edu
+species: human
+modalities: [MR]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+countries: [US]
+vendors: [philips, siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://www.radc.rush.edu
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms for the trial MRI are published. A MIND trial paper (Halloway et al. 2025) states
+      "Limited data are available to other investigators upon submission of an approved data request", and the
+      genetic resource paper (Liu et al. 2025) says MIND trial phenotyping "can be accessed upon
+      approval" through the Rush Alzheimer's Disease Center. Neither names the MRI. The AGMP_MIND study in the AD
+      Knowledge Portal shares serum metabolomics only, under the portal's click-through terms, and holds no images.
+citation:
+  text: >-
+    Barnes LL, Dhana K, Liu X, et al. Trial of the MIND Diet for Prevention of Cognitive Decline in Older Persons. N
+    Engl J Med 389(7):602-611 (2023). doi:10.1056/NEJMoa2302368
+sources:
+  barnes2023:
+    title: Barnes et al. 2023, NEJM, MIND trial primary results (author manuscript PMC10513737)
+    url: https://doi.org/10.1056/NEJMoa2302368
+    kind: paper
+  halloway2025:
+    title: Halloway et al. 2025, Alzheimer's & Dementia, effect modifiers in the MIND diet trial
+    url: https://doi.org/10.1002/alz.70731
+    kind: paper
+  liu2025:
+    title: Liu et al. 2025, Nutrients, MIND trial genetic resource for precision nutrition
+    url: https://doi.org/10.3390/nu17152548
+    kind: paper
+  synapse-agmp-mind:
+    title: AD Knowledge Portal on Synapse, AGMP_MIND study folder and wiki
+    url: https://www.synapse.org/Synapse:syn53239120
+    kind: website
+related: []
+keywords: [MIND diet, nutrition, randomized controlled trial, dementia prevention, white matter hyperintensities, hippocampal volume]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
