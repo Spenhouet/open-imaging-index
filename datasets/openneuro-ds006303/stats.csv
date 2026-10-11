@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,149,openneuro-ds006303-v112,README: Shared dataset,149 of 206 enrolled participants consented to public sharing; 149 sub-* folders
+subjects,contrast=T1w,149,ds006303-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,149,ds006303-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,149,ds006303-file-tree,anat and func folders,
+subjects,condition=anxiety_disorder,81,ds006303-participants,group,ANX: meets KSADS criteria for an anxiety disorder
+subjects,condition=healthy,68,ds006303-participants,group,HV: no psychiatric disorder on the KSADS
+subjects,sex=female,90,ds006303-participants,sex,
+subjects,sex=male,59,ds006303-participants,sex,
+subjects,sex=female;condition=anxiety_disorder,54,ds006303-participants,sex and group,
+subjects,sex=male;condition=anxiety_disorder,27,ds006303-participants,sex and group,
+subjects,sex=female;condition=healthy,36,ds006303-participants,sex and group,
+subjects,sex=male;condition=healthy,32,ds006303-participants,sex and group,
+subjects,age=8-9,22,ds006303-participants,age,age in whole years as listed
+subjects,age=10-11,35,ds006303-participants,age,
+subjects,age=12-13,27,ds006303-participants,age,
+subjects,age=14-15,36,ds006303-participants,age,
+subjects,age=16-18,29,ds006303-participants,age,
+age_mean,,12.8,ds006303-participants,age,
+age_median,,13,ds006303-participants,age,
+age_sd,,2.7,ds006303-participants,age,
+age_min,,8,ds006303-participants,age,
+age_max,,18,ds006303-participants,age,
+studies,,223,ds006303-file-tree,sub-*/ses-* folders,"149 first sessions and 74 second sessions (44 anxiety, 30 healthy)"
+scans,,1217,ds006303-file-tree,sub-*/ses-*/*/*.nii.gz,"all raw image files: 223 T1w and 994 bold"
+scans,contrast=T1w,223,ds006303-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,994,ds006303-file-tree,*_bold.nii.gz,"resting state (single echo, or three echo files per run) and two dot-probe task runs per session (task-TAU1 or task-TAU2)"
+scans,contrast=T1w;vendor=ge,223,ds006303-file-tree,T1w sidecars: Manufacturer,"161 Discovery MR750, 62 Signa HDxt"
+scans,contrast=T1w;field_strength=3,223,ds006303-file-tree,T1w sidecars: MagneticFieldStrength,
+scans,contrast=T1w;country=US,223,ds006303-file-tree,T1w sidecars: InstitutionName,NIH FMRIF
