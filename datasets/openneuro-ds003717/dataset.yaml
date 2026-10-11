@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003717
+name: Visual and audiovisual speech perception fMRI (ds003717)
+full_name: >-
+  Visual and audiovisual speech perception associated with increased functional connectivity between sensory and motor
+  regions
+summary: >-
+  Task fMRI with T1- and T2-weighted brain MRI of young right-handed adults who watched, heard or both watched and heard
+  single spoken words, including audiovisual words in background babble. 60 participants from St. Louis at 3T, in BIDS
+  under CC0.
+homepage: https://openneuro.org/datasets/ds003717
+doi: 10.18112/openneuro.ds003717.v1.1.0
+# First public snapshot (1.0.0) on OpenNeuro, 2021-07-15; latest snapshot 1.1.0, 2023-08-15.
+year: 2021
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Peelle JE, Spehar B, Jones MS, McConkey S, Myerson J, Hale S, Sommers MS, Tye-Murray N (Washington University in
+      St. Louis)
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 64.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003717
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Peelle JE, Spehar B, Jones MS, McConkey S, Myerson J, Hale S, Sommers MS, Tye-Murray N. Increased connectivity among
+    sensory and motor regions during visual and audiovisual speech perception. Journal of Neuroscience 42(3):435-442
+    (2022). doi:10.1523/JNEUROSCI.0114-21.2021
+sources:
+  peelle2022:
+    title: >-
+      Peelle et al. 2022, Increased connectivity among sensory and motor regions during visual and audiovisual speech
+      perception, Journal of Neuroscience (abstract and author affiliations)
+    url: https://doi.org/10.1523/JNEUROSCI.0114-21.2021
+    kind: paper
+  openneuro-ds003717-v1-1-0:
+    title: >-
+      OpenNeuro ds003717 snapshot 1.1.0 (dataset_description.json, README, CHANGES, BIDS sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds003717/versions/1.1.0
+    kind: website
+  ds003717-participants:
+    title: participants.tsv of ds003717 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds003717/blob/main/participants.tsv
+    kind: computed
+  ds003717-file-tree:
+    title: File listing of the ds003717 BIDS repository (CC0), counted per T1w, T2w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003717
+    kind: computed
+related: []
+keywords: [audiovisual speech, lipreading, speech in noise, multisensory integration, task fMRI, functional connectivity]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
