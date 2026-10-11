@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds008110
+name: OCD structural and functional connectivity (ds008110)
+full_name: OCD Structural and Functional Connectivity Study
+summary: >-
+  Brain MRI of adults with obsessive-compulsive disorder (OCD), with T1w, T2w, resting-state fMRI and diffusion scans,
+  shared to study structural and functional brain connectivity in the disorder. Patients only, scanned in Mexico, in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds008110
+doi: 10.18112/openneuro.ds008110.v1.0.0
+# Single public snapshot 1.0.0 on OpenNeuro, 2026-07-09.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Pasaye E, Rosales Mondragón C, Barbosa Luna M, Garcell JR, Corona Márquez B, López Lazo L, Alcauter Solórzano S (Instituto de Neurobiología, UNAM)
+    url: https://openneuro.org/datasets/ds008110
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [brain]
+conditions: [ocd]
+formats: [BIDS, NIfTI]
+vendors: [ge]
+countries: [MX]
+field_strengths: [3]
+size_gb: 15.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008110
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Pasaye E, Rosales Mondragón C, Barbosa Luna M, Garcell JR, Corona Márquez B, López Lazo L, Alcauter Solórzano S.
+    OCD Structural and Functional Connectivity Study. OpenNeuro ds008110, version 1.0.0 (2026).
+    doi:10.18112/openneuro.ds008110.v1.0.0
+sources:
+  openneuro-ds008110-v1-0-0:
+    title: OpenNeuro ds008110 snapshot 1.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds008110/versions/1.0.0
+    kind: website
+  ds008110-participants:
+    title: participants.tsv of ds008110 snapshot 1.0.0 (CC0), counted per row
+    url: https://s3.amazonaws.com/openneuro.org/ds008110/participants.tsv
+    kind: computed
+  ds008110-file-tree:
+    title: File tree of ds008110 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds008110/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords: [obsessive-compulsive disorder, resting-state fMRI, diffusion tensor imaging, structural connectivity, functional connectivity]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
