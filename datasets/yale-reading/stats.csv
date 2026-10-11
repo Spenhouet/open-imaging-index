@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,223,openneuro-ds005339-v100,Snapshot summary,223 sub-* folders
+subjects,contrast=T1w,223,ds005339-file-tree,anat folders,
+subjects,contrast=bold,217,ds005339-file-tree,func folders,
+subjects,contrast=dwi,179,ds005339-file-tree,dwi folders,
+subjects,contrast_set=bold+dwi+T1w,177,ds005339-file-tree,subject folders,
+subjects,contrast_set=bold+T1w,40,ds005339-file-tree,subject folders,
+subjects,contrast_set=dwi+T1w,2,ds005339-file-tree,subject folders,
+subjects,contrast_set=T1w,4,ds005339-file-tree,subject folders,
+studies,,321,ds005339-file-tree,ses-* folders,"126 subjects with one session, 97 with two or three"
+studies,contrast=T1w,299,ds005339-file-tree,ses-*/anat folders,
+studies,contrast=bold,286,ds005339-file-tree,ses-*/func folders,
+studies,contrast=dwi,223,ds005339-file-tree,ses-*/dwi folders,
+scans,,2684,ds005339-file-tree,NIfTI files,
+scans,contrast=T1w,325,ds005339-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,1899,ds005339-file-tree,*_bold.nii.gz,"862 sj, 364 story, 314 fastloc, 216 srtt and 143 rest runs"
+scans,contrast=dwi,460,ds005339-file-tree,*_dwi.nii.gz,
+scans,contrast=T1w;country=US,232,ds005339-file-tree,T1w sidecars: InstitutionName,Yale MRRC and Yale School of Medicine
+scans,contrast=T1w;country=IL,92,ds005339-file-tree,T1w sidecars: InstitutionName,Hadassah Ein Kerem and Hebrew University
+scans,contrast=T1w;vendor=siemens,324,ds005339-file-tree,T1w sidecars: Manufacturer,"282 TrioTim, 39 Skyra; one sidecar without scanner fields"
+scans,contrast=T1w;field_strength=3,324,ds005339-file-tree,T1w sidecars: MagneticFieldStrength,
