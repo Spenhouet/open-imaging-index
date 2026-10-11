@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MCSA-DUA
+name: Mayo Clinic Study of Aging (MCSA) Data Use Agreement
+short_name: MCSA DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=MCSA
+version: 'Online agreement on the LONI IDA application page, read 2026-10-11 (the text states no version or date)'
+summary: >-
+  Online agreement for the de-identified MCSA data on the LONI IDA. Commercial use is excluded unless MCSA agrees
+  separately, the data stay within the recipient's analysis team, and re-identification, including face recognition,
+  is forbidden. Publications must name the MCSA as group author, carry fixed statements and be sent to MCSA for an
+  acknowledgement check before submission.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      This DUA prohibits any commercial application, but if commercial applications are desired, email
+      mcsaadrcdatasharing@mayo.edu and these can be considered separately.
+  product_validation:
+    value: unspecified
+    note: >-
+      The text rules out commercial applications and selling or commercializing the data, but does not address testing
+      or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: conditional
+    quote: >-
+      The recipient must acknowledge the use of MCSA data and data derived from MCSA data any abstracts, manuscripts,
+      publications, and software distributions that make use of it.
+    note: The agreement expects data derived from MCSA data and asks for an acknowledgement wherever it is used.
+  publication:
+    value: conditional
+    quote: >-
+      Published manuscripts must include "Mayo Clinic Study of Aging" as a coauthor whenever allowed by the journal or
+      publication.
+    note: >-
+      Where a journal forbids group authorship, "Mayo Clinic Study of Aging" goes in the title; if both are forbidden,
+      another journal must be chosen. Fixed data and funding statements are required.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The recipient is prohibited from any redistribution of the data in any form, outside of their internal analysis
+      teams.
+  redistribute_derivatives:
+    value: unspecified
+    note: >-
+      The agreement forbids redistributing "the data in any form" outside the internal analysis team, and separately
+      expects public software that uses the data or its derivatives. Whether derived data such as labels may be shared
+      is not stated.
+  share_model_weights:
+    value: unspecified
+    note: >-
+      Model weights are not mentioned. Public software using the data or its derivatives is allowed with an
+      acknowledgement; commercial applications are excluded.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Conference abstracts published using this data must specify "Mayo Clinic Study of Aging (MCSA)" as a data
+      source.
+    note: Manuscripts also need MCSA group authorship, a data statement and a funding statement, and public software a similar acknowledgement.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: You must accept or decline the MCSA Data Use Agreement
+    note: The IDA application page requires accepting the agreement before the application can continue.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      The recipient must comply with any rules and regulations set by their institution and its institutional review
+      board in requesting and using this data, and they will follow any applicable laws in their country, state, or
+      local governing body.
+    note: IRB rules apply where the recipient's institution sets them. No separate approval is asked for.
+  publication_review:
+    value: 'yes'
+    quote: >-
+      Before submitting manuscripts to any journal, they must first be emailed to mcsaadrcdatasharing@mayo.edu for
+      review.
+    note: >-
+      The review only checks the acknowledgement requirements, not the science. Without approval within 30 days, the
+      authors may submit.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Recipients must give MCSA information on their use of the data on request, but need not return results.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      They shall not attempt to establish the identity of any MCSA participants or attempt to contact any participants.
+      This includes, but is not limited to, any use of face recognition or 3D facial reconstruction.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: conditional
+  note: >-
+    No commercial license is published, but the agreement says commercial applications can be requested by email and
+    considered separately.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

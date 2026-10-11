@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,2122,ida-mcsa-study,,subjects archived on the LONI IDA (cohort Participant)
+subjects,modality=MR,2122,ida-mcsa-study,,modality MRI
+subjects,contrast=dwi,1960,ida-mcsa-study,,modality DTI
+subjects,modality=PT,2096,ida-mcsa-study,,modality PET; the tracer is not stated
+age_min,,30,ida-mcsa-study,,
+age_max,,89,ida-mcsa-study,,
