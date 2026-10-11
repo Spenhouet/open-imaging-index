@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,230,gibson2024,Data Records,the file tree of snapshot 1.0.2 also has 230 sub-* folders; participants.tsv lists 245 rows including people without imaging
+studies,,902,gibson2024,Data Records,the file tree of snapshot 1.0.2 also has 902 ses-* folders
+subjects,condition=stroke,230,gibson2024,Methods (Cohort),all participants had a chronic left-hemisphere stroke
+subjects,sex=female,89,gibson2024,Methods (Cohort),
+subjects,sex=male,141,gibson2024,Methods (Cohort),
+subjects,country=US,230,gibson2024,Methods (Cohort),recruited at the University of South Carolina
+subjects,vendor=siemens,230,gibson2024,Methods (MRIs),
+subjects,field_strength=3,230,gibson2024,Methods (MRIs),
+subjects,contrast=T1w,229,gibson2024,Data Records,the file tree also gives 229
+subjects,contrast=T2w,229,gibson2024,Data Records,the file tree also gives 229
+subjects,contrast=FLAIR,138,gibson2024,Data Records,the file tree also gives 138
+subjects,contrast=dwi,217,gibson2024,Data Records,the file tree also gives 217
+subjects,contrast=bold,220,ds004884-file-tree,,subjects with at least one *_bold.nii.gz; the paper gives 193 with naming-task fMRI and 192 with resting-state fMRI (Data Records)
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2w,133,ds004884-file-tree,,
+subjects,contrast_set=bold+dwi+T1w+T2w,79,ds004884-file-tree,,
+subjects,contrast_set=T1w+T2w,5,ds004884-file-tree,,
+subjects,contrast_set=dwi+T1w+T2w,4,ds004884-file-tree,,
+subjects,contrast_set=bold+T1w+T2w,3,ds004884-file-tree,,
+subjects,contrast_set=bold+FLAIR+T1w+T2w,3,ds004884-file-tree,,
+subjects,contrast_set=bold+dwi+FLAIR+T1w,1,ds004884-file-tree,,
+subjects,contrast_set=bold+T2w,1,ds004884-file-tree,,
+subjects,contrast_set=FLAIR+T1w+T2w,1,ds004884-file-tree,,
+scans,,4614,ds004884-file-tree,,"sum of the disjoint T1w, T2w, FLAIR, dwi and bold NIfTI counts below; sbref volumes not counted"
+scans,contrast=T1w,447,ds004884-file-tree,,*_T1w.nii.gz files; the paper gives 441 T1-weighted and 447 T2-weighted series (Data Records)
+scans,contrast=T2w,441,ds004884-file-tree,,*_T2w.nii.gz files; the paper gives 447 T2-weighted and 441 T1-weighted series (Data Records)
+scans,contrast=FLAIR,235,ds004884-file-tree,,the paper also gives 235 (Data Records)
+scans,contrast=dwi,2089,ds004884-file-tree,,the paper also gives 2089 (Data Records)
+scans,contrast=bold,1402,ds004884-file-tree,,894 naming-task and 508 resting-state runs; the paper gives the same two counts (Data Records)

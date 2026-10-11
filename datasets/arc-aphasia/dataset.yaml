@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: arc-aphasia
+name: Aphasia Recovery Cohort (ARC)
+full_name: Aphasia Recovery Cohort (ARC) Dataset
+summary: >-
+  Longitudinal brain MRI of chronic left-hemisphere stroke survivors with aphasia, pooled from treatment and recovery
+  studies to support lesion mapping and prediction of language impairment, with structural, diffusion, resting-state
+  and naming-task scans, expert lesion masks and aphasia test scores.
+homepage: https://openneuro.org/datasets/ds004884
+doi: 10.18112/openneuro.ds004884.v1.0.2
+# First OpenNeuro snapshot 1.0.0 dated 2023-12-15 in the CHANGES file; latest snapshot 1.0.2 dated 2024-10-17.
+year: 2023
+updated: 2024
+version: 1.0.2
+status: active
+creators:
+  - name: Center for the Study of Aphasia Recovery, University of South Carolina (Gibson M, Newman-Norlund R, Rorden C, et al.)
+    url: https://github.com/neurolabusc/AphasiaRecoveryCohortDemo
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, bold]
+anatomy: [brain]
+conditions: [stroke, aphasia]
+tasks: [segmentation, regression, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 293
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004884
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Gibson M, Newman-Norlund R, Bonilha L, Fridriksson J, Hickok G, Hillis AE, den Ouden DB, Rorden C. The Aphasia
+    Recovery Cohort, an open-source chronic stroke repository. Scientific Data 11, 981 (2024).
+    doi:10.1038/s41597-024-03819-7
+sources:
+  gibson2024:
+    title: Gibson et al. 2024, The Aphasia Recovery Cohort, an open-source chronic stroke repository, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03819-7
+    kind: paper
+  openneuro-ds004884-v1-0-2:
+    title: OpenNeuro ds004884 snapshot 1.0.2 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004884/versions/1.0.2
+    kind: website
+  ds004884-file-tree:
+    title: >-
+      BIDS file tree of ds004884 snapshot 1.0.2 (CC0), raw NIfTI files under sub-*/ counted per suffix and lesion
+      masks under derivatives/lesion_masks/
+    url: https://github.com/OpenNeuroDatasets/ds004884/tree/1.0.2
+    kind: computed
+related: []
+keywords: [aphasia, chronic stroke, lesion mapping, language recovery, Western Aphasia Battery, resting-state fMRI, diffusion MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
