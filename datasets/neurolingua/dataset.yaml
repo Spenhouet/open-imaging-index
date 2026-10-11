@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: neurolingua
+name: NEUROLINGUA (ds007111)
+full_name: >-
+  NEUROLINGUA: A Neuroimaging Database Tailored to Unraveling the Complexity of Multilingual Comprehension
+summary: >-
+  Brain fMRI of healthy adults performing a language localizer in Spanish, Basque or English, pooled to study how
+  the language comprehension network varies with bilingual and multilingual profiles. Includes structural MRI
+  derivatives and sociolinguistic and cognitive measures.
+homepage: https://openneuro.org/datasets/ds007111
+doi: 10.18112/openneuro.ds007111.v1.1.1
+year: 2025
+updated: 2026
+version: 1.1.1
+status: active
+creators:
+  - name: Basque Center on Cognition, Brain and Language (BCBL), Donostia-San Sebastian (Quiñones I, Carrión-Castillo A, et al.)
+    url: https://www.bcbl.eu/DataSharing/Neurolingua/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [ES]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 252.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007111/versions/1.1.1
+  note: >-
+    The BOLD runs, events files, stimuli, CAT12 structural derivatives, SPM12 group atlases and phenotype tables are
+    an open download on OpenNeuro. The original T1-weighted images are not in the OpenNeuro release; BCBL shares
+    them only for justified requests through a web form, after acceptance of a BCBL data use agreement.
+licenses:
+  - license: CC0-1.0
+    applies_to: OpenNeuro release ds007111 (snapshot 1.1.1), BOLD runs, derivatives, phenotype tables and stimuli.
+    url: https://openneuro.org/datasets/ds007111/versions/1.1.1
+    note: >-
+      dataset_description.json states "License" CC0. The README usage notes add that the data are for academic
+      researchers, institutions and entities on condition of proper attribution, and that the authors' names may not
+      be used to endorse commercial products without written permission.
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Original T1-weighted images, shared by BCBL on request only.
+    url: https://www.bcbl.eu/DataSharing/Neurolingua/
+    note: >-
+      The BCBL page requires a scientific justification and acceptance of a BCBL data use agreement, whose text is
+      not published.
+citation:
+  text: >-
+    Quiñones I, Carrión-Castillo A, Diez-Zabala I, et al. Unraveling the Complexity of Multilingual Comprehension:
+    Neuroimaging and Linguistic Profiling in 700+ Adults. Scientific Data 13, 1315 (2026).
+    doi:10.1038/s41597-026-07423-9
+sources:
+  quinones2026:
+    title: Quiñones et al. 2026, Unraveling the Complexity of Multilingual Comprehension, Scientific Data
+    url: https://doi.org/10.1038/s41597-026-07423-9
+    kind: paper
+  openneuro-ds007111-v111:
+    title: OpenNeuro ds007111 snapshot 1.1.1 (dataset_description.json, README and snapshot summary)
+    url: https://openneuro.org/datasets/ds007111/versions/1.1.1
+    kind: website
+  ds007111-participants:
+    title: participants.tsv of ds007111 snapshot 1.1.1 (CC0), age and sex columns
+    url: https://openneuro.org/datasets/ds007111/versions/1.1.1/file-display/participants.tsv
+    kind: computed
+  ds007111-file-tree:
+    title: File tree of ds007111 snapshot 1.1.1 (CC0), NIfTI files counted per subject folder
+    url: https://openneuro.org/crn/datasets/ds007111/snapshots/1.1.1/files
+    kind: computed
+  bcbl-neurolingua:
+    title: BCBL Data Sharing page for NEUROLINGUA
+    url: https://www.bcbl.eu/DataSharing/Neurolingua/
+    kind: website
+related: []
+keywords:
+  [
+    language localizer,
+    bilingualism,
+    multilingualism,
+    language comprehension,
+    task fMRI,
+    Basque,
+    Spanish,
+    CAT12
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

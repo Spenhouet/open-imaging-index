@@ -1,0 +1,35 @@
+measure,by,value,source,where,note
+subjects,,725,quinones2026,Methods: Sample description and data harmonization,
+subjects,sex=female,389,quinones2026,Methods: Sample description and data harmonization,
+subjects,sex=male,336,ds007111-participants,sex column,
+subjects,contrast=bold,725,ds007111-file-tree,,at least one sub-*_task-ep2dboldPinel*_bold.nii.gz per subject folder
+subjects,contrast=T1w,725,quinones2026,Methods: Sample description and data harmonization,original T1-weighted images on request only; CAT12 derivatives on OpenNeuro cover 723 subjects
+subjects,contrast_set=bold+T1w,725,quinones2026,Methods: Sample description and data harmonization,all participants have structural and functional MRI
+subjects,age=10-19,69,ds007111-participants,age column,all aged 18 or 19
+subjects,age=20-29,336,ds007111-participants,age column,
+subjects,age=30-39,134,ds007111-participants,age column,
+subjects,age=40-49,54,ds007111-participants,age column,
+subjects,age=50-59,37,ds007111-participants,age column,
+subjects,age=60-69,49,ds007111-participants,age column,
+subjects,age=70-79,44,ds007111-participants,age column,
+subjects,age=80-89,2,ds007111-participants,age column,
+subjects,sex=female;age=10-19,43,ds007111-participants,age and sex columns,
+subjects,sex=female;age=20-29,184,ds007111-participants,age and sex columns,
+subjects,sex=female;age=30-39,70,ds007111-participants,age and sex columns,
+subjects,sex=female;age=40-49,26,ds007111-participants,age and sex columns,
+subjects,sex=female;age=50-59,17,ds007111-participants,age and sex columns,
+subjects,sex=female;age=60-69,31,ds007111-participants,age and sex columns,
+subjects,sex=female;age=70-79,18,ds007111-participants,age and sex columns,
+subjects,sex=male;age=10-19,26,ds007111-participants,age and sex columns,
+subjects,sex=male;age=20-29,152,ds007111-participants,age and sex columns,
+subjects,sex=male;age=30-39,64,ds007111-participants,age and sex columns,
+subjects,sex=male;age=40-49,28,ds007111-participants,age and sex columns,
+subjects,sex=male;age=50-59,20,ds007111-participants,age and sex columns,
+subjects,sex=male;age=60-69,18,ds007111-participants,age and sex columns,
+subjects,sex=male;age=70-79,26,ds007111-participants,age and sex columns,
+scans,contrast=bold,1684,ds007111-file-tree,,"1191 Spanish, 423 Basque and 70 English localizer runs"
+age_mean,,34,quinones2026,Methods: Sample description and data harmonization,
+age_sd,,16.6,quinones2026,Methods: Sample description and data harmonization,
+age_median,,27,quinones2026,Methods: Sample description and data harmonization,
+age_min,,18,quinones2026,Methods: Sample description and data harmonization,
+age_max,,82,quinones2026,Methods: Sample description and data harmonization,
