@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,99,figshare-10688180,,"63 typically developing and 36 with autism; one typically developing participant was excluded from the paper's analyses for abnormal brain structure (Ramot et al. 2020, Methods, Participants)"
+subjects,modality=MR,99,figshare-10688180,,
+subjects,contrast=bold,99,figshare-10688180,,multi-echo EPI with three echoes for each participant
+subjects,contrast=T1w,99,figshare-10688180,,MPRAGE for each participant
+subjects,contrast_set=bold+T1w,99,figshare-10688180,,
+subjects,condition=autism,36,ramot2020,"Methods, Participants",
+subjects,condition=healthy,63,ramot2020,"Methods, Participants",typically developing participants
+subjects,sex=female,24,ramot2020,"Methods, Participants",all female participants are in the typically developing group
+subjects,sex=male,75,ramot2020,"Methods, Participants","36 males with autism plus 39 typically developing males (63 minus 24 female), summed"
+subjects,condition=autism;sex=male,36,ramot2020,"Methods, Participants",
+subjects,condition=healthy;sex=female,24,ramot2020,"Methods, Participants",
+subjects,vendor=ge,99,ramot2020,"Methods, Imaging data collection",GE MR-750 3T with a 32-channel head coil
+subjects,field_strength=3,99,ramot2020,"Methods, Imaging data collection",
+subjects,country=US,99,ramot2020,"Methods, Participants",NIMH protocol 10-M-0027
+age_min,,15,ramot2020,"Methods, Participants",
+age_max,,30,ramot2020,"Methods, Participants",
+age_mean,condition=autism,20.7,ramot2020,"Methods, Participants",
+age_min,condition=autism,15,ramot2020,"Methods, Participants",
+age_max,condition=autism,30,ramot2020,"Methods, Participants",
+age_mean,condition=healthy,22.05,ramot2020,"Methods, Participants",
+age_min,condition=healthy,15,ramot2020,"Methods, Participants",
+age_max,condition=healthy,30,ramot2020,"Methods, Participants",
