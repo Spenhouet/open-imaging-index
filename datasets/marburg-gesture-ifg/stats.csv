@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,74,steines2021,Abstract,
+subjects,modality=MR,74,steines2021,Abstract,functional imaging during the gesture task
+subjects,contrast=bold,74,osf-2ukq7,fMRI_data/README.txt folder 1,one first-level subfolder per subject
