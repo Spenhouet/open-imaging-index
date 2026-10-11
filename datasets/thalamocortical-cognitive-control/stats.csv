@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,59,chen2024,Materials and methods: Participants,74 adults took part and 15 were excluded; the release has 59 sub-* folders
+subjects,condition=healthy,59,chen2024,Materials and methods: Participants,
+subjects,sex=female,44,chen2024,Materials and methods: Participants,
+subjects,sex=male,15,chen2024,Materials and methods: Participants,
+age_mean,,22.32,chen2024,Materials and methods: Participants,SD 4.71
+subjects,contrast=T1w,59,ds005600-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,59,ds005600-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,59,ds005600-file-tree,sub-*/,
+scans,,768,ds005600-file-tree,sub-*/*/*.nii.gz,"59 T1w, 472 bold and 237 spin-echo EPI fieldmaps"
+scans,contrast=T1w,59,ds005600-file-tree,sub-*/anat/*_T1w.nii.gz,
+scans,contrast=bold,472,ds005600-file-tree,sub-*/func/*_bold.nii.gz,eight task runs per subject
+subjects,field_strength=3,59,chen2024,Materials and methods: MRI data acquisition,
+subjects,vendor=ge,59,chen2024,Materials and methods: MRI data acquisition,GE SIGNA Premier with a 48-channel head coil
+subjects,country=US,59,chen2024,Materials and methods: MRI data acquisition,Magnetic Resonance Research Facility at the University of Iowa
