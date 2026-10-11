@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cs-fmri
+name: CS_fmri
+full_name: Click & Switch study fMRI
+summary: >-
+  Brain fMRI of adults who watched a mathematics lecture on an iPad and could switch freely to Instagram Reels,
+  collected to study self-directed media switching. Includes resting-state runs before and after, free recall, a
+  yoked replay, a localizer, T1w and T2w anatomy and fMRIPrep outputs.
+homepage: https://openneuro.org/datasets/ds006736
+doi: 10.18112/openneuro.ds006736.v1.0.0
+# OpenNeuro snapshot 1.0.0 dated 2026-07-27 in the CHANGES file.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Shen X, Gurguryam L, Chen H, Dimsdale-Zucker H, Ballard IC (University of California Riverside)
+    url: https://openneuro.org/datasets/ds006736
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 35.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006736
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Shen X, Gurguryam L, Chen H, Dimsdale-Zucker H, Ballard IC. CS_fmri. OpenNeuro, ds006736, version 1.0.0 (2026).
+    doi:10.18112/openneuro.ds006736.v1.0.0
+sources:
+  openneuro-ds006736-v1-0-0:
+    title: OpenNeuro ds006736 snapshot 1.0.0 (README, dataset_description.json, CHANGES, sidecar JSON and snapshot size)
+    url: https://openneuro.org/datasets/ds006736/versions/1.0.0
+    kind: website
+  ds006736-file-tree:
+    title: BIDS file tree of ds006736 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds006736/tree/1.0.0
+    kind: computed
+related: []
+keywords: [media multitasking, task switching, naturalistic viewing, lecture video, social media, free recall, resting state, task fMRI, fMRIPrep]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
