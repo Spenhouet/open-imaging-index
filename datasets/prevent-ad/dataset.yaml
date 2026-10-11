@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prevent-ad
+name: PREVENT-AD
+full_name: PResymptomatic EValuation of Experimental or Novel Treatments for Alzheimer's Disease
+summary: >-
+  Longitudinal brain MRI, amyloid and tau PET, cognition and fluid biomarkers from cognitively unimpaired older adults
+  with a parent or siblings affected by Alzheimer's disease, followed yearly to study its presymptomatic phase.
+  Single site in Montreal, shared in an open and a registered access tier.
+homepage: https://openpreventad.loris.ca/
+doi: 10.1016/j.nicl.2021.102733
+year: 2019
+updated: 2025
+version: Stage 2 release (registered); Open version 2.0
+status: active
+creators:
+  - name: StoP-AD Centre, Douglas Mental Health University Institute, McGill University (PREVENT-AD Research Group)
+    url: https://douglas.research.mcgill.ca/stop-ad-centre
+  - name: Canadian Open Neuroscience Platform (CONP), data distribution
+    url: https://portal.conp.ca/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, dwi, asl, bold, MP2RAGE]
+tracers: [nav4694, flortaucipir]
+anatomy: [brain]
+conditions: [healthy, mci]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI, MINC]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: registration
+  url: https://openpreventad.loris.ca/login/request-account/
+  note: >-
+    Two tiers. The open tier (openpreventad.loris.ca) holds basic demographics and raw MRI of participants without
+    potentially identifying incidental findings; anyone can request an account after accepting the terms of use. The
+    registered tier (registeredpreventad.loris.ca) adds MRI with incidental findings, later MRI follow-ups, amyloid and
+    tau PET, cognition, genetics, CSF and plasma biomarkers and derived measures, and is open only to faculty
+    researchers and physicians whose status the PREVENT-AD team verifies. Both are also listed on the CONP portal.
+licenses:
+  - license: LicenseRef-Open-PREVENT-AD-Terms
+    applies_to: Data downloaded from the open tier (openpreventad.loris.ca).
+  - license: LicenseRef-Registered-PREVENT-AD-Terms
+    applies_to: Data downloaded from the registered tier (registeredpreventad.loris.ca).
+citation:
+  text: >-
+    Tremblay-Mercier J, Madjar C, Das S, et al. Open science datasets from PREVENT-AD, a longitudinal cohort of
+    pre-symptomatic Alzheimer's disease. NeuroImage: Clinical 31:102733 (2021). doi:10.1016/j.nicl.2021.102733;
+    Villeneuve S, Poirier J, Breitner JCS, et al. The PREVENT-AD cohort: Accelerating Alzheimer's disease research
+    and treatment in Canada and beyond. Alzheimer's & Dementia 21:e70653 (2025). doi:10.1002/alz.70653
+sources:
+  tremblaymercier2021:
+    title: Tremblay-Mercier et al. 2021, NeuroImage Clinical (Stage 1 data descriptor)
+    url: https://doi.org/10.1016/j.nicl.2021.102733
+    kind: paper
+  villeneuve2025:
+    title: Villeneuve et al. 2025, Alzheimer's & Dementia (Stage 2 release)
+    url: https://doi.org/10.1002/alz.70653
+    kind: paper
+  conp-preventad-open:
+    title: CONP DataLad dataset preventad-open, README and DATS.json
+    url: https://github.com/conpdatasets/preventad-open
+    kind: website
+  conp-preventad-registered:
+    title: CONP DataLad dataset preventad-registered, README and DATS.json
+    url: https://github.com/conpdatasets/preventad-registered
+    kind: website
+related: []
+keywords:
+  [Alzheimer's disease, preclinical, family history, longitudinal, amyloid PET, tau PET, CSF biomarkers, plasma biomarkers, brain MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

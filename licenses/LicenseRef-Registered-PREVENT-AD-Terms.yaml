@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Registered-PREVENT-AD-Terms
+name: Registered PREVENT-AD Terms of Use
+short_name: PREVENT-AD Registered
+url: https://registeredpreventad.loris.ca/login/request-account/
+version: 'Agreements on the Registered PREVENT-AD account request page, read 2026-10-11 (Stage 2 wording)'
+summary: >-
+  Seven agreements accepted when a verified researcher or physician requests an account on the registered LORIS
+  portal. Data are for neuroscience research, may not be sold, redistributed or used to re-identify participants and
+  need any required approvals. Publications must add the PREVENT-AD Research Group to the author line and cite a
+  PREVENT-AD reference paper.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    quote: I will not attempt to sell or claim intellectual property rights in the PREVENT-AD dataset.
+    note: >-
+      The data may not be sold and use is limited to neuroscience research. Whether a commercial product built with
+      the data is allowed is not stated.
+  product_validation:
+    value: unspecified
+    note: The terms limit use to neuroscience research but do not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The terms do not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The terms do not mention derived data.
+  publication:
+    value: 'yes'
+    quote: For all abstracts and manuscripts published using data from PREVENT-AD, I agree to the following
+    note: With the author-line credit, a methods sentence naming the Registered repository and a reference paper.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      Sharing of this dataset must be done through this portal. Do not redistribute the data yourself. Redirect
+      potential users to this portal so they can register and agree to these terms.
+  redistribute_derivatives:
+    value: unspecified
+    note: The terms do not say whether derived data count as the dataset.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Authorship: On the by-line of the abstract or manuscript, after the named authors, I will include the phrase
+      "The PREVENT-AD Research Group".
+    note: >-
+      The methods section must also name the PREVENT-AD Registered repository, and at least one of the listed
+      PREVENT-AD reference papers must be cited.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Sharing of this dataset must be done through this portal. Do not redistribute the data yourself. Redirect
+      potential users to this portal so they can register and agree to these terms.
+    note: >-
+      Each agreement is ticked on the online account request form. Access is granted after the PREVENT-AD team
+      verifies the applicant's researcher or physician status.
+  ethics_approval:
+    value: conditional
+    quote: I will obtain any required approvals for the use of the PREVENT-AD dataset.
+    note: Only the approvals the user's own setting requires.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: Users must answer requests from PREVENT-AD and report breaches of the terms, but need not return results.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: I will not attempt to re-identify or re-contact individual participants.
+    note: Linking the data to other datasets is forbidden if it could lead to re-identification.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
