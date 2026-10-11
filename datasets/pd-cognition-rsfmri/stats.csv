@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,55,kemp2025,Section 2.1,subjects analysed and released; 62 of 82 consented participants had imaging
+subjects,condition=healthy,22,kemp2025,"Section 2.1, Table 1",healthy controls (CDR 0 and no parkinsonism)
+subjects,condition=parkinsons,33,kemp2025,"Section 2.1, Table 1",18 PD-NC plus 15 PD-MCI (disjoint groups)
+subjects,condition=mci,15,kemp2025,"Section 2.1, Table 1",PD-MCI: CDR 0.5 with parkinsonism and evidence of cognitive impairment
+subjects,contrast=T1w,55,ds005892-file-tree,,one T1w per subject folder
+subjects,contrast=bold,55,ds005892-file-tree,,one resting-state BOLD run per subject folder
+subjects,contrast_set=bold+T1w,55,ds005892-file-tree,,every subject also has a field map (two magnitude images and a phase difference)
+subjects,sex=female,26,kemp2025,Table 1,"sum of 15 HC, 7 PD-NC and 4 PD-MCI; matches participants.tsv"
+subjects,sex=male,29,kemp2025,Table 1,"sum of 7 HC, 11 PD-NC and 11 PD-MCI; matches participants.tsv"
+subjects,condition=healthy;sex=female,15,kemp2025,Table 1,
+subjects,condition=healthy;sex=male,7,kemp2025,Table 1,
+subjects,condition=mci;sex=female,4,kemp2025,Table 1,PD-MCI group
+subjects,condition=mci;sex=male,11,kemp2025,Table 1,PD-MCI group
+subjects,condition=parkinsons;sex=female,11,kemp2025,Table 1,7 PD-NC plus 4 PD-MCI
+subjects,condition=parkinsons;sex=male,22,kemp2025,Table 1,11 PD-NC plus 11 PD-MCI
+subjects,age=60-69,34,ds005892-participants,age,age in whole years
+subjects,age=70-79,15,ds005892-participants,age,age in whole years
+subjects,age=80-89,5,ds005892-participants,age,age in whole years
+subjects,age=90+,1,ds005892-participants,age,age in whole years
+scans,,275,ds005892-file-tree,,"55 each of T1w, resting-state BOLD, field map magnitude 1, magnitude 2 and phase difference NIfTI files"
+age_mean,,68.9,ds005892-participants,age,
+age_median,,67,ds005892-participants,age,
+age_min,,60,ds005892-participants,age,
+age_max,,94,ds005892-participants,age,
+age_mean,condition=healthy,70.7,kemp2025,Table 1,SD 7.5
+age_mean,condition=mci,69.9,kemp2025,Table 1,PD-MCI group; SD 9.3

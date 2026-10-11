@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pd-cognition-rsfmri
+name: Parkinson's cognition resting-state fMRI (ds005892)
+full_name: >-
+  Resting State MRI data from healthy control (HC), Parkinson's disease with normal cognition (PD-NC), and Parkinson's
+  disease with mild cognitive impairment (PD-MCI) cohorts
+summary: >-
+  Resting-state brain fMRI and T1-weighted MRI of people with Parkinson's disease, with and without mild cognitive
+  impairment, and healthy older controls, collected at New York University to study how brain network states differ
+  with cognitive decline in Parkinson's disease.
+homepage: https://openneuro.org/datasets/ds005892
+doi: 10.18112/openneuro.ds005892.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: New York University longitudinal Parkinson study (Kemp AS, Galvin JE, Larson-Prior LJ et al.)
+    url: https://openneuro.org/datasets/ds005892
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [parkinsons, mci, healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005892/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005892/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0, and the README names CC0 1.0.
+citation:
+  text: >-
+    Kemp AS, Eubank J, Younus Y, Galvin JE, Prior FW, Larson-Prior LJ. Sequential patterning of dynamic brain states
+    distinguish Parkinson's disease patients with mild cognitive impairments. NeuroImage: Clinical 46:103779 (2025).
+    doi:10.1016/j.nicl.2025.103779
+sources:
+  kemp2025:
+    title: Kemp et al. 2025, Sequential patterning of dynamic brain states distinguish Parkinson's disease patients with mild cognitive impairments, NeuroImage Clinical
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12033993/
+    kind: paper
+  openneuro-ds005892-v1:
+    title: OpenNeuro ds005892 snapshot 1.0.0 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005892/versions/1.0.0
+    kind: website
+  ds005892-participants:
+    title: participants.tsv of ds005892 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005892/blob/main/participants.tsv
+    kind: computed
+  ds005892-file-tree:
+    title: File tree of ds005892 snapshot 1.0.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds005892
+    kind: computed
+related: []
+keywords:
+  [
+    Parkinson's disease,
+    mild cognitive impairment,
+    PD-MCI,
+    resting-state fMRI,
+    dynamic functional connectivity,
+    field map,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
