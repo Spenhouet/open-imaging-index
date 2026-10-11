@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: banda
+name: BANDA
+full_name: Boston Adolescent Neuroimaging of Depression & Anxiety (BANDA)
+summary: >-
+  Brain MRI with clinical and cognitive measures from adolescents aged 14 to 17 with anxiety and/or depression and
+  typical peers, a Human Connectome Project study of how these disorders develop. 215 adolescents, 207 with
+  structural, resting, task and diffusion MRI.
+homepage: https://www.humanconnectome.org/study/connectomes-related-anxiety-depression
+doi: 10.15154/3tk5-pb47
+year: 2023
+updated: 2024
+version: Release 1.1 (4 March 2024)
+status: active
+creators:
+  - name: >-
+      BANDA consortium (Massachusetts Institute of Technology, Massachusetts General Hospital and Martinos Center,
+      McLean Hospital, Boston University) with the Connectome Coordination Facility
+    url: https://www.humanconnectome.org/study/connectomes-related-anxiety-depression
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [brain]
+conditions: [anxiety_disorder, depression, healthy]
+tasks: [classification, regression]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 5900
+access:
+  type: application
+  url: https://nda.nih.gov/general-query.html?q=query=featured-datasets:Connectomes%20Related%20to%20Human%20Disease
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      BANDA is NIMH Data Archive collection 3037, released as part of the Connectomes Related to Human Disease featured
+      datasets. The BANDA data use terms page points to the NDA Data Use Certification; access is valid for one year
+      and must be renewed. Study-specific clauses of the permission group are not broken down here.
+citation:
+  text: >-
+    Siless V, Hubbard NA, Jones R, Wang J, Lo N, Bauer CCC, et al. Image acquisition and quality assurance in the
+    Boston Adolescent Neuroimaging of Depression and Anxiety study. NeuroImage: Clinical 26:102242 (2020).
+    doi:10.1016/j.nicl.2020.102242
+sources:
+  siless2020:
+    title: Siless et al. 2020, Image acquisition and quality assurance in the BANDA study, NeuroImage Clinical (PMC7184183)
+    url: https://doi.org/10.1016/j.nicl.2020.102242
+    kind: paper
+  banda-release-11:
+    title: BANDA Release 1.1 announcement page, humanconnectome.org
+    url: https://www.humanconnectome.org/study/connectomes-related-anxiety-depression/document/banda-release-11
+    kind: website
+  banda-manual-11:
+    title: BANDA 1.1 Data Release Reference Manual (March 2024)
+    url: https://www.humanconnectome.org/storage/app/media/documentation/BANDA1.1/BANDA_Release_1.1_Manual.pdf
+    kind: website
+  banda-study-page:
+    title: BANDA study home page with Release 1.1 summary, humanconnectome.org
+    url: https://www.humanconnectome.org/study/connectomes-related-anxiety-depression
+    kind: website
+  nda-study-1920:
+    title: NDA Study 1920, BANDA Release 1.0 (doi:10.15154/1528446), DataCite record
+    url: https://doi.org/10.15154/1528446
+    kind: website
+  nda-collection-3037:
+    title: NIMH Data Archive collection 3037 (BANDA), collection API record
+    url: https://nda.nih.gov/api/collection/3037
+    kind: website
+  banda-completeness-11:
+    title: >-
+      BANDA 1.1 subject completeness CSV (public download from humanconnectome.org, whose footer states that all
+      information on the site is in the public domain), one row per subject and visit
+    url: https://www.humanconnectome.org/storage/app/media/documentation/BANDA1.1/BANDA1.1_Completeness.csv
+    kind: computed
+related: [hcp-development]
+keywords: [adolescents, anxiety, depression, connectome, Connectomes Related to Human Disease, CRHD, resting-state fMRI, task fMRI, diffusion MRI, NIMH Data Archive]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
