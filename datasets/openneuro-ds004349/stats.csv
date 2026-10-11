@@ -1,0 +1,31 @@
+measure,by,value,source,where,note
+subjects,,57,ds004349-file-tree,sub-* folders,"participants.tsv lists 62 participants; sub-2, sub-3, sub-29, sub-33 and sub-34 have no folder"
+studies,,57,ds004349-file-tree,sub-* folders,one session per subject
+scans,,394,ds004349-file-tree,"sub-*/anat/*.nii.gz, sub-*/func/*_bold.nii.gz","57 T1w, 57 T2w, 224 face-viewing runs and 56 resting-state runs"
+subjects,modality=MR,57,ds004349-file-tree,sub-* folders,
+subjects,contrast=T1w,57,ds004349-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,57,ds004349-file-tree,anat/*_T2w.nii.gz,coronal T2-weighted image oriented perpendicular to the hippocampal long axis
+subjects,contrast=bold,56,ds004349-file-tree,func/*_bold.nii.gz,one task-rest and four task-expo runs per subject; sub-16 has no func folder
+subjects,contrast_set=bold+T1w+T2w,56,ds004349-file-tree,anat and func NIfTI files,
+subjects,contrast_set=T1w+T2w,1,ds004349-file-tree,anat and func NIfTI files,sub-16
+scans,contrast=T1w,57,ds004349-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,57,ds004349-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,280,ds004349-file-tree,func/*_bold.nii.gz,224 passive face-viewing runs (task-expo) and 56 resting-state runs (task-rest)
+subjects,vendor=siemens,57,frank2023,"Section 2.2.2, fMRI data acquisition","Siemens Skyra; Manufacturer Siemens and model Skyra in the sidecars"
+subjects,field_strength=3,57,frank2023,"Section 2.2.2, fMRI data acquisition",
+subjects,country=US,57,frank2023,"Section 2.2.2, fMRI data acquisition","Lewis Center for Neuroimaging, University of Oregon"
+subjects,condition=healthy,57,frank2023,"Section 2.1, Participants","right-handed native English speakers without psychiatric or neurological illness or brain-affecting medication"
+subjects,sex=female,34,ds004349-participants,gender,"self-reported gender, level 2"
+subjects,sex=male,22,ds004349-participants,gender,"self-reported gender, level 1"
+subjects,sex=other,1,ds004349-participants,gender,"self-reported gender, level 3"
+subjects,age=10-19,34,ds004349-participants,age,
+subjects,age=20-29,23,ds004349-participants,age,
+subjects,sex=female;age=10-19,22,ds004349-participants,"gender, age",
+subjects,sex=female;age=20-29,12,ds004349-participants,"gender, age",
+subjects,sex=male;age=10-19,12,ds004349-participants,"gender, age",
+subjects,sex=male;age=20-29,10,ds004349-participants,"gender, age",
+age_mean,,19.8,ds004349-participants,age,
+age_median,,19,ds004349-participants,age,
+age_sd,,2.3,ds004349-participants,age,
+age_min,,18,ds004349-participants,age,
+age_max,,28,ds004349-participants,age,
