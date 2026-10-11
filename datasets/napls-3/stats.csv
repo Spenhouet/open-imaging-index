@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,806,addington2022,Section 3.1 and Table 2,"sum of 560 enhanced CHR, 150 non-enhanced CHR and 96 healthy controls; the NDA collection lists 814 shared subjects"
+subjects,condition=clinical_high_risk_psychosis,710,addington2022,Abstract,"560 enhanced CHR with biomarker and imaging visits, 150 non-enhanced CHR with clinical follow-up only"
+subjects,condition=healthy,96,addington2022,Section 3.1,
+subjects,sex=female,373,addington2022,Table 2,sum of female counts over the three groups
+subjects,sex=male,433,addington2022,Table 2,sum of male counts over the three groups
+subjects,condition=clinical_high_risk_psychosis;sex=female,325,addington2022,Table 2,sum of enhanced and non-enhanced CHR
+subjects,condition=clinical_high_risk_psychosis;sex=male,385,addington2022,Table 2,sum of enhanced and non-enhanced CHR
+subjects,condition=healthy;sex=female,48,addington2022,Table 2,
+subjects,condition=healthy;sex=male,48,addington2022,Table 2,
+subjects,modality=MR,664,nda-collection-2275,Shared Data,subjects in the shared NDA Image data structure
+age_mean,condition=healthy,18.6,addington2022,Table 2,

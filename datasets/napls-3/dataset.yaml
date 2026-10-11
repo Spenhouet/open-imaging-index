@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: napls-3
+name: NAPLS 3
+full_name: North American Prodrome Longitudinal Study, phase 3 (Predictors and Mechanisms of Conversion to Psychosis)
+summary: >-
+  Repeated brain MRI, EEG, blood biomarkers and clinical ratings from young people at clinical high risk for psychosis
+  and healthy controls, collected every two months to track how brain changes, inflammation and plasticity unfold
+  before psychosis onset.
+homepage: https://nda.nih.gov/edit_collection.html?id=2275
+doi: 10.15154/304r-9v58
+year: 2021
+status: active
+creators:
+  - name: North American Prodrome Longitudinal Study (NAPLS) consortium
+    url: https://campuspress.yale.edu/napls/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [clinical_high_risk_psychosis, healthy]
+countries: [US, CA]
+vendors: [siemens]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2275
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      NAPLS 3 is NIMH Data Archive collection 2275 and needs an approved NDA data access request. The LONI Image and
+      Data Archive also hosts a NAPLS3 project with its own data use application, whose terms are not public and are
+      not broken down here.
+citation:
+  text: >-
+    Addington J, Liu L, Brummitt K, Bearden CE, Cadenhead KS, Cornblatt BA, Keshavan M, Mathalon DH, McGlashan TH,
+    Perkins DO, Seidman LJ, Stone W, Tsuang MT, Walker EF, Woods SW, Cannon TD. North American Prodrome Longitudinal
+    Study (NAPLS 3): Methods and baseline description. Schizophr Res 243:262-267 (2022).
+    doi:10.1016/j.schres.2020.04.010
+sources:
+  addington2022:
+    title: Addington et al., North American Prodrome Longitudinal Study (NAPLS 3) Methods and baseline description, Schizophr Res (author manuscript PMC7572535)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7572535/
+    kind: paper
+  nda-collection-2275:
+    title: NIMH Data Archive collection 2275 page (NAPLS3), General, Shared Data and Data Expected tabs
+    url: https://nda.nih.gov/edit_collection.html?id=2275
+    kind: website
+related: []
+keywords: [psychosis, clinical high risk, prodrome, schizophrenia, longitudinal, resting-state fMRI, diffusion MRI, EEG, inflammation]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

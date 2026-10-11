@@ -122,6 +122,12 @@ terms:
   - { id: schizophrenia, label: Schizophrenia, mappings: { mondo: 'MONDO:0005090' } }
   - { id: schizoaffective_disorder, label: Schizoaffective disorder, mappings: { mondo: 'MONDO:0005487' } }
   - { id: psychotic_disorder, label: Psychotic disorder, synonyms: [psychosis], mappings: { mondo: 'MONDO:0005485' } }
+  - id: clinical_high_risk_psychosis
+    label: Clinical high risk for psychosis
+    description: >-
+      Attenuated or brief psychotic symptoms, or genetic risk with functional decline, that meet psychosis-risk
+      syndrome criteria without a psychotic disorder. No MONDO or HPO term exists.
+    synonyms: [CHR, CHR-P, ultra high risk, UHR, psychosis-risk syndrome, attenuated psychosis syndrome, prodrome]
   - { id: bipolar_disorder, label: Bipolar disorder, synonyms: [bipolar], mappings: { mondo: 'MONDO:0004985' } }
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
