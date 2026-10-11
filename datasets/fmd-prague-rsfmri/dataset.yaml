@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fmd-prague-rsfmri
+name: Prague Functional Movement Disorder Resting-State fMRI
+full_name: Centrality and seed-based correlation maps obtained with functional MRI
+summary: >-
+  Resting-state BOLD fMRI of adults with functional movement disorder and healthy controls, used to relate brain
+  network centrality to motor symptom severity. Images are shared on request; per-subject connectivity maps are public.
+homepage: https://data.mendeley.com/datasets/w35fvmtnf2
+doi: 10.17632/w35fvmtnf2
+year: 2022
+creators:
+  - name: Department of Neurology and Center of Clinical Neuroscience, Charles University and General University Hospital in Prague
+    url: https://ror.org/024d6js02
+  - name: Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [functional_neurological_disorder, healthy]
+countries: [CZ]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1016/j.nicl.2022.102981
+  note: >-
+    The data availability statement of Mueller et al. (2022) says the analysed data are available on reasonable request,
+    with the functional MRI given as anonymized pre-processed NIfTI files. The per-subject connectivity maps (global
+    correlation, intrinsic connectivity, eigenvector centrality and seed-based correlation) and the SPM12 group analyses
+    are an open download on Mendeley Data under CC BY 4.0.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Per-subject connectivity maps and SPM12 group analyses on Mendeley Data
+    url: https://data.mendeley.com/datasets/w35fvmtnf2
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Pre-processed functional MRI, shared on request
+    note: No license or data use terms are stated for the functional MRI data shared on request.
+citation:
+  text: >-
+    Mueller K, Růžička F, Slovák M, Forejtová Z, Dušek P, Dušek P, Jech R, Serranová T. Symptom-severity-related brain
+    connectivity alterations in functional movement disorders. NeuroImage: Clinical 34, 102981 (2022).
+    doi:10.1016/j.nicl.2022.102981. Data: Mendeley Data, V1 (2022). doi:10.17632/w35fvmtnf2.1
+sources:
+  mueller2022:
+    title: Mueller et al. 2022, NeuroImage Clinical (PMC8921488)
+    url: https://doi.org/10.1016/j.nicl.2022.102981
+    kind: paper
+  mendeley-w35fvmtnf2:
+    title: Centrality and seed-based correlation maps obtained with functional MRI, Mendeley Data V1
+    url: https://data.mendeley.com/datasets/w35fvmtnf2
+    kind: website
+related: []
+keywords:
+  [functional movement disorder, functional weakness, resting-state fMRI, eigenvector centrality, functional connectivity]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
