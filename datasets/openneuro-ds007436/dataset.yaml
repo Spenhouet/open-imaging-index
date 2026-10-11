@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007436
+name: Multisensory learning fMRI (ds007436)
+full_name: Multisensory learning dataset
+summary: >-
+  Task fMRI of healthy young adults learning which visual-auditory and visual-tactile cue pairings are rewarded,
+  collected to separate statistical and reinforcement learning signals. 58 participants from Zurich, Switzerland, in
+  BIDS.
+homepage: https://openneuro.org/datasets/ds007436
+doi: 10.18112/openneuro.ds007436.v1.0.0
+# First and latest snapshot (1.0.0) on OpenNeuro, 2026-02-17.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Bedi S, Casimiro E, de Hollander G, Raduner N, Helmchen F, Brem S, Konovalov A, Ruff CC (University of Zurich)
+    url: https://openneuro.org/datasets/ds007436
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 41.45
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007436
+licenses:
+  - license: CC0-1.0
+    applies_to: Whole release, per the "License" field of dataset_description.json (snapshot 1.0.0).
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+  - license: CC-BY-4.0
+    applies_to: Whole release, per the License section of README.md (snapshot 1.0.0).
+    note: >-
+      README.md of snapshot 1.0.0 states "This dataset is shared under a CC-BY 4.0 license", which contradicts the CC0
+      in dataset_description.json. Both are listed so the stricter attribution duty shows.
+license_combine: all
+citation:
+  text: >-
+    Bedi S, Casimiro E, de Hollander G, Raduner N, Helmchen F, Brem S, Konovalov A, Ruff CC. Separable
+    neurocomputational mechanisms underlying multisensory learning. bioRxiv 2025.11.18.688925 (2025).
+    doi:10.1101/2025.11.18.688925
+sources:
+  bedi2025:
+    title: >-
+      Bedi et al. 2025, Separable neurocomputational mechanisms underlying multisensory learning, bioRxiv preprint
+      (version 2, 2026-04-12)
+    url: https://doi.org/10.1101/2025.11.18.688925
+    kind: paper
+  openneuro-ds007436-v1-0-0:
+    title: >-
+      OpenNeuro ds007436 snapshot 1.0.0 (dataset_description.json, README.md, CHANGES, image sidecars and snapshot
+      summary)
+    url: https://openneuro.org/datasets/ds007436/versions/1.0.0
+    kind: website
+  ds007436-file-tree:
+    title: File listing of ds007436 snapshot 1.0.0 (CC0), counted per anat, func and fmap NIfTI file
+    url: https://openneuro.org/datasets/ds007436/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords: [multisensory learning, reinforcement learning, statistical learning, reward prediction error, task fMRI, audiovisual, visuotactile]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
