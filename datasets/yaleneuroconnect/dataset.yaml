@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: yaleneuroconnect
+name: YaleNeuroConnect (ds007286)
+full_name: >-
+  YaleNeuroConnect: A Transdiagnostic fMRI Dataset With Deeply Phenotyped Subjects Across Resting and Task States
+summary: >-
+  Resting-state and task fMRI with structural brain MRI from adults spanning many psychiatric diagnoses and healthy
+  controls, collected to build brain-behavior models of cognitive and clinical scores across diagnoses. Includes
+  connectivity matrices and an extensive cognitive and symptom test battery.
+homepage: https://openneuro.org/datasets/ds007286
+doi: 10.18112/openneuro.ds007286.v1.0.7
+year: 2025
+updated: 2026
+version: 1.0.7
+status: active
+creators:
+  - name: Yale Magnetic Resonance Research Center, Yale School of Medicine (Samardzija A, Shen X, Constable RT, et al.)
+    url: https://github.com/YaleMRRC/YaleNeuroConnect
+species: human
+modalities: [MR]
+contrasts: [bold, T1w, T2w]
+anatomy: [brain]
+conditions:
+  [healthy, depression, anxiety_disorder, bipolar_disorder, psychotic_disorder, adhd, ptsd, ocd, autism]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1808.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007286/versions/1.0.7
+  note: >-
+    Raw structural and functional MRI, events files, phenotype tables, MRIQC metrics and connectivity derivatives are
+    an open download on OpenNeuro. A copy of the imaging and assessment data is also held in NIMH Data Archive
+    collection 3276, which requires an application.
+licenses:
+  - license: CC0-1.0
+    applies_to: OpenNeuro release ds007286 (snapshot 1.0.7), raw MRI, derivatives and phenotype tables.
+    url: https://openneuro.org/datasets/ds007286/versions/1.0.7
+    note: dataset_description.json states "License" CC0.
+citation:
+  text: >-
+    Samardzija A, Shen X, Greene AS, et al. A Transdiagnostic fMRI Dataset With 300+ Deeply Phenotyped Subjects
+    Across Resting and Task States. medRxiv 2025.07.15.25331595 (2025). doi:10.1101/2025.07.15.25331595
+sources:
+  samardzija2025:
+    title: Samardzija et al. 2025, A Transdiagnostic fMRI Dataset With 300+ Deeply Phenotyped Subjects, medRxiv
+    url: https://doi.org/10.1101/2025.07.15.25331595
+    kind: paper
+  openneuro-ds007286-v107:
+    title: OpenNeuro ds007286 snapshot 1.0.7 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds007286/versions/1.0.7
+    kind: website
+  ds007286-demographics:
+    title: phenotype/demographics.tsv of ds007286 snapshot 1.0.7 (CC0), age_at_test and Sex columns
+    url: https://openneuro.org/datasets/ds007286/versions/1.0.7/file-display/phenotype:demographics.tsv
+    kind: computed
+  ds007286-diagnosis:
+    title: phenotype/diagnosis_binary_table.tsv of ds007286 snapshot 1.0.7 (CC0), diagnosis columns
+    url: https://openneuro.org/datasets/ds007286/versions/1.0.7/file-display/phenotype:diagnosis_binary_table.tsv
+    kind: computed
+  ds007286-file-tree:
+    title: File tree of ds007286 snapshot 1.0.7 (CC0), NIfTI files counted per subject folder
+    url: https://openneuro.org/crn/datasets/ds007286/snapshots/1.0.7/files
+    kind: computed
+related: []
+keywords:
+  [
+    transdiagnostic,
+    functional connectivity,
+    task fMRI,
+    resting-state fMRI,
+    brain-behavior modeling,
+    Research Domain Criteria,
+    Shen268,
+    deep phenotyping
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
