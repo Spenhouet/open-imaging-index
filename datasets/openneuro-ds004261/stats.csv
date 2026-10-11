@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,57,shao2023,Methods: Participants,Exp. 2 (fMRI) misinformation group; the file tree and participants.tsv both hold 57 subjects
+subjects,condition=healthy,57,shao2023,Methods: Participants,right-handed college students without psychiatric or neurological disease
+subjects,sex=female,29,shao2023,Methods: Participants,self-reported; participants.tsv lists 30 F
+subjects,sex=male,28,shao2023,Methods: Participants,self-reported; participants.tsv lists 27 M
+subjects,age=10-19,9,ds004261-participants,age column,ages 18 and 19
+subjects,age=20-29,48,ds004261-participants,age column,
+subjects,sex=female;age=20-29,26,ds004261-participants,sex and age columns,Cells below 10 left out
+subjects,sex=male;age=20-29,22,ds004261-participants,sex and age columns,Cells below 10 left out
+age_mean,,22,shao2023,Methods: Participants,reported as 22 ± 2 years; participants.tsv gives 21.5
+age_sd,,2,shao2023,Methods: Participants,
+age_min,,18,ds004261-participants,age column,
+age_max,,25,ds004261-participants,age column,
+age_median,,22,ds004261-participants,age column,
+studies,,171,ds004261-file-tree,sub-*/ses-*/,"three sessions per subject: day1AM, day1PM and day2AM"
+scans,,740,ds004261-file-tree,*.nii.gz,56 T1w and 684 bold files; fieldmap magnitude and phase-difference images not included
+scans,contrast=T1w,56,ds004261-file-tree,anat/*_T1w.nii.gz,one per subject in session day1PM
+scans,contrast=bold,684,ds004261-file-tree,func/*_bold.nii.gz,four runs in each of the three task sessions
+subjects,contrast=T1w,56,ds004261-file-tree,anat/*_T1w.nii.gz,sub-2063 has no T1w image
+subjects,contrast=bold,57,ds004261-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,56,ds004261-file-tree,sub-*/,phase-difference fieldmaps are not counted as a contrast
+subjects,contrast_set=bold,1,ds004261-file-tree,sub-*/,
+subjects,country=CN,57,shao2023,Methods: MRI acquisition,MRI Center at Beijing Normal University
+subjects,vendor=siemens,57,shao2023,Methods: MRI acquisition,Siemens Prisma
+subjects,field_strength=3,57,shao2023,Methods: MRI acquisition,3.0 T
