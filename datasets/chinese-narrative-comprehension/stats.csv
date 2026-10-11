@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,68,liu2025,"Materials and methods, Participants and experiment procedure",
+subjects,sex=male,33,liu2025,"Materials and methods, Participants and experiment procedure",
+subjects,country=CN,68,liu2025,"Materials and methods, Participants and experiment procedure",
+subjects,field_strength=3,68,liu2025,"Materials and methods, MRI acquisition and preprocessing",
+subjects,vendor=siemens,68,liu2025,"Materials and methods, MRI acquisition and preprocessing",
+subjects,contrast=T1w,68,ds005850-file-tree,,one T1w per subject folder
+subjects,contrast=bold,68,ds005850-file-tree,,"story, Mongolian and rest runs per subject folder"
+subjects,contrast_set=bold+T1w,68,ds005850-file-tree,,
+scans,,272,ds005850-file-tree,,"68 T1w and 204 raw BOLD NIfTI files, preprocessed BOLD derivatives not counted"
+age_min,,19,liu2025,"Materials and methods, Participants and experiment procedure",
+age_max,,27,liu2025,"Materials and methods, Participants and experiment procedure",

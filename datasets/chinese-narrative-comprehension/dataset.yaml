@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chinese-narrative-comprehension
+name: Spoken narrative comprehension in Chinese (ds005850)
+summary: >-
+  Brain fMRI of young Chinese adults listening to a spoken story in Mandarin, an unintelligible story in Mongolian
+  and at rest, collected to study how brain state dynamics support spoken narrative comprehension. 68 college
+  students with a T1-weighted scan each.
+homepage: https://openneuro.org/datasets/ds005850
+doi: 10.18112/openneuro.ds005850.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Liu L, Jiang J, Ding G, Li H
+    url: https://openneuro.org/datasets/ds005850
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005850/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005850/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Liu L, Jiang J, Li H, Ding G. Tripartite organization of brain state dynamics underlying spoken narrative
+    comprehension. eLife 13:RP99997 (2025). doi:10.7554/eLife.99997
+sources:
+  liu2025:
+    title: Liu et al. 2025, Tripartite organization of brain state dynamics underlying spoken narrative comprehension, eLife
+    url: https://europepmc.org/article/PMC/PMC11750135
+    kind: paper
+  openneuro-ds005850-v1:
+    title: OpenNeuro ds005850 snapshot 1.0.0 (README, CHANGES, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005850/versions/1.0.0
+    kind: website
+  ds005850-file-tree:
+    title: File tree of ds005850 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds005850
+    kind: computed
+related: []
+keywords: [naturalistic fMRI, speech comprehension, story listening, Mandarin, resting state, brain states]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
