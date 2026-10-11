@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-SciDB-39980-Restricted-Access
+name: Restricted access conditions of Science Data Bank record 10.57760/sciencedb.39980
+short_name: SciDB 39980 access terms
+url: https://www.scidb.cn/en/detail?dataSetId=160ca2aa759f4c2f8f4eca752a0032bd
+version: Access conditions shown on the record page for version V1 (published 2026-06-22), read 2026-10-11
+summary: >-
+  Access is granted by the data depositor after a data access application that states the research purpose, planned
+  analyses, data security measures and duration of use. Use is limited to scientific, educational or non-commercial
+  research. Re-identification and redistribution are forbidden, data must be stored securely and publications must
+  cite the dataset and the related publication.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Approved users may use the data only for legitimate scientific, educational, or non-commercial research
+      purposes.
+    note: The permitted purposes do not include commercial use.
+  product_validation:
+    value: unspecified
+    note: The conditions do not mention testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The conditions do not mention machine learning.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: Any publication or presentation using the data must cite the original dataset and related publication.
+    note: Publication is allowed with citation.
+  redistribute_original:
+    value: 'no'
+    quote: Users must not attempt to identify or re-identify participants, must not redistribute the data to third parties, and must store the data securely.
+  redistribute_derivatives:
+    value: unspecified
+    quote: must not redistribute the data to third parties
+    note: The conditions do not say whether derived data count as "the data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Any publication or presentation using the data must cite the original dataset and related publication.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Requesters must submit a Data Access Application including their name, institutional affiliation,
+      position/title, institutional email address, research purpose, planned analyses, data security measures, and
+      expected duration of data use.
+    note: A data access application reviewed by the depositor, not a signed agreement in the strict sense.
+  ethics_approval:
+    value: unspecified
+    quote: >-
+      Access may be denied if the proposed use is inconsistent with participant privacy protection, ethical approval,
+      informed consent, or the scope of the dataset.
+    note: The conditions refer to the study's own ethical approval; they do not require one from the requester.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: unspecified
+    quote: >-
+      Requesters must submit a Data Access Application including their name, institutional affiliation,
+      position/title, institutional email address, research purpose, planned analyses, data security measures, and
+      expected duration of data use.
+    note: An expected duration of use must be stated, but deletion at the end is not required in the text.
+  no_reidentification:
+    value: 'yes'
+    quote: Users must not attempt to identify or re-identify participants, must not redistribute the data to third parties, and must store the data securely.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

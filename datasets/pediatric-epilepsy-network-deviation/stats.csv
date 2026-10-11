@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,150,scidb-pediatric-epilepsy-network-deviation,Description,"children with epilepsy with baseline clinical, EEG and MRI data; the 180 healthy reference children are described as used for normative modelling, not as part of the shared files"
+subjects,condition=epilepsy,150,scidb-pediatric-epilepsy-network-deviation,Description,
+subjects,modality=MR,150,scidb-pediatric-epilepsy-network-deviation,Description,
+age_min,,6,scidb-pediatric-epilepsy-network-deviation,Description,aged 6 to 18 years
+age_max,,18,scidb-pediatric-epilepsy-network-deviation,Description,aged 6 to 18 years
