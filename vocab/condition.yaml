@@ -473,3 +473,10 @@ terms:
       synonyms: [peripheral nerve injury, PNI, traumatic nerve injury],
       mappings: { mondo: 'MONDO:0100634' }
     }
+  - id: writing_disorder
+    label: Writing disorder
+    description: >-
+      Learning disability with impaired written language, such as spelling, handwriting or composition. Includes
+      isolated spelling deficits without a reading deficit.
+    synonyms: [disorder of written expression, spelling disorder, isolated spelling deficit]
+    mappings: { mondo: 'MONDO:0000599' }
