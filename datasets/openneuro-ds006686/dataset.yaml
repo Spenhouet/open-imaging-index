@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006686
+name: Older Age Prototype and Exemplar fMRI (ds006686)
+full_name: Effects of older age on neural prototype and exemplar correlates
+summary: >-
+  Structural MRI (T1w, T2w), resting-state fMRI and four runs of category-learning task fMRI from 36 healthy young and
+  28 healthy older adults, collected to compare prototype and exemplar learning across age. BIDS, CC0.
+homepage: https://openneuro.org/datasets/ds006686
+doi: 10.18112/openneuro.ds006686.v1.0.3
+year: 2025
+updated: 2026
+version: 1.0.3
+status: active
+creators:
+  - name: Caitlin Bowman and Dagmar Zeithamova (University of Oregon)
+    url: https://cognem.uoregon.edu/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 52.91
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006686/versions/1.0.3
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006686/versions/1.0.3
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Bowman CR, Zeithamova D. Ventromedial prefrontal cortex supports prototype representations in healthy older adults.
+    Neurobiology of Aging 162:66-80 (2026). doi:10.1016/j.neurobiolaging.2026.02.006
+sources:
+  openneuro-ds006686-v1-0-3:
+    title: >-
+      OpenNeuro ds006686 snapshot 1.0.3 (dataset_description.json, README.txt, CHANGES, snapshot list and snapshot
+      size)
+    url: https://openneuro.org/datasets/ds006686/versions/1.0.3
+    kind: website
+  ds006686-participants:
+    title: participants.tsv of the ds006686 BIDS repository (CC0), columns age, group and sex
+    url: https://github.com/OpenNeuroDatasets/ds006686/blob/main/participants.tsv
+    kind: computed
+  ds006686-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds006686 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds006686
+    kind: computed
+  bowman2026:
+    title: Bowman and Zeithamova 2026, Neurobiology of Aging 162:66-80
+    url: https://doi.org/10.1016/j.neurobiolaging.2026.02.006
+    kind: paper
+related: []
+keywords: [aging, older adults, category learning, concept learning, prototype, exemplar, task fMRI, resting state]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
