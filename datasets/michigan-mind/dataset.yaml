@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: michigan-mind
+name: Michigan Neural Distinctiveness (MiND)
+full_name: Michigan Neural Distinctiveness (MiND) Study
+summary: >-
+  Task and resting-state fMRI, structural MRI, diffusion MRI and GABA-edited MR spectroscopy of older adults, most
+  cognitively normal and some with mild cognitive impairment, from a study of age-related loss of distinct neural
+  activation patterns.
+homepage: https://openneuro.org/datasets/ds007857
+doi: 10.18112/openneuro.ds007857.v1.0.1
+# First public snapshot (1.0.0) on OpenNeuro, 2026-06-04; latest snapshot 1.0.1, 2026-06-11.
+year: 2026
+version: 1.0.1
+status: active
+creators:
+  - name: Thad A. Polk, Holly Gagnon, Molly Simmonite (University of Michigan)
+    url: https://openneuro.org/datasets/ds007857
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy, mci, alzheimers]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+# OpenNeuro snapshot 1.0.1: 86819807678 bytes in 4918 files.
+size_gb: 86.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007857
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Gagnon H, Simmonite M, Cassady K, et al. Michigan Neural Distinctiveness (MiND) study protocol: investigating the
+    scope, causes, and consequences of age-related neural dedifferentiation. BMC Neurology 19, 61 (2019).
+    doi:10.1186/s12883-019-1294-6. Data: OpenNeuro ds007857, doi:10.18112/openneuro.ds007857.v1.0.1
+sources:
+  openneuro-ds007857-v1-0-1:
+    title: OpenNeuro ds007857 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds007857/versions/1.0.1
+    kind: website
+  ds007857-participants:
+    title: participants.tsv and participants.json of ds007857 1.0.1 (CC0), counted per row; n/a values left out
+    url: https://github.com/OpenNeuroDatasets/ds007857/blob/1.0.1/participants.tsv
+    kind: computed
+  ds007857-file-tree:
+    title: File listing of the ds007857 1.0.1 BIDS repository (CC0), counted per NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds007857/tree/1.0.1
+    kind: computed
+  gagnon2019:
+    title: >-
+      Gagnon et al. 2019, Michigan Neural Distinctiveness (MiND) study protocol: investigating the scope, causes, and
+      consequences of age-related neural dedifferentiation, BMC Neurology
+    url: https://doi.org/10.1186/s12883-019-1294-6
+    kind: paper
+related: []
+keywords:
+  [
+    aging,
+    neural dedifferentiation,
+    GABA,
+    MR spectroscopy,
+    MEGA-PRESS,
+    task fMRI,
+    resting-state fMRI,
+    diffusion MRI,
+    mild cognitive impairment,
+    older adults
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
