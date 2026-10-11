@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: marburg-gesture-ifg
+name: Marburg Co-speech Gesture IFG fMRI
+full_name: The Role of the Left and Right Inferior Frontal Gyrus in Processing Metaphoric and Unrelated Co-speech Gestures
+summary: >-
+  Task fMRI of adults judging whether speech and co-speech gestures in short videos match, collected to compare
+  inferior frontal gyrus activation and laterality for metaphoric, iconic and unrelated gestures. Raw images are not
+  shared; per-subject contrast maps are public.
+homepage: https://osf.io/2ukq7/
+doi: 10.1016/j.neuroimage.2021.118182
+# Year of the NeuroImage paper (online May 2021) and of the OSF project (created January 2021); the raw images have no
+# public release.
+year: 2021
+creators:
+  - name: Department of Psychiatry and Psychotherapy, Philipps-Universität Marburg
+    url: https://www.uni-marburg.de/
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+formats: [NIfTI]
+access:
+  type: not_shared
+  url: https://osf.io/2ukq7/
+  note: >-
+    The OSF project holds only derived data: SPM12 first-level contrast and t maps for each of the 74 subjects,
+    second-level group maps, eigenvariate files, anatomical IFG masks, analysis scripts and behavioral tables. Raw or
+    preprocessed functional images are not part of it and no other route to them is given.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The OSF project states no license, and the deposited derived maps carry no data use terms. The paper itself is
+      published under CC BY-NC-ND, which does not cover the data.
+citation:
+  text: >-
+    Steines M, Nagels A, Kircher T, Straube B. The role of the left and right inferior frontal gyrus in processing
+    metaphoric and unrelated co-speech gestures. NeuroImage 237, 118182 (2021). doi:10.1016/j.neuroimage.2021.118182
+  bibtex: |
+    @article{steines2021,
+      title={The role of the left and right inferior frontal gyrus in processing metaphoric and unrelated co-speech gestures},
+      author={Steines, Miriam and Nagels, Arne and Kircher, Tilo and Straube, Benjamin},
+      journal={NeuroImage},
+      volume={237},
+      pages={118182},
+      year={2021},
+      doi={10.1016/j.neuroimage.2021.118182}
+    }
+sources:
+  steines2021:
+    title: Steines et al. 2021, NeuroImage (abstract, PMID 34020020)
+    url: https://pubmed.ncbi.nlm.nih.gov/34020020/
+    kind: paper
+  osf-2ukq7:
+    title: OSF project 2ukq7, fMRI_data/README.txt and folder listing
+    url: https://osf.io/2ukq7/
+    kind: website
+related: []
+keywords: [co-speech gesture, metaphor, inferior frontal gyrus, laterality, language, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
