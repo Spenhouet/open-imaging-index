@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,61,gao2025,Methods: Participants,participants.tsv also has 61 rows; 107 children were recruited and 37 of the 98 with two task runs were excluded
+subjects,condition=adhd,26,gao2025,Methods: Participants,
+subjects,condition=healthy,35,gao2025,Methods: Participants,typically developing children
+subjects,sex=female,23,gao2025,Methods: Participants,sum of 10 female ADHD and 13 female TD children
+subjects,sex=male,38,gao2025,Methods: Participants,sum of 16 male ADHD and 22 male TD children
+subjects,sex=female;condition=adhd,10,gao2025,Methods: Participants,
+subjects,sex=male;condition=adhd,16,gao2025,Methods: Participants,
+subjects,sex=female;condition=healthy,13,gao2025,Methods: Participants,
+subjects,sex=male;condition=healthy,22,gao2025,Methods: Participants,
+subjects,contrast=T1w,56,ds005899-file-tree,,subjects with a sub-*_T1w.nii; five subjects have no T1w file
+subjects,contrast=bold,61,ds005899-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,56,ds005899-file-tree,,
+subjects,contrast_set=bold,5,ds005899-file-tree,,
+scans,,178,ds005899-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,56,ds005899-file-tree,,
+scans,contrast=bold,122,ds005899-file-tree,,two cued stop-signal task runs per subject
+subjects,age=0-9,13,ds005899-participants,Age,Age column in whole years; 9 years
+subjects,age=10-19,48,ds005899-participants,Age,Age column in whole years; 10 to 12 years
+age_min,,9,ds005899-participants,Age,
+age_max,,12,ds005899-participants,Age,
+age_mean,,10.61,ds005899-participants,Age,from whole-year values; the paper gives 10.8 (ADHD) and 10.5 (TD) in Table 1
+subjects,field_strength=3,61,gao2025,Methods: Neuroimaging data acquisition,
+subjects,vendor=ge,61,gao2025,Methods: Neuroimaging data acquisition,3T GE Signa with a 32-channel head coil
+subjects,country=US,61,gao2025,Methods: Neuroimaging data acquisition,Richard M Lucas Center for Imaging at Stanford University
