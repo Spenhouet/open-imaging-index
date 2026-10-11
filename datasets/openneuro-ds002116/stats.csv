@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,57,ds002116-file-tree,sub-*/,57 subject folders; participants.tsv lists 65 consented children of whom 8 have no images (not scanned or excluded before analysis)
+subjects,sex=female,22,ds002116-participants,sex,
+subjects,sex=male,35,ds002116-participants,sex,
+subjects,age=0-9,30,ds002116-participants,age,Ages 6 to 9
+subjects,age=10-19,27,ds002116-participants,age,Ages 10 to 14
+subjects,sex=female;age=0-9,12,ds002116-participants,sex; age,
+subjects,sex=female;age=10-19,10,ds002116-participants,sex; age,
+subjects,sex=male;age=0-9,18,ds002116-participants,sex; age,
+subjects,sex=male;age=10-19,17,ds002116-participants,sex; age,
+age_min,,6,ds002116-participants,age,
+age_max,,14,ds002116-participants,age,
+scans,,284,ds002116-file-tree,*.nii.gz,57 T1w and 227 bold files
+scans,contrast=T1w,57,ds002116-file-tree,anat/*_T1w.nii.gz,One per subject
+scans,contrast=bold,227,ds002116-file-tree,func/*_task-Adaptation_run-*_bold.nii.gz,1 to 5 adaptation runs per subject
+subjects,contrast=T1w,57,ds002116-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,57,ds002116-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,57,ds002116-file-tree,sub-*/,Every subject has one T1w and at least one bold run
+subjects,field_strength=3,57,openneuro-ds002116-v100,task-Adaptation_bold.json; sub-*_T1w.json,MagneticFieldStrength 3
+subjects,vendor=siemens,57,openneuro-ds002116-v100,task-Adaptation_bold.json; sub-*_T1w.json,Siemens Prisma_fit
+subjects,country=CA,57,goffin2019,Section 3.2.1-3.2.2,"Scanned at Robarts Research Institute, Western University, London, Ontario"

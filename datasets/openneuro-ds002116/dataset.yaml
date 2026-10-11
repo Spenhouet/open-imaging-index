@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002116
+name: Development of Symbolic Number Processing (ds002116)
+full_name: Development of Symbolic Number Processing
+summary: >-
+  Brain MRI and task fMRI of right-handed children viewing Arabic digits in a passive fMRI-adaptation task on symbolic
+  number, from Western University in Canada. 57 children aged 6 to 14, one T1w scan and up to five bold runs each, in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002116
+doi: 10.18112/openneuro.ds002116.v1.0.0
+year: 2019
+version: 1.0.0
+status: active
+creators:
+  - name: Numerical Cognition Laboratory, Western University (Goffin C, Slipenkyj M, Vogel SE, Merkley R, Ansari D)
+    url: https://openneuro.org/datasets/ds002116
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 29.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002116
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Goffin C, Slipenkyj M, Vogel SE, Merkley R, Ansari D. Development of Symbolic Number Processing. OpenNeuro
+    ds002116, version 1.0.0 (2019). doi:10.18112/openneuro.ds002116.v1.0.0
+sources:
+  openneuro-ds002116-v100:
+    title: OpenNeuro ds002116 snapshot 1.0.0 (dataset_description.json, CHANGES, sidecar JSON files and snapshot summary)
+    url: https://openneuro.org/datasets/ds002116/versions/1.0.0
+    kind: website
+  goffin2019:
+    title: >-
+      Goffin 2019, How does the brain represent digits? Investigating the neural correlates of symbolic number
+      representation using fMRI-Adaptation, PhD thesis, Western University (Chapter 3)
+    url: https://hdl.handle.net/20.500.14721/29623
+    kind: paper
+  ds002116-participants:
+    title: participants.tsv of ds002116 snapshot 1.0.0 (CC0), counted over the 57 subjects with image folders
+    url: https://s3.amazonaws.com/openneuro.org/ds002116/participants.tsv
+    kind: computed
+  ds002116-file-tree:
+    title: File tree of ds002116 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://s3.amazonaws.com/openneuro.org/index.html?prefix=ds002116/
+    kind: computed
+related: []
+keywords: [numerical cognition, symbolic number, Arabic digits, fMRI adaptation, child development, intraparietal sulcus, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
