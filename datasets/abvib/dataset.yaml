@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: abvib
+name: ABVIB
+full_name: Aging Brain - Vasculature, Ischemia, and Behavior Study (ABVIB)
+summary: >-
+  Serial brain MRI, amyloid PET in a subset, neuropsychological tests and vascular risk measures of older adults,
+  collected to study how cardiovascular risk and cerebrovascular disease affect brain structure and cognition, alone or
+  with Alzheimer disease. Access by data use application.
+homepage: https://ida.loni.usc.edu/login.jsp?project=ABVIB
+# The data use agreement says the study was launched in 1994 and that a second cohort (2008-2013) is in the current
+# database. The date the database was first shared is not published.
+year: 1994
+creators:
+  - name: Aging Brain - Vasculature, Ischemia, and Behavior program project (NIA P01 AG12435, PI Helena C. Chui, University of Southern California)
+    url: https://adrc.usc.edu
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+# MPRAGE and FLAIR as described in Marchant et al. 2013 for the PiB substudy. The sequences of the full database are
+# not published.
+contrasts: [T1w, FLAIR]
+tracers: [pib]
+anatomy: [brain]
+# Clinically normal, cognitively impaired and demented groups as in Marchant et al. 2013. Per-group counts for the
+# database are not published.
+conditions: [healthy, mci, dementia]
+tasks: [regression, classification, longitudinal]
+countries: [US]
+# Scanners of the PiB substudy in Marchant et al. 2013 (Siemens 3 T Trio, Siemens 4 T MedSpec, GE 1.5 T Signa).
+vendors: [siemens, ge]
+field_strengths: [1.5, 3, 4]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ABVIB
+licenses:
+  - license: LicenseRef-ABVIB-DUA
+citation:
+  text: >-
+    No dataset paper. The data use agreement requires "for the Aging Brain: Vasculature, Ischemia, and Behavior Study*"
+    on the manuscript by-line with the listed key investigators, methods text naming the ABVIB database, and the
+    funding acknowledgement "Data collection and sharing for this project was funded by the National Institutes on
+    Aging (NIA) P01 AG12435."
+sources:
+  loni-abvib-dua:
+    title: LONI IDA, ABVIB Data Use Agreement (data use application page)
+    url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=ABVIB
+    kind: website
+  marchant2013:
+    title: >-
+      Marchant et al. 2013, The aging brain and cognition: contribution of vascular injury and Abeta to mild cognitive
+      dysfunction, JAMA Neurology (PMC3771392)
+    url: https://doi.org/10.1001/2013.jamaneurol.405
+    kind: paper
+related: []
+keywords:
+  [
+    cerebrovascular disease,
+    vascular risk factors,
+    white matter hyperintensities,
+    lacunar infarcts,
+    amyloid PET,
+    ageing,
+    Alzheimer's disease,
+    longitudinal,
+    brain MRI,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
