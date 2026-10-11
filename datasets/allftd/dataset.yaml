@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: allftd
+name: ALLFTD
+full_name: ARTFL-LEFFTDS Longitudinal Frontotemporal Lobar Degeneration (FTLD project on LONI)
+summary: >-
+  Longitudinal brain MRI, clinical and neuropsychological data from people with sporadic or familial frontotemporal
+  lobar degeneration syndromes and their relatives, collected to model disease progression and prepare clinical
+  trials. Includes the predecessor studies ARTFL and LEFFTDS.
+homepage: https://www.allftd.org/data
+# Raw MR images became available on request in July 2023 (ALLFTD Resource Sharing page). Clinical data from ARTFL
+# (started 2014) and LEFFTDS (started 2015) were shared earlier; that date is not given.
+year: 2023
+status: active
+creators:
+  - name: ALLFTD Consortium (Mayo Clinic Rochester and UCSF Memory and Aging Center, co-PIs Brad Boeve, Adam Boxer and
+      Howard Rosen)
+    url: https://www.allftd.org/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (image distribution)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, asl, bold]
+anatomy: [brain]
+conditions: [frontotemporal_dementia, progressive_supranuclear_palsy, corticobasal_degeneration]
+tasks: [classification, regression, longitudinal]
+countries: [US, CA]
+# 3T Siemens Prisma at four ALLFTD sites (corriveaulecavalier2024, Section 2.4); other sites' scanners not verified.
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=FTLD
+licenses:
+  - license: LicenseRef-ALLFTD-Data-Sharing-Policy
+citation:
+  text: >-
+    Publications must include "on behalf of the ALLFTD Consortium" as an author and the acknowledgement: "Data
+    collection and dissemination of the data presented in this manuscript was supported by the ALLFTD Consortium (U19:
+    AG063911, funded by the National Institute on Aging and the National Institute of Neurological Diseases and
+    Stroke) and the former ARTFL & LEFFTDS Consortia (ARTFL: U54 NS092089, funded by the National Institute of
+    Neurological Diseases and Stroke and National Center for Advancing Translational Sciences; LEFFTDS: U01 AG045390,
+    funded by the National Institute on Aging and the National Institute of Neurological Diseases and Stroke). The
+    authors acknowledge the invaluable contributions of the study participants and families as well as the assistance
+    of the support staffs at each of the participating sites."
+sources:
+  allftd-data:
+    title: ALLFTD Resource Sharing page
+    url: https://www.allftd.org/data
+    kind: website
+  allftd-policies:
+    title: ALLFTD Data Sharing & Publication Policies
+    url: https://www.allftd.org/policies
+    kind: website
+  heuer2024:
+    title: Heuer HW et al. 2024, ALLFTD - Characterization of FTLD disease trajectories through longitudinal
+      assessment, Alzheimer's & Dementia 20(S3) e093231
+    url: https://doi.org/10.1002/alz.093231
+    kind: paper
+  rosen2020:
+    title: Rosen HJ, Boeve BF, Boxer AL 2020, Tracking disease progression in familial and sporadic frontotemporal lobar
+      degeneration - Recent findings from ARTFL and LEFFTDS, Alzheimer's & Dementia 16(1) 71-78
+    url: https://doi.org/10.1002/alz.12004
+    kind: paper
+  mayo-allftd-neuroimaging-core:
+    title: Mayo Clinic research project page, ALLFTD Neuroimaging Core (2019 to 2025)
+    url: https://mayoclinic.elsevierpure.com/en/projects/neuroimaging-core-11/
+    kind: website
+  corriveaulecavalier2024:
+    title: Corriveau-Lecavalier N et al. 2024, Neurite-based white matter alterations in MAPT mutation carriers - A
+      multi-shell diffusion MRI study in the ALLFTD consortium, Neurobiology of Aging 134 135-145
+    url: https://doi.org/10.1016/j.neurobiolaging.2023.12.001
+    kind: paper
+  ctgov-nct04363684:
+    title: ClinicalTrials.gov NCT04363684, ARTFL LEFFTDS Longitudinal Frontotemporal Lobar Degeneration (ALLFTD)
+    url: https://clinicaltrials.gov/study/NCT04363684
+    kind: website
+  ctgov-nct02365922:
+    title: ClinicalTrials.gov NCT02365922, Advancing Research and Treatment for Frontotemporal Lobar Degeneration (ARTFL)
+    url: https://clinicaltrials.gov/study/NCT02365922
+    kind: website
+  ctgov-nct02372773:
+    title: ClinicalTrials.gov NCT02372773, Longitudinal Evaluation of Familial Frontotemporal Dementia Subjects
+      (LEFFTDS)
+    url: https://clinicaltrials.gov/study/NCT02372773
+    kind: website
+related: [4rtni]
+keywords:
+  [
+    frontotemporal lobar degeneration,
+    familial FTD,
+    MAPT,
+    GRN,
+    C9orf72,
+    primary progressive aphasia,
+    behavioral variant FTD,
+    longitudinal,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
