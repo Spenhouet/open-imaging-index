@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,204,openneuro-ds006636-v140,Snapshot summary,204 sub-* folders; 204 rows in participants.tsv
+subjects,contrast=T1w,204,ds006636-file-tree,sub-*/ses-T1/anat/*_T1w.nii.gz,
+subjects,contrast=bold,203,ds006636-file-tree,sub-*/ses-T1/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,203,ds006636-file-tree,anat and func folders,"182 with both tasks, 11 with the auditory task only, 10 with the visual task only; EPI field maps not counted as a contrast"
+subjects,contrast_set=T1w,1,ds006636-file-tree,anat and func folders,
+studies,,204,ds006636-file-tree,sub-*/ses-T1 folders,one session (ses-T1) per subject
+scans,,974,ds006636-file-tree,sub-*/ses-T1/*/*.nii.gz,"all raw image files: 204 T1w, 385 bold and 385 reverse phase-encoded EPI field maps"
+scans,contrast=T1w,204,ds006636-file-tree,*_T1w.nii.gz,"201 defaced (rec-defaced), 3 without the rec entity"
+scans,contrast=bold,385,ds006636-file-tree,*_bold.nii.gz,"193 auditory morphology (task-AM) and 192 visual morphology (task-VM) runs"
+scans,contrast=T1w;vendor=siemens,204,ds006636-file-tree,T1w sidecars: Manufacturer,"152 Prisma, 52 Prisma_fit"
+scans,contrast=T1w;field_strength=3,204,ds006636-file-tree,T1w sidecars: MagneticFieldStrength,
+scans,contrast=T1w;country=US,204,ds006636-file-tree,T1w sidecars: InstitutionName,MIT and McGovern Institute for Brain Research
