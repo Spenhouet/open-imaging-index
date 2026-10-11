@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: duke-gbm-dir-landmarks
+name: Duke GBM DIR Landmarks
+full_name: A Longitudinal Glioblastoma MRI Dataset with Anatomical Landmark Pairs for DIR Validation
+summary: >-
+  Longitudinal multi-contrast brain MRI of 61 glioblastoma patients from Duke (503 sessions), with vessel
+  bifurcation landmark pairs between pre-operative and recurrence scans for validating deformable image registration,
+  plus automatic tumor masks.
+homepage: https://zenodo.org/records/20548528
+doi: 10.5281/zenodo.20548528
+year: 2026
+version: v1
+status: active
+creators:
+  - name: Duke University (Criscuolo E., Calabrese E., Zhang Z., Wang Y., Xiong Y., Yang D.)
+    url: https://github.com/deshanyang/GBM-DIR-QA
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi, ADC]
+anatomy: [brain]
+conditions: [glioblastoma]
+tasks: [registration, segmentation]
+formats: [NIfTI]
+countries: [US]
+access:
+  type: application
+  url: https://zenodo.org/records/20548528
+  note: >-
+    Files are restricted on Zenodo. Request access through the record's form, giving your academic affiliation (if
+    any) and a short description of why you want the data.
+licenses:
+  - license: CC-BY-NC-ND-4.0
+    applies_to: All files of the Zenodo record (images, landmarks, tumor masks and clinical tables).
+    note: >-
+      Requesters choose between CC BY-NC-ND 4.0 and a custom license negotiated with the Duke Office for Translation
+      & Commercialization (OTC File IDF-012766), which can allow commercial use. Outside contributions require
+      assigning copyright of modifications and derivatives to Duke University.
+citation:
+  text: >-
+    Criscuolo E, Calabrese E, Zhang Z, Wang Y, Xiong Y, Yang D. A Longitudinal Glioblastoma MRI Dataset with
+    Anatomical Landmark Pairs for DIR Validation (v1). Zenodo (2026). doi:10.5281/zenodo.20548528
+sources:
+  zenodo-gbm-dir-v1:
+    title: Zenodo record A Longitudinal Glioblastoma MRI Dataset with Anatomical Landmark Pairs for DIR Validation v1
+    url: https://zenodo.org/records/20548528
+    kind: website
+  github-gbm-dir-qa:
+    title: GBM-DIR-QA GitHub repository README (dataset guidance)
+    url: https://github.com/deshanyang/GBM-DIR-QA
+    kind: website
+related: []
+keywords:
+  [deformable image registration, landmark pairs, vessel bifurcation, longitudinal glioblastoma, tumor recurrence]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
