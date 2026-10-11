@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,64,openneuro-ds001796-v170,Snapshot summary,64 subject folders; participants.tsv also has 64 rows
+subjects,contrast=T1w,64,ds001796-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=dwi,64,ds001796-file-tree,,one sub-*_rec-NORM_dwi.nii.gz per subject folder
+subjects,contrast=bold,64,ds001796-file-tree,,one resting-state and one flanker task run per subject folder
+subjects,contrast_set=bold+dwi+T1w,64,ds001796-file-tree,,
+subjects,vendor=siemens,64,ds001796-file-tree,sub-*_T1w.json Manufacturer,all T1w sidecars state Siemens Prisma_fit
+subjects,field_strength=3,64,ds001796-file-tree,sub-*_T1w.json MagneticFieldStrength,
+subjects,country=GB,64,ds001796-file-tree,sub-*_T1w.json InstitutionAddress,all sidecars name the University of Reading in Reading GB
+scans,,320,ds001796-file-tree,,"sum of the disjoint T1w, dwi and bold NIfTI counts below; field maps and the reverse phase-encoded diffusion scans in bidsignore are not counted"
+scans,contrast=T1w,128,ds001796-file-tree,,"two files per subject: sub-*_T1w and sub-*_rec-NORM_T1w, a second reconstruction of the MPRAGE"
+scans,contrast=dwi,64,ds001796-file-tree,,
+scans,contrast=bold,128,ds001796-file-tree,,64 resting-state and 64 flanker task runs
+subjects,sex=female,49,ds001796-participants,,sex Female
+subjects,sex=male,15,ds001796-participants,,sex Male
+subjects,age=10-19,1,ds001796-participants,,
+subjects,age=20-29,30,ds001796-participants,,
+subjects,age=30-39,24,ds001796-participants,,
+subjects,age=40-49,7,ds001796-participants,,
+subjects,age=50-59,2,ds001796-participants,,
+age_mean,,31.91,ds001796-participants,,ages in whole years
+age_sd,,7.60,ds001796-participants,,
+age_min,,18,ds001796-participants,,
+age_median,,30,ds001796-participants,,
+age_max,,52,ds001796-participants,,
