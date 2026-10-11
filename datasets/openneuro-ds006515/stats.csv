@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,60,ke2025,Methods: Subjects,the OpenNeuro README and the snapshot summary also list 60
+studies,,116,ds006515-file-tree,ses-01 and ses-02 folders,60 first and 56 second sessions; the README states that four participants did not return
+scans,,689,ds006515-file-tree,*.nii.gz,
+scans,contrast=bold,573,ds006515-file-tree,func/*_bold.nii.gz,"annotated rest, story, movie and continuous performance task runs"
+scans,contrast=T1w,116,ds006515-file-tree,anat/*_T1w.nii.gz,one per session
+subjects,condition=healthy,60,ke2025,Methods: Subjects,healthy right-handed adults from the University of Chicago and surrounding community
+subjects,sex=female,34,ke2025,Methods: Subjects,reported as women
+subjects,sex=male,26,ke2025,Methods: Subjects,reported as men
+age_mean,,22.86,ke2025,Methods: Subjects,
+age_sd,,3.27,ke2025,Methods: Subjects,
+subjects,field_strength=3,60,ke2025,Methods: MRI acquisition and preprocessing,3T Philips Ingenia
+subjects,vendor=philips,60,ke2025,Methods: MRI acquisition and preprocessing,3T Philips Ingenia
+subjects,country=US,60,ke2025,Methods: Subjects,University of Chicago
+subjects,contrast=T1w,60,ds006515-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,60,ds006515-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,60,ds006515-file-tree,,any session
