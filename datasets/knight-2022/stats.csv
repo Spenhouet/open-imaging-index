@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,403,barros2025,Methods and Results,300 development and 103 test patients
+subjects,split=train,300,knight-github,,"""each of the 300 patients""; released with clinical data and risk labels"
+subjects,split=test,103,barros2025,Methods,used for evaluation; not released in the KNIGHT repository
+subjects,split=train;contrast=ct_arterial,300,barros2025,Methods,late arterial phase preoperative CT
+subjects,split=train;sex=female,120,knight-clinical-json,gender,one further case is recorded as transgender (not listed)
+subjects,split=train;sex=male,179,knight-clinical-json,gender,
+subjects,split=train;age=0-29,11,knight-clinical-json,age_at_nephrectomy,age at nephrectomy; youngest bins merged
+subjects,split=train;age=30-39,15,knight-clinical-json,age_at_nephrectomy,
+subjects,split=train;age=40-49,38,knight-clinical-json,age_at_nephrectomy,
+subjects,split=train;age=50-59,78,knight-clinical-json,age_at_nephrectomy,
+subjects,split=train;age=60-69,97,knight-clinical-json,age_at_nephrectomy,
+subjects,split=train;age=70-79,48,knight-clinical-json,age_at_nephrectomy,
+subjects,split=train;age=80+,13,knight-clinical-json,age_at_nephrectomy,oldest recorded age is 90
+subjects,split=train;sex=female;age=40-49,13,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=male;age=40-49,25,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=female;age=50-59,30,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=male;age=50-59,48,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=female;age=60-69,40,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=male;age=60-69,57,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=female;age=70-79,18,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;sex=male;age=70-79,29,knight-clinical-json,"gender, age_at_nephrectomy",
+subjects,split=train;condition=kidney_cancer,275,knight-clinical-json,malignant,malignant = true; the other 25 are in the benign risk group
+age_mean,split=train,58,barros2025,Results,development set
+age_sd,split=train,15,barros2025,Results,development set
+age_mean,split=test,63,barros2025,Results,
+age_sd,split=test,12,barros2025,Results,

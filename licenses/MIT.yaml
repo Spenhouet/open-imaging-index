@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: MIT
+name: MIT License
+short_name: MIT
+url: https://opensource.org/license/mit
+version: MIT License (SPDX MIT)
+summary: >-
+  Use, copy, modify and redistribute the material for any purpose, including commercially, as long as the copyright
+  notice and the permission notice are kept in all copies.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: >-
+      to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
+      merge, publish, distribute, sublicense, and/or sell copies of the Software
+  product_validation:
+    value: 'yes'
+    note: Use is granted without restriction, which covers testing or validating a product.
+    quote: to deal in the Software without restriction
+  model_training:
+    value: 'yes'
+    note: The license grants use without restriction; it does not mention machine learning.
+    quote: to deal in the Software without restriction
+  derivatives:
+    value: 'yes'
+    quote: including without limitation the rights to use, copy, modify, merge
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: 'yes'
+    quote: publish, distribute, sublicense, and/or sell copies of the Software
+  redistribute_derivatives:
+    value: 'yes'
+    quote: including without limitation the rights to use, copy, modify, merge, publish, distribute
+  share_model_weights:
+    value: 'yes'
+    note: The license grants use without restriction; it does not mention model weights.
+    quote: to deal in the Software without restriction
+  attribution:
+    value: 'yes'
+    quote: >-
+      The above copyright notice and this permission notice shall be included in all copies or substantial portions
+      of the Software.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: >-
+      The license itself sets no such condition. Your institution or local law may still require it for data about
+      people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: >-
+      The license itself sets no such condition. Your institution or local law may still require it for data about
+      people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
