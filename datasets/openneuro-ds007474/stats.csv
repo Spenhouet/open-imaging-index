@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,189,openneuro-ds007474-v1-0-5,README,ding2026 (Exclusion Criteria) also reports 189 scanned participants before motion exclusion
+scans,,756,ds007474-file-tree,anat/ and func/ NIfTI files,"T1w, T2w and bold volumes; field maps and single-band references not counted"
+studies,,189,ds007474-file-tree,sub-* folders,one MRI session per subject
+subjects,condition=healthy,189,openneuro-ds007474-v1-0-5,README,screened healthy controls
+subjects,country=US,189,ding2026,STAR Methods: Recruitment and inclusion,recruited from greater Los Angeles
+subjects,vendor=siemens,189,ding2026,STAR Methods: Functional MRI acquisition,Siemens Prisma 3T at the Caltech Brain Imaging Center; all bold sidecars list Prisma_fit
+subjects,field_strength=3,189,ding2026,STAR Methods: Functional MRI acquisition,
+subjects,contrast=T1w,189,ds007474-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,189,ds007474-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,189,ds007474-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,189,ds007474-file-tree,,
+scans,contrast=bold,378,ds007474-file-tree,func/*_bold.nii.gz,two task runs per subject

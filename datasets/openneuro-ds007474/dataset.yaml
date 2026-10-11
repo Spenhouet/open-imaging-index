@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007474
+name: Two-Step Task Reinforcement Learning fMRI (ds007474)
+full_name: 2-step task reinforcement learning fMRI dataset
+summary: >-
+  Task fMRI and structural brain MRI of healthy adults performing a two-step decision task, collected to study how
+  model-based and model-free reinforcement learning signals in the brain differ between individuals. 189 people from
+  greater Los Angeles, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds007474
+doi: 10.18112/openneuro.ds007474.v1.0.5
+# First public snapshot (1.0.0) on OpenNeuro, 2026-04-21; latest snapshot 1.0.5, 2026-07-31.
+year: 2026
+updated: 2026
+version: 1.0.5
+status: active
+creators:
+  - name: Ding W, Cockburn J, O'Doherty JP, et al. (California Institute of Technology, University of California, Los Angeles)
+    url: https://openneuro.org/datasets/ds007474
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 265.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007474
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.5 states "License" CC0. Event timing and behavioral data are on OSF
+      (doi:10.17605/OSF.IO/CTFZD), outside this license statement.
+citation:
+  text: >-
+    Ding W, Cockburn J, Simon JP, Johri A, Cho SJ, Oh S, Feusner JD, Tadayonnejad R, O'Doherty JP. Model-based and
+    model-free valuation signals in the human brain vary markedly in relation to individual differences in behavioral
+    control. Cell Reports 45(6), 117454 (2026). doi:10.1016/j.celrep.2026.117454
+sources:
+  ding2026:
+    title: >-
+      Ding et al. 2026, Model-based and model-free valuation signals in the human brain vary markedly in relation to
+      individual differences in behavioral control, Cell Reports (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13427246/
+    kind: paper
+  openneuro-ds007474-v1-0-5:
+    title: OpenNeuro ds007474 snapshot 1.0.5 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds007474/versions/1.0.5
+    kind: website
+  ds007474-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds007474 BIDS repository (CC0), subjects counted per T1w, T2w and bold
+      NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds007474
+    kind: computed
+related: []
+keywords: [reinforcement learning, two-step task, model-based control, model-free control, decision making, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
