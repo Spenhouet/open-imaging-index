@@ -70,17 +70,18 @@
 
     <div class="flex min-w-0 flex-1 flex-col p-5">
       <h3 class="text-lg leading-snug font-semibold tracking-tight">
-        <a href={link(`datasets/${d.id}/`)} class="after:absolute after:inset-0 focus-visible:outline-none">
+        <a
+          href={link(`datasets/${d.id}/`)}
+          title={d.meta.full_name}
+          class="after:absolute after:inset-0 focus-visible:outline-none"
+        >
           {d.meta.name}
         </a>
         {#if d.meta.status !== 'active'}
           <span class="ml-1 align-middle text-xs font-medium text-muted-foreground">({d.meta.status})</span>
         {/if}
       </h3>
-      {#if d.meta.full_name}
-        <p class="truncate text-sm text-muted-foreground">{d.meta.full_name}</p>
-      {/if}
-      <p class="mt-1.5 line-clamp-3 text-sm text-foreground/80">{d.meta.summary}</p>
+      <p class="mt-1.5 line-clamp-4 text-sm text-foreground/80">{d.meta.summary}</p>
       {#if contrasts.length}
         <div class="mt-3 flex flex-wrap gap-1">
           {#each contrasts.slice(0, 6) as c (c)}
