@@ -440,3 +440,12 @@ terms:
       parent: cervical_cancer,
       mappings: { mondo: 'MONDO:0000554' }
     }
+  - { id: neurofibromatosis_type_1, label: Neurofibromatosis type 1, synonyms: [NF1], mappings: { mondo: 'MONDO:0018975' } }
+  - {
+      id: mpnst,
+      label: Malignant peripheral nerve sheath tumor,
+      parent: soft_tissue_sarcoma,
+      synonyms: [MPNST],
+      mappings: { mondo: 'MONDO:0017827' }
+    }
+  - { id: plexiform_neurofibroma, label: Plexiform neurofibroma, synonyms: [PNF], mappings: { mondo: 'MONDO:0003304' } }
