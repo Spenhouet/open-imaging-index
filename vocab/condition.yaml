@@ -55,6 +55,12 @@ terms:
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
   - { id: aphasia, label: Aphasia, description: 'Impaired production or comprehension of language, a finding often caused by stroke.', mappings: { hp: 'HP:0002381' } }
   - {
+      id: bells_palsy,
+      label: Bell's palsy,
+      synonyms: [idiopathic peripheral facial paralysis, idiopathic facial palsy],
+      mappings: { mondo: 'MONDO:0005665' }
+    }
+  - {
       id: olfactory_dysfunction,
       label: Olfactory dysfunction,
       description: 'Reduced, absent or distorted sense of smell (hyposmia, anosmia, parosmia).',

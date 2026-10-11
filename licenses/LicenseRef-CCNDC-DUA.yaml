@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CCNDC-DUA
+name: Chinese Color Nest Data Community Data Access Request and Data Use Agreement
+short_name: CCNDC DUA
+url: https://doi.org/10.57760/sciencedb.o00133.00020
+version: Version 2.0, May 2025 (Data Use Agreement (Version2.0)_EN.pdf on Science Data Bank)
+summary: >-
+  Access to Chinese Color Nest Data Community records is granted after a signed agreement, co-signed by an
+  institutional official, with a scope of work and the investigator's CV. Data may be used only for the approved scope
+  of work, may not be passed on, must not be used to identify participants and must be destroyed when the work ends.
+  Access lasts three years.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: >-
+      The Recipient Principal Investigator may be a researcher at a non-profit or for-profit organization or
+      corporation.
+    note: >-
+      Recipients at companies are allowed and use is limited to the approved research scope of work, but the agreement
+      does not say whether commercial use falls within it. It mentions "any resulting commercial product(s)" only in
+      the non-endorsement clause.
+  product_validation:
+    value: unspecified
+    note: The agreement does not mention testing or validating a product.
+  model_training:
+    value: unspecified
+    quote: >-
+      Any data obtained under this DUA will be used by Recipient solely in connection with the “Scope of Work”
+      submitted with the Access Request and for no other purpose.
+    note: Machine learning is not mentioned; it is allowed only if it is part of the approved scope of work.
+  derivatives:
+    value: unspecified
+    note: The agreement does not mention derived data.
+  publication:
+    value: conditional
+    quote: >-
+      Prompt publication or other public disclosure of the results of the Scope of Work is encouraged. Recipient agrees
+      to notify via email at deepneuro@bnu.edu.cn as to when and where a publication (or other public disclosure) of a
+      report from the Scope of Work will appear.
+    note: >-
+      Publication is encouraged, with notice to the consortium and the participant IDs used listed in the supplementary
+      information.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      Recipient agrees to retain control over data, and further agrees not to transfer data, with or without charge, to
+      any other entity or any individual.
+  redistribute_derivatives:
+    value: unspecified
+    quote: >-
+      Recipient agrees to retain control over data, and further agrees not to transfer data, with or without charge, to
+      any other entity or any individual.
+    note: The agreement does not say whether derived data count as "data".
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention trained models.
+  attribution:
+    value: 'no'
+    note: >-
+      The agreement asks for notice of publications and a list of the participant IDs used, but not for a citation.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Read the Data Use Agreement (DUA) and sign the RECIPIENT INFORMATION AND CERTIFICATIONS page, and obtain your
+      Institutional Official’s signature and date.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      Recipient agrees to comply with all Recipient Institution’s applicable rules for the protection of human
+      subjects.
+    note: No separate approval is named; the recipient institution's own human-subjects rules apply.
+  publication_review:
+    value: 'no'
+    note: Publications must be announced to the consortium, not submitted for review.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Recipient agrees that upon termination of this DUA, or completion of the use of the data under this DUA, all
+      copies of the data will be destroyed or otherwise disposed of properly as permitted by law, except that Recipient
+      may retain one copy of the data solely for archival and compliance purposes.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Recipient agrees that data will not be used, either alone or in conjunction with any other information, in any
+      effort whatsoever to establish the individual identities of any of the subjects from whom data were obtained.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement is governed by the laws of the People's Republic of China but does not limit where the data are used.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,53,gao2025,Participant recruitment,FP dataset of the three-repository MND-MFHC release (Data Records)
+subjects,condition=bells_palsy,53,gao2025,Participant recruitment,unilateral idiopathic peripheral facial paralysis
+subjects,sex=female,35,gao2025,Participant recruitment,
+subjects,modality=MR,53,scidb-10796,Description,
+age_min,,7,gao2025,Participant recruitment,
+age_max,,85,gao2025,Participant recruitment,
+age_mean,,43.60,gao2025,Participant recruitment,
+age_sd,,16.20,gao2025,Participant recruitment,

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mnd-mfhc-facial-paralysis
+name: MND-MFHC Facial Paralysis
+full_name: Multimodal Neuroimaging Dataset of Facial Paralysis
+summary: >-
+  Structural, resting-state functional, diffusion and arterial spin labeling brain MRI of patients with unilateral
+  idiopathic peripheral facial paralysis (Bell's palsy), collected to study the brain changes behind facial
+  nerve disorders, with MRIQC quality reports.
+homepage: https://www.scidb.cn/en/detail?dataSetId=8a5daf8ddc334919b220c9bba51c9c63
+doi: 10.57760/sciencedb.10796
+year: 2023
+version: V2
+status: active
+creators:
+  - name: Department of Radiology, China-Japan Friendship Hospital, Beijing
+  - name: Ji-Xin Luan, Peng Gao, Ao-Cai Yang, Xi-Nian Zuo, Guo-Lin Ma
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [bells_palsy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [ge]
+field_strengths: [3]
+# Science Data Bank record metadata (V2): 20130932822 bytes in 834 files.
+size_gb: 20.1
+access:
+  type: signed_agreement
+  url: https://doi.org/10.57760/sciencedb.o00133.00020
+  note: >-
+    The Science Data Bank record is restricted. Applicants sign the Chinese Color Nest Data Community data use
+    agreement with their institutional official, submit it with a scope of work and a CV for community review, and
+    then request the files on Science Data Bank, where the depositor approves access. The record page names the China-Japan
+    Friendship Hospital consortium as reviewer.
+licenses:
+  - license: LicenseRef-CCNDC-DUA
+    applies_to: All imaging data and quality reports on the Science Data Bank record
+citation:
+  text: >-
+    Gao P, Luan JX, Yang AC, et al. A multi-modal neuroimaging data release for Meige Syndrome and Facial Paralysis
+    Research. Scientific Data 12:62 (2025). doi:10.1038/s41597-025-04383-4. Data: Luan JX, Gao P, Yang AC, Zuo XN,
+    Ma GL. Multimodal Neuroimaging Dataset of Facial Paralysis. V2. Science Data Bank, 2023.
+    doi:10.57760/sciencedb.10796
+sources:
+  gao2025:
+    title: Gao et al. 2025, A multi-modal neuroimaging data release for Meige Syndrome and Facial Paralysis Research, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-04383-4
+    kind: paper
+  scidb-10796:
+    title: Science Data Bank record 10.57760/sciencedb.10796 (V2), its description and DataCite metadata
+    url: https://doi.org/10.57760/sciencedb.10796
+    kind: website
+related: []
+keywords: [facial paralysis, Bell's palsy, facial nerve, resting-state fMRI, diffusion MRI, arterial spin labeling, Chinese Color Nest Project, MND-MFHC]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
