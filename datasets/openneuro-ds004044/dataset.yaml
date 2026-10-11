@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004044
+name: Whole-body somatotopic mapping fMRI (ds004044)
+full_name: An fMRI dataset for whole-body somatotopic mapping in humans
+summary: >-
+  Task fMRI and structural brain MRI of healthy right-handed young adults moving twelve body parts from toes to eyes,
+  collected to map whole-body somatotopic organization across cortex, subcortex and cerebellum. 62 participants
+  scanned at 3T in Beijing, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004044
+doi: 10.18112/openneuro.ds004044.v2.0.3
+# First public snapshot (1.0.0) on OpenNeuro, 2022-03-03; latest snapshot 2.0.3, 2022-08-09.
+year: 2022
+updated: 2022
+version: 2.0.3
+status: active
+creators:
+  - name: Ma S, Huang T, Qu Y, Chen X, Zhang Y, Zhen Z (Beijing Normal University)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 79.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004044
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.3 states "License" CC0.
+citation:
+  text: >-
+    Ma S, Huang T, Qu Y, Chen X, Zhang Y, Zhen Z. An fMRI dataset for whole-body somatotopic mapping in humans.
+    Scientific Data 9, 515 (2022). doi:10.1038/s41597-022-01644-4
+sources:
+  ma2022:
+    title: Ma et al. 2022, An fMRI dataset for whole-body somatotopic mapping in humans, Scientific Data
+    url: https://www.nature.com/articles/s41597-022-01644-4
+    kind: paper
+  openneuro-ds004044-v2-0-3:
+    title: OpenNeuro ds004044 snapshot 2.0.3 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004044/versions/2.0.3
+    kind: website
+  ds004044-participants:
+    title: participants.tsv of ds004044 (CC0), counted per row from the sex and age columns
+    url: https://github.com/OpenNeuroDatasets/ds004044/blob/main/participants.tsv
+    kind: computed
+  ds004044-file-tree:
+    title: File listing of the ds004044 BIDS repository (CC0), counted per T1w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004044
+    kind: computed
+related: []
+keywords: [somatotopy, motor mapping, body movement, task fMRI, sensorimotor cortex, cerebellum, ICA denoising]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
