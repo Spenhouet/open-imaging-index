@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: whole-spine
+name: Whole-Spine (ds005616)
+full_name: Whole-Spine Anatomical MRI dataset & B0 simulations
+summary: >-
+  Head-to-torso T1-weighted MRI of healthy young adults with whole-body tissue segmentations and simulated B0 field
+  maps, built as an open reference for designing shim coils for brain and spinal cord imaging; includes spinal cord,
+  vertebra and disc labels.
+homepage: https://openneuro.org/datasets/ds005616
+doi: 10.18112/openneuro.ds005616.v1.1.4
+year: 2024
+updated: 2026
+version: 1.1.4
+status: active
+creators:
+  - name: >-
+      NeuroPoly Lab, Polytechnique Montreal, and CRMBM-CEMEREM, Aix-Marseille Universite (Molinier N, Bedard S,
+      Boudreau M, Cohen-Adad J, Callot V, Alonso-Ortiz E, Pageot C, Laines-Medina N, Valosek J)
+    url: https://openneuro.org/datasets/ds005616
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [head, brain, neck, spine, spinal_cord, intervertebral_disc, trunk, lung]
+conditions: [healthy]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [FR, CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005616
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.4 states "License" CC0.
+citation:
+  text: >-
+    Molinier N, Bedard S, Boudreau M, Cohen-Adad J, Callot V, Alonso-Ortiz E, Pageot C, Laines-Medina N, Valosek J.
+    whole-spine. OpenNeuro, version 1.1.4 (2026). doi:10.18112/openneuro.ds005616.v1.1.4
+sources:
+  openneuro-ds005616-readme:
+    title: README of OpenNeuro ds005616 snapshot 1.1.4
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds005616/main/README
+    kind: website
+  boudreau2025:
+    title: Boudreau et al. 2025, Anatomy-Based Simulations of B0 Field Maps, ISMRM 2025 abstract 3477
+    url: https://doi.org/10.58530/2025/3477
+    kind: paper
+  ds005616-participants:
+    title: participants.tsv of OpenNeuro ds005616 snapshot 1.1.4 (CC0)
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds005616/main/participants.tsv
+    kind: computed
+  ds005616-file-tree:
+    title: File listing of OpenNeuro ds005616 snapshot 1.1.4 (CC0), counted per NIfTI file
+    url: https://openneuro.org/datasets/ds005616/versions/1.1.4
+    kind: computed
+related: [spine-generic-multi-subject]
+keywords: [B0 field map, shimming, susceptibility, whole-body segmentation, spinal cord, vertebrae, simulation]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
