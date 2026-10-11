@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,37,openneuro-ds007345-v1-0-2,file listing,37 preoperative subject folders sub-olfNN; participants.tsv lists the same 37
+studies,,60,openneuro-ds007345-v1-0-2,file listing,37 preoperative and 23 postoperative sessions (sub-olfNNfu folders)
+scans,,462,openneuro-ds007345-v1-0-2,file listing,"raw NIfTI images under sub-*: 118 T1w, 60 T2w, 228 dwi (four runs per session incl. reverse phase-encoding b0), 56 BOLD"
+subjects,contrast=T1w,36,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,non-contrast T1w in any session; sub-olf19 has only a contrast-enhanced T1w
+subjects,contrast=T1w_ce,36,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,"SeriesDescription sT1W_3D_CE; sub-olf21 has a Siemens t1_vibe series instead, not counted"
+subjects,contrast=T2w,37,openneuro-ds007345-v1-0-2,file listing,
+subjects,contrast=dwi,36,openneuro-ds007345-v1-0-2,file listing,
+subjects,contrast=bold,35,openneuro-ds007345-v1-0-2,file listing,eyes-closed resting state
+subjects,contrast_set=bold+dwi+T1w+T1w_ce+T2w,33,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,union over pre- and postoperative sessions
+subjects,contrast_set=bold+dwi+T1w_ce+T2w,1,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,
+subjects,contrast_set=dwi+T1w+T1w_ce+T2w,1,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,
+subjects,contrast_set=bold+dwi+T1w+T2w,1,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,
+subjects,contrast_set=T1w+T1w_ce+T2w,1,openneuro-ds007345-v1-0-2,file listing and T1w sidecars,
+subjects,condition=meningioma,37,openneuro-ds007345-v1-0-2,README.txt,olfactory groove meningioma
+subjects,country=RU,37,openneuro-ds007345-v1-0-2,dataset_description.json and sidecars,"Federal Center of Neurosurgery, Novosibirsk"
+subjects,vendor=philips,37,openneuro-ds007345-v1-0-2,image sidecars,Philips Ingenia
+subjects,vendor=siemens,1,openneuro-ds007345-v1-0-2,image sidecars,one T1w series of sub-olf21 from a Siemens Avanto
+subjects,field_strength=3,37,openneuro-ds007345-v1-0-2,image sidecars,
+subjects,field_strength=1.5,1,openneuro-ds007345-v1-0-2,image sidecars,
+subjects,sex=female,29,ds007345-participants,sex column,coded 0 = female in participants.json
+subjects,sex=male,8,ds007345-participants,sex column,
+subjects,age=30-39,1,ds007345-participants,age column,
+subjects,age=40-49,5,ds007345-participants,age column,
+subjects,age=50-59,11,ds007345-participants,age column,
+subjects,age=60-69,16,ds007345-participants,age column,
+subjects,age=70-79,4,ds007345-participants,age column,
+subjects,sex=female;age=60-69,13,ds007345-participants,sex and age columns,
+age_mean,,58.81,ds007345-participants,age column,
+age_sd,,9.09,ds007345-participants,age column,sample standard deviation
+age_median,,61,ds007345-participants,age column,
+age_min,,37,ds007345-participants,age column,
+age_max,,73,ds007345-participants,age column,

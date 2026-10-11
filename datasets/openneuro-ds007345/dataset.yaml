@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007345
+name: Olfactory groove meningioma multimodal MRI (ds007345)
+full_name: 'Multimodal Brain MRI and Clinical Data in Olfactory Groove Meningioma: A Prospective Data Report'
+summary: >-
+  Structural, diffusion and resting-state functional brain MRI of patients with olfactory groove meningioma, collected
+  before and after surgery to study tumor and edema effects on the brain and postoperative recovery. 37 patients, 23
+  with follow-up, with tumor and edema masks, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds007345
+doi: 10.18112/openneuro.ds007345.v1.0.2
+# First snapshot (1.0.0) on OpenNeuro, 2026-02-06; latest snapshot 1.0.2, 2026-05-04.
+year: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: >-
+      Filimonova E, Pashkov A, Moysak G, Martirosyan A, Kurilov V, Poptsova A, Morozova R, Rzaev J (Federal Center of
+      Neurosurgery, Novosibirsk)
+    url: https://openneuro.org/datasets/ds007345
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [meningioma]
+tasks: [segmentation, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [philips, siemens]
+field_strengths: [1.5, 3]
+size_gb: 11.97
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007345
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Filimonova E, Pashkov A, Moysak G, Martirosyan A, Kurilov V, Poptsova A, Morozova R, Rzaev J. Multimodal Brain MRI
+    and Clinical Data in Olfactory Groove Meningioma: A Prospective Data Report. OpenNeuro ds007345, version 1.0.2
+    (2026). doi:10.18112/openneuro.ds007345.v1.0.2
+sources:
+  openneuro-ds007345-v1-0-2:
+    title: >-
+      OpenNeuro ds007345 snapshot 1.0.2 (dataset_description.json, README.txt, CHANGES, image sidecar JSON files, file
+      listing and snapshot size)
+    url: https://openneuro.org/datasets/ds007345/versions/1.0.2
+    kind: website
+  ds007345-participants:
+    title: participants.tsv of ds007345 snapshot 1.0.2 (CC0); columns age, sex, morphology and grade
+    url: https://github.com/OpenNeuroDatasets/ds007345/blob/1.0.2/participants.tsv
+    kind: computed
+related: []
+keywords: [olfactory groove meningioma, peritumoral edema, diffusion MRI, tractography, neurosurgery, MoCA]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
