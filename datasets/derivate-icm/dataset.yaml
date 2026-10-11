@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: derivate-icm
+name: DERIVATE-ICM registry
+full_name: >-
+  CarDiac MagnEtic Resonance for Primary Prevention Implantable CardioVerter DebrillAtor ThErapy (DERIVATE) registry,
+  ischemic cardiomyopathy cohort
+summary: >-
+  Cardiac MRI of patients with ischemic cardiomyopathy and chronic heart failure, collected to test whether MRI
+  improves the choice of who should receive a preventive implantable cardioverter-defibrillator compared with
+  echocardiography. Multicenter, with arrhythmic outcomes over follow-up. Access restricted.
+homepage: https://zenodo.org/records/7978794
+doi: 10.5281/zenodo.7978794
+# Year the restricted Zenodo record and the paper were published.
+year: 2023
+creators:
+  - name: DERIVATE investigators, Centro Cardiologico Monzino IRCCS
+    url: https://clinicaltrials.gov/study/NCT03352648
+species: human
+modalities: [MR]
+contrasts: [cine, lge]
+anatomy: [heart]
+conditions: [cardiomyopathy, heart_failure]
+tasks: [survival]
+access:
+  type: on_request
+  url: https://zenodo.org/records/7978794
+  note: >-
+    The Zenodo record is restricted and lists no files. It describes its content as raw data related to the article
+    and states no access conditions or license; access is at the discretion of the record owners. Whether CMR images
+    are part of it is not stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record, the paper abstract and the trial registration publish no license or data use terms.
+citation:
+  text: >-
+    Pontone G, Guaricci AI, Fusini L, et al. Cardiac Magnetic Resonance for Prophylactic Implantable-Cardioverter
+    Defibrillator Therapy in Ischemic Cardiomyopathy: The DERIVATE-ICM International Registry. JACC Cardiovasc
+    Imaging 16(11), 1387-1400 (2023). doi:10.1016/j.jcmg.2023.03.015
+sources:
+  pontone2023:
+    title: Pontone et al. 2023, JACC Cardiovascular Imaging 16(11) (abstract)
+    url: https://doi.org/10.1016/j.jcmg.2023.03.015
+    kind: paper
+  zenodo-7978794:
+    title: Zenodo record 7978794, dataset related to the DERIVATE-ICM article
+    url: https://zenodo.org/records/7978794
+    kind: website
+  nct03352648:
+    title: ClinicalTrials.gov registration NCT03352648 (DERIVATE)
+    url: https://clinicaltrials.gov/study/NCT03352648
+    kind: website
+related: []
+keywords:
+  [
+    ischemic cardiomyopathy,
+    implantable cardioverter-defibrillator,
+    sudden cardiac death,
+    ventricular arrhythmia,
+    late gadolinium enhancement,
+    risk stratification
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

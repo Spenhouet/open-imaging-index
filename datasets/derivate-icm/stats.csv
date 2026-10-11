@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,861,pontone2023,Abstract (Methods),patients with ischemic cardiomyopathy and echocardiographic LVEF below 50%
+subjects,condition=cardiomyopathy,861,pontone2023,Abstract (Methods),ischemic cardiomyopathy
+subjects,condition=heart_failure,861,pontone2023,Abstract (Methods),chronic heart failure
+age_mean,,65,pontone2023,Abstract (Methods),
+age_sd,,11,pontone2023,Abstract (Methods),
