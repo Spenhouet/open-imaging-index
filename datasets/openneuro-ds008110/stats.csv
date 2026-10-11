@@ -1,0 +1,31 @@
+measure,by,value,source,where,note
+subjects,,54,ds008110-file-tree,sub-* folders,"sub-001 to sub-054, matching participants.tsv and the CHANGES entry; the README Participants section says n = 41"
+subjects,condition=ocd,54,ds008110-participants,group,every row has group OCD; no control group
+subjects,sex=female,28,ds008110-participants,sex,
+subjects,sex=male,26,ds008110-participants,sex,
+subjects,age=10-19,8,ds008110-participants,age,ages 18 and 19
+subjects,age=20-29,23,ds008110-participants,age,
+subjects,age=30-39,15,ds008110-participants,age,
+subjects,age=40-49,8,ds008110-participants,age,
+subjects,sex=female;age=20-29,13,ds008110-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=20-29,10,ds008110-participants,sex and age,Cells below 10 left out
+age_min,,18,ds008110-participants,age,
+age_max,,48,ds008110-participants,age,
+age_mean,,29.0,ds008110-participants,age,
+age_sd,,8.73,ds008110-participants,age,
+age_median,,27,ds008110-participants,age,
+subjects,contrast=T1w,54,ds008110-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,44,ds008110-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,53,ds008110-file-tree,func/*_task-rest_bold.nii.gz,
+subjects,contrast=dwi,44,ds008110-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,44,ds008110-file-tree,sub-*/,
+subjects,contrast_set=bold+T1w,9,ds008110-file-tree,sub-*/,
+subjects,contrast_set=T1w,1,ds008110-file-tree,sub-*/,
+scans,,195,ds008110-file-tree,sub-*/**/*.nii.gz,"sum of the disjoint T1w (54), T2w (44), bold (53) and dwi (44) file counts"
+scans,contrast=T1w,54,ds008110-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=T2w,44,ds008110-file-tree,anat/*_T2w.nii.gz,one per subject
+scans,contrast=bold,53,ds008110-file-tree,func/*_task-rest_bold.nii.gz,one resting-state run per subject
+scans,contrast=dwi,44,ds008110-file-tree,dwi/*_dwi.nii.gz,"one per subject; 3 b=0 and 60 b=1000 volumes"
+subjects,field_strength=3,54,openneuro-ds008110-v1-0-0,README MRI Acquisition and sidecars,MagneticFieldStrength 3; GE Discovery MR750
+subjects,vendor=ge,54,openneuro-ds008110-v1-0-0,README MRI Acquisition and sidecars,Manufacturer GE; ManufacturersModelName DISCOVERY MR750
+subjects,country=MX,54,openneuro-ds008110-v1-0-0,README MRI Acquisition,"Instituto de Neurobiología, UNAM"
