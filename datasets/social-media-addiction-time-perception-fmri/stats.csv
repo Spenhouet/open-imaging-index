@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+scans,,117,scidb-psych-01133,Description,"Per-participant first-level t maps: 58 from Study 1 and 59 from Study 2, disjoint files; the record does not say whether the two studies share participants, so no subject total is given"
+scans,modality=MR,117,scidb-psych-01133,Description,
+scans,contrast=bold,117,scidb-psych-01133,Description,derived from gradient-echo EPI task runs
+scans,condition=social_media_addiction,59,scidb-psych-01133,Description,29 in Study 1 and 30 in Study 2
+scans,condition=healthy,58,scidb-psych-01133,Description,29 in Study 1 and 29 in Study 2
+scans,field_strength=3,117,scidb-psych-01133,Description,3T Siemens Prisma
+scans,vendor=siemens,117,scidb-psych-01133,Description,Prisma
