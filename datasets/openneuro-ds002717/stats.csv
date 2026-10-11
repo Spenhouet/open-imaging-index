@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,59,openneuro-ds002717-v1-0-1,participants.tsv and file listing,sub-01 to sub-59
+scans,,203,openneuro-ds002717-v1-0-1,file listing,"56 T1w, 51 T2w and 96 BOLD runs"
+subjects,contrast=T1w,56,openneuro-ds002717-v1-0-1,file listing,sub-*/anat/*_T1w.nii.gz
+subjects,contrast=T2w,51,openneuro-ds002717-v1-0-1,file listing,sub-*/anat/*_acq-tse_T2w.nii.gz; coronal turbo spin echo of the olfactory bulbs
+subjects,contrast=bold,46,openneuro-ds002717-v1-0-1,file listing,sub-*/func/*_bold.nii.gz
+scans,contrast=bold,96,openneuro-ds002717-v1-0-1,file listing,two runs per subject; sub-46 and sub-54 each have a second copy of both runs named run-001
+subjects,contrast_set=bold+T1w+T2w,38,openneuro-ds002717-v1-0-1,file listing,
+subjects,contrast_set=T1w+T2w,10,openneuro-ds002717-v1-0-1,file listing,
+subjects,contrast_set=bold+T1w,8,openneuro-ds002717-v1-0-1,file listing,
+subjects,contrast_set=T2w,3,openneuro-ds002717-v1-0-1,file listing,
+subjects,condition=recurrent_pregnancy_loss,26,ds002717-participants,group column,group RPL
+subjects,condition=healthy,33,ds002717-participants,group column,group control
+subjects,condition=recurrent_pregnancy_loss;contrast=bold,23,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,condition=healthy;contrast=bold,23,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,condition=recurrent_pregnancy_loss;contrast=T1w,25,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,condition=healthy;contrast=T1w,31,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,condition=recurrent_pregnancy_loss;contrast=T2w,24,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,condition=healthy;contrast=T2w,27,openneuro-ds002717-v1-0-1,file listing and participants.tsv,
+subjects,sex=female,59,ds002717-participants,gender column,
+subjects,age=20-29,10,ds002717-participants,age column,
+subjects,age=30-39,37,ds002717-participants,age column,
+subjects,age=40-49,12,ds002717-participants,age column,
+subjects,condition=recurrent_pregnancy_loss;age=30-39,11,ds002717-participants,group and age columns,
+subjects,condition=healthy;age=30-39,26,ds002717-participants,group and age columns,
+age_mean,,35.24,ds002717-participants,age column,
+age_min,,25,ds002717-participants,age column,
+age_max,,48,ds002717-participants,age column,
+age_mean,condition=recurrent_pregnancy_loss,36.12,ds002717-participants,group and age columns,
+age_mean,condition=healthy,34.55,ds002717-participants,group and age columns,
+subjects,country=IL,59,rozenkrantz2020,Materials and methods (Ethics),imaging studies approved by the Wolfson hospital Helsinki committee; T1w sidecars name the Weizmann institution in Rehovot
+subjects,vendor=siemens,59,rozenkrantz2020,Materials and methods (Brain imaging: Data acquisition),Siemens MAGNETOM Trio
+subjects,field_strength=3,59,rozenkrantz2020,Materials and methods (Brain imaging: Data acquisition),

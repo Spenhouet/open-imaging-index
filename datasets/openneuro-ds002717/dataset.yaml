@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002717
+name: Recurrent pregnancy loss body-odor fMRI (ds002717)
+full_name: Unexplained Repeated Pregnancy Loss is Associated with Altered Perceptual and Brain Responses to Men's Body-Odor
+summary: >-
+  Task fMRI, T1-weighted and coronal T2-weighted olfactory bulb MRI of women with unexplained recurrent pregnancy loss
+  and matched controls, collected to test whether their brains respond differently to men's body-odor. 59 women in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002717
+doi: 10.18112/openneuro.ds002717.v1.0.1
+# First snapshot (1.0.0) on OpenNeuro, 2020-04-19; latest snapshot 1.0.1, 2020-07-15.
+year: 2020
+updated: 2020
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Rozenkrantz L, Weissgross R, Weiss T, Ravrebi I, Frumin I, Shushan S, Gorodisky L, Reshef N, Holzman Y,
+      Pinchover L, Endevelt-Shapira Y, Mishor E, Soroka T, Finkel M, Tagania L, Ravia A, Perl O, Furman-Haran E,
+      Carp H, Sobel N (Weizmann Institute of Science)
+    url: https://openneuro.org/datasets/ds002717
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [recurrent_pregnancy_loss, healthy]
+formats: [BIDS, NIfTI]
+countries: [IL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.17
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002717
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Rozenkrantz L, Weissgross R, Weiss T, et al. Unexplained repeated pregnancy loss is associated with altered
+    perceptual and brain responses to men's body-odor. eLife 9, e55305 (2020). doi:10.7554/eLife.55305
+sources:
+  rozenkrantz2020:
+    title: >-
+      Rozenkrantz et al. 2020, Unexplained repeated pregnancy loss is associated with altered perceptual and brain
+      responses to men's body-odor, eLife
+    url: https://doi.org/10.7554/eLife.55305
+    kind: paper
+  openneuro-ds002717-v1-0-1:
+    title: >-
+      OpenNeuro ds002717 snapshot 1.0.1 (dataset_description.json, README, T1w sidecar, file listing and snapshot
+      size)
+    url: https://openneuro.org/datasets/ds002717/versions/1.0.1
+    kind: website
+  ds002717-participants:
+    title: participants.tsv of ds002717 snapshot 1.0.1 (CC0); columns age, gender and group
+    url: https://openneuro.org/datasets/ds002717/versions/1.0.1/file-display/participants.tsv
+    kind: computed
+related: []
+keywords: [recurrent pregnancy loss, olfaction, body odor, chemosignaling, hypothalamus, olfactory bulb, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
