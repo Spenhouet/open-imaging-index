@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: learning-brain
+name: LEARNING BRAIN
+full_name: LEARNING BRAIN - a longitudinal dataset on neural plasticity dynamics in Braille and music training
+summary: >-
+  Repeated brain MRI and task fMRI of healthy young women learning tactile Braille reading or piano playing, with an
+  untrained control group, collected to follow the time course of learning-related brain plasticity over six to seven
+  sessions. Images are preprocessed in MNI space.
+homepage: https://openneuro.org/datasets/ds007022
+doi: 10.18112/openneuro.ds007022.v1.1.0
+# CHANGES file: snapshot 1.0.0 dated 2025-12-04 (initial); snapshot 1.1.0 dated 2026-04-14.
+year: 2025
+updated: 2026
+version: 1.1.0
+status: active
+creators:
+  - name: Olszewska A, Gaca M, Droździel D, Kossowski B, Herman AM, Marchewka A
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [PL]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007022
+licenses:
+  - license: CC0-1.0
+    applies_to: >-
+      Top-level files: participants.tsv, task event files and behavioural n-back and Stroop data.
+    note: dataset_description.json at the dataset root of snapshot 1.1.0 states "License" CC0.
+  - license: CC-BY-4.0
+    applies_to: >-
+      All images: the fMRIPrep derivatives (averaged T1w, tissue segmentations, brain masks, preprocessed BOLD runs and
+      confound tables) under derivatives/fMRIPrep.
+    note: derivatives/fMRIPrep/dataset_description.json states "License" CC BY 4.0.
+citation:
+  text: >-
+    Olszewska AM, Gaca M, Droździel D, Kossowski B, Herman AM, Marchewka A. LEARNING BRAIN - a longitudinal dataset on
+    neural plasticity dynamics in Braille and music training. OpenNeuro (2025). doi:10.18112/openneuro.ds007022.v1.1.0
+sources:
+  openneuro-ds007022-v1-1-0:
+    title: OpenNeuro ds007022 snapshot 1.1.0 (dataset_description.json, README.md and CHANGES)
+    url: https://openneuro.org/datasets/ds007022/versions/1.1.0
+    kind: website
+  ds007022-participants:
+    title: participants.tsv of ds007022 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds007022/blob/main/participants.tsv
+    kind: computed
+  ds007022-file-tree:
+    title: >-
+      Derivative file tree of ds007022 (derivatives/fMRIPrep, CC BY 4.0), preprocessed T1w and BOLD NIfTI files counted
+      per subject, session and task, scanner fields read from the JSON sidecars
+    url: https://github.com/OpenNeuroDatasets/ds007022/tree/main/derivatives/fMRIPrep
+    kind: computed
+related: []
+keywords:
+  [neuroplasticity, skill learning, Braille, music training, piano, task fMRI, resting-state fMRI, longitudinal, fMRIPrep]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
