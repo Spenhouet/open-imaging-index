@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,204,truzman2026,"Section (V), p. 7",the README of ds007212 also states 204 participants
+subjects,contrast=T1w,204,ds007212-file-tree,,subjects with *_T1w.nii.gz
+scans,,204,ds007212-file-tree,,one T1w per subject; 204 lesion masks (*_label-lesion_roi.nii.gz) under derivatives
+scans,contrast=T1w,204,ds007212-file-tree,,

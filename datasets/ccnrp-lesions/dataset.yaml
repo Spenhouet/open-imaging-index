@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ccnrp-lesions
+name: CCNRP chronic brain lesions
+full_name: Chronic Brain Lesion MRI with Manual Lesion Segmentations (Cambridge Cognitive Neuroscience Research Panel)
+summary: >-
+  Defaced T1-weighted brain MRI of adults with chronic focal brain lesions from stroke, tumour surgery and other
+  causes, each with a manual lesion mask, shared for developing automated lesion segmentation and lesion-symptom
+  mapping methods.
+homepage: https://openneuro.org/datasets/ds007212
+doi: 10.18112/openneuro.ds007212.v1.0.0
+# OpenNeuro ds007212 snapshot 1.0.0 dated 2026-01-21.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      MRC Cognition and Brain Sciences Unit, University of Cambridge (Truzman T, Halai AD, Lambon Ralph MA)
+    url: https://openneuro.org/datasets/ds007212
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [stroke, brain_tumor]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [GB]
+# Snapshot size of ds007212 1.0.0 (1,515,312,390 bytes).
+size_gb: 1.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007212
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of the OpenNeuro snapshot states "License" CC0.
+citation:
+  text: >-
+    Truzman T, Halai AD, Lambon Ralph MA. Chronic Brain Lesion MRI with Manual Lesion Segmentations (CCNRP,
+    Cambridge). OpenNeuro ds007212 (2026). doi:10.18112/openneuro.ds007212.v1.0.0. And: Truzman T, Lambon Ralph MA,
+    Halai AD. Automated Lesion Segmentation of Stroke MRI Using nnU-Net. arXiv:2601.08701 (2026).
+sources:
+  truzman2026:
+    title: Truzman et al. 2026, Automated Lesion Segmentation of Stroke MRI Using nnU-Net, arXiv:2601.08701v2
+    url: https://arxiv.org/abs/2601.08701
+    kind: paper
+  ds007212-readme:
+    title: README of OpenNeuro ds007212 snapshot 1.0.0
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds007212/1.0.0/README
+    kind: website
+  ds007212-file-tree:
+    title: >-
+      BIDS file tree of OpenNeuro ds007212 snapshot 1.0.0 (CC0), raw T1w NIfTI files under sub-*/anat and lesion
+      masks under derivatives counted
+    url: https://github.com/OpenNeuroDatasets/ds007212/tree/1.0.0
+    kind: computed
+related: [atlas-v2]
+keywords: [chronic lesion, lesion segmentation, lesion-symptom mapping, stroke, tumour resection, manual lesion mask]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
