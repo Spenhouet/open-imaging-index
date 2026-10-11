@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mr-art
+name: MR-ART (ds004173)
+full_name: Movement-related artefacts (MR-ART) dataset
+summary: >-
+  Brain T1-weighted MRI of healthy adults scanned three times, once lying still and twice while nodding on cue, to
+  test how head motion affects image analysis and to validate motion correction. Each scan carries a
+  neuroradiologist image quality score and automated quality metrics.
+homepage: https://openneuro.org/datasets/ds004173
+doi: 10.18112/openneuro.ds004173.v1.0.2
+year: 2022
+version: 1.0.2
+status: active
+creators:
+  - name: Brain Imaging Centre, Research Centre for Natural Sciences, Budapest (Nárai Á, Hermann P, Auer T, Vidnyánszky Z et al.)
+    url: https://openneuro.org/datasets/ds004173
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [HU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004173/versions/1.0.2
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004173/versions/1.0.2
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Nárai Á, Hermann P, Auer T, et al. Movement-related artefacts (MR-ART) dataset of matched motion-corrupted and
+    clean structural MRI brain scans. Scientific Data 9, 630 (2022). doi:10.1038/s41597-022-01694-8
+sources:
+  narai2022:
+    title: Nárai et al. 2022, Movement-related artefacts (MR-ART) dataset of matched motion-corrupted and clean structural MRI brain scans, Scientific Data
+    url: https://doi.org/10.1038/s41597-022-01694-8
+    kind: paper
+  openneuro-ds004173-v1-0-2:
+    title: OpenNeuro ds004173 snapshot 1.0.2 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds004173/versions/1.0.2
+    kind: website
+  ds004173-participants:
+    title: participants.tsv of ds004173 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004173/blob/main/participants.tsv
+    kind: computed
+  ds004173-scores:
+    title: derivatives/scores.tsv of ds004173 (CC0), one row per T1w scan
+    url: https://github.com/OpenNeuroDatasets/ds004173/blob/main/derivatives/scores.tsv
+    kind: computed
+related: []
+keywords: [head motion, motion artefacts, image quality, quality control, MRIQC, motion correction, MPRAGE]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
