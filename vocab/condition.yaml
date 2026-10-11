@@ -396,6 +396,7 @@ terms:
       synonyms: [degenerative cervical myelopathy, DCM, cervical spondylotic myelopathy, CSM],
       mappings: { hp: 'HP:0002318' },
     }
+  - { id: cervical_spondylosis, label: Cervical spondylosis, mappings: { mondo: 'MONDO:0008481' } }
   - { id: discitis, label: Discitis, synonyms: [diskitis, spondylodiscitis], mappings: { hp: 'HP:0025679' } }
   - { id: cervical_cancer, label: Cervical cancer, mappings: { mondo: 'MONDO:0002974' } }
   - {

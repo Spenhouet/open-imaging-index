@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,250,yu2025,Methods: Subject characteristics,
+subjects,modality=MR,250,yu2025,Data Records,one NIfTI file per subject in each of the five image folders
+subjects,modality=CT,250,yu2025,Data Records,one NIfTI file per subject in each of the five image folders
+subjects,contrast=T1w,250,yu2025,Data Records,sagittal T1-weighted
+subjects,contrast=T2w,250,yu2025,Data Records,sagittal and axial T2-weighted
+subjects,contrast_set=T1w+T2w,250,yu2025,Data Records,
+age_mean,,54.8,yu2025,Table 5,
+age_sd,,10.7,yu2025,Table 5,
+subjects,condition=cervical_spondylosis,250,yu2025,Methods: Subject characteristics,
+subjects,condition=cervical_myelopathy,108,yu2025,Table 5,"cervical spondylotic myelopathy only; 122 had radiculopathy and 20 a mixed type"
+subjects,split=train,200,yu2025,Table 5,80% of subjects; listed in train_id.txt
+subjects,split=test,50,yu2025,Table 5,"20% of subjects; Table 5 labels this column Validation, the release names the file test_id.txt"
+subjects,field_strength=3,143,yu2025,Table 1,"sum of the 3.0 T rows; the text gives 57.2%"
+subjects,field_strength=1.5,107,yu2025,Table 1,"sum of the 1.5 T rows; the text gives 42.8%"
+subjects,modality=MR;vendor=united_imaging,105,yu2025,Table 1,"uMR 770, uMR 570 and uMR 560"
+subjects,modality=MR;vendor=ge,72,yu2025,Table 1,"Signa HDxt, Discovery MR750, Discovery MR750w and Optima MR360"
+subjects,modality=MR;vendor=philips,42,yu2025,Table 1,"Ingenia CX, Ingenia and Multiva"
+subjects,modality=MR;vendor=siemens,28,yu2025,Table 1,Skyra and Aera
+subjects,modality=MR;vendor=other,3,yu2025,Table 1,Alltech EchoStar
+subjects,modality=CT;vendor=philips,163,yu2025,Table 2,iCT 256
+subjects,modality=CT;vendor=ge,41,yu2025,Table 2,Revolution CT and Optima CT660
+subjects,modality=CT;vendor=united_imaging,38,yu2025,Table 2,uCT 510
+subjects,modality=CT;vendor=other,8,yu2025,Table 2,NMS NeuViz 128

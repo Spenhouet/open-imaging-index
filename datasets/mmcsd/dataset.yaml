@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mmcsd
+name: MMCSD
+full_name: Multi-modal and Multi-view Cervical Spondylosis Imaging Dataset
+summary: >-
+  Preoperative cervical spine MRI and CT of patients with cervical spondylosis and neck pain who had anterior fusion
+  surgery, paired with neck pain scores before and one year after surgery to predict postoperative pain. 250 patients
+  from one hospital in China.
+homepage: https://www.synapse.org/#!Synapse:syn63903115
+doi: 10.7303/syn63903115
+year: 2024
+status: active
+creators:
+  - name: The First Medical Center, Chinese PLA General Hospital
+species: human
+modalities: [MR, CT]
+contrasts: [T1w, T2w]
+anatomy: [spine, neck]
+conditions: [cervical_spondylosis, cervical_myelopathy]
+tasks: [classification, synthesis]
+formats: [NIfTI]
+countries: [CN]
+vendors: [united_imaging, ge, philips, siemens, other]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://www.synapse.org/#!Synapse:syn63903115
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Yu QS, Shan JY, Ma J, Gao G, Tao BZ, Qiao GY, Zhang JN, Wang T, Zhao YF, Qin XL, Yin YH. Multi-modal and Multi-view
+    Cervical Spondylosis Imaging Dataset. Sci Data 12, 1080 (2025). https://doi.org/10.1038/s41597-025-05403-z
+  bibtex: |
+    @article{yu2025mmcsd,
+      title = {Multi-modal and Multi-view Cervical Spondylosis Imaging Dataset},
+      author = {Yu, Qi-Shuai and Shan, Jing-Yang and Ma, Jie and Gao, Gan and Tao, Ben-Zhang and Qiao, Guang-Yu and Zhang, Jian-Ning and Wang, Ting and Zhao, Yong-Fei and Qin, Xiao-Lin and Yin, Yi-Heng},
+      journal = {Scientific Data},
+      volume = {12},
+      pages = {1080},
+      year = {2025},
+      doi = {10.1038/s41597-025-05403-z}
+    }
+sources:
+  yu2025:
+    title: Yu et al. 2025, Scientific Data 12, 1080
+    url: https://doi.org/10.1038/s41597-025-05403-z
+    kind: paper
+  synapse-syn63903115:
+    title: MMCSD project wiki on Synapse
+    url: https://www.synapse.org/#!Synapse:syn63903115
+    kind: website
+related: []
+keywords: [cervical spondylosis, neck pain, cervical spine, multimodal, MRI and CT, postoperative outcome, ACDF]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
