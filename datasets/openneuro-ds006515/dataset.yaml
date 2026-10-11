@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006515
+name: Chicago Attention and Thoughts (ds006515)
+full_name: Chicago Attention and Thoughts (CAT)
+summary: >-
+  Task, movie and rest fMRI of healthy young adults, collected to relate ongoing thoughts and attention to functional
+  brain connectivity. Two sessions per person with annotated rest, story and movie viewing, and a continuous
+  performance task, plus a T1-weighted scan.
+homepage: https://openneuro.org/datasets/ds006515
+doi: 10.18112/openneuro.ds006515.v1.0.0
+# Snapshot 1.0.0 created 2025-07-31; the dataset was made public on OpenNeuro on 2026-06-15.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Cognition, Attention, and Brain Lab, University of Chicago (Rosenberg MD)
+    url: https://openneuro.org/datasets/ds006515
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 144.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006515
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ke J, Chamberlain TA, Song H, Corriveau A, Zhang Z, Martinez T, Sams L, Chun MM, Leong YC, Rosenberg MD. Ongoing
+    thoughts at rest reflect functional brain organization and behavior. bioRxiv (2025).
+    doi:10.1101/2025.08.18.670664
+sources:
+  ke2025:
+    title: >-
+      Ke et al. 2025, Ongoing thoughts at rest reflect functional brain organization and behavior, bioRxiv preprint
+    url: https://www.biorxiv.org/content/10.1101/2025.08.18.670664
+    kind: paper
+  openneuro-ds006515-v100:
+    title: OpenNeuro ds006515 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006515/versions/1.0.0
+    kind: website
+  ds006515-file-tree:
+    title: File tree of ds006515 snapshot 1.0.0 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds006515/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [
+    annotated rest,
+    ongoing thought,
+    sustained attention,
+    continuous performance task,
+    naturalistic viewing,
+    movie fMRI,
+    resting-state fMRI,
+    young adults,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
