@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hrv-er
+name: HRV-ER (ds003823)
+full_name: Heart rate variability biofeedback training and emotion regulation
+summary: >-
+  Brain MRI, functional MRI, arterial spin labeling and MR spectroscopy from healthy younger and older adults, scanned
+  before and after a randomized 5-week trial of heart rate variability biofeedback to study emotion regulation. With
+  physiology, cognition and mood questionnaires.
+homepage: https://openneuro.org/datasets/ds003823
+doi: 10.18112/openneuro.ds003823.v1.3.5
+year: 2021
+updated: 2025
+version: 1.3.5
+status: active
+creators:
+  - name: Emotion & Cognition Lab, University of Southern California (Yoo HJ, Nashiro K, Mather M, et al.)
+    url: https://openneuro.org/datasets/ds003823
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 91.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003823
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.3.5 states "License" CC0.
+citation:
+  text: >-
+    Yoo HJ, Nashiro K, Min J, Cho C, Mercer N, Bachman SL, Nasseri P, Dutt S, Porat S, Choi P, Zhang Y, Grigoryan V,
+    Feng T, Thayer JF, Lehrer P, Chang C, Stanley JA, Marmarelis VZ, Narayanan S, et al., Mather M. Multimodal
+    neuroimaging data from a 5-week heart rate variability biofeedback randomized clinical trial. Scientific Data 10,
+    503 (2023). doi:10.1038/s41597-023-02396-5
+sources:
+  yoo2023:
+    title: Yoo et al. 2023, Multimodal neuroimaging data from a 5-week heart rate variability biofeedback randomized clinical trial, Scientific Data
+    url: https://www.nature.com/articles/s41597-023-02396-5
+    kind: paper
+  ds003823-participants:
+    title: participants.tsv of ds003823 snapshot 1.3.5 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003823/blob/1.3.5/participants.tsv
+    kind: computed
+  ds003823-file-tree:
+    title: File tree of ds003823 snapshot 1.3.5 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003823/tree/1.3.5
+    kind: computed
+related: []
+keywords:
+  [
+    heart rate variability,
+    biofeedback,
+    emotion regulation,
+    randomized clinical trial,
+    multi-echo fMRI,
+    pCASL,
+    MR spectroscopy,
+    locus coeruleus,
+    aging,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
