@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005270
+name: BOLD Variability Adult Lifespan (ds005270)
+full_name: BOLD variability during cognitive control for an adult lifespan sample
+summary: >-
+  Resting-state and task fMRI of healthy adults aged 20 to 86 doing go/no-go, task switching and n-back tasks, with
+  T1w, FLAIR and diffusion MRI, collected to study how brain signal variability and cognitive control change with age.
+homepage: https://openneuro.org/datasets/ds005270
+doi: 10.18112/openneuro.ds005270.v1.0.0
+# Snapshot 1.0.0 on OpenNeuro, 2024-06-21; scans acquired 2016 to 2019.
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: Rieck JR, Baracchini G, DeSouza B, Nichol D, Howard E, Grady CL (Baycrest Health Sciences, Toronto)
+    url: https://openneuro.org/datasets/ds005270
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 43.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005270
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Rieck JR, Baracchini G, Grady CL. Contributions of Brain Function and Structure to Three Different Domains of
+    Cognitive Control in Normal Aging. Journal of Cognitive Neuroscience (2021). doi:10.1162/jocn_a_01685; Rieck JR,
+    Baracchini G, Nichol D, Abdi H, Grady CL. Reconfiguration and dedifferentiation of functional networks during
+    cognitive control across the adult lifespan. Neurobiology of Aging (2021). doi:10.1016/j.neurobiolaging.2021.03.019
+sources:
+  openneuro-ds005270-v1-0-0:
+    title: OpenNeuro ds005270 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005270/versions/1.0.0
+    kind: website
+  ds005270-file-tree:
+    title: >-
+      File listing, participants.tsv and JSON sidecars of the ds005270 BIDS repository (CC0), subjects counted per
+      T1w, FLAIR, dwi and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds005270
+    kind: computed
+related: []
+keywords: [aging, adult lifespan, cognitive control, BOLD variability, go/no-go, task switching, n-back, resting-state fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
