@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,55,openneuro-ds003436-v100,README,55 subject folders (sub-01 to sub-55) in the snapshot 1.0.0 file tree
+subjects,contrast=T1w,55,ds003436-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,55,ds003436-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,55,ds003436-file-tree,anat and func folders,AP and PA spin-echo EPI fieldmaps (all 55 subjects) are not counted as a contrast
+subjects,sex=female,30,ds003436-participants,sex,"sex F; participants.tsv lists 49 of the 55 subjects (sub-08, 09, 11, 25, 36 and 55 have no row)"
+subjects,sex=male,19,ds003436-participants,sex,sex M; 49 of 55 subjects have a row
+subjects,age=10-19,8,ds003436-participants,age,age in years at testing; 49 of 55 subjects have a row
+subjects,age=20-29,37,ds003436-participants,age,age in years at testing; 49 of 55 subjects have a row
+subjects,age=30-39,4,ds003436-participants,age,age in years at testing; 49 of 55 subjects have a row
+scans,,275,ds003436-file-tree,sub-*/*/*.nii.gz,sum of the disjoint T1w and bold NIfTI counts below; 110 fieldmap images not included
+scans,contrast=T1w,55,ds003436-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,220,ds003436-file-tree,*_bold.nii.gz,four task runs per subject
+age_min,,18,ds003436-participants,age,years; among the 49 subjects in participants.tsv
+age_max,,34,ds003436-participants,age,years; among the 49 subjects in participants.tsv

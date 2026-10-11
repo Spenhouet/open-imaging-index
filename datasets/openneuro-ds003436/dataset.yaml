@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003436
+name: Agreeableness Social Animation fMRI (ds003436)
+full_name: Agreeableness personality trait and social information encoding
+summary: >-
+  Task fMRI of young adults watching moving-shape animations that look either social or random, collected to relate
+  brain responses to the Big Five agreeableness trait. 55 participants scanned at 3T in Udine, with personality and
+  IQ scores, shared in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003436
+doi: 10.18112/openneuro.ds003436.v1.0.0
+year: 2020
+version: 1.0.0
+status: active
+creators:
+  - name: Arbula S, Pisanu E, Rumiati RI
+    url: https://openneuro.org/datasets/ds003436
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [IT]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 6.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003436
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Arbula S, Pisanu E, Rumiati RI. Representation of social content in dorsomedial prefrontal cortex underlies
+    individual differences in agreeableness trait. NeuroImage 235, 118049 (2021). doi:10.1016/j.neuroimage.2021.118049
+sources:
+  openneuro-ds003436-v100:
+    title: OpenNeuro ds003436 snapshot 1.0.0 (README, dataset_description.json, BIDS sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003436/versions/1.0.0
+    kind: website
+  arbula2021:
+    title: Arbula et al. 2021, NeuroImage 235, 118049
+    url: https://doi.org/10.1016/j.neuroimage.2021.118049
+    kind: paper
+  ds003436-participants:
+    title: participants.tsv of ds003436 snapshot 1.0.0 (CC0), counted per row
+    url: https://openneuro.org/datasets/ds003436/versions/1.0.0/file-display/participants.tsv
+    kind: computed
+  ds003436-file-tree:
+    title: File tree of ds003436 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds003436/versions/1.0.0/download
+    kind: computed
+related: []
+keywords: [agreeableness, personality, Big Five, social cognition, theory of mind, animations, task fMRI, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
