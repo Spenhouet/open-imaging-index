@@ -1,0 +1,44 @@
+measure,by,value,source,where,note
+subjects,,410,openneuro-ds007286-v107,README,participants.tsv and the snapshot summary also list 410 subjects
+studies,,410,openneuro-ds007286-v107,snapshot summary,one session (ses-01) per subject
+subjects,sex=female,217,ds007286-demographics,Sex column,
+subjects,sex=male,193,ds007286-demographics,Sex column,
+subjects,contrast=bold,410,ds007286-file-tree,,at least one *_bold.nii.gz per subject folder
+subjects,contrast=T1w,410,ds007286-file-tree,,one *_T1w.nii.gz per subject folder
+subjects,contrast=T2w,389,ds007286-file-tree,,one *_T2w.nii.gz per subject folder; the README names only one subject without T2w
+subjects,contrast_set=bold+T1w+T2w,389,ds007286-file-tree,,
+subjects,contrast_set=bold+T1w,21,ds007286-file-tree,,
+scans,,4486,ds007286-file-tree,,"NIfTI images under sub-* folders: 3277 BOLD, 410 T1w, 389 T2w and 410 FLASH"
+scans,contrast=bold,3277,ds007286-file-tree,,eight runs per subject (six tasks and two rest) with three runs missing
+scans,contrast=T1w,410,ds007286-file-tree,,
+scans,contrast=T2w,389,ds007286-file-tree,,
+subjects,condition=healthy,185,ds007286-diagnosis,all diagnosis columns,no diagnosis flagged in the table
+subjects,condition=depression,117,ds007286-diagnosis,MDE column,major depressive episode
+subjects,condition=anxiety_disorder,110,ds007286-diagnosis,"GAD, panic eps, SAD and agoraphobia columns","subjects flagged for generalized anxiety disorder, panic episode, social anxiety disorder or agoraphobia"
+subjects,condition=bipolar_disorder,56,ds007286-diagnosis,bipolar column,
+subjects,condition=psychotic_disorder,52,ds007286-diagnosis,psychotic eps/scz column,psychotic episode or schizophrenia
+subjects,condition=adhd,51,ds007286-diagnosis,ADHD column,
+subjects,condition=ptsd,34,ds007286-diagnosis,PTSD column,
+subjects,condition=ocd,24,ds007286-diagnosis,OCD column,
+subjects,condition=autism,2,ds007286-diagnosis,ASD column,
+subjects,age=10-19,20,ds007286-demographics,age_at_test column,all aged 18 or 19
+subjects,age=20-29,206,ds007286-demographics,age_at_test column,
+subjects,age=30-39,95,ds007286-demographics,age_at_test column,
+subjects,age=40-49,40,ds007286-demographics,age_at_test column,
+subjects,age=50-59,31,ds007286-demographics,age_at_test column,
+subjects,age=60-69,14,ds007286-demographics,age_at_test column,
+subjects,age=70-79,4,ds007286-demographics,age_at_test column,
+subjects,sex=female;age=20-29,117,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=female;age=30-39,45,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=female;age=40-49,23,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=female;age=50-59,14,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=male;age=10-19,11,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=male;age=20-29,89,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=male;age=30-39,50,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=male;age=40-49,17,ds007286-demographics,age_at_test and Sex columns,
+subjects,sex=male;age=50-59,17,ds007286-demographics,age_at_test and Sex columns,
+age_mean,,32.2,ds007286-demographics,age_at_test column,
+age_sd,,12.1,ds007286-demographics,age_at_test column,
+age_median,,28,ds007286-demographics,age_at_test column,
+age_min,,18,ds007286-demographics,age_at_test column,
+age_max,,73,ds007286-demographics,age_at_test column,
