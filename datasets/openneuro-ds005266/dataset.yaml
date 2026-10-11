@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005266
+name: SKIP Active Escape (ds005266)
+full_name: "SoCal Kinesia and Incentivization for Parkinson's Disease (SKIP): Active Escape"
+summary: >-
+  Task fMRI and T1w MRI of healthy young adults making timed motor responses to avoid electric shocks of varying
+  intensity and controllability, one of the task releases of the SKIP Parkinson's disease project.
+homepage: https://openneuro.org/datasets/ds005266
+doi: 10.18112/openneuro.ds005266.v1.0.0
+# Snapshot 1.0.0 on OpenNeuro, 2024-06-20.
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Dundon NM, Rizor E, Stasiak J, Wang J, Sabugo K, Villaneuva C, Barandon P, Bostan AC, Lapate R, Grafton ST (UC
+      Santa Barbara)
+    url: http://www.socalkinesia.org
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 67.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005266
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Dundon NM, Rizor E, Stasiak J, Wang J, Sabugo K, Villaneuva C, Barandon P, Bostan AC, Lapate RC, Grafton ST.
+    Dissociation of novel open loop from ventral putamen to motor areas from classic closed loop in humans II:
+    task-based function. bioRxiv (2024). doi:10.1101/2024.06.18.599622
+sources:
+  openneuro-ds005266-v1-0-0:
+    title: OpenNeuro ds005266 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005266/versions/1.0.0
+    kind: website
+  ds005266-file-tree:
+    title: >-
+      File listing, participants.tsv and JSON sidecars of the ds005266 BIDS repository (CC0), subjects counted per T1w
+      and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds005266
+    kind: computed
+related: []
+keywords:
+  [Parkinson's disease, SKIP, active escape, threat of shock, controllability, motor response, task fMRI, incentives]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
