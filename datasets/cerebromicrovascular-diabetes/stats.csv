@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,69,physionet-cded,Abstract,diabetic and control participants at baseline; 41 completed the two-year follow-up
+subjects,field_strength=3,69,physionet-cded,Abstract,continuous arterial spin labeling at 3 Tesla
+subjects,country=US,69,ge79-protocol,p. 13 Recruitment,"single center, Beth Israel Deaconess Medical Center, Boston"
+subjects,condition=type_2_diabetes,44,ge79-summary-table-part1,"columns Visit, Group",counted over the 77 Visit 2 rows of the summary table; the project page gives 69 participants
+subjects,condition=healthy,33,ge79-summary-table-part1,"columns Visit, Group",counted over the 77 Visit 2 rows of the summary table; the project page gives 69 participants

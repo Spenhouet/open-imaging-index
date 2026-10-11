@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cerebromicrovascular-diabetes
+name: Cerebromicrovascular Disease in Elderly with Diabetes
+summary: >-
+  Brain MRI with arterial spin labeling perfusion, FLAIR and diffusion imaging of older adults with type 2 diabetes and
+  controls, at baseline and two-year follow-up, to study diabetic effects on cerebral vasoregulation. Images are not
+  shared; derived MRI measures are public.
+homepage: https://physionet.org/content/cded/
+doi: 10.13026/00bm-0x81
+# First PhysioNet release (version 1.0.0, October 2020). The images themselves have no public release.
+year: 2020
+updated: 2022
+version: 1.0.1
+creators:
+  - name: Vera Novak, Beth Israel Deaconess Medical Center
+  - name: Rodrigo Quispe, Beth Israel Deaconess Medical Center
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, asl, dwi]
+anatomy: [brain]
+conditions: [type_2_diabetes, healthy]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://physionet.org/content/cded/
+  note: >-
+    The PhysioNet release holds no MRI images. It contains per-visit tables of derived MRI measures (regional gray and
+    white matter volumes, white matter hyperintensities, regional perfusion), clinical, laboratory and cognitive data,
+    and ECG and transcranial Doppler recordings, all openly downloadable under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC BY 4.0 license of the PhysioNet project
+      covers only the released tables and physiological recordings.
+citation:
+  text: >-
+    Novak, V., & Quispe, R. (2022). Cerebromicrovascular Disease in Elderly with Diabetes (version 1.0.1). PhysioNet.
+    https://doi.org/10.13026/00bm-0x81
+sources:
+  physionet-cded:
+    title: PhysioNet project page, Cerebromicrovascular Disease in Elderly with Diabetes, version 1.0.1
+    url: https://physionet.org/content/cded/1.0.1/
+    kind: website
+  ge79-protocol:
+    title: GE-79_Protocol.pdf, study protocol shipped with the PhysioNet release
+    url: https://physionet.org/files/cded/1.0.1/GE-79_Protocol.pdf
+    kind: website
+  novak2011:
+    title: Novak et al. 2011, Diabetes Care 34(11):2438-2441
+    url: https://doi.org/10.2337/dc11-0969
+    kind: paper
+  ge79-summary-table-part1:
+    title: >-
+      GE-79_Summary_Table-Demographics-MRI-Part1.csv (PhysioNet, CC BY 4.0), counted over the Visit 2 rows
+    url: https://physionet.org/files/cded/1.0.1/Data_Description/GE-79_Summary_Table-Demographics-MRI-Part1.csv
+    kind: computed
+related: []
+keywords:
+  [type 2 diabetes, cerebral blood flow, arterial spin labeling, vasoreactivity, white matter hyperintensities, longitudinal]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
