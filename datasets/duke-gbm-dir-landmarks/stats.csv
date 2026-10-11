@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,61,zenodo-gbm-dir-v1,Description: Dataset Organization,
+studies,,503,zenodo-gbm-dir-v1,Description: Dataset Organization,3 to 18 sessions per patient
+subjects,condition=glioblastoma,61,zenodo-gbm-dir-v1,Description,all patients have glioblastoma
+subjects,contrast_set=ADC+dwi+FLAIR+T1w+T1w_ce+T2w,61,zenodo-gbm-dir-v1,Description: Dataset Organization,"every session has T1w, T2w, FLAIR, ADC, DWI and contrast-enhanced T1w"
+studies,contrast_set=ADC+dwi+FLAIR+T1w+T1w_ce+T2w,503,zenodo-gbm-dir-v1,Description: Dataset Organization,every session has all six images
+subjects,country=US,61,zenodo-gbm-dir-v1,Description,patients treated at Duke
