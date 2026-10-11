@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,52,openneuro-ds003974-v300,README and snapshot summary,52 subject folders; L1_Adults_demographics.tsv also has 52 rows
+subjects,contrast=T1w,52,ds003974-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=dwi,52,ds003974-file-tree,,one sub-*_acq-multiband_dwi.nii.gz per subject folder
+subjects,contrast=bold,52,ds003974-file-tree,,one resting-state run and five reading task runs per subject folder
+subjects,contrast_set=bold+dwi+T1w,52,ds003974-file-tree,,
+scans,,416,ds003974-file-tree,,"sum of the disjoint T1w, dwi and bold NIfTI counts below; field maps are not counted"
+scans,contrast=T1w,52,ds003974-file-tree,,
+scans,contrast=dwi,52,ds003974-file-tree,,
+scans,contrast=bold,312,ds003974-file-tree,,52 resting-state and 260 reading task runs
+subjects,sex=female,27,ds003974-demographics,Gender column,F
+subjects,sex=male,25,ds003974-demographics,Gender column,M
+subjects,age=10-19,15,ds003974-demographics,Age(Year) column,
+subjects,age=20-29,33,ds003974-demographics,Age(Year) column,
+subjects,age=30-39,3,ds003974-demographics,Age(Year) column,
+subjects,age=40-49,1,ds003974-demographics,Age(Year) column,
+age_mean,,22.85,ds003974-demographics,Age(Year) column,ages in whole years
+age_sd,,4.66,ds003974-demographics,Age(Year) column,
+age_min,,18,ds003974-demographics,Age(Year) column,
+age_median,,22,ds003974-demographics,Age(Year) column,
+age_max,,40,ds003974-demographics,Age(Year) column,

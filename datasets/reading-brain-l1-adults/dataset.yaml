@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: reading-brain-l1-adults
+name: Reading Brain Project L1 Adults (ds003974)
+full_name: The Reading Brain Project L1 Adults
+summary: >-
+  Brain MRI of adult native English speakers reading science texts, collected to study naturalistic reading
+  comprehension, with T1w, diffusion, resting-state fMRI and reading fMRI with simultaneous eye tracking for 52 people.
+homepage: https://openneuro.org/datasets/ds003974
+doi: 10.18112/openneuro.ds003974.v3.0.0
+# OpenNeuro dataset created 2022-01-07; CHANGES lists 1.0.0 (2022-01-07) to 3.0.0 (2022-01-09) as re-uploads.
+year: 2022
+version: 3.0.0
+status: active
+creators:
+  - name: Brain, Language, and Computation Lab, Pennsylvania State University (Li P, Hsu C-T, Schloss B, et al.)
+    url: http://blclab.org/reading_brain
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+# Hsu et al. 2019, Methods: right-handed native English speakers with no history of mental or neurological disorder.
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+# dataset_description.json and Hsu et al. 2019 thank the Center for NMR Research, Penn State Hershey Medical Center.
+countries: [US]
+# Hsu et al. 2019, MRI data acquisition: 3 T Siemens Magnetom Prisma Fit, 64-channel coil.
+vendors: [siemens]
+field_strengths: [3]
+# OpenNeuro snapshot 3.0.0 size: 50,111,848,091 bytes.
+size_gb: 50.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003974
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 3.0.0 states "License" CC0.
+citation:
+  text: >-
+    Li P, Hsu C-T, Schloss B, Yu A, Ma L, Scotto M, Seyfried F, Gu C. The Reading Brain Project L1 Adults. OpenNeuro,
+    version 3.0.0 (2022). doi:10.18112/openneuro.ds003974.v3.0.0. The creators also ask to cite Li and Clariana (2019),
+    Journal of Neurolinguistics 50, 94-105, and Follmer et al. (2018), Reading and Writing 31, 185-214.
+sources:
+  openneuro-ds003974-v300:
+    title: OpenNeuro ds003974 snapshot 3.0.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003974/versions/3.0.0
+    kind: website
+  ds003974-demographics:
+    title: L1_Adults_demographics.tsv of ds003974 snapshot 3.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003974/blob/3.0.0/L1_Adults_demographics.tsv
+    kind: computed
+  ds003974-file-tree:
+    title: File tree of ds003974 snapshot 3.0.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds003974/tree/3.0.0
+    kind: computed
+  hsu2019:
+    title: >-
+      Hsu C-T, Clariana R, Schloss B, Li P. Neurocognitive signatures of naturalistic reading of scientific texts: a
+      fixation-related fMRI study. Scientific Reports 9, 10678 (2019)
+    url: https://doi.org/10.1038/s41598-019-47176-7
+    kind: paper
+related: []
+keywords:
+  [
+    reading comprehension,
+    native language,
+    science texts,
+    eye tracking,
+    naturalistic reading,
+    resting-state fMRI,
+    diffusion MRI,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
