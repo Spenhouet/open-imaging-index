@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: karolinska-rsfmri-normal-adults
+name: Resting-state fMRI of Normal Adults (Karolinska)
+full_name: Resting-state fMRI data for Normal adults
+summary: >-
+  Brain BOLD fMRI at rest from healthy right-handed Swedish adults, collected to study how adult age changes brain
+  functional connectivity. 227 volunteers aged 18 to mid-70s, one 375 s BOLD run each on a 3 T scanner in Stockholm.
+homepage: https://data.mendeley.com/datasets/pt9d2rdv46
+doi: 10.17632/pt9d2rdv46
+year: 2021
+version: '2'
+status: active
+creators:
+  - name: Tie-Qiang Li, Karolinska Institutet
+  - name: Xia Li, China Jiliang University
+  - name: Håkan Fischer, Amirhossein Manzouri and Kristoffer N.T. Månsson, Stockholm University
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [SE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.0
+access:
+  type: open
+  url: https://data.mendeley.com/datasets/pt9d2rdv46
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Li T-Q. resting-state fMRI data for Normal adults. Mendeley Data, V2 (2021). doi:10.17632/pt9d2rdv46.2. Li X,
+    Fischer H, Manzouri A, Månsson KNT, Li T-Q. Dataset of whole-brain resting-state fMRI of 227 young and elderly
+    adults acquired at 3T. Data in Brief 38, 107333 (2021).
+sources:
+  li2021:
+    title: Li et al. 2021, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2021.107333
+    kind: paper
+  mendeley-pt9d2rdv46:
+    title: resting-state fMRI data for Normal adults, Mendeley Data V2
+    url: https://data.mendeley.com/datasets/pt9d2rdv46
+    kind: website
+related: []
+keywords: [resting-state fMRI, functional connectivity, brain aging, healthy adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
