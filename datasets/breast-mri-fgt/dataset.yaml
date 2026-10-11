@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: breast-mri-fgt
+name: Breast MRI FGT Classification
+full_name: Publicly Available Breast MRI Dataset for FGT Classification and Analysis
+summary: >-
+  Breast MRI labelled with the BI-RADS category of fibroglandular tissue (FGT) amount, released to train and test
+  classifiers for breast cancer risk assessment. Pre-contrast fat-saturated T1-weighted scans, one per patient, as 3D
+  volumes and three 2D slices.
+homepage: https://zenodo.org/records/14921217
+doi: 10.5281/zenodo.14921217
+year: 2025
+creators:
+  - name: >-
+      Khalaj M, Arian A, Torabi A, Ahmadinejad N, Gity M, Miratashi Yazdi SN, Afshari MP, Sadeghi Tabrizi M, Kalhor A,
+      Soltanian-Zadeh H (University of Tehran, Tehran University of Medical Sciences)
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [breast]
+tasks: [classification]
+formats: [NIfTI, PNG]
+countries: [IR]
+vendors: [ge]
+field_strengths: [1.5, 3]
+size_gb: 19.37
+access:
+  type: open
+  url: https://zenodo.org/records/14921217
+  note: >-
+    Direct download from Zenodo without an account: a RAR archive of 2D PNG slices, five RAR parts of 3D NIfTI
+    volumes and a Labels.csv file.
+licenses:
+  - license: CC-BY-4.0
+    url: https://zenodo.org/records/14921217
+citation:
+  text: >-
+    Khalaj M, Arian A, Torabi A, Ahmadinejad N, Gity M, Miratashi Yazdi SN, Afshari MP, Sadeghi Tabrizi M, Kalhor A,
+    Soltanian-Zadeh H. Publicly Available Breast MRI Dataset for FGT Classification and Analysis [Data set]. Zenodo
+    (2025). https://doi.org/10.5281/zenodo.14921217
+sources:
+  zenodo-breast-mri-fgt:
+    title: Zenodo record 14921217, dataset description
+    url: https://zenodo.org/records/14921217
+    kind: website
+  zenodo-breast-mri-fgt-labels:
+    title: Labels.csv of Zenodo record 14921217 (CC BY 4.0, open download), 654 patients
+    url: https://zenodo.org/records/14921217/files/Labels.csv
+    kind: computed
+related: []
+keywords: [fibroglandular tissue, breast density, BI-RADS, breast cancer risk, fat-saturated T1]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

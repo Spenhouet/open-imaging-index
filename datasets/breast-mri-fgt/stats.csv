@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,654,zenodo-breast-mri-fgt,Dataset Collection and Annotation,One scan per patient; 826 scans before exclusions
+scans,,654,zenodo-breast-mri-fgt,Dataset Collection and Annotation,3D NIfTI volumes; the 2D set holds three slices from each
+subjects,contrast=T1w,654,zenodo-breast-mri-fgt,Dataset Collection and Annotation,3D axial fat-saturated pre-contrast T1-weighted
+subjects,contrast_set=T1w,654,zenodo-breast-mri-fgt,Dataset Collection and Annotation,
+subjects,vendor=ge,654,zenodo-breast-mri-fgt,MRI Acquisition Details,
+subjects,country=IR,654,zenodo-breast-mri-fgt,Dataset Collection and Annotation,"Imam Khomeini Hospital Complex, Tehran"
+subjects,split=train,498,zenodo-breast-mri-fgt,Data Splitting,
+subjects,split=validation,57,zenodo-breast-mri-fgt,Data Splitting,
+subjects,split=test,99,zenodo-breast-mri-fgt,Data Splitting,
+age_mean,,43.24,zenodo-breast-mri-fgt,Dataset Collection and Annotation,
+age_sd,,9.64,zenodo-breast-mri-fgt,Dataset Collection and Annotation,
+age_min,,19,zenodo-breast-mri-fgt,Dataset Collection and Annotation,
+age_max,,76,zenodo-breast-mri-fgt,Dataset Collection and Annotation,
