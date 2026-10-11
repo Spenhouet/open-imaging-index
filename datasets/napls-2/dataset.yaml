@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: napls-2
+name: NAPLS 2
+full_name: North American Prodrome Longitudinal Study, phase 2 (Predictors and Mechanisms of Conversion to Psychosis)
+summary: >-
+  Longitudinal brain MRI with clinical, cognitive and blood data from young people at clinical high risk for psychosis
+  and healthy controls, followed for two years to find what predicts and drives conversion to psychosis. Eight sites in
+  the United States and Canada.
+homepage: https://campuspress.yale.edu/napls/
+year: 2012
+creators:
+  - name: North American Prodrome Longitudinal Study (NAPLS) consortium
+    url: https://campuspress.yale.edu/napls/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [psychotic_disorder]
+tasks: [longitudinal, classification]
+countries: [US, CA]
+vendors: [siemens, ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NAPLS
+  note: >-
+    The study is hosted as project NAPLS in the LONI Image and Data Archive, where access starts with a data use
+    application from an IDA account. The PIs have restricted the public study information on the archive. NAPLS 3 is a
+    separate archive project (NAPLS3).
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The data use application and its terms are shown only to logged-in IDA users. Neither the archive page nor the
+      study website publishes a license or data use terms.
+citation:
+  text: >-
+    Addington J, Cadenhead KS, Cornblatt BA, et al. North American Prodrome Longitudinal Study (NAPLS 2): overview and
+    recruitment. Schizophrenia Research 142(1-3):77-82 (2012). doi:10.1016/j.schres.2012.09.012
+sources:
+  addington2012:
+    title: Addington et al. 2012, Schizophrenia Research (NAPLS 2 overview and recruitment)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3502644/
+    kind: paper
+  cannon2015:
+    title: Cannon et al. 2015, Biological Psychiatry (progressive cortical thinning in NAPLS 2)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4264996/
+    kind: paper
+  forsyth2014:
+    title: Forsyth et al. 2014, NeuroImage (multi-site fMRI working memory reliability in NAPLS)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4065837/
+    kind: paper
+  yale-napls-background:
+    title: NAPLS website, Background page
+    url: https://campuspress.yale.edu/napls/background/
+    kind: website
+related: []
+keywords: [clinical high risk, psychosis prodrome, schizophrenia, conversion, cortical thickness, traveling subjects]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

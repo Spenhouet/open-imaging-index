@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,777,cannon2015,"Methods, Subjects","sum of the disjoint groups scanned at baseline: 62 converters to psychosis, 491 clinical high risk non-converters and 224 healthy controls"
+subjects,condition=psychotic_disorder,62,cannon2015,"Methods, Subjects",clinical high risk participants scanned at baseline who later converted to psychosis
+subjects,contrast=T1w,777,cannon2015,"Methods, MRI Scans",3D T1-weighted MPRAGE (Siemens) or IR-SPGR (GE) acquired at baseline
+subjects,contrast=bold,166,forsyth2014,"Methods, Participants","healthy controls scanned with the working memory fMRI task at their recruiting site; the clinical high risk sample is not counted"
+subjects,field_strength=3,777,cannon2015,"Methods, MRI Scans",all eight sites scanned at 3 T
