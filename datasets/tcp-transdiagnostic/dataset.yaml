@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tcp-transdiagnostic
+name: Transdiagnostic Connectome Project (ds005237)
+full_name: >-
+  The Transdiagnostic Connectome Project: an open dataset for studying brain-behavior relationships in psychiatry
+summary: >-
+  Resting-state and task fMRI with T1- and T2-weighted brain MRI from adults with a range of affective and psychotic
+  psychiatric illnesses and healthy controls, collected to study brain-behavior relationships across diagnoses. Comes
+  with clinical interviews and over 50 questionnaires and cognitive tests.
+homepage: https://openneuro.org/datasets/ds005237
+doi: 10.18112/openneuro.ds005237.v1.1.3
+year: 2024
+updated: 2025
+version: 1.1.3
+status: active
+creators:
+  - name: Holmes Lab, Yale University and Rutgers University, with McLean Hospital (Chopra S, Cocuzza CV, Baker JT, Holmes AJ, et al.)
+    url: https://github.com/HolmesLab/TransdiagnosticConnectomeProject
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy, depression, bipolar_disorder, psychotic_disorder, anxiety_disorder, ptsd]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1003.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005237/versions/1.1.3
+  note: >-
+    Raw defaced MRI, events files, phenotype tables, framewise displacement traces and parcellated timeseries are an
+    open download on OpenNeuro. HCP-pipeline derivatives are co-deposited in NIMH Data Archive study 2932, which has
+    its own access process.
+licenses:
+  - license: CC0-1.0
+    applies_to: OpenNeuro release ds005237 (snapshot 1.1.3), raw MRI, derivatives and phenotype tables.
+    note: dataset_description.json of snapshot 1.1.3 states "License" CC0.
+citation:
+  text: >-
+    Chopra S, Cocuzza CV, Lawhead C, et al. The Transdiagnostic Connectome Project: an open dataset for studying
+    brain-behavior relationships in psychiatry. Scientific Data 12, 923 (2025). doi:10.1038/s41597-025-04895-z
+sources:
+  chopra2025:
+    title: >-
+      Chopra et al. 2025, The Transdiagnostic Connectome Project: an open dataset for studying brain-behavior
+      relationships in psychiatry, Scientific Data 12, 923
+    url: https://doi.org/10.1038/s41597-025-04895-z
+    kind: paper
+  openneuro-ds005237-v113:
+    title: OpenNeuro ds005237 snapshot 1.1.3 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005237/versions/1.1.3
+    kind: website
+  ds005237-participants:
+    title: >-
+      participants.tsv of ds005237 snapshot 1.1.3 (CC0), age, sex and Group columns, restricted to the 241 subjects
+      with image folders
+    url: https://openneuro.org/datasets/ds005237/versions/1.1.3/file-display/participants.tsv
+    kind: computed
+  ds005237-demos:
+    title: >-
+      phenotype/demos.tsv of ds005237 snapshot 1.1.3 (CC0), Primary_Dx column, restricted to the 241 subjects with
+      image folders
+    url: https://openneuro.org/datasets/ds005237/versions/1.1.3/file-display/phenotype:demos.tsv
+    kind: computed
+  ds005237-file-tree:
+    title: File tree of ds005237 snapshot 1.1.3 (CC0), NIfTI files counted per subject folder
+    url: https://openneuro.org/crn/datasets/ds005237/snapshots/1.1.3/files
+    kind: computed
+related: [yaleneuroconnect]
+keywords:
+  [
+    transdiagnostic,
+    functional connectivity,
+    resting-state fMRI,
+    task fMRI,
+    Stroop,
+    emotional faces,
+    brain-behavior,
+    psychiatry,
+    Human Connectome Project protocol
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

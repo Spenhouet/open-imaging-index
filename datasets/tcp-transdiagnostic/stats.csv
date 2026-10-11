@@ -1,0 +1,48 @@
+measure,by,value,source,where,note
+subjects,,241,chopra2025,Participants,the OpenNeuro snapshot summary and the file tree also list 241 subjects; 5 further participants did not consent to open sharing
+studies,,241,openneuro-ds005237-v113,snapshot summary,one imaging session per subject
+subjects,condition=healthy,93,chopra2025,Abstract,healthy comparison group; participants.tsv marks 92 imaged subjects as GenPop
+subjects,condition=depression,35,ds005237-demos,Primary_Dx column,"primary diagnosis of major depressive disorder, current or past"
+subjects,condition=anxiety_disorder,29,ds005237-demos,Primary_Dx column,"primary diagnosis of generalized or social anxiety, panic, agoraphobia, specific phobia or anxiety NOS, current or past"
+subjects,condition=bipolar_disorder,24,ds005237-demos,Primary_Dx column,primary diagnosis of bipolar I or II disorder
+subjects,condition=ptsd,15,ds005237-demos,Primary_Dx column,"primary diagnosis of PTSD, current or past"
+subjects,condition=psychotic_disorder,13,ds005237-demos,Primary_Dx column,primary diagnosis of schizophrenia or schizoaffective disorder
+subjects,sex=female,137,ds005237-participants,sex column,
+subjects,sex=male,100,ds005237-participants,sex column,
+subjects,sex=other,4,ds005237-participants,sex column,coded O
+subjects,age=10-19,19,ds005237-participants,age column,all aged 18 or 19
+subjects,age=20-29,109,ds005237-participants,age column,
+subjects,age=30-39,43,ds005237-participants,age column,
+subjects,age=40-49,30,ds005237-participants,age column,
+subjects,age=50-59,29,ds005237-participants,age column,
+subjects,age=60-69,11,ds005237-participants,age column,
+subjects,sex=female;age=10-19,13,ds005237-participants,age and sex columns,
+subjects,sex=female;age=20-29,61,ds005237-participants,age and sex columns,
+subjects,sex=male;age=20-29,46,ds005237-participants,age and sex columns,
+subjects,sex=female;age=30-39,21,ds005237-participants,age and sex columns,
+subjects,sex=male;age=30-39,21,ds005237-participants,age and sex columns,
+subjects,sex=female;age=40-49,22,ds005237-participants,age and sex columns,
+subjects,sex=female;age=50-59,15,ds005237-participants,age and sex columns,
+subjects,sex=male;age=50-59,14,ds005237-participants,age and sex columns,
+subjects,condition=healthy;sex=female,50,ds005237-participants,Group and sex columns,Group GenPop
+subjects,condition=healthy;sex=male,41,ds005237-participants,Group and sex columns,Group GenPop
+subjects,condition=healthy;age=10-19,11,ds005237-participants,Group and age columns,Group GenPop
+subjects,condition=healthy;age=20-29,40,ds005237-participants,Group and age columns,Group GenPop
+subjects,condition=healthy;age=30-39,19,ds005237-participants,Group and age columns,Group GenPop
+subjects,condition=healthy;age=50-59,10,ds005237-participants,Group and age columns,Group GenPop
+subjects,contrast=T1w,241,ds005237-file-tree,,one *_T1w.nii.gz per subject folder
+subjects,contrast=T2w,241,ds005237-file-tree,,one *_T2w.nii.gz per subject folder
+subjects,contrast=bold,241,ds005237-file-tree,,at least one *_bold.nii.gz per subject folder
+subjects,contrast_set=bold+T1w+T2w,241,ds005237-file-tree,,
+scans,,2095,ds005237-file-tree,,"T1w, T2w and BOLD NIfTI images under sub-* folders (241 + 241 + 1613); 482 spin-echo field maps not counted"
+scans,contrast=T1w,241,ds005237-file-tree,,
+scans,contrast=T2w,241,ds005237-file-tree,,
+scans,contrast=bold,1613,ds005237-file-tree,,"seven runs per subject at most: rest AP 241 and 236, rest PA 240 and 231, Stroop AP 226, Stroop PA 220, faces 219"
+subjects,field_strength=3,241,chopra2025,MRI data acquisition,
+subjects,vendor=siemens,241,chopra2025,MRI data acquisition,Siemens Magnetom Prisma at both sites
+subjects,country=US,241,chopra2025,Participants,
+age_mean,,34.0,ds005237-participants,age column,
+age_sd,,13.2,ds005237-participants,age column,
+age_median,,29.3,ds005237-participants,age column,
+age_min,,18.1,ds005237-participants,age column,
+age_max,,68.3,ds005237-participants,age column,
