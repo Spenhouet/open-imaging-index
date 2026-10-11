@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spine-generic-multi-subject
+name: Spine Generic Multi-Subject (ds001919)
+full_name: Spine Generic Public Database (Multi-Subject)
+summary: >-
+  Cervical spinal cord MRI of healthy adults scanned with one harmonized quantitative protocol at more than 40 sites on GE,
+  Philips and Siemens 3T systems, collected to measure reproducibility and set normative values, with cord
+  segmentations and disc labels.
+homepage: https://github.com/spine-generic/data-multi-subject
+doi: 10.5281/zenodo.4299139
+year: 2019
+updated: 2025
+version: r20250314
+status: active
+creators:
+  - name: Spine Generic project, NeuroPoly Lab, Polytechnique Montreal (Cohen-Adad J, et al.) and contributing sites
+    url: https://github.com/spine-generic
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, T2starw, dwi]
+anatomy: [spinal_cord]
+conditions: [healthy]
+tasks: [segmentation, normative]
+formats: [BIDS, NIfTI]
+vendors: [siemens, philips, ge]
+field_strengths: [3]
+size_gb: 26
+access:
+  type: open
+  url: https://github.com/spine-generic/data-multi-subject
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The repository LICENSE file and the Zenodo record of release r20250314 state CC BY 4.0. The
+      dataset_description.json still reads "CC0", and the earlier OpenNeuro snapshot ds001919 1.0.0 read "MIT"; the
+      maintainers changed the repository license to CC BY 4.0 in 2021 to match Zenodo.
+citation:
+  text: >-
+    Cohen-Adad J, Alonso-Ortiz E, Abramovic M, et al. Open-access quantitative MRI data of the spinal cord and
+    reproducibility across participants, sites and manufacturers. Scientific Data 8, 219 (2021).
+    doi:10.1038/s41597-021-00941-8
+sources:
+  cohenadad2021:
+    title: Cohen-Adad et al. 2021, Open-access quantitative MRI data of the spinal cord, Scientific Data
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8368310/
+    kind: paper
+  zenodo-data-multi-subject-r20250314:
+    title: Zenodo record of spine-generic/data-multi-subject release r20250314 (license and version)
+    url: https://doi.org/10.5281/zenodo.15028452
+    kind: website
+  data-multi-subject-participants:
+    title: participants.tsv of spine-generic/data-multi-subject r20250314 (CC BY 4.0)
+    url: https://github.com/spine-generic/data-multi-subject/blob/r20250314/participants.tsv
+    kind: computed
+  data-multi-subject-file-tree:
+    title: File tree of spine-generic/data-multi-subject r20250314 (CC BY 4.0), counted per NIfTI file
+    url: https://github.com/spine-generic/data-multi-subject/tree/r20250314
+    kind: computed
+related: []
+keywords: [spinal cord, quantitative MRI, multi-site, reproducibility, normative values, cross-sectional area, magnetization transfer, diffusion]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

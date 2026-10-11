@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,267,data-multi-subject-participants,participant_id,267 unique ids; the 2021 paper analysed 260 participants from 42 centers
+subjects,sex=female,125,data-multi-subject-participants,sex,
+subjects,sex=male,142,data-multi-subject-participants,sex,
+subjects,age=10-19,1,data-multi-subject-participants,age,
+subjects,age=20-29,144,data-multi-subject-participants,age,
+subjects,age=30-39,101,data-multi-subject-participants,age,
+subjects,age=40-49,14,data-multi-subject-participants,age,
+subjects,age=50-59,7,data-multi-subject-participants,age,
+subjects,sex=female;age=20-29,74,data-multi-subject-participants,"sex, age",cells below 10 left out
+subjects,sex=female;age=30-39,42,data-multi-subject-participants,"sex, age",
+subjects,sex=male;age=20-29,70,data-multi-subject-participants,"sex, age",
+subjects,sex=male;age=30-39,59,data-multi-subject-participants,"sex, age",
+subjects,condition=healthy,203,data-multi-subject-participants,pathology,"pathology HC; 62 others are labelled asymptomatic mild cord compression and 2 degenerative cervical myelopathy after radiological review of the T2w scans"
+subjects,vendor=siemens,180,data-multi-subject-participants,manufacturer,
+subjects,vendor=philips,50,data-multi-subject-participants,manufacturer,
+subjects,vendor=ge,37,data-multi-subject-participants,manufacturer,
+subjects,contrast=T1w,267,data-multi-subject-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,267,data-multi-subject-file-tree,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast=T2starw,267,data-multi-subject-file-tree,sub-*/anat/*_T2star.nii.gz,multi-echo gradient echo (BIDS suffix T2star)
+subjects,contrast=dwi,267,data-multi-subject-file-tree,sub-*/dwi/*_dwi.nii.gz,
+subjects,contrast_set=dwi+T1w+T2starw+T2w,267,data-multi-subject-file-tree,sub-*/,"259 subjects also have the magnetization transfer (MTS) series, which has no term in the vocabulary"
+age_median,,29,data-multi-subject-participants,age,
+age_mean,,30.1,data-multi-subject-participants,age,
+age_sd,,6.6,data-multi-subject-participants,age,
+age_min,,19,data-multi-subject-participants,age,
+age_max,,56,data-multi-subject-participants,age,
