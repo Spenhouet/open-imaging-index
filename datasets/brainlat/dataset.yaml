@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brainlat
+name: BrainLat
+full_name: The BrainLat project, a multimodal neuroimaging dataset of neurodegeneration from underrepresented backgrounds
+summary: >-
+  Brain MRI, resting-state EEG and cognitive tests from Latin American patients with Alzheimer's disease,
+  frontotemporal dementia, Parkinson's disease or multiple sclerosis and healthy controls, shared to develop affordable
+  biomarkers for underrepresented populations. 780 people from five countries.
+homepage: https://www.synapse.org/#!Synapse:syn51549340
+doi: 10.7303/syn51549340
+year: 2023
+creators:
+  - name: Latin American Brain Health Institute (BrainLat), Universidad Adolfo Ibáñez
+  - name: Multi-Partner Consortium to Expand Dementia Research in Latin America (ReDLat)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [alzheimers, frontotemporal_dementia, parkinsons, multiple_sclerosis, healthy]
+tasks: [classification]
+formats: [BIDS]
+countries: [AR, CL, CO, MX, PE]
+vendors: [ge, siemens, philips]
+field_strengths: [1.5, 3]
+access:
+  type: registration
+  url: https://www.synapse.org/#!Synapse:syn51549340
+  note: >-
+    The Synapse project page says the EEG data can be taken directly from its data folder. For the MRI data, users
+    with a Synapse account fill in a short Google form (name, institution, e-mail and Synapse username) or e-mail the
+    named contact at Universidad de San Andrés.
+licenses:
+  - license: CC0-1.0
+    note: >-
+      The Synapse project wiki states that the BrainLat Dataset, © 2023 by Pavel Prado, Vicente Medel and Agustín
+      Ibañez, is licensed under CC0.
+citation:
+  text: >-
+    Prado P, Medel V, Gonzalez-Gomez R, Sainz-Ballesteros A, Vidal V, Santamaría-García H, Moguilner S, Mejia J,
+    Slachevsky A, Behrens MI, Aguillon D, Lopera F, Parra MA, Matallana D, Maito MA, Garcia AM, Custodio N, Funes AA,
+    Piña-Escudero S, Birba A, Fittipaldi S, Legaz A, Ibañez A. The BrainLat project, a multimodal neuroimaging dataset
+    of neurodegeneration from underrepresented backgrounds. Scientific Data 10, 889 (2023).
+    doi:10.1038/s41597-023-02806-8
+sources:
+  prado2023:
+    title: Prado et al. 2023, The BrainLat project, a multimodal neuroimaging dataset of neurodegeneration from underrepresented backgrounds, Scientific Data
+    url: https://doi.org/10.1038/s41597-023-02806-8
+    kind: paper
+  synapse-brainlat-wiki:
+    title: BrainLat_dataset project wiki on Synapse (syn51549340)
+    url: https://www.synapse.org/#!Synapse:syn51549340/wiki/624187
+    kind: website
+related: []
+keywords: [dementia, neurodegeneration, Latin America, ReDLat, resting-state fMRI, diffusion MRI, EEG, underrepresented populations]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

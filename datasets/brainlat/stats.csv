@@ -1,0 +1,65 @@
+measure,by,value,source,where,note
+subjects,,780,prado2023,Methods: Participants; Table 2,
+subjects,condition=alzheimers,278,prado2023,Table 2,
+subjects,condition=frontotemporal_dementia,163,prado2023,Table 2,behavioral variant frontotemporal dementia
+subjects,condition=parkinsons,57,prado2023,Table 2,
+subjects,condition=multiple_sclerosis,32,prado2023,Table 2,
+subjects,condition=healthy,250,prado2023,Table 2,
+subjects,sex=female,453,prado2023,Table 2,
+subjects,sex=male,327,prado2023,Table 2,
+subjects,condition=alzheimers;sex=female,167,prado2023,Table 2,
+subjects,condition=alzheimers;sex=male,111,prado2023,Table 2,
+subjects,condition=frontotemporal_dementia;sex=female,77,prado2023,Table 2,
+subjects,condition=frontotemporal_dementia;sex=male,86,prado2023,Table 2,
+subjects,condition=parkinsons;sex=female,19,prado2023,Table 2,
+subjects,condition=parkinsons;sex=male,38,prado2023,Table 2,
+subjects,condition=multiple_sclerosis;sex=female,26,prado2023,Table 2,
+subjects,condition=multiple_sclerosis;sex=male,6,prado2023,Table 2,
+subjects,condition=healthy;sex=female,164,prado2023,Table 2,
+subjects,condition=healthy;sex=male,86,prado2023,Table 2,
+age_mean,,62.7,prado2023,Abstract; Table 2,
+age_sd,,9.5,prado2023,Abstract; Table 2,
+age_min,,21,prado2023,Abstract,
+age_max,,89,prado2023,Abstract,
+age_mean,condition=alzheimers,72.2,prado2023,Table 2,
+age_sd,condition=alzheimers,7.9,prado2023,Table 2,
+age_mean,condition=frontotemporal_dementia,65.1,prado2023,Table 2,
+age_sd,condition=frontotemporal_dementia,10.5,prado2023,Table 2,
+age_mean,condition=parkinsons,69.9,prado2023,Table 2,
+age_sd,condition=parkinsons,11.2,prado2023,Table 2,
+age_mean,condition=multiple_sclerosis,38.5,prado2023,Table 2,
+age_sd,condition=multiple_sclerosis,8.9,prado2023,Table 2,
+age_mean,condition=healthy,67.9,prado2023,Table 2,
+age_sd,condition=healthy,8.9,prado2023,Table 2,
+subjects,country=AR,204,prado2023,Table 3,"sum of the CNC-UdeSA site rows: 43 AD, 38 bvFTD, 11 PD, 32 MS, 80 controls"
+subjects,country=CL,291,prado2023,Table 3,"sum of the CICA and GERO site rows: 118 AD, 37 bvFTD, 21 PD, 115 controls"
+subjects,country=CO,175,prado2023,Table 3,"sum of the AI-PUJB and UV site rows: 23 AD, 81 bvFTD, 25 PD, 46 controls"
+subjects,country=MX,29,prado2023,Table 3,"sum of the INNN and INCMN site rows: 21 AD, 6 bvFTD, 2 controls"
+subjects,country=PE,81,prado2023,Table 3,"UCIDP-IPN site rows: 73 AD, 1 bvFTD, 7 controls"
+subjects,modality=MR,716,prado2023,Table 4,"sum of the disjoint per-group, per-field-strength N; the control rows add up to 258, more than the 250 controls in Table 2"
+subjects,contrast=T1w,712,prado2023,Table 4,"anatomical MRI column summed over groups and field strengths; the control rows add up to 257, more than the 250 controls in Table 2, so no per-group control row is given"
+subjects,contrast=bold,441,prado2023,Table 4,"resting-state fMRI column summed over groups and field strengths"
+subjects,contrast=dwi,363,prado2023,Table 4,"DWI column summed over groups and field strengths"
+subjects,field_strength=1.5,265,prado2023,Table 4,"N at 1.5 T: 156 AD, 28 bvFTD, 81 controls"
+subjects,field_strength=3,451,prado2023,Table 4,"N at 3 T: 91 AD, 97 bvFTD, 55 PD, 31 MS, 177 controls"
+subjects,condition=alzheimers;field_strength=1.5,156,prado2023,Table 4,
+subjects,condition=alzheimers;field_strength=3,91,prado2023,Table 4,
+subjects,condition=frontotemporal_dementia;field_strength=1.5,28,prado2023,Table 4,
+subjects,condition=frontotemporal_dementia;field_strength=3,97,prado2023,Table 4,
+subjects,condition=parkinsons;field_strength=3,55,prado2023,Table 4,
+subjects,condition=multiple_sclerosis;field_strength=3,31,prado2023,Table 4,
+subjects,condition=healthy;field_strength=1.5,81,prado2023,Table 4,
+subjects,condition=healthy;field_strength=3,177,prado2023,Table 4,
+subjects,condition=alzheimers;contrast=T1w,245,prado2023,Table 4,155 at 1.5 T and 90 at 3 T
+subjects,condition=frontotemporal_dementia;contrast=T1w,124,prado2023,Table 4,28 at 1.5 T and 96 at 3 T
+subjects,condition=parkinsons;contrast=T1w,55,prado2023,Table 4,
+subjects,condition=multiple_sclerosis;contrast=T1w,31,prado2023,Table 4,
+subjects,condition=alzheimers;contrast=bold,86,prado2023,Table 4,14 at 1.5 T and 72 at 3 T
+subjects,condition=frontotemporal_dementia;contrast=bold,97,prado2023,Table 4,15 at 1.5 T and 82 at 3 T
+subjects,condition=parkinsons;contrast=bold,30,prado2023,Table 4,
+subjects,condition=multiple_sclerosis;contrast=bold,30,prado2023,Table 4,
+subjects,condition=healthy;contrast=bold,198,prado2023,Table 4,27 at 1.5 T and 171 at 3 T
+subjects,condition=alzheimers;contrast=dwi,54,prado2023,Table 4,3 at 1.5 T and 51 at 3 T
+subjects,condition=frontotemporal_dementia;contrast=dwi,91,prado2023,Table 4,0 at 1.5 T and 91 at 3 T
+subjects,condition=parkinsons;contrast=dwi,30,prado2023,Table 4,
+subjects,condition=healthy;contrast=dwi,188,prado2023,Table 4,27 at 1.5 T and 161 at 3 T
