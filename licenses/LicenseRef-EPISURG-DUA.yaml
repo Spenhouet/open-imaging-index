@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-EPISURG-DUA
+name: EPISURG data use agreement (UCL Research Data Repository record description)
+short_name: EPISURG DUA
+url: https://rdr.ucl.ac.uk/articles/dataset/EPISURG_a_dataset_of_postoperative_magnetic_resonance_images_MRI_for_quantitative_analysis_of_resection_neurosurgery_for_refractory_epilepsy/9996158
+version: 'Four numbered terms in the description of record 9996158 v1, read 2026-10-11'
+summary: >-
+  Four terms printed on the download page, accepted by using the data without any signature. Users must not try to
+  identify or contact patients, must cite the two listed publications, must not pass the data on to anyone, and must
+  make their team follow the same terms.
+purpose: unspecified
+rules:
+  commercial_use:
+    value: unspecified
+    note: The terms do not mention commercial use. The record license (CC BY-NC-SA 4.0) rules it out separately.
+  product_validation:
+    value: unspecified
+    note: The terms do not address testing or validating a product.
+  model_training:
+    value: conditional
+    quote: >-
+      You will acknowledge the use of EPISURG data and data derived from EPISURG data when publicly presenting any
+      results or algorithms that benefitted from their use.
+    note: Algorithms built with the data are anticipated, with the duty to acknowledge EPISURG.
+  derivatives:
+    value: conditional
+    quote: >-
+      You will acknowledge the use of EPISURG data and data derived from EPISURG data when publicly presenting any
+      results or algorithms that benefitted from their use.
+    note: Derived data are anticipated; their use must be acknowledged.
+  publication:
+    value: conditional
+    quote: >-
+      Papers, book chapters, books, posters, oral presentations, and all other printed and digital presentations of
+      results derived from EPISURG data should cite the publications listed above.
+    note: Allowed with citation of the MICCAI 2020 paper and the dataset DOI.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      You will not further disclose these data beyond the uses outlined in this agreement and understand that
+      redistribution of data in any manner is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    quote: >-
+      You will not further disclose these data beyond the uses outlined in this agreement and understand that
+      redistribution of data in any manner is prohibited.
+    note: >-
+      The terms do not say whether derived data such as new cavity masks count as "these data". The record license
+      (CC BY-NC-SA 4.0) on its own would allow sharing adapted material under the same license.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      You will acknowledge the use of EPISURG data and data derived from EPISURG data when publicly presenting any
+      results or algorithms that benefitted from their use.
+  share_alike:
+    value: conditional
+    quote: >-
+      You will require anyone on your team who uses these data, or anyone with whom you share these data to comply
+      with this data use agreement.
+    note: Anyone who receives the data must follow the same terms.
+  signed_agreement:
+    value: 'no'
+    note: The terms are printed in the record description; the file downloads without an account or signature.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: You will not attempt to establish the identity or to make contact with any of the included subjects.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
