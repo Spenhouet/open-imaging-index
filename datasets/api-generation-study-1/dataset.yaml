@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=../../schema/dataset.schema.json
-id: api-gs1
+id: api-generation-study-1
 name: API Generation Study 1 (GS1)
 full_name: >-
   Alzheimer's Prevention Initiative Generation Study 1 (CAD106 and umibecestat in APOE4 homozygotes, NCT02565511)
