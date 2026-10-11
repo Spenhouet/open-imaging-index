@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,73,ds004848-participants,participant_id,73 rows; the README also states 28 developmental prosopagnosics and 45 controls
+subjects,condition=healthy,45,ds004848-participants,group,group Control
+subjects,condition=prosopagnosia,28,ds004848-participants,group,group DP (developmental prosopagnosia)
+subjects,contrast=T1w,73,ds004848-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,73,ds004848-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,73,ds004848-file-tree,,fieldmap magnitude and phase-difference images (72 subjects) are not counted as a contrast
+scans,,218,ds004848-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; fieldmap images not included"
+scans,contrast=T1w,73,ds004848-file-tree,,
+scans,contrast=bold,145,ds004848-file-tree,,"73 Game of Thrones movie runs and 72 category localiser runs; sub-DP15 has no localiser run"

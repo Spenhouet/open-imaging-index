@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: got-naturalistic-viewing
+name: Game of Thrones naturalistic viewing
+full_name: Game of Thrones - A naturalistic viewing dataset
+summary: >-
+  Brain fMRI of adults with developmental prosopagnosia (face blindness) and healthy controls watching Game of Thrones
+  clips, collected to study how familiarity with people and places shapes brain responses. Includes a face and scene
+  localiser, T1w anatomy and fieldmaps.
+homepage: https://openneuro.org/datasets/ds004848
+doi: 10.18112/openneuro.ds004848.v1.0.1
+# OpenNeuro snapshot 1.0.0 dated 2023-11-16 and 1.0.1 dated 2024-07-23 in the CHANGES file.
+year: 2023
+updated: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Department of Psychology, University of York (Noad K, Watson DM, Andrews TJ)
+    url: https://openneuro.org/datasets/ds004848
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [prosopagnosia, healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 21.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004848
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Noad KN, Watson DM, Andrews TJ. Familiarity enhances functional connectivity between visual and nonvisual regions
+    of the brain during natural viewing. Cerebral Cortex 34(7), bhae285 (2024). doi:10.1093/cercor/bhae285
+sources:
+  noad2024:
+    title: Noad et al. 2024, Familiarity enhances functional connectivity between visual and nonvisual regions of the brain during natural viewing, Cerebral Cortex
+    url: https://doi.org/10.1093/cercor/bhae285
+    kind: paper
+  openneuro-ds004848-v1-0-1:
+    title: OpenNeuro ds004848 snapshot 1.0.1 (README, dataset_description.json, CHANGES, sidecar JSON and snapshot size)
+    url: https://openneuro.org/datasets/ds004848/versions/1.0.1
+    kind: website
+  ds004848-participants:
+    title: participants.tsv of ds004848 snapshot 1.0.1 (CC0), counted per row; groups from the group column
+    url: https://github.com/OpenNeuroDatasets/ds004848/blob/1.0.1/participants.tsv
+    kind: computed
+  ds004848-file-tree:
+    title: BIDS file tree of ds004848 snapshot 1.0.1 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004848/tree/1.0.1
+    kind: computed
+related: []
+keywords: [naturalistic viewing, movie watching, face recognition, familiarity, developmental prosopagnosia, category localiser, inter-subject correlation, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
