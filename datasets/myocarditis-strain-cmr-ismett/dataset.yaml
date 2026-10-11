@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: myocarditis-strain-cmr-ismett
+name: Acute myocarditis strain and CMR (ISMETT)
+full_name: >-
+  Raw Data for the article: Usefulness of longitudinal systolic strain and delayed enhancement cardiac magnetic
+  resonance in depicting risk of supraventricular arrythmias in patients with acute myocarditis and preserved left
+  ventricular function
+summary: >-
+  Echocardiography and cardiac MRI cohort of patients with acute myocarditis and preserved ejection fraction, with
+  longitudinal strain and delayed enhancement mass used to predict supraventricular arrhythmias. 70 patients, 43 with
+  MRI. Access restricted.
+homepage: https://zenodo.org/records/6378783
+doi: 10.5281/zenodo.6378783
+year: 2022
+creators:
+  - name: Istituto Mediterraneo per i Trapianti e Terapie ad Alta Specializzazione (ISMETT)
+    url: https://zenodo.org/records/6378783
+species: human
+modalities: [US, MR]
+contrasts: [lge]
+anatomy: [heart]
+conditions: [myocarditis]
+tasks: [classification]
+access:
+  type: on_request
+  url: https://zenodo.org/records/6378783
+  note: >-
+    The Zenodo record is restricted and lists no files; access is requested through the record and granted at the
+    owners' discretion. It describes its content as raw data for the article. Whether echocardiography or CMR images
+    are part of it is not stated.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Zenodo record is labelled CC BY 4.0, which applies once access has been granted. No other terms are
+      published.
+citation:
+  text: >-
+    Novo G, Di Lisi D, La Franca E, et al. Usefulness of longitudinal systolic strain and delayed enhancement cardiac
+    magnetic resonance in depicting risk of supraventricular arrythmias in patients with acute myocarditis and
+    preserved left ventricular function. Echocardiography 39(2), 294-301 (2022). doi:10.1111/echo.15306
+sources:
+  novo2022:
+    title: Novo et al. 2022, Echocardiography 39(2), 294-301 (abstract)
+    url: https://doi.org/10.1111/echo.15306
+    kind: paper
+  zenodo-6378783:
+    title: Zenodo record 6378783, raw data for the article
+    url: https://zenodo.org/records/6378783
+    kind: website
+related: []
+keywords:
+  [
+    acute myocarditis,
+    speckle tracking echocardiography,
+    longitudinal systolic strain,
+    mechanical dispersion,
+    delayed enhancement,
+    supraventricular arrhythmia,
+    risk stratification
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
