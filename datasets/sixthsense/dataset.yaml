@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sixthsense
+name: SixthSense
+full_name: Neural representations of naturalistic events are updated as our understanding of the past changes
+summary: >-
+  Task fMRI and T1-weighted brain MRI of young adults who watched The Sixth Sense with the twist shown first, last or
+  not at all, then recalled each scene aloud, to study how new information updates memories of past events.
+homepage: https://openneuro.org/datasets/ds004359
+doi: 10.18112/openneuro.ds004359.v1.0.0
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Zadbood A, Nastase SA, Chen J, Norman KA, Hasson U (Princeton Neuroscience Institute, Princeton University)
+    url: https://openneuro.org/datasets/ds004359
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 108.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004359
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Zadbood A, Nastase SA, Chen J, Norman KA, Hasson U. Neural representations of naturalistic events are updated as
+    our understanding of the past changes. eLife 11:e79045 (2022). doi:10.7554/eLife.79045
+sources:
+  zadbood2022:
+    title: >-
+      Zadbood et al. 2022, Neural representations of naturalistic events are updated as our understanding of the past
+      changes, eLife
+    url: https://doi.org/10.7554/eLife.79045
+    kind: paper
+  openneuro-ds004359-v1-0-0:
+    title: OpenNeuro ds004359 snapshot 1.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004359/versions/1.0.0
+    kind: website
+  ds004359-participants:
+    title: participants.tsv of ds004359 snapshot 1.0.0 (CC0), condition column
+    url: https://openneuro.org/crn/datasets/ds004359/snapshots/1.0.0/files/participants.tsv
+    kind: computed
+  ds004359-file-tree:
+    title: File tree of ds004359 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds004359/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords:
+  [naturalistic fMRI, movie watching, The Sixth Sense, memory updating, cued recall, spoken recall, default mode network]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

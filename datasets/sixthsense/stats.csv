@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,57,zadbood2022,Materials and methods: Participants,"66 scanned, 9 excluded (3 for guessing or not understanding the twist, 6 for head motion); groups: twist 19 (Experimental design), spoiled 18, no-twist 20. participants.tsv condition column agrees (1 = spoiled 18, 2 = twist 19, 3 = no-twist 20)"
+subjects,contrast=T1w,57,ds004359-file-tree,anat/*_T1w.nii.gz,one per subject
+subjects,contrast=bold,57,ds004359-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,57,ds004359-file-tree,sub-*/,
+scans,,292,ds004359-file-tree,*.nii.gz,"57 T1w, 121 bold and 114 field map files (dir-AP and dir-PA epi, two per subject)"
+scans,contrast=T1w,57,ds004359-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,121,ds004359-file-tree,func/*_bold.nii.gz,57 movie runs and 64 recall runs; six subjects have their recall split into two or three runs
+subjects,country=US,57,zadbood2022,Materials and methods: Participants,Princeton University
+subjects,vendor=siemens,57,zadbood2022,Materials and methods: MRI acquisition,Siemens Prisma
+subjects,field_strength=3,57,zadbood2022,Materials and methods: MRI acquisition,3T
