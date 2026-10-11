@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005375
+name: POLEX (ds005375)
+full_name: 'POLEX: neural correlates of group and personal discrimination'
+summary: >-
+  Brain MRI and task fMRI of adults living in Spain who played Cyberball and two RateME games that staged personal and
+  group discrimination, collected to compare the brain response to group discrimination with personal rejection.
+homepage: https://openneuro.org/datasets/ds005375
+doi: 10.18112/openneuro.ds005375.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: Marcos-Vidal L, Gil-Buitrago H, Cisma I, Hendricks RC, Atran S, Pretus C
+    url: https://openneuro.org/datasets/ds005375
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [ES]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 12.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005375
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Marcos-Vidal L, Gil-Buitrago H, Cisma I, Hendricks RC, Atran S, Pretus C. POLEX. OpenNeuro dataset ds005375,
+    version 1.0.0 (2024). doi:10.18112/openneuro.ds005375.v1.0.0
+sources:
+  openneuro-ds005375-v1:
+    title: OpenNeuro ds005375 snapshot 1.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005375/versions/1.0.0
+    kind: website
+  marcosvidal2024:
+    title: >-
+      Marcos-Vidal et al. 2024, When Group Grievances Become Personal: Dissociating the Neural Correlates of Group and
+      Personal Discrimination (PsyArXiv preprint)
+    url: https://osf.io/preprints/psyarxiv/sqzjm
+    kind: paper
+  ds005375-file-tree:
+    title: File tree of ds005375 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds005375/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords: [social exclusion, discrimination, ostracism, Cyberball, identity fusion, intergroup relations, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
