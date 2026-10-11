@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002886
+name: Brain Development of Deductive Reasoning (ds002886)
+full_name: Brain Development of Deductive Reasoning
+summary: >-
+  Brain MRI and task fMRI of school-aged children solving set-inclusion and linear-order logic problems, collected to
+  study how the brain supports deductive reasoning during development. 56 children from the Chicago area, with
+  standardized cognitive and math tests, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002886
+doi: 10.18112/openneuro.ds002886.v1.1.0
+year: 2020
+updated: 2021
+version: 1.1.0
+status: active
+creators:
+  - name: Brain Development Lab, Northwestern University (Lytle MN, Prado J, Booth JR)
+    url: https://openneuro.org/datasets/ds002886
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 20.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002886
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Lytle MN, Prado J, Booth JR. A neuroimaging dataset of deductive reasoning in school-aged children. Data in Brief
+    33, 106405 (2020). doi:10.1016/j.dib.2020.106405
+sources:
+  lytle2020:
+    title: Lytle et al. 2020, A neuroimaging dataset of deductive reasoning in school-aged children, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2020.106405
+    kind: paper
+  ds002886-participants:
+    title: participants.tsv of ds002886 snapshot 1.1.0 (CC0), counted per row
+    url: https://openneuro.org/datasets/ds002886/versions/1.1.0/file-display/participants.tsv
+    kind: computed
+  ds002886-file-tree:
+    title: File tree of ds002886 snapshot 1.1.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds002886/versions/1.1.0
+    kind: computed
+related: []
+keywords: [deductive reasoning, logical reasoning, children, pediatric, task fMRI, syllogisms, transitive inference]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

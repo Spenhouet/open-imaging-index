@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,56,lytle2020,Section 2.1,56 subject folders in the snapshot 1.1.0 file tree; 56 participant rows in participants.tsv
+subjects,sex=female,32,lytle2020,Section 2.1,participants.tsv sex 2 (female) gives the same count
+subjects,sex=male,24,ds002886-participants,sex,sex 1 (male)
+subjects,contrast=T1w,56,ds002886-file-tree,sub-*/ses-T1/anat/*_T1w.nii.gz,
+subjects,contrast=bold,56,ds002886-file-tree,sub-*/ses-T1/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,56,ds002886-file-tree,anat and func folders,
+studies,,56,ds002886-file-tree,sub-*/ses-* folders,only session T1 holds imaging; session T2 was behavioural testing only
+scans,,252,ds002886-file-tree,sub-*/ses-T1/*/*.nii.gz,all image files: 56 T1w and 196 bold
+scans,contrast=T1w,56,ds002886-file-tree,*_T1w.nii.gz,one T1w per subject
+scans,contrast=bold,196,lytle2020,Table 1,"Syllogisms run 1: 51, run 2: 50; Transitive run 1: 45, run 2: 50; the file tree holds the same 196 bold files"
+age_min,,8.47,lytle2020,Section 2.1,age at session T1
+age_max,,15,lytle2020,Section 2.1,age at session T1
+age_mean,,11.2,lytle2020,Section 2.1,age at session T1
+age_sd,,1.64,lytle2020,Section 2.1,age at session T1
