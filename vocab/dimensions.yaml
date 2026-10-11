@@ -12,7 +12,7 @@
 dimensions:
   - id: modality
     label: Modality
-    description: Imaging modality, as a DICOM Modality code (MR, CT, PT, ...).
+    description: Imaging modality, as a DICOM Modality code (MR, CT, PT, ...) or a local id where DICOM has none (DOT).
     values: vocab
     combine: all
     partition: false

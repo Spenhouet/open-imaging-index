@@ -25,7 +25,7 @@ Licenses live in `licenses/`, one file per license, so that many datasets can sh
 | `version`, `status`                         |          | `status` is `active`, `superseded` or `retired`.                                                                                                                                                                                |
 | `creators`                                  | yes      | Groups or people who made the dataset.                                                                                                                                                                                          |
 | `species`                                   |          | Defaults to `human`.                                                                                                                                                                                                            |
-| `modalities`                                | yes      | `vocab/modality.yaml` (DICOM modality codes).                                                                                                                                                                                   |
+| `modalities`                                | yes      | `vocab/modality.yaml` (DICOM modality codes, local ids where DICOM has none).                                                                                                                                                   |
 | `contrasts`, `tracers`                      |          | `vocab/contrast.yaml`, `vocab/tracer.yaml`.                                                                                                                                                                                     |
 | `anatomy`                                   | yes      | `vocab/anatomy.yaml`.                                                                                                                                                                                                           |
 | `conditions`, `tasks`, `formats`, `vendors` |          | `vocab/condition.yaml`, `vocab/task.yaml`, `vocab/format.yaml`, `vocab/vendor.yaml`.                                                                                                                                            |
@@ -189,7 +189,7 @@ Every file in `vocab/` lists terms with an `id`, a `label` and optional `descrip
 
 | File             | Based on                                                                     |
 | ---------------- | ---------------------------------------------------------------------------- |
-| `modality.yaml`  | DICOM Modality (0008,0060)                                                   |
+| `modality.yaml`  | DICOM Modality (0008,0060), local ids where DICOM has none                   |
 | `contrast.yaml`  | BIDS suffixes for MR, local terms for CT phases, stains and ultrasound modes |
 | `anatomy.yaml`   | UBERON                                                                       |
 | `condition.yaml` | MONDO, HPO for findings                                                      |
