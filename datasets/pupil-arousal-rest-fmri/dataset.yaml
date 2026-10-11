@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pupil-arousal-rest-fmri
+name: Pupil and Resting-State fMRI (Lloyd et al.)
+full_name: Pupil size reflects activation of subcortical ascending arousal system nuclei during rest
+summary: >-
+  Resting-state fMRI with simultaneous pupil recordings from healthy young adults, collected to test whether
+  spontaneous changes in pupil size track activity in brainstem and basal forebrain arousal nuclei such as the locus
+  coeruleus. Includes T1-weighted and neuromelanin-sensitive scans.
+homepage: https://doi.org/10.5061/dryad.7m0cfxpzn
+doi: 10.5061/dryad.7m0cfxpzn
+# Published on Dryad and mirrored on Zenodo record 7450251, publication date 2023-03-06 (version 2).
+year: 2023
+version: '2'
+status: active
+creators:
+  - name: Lloyd B, de Voogd LD, Mäki-Marttunen V, Nieuwenhuis S (Leiden University, Donders Institute)
+    url: https://zenodo.org/records/7450251
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [NIfTI, MAT]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 20.4
+access:
+  type: open
+  url: https://zenodo.org/records/7450251
+licenses:
+  - license: CC0-1.0
+    note: The Zenodo record of the Dryad dataset states the license cc-zero.
+citation:
+  text: >-
+    Lloyd B, de Voogd LD, Mäki-Marttunen V, Nieuwenhuis S. Pupil size reflects activation of subcortical ascending
+    arousal system nuclei during rest. eLife 12, e84822 (2023). doi:10.7554/eLife.84822
+sources:
+  lloyd2023:
+    title: >-
+      Lloyd et al. 2023, Pupil size reflects activation of subcortical ascending arousal system nuclei during rest,
+      eLife (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10299825/
+    kind: paper
+  zenodo-7450251:
+    title: Zenodo record 7450251 of the Dryad dataset (record metadata and README.md)
+    url: https://zenodo.org/records/7450251
+    kind: website
+  lloyd2023-demographics:
+    title: data/group_data/sub_demographics.csv in data.zip of the dataset (CC0), counted per row
+    url: https://zenodo.org/records/7450251/files/data.zip
+    kind: computed
+  lloyd2023-file-tree:
+    title: File listing of data.zip of the dataset (CC0), NIfTI folders counted per subject, session and series
+    url: https://zenodo.org/api/records/7450251/files/data.zip/content
+    kind: computed
+related: []
+keywords:
+  [
+    pupillometry,
+    resting-state fMRI,
+    locus coeruleus,
+    ascending arousal system,
+    neuromelanin,
+    multi-echo EPI,
+    physiological recordings,
+    young adults
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
