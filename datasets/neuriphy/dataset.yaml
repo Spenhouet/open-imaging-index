@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: neuriphy
+name: NeuriPhy
+full_name: NeuriPhy - Neuroimaging Dataset for Physics-Informed Learning
+summary: >-
+  Preoperative brain MRI of brain tumor patients paired with biomechanically simulated brain shift displacement
+  fields, made to train and test deep learning registration of intraoperative brain shift, with keypoints and brain
+  and tumor segmentations.
+homepage: https://zenodo.org/records/15381866
+doi: 10.5281/zenodo.15381866
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Tiago Assis, Reuben Dorent, Benjamin F. Zwick, Nuno C. Garcia, Ines P. Machado
+species: human
+modalities: [MR]
+contrasts: [T1w_ce, T2w]
+anatomy: [brain]
+conditions: [brain_tumor, glioblastoma]
+tasks: [registration, segmentation]
+formats: [NIfTI, NRRD]
+countries: [US]
+access:
+  type: on_request
+  url: https://zenodo.org/records/15381866
+  note: >-
+    The Zenodo record is public but its files are restricted; a logged-in user can request access, which the record
+    owners grant at their discretion. No access conditions are published.
+licenses:
+  - license: CC-BY-4.0
+    url: https://zenodo.org/records/15381866
+    note: >-
+      The Zenodo record lists CC BY 4.0. The images derive from ReMIND and UPENN-GBM on The Cancer Imaging Archive,
+      both under CC BY 4.0.
+citation:
+  text: >-
+    Assis T, Dorent R, Zwick BF, Garcia NC, Machado IP. NeuriPhy - Neuroimaging Dataset for Physics-Informed Learning
+    (1.0.0) [Data set]. Zenodo (2025). https://doi.org/10.5281/zenodo.15381866
+sources:
+  zenodo-neuriphy:
+    title: NeuriPhy Zenodo record, version 1.0.0
+    url: https://zenodo.org/records/15381866
+    kind: website
+  assis2025:
+    title: >-
+      Assis et al. 2025, Deep Biomechanically-Guided Interpolation for Keypoint-Based Brain Shift Registration,
+      arXiv:2508.13762 (LNCS, Collaborative Intelligence and Autonomy in Image-Guided Surgery)
+    url: https://arxiv.org/abs/2508.13762
+    kind: paper
+related: [upenn-gbm]
+keywords: [brain shift, deformable registration, biomechanical simulation, physics-informed learning, keypoints, neurosurgery]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
