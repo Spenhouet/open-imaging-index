@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hsr-ms-gene-expression-fc
+name: San Raffaele MS Functional Network and Gene Expression
+full_name: >-
+  Spatial gene expression and functional network abnormalities in multiple sclerosis: exploring biological influence
+  on brain functional reorganization
+summary: >-
+  Resting-state functional and structural brain MRI of people with multiple sclerosis and healthy controls, used to
+  relate network centrality changes to regional brain gene expression. Images are not shared; a table of clinical and
+  volumetric measures is public.
+homepage: https://data.mendeley.com/datasets/6x9f2wt754
+doi: 10.1038/s41398-026-03921-x
+# Year of the paper (Translational Psychiatry, March 2026) and of the Mendeley Data deposit (May 2026); the images have
+# no public release.
+year: 2026
+creators:
+  - name: Neuroimaging Research Unit, IRCCS San Raffaele Scientific Institute, Milan
+    url: https://www.hsr.it/
+modalities: [MR]
+contrasts: [bold, T1w, FLAIR, PDw, T2w]
+anatomy: [brain]
+conditions: [multiple_sclerosis, healthy]
+countries: [IT]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1038/s41398-026-03921-x
+  note: >-
+    The data availability statement of Preziosa et al. (2026) says only that the senior author has full access to the
+    data; it offers no sharing of the images. Per-subject demographic, clinical, cognitive and volumetric measures for
+    all 772 participants are on Mendeley Data under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the images. The CC BY 4.0 Mendeley Data deposit covers only the
+      tabular per-subject measures.
+citation:
+  text: >-
+    Preziosa P, Azzimonti M, Storelli L, Valsasina P, Tedone N, Margoni M, Filippi M, Rocca MA. Spatial gene expression
+    and functional network abnormalities in multiple sclerosis: exploring biological influence on brain functional
+    reorganization. Translational Psychiatry 16 (2026). doi:10.1038/s41398-026-03921-x
+sources:
+  preziosa2026:
+    title: Preziosa et al. 2026, Translational Psychiatry (PMC12982597)
+    url: https://doi.org/10.1038/s41398-026-03921-x
+    kind: paper
+  preziosa2026-mendeley:
+    title: >-
+      Mendeley Data deposit 10.17632/6x9f2wt754.1 (CC BY 4.0), Preziosa-et-al-Transl-Psychiatry-2026.csv, counted per
+      subject row
+    url: https://data.mendeley.com/datasets/6x9f2wt754
+    kind: computed
+related: []
+keywords: [multiple sclerosis, resting-state fMRI, degree centrality, Allen Human Brain Atlas, cognitive impairment]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
