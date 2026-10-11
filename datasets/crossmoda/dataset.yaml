@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: crossmoda
+name: crossMoDA
+full_name: Cross-Modality Domain Adaptation Challenge (crossMoDA 2021, 2022 and 2023)
+summary: >-
+  Unpaired contrast-enhanced T1 and high-resolution T2 brain MRI of patients with a vestibular schwannoma, released for
+  a challenge on unsupervised domain adaptation from T1 to T2 for tumour and cochlea segmentation, with Koos grades
+  added in 2022.
+homepage: https://crossmoda-challenge.ml/
+doi: 10.5281/zenodo.6504722
+year: 2021
+updated: 2023
+status: active
+creators:
+  - name: >-
+      King's College London, School of Biomedical Engineering & Imaging Sciences (Dorent R, Kujawa A, Wijethilake N,
+      Shapey J, Vercauteren T et al.)
+    url: https://crossmoda-challenge.ml/
+  - name: Elisabeth-TweeSteden Hospital, Tilburg (Cornelissen S, Langenhuizen P)
+species: human
+modalities: [MR]
+contrasts: [T1w_ce, T2w]
+anatomy: [brain]
+conditions: [vestibular_schwannoma]
+tasks: [segmentation, classification]
+formats: [NIfTI]
+countries: [GB, NL]
+vendors: [siemens, philips, ge, hitachi]
+field_strengths: [1, 1.5, 3]
+size_gb: 9.02
+access:
+  type: open
+  url: https://zenodo.org/records/6504722
+  note: >-
+    The 2021 (Zenodo 4662239) and 2022 (Zenodo 6504722) training and validation sets download without an account.
+    The 2023 sets, which add the UK multi-centre routine surveillance scans, were distributed on Synapse
+    (syn51236108) after challenge registration and a data access request form. Test sets of all editions stay
+    private.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: crossMoDA 2021 release on Zenodo (record 4662239), London scans only.
+    url: https://zenodo.org/records/4662239
+    note: >-
+      The 2021 challenge paper states the data was released under CC-BY-4.0, and the Zenodo record carries the same
+      license.
+  - license: CC-BY-NC-SA-4.0
+    applies_to: crossMoDA 2022 release on Zenodo (record 6504722) and the 2023 release on Synapse.
+    url: https://crossmoda-challenge.ml/
+    note: >-
+      The challenge website, the description of Zenodo record 6504722 and the 2021 to 2023 challenge paper state CC
+      BY-NC-SA 4.0. The license field of the Zenodo record itself says CC BY 4.0; the stricter stated license is
+      used here. The 2023 Synapse terms also require citing the 2021 challenge paper and two dataset papers.
+citation:
+  text: >-
+    Dorent R, Kujawa A, Ivory M, et al. CrossMoDA 2021 challenge: Benchmark of cross-modality domain adaptation
+    techniques for vestibular schwannoma and cochlea segmentation. Medical Image Analysis 83, 102628 (2023).
+    https://doi.org/10.1016/j.media.2022.102628. Also cite: Shapey J, Kujawa A, Dorent R, et al. (2021).
+    Segmentation of Vestibular Schwannoma from Magnetic Resonance Imaging: An Open Annotated Dataset and Baseline
+    Algorithm [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/TCIA.9YTJ-5Q73
+sources:
+  dorent2023:
+    title: Dorent et al. 2023, Medical Image Analysis 83, 102628 (crossMoDA 2021 challenge paper, arXiv:2201.02831)
+    url: https://arxiv.org/abs/2201.02831
+    kind: paper
+  wijethilake2025:
+    title: >-
+      Wijethilake, Dorent et al. 2025, crossMoDA Challenge: Evolution of Cross-Modality Domain Adaptation Techniques
+      for Vestibular Schwannoma and Cochlea Segmentation from 2021 to 2023 (arXiv:2506.12006v3)
+    url: https://arxiv.org/abs/2506.12006
+    kind: paper
+  zenodo-crossmoda2022:
+    title: Zenodo record 6504722, Cross-Modality Domain Adaptation Challenge 2022 (crossMoDA), training and validation sets
+    url: https://zenodo.org/records/6504722
+    kind: data
+  crossmoda-website:
+    title: crossMoDA challenge website (2023 edition, with data description of all three centres)
+    url: https://crossmoda-challenge.ml/
+    kind: website
+related: [vestibular-schwannoma-seg]
+keywords:
+  [
+    vestibular schwannoma,
+    acoustic neuroma,
+    cochlea,
+    domain adaptation,
+    unsupervised domain adaptation,
+    Koos grade,
+    intra-meatal,
+    extra-meatal,
+    MICCAI challenge,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
