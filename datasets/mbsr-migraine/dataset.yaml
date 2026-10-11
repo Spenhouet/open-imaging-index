@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mbsr-migraine
+name: MBSR migraine trial (ds005016)
+full_name: Enhanced mindfulness-based stress reduction in episodic migraine, a randomized clinical trial with MRI outcomes
+summary: >-
+  Brain MRI and fMRI of adults with episodic migraine and healthy controls, collected in a randomized trial comparing
+  enhanced mindfulness-based stress reduction with stress management for headache. Up to three visits with resting,
+  thermal pain and cognitive task fMRI plus diffusion MRI.
+homepage: https://openneuro.org/datasets/ds005016
+doi: 10.18112/openneuro.ds005016.v1.1.3
+year: 2024
+updated: 2025
+version: 1.1.3
+status: active
+creators:
+  - name: Seminowicz DA, Burrowes SAB, Kearson A, Zhang J, Krimmel SR, Samawi L, Furman AJ, Keaser ML (University of Maryland Baltimore)
+    url: https://openneuro.org/datasets/ds005016
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [migraine, healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 209.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005016/versions/1.1.3
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005016/versions/1.1.3
+    note: dataset_description.json of snapshot 1.1.3 states "License" CC0.
+citation:
+  text: >-
+    Seminowicz DA, Burrowes SAB, Kearson A, Zhang J, Krimmel SR, Samawi L, Furman AJ, Keaser ML, Gould NF, Magyari T,
+    White L, Goloubeva O, Goyal M, Peterlin BL, Haythornthwaite JA. Enhanced mindfulness-based stress reduction in
+    episodic migraine: a randomized clinical trial with magnetic resonance imaging outcomes. Pain 161(8):1837-1846
+    (2020). doi:10.1097/j.pain.0000000000001860
+sources:
+  seminowicz2020:
+    title: Seminowicz et al. 2020, Enhanced mindfulness-based stress reduction in episodic migraine, Pain
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7487005/
+    kind: paper
+  openneuro-ds005016-v1-1-3:
+    title: OpenNeuro ds005016 snapshot 1.1.3 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds005016/versions/1.1.3
+    kind: website
+  ds005016-participants:
+    title: participants.tsv of ds005016 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005016/blob/main/participants.tsv
+    kind: computed
+  ds005016-file-tree:
+    title: File tree of ds005016 (CC0), NIfTI files counted per subject and session folder
+    url: https://github.com/OpenNeuroDatasets/ds005016
+    kind: computed
+related: []
+keywords:
+  [episodic migraine, mindfulness, stress management, randomized clinical trial, thermal pain, multi-source interference task, resting-state fMRI, longitudinal]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

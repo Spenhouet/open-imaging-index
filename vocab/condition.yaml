@@ -122,6 +122,7 @@ terms:
       mappings: { mondo: 'MONDO:0000820' }
     }
   - { id: epilepsy, label: Epilepsy, mappings: { mondo: 'MONDO:0005027' } }
+  - { id: migraine, label: Migraine, mappings: { mondo: 'MONDO:0005277', hp: 'HP:0002076' } }
   - {
       id: focal_cortical_dysplasia,
       label: Focal cortical dysplasia,
