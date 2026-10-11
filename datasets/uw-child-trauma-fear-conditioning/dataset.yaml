@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: uw-child-trauma-fear-conditioning
+name: UW child trauma fear-conditioning fMRI
+full_name: University of Washington cohort of children exposed to violence, fear-conditioning fMRI study
+summary: >-
+  Task fMRI and T1w brain MRI of Seattle children aged 8 to 16 with and without exposure to abuse or domestic
+  violence, scanned during a fear-conditioning task to study aversive learning. 159 scanned, 147 analysed. Images not
+  posted.
+homepage: https://osf.io/r8bw9/
+doi: 10.1016/j.biopsych.2021.09.013
+# Year the PsyArXiv preprint describing the cohort was posted (23 December 2020); the images have no public release.
+year: 2020
+creators:
+  - name: Stress & Development Lab, Katie A. McLaughlin
+  - name: University of Washington Integrated Brain Imaging Center
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [childhood_trauma, healthy]
+tasks: [classification]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://osf.io/r8bw9/
+  note: >-
+    The paper states that data and code are posted at the OSF project (doi:10.17605/OSF.IO/R8BW9), but on 2026-10-11
+    the project held only the accepted manuscript, its supplement and four figure files. No images, statistical maps
+    or tabular data are posted and no access process is described.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The OSF project has no license set, and neither the manuscript nor its supplement states terms of use for the
+      data.
+citation:
+  text: >-
+    DeCross SN, Sambrook KA, Sheridan MA, Tottenham N, McLaughlin KA. Dynamic Alterations in Neural Networks
+    Supporting Aversive Learning in Children Exposed to Trauma: Neural Mechanisms Underlying Psychopathology.
+    Biological Psychiatry 91(7):667-675 (2022). doi:10.1016/j.biopsych.2021.09.013
+sources:
+  decross2022-manuscript:
+    title: DeCross et al. 2022, accepted manuscript of the Biological Psychiatry paper (OSF)
+    url: https://osf.io/aq8jm
+    kind: paper
+  decross2022-supplement:
+    title: DeCross et al. 2022, supplement to the accepted manuscript (OSF)
+    url: https://osf.io/djuem
+    kind: paper
+  osf-r8bw9:
+    title: OSF project r8bw9 of the study
+    url: https://osf.io/r8bw9/
+    kind: website
+related: []
+keywords:
+  [childhood trauma, child abuse, domestic violence, fear conditioning, aversive learning, amygdala, task fMRI, anxiety, Seattle]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

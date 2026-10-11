@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,159,decross2022-manuscript,"Methods, Participants (p. 7)","participants with neuroimaging data; 12 were excluded from analysis (8 did not complete the task, 2 technical issues, 2 excessive motion), leaving 147"
+subjects,modality=MR,159,decross2022-manuscript,"Methods, Participants (p. 7)",
+subjects,field_strength=3,159,decross2022-supplement,Neuroimaging Acquisition (p. 5),all images acquired on one 3T Philips Achieva
+subjects,vendor=philips,159,decross2022-supplement,Neuroimaging Acquisition (p. 5),
+subjects,country=US,159,decross2022-manuscript,"Methods, Participants (p. 6)",recruited in Seattle
+subjects,condition=childhood_trauma,77,decross2022-manuscript,Table 1,analytic sample of 147; physical or sexual abuse or witnessed domestic violence
+subjects,condition=healthy,70,decross2022-manuscript,Table 1,analytic sample of 147; controls never exposed to violence
+subjects,sex=female,73,decross2022-manuscript,Table 1,analytic sample of 147; sum of 33 control and 40 trauma-exposed girls
+subjects,condition=childhood_trauma;sex=female,40,decross2022-manuscript,Table 1,analytic sample of 147
+subjects,condition=healthy;sex=female,33,decross2022-manuscript,Table 1,analytic sample of 147
+age_mean,,12.63,decross2022-manuscript,"Methods, Participants (p. 6)",all 159 recruited participants
+age_sd,,2.68,decross2022-manuscript,"Methods, Participants (p. 6)",all 159 recruited participants
+age_min,,8,decross2022-manuscript,"Methods, Participants (p. 6)",stated eligibility range of the 159 recruited participants
+age_max,,16,decross2022-manuscript,"Methods, Participants (p. 6)",stated eligibility range of the 159 recruited participants
+age_mean,condition=childhood_trauma,12.80,decross2022-manuscript,Table 1,analytic sample
+age_sd,condition=childhood_trauma,2.73,decross2022-manuscript,Table 1,analytic sample
+age_mean,condition=healthy,12.50,decross2022-manuscript,Table 1,analytic sample
+age_sd,condition=healthy,2.58,decross2022-manuscript,Table 1,analytic sample
