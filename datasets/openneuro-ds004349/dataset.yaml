@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004349
+name: Background Connectivity Face Viewing fMRI (ds004349)
+full_name: Evaluating methods for measuring background connectivity in slow event-related fMRI designs
+summary: >-
+  Resting-state and passive face-viewing task fMRI with T1w and T2w structural MRI of healthy young adults, collected
+  to test whether connectivity measured in the background of a slow event-related task matches resting-state
+  connectivity. BIDS, CC0.
+homepage: https://openneuro.org/datasets/ds004349
+doi: 10.18112/openneuro.ds004349.v1.0.0
+# Only snapshot 1.0.0 on OpenNeuro, published 2022-12-02.
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: Lea E. Frank and Dagmar Zeithamova (University of Oregon)
+    url: https://openneuro.org/datasets/ds004349
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 47.19
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004349/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004349/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Frank LE, Zeithamova D. Evaluating methods for measuring background connectivity in slow event-related functional
+    magnetic resonance imaging designs. Brain and Behavior 13(6), e3015 (2023). doi:10.1002/brb3.3015
+sources:
+  openneuro-ds004349-v1-0-0:
+    title: OpenNeuro ds004349 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004349/versions/1.0.0
+    kind: website
+  ds004349-participants:
+    title: participants.tsv and participants.json of the ds004349 BIDS repository (CC0), columns age and gender
+    url: https://github.com/OpenNeuroDatasets/ds004349/blob/main/participants.tsv
+    kind: computed
+  ds004349-file-tree:
+    title: File listing of the ds004349 BIDS repository (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004349
+    kind: computed
+  frank2023:
+    title: Frank and Zeithamova 2023, Brain and Behavior 13(6):e3015
+    url: https://doi.org/10.1002/brb3.3015
+    kind: paper
+related: []
+keywords: [background connectivity, resting-state fMRI, task fMRI, functional connectivity, face perception, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
