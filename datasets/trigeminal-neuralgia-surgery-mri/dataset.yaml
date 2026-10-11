@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: trigeminal-neuralgia-surgery-mri
+name: Trigeminal Neuralgia Pre- and Post-Surgical MRI (ds005713)
+full_name: >-
+  A large-scale dataset of pre- and post-surgical MRI data in patients with chronic trigeminal neuralgia
+summary: >-
+  Brain MRI with diffusion and resting-state fMRI of patients with primary trigeminal neuralgia and healthy controls,
+  collected to find imaging markers of facial pain and of the outcome of microvascular decompression or percutaneous
+  surgery, with post-surgical follow-up scans.
+homepage: https://openneuro.org/datasets/ds005713
+doi: 10.18112/openneuro.ds005713.v2.0.2
+year: 2024
+updated: 2025
+version: 2.0.2
+status: active
+creators:
+  - name: Federal Neurosurgical Center, Novosibirsk (Filimonova E, Pashkov A, Martirosyan A, Kurilov V, Moysak G, Rzaev J)
+    url: https://openneuro.org/datasets/ds005713
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [trigeminal_neuralgia, healthy]
+tasks: [longitudinal, classification]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 53.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005713
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.2 states "License" CC0.
+citation:
+  text: >-
+    Filimonova E, Pashkov A, Tiutiunnik A, Moysak G, Martirosyan A, Kurilov V, Brak I, Rzaev J. A large-scale dataset
+    of pre- and postsurgical MRI data from patients with chronic trigeminal neuralgia. Scientific Data 12, 2024 (2025).
+    doi:10.1038/s41597-025-06311-y
+  bibtex: |
+    @article{filimonova2025,
+      title={A large-scale dataset of pre- and postsurgical MRI data from patients with chronic trigeminal neuralgia},
+      author={Filimonova, Elena and Pashkov, Anton and Tiutiunnik, Anastasiia and Moysak, Galina and Martirosyan, Azniv and Kurilov, Vladimir and Brak, Ivan and Rzaev, Jamil},
+      journal={Scientific Data},
+      volume={12},
+      pages={2024},
+      year={2025},
+      doi={10.1038/s41597-025-06311-y}
+    }
+sources:
+  filimonova2025:
+    title: Filimonova et al. 2025, Scientific Data (describes snapshot 1.0.1)
+    url: https://doi.org/10.1038/s41597-025-06311-y
+    kind: paper
+  ds005713-readme:
+    title: README of OpenNeuro ds005713 snapshot 2.0.2
+    url: https://github.com/OpenNeuroDatasets/ds005713/blob/2.0.2/README
+    kind: website
+  ds005713-file-tree:
+    title: File tree of ds005713 snapshot 2.0.2 (CC0), subject folders and NIfTI files counted per BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005713/tree/2.0.2
+    kind: computed
+related: []
+keywords: [trigeminal neuralgia, facial pain, microvascular decompression, neurosurgery, diffusion MRI, resting-state fMRI, follow-up]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
