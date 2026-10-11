@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,172,pecco2024,Materials and Methods: Study Sample,fetuses; the repository record description gives the same number
+scans,,519,hsr-dyg9dpmgvs-files,image file names (img_*.nii),"single rs-fMRI image volumes, each with a label file; matches the 519 scans in the paper and the record description"
+subjects,field_strength=1.5,77,pecco2024,Materials and Methods: Study Sample,"gestational weeks median 32, range 21 to 37"
+subjects,field_strength=3,95,pecco2024,Materials and Methods: Study Sample,"gestational weeks median 28, range 21 to 36"
+subjects,split=test,17,pecco2024,Materials and Methods: Data Stratification,one fetus per gestational week
+scans,split=test,47,pecco2024,Materials and Methods: Data Stratification,
