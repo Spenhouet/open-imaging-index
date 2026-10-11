@@ -50,7 +50,7 @@ sources:
     title: participants.tsv of ds000030 (CC0), counted per row; contrasts from its T1w, dwi and task columns
     url: https://github.com/OpenNeuroDatasets/ds000030/blob/master/participants.tsv
     kind: computed
-related: []
+related: [psy-shared]
 keywords: [schizophrenia, bipolar disorder, ADHD, task fMRI, resting-state fMRI, diffusion MRI, psychiatry]
 verified:
   date: '2026-10-07'
