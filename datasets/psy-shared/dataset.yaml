@@ -55,7 +55,7 @@ sources:
     title: KCL Figshare record PSYD_1701 KYOTO_1 (one of the per-site Psy-ShareD catalogue records)
     url: https://doi.org/10.18742/33033956
     kind: website
-related: []
+related: [openneuro-ds000030]
 keywords:
   [psychosis, schizophrenia, first-episode psychosis, clinical high risk, structural MRI, FreeSurfer, multi-site, harmonisation]
 verified:
