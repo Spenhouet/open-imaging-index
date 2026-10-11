@@ -141,6 +141,14 @@ terms:
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
   - { id: neurodevelopmental_disorder, label: Neurodevelopmental disorder, mappings: { mondo: 'MONDO:0700092' } }
+  - id: developmental_language_disorder
+    label: Developmental language disorder
+    description: >-
+      Persistent difficulty learning and using language in childhood without a known biomedical cause. MONDO lists the
+      synonym only under familial developmental dysphasia (MONDO:0010821), a narrower FOXP2-related form.
+    synonyms: [DLD, specific language impairment, SLI]
+    parent: neurodevelopmental_disorder
+    mappings: { hp: 'HP:0002463' }
   - { id: dyslexia, label: Dyslexia, synonyms: [developmental dyslexia, reading disability], mappings: { mondo: 'MONDO:0005489' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
   - { id: dysthymia, label: Dysthymic disorder, synonyms: [dysthymia, persistent depressive disorder], mappings: { mondo: 'MONDO:0001442' } }

@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,147,ds003145-file-tree,,sub-* folders; the paper analysed 143 of 152 eligible datasets (Results: Participant selection)
+subjects,contrast=T1w,147,ds003145-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,147,ds003145-file-tree,,subjects with a *_task-verbgen_bold.nii.gz
+subjects,contrast_set=bold+T1w,147,ds003145-file-tree,,"single-band reference and fieldmap (magnitude, phase difference) images, present for all 147, are not counted as a contrast"
+scans,,294,ds003145-file-tree,,sum of the disjoint T1w and bold NIfTI counts below; sbref and fieldmap images not included
+scans,contrast=T1w,147,ds003145-file-tree,,
+scans,contrast=bold,147,ds003145-file-tree,,one verb generation run per subject
+subjects,condition=developmental_language_disorder,50,krishnan2021,Table 1,analysed sample of 143; 26 further children with a history of speech and language problems who did not meet DLD criteria are not counted here
+subjects,condition=healthy,67,krishnan2021,Table 1,typically developing children in the analysed sample of 143
+subjects,sex=male,94,krishnan2021,Table 1,"sum of the disjoint TD (38), DLD (35) and HSL (21) groups of the analysed sample of 143"
+subjects,sex=female,49,krishnan2021,Table 1,"sum of the disjoint TD (29), DLD (15) and HSL (5) groups of the analysed sample of 143"
