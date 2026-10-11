@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,60,openneuro-ds003717-v1-1-0,README: Participants,"65 adults scanned, fMRI of 5 excluded; participants.tsv and the paper abstract also give 60"
+scans,,480,ds003717-file-tree,anat/ and func/ NIfTI files,"60 T1w, 60 T2w and 360 bold volumes"
+scans,contrast=T1w,60,ds003717-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,60,ds003717-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,360,ds003717-file-tree,func/*_bold.nii.gz,six task runs (SESS01 to SESS06) per subject
+subjects,contrast=T1w,60,ds003717-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,60,ds003717-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,60,ds003717-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,60,ds003717-file-tree,,
+subjects,condition=healthy,60,openneuro-ds003717-v1-1-0,README: Participants,adults aged 18 to 34; no patient group
+subjects,sex=female,45,ds003717-participants,sex,
+subjects,sex=male,15,ds003717-participants,sex,
+subjects,age=10-19,9,ds003717-participants,age,
+subjects,age=20-29,50,ds003717-participants,age,
+subjects,age=30-39,1,ds003717-participants,age,
+subjects,sex=female;age=20-29,40,ds003717-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=20-29,10,ds003717-participants,sex and age,
+subjects,country=US,60,peelle2022,Author affiliations,"Washington University in St. Louis, Missouri"
+subjects,vendor=siemens,60,openneuro-ds003717-v1-1-0,README: MRI data acquisition,Siemens Prisma
+subjects,field_strength=3,60,openneuro-ds003717-v1-1-0,README: MRI data acquisition,
+age_mean,,22.42,openneuro-ds003717-v1-1-0,README: Participants,participants.tsv gives 22.4
+age_sd,,3.24,openneuro-ds003717-v1-1-0,README: Participants,
+age_median,,21.5,ds003717-participants,age,
+age_min,,18,openneuro-ds003717-v1-1-0,README: Participants,
+age_max,,34,openneuro-ds003717-v1-1-0,README: Participants,
