@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,60,buckova2021,Table 1,clinical.csv also has 60 rows
+studies,,120,buckova2021,Section 3,two preprocessed fMRI acquisitions per subject (before and after treatment)
+subjects,sex=female,37,buckova2021,Table 1,
+subjects,sex=male,23,buckova2021,Table 1,
+subjects,condition=multiple_sclerosis,60,buckova2021,Table 1,"34 relapsing-remitting, 20 secondary progressive, 6 primary progressive"
+subjects,contrast=bold,60,buckova2021,Section 3,
+subjects,contrast_set=bold,60,buckova2021,Section 3,T1-weighted images were acquired but not released
+subjects,vendor=siemens,60,buckova2021,Section 2.2,Siemens Trio
+subjects,field_strength=3,60,buckova2021,Section 2.2,
+subjects,country=CZ,60,buckova2021,Section 2.1,
+subjects,age=20-29,3,osf-p2kj7-clinical,AGE,
+subjects,age=30-39,11,osf-p2kj7-clinical,AGE,
+subjects,age=40-49,18,osf-p2kj7-clinical,AGE,
+subjects,age=50-59,18,osf-p2kj7-clinical,AGE,
+subjects,age=60-69,9,osf-p2kj7-clinical,AGE,
+subjects,age=70-79,1,osf-p2kj7-clinical,AGE,
+age_median,,46,buckova2021,Table 1,
+age_min,,22,buckova2021,Table 1,
+age_max,,70,buckova2021,Table 1,
+age_mean,,48.0,osf-p2kj7-clinical,AGE,
+age_sd,,11.0,osf-p2kj7-clinical,AGE,sample standard deviation

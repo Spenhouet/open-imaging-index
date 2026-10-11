@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ms-neurorehab-rsfmri
+name: MS Neurorehabilitation Resting-State fMRI
+full_name: >-
+  Open Access: The Effect of Neurorehabilitation on Multiple Sclerosis - Unlocking the Resting-State fMRI Data
+summary: >-
+  Preprocessed resting-state fMRI of people with multiple sclerosis, scanned before and after two months of
+  neuroproprioceptive physiotherapy to study rehabilitation effects on functional connectivity. Includes connectivity
+  matrices, motion measures and clinical data.
+homepage: https://osf.io/p2kj7/
+doi: 10.3389/fnins.2021.662784
+# OSF project created 2021-01-25; data report published 2021-05-28. The AAL time-series folder was added in November
+# 2021.
+year: 2021
+creators:
+  - name: >-
+      Bučková B, Kopal J, Řasová K, Tintěra J, Hlinka J (Institute of Computer Science of the Czech Academy of Sciences,
+      National Institute of Mental Health Klecany, Third Faculty of Medicine of Charles University)
+    url: http://cobra.cs.cas.cz/
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [multiple_sclerosis]
+tasks: [longitudinal]
+formats: [NIfTI]
+countries: [CZ]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 27.5
+access:
+  type: open
+  url: https://osf.io/p2kj7/
+licenses:
+  - license: CC-BY-4.0
+    note: The OSF project states the license CC-By Attribution 4.0 International (2021).
+citation:
+  text: >-
+    Bučková B, Kopal J, Řasová K, Tintěra J, Hlinka J. Open Access: The Effect of Neurorehabilitation on Multiple
+    Sclerosis - Unlocking the Resting-State fMRI Data. Frontiers in Neuroscience 15, 662784 (2021).
+    doi:10.3389/fnins.2021.662784
+sources:
+  buckova2021:
+    title: >-
+      Bučková et al. 2021, Open Access: The Effect of Neurorehabilitation on Multiple Sclerosis - Unlocking the
+      Resting-State fMRI Data, Frontiers in Neuroscience
+    url: https://doi.org/10.3389/fnins.2021.662784
+    kind: paper
+  osf-p2kj7:
+    title: OSF project p2kj7 (wiki, license and file listing)
+    url: https://osf.io/p2kj7/
+    kind: website
+  osf-p2kj7-clinical:
+    title: clinical.csv of OSF project p2kj7 (CC BY 4.0), counted per row; AGE is age at the first visit
+    url: https://osf.io/p2kj7/files/osfstorage
+    kind: computed
+related: []
+keywords: [resting-state fMRI, functional connectivity, neurorehabilitation, physiotherapy, multiple sclerosis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
