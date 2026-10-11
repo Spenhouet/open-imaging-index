@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,64,hopp2026,p. 2,NIMF1 (N=64); participants.tsv also has 64 rows
+subjects,contrast=T1w,64,ds007391-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T2w,64,ds007391-file-tree,,subjects with a *_T2w.nii.gz
+subjects,contrast=bold,64,ds007391-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w+T2w,64,ds007391-file-tree,,
+scans,,319,ds007391-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below"
+scans,contrast=T1w,64,ds007391-file-tree,,
+scans,contrast=T2w,64,ds007391-file-tree,,
+scans,contrast=bold,191,ds007391-file-tree,,one file per run of the moral foundations vignettes task; three runs per subject except sub-35 with two
+subjects,sex=male,33,hopp2026,Table 2,participants.tsv also gives 33 Male
+subjects,sex=female,31,hopp2026,Table 2,participants.tsv also gives 31 Female
+subjects,age=10-19,18,ds007391-participants,age,
+subjects,age=20-29,45,ds007391-participants,age,
+subjects,age=30-39,1,ds007391-participants,age,
+subjects,sex=female;age=10-19,10,ds007391-participants,,
+subjects,sex=female;age=20-29,21,ds007391-participants,,
+subjects,sex=male;age=20-29,24,ds007391-participants,,
+age_mean,,20.78,hopp2026,Table 2,
+age_sd,,2.45,hopp2026,Table 2,
+age_min,,18,ds007391-participants,age,
+age_max,,33,ds007391-participants,age,
+age_median,,20,ds007391-participants,age,
+subjects,field_strength=3,64,hopp2026,p. 4,3T Siemens Magnetom Prisma
+subjects,vendor=siemens,64,hopp2026,p. 4,
+subjects,country=US,64,hopp2026,p. 4,Brain Imaging Center of the University of California Santa Barbara
