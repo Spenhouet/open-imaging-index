@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oiid
+name: OIID
+full_name: An fMRI Dataset on Occluded Image Interpretation for Human Amodal Completion Research
+summary: >-
+  Brain MRI with task and resting-state fMRI of young adults recorded while they identified aircraft in images with
+  10% to 90% occlusion, collected to study the neural basis of amodal completion. Ships behavioural data, the stimuli
+  and preprocessed derivatives.
+homepage: https://openneuro.org/datasets/ds005226
+doi: 10.18112/openneuro.ds005226.v1.0.8
+# CHANGES file: snapshot 1.0.0 dated 2024-11-24 (initial); snapshot 1.0.8 dated 2025-05-15.
+year: 2024
+updated: 2025
+version: 1.0.8
+status: active
+creators:
+  - name: >-
+      Li B, Tong L, Zhang C, Chen P, Cao L, Gao H, Yu Z, Wang L, Yan B (authors listed in dataset_description.json)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+# Scanner sidecars of all 325 raw images give the institution address in Zhengzhou, CN.
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+# Snapshot 1.0.8 size reported by OpenNeuro: 145,917,673,243 bytes, including derivatives.
+size_gb: 145.92
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005226
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.8 states "License" CC0.
+citation:
+  text: >-
+    Li B, Tong L, Zhang C, Chen P, Cao L, Gao H, Yu Z, Wang L, Yan B. An fMRI Dataset on Occluded Image Interpretation
+    for Human Amodal Completion Research. OpenNeuro ds005226, version 1.0.8 (2025). doi:10.18112/openneuro.ds005226.v1.0.8
+sources:
+  openneuro-ds005226-v1-0-8:
+    title: OpenNeuro ds005226 snapshot 1.0.8 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005226/versions/1.0.8
+    kind: website
+  ds005226-participants:
+    title: participants.tsv of ds005226 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005226/blob/main/participants.tsv
+    kind: computed
+  ds005226-file-tree:
+    title: BIDS file tree and JSON sidecars of ds005226 (CC0), raw NIfTI files under sub-*/ counted per suffix and task
+    url: https://github.com/OpenNeuroDatasets/ds005226/tree/main
+    kind: computed
+keywords: [amodal completion, occlusion, object recognition, visual perception, task fMRI, resting-state fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
