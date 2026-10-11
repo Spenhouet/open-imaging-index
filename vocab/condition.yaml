@@ -539,3 +539,7 @@ terms:
     label: Myalgic encephalomyelitis/chronic fatigue syndrome
     synonyms: [ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, CFS]
     mappings: { mondo: 'MONDO:0005404' }
+  - id: recurrent_pregnancy_loss
+    label: Recurrent pregnancy loss
+    synonyms: [RPL, uRPL, recurrent miscarriage, habitual abortion]
+    mappings: { mondo: 'MONDO:0006774' }
