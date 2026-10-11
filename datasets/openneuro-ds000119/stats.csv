@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,73,ds000119-participants,participant_id,73 rows and 73 subject folders; the paper analyses 77 of 98 scanned participants (Methods: Participants)
+subjects,condition=healthy,73,velanova2008,Methods: Participants,native English speakers with no history of neurological problems
+subjects,sex=female,43,ds000119-participants,third column (headed age),the header names the sex and age columns the wrong way round
+subjects,sex=male,30,ds000119-participants,third column (headed age),
+subjects,age=0-9,5,ds000119-participants,second column (headed sex),ages 8 and 9
+subjects,age=10-19,51,ds000119-participants,second column (headed sex),
+subjects,age=20-29,17,ds000119-participants,second column (headed sex),
+subjects,sex=female;age=10-19,27,ds000119-participants,both columns,Cells below 10 left out
+subjects,sex=male;age=10-19,24,ds000119-participants,both columns,Cells below 10 left out
+subjects,sex=female;age=20-29,12,ds000119-participants,both columns,Cells below 10 left out
+age_min,,8.1,ds000119-participants,second column (headed sex),
+age_max,,26.8,ds000119-participants,second column (headed sex),
+age_mean,,16.2,ds000119-participants,second column (headed sex),
+age_sd,,4.75,ds000119-participants,second column (headed sex),
+age_median,,16.5,ds000119-participants,second column (headed sex),
+scans,,352,ds000119-file-tree,*.nii.gz,73 T1w and 279 bold files
+scans,contrast=T1w,73,ds000119-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,279,ds000119-file-tree,func/*_bold.nii.gz,63 subjects with 4 runs and 9 with 3 runs
+subjects,contrast=T1w,73,ds000119-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,72,ds000119-file-tree,func/*_bold.nii.gz,sub-28 has no functional runs
+subjects,contrast_set=bold+T1w,72,ds000119-file-tree,sub-*/,
+subjects,contrast_set=T1w,1,ds000119-file-tree,sub-*/,
+subjects,field_strength=3,73,velanova2008,Methods: fMRI Data Acquisition,Siemens 3 T MAGNETOM Allegra
+subjects,vendor=siemens,73,velanova2008,Methods: fMRI Data Acquisition,Siemens 3 T MAGNETOM Allegra

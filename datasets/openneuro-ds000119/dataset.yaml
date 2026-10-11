@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000119
+name: Antisaccade error processing development (ds000119)
+full_name: >-
+  Maturational Changes in Anterior Cingulate and Frontoparietal Recruitment Support the Development of Error
+  Processing and Inhibitory Control (Antistate)
+summary: >-
+  Brain MRI and task fMRI of healthy children, adolescents and young adults aged 8 to 27 performing prosaccade and
+  antisaccade eye-movement tasks, collected to study how error processing and inhibitory control mature. Event files
+  give per-trial accuracy and latency.
+homepage: https://openneuro.org/datasets/ds000119
+year: 2016
+updated: 2018
+version: '00001'
+status: active
+creators:
+  - name: Laboratory of Neurocognitive Development, University of Pittsburgh (Velanova K, Wheeler ME, Luna B)
+    url: https://openneuro.org/datasets/ds000119
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000119
+licenses:
+  - license: PDDL-1.0
+    note: dataset_description.json of snapshot 00001 states "License" PDDL.
+citation:
+  text: >-
+    Velanova K, Wheeler ME, Luna B. Maturational changes in anterior cingulate and frontoparietal recruitment support
+    the development of error processing and inhibitory control. Cerebral Cortex 18(11):2505-2522 (2008).
+    doi:10.1093/cercor/bhn012
+sources:
+  velanova2008:
+    title: Velanova et al. 2008, Maturational changes in anterior cingulate and frontoparietal recruitment, Cerebral Cortex
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2733315/
+    kind: paper
+  openneuro-ds000119-00001:
+    title: OpenNeuro ds000119 snapshot 00001 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds000119/versions/00001
+    kind: website
+  ds000119-participants:
+    title: participants.tsv of ds000119 snapshot 00001 (PDDL), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds000119/blob/00001/participants.tsv
+    kind: computed
+  ds000119-file-tree:
+    title: File tree of ds000119 snapshot 00001 (PDDL), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds000119/tree/00001
+    kind: computed
+related: []
+keywords: [antisaccade, prosaccade, inhibitory control, error processing, anterior cingulate, brain development, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
