@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,62,ma2022,Methods: Participants,"68 were admitted, 6 excluded after behaviour training; participants.tsv also lists 62"
+studies,,62,ma2022,Methods: Magnetic resonance imaging,one scan session per participant
+scans,,435,ds004044-file-tree,anat/ and func/ NIfTI files,63 T1w and 372 bold volumes; spin-echo field maps not counted
+scans,contrast=bold,372,ma2022,Methods: Data denoising,6 runs x 62 participants; the file listing also has 372 bold files
+scans,contrast=T1w,63,ds004044-file-tree,anat/*_T1w.nii.gz,one subject has two T1w runs
+subjects,contrast=T1w,62,ds004044-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,62,ds004044-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,62,ds004044-file-tree,,
+subjects,sex=female,34,ma2022,Methods: Participants,participants.tsv also lists 34 F
+subjects,sex=male,28,ds004044-participants,sex,
+subjects,condition=healthy,62,ma2022,Methods: Participants,
+subjects,country=CN,62,ma2022,Methods: Magnetic resonance imaging,BNU Imaging Center for Brain Research
+subjects,vendor=siemens,62,ma2022,Methods: Magnetic resonance imaging,MAGNETOM Prisma
+subjects,field_strength=3,62,ma2022,Methods: Magnetic resonance imaging,
+subjects,age=20-29,57,ds004044-participants,age,5 participants aged 19 are below 10 and left out
+subjects,sex=female;age=20-29,30,ds004044-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=20-29,27,ds004044-participants,sex and age,
+age_mean,,22.76,ma2022,Methods: Participants,
+age_sd,,2.22,ma2022,Methods: Participants,
+age_min,,19,ma2022,Methods: Participants,
+age_max,,29,ma2022,Methods: Participants,
