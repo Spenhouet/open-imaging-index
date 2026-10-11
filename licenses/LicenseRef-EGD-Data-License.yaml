@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-EGD-Data-License
+name: Erasmus Glioma Database Data License
+short_name: EGD license
+url: https://ars.els-cdn.com/content/image/1-s2.0-S2352340921004753-mmc1.pdf
+version: Supplementary file of van der Voort et al., Data in Brief 2021, read 2026-10-11
+summary: >-
+  A modified CC BY-NC-SA 4.0 license that forbids passing the data on. Non-commercial use only, adaptations must keep
+  the same license elements, and access requires signing the agreement with Health-RI.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only
+  product_validation:
+    value: unspecified
+    note: >-
+      The license limits use to non-commercial purposes but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: >-
+      The license does not mention machine learning. Any use falls under the non-commercial limit of the grant.
+  derivatives:
+    value: conditional
+    note: Only for non-commercial purposes.
+    quote: produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
+  publication:
+    value: unspecified
+    note: The license does not address publishing results obtained with the data.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      The Licensor prohibits You to reproduce, redistribute or Share the Licensed Material, in whole or in part, both
+      for Commercial and NonCommercial purposes.
+  redistribute_derivatives:
+    value: conditional
+    note: >-
+      The grant allows sharing Adapted Material non-commercially under a BY-NC-SA compatible license, but the added
+      restriction forbids sharing the data in whole or in part, so shared derivatives must not contain any of the
+      original data.
+    quote: produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
+  share_model_weights:
+    value: unspecified
+    note: The license does not say whether trained model weights count as Adapted Material.
+  attribution:
+    value: 'yes'
+    quote: Please cite this publication when using this data.
+    source: https://github.com/Svdvoort/egd-downloader
+  share_alike:
+    value: 'yes'
+    quote: >-
+      The Adapter's License You apply must be a Creative Commons license with the same License Elements, or a
+      BY-NC-SA Compatible License.
+  signed_agreement:
+    value: 'yes'
+    quote: You will then be asked to sign the data usage agreement, and an account will be created for you.
+    source: https://xnat.bmia.nl/data/archive/projects/egd
+  ethics_approval:
+    value: 'no'
+    note: The license sets no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license sets no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
