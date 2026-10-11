@@ -1,5 +1,6 @@
 <script lang="ts">
   import { REPO_URL, SITE_NAME, link } from '#lib/site.js';
+  import Star from '@lucide/svelte/icons/star';
   import Logo from './Logo.svelte';
 </script>
 
@@ -13,6 +14,12 @@
         A community index of medical imaging datasets. Aggregate statistics only. License summaries are interpretations,
         not legal advice: read the dataset's own license before you use it.
         <a class="text-primary hover:underline" href={link('disclaimer/')}>Disclaimer</a>
+      </p>
+      <p class="text-muted-foreground">
+        Open source and kept up to date by volunteers. If it saves you time,
+        <a class="inline-flex items-center gap-1 text-primary hover:underline" href={REPO_URL}
+          ><Star class="size-3.5" aria-hidden="true" />star it on GitHub</a
+        > so others find it too.
       </p>
     </div>
     <div class="space-y-2">

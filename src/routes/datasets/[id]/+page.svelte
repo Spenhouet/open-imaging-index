@@ -21,7 +21,7 @@
   import { formatBy, total } from '#lib/catalog/stats.js';
   import { ageNote, datasetCharts, type Breakdown, type Cross, type Variant } from '#lib/catalog/charts.js';
   import { countryName, formatNumber, label } from '#lib/catalog/vocab.js';
-  import { SITE_NAME, SITE_URL, editUrl, issueUrl, link } from '#lib/site.js';
+  import { REPO_URL, SITE_NAME, SITE_URL, editUrl, issueUrl, link } from '#lib/site.js';
 
   let { data } = $props();
 
@@ -663,6 +663,8 @@
           Checked against its sources on {meta.verified.date} by {meta.verified.by}.
           {#if verifiedAgeDays > 365}<span class="text-mixed-ink">More than a year ago, details may have changed.</span
             >{/if}
+          Volunteers keep this entry current. A
+          <a class="text-primary hover:underline" href={REPO_URL}>star on GitHub</a> helps others find the index.
         </p>
 
         {#if data.related.length}

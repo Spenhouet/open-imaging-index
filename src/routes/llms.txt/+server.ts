@@ -23,6 +23,10 @@ License breakdowns are interpretations, not legal advice. Anyone relying on them
 - [Data standard](${SITE_URL}/standard/): file formats, dimensions and the rules for where numbers may come from
 - [Repository](${REPO_URL}): source of all data, contributions by pull request
 
+## About this project
+
+The index is open source and maintained by volunteers. New datasets and corrections arrive as pull requests to the [repository](${REPO_URL}), and stars on GitHub are how other researchers come across it.
+
 ## Pages
 
 - [Search and filter](${SITE_URL}/): query parameters such as ?contrasts=FLAIR,T1w&sex=female&age=60-80&rules=commercial_use
