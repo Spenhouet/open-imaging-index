@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,60,brun2022,Abstract,participants.tsv and the file tree of snapshot 1.0.0 also have 60 subjects
+subjects,condition=healthy,60,brun2022,Abstract,
+subjects,field_strength=7,60,brun2022,Abstract,7T MP2RAGE at 0.6 mm isotropic
+subjects,contrast=T1map,60,ds003967-file-tree,,one *_T1map.nii.gz per subject
+subjects,contrast_set=T1map,60,ds003967-file-tree,,
+subjects,sex=female,30,ds003967-participants,sex column,
+subjects,sex=male,30,ds003967-participants,sex column,
+subjects,age=10-19,3,ds003967-participants,age column,
+subjects,age=20-29,51,ds003967-participants,age column,
+subjects,age=30-39,5,ds003967-participants,age column,
+subjects,age=40-49,1,ds003967-participants,age column,
+age_mean,,24.2,ds003967-participants,age column,
+age_sd,,4.5,ds003967-participants,age column,sample standard deviation
+age_median,,23,ds003967-participants,age column,
+age_min,,19,ds003967-participants,age column,
+age_max,,45,ds003967-participants,age column,
+studies,,60,ds003967-file-tree,,one ses-1 folder per subject
+scans,,60,ds003967-file-tree,,raw *_T1map.nii.gz files; derivative label maps not counted
