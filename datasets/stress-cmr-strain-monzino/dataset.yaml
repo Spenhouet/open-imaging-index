@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: stress-cmr-strain-monzino
+name: Stress CMR strain and outcomes (Monzino)
+full_name: >-
+  Dataset related to the article "PROGnostic RolE of strain measurements in stress cardiac MRI in predicting major
+  adverse cardiac events"
+summary: >-
+  Dipyridamole stress cardiac MRI cohort of patients with known or suspected coronary artery disease, with
+  feature-tracking strain, late gadolinium enhancement and a mean 5.8-year follow-up for major adverse cardiac events.
+  729 patients, retrospective. Access restricted.
+homepage: https://zenodo.org/records/13765515
+doi: 10.5281/zenodo.13765515
+year: 2024
+creators:
+  - name: Centro Cardiologico Monzino IRCCS
+    url: https://zenodo.org/records/13765515
+species: human
+modalities: [MR]
+contrasts: [lge]
+anatomy: [heart]
+conditions: [coronary_artery_disease]
+tasks: [survival]
+access:
+  type: on_request
+  url: https://zenodo.org/records/13765515
+  note: >-
+    The Zenodo record is restricted and lists no files; access is requested through the record and granted at the
+    owners' discretion. It describes its content as raw data related to the article. Whether CMR images are part of
+    it is not stated.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Zenodo record is labelled CC BY 4.0, which applies once access has been granted. No other terms are
+      published.
+citation:
+  text: >-
+    Guglielmo M, Fusini L, Baessato F, et al. PROGnostic RolE of strain measurements in stress cardiac MRI in
+    predicting major adverse cardiac events. Int J Cardiol 412, 132337 (2024). doi:10.1016/j.ijcard.2024.132337
+sources:
+  guglielmo2024:
+    title: Guglielmo et al. 2024, International Journal of Cardiology 412, 132337 (abstract)
+    url: https://doi.org/10.1016/j.ijcard.2024.132337
+    kind: paper
+  zenodo-13765515:
+    title: Zenodo record 13765515, dataset related to the article
+    url: https://zenodo.org/records/13765515
+    kind: website
+related: []
+keywords:
+  [
+    stress perfusion,
+    dipyridamole,
+    feature tracking,
+    global circumferential strain,
+    late gadolinium enhancement,
+    major adverse cardiac events,
+    risk stratification
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

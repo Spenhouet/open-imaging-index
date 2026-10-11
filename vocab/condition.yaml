@@ -326,6 +326,7 @@ terms:
     }
   - { id: myocardial_infarction, label: Myocardial infarction, mappings: { mondo: 'MONDO:0005068' } }
   - { id: heart_failure, label: Heart failure, mappings: { mondo: 'MONDO:0005252' } }
+  - { id: coronary_artery_disease, label: Coronary artery disease, synonyms: [CAD], mappings: { mondo: 'MONDO:0005010' } }
   - {
       id: congenital_heart_disease,
       label: Congenital heart disease,
