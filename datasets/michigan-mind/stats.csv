@@ -1,0 +1,35 @@
+measure,by,value,source,where,note
+subjects,,289,ds007857-file-tree,sub-* folders,"participants.tsv also lists 289; one subject (sub-mindo283) has only task events files and no images, and CHANGES describes snapshot 1.0.1 as adding subjects up to 289"
+studies,,568,ds007857-file-tree,ses-placebo and ses-mrs folders,"279 subjects have both the fMRI session (ses-placebo) and the MRS session (ses-mrs), 10 only ses-placebo"
+subjects,sex=female,160,ds007857-participants,sex,
+subjects,sex=male,113,ds007857-participants,sex,
+subjects,sex=unknown,16,ds007857-participants,sex,n/a in participants.tsv
+subjects,age=60-69,111,ds007857-participants,age,age at scan; 16 subjects have no age
+subjects,age=70-79,138,ds007857-participants,age,
+subjects,age=80-89,24,ds007857-participants,age,
+subjects,sex=female;age=60-69,75,ds007857-participants,"sex, age",
+subjects,sex=female;age=70-79,71,ds007857-participants,"sex, age",
+subjects,sex=female;age=80-89,14,ds007857-participants,"sex, age",
+subjects,sex=male;age=60-69,36,ds007857-participants,"sex, age",
+subjects,sex=male;age=70-79,67,ds007857-participants,"sex, age",
+subjects,sex=male;age=80-89,10,ds007857-participants,"sex, age",
+subjects,condition=healthy,212,ds007857-participants,group,CN (cognitively normal) from the neuropsychological evaluation; 27 subjects have no group
+subjects,condition=mci,49,ds007857-participants,group,MCI
+subjects,condition=alzheimers,1,ds007857-participants,group,DAT (dementia of the Alzheimer's type)
+subjects,contrast=T1w,287,ds007857-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,288,ds007857-file-tree,func/*_bold.nii.gz,"visual, auditory, motor and resting-state runs"
+subjects,contrast=dwi,174,ds007857-file-tree,dwi/*_dwi.nii.gz,all 159 subjects with a known scanner version that have DWI were scanned after the scanner upgrade
+subjects,contrast_set=bold+dwi+T1w,174,ds007857-file-tree,,
+subjects,contrast_set=bold+T1w,113,ds007857-file-tree,,
+subjects,contrast_set=bold,1,ds007857-file-tree,,
+subjects,vendor=ge,288,openneuro-ds007857-v1-0-1,README,"subjects with images; the README and the image sidecars name a GE Discovery MR750 3T with an 8-channel head coil"
+subjects,field_strength=3,288,openneuro-ds007857-v1-0-1,README,subjects with images
+subjects,country=US,288,openneuro-ds007857-v1-0-1,README,"University of Michigan Functional MRI Laboratory, Ann Arbor; subjects with images"
+scans,,1877,ds007857-file-tree,"anat, func and dwi NIfTI files","sum of the disjoint T1w, bold and dwi rows; the 1753 MRS svs files and their water references are not counted"
+scans,contrast=T1w,559,ds007857-file-tree,anat/*_T1w.nii.gz,one T1w per session
+scans,contrast=bold,1144,ds007857-file-tree,func/*_bold.nii.gz,
+scans,contrast=dwi,174,ds007857-file-tree,dwi/*_dwi.nii.gz,
+age_mean,,71.7,ds007857-participants,age,273 subjects with an age
+age_median,,71,ds007857-participants,age,
+age_min,,65,ds007857-participants,age,
+age_max,,87,ds007857-participants,age,
