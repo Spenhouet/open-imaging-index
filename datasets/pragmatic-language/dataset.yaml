@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pragmatic-language
+name: Pragmatic Language (ds003481)
+full_name: A Dataset to Study Pragmatic Language and Its Underlying Cognitive Processes
+summary: >-
+  Brain fMRI and T1-weighted MRI of healthy Spanish-speaking young adults in Mexico, collected to study how people
+  understand non-literal language such as speech acts, proverbs and metaphors, with resting-state runs and
+  psychometric scores.
+homepage: https://openneuro.org/datasets/ds003481
+doi: 10.18112/openneuro.ds003481.v1.0.4
+year: 2021
+updated: 2026
+version: 1.0.4
+status: active
+creators:
+  - name: >-
+      Instituto de Neurobiología and Facultad de Psicología, Universidad Nacional Autónoma de México (Rasgado-Toledo J,
+      Giordano M, Reyes-Aguilar A, et al.)
+    url: https://openneuro.org/datasets/ds003481
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 20.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003481
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.4 states "License" CC0.
+citation:
+  text: >-
+    Rasgado-Toledo J, Lizcano-Cortés F, Olalde-Mathieu VE, Licea-Haquet G, Zamora-Ursulo MA, Giordano M,
+    Reyes-Aguilar A. A Dataset to Study Pragmatic Language and Its Underlying Cognitive Processes. Front. Hum.
+    Neurosci. 15:666210 (2021). doi:10.3389/fnhum.2021.666210
+sources:
+  rasgadotoledo2021:
+    title: Rasgado-Toledo et al. 2021, A Dataset to Study Pragmatic Language and Its Underlying Cognitive Processes, Front. Hum. Neurosci.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8248681/
+    kind: paper
+  openneuro-ds003481-v104:
+    title: OpenNeuro ds003481 snapshot 1.0.4 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003481/versions/1.0.4
+    kind: website
+  ds003481-file-tree:
+    title: File tree and T1w JSON sidecars of ds003481 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds003481
+    kind: computed
+related: []
+keywords: [pragmatic language, speech acts, proverbs, metaphor, verbs, task fMRI, resting-state fMRI, Spanish speakers]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

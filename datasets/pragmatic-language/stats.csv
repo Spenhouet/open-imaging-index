@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,145,rasgadotoledo2021,Participants,the OpenNeuro README and the 1.0.4 snapshot summary also list 145 subjects
+subjects,sex=female,79,rasgadotoledo2021,Participants,
+subjects,sex=male,66,rasgadotoledo2021,Participants,
+subjects,contrast=T1w,145,ds003481-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=bold,145,ds003481-file-tree,,at least one *_bold.nii.gz per subject folder
+subjects,contrast_set=bold+T1w,145,ds003481-file-tree,,
+subjects,vendor=ge,145,ds003481-file-tree,sub-*_T1w.json Manufacturer,all T1w sidecars state GE DISCOVERY_MR750
+subjects,field_strength=3,145,ds003481-file-tree,sub-*_T1w.json MagneticFieldStrength,
+subjects,country=MX,145,rasgadotoledo2021,Participants,Mexican-born participants
+scans,,717,ds003481-file-tree,,145 T1w and 572 BOLD NIfTI files
+age_min,,17,rasgadotoledo2021,Participants,
+age_median,,23.46,rasgadotoledo2021,Participants,
+age_max,,35,rasgadotoledo2021,Participants,
