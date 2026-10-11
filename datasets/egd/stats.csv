@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,774,vandervoort2021,Abstract,preoperative MRI of adult patients with glioma treated at Erasmus MC 2008 to 2018
+subjects,sex=female,281,vandervoort2021,Abstract,
+subjects,sex=male,492,vandervoort2021,Abstract,
+subjects,sex=unknown,1,vandervoort2021,Abstract,
+age_min,,19,vandervoort2021,Abstract,
+age_max,,86,vandervoort2021,Abstract,
+subjects,contrast=T1w,774,vandervoort2021,Data Description: Structural MRI scans,
+subjects,contrast=T1w_ce,774,vandervoort2021,Data Description: Structural MRI scans,
+subjects,contrast=T2w,774,vandervoort2021,Data Description: Structural MRI scans,
+subjects,contrast=FLAIR,774,vandervoort2021,Data Description: Structural MRI scans,
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,774,vandervoort2021,Data Description: Structural MRI scans,all four scans are an inclusion criterion
+subjects,condition=glioma,774,vandervoort2021,Abstract,
+subjects,country=NL,774,vandervoort2021,Specifications Table,single center (Erasmus MC Rotterdam)
+subjects,vendor=siemens,347,vandervoort2021,Methods: Imaging,
+subjects,vendor=philips,254,vandervoort2021,Methods: Imaging,
+subjects,vendor=ge,172,vandervoort2021,Methods: Imaging,
+subjects,vendor=canon,1,vandervoort2021,Methods: Imaging,Toshiba
+subjects,field_strength=3,83,vandervoort2021,Methods: Imaging,
+subjects,field_strength=1.5,571,vandervoort2021,Methods: Imaging,
+subjects,field_strength=1,110,vandervoort2021,Methods: Imaging,
+subjects,field_strength=0.5,6,vandervoort2021,Methods: Imaging,field strength unknown for 4 patients

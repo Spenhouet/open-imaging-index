@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: egd
+name: EGD
+full_name: The Erasmus Glioma Database
+summary: >-
+  Brain MRI before surgery of adults with glioma, paired with IDH, 1p/19q and grade labels that give the WHO 2016
+  subtype and with whole-tumor masks, for relating tumor appearance to genetics and for segmentation. 774 patients
+  from routine care at Erasmus MC.
+homepage: https://xnat.bmia.nl/data/archive/projects/egd
+doi: 10.1016/j.dib.2021.107191
+year: 2021
+status: active
+creators:
+  - name: Erasmus MC, University Medical Center Rotterdam (van der Voort S.R., Smits M., Klein S. et al.)
+  - name: Health-RI XNAT (BMIA)
+    url: https://xnat.bmia.nl/
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [glioma]
+tasks: [segmentation, classification]
+formats: [NIfTI]
+countries: [NL]
+vendors: [siemens, philips, ge, canon]
+field_strengths: [0.5, 1, 1.5, 3]
+access:
+  type: signed_agreement
+  url: https://xnat.bmia.nl/data/archive/projects/egd
+  note: >-
+    Access requests go by email to the Health-RI service desk (servicedesk@health-ri.nl), not through the XNAT portal.
+    Applicants sign the data usage agreement and then receive an XNAT account. A Docker downloader is published at
+    https://doi.org/10.5281/zenodo.4761088.
+licenses:
+  - license: LicenseRef-EGD-Data-License
+    url: https://ars.els-cdn.com/content/image/1-s2.0-S2352340921004753-mmc1.pdf
+citation:
+  text: >-
+    van der Voort SR, Incekara F, Wijnenga MMJ, Kapsas G, Gahrmann R, Schouten JW, Dubbink HJ, Vincent AJPE, van den
+    Bent MJ, French PJ, Klein S, Smits M. The Erasmus Glioma Database (EGD): Structural MRI scans, WHO 2016 subtypes,
+    and segmentations of 774 patients with glioma. Data in Brief 37, 107191 (2021).
+    https://doi.org/10.1016/j.dib.2021.107191
+sources:
+  vandervoort2021:
+    title: van der Voort et al. 2021, Data in Brief (EGD data descriptor)
+    url: https://doi.org/10.1016/j.dib.2021.107191
+    kind: paper
+  xnat-egd:
+    title: EGD project page on the Health-RI XNAT (BMIA)
+    url: https://xnat.bmia.nl/data/archive/projects/egd
+    kind: website
+  zenodo-auc23-glioma:
+    title: Brain MRI Glioma, Zenodo record 8054721 (AUC23 challenge restructuring of EGD)
+    url: https://zenodo.org/records/8054721
+    kind: website
+related: []
+keywords: [glioma, WHO 2016 subtype, IDH, 1p/19q, tumor grade, tumor segmentation, radiogenomics, AUC23]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
