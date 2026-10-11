@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,38942,maschke2026,Table 1,"Sum of the two sites (Stanford 10,504, Mass General Brigham 28,438); the introduction also states n = 38,942"
+subjects,sex=female,19396,maschke2026,Table 1,"Sum of the two sites (5,085 and 14,311). The text gives 14,327 female for Mass General Brigham"
+subjects,sex=male,19263,maschke2026,Table 1,"Sum of the two sites (5,418 and 13,845). The text gives 13,866 male for Mass General Brigham"
+subjects,sex=unknown,283,maschke2026,Table 1,"Sum of the two sites (1 and 282). The text gives 245 unknown for Mass General Brigham"
+studies,,108737,maschke2026,Table 1,"Clinical encounters (sessions), sum of the two sites (27,440 and 81,297); Table 2 lists 81,277 for Mass General Brigham"
+scans,,1791885,maschke2026,Imaging modalities and sequences,Clinical images (sequences) of all modalities
+scans,modality=MR,1723699,maschke2026,Table 2,"Sum of the two sites (290,808 and 1,432,891)"
+scans,modality=CT,54137,maschke2026,Table 2,"Sum of the two sites (48,226 and 5,911)"
+scans,modality=PT,5093,maschke2026,Table 2,"Sum of the two sites (1,180 and 3,913)"
+scans,modality=NM,526,maschke2026,Table 2,"SPECT, sum of the two sites (43 and 483)"
+scans,field_strength=1.5,827107,maschke2026,Table 2,"MRI scans, sum of the two sites (74,319 and 752,788)"
+scans,field_strength=3,853564,maschke2026,Table 2,"MRI scans, sum of the two sites (216,144 and 637,420)"
+scans,field_strength=7,4905,maschke2026,Table 2,Mass General Brigham only
+scans,contrast=T1w,438159,maschke2026,Table 3,"Computationally identified, sum of the two sites (71,931 and 366,228)"
+scans,contrast=T2w,166390,maschke2026,Table 3,"Computationally identified, sum of the two sites (56,307 and 110,083)"
+scans,contrast=FLAIR,120585,maschke2026,Table 3,"Computationally identified, sum of the two sites (18,728 and 101,857)"
+scans,contrast=dwi,366657,maschke2026,Table 3,"Computationally identified, sum of the two sites (68,730 and 297,927)"
+scans,contrast=bold,6055,maschke2026,Table 3,"fMRI, computationally identified, sum of the two sites (4 and 6,051)"
+scans,contrast=swi,165751,maschke2026,Table 3,"Computationally identified, sum of the two sites (4,614 and 161,137)"
+scans,contrast=angio,196802,maschke2026,Table 3,"MR angiography, computationally identified, sum of the two sites (22,445 and 174,357)"
+scans,vendor=siemens,843778,maschke2026,Imaging modalities and sequences,MRI scans
+scans,vendor=ge,808340,maschke2026,Imaging modalities and sequences,MRI scans
+age_mean,,53.7,bdsp-bind,Demographics,Age at first encounter
+age_sd,,23.2,bdsp-bind,Demographics,Age at first encounter
+age_max,,106,maschke2026,Demographics,Mass General Brigham subset; Stanford ranges up to 101 years

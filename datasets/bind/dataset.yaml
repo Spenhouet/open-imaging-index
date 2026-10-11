@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bind
+name: BIND
+full_name: The Brain Imaging and Neurophysiology Database
+summary: >-
+  Routine clinical brain MRI, CT, PET and SPECT from patients who had EEG or sleep studies, linked to their
+  neurophysiology recordings and radiology reports for multimodal brain research. Converted to BIDS NIfTI, with
+  LLM-extracted findings and automatic sequence labels.
+homepage: https://bdsp.io/content/n1vba1x5qt62frfjem65/
+doi: 10.60508/mby8-3a26
+year: 2025
+version: '1.0'
+status: active
+creators:
+  - name: Brain Data Science Platform (BDSP)
+    url: https://bdsp.io/
+  - name: Massachusetts General Hospital and Brigham and Women's Hospital (Mass General Brigham)
+  - name: Stanford University
+  - name: Beth Israel Deaconess Medical Center
+species: human
+modalities: [MR, CT, PT, NM]
+anatomy: [brain]
+formats: [NIfTI, BIDS]
+countries: [US]
+field_strengths: [1.5, 3, 7]
+access:
+  type: credentialed
+  url: https://bdsp.io/content/n1vba1x5qt62frfjem65/1.0/
+  note: >-
+    BDSP credentialed account, CITI "Data or Specimens Only Research" training, a signed data use agreement and an
+    AWS account ID. The paper states that commercial entities may get access through a separate institutional
+    agreement with the participating hospitals.
+licenses:
+  - license: LicenseRef-BDSP-CHDL-1.5.0
+    url: https://bdsp.io/content/n1vba1x5qt62frfjem65/view-license/1.0/
+citation:
+  text: >-
+    Maschke C, Hadar PN, Zhang Y, et al. The Brain Imaging and Neurophysiology Dataset of large-scale multimodal
+    neural data. Sci Data 13, 1176 (2026). https://doi.org/10.1038/s41597-026-07421-x. Maschke C, Hadar P, Zhang Y,
+    et al. The Brain Imaging and Neurophysiology Database (BIND) (version 1.0). Brain Data Science Platform (2025).
+    https://doi.org/10.60508/mby8-3a26
+sources:
+  maschke2026:
+    title: Maschke et al. 2026, Scientific Data (BIND data descriptor)
+    url: https://doi.org/10.1038/s41597-026-07421-x
+    kind: paper
+  bdsp-bind:
+    title: BIND v1.0 project page on the Brain Data Science Platform
+    url: https://bdsp.io/content/n1vba1x5qt62frfjem65/1.0/
+    kind: website
+related: []
+keywords: [clinical neuroimaging, EEG, polysomnography, radiology reports, multimodal, BIDS]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
