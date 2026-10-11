@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,68,surani2024,Methods: Participants,participants.tsv also has 68 rows; subset of the 260 children in the BEAN study
+subjects,contrast=T1w,68,ds005504-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast=bold,68,ds005504-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,68,ds005504-file-tree,,
+scans,,272,ds005504-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,68,ds005504-file-tree,,
+scans,contrast=bold,204,ds005504-file-tree,,three Go/No-Go runs per subject
+subjects,sex=female,34,surani2024,Methods: Participants,
+subjects,sex=male,34,surani2024,Methods: Participants,
+subjects,age=0-9,68,ds005504-participants,Age,ages 61 to 84 months
+subjects,field_strength=3,68,surani2024,Methods: MRI Data Acquisition,
+subjects,vendor=siemens,68,surani2024,Methods: MRI Data Acquisition,3T Siemens MAGNETOM Verio with a 12-channel head coil
+subjects,country=BD,68,surani2024,Methods: Participants,Mirpur area of Dhaka
+subjects,condition=healthy,68,surani2024,Methods: Participants,born after 34 weeks of gestation with no neurological abnormalities or known genetic disorders
+age_mean,,6.58,ds005504-participants,Age,the paper gives 78.9 months
+age_min,,5.08,ds005504-participants,Age,the paper gives 61 months
+age_max,,7,ds005504-participants,Age,the paper gives 84 months
+age_median,,6.92,ds005504-participants,Age,83 months

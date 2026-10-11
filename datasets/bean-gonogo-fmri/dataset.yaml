@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bean-gonogo-fmri
+name: BEAN Go/No-Go fMRI
+full_name: 'Psychosocial adversity and inhibitory control: an fMRI study of children growing up in extreme poverty'
+summary: >-
+  Brain MRI and Go/No-Go task fMRI of young children from a low-income neighbourhood of Dhaka, Bangladesh, collected to
+  study how psychosocial adversity relates to the neural basis of inhibitory control. Includes adversity and maternal
+  mental health scores.
+homepage: https://openneuro.org/datasets/ds005504
+doi: 10.18112/openneuro.ds005504.v1.1.0
+# CHANGES file: snapshot 1.0.0 dated 2024-09-21 (initial); snapshot 1.1.0 dated 2026-03-23 only extended the README.
+year: 2024
+updated: 2026
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Harvard Graduate School of Education, Boston Children's Hospital, icddr,b and University of Virginia (Surani Z,
+      Turesky TK, Sullivan E, Shama T, Haque R, Islam N, Kakon SH, Yu X, Petri WA, Nelson CA, Gaab N)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [BD]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.66
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005504
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.0 states "License" CC0. The README asks users to tell Charles Nelson
+      their research question and states that this has no bearing on access.
+citation:
+  text: >-
+    Surani Z, Turesky TK, Sullivan E, Shama T, Haque R, Islam N, Kakon SH, Yu X, Petri WA, Nelson CA, Gaab N. Examining
+    the relationship between psychosocial adversity and inhibitory control: A functional magnetic resonance imaging
+    study of children growing up in extreme poverty. Journal of Experimental Child Psychology (2024).
+    doi:10.1016/j.jecp.2024.106072
+sources:
+  surani2024:
+    title: >-
+      Surani et al. 2024, Examining the relationship between psychosocial adversity and inhibitory control (bioRxiv
+      preprint 2024.02.05.578942)
+    url: https://doi.org/10.1101/2024.02.05.578942
+    kind: paper
+  openneuro-ds005504-v1-1-0:
+    title: OpenNeuro ds005504 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005504/versions/1.1.0
+    kind: website
+  ds005504-participants:
+    title: participants.tsv of ds005504 (CC0), counted per row; Age column in months converted to years
+    url: https://github.com/OpenNeuroDatasets/ds005504/blob/main/participants.tsv
+    kind: computed
+  ds005504-file-tree:
+    title: BIDS file tree of ds005504 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005504/tree/main
+    kind: computed
+keywords:
+  [inhibitory control, Go/No-Go, task fMRI, psychosocial adversity, poverty, children, low-resource setting, Bangladesh]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
