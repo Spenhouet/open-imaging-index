@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,198,faltracco2025,Abstract (Methods),incident motor neuron disease patients; the Zenodo record gives the same count
+subjects,condition=motor_neuron_disease,198,faltracco2025,Abstract (Methods),amyotrophic lateral sclerosis and primary lateral sclerosis; split not given in the abstract
+subjects,country=IT,198,faltracco2025,Author information,all authors are at Fondazione IRCCS Istituto Neurologico Carlo Besta in Milan

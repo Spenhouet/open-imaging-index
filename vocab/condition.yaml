@@ -30,6 +30,7 @@ terms:
   - { id: scd, label: Subjective cognitive decline, synonyms: [SCD], mappings: { mondo: 'MONDO:0850292' } }
   - { id: cognitive_impairment, label: Cognitive impairment, mappings: { hp: 'HP:0100543' } }
   - { id: parkinsons, label: Parkinson's disease, synonyms: [PD], mappings: { mondo: 'MONDO:0005180' } }
+  - { id: motor_neuron_disease, label: Motor neuron disease, synonyms: [MND, motor neuron disorder], mappings: { mondo: 'MONDO:0020128' } }
   - { id: huntington_disease, label: Huntington disease, synonyms: [HD, Huntington's disease], mappings: { mondo: 'MONDO:0007739' } }
   - {
       id: progressive_supranuclear_palsy,
