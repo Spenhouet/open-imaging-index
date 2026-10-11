@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,11409,rabinovici2019,Results (Patients) and Figure 1,"participants analyzed for the primary aim, out of 16,008 registered. The size of the LONI release is not stated"
+subjects,condition=mci,6905,rabinovici2019,Table 1,
+subjects,condition=dementia,4504,rabinovici2019,Table 1,
+subjects,sex=female,5804,rabinovici2019,Table 1,"sum of 3,425 (MCI) and 2,379 (dementia); the two groups are disjoint and complete"
+subjects,condition=mci;sex=female,3425,rabinovici2019,Table 1,
+subjects,condition=dementia;sex=female,2379,rabinovici2019,Table 1,
+age_median,,75,rabinovici2019,Abstract (Results),"IQR 71 to 80"
+scans,,10774,zeltzer2025,Results (first paragraph),"raw PET scans shared by imaging sites with the study and centrally processed; the analyses in this paper use 10,361 that passed quality control"
+scans,tracer=florbetapir,6699,zeltzer2025,Table 1,"of the 10,361 quantified scans"
+scans,tracer=florbetaben,3033,zeltzer2025,Table 1,"of the 10,361 quantified scans"
+scans,tracer=flutemetamol,629,zeltzer2025,Table 1,"of the 10,361 quantified scans"
