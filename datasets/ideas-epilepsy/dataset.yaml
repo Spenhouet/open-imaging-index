@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ideas-epilepsy
+name: IDEAS (epilepsy surgery)
+full_name: The Imaging Database for Epilepsy And Surgery (IDEAS), including the IDEAS II diffusion release
+summary: >-
+  Pre-operative brain MRI of adults with drug-resistant focal epilepsy who underwent resective surgery, shared with
+  resection masks, seizure outcomes up to five years and healthy controls, to support lesion localisation and outcome
+  research. The second release adds diffusion MRI.
+homepage: https://www.cnnp-lab.com/ideas-data
+doi: 10.18112/openneuro.ds005602.v1.0.0
+# IDEAS: OpenNeuro ds005602 snapshot 1.0.0 dated 2024-10-28. IDEAS II: OpenNeuro ds007401 snapshot 1.0.0 dated
+# 2026-02-12, same subject identifiers, adds diffusion MRI.
+year: 2024
+updated: 2026
+version: IDEAS II (ds007401 1.0.0)
+status: active
+creators:
+  - name: >-
+      CNNP Lab, Newcastle University, and UCL Queen Square Institute of Neurology / National Hospital for Neurology
+      and Neurosurgery (Taylor PN, Wang Y, Duncan JS, et al.)
+    url: https://www.cnnp-lab.com/ideas-data
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [epilepsy, healthy]
+tasks: [segmentation, classification]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [ge]
+field_strengths: [3]
+# Snapshot size of ds007401 1.0.0 (20,459,260,204 bytes); ds005602 1.0.0 is 4.1 GB.
+size_gb: 20.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007401
+licenses:
+  - license: CC0-1.0
+    applies_to: Raw T1w, FLAIR and diffusion MRI on OpenNeuro (ds005602 and ds007401)
+    note: >-
+      dataset_description.json of both OpenNeuro snapshots states "License" CC0. Resection masks, FreeSurfer outputs,
+      processed diffusion data and clinical tables are on figshare links listed on the lab page; their license was
+      not checked.
+citation:
+  text: >-
+    Taylor PN, Wang Y, Simpson C, et al. The Imaging Database for Epilepsy And Surgery (IDEAS). Epilepsia 66(2),
+    471-481 (2025). doi:10.1111/epi.18192. For diffusion MRI also: Taylor PN, Hall G, Horsley J, et al. Open
+    diffusion magnetic resonance imaging and connectivity data for epilepsy and surgery: The IDEAS II release.
+    Epilepsia 67(6), 2912-2923 (2026). doi:10.1002/epi.70186
+sources:
+  taylor2025:
+    title: Taylor et al. 2025, The Imaging Database for Epilepsy And Surgery (IDEAS), Epilepsia
+    url: https://doi.org/10.1111/epi.18192
+    kind: paper
+  taylor2026:
+    title: Taylor et al. 2026, Open diffusion MRI and connectivity data for epilepsy and surgery, the IDEAS II release, Epilepsia
+    url: https://doi.org/10.1002/epi.70186
+    kind: paper
+  cnnp-ideas-data:
+    title: CNNP Lab IDEAS data page (download links for both releases)
+    url: https://www.cnnp-lab.com/ideas-data
+    kind: website
+  ds005602-file-tree:
+    title: BIDS file tree of OpenNeuro ds005602 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/anat counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005602/tree/1.0.0
+    kind: computed
+  ds007401-file-tree:
+    title: >-
+      BIDS file tree of OpenNeuro ds007401 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ses-*/ counted per
+      suffix and joined per subject with the anat files of ds005602
+    url: https://github.com/OpenNeuroDatasets/ds007401/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [
+    focal epilepsy,
+    epilepsy surgery,
+    resection mask,
+    seizure outcome,
+    lesion detection,
+    structural connectome,
+    diffusion MRI,
+    FreeSurfer,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
