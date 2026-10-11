@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ahrb
+name: Adolescent Health Risk Behavior Study (ds005012)
+full_name: 'Adolescent Health Risk Behavior Study: Monetary Incentive Delay (MID) task data'
+summary: >-
+  Brain MRI and task fMRI of late adolescents and young adults from Southeast Michigan, scanned twice about a year
+  apart while performing the monetary incentive delay task, released to study test-retest reliability of reward
+  activation. Includes fieldmaps, physiological recordings and fMRIPrep outputs.
+homepage: https://openneuro.org/datasets/ds005012
+doi: 10.18112/openneuro.ds005012.v1.0.3
+year: 2024
+version: 1.0.3
+status: active
+creators:
+  - name: University of Michigan (Demidenko MI, Huntley ED, Keating DP)
+    url: https://openneuro.org/datasets/ds005012
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: []
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 61.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005012
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Demidenko MI, Huntley ED, Keating DP. Adolescent Health Risk Behavior Study (ds005012, version 1.0.3). OpenNeuro
+    (2024). doi:10.18112/openneuro.ds005012.v1.0.3
+sources:
+  openneuro-ds005012-v1-0-3:
+    title: OpenNeuro ds005012 snapshot 1.0.3 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005012/versions/1.0.3
+    kind: website
+  ds005012-participants:
+    title: participants.tsv of ds005012 snapshot 1.0.3 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005012/blob/1.0.3/participants.tsv
+    kind: computed
+  ds005012-file-tree:
+    title: File tree of ds005012 snapshot 1.0.3 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005012/tree/1.0.3
+    kind: computed
+  demidenko2021:
+    title: >-
+      Demidenko et al. 2021, Interactions between methodological and interindividual variability: how MID task
+      contrast maps vary and impact associations with behavior, Brain and Behavior
+    url: https://doi.org/10.1002/brb3.2093
+    kind: paper
+  demidenko2024:
+    title: >-
+      Demidenko, Mumford, Poldrack 2024, Impact of analytic decisions on test-retest reliability of individual and
+      group estimates in fMRI, Imaging Neuroscience
+    url: https://doi.org/10.1162/imag_a_00262
+    kind: paper
+related: []
+keywords: [monetary incentive delay, reward processing, test-retest reliability, adolescent risk behavior, task fMRI, physiological recordings]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
