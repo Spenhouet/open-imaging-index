@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: motum
+name: MOTUM
+full_name: A Multi-Center, Multi-Parametric MRI Dataset of Primary and Secondary Brain Tumors
+summary: >-
+  Brain MRI of patients with high-grade glioma or brain metastases from lung, breast, ovarian, gastric and melanoma
+  primaries, shared to support tumor segmentation and telling primary from secondary brain tumors. Four structural
+  sequences, two tumor masks and clinical data per patient.
+homepage: https://github.com/hongweilibran/MOTUM
+doi: 10.7910/DVN/KUUEWC
+year: 2023
+creators:
+  - name: Gong Z., Xu T., Peng N., Cheng X., Niu C., Wiestler B., Hong F., Li H. B.
+    url: https://github.com/hongweilibran/MOTUM
+  - name: Second Affiliated Hospital of Anhui Medical University, Changzheng Hospital and The First Affiliated Hospital of USTC
+species: human
+modalities: [MR]
+contrasts: [FLAIR, T1w, T1w_ce, T2w]
+anatomy: [brain]
+conditions: [glioma, brain_metastasis]
+tasks: [segmentation, classification]
+formats: [NIfTI, DICOM]
+countries: [CN]
+vendors: [siemens, philips]
+field_strengths: [3]
+size_gb: 0.98
+access:
+  type: open
+  url: https://doi.org/10.7910/DVN/KUUEWC
+  note: >-
+    Processed NIfTI images, masks, radiomics features and the clinical spreadsheet download without an account from
+    Harvard Dataverse. The G-Node GIN release cited in the paper (https://doi.org/10.12751/g-node.tvzqc5) also holds
+    the anonymized DICOM files.
+licenses:
+  - license: CC-BY-4.0
+    url: https://doi.org/10.7910/DVN/KUUEWC
+    note: Harvard Dataverse and the G-Node GIN record both list CC BY 4.0.
+citation:
+  text: >-
+    Gong Z, Xu T, Peng N, Cheng X, Niu C, Wiestler B, Hong F, Li HB. A Multi-Center, Multi-Parametric MRI Dataset of
+    Primary and Secondary Brain Tumors. Scientific Data 11, 789 (2024). https://doi.org/10.1038/s41597-024-03634-0
+sources:
+  gong2024:
+    title: Gong et al. 2024, A Multi-Center, Multi-Parametric MRI Dataset of Primary and Secondary Brain Tumors (Scientific Data 11, 789)
+    url: https://doi.org/10.1038/s41597-024-03634-0
+    kind: paper
+  dataverse-motum:
+    title: Harvard Dataverse record of MOTUM, version 2 (file listing of MOTUM-v.2.2, CC BY 4.0)
+    url: https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/KUUEWC
+    kind: computed
+  gnode-motum:
+    title: G-Node GIN record of MOTUM (DataCite metadata)
+    url: https://api.datacite.org/dois/10.12751/g-node.tvzqc5
+    kind: website
+related: []
+keywords: [brain metastases, high-grade glioma, tumor segmentation, tumor origin, radiomics, multi-center]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,67,gong2024,Subject characteristics,
+subjects,condition=glioma,29,gong2024,Subject characteristics,"high-grade glioma: glioblastoma, WHO grade 3 and 4 astrocytoma and oligodendroglioma"
+subjects,condition=brain_metastasis,38,gong2024,Abstract,"sum of the five metastasis groups (20 + 10 + 4 + 2 + 2), which are disjoint"
+subjects,condition=lung_cancer,20,gong2024,Subject characteristics,primary of the brain metastasis
+subjects,condition=breast_cancer,10,gong2024,Subject characteristics,primary of the brain metastasis
+subjects,condition=ovarian_cancer,4,gong2024,Subject characteristics,primary of the brain metastasis
+subjects,condition=gastric_cancer,2,gong2024,Subject characteristics,primary of the brain metastasis
+subjects,condition=melanoma,2,gong2024,Subject characteristics,primary of the brain metastasis
+subjects,contrast=FLAIR,67,gong2024,Background & Summary,
+subjects,contrast=T1w,67,gong2024,Background & Summary,
+subjects,contrast=T1w_ce,67,gong2024,Background & Summary,
+subjects,contrast=T2w,67,gong2024,Background & Summary,
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,67,gong2024,Background & Summary,all four sequences for every patient
+subjects,field_strength=3,67,gong2024,Image acquisition,Siemens or Philips 3.0 T
+subjects,country=CN,67,gong2024,Subject characteristics,three hospitals in Hefei and Shanghai
+scans,,264,dataverse-motum,"files flair/t1/t1ce/t2.nii.gz under MOTUM-v.2.2/images",66 subject folders with four volumes each; 012-LungMeta-AYEY has masks but no images in version 2
