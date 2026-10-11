@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: singapore-dyscalculia-fmri
+name: Singapore Dyscalculia fMRI (Kwok et al. 2023)
+full_name: Kwok et al., 2023, Human Brain Mapping
+summary: >-
+  Task fMRI and T1-weighted brain MRI of Singaporean children aged 8 to 9 with persistent developmental dyscalculia and
+  typically achieving peers, collected to compare brain activation during arithmetic, number matching and visuo-spatial
+  working memory tasks.
+homepage: https://openneuro.org/datasets/ds004791
+doi: 10.18112/openneuro.ds004791.v1.0.0
+# Single OpenNeuro snapshot 1.0.0 dated 2023-10-12 in the CHANGES file.
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: Kwok FY, Wilkey ED, Peters L, Khiu E, Bull R, Lee K, Ansari D (Nanyang Technological University, Western University and others)
+    url: https://osf.io/y763r/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [dyscalculia, healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [SG]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 29.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004791
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Kwok FY, Wilkey ED, Peters L, Khiu E, Bull R, Lee K, Ansari D. Developmental dyscalculia is not associated with
+    atypical brain activation: A univariate fMRI study of arithmetic, magnitude processing, and visuospatial working
+    memory. Human Brain Mapping 44(18), 6308-6325 (2023). doi:10.1002/hbm.26495
+sources:
+  kwok2023:
+    title: Kwok et al. 2023, Developmental dyscalculia is not associated with atypical brain activation, Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.26495
+    kind: paper
+  openneuro-ds004791-v1-0-0:
+    title: OpenNeuro ds004791 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004791/versions/1.0.0
+    kind: website
+  ds004791-participants:
+    title: participants.tsv of ds004791 snapshot 1.0.0 (CC0), counted per row; groups from group
+    url: https://github.com/OpenNeuroDatasets/ds004791/blob/1.0.0/participants.tsv
+    kind: computed
+  ds004791-file-tree:
+    title: BIDS file tree of ds004791 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix, sex and age from PatientSex and PatientAge in the T1w JSON sidecars
+    url: https://github.com/OpenNeuroDatasets/ds004791/tree/1.0.0
+    kind: computed
+related: []
+keywords: [developmental dyscalculia, math learning difficulties, children, task fMRI, arithmetic, numerical magnitude, visuo-spatial working memory]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
