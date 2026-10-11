@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: psiconnect
+name: PsiConnect
+full_name: 'PsiConnect: Multimodal Neuroimaging of Context-Dependent Brain and Behaviour Dynamics under Psilocybin'
+summary: >-
+  Brain MRI, multi-echo fMRI and EEG of healthy psychedelic-naive adults scanned before and after a single 19 mg dose
+  of psilocybin, collected to study how the drug's effects on brain activity depend on context (rest, meditation,
+  music, movie) and on prior meditation training.
+homepage: https://openneuro.org/datasets/ds006110
+doi: 10.18112/openneuro.ds006110.v1.2.2
+# OpenNeuro snapshots: 1.0.0 dated 2025-05-14 (initial release), latest 1.2.2 dated 2026-10-01.
+year: 2025
+updated: 2026
+version: 1.2.2
+status: active
+creators:
+  - name: >-
+      Monash University, School of Psychological Sciences and Monash Biomedical Imaging (Novelli L, Stoliker D, Barta
+      T, Greaves MD, Chopra S, Jackson J, Kwee J, Williams M, Razi A)
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 250.11
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006110
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.2 states "License" CC0.
+citation:
+  text: >-
+    Novelli L, Stoliker D, Barta T, et al. PsiConnect: Multimodal Neuroimaging of Context-Dependent Brain and Behaviour
+    Dynamics under Psilocybin. Scientific Data (2026). doi:10.1038/s41597-026-07312-1. The README also asks to cite
+    Stoliker D, Novelli L, Khajehnejad M, et al. Psychedelics align brain activity with context. Nature (2026).
+    doi:10.1038/s41586-026-10910-z
+sources:
+  novelli2026:
+    title: Novelli et al. 2026, Scientific Data (data descriptor, accelerated article preview)
+    url: https://doi.org/10.1038/s41597-026-07312-1
+    kind: paper
+  novelli2025:
+    title: >-
+      Novelli et al. 2025, PsiConnect: A Multimodal Neuroimaging Study of Psilocybin-Induced Changes in Brain and
+      Behaviour (bioRxiv preprint 2025.04.11.643415v1)
+    url: https://doi.org/10.1101/2025.04.11.643415
+    kind: paper
+  openneuro-ds006110-v1-2-2:
+    title: OpenNeuro ds006110 snapshot 1.2.2 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006110/versions/1.2.2
+    kind: website
+  ds006110-participants:
+    title: participants.tsv of ds006110 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds006110/blob/main/participants.tsv
+    kind: computed
+  ds006110-file-tree:
+    title: BIDS file tree of ds006110 (CC0), raw NIfTI files under sub-*/ counted per suffix and session
+    url: https://github.com/OpenNeuroDatasets/ds006110/tree/main
+    kind: computed
+keywords:
+  [psilocybin, psychedelics, multi-echo fMRI, EEG, resting state, naturalistic fMRI, meditation, music, movie watching]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
