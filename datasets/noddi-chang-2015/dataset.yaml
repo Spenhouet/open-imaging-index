@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: noddi-chang-2015
+name: NODDI brain maturation (Chang et al. 2015)
+full_name: White matter changes of neurite density and fiber orientation dispersion during human brain maturation
+summary: >-
+  Multi-shell diffusion MRI and T1-weighted brain MRI of healthy children and adults aged 7 to 64, shared to study how
+  neurite density and orientation dispersion change with age, with repeat scans of five people for test-retest
+  reliability.
+homepage: https://datadryad.org/dataset/doi:10.7272/Q6D798BD
+doi: 10.7272/Q6D798BD
+year: 2015
+creators:
+  - name: Pratik Mukherjee, Department of Radiology and Biomedical Imaging, University of California San Francisco
+  - name: Children's Hospital of Philadelphia
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 8.16
+access:
+  type: open
+  url: https://datadryad.org/dataset/doi:10.7272/Q6D798BD
+  note: >-
+    Deposited on Dryad and also published on Harvard Dataverse (doi:10.7910/DVN/28730) as five tar archives. Both
+    copies download without an account.
+licenses:
+  - license: CC0-1.0
+    note: Both the Dryad and the Harvard Dataverse records state CC0 1.0.
+citation:
+  text: >-
+    Chang YS, Owen JP, Pojman NJ, Thieu T, Bukshpun P, Wakahiro MLJ, et al. White Matter Changes of Neurite Density
+    and Fiber Orientation Dispersion during Human Brain Maturation. PLoS ONE 10(6): e0123656 (2015).
+    doi:10.1371/journal.pone.0123656
+sources:
+  chang2015:
+    title: Chang et al. 2015, PLoS ONE 10(6) e0123656
+    url: https://doi.org/10.1371/journal.pone.0123656
+    kind: paper
+  dryad-q6d798bd:
+    title: Dryad dataset page doi:10.7272/Q6D798BD (abstract, license, size)
+    url: https://datadryad.org/dataset/doi:10.7272/Q6D798BD
+    kind: website
+  dataverse-28730:
+    title: Harvard Dataverse dataset doi:10.7910/DVN/28730, version 1 (license and file list)
+    url: https://doi.org/10.7910/DVN/28730
+    kind: website
+  dryad-q6d798bd-files:
+    title: >-
+      File list of the Dryad deposit (CC0), version 30527, counted per session folder and per T1.nii.gz, DTI.nii.gz,
+      HARDI1.nii.gz and HARDI2.nii.gz file
+    url: https://datadryad.org/api/v2/versions/30527/files
+    kind: computed
+  dataverse-28730-subject-lists:
+    title: >-
+      ages_NoRpt.txt, gender_NoRpt.txt, site_NoRpt.txt and subjList_NoRpt.txt in DataReleaseNODDIdevelopmentSet1.tar.gz
+      of the Dataverse deposit (CC0), one line per unique subject
+    url: https://dataverse.harvard.edu/api/access/datafile/2530318
+    kind: computed
+related: []
+keywords: [NODDI, diffusion MRI, multi-shell diffusion, brain development, white matter, lifespan, test-retest]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
