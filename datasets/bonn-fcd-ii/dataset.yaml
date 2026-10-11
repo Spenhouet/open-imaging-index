@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bonn-fcd-ii
+name: Bonn FCD Type II Presurgery MRI (ds004199)
+full_name: An open presurgery MRI dataset of people with epilepsy and focal cortical dysplasia type II
+summary: >-
+  Presurgical brain MRI of people with epilepsy caused by focal cortical dysplasia (FCD) type II and of healthy
+  controls, released as an external benchmark for automated FCD detection. T1-weighted and FLAIR images with manual
+  lesion masks and clinical features.
+homepage: https://openneuro.org/datasets/ds004199
+doi: 10.18112/openneuro.ds004199.v1.0.6
+# First public snapshot (1.0.0) on OpenNeuro, 2022-07-10; latest snapshot 1.0.6, 2025-02-24.
+year: 2022
+updated: 2025
+version: 1.0.6
+status: active
+creators:
+  - name: Schuch F, Rüber T, et al. (Department of Epileptology, University Hospital Bonn)
+    url: https://openneuro.org/datasets/ds004199
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR]
+anatomy: [brain]
+conditions: [focal_cortical_dysplasia, epilepsy, healthy]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004199
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.6 states "License" CC0.
+citation:
+  text: >-
+    Schuch F, Walger L, Schmitz M, et al. An open presurgery MRI dataset of people with epilepsy and focal cortical
+    dysplasia type II. Scientific Data 10, 475 (2023). doi:10.1038/s41597-023-02386-7
+sources:
+  schuch2023:
+    title: >-
+      Schuch et al. 2023, An open presurgery MRI dataset of people with epilepsy and focal cortical dysplasia type II,
+      Scientific Data 10, 475
+    url: https://doi.org/10.1038/s41597-023-02386-7
+    kind: paper
+  openneuro-ds004199-v1-0-6:
+    title: OpenNeuro ds004199 snapshot 1.0.6 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004199/versions/1.0.6
+    kind: website
+  ds004199-participants:
+    title: participants.tsv of ds004199 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004199/blob/main/participants.tsv
+    kind: computed
+  ds004199-file-tree:
+    title: File listing of the ds004199 BIDS repository (CC0), counted per T1w, FLAIR and lesion mask NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004199
+    kind: computed
+related: []
+keywords:
+  [focal cortical dysplasia, epilepsy surgery, lesion detection, lesion segmentation, drug-resistant epilepsy]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
