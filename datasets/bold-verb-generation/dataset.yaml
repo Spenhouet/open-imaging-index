@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bold-verb-generation
+name: BOLD Verb Generation
+full_name: Oxford BOLD study, verb generation fMRI
+summary: >-
+  Task fMRI and T1-weighted brain MRI of children aged 10 to 15 with developmental language disorder and typically
+  developing peers, collected to test whether overt verb generation recruits language regions differently in DLD.
+homepage: https://openneuro.org/datasets/ds003145
+doi: 10.18112/openneuro.ds003145.v1.0.2
+# OpenNeuro snapshots 1.0.0 (2020-09-17), 1.0.1 and 1.0.2 (both 2020-09-18) per the CHANGES file.
+year: 2020
+updated: 2020
+version: 1.0.2
+status: active
+creators:
+  - name: Department of Experimental Psychology and Wellcome Centre for Integrative Neuroimaging, University of Oxford (Krishnan S, Watkins KE, et al.)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [developmental_language_disorder, healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 35.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003145
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Krishnan S, Asaridou SS, Cler GJ, Smith HJ, Willis HE, Healy MP, Thompson PA, Bishop DVM, Watkins KE. Functional
+    organisation for verb generation in children with developmental language disorder. NeuroImage 226, 117599 (2021).
+    doi:10.1016/j.neuroimage.2020.117599
+sources:
+  krishnan2021:
+    title: Krishnan et al. 2021, Functional organisation for verb generation in children with developmental language disorder, NeuroImage
+    url: https://doi.org/10.1016/j.neuroimage.2020.117599
+    kind: paper
+  openneuro-ds003145-v1-0-2:
+    title: OpenNeuro ds003145 snapshot 1.0.2 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003145/versions/1.0.2
+    kind: website
+  ds003145-file-tree:
+    title: BIDS file tree of ds003145 snapshot 1.0.2 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds003145/tree/1.0.2
+    kind: computed
+keywords: [developmental language disorder, specific language impairment, children, adolescents, task fMRI, verb generation, overt speech, language]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
