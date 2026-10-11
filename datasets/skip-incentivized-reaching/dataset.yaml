@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: skip-incentivized-reaching
+name: 'SKIP: Incentivized Reaching (ds005263)'
+full_name: "SoCal Kinesia and Incentivization for Parkinson's Disease (SKIP): Incentivized Reaching"
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults making timed precision reaches for monetary reward or to
+  avoid loss, collected to study how incentive valence drives movement initiation. 68 participants scanned at 3T, in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds005263
+doi: 10.18112/openneuro.ds005263.v1.0.1
+year: 2024
+updated: 2026
+version: 1.0.1
+status: active
+creators:
+  - name: Grafton Lab, University of California, Santa Barbara (Dundon NM, Rizor EJ, Stasiak JE, Grafton ST, et al.)
+    url: https://openneuro.org/datasets/ds005263
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 69.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005263
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Dundon NM, Rizor EJ, Stasiak JE, Wang J, Li T, Sabugo K, Villanueva C, Barandon P, Babenko V, Beverly-Aylwin R,
+    Stump A, Santander T, Bostan AC, Lapate RC, Grafton ST. Incentive valence differentially engages open- and
+    closed-loop basal ganglia circuits during movement initiation. bioRxiv (2025). doi:10.64898/2025.12.21.695842
+sources:
+  dundon2025:
+    title: >-
+      Dundon et al. 2025, Incentive valence differentially engages open- and closed-loop basal ganglia circuits during
+      movement initiation, bioRxiv preprint
+    url: https://doi.org/10.64898/2025.12.21.695842
+    kind: paper
+  openneuro-ds005263-v101:
+    title: OpenNeuro ds005263 snapshot 1.0.1 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005263/versions/1.0.1
+    kind: website
+  ds005263-participants:
+    title: participants.tsv of ds005263 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005263/blob/1.0.1/participants.tsv
+    kind: computed
+  ds005263-file-tree:
+    title: File tree of ds005263 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005263/tree/1.0.1
+    kind: computed
+related: []
+keywords: [Parkinson's disease, incentive, reward, loss avoidance, reaching, motor control, basal ganglia, task fMRI, SKIP]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,68,dundon2025,"Methods, Experiment 2: Participants",68 subject folders in the snapshot 1.0.1 file tree; 68 rows in participants.tsv; the OpenNeuro README also states 68 participants
+subjects,condition=healthy,68,ds005263-participants,group,all rows group control; the README states this version holds healthy controls only
+subjects,sex=female,49,ds005263-participants,sex,sex F; the preprint reports 50 female and 18 male
+subjects,sex=male,19,ds005263-participants,sex,sex M
+subjects,age=10-19,18,ds005263-participants,age,ages 18 and 19
+subjects,age=20-29,50,ds005263-participants,age,ages 20 to 26
+subjects,contrast=T1w,68,ds005263-file-tree,sub-*/anat/**/*_T1w.nii,"for sub-309 and sub-310 the T1w file sits only in a nested anat/anat folder"
+subjects,contrast=bold,67,ds005263-file-tree,sub-*/func/*_bold.nii,sub-346 has events files but no bold images
+subjects,contrast_set=bold+T1w,67,ds005263-file-tree,anat and func folders,field maps not counted as a contrast
+scans,,489,ds005263-file-tree,sub-*/**/*.nii,"all image files: 201 bold, 69 T1w (including one duplicate copy for sub-301) and 219 field map images"
+scans,contrast=T1w,68,ds005263-file-tree,sub-*/anat/**/*_T1w.nii,one per subject; the duplicate copy of sub-301 in anat/anat not counted
+scans,contrast=bold,201,ds005263-file-tree,*_bold.nii,three runs of task-incenreach for each of 67 subjects
+age_min,,18,ds005263-participants,age,
+age_max,,26,ds005263-participants,age,
+age_mean,,20.75,dundon2025,"Methods, Experiment 2: Participants",SD 1.86
+age_sd,,1.86,dundon2025,"Methods, Experiment 2: Participants",
