@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,200,chai2025,Methods: Subjects,217 selected from 765 HCP-Aging subjects; 17 excluded after visual QC (11 motion; 6 large lacunar infarcts)
+subjects,contrast=T2w,200,ds005595-file-tree,sub-*/anat/*_T2w.nii.gz,one T2w volume per subject
+subjects,condition=healthy,200,chai2025,Methods: Subjects,
+subjects,field_strength=3,200,chai2025,Methods: Imaging parameters,
+subjects,vendor=siemens,200,chai2025,Methods: Imaging parameters,Siemens 3T Prisma
+subjects,sex=female,113,ds005595-participants,sex,
+subjects,sex=male,87,ds005595-participants,sex,Table 1 of the paper also gives 87 male
+subjects,age=30-39,33,ds005595-participants,age,age in completed years
+subjects,age=40-49,32,ds005595-participants,age,
+subjects,age=50-59,33,ds005595-participants,age,
+subjects,age=60-69,32,ds005595-participants,age,
+subjects,age=70-79,32,ds005595-participants,age,
+subjects,age=80-89,34,ds005595-participants,age,
+subjects,age=90+,4,ds005595-participants,age,
+age_mean,,61.1,ds005595-participants,age,Table 1 of the paper gives 61.3
+age_median,,60.45,ds005595-participants,age,
+age_min,,36,ds005595-participants,age,
+age_max,,100,ds005595-participants,age,
+scans,,200,ds005595-file-tree,sub-*/anat/*_T2w.nii.gz,
