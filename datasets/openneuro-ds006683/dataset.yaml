@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006683
+name: RT Disengagement fMRI (ds006683)
+full_name: Repetitive Thought Disengagement
+summary: >-
+  Task and resting-state fMRI with T1-weighted MRI from adults enriched for repetitive thought and anxiety disorders,
+  collected to study the brain basis of disengaging from personal worries with an attention task. Diagnoses, worry
+  scores, BIDS, CC0.
+homepage: https://openneuro.org/datasets/ds006683
+doi: 10.18112/openneuro.ds006683.v1.0.3
+year: 2025
+updated: 2026
+version: 1.0.3
+status: active
+creators:
+  - name: Lauren S. Hallion, Cecilia A. Westbrook, Jennifer S. Silk and colleagues (University of Pittsburgh)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 125.82
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006683/versions/1.0.3
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006683/versions/1.0.3
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Hallion LS, Westbrook CA, Alberts B, Caulfield MK, Gianaros PJ, Smallwood J, Blendermann M, Silk JS. RT
+    Disengagement. OpenNeuro ds006683 v1.0.3. doi:10.18112/openneuro.ds006683.v1.0.3
+sources:
+  openneuro-ds006683-v1-0-3:
+    title: >-
+      OpenNeuro ds006683 snapshot 1.0.3 (dataset_description.json, README.md, CHANGES, snapshot list and snapshot
+      size)
+    url: https://openneuro.org/datasets/ds006683/versions/1.0.3
+    kind: website
+  ds006683-participants:
+    title: participants.tsv of the ds006683 BIDS repository (CC0), columns age, gender and n_diagnoses
+    url: https://github.com/OpenNeuroDatasets/ds006683/blob/main/participants.tsv
+    kind: computed
+  ds006683-adis:
+    title: phenotype/adis.tsv of the ds006683 BIDS repository (CC0), per-disorder ADIS-5 diagnosis columns
+    url: https://github.com/OpenNeuroDatasets/ds006683/blob/main/phenotype/adis.tsv
+    kind: computed
+  ds006683-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds006683 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds006683
+    kind: computed
+  westbrook2025:
+    title: >-
+      Neural Correlates of Sustained Attention During Disengagement From Repetitive Thought (PsyArXiv preprint 8ea5z,
+      version 2, 2025)
+    url: https://osf.io/preprints/psyarxiv/8ea5z
+    kind: paper
+related: []
+keywords:
+  [repetitive thought, worry, rumination, disengagement, sustained attention, SART, task fMRI, resting state, anxiety]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
