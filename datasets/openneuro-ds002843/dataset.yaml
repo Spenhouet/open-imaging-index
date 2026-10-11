@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002843
+name: Cognitive Training fMRI (ds002843)
+full_name: Cognitive Training
+summary: >-
+  Brain MRI and task fMRI of healthy young adults before and after 10 weeks of commercial cognitive training or video
+  games, from a randomized trial of whether training changes brain activity during delay discounting and risky choice.
+homepage: https://openneuro.org/datasets/ds002843
+doi: 10.18112/openneuro.ds002843.v1.0.1
+# First public snapshot (1.0.0) on OpenNeuro, 2020-05-23; latest snapshot 1.0.1, 2021-08-19.
+year: 2020
+updated: 2021
+version: 1.0.1
+status: active
+creators:
+  - name: Kable Lab, University of Pennsylvania (Lee S, Kable JW)
+    url: https://openneuro.org/datasets/ds002843
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 91.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002843
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Kable JW, Caulfield MK, Falcone M, et al. No effect of commercial cognitive training on brain activity, choice
+    behavior, or cognitive performance. Journal of Neuroscience 37(31), 7390-7402 (2017).
+    doi:10.1523/JNEUROSCI.2832-16.2017
+sources:
+  kable2017:
+    title: >-
+      Kable et al. 2017, No effect of commercial cognitive training on brain activity, choice behavior, or cognitive
+      performance, Journal of Neuroscience (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5546110/
+    kind: paper
+  openneuro-ds002843-v101:
+    title: OpenNeuro ds002843 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds002843/versions/1.0.1
+    kind: website
+  ds002843-participants:
+    title: participants.tsv of ds002843 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds002843/blob/1.0.1/participants.tsv
+    kind: computed
+  ds002843-file-tree:
+    title: File tree of ds002843 snapshot 1.0.1 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds002843/tree/1.0.1
+    kind: computed
+related: []
+keywords:
+  [cognitive training, randomized controlled trial, delay discounting, risky choice, task fMRI, resting-state fMRI, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
