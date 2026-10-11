@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: language-learning-aptitude
+name: Language Learning Aptitude (ds003508)
+full_name: Language Learning Aptitude dataset
+summary: >-
+  Ultra-high-field brain MRI of young right-handed university students, collected to relate language-learning
+  aptitude (LLAMA vocabulary, phonetic memory and grammar scores) to cortical structure and white matter diffusion,
+  with T1-weighted, proton density and diffusion scans at 7 T.
+homepage: https://openneuro.org/datasets/ds003508
+doi: 10.18112/openneuro.ds003508.v1.0.0
+year: 2021
+updated: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: Lund University (Novén M, Olsson H, Helms G, Nilsson M, Horne M, Roll M)
+    url: https://openneuro.org/datasets/ds003508
+species: human
+modalities: [MR]
+contrasts: [T1w, PDw, dwi]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [SE]
+vendors: [philips]
+field_strengths: [7]
+size_gb: 4.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003508
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Novén M, Olsson H, Helms G, Horne M, Nilsson M, Roll M. Cortical and white matter correlates of language-learning
+    aptitudes. Human Brain Mapping 42(15), 5037-5050 (2021). doi:10.1002/hbm.25598
+sources:
+  noven2021:
+    title: Novén et al. 2021, Cortical and white matter correlates of language-learning aptitudes, Human Brain Mapping 42(15), 5037-5050
+    url: https://doi.org/10.1002/hbm.25598
+    kind: paper
+  openneuro-ds003508-v1-0-0:
+    title: OpenNeuro ds003508 snapshot 1.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003508/versions/1.0.0
+    kind: website
+  ds003508-participants:
+    title: participants.tsv of ds003508 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003508/blob/1.0.0/participants.tsv
+    kind: computed
+  ds003508-file-tree:
+    title: File tree of ds003508 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003508/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [
+    language learning aptitude,
+    LLAMA,
+    vocabulary learning,
+    grammatical inference,
+    phonetic memory,
+    7 T MRI,
+    diffusion kurtosis imaging,
+    tractography,
+    cortical thickness
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
