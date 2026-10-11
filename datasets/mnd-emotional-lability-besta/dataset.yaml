@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mnd-emotional-lability-besta
+name: Emotional lability in motor neuron disease (Besta)
+full_name: >-
+  Dataset related to article: Pathological laugher and crying in motor neuron diseases: a matter of bulbar and
+  neurobehavioral involvement with sex imbalance
+summary: >-
+  Demographic, clinical, neuropsychological and structural brain MRI data of 198 incident patients with motor neuron
+  disease from one Milan centre, collected to study pathological laughter and crying and its links to bulbar,
+  behavioural and cortical changes. Access restricted.
+homepage: https://zenodo.org/records/14510328
+doi: 10.5281/zenodo.14510328
+# Year the restricted Zenodo record was published; the article followed in 2025.
+year: 2024
+creators:
+  - name: Fondazione IRCCS Istituto Neurologico Carlo Besta
+    url: https://zenodo.org/records/14510328
+species: human
+modalities: [MR]
+anatomy: [brain]
+conditions: [motor_neuron_disease]
+countries: [IT]
+access:
+  type: on_request
+  url: https://zenodo.org/records/14510328
+  note: >-
+    The Zenodo record is restricted and lists no files; access is requested through the record and granted at the
+    owners' discretion. It describes its content as anonymized demographic, clinical, neuropsychological and MRI data
+    of 198 patients. Whether the MRI part holds images or only derived measures is not stated.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Zenodo record is labelled CC BY 4.0, which applies once access has been granted. No other terms are
+      published.
+citation:
+  text: >-
+    Faltracco V, Dalla Bella E, Nigri A, et al. Pathological laugher and crying in motor neuron diseases: a matter of
+    bulbar and neurobehavioral involvement with sex imbalance. J Neurol 272(5), 372 (2025).
+    doi:10.1007/s00415-025-12959-8
+sources:
+  faltracco2025:
+    title: Faltracco et al. 2025, Journal of Neurology 272(5), 372 (abstract)
+    url: https://doi.org/10.1007/s00415-025-12959-8
+    kind: paper
+  zenodo-14510328:
+    title: Zenodo record 14510328, dataset related to the article
+    url: https://zenodo.org/records/14510328
+    kind: website
+related: []
+keywords:
+  [
+    amyotrophic lateral sclerosis,
+    primary lateral sclerosis,
+    emotional lability,
+    pseudobulbar affect,
+    cortical thickness,
+    neuropsychology
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
