@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,188,lytle2019,Methods: Participants,188 subject folders in the snapshot 1.4.2 file tree; 188 participant rows in participants.tsv
+subjects,sex=male,99,ds001894-participants,sex,sex 1 (male)
+subjects,sex=female,89,ds001894-participants,sex,sex 2 (female)
+subjects,contrast=T1w,188,ds001894-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,188,ds001894-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast=dwi,113,ds001894-file-tree,sub-*/ses-T1/dwi/*_dwi.nii.gz,diffusion was collected at session T1 only
+subjects,contrast_set=bold+dwi+T1w,113,ds001894-file-tree,"anat, func and dwi folders",
+subjects,contrast_set=bold+T1w,75,ds001894-file-tree,"anat, func and dwi folders",
+studies,,237,ds001894-file-tree,sub-*/ses-* folders,"ses-T1: 188, ses-T2: 49; matches the session counts in the paper's Abstract"
+scans,,2241,ds001894-file-tree,sub-*/ses-*/*/*.nii.gz,"all image files: 237 T1w, 1891 bold and 113 dwi"
+scans,contrast=T1w,237,ds001894-file-tree,*_T1w.nii.gz,one T1w per session
+scans,contrast=bold,1891,lytle2019,Fig. 5 caption,"fMRI runs at T1 (n = 1701) plus T2 (n = 190); the file tree holds the same 1891 bold files"
+scans,contrast=dwi,113,lytle2019,Fig. 6 caption,
+age_min,,7.36,ds001894-participants,"age_ses-* columns of T1w, bold and dwi scans",the paper gives the range as 7.5 to 16.5 years
+age_max,,16.43,ds001894-participants,"age_ses-* columns of T1w, bold and dwi scans",
