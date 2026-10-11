@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mayo-ad-fdg-eigenbrains
+name: Mayo AD-spectrum FDG-PET (eigenbrains)
+full_name: 'Processed FDG-PET data from: A computational model of neurodegeneration in Alzheimer''s disease'
+summary: >-
+  Preprocessed FDG-PET brain glucose uptake images of amyloid-positive, cognitively impaired patients across the
+  Alzheimer's disease spectrum, released to reproduce eigenbrains, a low-dimensional model linking dementia symptoms to
+  patterns of neurodegeneration.
+homepage: https://datadryad.org/dataset/doi:10.5061/dryad.msbcc2g0n
+doi: 10.5061/dryad.msbcc2g0n
+year: 2022
+status: active
+creators:
+  - name: David T. Jones, Mayo Clinic
+    url: https://orcid.org/0000-0002-4807-9833
+species: human
+modalities: [PT]
+tracers: [fdg]
+anatomy: [brain]
+conditions: [alzheimers]
+formats: [MAT]
+countries: [US]
+vendors: [ge]
+size_gb: 0.22
+access:
+  type: open
+  url: https://zenodo.org/records/6079171
+licenses:
+  - license: CC0-1.0
+citation:
+  text: >-
+    Jones D, Lowe V, Graff-Radford J, Botha H, Barnard L, Wiepert D, Murphy MC, Murray M, Senjem M, Przybelski S,
+    Machulda M, Kantarci K, Knopman D, Petersen R, Jack CR Jr. A computational model of neurodegeneration in
+    Alzheimer's disease. Nature Communications 13, 1643 (2022). doi:10.1038/s41467-022-29047-4
+sources:
+  dryad-msbcc2g0n:
+    title: Dryad record, Processed FDG-PET data from A computational model of neurodegeneration in Alzheimer's disease
+    url: https://datadryad.org/dataset/doi:10.5061/dryad.msbcc2g0n
+    kind: website
+  zenodo-6079171-readme:
+    title: README.txt of the data package (Zenodo record 6079171)
+    url: https://zenodo.org/records/6079171/files/README.txt
+    kind: website
+  jones2022:
+    title: Jones et al. 2022, A computational model of neurodegeneration in Alzheimer's disease, Nature Communications
+    url: https://doi.org/10.1038/s41467-022-29047-4
+    kind: paper
+related: [mcsa]
+keywords: [Alzheimer's disease, FDG-PET, glucose metabolism, neurodegeneration, eigenbrains, dimensionality reduction, amyloid-positive, dementia, mild cognitive impairment]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
