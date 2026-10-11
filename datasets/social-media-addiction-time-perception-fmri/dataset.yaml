@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: social-media-addiction-time-perception-fmri
+name: Social Media Addiction Time Perception fMRI
+full_name: Neural mechanisms of aberrant time perception in individuals with social media addiction
+summary: >-
+  Task fMRI of adults with social media addiction and healthy controls judging time intervals, collected to study how
+  time perception and its brain basis differ in this group. Raw images are not shared; per-subject t maps are public.
+homepage: https://www.scidb.cn/detail?dataSetId=904400458587480ea41ab352abc60bdd
+doi: 10.57760/sciencedb.psych.01133
+# Year of the Science Data Bank record (issued 2026-08-05); the raw images have no public release.
+year: 2026
+version: V1
+creators:
+  - name: Zhou Hongyu, Sichuan Normal University
+  - name: Jiang Liuqing, Sichuan Normal University
+  - name: Zhou Xinqi, Sichuan Normal University
+  - name: Tian Yu, Sichuan Normal University
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [social_media_addiction, healthy]
+formats: [NIfTI]
+vendors: [siemens]
+field_strengths: [3]
+# DataCite metadata of the record: 127230257 bytes in 126 files.
+size_gb: 0.13
+access:
+  type: not_shared
+  url: https://www.scidb.cn/detail?dataSetId=904400458587480ea41ab352abc60bdd
+  note: >-
+    The Science Data Bank record holds only derived data: one unthresholded SPM12 first-level t map per participant
+    (58 for Study 1, 59 for Study 2), behavioral and questionnaire tables and MATLAB analysis code, openly downloadable
+    under CC BY 4.0. The record states that the anonymized structural and functional images are withheld for ethics and
+    privacy reasons, and no other route to them is given.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the structural and functional images. The CC BY 4.0 license of the
+      Science Data Bank record covers only the derived t maps, behavioral tables and code.
+citation:
+  text: >-
+    Zhou Hongyu, Jiang Liuqing, Zhou Xinqi, Tian Yu. Neural mechanisms of aberrant time perception in individuals with
+    social media addiction. V1. Science Data Bank, 2026. doi:10.57760/sciencedb.psych.01133
+sources:
+  scidb-psych-01133:
+    title: Science Data Bank record 10.57760/sciencedb.psych.01133 and its DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.psych.01133
+    kind: website
+related: []
+keywords: [social media addiction, time perception, time bisection, time comparison, task fMRI, SPM12]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
