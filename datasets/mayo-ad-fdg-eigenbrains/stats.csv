@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,423,jones2022,Table 1,
+subjects,modality=PT,423,zenodo-6079171-readme,Data & file overview,RASimg.mat holds one preprocessed FDG-PET image per subject (423 by 902629 voxels)
+subjects,tracer=fdg,423,zenodo-6079171-readme,Data & file overview,
+subjects,condition=alzheimers,423,jones2022,Methods: Participants,CDR global score above 0 and amyloid PET SUVR above 1.5
+subjects,sex=male,244,jones2022,Table 1,
+age_median,,77.4,jones2022,Table 1,"quartiles 69.1 and 83.5"
