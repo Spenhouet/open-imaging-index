@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: l-cid
+name: L-CID
+full_name: Leiden Consortium on Individual Development (L-CID) twin study, MRI measures
+summary: >-
+  Brain MRI of same-sex twins in childhood and early adolescence, collected in a longitudinal twin study with a
+  parenting intervention to trace how social competence and behavioral control develop. Structural, diffusion,
+  resting-state and task fMRI at ages 7 to 15 in the Netherlands.
+homepage: https://www.developmentmatters.nl/data-access/
+doi: 10.60641/a2sk-dv72
+# Year the L-CID metadata catalogue records for the MRI measures received their DOIs (DataCite publicationYear 2024).
+# The imaging data themselves are announced on YODA as coming soon.
+year: 2024
+status: active
+creators:
+  - name: Leiden Consortium on Individual Development (L-CID), Leiden University and Erasmus University Rotterdam
+    url: https://www.developmentmatters.nl/
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.developmentmatters.nl/data-access/
+licenses:
+  - license: LicenseRef-L-CID-Data-Access
+citation:
+  text: >-
+    Crone EA, Achterberg M, Dobbelaar S, Euser S, van den Bulk B, van der Meulen M, van Drunen L, Wierenga LM,
+    Bakermans-Kranenburg MJ, van IJzendoorn MH. Neural and behavioral signatures of social evaluation and adaptation
+    in childhood and adolescence: The Leiden consortium on individual development (L-CID). Developmental Cognitive
+    Neuroscience 45, 100805 (2020). doi:10.1016/j.dcn.2020.100805
+sources:
+  achterberg2019:
+    title: Achterberg and van der Meulen 2019, MRI scan quantity and quality in L-CID, Developmental Cognitive Neuroscience
+    url: https://doi.org/10.1016/j.dcn.2019.100667
+    kind: paper
+  crone2020:
+    title: Crone et al. 2020, L-CID cohort overview, Developmental Cognitive Neuroscience
+    url: https://doi.org/10.1016/j.dcn.2020.100805
+    kind: paper
+  lcid-catalogue-mri:
+    title: L-CID metadata catalogue, Structural Magnetic Resonance Imaging (MRI) measure
+    url: https://data.individualdevelopment.nl/measure/1029af4d4f0fbcee2c0606b35ccb9ad9
+    kind: website
+related: []
+keywords: [twins, children, adolescents, development, social competence, task fMRI, resting-state fMRI, diffusion MRI, longitudinal, parenting intervention]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
