@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: adhd-dualcontrol
+name: ADHD Dualcontrol Dataset
+summary: >-
+  Brain MRI and multiband task fMRI of children aged 9 to 12 with and without ADHD, collected to study proactive and
+  reactive inhibitory control with a cued stop-signal task. Covers 26 children with ADHD and 35 typically developing
+  controls.
+homepage: https://openneuro.org/datasets/ds005899
+doi: 10.18112/openneuro.ds005899.v1.0.2
+# CHANGES file: 1.0.0 (2025-02-04) was an upload test, 1.0.1 (2025-02-10) added the data, 1.0.2 (2025-02-10) the README.
+year: 2025
+version: 1.0.2
+creators:
+  - name: Stanford University (Gao Z, Menon V, Cai W)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [adhd, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 42.76
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005899
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Gao Z, Duberg K, Warren SL, Zheng L, Hinshaw SP, Menon V, Cai W. Reduced temporal and spatial stability of neural
+    activity patterns predict cognitive control deficits in children with ADHD. Nature Communications 16, 2346 (2025).
+    doi:10.1038/s41467-025-57685-x
+sources:
+  gao2025:
+    title: >-
+      Gao et al. 2025, Reduced temporal and spatial stability of neural activity patterns predict cognitive control
+      deficits in children with ADHD, Nature Communications
+    url: https://doi.org/10.1038/s41467-025-57685-x
+    kind: paper
+  openneuro-ds005899-v1-0-2:
+    title: OpenNeuro ds005899 snapshot 1.0.2 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005899/versions/1.0.2
+    kind: website
+  ds005899-participants:
+    title: participants.tsv of ds005899 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005899/blob/main/participants.tsv
+    kind: computed
+  ds005899-file-tree:
+    title: File tree of ds005899 snapshot 1.0.2 (CC0), NIfTI files under openneuro/sub-*/ counted per suffix
+    url: https://openneuro.org/datasets/ds005899/versions/1.0.2/file-display
+    kind: computed
+keywords: [ADHD, cued stop-signal task, proactive control, reactive control, inhibitory control, task fMRI, children]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
