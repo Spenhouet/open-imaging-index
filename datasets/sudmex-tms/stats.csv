@@ -1,0 +1,35 @@
+measure,by,value,source,where,note
+subjects,,53,ds003037-files,,53 subject folders (sub-044 is absent). The paper reports 54 patients included
+subjects,condition=cocaine_use_disorder,53,angelesvaldez2024,"Methods, Participants",all participants are cocaine use disorder patients; count from the file tree
+subjects,sex=male,43,ds003037-participants,sex,sex 1; Table 1 of the paper reports 45 (20 sham and 25 active)
+subjects,sex=female,7,ds003037-participants,sex,sex 2; Table 1 of the paper reports 8. 3 subjects have no participants.tsv row
+subjects,age=10-19,2,ds003037-participants,age,both aged 18 or 19
+subjects,age=20-29,12,ds003037-participants,age,
+subjects,age=30-39,22,ds003037-participants,age,
+subjects,age=40-49,14,ds003037-participants,age,3 subjects have no age
+subjects,sex=male;age=20-29,10,ds003037-participants,sex and age,
+subjects,sex=male;age=30-39,20,ds003037-participants,sex and age,
+subjects,sex=male;age=40-49,11,ds003037-participants,sex and age,
+subjects,contrast=T1w,53,ds003037-files,anat,
+subjects,contrast=bold,53,ds003037-files,func,resting state
+subjects,contrast=dwi,52,ds003037-files,dwi,
+subjects,contrast_set=bold+dwi+T1w,52,ds003037-files,,
+subjects,contrast_set=bold+T1w,1,ds003037-files,,
+subjects,field_strength=3,53,angelesvaldez2024,Magnetic resonance imaging acquisition,Philips Ingenia 3T
+subjects,vendor=philips,53,angelesvaldez2024,Magnetic resonance imaging acquisition,
+studies,,156,ds003037-files,,"session folders t0 (53), t1 (45), t14 (14), t2 (20), t3 (15), t4 (7) and t5 (2)"
+studies,contrast=T1w,156,ds003037-files,anat,
+studies,contrast=bold,154,ds003037-files,func,
+studies,contrast=dwi,149,ds003037-files,dwi,
+studies,contrast_set=bold+dwi+T1w,147,ds003037-files,,
+studies,contrast_set=bold+T1w,7,ds003037-files,,
+studies,contrast_set=dwi+T1w,2,ds003037-files,,
+scans,,459,ds003037-files,,"sum of the T1w, bold and dwi NIfTI files below (disjoint); reverse phase-encoded field maps are not counted"
+scans,contrast=T1w,156,ds003037-files,anat,
+scans,contrast=bold,154,ds003037-files,func,
+scans,contrast=dwi,149,ds003037-files,dwi,reverse phase-encoded field maps are not counted
+age_mean,,34.8,ds003037-participants,age,50 subjects with an age
+age_sd,,7.7,ds003037-participants,age,
+age_median,,35,ds003037-participants,age,
+age_min,,18,ds003037-participants,age,
+age_max,,48,ds003037-participants,age,

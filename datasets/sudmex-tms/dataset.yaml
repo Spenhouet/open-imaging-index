@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sudmex-tms
+name: SUDMEX TMS (ds003037)
+full_name: >-
+  SUDMEX TMS: The Mexican dataset of a repetitive transcranial magnetic stimulation clinical trial on cocaine use
+  disorder patients
+summary: >-
+  Longitudinal brain MRI of people with cocaine use disorder, collected in a randomized sham-controlled trial of
+  repetitive transcranial magnetic stimulation (rTMS) with follow-up up to 12 months. 53 patients from Mexico City
+  with structural, diffusion and resting-state scans, CC0.
+homepage: https://openneuro.org/datasets/ds003037
+doi: 10.18112/openneuro.ds003037.v2.1.0
+year: 2020
+updated: 2023
+version: 2.1.0
+status: active
+creators:
+  - name: >-
+      Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz and Universidad Nacional Autónoma de México
+      (Angeles-Valdez D, Alcala-Lozano R, Garza-Villarreal EA, et al.)
+    url: https://openneuro.org/datasets/ds003037
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [cocaine_use_disorder]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 16.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003037
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 2.1.0 states "License" CC0. Clinical and cognitive data are published
+      separately on Zenodo and are not covered by this entry.
+citation:
+  text: >-
+    Angeles-Valdez D, Rasgado-Toledo J, Villicaña V, et al. The Mexican dataset of a repetitive transcranial magnetic
+    stimulation clinical trial on cocaine use disorder patients: SUDMEX TMS. Scientific Data 11, 408 (2024).
+    doi:10.1038/s41597-024-03242-y
+sources:
+  angelesvaldez2024:
+    title: >-
+      Angeles-Valdez et al. 2024, The Mexican dataset of a repetitive transcranial magnetic stimulation clinical
+      trial on cocaine use disorder patients: SUDMEX TMS, Scientific Data
+    url: https://www.nature.com/articles/s41597-024-03242-y
+    kind: paper
+  openneuro-ds003037-v210:
+    title: OpenNeuro ds003037 snapshot 2.1.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003037/versions/2.1.0
+    kind: website
+  ds003037-participants:
+    title: participants.tsv of ds003037 snapshot 2.1.0 (CC0), 50 rows; sex and age columns
+    url: https://github.com/OpenNeuroDatasets/ds003037/blob/2.1.0/participants.tsv
+    kind: computed
+  ds003037-files:
+    title: File tree of ds003037 snapshot 2.1.0 (CC0), sessions with a T1w, dwi or bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003037/tree/2.1.0
+    kind: computed
+related: [sudmex-conn]
+keywords:
+  [
+    cocaine use disorder,
+    addiction,
+    repetitive transcranial magnetic stimulation,
+    rTMS,
+    randomized controlled trial,
+    resting-state fMRI,
+    diffusion MRI,
+    HARDI,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
