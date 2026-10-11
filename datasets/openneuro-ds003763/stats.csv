@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,62,openneuro-ds003763-v1-0-5,README,50 participants aged 40 to 65 and 12 young adults; participants.tsv also lists 62
+scans,,124,ds003763-file-tree,anat/ and func/ NIfTI files,"62 T1w and 62 bold volumes; fieldmap magnitude and phase-difference images (58 subjects) not included"
+scans,contrast=T1w,62,ds003763-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,62,ds003763-file-tree,func/*_task-heart_bold.nii.gz,one heartbeat detection run per subject
+subjects,contrast=T1w,62,ds003763-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,62,ds003763-file-tree,func/*_task-heart_bold.nii.gz,
+subjects,contrast_set=bold+T1w,62,ds003763-file-tree,,fieldmap images (magnitude1/2 and phasediff for 58 subjects) are not counted as a contrast
+subjects,condition=healthy,12,openneuro-ds003763-v1-0-5,README,young healthy adults aged 18 to 24
+subjects,sex=female,50,ds003763-participants,Sex,
+subjects,sex=male,12,ds003763-participants,Sex,
+subjects,age=10-19,4,ds003763-participants,Age,
+subjects,age=20-29,8,ds003763-participants,Age,
+subjects,age=30-39,2,ds003763-participants,Age,
+subjects,age=40-49,12,ds003763-participants,Age,
+subjects,age=50-59,30,ds003763-participants,Age,
+subjects,age=60-69,6,ds003763-participants,Age,
+subjects,sex=female;age=40-49,10,ds003763-participants,Sex and Age,cells below 10 left out
+subjects,sex=female;age=50-59,27,ds003763-participants,Sex and Age,
+subjects,field_strength=3,62,openneuro-ds003763-v1-0-5,T1w.json and bold.json sidecars,Siemens Verio 3T
+subjects,vendor=siemens,62,openneuro-ds003763-v1-0-5,T1w.json and bold.json sidecars,Siemens Verio
+subjects,country=RU,62,dobrushina2021,Author affiliations,"Research Center of Neurology, Moscow"
+age_mean,,45.8,ds003763-participants,Age,
+age_median,,50,ds003763-participants,Age,
+age_min,,18,ds003763-participants,Age,
+age_max,,63,ds003763-participants,Age,
