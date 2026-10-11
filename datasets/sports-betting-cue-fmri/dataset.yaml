@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sports-betting-cue-fmri
+name: Sports Betting Cue Exposure fMRI
+full_name: Increased brain reactivity to gambling unavailability as a marker of problem gambling
+summary: >-
+  Brain MRI and cue-exposure task fMRI of frequent sports bettors with and without problem gambling, collected to test
+  whether brain reactivity to sport events that are blocked for betting marks problem gambling and low self-control.
+homepage: https://openneuro.org/datasets/ds002513
+doi: 10.18112/openneuro.ds002513.v1.0.0
+# CHANGES file: snapshot 1.0.0 dated 2020-02-04 (initial snapshot), the only release.
+year: 2020
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      University of Luxembourg, Ghent University Hospital and collaborators (Brevers D, Baeken C, Bechara A, He Q,
+      Maurage P, Petieau M, Sescousse G, Vögele C, Billieux J)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [gambling_disorder]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 32.41
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002513
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Brevers D, Baeken C, Bechara A, He Q, Maurage P, Petieau M, Sescousse G, Vögele C, Billieux J. Increased brain
+    reactivity to gambling unavailability as a marker of problem gambling. Addiction Biology 26(4):e12996 (2021).
+    doi:10.1111/adb.12996
+sources:
+  brevers2021:
+    title: Brevers et al. 2021, Increased brain reactivity to gambling unavailability as a marker of problem gambling
+    url: https://doi.org/10.1111/adb.12996
+    kind: paper
+  openneuro-ds002513-v1-0-0:
+    title: OpenNeuro ds002513 snapshot 1.0.0 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds002513/versions/1.0.0
+    kind: website
+  ds002513-file-tree:
+    title: >-
+      BIDS file tree of ds002513 (CC0), raw NIfTI files under sub-*/ counted per suffix and JSON sidecars read for
+      scanner, field strength and site
+    url: https://github.com/OpenNeuroDatasets/ds002513/tree/master
+    kind: computed
+keywords: [sports betting, problem gambling, cue reactivity, task fMRI, self-control, addiction, Belgium]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

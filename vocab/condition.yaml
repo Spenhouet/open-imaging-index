@@ -187,6 +187,12 @@ terms:
       synonyms: [CUD, cocaine dependence, cocaine addiction],
       mappings: { mondo: 'MONDO:0005186' }
     }
+  - {
+      id: gambling_disorder,
+      label: Gambling disorder,
+      synonyms: [pathological gambling, problem gambling, compulsive gambling],
+      mappings: { mondo: 'MONDO:0011662' }
+    }
   # Tumors
   - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
   - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }

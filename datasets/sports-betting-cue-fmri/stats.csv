@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,65,brevers2021,Abstract,the file tree also has 65 sub-* folders (sub-2 to sub-67 without sub-37)
+subjects,condition=gambling_disorder,30,brevers2021,Abstract,"""problem bettors""; the other 35 are frequent sports bettors classed as nonproblem bettors"
+subjects,contrast=T1w,65,ds002513-file-tree,sub-*/anat/*_T1w.nii,
+subjects,contrast=bold,65,ds002513-file-tree,sub-*/func/*_bold.nii,one cue-exposure run per subject
+subjects,contrast_set=bold+T1w,65,ds002513-file-tree,sub-*/,phase-difference fieldmaps (65 subjects) are not counted as a contrast
+scans,,130,ds002513-file-tree,sub-*/*/*.nii,sum of the disjoint T1w and bold NIfTI counts below; 65 fieldmap magnitude and 65 phase-difference images not included
+scans,contrast=T1w,65,ds002513-file-tree,sub-*/anat/*_T1w.nii,
+scans,contrast=bold,65,ds002513-file-tree,sub-*/func/*_bold.nii,
+subjects,field_strength=3,65,ds002513-file-tree,*_T1w.json MagneticFieldStrength,
+subjects,vendor=siemens,65,ds002513-file-tree,*_T1w.json Manufacturer,Siemens Prisma fit in all 65 sidecars
+subjects,country=BE,65,ds002513-file-tree,*_T1w.json InstitutionName,UZ Gent (Ghent University Hospital)
