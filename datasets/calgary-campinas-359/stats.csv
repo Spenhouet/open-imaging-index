@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+scans,,359,souza2018,Abstract,"Reconstructed T1-weighted volumes, about 60 per vendor and field strength"
+age_min,,29,souza2018,Abstract,Reconstructed T1-weighted volumes
+age_max,,80,souza2018,Abstract,Reconstructed T1-weighted volumes
