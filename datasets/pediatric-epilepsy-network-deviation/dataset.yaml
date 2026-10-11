@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pediatric-epilepsy-network-deviation
+name: Pediatric Epilepsy Network Deviation
+full_name: Dataset for Individualized Multimodal Network Deviation Analysis in Pediatric Epilepsy
+summary: >-
+  Baseline brain MRI, EEG (electroencephalography) and clinical data of children and adolescents with epilepsy,
+  collected in a prospective study of how each child's brain network deviates from typical development, with clinical
+  outcomes after 12 months of follow-up.
+homepage: https://www.scidb.cn/en/detail?dataSetId=160ca2aa759f4c2f8f4eca752a0032bd
+doi: 10.57760/sciencedb.39980
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Rui Wang, West China Second University Hospital
+species: human
+modalities: [MR]
+anatomy: [brain]
+conditions: [epilepsy]
+# DataCite metadata of the ScienceDB record: 105709294919 bytes in 7 files.
+size_gb: 105.7
+access:
+  type: application
+  url: https://www.scidb.cn/en/detail?dataSetId=160ca2aa759f4c2f8f4eca752a0032bd
+  note: >-
+    Restricted access on Science Data Bank. Requesters submit a data access application (affiliation, research
+    purpose, planned analyses, data security measures, duration of use) through the record's Request Access form; the
+    data depositor alone decides whether to grant access.
+licenses:
+  - license: LicenseRef-SciDB-39980-Restricted-Access
+citation:
+  text: >-
+    Rui Wang. Dataset for Individualized Multimodal Network Deviation Analysis in Pediatric Epilepsy. V1. Science Data
+    Bank, 2026. doi:10.57760/sciencedb.39980
+sources:
+  scidb-pediatric-epilepsy-network-deviation:
+    title: Science Data Bank record 10.57760/sciencedb.39980 and its DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.39980
+    kind: website
+related: []
+keywords: [pediatric epilepsy, brain networks, morphometric similarity, normative modelling, EEG, multimodal MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
