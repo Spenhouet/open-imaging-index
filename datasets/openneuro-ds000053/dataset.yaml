@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000053
+name: Loss aversion training fMRI (ds000053)
+full_name: Training of loss aversion modulates neural sensitivity toward potential gains
+summary: >-
+  Brain MRI and task fMRI of healthy young adults playing a 50/50 gamble task before, during and after feedback training
+  that pushed them toward more or less loss-averse choices, collected to study how experience shapes loss aversion.
+homepage: https://openneuro.org/datasets/ds000053
+year: 2017
+updated: 2018
+version: '00001'
+status: active
+creators:
+  - name: Chen M-Y, White CN, Giles N, Elumn A, Parikh S, Kim U, Maddox WT, Poldrack RA
+    url: https://openneuro.org/datasets/ds000053
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 184.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000053
+licenses:
+  - license: PDDL-1.0
+    note: dataset_description.json of snapshot 00001 states "License" PDDL.
+citation:
+  text: >-
+    Chen M-Y, White CN, Giles N, Elumn A, Parikh S, Kim U, Maddox WT, Poldrack RA. Training of loss aversion modulates
+    neural sensitivity toward potential gains. OpenNeuro dataset ds000053, snapshot 00001 (2018).
+sources:
+  openneuro-ds000053-00001:
+    title: OpenNeuro ds000053 snapshot 00001 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds000053/versions/00001
+    kind: website
+  openfmri-ds000053:
+    title: OpenfMRI legacy page for ds000053 (revisions 1.0.0 to 1.0.2)
+    url: https://legacy.openfmri.org/dataset/ds000053
+    kind: website
+  ds000053-participants:
+    title: participants.tsv of ds000053 snapshot 00001 (PDDL), counted per row
+    url: https://s3.amazonaws.com/openneuro.org/ds000053/participants.tsv
+    kind: computed
+  ds000053-file-tree:
+    title: File tree of ds000053 snapshot 00001 (PDDL), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds000053/versions/00001/file-display
+    kind: computed
+related: []
+keywords: [loss aversion, decision making, gambling task, reward, risk, ventromedial prefrontal cortex, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
