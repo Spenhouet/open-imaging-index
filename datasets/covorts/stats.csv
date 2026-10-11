@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,48,vandijk2026,Section 2.1.1,patients in the published (f)MRI analysis; the data record planned 50; normosmic controls came from a separate study and are not counted
+subjects,condition=covid19,48,vandijk2026,Table 1,persistent olfactory dysfunction after confirmed SARS-CoV-2 infection
+subjects,condition=olfactory_dysfunction,48,vandijk2026,Table 1,21 quantitative (8 anosmic and 13 hyposmic) and 27 parosmia
+subjects,condition=parosmia,27,vandijk2026,Table 1,self-reported parosmia
+subjects,sex=female,38,vandijk2026,Table 1,
+subjects,sex=male,10,vandijk2026,Table 1,
+age_mean,,47.4,vandijk2026,Table 1,
+age_sd,,9.5,vandijk2026,Table 1,
+age_min,,19,vandijk2026,Table 1,
+age_max,,60,vandijk2026,Table 1,
+subjects,contrast=T1w,48,vandijk2026,Table 1,3D TFE whole brain; intracranial volume reported for all 48
+subjects,contrast=T2w,48,vandijk2026,Section 2.3.1,coronal olfactory bulb scan; bulbs segmented in 46 and not visible in 2
+subjects,contrast=bold,48,vandijk2026,Section 2.3.3.1,odour-task fMRI; 2 patients excluded from group analysis for absent visual cortex response
+subjects,field_strength=3,48,vandijk2026,Section 2.2.4,
+subjects,vendor=philips,48,vandijk2026,Section 2.2.4,Philips Elition X
+subjects,country=NL,48,dans-yzhhk7,Metadata: spatial coverage,the Netherlands
