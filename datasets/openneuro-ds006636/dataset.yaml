@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006636
+name: Morphological Awareness and Dyslexia (ds006636)
+full_name: Morphological Awareness in Readers With and Without Dyslexia
+summary: >-
+  Structural brain MRI and task fMRI of readers with and without dyslexia, collected to study how the brain processes
+  word roots and affixes in spoken and written words. 204 participants, one session each, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds006636
+doi: 10.18112/openneuro.ds006636.v1.4.0
+year: 2025
+updated: 2026
+version: 1.4.0
+status: active
+creators:
+  - name: Rebecca Marks, Erin Dickinson, Alex Kaminsky, Joanna Christodoulou and John Gabrieli
+    url: https://openneuro.org/datasets/ds006636
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [dyslexia]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 62.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006636/versions/1.4.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006636/versions/1.4.0
+    note: dataset_description.json of snapshot 1.4.0 states "License" CC0.
+citation:
+  text: >-
+    Marks R, Dickinson E, Kaminsky A, Christodoulou J, Gabrieli J. Morphological Awareness in Readers With and
+    Without Dyslexia. OpenNeuro, version 1.4.0 (2026). doi:10.18112/openneuro.ds006636.v1.4.0
+sources:
+  openneuro-ds006636-v140:
+    title: >-
+      OpenNeuro ds006636 snapshot 1.4.0 (dataset_description.json, CHANGES, snapshot list and snapshot summary)
+    url: https://openneuro.org/datasets/ds006636/versions/1.4.0
+    kind: website
+  ds006636-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds006636 snapshot 1.4.0 (CC0), raw NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds006636/tree/1.4.0
+    kind: computed
+related: []
+keywords: [dyslexia, reading, morphology, morphological awareness, language, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
