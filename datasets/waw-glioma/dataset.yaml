@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: waw-glioma
+name: WAW-Glioma
+full_name: >-
+  The WAW-Glioma dataset: Multiparametric MRI, Manual Segmentations, Radiomics and Molecular Profiles of Diffuse
+  Gliomas
+summary: >-
+  Brain MRI before and after surgery of adults with diffuse gliomas, with refined tumor segmentations, molecular
+  markers, radiomics features, progression and survival, for radiogenomics, segmentation benchmarking and outcome
+  prediction. 192 patients with 317 MRI exams.
+homepage: https://zenodo.org/records/22205631
+doi: 10.5281/zenodo.15621811
+year: 2025
+updated: 2026
+version: 'Zenodo version 3 (2026-09-01)'
+status: active
+creators:
+  - name: Medical University of Warsaw (Bartnik K. et al.)
+  - name: Warsaw University of Technology (Biecek P. et al.)
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi, ADC, swi]
+anatomy: [brain]
+conditions: [glioma]
+tasks: [segmentation, classification, survival, longitudinal]
+formats: [NIfTI]
+vendors: [ge, siemens, philips]
+field_strengths: [1.5, 3]
+size_gb: 18.2
+access:
+  type: open
+  url: https://zenodo.org/records/22205631
+  note: >-
+    Version 3 on Zenodo has public files. Versions 1 and 2 (records 15621812 and 17522191) were published with
+    restricted files and a custom non-commercial research-only license.
+licenses:
+  - license: CC-BY-4.0
+    url: https://zenodo.org/records/22205631
+    note: Zenodo version 3 lists Creative Commons Attribution 4.0 International as the license of the record.
+citation:
+  text: >-
+    Bartnik K, Węgrzyn P, Maj E, Tsevegmed B, Piwko K, Wojtczak Z, Sterlinski I, Kaczmarek W, Kunert P, Koczyk K,
+    Machnicki M, Stokłosa T, Grajkowska W, Calabrese E, Guilherme de Almeida J, Calado A, Papanikolaou N, Biecek P.
+    Multiparametric MRI, manual segmentations, radiomics and molecular profiles of diffuse gliomas [dataset]. Zenodo
+    (2026). https://doi.org/10.5281/zenodo.22205631
+sources:
+  zenodo-waw-glioma-v3:
+    title: Zenodo record 22205631 (version 3, 2026-09-01), description
+    url: https://zenodo.org/records/22205631
+    kind: website
+  waw-glioma-clinical-v3:
+    title: 1_0_clinical_molecular_data.csv (CC BY 4.0, Zenodo version 3), one row per patient
+    url: https://zenodo.org/records/22205631/files/1_0_clinical_molecular_data.csv
+    kind: computed
+  waw-glioma-raw-meta-v3:
+    title: >-
+      2_3_preop_scans_raw_meta.csv and 2_4_postop_scans_raw_meta.csv (CC BY 4.0, Zenodo version 3), one row per
+      NIfTI file, counted per patient across both archives
+    url: https://zenodo.org/records/22205631/files/2_3_preop_scans_raw_meta.csv
+    kind: computed
+related: [ucsf-pdgm, upenn-gbm, brats-2021]
+keywords: [glioma, glioblastoma, IDH, 1p/19q, MGMT, radiogenomics, radiomics, postoperative, resection cavity, survival]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

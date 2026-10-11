@@ -1,0 +1,53 @@
+measure,by,value,source,where,note
+subjects,,192,zenodo-waw-glioma-v3,Abstract,
+studies,,317,zenodo-waw-glioma-v3,Abstract,"156 preoperative and 161 postoperative MRI exams, matching the exam counts in the raw-archive metadata files"
+subjects,condition=glioma,192,zenodo-waw-glioma-v3,Abstract,adult diffuse gliomas of WHO CNS5 grades 2 to 4
+subjects,condition=glioblastoma,100,waw-glioma-clinical-v3,column integrated_diagnosis,"diagnosis text names glioblastoma, including NOS; 106 patients have who_grade 4"
+subjects,sex=female,85,waw-glioma-clinical-v3,column female,
+subjects,sex=male,107,waw-glioma-clinical-v3,column female,
+subjects,age=10-19,1,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=20-29,13,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=30-39,35,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=40-49,46,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=50-59,40,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=60-69,34,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=70-79,22,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,age=80+,1,waw-glioma-clinical-v3,column age,age at diagnosis
+subjects,sex=female;age=30-39,14,waw-glioma-clinical-v3,columns female and age,cells below 10 left out
+subjects,sex=female;age=40-49,16,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=female;age=50-59,18,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=female;age=60-69,16,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=female;age=70-79,13,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=male;age=30-39,21,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=male;age=40-49,30,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=male;age=50-59,22,waw-glioma-clinical-v3,columns female and age,
+subjects,sex=male;age=60-69,18,waw-glioma-clinical-v3,columns female and age,
+age_mean,,49.9,waw-glioma-clinical-v3,column age,
+age_sd,,14.5,waw-glioma-clinical-v3,column age,
+age_median,,50,waw-glioma-clinical-v3,column age,
+age_min,,19,waw-glioma-clinical-v3,column age,
+age_max,,81,waw-glioma-clinical-v3,column age,
+subjects,modality=MR,191,waw-glioma-raw-meta-v3,column file_name,one of the 192 patients in the clinical table has no images in the raw archives
+subjects,contrast=T1w,188,waw-glioma-raw-meta-v3,column file_name,t1n files
+subjects,contrast=T1w_ce,190,waw-glioma-raw-meta-v3,column file_name,"t1c, t1ce and t1c_early files (delayed and early post-contrast T1)"
+subjects,contrast=T2w,188,waw-glioma-raw-meta-v3,column file_name,t2w and t2 files
+subjects,contrast=FLAIR,188,waw-glioma-raw-meta-v3,column file_name,t2f files
+subjects,contrast=dwi,182,waw-glioma-raw-meta-v3,column file_name,"dwi, dwi1, dwi2 and dwi3 files"
+subjects,contrast=ADC,183,waw-glioma-raw-meta-v3,column file_name,adc files
+subjects,contrast=swi,180,waw-glioma-raw-meta-v3,column file_name,swi files
+subjects,contrast_set=ADC+dwi+FLAIR+swi+T1w+T1w_ce+T2w,174,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=ADC+dwi+FLAIR+T1w+T1w_ce+T2w,4,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,4,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=ADC+FLAIR+swi+T1w+T1w_ce+T2w,2,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=T1w_ce,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=dwi+FLAIR+swi+T1w+T1w_ce+T2w,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=ADC+dwi+swi+T1w_ce,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=dwi+FLAIR+T1w+T1w_ce+T2w,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=FLAIR+swi+T1w+T1w_ce+T2w,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=ADC+FLAIR+T1w+T1w_ce+T2w,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,contrast_set=ADC+dwi+swi,1,waw-glioma-raw-meta-v3,column file_name,union over all exams of a patient
+subjects,vendor=ge,160,waw-glioma-raw-meta-v3,column ScannerName,"SIGNA, Optima and Discovery models"
+subjects,vendor=siemens,39,waw-glioma-raw-meta-v3,column ScannerName,"Avanto and Skyra models"
+subjects,vendor=philips,7,waw-glioma-raw-meta-v3,column ScannerName,"Ingenia and Achieva models"
+subjects,field_strength=3,158,waw-glioma-raw-meta-v3,column FieldStrengthLabel,
+subjects,field_strength=1.5,47,waw-glioma-raw-meta-v3,column FieldStrengthLabel,
