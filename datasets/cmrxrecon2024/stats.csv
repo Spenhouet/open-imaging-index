@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,330,wang2025-cmrxrecon2024,Section 3,Healthy volunteers
+subjects,condition=healthy,330,wang2025-cmrxrecon2024,Section 2.1,Adults without a confirmed cardiovascular disease
+subjects,contrast=cine,330,wang2025-cmrxrecon2024,Section 2,"Each volunteer has cine, T1/T2 mapping, tagging, flow and black-blood k-space"
+subjects,contrast=T1map,330,wang2025-cmrxrecon2024,Section 2,
+subjects,contrast=T2map,330,wang2025-cmrxrecon2024,Section 2,
+subjects,sex=female,156,wang2025-cmrxrecon2024,Section 3,
+subjects,sex=male,174,wang2025-cmrxrecon2024,Section 3,
+subjects,age=20-29,133,wang2025-cmrxrecon2024,Section 3,Reported as aged 20-30 years
+subjects,age=30-39,81,wang2025-cmrxrecon2024,Section 3,Reported as aged 30-40 years
+subjects,age=40-49,53,wang2025-cmrxrecon2024,Section 3,Reported as aged 40-50 years
+subjects,age=50-60,63,wang2025-cmrxrecon2024,Section 3,Reported as aged 50-60 years
+age_mean,,36,wang2025-cmrxrecon2024,Section 3,
+age_sd,,12,wang2025-cmrxrecon2024,Section 3,
+age_min,,20,wang2025-cmrxrecon2024,Section 3,Age range 20-60 years
+age_max,,60,wang2025-cmrxrecon2024,Section 3,Age range 20-60 years
+subjects,split=train,200,wang2025-cmrxrecon2024,Section 2.2,
+subjects,split=validation,60,wang2025-cmrxrecon2024,Section 2.2,
+subjects,split=test,70,wang2025-cmrxrecon2024,Section 2.2,
+subjects,field_strength=3,330,wang2025-cmrxrecon2024,Section 2.1,MAGNETOM Vida
+subjects,vendor=siemens,330,wang2025-cmrxrecon2024,Section 2.1,MAGNETOM Vida
+subjects,country=CN,330,wang2025-cmrxrecon2024,Section 2.1,"Single center; the study team is at Fudan University, Shanghai, and volunteers came from the local community"

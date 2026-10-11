@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cmrxrecon2024
+name: CMRxRecon2024
+full_name: Cardiac MRI Reconstruction Challenge 2024 dataset (CMRxUniversalRecon)
+summary: >-
+  Raw multi-coil k-space of cardiac and aortic MRI (cine, T1 and T2 mapping, tagging, flow, black blood) from healthy
+  adult volunteers, released for a MICCAI 2024 challenge on universal reconstruction of undersampled cardiac MRI.
+homepage: https://www.synapse.org/#!Synapse:syn54951257
+doi: 10.1148/ryai.240443
+year: 2024
+status: active
+creators:
+  - name: CMRxRecon2024 challenge organizers, Fudan University, Shanghai
+    url: https://www.synapse.org/#!Synapse:syn54951257
+species: human
+modalities: [MR]
+contrasts: [cine, T1map, T2map]
+anatomy: [heart]
+conditions: [healthy]
+tasks: [reconstruction]
+formats: [MAT]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 835
+access:
+  type: registration
+  url: https://www.synapse.org/Synapse:syn57407073/datasets/
+licenses:
+  - license: LicenseRef-CMRxRecon2024-Terms
+citation:
+  text: >-
+    Wang Z, Wang F, Qin C, et al. CMRxRecon2024: A Multimodality, Multiview k-Space Dataset Boosting Universal
+    Machine Learning for Accelerated Cardiac MRI. Radiology: Artificial Intelligence 7(2), e240443 (2025).
+    doi:10.1148/ryai.240443
+sources:
+  wang2025-cmrxrecon2024:
+    title: Wang et al. 2025, Radiology AI (arXiv:2406.19043 version)
+    url: https://arxiv.org/abs/2406.19043
+    kind: paper
+  synapse-cmrxrecon2024:
+    title: CMRxRecon2024 challenge project page on Synapse (syn54951257)
+    url: https://www.synapse.org/#!Synapse:syn54951257
+    kind: website
+  synapse-cmrxrecon2024-challengedata:
+    title: CMRxRecon2024 ChallengeData dataset page on Synapse (syn57407073)
+    url: https://www.synapse.org/Synapse:syn57407073/datasets/
+    kind: website
+related: []
+keywords: [cardiac MRI, k-space, MRI reconstruction, undersampling, challenge]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
