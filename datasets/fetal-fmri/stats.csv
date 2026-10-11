@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,159,ds003090-file-tree,,"sub-* folders with a raw *_bold.nii.gz file; derivatives/manual-masks/ has masks for 163 sub-* folders, 4 of them without raw volumes in the snapshot; the paper's full WSU cohort is 197 fetuses (Methods, Participants)"
+studies,,181,ds003090-file-tree,,"ses-T1 and ses-T2 folders with a raw *_bold.nii.gz file (114 ses-T1, 67 ses-T2); derivatives/manual-masks/ has 191 session folders"
+scans,,181,ds003090-file-tree,,"one raw *_bold.nii.gz file per session; per the README each file stacks the masked single 3D volumes of that session as a 4D series, not a continuous time series"
+subjects,contrast=bold,159,ds003090-file-tree,,
+subjects,vendor=siemens,159,rutherford2022,"Methods, Participants",WSU fetal scans were acquired on a Siemens Verio
+subjects,field_strength=3,159,rutherford2022,"Methods, Participants",Siemens Verio 3T
+subjects,country=US,159,rutherford2022,"Methods, Participants","collected at Wayne State University, Detroit, MI; the dataset README names the WSU dataset as its origin"

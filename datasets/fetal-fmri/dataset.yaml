@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fetal-fmri
+name: Fetal resting-state fMRI brain masks (WSU)
+full_name: fetal-fMRI, raw volumes and manual brain masks from the Wayne State University fetal cohort
+summary: >-
+  Resting-state functional MRI of fetuses in utero with hand-drawn fetal brain masks, released to train and test
+  automatic separation of the fetal brain from surrounding maternal tissue. Single volumes from 159 fetuses scanned in
+  Detroit, some at two time points.
+homepage: https://openneuro.org/datasets/ds003090
+doi: 10.18112/openneuro.ds003090.v1.0.0
+# Only OpenNeuro snapshot 1.0.0, dated 2020-08-24 in the CHANGES file.
+year: 2020
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Wayne State University and University of Michigan (Rutherford S, Sturmfels P, Angstadt M, Hect J, van den Heuvel
+      M, Wiens J, Scheinost D, Sripada C, Thomason M)
+    url: https://github.com/saigerutherford/fetal-code
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.21
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003090
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Rutherford S, Sturmfels P, Angstadt M, Hect J, Wiens J, van den Heuvel MI, Scheinost D, Sripada C, Thomason M.
+    Automated Brain Masking of Fetal Functional MRI with Open Data. Neuroinformatics 20, 173-185 (2022).
+    doi:10.1007/s12021-021-09528-5
+sources:
+  rutherford2022:
+    title: Rutherford et al. 2022, Automated Brain Masking of Fetal Functional MRI with Open Data, Neuroinformatics
+    url: https://doi.org/10.1007/s12021-021-09528-5
+    kind: paper
+  openneuro-ds003090-v1-0-0:
+    title: OpenNeuro ds003090 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003090/versions/1.0.0
+    kind: website
+  ds003090-file-tree:
+    title: >-
+      BIDS file tree of ds003090 snapshot 1.0.0 (CC0), raw *_bold.nii.gz files under sub-*/ses-*/func/ and mask files
+      under derivatives/manual-masks/
+    url: https://github.com/OpenNeuroDatasets/ds003090/tree/1.0.0
+    kind: computed
+related: []
+keywords: [fetal MRI, fetal brain extraction, brain masking, resting-state fMRI, in utero, U-Net]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
