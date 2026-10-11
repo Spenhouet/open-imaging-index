@@ -1,0 +1,58 @@
+measure,by,value,source,where,note
+subjects,,397,ds005143-participants,participant_id,"the file listing has a sub-* folder for the same 397; banerjee2025 (Methods: Data) reports 406 participants from 15 sites, of which one site's data were not shared"
+scans,,397,ds005143-file-tree,sub-*/func/*_rec-MoCoMean_bold.nii.gz,one mean motion-corrected EPI volume per subject
+subjects,contrast=bold,397,ds005143-file-tree,sub-*/func/*_rec-MoCoMean_bold.nii.gz,
+subjects,contrast_set=bold,397,ds005143-file-tree,,
+subjects,anatomy=spinal_cord,397,ds005143-file-tree,derivatives/label,395 subjects have a spinal cord mask; sub-leipzigP01 and sub-leipzigP02 have none
+subjects,condition=healthy,350,ds005143-participants,pathology,"HC; the paper reports 359 healthy, 17 with degenerative cervical myelopathy and 30 with fibromyalgia among all 406 participants (Methods: Data)"
+subjects,condition=cervical_myelopathy,17,ds005143-participants,pathology,"15 coded CSM and 2 coded DCM, which participants.json defines as synonyms"
+subjects,condition=fibromyalgia,30,ds005143-participants,pathology,FM
+subjects,sex=female,184,ds005143-participants,column headed age,F and f
+subjects,sex=male,168,ds005143-participants,column headed age,M and m
+subjects,sex=unknown,45,ds005143-participants,column headed age,N/A
+subjects,age=10-19,9,ds005143-participants,column headed sex,
+subjects,age=20-29,219,ds005143-participants,column headed sex,
+subjects,age=30-39,83,ds005143-participants,column headed sex,
+subjects,age=40-49,33,ds005143-participants,column headed sex,
+subjects,age=50-59,36,ds005143-participants,column headed sex,
+subjects,age=60-69,16,ds005143-participants,column headed sex,
+subjects,age=70-79,1,ds005143-participants,column headed sex,
+age_min,,18,ds005143-participants,column headed sex,
+age_max,,76,ds005143-participants,column headed sex,
+age_median,,28,ds005143-participants,column headed sex,
+age_mean,,32.5,ds005143-participants,column headed sex,
+age_sd,,11.7,ds005143-participants,column headed sex,
+subjects,vendor=siemens,295,ds005143-participants,manufacturer,
+subjects,vendor=ge,102,ds005143-participants,manufacturer,
+subjects,field_strength=3,397,ds005143-participants,manufacturers_model_name,"Siemens Prisma Fit 267, GE Discovery 750 57, GE Signa Premier 45, Siemens Trio Tim 28"
+subjects,country=DE,115,ds005143-participants,institution_id,"leipzig 85, hamburg 30"
+subjects,country=US,181,ds005143-participants,institution_id,"nw (Northwestern) 79, stanford 74, ouhsc (Oklahoma) 28"
+subjects,country=CH,74,ds005143-participants,institution_id,"geneva (EPFL) 43, Zurich (Balgrist) 31; one Zurich row names a Montreal institution and a Trio Tim scanner"
+subjects,country=CA,27,ds005143-participants,institution_id,unf (Montreal)
+subjects,sex=female;age=20-29,112,ds005143-participants,,
+subjects,sex=female;age=30-39,37,ds005143-participants,,
+subjects,sex=female;age=40-49,12,ds005143-participants,,
+subjects,sex=female;age=50-59,12,ds005143-participants,,
+subjects,sex=male;age=20-29,105,ds005143-participants,,
+subjects,sex=male;age=30-39,42,ds005143-participants,,
+subjects,sex=unknown;age=40-49,14,ds005143-participants,,
+subjects,sex=unknown;age=50-59,18,ds005143-participants,,
+subjects,condition=healthy;sex=female,174,ds005143-participants,,
+subjects,condition=healthy;sex=male,161,ds005143-participants,,
+subjects,condition=healthy;sex=unknown,15,ds005143-participants,,
+subjects,condition=cervical_myelopathy;sex=female,10,ds005143-participants,,
+subjects,condition=fibromyalgia;sex=unknown,30,ds005143-participants,,
+subjects,condition=healthy;age=20-29,218,ds005143-participants,,
+subjects,condition=healthy;age=30-39,77,ds005143-participants,,
+subjects,condition=healthy;age=40-49,21,ds005143-participants,,
+subjects,condition=healthy;age=50-59,19,ds005143-participants,,
+subjects,condition=fibromyalgia;age=40-49,11,ds005143-participants,,
+subjects,condition=fibromyalgia;age=50-59,10,ds005143-participants,,
+subjects,vendor=ge;condition=healthy,57,ds005143-participants,,
+subjects,vendor=ge;condition=cervical_myelopathy,15,ds005143-participants,,
+subjects,vendor=ge;condition=fibromyalgia,30,ds005143-participants,,
+subjects,vendor=siemens;condition=healthy,293,ds005143-participants,,
+subjects,vendor=siemens;sex=female,135,ds005143-participants,,
+subjects,vendor=siemens;sex=male,160,ds005143-participants,,
+subjects,vendor=ge;sex=female,49,ds005143-participants,,
+subjects,vendor=ge;sex=unknown,45,ds005143-participants,,
