@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,68,kwok2023,Section 2.1,77 enrolled; one excluded for medical reasons and eight did not complete scanning; participants.tsv also has 68 rows
+subjects,condition=dyscalculia,30,kwok2023,Section 2.2,DD group; participants.tsv also has 30 rows with group DD
+subjects,condition=healthy,38,ds004791-participants,group,typically achieving (TA) control group
+subjects,contrast=T1w,68,ds004791-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,68,ds004791-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,68,ds004791-file-tree,,
+scans,,464,ds004791-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,68,ds004791-file-tree,,
+scans,contrast=bold,396,ds004791-file-tree,,"one file per run; up to two runs each of the arithmetic, matching and visuo-spatial working memory tasks"
+subjects,sex=male,30,kwok2023,Section 2.1,T1w sidecars also give PatientSex M for 30
+subjects,sex=female,38,ds004791-file-tree,PatientSex,PatientSex F in the T1w JSON sidecars
+subjects,age=8-9,68,ds004791-file-tree,PatientAge,PatientAge 008Y or 009Y in the T1w JSON sidecars
+age_mean,,8.95,kwok2023,Section 2.1,
+age_sd,,0.34,kwok2023,Section 2.1,
+subjects,field_strength=3,68,kwok2023,Section 2.4,Siemens 3T MAGNETOM Prisma with a 32-channel head coil
+subjects,vendor=siemens,68,kwok2023,Section 2.4,
+subjects,country=SG,68,kwok2023,Section 2.2,
