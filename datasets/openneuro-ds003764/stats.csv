@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,60,gan2023,2.1 Participants,30 in the rule-based and 30 in the information-integration group; the BIDS tree has 60 subject folders
+studies,,60,ds003764-file-tree,sub-*/ses-01,one session per subject
+scans,,420,ds003764-file-tree,anat/ and func/ NIfTI files,60 T1w and 360 bold volumes
+scans,contrast=T1w,60,ds003764-file-tree,anat/*_T1w.nii,
+scans,contrast=bold,360,ds003764-file-tree,func/*_bold.nii,six training runs per subject
+subjects,contrast=T1w,60,ds003764-file-tree,anat/*_T1w.nii,
+subjects,contrast=bold,60,ds003764-file-tree,func/*_bold.nii,
+subjects,contrast_set=bold+T1w,60,ds003764-file-tree,,
+subjects,condition=healthy,60,gan2023,2.1 Participants,"no reported psychiatric, neurological or hearing disorders"
+subjects,sex=female,41,gan2023,2.1 Participants,22 in the information-integration and 19 in the rule-based group
+subjects,sex=male,19,gan2023,2.1 Participants,"60 participants minus 41 females (disjoint and complete); the paper reports only female counts"
+subjects,country=CN,60,gan2023,2.1 Participants,recruited around South China Normal University in Guangzhou
+subjects,vendor=siemens,60,gan2023,2.4 Imaging Acquisition,Siemens Tim Trio
+subjects,field_strength=3,60,gan2023,2.4 Imaging Acquisition,
+age_mean,,21.2,gan2023,2.1 Participants,SD 2.1
+age_min,,18,gan2023,2.1 Participants,
+age_max,,28,gan2023,2.1 Participants,

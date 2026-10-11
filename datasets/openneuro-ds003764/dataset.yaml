@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003764
+name: Auditory category learning fMRI (ds003764)
+full_name: >-
+  Functional magnetic resonance imaging data for the neural dynamics underlying the acquisition of distinct auditory
+  categories
+summary: >-
+  Task fMRI and T1-weighted brain MRI of 60 young Mandarin-speaking adults learning to sort ripple sounds into
+  rule-based or information-integration categories with feedback, six sparse-sampling runs each at 3T, in BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds003764
+doi: 10.18112/openneuro.ds003764.v1.0.5
+# First public snapshot (1.0.0) on OpenNeuro, 2021-08-10; latest snapshot 1.0.5, 2023-02-15.
+year: 2021
+version: 1.0.5
+status: active
+creators:
+  - name: >-
+      Gan Z, Wang S, Feng G (South China Normal University; The Chinese University of Hong Kong)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 14.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003764
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Gan Z, Wang S, Feng G. Functional magnetic resonance imaging data for the neural dynamics underlying the
+    acquisition of distinct auditory categories. Data in Brief 47: 108972 (2023). doi:10.1016/j.dib.2023.108972
+sources:
+  gan2023:
+    title: >-
+      Gan, Wang and Feng 2023, Functional magnetic resonance imaging data for the neural dynamics underlying the
+      acquisition of distinct auditory categories, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2023.108972
+    kind: paper
+  openneuro-ds003764-v1-0-5:
+    title: >-
+      OpenNeuro ds003764 snapshot 1.0.5 (dataset_description.json, README, CHANGES, task-categorization_bold.json and
+      snapshot size)
+    url: https://openneuro.org/datasets/ds003764/versions/1.0.5
+    kind: website
+  ds003764-file-tree:
+    title: File listing of the ds003764 BIDS repository (CC0), counted per T1w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003764
+    kind: computed
+related: []
+keywords: [auditory category learning, ripple sounds, feedback learning, sparse sampling, task fMRI, representational similarity analysis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
