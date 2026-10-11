@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,286,penso2022,"Methods, Study population","sum of the internal cohort (230, Milan) and the external test cohort (56 patients with CIED, Pisa); disjoint sites"
+subjects,country=IT,286,penso2022,"Methods, Study population",both centers are in Italy
+subjects,field_strength=1.5,286,penso2022,"Methods, Study population",
+subjects,vendor=ge,286,penso2022,"Methods, Study population",
+subjects,contrast=cine,286,penso2022,"Methods, Study population",short-axis balanced SSFP cine
+subjects,sex=female,68,penso2022,Table 1,internal cohort only (n=230); sex of the external cohort not reported
+subjects,condition=dilated_cardiomyopathy,41,penso2022,Table 1,main clinical indication for CMR; internal cohort only
+subjects,condition=hypertrophic_cardiomyopathy,18,penso2022,Table 1,main clinical indication for CMR; internal cohort only
+subjects,condition=myocardial_infarction,24,penso2022,Table 1,acute myocardial infarction as main clinical indication for CMR; internal cohort only
+images,,5091,penso2022,"Methods, CMR analysis and image preparation","sum of 4198 internal and 893 external end-diastolic and end-systolic short-axis images"
+age_mean,,56,penso2022,Table 1,internal cohort only (n=230)
+age_sd,,17,penso2022,Table 1,internal cohort only (n=230)
