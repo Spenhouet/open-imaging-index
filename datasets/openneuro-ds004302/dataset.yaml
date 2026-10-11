@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004302
+name: Speech perception in schizophrenia fMRI (ds004302)
+full_name: Brain correlates of speech perception in schizophrenia patients with and without auditory hallucinations
+summary: >-
+  Task fMRI and T1-weighted brain MRI of adults with schizophrenia, with and without frequent auditory verbal
+  hallucinations, and matched healthy controls listening to words, sentences and reversed speech. 71 participants
+  from Barcelona at 3T, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004302
+doi: 10.18112/openneuro.ds004302.v1.0.1
+# First public snapshot (1.0.0) on OpenNeuro, 2022-10-26; latest snapshot 1.0.1, 2022-12-19.
+year: 2022
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Soler-Vidal J, Fuentes-Claramonte P, Salgado-Pineda P, Ramiro N, García-León MÁ, Torres ML, Arévalo A,
+      Guerrero-Pedraza A, Munuera J, Sarró S, Salvador R, Hinzen W, McKenna P, Pomarol-Clotet E (FIDMAG Hermanas
+      Hospitalarias Research Foundation)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy, schizophrenia]
+formats: [BIDS, NIfTI]
+countries: [ES]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 9.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004302
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Soler-Vidal J, Fuentes-Claramonte P, Salgado-Pineda P, Ramiro N, García-León MÁ, Torres ML, Arévalo A,
+    Guerrero-Pedraza A, Munuera J, Sarró S, Salvador R, Hinzen W, McKenna P, Pomarol-Clotet E. Brain correlates of
+    speech perception in schizophrenia patients with and without auditory hallucinations. PLoS ONE 17(12): e0276975
+    (2022). doi:10.1371/journal.pone.0276975
+sources:
+  solervidal2022:
+    title: >-
+      Soler-Vidal et al. 2022, Brain correlates of speech perception in schizophrenia patients with and without
+      auditory hallucinations, PLoS ONE
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276975
+    kind: paper
+  openneuro-ds004302-v1-0-1:
+    title: OpenNeuro ds004302 snapshot 1.0.1 (dataset_description.json, README, task-speech_bold.json and snapshot size)
+    url: https://openneuro.org/datasets/ds004302/versions/1.0.1
+    kind: website
+  ds004302-participants:
+    title: participants.tsv of ds004302 (CC0), counted per row from the age, sex and group columns
+    url: https://github.com/OpenNeuroDatasets/ds004302/blob/main/participants.tsv
+    kind: computed
+  ds004302-file-tree:
+    title: File listing of the ds004302 BIDS repository (CC0), counted per T1w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004302
+    kind: computed
+related: []
+keywords: [auditory verbal hallucinations, speech perception, auditory cortex, task fMRI, schizophrenia, psychosis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

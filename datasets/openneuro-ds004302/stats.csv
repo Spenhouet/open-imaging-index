@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,71,solervidal2022,Table 1,"25 healthy controls, 23 AVH+ and 23 AVH- patients; participants.tsv also lists 71"
+scans,,142,ds004302-file-tree,anat/ and func/ NIfTI files,71 T1w and 71 bold volumes
+scans,contrast=T1w,71,ds004302-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,71,ds004302-file-tree,func/*_bold.nii.gz,one speech task run per subject
+subjects,contrast=T1w,71,ds004302-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,71,ds004302-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,71,ds004302-file-tree,,
+subjects,condition=healthy,25,solervidal2022,Table 1,
+subjects,condition=schizophrenia,46,solervidal2022,Table 1,"DSM-5 schizophrenia or schizoaffective disorder; 23 with frequent auditory verbal hallucinations (AVH+), 23 hallucination-free for at least 6 months (AVH-)"
+subjects,sex=female,17,solervidal2022,Table 1,7 controls and 10 patients; participants.tsv also lists 17
+subjects,sex=male,54,solervidal2022,Table 1,18 controls and 36 patients; participants.tsv also lists 54
+subjects,condition=healthy;sex=female,7,solervidal2022,Table 1,
+subjects,condition=healthy;sex=male,18,solervidal2022,Table 1,
+subjects,condition=schizophrenia;sex=female,10,solervidal2022,Table 1,
+subjects,condition=schizophrenia;sex=male,36,solervidal2022,Table 1,
+subjects,country=ES,71,solervidal2022,Methods: Participants,patients from four psychiatric hospitals in Barcelona
+subjects,vendor=philips,71,solervidal2022,Methods: Image acquisition,Philips Ingenia
+subjects,field_strength=3,71,solervidal2022,Methods: Image acquisition,
+subjects,age=10-19,1,ds004302-participants,age,
+subjects,age=20-29,10,ds004302-participants,age,
+subjects,age=30-39,18,ds004302-participants,age,
+subjects,age=40-49,22,ds004302-participants,age,
+subjects,age=50-59,14,ds004302-participants,age,
+subjects,age=60-69,6,ds004302-participants,age,
+subjects,sex=male;age=30-39,15,ds004302-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=40-49,18,ds004302-participants,sex and age,
+subjects,condition=schizophrenia;age=30-39,12,ds004302-participants,group and age,cells below 10 left out
+subjects,condition=schizophrenia;age=40-49,19,ds004302-participants,group and age,
+age_mean,,41.6,ds004302-participants,age,
+age_median,,42,ds004302-participants,age,
+age_min,,19,ds004302-participants,age,
+age_max,,66,ds004302-participants,age,
