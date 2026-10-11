@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brats-peds
+name: BraTS-PEDs
+full_name: The Brain Tumor Segmentation in Pediatric Magnetic Resonance Imaging (BraTS-PEDs)
+summary: >-
+  Brain MRI of children with high-grade glioma, mostly diffuse midline glioma, scanned before any treatment and
+  released for the pediatric BraTS tumor segmentation challenge. Expert tumor sub-region masks, demographics and
+  survival for 457 patients from pediatric neuro-oncology consortia.
+homepage: https://www.cancerimagingarchive.net/collection/brats-peds/
+doi: 10.7937/dx5c-tj86
+year: 2025
+version: '1'
+status: active
+creators:
+  - name: BraTS-PEDs organizers (Fathi Kazerooni A., Linguraru M. G. et al.)
+  - name: Children's Brain Tumor Network (CBTN)
+    url: https://cbtn.org/
+  - name: International DIPG/DMG Registry
+    url: https://dipgregistry.org/
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [pediatric_high_grade_glioma]
+tasks: [segmentation, survival]
+formats: [NIfTI]
+vendors: [siemens, ge, philips, hitachi, canon]
+field_strengths: [1.5, 3]
+size_gb: 32.7
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/brats-peds/
+  note: >-
+    Training and validation images (348 subjects) download through IBM Aspera without an account. The 109 test
+    cases are held back for challenge evaluation; the collection page says they can be requested from TCIA.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: >-
+      TCIA copy: training and validation NIfTI images with segmentations, the imaging metadata TSV and the challenge
+      metadata TSV.
+    url: https://www.cancerimagingarchive.net/collection/brats-peds/
+citation:
+  text: >-
+    Fathi Kazerooni A, Khalili N, Liu X, et al. (2025). The Brain Tumor Segmentation in Pediatric Magnetic Resonance
+    Imaging (BraTS-PEDs) (Version 1) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/DX5C-TJ86
+sources:
+  tcia-brats-peds:
+    title: TCIA BraTS-PEDs collection page (version 1, updated 2025/12/19)
+    url: https://www.cancerimagingarchive.net/collection/brats-peds/
+    kind: website
+  tcia-brats-peds-metadata:
+    title: BraTS-PEDs_metadata.tsv challenge metadata (CC BY 4.0), one row per subject
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/BraTS-PEDs_metadata.tsv
+    kind: computed
+  tcia-brats-peds-imaging-info:
+    title: BraTS-PEDs_Imaging_Info.tsv acquisition parameters (CC BY 4.0), one row per subject and sequence
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/BraTS-PEDs_Imaging_Info.tsv
+    kind: computed
+related: [brats-2021]
+keywords:
+  [
+    pediatric brain tumor,
+    diffuse midline glioma,
+    DIPG,
+    high-grade glioma,
+    brain tumor segmentation,
+    challenge,
+    RAPNO,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

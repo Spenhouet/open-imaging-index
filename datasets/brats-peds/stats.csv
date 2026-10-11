@@ -1,0 +1,28 @@
+measure,by,value,source,where,note
+subjects,,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,"training, validation and hidden test cohorts"
+subjects,split=train,257,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,with expert segmentations
+subjects,split=validation,91,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,
+subjects,split=test,109,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,hidden; not in the public download
+subjects,contrast=T1w,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,all four sequences were an inclusion criterion
+subjects,contrast=T1w_ce,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,
+subjects,contrast=T2w,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,
+subjects,contrast=FLAIR,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,457,tcia-brats-peds,Subject Inclusion and Exclusion Criteria,
+subjects,sex=female,64,tcia-brats-peds-metadata,Sex_at_birth,
+subjects,sex=male,52,tcia-brats-peds-metadata,Sex_at_birth,
+subjects,sex=unknown,341,tcia-brats-peds-metadata,Sex_at_birth,blank in the file; sex is given only for 116 training cases
+subjects,age=0-9,74,tcia-brats-peds-metadata,Age at imaging (days),age known for 116 subjects
+subjects,age=10-19,40,tcia-brats-peds-metadata,Age at imaging (days),
+subjects,age=20-29,2,tcia-brats-peds-metadata,Age at imaging (days),
+age_mean,,9.6,tcia-brats-peds-metadata,Age at imaging (days),"years, over the 116 subjects with a known age"
+age_sd,,4.8,tcia-brats-peds-metadata,Age at imaging (days),years
+age_median,,8.3,tcia-brats-peds-metadata,Age at imaging (days),years
+age_min,,0.4,tcia-brats-peds-metadata,Age at imaging (days),years
+age_max,,25.9,tcia-brats-peds-metadata,Age at imaging (days),years
+subjects,vendor=siemens,74,tcia-brats-peds-imaging-info,Scanner Vendor,"the file covers 112 subjects; a subject counts for every vendor among its four sequences"
+subjects,vendor=ge,37,tcia-brats-peds-imaging-info,Scanner Vendor,
+subjects,vendor=philips,2,tcia-brats-peds-imaging-info,Scanner Vendor,
+subjects,vendor=hitachi,1,tcia-brats-peds-imaging-info,Scanner Vendor,
+subjects,vendor=canon,1,tcia-brats-peds-imaging-info,Scanner Vendor,listed as TOSHIBA
+subjects,field_strength=1.5,59,tcia-brats-peds-imaging-info,Scanner Field strength (T),"of 112 subjects; 5 more list 1.494 T, 1 lists 1.16 T, 1 is unavailable"
+subjects,field_strength=3,52,tcia-brats-peds-imaging-info,Scanner Field strength (T),of 112 subjects
