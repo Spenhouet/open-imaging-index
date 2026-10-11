@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,1052,harrison2025,Section 3.1,"enrolled in POINTER Imaging, 50% of the 2111 U.S. POINTER trial participants; 68 withdrew before any scan"
+subjects,contrast=T1w,962,harrison2025,Section 3.1.1,baseline 3D MPRAGE
+subjects,contrast=FLAIR,958,harrison2025,Section 3.1.1,baseline 3D FLAIR
+subjects,contrast=T2starw,962,harrison2025,Section 3.1.1,baseline three-echo T2* gradient echo
+subjects,contrast=dwi,692,harrison2025,Section 3.1.1,baseline diffusion-weighted MRI
+subjects,contrast=asl,526,harrison2025,Section 3.1.1,baseline arterial spin labeling; two sites did not collect ASL
+subjects,tracer=florbetaben,937,harrison2025,Section 3.1.1,baseline amyloid PET
+subjects,tracer=mk6240,923,harrison2025,Section 3.1.1,baseline tau PET
+age_mean,,68.4,harrison2025,Table 1,all 1052 enrolled
+age_sd,,5.2,harrison2025,Table 1,all 1052 enrolled
