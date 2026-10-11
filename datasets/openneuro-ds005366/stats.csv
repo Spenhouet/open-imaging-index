@@ -1,0 +1,51 @@
+measure,by,value,source,where,note
+subjects,,155,bom2025,Methods: Participants,participants.tsv also lists 155
+studies,,161,ds005366-file-tree,ses-* folders,"one session per field strength; one subject has two 1.5T sessions"
+scans,,632,ds005366-file-tree,anat/ and func/ NIfTI files,161 T1w and 471 bold volumes
+scans,contrast=bold,471,bom2025,Methods: Experimental procedures,471 task runs; the file listing also has 471 bold files
+scans,contrast=T1w,161,ds005366-file-tree,anat/*_T1w.nii,
+scans,contrast=bold;field_strength=1.5,20,bom2025,Methods: Data acquisition details,
+scans,contrast=bold;field_strength=3,434,bom2025,Methods: Data acquisition details,
+scans,contrast=bold;field_strength=7,17,bom2025,Methods: Data acquisition details,
+subjects,sex=female,78,bom2025,Methods: Participants,participants.tsv also lists 78 F
+subjects,sex=male,77,ds005366-participants,sex,
+subjects,condition=healthy,92,bom2025,Methods: Participants,healthy volunteers
+subjects,condition=epilepsy,60,bom2025,Methods: Participants,"medication-resistant epilepsy, scanned in pre-surgical workup; 3 further patients had tumour surgery"
+subjects,country=NL,155,bom2025,Methods: Participants,University Medical Centre Utrecht
+subjects,vendor=philips,155,bom2025,Methods: Data acquisition details,"Philips ACS-NT 1.5T, Achieva 3T and Achieva 7T"
+subjects,field_strength=1.5,8,bom2025,Methods: Data acquisition details,structural scans
+subjects,field_strength=3,139,bom2025,Methods: Data acquisition details,structural scans
+subjects,field_strength=7,13,bom2025,Methods: Data acquisition details,"structural scans; 5 subjects have both 3T and 7T sessions in the file listing"
+subjects,contrast=T1w,155,ds005366-file-tree,anat/*_T1w.nii,
+subjects,contrast=bold,155,ds005366-file-tree,func/*_bold.nii,
+subjects,contrast_set=bold+T1w,155,ds005366-file-tree,,
+subjects,age=0-9,13,ds005366-participants,age,
+subjects,age=10-19,29,ds005366-participants,age,
+subjects,age=20-29,35,ds005366-participants,age,
+subjects,age=30-39,20,ds005366-participants,age,
+subjects,age=40-49,20,ds005366-participants,age,
+subjects,age=50-59,12,ds005366-participants,age,
+subjects,age=60-69,11,ds005366-participants,age,
+subjects,age=70-79,11,ds005366-participants,age,
+subjects,age=80-89,4,ds005366-participants,age,
+subjects,sex=female;age=10-19,12,ds005366-participants,sex and age,cells below 10 left out
+subjects,sex=female;age=20-29,13,ds005366-participants,sex and age,
+subjects,sex=female;age=30-39,14,ds005366-participants,sex and age,
+subjects,sex=male;age=10-19,17,ds005366-participants,sex and age,
+subjects,sex=male;age=20-29,22,ds005366-participants,sex and age,
+subjects,sex=male;age=40-49,12,ds005366-participants,sex and age,
+subjects,condition=healthy;sex=female,51,ds005366-participants,participant_type and sex,
+subjects,condition=healthy;sex=male,41,ds005366-participants,participant_type and sex,
+subjects,condition=healthy;age=0-9,12,ds005366-participants,participant_type and age,cells below 10 left out
+subjects,condition=healthy;age=20-29,17,ds005366-participants,participant_type and age,
+subjects,condition=healthy;age=40-49,10,ds005366-participants,participant_type and age,
+subjects,condition=healthy;age=60-69,11,ds005366-participants,participant_type and age,
+subjects,condition=healthy;age=70-79,11,ds005366-participants,participant_type and age,
+subjects,condition=healthy;field_strength=3,92,ds005366-participants,participant_type and session folders,all healthy volunteers were scanned at 3T
+subjects,field_strength=3;sex=female,71,ds005366-participants,sex and session folders,
+subjects,field_strength=3;sex=male,68,ds005366-participants,sex and session folders,
+age_mean,,35.5,bom2025,Methods: Participants,
+age_sd,,21.3,bom2025,Methods: Participants,
+age_median,,30,ds005366-participants,age,
+age_min,,6,bom2025,Methods: Participants,
+age_max,,89,bom2025,Methods: Participants,
