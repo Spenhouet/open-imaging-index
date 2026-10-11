@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rhapsody
+name: NN104 RHAPSODY
+full_name: >-
+  RHAPSODY (NeuroNEXT NN104), a multi-center phase 2 dose-escalation trial of 3K3A-APC after thrombolysis or
+  thrombectomy in acute ischemic stroke (NCT02222714), trial MRI
+summary: >-
+  Follow-up brain MRI from a phase two trial in acute ischemic stroke, read centrally for bleeding into the brain while
+  testing an engineered activated protein C (3K3A-APC) given after clot-dissolving or clot-removal treatment. GRE or
+  SWI scans at days 7, 30 and 90.
+homepage: https://neuronext.org/projects/nn104-rhapsody/
+doi: 10.1002/ana.25383
+# Year of the primary results publication; the images have no public release.
+year: 2019
+creators:
+  - name: NeuroNEXT network (NINDS) and ZZ Biotech LLC (trial sponsor)
+    url: https://neuronext.org/projects/nn104-rhapsody/
+species: human
+modalities: [MR]
+contrasts: [swi, T2starw, FLAIR, T2w]
+anatomy: [brain]
+conditions: [ischemic_stroke, intracranial_hemorrhage, cerebral_microbleeds]
+tasks: [longitudinal]
+# Countries with sites in the ClinicalTrials.gov location list.
+countries: [US]
+access:
+  type: on_request
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=RHAPSODY
+  note: >-
+    The trial is hosted as project RHAPSODY ("NN104 RHAPSODY") in the LONI Image and Data Archive. The archive's public
+    study list marks it as a study that users cannot apply to (canApply="false"), and the ClinicalTrials.gov record
+    gives the plan to share individual participant data as "Undecided". No public access process is described.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The results paper has no data availability statement; it states only that all data were "collected
+      independently of the corporate sponsor and stored at the University of Iowa". The archive's data use application
+      is shown only to logged-in IDA users, and no license or data use terms are published.
+citation:
+  text: >-
+    Lyden P, Pryor KE, Coffey CS, et al. Final Results of the RHAPSODY Trial: A Multi-Center, Phase 2 Trial Using a
+    Continual Reassessment Method to Determine the Safety and Tolerability of 3K3A-APC, A Recombinant Variant of Human
+    Activated Protein C, in Combination with Tissue Plasminogen Activator, Mechanical Thrombectomy or both in Moderate
+    to Severe Acute Ischemic Stroke. Annals of Neurology 85(1):125-136 (2019). doi:10.1002/ana.25383
+sources:
+  lyden2019:
+    title: Lyden et al. 2019, Annals of Neurology, final results of the RHAPSODY trial (PMC6342508)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6342508/
+    kind: paper
+  ctgov-nct02222714:
+    title: ClinicalTrials.gov record NCT02222714
+    url: https://clinicaltrials.gov/study/NCT02222714
+    kind: website
+  ida-home-studies:
+    title: LONI Image and Data Archive, public study list (home page info service)
+    url: https://ida.loni.usc.edu/ajax2/xml/home/getInfo
+    kind: website
+related: []
+keywords: [3K3A-APC, activated protein C, acute ischemic stroke, thrombolysis, thrombectomy, hemorrhagic transformation, microbleeds, clinical trial, NeuroNEXT]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

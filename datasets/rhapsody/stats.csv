@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,110,lyden2019,"Results; Table 2",enrolled: 66 on 3K3A-APC and 44 on placebo
+subjects,sex=male,53,lyden2019,Table 2,sum of the two arms (24 placebo + 29 3K3A-APC)
+age_mean,,64,lyden2019,Table 2,mean age was 64 years in both the placebo and the 3K3A-APC arm
+subjects,condition=ischemic_stroke,110,lyden2019,"Results; Table 2",all enrolled patients had moderate to severe acute ischemic stroke treated with tPA and/or thrombectomy
+subjects,country=US,110,ctgov-nct02222714,Locations,all 15 listed sites are in the United States
+subjects,contrast=swi,63,lyden2019,Table 4 legend,Day-30 scans used for the hemorrhage analysis that were SWI
+subjects,contrast=T2starw,17,lyden2019,Table 4 legend,Day-30 scans used for the hemorrhage analysis that were GRE
+subjects,condition=intracranial_hemorrhage,61,lyden2019,Table 4,"hemorrhage volume >0 mL by Day 30, out of 80 patients in the hemorrhage analysis (43 3K3A-APC, 37 placebo)"
+subjects,condition=cerebral_microbleeds,15,lyden2019,Table 4,one or more microbleeds in the infarct zone among the 80 patients in the hemorrhage analysis
