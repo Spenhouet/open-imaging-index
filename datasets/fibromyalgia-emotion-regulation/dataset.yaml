@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fibromyalgia-emotion-regulation
+name: Emotion regulation in women with fibromyalgia (ds004144)
+full_name: >-
+  A behavioral, clinical and brain imaging dataset with focus on emotion regulation of females with fibromyalgia
+summary: >-
+  Brain MRI of Mexican women with fibromyalgia and matched healthy controls, collected to study emotion processing and
+  regulation in chronic pain. T1w, T2w, resting-state and emotion regulation task fMRI with clinical and behavioral
+  data.
+homepage: https://openneuro.org/datasets/ds004144
+doi: 10.18112/openneuro.ds004144.v1.0.2
+# First public snapshot (1.0.0) on OpenNeuro, 2022-05-30; latest snapshot 1.0.2, 2022-08-10.
+year: 2022
+version: 1.0.2
+status: active
+creators:
+  - name: >-
+      Balducci T, Rasgado-Toledo J, Valencia A, van Tol MJ, Aleman A, Garza-Villarreal EA (Instituto Nacional de
+      Psiquiatría Ramón de la Fuente Muñiz, UNAM, University Medical Center Groningen)
+    url: https://openneuro.org/datasets/ds004144
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [fibromyalgia, healthy]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 18.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004144/versions/1.0.2
+licenses:
+  - license: CC0-1.0
+    applies_to: MRI data on OpenNeuro
+    url: https://openneuro.org/datasets/ds004144/versions/1.0.2
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+  - license: CC-BY-4.0
+    applies_to: Demographic, clinical and behavioral data on Zenodo
+    url: https://zenodo.org/records/6554870
+    note: The Zenodo record 6554870 states the license Creative Commons Attribution 4.0 International.
+citation:
+  text: >-
+    Balducci T, Rasgado-Toledo J, Valencia A, van Tol MJ, Aleman A, Garza-Villarreal EA. A behavioral and brain imaging
+    dataset with focus on emotion regulation of women with fibromyalgia. Scientific Data 9, 581 (2022).
+    doi:10.1038/s41597-022-01677-9
+sources:
+  balducci2022:
+    title: >-
+      Balducci et al. 2022, A behavioral and brain imaging dataset with focus on emotion regulation of women with
+      fibromyalgia, Scientific Data (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9499938/
+    kind: paper
+  openneuro-ds004144-v1-0-2:
+    title: OpenNeuro ds004144 snapshot 1.0.2 (README, CHANGES, dataset_description.json, T1w sidecar and snapshot size)
+    url: https://openneuro.org/datasets/ds004144/versions/1.0.2
+    kind: website
+  ds004144-file-tree:
+    title: File tree of ds004144 snapshot 1.0.2 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004144
+    kind: computed
+  zenodo-6554870-clinical:
+    title: >-
+      Clinical_fm_66.xlsx of Zenodo record 6554870 (CC BY 4.0), sheet data_66, columns gp (group) and 1_age; its rid
+      values match the 66 subject folders on OpenNeuro
+    url: https://zenodo.org/records/6554870
+    kind: computed
+related: []
+keywords: [fibromyalgia, chronic pain, emotion regulation, cognitive reappraisal, expressive suppression, resting state, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

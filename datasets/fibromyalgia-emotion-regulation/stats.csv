@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,66,balducci2022,Methods: Participants,67 women scanned; one excluded for an MRI finding suggestive of cysticercosis
+subjects,sex=female,66,balducci2022,Methods: Participants,
+subjects,condition=fibromyalgia,33,balducci2022,Table 1,
+subjects,condition=healthy,33,balducci2022,Table 1,
+subjects,country=MX,66,balducci2022,Methods: Participants,recruited from a Mexican population
+subjects,vendor=philips,66,balducci2022,Methods: MRI data acquisition,Philips Ingenia with a 32-channel head coil
+subjects,field_strength=3,66,balducci2022,Methods: MRI data acquisition,
+subjects,contrast=T1w,66,ds004144-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,66,ds004144-file-tree,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast=bold,66,ds004144-file-tree,sub-*/func/*_bold.nii.gz,"66 resting-state runs, 65 emotion regulation task runs (none for sub-005)"
+subjects,contrast_set=bold+T1w+T2w,66,ds004144-file-tree,,
+scans,,263,ds004144-file-tree,sub-*/*/*.nii.gz,"66 T1w, 66 T2w, 66 task-rest and 65 task-epr BOLD runs; two fieldmap EPI files left in sub-014 are not counted"
+age_mean,,41.6,zenodo-6554870-clinical,1_age,"Table 1 of balducci2022 gives 41.7 (SD 6.1) for fibromyalgia and 41.5 (SD 6.0) for controls"
+age_sd,,6.0,zenodo-6554870-clinical,1_age,
+age_min,,29,zenodo-6554870-clinical,1_age,eligibility was 18 to 50 years
+age_max,,50,zenodo-6554870-clinical,1_age,
+age_median,,43,zenodo-6554870-clinical,1_age,
+subjects,age=20-29,1,zenodo-6554870-clinical,1_age,
+subjects,age=30-39,22,zenodo-6554870-clinical,1_age,
+subjects,age=40-49,37,zenodo-6554870-clinical,1_age,
+subjects,age=50-59,6,zenodo-6554870-clinical,1_age,
+subjects,condition=fibromyalgia;age=30-39,11,zenodo-6554870-clinical,gp; 1_age,
+subjects,condition=fibromyalgia;age=40-49,19,zenodo-6554870-clinical,gp; 1_age,
+subjects,condition=healthy;age=30-39,11,zenodo-6554870-clinical,gp; 1_age,
+subjects,condition=healthy;age=40-49,18,zenodo-6554870-clinical,gp; 1_age,
