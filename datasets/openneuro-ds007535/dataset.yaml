@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007535
+name: SpeechHemi (ds007535)
+full_name: SpeechHemi
+summary: >-
+  Preprocessed task fMRI of young adults doing a visual semantic decision task built to find the language-dominant
+  (speech) hemisphere of each person. 56 subjects, fMRIPrep output in MNI space, Magdeburg, shared under CC0.
+homepage: https://openneuro.org/datasets/ds007535
+doi: 10.18112/openneuro.ds007535.v1.0.0
+# Single public snapshot 1.0.0 on OpenNeuro, 2026-03-19.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Stadler J, Bethmann A, Angenstein N, Fügner A, Michalsky A, Brechmann A (Combinatorial NeuroImaging core facility, Leibniz Institute for Neurobiology Magdeburg)
+    url: https://openneuro.org/datasets/ds007535
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [DE]
+size_gb: 25.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007535
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.0 states "License" CC0. It covers the preprocessed functional data; the
+      raw anatomical, functional and DTI data are not in the release and are available on request from the authors.
+citation:
+  text: >-
+    Stadler J, Bethmann A, Angenstein N, Fügner A, Michalsky A, Brechmann A. SpeechHemi. OpenNeuro ds007535, version
+    1.0.0 (2026). doi:10.18112/openneuro.ds007535.v1.0.0
+sources:
+  openneuro-ds007535-v1-0-0:
+    title: OpenNeuro ds007535 snapshot 1.0.0 (dataset_description.json, README and task-SpeechHemi_bold.json)
+    url: https://openneuro.org/datasets/ds007535/versions/1.0.0
+    kind: website
+  ds007535-participants:
+    title: participants.tsv of ds007535 snapshot 1.0.0 (CC0)
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds007535/main/participants.tsv
+    kind: computed
+  ds007535-file-tree:
+    title: File listing of ds007535 snapshot 1.0.0 (CC0), counted per subject func NIfTI file
+    url: https://openneuro.org/datasets/ds007535/versions/1.0.0/file-display
+    kind: computed
+related: []
+keywords: [language lateralization, speech hemisphere, semantic decision, hemispheric dominance, task fMRI, fMRIPrep]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

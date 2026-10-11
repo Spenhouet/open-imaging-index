@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,56,ds007535-file-tree,sub-* folders,sub-01 to sub-56; participants.tsv also has 56 rows
+subjects,contrast=bold,56,ds007535-file-tree,sub-*/func,one preprocessed SpeechHemi run per subject
+subjects,contrast_set=bold,56,ds007535-file-tree,sub-*/func,no anatomical images are in the release
+scans,,56,ds007535-file-tree,sub-*/func,
+scans,contrast=bold,56,ds007535-file-tree,sub-*/func,
+subjects,sex=male,33,ds007535-participants,sex column,
+subjects,sex=female,23,ds007535-participants,sex column,
+subjects,age=10-19,6,ds007535-participants,age column,
+subjects,age=20-29,45,ds007535-participants,age column,
+subjects,age=30-39,5,ds007535-participants,age column,
+age_mean,,24.5,ds007535-participants,age column,
+age_median,,24,ds007535-participants,age column,
+age_min,,18,ds007535-participants,age column,
+age_max,,39,ds007535-participants,age column,
