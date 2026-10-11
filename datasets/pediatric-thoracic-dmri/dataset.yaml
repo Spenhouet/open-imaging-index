@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pediatric-thoracic-dmri
+name: Pediatric thoracic 4D dynamic MRI normative database
+full_name: A normative database of free-breathing pediatric thoracic 4D dynamic MRI images
+summary: >-
+  Dynamic MRI of the thorax and abdomen in healthy children during free breathing, built as a normative reference for
+  regional respiratory function, with ten organ and body masks at end expiration and end inspiration and lung and
+  excursion volumes per child.
+homepage: https://doi.org/10.5061/dryad.vmcvdnczf
+doi: 10.5061/dryad.vmcvdnczf
+year: 2024
+updated: 2025
+creators:
+  - name: Medical Image Processing Group, Department of Radiology, University of Pennsylvania
+    url: http://www.mipg.upenn.edu/Vnews/mipg_data_share/Thorax_dMRI.html
+  - name: Children's Hospital of Philadelphia
+species: human
+modalities: [MR]
+anatomy: [chest, lung, abdomen, liver, kidney, spleen, skin]
+conditions: [healthy]
+tasks: [segmentation, normative]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.64
+access:
+  type: open
+  url: https://zenodo.org/records/11162697
+  note: >-
+    Published on Dryad, mirrored on Zenodo and on the Medical Image Processing Group website. Downloads need no
+    account.
+licenses:
+  - license: CC0-1.0
+    note: The Zenodo record of the Dryad deposit states the CC0 license.
+citation:
+  text: >-
+    Tong Y, Udupa J, Torigian D, Cahill P. A normative database of free-breathing pediatric thoracic 4D dynamic MRI
+    images. Dryad (2025). doi:10.5061/dryad.vmcvdnczf
+sources:
+  zenodo-11162697:
+    title: Zenodo record 11162697 (Dryad deposit, version of 9 May 2024) with its README
+    url: https://zenodo.org/records/11162697
+    kind: website
+  dryad-vmcvdnczf:
+    title: Dryad dataset page, version of 10 July 2025
+    url: https://datadryad.org/dataset/doi:10.5061/dryad.vmcvdnczf
+    kind: website
+  mipg-thorax-dmri:
+    title: MIPG data share page, Thorax dMRI
+    url: http://www.mipg.upenn.edu/Vnews/mipg_data_share/Thorax_dMRI.html
+    kind: website
+related: []
+keywords:
+  [
+    dynamic MRI,
+    4D MRI,
+    free breathing,
+    pediatric,
+    respiratory motion,
+    lung volume,
+    diaphragm,
+    chest wall,
+    virtual growing child
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
