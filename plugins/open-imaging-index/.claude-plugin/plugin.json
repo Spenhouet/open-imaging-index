@@ -1,7 +1,7 @@
 {
   "name": "open-imaging-index",
   "description": "Find medical imaging datasets by modality, cohort and license terms, and contribute verified dataset entries to the Open Imaging Index.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Sebastian Penhouet",
     "url": "https://github.com/Spenhouet"
