@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-healthy-volunteers
+name: NIMH Healthy Research Volunteer Dataset (ds005752)
+full_name: The NIMH Healthy Research Volunteer Dataset
+summary: >-
+  Brain MRI and magnetoencephalography (MEG) of healthy adult volunteers with clinical, cognitive and laboratory
+  screening data, collected to characterize a healthy reference cohort for intramural studies of psychiatric illness.
+  251 participants have imaging out of 1,859 screened.
+homepage: https://openneuro.org/datasets/ds005752
+doi: 10.18112/openneuro.ds005752.v2.1.0
+year: 2022
+updated: 2025
+version: 2.1.0
+status: active
+creators:
+  - name: >-
+      National Institute of Mental Health Intramural Research Program (MEG Core Facility, Data Science and Sharing
+      Team, Office of the Clinical Director, Functional MRI Facility); Nugent AC, Thomas AG, Chung J et al.
+    url: https://nimhresearchvolunteer.ctss.nih.gov
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, T2starw, dwi, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 711.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005752
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 2.1.0 states "License" CC0, and the README names the Creative Commons Zero
+      (CC0) v1.0 license.
+citation:
+  text: >-
+    Nugent AC, Thomas AG, Mahoney M, Gibbons A, Smith JT, Charles AJ, Shaw JS, Stout JD, Namyst AM, Basavaraj A, Earl
+    E, Riddle T, Snow J, Japee S, Pavletic AJ, Sinclair S, Roopchansingh V, Bandettini PA, Chung J. The NIMH intramural
+    healthy volunteer dataset: A comprehensive MEG, MRI, and behavioral resource. Scientific Data 9, 518 (2022).
+    doi:10.1038/s41597-022-01623-9
+sources:
+  nugent2022:
+    title: Nugent et al. 2022, Scientific Data 9, 518
+    url: https://doi.org/10.1038/s41597-022-01623-9
+    kind: paper
+  ds005752-readme:
+    title: README and CHANGES of OpenNeuro ds005752 snapshot 2.1.0
+    url: https://github.com/OpenNeuroDatasets/ds005752/blob/2.1.0/README
+    kind: website
+  ds005752-participants:
+    title: participants.tsv of ds005752 snapshot 2.1.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005752/blob/2.1.0/participants.tsv
+    kind: computed
+  ds005752-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds005752 snapshot 2.1.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005752/tree/2.1.0
+    kind: computed
+related: []
+keywords:
+  [
+    healthy volunteers,
+    normative,
+    MEG,
+    resting-state fMRI,
+    diffusion MRI,
+    arterial spin labeling,
+    phenotyping,
+    blood tests,
+    NIH Toolbox
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
