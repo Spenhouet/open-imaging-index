@@ -6,6 +6,7 @@
   import SlidersHorizontal from '@lucide/svelte/icons/sliders-horizontal';
   import X from '@lucide/svelte/icons/x';
   import * as Sheet from '#lib/components/ui/sheet/index.js';
+  import Pagination from '#lib/components/app/Pagination.svelte';
   import DatasetCard from '#lib/components/app/DatasetCard.svelte';
   import FilterPanel from '#lib/components/app/FilterPanel.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
@@ -43,6 +44,7 @@
 
   onMount(async () => {
     filters = fromQuery(window.location.search);
+    pendingPage = Math.max(1, Number(new URLSearchParams(window.location.search).get('page')) || 1);
     ready = true;
     try {
       const res = await fetch(link('summaries.json'));
@@ -56,7 +58,8 @@
 
   // Keep the URL in sync so every view can be shared and survives a reload.
   $effect(() => {
-    const query = toQuery(filters);
+    // Keep the requested page in the URL while the catalog is still loading.
+    const query = withPage(toQuery(filters), loaded ? current : page);
     if (!untrack(() => ready)) return;
     if (query !== window.location.search && !(query === '' && window.location.search === '')) {
       goto(link('') + query, { shallow: true, replace: true, reset: false });
@@ -69,33 +72,31 @@
   // Until the full catalog is here, filtered results would be incomplete.
   const waiting = $derived(!loaded && filtering);
 
-  // Render results in pages, so thousands of datasets stay fast.
+  // Results come in pages of 30. The page is part of the URL, and changing a filter goes back to page 1.
   const PAGE = 30;
-  let shown = $state(PAGE);
+  let page = $state(1);
+  // The page from the URL, applied once after the filters from the URL have been read.
+  let pendingPage = 1;
   $effect(() => {
     void toQuery(filters);
-    shown = PAGE;
+    page = pendingPage;
+    pendingPage = 1;
   });
-  const visible = $derived(results.slice(0, shown));
+  const pageCount = $derived(Math.max(1, Math.ceil(results.length / PAGE)));
+  // Before the full catalog is loaded only the first page exists.
+  const current = $derived(Math.min(page, pageCount));
+  const visible = $derived(results.slice((current - 1) * PAGE, current * PAGE));
 
-  // Infinite scroll: render the next page while the end of the list is still about two screens away, so the cards are
-  // there before the reader gets to them. Re-observing after each page keeps adding pages until the marker is far
-  // enough ahead again.
-  const LOOKAHEAD = '0px 0px 1500px 0px';
-  let sentinel = $state<HTMLElement>();
-  const hasMore = $derived(loaded && results.length > shown);
-  $effect(() => {
-    if (!sentinel || !hasMore) return;
-    void shown;
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) shown += PAGE;
-      },
-      { rootMargin: LOOKAHEAD }
-    );
-    io.observe(sentinel);
-    return () => io.disconnect();
-  });
+  function withPage(query: string, p: number) {
+    if (p <= 1) return query;
+    return `${query}${query ? '&' : '?'}page=${p}`;
+  }
+  const pageHref = (p: number) => link('') + withPage(toQuery(filters), p);
+  let listTop = $state<HTMLElement>();
+  function goToPage(p: number) {
+    page = p;
+    listTop?.scrollIntoView({ block: 'start' });
+  }
   const resultCount = $derived(loaded ? results.length : ov.count);
 
   const emptyCounts = Object.fromEntries(FACETS.map((f) => [f.id, new Map<string, number>()]));
@@ -360,24 +361,19 @@
         {/each}
       </div>
     {:else if results.length}
-      <div class="mt-5 grid grid-cols-1 gap-4 xl:grid-cols-2">
+      <div bind:this={listTop} class="mt-5 grid scroll-mt-24 grid-cols-1 gap-4 xl:grid-cols-2">
         {#each visible as result (result.dataset.id)}
           <DatasetCard {result} {vocab} {licenseNames} />
         {/each}
       </div>
-      {#if results.length > shown || (!loaded && ov.count > results.length)}
-        <div bind:this={sentinel} class="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
-          {#if loaded}
-            <span class="tabular">Showing {shown} of {results.length}</span>
-            <!-- Fallback for keyboard users and when scrolling does not trigger loading. -->
-            <button
-              type="button"
-              class="rounded-md px-2 py-1 text-xs font-medium text-primary hover:underline"
-              onclick={() => (shown += PAGE)}>Show more</button
-            >
-          {:else}
-            <span>Loading all {ov.count} datasets...</span>
-          {/if}
+      {#if !loaded && ov.count > results.length}
+        <p class="mt-6 text-center text-sm text-muted-foreground">Loading all {ov.count} datasets...</p>
+      {:else if pageCount > 1}
+        <div class="mt-8 flex flex-col items-center gap-2">
+          <Pagination page={current} count={pageCount} href={pageHref} onpage={goToPage} />
+          <p class="text-xs text-muted-foreground tabular">
+            {(current - 1) * PAGE + 1} to {Math.min(current * PAGE, results.length)} of {results.length}
+          </p>
         </div>
       {/if}
     {:else}

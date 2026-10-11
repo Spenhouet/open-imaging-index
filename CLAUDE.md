@@ -21,7 +21,7 @@ Static SvelteKit 3 site (adapter-static, every page prerendered) deployed to Git
 - Loaded catalog data is kept in `$state.raw`: deep proxies over thousands of datasets made Explore 4 to 7 times slower.
 - `src/lib/server/`: catalog cache, docs rendering and the catalog overview for page loads.
 - `vite.catalog.ts`: serves the vocabulary and license list as `virtual:catalog-meta` (re-exported by `src/lib/catalog/meta.ts`), so it is bundled once instead of copied into every page.
-- Catalog data flow: the catalog page prerenders only the largest datasets plus an overview. The browser then loads `summaries.json` (all datasets, prerendered) for filtering, and Explore does the same. Results render 30 at a time.
+- Catalog data flow: the catalog page prerenders only the largest datasets plus an overview. The browser then loads `summaries.json` (all datasets, prerendered) for filtering, and Explore does the same. Results show in pages of 30, with the page in the URL (`?page=2`).
 - `src/routes/`: catalog (`/`), `datasets/[id]`, `explore`, `licenses`, `licenses/[id]`, `standard` and `contribute` (rendered from `docs/*.md`), `vocabulary`, `about`, `compare` (shortlist side by side), `disclaimer`, `skills`, `datasets` (A to Z), plus `catalog.json`, `sitemap.xml`, `robots.txt`.
 
 ## Conventions

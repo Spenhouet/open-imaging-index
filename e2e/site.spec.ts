@@ -70,18 +70,21 @@ test('skills page offers install commands and skill downloads', async ({ page, r
   expect(await llms.text()).toContain('# Open Imaging Index');
 });
 
-test('catalog loads more datasets while scrolling, before the end of the list is reached', async ({ page }) => {
+test('catalog pages through results, keeps the page in the URL and resets it on a filter change', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('[aria-live=polite]')).not.toContainText('Loading');
-  const total = Number(await page.locator('[aria-live=polite] .tabular').innerText());
   await expect(page.locator('article')).toHaveCount(30);
-  for (let i = 0; i < 400 && (await page.locator('article').count()) < total; i++) {
-    await page.mouse.wheel(0, 800);
-    // The last rendered card must still be below the screen while more are left to show.
-    const ahead = await page.evaluate(
-      () => [...document.querySelectorAll('article')].pop()!.getBoundingClientRect().bottom - innerHeight
-    );
-    expect(ahead).toBeGreaterThan(0);
-  }
-  await expect(page.locator('article')).toHaveCount(total);
+  const first = await page.locator('article h3').first().innerText();
+
+  await page.getByRole('link', { name: 'Page 2' }).click();
+  await expect(page).toHaveURL(/[?&]page=2/);
+  await expect(page.locator('article h3').first()).not.toHaveText(first);
+  const second = await page.locator('article h3').first().innerText();
+
+  await page.reload();
+  await expect(page.locator('article h3').first()).toHaveText(second);
+
+  await page.getByRole('button', { name: 'FLAIR', exact: true }).first().click();
+  await expect(page).not.toHaveURL(/page=/);
+  await expect(page.getByRole('contentinfo')).toBeVisible();
 });
