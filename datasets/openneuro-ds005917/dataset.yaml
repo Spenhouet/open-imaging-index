@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005917
+name: NIMH Ketamine Mechanism of Action (ds005917)
+full_name: NIMH Ketamine Mechanism of Action Study
+summary: >-
+  Brain MRI, task and resting-state fMRI, diffusion MRI and 7 T MR spectroscopy of adults with treatment-resistant
+  major depression and healthy controls, scanned before and after ketamine and saline placebo infusions in a
+  double-blind crossover trial.
+homepage: https://openneuro.org/datasets/ds005917
+doi: 10.18112/openneuro.ds005917.v1.1.0
+year: 2025
+updated: 2026
+version: 1.1.0
+status: active
+creators:
+  - name: Evans JW, Nugent AC, Zarate CA; Experimental Therapeutics and Pathophysiology Branch, NIMH Intramural Research Program
+    url: https://openneuro.org/datasets/ds005917
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [depression, bipolar_disorder, healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge, siemens]
+field_strengths: [3, 7]
+size_gb: 76.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005917
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Evans JW, Nugent AC, Zarate CA. NIMH Ketamine Mechanism of Action Study. OpenNeuro dataset ds005917, version 1.1.0
+    (2026). doi:10.18112/openneuro.ds005917.v1.1.0
+sources:
+  openneuro-ds005917-v1-1-0:
+    title: OpenNeuro ds005917 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005917/versions/1.1.0
+    kind: website
+  ds005917-participants:
+    title: participants.tsv of ds005917 snapshot 1.1.0 (CC0), counted per row
+    url: https://s3.amazonaws.com/openneuro.org/ds005917/participants.tsv
+    kind: computed
+  ds005917-file-tree:
+    title: File tree of ds005917 snapshot 1.1.0 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://openneuro.org/datasets/ds005917/versions/1.1.0/file-display
+    kind: computed
+related: []
+keywords:
+  [
+    ketamine,
+    treatment-resistant depression,
+    antidepressant,
+    clinical trial,
+    crossover,
+    placebo,
+    MR spectroscopy,
+    glutamate,
+    dot probe,
+    n-back,
+    emotional faces,
+    resting-state fMRI,
+    NCT00088699,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
