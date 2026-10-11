@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,60,ds005346-participants,participant_id,30 rows with experiment fmri and 30 with experiment meg; the README states the same split
+studies,,60,ds005346-file-tree,sub-* folders,one session per subject
+scans,,179,ds005346-file-tree,"anat/*_T1w.nii.gz, func/*_bold.nii.gz","sum of the disjoint T1w and bold counts below; MEG .fif recordings and derivatives not counted"
+scans,contrast=T1w,60,ds005346-file-tree,anat/*_rec-defaced_T1w.nii.gz,defaced
+scans,contrast=bold,119,ds005346-file-tree,func/*_bold.nii.gz,"30 video, 30 quiz, 29 replay and 30 rest runs; sub-01 has no replay run"
+subjects,modality=MR,60,ds005346-file-tree,sub-*/anat,
+subjects,contrast=T1w,60,ds005346-file-tree,anat/*_rec-defaced_T1w.nii.gz,
+subjects,contrast=bold,30,ds005346-file-tree,func/*_bold.nii.gz,the fMRI experiment group (sub-01 to sub-30)
+subjects,contrast_set=bold+T1w,30,ds005346-file-tree,anat and func NIfTI files,fMRI experiment group
+subjects,contrast_set=T1w,30,ds005346-file-tree,anat and func NIfTI files,"MEG experiment group (sub-31 to sub-60), T1w for source localisation; each also has video, quiz and replay OPM-MEG recordings"
+subjects,vendor=siemens,60,ds005346-file-tree,Manufacturer in T1w JSON sidecars,"Prisma for sub-01 to sub-30, TrioTim for sub-31 to sub-60"
+subjects,field_strength=3,60,ds005346-file-tree,MagneticFieldStrength in T1w JSON sidecars,
+subjects,country=CN,60,openneuro-ds005346-v1-0-5,"README, Participants","Shanghai International Studies University (fMRI) and West China Hospital of Sichuan University, Chengdu (MEG)"
+subjects,condition=healthy,60,openneuro-ds005346-v1-0-5,"README, Participants","right-handed, normal or corrected vision, no reported neurological disorders"
+subjects,sex=female,33,ds005346-participants,sex,
+subjects,sex=male,27,ds005346-participants,sex,
+subjects,age=10-19,3,ds005346-participants,age,
+subjects,age=20-29,56,ds005346-participants,age,
+subjects,age=30-39,1,ds005346-participants,age,
+age_mean,,22.9,ds005346-participants,age,
+age_median,,23,ds005346-participants,age,
+age_sd,,2.1,ds005346-participants,age,
+age_min,,19,ds005346-participants,age,
+age_max,,30,ds005346-participants,age,

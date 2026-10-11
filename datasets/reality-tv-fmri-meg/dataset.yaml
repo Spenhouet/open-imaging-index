@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: reality-tv-fmri-meg
+name: Reality TV naturalistic fMRI and MEG (ds005346)
+full_name: Naturalistic fMRI and MEG recordings during viewing of a reality TV show
+summary: >-
+  Brain fMRI and OPM-MEG of healthy young adults, two separate groups of 30, watching a 25-minute Chinese reality TV
+  episode, answering a quiz and replaying it with eyes closed, collected to study shared brain responses to natural
+  social scenes. Every participant has a T1w scan.
+homepage: https://openneuro.org/datasets/ds005346
+doi: 10.18112/openneuro.ds005346.v1.0.5
+# OpenNeuro snapshot 1.0.0 created 2025-04-04 and 1.0.5 created 2025-12-18 (GraphQL API and CHANGES file).
+year: 2025
+updated: 2025
+version: 1.0.5
+status: active
+creators:
+  - name: Li J, Wang Y, Wang C, Ma Z
+    url: https://openneuro.org/datasets/ds005346
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 41.82
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005346
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Li J, Wang Y, Wang C, Ma Z. Naturalistic fMRI and MEG recordings during viewing of a reality TV show. OpenNeuro
+    ds005346, version 1.0.5 (2025). doi:10.18112/openneuro.ds005346.v1.0.5
+sources:
+  openneuro-ds005346-v1-0-5:
+    title: OpenNeuro ds005346 snapshot 1.0.5 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005346/versions/1.0.5
+    kind: website
+  ds005346-participants:
+    title: participants.tsv of the ds005346 BIDS repository (CC0), columns experiment, age and sex
+    url: https://github.com/OpenNeuroDatasets/ds005346/blob/main/participants.tsv
+    kind: computed
+  ds005346-file-tree:
+    title: File listing and JSON sidecars of the ds005346 BIDS repository (CC0), raw NIfTI files under sub-*/ counted
+    url: https://github.com/OpenNeuroDatasets/ds005346
+    kind: computed
+related: []
+keywords:
+  [naturalistic viewing, movie watching, reality TV, MEG, OPM-MEG, optically pumped magnetometer, inter-subject correlation, memory replay, task fMRI, resting-state fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
