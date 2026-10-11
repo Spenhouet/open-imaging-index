@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,193,yoo2023,Abstract; Methods: Participants,121 younger and 72 older participants enrolled; participants.tsv has 193 rows
+subjects,age=18-35,121,yoo2023,Methods: Participants,younger adults aged 18 to 35
+subjects,age=55-80,72,yoo2023,Methods: Participants,older adults aged 55 to 80
+subjects,sex=female,106,ds003823-participants,gender,gender F
+subjects,sex=male,87,ds003823-participants,gender,gender M
+subjects,sex=female;age=18-35,61,ds003823-participants,"gender, age_group",age_group YA
+subjects,sex=male;age=18-35,60,ds003823-participants,"gender, age_group",age_group YA
+subjects,sex=female;age=55-80,45,ds003823-participants,"gender, age_group",age_group OA
+subjects,sex=male;age=55-80,27,ds003823-participants,"gender, age_group",age_group OA
+subjects,modality=MR,176,ds003823-file-tree,sub-*/ses-*/*/*.nii*,subjects with at least one NIfTI image; matches MRI_pre = 1 in participants.tsv
+subjects,contrast=T1w,176,ds003823-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,whole-brain MPRAGE or locus coeruleus TSE (acq-lc)
+subjects,contrast=bold,176,ds003823-file-tree,sub-*/ses-*/func/*_bold.nii.gz,multi-echo BOLD with three echoes per run
+subjects,contrast=asl,173,ds003823-file-tree,sub-*/ses-*/perf/*_asl.nii,
+subjects,contrast_set=asl+bold+T1w,173,ds003823-file-tree,"anat, func and perf folders",
+subjects,contrast_set=bold+T1w,3,ds003823-file-tree,"anat, func and perf folders",
+studies,,327,ds003823-file-tree,sub-*/ses-pre and ses-post folders with images,176 pre-intervention and 151 post-intervention MRI sessions
+subjects,condition=healthy,193,yoo2023,Methods: Participants,"screened and excluded for major medical, neurological or psychiatric illness"
