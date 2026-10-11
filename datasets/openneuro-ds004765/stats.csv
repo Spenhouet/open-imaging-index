@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,71,bathelt2024,Materials and Method: Participants,"71 participated; 69 kept in the analysis after 2 were excluded for head motion. The archive has 71 subject folders (106a, 106b and 106c are separate folders)"
+scans,,253,ds004765-file-tree,anat/ dwi/ func/ NIfTI files,"136 T1w, 71 bold and 46 dwi volumes"
+scans,contrast=T1w,136,ds004765-file-tree,anat/*_T1w.nii.gz,"71 run-1, 46 run-2 and 19 run-3 images"
+scans,contrast=bold,71,ds004765-file-tree,func/*_task-rest_bold.nii.gz,one 10-minute resting-state run per subject
+scans,contrast=dwi,46,ds004765-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=T1w,71,ds004765-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,71,ds004765-file-tree,func/*_bold.nii.gz,
+subjects,contrast=dwi,46,ds004765-file-tree,dwi/*_dwi.nii.gz,paper: DWI acquired for the majority of participants
+subjects,contrast_set=bold+dwi+T1w,46,ds004765-file-tree,,
+subjects,contrast_set=bold+T1w,25,ds004765-file-tree,,
+subjects,condition=healthy,71,bathelt2024,Materials and Method: Participants,"right-handed adults without language, reading, learning, hearing or uncorrected vision problems"
+subjects,sex=female,53,bathelt2024,Materials and Method: Participants,of the 69 analysed participants
+subjects,sex=male,16,bathelt2024,Materials and Method: Participants,of the 69 analysed participants
+subjects,vendor=siemens,71,bathelt2024,Materials and Method: Neuroimaging Data Collection,"Siemens Trio, 32-channel head coil; all sidecars state TrioTim"
+subjects,field_strength=3,71,bathelt2024,Materials and Method: Neuroimaging Data Collection,
+subjects,country=GB,71,ds004765-file-tree,InstitutionName in JSON sidecars,all sidecars state Royal Holloway University
+age_mean,,20.68,bathelt2024,Materials and Method: Participants,"of the 69 analysed participants, one with a wrongly recorded age left out"
+age_sd,,2.70,bathelt2024,Materials and Method: Participants,"of the 69 analysed participants, one with a wrongly recorded age left out"
+age_min,,18,bathelt2024,Materials and Method: Participants,
+age_max,,34,bathelt2024,Materials and Method: Participants,
