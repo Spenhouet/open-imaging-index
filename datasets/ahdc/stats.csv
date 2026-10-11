@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,262,ds005896-participants,participant_id,262 rows; 262 subject folders in the file tree. The README reports 271 adolescents scanned in the first imaging wave.
+subjects,sex=female,143,ds005896-participants,Sex,Sex F
+subjects,sex=male,119,ds005896-participants,Sex,Sex M
+subjects,age=10-19,255,ds005896-participants,Age,
+subjects,age=20-29,7,ds005896-participants,Age,
+subjects,sex=female;age=10-19,138,ds005896-participants,"Sex, Age",
+subjects,sex=male;age=10-19,117,ds005896-participants,"Sex, Age",
+subjects,contrast=T1w,262,ds005896-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,257,ds005896-file-tree,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast=dwi,255,ds005896-file-tree,sub-*/dwi/*_dwi.nii.gz,
+subjects,contrast=bold,262,ds005896-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+dwi+T1w+T2w,251,ds005896-file-tree,"anat, dwi and func folders",field maps and sbref images not counted as contrasts
+subjects,contrast_set=bold+T1w+T2w,6,ds005896-file-tree,"anat, dwi and func folders",
+subjects,contrast_set=bold+dwi+T1w,4,ds005896-file-tree,"anat, dwi and func folders",
+subjects,contrast_set=bold+T1w,1,ds005896-file-tree,"anat, dwi and func folders",
+scans,,6373,ds005896-file-tree,sub-*/*/*.nii.gz,"all image files: 262 T1w, 257 T2w, 255 dwi, 2451 bold, 2449 sbref and 699 field map images (magnitude1, magnitude2, phasediff for 233 subjects)"
+scans,contrast=T1w,262,ds005896-file-tree,*_T1w.nii.gz,
+scans,contrast=T2w,257,ds005896-file-tree,*_T2w.nii.gz,
+scans,contrast=dwi,255,ds005896-file-tree,*_dwi.nii.gz,
+scans,contrast=bold,2451,ds005896-file-tree,*_bold.nii.gz,"resting state, emotional faces, cue reactivity, monetary incentive delay and n-back runs"
+age_min,,11,ds005896-participants,Age,
+age_max,,20,ds005896-participants,Age,
+age_median,,15,ds005896-participants,Age,
+age_mean,,15.6,ds005896-participants,Age,
+age_sd,,2.1,ds005896-participants,Age,

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ahdc
+name: AHDC Adolescent MRI (ds005896)
+full_name: >-
+  Structural and functional MRI dataset from the Adolescent Health and Development in Context (AHDC) study in
+  Columbus, Ohio
+summary: >-
+  Brain MRI with resting-state and task fMRI of adolescents from a community cohort, collected to study how
+  neighborhood exposures and substance use shape brain structure and function. Includes T1w, T2w, diffusion and
+  emotion, reward, cue reactivity and working memory tasks.
+homepage: https://openneuro.org/datasets/ds005896
+doi: 10.18112/openneuro.ds005896.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Adolescent Health and Development in Context study, The Ohio State University (Way BM, Browning CR, Wagner DD,
+      Ford JL, Boettner B, Bai P)
+    url: https://openneuro.org/datasets/ds005896
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+size_gb: 284.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005896
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0, and the README names the CC0 v1.0 license.
+citation:
+  text: >-
+    Way BM, Browning CR, Wagner DD, Ford JL, Boettner B, Bai P. Structural and functional MRI dataset from the
+    Adolescent Health and Development in Context (AHDC) study in Columbus, Ohio. OpenNeuro ds005896, version 1.0.0
+    (2025). doi:10.18112/openneuro.ds005896.v1.0.0
+sources:
+  ds005896-readme:
+    title: README of OpenNeuro ds005896 snapshot 1.0.0
+    url: https://github.com/OpenNeuroDatasets/ds005896/blob/1.0.0/README
+    kind: website
+  ds005896-participants:
+    title: participants.tsv of ds005896 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005896/blob/1.0.0/participants.tsv
+    kind: computed
+  ds005896-file-tree:
+    title: File tree and T1w JSON sidecars of ds005896 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005896/tree/1.0.0
+    kind: computed
+related: []
+keywords: [adolescents, substance use, neighborhood, task fMRI, resting-state fMRI, diffusion MRI, development]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
