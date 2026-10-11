@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,366,tabrizi2009,Results; Table 1,"baseline cohort after exclusions; 381 were enrolled"
+subjects,condition=healthy,123,tabrizi2009,Table 1,
+subjects,condition=huntington_disease,123,tabrizi2009,Table 1,"early manifest HD, stage 1 (77) and stage 2 (46); the 120 premanifest gene carriers are not counted here"
+subjects,sex=female,201,tabrizi2009,Table 1,"sum of women in the disjoint groups: controls 68, premanifest 66, early HD 67"
+subjects,sex=male,165,tabrizi2009,Table 1,"366 participants minus 201 women"
+subjects,country=NL,90,tabrizi2009,Table 1,"Leiden; sum of controls, premanifest and early HD (30 each)"
+subjects,country=GB,90,tabrizi2009,Table 1,"London; sum of controls, premanifest and early HD (30 each)"
+subjects,country=FR,90,tabrizi2009,Table 1,"Paris; sum of controls, premanifest and early HD (30 each)"
+subjects,country=CA,96,tabrizi2009,Table 1,"Vancouver; sum of controls 33, premanifest 30 and early HD 33"
+subjects,field_strength=3,366,tabrizi2009,Methods,
+subjects,contrast=T1w,366,vandenbogaard2011,Methods,all TRACK-HD subjects had a standardised 3D MPRAGE T1-weighted scan at baseline
+age_min,,18.6,tabrizi2009,Table 1,lowest value of the per-group age ranges
+age_max,,65.7,tabrizi2009,Table 1,highest value of the per-group age ranges

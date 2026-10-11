@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hdni
+name: HDNI (TRACK-HD)
+full_name: Huntington's Disease NeuroImaging Initiative
+summary: >-
+  Brain MRI from people with premanifest and early Huntington's disease and matched controls, collected in the TRACK-HD
+  natural history study to find measures that track disease progression for clinical trials. Images were archived at
+  LONI; curated copies are shared by CHDI under a data use agreement.
+homepage: https://ida.loni.usc.edu/login.jsp?project=HDNI
+# Year the first TRACK-HD participant was enrolled (January 2008, Tabrizi et al. 2009). A first-release date of the
+# LONI archive was not found.
+year: 2008
+creators:
+  - name: TRACK-HD Investigators (coordinating site UCL Institute of Neurology, PI Sarah Tabrizi)
+    url: https://doi.org/10.1016/S1474-4422(09)70170-X
+  - name: CHDI Foundation (study sponsor)
+    url: https://chdifoundation.org/
+  - name: Laboratory of Neuro Imaging (LONI) (image archive)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [brain]
+conditions: [huntington_disease, healthy]
+tasks: [classification, regression, longitudinal]
+countries: [GB, FR, NL, CA]
+vendors: [siemens, philips]
+field_strengths: [3]
+# The LONI HDNI application page is not open to new applicants (it answers "Not Authorized"). CHDI distributes the
+# curated TRACK-HD and TrackOn-HD imaging after a signed data use agreement (Pustina et al. 2024).
+access:
+  type: signed_agreement
+  url: https://www.enroll-hd.org/for-researchers/datasets/
+licenses:
+  - license: LicenseRef-No-Published-Terms
+citation:
+  text: >-
+    Tabrizi SJ, Langbehn DR, Leavitt BR, et al. Biological and clinical manifestations of Huntington's disease in the
+    longitudinal TRACK-HD study: cross-sectional analysis of baseline data. Lancet Neurol. 2009;8(9):791-801.
+sources:
+  tabrizi2009:
+    title: Tabrizi SJ et al. 2009, Biological and clinical manifestations of Huntington's disease in the longitudinal
+      TRACK-HD study, cross-sectional analysis of baseline data, Lancet Neurology (author manuscript PMC3725974)
+    url: https://doi.org/10.1016/S1474-4422(09)70170-X
+    kind: paper
+  vandenbogaard2011:
+    title: van den Bogaard SJA et al. 2011, Early atrophy of pallidum and accumbens nucleus in Huntington's disease,
+      Journal of Neurology
+    url: https://doi.org/10.1007/s00415-010-5768-0
+    kind: paper
+  pustina2024:
+    title: Pustina D et al. 2024, Bridging Huntington's disease research with big data science, harmonized neuroimaging
+      datasets from multiple studies, Imaging Neuroscience
+    url: https://doi.org/10.1162/imag_a_00395
+    kind: paper
+  loni-hdni:
+    title: LONI Image and Data Archive, HDNI project login page (links to the TRACK-HD study site)
+    url: https://ida.loni.usc.edu/login.jsp?project=HDNI
+    kind: website
+related: []
+keywords: [Huntington's disease, TRACK-HD, premanifest, striatal atrophy, caudate, putamen, natural history]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
