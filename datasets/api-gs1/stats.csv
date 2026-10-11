@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,480,tariot2024,Figure 1A,"randomized participants: 65 in Cohort I (CAD106 or placebo) and 415 in Cohort II (umibecestat or placebo), sum of the two disjoint cohorts; the number in the shared archive is smaller if some did not consent to further research (riviere2024 Figure 1 legend)"
+subjects,modality=MR,480,lopezlopez2019,Section 2.4,"brain MRI is part of screening for every APOE4 carrier, so every randomized participant had one"
+subjects,contrast=T1w,65,riviere2024,Section 2.3.3,"Cohort I: volumetric T1-weighted MRI at screening and Weeks 26, 52 and 104; Cohort II also had volumetric MRI (tariot2024) but its GS1 count is not reported separately"
+subjects,field_strength=3,65,riviere2024,Section 2.3.3,"Cohort I: volumetric MRI on 3T systems with standardized protocols"
+subjects,condition=aria,3,riviere2024,Table 3,"Cohort I, CAD106 arm: one ARIA-E and two ARIA-H; ARIA in Cohort II is reported only pooled with Generation Study 2"
+age_min,,60,lopezlopez2019,Section 2.3,eligibility age range
+age_max,,75,lopezlopez2019,Section 2.3,eligibility age range

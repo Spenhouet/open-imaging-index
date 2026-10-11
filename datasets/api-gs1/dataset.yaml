@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: api-gs1
+name: API Generation Study 1 (GS1)
+full_name: >-
+  Alzheimer's Prevention Initiative Generation Study 1 (CAD106 and umibecestat in APOE4 homozygotes, NCT02565511)
+summary: >-
+  Brain MRI and amyloid, FDG and tau PET from a prevention trial of the amyloid vaccine CAD106 and the BACE inhibitor
+  umibecestat in cognitively unimpaired people aged 60 to 75 who carry two copies of APOE4, with screening and
+  longitudinal clinical data.
+homepage: https://alzheimerspreventioninitiative.com/api-studies/generation-program/
+# The date data were first released was not found. The CAD106 results paper (published online 2023-12-25) states that
+# the anonymized data and images are now available on request, so 2023 is the earliest year a public source confirms.
+year: 2023
+creators:
+  - name: Banner Alzheimer's Institute
+    url: https://alzheimerspreventioninitiative.com/
+  - name: Novartis
+  - name: Amgen
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, bold]
+tracers: [florbetapir, fdg]
+anatomy: [brain]
+conditions: [alzheimers, aria]
+tasks: [longitudinal, classification, regression]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=GS1
+licenses:
+  - license: LicenseRef-API-GS1-DUA
+    note: >-
+      The Generation Program team reviews each request and approved requesters sign a Data Transfer Agreement whose
+      text is not published. The terms checked here are the ones shown on the LONI IDA application page. The clinical
+      data without imaging can also be requested through the AD Workbench of the Alzheimer's Disease Data Initiative.
+citation:
+  text: >-
+    Lopez Lopez C, Tariot PN, Caputo A, et al. The Alzheimer's Prevention Initiative Generation Program: Study design of
+    two randomized controlled trials for individuals at risk for clinical onset of Alzheimer's disease. Alzheimer's &
+    Dementia: Translational Research & Clinical Interventions 5:216-227 (2019). doi:10.1016/j.trci.2019.02.005
+sources:
+  lopezlopez2019:
+    title: >-
+      Lopez Lopez et al. 2019, The API Generation Program: study design of two randomized controlled trials, Alzheimer's
+      & Dementia: TRCI
+    url: https://doi.org/10.1016/j.trci.2019.02.005
+    kind: paper
+  riviere2024:
+    title: >-
+      Riviere et al. 2024, Effects of the active amyloid beta immunotherapy CAD106 on PET measurements of amyloid plaque
+      deposition in cognitively unimpaired APOE e4 homozygotes, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.13532
+    kind: paper
+  tariot2024:
+    title: >-
+      Tariot et al. 2024, Reversibility of cognitive worsening observed with BACE inhibitor umibecestat in the API
+      Generation Studies, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.14237
+    kind: paper
+  api-generation-data-page:
+    title: Alzheimer's Prevention Initiative, Generation Program available data
+    url: https://alzheimerspreventioninitiative.com/api-studies/generation-program/available-data/
+    kind: website
+related: [a4-learn, api-adad-colombia]
+keywords:
+  [
+    APOE4 homozygotes,
+    preclinical Alzheimer's disease,
+    prevention trial,
+    CAD106,
+    umibecestat,
+    BACE inhibitor,
+    amyloid PET,
+    ARIA
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
