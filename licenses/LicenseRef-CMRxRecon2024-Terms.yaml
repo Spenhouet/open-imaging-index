@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CMRxRecon2024-Terms
+name: CMRxRecon2024 data use terms (challenge rules, project page and data descriptor)
+short_name: CMRxRecon2024 terms
+url: https://www.synapse.org/Synapse:syn54951257/wiki/627575
+version: Synapse project wiki and FAQ/Rules page of syn54951257, and arXiv:2406.19043v2, read 2026-10-11
+summary: >-
+  No standard license is named. The data descriptor allows educational and research use and forbids commercial use of
+  the data itself. The challenge rules forbid passing on the data or download links, and the project page asks users
+  to cite the CMRx dataset papers.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Notably, although the commercial use of the dataset itself is prohibited, we do not restrict the use of the
+      dataset for developing, testing, or refining software, algorithms, or other intellectual property for academic
+      research.
+    source: https://arxiv.org/abs/2406.19043
+  product_validation:
+    value: unspecified
+    note: >-
+      Testing software is allowed for academic research and commercial use of the data is prohibited; testing or
+      validating a product, e.g. for regulatory clearance, is not addressed.
+  model_training:
+    value: conditional
+    note: Allowed for academic research.
+    quote: >-
+      we do not restrict the use of the dataset for developing, testing, or refining software, algorithms, or other
+      intellectual property for academic research.
+    source: https://arxiv.org/abs/2406.19043
+  derivatives:
+    value: unspecified
+    note: The terms do not mention derived data such as reconstructions or labels.
+  publication:
+    value: conditional
+    note: >-
+      Allowed after the embargo period with citation of the listed papers. The FAQ also says results could only be
+      published three months after the end of the challenge.
+    quote: >-
+      You are free to use and/or refer to the CMRxRecon2024 challenge and datasets in your own research after the
+      embargo period (Dec 2024), provided that you cite the following manuscripts
+    source: https://www.synapse.org/#!Synapse:syn54951257
+  redistribute_original:
+    value: 'no'
+    quote: Redistribution or transfer of data or data links is prohibited.
+  redistribute_derivatives:
+    value: unspecified
+    note: The rules forbid passing on the data but do not mention derived data.
+  share_model_weights:
+    value: unspecified
+    note: The terms do not mention trained models.
+  attribution:
+    value: 'yes'
+    quote: >-
+      According to our agreement, it is required to cite our provided article and acknowledge the data source when
+      referencing the results.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: unspecified
+    note: >-
+      Download needs a Synapse account and the Synapse certification quiz, and the Synapse entities carry no access
+      requirement. The FAQ refers to "our agreement" without publishing an agreement text.
+    quote: >-
+      According to our agreement, it is required to cite our provided article and acknowledge the data source when
+      referencing the results.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+    note: Challenge teams had to submit an inference Docker container, not their training code.
+    quote: We do not require teams to upload the training code.
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+    note: >-
+      The download page asks users to delete local copies of a few withdrawn abnormal files; there is no general duty
+      to delete the data after use.
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
