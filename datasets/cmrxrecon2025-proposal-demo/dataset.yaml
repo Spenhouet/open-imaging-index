@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cmrxrecon2025-proposal-demo
+name: CMRxRecon2025 Data4ProposalReview
+full_name: CMRxRecon2025 demo dataset for proposal review (Data4ProposalReview)
+summary: >-
+  Fully sampled raw k-space of cardiac and aortic MRI (cine, T1 and T2 mapping, flow, tagging, black blood), a small
+  demo set released for reviewing the proposal of a MICCAI 2025 challenge on foundation models for cardiac MRI
+  reconstruction.
+homepage: https://www.synapse.org/#!Synapse:syn60059486
+year: 2024
+status: active
+creators:
+  - name: CMRxRecon2025 challenge organizers
+    url: https://www.synapse.org/Synapse:syn59814210/wiki/
+species: human
+modalities: [MR]
+contrasts: [cine, T1map, T2map]
+anatomy: [heart]
+tasks: [reconstruction]
+formats: [MAT]
+size_gb: 16.4
+access:
+  type: registration
+  url: https://www.synapse.org/#!Synapse:syn60059486
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The dataset page says the CMRxRecon dataset "follows the CC-BY license" and gives no version. The rule answers of
+      CC BY 3.0 and 4.0 are the same in this index. Downloads need a free Synapse account. The CMRxRecon2025 challenge
+      page asks users to cite the listed CMRx papers and says use is free "after the embargo period (Dec. 2025)".
+citation:
+  text: >-
+    Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset and benchmark to advance deep
+    learning for cardiac MRI. Scientific Data 11, 687 (2024). doi:10.1038/s41597-024-03525-4
+sources:
+  synapse-data4proposalreview:
+    title: Data4ProposalReview dataset page on Synapse (syn60059486), wiki and file listing
+    url: https://www.synapse.org/#!Synapse:syn60059486
+    kind: website
+  synapse-cmrxrecon2025:
+    title: CMRxRecon2025 challenge project page on Synapse (syn59814210)
+    url: https://www.synapse.org/Synapse:syn59814210/wiki/
+    kind: website
+related: []
+keywords: [cardiac MRI, k-space, MRI reconstruction, challenge, demo data]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

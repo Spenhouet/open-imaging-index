@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+scans,,49,synapse-data4proposalreview,Directory of data,"Count of .mat k-space files in the directory listing: Aorta 10, BlackBlood 5, Cine 14, Flow2d 5, Mapping 10, Tagging 5"
+scans,contrast=cine,14,synapse-data4proposalreview,Directory of data,"Long-axis and LVOT cine for 5 cases, short-axis cine for 4 of them"
+scans,contrast=T1map,5,synapse-data4proposalreview,Directory of data,One T1 mapping file for each of 5 cases
+scans,contrast=T2map,5,synapse-data4proposalreview,Directory of data,One T2 mapping file for each of 5 cases
