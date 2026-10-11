@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: designer-early-reading
+name: DESIGNER Early Reading DWI (ds007398)
+full_name: DESIGNER Preprocessed Diffusion Dataset (Early Reading)
+summary: >-
+  Multishell diffusion MRI of monolingual Mexican Spanish-speaking children who are beginning to read, preprocessed
+  with the DESIGNER pipeline, to study white-matter pathways linked to phonological awareness and early reading.
+homepage: https://openneuro.org/datasets/ds007398
+doi: 10.18112/openneuro.ds007398.v1.0.2
+year: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: Moramay Ramos-Flores and M. Florencia Assaneo, Instituto de Neurobiología, UNAM
+    url: https://openneuro.org/datasets/ds007398
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [MX]
+size_gb: 92.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007398/versions/1.0.2
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds007398/versions/1.0.2
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Ramos-Flores M. DESIGNER Preprocessed Diffusion Dataset (Early Reading). OpenNeuro, version 1.0.2 (2026).
+    doi:10.18112/openneuro.ds007398.v1.0.2
+sources:
+  openneuro-ds007398-v102:
+    title: OpenNeuro ds007398 snapshot 1.0.2 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds007398/versions/1.0.2
+    kind: website
+  ds007398-participants:
+    title: >-
+      participants.tsv and file tree of ds007398 snapshot 1.0.2 (CC0), Age and Gender columns and
+      *_desc-preproc_dwi.nii.gz files counted
+    url: https://github.com/OpenNeuroDatasets/ds007398/tree/1.0.2
+    kind: computed
+related: []
+keywords: [reading, early reading, phonological awareness, children, diffusion MRI, multishell, DESIGNER, white matter, Spanish]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

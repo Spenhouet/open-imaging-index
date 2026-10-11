@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,61,openneuro-ds007398-v102,README: Participants,61 sub-* folders in the snapshot summary
+subjects,contrast=dwi,61,ds007398-participants,dwi folders,one preprocessed DWI series per subject
+subjects,condition=healthy,61,openneuro-ds007398-v102,README: Participants,"no neurological, developmental or psychiatric diagnoses"
+subjects,sex=female,34,ds007398-participants,participants.tsv: Gender,
+subjects,sex=male,27,ds007398-participants,participants.tsv: Gender,
+studies,,61,ds007398-participants,ses-01 folders,
+scans,,61,ds007398-participants,*_desc-preproc_dwi.nii.gz,
+scans,contrast=dwi,61,ds007398-participants,*_desc-preproc_dwi.nii.gz,
+age_min,,6.0,ds007398-participants,participants.tsv: Age,
+age_max,,8.5,ds007398-participants,participants.tsv: Age,
+age_mean,,7.33,ds007398-participants,participants.tsv: Age,
+age_median,,7.33,ds007398-participants,participants.tsv: Age,
+age_sd,,0.6,ds007398-participants,participants.tsv: Age,sample standard deviation
