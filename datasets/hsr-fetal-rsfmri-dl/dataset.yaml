@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hsr-fetal-rsfmri-dl
+name: San Raffaele fetal rs-fMRI brain masks (RF-2016-02364081)
+full_name: >-
+  Deep Learning (DL) RF-2016-02364081 dataset for the study 'Optimizing performance of transformer-based models for
+  fetal brain MR image segmentation'
+summary: >-
+  Fetal resting-state functional MRI (rs-fMRI) volumes with brain masks, shared to train and test deep learning models
+  that extract the fetal brain from the surrounding maternal anatomy. 172 fetuses at 21 to 37 gestational weeks, 1.5 T
+  and 3 T.
+homepage: https://data.mendeley.com/datasets/dyg9dpmgvs/1
+doi: 10.17632/dyg9dpmgvs.1
+year: 2024
+version: '1'
+creators:
+  - name: IRCCS Ospedale San Raffaele, Milan
+    url: https://ordr.hsr.it/datasets/dyg9dpmgvs
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [IT]
+field_strengths: [1.5, 3]
+size_gb: 0.73
+access:
+  type: open
+  url: https://data.mendeley.com/datasets/dyg9dpmgvs/1
+  note: >-
+    Direct download from the San Raffaele Open Research Data Repository (hosted on Mendeley Data) without an account.
+    The download also holds the pretrained Swin-UNETR weights.
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Pecco N, Della Rosa PA, Canini M, Nocera G, Scifo P, Cavoretto PI, Candiani M, Falini A, Castellano A, Baldoli C.
+    Optimizing Performance of Transformer-based Models for Fetal Brain MR Image Segmentation. Radiology: Artificial
+    Intelligence 6(6), e230229 (2024). doi:10.1148/ryai.230229
+sources:
+  pecco2024:
+    title: Pecco et al. 2024, Radiology Artificial Intelligence 6(6) e230229 (PMC11605146)
+    url: https://doi.org/10.1148/ryai.230229
+    kind: paper
+  hsr-dyg9dpmgvs:
+    title: San Raffaele Open Research Data Repository record dyg9dpmgvs, version 1
+    url: https://data.mendeley.com/datasets/dyg9dpmgvs/1
+    kind: website
+  hsr-dyg9dpmgvs-files:
+    title: >-
+      File list of record dyg9dpmgvs (CC BY 4.0) from the Mendeley Data public API, gestational week read from the
+      last two digits of each image file name
+    url: https://data.mendeley.com/public-api/datasets/dyg9dpmgvs
+    kind: computed
+related: []
+keywords: [fetal MRI, fetal brain extraction, resting-state fMRI, gestational age, Swin-UNETR, brain masking]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
