@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mofomic-nimf1
+name: MOFOMIC-NIMF1
+full_name: Moral Foundations MRI Collection, Neuroimaging Moral Foundations study 1
+summary: >-
+  Task fMRI, T1-weighted and T2-weighted brain MRI of 64 healthy young adults rating the moral wrongness of 120 moral
+  foundations vignettes, with political ideology and moral psychometrics, from UC Santa Barbara, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds007391
+doi: 10.18112/openneuro.ds007391.v1.0.0
+# Single OpenNeuro snapshot 1.0.0 dated 2026-02-09 in the CHANGES file.
+year: 2026
+version: 1.0.0
+status: active
+creators:
+  - name: Media Neuroscience Lab, University of California Santa Barbara (Hopp FR, Amir O, Weber R, et al.)
+    url: https://www.medianeuroscience.org/mofomic/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 166.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007391
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Hopp FR, Youk S, Amir O, Malik M, Woodman K, Wheeler B, Khoudary A, O'Neill K, De Brigard F, Sinnott-Armstrong W,
+    Weber R. The Moral Foundations MRI Collection: A Multi-Center, Multi-Country Functional MRI Collection for Evaluating
+    Moral Judgment. PsychArchives preprint (2026). doi:10.23668/psycharchives.21564
+sources:
+  hopp2026:
+    title: Hopp et al. 2026, The Moral Foundations MRI Collection, PsychArchives preprint
+    url: https://doi.org/10.23668/psycharchives.21564
+    kind: paper
+  openneuro-ds007391-v1-0-0:
+    title: OpenNeuro ds007391 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds007391/versions/1.0.0
+    kind: website
+  ds007391-participants:
+    title: participants.tsv of ds007391 snapshot 1.0.0 (CC0), counted per row; ages from age, sex from sex
+    url: https://github.com/OpenNeuroDatasets/ds007391/blob/1.0.0/participants.tsv
+    kind: computed
+  ds007391-file-tree:
+    title: BIDS file tree of ds007391 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds007391/tree/1.0.0
+    kind: computed
+related: []
+keywords: [moral judgment, moral foundations, political ideology, task fMRI, multiband fMRI, young adults, university students]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
