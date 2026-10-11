@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,55,etzel2022,Methods: Participants,55 unrelated participants chosen from a pool of 97; also 55 sub-* folders in the file tree
+subjects,sex=female,34,etzel2022,Methods: Participants,
+subjects,condition=healthy,55,etzel2022,Abstract,described as healthy unrelated young adults
+age_mean,,31.7,etzel2022,Methods: Participants,
+age_sd,,5.9,etzel2022,Methods: Participants,
+subjects,contrast=T1w,55,ds003465-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T2w,55,ds003465-file-tree,,subjects with a *_T2w.nii.gz
+subjects,contrast=bold,55,ds003465-file-tree,,subjects with a *_bold.nii.gz
+subjects,contrast_set=bold+T1w+T2w,55,ds003465-file-tree,,"single-band reference and spin echo fieldmap images are not counted as a contrast"
+scans,,550,ds003465-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below; sbref and fieldmap images not included"
+scans,contrast=T1w,55,ds003465-file-tree,,
+scans,contrast=T2w,55,ds003465-file-tree,,
+scans,contrast=bold,440,ds003465-file-tree,,"eight task runs per subject: two (AP, PA) each of AX-CPT, cued task-switching, Sternberg and Stroop"

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dmcc55b
+name: DMCC55B
+full_name: Dual Mechanisms of Cognitive Control project, 55-participant baseline subset
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults performing four cognitive control tasks (AX-CPT, cued
+  task-switching, Sternberg working memory, Stroop), shared to study individual differences in cognitive control and
+  for methods benchmarking.
+homepage: https://openneuro.org/datasets/ds003465
+doi: 10.18112/openneuro.ds003465.v1.0.8
+# OpenNeuro snapshots 1.0.0 (2021-01-08) to 1.0.8 (2026-06-08) per the dataset's snapshot list and CHANGES file.
+year: 2021
+updated: 2026
+version: 1.0.8
+status: active
+creators:
+  - name: Cognitive Control and Psychopathology Lab, Washington University in St. Louis (Etzel JA, Braver TS, et al.)
+    url: https://sites.wustl.edu/dualmechanisms
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 193.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003465
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.8 states "License" CC0.
+citation:
+  text: >-
+    Etzel JA, Brough RE, Freund MC, Kizhner A, Lin Y, Singh MF, Tang R, Tay A, Wang A, Braver TS. The Dual Mechanisms
+    of Cognitive Control dataset, a theoretically-guided within-subject task fMRI battery. Scientific Data 9, 114
+    (2022). doi:10.1038/s41597-022-01226-4
+sources:
+  etzel2022:
+    title: Etzel et al. 2022, The Dual Mechanisms of Cognitive Control dataset, Scientific Data
+    url: https://doi.org/10.1038/s41597-022-01226-4
+    kind: paper
+  openneuro-ds003465-v1-0-8:
+    title: OpenNeuro ds003465 snapshot 1.0.8 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003465/versions/1.0.8
+    kind: website
+  ds003465-file-tree:
+    title: BIDS file tree of ds003465 snapshot 1.0.8 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds003465/tree/1.0.8
+    kind: computed
+related: [hcp-young-adult]
+keywords: [cognitive control, task fMRI, AX-CPT, task switching, Sternberg, Stroop, working memory, individual differences, multiband, physiological recordings, young adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
