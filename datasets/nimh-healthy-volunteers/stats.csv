@@ -1,0 +1,52 @@
+measure,by,value,source,where,note
+subjects,,251,ds005752-file-tree,sub-* folders,"subjects with imaging data (249 with MRI, 123 with MEG, 121 with both); participants.tsv lists 1859 participants, the others have only screening, clinical or laboratory data"
+subjects,modality=MR,249,ds005752-file-tree,sub-*/ses-*/*/*.nii.gz,"participants.tsv flags 239 with MRI=1, but 249 subject folders contain MRI NIfTI files"
+subjects,sex=female,154,ds005752-participants,"participant_id, sex",subjects with imaging data
+subjects,sex=male,94,ds005752-participants,"participant_id, sex",subjects with imaging data
+subjects,sex=unknown,3,ds005752-participants,"participant_id, sex",sex n/a
+subjects,age=10-19,2,ds005752-participants,age,age at the first online screening; one subject without age
+subjects,age=20-29,109,ds005752-participants,age,age at the first online screening
+subjects,age=30-39,74,ds005752-participants,age,age at the first online screening
+subjects,age=40-49,35,ds005752-participants,age,age at the first online screening
+subjects,age=50-59,18,ds005752-participants,age,age at the first online screening
+subjects,age=60-69,10,ds005752-participants,age,age at the first online screening
+subjects,age=70-79,2,ds005752-participants,age,age at the first online screening
+subjects,sex=female;age=20-29,70,ds005752-participants,"sex, age",cells below 10 left out
+subjects,sex=female;age=30-39,37,ds005752-participants,"sex, age",
+subjects,sex=female;age=40-49,24,ds005752-participants,"sex, age",
+subjects,sex=female;age=50-59,17,ds005752-participants,"sex, age",
+subjects,sex=male;age=20-29,39,ds005752-participants,"sex, age",
+subjects,sex=male;age=30-39,35,ds005752-participants,"sex, age",
+subjects,sex=male;age=40-49,11,ds005752-participants,"sex, age",
+subjects,contrast=T1w,249,ds005752-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,247,ds005752-file-tree,sub-*/ses-*/anat/*_T2w.nii.gz,
+subjects,contrast=FLAIR,240,ds005752-file-tree,sub-*/ses-*/anat/*_FLAIR.nii.gz,
+subjects,contrast=T2starw,241,ds005752-file-tree,sub-*/ses-*/anat/*_T2starw.nii.gz,
+subjects,contrast=dwi,235,ds005752-file-tree,sub-*/ses-*/dwi/*_dwi.nii.gz,
+subjects,contrast=bold,219,ds005752-file-tree,sub-*/ses-*/func/*_bold.nii.gz,resting state only
+subjects,contrast=asl,234,ds005752-file-tree,sub-*/ses-*/perf/*_asl.nii.gz,
+subjects,contrast_set=asl+bold+dwi+FLAIR+T1w+T2starw+T2w,206,ds005752-file-tree,"anat, dwi, func and perf folders",field maps not counted as contrasts
+subjects,contrast_set=asl+dwi+FLAIR+T1w+T2starw+T2w,15,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2starw+T2w,12,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=asl+T1w+T2w,7,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=asl+FLAIR+T1w+T2starw+T2w,4,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=dwi+FLAIR+T1w+T2starw+T2w,2,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=asl+T1w,1,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=asl+T1w+T2starw,1,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,contrast_set=bold+FLAIR+T1w+T2starw+T2w,1,ds005752-file-tree,"anat, dwi, func and perf folders",
+subjects,vendor=ge,249,ds005752-file-tree,T1w JSON sidecars (Manufacturer),GE DISCOVERY MR750
+subjects,field_strength=3,249,ds005752-file-tree,T1w JSON sidecars (MagneticFieldStrength),
+studies,,254,ds005752-file-tree,sub-*/ses-* folders,3 subjects have a second session
+scans,,3552,ds005752-file-tree,sub-*/ses-*/*/*.nii.gz,"all NIfTI files, including 250 field map and magnitude images"
+scans,contrast=T1w,499,ds005752-file-tree,*_T1w.nii.gz,"includes images with and without surface coil intensity correction (rec-SCIC) and 56 T1w images for MEG co-registration"
+scans,contrast=T2w,438,ds005752-file-tree,*_T2w.nii.gz,
+scans,contrast=FLAIR,432,ds005752-file-tree,*_FLAIR.nii.gz,2D ADNI2 and 3D FLAIR
+scans,contrast=T2starw,244,ds005752-file-tree,*_T2starw.nii.gz,
+scans,contrast=dwi,467,ds005752-file-tree,*_dwi.nii.gz,
+scans,contrast=bold,985,ds005752-file-tree,*_bold.nii.gz,resting state runs
+scans,contrast=asl,237,ds005752-file-tree,*_asl.nii.gz,
+age_min,,18,ds005752-participants,age,subjects with imaging data
+age_max,,72,ds005752-participants,age,subjects with imaging data
+age_median,,31,ds005752-participants,age,subjects with imaging data
+age_mean,,34.1,ds005752-participants,age,subjects with imaging data
+age_sd,,11.7,ds005752-participants,age,subjects with imaging data
