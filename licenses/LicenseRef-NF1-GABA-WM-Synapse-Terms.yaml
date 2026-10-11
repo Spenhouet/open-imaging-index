@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-NF1-GABA-WM-Synapse-Terms
+name: Synapse access terms for the NF1 GABA and working memory study (syn17100988)
+short_name: NF1 GABA Synapse terms
+url: https://www.synapse.org/AccessRequirement:AR_ID=9606887
+version: >-
+  Synapse access requirements 9606887 (click-through terms, version 1, April 2026) and 9606888 (managed access with
+  an intended data use statement, version 1, April 2026).
+summary: >-
+  Access after a reviewed request on Synapse that describes the project and its security measures, plus click-through
+  terms. Use is limited to the approved project and to named users at the requesting institution, the data may not be
+  passed on, must be deleted when no longer needed, and publications must acknowledge the NF Data Portal and cite the
+  study paper. Approval lasts one year.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The access terms do not mention commercial use.
+  product_validation:
+    value: unspecified
+    note: The access terms do not address testing or validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      You provide proper attribution using the acknowledgement statement found on the project wiki page on all
+      publications or presentations resulting from the use of these data.
+    note: Publications must carry the NF Data Portal acknowledgement and cite the study paper.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      You agree to retain control over the Data and to not disclose, release, sell, rent, lease, loan, or otherwise
+      grant access to the Data to anyone not specified in your data access request.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      You will acknowledge the NF Data Portal using the following statement: "The results published here are in whole
+      or in part based on data obtained from the NF Data Portal http://www.nfdataportal.org and made available through
+      the NF Open Science Initiative."
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Access to the data requires that you are a Registered Synapse user and agree to the following terms and
+      conditions
+    note: The terms are accepted online; the managed request does not ask for a signed data use certificate.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      You agree to delete the Data downloaded from Synapse when it is no longer needed for the proposed research
+      purpose.
+    note: Approval expires after one year unless renewed, after which the data must also be deleted.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      You confirm that you will not attempt to re-identify research participants for any reason, including for
+      re-identification theory research.
+  geographic_restriction:
+    value: 'no'
+    note: >-
+      No country limit is stated, but access is limited to named users at the requesting institution ("You may not
+      share the data with anyone outside of your institution").
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

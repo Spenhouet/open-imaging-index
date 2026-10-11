@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nf1-gaba-wm
+name: GABA and Working Memory in NF1 (tDCS MRS-fMRI)
+full_name: The role of GABA in the working memory impairments in Neurofibromatosis Type 1
+summary: >-
+  Brain MR spectroscopy of GABA, task fMRI and structural MRI of adolescents with neurofibromatosis type 1 (NF1),
+  from a sham-controlled crossover trial testing whether transcranial direct current stimulation changes GABA and
+  working memory.
+homepage: https://www.synapse.org/#!Synapse:syn17100988
+doi: 10.7303/syn17100988
+# Year of the study paper whose data availability statement says the data were deposited on Synapse for request.
+year: 2022
+creators:
+  - name: Shruti Garg, University of Manchester
+    url: https://www.synapse.org/#!Synapse:syn17100988
+  - name: Neurofibromatosis Therapeutic Acceleration Program (NTAP)
+    url: https://www.n-tap.org
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [neurofibromatosis_type_1]
+countries: [GB]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.synapse.org/#!Synapse:syn52293671
+licenses:
+  - license: LicenseRef-NF1-GABA-WM-Synapse-Terms
+citation:
+  text: >-
+    Garg S, Williams S, Jung J, et al. Non-invasive brain stimulation modulates GABAergic activity in neurofibromatosis
+    1. Sci Rep 12, 18297 (2022). https://doi.org/10.1038/s41598-022-21907-9
+sources:
+  synapse-syn17100988:
+    title: Synapse project syn17100988, The role of GABA in the working memory impairments in Neurofibromatosis Type 1
+    url: https://www.synapse.org/#!Synapse:syn17100988
+    kind: website
+  garg2022:
+    title: Garg et al. 2022, Scientific Reports (non-invasive brain stimulation modulates GABAergic activity in NF1)
+    url: https://doi.org/10.1038/s41598-022-21907-9
+    kind: paper
+related: []
+keywords:
+  [
+    neurofibromatosis type 1,
+    GABA,
+    MR spectroscopy,
+    MEGA-PRESS,
+    working memory,
+    n-back,
+    transcranial direct current stimulation,
+    tDCS,
+    adolescents,
+    NF Data Portal
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
