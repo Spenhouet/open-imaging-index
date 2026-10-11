@@ -1,0 +1,41 @@
+measure,by,value,source,where,note
+subjects,,59,chang2025,Methods: Participants,36 people with motor neuron disease and 23 controls; participants.tsv has 59 rows
+subjects,condition=motor_neuron_disease,36,chang2025,Methods: Participants,"participants.tsv group Case; per case_phenotype.tsv 32 ALS, 2 PLS, 1 undefined MND and 1 ALS with behavioural variant frontotemporal dementia"
+subjects,condition=healthy,23,chang2025,Methods: Participants,"non-neurodegenerative controls recruited from spouses, friends and colleagues of patients"
+subjects,condition=frontotemporal_dementia,1,ds005874-participants,case_phenotype.tsv phenotype,ALS with behavioural variant frontotemporal dementia
+studies,,118,ds005874-file-tree,sub-*/ses-*/,every subject has a fasted session 1 and a postprandial session 2
+subjects,sex=male,44,ds005874-participants,sex,
+subjects,sex=female,15,ds005874-participants,sex,
+subjects,age=20-29,1,ds005874-participants,age,
+subjects,age=30-39,2,ds005874-participants,age,
+subjects,age=40-49,5,ds005874-participants,age,
+subjects,age=50-59,24,ds005874-participants,age,
+subjects,age=60-69,21,ds005874-participants,age,
+subjects,age=70-79,6,ds005874-participants,age,
+subjects,sex=male;age=50-59,18,ds005874-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=60-69,15,ds005874-participants,sex and age,cells below 10 left out
+subjects,condition=motor_neuron_disease;sex=male,27,ds005874-participants,group and sex,cells below 10 left out
+subjects,condition=healthy;sex=male,17,ds005874-participants,group and sex,cells below 10 left out
+subjects,condition=motor_neuron_disease;age=50-59,15,ds005874-participants,group and age,cells below 10 left out
+subjects,condition=motor_neuron_disease;age=60-69,14,ds005874-participants,group and age,cells below 10 left out
+age_min,,26,ds005874-participants,age,the paper states 34 to 74 years for all participants; the youngest control in participants.tsv is 26
+age_max,,74,ds005874-participants,age,
+age_mean,,57.53,ds005874-participants,age,
+age_sd,,9.74,ds005874-participants,age,
+age_median,,57,ds005874-participants,age,
+age_mean,condition=motor_neuron_disease,59.33,ds005874-participants,group and age,
+age_mean,condition=healthy,54.7,ds005874-participants,group and age,
+scans,,586,ds005874-file-tree,sub-*/ses-*/*/*.nii.gz,"59 T1w, 59 FLAIR, 236 BOLD and 232 diffusion runs"
+scans,contrast=T1w,59,ds005874-file-tree,anat/*_T1w.nii.gz,MP2RAGE uniform image (UNI-DEN) from session 1
+scans,contrast=FLAIR,59,ds005874-file-tree,anat/*_T2w.nii.gz,3D T2 SPACE dark-fluid (FLAIR) stored with the BIDS suffix T2w; session 1
+scans,contrast=bold,236,ds005874-file-tree,func/*_bold.nii.gz,one food-cue task run and one resting-state run per session
+scans,contrast=dwi,232,ds005874-file-tree,dwi/*_dwi.nii.gz,"four multiband runs (AP and PA, two each) in session 2; added in snapshot 1.1.0"
+subjects,contrast=T1w,59,ds005874-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,59,ds005874-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,59,ds005874-file-tree,func/*_bold.nii.gz,
+subjects,contrast=dwi,58,ds005874-file-tree,dwi/*_dwi.nii.gz,diffusion of sub-17 is incomplete and not shared (README)
+subjects,contrast_set=bold+dwi+FLAIR+T1w,58,ds005874-file-tree,sub-*/,
+subjects,contrast_set=bold+FLAIR+T1w,1,ds005874-file-tree,sub-*/,sub-17 without diffusion
+subjects,field_strength=3,59,chang2025,Methods: Image acquisition,all scans on a 3 T Siemens Prisma
+subjects,vendor=siemens,59,chang2025,Methods: Image acquisition,all scans on a 3 T Siemens Prisma
+subjects,country=AU,59,chang2025,Methods: Participants,"imaged at the Herston Imaging Research Facility, Royal Brisbane and Women's Hospital"
