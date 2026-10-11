@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,143,openneuro-ds002380-v1,snapshot summary,143 subject folders; the paper's full sample is also 143
+subjects,contrast=T1w,143,ds002380-file-tree,,one T1w NIfTI per subject folder
+subjects,contrast_set=T1w,143,ds002380-file-tree,,
+subjects,sex=male,143,morey2019,Participants and Methods,all participants were male
+subjects,condition=ptsd,69,morey2019,Table 1,full sample
+scans,,143,ds002380-file-tree,,
+age_min,,21,morey2019,Participants and Methods,full sample
+age_max,,65,morey2019,Participants and Methods,full sample
