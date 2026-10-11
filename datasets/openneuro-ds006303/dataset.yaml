@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006303
+name: NIMH Pediatric Anxiety Neural Efficiency (ds006303)
+full_name: 'Reduced Threat-Related Neural Efficiency: A Possible Biomarker for Pediatric Anxiety Disorder'
+summary: >-
+  Structural MRI, resting-state fMRI and emotional dot-probe task fMRI of 149 youths aged 8 to 18 with an anxiety
+  disorder or no psychiatric diagnosis, scanned at NIMH, many with a second session. BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds006303
+doi: 10.18112/openneuro.ds006303.v1.1.2
+year: 2025
+updated: 2026
+version: 1.1.2
+status: active
+creators:
+  - name: >-
+      Julia Linke, Reut Naim, Simone Haller, Parmis Khosravi, Beck Scheinberg, Meghan Byrne, Anita Harrewijn, Ellen
+      Leibenluft, Melissa Brotman, Anderson Winkler and Daniel Pine (NIMH Section on Development and Affective
+      Neuroscience)
+    url: https://openneuro.org/datasets/ds006303
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [anxiety_disorder, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 59.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006303/versions/1.1.2
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006303/versions/1.1.2
+    note: dataset_description.json and README of snapshot 1.1.2 state the CC0 license.
+citation:
+  text: >-
+    Linke J, Naim R, Haller S, Khosravi P, Scheinberg B, Byrne M, Harrewijn A, Leibenluft E, Brotman M, Winkler A,
+    Pine D. Reduced Threat-Related Neural Efficiency: A Possible Biomarker for Pediatric Anxiety Disorder. OpenNeuro,
+    version 1.1.2 (2026). doi:10.18112/openneuro.ds006303.v1.1.2
+sources:
+  openneuro-ds006303-v112:
+    title: >-
+      OpenNeuro ds006303 snapshot 1.1.2 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006303/versions/1.1.2
+    kind: website
+  ds006303-participants:
+    title: participants.tsv of ds006303 snapshot 1.1.2 (CC0), columns sex, age and group
+    url: https://github.com/OpenNeuroDatasets/ds006303/blob/1.1.2/participants.tsv
+    kind: computed
+  ds006303-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds006303 snapshot 1.1.2 (CC0), raw NIfTI files counted per subject and
+      session folder, sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds006303/tree/1.1.2
+    kind: computed
+related: []
+keywords: [pediatric anxiety, anxiety disorders, youth, resting-state fMRI, dot-probe, threat bias, neural efficiency]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
