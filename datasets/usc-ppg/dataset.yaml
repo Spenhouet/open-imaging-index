@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: usc-ppg
+name: PPG (USC P01 neurovascular cohort)
+full_name: Vascular Contributions to Dementia and Genetic Risk Factors for Alzheimer's Disease (PPG, NIH P01 AG052350)
+summary: >-
+  Brain MRI with dynamic contrast-enhanced imaging of blood-brain barrier leakage in older adults who are cognitively
+  unimpaired or mildly impaired, collected to test whether vascular dysfunction drives early cognitive decline in APOE4
+  carriers. Held on LONI IDA without a public application.
+homepage: https://ida.loni.usc.edu/login.jsp?project=PPG
+# Start of the P01 program (NIH RePORTER project start 30 September 2016). No date of release outside the program is
+# published.
+year: 2016
+status: active
+creators:
+  - name: P01 program on Vascular Contributions to Dementia and Genetic Risk Factors for Alzheimer's Disease, University of
+      Southern California (PI Berislav Zlokovic), with Washington University Knight ADRC and Banner Alzheimer's Institute
+      and Mayo Clinic Arizona
+    url: https://adrc.usc.edu/ppg/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (Core C, data archive)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+# DCE-MRI from the PPG project on IDA (Saca 2025); T1w MPRAGE and resting-state fMRI from a P01 paper that states its
+# imaging data are in IDA (Contreras 2024). Other sequences named in the grant are left to the README.
+contrasts: [T1w, bold, dce]
+anatomy: [brain]
+conditions: [healthy, mci]
+tasks: [regression, classification, longitudinal]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://ida.loni.usc.edu/login.jsp?project=PPG
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      PPG is a private project on the LONI Image and Data Archive. It is not in the public list of studies one can
+      apply to, and its application page requires a login. Program papers state that data are available from the
+      corresponding author on reasonable request.
+citation:
+  text: >-
+    Montagne A, Nation DA, Sagare AP, et al. APOE4 leads to blood-brain barrier dysfunction predicting cognitive
+    decline. Nature 581(7806):71-76 (2020). doi:10.1038/s41586-020-2247-3
+sources:
+  reporter-p01-2022:
+    title: NIH RePORTER, 2P01AG052350-06, Vascular Contributions to Dementia and Genetic Risk Factors for Alzheimer's
+      Disease (overall and Core C abstracts)
+    url: https://reporter.nih.gov/project-details/10331680
+    kind: website
+  montagne2020:
+    title: Montagne A et al. 2020, APOE4 leads to blood-brain barrier dysfunction predicting cognitive decline, Nature
+      (author manuscript PMC7250000)
+    url: https://doi.org/10.1038/s41586-020-2247-3
+    kind: paper
+  saca2025:
+    title: Saca L, Gaggar R et al. 2025, Automatic detection of arterial input function for brain DCE-MRI in multi-site
+      cohorts, Magnetic Resonance in Medicine
+    url: https://doi.org/10.1002/mrm.70020
+    kind: paper
+  contreras2024:
+    title: Contreras JA et al. 2024, Decreased functional connectivity is associated with increased levels of CSF
+      soluble-PDGFRβ in older adults, Brain Imaging and Behavior
+    url: https://doi.org/10.1007/s11682-024-00912-8
+    kind: paper
+  usc-adrc-ppg:
+    title: USC ADRC, Vascular and Genetic Risk Factors for Alzheimer's Disease II (PPG II) study page
+    url: https://adrc.usc.edu/ppg/
+    kind: website
+  loni-ppg:
+    title: LONI Image and Data Archive, PPG project login page
+    url: https://ida.loni.usc.edu/login.jsp?project=PPG
+    kind: website
+related: []
+keywords:
+  [blood-brain barrier, DCE-MRI, APOE4, neurovascular, vascular cognitive impairment, Alzheimer's disease, brain MRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

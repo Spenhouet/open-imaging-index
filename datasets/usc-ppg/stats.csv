@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,510,reporter-p01-2022,Overall project summary,"participants enrolled during the initial P01 period (2016-2021), as stated in the 2022 renewal abstract; how many of them are on IDA is not published"
+subjects,contrast=dce,245,montagne2020,"Methods, Study Participants","participants with DCE-MRI among 435 enrolled at USC, WashU and Banner/Mayo Arizona at the time of that analysis; Extended Data Table 1"
+subjects,contrast=bold,89,contreras2024,"Methods, Participants; Table 1","USC ADRC participants with T1-weighted MPRAGE, resting-state fMRI, CDR and CSF sPDGFRβ; an analysis subset, not the full cohort"
