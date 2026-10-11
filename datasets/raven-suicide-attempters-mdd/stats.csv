@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,60,fattahi2025,Participants,"62 recruited (20 SA + MDD, 21 MDD, 21 HC); 2 excluded to equalize groups at 20 each"
+subjects,modality=MR,60,fattahi2025,Neuroimaging,
+subjects,contrast=T1w,60,fattahi2025,Neuroimaging,MPRAGE
+subjects,contrast=bold,60,fattahi2025,Neuroimaging,"EPI, 220 time points, TR 3000 ms, during the Raven task"
+subjects,condition=suicidal_behavior,20,fattahi2025,Table 1,suicide attempt 1 to 4 weeks before the study (SA + MDD group)
+subjects,condition=depression,40,fattahi2025,Table 1,sum of 20 SA + MDD and 20 MDD without suicide attempt
+subjects,condition=healthy,20,fattahi2025,Table 1,
+subjects,sex=female,50,fattahi2025,Table 1,"sum of 17 SA + MDD, 17 MDD and 16 HC"
+subjects,sex=male,10,fattahi2025,Table 1,"sum of 3 SA + MDD, 3 MDD and 4 HC"
+subjects,condition=suicidal_behavior;sex=female,17,fattahi2025,Table 1,
+subjects,condition=suicidal_behavior;sex=male,3,fattahi2025,Table 1,
+subjects,condition=depression;sex=female,34,fattahi2025,Table 1,sum of SA + MDD and MDD groups
+subjects,condition=depression;sex=male,6,fattahi2025,Table 1,sum of SA + MDD and MDD groups
+subjects,condition=healthy;sex=female,16,fattahi2025,Table 1,
+subjects,condition=healthy;sex=male,4,fattahi2025,Table 1,
+age_mean,condition=suicidal_behavior,34.10,fattahi2025,Table 1,
+age_sd,condition=suicidal_behavior,10.53,fattahi2025,Table 1,
+age_mean,condition=healthy,34.40,fattahi2025,Table 1,
+age_sd,condition=healthy,9.35,fattahi2025,Table 1,
+subjects,field_strength=3,60,fattahi2025,Neuroimaging,
+subjects,vendor=siemens,60,fattahi2025,Neuroimaging,64-channel head coil at the Iranian National Brain Mapping Lab
+subjects,country=IR,60,fattahi2025,Method,

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: raven-suicide-attempters-mdd
+name: Tehran Raven Task fMRI in Recent Suicide Attempters
+full_name: 'Replication Data for: Neuroimaging Insights into Recent Suicide Attempters Utilizing the Raven Task'
+summary: >-
+  Task fMRI during a Raven matrices reasoning task in adults with major depressive disorder who recently attempted
+  suicide, depressed patients without an attempt and healthy controls. Scans are not public; group-wise ALFF maps and
+  clinical scores are open under CC0.
+homepage: https://doi.org/10.7910/DVN/LPWPRC
+doi: 10.7910/DVN/LPWPRC
+year: 2024
+creators:
+  - name: Iran University of Medical Sciences, Tehran (Seyed Kazem Malakouti)
+  - name: Control and Intelligent Processing Center of Excellence, University of Tehran (Milad Esmaeil-Zadeh)
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [suicidal_behavior, depression, healthy]
+countries: [IR]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.05
+access:
+  type: not_shared
+  url: https://doi.org/10.1371/journal.pone.0327562
+  note: >-
+    The Harvard Dataverse deposit (CC0 1.0, open download without an account) holds only a clinical table and a
+    47 MB archive with one ALFF_FunImgARCW archive per group (HC, MDD, SI). Neither the paper nor the deposit offers
+    the raw or preprocessed T1-weighted or functional MRI, or the simultaneously recorded EEG.
+licenses:
+  - license: CC0-1.0
+    applies_to: Clinical table and ALFF maps on Harvard Dataverse
+    url: https://doi.org/10.7910/DVN/LPWPRC
+  - license: LicenseRef-No-Published-Terms
+    applies_to: T1-weighted and functional MRI, which are not shared
+    note: No release or terms are stated for the MRI scans themselves.
+citation:
+  text: >-
+    Fattahi M, Esmaeil-Zadeh M, Soltanian-Zadeh H, Rasouli N, Fallahinia N, Jafari Mehdi Abad A, Khosrowabadi R,
+    Malakouti SK. Neuroimaging insights into recent suicide attempters utilizing the raven task. PLOS One 20(8):e0327562
+    (2025). doi:10.1371/journal.pone.0327562. Data: Esmaeil-Zadeh M. Harvard Dataverse, V1 (2024).
+    doi:10.7910/DVN/LPWPRC
+sources:
+  fattahi2025:
+    title: Fattahi et al. 2025, Neuroimaging insights into recent suicide attempters utilizing the raven task, PLOS One (PMC12321109)
+    url: https://doi.org/10.1371/journal.pone.0327562
+    kind: paper
+  dataverse-lpwprc:
+    title: 'Replication Data for: Neuroimaging Insights into Recent Suicide Attempters Utilizing the Raven Task, Harvard Dataverse V1'
+    url: https://doi.org/10.7910/DVN/LPWPRC
+    kind: website
+related: []
+keywords: [suicide attempt, major depressive disorder, Raven progressive matrices, task fMRI, ALFF, EEG-fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
