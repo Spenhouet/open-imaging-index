@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,121,vanzutphen2018,Results,"Analysed sample, sum of 55 BPD, 42 nonpatient controls and 24 cluster-C; 141 were scanned (62, 48 and 31)"
+subjects,modality=MR,121,vanzutphen2018,Methods,
+subjects,contrast=bold,121,vanzutphen2018,Methods,"Emotion regulation task, 96 trials in 4 runs"
+subjects,sex=female,121,vanzutphen2018,Methods,Only women were recruited
+subjects,condition=borderline_personality_disorder,55,vanzutphen2018,Table 1,
+subjects,condition=cluster_c_personality_disorder,24,vanzutphen2018,Table 1,17 of them with avoidant personality disorder
+subjects,condition=healthy,42,vanzutphen2018,Table 1,Nonpatient controls without current Axis I or II disorder
+subjects,condition=depression,62,vanzutphen2018,Table 1,Sum of 49 BPD and 13 cluster-C patients with major depressive disorder
+subjects,condition=ptsd,23,vanzutphen2018,Table 1,Sum of 20 BPD and 3 cluster-C patients
+subjects,field_strength=3,121,vanzutphen2018,Methods,
+age_mean,condition=borderline_personality_disorder,30.80,vanzutphen2018,Table 1,
+age_sd,condition=borderline_personality_disorder,8.78,vanzutphen2018,Table 1,
+age_mean,condition=healthy,28.33,vanzutphen2018,Table 1,
+age_sd,condition=healthy,10.50,vanzutphen2018,Table 1,
+age_mean,condition=cluster_c_personality_disorder,30.38,vanzutphen2018,Table 1,
+age_sd,condition=cluster_c_personality_disorder,11.46,vanzutphen2018,Table 1,
