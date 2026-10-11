@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,63,ds000240-participants,participant_id,63 rows and 63 subject folders in snapshot 2.0.0; the snapshot summary also lists 63 subjects
+subjects,condition=healthy,63,openneuro-ds000240-v200,dataset_description.json Name,Dataset named Resting State Perfusion in Healthy Aging
+subjects,sex=female,35,ds000240-participants,Gender,
+subjects,sex=male,28,ds000240-participants,Gender,
+subjects,age=10-19,3,ds000240-participants,Age,
+subjects,age=20-29,24,ds000240-participants,Age,
+subjects,age=30-39,4,ds000240-participants,Age,
+subjects,age=60-69,9,ds000240-participants,Age,
+subjects,age=70-79,20,ds000240-participants,Age,
+subjects,age=80-89,3,ds000240-participants,Age,
+subjects,age=20-29;sex=female,13,ds000240-participants,Age; Gender,Cells below 10 left out
+subjects,age=20-29;sex=male,11,ds000240-participants,Age; Gender,Cells below 10 left out
+subjects,age=70-79;sex=female,12,ds000240-participants,Age; Gender,Cells below 10 left out
+age_min,,19,ds000240-participants,Age,
+age_max,,84,ds000240-participants,Age,
+scans,,126,ds000240-file-tree,*.nii.gz,63 T1w and 63 asl files
+scans,contrast=T1w,63,ds000240-file-tree,anat/*_T1w.nii.gz,One per subject
+scans,contrast=asl,63,ds000240-file-tree,perf/*_asl.nii.gz,One 4D run per subject with 10 M0 and 100 label/control volumes per its aslcontext.tsv
+subjects,contrast=T1w,63,ds000240-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=asl,63,ds000240-file-tree,perf/*_asl.nii.gz,
+subjects,contrast_set=asl+T1w,63,ds000240-file-tree,sub-*/,Every subject has one T1w and one asl file
+subjects,field_strength=3,63,openneuro-ds000240-v200,README,3T whole-body scanner (Trio TIM)
