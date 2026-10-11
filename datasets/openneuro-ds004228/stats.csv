@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,70,park2022,Section 2.1,82 children scanned and 70 included; snapshot 1.0.1 has 70 subject folders and 70 rows in phenotype/questionnaires.tsv
+subjects,sex=female,22,park2022,Table 1,parent-reported gender; questionnaires.tsv column male also gives 22
+subjects,sex=male,48,park2022,Table 1,
+subjects,age=4-5,7,ds004228-questionnaires,age_scan,
+subjects,age=6-7,22,ds004228-questionnaires,age_scan,
+subjects,age=8-9,29,ds004228-questionnaires,age_scan,
+subjects,age=10-11,12,ds004228-questionnaires,age_scan,
+subjects,sex=male;age=6-7,15,ds004228-questionnaires,age_scan and male,
+subjects,sex=male;age=8-9,20,ds004228-questionnaires,age_scan and male,
+subjects,sex=male;age=10-11,10,ds004228-questionnaires,age_scan and male,
+subjects,contrast=T1w,70,openneuro-ds004228-v101,sub-*/ses-01/anat,one T1w per subject
+subjects,contrast=bold,70,openneuro-ds004228-v101,sub-*/ses-01/func,one task-piper run per subject
+subjects,contrast_set=bold+T1w,70,openneuro-ds004228-v101,sub-*/ses-01,
+subjects,vendor=siemens,70,park2022,Section 2.3.1,Siemens MAGNETOM Prisma with 32-channel coil
+subjects,field_strength=3,70,park2022,Section 2.3.1,
+subjects,country=US,70,park2022,Section 2.1,recruited in Philadelphia and surrounding regions
+scans,,140,openneuro-ds004228-v101,sub-*/ses-01,70 T1w and 70 bold NIfTI files
+scans,contrast=T1w,70,openneuro-ds004228-v101,sub-*/ses-01/anat,
+scans,contrast=bold,70,openneuro-ds004228-v101,sub-*/ses-01/func,150 volumes per run (paper Section 2.3.1)
+age_mean,,8.36,park2022,Section 2.1,SD 1.74
+age_min,,4.27,park2022,Section 2.1,
+age_max,,11.85,park2022,Section 2.1,
