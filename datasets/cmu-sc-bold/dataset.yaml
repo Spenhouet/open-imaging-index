@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cmu-sc-bold
+name: CMU SC and BOLD fMRI
+full_name: CMU structural connectivity and resting-state BOLD fMRI (Ashourvan and Verstynen, figshare)
+summary: >-
+  Diffusion spectrum, resting-state fMRI and T1-weighted brain MRI of healthy young adults, used to study hierarchical
+  community structure in structural and functional brain networks. Only streamline count matrices and regional BOLD
+  time series are public; the images are not.
+homepage: https://figshare.com/articles/dataset/CMU_SC_and_BOLD_fMRI/7965065
+doi: 10.6084/m9.figshare.7965065.v1
+# Year of the figshare deposit (8 April 2019); the images have no public release.
+year: 2019
+creators:
+  - name: Arian Ashourvan and Timothy Verstynen
+  - name: Scientific Imaging and Brain Research Center, Carnegie Mellon University
+    url: https://www.cmu.edu/
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [MAT]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://figshare.com/articles/dataset/CMU_SC_and_BOLD_fMRI/7965065
+  note: >-
+    The figshare deposit holds derived data only: per-subject streamline count matrices for all 60 participants
+    (CMU_SC.zip) and AAL600 regional BOLD time series for 53 low-motion participants (CMU_BOLD.mat), openly
+    downloadable under CC BY 4.0. No sharing route or terms are published for the MRI images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: T1-weighted, diffusion spectrum and resting-state fMRI images.
+    note: >-
+      Neither the figshare deposit nor the PLOS ONE data availability statement offers the images or states terms for
+      them.
+  - license: CC-BY-4.0
+    applies_to: Streamline count matrices (CMU_SC.zip) and regional BOLD time series (CMU_BOLD.mat) on figshare.
+citation:
+  text: >-
+    Ashourvan A, Verstynen T. CMU SC and BOLD fMRI. figshare. Dataset (2019). doi:10.6084/m9.figshare.7965065.v1.
+    Ashourvan A, Telesford QK, Verstynen T, Vettel JM, Bassett DS. Multi-scale detection of hierarchical community
+    architecture in structural and functional brain networks. PLOS ONE 14(5):e0215520 (2019).
+    doi:10.1371/journal.pone.0215520
+sources:
+  figshare-cmu-sc-bold:
+    title: figshare deposit 10.6084/m9.figshare.7965065.v1, CMU SC and BOLD fMRI (CC BY 4.0)
+    url: https://figshare.com/articles/dataset/CMU_SC_and_BOLD_fMRI/7965065
+    kind: data
+  ashourvan2019:
+    title: Ashourvan et al. 2019, PLOS ONE
+    url: https://doi.org/10.1371/journal.pone.0215520
+    kind: paper
+related: []
+keywords:
+  [structural connectivity, diffusion spectrum imaging, resting-state fMRI, tractography, brain networks, AAL600]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
