@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004217
+name: Mental states and traits fMRI (ds004217)
+full_name: Interacting representations of mental states and traits (OpenNeuro ds004217)
+summary: >-
+  Task fMRI and T1-weighted brain MRI of young adults during trials cued by mental state words such as affection,
+  embarrassment and self-pity, collected to study how the brain represents others' mental states and traits together.
+  67 participants from Princeton, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004217
+doi: 10.18112/openneuro.ds004217.v1.0.0
+# CHANGES file: snapshot 1.0.0 dated 2022-07-20, all data added.
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: Tamir Lab, Princeton University (Thornton MA, Barrick E, Liang N, Tamir DI)
+    url: https://openneuro.org/datasets/ds004217
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+# T1w sidecar InstitutionName: Princeton University Neuroscience Institute, Princeton NJ.
+countries: [US]
+# task-mentalstates_bold.json and T1w sidecars: Siemens Skyra, 3 T.
+vendors: [siemens]
+field_strengths: [3]
+# OpenNeuro snapshot 1.0.0 size: 71,387,213,854 bytes.
+size_gb: 71.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004217
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Thornton MA, Barrick E, Liang N, Tamir DI. Interacting representations of mental states and traits. OpenNeuro
+    [Dataset] (2022). doi:10.18112/openneuro.ds004217.v1.0.0
+sources:
+  openneuro-ds004217-v1-0-0:
+    title: >-
+      OpenNeuro ds004217 snapshot 1.0.0 (dataset_description.json, CHANGES, task-mentalstates_bold.json, snapshot
+      summary and size)
+    url: https://openneuro.org/datasets/ds004217/versions/1.0.0
+    kind: website
+  ds004217-participants:
+    title: participants.tsv of ds004217 snapshot 1.0.0 (CC0), counted per row (columns sex and age)
+    url: https://github.com/OpenNeuroDatasets/ds004217/blob/1.0.0/participants.tsv
+    kind: computed
+  ds004217-file-tree:
+    title: BIDS file tree of ds004217 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004217/tree/1.0.0
+    kind: computed
+keywords: [social cognition, mental state representation, person perception, theory of mind, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
