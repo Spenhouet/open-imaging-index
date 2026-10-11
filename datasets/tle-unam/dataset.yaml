@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tle-unam
+name: Temporal Lobe Epilepsy - UNAM (ds004469)
+full_name: Temporal Lobe Epilepsy - UNAM
+summary: >-
+  Resting-state and working-memory task fMRI with T1-weighted brain MRI of adults with temporal lobe epilepsy and
+  healthy controls in Mexico, collected to relate brain function to cognitive performance, with intelligence and
+  memory scale scores.
+homepage: https://openneuro.org/datasets/ds004469
+doi: 10.18112/openneuro.ds004469.v1.2.0
+year: 2023
+updated: 2026
+version: 1.2.0
+status: active
+creators:
+  - name: >-
+      Instituto de Neurobiología, Universidad Nacional Autónoma de México (Rodríguez-Cruces R, Camacho-Téllez V,
+      Fajardo A, Concha L)
+    url: http://personal.inb.unam.mx/lconcha/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [temporal_lobe_epilepsy, healthy]
+tasks: [classification, regression]
+formats: [BIDS, NIfTI]
+countries: [MX]
+vendors: [philips]
+field_strengths: [3]
+# Snapshot 1.2.0 size reported by the OpenNeuro API: 7,697,557,389 bytes.
+size_gb: 7.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004469
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.0 states "License" CC0.
+citation:
+  text: >-
+    Fajardo-Valdez A, Camacho-Téllez V, Rodríguez-Cruces R, García-Gomar ML, Pasaye EH, Concha L. Functional
+    correlates of cognitive performance and working memory in temporal lobe epilepsy: Insights from task-based and
+    resting-state fMRI. PLoS ONE 19(3), e0295142 (2024). doi:10.1371/journal.pone.0295142
+sources:
+  fajardovaldez2024:
+    title: >-
+      Fajardo-Valdez et al. 2024, Functional correlates of cognitive performance and working memory in temporal lobe
+      epilepsy, PLoS ONE
+    url: https://doi.org/10.1371/journal.pone.0295142
+    kind: paper
+  openneuro-ds004469-v120:
+    title: OpenNeuro ds004469 snapshot 1.2.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004469/versions/1.2.0
+    kind: website
+  ds004469-file-tree:
+    title: >-
+      File tree, T1w JSON sidecars and participants.tsv of ds004469 (CC0), NIfTI files counted per subject folder and
+      joined with the Group, gender and age columns
+    url: https://github.com/OpenNeuroDatasets/ds004469
+    kind: computed
+related: []
+keywords:
+  [
+    temporal lobe epilepsy,
+    mesial temporal sclerosis,
+    working memory,
+    Sternberg task,
+    resting-state fMRI,
+    task fMRI,
+    WAIS-IV,
+    WMS-IV,
+    hippocampal volume,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

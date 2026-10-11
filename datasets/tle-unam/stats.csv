@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,66,fajardovaldez2024,Participants,31 patients and 35 controls; the 1.2.0 file tree has 66 subject folders
+subjects,condition=temporal_lobe_epilepsy,31,fajardovaldez2024,Participants,19 left and 12 right TLE; 17 with imaging evidence of mesial temporal sclerosis
+subjects,condition=healthy,35,fajardovaldez2024,Participants,
+subjects,sex=female,48,ds004469-file-tree,participants.tsv gender,
+subjects,sex=male,18,ds004469-file-tree,participants.tsv gender,
+subjects,condition=temporal_lobe_epilepsy;sex=female,22,fajardovaldez2024,Participants,participants.tsv gives the same count
+subjects,condition=healthy;sex=female,26,ds004469-file-tree,participants.tsv Group and gender,the paper states 17 women among the controls
+subjects,age=10-19,10,ds004469-file-tree,participants.tsv age,
+subjects,age=20-29,24,ds004469-file-tree,participants.tsv age,
+subjects,age=30-39,9,ds004469-file-tree,participants.tsv age,
+subjects,age=40-49,17,ds004469-file-tree,participants.tsv age,
+subjects,age=50-59,6,ds004469-file-tree,participants.tsv age,
+subjects,contrast=T1w,66,ds004469-file-tree,,one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=bold,66,ds004469-file-tree,,"65 with a resting-state run, 63 with a Sternberg task run"
+subjects,contrast_set=bold+T1w,66,ds004469-file-tree,,
+subjects,condition=temporal_lobe_epilepsy;contrast=bold,31,ds004469-file-tree,participants.tsv Group,
+subjects,condition=healthy;contrast=bold,35,ds004469-file-tree,participants.tsv Group,
+subjects,vendor=philips,66,ds004469-file-tree,sub-*_T1w.json Manufacturer,all T1w sidecars state Philips Achieva
+subjects,field_strength=3,66,ds004469-file-tree,sub-*_T1w.json MagneticFieldStrength,
+subjects,country=MX,66,fajardovaldez2024,Magnetic resonance imaging,all scanned at the National Laboratory for MRI in Querétaro
+scans,,194,ds004469-file-tree,,"66 T1w, 65 resting-state BOLD and 63 Sternberg task BOLD NIfTI files"
+scans,contrast=T1w,66,ds004469-file-tree,,
+scans,contrast=bold,128,ds004469-file-tree,,
+age_mean,,31.83,ds004469-file-tree,participants.tsv age,
+age_median,,27.5,ds004469-file-tree,participants.tsv age,
+age_sd,,11.84,ds004469-file-tree,participants.tsv age,sample standard deviation
+age_min,,17,ds004469-file-tree,participants.tsv age,
+age_max,,57,ds004469-file-tree,participants.tsv age,
+age_mean,condition=healthy,33,fajardovaldez2024,Participants,± 12 years
