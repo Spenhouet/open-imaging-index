@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,395,botviniknezer2024,"Methods, Participants",final dataset; 395 subject folders in snapshot 1.0.1
+subjects,sex=female,232,botviniknezer2024,"Methods, Participants",
+subjects,sex=male,163,botviniknezer2024,"Methods, Participants",
+subjects,country=US,395,botviniknezer2024,"Methods, Participants",recruited from the Colorado Community Twin Sample and scanned at the University of Colorado Boulder
+subjects,field_strength=3,395,botviniknezer2024,"Methods, Imaging data acquisition",3 T Siemens Prisma
+subjects,vendor=siemens,395,botviniknezer2024,"Methods, Imaging data acquisition",3 T Siemens Prisma
+age_min,,30,botviniknezer2024,"Methods, Participants",
+age_max,,43,botviniknezer2024,"Methods, Participants",
+age_mean,,35.43,botviniknezer2024,"Methods, Participants",
+age_sd,,2.60,botviniknezer2024,"Methods, Participants",
+scans,,1972,ds004746-file-tree,sub-*/*.nii.gz,"398 T1w and 1574 bold files; field maps and single-band references not counted"
+subjects,contrast=T1w,395,ds004746-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,395,ds004746-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,395,ds004746-file-tree,sub-*/,every subject has at least one T1w and one task bold run
+scans,contrast=T1w,398,ds004746-file-tree,anat/*_T1w.nii.gz,one per subject; three subjects have two
+scans,contrast=bold,1574,ds004746-file-tree,func/*_task-paingen_*_bold.nii.gz,placebo pain task runs; 392 subjects have all four runs

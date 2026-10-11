@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: paingen-placebo
+name: Paingen placebo fMRI (ds004746)
+full_name: Paingen_placebo
+summary: >-
+  Brain MRI and task fMRI of adult twins receiving thermal and mechanical pain under a placebo cream or a control
+  cream, collected to test whether placebo analgesia changes brain pain markers. 395 participants with four task runs
+  each, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004746
+doi: 10.18112/openneuro.ds004746.v1.0.1
+year: 2023
+version: 1.0.1
+status: active
+creators:
+  - name: Wager lab (Botvinik-Nezer R, Petre B, Ceko M, Friedman NP, Wager TD)
+    url: https://openneuro.org/datasets/ds004746
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 448.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004746
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Botvinik-Nezer R, Petre B, Ceko M, Lindquist MA, Friedman NP, Wager TD. Placebo treatment affects brain systems
+    related to affective and cognitive processes, but not nociceptive pain. Nature Communications 15, 6017 (2024).
+    doi:10.1038/s41467-024-50103-8
+sources:
+  botviniknezer2024:
+    title: Botvinik-Nezer et al. 2024, Placebo treatment affects brain systems related to affective and cognitive processes, but not nociceptive pain, Nature Communications
+    url: https://doi.org/10.1038/s41467-024-50103-8
+    kind: paper
+  openneuro-ds004746-v101:
+    title: OpenNeuro ds004746 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004746/versions/1.0.1
+    kind: website
+  ds004746-file-tree:
+    title: File tree of ds004746 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds004746/tree/1.0.1
+    kind: computed
+related: []
+keywords: [placebo analgesia, experimental pain, thermal pain, mechanical pain, twins, Colorado Twin Registry, task fMRI, multiband EPI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
