@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: isyb
+name: ISYB (I See Your Brains)
+full_name: Imaging Chinese Young Brains (I See Your Brain)
+summary: >-
+  Structural, resting-state functional, diffusion and arterial spin labeling brain MRI of healthy young Chinese Han
+  adults, released with face masking and quality-control reports to add a non-Western sample to open brain mapping
+  resources.
+homepage: https://www.scidb.cn/en/detail?dataSetId=826407529641672704
+doi: 10.11922/sciencedb.00740
+year: 2021
+updated: 2025
+version: V3
+status: active
+creators:
+  - name: Institute of Psychology, Chinese Academy of Sciences (a contributing site of the CHIMGEN cohort)
+  - name: Peng Gao, Hao-Ming Dong, Yin-Shan Wang, Chun-Shui Yu, Xi-Nian Zuo
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS]
+countries: [CN]
+vendors: [ge]
+field_strengths: [3]
+# Croissant metadata on the Science Data Bank page (V3): 66576568337 bytes.
+size_gb: 66.6
+access:
+  type: open
+  url: https://www.scidb.cn/en/detail?dataSetId=826407529641672704
+  note: >-
+    The Science Data Bank record is public (conditionsOfAccess PUBLIC in its metadata) and single files download
+    without an account.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: The Science Data Bank record (license stated in its DataCite metadata)
+citation:
+  text: >-
+    Gao P, Dong HM, Liu SM, Fan XR, Jiang C, Wang YS, Margulies D, Li HF, Zuo XN. A Chinese multi-modal neuroimaging
+    data release for increasing diversity of human brain mapping. Scientific Data 9:286 (2022).
+    doi:10.1038/s41597-022-01413-3. Data: Science Data Bank, doi:10.11922/sciencedb.00740
+sources:
+  gao2022:
+    title: Gao et al. 2022, A Chinese multi-modal neuroimaging data release for increasing diversity of human brain mapping, Scientific Data (PMC9184635)
+    url: https://doi.org/10.1038/s41597-022-01413-3
+    kind: paper
+  scidb-isyb-datacite:
+    title: DataCite metadata of the Science Data Bank record 10.57760/sciencedb.00740
+    url: https://api.datacite.org/dois/10.57760/sciencedb.00740
+    kind: website
+  scidb-isyb-files:
+    title: File list in the Croissant metadata of the Science Data Bank page (V3), counted per subject from NIfTI file names
+    url: https://www.scidb.cn/en/detail?dataSetId=826407529641672704
+    kind: computed
+  isyb-subinfo:
+    title: ISYB_subinfo.xlsx (CC BY 4.0), sex and age per participant, counted per unique subject
+    url: https://china.scidb.cn/download?fileId=6389662d83170e5bba0ea498
+    kind: computed
+related: []
+keywords: [healthy young adults, Chinese population, resting-state fMRI, diffusion MRI, arterial spin labeling, cerebral blood flow, defacing, CHIMGEN]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
