@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fribbles-fmri
+name: Fribbles fMRI object value construction
+full_name: fribblesFMRI_object-value-construction
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults who bid money for novel multi-part objects, collected to
+  test how the brain values whole objects versus the sum of their parts, with a visual category localizer task.
+homepage: https://openneuro.org/datasets/ds002994
+doi: 10.18112/openneuro.ds002994.v1.0.3
+# First OpenNeuro snapshot 1.0.0 dated 2020-07-03 in the CHANGES file; latest snapshot 1.0.3 dated 2022-07-07.
+year: 2020
+updated: 2022
+version: 1.0.3
+status: active
+creators:
+  - name: Pelletier G, Aridan N, Fellows LK, Schonberg T (Tel Aviv University and McGill University)
+    url: https://github.com/GabrielPelletier/fribblesFMRI_object-value-construction
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [IL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 177
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002994
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Pelletier G, Aridan N, Fellows LK, Schonberg T. A Preferential Role for Ventromedial Prefrontal Cortex in Assessing
+    "the Value of the Whole" in Multiattribute Object Evaluation. Journal of Neuroscience 41(23), 5056-5068 (2021).
+    doi:10.1523/JNEUROSCI.0241-21.2021
+sources:
+  pelletier2021:
+    title: >-
+      Pelletier et al. 2021, A Preferential Role for Ventromedial Prefrontal Cortex in Assessing "the Value of the
+      Whole" in Multiattribute Object Evaluation, Journal of Neuroscience
+    url: https://doi.org/10.1523/JNEUROSCI.0241-21.2021
+    kind: paper
+  openneuro-ds002994-v1-0-3:
+    title: OpenNeuro ds002994 snapshot 1.0.3 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds002994/versions/1.0.3
+    kind: website
+  ds002994-file-tree:
+    title: BIDS file tree of ds002994 snapshot 1.0.3 (CC0), NIfTI files under sub-*/ counted per suffix and task
+    url: https://github.com/OpenNeuroDatasets/ds002994/tree/1.0.3
+    kind: computed
+related: []
+keywords: [value-based decision-making, multiattribute objects, ventromedial prefrontal cortex, task fMRI, functional localizer, eye tracking]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
