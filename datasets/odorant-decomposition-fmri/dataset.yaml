@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: odorant-decomposition-fmri
+name: Odorant Decomposition fMRI
+full_name: Decomposition of an odorant in olfactory perception and neural representation
+summary: >-
+  Preprocessed task fMRI of healthy young adults smelling odorants before and after adaptation to a related odorant,
+  collected to test whether the brain represents odour quality from parts of a molecule's structure. Shared with
+  region-of-interest masks, task scripts and analysis results.
+homepage: https://www.scidb.cn/detail?dataSetId=1a8a3a0503c245578ef118e7e4ce45c7
+doi: 10.57760/sciencedb.13818
+year: 2024
+version: V2
+status: active
+creators:
+  - name: Wen Zhou lab, State Key Laboratory of Brain and Cognitive Science, Institute of Psychology, Chinese Academy of Sciences
+  - name: Yuting Ye, Yanqing Wang, Yuan Zhuang, Huibang Tan, Zhentao Zuo, Hanqi Yun, Kaiqi Yuan, Wen Zhou
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+# DataCite metadata of the ScienceDB record: 63236819992 bytes in 8 files.
+size_gb: 63.2
+access:
+  type: open
+  url: https://www.scidb.cn/detail?dataSetId=1a8a3a0503c245578ef118e7e4ce45c7
+  note: >-
+    The Science Data Bank record is public with no embargo (share status PUBLIC, protection period 0 months in its
+    version metadata).
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Ye Y, Wang Y, Zhuang Y, Tan H, Zuo Z, Yun H, Yuan K, Zhou W. Decomposition of an odorant in olfactory perception
+    and neural representation. Nature Human Behaviour 8(6):1150-1162 (2024). doi:10.1038/s41562-024-01849-0. Data:
+    Science Data Bank, doi:10.57760/sciencedb.13818
+sources:
+  ye2024:
+    title: Ye et al. 2024, Decomposition of an odorant in olfactory perception and neural representation, Nature Human Behaviour
+    url: https://doi.org/10.1038/s41562-024-01849-0
+    kind: paper
+  ye2024-reporting-summary:
+    title: Ye et al. 2024, Nature Portfolio reporting summary (Supplementary Information 2)
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41562-024-01849-0/MediaObjects/41562_2024_1849_MOESM2_ESM.pdf
+    kind: paper
+  scidb-odorant-decomposition:
+    title: Science Data Bank record 10.57760/sciencedb.13818 and its DataCite metadata (V2)
+    url: https://doi.org/10.57760/sciencedb.13818
+    kind: website
+related: []
+keywords: [olfaction, odour perception, adaptation, piriform cortex, amygdala, task fMRI, representational similarity analysis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
