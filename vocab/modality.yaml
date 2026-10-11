@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=../schema/vocab.schema.json
-# DICOM Modality (0008,0060) codes.
+# Imaging modalities. Ids are DICOM Modality (0008,0060) codes where DICOM defines one;
+# terms without a DICOM code (e.g. DOT) use a local id and have no dicom mapping.
 terms:
   - { id: MR, label: MRI, description: Magnetic resonance imaging, mappings: { dicom: MR } }
   - { id: CT, label: CT, description: Computed tomography, mappings: { dicom: CT } }
@@ -40,3 +41,9 @@ terms:
       mappings: { dicom: XC }
     }
   - { id: ES, label: Endoscopy, mappings: { dicom: ES } }
+  - {
+      id: DOT,
+      label: Diffuse optical tomography,
+      description: 'Near-infrared light imaging of tissue absorption, e.g. brain hemodynamics. DICOM has no Modality code for it.',
+      synonyms: [HD-DOT, optical tomography]
+    }

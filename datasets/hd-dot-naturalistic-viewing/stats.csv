@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,58,sherafati2025,Abstract,58 rows in participants.tsv and 58 subject folders
+studies,,106,sherafati2025,Abstract,36 participants viewed the clip more than once
+scans,,106,ds004569-file-tree,func/*_bold.nii.gz,one reconstructed NIfTI per session; each session also has one SNIRF and one NeuroDOT .mat file
+subjects,modality=DOT,58,sherafati2025,Abstract,
+subjects,sex=female,35,sherafati2025,Method: Participants,
+subjects,sex=male,23,sherafati2025,Method: Participants,
+subjects,age=10-19,1,ds004569-participants,age,
+subjects,age=20-29,39,ds004569-participants,age,
+subjects,age=30-39,10,ds004569-participants,age,
+subjects,age=40-49,2,ds004569-participants,age,
+subjects,age=60-69,3,ds004569-participants,age,
+subjects,age=70-79,3,ds004569-participants,age,
+subjects,sex=female;age=20-29,22,ds004569-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=20-29,17,ds004569-participants,sex and age,cells below 10 left out
+age_min,,18,sherafati2025,Abstract,
+age_max,,76,sherafati2025,Abstract,
+age_mean,,31.3,ds004569-participants,age,the paper reports a mean of 31 years
+age_sd,,14.2,ds004569-participants,age,
+age_median,,26.5,ds004569-participants,age,
+subjects,condition=healthy,58,sherafati2025,Method: Participants,normal vision and hearing and no known neurological disorders
+subjects,country=US,58,sherafati2025,Method: Participants,recruited from the Washington University in Saint Louis community

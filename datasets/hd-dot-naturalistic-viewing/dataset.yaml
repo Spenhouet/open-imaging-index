@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hd-dot-naturalistic-viewing
+name: HD-DOT naturalistic viewing (ds004569)
+full_name: A high-density diffuse optical tomography dataset of naturalistic viewing
+summary: >-
+  High-density diffuse optical tomography of the cortex in healthy adults watching a ten-minute movie clip, shared to
+  study brain responses to naturalistic stimuli and optical imaging methods. Many participants returned for repeat
+  sessions with the same clip.
+homepage: https://openneuro.org/datasets/ds004569
+doi: 10.18112/openneuro.ds004569.v1.1.0
+year: 2023
+updated: 2025
+version: 1.1.0
+status: active
+creators:
+  - name: Washington University in St. Louis (Sherafati A, Culver JP, Peelle JE and colleagues)
+    url: https://openneuro.org/datasets/ds004569
+species: human
+modalities: [DOT]
+anatomy: [brain]
+conditions: [healthy]
+tasks: []
+formats: [BIDS, NIfTI, MAT, HDF5]
+countries: [US]
+size_gb: 11.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004569
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Sherafati A, Bajracharya A, Jones MS, Speh E, Munsi M, Lin CP, Fishell AK, Hershey T, Eggebrecht AT, Culver JP,
+    Peelle JE. A high-density diffuse optical tomography dataset of naturalistic viewing. Scientific Data 12, 1762
+    (2025). doi:10.1038/s41597-025-06041-1
+sources:
+  sherafati2025:
+    title: Sherafati et al. 2025, A high-density diffuse optical tomography dataset of naturalistic viewing, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-06041-1
+    kind: paper
+  openneuro-ds004569-v1-1-0:
+    title: OpenNeuro ds004569 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot metadata)
+    url: https://openneuro.org/datasets/ds004569/versions/1.1.0
+    kind: website
+  ds004569-participants:
+    title: participants.tsv of ds004569 snapshot 1.1.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004569/blob/1.1.0/participants.tsv
+    kind: computed
+  ds004569-file-tree:
+    title: File tree of ds004569 snapshot 1.1.0 (CC0), session folders and files counted per subject
+    url: https://github.com/OpenNeuroDatasets/ds004569/tree/1.1.0
+    kind: computed
+related: []
+keywords: [diffuse optical tomography, HD-DOT, naturalistic viewing, movie watching, intersubject correlation, test-retest, SNIRF]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

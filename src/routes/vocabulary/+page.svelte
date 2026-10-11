@@ -6,7 +6,7 @@
   let { data } = $props();
 
   const sources: Record<string, string> = {
-    modality: 'DICOM Modality (0008,0060)',
+    modality: 'DICOM Modality (0008,0060), local ids where DICOM has none',
     contrast: 'BIDS suffixes plus local terms',
     anatomy: 'UBERON',
     condition: 'MONDO, HPO for findings',
