@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dp-pcasl-lifespan
+name: DP-pCASL lifespan perfusion and BBB (ds005529)
+full_name: DP-pCASL data (CBF, ATT, BBB kw) from 186 cognitively normal participants (8-92 years)
+summary: >-
+  Brain perfusion and blood-brain barrier water exchange maps from cognitively normal people aged 8 to 92, collected
+  to chart how cerebral blood flow and barrier function change with age and differ between sexes. Each participant has
+  a T1-weighted scan and arterial spin labeling maps.
+homepage: https://openneuro.org/datasets/ds005529
+doi: 10.18112/openneuro.ds005529.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Laboratory of FMRI Technology (LOFT), University of Southern California (Shao X, Wang DJJ, et al.), with University of Maryland and University of Kentucky
+    url: https://loft-lab.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression, normative]
+formats: [NIfTI, MAT]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.87
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005529
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Shao X, Shou Q, Felix K, Ojogho B, Jiang X, Gold BT, Herting MM, Goldwaser EL, Kochunov P, Hong LE, Pappas I,
+    Braskie M, Kim H, Cen S, Jann K, Wang DJJ. Age-related decline in blood-brain barrier function is more pronounced
+    in males than females in parietal and temporal regions. eLife 13:RP96155 (2024). doi:10.7554/eLife.96155
+sources:
+  shao2024:
+    title: Shao et al. 2024, Age-related decline in blood-brain barrier function is more pronounced in males than females in parietal and temporal regions, eLife
+    url: https://doi.org/10.7554/eLife.96155
+    kind: paper
+  openneuro-ds005529-v101:
+    title: OpenNeuro ds005529 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005529/versions/1.0.1
+    kind: website
+  ds005529-file-tree:
+    title: File tree of ds005529 snapshot 1.0.1 (CC0), files counted per subject and suffix
+    url: https://github.com/OpenNeuroDatasets/ds005529/tree/1.0.1
+    kind: computed
+  ds005529-age-gender:
+    title: sub-*/BBB_data/sub-*_age_gender.mat of ds005529 snapshot 1.0.1 (CC0), one age and sex value per subject, counted
+    url: https://openneuro.org/datasets/ds005529/versions/1.0.1/file-display/sub-001:BBB_data:sub-001_age_gender.mat
+    kind: computed
+related: []
+keywords: [arterial spin labeling, pseudo-continuous ASL, blood-brain barrier, water exchange rate, cerebral blood flow, arterial transit time, aging, lifespan, sex differences]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
