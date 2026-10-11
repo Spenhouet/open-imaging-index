@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: spinal-cord-fmri-episeg
+name: Spinal Cord fMRI Segmentation Database (ds005143)
+full_name: Spinal Cord fMRI Segmentation Database (Multi-subject)
+summary: >-
+  Mean functional MRI images of the spinal cord from healthy adults and people with cervical myelopathy or
+  fibromyalgia, shared with spinal cord masks to train automatic cord segmentation on fMRI. Multi-site, two vendors,
+  in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds005143
+doi: 10.18112/openneuro.ds005143.v1.3.1
+# First public snapshot (1.0.0) on OpenNeuro, 2024-05-17; latest snapshot 1.3.1, 2025-01-28.
+year: 2024
+updated: 2025
+version: 1.3.1
+status: active
+creators:
+  - name: Banerjee R, Kaptan M, Cohen-Adad J, et al. (NeuroPoly, Polytechnique Montreal, Stanford University and contributing sites)
+    url: https://openneuro.org/datasets/ds005143
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [spinal_cord]
+conditions: [healthy, cervical_myelopathy, fibromyalgia]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [DE, CH, US, CA]
+vendors: [siemens, ge]
+field_strengths: [3]
+size_gb: 0.23
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005143
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.3.1 states "License" CC0.
+citation:
+  text: >-
+    Banerjee R, Kaptan M, Tinnermann A, et al. EPISeg: Automated segmentation of the spinal cord on echo planar images
+    using open-access multi-center data. Imaging Neuroscience 3, IMAG.a.98 (2025). doi:10.1162/IMAG.a.98
+sources:
+  banerjee2025:
+    title: >-
+      Banerjee et al. 2025, EPISeg: Automated segmentation of the spinal cord on echo planar images using open-access
+      multi-center data, Imaging Neuroscience (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12421696/
+    kind: paper
+  openneuro-ds005143-v1-3-1:
+    title: OpenNeuro ds005143 snapshot 1.3.1 (dataset_description.json, README, task-rest_bold.json and snapshot size)
+    url: https://openneuro.org/datasets/ds005143/versions/1.3.1
+    kind: website
+  ds005143-participants:
+    title: >-
+      participants.tsv of ds005143 snapshot 1.3.1 (CC0), counted per non-empty row; the header swaps the sex and age
+      columns, so ages are read from the column headed sex and sex from the column headed age
+    url: https://github.com/OpenNeuroDatasets/ds005143/blob/main/participants.tsv
+    kind: computed
+  ds005143-file-tree:
+    title: File listing of ds005143 snapshot 1.3.1 (CC0), counted per mean EPI image and per spinal cord mask
+    url: https://github.com/OpenNeuroDatasets/ds005143
+    kind: computed
+related: []
+keywords: [spinal cord, spinal cord fMRI, echo planar imaging, spinal cord segmentation, EPISeg, Spinal Cord Toolbox]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
