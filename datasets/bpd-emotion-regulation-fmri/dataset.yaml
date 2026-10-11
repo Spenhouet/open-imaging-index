@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bpd-emotion-regulation-fmri
+name: Emotion Regulation fMRI in Borderline and Cluster-C PD
+full_name: >-
+  Always on guard: emotion regulation in women with borderline personality disorder compared to nonpatient controls
+  and patients with cluster-C personality disorder
+summary: >-
+  Task fMRI of women with borderline personality disorder, women with cluster-C personality disorder and nonpatient
+  controls while they viewed or regulated responses to emotional pictures. Scans are not public; group-level
+  BrainVoyager statistics are open under CC0.
+homepage: https://doi.org/10.34894/SDPIFR
+doi: 10.34894/SDPIFR
+year: 2020
+creators:
+  - name: Faculty of Psychology and Neuroscience, Maastricht University (Linda van Zutphen, Arnoud Arntz)
+  - name: University of Freiburg
+  - name: University of Lübeck
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [borderline_personality_disorder, cluster_c_personality_disorder, healthy]
+countries: [NL, DE]
+field_strengths: [3]
+size_gb: 0.59
+access:
+  type: not_shared
+  url: https://doi.org/10.1503/jpn.170008
+  note: >-
+    The DataverseNL deposit (CC0 1.0) offers one open 591 MB archive of group-level BrainVoyager products: random
+    effects GLMs, contrast maps, an averaged anatomical volume, a brain mask and region-of-interest time courses. A
+    scanning-parameter file and two SPSS syntax files are restricted and can be requested. Neither the paper nor the
+    deposit releases the participants' functional or anatomical MRI.
+licenses:
+  - license: CC0-1.0
+    applies_to: Group-level BrainVoyager products on DataverseNL
+    url: https://doi.org/10.34894/SDPIFR
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Participants' MRI scans, which are not shared
+    note: No release or terms are stated for the scans themselves.
+citation:
+  text: >-
+    van Zutphen L, Siep N, Jacob GA, Domes G, Sprenger A, Willenborg B, Goebel R, Arntz A. Always on guard: emotion
+    regulation in women with borderline personality disorder compared to nonpatient controls and patients with
+    cluster-C personality disorder. J Psychiatry Neurosci 43(1):37-47 (2018). doi:10.1503/jpn.170008. Data:
+    DataverseNL, V1 (2020). doi:10.34894/SDPIFR
+sources:
+  vanzutphen2018:
+    title: van Zutphen et al. 2018, J Psychiatry Neurosci 43(1):37-47 (PMC5747534)
+    url: https://doi.org/10.1503/jpn.170008
+    kind: paper
+  dataversenl-sdpifr:
+    title: DataverseNL dataset doi:10.34894/SDPIFR, version 1 (description, license, file list)
+    url: https://doi.org/10.34894/SDPIFR
+    kind: website
+related: []
+keywords: [borderline personality disorder, cluster-C personality disorder, emotion regulation, task fMRI, BrainVoyager]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

@@ -204,6 +204,14 @@ terms:
       description: 'Exposure to abuse or interpersonal violence in childhood. An exposure, not a diagnosis. No MONDO or HPO term exists.',
     }
   - { id: borderline_personality_disorder, label: Borderline personality disorder, synonyms: [BPD], mappings: { mondo: 'MONDO:0001156' } }
+  - { id: personality_disorder, label: Personality disorder, mappings: { mondo: 'MONDO:0002028' } }
+  - {
+      id: cluster_c_personality_disorder,
+      label: Cluster C personality disorder,
+      parent: personality_disorder,
+      synonyms: [anxious-fearful personality disorder],
+      description: 'Avoidant, dependent or obsessive-compulsive personality disorder (DSM cluster C). No MONDO term exists for the cluster.',
+    }
   - { id: irritability, label: Irritability, mappings: { hp: 'HP:0000737' } }
   - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
   - { id: anorexia_nervosa, label: Anorexia nervosa, parent: eating_disorder, mappings: { mondo: 'MONDO:0005351' } }
