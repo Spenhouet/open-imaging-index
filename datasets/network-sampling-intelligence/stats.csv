@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,60,soreq2021,Methods: Participants,the snapshot also has 60 sub-* folders
+subjects,contrast=T1w,60,ds003148-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast=bold,60,ds003148-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,60,ds003148-file-tree,,
+scans,,780,ds003148-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,60,ds003148-file-tree,,
+scans,contrast=bold,720,ds003148-file-tree,,one run for each of the 12 tasks per subject
+subjects,sex=female,35,soreq2021,Methods: Participants,
+subjects,sex=male,25,soreq2021,Methods: Participants,60 subjects minus 35 females; the paper does not state the male count
+subjects,field_strength=3,60,soreq2021,Methods: MRI acquisition,
+subjects,vendor=siemens,60,soreq2021,Methods: MRI acquisition,3T Siemens TIM Trio
+subjects,country=CA,60,soreq2021,Methods: Participants,recruited from the University of Western Ontario and surrounding area
+subjects,condition=healthy,60,soreq2021,Methods: Participants,adults with normal hearing and corrected to normal vision
+age_mean,,22.95,soreq2021,Methods: Participants,
+age_min,,18,soreq2021,Methods: Participants,
+age_max,,38,soreq2021,Methods: Participants,
