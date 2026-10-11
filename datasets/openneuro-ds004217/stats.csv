@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,67,openneuro-ds004217-v1-0-0,snapshot summary,67 subject folders; participants.tsv also has 67 rows
+studies,,67,ds004217-file-tree,sub-*/sub-*_scans.tsv,one session per participant
+subjects,sex=female,44,ds004217-participants,sex,
+subjects,sex=male,23,ds004217-participants,sex,
+subjects,age=10-19,33,ds004217-participants,age,all aged 18 or 19
+subjects,age=20-29,32,ds004217-participants,age,
+subjects,age=30-39,2,ds004217-participants,age,
+age_mean,,20.4,ds004217-participants,age,
+age_median,,20,ds004217-participants,age,
+age_min,,18,ds004217-participants,age,
+age_max,,35,ds004217-participants,age,
+subjects,contrast=T1w,67,ds004217-file-tree,sub-*/anat,one T1w per subject
+subjects,contrast=bold,67,ds004217-file-tree,sub-*/func,subjects with at least one task-mentalstates run
+subjects,contrast_set=bold+T1w,67,ds004217-file-tree,sub-*,AP/PA spin-echo fieldmaps (67 pairs) are not counted as a contrast
+subjects,vendor=siemens,67,openneuro-ds004217-v1-0-0,task-mentalstates_bold.json,Siemens Skyra
+subjects,field_strength=3,67,openneuro-ds004217-v1-0-0,task-mentalstates_bold.json,
+scans,,593,ds004217-file-tree,sub-*,67 T1w and 526 bold NIfTI files
+scans,contrast=T1w,67,ds004217-file-tree,sub-*/anat,
+scans,contrast=bold,526,ds004217-file-tree,sub-*/func,up to eight runs per subject; 62 subjects have all eight
