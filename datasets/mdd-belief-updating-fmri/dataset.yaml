@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mdd-belief-updating-fmri
+name: MDD Belief-Updating fMRI (Ultimatum Game)
+full_name: Abnormal insular-cingulate hierarchical integration in belief-updating in major depressive disorder
+summary: >-
+  Task fMRI study data from unmedicated adults with major depressive disorder and healthy controls playing an
+  ultimatum game, deposited to study how the insular-cingulate network updates beliefs from prediction errors, with
+  restricted access through Science Data Bank.
+homepage: https://www.scidb.cn/en/detail?dataSetId=802d1fe16e99404fad4de2d292dea3ab
+doi: 10.57760/sciencedb.35202
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Yuening Jin, Institute of Psychology, Chinese Academy of Sciences
+  - name: Yuan Zhou, Institute of Psychology, Chinese Academy of Sciences
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [depression, healthy]
+# DataCite metadata of the ScienceDB record: 1188337193 bytes in 1 file.
+size_gb: 1.19
+access:
+  type: application
+  url: https://www.scidb.cn/en/detail?dataSetId=802d1fe16e99404fad4de2d292dea3ab
+  note: >-
+    Restricted access on Science Data Bank. Requesters give their name, organization or institute and purpose through
+    the record's Request Access form, and the data depositor alone decides whether to grant access.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The record states no license (empty rights in its DataCite metadata and no copyright entry on the record). The
+      only condition shown is that applicants provide their name, organization or institute and purpose; no terms of
+      use are published.
+citation:
+  text: >-
+    Yuening Jin, Yuan Zhou. Abnormal insular-cingulate hierarchical integration in belief-updating in major depressive
+    disorder. V1. Science Data Bank, 2026. doi:10.57760/sciencedb.35202
+sources:
+  scidb-35202:
+    title: Science Data Bank record 10.57760/sciencedb.35202 and its DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.35202
+    kind: website
+related: []
+keywords: [major depressive disorder, belief updating, ultimatum game, dynamic causal modeling, reinforcement learning, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
