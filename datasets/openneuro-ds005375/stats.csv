@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,58,ds005375-file-tree,sub-*/,58 subject folders; the README and the preprint also give 58 participants
+subjects,sex=female,29,marcosvidal2024,Methods: Participants,"""29 of them women""; no participants.tsv is released"
+subjects,country=ES,58,marcosvidal2024,Methods: Participants,adults resident in Spain; scanned at the Fundació Pasqual Maragall in Barcelona
+age_min,,18,marcosvidal2024,Methods: Participants,
+age_max,,55,marcosvidal2024,Methods: Participants,
+age_mean,,32.01,marcosvidal2024,Methods: Participants,
+age_sd,,11.22,marcosvidal2024,Methods: Participants,
+scans,,232,ds005375-file-tree,sub-*/**/*.nii.gz,58 T1w and 174 bold files
+scans,contrast=T1w,58,ds005375-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,174,ds005375-file-tree,func/*_bold.nii.gz,"3 runs per subject: Cyberball, Personal RateME and Group RateME"
+subjects,contrast=T1w,58,ds005375-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,58,ds005375-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,58,ds005375-file-tree,sub-*/,
+subjects,field_strength=3,58,marcosvidal2024,Methods: MRI acquisition,Philips Ingenia 3.0T CX; sidecars give MagneticFieldStrength 3
+subjects,vendor=philips,58,marcosvidal2024,Methods: MRI acquisition,Philips Ingenia 3.0T CX
