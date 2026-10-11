@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,226,ds002790-participants,,226 rows; the paper also gives 226 (Table 1) out of 242 scanned
+subjects,contrast=T1w,226,ds002790-file-tree,,subjects with a *_T1w.nii.gz; the paper also reports 226 (Table 1)
+subjects,contrast=dwi,226,ds002790-file-tree,,subjects with a *_dwi.nii.gz; the paper also reports 226 (Table 1)
+subjects,contrast=bold,226,ds002790-file-tree,,subjects with at least one *_bold.nii.gz across the four fMRI runs
+subjects,contrast_set=bold+dwi+T1w,226,ds002790-file-tree,,phase-difference fieldmaps (226 subjects) are not counted as a contrast
+scans,,1348,ds002790-file-tree,,"sum of the disjoint T1w, dwi and bold NIfTI counts below; fieldmap magnitude and phase-difference images not included"
+scans,contrast=T1w,226,ds002790-file-tree,,
+scans,contrast=dwi,226,ds002790-file-tree,,
+scans,contrast=bold,896,ds002790-file-tree,,"one file per run; resting state, working memory, stop signal and emotion matching"
+subjects,sex=female,129,ds002790-participants,,sex F; the paper gives 57.0% (Table 2)
+subjects,sex=male,96,ds002790-participants,,sex M; the paper gives 42.5% (Table 2)
+subjects,sex=unknown,1,ds002790-participants,,sex n/a
+subjects,age=10-19,29,ds002790-participants,,2 rows have no age
+subjects,age=20-29,195,ds002790-participants,,
+subjects,sex=female;age=10-19,20,ds002790-participants,,
+subjects,sex=female;age=20-29,108,ds002790-participants,,
+subjects,sex=male;age=20-29,87,ds002790-participants,,
+age_mean,,21.96,snoek2021,Table 2,
+age_sd,,1.79,snoek2021,Table 2,
+age_min,,18.25,snoek2021,Table 2,
+age_max,,25.75,snoek2021,Table 2,
+age_median,,22.0,ds002790-participants,,ages are rounded to the nearest quarter year; 224 rows with an age

@@ -55,7 +55,7 @@ sources:
     title: BIDS file tree of ds003097 snapshot 1.2.1 (CC0), raw NIfTI files under sub-*/ counted per suffix
     url: https://github.com/OpenNeuroDatasets/ds003097/tree/1.2.1
     kind: computed
-related: []
+related: [aomic-piop1, aomic-piop2]
 keywords: [individual differences, young adults, movie watching, naturalistic fMRI, diffusion MRI, intelligence, personality]
 verified:
   date: '2026-10-09'
