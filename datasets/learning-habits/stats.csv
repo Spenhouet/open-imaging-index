@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,70,openneuro-ds008039-v1-0-0,README: Dataset structure,participants.tsv of snapshot 1.0.0 also has 70 rows
+studies,,70,openneuro-ds008039-v1-0-0,README: Dataset structure,one session (ses-1) per participant
+subjects,contrast=T1w,70,ds008039-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast=bold,70,ds008039-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,70,ds008039-file-tree,,phase-magnitude fieldmaps (210 sets) are not counted as a contrast
+scans,,285,ds008039-file-tree,,sum of the disjoint T1w and bold NIfTI counts below; fieldmap images not included
+scans,contrast=T1w,75,ds008039-file-tree,,five subjects have a second T1w run
+scans,contrast=bold,210,ds008039-file-tree,,"three runs per subject: two of task-learning, one of task-test"
+subjects,field_strength=3,70,openneuro-ds008039-v1-0-0,README: MRI acquisition,Philips 3T
+subjects,vendor=philips,70,openneuro-ds008039-v1-0-0,README: MRI acquisition,
