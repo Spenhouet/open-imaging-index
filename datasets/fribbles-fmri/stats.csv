@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,56,ds002994-file-tree,,56 sub-* folders and 56 participants.tsv rows; the paper reports 55 people recruited for the fMRI study and 42 in the analysed sample (Methods: Participants)
+subjects,condition=healthy,56,pelletier2021,Methods: Participants,participants were healthy volunteers without psychiatric or neurologic history
+subjects,country=IL,56,pelletier2021,Methods: Participants,recruited from the Tel Aviv University community
+subjects,vendor=siemens,56,pelletier2021,Methods: fMRI data,3T Siemens MAGNETOM Prisma with a 64-channel head coil
+subjects,field_strength=3,56,pelletier2021,Methods: fMRI data,
+subjects,contrast=T1w,56,ds002994-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,56,ds002994-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,56,ds002994-file-tree,,
+scans,,484,ds002994-file-tree,,sum of the disjoint T1w and bold NIfTI counts below; sbref and fieldmap volumes not counted
+scans,contrast=T1w,56,ds002994-file-tree,,
+scans,contrast=bold,428,ds002994-file-tree,,224 bidding-task runs (4 per subject for 56 subjects) and 204 localizer runs (4 per subject for 51 subjects)
