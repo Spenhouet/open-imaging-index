@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: covorts
+name: COVORTS (f)MRI sub-study
+full_name: >-
+  Sniffing out Covid: COVORTS study (COVid cohORT on Smell loss), long COVORTS and Imaging smell loss in Covid-19, an
+  (f)MRI approach
+summary: >-
+  Structural and odour-task functional brain MRI of adults with persistent smell loss or parosmia after COVID-19,
+  collected to study olfactory bulb volume, grey matter and odour-evoked brain activity. Scans are not shared; the
+  data record holds questionnaire and smell-test data.
+homepage: https://doi.org/10.17026/LS/YZHHK7
+doi: 10.17026/LS/YZHHK7
+# The scans have no public release; year the data record became available.
+year: 2026
+creators:
+  - name: Division of Human Nutrition and Health, Wageningen University & Research
+    url: https://www.wur.nl
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [covid19, olfactory_dysfunction, parosmia]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.17026/LS/YZHHK7
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The DANS record states that only derived values (olfactory bulb, intracranial, grey and white matter volumes,
+      demographics and smell-test scores) of the imaging line will be published after project completion; the scans
+      themselves are not listed for release. The record's DANS Licence and data transfer agreement cover the
+      questionnaire and smell-test files of the longitudinal cohort, which are available on request for research on
+      chemosensory dysfunction only.
+citation:
+  text: >-
+    Boesveldt S, van Dijk B. Sniffing out Covid - 'COVORTS study: the COVid cohORT on Smell loss', 'long COVORTS: the
+    COVid cohORT on long-term Smell Loss' and 'Imaging smell loss in Covid-19: an (f)MRI approach'. DANS Data Station
+    Life Sciences, version 1.1 (2026). doi:10.17026/LS/YZHHK7
+sources:
+  vandijk2026:
+    title: van Dijk et al. 2026, medRxiv preprint (COVORTS (f)MRI study)
+    url: https://doi.org/10.64898/2026.09.07.26362431
+    kind: paper
+  dans-yzhhk7:
+    title: DANS Data Station Life Sciences record doi:10.17026/LS/YZHHK7
+    url: https://doi.org/10.17026/LS/YZHHK7
+    kind: website
+related: []
+keywords: [COVID-19, smell loss, anosmia, parosmia, olfactory bulb, olfactory fMRI, post-COVID]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
