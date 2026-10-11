@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CRCMH-TRS-Access-Agreement
+name: CRC for Mental Health Biobank, CRC Psychosis Study (Treatment Resistant Schizophrenia cohort) Application and Access Agreement
+short_name: CRCMH TRS Agreement
+url: https://ndownloader.figshare.com/files/10389540
+version: CRC_Psychosis_Data Access Application, Version 1.0, October 2016 (attached to the figshare record doi:10.4225/49/5a7936cc46b12)
+summary: >-
+  Samples and data go to research projects approved by the biobank's scientific advisory committee, after ethics
+  approval and an access agreement signed by the chief investigator and the institutional head. Access carries a cost
+  recovery fee, data generated must be returned to the biobank, onward sharing needs permission, and publications
+  acknowledge the CRC and are sent back as PDF.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: The agreement does not mention commercial use. Use is limited to the approved research project.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: conditional
+    quote: all accessing researchers will be required to contribute back to the biobank the data they generated from the
+      accessed material within a defined period.
+    note: Generating new data from the material is expected, but must be returned to the biobank.
+  publication:
+    value: conditional
+    quote: Publication or documents arising from studies using the materials from the CRC Psychosis Study biobank should
+      acknowledge the CRC for Mental Health and the CRCMH Biobank.
+    note: Allowed with the acknowledgement; the committee chair may advise that specific scientific members be authors.
+  redistribute_original:
+    value: conditional
+    quote: Recipients of samples and / or data from the CRC Psychosis Study biobank will not be permitted to forward these
+      on to other individuals or organisations without the express permission of the CRCMH.
+    note: Only with express permission.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement only covers forwarding the samples and data received, and returning generated data to the biobank.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Publication or documents arising from studies using the materials from the CRC Psychosis Study biobank should
+      acknowledge the CRC for Mental Health and the CRCMH Biobank.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: have read, understood, and agree with the above conditions of use associated with the CRC for Mental Health
+      Biobank – CRC Psychosis Study.
+    note: Signed by the chief investigator and the institutional head.
+  ethics_approval:
+    value: 'yes'
+    quote: No material will be released from the CRC Psychosis Study biobank until approval has been granted by a Human
+      Research Ethics Committee from the applicants' institution or an acceptable third party institution.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: all accessing researchers will be required to contribute back to the biobank the data they generated from the
+      accessed material within a defined period.
+    note: Researchers also send regular progress reports and a PDF of every resulting publication.
+  delete_after_use:
+    value: unspecified
+    note: Applicants describe how they will destroy samples at the end of the project; the agreement says nothing about
+      deleting data.
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

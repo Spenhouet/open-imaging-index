@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: trs-biobank
+name: TRS Biobank
+full_name: Treatment-Resistant Schizophrenia Biobank (CRC Psychosis Study)
+summary: >-
+  Cross-sectional biobank on treatment-resistant schizophrenia from Melbourne, built to search for biomarkers, with 3T
+  structural, diffusion and resting-state brain MRI for a subset of patients, their relatives and healthy controls.
+  Data go to approved, ethics-cleared projects.
+homepage: https://melbourne.figshare.com/articles/dataset/Treatment-Resistant_Schizophrenia_Biobank/5605951
+doi: 10.4225/49/5a7936cc46b12
+# The figshare record describing the biobank and its access route was published on 6 February 2018.
+year: 2018
+creators:
+  - name: Cooperative Research Centre (CRC) for Mental Health
+    url: http://www.mentalhealthcrc.com.au
+  - name: Melbourne Neuropsychiatry Centre, Department of Psychiatry, University of Melbourne
+    url: http://medicine.unimelb.edu.au/school-structure/psychiatry/about-us/centres-and-units/melbourne-neuropsychiatry-centre
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+tasks: [classification]
+countries: [AU]
+field_strengths: [3]
+access:
+  type: application
+  url: https://melbourne.figshare.com/articles/dataset/Treatment-Resistant_Schizophrenia_Biobank/5605951
+licenses:
+  - license: LicenseRef-CRCMH-TRS-Access-Agreement
+citation:
+  text: >-
+    Everall I, Pantelis C, Bousman C. Treatment-Resistant Schizophrenia Biobank. The University of Melbourne, dataset
+    (2018). doi:10.4225/49/5a7936cc46b12. The access agreement also asks publications to acknowledge the CRC for Mental
+    Health and the CRCMH Biobank.
+sources:
+  everall2018:
+    title: Everall I, Pantelis C, Bousman C 2018, Treatment-Resistant Schizophrenia Biobank, University of Melbourne figshare
+    url: https://doi.org/10.4225/49/5a7936cc46b12
+    kind: website
+  crcmh-trs-access-form-2016:
+    title: CRC Psychosis Study Data Access Application and Access Agreement Form, version 1.0, October 2016
+    url: https://ndownloader.figshare.com/files/10389540
+    kind: website
+related: []
+keywords: [schizophrenia, treatment-resistant schizophrenia, clozapine, biobank, brain MRI, diffusion MRI, resting-state fMRI, Australia]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

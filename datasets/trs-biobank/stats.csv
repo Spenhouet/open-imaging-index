@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,200,everall2018,Brief description,"the record says more than 200 participants; lower bound, whole biobank, not the MRI subset"
+subjects,modality=MR,135,everall2018,Full description,"given as N = 135+; lower bound"
+subjects,condition=schizophrenia,114,everall2018,Full description,"given as N = 114+; lower bound, whole biobank; most were on clozapine at assessment"
+subjects,condition=healthy,67,everall2018,Full description,"unrelated controls without psychiatric diagnosis, given as N = 67+; lower bound, whole biobank"
