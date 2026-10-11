@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,484,wijethilake2025,Table 1,"Training and validation patients of the crossMoDA 2022 release (242 London SC-GK, 242 Tilburg SC-GK). The 2023 release adds 100 UK MC-RC patients (180 scans); they are not summed here because the paper does not state that they are disjoint from London SC-GK. Private test sets are not counted."
+scans,,484,wijethilake2025,Table 1,"one scan per patient for London SC-GK and Tilburg SC-GK, crossMoDA 2022 release"
+subjects,condition=vestibular_schwannoma,484,wijethilake2025,Table 1,
+subjects,country=GB,242,dorent2023,Section 3.2.1,"London SC-GK, the Vestibular-Schwannoma-SEG patients split into 105 source training, 105 target training and 32 target validation scans"
+subjects,country=NL,242,wijethilake2025,Table 1,"Tilburg SC-GK, introduced in 2022"
+subjects,contrast=T1w_ce,210,wijethilake2025,Table 1,annotated source training scans
+subjects,contrast=T2w,274,wijethilake2025,Table 1,non-annotated target training (210) and target validation (64) scans
+subjects,contrast_set=T1w_ce,210,wijethilake2025,Table 1,"source and target scans come from different patients (unpaired)"
+subjects,contrast_set=T2w,274,wijethilake2025,Table 1,
+subjects,split=train,420,wijethilake2025,Table 1,105 source and 105 target training scans per centre
+subjects,split=validation,64,wijethilake2025,Table 1,32 target validation scans per centre
+subjects,country=GB;split=train,210,wijethilake2025,Table 1,
+subjects,country=GB;split=validation,32,wijethilake2025,Table 1,
+subjects,country=NL;split=train,210,wijethilake2025,Table 1,
+subjects,country=NL;split=validation,32,wijethilake2025,Table 1,
+subjects,country=GB;contrast_set=T1w_ce,105,wijethilake2025,Table 1,
+subjects,country=GB;contrast_set=T2w,137,wijethilake2025,Table 1,
+subjects,country=NL;contrast_set=T1w_ce,105,wijethilake2025,Table 1,
+subjects,country=NL;contrast_set=T2w,137,wijethilake2025,Table 1,
+subjects,vendor=siemens,242,wijethilake2025,Section 2.2.2,London SC-GK on a Siemens Avanto 1.5 T
+subjects,vendor=philips,242,wijethilake2025,Section 2.2.2,Tilburg SC-GK on a Philips Ingenia 1.5 T
+subjects,field_strength=1.5,484,wijethilake2025,Section 2.2.2,
