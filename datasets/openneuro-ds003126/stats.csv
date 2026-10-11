@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,58,openneuro-ds003126-v140,README,58 subject folders in the snapshot 1.4.0 file tree; 58 rows in participants.tsv
+subjects,condition=healthy,22,openneuro-ds003126-v140,README: TD group,typically developing children; group TD in participants.tsv
+subjects,condition=writing_disorder,16,openneuro-ds003126-v140,README: SpD group,isolated spelling deficit without dyslexia; group SpD in participants.tsv
+subjects,condition=dyslexia,20,openneuro-ds003126-v140,README: Group with dyslexia,group DL in participants.tsv
+subjects,sex=female,24,ds003126-participants,sex,sex F
+subjects,sex=male,34,ds003126-participants,sex,sex M
+subjects,age=8-8,6,ds003126-participants,age,age in whole years
+subjects,age=9-9,45,ds003126-participants,age,age in whole years
+subjects,age=10-10,7,ds003126-participants,age,age in whole years
+subjects,contrast=T1w,58,ds003126-file-tree,sub-*/ses-1/anat/*_T1w.nii.gz,
+subjects,contrast=bold,58,ds003126-file-tree,sub-*/ses-2/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,58,ds003126-file-tree,anat and func folders,
+studies,,116,ds003126-file-tree,sub-*/ses-* folders,"58 ses-1 (anatomical) and 58 ses-2 (functional) folders, as stored in the BIDS tree"
+scans,,232,ds003126-file-tree,sub-*/ses-*/*/*.nii.gz,58 T1w and 174 bold
+scans,contrast=T1w,58,ds003126-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,174,ds003126-file-tree,*_bold.nii.gz,three reading-task runs per child
+age_min,,8,ds003126-participants,age,whole years
+age_max,,10,ds003126-participants,age,whole years

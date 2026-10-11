@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003126
+name: Dyslexia and Spelling Deficit Reading fMRI (ds003126)
+full_name: Reading-related functional activity in children with isolated spelling deficits and dyslexia
+summary: >-
+  Task fMRI during overt reading of words and pseudohomophones plus T1-weighted MRI of 58 German-speaking children
+  aged 8 to 10: 22 typical readers, 16 with isolated spelling deficits and 20 with dyslexia. Scanned at 3T in Graz,
+  shared in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003126
+doi: 10.18112/openneuro.ds003126.v1.4.0
+year: 2020
+updated: 2026
+version: 1.4.0
+status: active
+creators:
+  - name: Banfi C, Koschutnig K, Moll K, Schulte-Koerne G, Fink A, Landerl K
+    url: https://openneuro.org/datasets/ds003126
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [dyslexia, writing_disorder, healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003126
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.4.0 states "License" CC0.
+citation:
+  text: >-
+    Banfi C, Koschutnig K, Moll K, Schulte-Koerne G, Fink A, Landerl K. Reading-related functional activity in children
+    with isolated spelling deficits and dyslexia. Language, Cognition and Neuroscience 36(5), 543-561 (2021).
+    doi:10.1080/23273798.2020.1859569
+sources:
+  openneuro-ds003126-v140:
+    title: OpenNeuro ds003126 snapshot 1.4.0 (README, dataset_description.json, BIDS sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003126/versions/1.4.0
+    kind: website
+  ds003126-participants:
+    title: participants.tsv of ds003126 snapshot 1.4.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003126/blob/1.4.0/participants.tsv
+    kind: computed
+  ds003126-file-tree:
+    title: File tree of ds003126 snapshot 1.4.0 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003126/tree/1.4.0
+    kind: computed
+related: []
+keywords: [dyslexia, spelling, reading, children, pediatric, task fMRI, German]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
