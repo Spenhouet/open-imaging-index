@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000240
+name: Resting State Perfusion in Healthy Aging (ds000240)
+full_name: Resting State Perfusion in Healthy Aging
+summary: >-
+  Resting-state arterial spin labeling perfusion MRI and T1-weighted brain scans of cognitively healthy young and older
+  adults, shared to study how cerebral blood flow changes with age. 63 participants, with neuropsychological test
+  scores for the older group, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds000240
+doi: 10.18112/openneuro.ds000240.v2.0.0
+year: 2017
+updated: 2021
+version: 2.0.0
+status: active
+creators:
+  - name: Galiano A, Garcia de Eulate R, Vidorreta M, Recio M, Riverol M, Zubieta JL, Fernandez-Seara MA
+    url: https://openneuro.org/datasets/ds000240
+species: human
+modalities: [MR]
+contrasts: [T1w, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+field_strengths: [3]
+size_gb: 1.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000240
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 2.0.0 states "License" CC0. The earlier 00001 snapshot, mirrored on
+      brainlife.io, stated "PD".
+citation:
+  text: >-
+    Galiano A, Garcia de Eulate R, Vidorreta M, Recio M, Riverol M, Zubieta JL, Fernandez-Seara MA. Resting State
+    Perfusion in Healthy Aging. OpenNeuro ds000240, version 2.0.0 (2021). doi:10.18112/openneuro.ds000240.v2.0.0
+sources:
+  openneuro-ds000240-v200:
+    title: OpenNeuro ds000240 snapshot 2.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds000240/versions/2.0.0
+    kind: website
+  brainlife-ds000240:
+    title: brainlife.io mirror of ds000240 snapshot 00001 (ds000240_R1.0.0)
+    url: https://brainlife.io/datasets/62028dbdad54437d2df1eb98
+    kind: website
+  ds000240-participants:
+    title: participants.tsv of ds000240 snapshot 2.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds000240/blob/2.0.0/participants.tsv
+    kind: computed
+  ds000240-file-tree:
+    title: File tree of ds000240 snapshot 2.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds000240/tree/2.0.0
+    kind: computed
+related: []
+keywords: [aging, cerebral blood flow, pseudo-continuous ASL, 3D GRASE, resting state, OpenfMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
