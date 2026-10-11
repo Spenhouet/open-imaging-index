@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001131
+name: Milky-Vodka story listening fMRI (ds001131)
+full_name: 'Milky-Vodka: fMRI of listening to two stories that differ in a few words per sentence'
+summary: >-
+  Task fMRI of young adults listening to one of two spoken stories that share their grammar but differ in a few words
+  per sentence, collected to study how local word changes grow along the cortical hierarchy. 54 subjects from
+  Princeton, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds001131
+doi: 10.18112/openneuro.ds001131.v1.0.0
+# Created on OpenNeuro 2017-10-30; snapshot 1.0.0 (the only versioned snapshot) dated 2019-11-09.
+year: 2017
+updated: 2019
+version: 1.0.0
+status: active
+creators:
+  - name: Yeshurun Y, Nguyen M, Hasson U (Princeton Neuroscience Institute, Princeton University)
+    url: https://openneuro.org/datasets/ds001131
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 3.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001131
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Yeshurun Y, Nguyen M, Hasson U. Amplification of local changes along the timescale processing hierarchy. PNAS
+    114(35), 9475-9480 (2017). doi:10.1073/pnas.1701652114
+sources:
+  openneuro-ds001131-v1-0-0:
+    title: OpenNeuro ds001131 snapshot 1.0.0 (dataset_description.json, README, CHANGES, task sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds001131/versions/1.0.0
+    kind: website
+  yeshurun2017-preprint:
+    title: Yeshurun, Nguyen and Hasson 2017, The butterfly effect, amplification of local changes along the temporal processing hierarchy, bioRxiv preprint of the PNAS paper
+    url: https://doi.org/10.1101/102590
+    kind: paper
+  ds001131-participants:
+    title: participants.tsv of ds001131 1.0.0 (CC0), counted per row from the sex and age columns
+    url: https://openneuro.org/datasets/ds001131/versions/1.0.0/file-display/participants.tsv
+    kind: computed
+  ds001131-files:
+    title: File listing of ds001131 1.0.0 (CC0), counted from sub-*/anat and sub-*/func NIfTI files
+    url: https://github.com/OpenNeuroDatasets/ds001131/tree/1.0.0
+    kind: computed
+related: [narratives]
+keywords: [naturalistic fMRI, story listening, language comprehension, temporal receptive windows, intersubject correlation]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
