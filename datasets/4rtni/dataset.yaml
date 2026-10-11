@@ -3,9 +3,9 @@ id: 4rtni
 name: 4RTNI
 full_name: Four Repeat Tauopathy Neuroimaging Initiative
 summary: >-
-  Longitudinal multi-site natural history study of progressive supranuclear palsy, corticobasal syndrome and related
-  4-repeat tauopathies with healthy controls, with 3T MRI, PET, biofluids and clinical ratings shared through LONI
-  after an approved application.
+  Brain MRI, PET, biofluids and clinical ratings from a natural history study of progressive supranuclear palsy,
+  corticobasal syndrome and related 4-repeat tauopathies, with healthy controls, built to find markers that track
+  progression for trials. Shared through LONI after an approved application.
 homepage: https://ida.loni.usc.edu/login.jsp?project=4RTNI
 # Year enrollment began (4RTNI cycle 1 started 10 January 2011 per ClinicalTrials.gov NCT01804452; the data use
 # agreement says 4RTNI launched in early 2011). A separate first-release date on LONI was not verified.

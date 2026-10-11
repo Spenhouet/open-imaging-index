@@ -3,8 +3,9 @@ id: infant-awake-fmri-ellis2020
 name: Awake Infant fMRI (Ellis 2020)
 full_name: Re-imagining fMRI for awake behaving infants (Princeton and Yale cohorts)
 summary: >-
-  Task fMRI and T1-weighted PETRA anatomical scans of 26 awake infants aged 4 to 33 months across 45 sessions,
-  from two cohorts scanned at Princeton and Yale by the Turk-Browne lab, released on Dryad under CC0.
+  Task fMRI and anatomical scans of awake infants watching cognitive tasks, collected while developing a protocol to
+  scan babies who are neither sedated nor asleep. 26 infants aged 4 to 33 months across 45 sessions at Princeton and
+  Yale, on Dryad under CC0.
 homepage: https://doi.org/10.5061/dryad.8gtht76k3
 doi: 10.5061/dryad.8gtht76k3
 year: 2020

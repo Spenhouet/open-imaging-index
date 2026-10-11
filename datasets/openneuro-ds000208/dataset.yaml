@@ -3,9 +3,9 @@ id: openneuro-ds000208
 name: Placebo response in knee osteoarthritis pain (ds000208)
 full_name: Brain connectivity predicts placebo response across chronic pain clinical trials
 summary: >-
-  Pretreatment T1w MRI and resting-state fMRI of 56 knee osteoarthritis pain patients from two placebo and duloxetine
-  trials plus 20 healthy controls, scanned at Northwestern University, with treatment arm and analgesic response, in
-  BIDS under CC0.
+  Brain MRI and resting-state fMRI of knee osteoarthritis pain patients before placebo and duloxetine trials, used to
+  predict who reports pain relief on placebo. 56 patients and 20 healthy controls, with treatment arm and pain
+  response, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds000208
 doi: 10.18112/openneuro.ds000208.v1.0.1
 year: 2018

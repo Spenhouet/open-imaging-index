@@ -3,8 +3,9 @@ id: isles-2022
 name: ISLES 2022
 full_name: 'ISLES 2022: A multi-center magnetic resonance imaging stroke lesion segmentation dataset'
 summary: >-
-  Acute to subacute ischemic stroke MRI (FLAIR, DWI and ADC) with expert infarct masks from Munich, Bern and Hamburg:
-  400 cases for the ISLES 2022 challenge, of which the 250 training cases are on Zenodo under CC BY 4.0.
+  Brain MRI of acute and subacute ischemic stroke with expert infarct masks, built to benchmark automatic segmentation
+  of infarcts from large strokes to small scattered lesions. 400 cases from three European stroke centres; 250
+  training cases are on Zenodo under CC BY 4.0.
 homepage: https://isles22.grand-challenge.org/
 # Concept DOI of the Zenodo training data record; it resolves to the latest version (2.3.1).
 doi: 10.5281/zenodo.6695024

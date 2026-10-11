@@ -3,9 +3,9 @@ id: mri-share
 name: MRi-Share
 full_name: 'MRi-Share: brain MRI substudy of the i-Share student health cohort'
 summary: >-
-  Multimodal 3 T brain MRI of 1,832 healthy university students aged 18 to 35 in Bordeaux, France, scanned 2015 to
-  2017 with a UK Biobank-like protocol: T1w, FLAIR, SWI, multi-shell diffusion and 15 min resting-state fMRI. Access by
-  approved i-Share collaboration.
+  Brain MRI of healthy university students, collected to describe brain changes in the late teens and twenties and to
+  pair with UK Biobank across the adult age range. 1,832 students aged 18 to 35 in Bordeaux scanned with a UK
+  Biobank-like protocol. Access by approved collaboration.
 homepage: https://www.gin.cnrs.fr/en/grants/mri-share-en/
 doi: 10.1007/s00429-021-02334-4
 # The images have no public release; year of the peer-reviewed data descriptor.

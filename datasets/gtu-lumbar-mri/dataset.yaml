@@ -3,8 +3,9 @@ id: gtu-lumbar-mri
 name: GTU Lumbar MRI Dataset
 full_name: Lumbar MRI Dataset of the Computer Vision Lab, Gebze Technical University
 summary: >-
-  Mid-sagittal T1- and T2-weighted lumbar spine MR slices of 80 subjects (64 with disc or vertebra pathologies), with
-  expert-marked centre points of the L1 to L5 vertebrae and the T12-L1 to L5-S1 discs for localization and labelling.
+  Sagittal lumbar spine MRI slices with expert-marked centre points of each vertebra and disc, a small benchmark for
+  locating and labelling spine landmarks. 80 subjects, 64 with disc or vertebra pathologies, with T1- and T2-weighted
+  slices.
 homepage: https://bilmuh.gtu.edu.tr/vislab/pages/lumbar-mri-dataset.html
 doi: 10.1109/TBME.2013.2256460
 year: 2013

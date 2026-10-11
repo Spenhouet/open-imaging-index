@@ -3,9 +3,9 @@ id: ivdm3seg
 name: IVDM3Seg
 full_name: 'IVDM3Seg: Automatic Intervertebral Disc Localization and Segmentation from 3D Multi-modality MR (M3) Images (MICCAI 2018 challenge, SpineWeb Dataset 14)'
 summary: >-
-  1.5 T Siemens Dixon MRI of the lower spine from 12 subjects scanned at two stages of a prolonged bed rest study (24
-  scan sets, 96 volumes), with manual masks of at least 7 intervertebral discs. Training part of 8 subjects shared after
-  a signed agreement.
+  Lower spine MRI with manual masks of the intervertebral discs, released for a MICCAI 2018 challenge on disc
+  localization and segmentation. 12 subjects scanned twice during a prolonged bed rest study, with four Dixon images
+  per scan; training part shared after a signed agreement.
 homepage: https://ivdm3seg.weebly.com/
 year: 2018
 creators:

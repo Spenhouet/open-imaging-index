@@ -3,8 +3,9 @@ id: pi-cai
 name: PI-CAI
 full_name: 'PI-CAI (Prostate Imaging: Cancer AI) Public Training and Development Dataset'
 summary: >-
-  1500 biparametric prostate MRI exams (T2w, high b-value DWI, ADC) of 1476 men from three Dutch centers, with
-  clinically significant prostate cancer labels, lesion delineations and clinical variables, for csPCa detection.
+  Prostate MRI with labels and lesion outlines for clinically significant prostate cancer, released for a challenge
+  comparing AI systems with radiologists at detecting it. 1,500 exams of 1,476 men from three Dutch centres, with
+  clinical variables.
 homepage: https://pi-cai.grand-challenge.org/
 doi: 10.5281/zenodo.6624726
 year: 2022

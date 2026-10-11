@@ -3,9 +3,8 @@ id: rider-breast-mri
 name: RIDER Breast MRI
 full_name: Reference Image Database to Evaluate Therapy Response (RIDER) Breast MRI
 summary: >-
-  Repeat "coffee break" diffusion-weighted breast MRI of 5 breast cancer patients before neoadjuvant chemotherapy:
-  two exams about 15 minutes apart, each with b0, b800 and ADC series, plus an anatomical reference and a tumor VOI
-  mask, as DICOM.
+  Repeat diffusion-weighted breast MRI taken about 15 minutes apart before chemotherapy, collected to estimate
+  scan-rescan noise so early ADC change can be judged. 5 breast cancer patients, with tumor masks, as DICOM.
 homepage: https://www.cancerimagingarchive.net/collection/rider-breast-mri/
 doi: 10.7937/K9/TCIA.2015.H1SXNUXL
 year: 2011

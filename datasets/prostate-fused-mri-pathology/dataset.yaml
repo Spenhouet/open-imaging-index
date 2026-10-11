@@ -3,9 +3,8 @@ id: prostate-fused-mri-pathology
 name: Prostate Fused-MRI-Pathology
 full_name: Fused Radiology-Pathology Prostate Dataset (PROSTATE-FUSED-MRI-PATHOLOGY)
 summary: >-
-  Pre-prostatectomy 3 T multiparametric prostate MRI of 28 men with prostate cancer, paired with H&E pseudo-whole-mount
-  histology of the excised glands, pathologist cancer annotations and registration files that map tumor extent onto
-  the MRI.
+  Prostate MRI before prostatectomy paired with digitized histology of the removed glands, cancer annotations and
+  registration files, for mapping tumor extent from pathology onto MRI. 28 men with prostate cancer scanned at 3 T.
 homepage: https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/
 doi: 10.7937/K9/TCIA.2016.TLPMR1AM
 year: 2016

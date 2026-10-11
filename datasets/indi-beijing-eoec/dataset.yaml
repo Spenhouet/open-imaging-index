@@ -3,8 +3,9 @@ id: indi-beijing-eoec
 name: INDI Beijing Eyes Open Eyes Closed
 full_name: Beijing Normal University Eyes Open Eyes Closed Sample (INDI)
 summary: >-
-  Three resting-state fMRI runs per participant, one eyes closed and two randomized between eyes open and eyes
-  closed, plus T1-weighted MPRAGE and 64-direction DTI, from 48 healthy students at Beijing Normal University.
+  Resting-state fMRI with eyes open and eyes closed in the same people, plus structural and diffusion MRI, for testing
+  whether resting-state measures pick up a known change in brain state. 48 healthy students at Beijing Normal
+  University with three runs each.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEOEC.html
 year: 2010
 status: active

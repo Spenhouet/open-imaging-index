@@ -3,8 +3,9 @@ id: sudmex-conn
 name: SUDMEX CONN (ds003346)
 full_name: 'SUDMEX CONN: The Mexican MRI dataset of patients with cocaine use disorder'
 summary: >-
-  Brain MRI of 144 adults from Mexico City, people with cocaine use disorder and healthy controls, with T1w,
-  multishell diffusion and resting-state fMRI from one 3T Philips scanner, in BIDS on OpenNeuro under CC0.
+  Brain MRI of people with cocaine use disorder and healthy controls, collected to describe how crack cocaine affects
+  the brain. 144 adults from Mexico City with structural, diffusion and resting-state scans, in BIDS on OpenNeuro
+  under CC0.
 homepage: https://openneuro.org/datasets/ds003346
 doi: 10.18112/openneuro.ds003346.v1.1.3
 year: 2020

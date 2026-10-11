@@ -3,8 +3,9 @@ id: ucsf-radiation-cmb-7t
 name: UCSF Radiation-Induced Microbleed 7 T SWI Set
 full_name: UCSF 7 T SWI dataset of radiation-induced cerebral microbleeds in glioma patients
 summary: >-
-  91 7 T SWI scans of 73 glioma patients with radiation-induced cerebral microbleeds at UCSF, with 2,835 true
-  microbleeds labelled among detector candidates. Described in a 2019 paper; no data release or sharing route.
+  Ultra-high-field susceptibility-weighted brain MRI of glioma patients with microbleeds caused by radiotherapy, used
+  to train a network that separates true microbleeds from false detections. 91 scans of 73 patients at 7 T. No data
+  release or sharing route.
 homepage: https://doi.org/10.1007/s10278-018-0146-z
 doi: 10.1007/s10278-018-0146-z
 # Year of the paper. The data have not been released.

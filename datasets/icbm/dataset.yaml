@@ -3,8 +3,9 @@ id: icbm
 name: ICBM
 full_name: International Consortium for Brain Mapping
 summary: >-
-  Brain imaging of 853 healthy adults aged 18 to 89 from the consortium that built the ICBM probabilistic reference
-  atlases, shared through the LONI IDA with structural MRI, diffusion, fMRI, MR angiography and a small PET subset.
+  Brain MRI, diffusion, fMRI, MR angiography and a small PET subset of healthy adults, collected by the consortium
+  that built the ICBM probabilistic reference atlases of the human brain. 853 people aged 18 to 89, shared through the
+  LONI IDA.
 homepage: https://ida.loni.usc.edu/login.jsp?project=ICBM
 doi: 10.1098/rstb.2001.0915
 # Year of the descriptor paper. The date of the first data release on the LONI IDA was not found.

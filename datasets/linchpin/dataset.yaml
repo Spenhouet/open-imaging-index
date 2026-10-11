@@ -3,9 +3,9 @@ id: linchpin
 name: LINCHPIN CT and pathology set
 full_name: Lothian IntraCerebral Haemorrhage, Pathology, Imaging and Neurological Outcome (LINCHPIN) study, CT and neuropathology data
 summary: >-
-  Admission non-contrast head CT of 110 adults with first-ever intracerebral haemorrhage in Lothian, Scotland, who
-  died and had a research autopsy, with masked CT ratings, APOE genotype and CAA grading. The ratings are open; the CT
-  images are not shared.
+  Head CT ratings, APOE genotype and autopsy grading of cerebral amyloid angiopathy from adults who died after
+  intracerebral haemorrhage, used to derive the Edinburgh criteria for CAA-related bleeds. 110 adults from Lothian,
+  Scotland. The ratings are open; the CT images are not shared.
 homepage: https://hdl.handle.net/10283/2919
 doi: 10.7488/ds/2230
 # The tabular CT, genetic and pathology data were deposited on Edinburgh DataShare in 2017 and became available on

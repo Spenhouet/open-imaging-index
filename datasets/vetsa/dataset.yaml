@@ -3,9 +3,9 @@ id: vetsa
 name: VETSA
 full_name: Vietnam Era Twin Study of Aging
 summary: >-
-  Longitudinal behavioral genetic study of cognitive and brain aging in male US veteran twins first seen in their 50s.
-  Structural 1.5 T T1w MRI of 526 twins at wave 1, with fMRI and ASL added at follow-up. Images by request and data use
-  agreement.
+  Brain MRI and cognitive data of male US veteran twins followed from midlife, mainly used to study how genes shape
+  brain structure and cognitive aging. 526 twins with structural MRI at the first wave, with fMRI and perfusion added
+  later. Images by request and agreement.
 homepage: https://psychiatry.ucsd.edu/research/programs-centers/vetsa/index.html
 doi: 10.1017/thg.2012.86
 # Year of the cohort overview paper. Non-imaging wave 1 to 3 data were archived at NACDA in 2025; no public release of

@@ -3,8 +3,8 @@ id: tcga-brca
 name: TCGA-BRCA
 full_name: The Cancer Genome Atlas Breast Invasive Carcinoma Collection
 summary: >-
-  Pre-surgical breast MRI and a few mammograms of 139 women with invasive breast carcinoma from seven US centers,
-  matched by patient ID to the TCGA clinical, genomic and pathology data for radiogenomics research.
+  Breast MRI before surgery of women with invasive breast cancer whose tumors were profiled by The Cancer Genome
+  Atlas, so imaging can be linked to genomics and outcome. 139 women from seven US centers.
 homepage: https://www.cancerimagingarchive.net/collection/tcga-brca/
 doi: 10.7937/K9/TCIA.2016.AB2NAZRP
 year: 2011

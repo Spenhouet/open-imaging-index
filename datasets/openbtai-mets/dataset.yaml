@@ -3,9 +3,9 @@ id: openbtai-mets
 name: OpenBTAI Brain Metastases
 full_name: A comprehensive dataset of annotated brain metastasis MR images with clinical and radiomic data
 summary: >-
-  637 longitudinal brain MRI studies of 75 deceased patients with 260 brain metastases from Spanish hospitals,
-  with 593 semi-automatic segmentations on post-contrast T1w, clinical and treatment data, and morphological
-  and radiomic features.
+  Longitudinal brain MRI of patients with brain metastases, with lesion masks, clinical and treatment history and
+  radiomic features, for detection, response assessment and survival modelling. 637 studies of 75 patients with 260
+  metastases from Spanish hospitals, under CC0.
 homepage: https://figshare.com/collections/A_comprehensive_dataset_of_annotated_brain_metastasis_images_with_clinical_and_radiomic_data/6194104
 doi: 10.6084/m9.figshare.c.6194104.v1
 year: 2023

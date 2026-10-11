@@ -3,8 +3,9 @@ id: isic-2020
 name: ISIC 2020
 full_name: SIIM-ISIC 2020 Melanoma Classification Challenge Dataset
 summary: >-
-  44,108 dermoscopic images of skin lesions from 2,746 patients at six centres (33,126 labelled training images of
-  2,056 patients, 584 of them histopathologically confirmed melanomas), with approximate age, sex and anatomic site.
+  Dermoscopic images of skin lesions grouped by patient, released for a melanoma classification challenge so models
+  can compare a lesion with others on the same person. 44,108 images of 2,746 patients from six centres, 584 confirmed
+  melanomas, with age, sex and body site.
 homepage: https://challenge.isic-archive.com/data/#2020
 doi: 10.34970/2020-ds01
 year: 2020

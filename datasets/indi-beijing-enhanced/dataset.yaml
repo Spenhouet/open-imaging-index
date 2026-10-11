@@ -3,8 +3,9 @@ id: indi-beijing-enhanced
 name: INDI Beijing Enhanced
 full_name: Beijing Normal University Enhanced Sample (INDI Retrospective)
 summary: >-
-  Resting-state fMRI, T1-weighted MPRAGE and 64-direction DTI from 180 healthy students at Beijing Normal University,
-  with Wechsler IQ scores for 55 of them. Extends the Beijing_Zang sample of the 1000 Functional Connectomes Project.
+  Resting-state fMRI, structural and diffusion brain MRI of healthy young adults, with IQ for some, for relating
+  resting-state function to white matter and cognition. 180 students at Beijing Normal University, 55 with Wechsler IQ
+  scores.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced.html
 year: 2010
 status: active

@@ -3,8 +3,8 @@ id: tcga-cesc
 name: TCGA-CESC
 full_name: The Cancer Genome Atlas Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma Collection (TCGA-CESC)
 summary: >-
-  Pre-surgical clinical pelvic MRI of 54 patients with cervical squamous cell carcinoma or endocervical adenocarcinoma
-  from The Cancer Genome Atlas, whose patient IDs match the TCGA clinical, genomic and histopathology data.
+  Pelvic MRI before surgery of patients with cervical cancer whose tumors were profiled by The Cancer Genome Atlas, so
+  imaging can be linked to genomics and outcome. 54 patients.
 homepage: https://www.cancerimagingarchive.net/collection/tcga-cesc/
 doi: 10.7937/K9/TCIA.2016.SQ4M8YP4
 year: 2014

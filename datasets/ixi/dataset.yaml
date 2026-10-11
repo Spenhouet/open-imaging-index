@@ -3,8 +3,9 @@ id: ixi
 name: IXI
 full_name: Information eXtraction from Images
 summary: >-
-  Nearly 600 brain MRI scans of healthy adults from three London hospitals, with T1w, T2w, PD, MR angiography
-  and diffusion images and basic demographics.
+  Brain MRI of healthy adults with demographics, one of the oldest openly licensed collections and widely used for
+  brain age prediction, contrast synthesis and as a healthy reference. Nearly 600 people from three London hospitals
+  with T1, T2, PD, angiography and diffusion images.
 homepage: https://brain-development.org/ixi-dataset/
 year: 2007
 status: active

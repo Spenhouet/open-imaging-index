@@ -3,9 +3,9 @@ id: acdc
 name: ACDC
 full_name: Automated Cardiac Diagnosis Challenge (MICCAI 2017)
 summary: >-
-  Short-axis cine cardiac MRI of 150 patients from the University Hospital of Dijon in five equal groups (normal,
-  previous infarction, dilated and hypertrophic cardiomyopathy, abnormal right ventricle), with expert LV, RV and
-  myocardium segmentations at end-diastole and end-systole.
+  Cine cardiac MRI of patients with normal hearts, previous infarction, dilated or hypertrophic cardiomyopathy or an
+  abnormal right ventricle, with expert ventricle and myocardium segmentations, a benchmark for cardiac segmentation
+  and diagnosis. 150 patients from Dijon in five equal groups.
 homepage: https://www.creatis.insa-lyon.fr/Challenge/acdc/
 doi: 10.1109/TMI.2018.2837502
 year: 2017

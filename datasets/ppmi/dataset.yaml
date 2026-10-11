@@ -3,9 +3,9 @@ id: ppmi
 name: PPMI
 full_name: Parkinson's Progression Markers Initiative (now Parkinson's Precision Medicine Initiative)
 summary: >-
-  Longitudinal multi-site observational study of early untreated Parkinson's disease, prodromal and genetic at-risk
-  people and healthy controls, with DaTscan SPECT, MRI including DTI, biofluids, genetics and clinical assessments
-  shared through LONI.
+  DaTscan SPECT, brain MRI, biofluids, genetics and clinical assessments of people with early Parkinson's disease,
+  people at risk and healthy controls, followed to find markers of onset and progression for trials. Multi-site,
+  shared through LONI to approved researchers.
 homepage: https://www.ppmi-info.org/
 doi: 10.1016/j.pneurobio.2011.09.005
 # Year enrollment began (1 June 2010, per Marek et al. 2018). The PPMI website says data are shared as they are

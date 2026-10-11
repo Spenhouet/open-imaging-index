@@ -3,9 +3,9 @@ id: determine
 name: DETERMINE (Cardiac Atlas Project)
 full_name: Defibrillators to Reduce Risk by Magnetic Resonance Imaging Evaluation, Cardiac Atlas Project collection
 summary: >-
-  Cardiac MRI of 450 patients with coronary artery disease and myocardial infarction from the multicentre DETERMINE
-  trial, hosted by the Cardiac Atlas Project: cine SSFP and late gadolinium enhancement images with core-lab contours
-  and 3D left ventricular models, shared under a per-project agreement.
+  Cardiac MRI of patients with coronary artery disease and myocardial infarction from a trial of implantable
+  defibrillators, used to build atlases of heart remodelling after infarction. 450 patients with cine and late
+  gadolinium enhancement images, core-lab contours and 3D ventricle models.
 homepage: https://www.cardiacatlas.org/determine/
 year: 2011
 status: active

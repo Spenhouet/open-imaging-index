@@ -3,8 +3,9 @@ id: mesa-cardiac-mri
 name: MESA Cardiac MRI (Cardiac Atlas Project)
 full_name: Multi-Ethnic Study of Atherosclerosis (MESA) baseline cardiac MRI, Cardiac Atlas Project share
 summary: >-
-  2,450 baseline cine cardiac MRI studies (1.5 T, gradient echo) of asymptomatic adults from the US MESA cohort, with
-  ~300 derived 3D left ventricular models, shared by the Cardiac Atlas Project after review by the MESA contributors.
+  Cine cardiac MRI of adults without known heart disease from a multi-ethnic US population study, shared to build
+  atlases of heart shape and function. 2,450 baseline studies with about 300 3D left ventricle models, after review by
+  the study's contributors.
 homepage: https://www.cardiacatlas.org/mesa/
 doi: 10.1093/bioinformatics/btr360
 # Year of the Cardiac Atlas Project database paper, which describes the MESA contribution as part of the database.

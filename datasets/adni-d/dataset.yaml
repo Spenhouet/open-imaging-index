@@ -3,9 +3,9 @@ id: adni-d
 name: ADNI-D
 full_name: Alzheimer's Disease Neuroimaging Initiative Depression Project (ADNI-D)
 summary: >-
-  US two-site ADNI companion study of adults aged 65 and over with current major depression, with 3T MRI (T1w, FLAIR,
-  T2* GRE, DTI, ASL, fMRI), florbetapir amyloid PET and repeated cognitive testing, shared through the LONI IDA after
-  an approved application.
+  Brain MRI, amyloid PET and repeated cognitive testing of adults aged 65 and over with current major depression,
+  collected with ADNI methods to study why depression comes with cognitive decline in late life. Shared through the
+  LONI IDA after an approved application.
 homepage: https://adni.loni.usc.edu/about/related-collaborative-studies/
 # Year the project was launched, per the ADNI-D Data Use Agreement. The date of the first public data release was not
 # verified separately.

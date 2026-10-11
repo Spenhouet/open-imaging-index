@@ -3,9 +3,9 @@ id: insight-46
 name: Insight 46
 full_name: 'Insight 46: neuroscience sub-study of the MRC National Survey of Health and Development (1946 British birth cohort)'
 summary: >-
-  Longitudinal PET-MRI sub-study of 502 members of the 1946 British birth cohort, scanned around age 70 and again two
-  years later on one 3 T PET/MR, with amyloid PET, structural, susceptibility, diffusion and perfusion MRI and life
-  course data. Access by application to NSHD.
+  Amyloid PET and brain MRI with life-course data of people born in one week of 1946 in Britain, used to study
+  preclinical Alzheimer's disease, cerebrovascular disease and brain ageing in the general population. 502 people
+  scanned around age 70 and two years later. Access by application.
 homepage: https://skylark.ucl.ac.uk/NSHD/exploring/insight-46/
 # Year the sub-study launched (2015, per the NSHD Skylark website). The date of the first data release was not
 # verified separately.

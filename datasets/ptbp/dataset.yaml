@@ -3,9 +3,9 @@ id: ptbp
 name: PTBP
 full_name: Pediatric Template of Brain Perfusion
 summary: >-
-  Brain MRI of 120 typically developing children aged 7 to 18 from UCLA, partly longitudinal (183 sessions), with
-  T1w, pCASL perfusion, 30-direction DTI and resting-state BOLD, plus a population template and IQ and
-  socioeconomic measures, under CC BY 4.0.
+  Brain MRI of typically developing children, collected to chart how structure, white matter, connectivity and blood
+  flow change from late childhood into adolescence. 120 children aged 7 to 18 from UCLA, 183 sessions, with a
+  population template and IQ and socioeconomic data, under CC BY 4.0.
 homepage: https://figshare.com/articles/dataset/The_Pediatric_Template_of_Brain_Perfusion_PTBP_/923555
 doi: 10.6084/m9.figshare.923555
 year: 2014

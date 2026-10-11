@@ -3,8 +3,9 @@ id: cuhk-cmb
 name: CUHK SWI-CMB (public subset)
 full_name: CUHK SWI cerebral microbleed dataset released with the 3D CNN microbleed detection paper (Dou et al. 2016)
 summary: >-
-  3 T SWI brain MRI of 20 subjects with point annotations (voxel centroids) of cerebral microbleeds, released by
-  CUHK as a public subset of the 320-subject SWI-CMB set of stroke and normal ageing participants.
+  Susceptibility-weighted brain MRI with point annotations of cerebral microbleeds, released so others can reproduce a
+  3D CNN microbleed detector or test their own. 20 subjects from a larger stroke and ageing set built at The Chinese
+  University of Hong Kong.
 homepage: http://www.cse.cuhk.edu.hk/~qdou/cmb-3dcnn/cmb-3dcnn.html
 doi: 10.1109/TMI.2016.2528129
 # Year of the paper; the data archive on the project page is dated April 2016.

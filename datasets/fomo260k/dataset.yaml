@@ -3,9 +3,9 @@ id: fomo260k
 name: FOMO260K
 full_name: FOMO260K brain MRI dataset for large-scale self-supervised learning
 summary: >-
-  Openly downloadable aggregate of 260,927 minimally preprocessed brain MRI scans from 77,589 sessions and 55,378
-  subjects, pooled from 910 public sources, with clinical- and research-grade scans of many sequences for
-  self-supervised pretraining.
+  Minimally preprocessed brain MRI pooled from hundreds of public sources, built for self-supervised pretraining of 3D
+  models on clinical and research scans of many sequences. 260,927 scans of 55,378 subjects from 910 sources,
+  downloadable without an account.
 homepage: https://huggingface.co/datasets/FOMO-MRI/FOMO260K
 doi: 10.57967/hf/8670
 year: 2026

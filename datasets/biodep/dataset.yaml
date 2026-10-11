@@ -3,9 +3,9 @@ id: biodep
 name: BIODEP
 full_name: BIOmarkers in DEPression (BIODEP) study, Wellcome NIMA consortium
 summary: >-
-  UK multi-centre case-control study of inflammation in major depression: brain MRI (quantitative magnetization
-  transfer, multi-echo resting-state fMRI) of 143 adults aged 25 to 50 stratified by blood CRP, and [11C]PK11195 TSPO
-  PET/MR of 76. No published data sharing route.
+  Brain MRI and TSPO PET/MR of adults with major depression and healthy controls, grouped by blood CRP, to test
+  whether inflammation marks a subgroup of depression. 143 adults aged 25 to 50 with MRI, 76 with PET. No published
+  data sharing route.
 homepage: https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/biomarkers-in-depression-biodep/
 doi: 10.1038/s41380-021-01272-1
 # Year of the first paper on the BIODEP imaging data; the data have no public release.

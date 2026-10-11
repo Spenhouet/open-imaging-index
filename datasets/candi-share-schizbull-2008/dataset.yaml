@@ -3,8 +3,9 @@ id: candi-share-schizbull-2008
 name: 'CANDI Share: Schizophrenia Bulletin 2008'
 full_name: Child and Adolescent NeuroDevelopment Initiative Share, Schizophrenia Bulletin 2008 data
 summary: >-
-  Preprocessed 1.5T T1-weighted brain MRI with whole-brain segmentations of 103 children and adolescents: 29
-  healthy controls, 20 with schizophrenia spectrum illness and 54 with bipolar disorder with or without psychosis.
+  Preprocessed structural brain MRI with whole-brain segmentations of children and adolescents with bipolar disorder
+  or schizophrenia spectrum illness and healthy controls, from a study of limbic volumes in early-onset illness. 103
+  young people: 54 bipolar, 20 schizophrenia spectrum, 29 controls.
 homepage: https://www.nitrc.org/projects/cs_schizbull08/
 doi: 10.1093/schbul/sbm120
 year: 2012

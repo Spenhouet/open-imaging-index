@@ -3,9 +3,9 @@ id: iowa-longitudinal-schizophrenia
 name: Iowa Longitudinal Study (NDA 2125)
 full_name: Phenomenology and Classification of Schizophrenia (Iowa Longitudinal Study)
 summary: >-
-  University of Iowa prospective study of first-episode schizophrenia patients followed for up to 18 years with
-  repeated 1.5T structural MRI, symptom ratings and cognitive tests. The NIMH Data Archive shares data from 275
-  subjects, 267 of them with images.
+  Repeated structural brain MRI, symptom ratings and cognitive tests of patients followed for up to 18 years after a
+  first episode of schizophrenia, to track how the illness evolves. 275 subjects from the University of Iowa in the
+  NIMH Data Archive, 267 with images.
 homepage: https://nda.nih.gov/edit_collection.html?id=2125
 doi: 10.15154/z32v-tv80
 year: 2015

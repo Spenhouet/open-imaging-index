@@ -3,9 +3,9 @@ id: abcd
 name: ABCD Study (Release 7.0)
 full_name: Adolescent Brain Cognitive Development Study, Curated Data Release 7.0
 summary: >-
-  Longitudinal multisite 3T MRI of 11,860 US youth enrolled at ages 9 to 10 and scanned every two years: T1w, T2w,
-  multi-shell diffusion, resting-state and task fMRI, with genetics, mental and physical health, cognition and
-  substance use data, shared through the NIH Brain Development Cohorts Data Hub.
+  Brain MRI, genetics, mental and physical health, cognition and substance use data from US children followed from
+  ages 9 to 10 into adulthood, to study how the brain develops through adolescence. 11,860 youth scanned every two
+  years with structural, diffusion and functional 3T MRI.
 homepage: https://abcdstudy.org/
 doi: 10.82525/8f3w-5260
 year: 2018

@@ -3,9 +3,9 @@ id: cao2026-css
 name: Cao 2026 In-house cSS Test Set
 full_name: In-house cortical superficial siderosis test set of Cao et al. (MICCAI 2026 SASHIMI workshop)
 summary: >-
-  In-house test set of 10 patients with confirmed cortical superficial siderosis on SWI or T2*-weighted MRI, with
-  manual lesion delineations validated by a neuroradiologist. Used to evaluate synthetic-data training for cSS
-  segmentation; not released.
+  Brain MRI of patients with cortical superficial siderosis, a marker of cerebral amyloid angiopathy, with manual
+  lesion outlines checked by a neuroradiologist, used to test segmentation trained on synthetic data. 10 patients with
+  SWI or T2*-weighted scans; not released.
 homepage: https://arxiv.org/abs/2610.01542
 doi: 10.48550/arXiv.2610.01542
 # Year of the paper that describes the data; the data have not been released.

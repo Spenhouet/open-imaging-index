@@ -3,9 +3,9 @@ id: cam-ft
 name: Cambridge Foetal Testosterone (CAM-FT) study, MRI cohort
 full_name: Cambridge Foetal Testosterone longitudinal study, structural MRI cohort of 8 to 11 year old boys
 summary: >-
-  3 T T1-weighted brain MRI of 28 typically developing boys aged 8 to 11 from Cambridgeshire whose foetal testosterone
-  was measured in amniotic fluid at amniocentesis, used to relate prenatal testosterone to regional grey matter volume.
-  Not publicly shared.
+  Structural brain MRI of typically developing boys whose testosterone was measured in amniotic fluid before birth,
+  used to relate prenatal testosterone to regional grey matter volume. 28 boys aged 8 to 11 from Cambridgeshire. Not
+  publicly shared.
 homepage: https://www.autismresearchcentre.com/projects/foetal-testosterone-longitudinal-study/
 doi: 10.1523/JNEUROSCI.4389-11.2012
 # Year of the paper that describes the MRI cohort; the images have not been released.

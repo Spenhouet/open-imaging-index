@@ -18,7 +18,7 @@ Licenses live in `licenses/`, one file per license, so that many datasets can sh
 | `id`                                        | yes      | Lowercase letters, digits and dashes. Equals the folder name.                                                                                                                                                                   |
 | `name`                                      | yes      | Short name, at most 60 characters.                                                                                                                                                                                              |
 | `full_name`                                 |          | The long name, if there is one.                                                                                                                                                                                                 |
-| `summary`                                   | yes      | 50 to 320 characters. Shown in search results and search engines.                                                                                                                                                               |
+| `summary`                                   | yes      | 50 to 320 characters. Leads with what the data is and what it was collected for. See [The summary](#the-summary).                                                                                                               |
 | `homepage`                                  | yes      | The official page of the dataset.                                                                                                                                                                                               |
 | `doi`                                       |          | Bare DOI, e.g. `10.7937/K9/TCIA.2015.LO9QL9SX`.                                                                                                                                                                                 |
 | `year`                                      | yes      | Year of the first public release. `updated` holds the year of the latest release.                                                                                                                                               |
@@ -41,6 +41,31 @@ Licenses live in `licenses/`, one file per license, so that many datasets can sh
 | `verified`                                  | yes      | The `date` someone last checked the entry against its sources, and their GitHub handle in `by`.                                                                                                                                 |
 
 Values in the vocabulary lists (`contrasts`, `conditions`, ...) are filled in automatically from `stats.csv`, so a value that appears there does not have to be repeated in `dataset.yaml`.
+
+### The summary
+
+The summary is what people read on the dataset card, in search results and in search engines, usually right under the dataset's name. Its first words must answer: what is this data, and what was it collected for?
+
+1. Start with what the data is: the kind of imaging and the people, condition or body part it covers. Example: "Brain MRI and amyloid PET from older adults with preclinical Alzheimer's disease".
+2. Then say why it exists or what it supports: the study question, the trial, the challenge task or the clinical use. Example: "..., collected in a prevention trial testing whether solanezumab slows cognitive decline."
+3. Only then, if room is left, add the most useful detail: size, follow-up, annotations, sites.
+
+Do not start the summary with:
+
+- the dataset's name, acronym or long name. The page already shows them above the summary.
+- a number: a count of subjects or images, a year, a field strength.
+- acquisition details: scanner, field strength, sequences, protocol.
+- packaging words such as "Dataset of", "This dataset", "Data from", "Shared data package", "Collection of", "Archive of", "Release of".
+- the institution, consortium or funder.
+
+Write plain words for a researcher from a neighboring field. Spell out abbreviations other than modality names (MRI, CT, PET) on first use, and leave out marketing words such as "large-scale" or "unique".
+
+| Instead of                                                                                    | Write                                                                                                                                         |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared data package of the A4 study: amyloid PET, MRI and cognition of 1,169 older adults.    | Amyloid PET, brain MRI and cognitive tests from a prevention trial of solanezumab in older adults with preclinical Alzheimer's disease.       |
+| Serial safety MRI at 1.5 T or 3 T (FLAIR for ARIA-E, T2\*-GRE for ARIA-H) of 3,285 people ... | Safety brain MRI from an anti-amyloid antibody trial, read for brain swelling and microbleeds (ARIA) during treatment of Alzheimer's disease. |
+
+`bun run validate` rejects a summary that starts with the name, a number or a packaging word, and warns when the first words are mostly numbers or acquisition details.
 
 ## stats.csv
 

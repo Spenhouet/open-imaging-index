@@ -3,9 +3,9 @@ id: j-adni
 name: J-ADNI
 full_name: Japanese Alzheimer's Disease Neuroimaging Initiative
 summary: >-
-  Japanese multicentre longitudinal study of 537 older adults with normal cognition, late amnestic MCI or mild
-  Alzheimer's dementia, with structural MRI (1.5 T and 3 T), FDG and amyloid PET (PiB or BF-227), CSF, blood and cognitive data, run with
-  protocols harmonised to ADNI.
+  Brain MRI, FDG and amyloid PET, CSF, blood and cognition of older Japanese adults with normal cognition, amnestic
+  MCI or mild Alzheimer's dementia, the Japanese counterpart of ADNI with matched protocols. 537 people at 38 sites,
+  held as controlled access in the NBDC Human Database.
 homepage: https://humandbs.dbcls.jp/en/hum0043-latest
 # Year of the first release on the NBDC Human Database (hum0043-v1, 29 January 2016).
 year: 2016

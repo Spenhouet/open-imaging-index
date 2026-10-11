@@ -2,9 +2,9 @@
 id: qin-prostate-repeatability
 name: QIN-PROSTATE-Repeatability
 summary: >-
-  Test-retest multiparametric prostate MRI of 15 men with confirmed or suspected prostate cancer, scanned twice within
-  2 weeks at 3 T, with manual segmentations of gland, peripheral zone and suspected tumor and volume and ADC
-  measurements, all as DICOM.
+  Prostate MRI acquired twice within two weeks on the same scanner, for studying how repeatable volume, ADC and
+  radiomic measurements are. 15 men with confirmed or suspected prostate cancer, with gland, zone and tumor
+  segmentations, all as DICOM.
 homepage: https://www.cancerimagingarchive.net/collection/qin-prostate-repeatability/
 doi: 10.7937/K9/TCIA.2018.MR1CKGND
 year: 2018

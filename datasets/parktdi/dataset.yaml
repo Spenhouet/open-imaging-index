@@ -3,8 +3,9 @@ id: parktdi
 name: ParkTDI
 full_name: High-quality diffusion-weighted imaging of Parkinson's disease
 summary: >-
-  Motion-corrected 120-direction, two-shell diffusion MRI of 27 people with Parkinson's disease and 26 matched
-  controls from Liège, with normalized track density maps and clinical and neuropsychological scores.
+  High angular resolution diffusion MRI of people with Parkinson's disease and matched controls, with track density
+  maps and clinical scores, for comparing white matter between groups and testing diffusion models. 27 patients and 26
+  controls from Liège.
 homepage: https://www.nitrc.org/projects/parktdi/
 doi: 10.1016/j.neuroimage.2014.06.033
 year: 2014

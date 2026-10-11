@@ -3,8 +3,9 @@ id: ispy2
 name: ISPY2
 full_name: I-SPY 2 Breast Dynamic Contrast Enhanced MRI Trial (ISPY2)
 summary: >-
-  Serial breast DCE-MRI and T2-weighted MRI of 719 women with locally advanced breast cancer in the I-SPY 2
-  neoadjuvant chemotherapy trial, with SER and enhancement maps, functional tumor volume masks and pathologic response.
+  Breast MRI repeated during neoadjuvant treatment of locally advanced breast cancer, from an adaptive drug trial that
+  uses tumor volume change on MRI to steer randomization. 719 women with enhancement maps, tumor volume masks and
+  pathologic response.
 homepage: https://www.cancerimagingarchive.net/collection/ispy2/
 doi: 10.7937/TCIA.D8Z0-9T85
 year: 2022

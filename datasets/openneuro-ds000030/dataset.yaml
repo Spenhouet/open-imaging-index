@@ -3,8 +3,9 @@ id: openneuro-ds000030
 name: UCLA CNP (ds000030)
 full_name: UCLA Consortium for Neuropsychiatric Phenomics LA5c Study
 summary: >-
-  Brain MRI of 272 adults aged 21 to 50 from Los Angeles: healthy controls and people with schizophrenia, bipolar
-  disorder or ADHD, with T1w, 64-direction diffusion, resting-state and seven task fMRI scans, in BIDS under CC0.
+  Brain MRI of healthy adults and people with schizophrenia, bipolar disorder or ADHD, from a study of memory and
+  response inhibition across diagnoses, now a common benchmark for transdiagnostic psychiatry and fMRI pipelines. 272
+  adults from Los Angeles with structural, diffusion and task fMRI, under CC0.
 homepage: https://openneuro.org/datasets/ds000030
 doi: 10.18112/openneuro.ds000030.v1.0.0
 year: 2016

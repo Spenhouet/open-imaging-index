@@ -3,9 +3,9 @@ id: i2cvb-prostate
 name: I2CVB prostate mp-MRI
 full_name: I2CVB multi-parametric MRI dataset of the prostate
 summary: >-
-  Multi-parametric 3 T prostate MRI (T2-weighted, DCE, DWI with ADC maps, MR spectroscopic imaging) of 19 patients with
-  raised PSA and biopsy results, with radiologist masks of the prostate, its zones and the cancer. Files on Zenodo are
-  restricted.
+  Multi-parametric prostate MRI of men with raised PSA, with radiologist masks of the prostate, its zones and cancer,
+  built to develop and compare computer-aided prostate cancer detection. 19 patients with T2, DCE, DWI and
+  spectroscopy. Files on Zenodo are restricted.
 homepage: http://i2cvb.github.io/
 doi: 10.5281/zenodo.162231
 # Zenodo publication date of the full record (2016-10-20); a DCE-MRI subset was published on 2016-08-30.

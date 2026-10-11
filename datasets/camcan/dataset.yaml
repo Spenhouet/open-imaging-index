@@ -3,8 +3,9 @@ id: camcan
 name: Cam-CAN
 full_name: Cambridge Centre for Ageing and Neuroscience, Stage 2 (CC700) imaging data
 summary: >-
-  Population-based adult lifespan cohort (18-87 years) from Cambridge, UK: about 650 cognitively healthy adults with
-  T1w, T2w, diffusion, magnetization transfer and resting, movie and task fMRI at 3T, plus MEG and cognitive tests.
+  Brain MRI, MEG and an extensive cognitive battery from healthy adults spread evenly across the adult lifespan,
+  collected to study cognitive ageing and widely used for brain age and normative modelling. About 650 people aged 18
+  to 87 from Cambridge, UK, with structural, diffusion and functional MRI.
 homepage: https://opendata.mrc-cbu.cam.ac.uk/projects/camcan/
 # Year the repository paper (Taylor et al.) was accepted, which describes the repository as available. The exact
 # first release date was not found.

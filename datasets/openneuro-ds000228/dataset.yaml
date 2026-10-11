@@ -3,9 +3,9 @@ id: openneuro-ds000228
 name: Partly Cloudy movie fMRI (ds000228)
 full_name: MRI data of 3-12 year old children and adults during viewing of a short animated film
 summary: >-
-  Brain MRI of 122 children aged 3 to 12 and 33 adults scanned at MIT, each with one T1w scan and one fMRI run
-  recorded while watching the silent 5.6-minute Pixar short Partly Cloudy, with theory-of-mind scores, in BIDS under
-  CC0.
+  Brain fMRI of children and adults watching a short animated film, collected to study how networks for thinking about
+  other minds and for bodily sensations develop in childhood. 122 children aged 3 to 12 and 33 adults from MIT, with
+  theory-of-mind scores, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds000228
 doi: 10.18112/openneuro.ds000228.v1.1.1
 year: 2018

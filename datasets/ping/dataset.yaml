@@ -3,9 +3,9 @@ id: ping
 name: PING
 full_name: Pediatric Imaging, Neurocognition, and Genetics (PING)
 summary: >-
-  Cross-sectional multisite 3T MRI (T1w, T2w, diffusion, resting-state fMRI), NIH Toolbox cognition and genome-wide
-  genotypes from 1,493 typically developing children and young people aged 3 to 21 at 10 US sites, shared through the
-  NIMH Data Archive.
+  Brain MRI, cognitive testing and genome-wide genotypes of typically developing children and young people, collected
+  to link genetic variation to brain structure and cognition across development. 1,493 people aged 3 to 21 at 10 US
+  sites, shared through the NIMH Data Archive.
 homepage: https://chd.ucsd.edu/research/ping.html
 doi: 10.1016/j.neuroimage.2015.04.057
 year: 2014

@@ -3,8 +3,9 @@ id: cbis-ddsm
 name: CBIS-DDSM
 full_name: Curated Breast Imaging Subset of the Digital Database for Screening Mammography
 summary: >-
-  Curated, DICOM-converted subset of the 1990s DDSM scanned-film mammograms: 1,566 women, 3,103 CC and MLO
-  mammograms with mass and calcification ROIs, BI-RADS descriptors, pathology labels and a fixed train/test split.
+  Screening mammograms with mass and calcification outlines, BI-RADS descriptors and pathology labels, curated as a
+  public benchmark for mammography CAD. 3,103 scanned-film mammograms of 1,566 women from the 1990s DDSM, converted to
+  DICOM with a fixed train/test split.
 homepage: https://www.cancerimagingarchive.net/collection/cbis-ddsm/
 doi: 10.7937/K9/TCIA.2016.7O02S9CY
 year: 2017

@@ -3,9 +3,9 @@ id: dian-observational
 name: DIAN Observational Study
 full_name: Dominantly Inherited Alzheimer Network Observational Study (DIAN Obs)
 summary: >-
-  International longitudinal study of adult children of parents with an APP, PSEN1 or PSEN2 mutation, comparing
-  mutation carriers with non-carrier siblings using 3T MRI (incl. T2*-GRE or SWI with microbleed reads), PiB, FDG and
-  tau PET, fluids and cognition.
+  Brain MRI, amyloid, FDG and tau PET, fluids and cognition of adult children of parents with an inherited Alzheimer's
+  mutation, comparing carriers with non-carrier siblings to track changes years before symptoms. International
+  longitudinal study across the Americas, Europe, Asia and Australia.
 homepage: https://dian.wustl.edu/observational-study/
 # Joseph-Mathurin et al. 2021 use data collected from January 2009 on (14th data freeze). The date of the first data
 # release to outside investigators was not found in a public source.

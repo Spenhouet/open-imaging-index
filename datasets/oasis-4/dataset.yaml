@@ -3,8 +3,9 @@ id: oasis-4
 name: OASIS-4
 full_name: 'OASIS-4: Clinical Cohort'
 summary: >-
-  Clinical cohort of 663 people aged 21 to 94 evaluated for memory disorders and dementia at Washington University in
-  St. Louis, with 676 MR sessions plus clinical, CSF and neuropsychological data. Separate from OASIS-3.
+  Brain MRI with clinical, CSF and neuropsychological data of people evaluated for memory problems and dementia at a
+  clinic in St. Louis. 663 people aged 21 to 94 with 676 MRI sessions; a separate cohort, not a newer version of
+  OASIS-3.
 homepage: https://sites.wustl.edu/oasisbrains/home/oasis-4/
 doi: 10.1016/j.nicl.2020.102248
 # Year of the reference publication the providers ask users to cite. The first release date of OASIS-4 is not published.

@@ -3,9 +3,9 @@ id: arwibo
 name: ARWiBo
 full_name: Alzheimer's Disease Repository Without Borders
 summary: >-
-  Cross-sectional repository from IRCCS Fatebenefratelli, Brescia, Italy, with data of more than 2700 people (healthy
-  elderly controls, MCI and Alzheimer's disease): 1.0 T and 1.5 T structural MRI, DTI, fMRI, FDG PET, SPECT, EEG and
-  clinical data. Access by application through neuGRID.
+  Brain MRI, DTI, fMRI, FDG PET, SPECT, EEG and clinical data of healthy older adults and people with MCI or
+  Alzheimer's disease, collected over about ten years at a memory clinic in Brescia, Italy. More than 2,700 people.
+  Access by application through neuGRID.
 homepage: http://www.arwibo.it
 doi: 10.1016/j.jalz.2009.04.1235
 # Year of the reference paper the data use agreement cites for ARWiBo. The website does not give a release date.

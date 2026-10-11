@@ -3,9 +3,9 @@ id: focas
 name: FOCAS (Leiden sporadic CAA cohort)
 full_name: The Follow-up in sporadic Cerebral Amyloid Angiopathy Study (FOCAS), Leiden University Medical Center
 summary: >-
-  Prospective Leiden cohort of 126 participants with sporadic cerebral amyloid angiopathy seen at yearly research visits
-  with 3 T SWI brain MRI, 7 T MRI, CSF and clinical follow-up, including semi-automatic siderosis masks for a small
-  subset. Data on request from the authors.
+  Yearly brain MRI, CSF and clinical follow-up of people with sporadic cerebral amyloid angiopathy, collected to study
+  how its MRI markers progress over time. 126 participants in Leiden, scanned at 3 T and 7 T, with siderosis masks for
+  a small subset. Data on request from the authors.
 homepage: https://www.lumc.nl/patientenzorg/meedoen-aan-wetenschappelijk-onderzoek/focas/
 # Start of the study (February 2018); the data have not been publicly released.
 year: 2018

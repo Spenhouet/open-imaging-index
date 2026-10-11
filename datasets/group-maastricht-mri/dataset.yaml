@@ -3,9 +3,9 @@ id: group-maastricht-mri
 name: GROUP Maastricht MRI
 full_name: Genetic Risk and Outcome of Psychosis (GROUP) MRI study, Maastricht site
 summary: >-
-  3T brain MRI (T1-weighted, diffusion) from the Maastricht site of the Dutch GROUP psychosis cohort: 89 patients with
-  non-affective psychotic disorder, 95 unaffected siblings and 87 controls. A PSYSCAN legacy dataset, shared only on
-  request.
+  Structural and diffusion brain MRI of patients with non-affective psychosis, their unaffected siblings and healthy
+  controls, from a Dutch study of genetic risk and outcome of psychosis. 89 patients, 95 siblings and 87 controls from
+  the Maastricht site. Shared only on request.
 homepage: https://doi.org/10.1371/journal.pone.0166651
 doi: 10.1371/journal.pone.0166651
 # Year of the first paper on the Maastricht GROUP MRI data (Habets et al., Biological Psychiatry 2011); the images

@@ -3,8 +3,8 @@ id: acrin-contralateral-breast-mr
 name: ACRIN-Contralateral-Breast-MR
 full_name: ACRIN-Contralateral-Breast-MR (ACRIN 6667)
 summary: >-
-  Contrast-enhanced breast MRI of 984 women with recently diagnosed unilateral breast cancer from the multicenter
-  ACRIN 6667 trial, which screened the contralateral breast for occult cancer, with clinical, pathology and follow-up
+  Contrast-enhanced breast MRI of women with newly diagnosed cancer in one breast, from a trial testing whether MRI
+  finds hidden cancer in the other breast. 984 women from a multicenter trial, with clinical, pathology and follow-up
   forms.
 homepage: https://www.cancerimagingarchive.net/collection/acrin-contralateral-breast-mr/
 doi: 10.7937/Q1EE-J082

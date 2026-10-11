@@ -3,8 +3,9 @@ id: jhu-acute-stroke-mri
 name: JHU Acute Stroke MRI
 full_name: Annotated Clinical MRIs and Linked Metadata of Patients with Acute Stroke, Baltimore, Maryland, 2009-2019
 summary: >-
-  Clinical MRI of 2,888 patients admitted with acute or early subacute stroke to the Johns Hopkins Comprehensive Stroke
-  Center (2009-2019), with manual DWI lesion masks, native and MNI-space images and clinical metadata, in BIDS.
+  Clinical brain MRI of patients admitted with acute stroke, with manual lesion masks and clinical metadata, released
+  so tools can be trained and tested on real clinical scans. 2,888 patients from the Johns Hopkins stroke center, 2009
+  to 2019, in BIDS. Restricted-use at ICPSR.
 homepage: https://www.icpsr.umich.edu/web/ICPSR/studies/38464
 doi: 10.3886/ICPSR38464
 year: 2022

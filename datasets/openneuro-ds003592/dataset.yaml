@@ -3,9 +3,9 @@ id: openneuro-ds003592
 name: Neurocognitive Aging ME-fMRI (ds003592)
 full_name: Neurocognitive aging data release with behavioral, structural and multi-echo functional MRI measures
 summary: >-
-  3T brain MRI of 301 healthy adults from Ithaca and Toronto, 181 aged 18 to 34 and 120 aged 60 to 89, with T1w,
-  two multi-echo resting-state fMRI runs and T2-FLAIR in most, plus cognitive and personality scores, in BIDS under
-  CC0.
+  Brain MRI with cognitive and personality scores of healthy younger and older adults, from a study of cognitive aging
+  and age differences in brain networks. 301 people from Ithaca and Toronto with structural and multi-echo
+  resting-state fMRI, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds003592
 doi: 10.18112/openneuro.ds003592.v1.0.13
 # First public snapshot (1.0.0) on OpenNeuro, 2021-03-30; latest snapshot 1.0.13, 2022-11-14.

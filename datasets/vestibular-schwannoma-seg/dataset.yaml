@@ -5,9 +5,8 @@ full_name: >-
   Segmentation of Vestibular Schwannoma from Magnetic Resonance Imaging: An Open Annotated Dataset and Baseline
   Algorithm
 summary: >-
-  Gamma Knife planning MRI (contrast-enhanced T1 and high-resolution T2) of 242 patients with a unilateral vestibular
-  schwannoma from one London centre, with manual tumour and cochlea contours, RT dose, plan and structure files and
-  T1-T2 registration matrices.
+  Radiosurgery planning MRI of patients with a vestibular schwannoma, with manual tumour and cochlea contours and
+  radiotherapy plans, for automatic tumour segmentation and volumetry. 242 patients from one London centre.
 homepage: https://www.cancerimagingarchive.net/collection/vestibular-schwannoma-seg/
 doi: 10.7937/TCIA.9YTJ-5Q73
 year: 2021

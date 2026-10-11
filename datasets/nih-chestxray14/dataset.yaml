@@ -3,8 +3,9 @@ id: nih-chestxray14
 name: NIH ChestX-ray14
 full_name: NIH Clinical Center Chest X-ray Dataset (ChestX-ray8 / ChestX-ray14)
 summary: >-
-  112,120 frontal chest radiographs (PNG) of 30,805 patients from the NIH Clinical Center, with 14 thoracic
-  disease labels text-mined from reports, age, sex, view, an official patient-level split and ~1,000 bounding boxes.
+  Frontal chest radiographs with disease labels mined from reports, one of the first chest X-ray sets large enough for
+  deep learning, used for multi-label classification and weakly supervised localization. 112,120 images of 30,805
+  patients with 14 labels, age, sex, view and about 1,000 boxes.
 homepage: https://nihcc.app.box.com/v/ChestXray-NIHCC
 year: 2017
 updated: 2020

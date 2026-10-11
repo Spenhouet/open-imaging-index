@@ -17,7 +17,7 @@ Pull requests written by agents are reviewed like any other. The person who aske
 1. Fork the repository and install [Bun](https://bun.sh).
 2. Run `bun install`, then `bun run new-dataset my-dataset-2024`. This copies `datasets/_template/` to `datasets/my-dataset-2024/`.
 3. Fill in `dataset.yaml`. Editors with the YAML extension (VS Code: Red Hat YAML) autocomplete every field from the schema.
-4. Write `README.md` in your own words. Do not copy the provider's text.
+4. Write `README.md` in your own words. Do not copy the provider's text. Start the `summary` in `dataset.yaml` with what the data is and what it was collected for ([The summary](standard.md#the-summary)).
 5. Add the numbers you can find to `stats.csv`. A single total row is fine to start. See [the data standard](standard.md) for what may go in.
 6. If the dataset uses a license that has no file in `licenses/` yet, add one and answer every rule with a quote.
 7. Run `bun run validate` and fix what it reports. `bun run dev` shows the site with your entry.

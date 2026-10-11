@@ -3,8 +3,8 @@ id: fcp-1000
 name: 1000 Functional Connectomes Project (FCP Classic)
 full_name: 1000 Functional Connectomes Project
 summary: >-
-  Resting-state fMRI with T1-weighted anatomical scans, age and sex from 1,200+ volunteers, pooled from 33 sites
-  worldwide in 2009 as the first open aggregate of resting-state data for functional connectivity research.
+  Resting-state fMRI with anatomical scans, age and sex of healthy volunteers, pooled from labs worldwide in 2009 as
+  the first open collection for studying functional connectivity across sites. More than 1,200 people from 33 sites.
 homepage: https://fcon_1000.projects.nitrc.org/fcpClassic/FcpTable.html
 doi: 10.1073/pnas.0911855107
 year: 2009

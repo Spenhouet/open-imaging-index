@@ -3,8 +3,9 @@ id: vindr-mammo
 name: VinDr-Mammo
 full_name: 'VinDr-Mammo: A large-scale benchmark dataset for computer-aided diagnosis in full-field digital mammography'
 summary: >-
-  5,000 four-view full-field digital mammography exams (20,000 DICOM images) from two Hanoi hospitals, double read
-  by radiologists with breast-level BI-RADS and density, bounding boxes for findings and a fixed train/test split.
+  Digital mammography exams double-read by radiologists, with BI-RADS, breast density and boxes around findings, a
+  benchmark for computer-aided detection and diagnosis. 5,000 four-view exams from two Hanoi hospitals with a fixed
+  train/test split.
 homepage: https://physionet.org/content/vindr-mammo/1.0.0/
 doi: 10.13026/br2v-7517
 year: 2022

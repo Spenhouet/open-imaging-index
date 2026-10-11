@@ -3,8 +3,9 @@ id: chbmp
 name: CHBMP
 full_name: Cuban Human Brain Mapping Project, second wave
 summary: >-
-  Population-based multimodal data from 282 functionally healthy Cuban adults aged 18 to 68: 1.5 T T1w and diffusion
-  MRI for 203 of them, high-density resting-state EEG, cognitive tests and demographics, shared in BIDS on Synapse.
+  Brain MRI, high-density resting-state EEG, cognitive tests and demographics of healthy Cuban adults, collected to
+  build normative references for EEG and its brain sources. 282 people aged 18 to 68, 203 with structural and
+  diffusion MRI, shared in BIDS on Synapse.
 homepage: https://www.synapse.org/#!Synapse:syn22324937
 doi: 10.7303/syn22324937
 year: 2021

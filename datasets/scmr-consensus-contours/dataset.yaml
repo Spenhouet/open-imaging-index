@@ -3,9 +3,9 @@ id: scmr-consensus-contours
 name: SCMR Consensus Contours
 full_name: Society for Cardiovascular Magnetic Resonance Consensus Contour dataset (Cardiac Atlas Project)
 summary: >-
-  Short-axis cine cardiac MRI of 15 subjects (healthy, infarct, heart failure, LV hypertrophy) from GE, Siemens and
-  Philips scanners, with left ventricular myocardial contours from seven SCMR core labs fused into consensus contours
-  that are kept back for benchmarking.
+  Cine cardiac MRI with left ventricle contours from seven expert core labs fused into consensus contours, kept as a
+  reference for training readers and benchmarking contouring. 15 subjects (healthy, infarct, heart failure,
+  hypertrophy) from three scanner makers.
 homepage: https://www.cardiacatlas.org/scmr-consensus-contours/
 doi: 10.1186/s12968-015-0170-9
 year: 2015

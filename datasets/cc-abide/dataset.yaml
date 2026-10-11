@@ -3,8 +3,9 @@ id: cc-abide
 name: cc_abide
 full_name: Corpus callosum and brain segmentations from ABIDE
 summary: >-
-  Automated midsagittal corpus callosum and intracranial segmentations (NIfTI) for 1,102 ABIDE I T1-weighted MRI scans
-  of people with autism spectrum disorder and controls, with area, volume and scan-quality tables.
+  Automated corpus callosum and intracranial segmentations of brain MRI from people with autism spectrum disorder and
+  controls, released to reproduce a study of corpus callosum size in autism. Label images, area and volume tables for
+  1,102 ABIDE I scans.
 homepage: https://www.nitrc.org/projects/cc_abide/
 year: 2015
 status: active

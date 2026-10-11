@@ -3,8 +3,8 @@ id: lumbar-spine-mri-sudirman
 name: Lumbar Spine MRI Dataset
 full_name: Lumbar Spine MRI Dataset (Sudirman et al.)
 summary: >-
-  Clinical 1.5 T lumbar spine MRI of 515 adults with symptomatic back pain from one hospital in Jordan, with
-  T1w and T2w sagittal and axial series as DICOM. Companion releases add axial segmentation labels and
+  Clinical lumbar spine MRI of adults with back pain, assembled to develop automated detection of spinal stenosis. 515
+  adults from one hospital in Jordan with sagittal and axial series; companion releases add segmentation labels and
   radiologist notes.
 homepage: https://data.mendeley.com/datasets/k57fr854j2/2
 doi: 10.17632/k57fr854j2.2

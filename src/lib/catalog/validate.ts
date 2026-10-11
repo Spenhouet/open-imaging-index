@@ -140,6 +140,51 @@ function checkDate(file: string, date: string, problems: Problem[]) {
     problems.push({ file, level: 'error', message: `verified date ${date} is in the future` });
 }
 
+const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '');
+// Words that may open a summary even when a dataset name starts with them.
+const SUMMARY_OK_START = new Set([
+  'brain',
+  'chest',
+  'mri',
+  'ct',
+  'pet',
+  'cardiac',
+  'breast',
+  'lung',
+  'knee',
+  'prostate'
+]);
+const PACKAGING =
+  /^(?:(?:a|an|the|this|our)\s+)?(?:(?:shared|curated|open|public|nih|large|in-house|retrospective)\s+)?(?:dataset|data\s*set|data\s+package|data\s+release|data\s+from|database|collection|archive|repository|release)\b/i;
+
+/** The summary must lead with what the data is. See "The summary" in docs/standard.md. */
+export function checkSummary(ds: Pick<DatasetFile, 'name' | 'full_name' | 'summary'>): Omit<Problem, 'file'>[] {
+  const out: Omit<Problem, 'file'>[] = [];
+  const s = ds.summary.trim();
+  const err = (m: string) =>
+    out.push({
+      level: 'error',
+      message: `summary ${m}. Lead with what the data is and what it was collected for (docs/standard.md, "The summary")`
+    });
+  const first = s.split(/[\s,:;(]+/)[0];
+  const nameFirst = ds.name.split(/[\s,:;(]+/)[0];
+  if (/^[\d~]/.test(s)) err('starts with a number');
+  else if (
+    norm(s).startsWith(norm(ds.name)) ||
+    (ds.full_name && norm(s).startsWith(norm(ds.full_name))) ||
+    (norm(first) === norm(nameFirst) && !SUMMARY_OK_START.has(norm(first)))
+  )
+    err('starts with the dataset name');
+  else if (PACKAGING.test(s)) err(`starts with "${s.match(PACKAGING)![0]}"`);
+  else if (/(?<![-\w])\d[\d,.]*\s*(?:T\b|%|\w)/.test(s.slice(0, 40)))
+    out.push({
+      level: 'warning',
+      message:
+        'summary has numbers in its first words. Lead with what the data is, then give counts and acquisition details'
+    });
+  return out;
+}
+
 export function checkDataset(
   dir: string,
   ds: DatasetFile,
@@ -152,6 +197,7 @@ export function checkDataset(
   const err = (message: string) => problems.push({ file, level: 'error', message });
   const folder = dir.split('/').pop();
   if (ds.id !== folder) err(`id "${ds.id}" must equal the folder name "${folder}"`);
+  for (const p of checkSummary(ds)) problems.push({ file, ...p });
 
   const lists: [keyof DatasetFile, string][] = [
     ['modalities', 'modality'],

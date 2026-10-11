@@ -3,9 +3,9 @@ id: habs-hd
 name: HABS-HD
 full_name: 'Health and Aging Brain Study: Health Disparities (HABS-HD)'
 summary: >-
-  Community-based longitudinal study in Fort Worth, Texas, of about 3,840 non-Hispanic Black, Hispanic and
-  non-Hispanic White adults with 3 T MRI (T1w, FLAIR, DTI, GRE, ASL, fMRI), amyloid and tau PET, blood biomarkers,
-  genomics and cognitive testing.
+  Brain MRI, amyloid and tau PET, blood biomarkers, genomics and cognition of Black, Hispanic and White adults in
+  Texas, followed to study brain ageing and Alzheimer's disease across ethnic groups. About 3,840 people from a
+  community-based cohort in Fort Worth.
 homepage: https://www.unthealth.edu/institute-for-translational-research/our-studies/habs-hd.html
 doi: 10.1002/trc2.70140
 # The ITR study page says the initial baseline data release was in 2021.

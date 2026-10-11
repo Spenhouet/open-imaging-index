@@ -3,9 +3,9 @@ id: anmerge
 name: ANMerge
 full_name: 'ANMerge: curated release of the AddNeuroMed Alzheimer''s disease cohort'
 summary: >-
-  Curated release of the European AddNeuroMed cohort with the DCR and ART cohorts: 1,702 participants (healthy, MCI,
-  Alzheimer's disease) with clinical data, genotypes, blood transcriptomics and proteomics, and 1.5 T T1w MRI with
-  FreeSurfer features for 453 participants.
+  Blood transcriptomics and proteomics, genotypes, clinical data and brain MRI from a European cohort of healthy older
+  adults and people with MCI or Alzheimer's disease, curated as a biomarker discovery or validation cohort next to
+  ADNI. 1,702 participants, 453 with MRI.
 homepage: https://www.synapse.org/Synapse:syn22252881
 doi: 10.7303/syn22252881
 # The ANMerge folder on Synapse was created in July 2020; the medRxiv preprint (August 2020) points to it.

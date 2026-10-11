@@ -3,9 +3,8 @@ id: vita
 name: VITA Vienna Transdanube Aging study
 full_name: Vienna Transdanube Aging "VITA" study
 summary: >-
-  Population-based birth cohort of 75-year-olds from two districts of Vienna, examined from 2000 with 1.0 T brain MRI
-  (T1w MPRAGE, T2w, PDw), cognitive testing and blood markers, and followed every 30 months to study incident
-  dementia. Scans are not public.
+  Brain MRI, cognitive testing and blood markers of 75-year-olds born in 1925 and 1926 in Vienna, followed every 30
+  months to find which measures predict later dementia. Population-based birth cohort. Scans are not public.
 homepage: https://doi.org/10.1007/978-3-7091-6139-5_11
 doi: 10.1007/978-3-7091-6139-5_11
 # The scans have no public release; year of the study design paper.

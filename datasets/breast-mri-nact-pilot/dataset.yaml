@@ -5,9 +5,9 @@ full_name: >-
   Single site breast DCE-MRI data and segmentations from patients undergoing neoadjuvant chemotherapy
   (Breast-MRI-NACT-Pilot)
 summary: >-
-  Longitudinal 1.5 T sagittal breast DCE-MRI of 64 women with stage II or III breast cancer, scanned up to four times
-  during neoadjuvant chemotherapy at UCSF, with threshold-based tumor and breast tissue segmentations, SER maps and
-  recurrence-free survival data.
+  Breast MRI repeated during neoadjuvant chemotherapy for stage II or III breast cancer, from a pilot study testing
+  whether dynamic contrast-enhanced MRI tracks tumor response. 64 women scanned up to four times at UCSF, with tumor
+  segmentations, enhancement maps and recurrence-free survival.
 homepage: https://www.cancerimagingarchive.net/collection/breast-mri-nact-pilot/
 doi: 10.7937/K9/TCIA.2016.QHsyhJKy
 # The NBIA API gives DateReleased 2016-01-30; version 3 is dated 2023/08/07 on the collection page.

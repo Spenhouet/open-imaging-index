@@ -3,9 +3,9 @@ id: edsd
 name: EDSD
 full_name: European DTI Study on Dementia
 summary: >-
-  Retrospective multicenter collection of DTI, 3D T1-weighted and FLAIR brain MRI from 139 patients with Alzheimer's
-  disease dementia, 160 with MCI and 194 healthy controls, acquired on 13 scanners at 11 European centers. Access via
-  neuGRID or DZNE Rostock after a signed data usage agreement.
+  Diffusion and structural brain MRI of patients with Alzheimer's dementia or MCI and healthy controls, collected to
+  test how well diffusion markers separate the groups and how much they vary between sites. 493 people scanned on 13
+  scanners at 11 European centres. Access after a data usage agreement.
 homepage: https://www.neugrid2.eu/index.php/data-portfolio/
 doi: 10.1016/j.neuroimage.2016.03.067
 # The data descriptor says the data were already public on neuGRID N4U as of March 2016 and gives no earlier release

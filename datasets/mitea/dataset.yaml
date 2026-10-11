@@ -3,9 +3,9 @@ id: mitea
 name: MITEA
 full_name: MITEA (MR-Informed Three-dimensional Echocardiography Analysis)
 summary: >-
-  3D transthoracic echocardiography of 134 adults from Auckland (82 healthy, 52 with cardiac disease), scan and rescan
-  at end-diastole and end-systole, with left ventricular myocardium and cavity labels registered from each subject's
-  own cardiac MRI. 536 labelled volumes.
+  Three-dimensional echocardiograms of the left ventricle labelled from each person's same-day cardiac MRI, for
+  training and testing segmentation and measurement of volumes and ejection fraction from 3D echo. 134 adults from
+  Auckland, healthy or with heart disease, scanned twice; 536 labelled volumes.
 homepage: https://www.cardiacatlas.org/mitea/
 doi: 10.3389/fcvm.2022.1016703
 year: 2023

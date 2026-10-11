@@ -3,8 +3,9 @@ id: corr
 name: CoRR
 full_name: Consortium for Reliability and Reproducibility
 summary: >-
-  Test-retest MRI from 1,629 typical individuals across 18 institutions: 5,093 resting-state fMRI scans plus T1-weighted,
-  diffusion and ASL scans, aggregated by INDI to measure reliability and reproducibility of connectome metrics.
+  Test-retest brain MRI from healthy people, pooled to measure how reliable and reproducible connectome measures are
+  across repeated scans and sites. 5,093 resting-state fMRI scans of 1,629 people from 18 institutions, plus
+  structural, diffusion and ASL scans.
 homepage: https://fcon_1000.projects.nitrc.org/indi/CoRR/html/
 doi: 10.1038/sdata.2014.49
 year: 2014

@@ -3,8 +3,8 @@ id: prostate-mri-us-biopsy
 name: Prostate-MRI-US-Biopsy
 full_name: Prostate MRI and Ultrasound With Pathology and Coordinates of Tracked Biopsy
 summary: >-
-  3D transrectal ultrasound of 1,151 men having MRI-ultrasound fusion prostate biopsy at UCLA, with T2-weighted and
-  diffusion MRI for most, prostate and target surfaces, tracked biopsy core coordinates and Gleason grades per core.
+  Prostate ultrasound and MRI from fusion-guided biopsies, with the logged position and Gleason grade of every biopsy
+  core, for prostate segmentation, MRI-ultrasound registration and biopsy outcome prediction. 1,151 men from UCLA.
 homepage: https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/
 doi: 10.7937/TCIA.2020.A61IOC1A
 year: 2020

@@ -4,9 +4,9 @@ name: BONBID-HIE
 full_name: 'BOston Neonatal Brain Injury Data for Hypoxic Ischemic Encephalopathy (BONBID-HIE): I. MRI and Manual
   Lesion Annotation'
 summary: >-
-  Neonatal brain diffusion MRI from 133 term-born infants with hypoxic ischemic encephalopathy at Massachusetts
-  General Hospital: skull-stripped ADC maps, ZADC deviation maps and expert lesion masks, used in the MICCAI 2023
-  BONBID-HIE lesion segmentation challenge.
+  Diffusion MRI of newborns with hypoxic ischemic encephalopathy, with expert lesion masks, released for a MICCAI 2023
+  lesion segmentation challenge. Skull-stripped ADC and deviation maps of 133 term-born infants; lesions are small and
+  scattered, a hard segmentation test.
 homepage: https://zenodo.org/records/10602767
 doi: 10.5281/zenodo.10602767
 # Training data went public on Zenodo on 2023-07-01. The record with training, validation and test data dates from 2024.

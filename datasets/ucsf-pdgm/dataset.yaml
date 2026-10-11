@@ -3,9 +3,9 @@ id: ucsf-pdgm
 name: UCSF-PDGM
 full_name: The University of California San Francisco Preoperative Diffuse Glioma MRI
 summary: >-
-  Preoperative 3 T brain MRI of 495 patients with WHO grade 2 to 4 diffuse gliomas from one center, with SWI, ASL
-  and HARDI diffusion besides the standard four contrasts, tumor sub-region segmentations, IDH, MGMT and 1p/19q status
-  and survival data.
+  Brain MRI before surgery of patients with diffuse gliomas on one standardized protocol, with tumor segmentations,
+  molecular markers and survival, for segmentation, molecular prediction and survival modelling. 495 patients from
+  UCSF, with susceptibility, perfusion and diffusion beyond the usual four contrasts.
 homepage: https://www.cancerimagingarchive.net/collection/ucsf-pdgm/
 doi: 10.7937/tcia.bdgf-8v37
 year: 2022

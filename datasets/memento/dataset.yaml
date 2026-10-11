@@ -3,9 +3,9 @@ id: memento
 name: MEMENTO
 full_name: 'MEMENTO: cohort of outpatients from French research memory centres (deterMinants and Evolution of AlzheiMer''s disEase aNd relaTed disOrders)'
 summary: >-
-  French memory-clinic cohort of 2,323 non-demented adults with subjective complaints or mild cognitive impairment,
-  followed for 5 years with harmonised 1.5 T and 3 T brain MRI including 2D T2*-weighted GRE, optional FDG PET,
-  biobank and clinical data. Access by approved proposal.
+  Brain MRI, optional FDG PET, biobank and clinical data of memory-clinic patients without dementia, with subjective
+  complaints or mild cognitive impairment, followed for 5 years to study how Alzheimer's disease and related disorders
+  develop. 2,323 adults in France. Access by approved proposal.
 homepage: https://host.credim.u-bordeaux.fr/dnn-memento/Accueil.aspx
 doi: 10.48532/031000
 # Year of the DPUK data set DOI record (Dufouil, C. (2017). MEMENTO [Data set]).

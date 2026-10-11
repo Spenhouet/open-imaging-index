@@ -3,8 +3,9 @@ id: mimic-cxr
 name: MIMIC-CXR
 full_name: MIMIC Chest X-ray Database
 summary: >-
-  377,110 chest radiographs in DICOM format from 227,835 studies of 65,379 patients seen at the Beth Israel
-  Deaconess Medical Center emergency department (2011-2016), each study paired with its free-text radiology report.
+  Chest radiographs paired with the free-text radiology reports written during routine emergency care, widely used for
+  chest X-ray classification, report generation and vision-language research. 377,110 images from 227,835 studies of
+  65,379 patients at a Boston hospital.
 homepage: https://physionet.org/content/mimic-cxr/
 doi: 10.13026/4jqj-jw95
 year: 2019

@@ -3,8 +3,9 @@ id: sald
 name: SALD
 full_name: Southwest University Adult Lifespan Dataset
 summary: >-
-  T1-weighted MPRAGE and 8-minute resting-state fMRI from 494 healthy Chinese adults aged 19 to 80, scanned at 3 T at
-  Southwest University, Chongqing. Shared openly through INDI in BIDS format with age, sex, handedness and QA measures.
+  Structural and resting-state brain MRI of healthy Chinese adults across adulthood, collected to chart brain ageing
+  in a non-Western sample and to replicate ageing findings. 494 people aged 19 to 80 from Chongqing, shared openly in
+  BIDS.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/sald.html
 doi: 10.15387/fcp_indi.sald
 year: 2017

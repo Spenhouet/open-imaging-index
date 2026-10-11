@@ -3,9 +3,8 @@ id: sunnybrook-cardiac-data
 name: Sunnybrook Cardiac Data
 full_name: Sunnybrook Cardiac Data (SCD), MICCAI 2009 Cardiac MR Left Ventricle Segmentation Challenge
 summary: >-
-  Short-axis cine cardiac MRI of 45 patients from Sunnybrook Health Sciences Centre, Toronto (healthy, LV
-  hypertrophy, heart failure with and without infarction), with expert endocardial and epicardial LV contours at
-  end-diastole and end-systole. CC0.
+  Cine cardiac MRI with expert left ventricle contours of healthy people and patients with hypertrophy or heart
+  failure, built for a 2009 left ventricle segmentation challenge. 45 patients from Toronto, under CC0.
 homepage: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
 doi: 10.54294/g80ruo
 year: 2009

@@ -5,8 +5,9 @@ full_name: >-
   The human Voice Areas: spatial organisation and inter-individual variability in temporal and extra-temporal
   cortices
 summary: >-
-  Brain MRI of 217 healthy young adults from Glasgow, each with one T1-weighted scan and one 10-minute passive
-  listening fMRI run of the voice localizer (vocal vs non-vocal sound blocks), in BIDS on OpenNeuro.
+  Brain fMRI of healthy young adults listening to vocal and non-vocal sounds, pooled to map the voice-sensitive areas
+  of auditory cortex and how much they vary between people. 217 people from Glasgow, each with one anatomical scan and
+  one 10-minute run, in BIDS on OpenNeuro.
 homepage: https://openneuro.org/datasets/ds000158
 doi: 10.18112/openneuro.ds000158.v1.0.0
 year: 2015

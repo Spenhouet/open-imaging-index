@@ -3,9 +3,9 @@ id: ispy1
 name: ISPY1
 full_name: Multi-center breast DCE-MRI data and segmentations from patients in the I-SPY 1/ACRIN 6657 trials
 summary: >-
-  Serial 1.5 T breast DCE-MRI of 222 women with stage 2 or 3 breast cancer from the multicenter I-SPY 1/ACRIN 6657
-  trial, scanned at up to four time points during neoadjuvant chemotherapy, with tumor segmentations, pathologic
-  response and recurrence-free survival data.
+  Breast MRI repeated during neoadjuvant chemotherapy for stage 2 or 3 breast cancer, from a trial testing whether
+  imaging predicts pathologic response and recurrence. 222 women scanned at up to four time points, with tumor
+  segmentations, response and recurrence-free survival.
 homepage: https://www.cancerimagingarchive.net/collection/ispy1/
 doi: 10.7937/K9/TCIA.2016.HdHpgJLK
 year: 2016

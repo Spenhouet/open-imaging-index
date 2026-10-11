@@ -3,9 +3,9 @@ id: brain-before-stroke
 name: Brain Before Stroke (BBS)
 full_name: Brain Before Stroke (BBS) prospective cohort of first-ever ischemic stroke, Bordeaux University Hospital
 summary: >-
-  Prospective cohort of 428 adults with a first-ever supratentorial ischemic stroke at Bordeaux University Hospital,
-  imaged on 3 T GE MRI 24 to 72 hours after onset (DWI, FLAIR, T1, SWAN, T2*-GRE) with 1-year outcomes. Shared on
-  request to the PI.
+  Early brain MRI after a first ischemic stroke with 1-year outcomes, collected to study how imaging markers relate to
+  recovery. 428 adults from a prospective cohort in Bordeaux, France, scanned 24 to 72 hours after onset. Shared on
+  request to the principal investigator.
 homepage: https://pubmed.ncbi.nlm.nih.gov/33184231/
 # The cohort has no public release; year of the cohort paper that SHIVA-CMB cites for BBS.
 year: 2021

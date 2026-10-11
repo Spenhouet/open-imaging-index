@@ -3,8 +3,9 @@ id: yonsei-gachon-cmb
 name: Yonsei/Gachon SWI Microbleed Dataset
 full_name: Yonsei MILAB and Gachon University Gil Medical Center cerebral microbleed SWI dataset
 summary: >-
-  3 T SWI, phase and magnitude brain MRI of 179 subjects from Gachon University Gil Medical Center with point labels
-  for 760 cerebral microbleeds. Offered with the 2020 paper, but the authors withdrew the data in 2021.
+  Susceptibility-weighted brain MRI with point labels of cerebral microbleeds, built to train and test a two-stage
+  microbleed detector. 179 subjects from a Korean hospital with 760 microbleeds. Offered with the paper, but the
+  authors withdrew the data in 2021.
 homepage: https://github.com/Yonsei-MILab/Cerebral-Microbleeds-Detection
 doi: 10.1016/j.nicl.2020.102464
 # Year of the paper; the code repository linked to a download page from February 2020 until June 2021.

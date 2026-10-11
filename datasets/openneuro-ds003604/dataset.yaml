@@ -3,8 +3,9 @@ id: openneuro-ds003604
 name: Child Language Longitudinal (ds003604)
 full_name: A longitudinal neuroimaging dataset on language processing in children ages 5, 7, and 9 years old
 summary: >-
-  Longitudinal brain MRI of 322 children from Austin, Texas, scanned at ages 5, 7 and 9 with T1w, 64-direction
-  diffusion and four auditory language task fMRI scans, plus language and reading assessments, in BIDS under CC0.
+  Longitudinal brain MRI and language task fMRI of children with language and reading assessments, collected to study
+  how the brain specializes for spoken language in early school years. 322 children from Austin, Texas, scanned at
+  ages 5, 7 and 9, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds003604
 doi: 10.18112/openneuro.ds003604.v1.0.7
 year: 2021

@@ -3,9 +3,9 @@ id: strive-ed
 name: STRIvE eating disorders MRI
 full_name: STRIvE-ED stress and eating disorders inpatient MRI study (University of Cambridge)
 summary: >-
-  3T brain MRI (T1-weighted, task fMRI, 1H-MRS) of 85 women from Cambridge, UK: 22 with anorexia nervosa
-  (binge/purge subtype), 33 with bulimia nervosa and 30 controls, scanned on two days under acute stress and a control
-  task. Images are not shared.
+  Brain MRI, task fMRI and spectroscopy of women with binge-eating disorders and controls under acute stress,
+  collected to study how stress affects self-control. 85 women from Cambridge, UK, with anorexia (binge/purge type),
+  bulimia or no disorder. Images are not shared.
 homepage: https://doi.org/10.1523/JNEUROSCI.2853-20.2021
 doi: 10.1523/JNEUROSCI.2853-20.2021
 # Year of the first peer-reviewed imaging paper on the cohort (Westwater et al., J Neurosci, May 2021); the images have

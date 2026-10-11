@@ -3,9 +3,9 @@ id: nimh-irp-dsst
 name: NIMH-IRP Data Science and Sharing Team collection
 full_name: NIMH-IRP Data Science and Sharing Team (NIMH Data Archive collection 2936)
 summary: >-
-  NIMH Data Archive collection of NIH intramural MRI releases with 447 shared subjects: 3T T1-weighted scans of 440
-  psychiatrically healthy children and adults from nuclear families (NIMH NHGRI data-sharing project) plus densely
-  sampled single-subject task fMRI at 3T and 7T.
+  Structural brain MRI of psychiatrically healthy children and adults from nuclear families, plus densely sampled
+  single-subject task fMRI, released by NIH intramural teams for normative modelling and image quality work. 447
+  shared subjects, 440 in the family sample.
 homepage: https://nda.nih.gov/edit_collection.html?id=2936
 doi: 10.15154/fprt-xg58
 year: 2018

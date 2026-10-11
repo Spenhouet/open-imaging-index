@@ -2,9 +2,9 @@
 id: prostate-diagnosis
 name: PROSTATE-DIAGNOSIS
 summary: >-
-  1.5 T endorectal-coil prostate MRI of 92 prostate cancer patients with T2-weighted, T1-weighted and dynamic
-  contrast-enhanced series, plus pathology and radiology reports and small sets of manual zonal and structure
-  segmentations.
+  Diagnostic prostate MRI of patients with prostate cancer, with pathology and radiology reports and small sets of
+  manual segmentations, used for gland and zone segmentation and lesion detection. 92 patients scanned at 1.5 T with
+  an endorectal coil.
 homepage: https://www.cancerimagingarchive.net/collection/prostate-diagnosis/
 doi: 10.7937/K9/TCIA.2015.FOQEUJVT
 year: 2013

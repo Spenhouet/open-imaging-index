@@ -3,8 +3,8 @@ id: tcga-kirc
 name: TCGA-KIRC
 full_name: The Cancer Genome Atlas Kidney Renal Clear Cell Carcinoma Collection
 summary: >-
-  Pre-surgical CT and MRI of 267 patients with clear cell renal cell carcinoma from seven US centers, matched by
-  patient ID to the TCGA clinical, genomic and pathology data for radiogenomics research.
+  CT and MRI before surgery of patients with clear cell kidney cancer whose tumors were profiled by The Cancer Genome
+  Atlas, so imaging can be linked to genomics and outcome. 267 patients from seven US centers.
 homepage: https://www.cancerimagingarchive.net/collection/tcga-kirc/
 doi: 10.7937/K9/TCIA.2016.V6PBVTDR
 year: 2012

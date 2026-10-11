@@ -4,8 +4,9 @@ name: CPTAC-UCEC
 full_name: >-
   The Clinical Proteomic Tumor Analysis Consortium Uterine Corpus Endometrial Carcinoma Collection (CPTAC-UCEC)
 summary: >-
-  Standard-of-care CT, MRI, PET and ultrasound of 90 patients and whole-slide pathology images of 250 patients from the
-  NCI CPTAC uterine corpus endometrial carcinoma cohort, linked by patient ID to proteomic, genomic and clinical data.
+  CT, MRI, PET, ultrasound and pathology slide images of patients with endometrial cancer, linked to proteomic,
+  genomic and clinical data of the same people, so that imaging can be studied next to molecular profiles. Radiology
+  for 90 and slides for 250 patients from the NCI CPTAC cohort.
 homepage: https://www.cancerimagingarchive.net/collection/cptac-ucec/
 doi: 10.7937/k9/tcia.2018.3r3juisw
 year: 2018

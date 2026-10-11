@@ -3,9 +3,9 @@ id: aurora-dcaa
 name: AURORA (Leiden D-CAA cohort)
 full_name: AURORA natural history study of Dutch-type hereditary cerebral amyloid angiopathy, Leiden University Medical Center
 summary: >-
-  Prospective Leiden cohort of 120 presymptomatic and symptomatic carriers of Dutch-type hereditary cerebral amyloid
-  angiopathy with yearly 3 T and 7 T brain MRI (SWI, FLAIR, T2w), CSF and cognitive tests. Data on request from the
-  authors.
+  Yearly brain MRI, CSF and cognitive tests of presymptomatic and symptomatic carriers of hereditary cerebral amyloid
+  angiopathy (Dutch type), followed to learn the order in which biomarkers change. 120 people in Leiden, scanned at 3
+  T and 7 T. Data on request from the authors.
 homepage: https://www.lumc.nl/patientenzorg/meedoen-aan-wetenschappelijk-onderzoek/onderzoek-naar-hchwa-d/aurora/
 # Start of the study (2018); the data have not been publicly released.
 year: 2018

@@ -3,9 +3,9 @@ id: gsp
 name: GSP
 full_name: Brain Genomics Superstruct Project
 summary: >-
-  Open access release of 1,570 healthy young adults aged 18 to 35 from Boston, each with a multi-echo MPRAGE T1w scan
-  and one or two eyes-open resting-state BOLD runs at 3T, plus FreeSurfer morphometrics, fMRI quality metrics and
-  behavioral measures, and 69 test-retest pairs.
+  Structural and resting-state brain MRI with behavioral measures of healthy young adults, released for large-sample
+  work on brain structure, functional networks and their link to personality and cognition. 1,570 people aged 18 to 35
+  from Boston, with FreeSurfer measures and 69 test-retest pairs.
 homepage: https://dataverse.harvard.edu/dataverse/GSP
 doi: 10.7910/DVN/25833
 # Publication date of the Dataverse dataset (2014-05-22); the data descriptor followed in 2015.

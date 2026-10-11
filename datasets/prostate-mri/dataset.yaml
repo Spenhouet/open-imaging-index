@@ -2,9 +2,9 @@
 id: prostate-mri
 name: PROSTATE-MRI
 summary: >-
-  Endorectal-coil 3T multiparametric prostate MRI (T2-weighted, diffusion, DCE) of 26 men with biopsy-proven prostate
-  cancer before robotic radical prostatectomy, with whole-mount histopathology cut in the MRI plane using a
-  patient-specific mold.
+  Preoperative prostate MRI paired with whole-mount histology cut in the MRI plane, for registering histology to MRI
+  and mapping tumor appearance to pathology. 26 men with biopsy-proven prostate cancer scanned at 3T with an
+  endorectal coil before robotic prostatectomy.
 homepage: https://www.cancerimagingarchive.net/collection/prostate-mri/
 doi: 10.7937/K9/TCIA.2016.6046GUDV
 year: 2011

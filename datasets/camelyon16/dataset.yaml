@@ -3,8 +3,9 @@ id: camelyon16
 name: CAMELYON16
 full_name: Cancer Metastases in Lymph Nodes Challenge 2016
 summary: >-
-  About 400 H&E whole-slide images of sentinel lymph nodes from breast cancer patients at two Dutch hospitals,
-  labelled for metastases with detailed tumour outlines, released under CC0 for the CAMELYON16 challenge.
+  Whole-slide images of sentinel lymph nodes from breast cancer surgery, labelled for metastases with detailed tumour
+  outlines, created for the first challenge on detecting metastases in digital pathology. About 400 H&E slides from
+  two Dutch hospitals, released under CC0.
 homepage: https://camelyon16.grand-challenge.org/
 year: 2015
 status: active

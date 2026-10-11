@@ -3,8 +3,9 @@ id: abide-i
 name: ABIDE I
 full_name: Autism Brain Imaging Data Exchange I
 summary: >-
-  Resting-state fMRI and T1-weighted MRI with phenotypic data for 1,112 people (539 with autism spectrum disorder,
-  573 typical controls, ages 7 to 64) pooled from 17 sites in the US and Europe.
+  Resting-state fMRI and structural brain MRI of people with autism spectrum disorder and typical controls, pooled
+  from 17 sites in the US and Europe to study functional connectivity in autism. 1,112 people aged 7 to 64 (539 with
+  autism) with phenotypic data.
 homepage: https://fcon_1000.projects.nitrc.org/indi/abide/abide_I.html
 year: 2012
 status: active

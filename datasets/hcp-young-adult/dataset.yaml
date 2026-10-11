@@ -3,8 +3,9 @@ id: hcp-young-adult
 name: HCP Young Adult (S1200)
 full_name: WU-Minn Human Connectome Project, Young Adult study, 1200 Subjects Release
 summary: >-
-  High-resolution 3T structural, resting-state and task fMRI and multi-shell diffusion MRI of 1,113 healthy young
-  adults from twin and sibling families (1,206 with behavioral data), plus 7T MRI for 184 and MEG for 95 of them.
+  High-resolution structural, functional and diffusion brain MRI of healthy young adults from twin and sibling
+  families, a reference for brain connectivity, parcellation and heritability research. 1,113 people scanned at 3T,
+  with 7T MRI for 184 and MEG for 95.
 homepage: https://www.humanconnectome.org/study/hcp-young-adult
 doi: 10.1016/j.neuroimage.2013.05.041
 year: 2013

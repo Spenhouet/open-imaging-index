@@ -3,8 +3,9 @@ id: chexpert
 name: CheXpert
 full_name: 'CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison'
 summary: >-
-  224,316 chest radiographs of 65,240 Stanford Hospital patients (2002-2017) with 14 report-derived labels that
-  include an "uncertain" state, plus a radiologist-labelled validation set. Non-commercial research use only.
+  Chest radiographs with labels for common findings taken from radiology reports, including an uncertain state, one of
+  the standard benchmarks for multi-label chest X-ray classification. 224,316 images of 65,240 Stanford patients with
+  14 labels and a radiologist-labelled validation set. Non-commercial use only.
 homepage: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
 doi: 10.71718/y7pj-4v93
 year: 2019

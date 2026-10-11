@@ -3,9 +3,9 @@ id: prostate158
 name: Prostate158
 full_name: Prostate158 expert-annotated biparametric 3T prostate MRI dataset
 summary: >-
-  Biparametric 3 T prostate MRI (T2w, DWI, ADC) of 158 men with suspected prostate cancer from Charité Berlin, with
-  expert segmentations of the central gland, peripheral zone and PI-RADS 4 to 5 lesions, split into 139 training and
-  19 test cases.
+  Prostate MRI of men with suspected cancer, with expert segmentations of the prostate zones and suspicious lesions, a
+  public benchmark for prostate anatomy and cancer segmentation. 158 men from Charité Berlin, split into 139 training
+  and 19 test cases.
 homepage: https://prostate158.grand-challenge.org/
 doi: 10.5281/zenodo.6481141
 # The training data record on Zenodo was published on 2022-04-24.

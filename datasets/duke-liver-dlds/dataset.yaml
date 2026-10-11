@@ -3,8 +3,9 @@ id: duke-liver-dlds
 name: Duke Liver Dataset (DLDS)
 full_name: Duke Liver Dataset (MRI)
 summary: >-
-  2146 abdominal MRI series of 105 patients scanned for suspected liver cirrhosis at Duke, with series-type labels
-  in 17 classes and manual whole-liver masks for 310 series, for MRI series classification and liver segmentation.
+  Abdominal MRI series of patients with suspected liver cirrhosis, labelled by series type with liver masks for some,
+  for training series classifiers and liver segmentation models. 2,146 series of 105 patients from Duke, 310 with
+  manual whole-liver masks.
 homepage: https://zenodo.org/records/7774566
 doi: 10.5281/zenodo.7774566
 year: 2022

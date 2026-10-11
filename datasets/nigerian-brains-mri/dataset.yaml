@@ -3,9 +3,9 @@ id: nigerian-brains-mri
 name: Nigerian Brains MRI
 full_name: A labeled Clinical-MRI dataset of Nigerian brains
 summary: >-
-  Clinical-quality structural brain MRI (T1w, T2w, FLAIR) of 88 Nigerian adults and adolescents: 31 with dementia, 22
-  with Parkinson's disease and 35 controls, from 0.3 T and 1.5 T scanners at three diagnostic centers, brain-extracted
-  and shared in BIDS on brainlife.io.
+  Clinical structural brain MRI of Nigerians with dementia or Parkinson's disease and controls, shared to train local
+  researchers and to build methods for low-field, unstandardized scans. 88 people from three diagnostic centres,
+  scanned at 0.3 T and 1.5 T, in BIDS on brainlife.io.
 homepage: https://doi.org/10.25663/brainlife.pub.61
 doi: 10.25663/brainlife.pub.61
 year: 2023

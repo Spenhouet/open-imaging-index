@@ -3,9 +3,9 @@ id: aibl
 name: AIBL
 full_name: Australian Imaging, Biomarkers and Lifestyle Flagship Study of Ageing
 summary: >-
-  Longitudinal Australian cohort of older adults who are cognitively normal or have MCI or Alzheimer's dementia. The
-  subset with MRI and amyloid PET (PiB, florbetapir, flutemetamol) is shared through the LONI IDA, with demographic,
-  cognitive and blood data.
+  Brain MRI and amyloid PET with demographic, cognitive and blood data from older Australians who are cognitively
+  normal or have MCI or Alzheimer's dementia, followed to learn how Alzheimer's disease begins and progresses. The
+  imaging subset is shared through the LONI IDA.
 homepage: https://aibl.org.au/
 # Year the study launched (14 November 2006, per the AIBL website). The date of the first data release on LONI was not
 # verified separately.

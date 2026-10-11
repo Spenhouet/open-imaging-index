@@ -3,9 +3,9 @@ id: aspree-neuro
 name: ASPREE-NEURO
 full_name: ASPREE-NEURO, the brain MRI sub-study of the ASPirin in Reducing Events in the Elderly trial
 summary: >-
-  Longitudinal 3 T brain MRI (T1w, FLAIR, SWI, diffusion, ASL, resting-state fMRI) of 559 healthy Australians aged 70
-  and over in a randomised aspirin trial, scanned at baseline, 1 and 3 years to track microbleeds and white matter
-  lesions. Access by ASPREE application.
+  Longitudinal brain MRI of healthy Australians aged 70 and over in a placebo-controlled aspirin trial, used to test
+  whether daily aspirin changes microbleeds and white matter lesions over three years. 559 people scanned at baseline,
+  1 and 3 years. Access by application.
 homepage: https://aspree.org/aus/about-the-aspree-project/sub-studies/
 doi: 10.1177/1747493016669848
 # Year of the protocol paper. No public release of the MRI data is documented.

@@ -3,9 +3,9 @@ id: tractoinferno
 name: TractoInferno
 full_name: 'TractoInferno: A large-scale, open-source, multi-site database for machine learning dMRI tractography'
 summary: >-
-  Processed brain MRI of 284 healthy adults from six 3T sites: T1w, single-shell diffusion, DTI maps, fODFs, tissue
-  masks and reference tractograms of 30 white matter bundles, split for training and benchmarking machine learning
-  tractography. CC0 on OpenNeuro.
+  Processed diffusion and structural brain MRI of healthy adults with reference tractograms of 30 white matter
+  bundles, built to train and compare machine learning tractography on a common footing. 284 people from six sites
+  with fixed splits and an evaluation script, under CC0.
 homepage: https://openneuro.org/datasets/ds003900
 doi: 10.18112/openneuro.ds003900.v1.1.1
 year: 2021

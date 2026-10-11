@@ -5,9 +5,9 @@ full_name: >-
   Variations of dynamic contrast-enhanced magnetic resonance imaging in evaluation of breast cancer therapy response: a
   multicenter data analysis challenge (QIN Breast DCE-MRI)
 summary: >-
-  3 T bilateral breast DCE-MRI of 10 women with locally advanced breast cancer, scanned before and after the first
-  cycle of neoadjuvant chemotherapy at OHSU, with pathologic response status, shared on TCIA for a QIN pharmacokinetic
-  analysis challenge.
+  Breast MRI before and after the first cycle of neoadjuvant chemotherapy, used in a challenge measuring how much the
+  choice of analysis software changes DCE-MRI parameters and response prediction. 10 women with locally advanced
+  breast cancer from OHSU, with response status.
 homepage: https://www.cancerimagingarchive.net/collection/qin-breast-dce-mri/
 doi: 10.7937/K9/TCIA.2014.A2N1IXOX
 # Version 1 is dated 2014/07/02 on the collection page, version 2 2019/04/18.

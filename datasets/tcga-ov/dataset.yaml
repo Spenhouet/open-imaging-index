@@ -3,8 +3,8 @@ id: tcga-ov
 name: TCGA-OV
 full_name: The Cancer Genome Atlas Ovarian Cancer Collection
 summary: >-
-  Pre-surgical and follow-up clinical CT, plus MRI of one patient, of 143 women with ovarian serous cystadenocarcinoma
-  from eight US centers, matched by patient ID to the TCGA clinical, genomic and pathology data for radiogenomics.
+  CT before and after surgery of women with ovarian cancer whose tumors were profiled by The Cancer Genome Atlas, so
+  imaging can be linked to genomics and outcome. 143 women from eight US centers, MRI for one.
 homepage: https://www.cancerimagingarchive.net/collection/tcga-ov/
 doi: 10.7937/K9/TCIA.2016.NDO1MDFQ
 year: 2013

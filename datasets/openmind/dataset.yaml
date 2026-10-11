@@ -3,9 +3,9 @@ id: openmind
 name: OpenMind
 full_name: 'The OpenMind Dataset: 3D head-and-neck MRI pooled from 800 OpenNeuro datasets for self-supervised learning'
 summary: >-
-  113,921 3D head and brain volumes (all MRI except 653 PET) from 800 OpenNeuro datasets and about 34,000 subjects,
-  with diffusion-derived maps, defacing and anatomy masks and harmonized metadata, for self-supervised pre-training.
-  CC BY 4.0 on Hugging Face.
+  Head and brain MRI volumes pooled from 800 OpenNeuro datasets with masks and harmonized metadata, built for
+  self-supervised pretraining, not for supervised tasks. 113,921 volumes of about 34,000 subjects, including
+  diffusion-derived maps, under CC BY 4.0 on Hugging Face.
 homepage: https://huggingface.co/datasets/MIC-DKFZ/OpenMind
 # Hugging Face repository created March 2025; the arXiv preprint describing it appeared in December 2024.
 year: 2025

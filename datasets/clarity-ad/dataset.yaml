@@ -5,9 +5,9 @@ full_name: >-
   Clarity AD, a randomized placebo-controlled phase 3 trial of lecanemab in early Alzheimer disease (NCT03887455),
   trial MRI
 summary: >-
-  Serial safety MRI at 1.5 T or 3 T (3D T1w, FLAIR, T2*-GRE, T2w, DWI) of 1795 people with early Alzheimer disease in
-  the Eisai and Biogen lecanemab phase 3 trial, centrally read for ARIA. The images are not shared; the safety paper
-  states its data are not available.
+  Safety brain MRI from the lecanemab phase 3 trial in early Alzheimer's disease, read centrally for amyloid-related
+  imaging abnormalities (ARIA) during treatment. 1,795 people scanned at 1.5 T or 3 T. The images are not shared
+  outside the sponsor.
 homepage: https://clinicaltrials.gov/study/NCT03887455
 doi: 10.1056/NEJMoa2212948
 # Year of the primary results publication; the images have no public release.

@@ -3,9 +3,9 @@ id: wrap
 name: WRAP
 full_name: Wisconsin Registry for Alzheimer's Prevention
 summary: >-
-  Longitudinal US cohort enrolled at midlife and enriched for a parental history of Alzheimer's disease, with cognition
-  every two years and MRI (T1, T2, FLAIR), amyloid PET (PiB, NAV4694) and MK-6240 tau PET in subsets. Access by
-  application to the WRAP committee.
+  Cognition every two years plus brain MRI and amyloid and tau PET for subsets, from midlife adults mostly with a
+  parent who had Alzheimer's disease, followed to study preclinical Alzheimer's disease. US cohort since 2001. Access
+  by application.
 homepage: https://wrap.wisc.edu/
 doi: 10.1016/j.dadm.2017.11.007
 # Year the registry was established (2001, per Johnson et al. 2018 and the WRAP website). The date of the first data

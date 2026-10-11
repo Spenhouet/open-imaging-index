@@ -3,9 +3,9 @@ id: pnc
 name: Philadelphia Neurodevelopmental Cohort (PNC)
 full_name: 'Philadelphia Neurodevelopmental Cohort (dbGaP: Neurodevelopmental Genomics: Trajectories of Complex Phenotypes)'
 summary: >-
-  Community cohort of youth aged 8 to 21 from the Philadelphia area with genotypes, psychiatric and cognitive
-  phenotypes, and single-scanner 3T multimodal MRI (T1w, ASL, diffusion, resting-state and task fMRI) of a 1,000-subject
-  subsample, shared through dbGaP.
+  Genotypes, psychiatric and cognitive data and, for a subsample, brain MRI of youth from the Philadelphia area,
+  collected to study how brain development relates to cognition, emerging psychiatric symptoms and genetics. Ages 8 to
+  21; about 1,000 with MRI. Shared through dbGaP.
 homepage: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607
 doi: 10.1016/j.neuroimage.2015.03.056
 year: 2014

@@ -3,8 +3,9 @@ id: fastmri
 name: fastMRI (knee and brain)
 full_name: 'fastMRI: raw k-space and DICOM dataset of knee and brain MRI'
 summary: >-
-  Raw multi-coil k-space of 1,594 knee and 6,970 brain MRI scans from NYU Langone, plus about 10,000 clinical knee
-  MRI exams as DICOM, released with Meta AI (FAIR) to benchmark machine-learning reconstruction of accelerated MRI.
+  Raw MRI scanner data (k-space) of knee and brain scans, released to train and compare machine learning methods that
+  reconstruct images from accelerated scans. 1,594 knee and 6,970 brain scans from NYU Langone, plus about 10,000
+  clinical knee exams as DICOM.
 homepage: https://fastmri.med.nyu.edu/
 doi: 10.1148/ryai.2020190007
 year: 2018

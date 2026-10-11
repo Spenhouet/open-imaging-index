@@ -3,8 +3,9 @@ id: csiro-aibl-synthetic-cmb
 name: AIBL Synthetic Cerebral Microbleeds on SWI
 full_name: Synthetic Cerebral Microbleed on SWI images (CSIRO Data Access Portal collection 50304)
 summary: >-
-  370 SWI brain scans from the AIBL study, 57 with expert-located cerebral microbleeds and 313 without, plus 3,700
-  copies with 10 synthetic microbleeds each and their locations, for training and benchmarking microbleed detectors.
+  Susceptibility-weighted brain MRI with expert-located cerebral microbleeds, plus copies with synthetic microbleeds
+  at known positions, for training and benchmarking microbleed detectors when real labels are scarce. 370 scans from
+  an Australian ageing study (57 with microbleeds) and 3,700 synthetic copies.
 homepage: https://data.csiro.au/collection/csiro:50304
 doi: 10.25919/aegy-ny12
 # Published on the CSIRO Data Access Portal on 2021-05-11.

@@ -3,8 +3,9 @@ id: oasis-2
 name: OASIS-2
 full_name: 'Open Access Series of Imaging Studies (OASIS): Longitudinal MRI Data in Nondemented and Demented Older Adults'
 summary: >-
-  Longitudinal brain MRI of 150 right-handed adults aged 60 to 96, nondemented or with very mild to mild Alzheimer's
-  disease, scanned at two or more visits (373 sessions) with 3 or 4 T1-weighted MP-RAGE scans per session at 1.5 T.
+  Repeated structural brain MRI of older adults without dementia or with very mild to mild Alzheimer's disease, used
+  to study brain volume loss in ageing and early dementia. 150 people aged 60 to 96 scanned at two or more visits, 373
+  sessions in total.
 homepage: https://sites.wustl.edu/oasisbrains/home/oasis-2/
 doi: 10.1162/jocn.2009.21407
 # Year of the data descriptor's print issue (J Cogn Neurosci 22(12), December 2010).

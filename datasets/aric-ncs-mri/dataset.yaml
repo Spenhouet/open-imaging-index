@@ -3,9 +3,9 @@ id: aric-ncs-mri
 name: ARIC-NCS brain MRI
 full_name: Atherosclerosis Risk in Communities Neurocognitive Study (ARIC-NCS), visit 5 brain MRI
 summary: >-
-  3 T brain MRI (MPRAGE, FLAIR, 2D T2* GRE) of 1,928 older adults from four US communities at ARIC visit 5 (2011-13),
-  with centrally read microbleeds, infarcts and white matter hyperintensities. Access through an approved ARIC proposal
-  and a data distribution agreement.
+  Brain MRI of older adults from four US communities with central reads of microbleeds, infarcts and white matter
+  hyperintensities, used to study small vessel disease in a biracial ageing population. 1,928 people scanned in 2011
+  to 2013. Access through an approved proposal.
 homepage: https://aric.cscc.unc.edu/aric9/
 doi: 10.1161/STROKEAHA.117.018336
 # Images are not publicly released. Year of the Graff-Radford et al. paper that describes the microbleed reads.

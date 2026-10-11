@@ -3,8 +3,8 @@ id: ucsf-cmb-labeler
 name: UCSF CMB_labeler SWI test set
 full_name: Test set of the UCSF CMB_labeler cerebral microbleed detection tool (Lupo Lab, UCSF)
 summary: >-
-  10 unlabelled SWI brain volumes with radiotherapy-induced cerebral microbleeds, 5 from a 3 T and 5 from a 7 T GE
-  scanner, shipped with the UCSF CMB_labeler tool for trying out semi-automated microbleed detection.
+  Unlabelled susceptibility-weighted brain MRI of patients with microbleeds caused by radiation therapy, shipped with
+  a semi-automated tool for trying out microbleed detection. 10 volumes, 5 at 3 T and 5 at 7 T.
 homepage: https://github.com/LupoLab-UCSF/CMB_labeler
 doi: 10.1016/j.nicl.2018.08.002
 # The test set zips were added to the repository on 2018-08-14.

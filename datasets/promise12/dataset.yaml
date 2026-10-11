@@ -3,8 +3,9 @@ id: promise12
 name: PROMISE12
 full_name: 'Prostate MR Image Segmentation 2012 (MICCAI Grand Challenge)'
 summary: >-
-  100 transverse T2-weighted prostate MRI scans from four centres in Norway, the US, the UK and the Netherlands, with
-  reference segmentations of the prostate, from the PROMISE12 segmentation challenge held at MICCAI 2012.
+  Prostate MRI with reference segmentations of the whole gland, from a MICCAI 2012 challenge comparing segmentation
+  methods across centres and scanners, now a common benchmark. 100 scans from four centres in Norway, the US, the UK
+  and the Netherlands.
 homepage: https://promise12.grand-challenge.org/
 doi: 10.5281/zenodo.8014040
 year: 2012

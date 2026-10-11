@@ -8,9 +8,11 @@ id: my-dataset-2024
 name: My Dataset
 #! Optional long name.
 full_name: My Multi-Center Dataset of Something
-#! 50 to 320 characters. Shown in search results.
+#! 50 to 320 characters. Lead with what the data is and what it was collected for, then details such as size.
+#! Never start with the name, a number, acquisition details or "Dataset of". See "The summary" in docs/standard.md.
 summary: >-
-  What is in it, how many subjects, which modality and what it is good for, in one or two sentences.
+  Brain MRI of adults with multiple sclerosis, collected to track lesion growth over two years of treatment, with
+  expert lesion masks for every scan.
 homepage: https://example.org/my-dataset
 #! Bare DOI if the dataset has one.
 doi: 10.1234/example

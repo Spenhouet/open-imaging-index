@@ -3,9 +3,9 @@ id: markvcid
 name: MarkVCID
 full_name: MarkVCID consortium (Biomarkers for Vascular Contributions to Cognitive Impairment and Dementia), MarkVCID1 and MarkVCID2
 summary: >-
-  US multi-site study of small vessel disease biomarkers with a harmonized 3 T MRI protocol (ME-MPRAGE, 3D FLAIR, DWI,
-  3D multi-echo GRE, T2w, BOLD-CVR), clinical and cognitive data and biosamples. MarkVCID1 enrolled 653 participants.
-  Access by approved proposal and DUA.
+  Brain MRI, clinical and cognitive data and biosamples collected to validate biomarkers of cerebral small vessel
+  disease, the main vascular cause of cognitive impairment and dementia, with one harmonized protocol at US sites. 653
+  participants in the first phase. Access by approved proposal.
 homepage: https://markvcid.partners.org/
 doi: 10.1002/alz.12216
 # Year of the neuroimaging protocol paper (Lu et al., Alzheimer's & Dementia 2021). MarkVCID1 data were collected

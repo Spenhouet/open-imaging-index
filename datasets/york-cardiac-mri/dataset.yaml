@@ -3,9 +3,9 @@ id: york-cardiac-mri
 name: York Cardiac MRI Dataset
 full_name: York University Cardiac MRI Dataset
 summary: >-
-  Short-axis cine cardiac MRI of 33 children and adolescents from the Hospital for Sick Children, Toronto, mostly with
-  heart abnormalities: 7980 images over 20 frames per subject, with manual LV endocardial and epicardial contours on
-  5011 images.
+  Cine cardiac MRI of children and adolescents, mostly with heart abnormalities, with manual left ventricle contours,
+  released to train and test left ventricle segmentation models. 33 young patients from Toronto, contours on 5,011
+  images.
 homepage: http://jtl.lassonde.yorku.ca/software/datasets/
 doi: 10.1016/j.media.2007.12.003
 year: 2008

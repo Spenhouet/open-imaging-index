@@ -3,8 +3,9 @@ id: lausanne-tof-mra-aneurysm
 name: Lausanne TOF-MRA Aneurysm Cohort (ds003949)
 full_name: Lausanne TOF-MRA Aneurysm Cohort
 summary: >-
-  Brain TOF-MR angiography and T1w scans of 284 adults from Lausanne University Hospital: 157 patients with 198
-  unruptured intracranial aneurysms and 127 controls, with aneurysm masks for detection, in BIDS under CC0.
+  Brain MR angiography of patients with unruptured intracranial aneurysms and controls, with aneurysm masks, built to
+  train and test automated aneurysm detection. 284 adults (157 patients with 198 aneurysms) from Lausanne University
+  Hospital, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds003949
 doi: 10.18112/openneuro.ds003949.v1.0.1
 year: 2021

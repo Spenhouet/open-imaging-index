@@ -2,9 +2,9 @@
 id: breast-diagnosis
 name: BREAST-DIAGNOSIS
 summary: >-
-  1.5 T breast MRI (T2-weighted, STIR and dynamic contrast-enhanced series) of 88 women with breast cancer, DCIS,
-  benign findings or high risk, with mammography for some and PET/CT for a few, plus a clinical, pathology and BI-RADS
-  spreadsheet.
+  Diagnostic breast MRI of women with breast cancer, DCIS, benign findings or high risk, with mammography for some and
+  PET/CT for a few, plus clinical, pathology and BI-RADS data. 88 women scanned at 1.5 T with T2, STIR and dynamic
+  contrast-enhanced series.
 homepage: https://www.cancerimagingarchive.net/collection/breast-diagnosis/
 doi: 10.7937/K9/TCIA.2015.SDNRQXXR
 year: 2011

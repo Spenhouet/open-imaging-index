@@ -3,9 +3,9 @@ id: radboudumc-tbi-swi
 name: Radboudumc TBI SWI Microbleed Set
 full_name: Radboudumc moderate-to-severe traumatic brain injury SWI cerebral microbleed dataset
 summary: >-
-  Single-centre 3 T SWI and T1 MRI from Radboudumc, Nijmegen: 81 studies of 45 patients with moderate to severe
-  traumatic brain injury and 18 healthy controls, with microbleed segmentations and six-observer point annotations.
-  Not publicly released.
+  Susceptibility-weighted brain MRI of patients with moderate to severe traumatic brain injury and controls, with
+  microbleed segmentations, used to develop detectors of trauma-related microbleeds. 81 studies of 45 patients and 18
+  controls from one Dutch centre. Not publicly released.
 homepage: https://doi.org/10.1016/j.nicl.2022.103027
 doi: 10.1016/j.nicl.2022.103027
 # Year of the paper; the data have not been released.

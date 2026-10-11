@@ -3,9 +3,9 @@ id: smi-research-dataset
 name: Scottish Medical Imaging (SMI) Archive
 full_name: Scottish Medical Imaging (SMI) Archive and SMI Research Dataset
 summary: >-
-  Population-scale copy of the Scottish national PACS: 57.3 million radiology studies (2010 to August 2018) of about
-  4.27 million patients, linkable to NHS Scotland health records. Approved projects analyse CT, MRI, PET and report
-  extracts inside the Scottish National Safe Haven.
+  Radiology images and report extracts from all of Scotland's hospitals, linkable to national health records, analysed
+  by approved projects inside a secure environment. 57.3 million studies of about 4.27 million patients from 2010 to
+  2018. Not downloadable.
 homepage: https://publichealthscotland.scot/resources-and-tools/health-intelligence-and-data-management/scottish-medical-imaging-smi/overview/
 # The Scottish Medical Imaging Service opened to researchers in April 2022 (EPCC announcement).
 year: 2022

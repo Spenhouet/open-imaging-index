@@ -3,9 +3,9 @@ id: amypad-pnhs
 name: AMYPAD PNHS
 full_name: Amyloid Imaging to Prevent Alzheimer's Disease (AMYPAD) Prognostic and Natural History Study
 summary: >-
-  European cohort of 3,368 older adults without dementia from 10 parent cohorts, with florbetaben or flutemetamol
-  amyloid PET for 1,620 and longitudinal multimodal brain MRI (T1w, FLAIR, T2*, SWI, diffusion, fMRI, ASL), plus
-  clinical, cognitive, CSF and genetic data. Access by reviewed request.
+  Amyloid PET and longitudinal brain MRI with clinical, cognitive, CSF and genetic data from older adults without
+  dementia, collected to study how amyloid builds up before Alzheimer's symptoms. 3,368 people from 10 European
+  cohorts, 1,620 with PET. Access by reviewed request.
 homepage: https://amypad.eu/data/
 # First public external data release, June 2023 (AMYPAD data page).
 year: 2023

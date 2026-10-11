@@ -3,8 +3,9 @@ id: m4raw
 name: M4Raw
 full_name: 'M4Raw: A multi-contrast, multi-repetition, multi-channel MRI k-space dataset for low-field MRI research'
 summary: >-
-  Raw four-channel brain k-space from 208 healthy volunteers scanned on a 0.3 T MRI system, with repeated T1w, T2w and
-  FLAIR acquisitions per subject, for low-field MRI reconstruction, denoising and parallel imaging research.
+  Raw multi-channel brain MRI data (k-space) from a low-field scanner with repeated scans per contrast, built for
+  reconstruction, denoising and parallel imaging research on affordable MRI. 208 healthy volunteers scanned at 0.3 T
+  with repeated T1, T2 and FLAIR.
 homepage: https://github.com/mylyu/M4Raw
 doi: 10.5281/zenodo.7523690
 year: 2023

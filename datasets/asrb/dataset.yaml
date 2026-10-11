@@ -3,9 +3,9 @@ id: asrb
 name: ASRB
 full_name: Australian Schizophrenia Research Bank
 summary: >-
-  Australian case-control bank of people with schizophrenia or schizoaffective disorder and healthy controls, with
-  clinical, cognitive and genetic data and, for a subset, 1.5T T1-weighted and diffusion MRI. Retired in 2022; data are
-  released to approved, ethics-cleared projects.
+  Clinical, cognitive and genetic data, with structural and diffusion brain MRI for a subset, from people with
+  schizophrenia or schizoaffective disorder and healthy controls in Australia. The bank was retired in 2022; data go
+  to approved, ethics-cleared projects.
 homepage: https://neura.edu.au/resources-tools/asrb
 doi: 10.3109/00048674.2010.501758
 # The ASRB cost recovery review states that the bank "has been open for access since 2009".

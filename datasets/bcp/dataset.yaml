@@ -3,9 +3,9 @@ id: bcp
 name: Baby Connectome Project (BCP)
 full_name: UNC/UMN Baby Connectome Project
 summary: >-
-  Longitudinal and cross-sectional 3T MRI (T1w, T2w, multi-shell diffusion, resting-state fMRI) with behavioral
-  assessments of typically developing children from birth to 5 years, scanned without sedation at UNC and UMN and
-  shared through the NIMH Data Archive.
+  Brain MRI and behavioral assessments of typically developing children from birth to 5 years, scanned without
+  sedation to chart how brain connectivity emerges in early childhood. Structural, diffusion and resting-state 3T MRI
+  from two US sites, shared through the NIMH Data Archive.
 homepage: https://www.humanconnectome.org/study/lifespan-baby-connectome-project
 doi: 10.1016/j.neuroimage.2018.03.049
 # No dated public release was found; year of the protocol paper, which expected data sharing from spring 2019.

@@ -3,9 +3,9 @@ id: upenn-gbm
 name: UPENN-GBM
 full_name: University of Pennsylvania Glioblastoma Imaging, Genomics, and Radiomics
 summary: >-
-  Multi-parametric brain MRI (T1, contrast-enhanced T1, T2, FLAIR, DTI, DSC) of 630 de novo glioblastoma patients
-  from the University of Pennsylvania, with tumor sub-region segmentations, survival, IDH and MGMT data, radiomic
-  features and a few H&E slides.
+  Brain MRI of adults with newly diagnosed glioblastoma, with tumor segmentations, survival, molecular and radiomic
+  data, a common source for segmentation, survival prediction and radiogenomics. 630 patients from the University of
+  Pennsylvania, with diffusion and perfusion imaging.
 homepage: https://www.cancerimagingarchive.net/collection/upenn-gbm/
 doi: 10.7937/TCIA.709X-DN49
 year: 2021

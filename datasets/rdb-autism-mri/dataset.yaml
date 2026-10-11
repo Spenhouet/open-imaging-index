@@ -3,9 +3,8 @@ id: rdb-autism-mri
 name: Robert Debré Hospital autism MRI
 full_name: Robert Debré Hospital (Paris) autism MRI cohort
 summary: >-
-  Unpublished 1.5T brain MRI (anatomical and resting-state fMRI) of 247 people from Robert Debré Hospital in Paris: 49
-  with autism spectrum disorder and 198 controls, many of them relatives of probands. Used as the hidden test site of
-  the IMPAC autism prediction challenge.
+  Structural and resting-state brain MRI of people with autism and controls from a Paris hospital, used as the unseen
+  test site of a challenge to predict autism diagnosis from MRI. 247 people, 49 with autism. Not released.
 homepage: https://doi.org/10.1016/j.neuroimage.2022.119171
 doi: 10.1016/j.neuroimage.2022.119171
 # Year of the first paper describing the cohort as a whole (Traut et al., NeuroImage 2022); the images have no public

@@ -3,9 +3,9 @@ id: uk-biobank-imaging
 name: UK Biobank Imaging
 full_name: UK Biobank multi-modal imaging enhancement (brain, cardiac and abdominal MRI, DXA, carotid ultrasound)
 summary: >-
-  Brain, heart and abdominal MRI, whole-body DXA and carotid ultrasound of over 100,000 UK Biobank participants aged
-  about 44 to 87 at imaging, with repeat scans for a subset, linked to genetics and health records. Access by
-  application and fee.
+  Brain, heart and abdominal MRI, body DXA and carotid ultrasound of UK adults, linked to genetics and health records,
+  used for imaging genetics, brain age, cardiac and body composition research. Over 100,000 participants aged about 44
+  to 87 at imaging. Access by application and fee.
 homepage: https://www.ukbiobank.ac.uk/
 # Debut date of the first imaging data-fields in the UK Biobank Showcase (e.g. Data-Field 20252: "Debut Oct 2015").
 year: 2015

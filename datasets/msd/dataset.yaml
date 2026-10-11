@@ -3,8 +3,9 @@ id: msd
 name: Medical Segmentation Decathlon
 full_name: Medical Segmentation Decathlon (MSD)
 summary: >-
-  Ten 3D segmentation tasks in one benchmark: brain tumours, heart, liver, hippocampus, prostate, lung, pancreas,
-  hepatic vessels, spleen and colon, with 2,633 CT and MRI volumes in NIfTI under CC BY-SA 4.0.
+  CT and MRI volumes for ten different segmentation tasks, from brain tumours and heart to liver, prostate, lung,
+  pancreas and colon, built to test whether one method can solve all of them without per-task tuning. 2,633 volumes in
+  NIfTI under CC BY-SA 4.0.
 homepage: http://medicaldecathlon.com/
 year: 2018
 status: active

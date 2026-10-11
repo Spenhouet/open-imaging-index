@@ -127,7 +127,9 @@ export const datasetSchema = z
       .string()
       .min(50)
       .max(320)
-      .describe('One or two sentences shown in search results and as the page description'),
+      .describe(
+        'One or two sentences shown in search results. Lead with what the data is and what it was collected for, never with the name, a number or "Dataset of"'
+      ),
     homepage: url,
     doi: z
       .string()

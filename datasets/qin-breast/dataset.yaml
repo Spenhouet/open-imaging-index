@@ -3,9 +3,9 @@ id: qin-breast
 name: QIN-BREAST
 full_name: QIN-BREAST (Quantitative Imaging Network breast cancer neoadjuvant treatment response PET/CT and MRI)
 summary: >-
-  Longitudinal prone FDG PET/CT and quantitative 3 T breast MRI (DWI, DCE, multi-flip-angle T1 mapping) of 68 breast
-  cancer patients from Vanderbilt, scanned before, during and after neoadjuvant therapy, with pathological response
-  labels.
+  FDG PET/CT and quantitative breast MRI before, during and after neoadjuvant therapy, collected to test
+  early-treatment imaging measures as predictors of response. 68 breast cancer patients from Vanderbilt with
+  pathological response labels.
 homepage: https://www.cancerimagingarchive.net/collection/qin-breast/
 doi: 10.7937/K9/TCIA.2016.21JUEBH0
 # Version 1 is dated 2015/09/04 on the collection page. Version 2 (2020/01/10) lifted a restricted-access embargo

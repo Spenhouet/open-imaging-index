@@ -3,9 +3,9 @@ id: adni
 name: ADNI
 full_name: Alzheimer's Disease Neuroimaging Initiative (ADNI1, ADNI GO, ADNI2, ADNI3)
 summary: >-
-  Longitudinal multi-site study in the US and Canada with repeated structural and advanced MRI, FDG, amyloid and tau
-  PET, biofluids and cognitive testing of cognitively unimpaired older adults and people with MCI or Alzheimer's
-  dementia.
+  Brain MRI, FDG, amyloid and tau PET, biofluids and cognitive testing of older adults followed from normal ageing
+  through mild cognitive impairment to Alzheimer's dementia, to chart how biomarkers change over the course of the
+  disease. Multi-site, US and Canada, since 2004.
 homepage: https://adni.loni.usc.edu/
 # Year the study launched (October 2004, per the ADNI website). The date of the first public data release was not
 # verified separately.

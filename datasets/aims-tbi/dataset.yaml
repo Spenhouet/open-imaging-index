@@ -3,9 +3,9 @@ id: aims-tbi
 name: AIMS-TBI
 full_name: Automated Identification of Moderate-Severe Traumatic Brain Injury Lesions (AIMS-TBI) challenge dataset
 summary: >-
-  MICCAI challenge data from the ENIGMA paediatric and adult moderate-severe TBI working groups: 892 defaced
-  T1-weighted brain MRI scans from 13 sites (2025 release) with manual binary lesion masks, shared after signing a
-  University of Utah data use agreement.
+  T1-weighted brain MRI after moderate to severe traumatic brain injury in children and adults, with manual lesion
+  masks, released for a MICCAI lesion segmentation challenge. 892 defaced scans from 13 sites (2025 release), shared
+  after a data use agreement.
 homepage: https://aims-tbi26.grand-challenge.org/
 doi: 10.5281/zenodo.19731996
 # The first edition ran at MICCAI 2024. The 2025 data were reused in 2026 with extra training modalities.

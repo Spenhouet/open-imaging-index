@@ -3,9 +3,9 @@ id: tich-2-mri
 name: TICH-2 MRI Sub-study
 full_name: Tranexamic Acid for Hyperacute Primary Intracerebral Haemorrhage 2 (TICH-2) trial MRI sub-study
 summary: >-
-  Multicentre brain MRI (DWI, FLAIR, T2*-GRE, T1w, T2w, optional SWI) of 219 patients with acute spontaneous
-  intracerebral haemorrhage in the TICH-2 tranexamic acid trial, with microbleed masks in a
-  labelled subset of 115 SWI scans. Shared on written request to the sub-study PI.
+  Brain MRI of patients with acute brain bleeding from a trial of tranexamic acid, used to test whether the drug
+  causes small ischaemic lesions and later to develop microbleed detection. 219 patients, 115 with microbleed masks.
+  Shared on written request.
 homepage: https://doi.org/10.1136/bmjopen-2017-019930
 doi: 10.1136/bmjopen-2017-019930
 # Year of the published sub-study protocol; the data have no public release.

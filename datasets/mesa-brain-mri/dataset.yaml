@@ -3,8 +3,9 @@ id: mesa-brain-mri
 name: MESA Exam 6 Brain MRI
 full_name: Multi-Ethnic Study of Atherosclerosis (MESA) Atrial Fibrillation ancillary study brain MRI
 summary: >-
-  3 T brain MRI of 1,062 older adults from a multi-ethnic US community cohort, scanned 2018 to 2019 with T1w, T2w,
-  FLAIR, diffusion, ASL, multi-echo SWI/QSM and fMRI. Available through an approved MESA proposal and a signed DMDA.
+  Research brain MRI of older adults from a multi-ethnic US community cohort, collected in a study of atrial
+  fibrillation and the brain. 1,062 people scanned 2018 to 2019 with structural, diffusion, perfusion, susceptibility
+  and functional MRI. Access through an approved proposal and agreement.
 homepage: https://www.mesa-nhlbi.org/
 doi: 10.1161/JAHA.121.023159
 # Year of the brain MRI protocol paper, which states the data are available with an approved proposal. The date the

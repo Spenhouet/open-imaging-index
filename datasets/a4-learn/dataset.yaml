@@ -5,9 +5,9 @@ full_name: >-
   Anti-Amyloid Treatment in Asymptomatic Alzheimer's Disease (A4) Study and Longitudinal Evaluation of Amyloid Risk and
   Neurodegeneration (LEARN) Study
 summary: >-
-  Shared data package of the A4 solanezumab prevention trial and its amyloid-negative companion study LEARN: 7,133
-  longitudinal 3T MRI sessions with T2*-GRE, plus amyloid and tau PET, from cognitively unimpaired adults aged 65 to
-  85, with central MRI safety reads for microhemorrhages.
+  Amyloid and tau PET and longitudinal brain MRI from a solanezumab prevention trial in cognitively unimpaired adults
+  aged 65 to 85 with elevated amyloid, plus an amyloid-negative companion study. Includes 7,133 3T MRI sessions with
+  central safety reads for microhemorrhages.
 homepage: https://www.a4studydata.org/
 doi: 10.52294/001c.160128
 # Screening and pre-randomization data were first released in December 2018 (Jimenez-Maggiora 2024); baseline imaging

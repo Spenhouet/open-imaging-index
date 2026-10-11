@@ -3,9 +3,9 @@ id: hbn
 name: Healthy Brain Network (HBN)
 full_name: Child Mind Institute Healthy Brain Network Biobank
 summary: >-
-  Structural, resting-state and movie fMRI and diffusion MRI, plus EEG and eye tracking, from a community-referred
-  sample of children and adolescents aged 5 to 21 in the New York City area, many with mental health or learning
-  disorders. 3,421 participants with MRI in the open metadata file.
+  Brain MRI, EEG and eye tracking with psychiatric and cognitive assessments of children and adolescents referred for
+  mental health or learning concerns, built as a large sample across diagnoses. Ages 5 to 21 from the New York City
+  area; 3,421 with MRI in the open metadata file.
 homepage: https://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/
 doi: 10.1038/sdata.2017.181
 year: 2017

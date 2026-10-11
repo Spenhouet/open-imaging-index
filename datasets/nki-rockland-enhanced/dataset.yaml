@@ -3,9 +3,9 @@ id: nki-rockland-enhanced
 name: Enhanced NKI-Rockland Sample (Rockland Sample I)
 full_name: Enhanced Nathan Kline Institute-Rockland Sample (NKI-RS)
 summary: >-
-  Multiband resting-state fMRI, 137-direction diffusion MRI, structural MRI and task scans of about 1,500
-  community-ascertained participants aged 6 to 85 from Rockland County, New York (2011 to 2020). Images are open; the
-  deep phenotyping needs a signed data use agreement.
+  Brain MRI and deep phenotyping of community participants sampled to mirror the US population, collected for open
+  lifespan research. About 1,500 people aged 6 to 85 from Rockland County, New York, scanned 2011 to 2020. Images are
+  open; phenotypes need a data use agreement.
 homepage: https://rocklandsample.org/for-researchers/rockland-sample-i-2011-2022
 doi: 10.3389/fnins.2012.00152
 year: 2013

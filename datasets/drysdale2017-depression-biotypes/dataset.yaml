@@ -3,9 +3,9 @@ id: drysdale2017-depression-biotypes
 name: Depression Biotypes Multisite rsfMRI (Drysdale 2017)
 full_name: Multisite resting-state fMRI sample of the depression biotypes study (Weill Cornell, Drysdale et al. 2017)
 summary: >-
-  Pooled resting-state fMRI and T1-weighted MRI of 1,188 adults (458 with major depression, 730 healthy controls)
-  from 17 sites, led by Weill Cornell, used to define four connectivity biotypes of depression. Patient sites
-  share data at the investigators' discretion.
+  Resting-state fMRI and structural brain MRI of adults with major depression and healthy controls, pooled to define
+  four connectivity subtypes of depression. 458 patients and 730 controls from 17 sites. Patient sites share data at
+  the investigators' discretion.
 homepage: https://doi.org/10.1038/nm.4246
 doi: 10.1038/nm.4246
 # Year of the paper (published online 5 December 2016); the pooled sample has no public release.

@@ -3,8 +3,9 @@ id: mpi-leipzig-mind-brain-body
 name: MPI-Leipzig Mind-Brain-Body (LEMON, N&C)
 full_name: MPI-Leipzig Mind-Brain-Body database (LEMON and Neuroanatomy & Connectivity protocols), OpenNeuro ds000221
 summary: >-
-  3T brain MRI of 318 healthy adults from Leipzig: MP2RAGE T1w and T1 maps, resting-state fMRI, T2w, FLAIR, diffusion
-  and gradient-echo scans from the LEMON and Neuroanatomy & Connectivity protocols, in BIDS on OpenNeuro under CC0.
+  Brain MRI of healthy younger and older adults from two studies on links between brain, body and emotion and on
+  resting-state connectivity, mind-wandering and personality. 318 people from Leipzig with structural, quantitative,
+  resting-state and diffusion scans, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds000221
 doi: 10.18112/openneuro.ds000221.v1.0.0
 year: 2017

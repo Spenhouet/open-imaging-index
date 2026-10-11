@@ -3,9 +3,9 @@ id: cap-chd-atlas
 name: Cardiac Atlas Project CHD Atlas
 full_name: Cardiac Atlas Project Congenital Heart Disease (CHD) Atlas
 summary: >-
-  De-identified cardiac MRI, clinical data and biventricular shape models of 1,183 children and adults with congenital
-  heart disease, mostly tetralogy of Fallot, from San Diego and Auckland, hosted by UC San Diego under a data use
-  agreement.
+  Cardiac MRI, clinical data and heart shape models of children and adults with congenital heart disease, mostly
+  tetralogy of Fallot, collected as a reference population to compare a patient's ventricles against. 1,183 people
+  from San Diego and Auckland, shared under a data use agreement.
 homepage: https://capchd.ucsd.edu/
 year: 2018
 status: active

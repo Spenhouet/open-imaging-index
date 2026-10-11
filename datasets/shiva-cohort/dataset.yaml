@@ -3,9 +3,9 @@ id: shiva-cohort
 name: SHIVA cohort
 full_name: 'RHU SHIVA cohort: stopping cognitive decline and dementia by fighting covert cerebral small vessel disease'
 summary: >-
-  Ongoing French cohort of adults over 60 with extensive or minimal white matter hyperintensities, built to find
-  imaging and circulating biomarkers of cerebral small vessel disease. 150 enrolled by March 2024, 3 T Siemens Prisma
-  MRI with T2*-GRE and optional SWI. Not public.
+  Brain MRI and blood biomarkers of adults over 60 with extensive or minimal white matter lesions, collected to find
+  markers of cerebral small vessel disease and predict cognitive decline. Ongoing French cohort, 150 enrolled by March
+  2024. Not public.
 homepage: https://rhu-shiva.com/en/
 # The cohort has no public release; year of the first paper found that describes its imaging data.
 year: 2024

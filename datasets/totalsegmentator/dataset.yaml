@@ -3,8 +3,9 @@ id: totalsegmentator
 name: TotalSegmentator CT
 full_name: TotalSegmentator dataset v2 (segmentations of 117 anatomical structures in 1228 CT images)
 summary: >-
-  1,228 routine clinical CT series from University Hospital Basel, randomly sampled across body regions, scanners and
-  pathologies, with reviewed segmentations of 117 anatomical structures. Basis of the TotalSegmentator model.
+  Clinical CT across all body regions with reviewed segmentations of 117 anatomical structures, built to train one
+  model that segments most anatomy in any CT. 1,228 series from University Hospital Basel; basis of the
+  TotalSegmentator tool.
 homepage: https://github.com/wasserth/TotalSegmentator
 doi: 10.5281/zenodo.10047292
 year: 2022

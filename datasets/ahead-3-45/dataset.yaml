@@ -3,8 +3,9 @@ id: ahead-3-45
 name: AHEAD 3-45 screening data
 full_name: AHEAD 3-45 Study (A3 and A45 trials of lecanemab in preclinical Alzheimer's disease), screening data
 summary: >-
-  Screening data of the AHEAD 3-45 lecanemab prevention trials in cognitively unimpaired adults aged 55 to 80: 16,835
-  North American screens with amyloid PET imaging and cognitive testing. Post-randomization data are not shared.
+  Amyloid PET and cognitive testing from the screening stage of lecanemab prevention trials in cognitively unimpaired
+  adults aged 55 to 80, shared for research on preclinical Alzheimer's disease and trial recruitment. 16,835 North
+  American screens; data after randomization are not shared.
 homepage: https://www.aheadstudydata.org/
 doi: 10.1002/alz.12748
 # The portal says pre-randomization data and imaging studies are being shared in 2025; the data use agreement is

@@ -3,9 +3,8 @@ id: lumbar-mri-multiscanner
 name: Multi-scanner lumbar spine MRI segmentation database
 full_name: Multi-scanner and multi-modal lumbar vertebral body and intervertebral disc segmentation database
 summary: >-
-  Clinical lumbar spine MRI of 34 patients from 55 sessions on Philips, Siemens and GE scanners, with T1w, contrast
-  T1w, T2w, Dixon and STIR series and manual masks of the L1 to L5 vertebral bodies and four discs, for multi-domain
-  spine segmentation.
+  Clinical lumbar spine MRI from three scanner makers with manual masks of vertebral bodies and discs, built to test
+  segmentation that copes with different scanners and sequences. 34 patients across 55 sessions from Munich.
 homepage: https://osf.io/qx5rt/
 doi: 10.17605/OSF.IO/QX5RT
 year: 2022

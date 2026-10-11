@@ -3,8 +3,9 @@ id: slim
 name: SLIM
 full_name: Southwest University Longitudinal Imaging Multimodal Brain Data Repository
 summary: >-
-  Longitudinal test-retest MRI of 594 healthy Chinese undergraduates scanned up to three times over about three and a
-  half years at 3 T: T1-weighted MPRAGE, resting-state fMRI and diffusion imaging, with behavioral and QA measures.
+  Repeated brain MRI of healthy undergraduates over about three and a half years, a resource for test-retest
+  reliability and brain change in early adulthood. 594 Chinese students with structural, resting-state and diffusion
+  scans, plus behavioral measures.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html
 doi: 10.15387/fcp_indi.retro.slim
 year: 2017

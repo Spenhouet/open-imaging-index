@@ -3,8 +3,9 @@ id: pond
 name: POND Imaging Data
 full_name: Province of Ontario Neurodevelopmental Disorders Network (POND) Imaging Data
 summary: >-
-  Controlled Brain-CODE release of 682 children and youth with autism, ADHD, OCD and other neurodevelopmental
-  conditions plus typically developing peers, with T1w, T2w, diffusion, fMRI, MRS and MEG data and clinical measures.
+  Brain MRI, MRS and MEG with clinical measures of children and youth with autism, ADHD, OCD and related conditions
+  and typically developing peers, for research on what these conditions share and where they differ. 682 participants
+  from Ontario, controlled release on Brain-CODE.
 homepage: https://www.braincode.ca/content/controlled-data-releases#dr006
 doi: 10.60955/n327-cd87
 # Release date on the Brain-CODE controlled data release page is 2022-02-22; the DOI record gives 2021.

@@ -3,9 +3,9 @@ id: nki-rockland-sample
 name: NKI-Rockland Sample (pilot, Phase I)
 full_name: Nathan Kline Institute (NKI) / Rockland Sample
 summary: >-
-  Pilot phase of the NKI-Rockland Sample: resting-state fMRI, diffusion MRI and MPRAGE scans of a lifespan community
-  convenience sample from Rockland County, New York, with psychiatric, cognitive and behavioral assessments, shared
-  weekly through INDI in 2010 and 2011.
+  Resting-state fMRI, diffusion and structural brain MRI with psychiatric, cognitive and behavioral assessments of
+  people across the lifespan, shared openly while recruitment was still running. Pilot community sample from Rockland
+  County, New York, released weekly in 2010 and 2011.
 homepage: https://fcon_1000.projects.nitrc.org/indi/pro/nki.html
 doi: 10.3389/fnins.2012.00152
 year: 2010

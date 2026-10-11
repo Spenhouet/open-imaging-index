@@ -3,9 +3,9 @@ id: acrin-dsc-mr-brain
 name: ACRIN-DSC-MR-Brain
 full_name: ACRIN-DSC-MR-Brain (ACRIN 6677/RTOG 0625)
 summary: >-
-  Longitudinal brain MRI of 123 patients with recurrent glioblastoma from the multicenter phase II trial ACRIN
-  6677/RTOG 0625 of bevacizumab with irinotecan or temozolomide, with optional DSC and DCE perfusion and spectroscopy,
-  plus clinical and survival data.
+  Longitudinal brain MRI of patients with recurrent glioblastoma treated with bevacizumab plus irinotecan or
+  temozolomide in a phase II trial, for studying treatment response and survival under anti-angiogenic therapy. 123
+  patients, some with perfusion and spectroscopy, plus clinical and survival data.
 homepage: https://www.cancerimagingarchive.net/collection/acrin-dsc-mr-brain/
 doi: 10.7937/tcia.2019.zr1pjf4i
 year: 2019

@@ -3,9 +3,9 @@ id: lcbc
 name: LCBC
 full_name: Center for Lifespan Changes in Brain and Cognition (LCBC) longitudinal sample, University of Oslo
 summary: >-
-  In-house longitudinal lifespan cohort from Oslo: 4,352 MRI scans of 2,017 cognitively healthy participants aged 4
-  to 93 at recruitment, on Siemens 1.5 T and 3 T scanners, with DTI and amyloid PET in subsets. Not public; data on
-  request to the PI.
+  Repeated brain MRI and cognitive tests of healthy people from early childhood to old age, used to model lifespan
+  brain trajectories and early markers of Alzheimer's disease. 4,352 scans of 2,017 participants aged 4 to 93 from
+  Oslo. Not public; on request to the principal investigator.
 homepage: https://www.lcbc.uio.no/english/
 # The cohort has no public release; year of the earliest LCBC cohort paper read for this entry (Fjell et al. 2008).
 year: 2008

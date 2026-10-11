@@ -3,9 +3,9 @@ id: abc-ds
 name: ABC-DS
 full_name: Alzheimer Biomarker Consortium - Down Syndrome (ABC-DS)
 summary: >-
-  Multi-site longitudinal study of Alzheimer's disease biomarkers in over 500 adults with Down syndrome and 59 sibling
-  controls in the US and UK, with MRI (T1w, FLAIR, T2*, SWI, DTI, ASL, fMRI), amyloid, tau and FDG PET, fluid
-  biomarkers, genetics and cognitive data.
+  Brain MRI, amyloid, tau and FDG PET, fluid biomarkers, genetics and cognition from adults with Down syndrome,
+  followed to study how Alzheimer's disease develops in this group, with sibling controls. Over 500 participants and
+  59 siblings at sites in the US and UK.
 homepage: https://www.nia.nih.gov/research/abc-ds
 doi: 10.1002/dad2.12065
 # Handen et al. 2020 state that data from the first assessment cycle are available through LONI. An exact first

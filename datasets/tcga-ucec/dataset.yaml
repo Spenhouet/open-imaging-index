@@ -3,8 +3,8 @@ id: tcga-ucec
 name: TCGA-UCEC
 full_name: The Cancer Genome Atlas Uterine Corpus Endometrial Carcinoma Collection
 summary: >-
-  Routine clinical CT, MRI, PET and radiographs of 65 women with endometrial carcinoma from three US sites, matched by
-  patient id to the TCGA clinical, pathology and genomic data in the GDC, for radiogenomic research.
+  Clinical CT, MRI, PET and radiographs of women with endometrial cancer whose tumors were profiled by The Cancer
+  Genome Atlas, so imaging can be linked to genomics and outcome. 65 women from three US sites.
 homepage: https://www.cancerimagingarchive.net/collection/tcga-ucec/
 doi: 10.7937/K9/TCIA.2016.GKJ0ZWAC
 year: 2015

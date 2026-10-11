@@ -3,8 +3,9 @@ id: prostatex
 name: PROSTATEx
 full_name: SPIE-AAPM-NCI PROSTATEx Challenge Data
 summary: >-
-  Multiparametric prostate MRI (T2w, proton density, DCE and DWI with ADC) of 346 men from Radboudumc on Siemens 3T
-  scanners, with lesion positions and clinical significance labels from the PROSTATEx and PROSTATEx-2 challenges.
+  Prostate MRI with lesion positions and labels for clinically significant cancer and Gleason grade, from two 2017
+  challenges on computer-aided prostate cancer diagnosis. 346 men from Radboudumc. Superseded by PI-CAI, which
+  contains all its cases.
 homepage: https://www.cancerimagingarchive.net/collection/prostatex/
 doi: 10.7937/K9TCIA.2017.MURS5CL
 year: 2017

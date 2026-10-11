@@ -3,8 +3,9 @@ id: kits23
 name: KiTS23
 full_name: 2023 Kidney and Kidney Tumor Segmentation Challenge
 summary: >-
-  Contrast-enhanced preoperative abdominal CT of 599 patients treated for suspected kidney cancer at M Health
-  Fairview (2010-2022), with kidney, tumor and cyst segmentations for 489 training cases and clinical metadata.
+  Contrast-enhanced abdominal CT of patients treated for suspected kidney cancer, with kidney, tumor and cyst
+  segmentations, the dataset of the MICCAI 2023 kidney tumor segmentation challenge. 599 patients from Minnesota, 489
+  training cases with masks, plus clinical data.
 homepage: https://kits-challenge.org/kits23/
 year: 2023
 updated: 2023

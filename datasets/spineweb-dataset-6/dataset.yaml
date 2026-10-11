@@ -3,8 +3,8 @@ id: spineweb-dataset-6
 name: SpineWeb Dataset 6 (IVD Dixon MRI)
 full_name: 'SpineWeb Dataset 6: Intervertebral Disc Localization and Segmentation Multi-modality MRI Spine Image Database'
 summary: >-
-  1.5 T Siemens Dixon MRI of the lower spine of 8 anonymized patients, with aligned in-phase, opposed-phase, fat and
-  water volumes and manual binary masks of at least 7 intervertebral discs (T11 to L5) per patient. Shared on request.
+  Lower spine MRI with manual masks of the intervertebral discs, for locating and segmenting the discs. 8 patients
+  with four aligned Dixon images each. Shared on request.
 homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
 # The SpineWeb page does not date the listing. Its preview image (images/dataset6_prev.png) was first archived by the
 # Internet Archive on 2016-06-02, the earliest evidence that the dataset was listed. An exact first release date is not

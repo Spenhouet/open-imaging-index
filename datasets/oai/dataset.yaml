@@ -3,8 +3,9 @@ id: oai
 name: Osteoarthritis Initiative
 full_name: Osteoarthritis Initiative (OAI)
 summary: >-
-  Longitudinal US cohort of 4,796 adults aged 45 to 79 with or at risk of knee osteoarthritis, with yearly bilateral
-  3T knee MRI and knee radiographs over up to eight years, clinical data and central image assessments.
+  Yearly knee MRI and radiographs of adults with or at risk of knee osteoarthritis, used to study cartilage loss and
+  disease progression and to train knee segmentation and X-ray grading models. 4,796 people aged 45 to 79 followed for
+  up to eight years in the US.
 homepage: https://nda.nih.gov/oai/
 year: 2004
 status: active

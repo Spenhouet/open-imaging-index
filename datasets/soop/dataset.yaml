@@ -3,8 +3,9 @@ id: soop
 name: Stroke Outcome Optimization Project (SOOP)
 full_name: 'Stroke Outcome Optimization Project: acute ischemic strokes from a comprehensive stroke center'
 summary: >-
-  Clinical brain MRI (T1w, FLAIR, diffusion TRACE and ADC) of 1,715 people admitted with suspected stroke in upstate
-  South Carolina in 2019-2020, 1,461 with acute ischemic stroke, with manual lesion masks and NIHSS, in BIDS under CC0.
+  Clinical brain MRI of people admitted with suspected stroke, with manual lesion masks and stroke scale scores,
+  shared for lesion mapping and outcome prediction on unrestricted clinical data. 1,715 people from South Carolina in
+  2019 and 2020, 1,461 with ischemic stroke, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds004889
 doi: 10.18112/openneuro.ds004889.v1.1.2
 year: 2023

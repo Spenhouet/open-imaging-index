@@ -5,9 +5,8 @@ full_name: >-
   A structural and functional MRI investigation of genetics, cognition and emotion in schizophrenia (Trinity College
   Institute of Neuroscience, Dublin)
 summary: >-
-  3T brain MRI (T1-weighted, diffusion, resting-state fMRI) of patients with schizophrenia and healthy controls from a
-  Science Foundation Ireland neuroimaging genetics study at Trinity College Dublin. A PSYSCAN legacy dataset; images
-  are not shared.
+  Structural, diffusion and resting-state brain MRI of patients with schizophrenia and healthy controls, from a Dublin
+  study of genetics, cognition and emotion in schizophrenia. Images are not shared.
 homepage: https://doi.org/10.1073/pnas.1820754116
 doi: 10.1073/pnas.1820754116
 # Year of the earliest paper found that names the study (Morgan et al., PNAS, April 2019); the images have no public

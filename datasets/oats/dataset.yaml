@@ -3,8 +3,9 @@ id: oats
 name: Older Australian Twins Study (OATS)
 full_name: Older Australian Twins Study
 summary: >-
-  Longitudinal UNSW study of 623 twins and siblings aged 65 and over, with brain MRI (including 1.5 T SWI), amyloid PET
-  in 207 and repeated cognitive and medical assessment. Data are released through Dementias Platform Australia.
+  Brain MRI, amyloid PET for some, and repeated cognitive and medical assessments of older twins and siblings, which
+  separate genetic from environmental influences on brain ageing and dementia. 623 people aged 65 and over in
+  Australia, 207 with PET. Released through Dementias Platform Australia.
 homepage: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/older-australian-twins-study-oats
 doi: 10.1375/twin.12.6.573
 # Year of the methodology paper. The study began in 2007; no date of a first data release is published.

@@ -3,9 +3,8 @@ id: skm-tea
 name: SKM-TEA
 full_name: Stanford Knee MRI with Multi-Task Evaluation
 summary: >-
-  Raw multi-coil k-space and scanner DICOM images of 155 quantitative double-echo steady-state (qDESS) knee MRI scans
-  from Stanford, with manual cartilage and meniscus masks and pathology bounding boxes for reconstruction,
-  segmentation and detection benchmarks.
+  Raw MRI data (k-space) and images of knee scans with cartilage and meniscus masks and pathology boxes, so one set of
+  scans can test reconstruction, segmentation and detection. 155 quantitative knee MRI scans from Stanford.
 homepage: https://aimi.stanford.edu/datasets/skm-tea-knee-mri
 doi: 10.71718/2ghb-nv62
 year: 2021

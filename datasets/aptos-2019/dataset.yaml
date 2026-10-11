@@ -3,8 +3,8 @@ id: aptos-2019
 name: APTOS 2019
 full_name: APTOS 2019 Blindness Detection (Kaggle competition)
 summary: >-
-  Retinal fundus photographs from Aravind Eye Hospital screening in rural India, each graded by a clinician for
-  diabetic retinopathy severity on a 0 to 4 scale, released for a 2019 Kaggle competition.
+  Retinal fundus photographs from eye screening in rural India, each graded for diabetic retinopathy severity on a 0
+  to 4 scale, released for a 2019 Kaggle competition and widely used to train retinopathy grading models.
 homepage: https://www.kaggle.com/competitions/aptos2019-blindness-detection
 year: 2019
 status: active

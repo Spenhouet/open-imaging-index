@@ -3,8 +3,9 @@ id: qtim
 name: QTIM (ds004169)
 full_name: Queensland Twin IMaging (QTIM)
 summary: >-
-  Brain MRI of 1,202 twins and siblings from Queensland aged 12 to 30, with T1w, n-back and resting-state fMRI and
-  diffusion scans on a 4 T scanner, a test-retest and a longitudinal subsample, in BIDS on OpenNeuro under CC0.
+  Brain MRI of twins and their siblings, collected to measure how strongly genes shape brain structure, function and
+  connectivity in young people. 1,202 people aged 12 to 30 from Queensland, with test-retest and longitudinal
+  subsamples, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds004169
 doi: 10.18112/openneuro.ds004169.v1.0.8
 year: 2022

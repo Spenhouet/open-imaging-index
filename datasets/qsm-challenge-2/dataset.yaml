@@ -3,9 +3,9 @@ id: qsm-challenge-2
 name: QSM Reconstruction Challenge 2.0 (simulated)
 full_name: QSM Reconstruction Challenge 2.0, data provided to participants (in silico head phantom)
 summary: >-
-  Simulated data, not patient scans: four multi-echo gradient-echo magnitude and phase datasets at 1 mm from a
-  realistic in silico head phantom built from one volunteer's 7T MRI, with ground-truth susceptibility maps and tissue
-  segmentations for benchmarking QSM.
+  Simulated MRI from a digital head phantom, not patient scans, with known susceptibility maps for scoring
+  quantitative susceptibility mapping (QSM) reconstruction methods. Four multi-echo gradient-echo datasets from the
+  2019 QSM challenge, with evaluation code.
 homepage: https://zenodo.org/records/4559541
 doi: 10.5281/zenodo.4559541
 year: 2021

@@ -3,8 +3,9 @@ id: brats-2021
 name: BraTS 2021
 full_name: RSNA-ASNR-MICCAI Brain Tumor Segmentation Challenge 2021
 summary: >-
-  Pre-operative multi-parametric brain MRI (T1, contrast-enhanced T1, T2, FLAIR) of 2,040 adult glioma patients
-  from many institutions, with expert-approved tumor sub-region segmentations and MGMT promoter methylation labels.
+  Brain MRI of adults with glioma before surgery, with expert tumor sub-region segmentations and MGMT methylation
+  labels, the main benchmark for brain tumor segmentation. 2,040 patients from many institutions, each with T1,
+  contrast-enhanced T1, T2 and FLAIR.
 homepage: https://www.synapse.org/Synapse:syn25829067
 doi: 10.7937/jc8x-9874
 year: 2021

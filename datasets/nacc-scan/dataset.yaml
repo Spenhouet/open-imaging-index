@@ -3,9 +3,9 @@ id: nacc-scan
 name: NACC SCAN
 full_name: Standardized Centralized Alzheimer's & Related Dementias Neuroimaging (SCAN), NACC
 summary: >-
-  Standardized MRI and amyloid, tau and FDG PET collected since 2021 across the US Alzheimer's Disease Research
-  Centers, defaced and quality-checked centrally, with volumes and SUVRs, linked to NACC clinical data. Free on request
-  under the NACC data use agreement.
+  Standardized brain MRI and amyloid, tau and FDG PET from US Alzheimer's Disease Research Centers, checked and
+  processed centrally and linked to clinical, cognitive and neuropathology data. Collected since 2021. Free on request
+  under a data use agreement.
 homepage: https://scan.naccdata.org/
 # The SCAN MRI Researcher's Data Dictionary was first issued in April 2024; defaced images became requestable in
 # August 2024 (SCAN website, Updates).

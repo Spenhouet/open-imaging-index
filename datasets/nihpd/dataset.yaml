@@ -3,9 +3,9 @@ id: nihpd
 name: NIH Pediatric MRI (NIHPD)
 full_name: NIH MRI Study of Normal Brain Development (Pediatric MRI Data Repository)
 summary: >-
-  Longitudinal multisite MRI (T1w, T2w, PDw, DTI, MRS) of healthy children and adolescents from newborn to early
-  adulthood, recruited to match the US population and paired with clinical and behavioral measures, shared through
-  the NIMH Data Archive.
+  Longitudinal brain MRI with clinical and behavioral measures of healthy children and adolescents sampled to match
+  the US population, collected as normative data for typical brain maturation from birth to early adulthood.
+  Multisite, shared through the NIMH Data Archive.
 homepage: https://nda.nih.gov/edit_collection.html?id=1151
 doi: 10.1016/j.neuroimage.2005.09.068
 # The Evans 2006 abstract states that the data will be available to the scientific community from July 2006.

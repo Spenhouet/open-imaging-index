@@ -3,9 +3,8 @@ id: spineweb-dataset-11
 name: SpineWeb Dataset 11 (anisotropic lumbar MRI)
 full_name: 'SpineWeb Dataset 11: High anisotropy MRIs of the lower back'
 summary: >-
-  17 anonymized routine lumbar spine MRI volumes (T1, T2 and TIRM) with strongly anisotropic voxels, from several
-  hospitals, with manual vertebral body segmentations as surface meshes. Released by the University of Siegen with
-  its vertebra segmentation code.
+  Routine lumbar spine MRI with thick slices and manual vertebral body segmentations, released with code for vertebra
+  detection and segmentation on real clinical scans. 17 volumes from several hospitals.
 homepage: https://www.cg.informatik.uni-siegen.de/en/spine-segmentation-and-analysis
 year: 2014
 creators:

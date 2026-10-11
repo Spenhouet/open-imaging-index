@@ -3,8 +3,9 @@ id: openpain-accumbens-signature
 name: 'OpenPain: Accumbens Chronic Pain Signature'
 full_name: 'OpenPain Project: Loss of nucleus accumbens low-frequency fluctuations is a signature of chronic pain (Yale)'
 summary: >-
-  T1-weighted MRI and resting-state fMRI of 40 subacute back pain patients, 28 chronic low back pain patients and 30
-  healthy controls from Yale, with about one-year follow-up scans of a subset, shared through the OpenPain Project.
+  Brain MRI and resting-state fMRI of patients with recent-onset or chronic low back pain and healthy controls, from a
+  study of the nucleus accumbens as a marker of pain becoming chronic. 98 people from Yale, a subset rescanned after
+  about a year, shared through the OpenPain Project.
 homepage: https://www.openpain.org/
 doi: 10.1073/pnas.1918682117
 year: 2020

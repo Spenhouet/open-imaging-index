@@ -19,7 +19,7 @@
       "type": "string",
       "minLength": 50,
       "maxLength": 320,
-      "description": "One or two sentences shown in search results and as the page description"
+      "description": "One or two sentences shown in search results. Lead with what the data is and what it was collected for, never with the name, a number or \"Dataset of\""
     },
     "homepage": {
       "type": "string",

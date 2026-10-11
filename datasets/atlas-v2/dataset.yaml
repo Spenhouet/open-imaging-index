@@ -3,8 +3,9 @@ id: atlas-v2
 name: ATLAS v2.0
 full_name: Anatomical Tracings of Lesions After Stroke, Release 2.0
 summary: >-
-  T1-weighted brain MRI with manually traced stroke lesion masks from 44 research cohorts in 11 countries: 1,271
-  subjects, of which 655 training cases with masks and 300 test scans without masks are released.
+  T1-weighted brain MRI of stroke patients with hand-traced lesion masks, built to train and test stroke lesion
+  segmentation. 1,271 subjects from 44 cohorts in 11 countries; 655 training cases with masks and 300 test scans
+  without masks are released.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/atlas.html
 year: 2021
 version: R2.0

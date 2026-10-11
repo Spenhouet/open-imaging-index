@@ -3,9 +3,9 @@ id: mgb-clinical-brain-mri
 name: MGB Clinical Brain MRI Repository
 full_name: Repository of clinical brain scans with real-world variability
 summary: >-
-  15,926 uncurated, skull-stripped clinical brain MRI scans of 1,384 subjects taken straight from the Massachusetts
-  General Hospital PACS, with mixed sequences, resolutions and orientations plus age and gender. The "MGH dataset" of
-  the SynthSR paper. Access after PI approval and a data use agreement.
+  Uncurated clinical brain MRI straight from a hospital archive, with mixed sequences, resolutions and orientations,
+  for methods that must cope with real-world scans such as synthesis and super-resolution. 15,926 scans of 1,384
+  subjects from Massachusetts General Hospital. Access after approval and agreement.
 homepage: https://zenodo.org/records/18701184
 doi: 10.5281/zenodo.18701184
 # The SynthSR paper (February 2023) states the data were on the public Martinos Center server. That server now points

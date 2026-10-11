@@ -3,9 +3,9 @@ id: dlbs
 name: DLBS
 full_name: Dallas Lifespan Brain Study
 summary: >-
-  Longitudinal adult lifespan study from Dallas of 464 cognitively healthy adults aged 21 to 89 at entry, with up to
-  three waves of 3T MRI (T1w, FLAIR, DTI, ASL, task and resting fMRI), florbetapir and flortaucipir PET, in BIDS under
-  CC0.
+  Brain MRI, amyloid and tau PET and cognition of healthy adults from their twenties to late eighties, followed to
+  study how brain structure, function and Alzheimer's pathology relate to cognition across adulthood. 464 people from
+  Dallas with up to three waves, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds004856
 doi: 10.18112/openneuro.ds004856.v1.3.0
 # First public snapshot (1.0.0) of the full three-wave release on OpenNeuro, 2024-08-05 (CHANGES file). An earlier

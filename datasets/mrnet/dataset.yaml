@@ -3,8 +3,9 @@ id: mrnet
 name: MRNet
 full_name: 'MRNet: A Dataset of Knee MRIs'
 summary: >-
-  1,370 clinical knee MRI exams from Stanford University Medical Center (2001-2012) with report-derived labels for
-  abnormality, ACL tear and meniscal tear; 120 exams form a hidden test set. Non-commercial research use only.
+  Clinical knee MRI exams with labels for any abnormality, ACL tear and meniscal tear taken from reports, built to
+  train and benchmark whole-exam knee classifiers. 1,370 exams from Stanford, 120 in a hidden test set. Non-commercial
+  research use only.
 homepage: https://stanfordmlgroup.github.io/competitions/mrnet/
 doi: 10.71718/rcbp-8c35
 year: 2018

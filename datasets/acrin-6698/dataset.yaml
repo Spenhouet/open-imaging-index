@@ -3,9 +3,9 @@ id: acrin-6698
 name: ACRIN 6698/I-SPY2 Breast DWI
 full_name: ACRIN 6698/I-SPY2 Breast DWI (ACRIN 6698 trial, NCT01564368)
 summary: >-
-  Serial breast MRI of 385 women with invasive breast cancer from the multicenter ACRIN 6698 trial, a diffusion
-  substudy of I-SPY 2, at up to four time points of neoadjuvant chemotherapy, with 4 b-value DWI, ADC maps, manual
-  tumor segmentations, DCE, test-retest scans and pCR outcome.
+  Serial breast MRI of women with invasive breast cancer during neoadjuvant chemotherapy, from a trial testing whether
+  early change in tumor diffusion (ADC) predicts pathologic complete response. 385 women at up to four time points,
+  with DWI, DCE, tumor masks, test-retest scans and outcome.
 homepage: https://www.cancerimagingarchive.net/collection/acrin-6698/
 doi: 10.7937/tcia.kk02-6d95
 year: 2021

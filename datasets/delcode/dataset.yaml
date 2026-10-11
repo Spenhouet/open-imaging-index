@@ -3,9 +3,9 @@ id: delcode
 name: DELCODE
 full_name: DZNE Longitudinal Cognitive Impairment and Dementia Study
 summary: >-
-  German multicentre memory-clinic cohort of about 1,000 people aged 60 and over with subjective cognitive decline,
-  MCI or mild Alzheimer's dementia, first-degree relatives and controls, with yearly 3 T MRI, cognition, CSF and amyloid
-  and FDG PET in a subset. Access by application to the DZNE.
+  Yearly brain MRI, cognition, CSF and, for a subset, amyloid and FDG PET from German memory clinics, focused on
+  subjective cognitive decline as an early at-risk state for Alzheimer's disease, with MCI, mild dementia, relatives
+  and controls. About 1,000 people aged 60 and over. Access by application.
 homepage: https://www.dzne.de/en/research/studies/clinical-studies/delcode/
 doi: 10.1186/s13195-017-0314-2
 # Year of the design paper. The study started in 2014 (DZNE website); the data have no public release.

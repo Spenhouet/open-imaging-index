@@ -3,8 +3,9 @@ id: cobre
 name: COBRE (INDI)
 full_name: Center for Biomedical Research Excellence (COBRE) schizophrenia sample
 summary: >-
-  Resting-state fMRI and multi-echo MPRAGE anatomical scans from 72 patients with schizophrenia and 75 healthy
-  controls aged 18 to 65, with age, sex, handedness and diagnosis, shared through INDI by the Mind Research Network.
+  Resting-state fMRI and anatomical brain MRI of patients with schizophrenia and healthy controls with basic
+  phenotypes, a common benchmark for comparing connectivity and brain structure between groups. 72 patients and 75
+  controls aged 18 to 65.
 homepage: https://fcon_1000.projects.nitrc.org/indi/retro/cobre.html
 year: 2013
 status: active

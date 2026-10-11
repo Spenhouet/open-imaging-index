@@ -3,8 +3,9 @@ id: qtab
 name: QTAB (ds004146)
 full_name: Queensland Twin Adolescent Brain Project
 summary: >-
-  Longitudinal brain MRI of 417 Australian twins aged 9 to 14 at baseline, 304 rescanned 1 to 2.5 years later, with
-  MP2RAGE T1w, T2w, FLAIR, SWI, multi-shell diffusion, ASL and resting and task fMRI at 3T, in BIDS under CC0.
+  Longitudinal brain MRI of same-age twins through early adolescence, collected to study genetic and environmental
+  effects on brain development, puberty, cognition and mood. 417 Australian twins aged 9 to 14, 304 rescanned, in BIDS
+  under CC0.
 homepage: https://openneuro.org/datasets/ds004146
 doi: 10.18112/openneuro.ds004146.v1.0.4
 year: 2022

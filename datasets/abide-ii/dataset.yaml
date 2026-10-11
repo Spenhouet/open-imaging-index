@@ -3,8 +3,9 @@ id: abide-ii
 name: ABIDE II
 full_name: Autism Brain Imaging Data Exchange II
 summary: >-
-  Resting-state fMRI and T1-weighted MRI, with diffusion MRI for six collections, plus phenotypic data for 1,114
-  people (521 with autism spectrum disorder, 593 controls, ages 5 to 64) from 19 collections in the US and Europe.
+  Resting-state fMRI and structural brain MRI of people with autism spectrum disorder and controls, with deeper
+  phenotyping of core symptoms and co-occurring conditions; diffusion MRI for six collections. 1,114 people aged 5 to
+  64 (521 with autism) from 19 collections in the US and Europe.
 homepage: https://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html
 doi: 10.1038/sdata.2017.10
 year: 2016

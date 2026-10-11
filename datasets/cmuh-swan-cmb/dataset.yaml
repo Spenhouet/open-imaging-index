@@ -3,9 +3,9 @@ id: cmuh-swan-cmb
 name: CMUH SWAN Microbleed Set
 full_name: China Medical University Hospital SWAN cerebral microbleed dataset
 summary: >-
-  205 clinical GE SWAN brain MRI exams from China Medical University Hospital, Taiwan (104 with microbleeds, 101
-  without), with voxel-wise microbleed masks by one neurologist. Used for synthetic-to-real microbleed segmentation;
-  shared only through research collaboration.
+  Clinical susceptibility-weighted brain MRI with and without cerebral microbleeds, with voxel-wise microbleed masks,
+  used to test whether detectors trained on synthetic microbleeds work on real scans. 205 exams from a hospital in
+  Taiwan, 104 with microbleeds. Shared only through collaboration.
 homepage: https://arxiv.org/abs/2610.00743
 doi: 10.48550/arXiv.2610.00743
 # Year of the preprint that describes the data; the data have not been released.

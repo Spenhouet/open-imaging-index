@@ -3,8 +3,9 @@ id: sydney-mas
 name: Sydney Memory and Ageing Study (MAS)
 full_name: Sydney Memory and Ageing Study
 summary: >-
-  Longitudinal UNSW cohort of 1,037 non-demented adults aged 70 to 90 from Eastern Sydney, with 3 T MRI (T1w, FLAIR,
-  SWI) in about half. Data are released through Dementias Platform Australia after an approved application.
+  Cognitive, medical, genetic and imaging data of older adults without dementia, followed for 14 years to learn how
+  often MCI and dementia arise and what predicts decline. 1,037 people aged 70 to 90 from Sydney, about half with
+  brain MRI. Via Dementias Platform Australia.
 homepage: https://www.unsw.edu.au/cheba/research-and-impact/research-projects/sydney-memory-and-ageing-study-mas
 doi: 10.1017/S1041610210001067
 # Year of the cohort description paper. The study began in 2005; no date of a first data release is published.

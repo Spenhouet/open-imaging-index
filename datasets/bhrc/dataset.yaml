@@ -3,9 +3,9 @@ id: bhrc
 name: Brazilian High Risk Cohort (BHRC)
 full_name: Brazilian High Risk Cohort Study for Childhood Psychiatric Disorders
 summary: >-
-  Longitudinal brain MRI (T1w, diffusion, resting-state and task fMRI) of 1,321 young people from a school-based
-  cohort in São Paulo and Porto Alegre enriched for risk of mental disorders, scanned in up to four waves from 2010 to
-  2025, with linked psychiatric and genetic data.
+  Longitudinal brain MRI with psychiatric, cognitive and genetic data from Brazilian school children enriched for risk
+  of mental disorders, followed to study how psychiatric problems develop. 1,321 young people scanned in up to four
+  waves from 2010 to 2025.
 homepage: https://bhrc.com.br/
 doi: 10.1002/mpr.1459
 year: 2017

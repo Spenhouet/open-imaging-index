@@ -3,9 +3,9 @@ id: srpbs
 name: SRPBS Multi-disorder MRI
 full_name: SRPBS Multi-disorder MRI Dataset (DecNef Project Brain Data Repository)
 summary: >-
-  Resting-state fMRI, T1w and optional field maps at 3T from 1,627 Japanese participants (950 healthy controls and
-  patients with autism, depression, schizophrenia spectrum disorders, chronic pain and others) from 12 sites, with a
-  1,410-participant subset released after registration.
+  Resting-state fMRI and structural brain MRI of healthy people and patients with autism, depression, schizophrenia,
+  chronic pain and other conditions, built to train and test connectivity classifiers across sites. 1,627 Japanese
+  participants from 12 sites, 1,410 released after registration.
 homepage: https://www.synapse.org/#!Synapse:syn22317076
 doi: 10.1038/s41597-021-01004-8
 # The restricted release went online on 2019-07-31, the unrestricted release on 2020-01-30; both were updated in 2022.

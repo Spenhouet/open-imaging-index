@@ -3,8 +3,9 @@ id: oasis-3
 name: OASIS-3
 full_name: 'OASIS-3: Longitudinal Multimodal Neuroimaging, Clinical, and Cognitive Dataset for Normal Aging and Alzheimer Disease'
 summary: >-
-  Retrospective longitudinal collection from the WUSTL Knight ADRC with MRI, amyloid, FDG and tau PET and CT for
-  about 1,378 cognitively normal and cognitively declining adults aged 42 to 95, with clinical and cognitive data.
+  Brain MRI, amyloid, FDG and tau PET and clinical follow-up of cognitively normal and declining adults, gathered over
+  three decades for research on ageing and preclinical Alzheimer's disease. About 1,378 people aged 42 to 95 from
+  Washington University in St. Louis.
 homepage: https://sites.wustl.edu/oasisbrains/home/oasis-3/
 doi: 10.1101/2019.12.13.19014902
 # Year of the data descriptor preprint (December 2019).

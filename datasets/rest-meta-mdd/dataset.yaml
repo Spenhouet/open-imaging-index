@@ -3,9 +3,9 @@ id: rest-meta-mdd
 name: REST-meta-MDD
 full_name: Data of the REST-meta-MDD Project from DIRECT Consortium
 summary: >-
-  Resting-state fMRI derivatives (R-fMRI indices and ROI time series) of 1300 patients with major depressive disorder
-  and 1128 controls from 25 cohorts at 17 Chinese hospitals, preprocessed with one DPARSF pipeline. Download is open,
-  the unzip password needs a signed agreement.
+  Preprocessed resting-state fMRI measures of patients with major depressive disorder and controls, pooled for
+  mega-analyses of depression; raw scans are not included. 1,300 patients and 1,128 controls from 25 cohorts at 17
+  Chinese hospitals. Unzipping needs a signed agreement.
 homepage: https://www.scidb.cn/detail?dataSetId=cbeb3c7124bf47a6af7b3236a3aaf3a8
 doi: 10.57760/sciencedb.o00115.00013
 year: 2019

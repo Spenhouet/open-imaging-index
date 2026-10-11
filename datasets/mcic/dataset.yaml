@@ -3,9 +3,9 @@ id: mcic
 name: MCIC
 full_name: MIND Clinical Imaging Consortium (MCIC) collection
 summary: >-
-  Four-site US study of 162 people with schizophrenia and 169 matched controls with raw DICOM T1w, T2w, diffusion and
-  task fMRI plus clinical and cognitive data. Data from three of the sites are shared through COINS under a data use
-  agreement.
+  Structural, diffusion and task fMRI brain scans with clinical and cognitive data of people with schizophrenia and
+  matched controls, collected to find imaging markers of schizophrenia. 162 patients and 169 controls at four US
+  sites; three sites share through COINS.
 homepage: https://www.nitrc.org/projects/mcic/
 doi: 10.1007/s12021-013-9184-3
 year: 2013

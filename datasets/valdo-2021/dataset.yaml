@@ -3,8 +3,8 @@ id: valdo-2021
 name: VALDO 2021
 full_name: 'Where is VALDO? VAscular Lesions DetectiOn and segmentation challenge at MICCAI 2021'
 summary: >-
-  Training data of the MICCAI 2021 VALDO challenge: brain MRI from the SABRE, Rotterdam Scan Study and ALFA cohorts
-  with manual labels of enlarged perivascular spaces (40 cases), cerebral microbleeds on T2* (72) and lacunes (40).
+  Brain MRI with manual labels of enlarged perivascular spaces, microbleeds and lacunes, the training data of a MICCAI
+  2021 challenge on detecting small markers of cerebral small vessel disease. Cases from three European cohorts.
 homepage: https://valdo.grand-challenge.org/
 # Concept DOI of the Zenodo training data record; it resolves to the latest version (v0.2).
 doi: 10.5281/zenodo.4520772

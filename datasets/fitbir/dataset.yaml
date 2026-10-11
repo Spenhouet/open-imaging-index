@@ -7,9 +7,9 @@ id: fitbir
 name: FITBIR
 full_name: Federal Interagency Traumatic Brain Injury Research (FITBIR) Informatics System
 summary: >-
-  NIH repository of traumatic brain injury research studies with clinical assessments, MRI, CT, diffusion, fMRI and
-  PET data, stored with common data elements and linked across studies by participant GUIDs. Since August 2026 it
-  holds NIH-funded studies only. Access after a data access request.
+  Clinical assessments, MRI, CT, diffusion, fMRI and PET from traumatic brain injury research studies, stored with
+  common data elements so records of the same person link across studies. NIH-funded studies only since August 2026.
+  Access after a data access request.
 homepage: https://fitbir.nih.gov/
 # FITBIR has been funded by a DoD and NIH memorandum of understanding since 2012 (CoreTrustSeal self-assessment 2024,
 # section on funding). No earlier public release date is stated.

@@ -3,8 +3,8 @@ id: spineweb-dataset-1
 name: SpineWeb Dataset 1
 full_name: 'SpineWeb Dataset 1: Cross Modality Spinal Images for Spine Workshop'
 summary: >-
-  30 pairs of lumbar spine CT and MR scans, each pair from the same subject, released on SpineWeb for its Spine Workshop.
-  No ground truth labels are provided. Shared after a request form with a research description.
+  Paired lumbar spine CT and MRI of the same subjects, released for a spine imaging workshop without labels. 30 pairs,
+  shared after a request form describing the research.
 homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
 year: 2013
 updated: 2014

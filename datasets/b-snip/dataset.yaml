@@ -3,9 +3,9 @@ id: b-snip
 name: B-SNIP 1
 full_name: Bipolar-Schizophrenia Network on Intermediate Phenotypes (B-SNIP 1)
 summary: >-
-  Five-site US study of 933 probands with schizophrenia, schizoaffective disorder or psychotic bipolar I disorder,
-  1,055 first-degree relatives and 459 healthy controls, with 3T structural, diffusion and resting-state MRI, EEG, eye
-  tracking and cognition, shared through the NIMH Data Archive.
+  Brain MRI, EEG, eye tracking and cognition from people with schizophrenia, schizoaffective disorder or psychotic
+  bipolar disorder, their relatives and healthy controls, collected to test whether biological measures follow
+  diagnoses or cut across them. 933 patients, 1,055 relatives and 459 controls.
 homepage: https://nda.nih.gov/edit_collection.html?id=2274
 doi: 10.15154/tnzs-a323
 year: 2014

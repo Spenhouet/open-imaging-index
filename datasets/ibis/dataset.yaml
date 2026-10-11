@@ -3,9 +3,9 @@ id: ibis
 name: Infant Brain Imaging Study (IBIS)
 full_name: Infant Brain Imaging Study Network, Longitudinal MRI Study of Infants at Risk for Autism
 summary: >-
-  Longitudinal 3T MRI (T1w, T2w, 25-direction DTI) and behavioral assessments of infant siblings of children with
-  autism and low-risk controls, scanned in natural sleep at 6, 12 and 24 months at four US sites and shared through
-  the NIMH Data Archive.
+  Brain MRI and behavioral assessments of infants who have an older sibling with autism, plus low-risk infants,
+  scanned in sleep from 6 to 24 months to find brain changes that come before signs of autism. Four US sites, shared
+  through the NIMH Data Archive.
 homepage: https://ibis-network.com/
 doi: 10.1176/appi.ajp.2011.11091447
 # No dated public release was found; year of the Wolff et al. paper, the first IBIS imaging publication cited here.

@@ -5,8 +5,8 @@ full_name: >-
   A radiomics model from joint FDG-PET and MRI texture features for the prediction of lung metastases in soft-tissue
   sarcomas of the extremities (Soft-tissue-Sarcoma)
 summary: >-
-  Pre-treatment FDG PET/CT and T1-weighted plus fat-suppressed T2-weighted or STIR MRI of 51 patients with soft-tissue
-  sarcoma of the extremities from McGill, with tumor contours, clinical data and lung metastasis outcome labels.
+  FDG PET/CT and MRI before treatment of patients with soft-tissue sarcoma of the arms and legs, with tumor contours
+  and outcomes, assembled to test whether texture features predict later lung metastases. 51 patients from McGill.
 homepage: https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma/
 doi: 10.7937/K9/TCIA.2015.7GO2GSKS
 year: 2015

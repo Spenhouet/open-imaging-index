@@ -3,8 +3,9 @@ id: indi-beijing-short-tr
 name: INDI Beijing Short TR
 full_name: Beijing Normal University Short TR Sample (INDI)
 summary: >-
-  Resting-state fMRI acquired twice per person, at TR 0.4 s and TR 2 s, with T1-weighted MPRAGE and 64-direction DTI,
-  from 28 healthy college-aged volunteers at Beijing Normal University on a 3 T Siemens scanner.
+  Resting-state fMRI acquired twice per person at a very short and a conventional sampling rate, plus structural and
+  diffusion MRI, for comparing resting-state measures across sampling rates. 28 healthy college-aged volunteers at
+  Beijing Normal University.
 homepage: https://fcon_1000.projects.nitrc.org/indi/pro/BeijingShortTR.html
 year: 2010
 status: active

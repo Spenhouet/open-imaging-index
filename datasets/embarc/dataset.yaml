@@ -3,9 +3,9 @@ id: embarc
 name: EMBARC
 full_name: Establishing Moderators and Biosignatures of Antidepressant Response in Clinical Care (EMBARC)
 summary: >-
-  US four-site placebo-controlled trial of sertraline in 309 adults with early-onset or recurrent major depression plus
-  40 healthy controls, with 3T structural, task and resting-state fMRI, diffusion and ASL MRI before and one week into
-  treatment, shared through the NIMH Data Archive.
+  Brain MRI, EEG and blood samples before and one week into treatment from a placebo-controlled trial of sertraline in
+  major depression, built to find markers that predict who improves on an antidepressant. 309 adults with depression
+  and 40 controls at four US sites.
 homepage: https://nda.nih.gov/edit_collection.html?id=2199
 doi: 10.15154/e99n-np66
 year: 2017

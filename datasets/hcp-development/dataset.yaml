@@ -3,9 +3,9 @@ id: hcp-development
 name: HCP-Development (Lifespan 2.0)
 full_name: Lifespan Human Connectome Project in Development, Lifespan 2.0 Release
 summary: >-
-  Multimodal 3T MRI of 652 healthy children, adolescents and young adults aged 5 to 21 from four US sites: T1w and T2w
-  structural, resting-state and task fMRI, two-shell diffusion and multi-delay ASL, with behavioral data, shared
-  through the NIMH Data Archive.
+  Brain MRI and behavioral data of healthy children, adolescents and young adults, collected to map how brain
+  connectivity changes during development. 652 people aged 5 to 21 from four US sites with structural, functional,
+  diffusion and perfusion MRI, via the NIMH Data Archive.
 homepage: https://www.humanconnectome.org/study/hcp-lifespan-development
 doi: 10.1016/j.neuroimage.2018.08.050
 year: 2019

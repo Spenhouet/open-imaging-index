@@ -3,8 +3,9 @@ id: oxvasc-cmb
 name: OXVASC T2*-GRE Microbleed Set
 full_name: Oxford Vascular Study (OXVASC) T2*-weighted GRE cerebral microbleed segmentation set
 summary: >-
-  3 T 2D T2*-weighted GRE brain MRI of 74 Oxford Vascular Study patients after minor stroke or TIA, with manual
-  voxel segmentations of 366 cerebral microbleeds in the 36 patients who had them. Shared on request to the OXVASC PI.
+  Brain MRI of patients after minor stroke or TIA with manual microbleed segmentations, used to train and test a deep
+  learning microbleed detector. 74 patients from a population-based Oxford study, 366 microbleeds in 36 of them.
+  Shared on request to the principal investigator.
 homepage: https://www.ndcn.ox.ac.uk/research/oxvasc
 doi: 10.3389/fninf.2023.1204186
 # Year of the paper that describes the labelled set; the set has no public release.

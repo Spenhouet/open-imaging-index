@@ -3,9 +3,8 @@ id: spineweb-dataset-10
 name: SpineWeb Dataset 10 (multi-modality vertebra recognition)
 full_name: 'SpineWeb Dataset 10: Multi-Modality Vertebra Recognition in Arbitrary Views using 3D Deformable Hierarchical Model'
 summary: >-
-  Spine MR and CT images of 20 subjects with manually annotated 3D vertebra center locations and 3D vertebra
-  orientations for every vertebra, released on SpineWeb as a reference for vertebra recognition. Shared after a request
-  form.
+  Spine MRI and CT with the center and orientation of every vertebra marked by hand, released as reference data for
+  vertebra recognition. 20 subjects, shared after a request form.
 homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
 # The SpineWeb news feed (spineweb-home-2015) dates the release of Dataset 10 to 5 April 2015.
 year: 2015

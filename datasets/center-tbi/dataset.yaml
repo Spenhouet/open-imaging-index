@@ -3,9 +3,9 @@ id: center-tbi
 name: CENTER-TBI
 full_name: Collaborative European NeuroTrauma Effectiveness Research in Traumatic Brain Injury (CENTER-TBI) core study and imaging repository
 summary: >-
-  European prospective cohort of 4,509 patients with traumatic brain injury of all severities (2014-2017), with
-  admission CT for every patient, harmonised 3D T1, T2, FLAIR, DTI and T2*/SWI MRI in a subset, clinical data and
-  outcomes. Access after an approved study plan and a signed data use agreement.
+  Head CT for every patient, brain MRI for a subset, clinical data and outcomes from patients with traumatic brain
+  injury of all severities, collected to compare care practices across European centres. 4,509 patients enrolled 2014
+  to 2017. Access after an approved study plan and data use agreement.
 homepage: https://www.center-tbi.eu/
 # Version 1.0 of the Neurobot data release, per the CENTER-TBI SOP manual (appendix 4).
 year: 2018

@@ -3,8 +3,9 @@ id: narratives
 name: Narratives (ds002345)
 full_name: The Narratives fMRI dataset for evaluating models of naturalistic language comprehension
 summary: >-
-  Story-listening fMRI of 345 healthy adults from Princeton: 891 BOLD runs across 27 spoken stories, with T1w (some
-  T2w) anatomy, audio stimuli and time-stamped transcripts, in BIDS under CC0.
+  fMRI of healthy adults listening to spoken stories, with audio and time-stamped transcripts, a benchmark for models
+  of language and narrative comprehension. 345 people from Princeton across 891 runs and 27 stories, with anatomical
+  scans, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds002345
 doi: 10.18112/openneuro.ds002345.v1.1.4
 year: 2019

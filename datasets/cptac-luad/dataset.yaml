@@ -3,8 +3,9 @@ id: cptac-luad
 name: CPTAC-LUAD
 full_name: The Clinical Proteomic Tumor Analysis Consortium Lung Adenocarcinoma Collection (CPTAC-LUAD)
 summary: >-
-  Standard-of-care CT, PET and MRI and whole-slide pathology images of 244 patients from the NCI CPTAC lung
-  adenocarcinoma cohort, linked by patient ID to proteomic, genomic and clinical data in the NCI data commons.
+  CT, PET, MRI and pathology slide images of patients with lung adenocarcinoma, linked to proteomic, genomic and
+  clinical data of the same people, so that imaging features can be studied next to molecular profiles. 244 patients
+  from the NCI CPTAC cohort.
 homepage: https://www.cancerimagingarchive.net/collection/cptac-luad/
 doi: 10.7937/k9/tcia.2018.pat12tbs
 year: 2018

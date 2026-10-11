@@ -3,8 +3,9 @@ id: penn-chop-developmental-connectome
 name: Penn-CHOP Developmental Connectome
 full_name: Penn-CHOP Developmental Connectome data (preterm and term)
 summary: >-
-  Neonatal brain MRI from the Huang lab (CHOP and Penn): DTI-derived maps and resting-state fMRI of 23 healthy
-  term-born neonates scanned without sedation, shared after a short registration form for research use.
+  Diffusion and resting-state brain MRI of healthy newborns scanned without sedation, shared for research on early
+  structural and functional brain development. 23 term-born neonates from Philadelphia, available after a short
+  registration form.
 homepage: http://www.brainmrimap.org/developmental-connectome.html
 # No release date is stated; earliest archived copy of the dataset page that describes the release (September 2018).
 year: 2018

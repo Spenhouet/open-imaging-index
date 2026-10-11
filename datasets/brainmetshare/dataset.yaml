@@ -2,8 +2,9 @@
 id: brainmetshare
 name: BrainMetShare
 summary: >-
-  Skull-stripped, co-registered 3D brain MRI (pre- and post-contrast T1, post-contrast FLAIR) of 156 Stanford
-  patients with brain metastases, with radiologist lesion masks for 105 cases. Non-commercial research use only.
+  Brain MRI of patients with brain metastases, with radiologist lesion masks, built for research on automatic
+  metastasis detection and segmentation. 156 Stanford patients with co-registered pre- and post-contrast scans, 105
+  with masks. Non-commercial research use only.
 homepage: https://aimi.stanford.edu/brainmetshare
 doi: 10.71718/z66c-qr59
 year: 2020

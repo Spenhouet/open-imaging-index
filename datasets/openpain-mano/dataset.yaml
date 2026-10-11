@@ -3,9 +3,9 @@ id: openpain-mano
 name: 'OpenPain: Brain network change Mano'
 full_name: 'OpenPain Project: Classification and characterisation of brain network changes in chronic back pain'
 summary: >-
-  Resting-state fMRI and T1-weighted MRI of 41 adults with chronic low back pain and 56 matched controls from two
-  sites, Cambridge (UK) and Osaka (Japan), shared through the OpenPain Project for brain network and classification
-  studies.
+  Resting-state fMRI and structural brain MRI of adults with chronic low back pain and matched controls, collected to
+  study how brain networks change in chronic pain and to classify patients. 41 patients and 56 controls from Cambridge
+  (UK) and Osaka, via the OpenPain Project.
 homepage: https://www.openpain.org/
 doi: 10.12688/wellcomeopenres.14069.2
 year: 2018

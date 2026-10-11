@@ -3,8 +3,9 @@ id: qin-prostate
 name: QIN-PROSTATE
 full_name: QIN PROSTATE (Quantitative Imaging Network prostate multiparametric MRI)
 summary: >-
-  Multiparametric 3 T prostate MRI (T1w, T2w, DWI and DCE, endorectal coil) of 22 prostate cancer patients from
-  Brigham and Women's Hospital, shared on TCIA for quantitative DCE analysis. TCIA retired the collection in April 2026.
+  Multiparametric prostate MRI of prostate cancer patients, shared to develop quantitative methods such as
+  pharmacokinetic models of contrast uptake. 22 patients from Brigham and Women's Hospital. TCIA retired the
+  collection in April 2026.
 homepage: https://www.cancerimagingarchive.net/collection/qin-prostate/
 doi: 10.7937/K9/TCIA.2016.fADs26kG
 # Version 1 of the collection is dated 2014/07/02 on the collection page.

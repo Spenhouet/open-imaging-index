@@ -3,8 +3,9 @@ id: tohoku-normal-japanese-brains
 name: Tohoku normal Japanese brain database
 full_name: Neuroanatomical database of normal Japanese brains, IDAC, Tohoku University
 summary: >-
-  Brain MRI of 1,547 normal Japanese subjects aged 16 to 79 years, collected at Tohoku University to build age- and
-  sex-specific reference brains and to study age effects on gray and white matter. No public release or terms.
+  Brain MRI of healthy Japanese adults, collected to build age- and sex-specific reference brains and to study how
+  gray and white matter change with age. 1,547 people aged 16 to 79 from Tohoku University. No public release or
+  terms.
 homepage: https://pubmed.ncbi.nlm.nih.gov/14622886/
 # The data have no public release; year of the paper that describes the database.
 year: 2003

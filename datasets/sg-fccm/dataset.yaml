@@ -3,9 +3,9 @@ id: sg-fccm
 name: SG-FCCM
 full_name: SWI dataset of familial cerebral cavernous malformations (Fuzhou University and Fujian Medical University)
 summary: >-
-  101 SWI brain volumes from 73 patients with familial cerebral cavernous malformations, 26 with a 1-year follow-up,
-  sliced into 4,089 2D images with lesion masks. Described in a paper with public code and weights; the data are not
-  released.
+  Susceptibility-weighted brain MRI of patients with familial cerebral cavernous malformations, with lesion masks,
+  used to build a pipeline that segments, counts and compares the lesions between exams. 101 scans of 73 patients.
+  Code and weights are public; the data are not.
 homepage: https://arxiv.org/abs/2403.15803
 doi: 10.1109/TBME.2025.3539498
 # Year of the arXiv preprint. The data have not been released.

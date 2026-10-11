@@ -3,8 +3,9 @@ id: calm
 name: CALM
 full_name: Centre for Attention, Learning and Memory (CALM) cohort, CALM:Open release
 summary: >-
-  Cross-sectional cohort of children aged 5 to 18 from Cambridge, UK, with problems of attention, learning or memory
-  plus school-matched peers. 440 children have T1w, T2w, diffusion and resting-state fMRI at 3T, with cognitive tests.
+  Brain MRI and cognitive tests of children who struggle with attention, learning or memory, with peers from the same
+  schools, collected to relate neurodevelopmental difficulties to brain structure and function. Children aged 5 to 18
+  from Cambridge, UK; 440 have structural, diffusion and resting-state MRI.
 homepage: https://calm.mrc-cbu.cam.ac.uk/
 doi: 10.1186/s12887-018-1385-3
 # Year the CALM:Open managed access portal was announced on the CALM website (July 2023).

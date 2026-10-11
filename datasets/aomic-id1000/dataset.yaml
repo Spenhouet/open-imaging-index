@@ -3,8 +3,9 @@ id: aomic-id1000
 name: AOMIC-ID1000
 full_name: Amsterdam Open MRI Collection, ID1000 study
 summary: >-
-  Brain MRI of 928 healthy Dutch adults aged 19 to 26, sampled to match the population's educational level, with
-  three T1w and three diffusion runs and a movie-watching fMRI scan each, plus psychometric scores, in BIDS under CC0.
+  Brain MRI of healthy young Dutch adults with psychometric scores, collected to study individual differences in brain
+  structure and function. 928 people aged 19 to 26 matched to the population's education level, each with structural,
+  diffusion and movie-watching fMRI scans, in BIDS under CC0.
 homepage: https://openneuro.org/datasets/ds003097
 doi: 10.18112/openneuro.ds003097.v1.2.1
 # First OpenNeuro snapshot 1.0.0 dated 2020-09-03 in the CHANGES file; latest snapshot 1.2.1 dated 2021-02-04.

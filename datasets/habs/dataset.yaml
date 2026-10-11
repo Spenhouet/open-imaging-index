@@ -3,9 +3,9 @@ id: habs
 name: HABS
 full_name: Harvard Aging Brain Study (HABS) public dataset
 summary: >-
-  Longitudinal study at Massachusetts General Hospital of 358 older adults who were cognitively normal at entry, with
-  3 T MRI (T1w, FLAIR, SWI, DTI, resting-state fMRI), PiB, flortaucipir and FDG PET and up to 11 years of clinical
-  and cognitive follow-up.
+  Brain MRI, amyloid, tau and FDG PET and up to 11 years of cognitive follow-up of older adults who were cognitively
+  normal at entry, followed to study the earliest brain changes of preclinical Alzheimer's disease. 358 people from
+  Massachusetts General Hospital.
 homepage: https://www.synapse.org/habs
 doi: 10.1016/j.neuroimage.2015.03.069
 # Data freeze 1.0 (baseline spreadsheets) was released in August 2014 (Dagley et al., Introduction).

@@ -3,8 +3,8 @@ id: spineweb-dataset-7
 name: SpineWeb Dataset 7 (IVD T2 TSE MRI)
 full_name: 'SpineWeb Dataset 7: Intervertebral Disc Localization and Segmentation: 3D T2-weighted Turbo Spin Echo MR Image Database'
 summary: >-
-  3D T2-weighted turbo spin echo MRI of the lower spine of 15 anonymized patients from a 1.5 T Siemens Magnetom Sonata,
-  with manual binary masks of at least 7 intervertebral discs (T11 to L5) per patient. Shared on request.
+  Lower spine MRI with manual masks of the intervertebral discs, for locating and segmenting the discs. 15 patients
+  with 3D T2-weighted scans. Shared on request.
 homepage: http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets
 # The SpineWeb page does not date the listing. Its preview image (images/dataset7_prev.png) was first archived by the
 # Internet Archive on 2016-06-02, the earliest evidence that the dataset was listed. An exact first release date is not

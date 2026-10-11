@@ -3,9 +3,9 @@ id: covid-19-ny-sbu
 name: COVID-19-NY-SBU
 full_name: Stony Brook University COVID-19 Positive Cases
 summary: >-
-  Clinical imaging of 1,384 PCR-positive COVID-19 patients from Stony Brook Medicine, mostly portable chest
-  radiographs plus chest and abdominal CT and a few MRI, PET and nuclear medicine studies, linked to OMOP-based
-  clinical data on outcomes, ICU stay and ventilation.
+  Chest radiographs and CT of PCR-positive COVID-19 patients linked to clinical outcomes such as death, ICU stay and
+  ventilation, used to build diagnostic and prognostic models. 1,384 patients from Stony Brook Medicine, New York,
+  with a few MRI, PET and nuclear medicine studies.
 homepage: https://www.cancerimagingarchive.net/collection/covid-19-ny-sbu/
 doi: 10.7937/TCIA.BBAG-2923
 year: 2021
