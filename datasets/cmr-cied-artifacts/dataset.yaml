@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cmr-cied-artifacts
+name: CMR with device susceptibility artifacts (Penso 2022)
+full_name: >-
+  Dataset related to the article "Cardiovascular magnetic resonance images with susceptibility artifacts: artificial
+  intelligence with spatial-attention for ventricular volumes and mass assessment"
+summary: >-
+  Cardiac cine MRI of patients with and without pacemakers or implantable defibrillators, collected to train and test
+  automatic segmentation of both ventricles and the left ventricular myocardium in images degraded by metal
+  susceptibility artifacts. Two Italian centers, expert contours. Access restricted.
+homepage: https://zenodo.org/records/7395773
+doi: 10.5281/zenodo.7395773
+year: 2022
+creators:
+  - name: Centro Cardiologico Monzino IRCCS
+    url: https://zenodo.org/records/7395773
+  - name: Fondazione Toscana Gabriele Monasterio
+species: human
+modalities: [MR]
+contrasts: [cine]
+anatomy: [heart]
+conditions: [dilated_cardiomyopathy, hypertrophic_cardiomyopathy, myocardial_infarction]
+tasks: [segmentation]
+countries: [IT]
+vendors: [ge]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://zenodo.org/records/7395773
+  note: >-
+    The Zenodo record is public but its files are restricted, and it states no access conditions or license. The paper
+    says the data are not publicly available due to institutional policies and are available from the corresponding
+    author on reasonable request. Whether the record holds the internal cohort, the external cohort or both is not
+    stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record and the paper's data availability statement publish no license or data use terms.
+citation:
+  text: >-
+    Penso M, Babbaro M, Moccia S, et al. Cardiovascular magnetic resonance images with susceptibility artifacts:
+    artificial intelligence with spatial-attention for ventricular volumes and mass assessment. J Cardiovasc Magn
+    Reson 24, 62 (2022). doi:10.1186/s12968-022-00899-5
+sources:
+  penso2022:
+    title: Penso et al. 2022, Journal of Cardiovascular Magnetic Resonance 24, 62
+    url: https://doi.org/10.1186/s12968-022-00899-5
+    kind: paper
+  zenodo-7395773:
+    title: Zenodo record 7395773, dataset related to the article
+    url: https://zenodo.org/records/7395773
+    kind: website
+related: []
+keywords:
+  [
+    cardiac implanted electronic device,
+    pacemaker,
+    implantable cardioverter-defibrillator,
+    susceptibility artifact,
+    short-axis cine,
+    ventricular segmentation,
+    ejection fraction
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
