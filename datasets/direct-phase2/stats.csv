@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,3520,scidb-direct-phase2,"Description, Key Features","1,660 MDD patients, 1,341 healthy controls, 205 BD patients and 314 SCZ patients"
+subjects,condition=depression,1660,chen2025,Abstract,1660 patients with MDD vs. 1341 healthy controls
+subjects,condition=healthy,1341,chen2025,Abstract,
+subjects,condition=bipolar_disorder,205,scidb-direct-phase2,"Description, Key Features",
+subjects,condition=schizophrenia,314,scidb-direct-phase2,"Description, Key Features",
+subjects,contrast=bold,3520,direct-phase2-dua,Item 1,"R-fMRI indices, including voxel/vertex-level resting-state fMRI time series, are shared for all 3520 participants"

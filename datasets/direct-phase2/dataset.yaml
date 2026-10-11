@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: direct-phase2
+name: DIRECT Phase II
+full_name: Data Sharing of the Phase II from the DIRECT Consortium
+summary: >-
+  Preprocessed resting-state fMRI time series and structural MRI measures of people with major depressive disorder,
+  bipolar disorder or schizophrenia and healthy controls, pooled for transdiagnostic mega-analyses; raw scans are not
+  included. Unzipping needs a signed agreement.
+homepage: https://rfmri.org/DIRECTPhase2
+doi: 10.57760/sciencedb.psych.00689
+year: 2025
+updated: 2026
+version: V4
+status: active
+creators:
+  - name: DIRECT Consortium (Depression Imaging REsearch ConsorTium)
+  - name: The R-fMRI Lab (Chao-Gan Yan), Institute of Psychology, Chinese Academy of Sciences
+    url: https://rfmri.org/DIRECTPhase2
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [depression, bipolar_disorder, schizophrenia, healthy]
+tasks: [classification]
+# All 53 creators in the DataCite record of the Science Data Bank deposit are affiliated with institutions in China.
+countries: [CN]
+# DataCite metadata of the Science Data Bank record: 1973398660679 bytes in 6 files.
+size_gb: 1973.4
+access:
+  type: signed_agreement
+  url: https://www.scidb.cn/detail?dataSetId=9571ca95a1dd45e286570121b40cd895
+  note: >-
+    The archives download from Science Data Bank (FTP is recommended for the size), but they are encrypted. The unzip
+    password and the phenotypic information are sent after a scanned, signed copy of the data use agreement is emailed
+    to rfmrilab@gmail.com. Until January 1, 2026 access was coordinated through letters of intent; since then sharing
+    is unrestricted for qualified researchers.
+licenses:
+  - license: CC-BY-NC-ND-4.0
+    applies_to: The Science Data Bank record (license stated in its DataCite metadata)
+  - license: LicenseRef-DIRECT-Phase2-DUA
+    applies_to: The decrypted R-fMRI indices, structural measures and phenotypic information
+citation:
+  text: >-
+    Chen X, Lu B, Wang YW, et al. Subgenual anterior cingulate cortex functional connectivity abnormalities in
+    depression: insights from brain imaging big data and precision-guided personalized intervention via transcranial
+    magnetic stimulation. Sci Bull (Beijing) 70:2676-2690 (2025). doi:10.1016/j.scib.2025.05.042. Wang ZH, Chen X, Lu
+    B, et al. Cross-subject decoding of internal mental states using predictive time-series modeling. Sci Bull
+    (Beijing) (2026). doi:10.1016/j.scib.2026.05.060. Chen X, Lu B, Li HX, et al. The DIRECT consortium and the
+    REST-meta-MDD project: towards neuroimaging biomarkers of major depressive disorder. Psychoradiology 2(1):32-42
+    (2022). doi:10.1093/psyrad/kkac005
+sources:
+  scidb-direct-phase2:
+    title: Science Data Bank record 10.57760/sciencedb.psych.00689 and its DataCite metadata (V4)
+    url: https://doi.org/10.57760/sciencedb.psych.00689
+    kind: website
+  rfmri-direct-phase2:
+    title: Data Sharing of the Phase II from the DIRECT Consortium, rfmri.org page
+    url: https://rfmri.org/DIRECTPhase2
+    kind: website
+  direct-phase2-dua:
+    title: Data Use Agreement of DIRECT Phase II Intermediate Results (V2)
+    url: http://rfmri.org/sites/default/files/DIRECT_Phase2_Data_Use_Agreement_V2.pdf
+    kind: website
+  chen2025:
+    title: Chen et al. 2025, Subgenual anterior cingulate cortex functional connectivity abnormalities in depression, Science Bulletin (PubMed 40628558)
+    url: https://doi.org/10.1016/j.scib.2025.05.042
+    kind: paper
+related: [rest-meta-mdd]
+keywords:
+  [major depressive disorder, bipolar disorder, schizophrenia, resting-state fMRI, functional connectivity, DPABISurf, multi-site, transdiagnostic]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
