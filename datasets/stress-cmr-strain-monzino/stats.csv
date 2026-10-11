@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,729,guglielmo2024,Abstract (Results),consecutive patients with stress cardiac MRI; the Zenodo record gives the same count
+subjects,condition=coronary_artery_disease,729,guglielmo2024,Abstract (Materials and methods),known or suspected coronary artery disease
+subjects,sex=male,616,guglielmo2024,Abstract (Results),
+age_mean,,63,guglielmo2024,Abstract (Results),
+age_sd,,10,guglielmo2024,Abstract (Results),
