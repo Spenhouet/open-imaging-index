@@ -279,6 +279,13 @@ terms:
     }
   - { id: sarcoma, label: Sarcoma, mappings: { mondo: 'MONDO:0005089' } }
   - {
+      id: chondrosarcoma,
+      label: Chondrosarcoma,
+      parent: sarcoma,
+      synonyms: [atypical cartilaginous tumor, ACT],
+      mappings: { mondo: 'MONDO:0008977' }
+    }
+  - {
       id: pancreatic_cancer,
       label: Pancreatic ductal adenocarcinoma,
       synonyms: [PDAC, pancreatic cancer],
