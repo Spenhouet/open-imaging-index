@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,72,lloyd2023,Materials and methods: Participants,74 recruited; two excluded entirely; the release and its README also hold 72
+studies,,143,lloyd2023-file-tree,ses-day1 and ses-day2 func folders,71 day-1 and 72 day-2 resting-state sessions of 150 volumes each
+subjects,condition=healthy,72,lloyd2023,Materials and methods: Participants,right-handed adults without psychiatric or neurological treatment or medication
+subjects,field_strength=3,72,lloyd2023,Materials and methods: MRI data acquisition,Siemens MAGNETOM Prisma 3T
+subjects,vendor=siemens,72,lloyd2023,Materials and methods: MRI data acquisition,Siemens MAGNETOM Prisma 3T
+subjects,country=US,72,lloyd2023,Materials and methods: Participants,recruited at New York University
+subjects,sex=female,39,lloyd2023,Materials and methods: Participants,sub_demographics.csv gives the same count
+subjects,sex=male,33,lloyd2023,Materials and methods: Participants,sub_demographics.csv gives the same count
+subjects,age=10-19,13,lloyd2023-demographics,age,ages 18 and 19
+subjects,age=20-29,55,lloyd2023-demographics,age,
+subjects,age=30-39,4,lloyd2023-demographics,age,ages 30 to 33
+subjects,sex=female;age=20-29,30,lloyd2023-demographics,age and gender,cells below 10 left out
+subjects,sex=male;age=20-29,25,lloyd2023-demographics,age and gender,cells below 10 left out
+age_mean,,22.5,lloyd2023,Materials and methods: Participants,
+age_min,,18,lloyd2023,Materials and methods: Participants,
+age_max,,33,lloyd2023,Materials and methods: Participants,
+age_median,,21.5,lloyd2023-demographics,age,
+age_sd,,3.4,lloyd2023-demographics,age,
+subjects,contrast=bold,72,lloyd2023-file-tree,func/*_bold folders,multi-echo EPI combined into one weighted sum per volume
+subjects,contrast=T1w,71,lloyd2023-file-tree,anat/*_T1w folders,MP-RAGE and neuromelanin-sensitive fast spin echo; both missing for sub-002
+subjects,contrast_set=bold+T1w,71,lloyd2023-file-tree,,any session
+subjects,contrast_set=bold,1,lloyd2023-file-tree,,sub-002
