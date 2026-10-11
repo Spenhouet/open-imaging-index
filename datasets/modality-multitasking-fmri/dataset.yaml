@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: modality-multitasking-fmri
+name: Modality-based Multitasking and Practice - fMRI
+summary: >-
+  Task and resting-state fMRI of healthy young adults, collected to study how pairing input and output modalities
+  affects dual-task interference before and after 80 minutes of multitasking practice. Covers 58 participants with
+  pre- and post-practice sessions at 3T.
+homepage: https://openneuro.org/datasets/ds005038
+doi: 10.18112/openneuro.ds005038.v1.0.3
+# CHANGES file: 1.0.0 (2024-03-19) initial upload; 1.0.1 to 1.0.3 (2024-03-21 to 2024-03-22) metadata fixes only.
+year: 2024
+version: 1.0.3
+creators:
+  - name: Mueckstein M, Görgen K, Heinzel S, Granacher U, Rapp MA, Stelzel C
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 37.33
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005038
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Mueckstein M, Görgen K, Heinzel S, Granacher U, Rapp MA, Stelzel C. Multitasking Practice Eliminates Modality-Based
+    Interference by Separating Task Representations in Sensory Brain Regions. Journal of Neuroscience 45(4),
+    e0755242024 (2025). doi:10.1523/JNEUROSCI.0755-24.2024
+sources:
+  mueckstein2025:
+    title: >-
+      Mueckstein et al. 2025, Multitasking Practice Eliminates Modality-Based Interference by Separating Task
+      Representations in Sensory Brain Regions, Journal of Neuroscience
+    url: https://doi.org/10.1523/JNEUROSCI.0755-24.2024
+    kind: paper
+  openneuro-ds005038-v1-0-3:
+    title: OpenNeuro ds005038 snapshot 1.0.3 (dataset_description.json, README, participants.json, CHANGES and size)
+    url: https://openneuro.org/datasets/ds005038/versions/1.0.3
+    kind: website
+  ds005038-participants:
+    title: participants.tsv of ds005038 (CC0), rows of the 58 released subjects counted
+    url: https://github.com/OpenNeuroDatasets/ds005038/blob/main/participants.tsv
+    kind: computed
+  ds005038-file-tree:
+    title: File tree of ds005038 snapshot 1.0.3 (CC0), NIfTI files under sub-*/ses-*/ counted per suffix
+    url: https://openneuro.org/datasets/ds005038/versions/1.0.3/file-display
+    kind: computed
+keywords:
+  [multitasking, dual-task interference, modality compatibility, practice intervention, task fMRI, resting-state fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
