@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,62,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,62 sub-* folders in the file tree
+subjects,age=18-32,34,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,younger adults (sub-10xx); 34 sub-10xx folders
+subjects,age=61-80,28,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,older adults (sub-20xx); 28 sub-20xx folders
+subjects,sex=female,40,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,sum of the two disjoint age groups
+subjects,sex=female;age=18-32,20,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,
+subjects,sex=female;age=61-80,20,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,
+subjects,condition=healthy,62,openneuro-ds003871-v1-1-0,README.md: Inclusion Criteria,"right-handed, no recent neurological disorder, MoCA of at least 26"
+subjects,contrast=T1w,62,ds003871-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,62,ds003871-file-tree,func/*_task-rest_*_bold.nii.gz,one resting-state run per subject
+subjects,contrast_set=bold+T1w,62,ds003871-file-tree,anat and func folders,
+studies,,62,ds003871-file-tree,sub-* folders,no session folders; one session per subject
+scans,,124,ds003871-file-tree,sub-*/*/*.nii.gz,62 T1w and 62 bold volumes
+scans,contrast=T1w,62,ds003871-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,62,ds003871-file-tree,func/*_bold.nii.gz,
+subjects,vendor=siemens,62,ds003871-file-tree,sidecars: Manufacturer,TrioTim in all 124 sidecars
+subjects,field_strength=3,62,ds003871-file-tree,sidecars: MagneticFieldStrength,
+subjects,country=US,62,ds003871-file-tree,sidecars: InstitutionAddress,"JSNN, Greensboro NC"
+age_min,,18,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,
+age_max,,80,openneuro-ds003871-v1-1-0,README.md: Participant Demographics,

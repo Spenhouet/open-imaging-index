@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003871
+name: Younger and Older Adults Resting-State (ds003871)
+full_name: Resting-state for 34 younger and 28 older adults
+summary: >-
+  Structural brain MRI and resting-state fMRI of healthy younger and older adults, collected to test whether
+  default mode network connectivity predicts how well people tell studied objects from similar lures. 62
+  participants from Greensboro, North Carolina, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003871
+doi: 10.18112/openneuro.ds003871.v1.1.0
+# First public snapshot (1.0.0) on OpenNeuro, 2021-11-05; latest snapshot 1.1.0, 2026-03-24 (README update only).
+year: 2021
+updated: 2026
+version: 1.1.0
+status: active
+creators:
+  - name: Wahlheim CN, Christensen AP, Cassidy BS, Reagh ZM (University of North Carolina at Greensboro)
+    url: https://openneuro.org/datasets/ds003871
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003871/versions/1.1.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds003871/versions/1.1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.0 states "License" CC0. The README of the same snapshot adds that the
+      data are intended for research use only and that applicable data use agreements should be followed; no
+      agreement is linked.
+citation:
+  text: >-
+    Wahlheim CN, Christensen AP, Reagh ZM, Cassidy BS. Intrinsic functional connectivity in the default mode network
+    predicts mnemonic discrimination: A connectome-based modeling approach. Hippocampus 32(1), 21-37 (2022).
+    doi:10.1002/hipo.23393
+sources:
+  openneuro-ds003871-v1-1-0:
+    title: OpenNeuro ds003871 snapshot 1.1.0 (dataset_description.json, README.md, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003871/versions/1.1.0
+    kind: website
+  ds003871-file-tree:
+    title: >-
+      File tree and JSON sidecars of the ds003871 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds003871
+    kind: computed
+  wahlheim2022:
+    title: >-
+      Wahlheim et al. 2022, Intrinsic functional connectivity in the default mode network predicts mnemonic
+      discrimination, Hippocampus (bioRxiv preprint 10.1101/2021.07.09.451777)
+    url: https://doi.org/10.1002/hipo.23393
+    kind: paper
+related: []
+keywords: [aging, resting-state fMRI, default mode network, mnemonic discrimination, episodic memory, older adults]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
