@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cogrief
+name: CogRief Study
+summary: >-
+  Brain MRI with emotional counting Stroop task fMRI of 60 young and middle-aged adults in Granada, collected for a
+  study of brain activation in prolonged grief disorder after the COVID-19 pandemic, with a structural T1-weighted
+  image per subject.
+homepage: https://openneuro.org/datasets/ds006092
+doi: 10.18112/openneuro.ds006092.v1.0.0
+# CHANGES file: 1.0.0 dated 2025-04-04 (initial release).
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      University of Granada (Andrea Redondo-Armenteros, Manuel Fernández-Alcántara, Francisco Cruz-Quintana, Rodrigo
+      Fernández-López, José Luis Martín-Rodríguez, Mary-Frances O'Connor, María Nieves Pérez-Marfil)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [ES]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 3.75
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006092
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json and CHANGES of snapshot 1.0.0 state the license as CC0.
+citation:
+  text: >-
+    Redondo-Armenteros A, Fernández-Alcántara M, Cruz-Quintana F, Fernández-López R, Martín-Rodríguez JL, O'Connor MF,
+    Pérez-Marfil MN. CogRief Study. OpenNeuro (2025). doi:10.18112/openneuro.ds006092.v1.0.0
+sources:
+  openneuro-ds006092-v1-0-0:
+    title: OpenNeuro ds006092 snapshot 1.0.0 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006092/versions/1.0.0
+    kind: website
+  ds006092-participants:
+    title: participants.tsv of ds006092 (CC0), counted per row (age and group columns)
+    url: https://github.com/OpenNeuroDatasets/ds006092/blob/main/participants.tsv
+    kind: computed
+  ds006092-file-tree:
+    title: >-
+      BIDS file tree of ds006092 (CC0), raw NIfTI files under sub-*/ counted per suffix, scanner fields read from the
+      T1w JSON sidecars
+    url: https://github.com/OpenNeuroDatasets/ds006092/tree/main
+    kind: computed
+related: []
+keywords: [prolonged grief disorder, bereavement, COVID-19, emotional counting Stroop, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
