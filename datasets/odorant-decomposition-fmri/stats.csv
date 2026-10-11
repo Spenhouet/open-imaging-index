@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,26,ye2024,Figure 3 legend,n = 26 in the fMRI experiment; the reporting summary also states 26 fMRI participants
+subjects,condition=healthy,26,ye2024-reporting-summary,"Behavioural & social sciences study design, Research sample",healthy non-smokers with no history of neurological disorders
+subjects,sex=female,13,ye2024-reporting-summary,"Human research participants, Reporting on sex and gender",50% of the 26 fMRI participants were female
+subjects,sex=male,13,ye2024-reporting-summary,"Human research participants, Reporting on sex and gender",remaining 50% of the 26 fMRI participants
+subjects,contrast=bold,26,ye2024-reporting-summary,"Magnetic resonance imaging, Sequence & imaging parameters","EPI with two parameter sets: 17 participants with 34 oblique slices at 2 mm, 9 with whole-brain multiband EPI at 1.5 mm"
+subjects,vendor=siemens,26,ye2024-reporting-summary,"Behavioural & social sciences study design, Data collection",Siemens Prisma
+subjects,field_strength=3,26,ye2024-reporting-summary,"Magnetic resonance imaging, Field strength",
+subjects,country=CN,26,ye2024-reporting-summary,"Human research participants, Ethics oversight","approved by the IRB of the Institute of Psychology, Chinese Academy of Sciences"
+studies,,52,ye2024-reporting-summary,"Magnetic resonance imaging, Design specifications",two scanning sessions on separate days for each of the 26 participants
