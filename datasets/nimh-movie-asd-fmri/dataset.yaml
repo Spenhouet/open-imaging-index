@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-movie-asd-fmri
+name: NIMH movie-watching fMRI in autism (Ramot 2020)
+full_name: >-
+  fMRI dataset for "Distinct neural mechanisms of social orienting and mentalizing revealed by independent measures of
+  neural and eye movement typicality"
+summary: >-
+  Multi-echo functional MRI recorded while young people with autism and typically developing peers watched a social
+  movie scene, used to relate brain response typicality to eye movement typicality. 99 participants, with an anatomical
+  scan each.
+homepage: https://nih.figshare.com/articles/dataset/fMRI_dataset_for_Distinct_neural_mechanisms_of_social_orienting_and_mentalizing_revealed_by_independent_measures_of_neural_and_eye_movement_typicality_/10688180
+doi: 10.35092/yhjc.10688180.v1
+year: 2020
+creators:
+  - name: Section on Cognitive Neuropsychology, National Institute of Mental Health (Ramot, Walsh, Reimann, Martin)
+    url: https://www.nimh.nih.gov/
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [autism, healthy]
+tasks: [classification]
+formats: [NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 16.4
+access:
+  type: open
+  url: https://nih.figshare.com/articles/dataset/fMRI_dataset_for_Distinct_neural_mechanisms_of_social_orienting_and_mentalizing_revealed_by_independent_measures_of_neural_and_eye_movement_typicality_/10688180
+  note: >-
+    Direct download from NIH figshare without an account, as three archives (autism group, and two archives for the
+    typically developing group). Eye tracking data are published as separate records in the same figshare collection
+    (doi:10.35092/yhjc.c.4741556).
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Ramot M, Walsh C, Reimann GE, Martin A. Distinct neural mechanisms of social orienting and mentalizing revealed by
+    independent measures of neural and eye movement typicality. Communications Biology 3, 48 (2020).
+    doi:10.1038/s42003-020-0771-1
+sources:
+  ramot2020:
+    title: Ramot et al. 2020, Communications Biology 3:48
+    url: https://doi.org/10.1038/s42003-020-0771-1
+    kind: paper
+  figshare-10688180:
+    title: NIH figshare record 10688180, fMRI dataset (description and file list)
+    url: https://api.figshare.com/v2/articles/10688180
+    kind: website
+related: []
+keywords: [autism spectrum disorder, ASD, naturalistic viewing, movie fMRI, multi-echo fMRI, inter-subject correlation, eye tracking]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
