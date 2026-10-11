@@ -172,6 +172,23 @@ terms:
   - { id: dysthymia, label: Dysthymic disorder, synonyms: [dysthymia, persistent depressive disorder], mappings: { mondo: 'MONDO:0001442' } }
   - { id: suicidal_behavior, label: Suicidal behavior, synonyms: [suicide attempt, suicide attempters], mappings: { hp: 'HP:5200330' } }
   - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
+  - {
+      id: generalized_anxiety_disorder,
+      label: Generalized anxiety disorder,
+      parent: anxiety_disorder,
+      synonyms: [GAD],
+      mappings: { mondo: 'MONDO:0001942' }
+    }
+  - {
+      id: social_anxiety_disorder,
+      label: Social anxiety disorder,
+      parent: anxiety_disorder,
+      synonyms: [social phobia],
+      mappings: { mondo: 'MONDO:0001247' }
+    }
+  - { id: specific_phobia, label: Specific phobia, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0012000' } }
+  - { id: panic_disorder, label: Panic disorder, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0005383' } }
+  - { id: agoraphobia, label: Agoraphobia, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0003709' } }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
   - {
       id: functional_neurological_disorder,

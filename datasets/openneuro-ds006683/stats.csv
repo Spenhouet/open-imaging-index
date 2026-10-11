@@ -1,0 +1,34 @@
+measure,by,value,source,where,note
+subjects,,61,ds006683-participants,participant_id,"all participants who completed the scan; the preprint analyses 57 (four excluded for too few task or probe responses, flagged in the exclusion column)"
+studies,,61,ds006683-file-tree,sub-*/ses-01 folders,one session per subject
+scans,,363,ds006683-file-tree,"sub-*/ses-01/anat/*.nii.gz, sub-*/ses-01/func/*_bold.nii.gz","61 T1w, 182 task runs and 59 resting-state runs; 122 opposite phase-encoding field maps not counted"
+subjects,modality=MR,61,ds006683-file-tree,sub-* folders,
+subjects,contrast=T1w,61,ds006683-file-tree,anat/*_T1w.nii.gz,MPRAGE with volumetric navigators (acq-MPRvNav)
+subjects,contrast=bold,61,ds006683-file-tree,func/*_bold.nii.gz,"every subject has task-PDT runs; 59 also have a resting-state run"
+subjects,contrast_set=bold+T1w,61,ds006683-file-tree,anat and func NIfTI files,
+scans,contrast=T1w,61,ds006683-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,241,ds006683-file-tree,func/*_bold.nii.gz,"182 repetitive-thought disengagement task runs (60 subjects with three runs, one with two) and 59 resting-state runs"
+subjects,vendor=siemens,61,openneuro-ds006683-v1-0-3,"README.md, Data included","Siemens MAGNETOM Prisma 3T with a 64-channel head coil; Manufacturer Siemens, ManufacturersModelName Prisma in the sidecars"
+subjects,field_strength=3,61,openneuro-ds006683-v1-0-3,"README.md, Data included",
+subjects,country=US,61,openneuro-ds006683-v1-0-3,"README.md, Data collection and acknowledgements","CMU-Pitt BRIDGE Center, Pittsburgh, PA"
+subjects,sex=female,35,ds006683-participants,gender,self-reported gender identity (Woman)
+subjects,sex=male,22,ds006683-participants,gender,self-reported gender identity (Man)
+subjects,sex=other,4,ds006683-participants,gender,self-reported gender identity (Nonbinary)
+subjects,age=20-29,28,ds006683-participants,age,age at the MRI session
+subjects,age=30-39,27,ds006683-participants,age,
+subjects,age=40-49,6,ds006683-participants,age,
+age_mean,,29.9,ds006683-participants,age,
+age_median,,30,ds006683-participants,age,
+age_sd,,7.2,ds006683-participants,age,
+age_min,,20,ds006683-participants,age,
+age_max,,45,ds006683-participants,age,
+subjects,condition=anxiety_disorder,42,ds006683-adis,"generalized_anxiety_disorder, social_anxiety_disorder, specific_phobia, panic_disorder, agoraphobia","subjects meeting criteria for at least one of these five ADIS-5 anxiety diagnoses; adis.tsv covers 58 of 61 subjects, 46 of them with at least one DSM-5 diagnosis"
+subjects,condition=generalized_anxiety_disorder,33,ds006683-adis,generalized_anxiety_disorder,ADIS-5 diagnosis met
+subjects,condition=social_anxiety_disorder,33,ds006683-adis,social_anxiety_disorder,ADIS-5 diagnosis met
+subjects,condition=specific_phobia,23,ds006683-adis,specific_phobia,ADIS-5 diagnosis met
+subjects,condition=ocd,18,ds006683-adis,obsessive_compulsive_disorder,ADIS-5 diagnosis met
+subjects,condition=ptsd,13,ds006683-adis,posttraumatic_stress_disorder,ADIS-5 diagnosis met
+subjects,condition=panic_disorder,11,ds006683-adis,panic_disorder,ADIS-5 diagnosis met
+subjects,condition=agoraphobia,10,ds006683-adis,agoraphobia,ADIS-5 diagnosis met
+subjects,condition=depression,6,ds006683-adis,major_depressive_disorder,ADIS-5 diagnosis met
+subjects,condition=dysthymia,3,ds006683-adis,persistent_depressive_disorder,ADIS-5 diagnosis met
