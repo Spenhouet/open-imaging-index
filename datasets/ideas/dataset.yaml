@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ideas
+name: IDEAS
+full_name: Imaging Dementia - Evidence for Amyloid Scanning (IDEAS) Study
+summary: >-
+  Clinical amyloid PET scans and visit data from Medicare beneficiaries with mild cognitive impairment or dementia of
+  uncertain cause, collected to test whether amyloid PET changes patient management. Images and clinical tables are
+  shared through LONI after an application.
+homepage: https://www.ideas-study.org/Original-Study
+# Year enrollment began (February 2016 per Rabinovici 2019 and the study page). The date the images were first
+# released on LONI was not verified; the LONI agreement cites a coded data use agreement between ACR and USC dated
+# June 23, 2021.
+year: 2016
+creators:
+  - name: American College of Radiology (sponsor and operations center, ACRIN 7155)
+    url: https://www.acr.org/
+  - name: Alzheimer's Association (study direction)
+    url: https://www.alz.org/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (data dissemination)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [PT]
+tracers: [florbetapir, florbetaben, flutemetamol]
+anatomy: [brain]
+conditions: [mci, dementia]
+tasks: [classification, regression]
+countries: [US]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=IDEAS
+licenses:
+  - license: LicenseRef-IDEAS-DUA
+citation:
+  text: >-
+    Rabinovici GD, Gatsonis C, Apgar C, et al. Association of Amyloid Positron Emission Tomography With Subsequent
+    Change in Clinical Management Among Medicare Beneficiaries With Mild Cognitive Impairment or Dementia. JAMA.
+    2019;321(13):1286-1294. The data use agreement also requires an acknowledgement of ACR, the Alzheimer's
+    Association and the IDEAS study (NCT02420756) with its funders.
+sources:
+  rabinovici2019:
+    title: Rabinovici GD et al. 2019, Association of amyloid PET with subsequent change in clinical management among
+      Medicare beneficiaries with MCI or dementia, JAMA
+    url: https://doi.org/10.1001/jama.2019.2000
+    kind: paper
+  zeltzer2025:
+    title: Zeltzer E et al. 2025, Concordance between amyloid-PET quantification and real-world visual reads, JAMA
+      Neurology
+    url: https://doi.org/10.1001/jamaneurol.2025.2218
+    kind: paper
+  ideas-original-study:
+    title: IDEAS Study website, Original Study page
+    url: https://www.ideas-study.org/Original-Study
+    kind: website
+  loni-ideas-dua:
+    title: LONI IDA, IDEAS Data Use Agreement
+    url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=IDEAS
+    kind: website
+related: []
+keywords: [amyloid PET, Medicare, real-world imaging, visual read, Centiloid, mild cognitive impairment, dementia]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
