@@ -6,7 +6,7 @@ The grant planned 120 patients with FTLD and 120 age-matched healthy controls, f
 
 ## Acquisition
 
-Data were collected at three North American sites: UCSF, Massachusetts General Hospital and Mayo Clinic Rochester. MRI was acquired at 3T on Siemens Tim Trio scanners at UCSF and MGH and on a GE scanner at Mayo. The imaging protocol matches that of 4RTNI and covers structural MRI for gray matter volume, diffusion imaging and arterial spin labeling perfusion. The grant also planned FDG-PET for all participants and PIB amyloid PET for all patients, plus blood, urine and cerebrospinal fluid.
+Data were collected at three North American sites: UCSF, Massachusetts General Hospital and Mayo Clinic Rochester. MRI was acquired at 3T on Siemens Tim Trio scanners at UCSF and MGH and on a GE scanner at Mayo. The imaging protocol matches that of 4RTNI and covers structural MRI for gray matter volume, diffusion imaging and arterial spin labeling perfusion. The grant planned FDG-PET for all participants and PIB amyloid PET for all patients, plus blood, urine and cerebrospinal fluid; no public source confirms that the PET scans were released.
 
 ## Annotations
 

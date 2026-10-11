@@ -3,7 +3,7 @@ id: nifd
 name: NIFD (FTLDNI)
 full_name: Neuroimaging in Frontotemporal Dementia (Frontotemporal Lobar Degeneration Neuroimaging Initiative)
 summary: >-
-  Longitudinal brain MRI, PET, biofluids and clinical ratings from people with frontotemporal lobar degeneration
+  Longitudinal brain MRI, biofluids and clinical ratings from people with frontotemporal lobar degeneration
   and age-matched healthy controls, collected to find imaging markers that track progression for future treatment
   trials. Shared through LONI after an approved application.
 homepage: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NIFD
@@ -16,12 +16,11 @@ creators:
   - name: Laboratory of Neuro Imaging (LONI), University of Southern California (data dissemination)
     url: https://ida.loni.usc.edu/
 species: human
-modalities: [MR, PT]
+# MR only: no LONI page or study paper confirms which PET series were released.
+modalities: [MR]
 # T1w: the LONI page says imaging methods match 4RTNI (1 mm T1-weighted MPRAGE or IR-SPGR) and the grant aims
 # measure gray matter volume. dwi and asl are named in the grant aims and in Staffaroni et al. 2019.
 contrasts: [T1w, dwi, asl]
-# Planned in the grant: FDG-PET for all, PIB-PET for all patients. Which PET series are on LONI was not verified.
-tracers: [fdg, pib]
 anatomy: [brain]
 conditions: [frontotemporal_dementia, healthy]
 tasks: [classification, regression, longitudinal]
@@ -61,7 +60,6 @@ keywords:
     frontotemporal dementia,
     behavioral variant frontotemporal dementia,
     primary progressive aphasia,
-    FDG PET,
     arterial spin labeling,
     diffusion MRI,
     longitudinal,
