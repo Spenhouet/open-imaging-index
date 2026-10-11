@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005366
+name: Motor BCI fMRI (ds005366)
+full_name: Large-scale fMRI dataset for the design of motor-based Brain-Computer Interfaces
+summary: >-
+  Task fMRI and structural brain MRI of children and adults moving or feeling touch on their hands, feet and mouth,
+  collected to map the sensorimotor cortex for planning implanted brain-computer interfaces. 155 healthy volunteers
+  and epilepsy surgery candidates aged 6 to 89 from Utrecht, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds005366
+doi: 10.18112/openneuro.ds005366.v2.0.0
+# First public snapshot (1.0.0) on OpenNeuro, 2024-07-25; latest snapshot 2.0.0, 2025-02-24.
+year: 2024
+updated: 2025
+version: 2.0.0
+status: active
+creators:
+  - name: Bom MS, Brak AMA, Raemaekers M, Ramsey NF, Vansteensel MJ, Branco MP (University Medical Center Utrecht)
+    url: https://www.utrecht-bci.nl
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy, epilepsy]
+formats: [BIDS, NIfTI]
+countries: [NL]
+vendors: [philips]
+field_strengths: [1.5, 3, 7]
+size_gb: 57.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005366
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 2.0.0 states "License" CC0, and the data descriptor states that the data
+      are shared under the CC0 public domain license.
+citation:
+  text: >-
+    Bom MS, Brak AMA, Raemaekers M, Ramsey NF, Vansteensel MJ, Branco MP. Large-scale fMRI dataset for the design of
+    motor-based Brain-Computer Interfaces. Scientific Data 12, 804 (2025). doi:10.1038/s41597-025-05134-1
+sources:
+  bom2025:
+    title: >-
+      Bom et al. 2025, Large-scale fMRI dataset for the design of motor-based Brain-Computer Interfaces, Scientific
+      Data
+    url: https://www.nature.com/articles/s41597-025-05134-1
+    kind: paper
+  openneuro-ds005366-v2-0-0:
+    title: OpenNeuro ds005366 snapshot 2.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005366/versions/2.0.0
+    kind: website
+  ds005366-participants:
+    title: participants.tsv of ds005366 (CC0), counted per row from the sex, age and participant_type columns
+    url: https://github.com/OpenNeuroDatasets/ds005366/blob/main/participants.tsv
+    kind: computed
+  ds005366-file-tree:
+    title: File listing of the ds005366 BIDS repository (CC0), counted per T1w and bold NIfTI file and session folder
+    url: https://github.com/OpenNeuroDatasets/ds005366
+    kind: computed
+related: []
+keywords:
+  [brain-computer interface, motor mapping, somatosensory, task fMRI, sensorimotor cortex, children, epilepsy, 7T]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
