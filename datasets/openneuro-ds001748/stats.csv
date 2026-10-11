@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,62,openneuro-ds001748-v104,snapshot summary,62 subject folders and 62 participant rows; the paper's abstract reports 63 participants (22 adults) while the release holds 21 adults
+subjects,contrast=T1w,62,ds001748-file-tree,sub-*/anat/*_T1w.nii.gz,MP2RAGE UNI-DEN image
+subjects,contrast=bold,62,ds001748-file-tree,sub-*/func/*_bold.nii.gz,"one run each of the autobiographical, episodic and semantic tasks"
+subjects,contrast_set=bold+T1w,62,ds001748-file-tree,anat and func folders,
+subjects,sex=female,31,ds001748-participants,sex,
+subjects,sex=male,31,ds001748-participants,sex,
+subjects,age=10-19,41,ds001748-participants,age,21 children aged 10 to 12 and 20 adolescents aged 14 to 16
+subjects,age=20-29,15,ds001748-participants,age,
+subjects,age=30-39,6,ds001748-participants,age,
+scans,,248,ds001748-file-tree,sub-*/*/*.nii.gz,62 T1w and 186 bold NIfTI files
+scans,contrast=T1w,62,ds001748-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,186,ds001748-file-tree,*_bold.nii.gz,
+age_mean,,17.7,ds001748-participants,age,age in whole years
+age_min,,10,ds001748-participants,age,
+age_max,,34,ds001748-participants,age,

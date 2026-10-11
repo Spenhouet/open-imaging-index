@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001748
+name: Developmental Long-Term Memory Retrieval fMRI (ds001748)
+full_name: Differentiation of functional networks during long-term memory retrieval in children and adolescents
+summary: >-
+  Task fMRI of children, adolescents and young adults recalling autobiographical, episodic and semantic memories,
+  collected to study how the brain's long-term memory network develops. 62 healthy participants from Brisbane, each
+  with an MP2RAGE T1-weighted scan.
+homepage: https://openneuro.org/datasets/ds001748
+doi: 10.18112/openneuro.ds001748.v1.0.4
+year: 2019
+version: 1.0.4
+status: active
+creators:
+  - name: Centre for Advanced Imaging, University of Queensland (Fynes-Clinton S, Marstaller L, Burianová H)
+    url: https://openneuro.org/datasets/ds001748
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [AU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001748/versions/1.0.4
+licenses:
+  - license: CC-BY-SA-4.0
+    url: https://openneuro.org/datasets/ds001748/versions/1.0.4
+    note: >-
+      dataset_description.json of snapshot 1.0.4 states "These data are made available under the Creative Commons
+      BY-SA 4.0 International License."
+citation:
+  text: >-
+    Fynes-Clinton S, Marstaller L, Burianová H. Differentiation of functional networks during long-term memory
+    retrieval in children and adolescents. NeuroImage 191:93-103 (2019). doi:10.1016/j.neuroimage.2019.01.065
+sources:
+  fynesclinton2019:
+    title: Fynes-Clinton et al. 2019, Differentiation of functional networks during long-term memory retrieval in children and adolescents, NeuroImage (abstract)
+    url: https://pubmed.ncbi.nlm.nih.gov/30703521/
+    kind: paper
+  openneuro-ds001748-v104:
+    title: OpenNeuro ds001748 snapshot 1.0.4 (README, dataset_description.json, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds001748/versions/1.0.4
+    kind: website
+  ds001748-participants:
+    title: participants.tsv of ds001748 snapshot 1.0.4 (CC BY-SA 4.0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001748/blob/1.0.4/participants.tsv
+    kind: computed
+  ds001748-file-tree:
+    title: File tree of ds001748 snapshot 1.0.4 (CC BY-SA 4.0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds001748/tree/1.0.4
+    kind: computed
+related: []
+keywords:
+  [long-term memory, autobiographical memory, episodic memory, semantic memory, brain development, children, adolescents, task fMRI]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
