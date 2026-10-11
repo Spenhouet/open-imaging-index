@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,227,li2021,Abstract,one resting-state fMRI file per participant
+scans,,227,mendeley-pt9d2rdv46,,227 NIfTI files in the archive
+subjects,contrast=bold,227,li2021,Section 1,
+subjects,sex=female,128,li2021,Abstract,
+subjects,sex=male,99,li2021,Abstract,
+subjects,age=18-30,124,li2021,Abstract,younger subgroup
+subjects,age=60-76,76,li2021,Abstract,elderly subgroup
+subjects,sex=female;age=18-30,73,li2021,Abstract,
+subjects,sex=male;age=18-30,51,li2021,Abstract,
+subjects,sex=female;age=60-76,41,li2021,Abstract,
+subjects,sex=male;age=60-76,35,li2021,Abstract,
+age_min,,18,li2021,Section 2.2,
+subjects,country=SE,227,li2021,Section 2.3,Karolinska University Hospital Huddinge
+subjects,vendor=siemens,227,li2021,Section 2.3,Magnetom Trio
+subjects,field_strength=3,227,li2021,Section 2.3,
+subjects,condition=healthy,227,li2021,Section 2.2,
