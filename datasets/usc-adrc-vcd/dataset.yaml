@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: usc-adrc-vcd
+name: USC ADRC VCD
+full_name: USC Alzheimer's Disease Research Center Vascular Cohort Study (VCD)
+summary: >-
+  Longitudinal brain MRI, including dynamic contrast-enhanced scans of blood-brain barrier leakage, from older adults
+  with normal cognition or mild cognitive impairment and a range of cardiovascular risk, followed yearly to study
+  vascular contributions to Alzheimer's disease.
+homepage: https://adrc.usc.edu/?p=470
+# Start of deposits to the LONI IDA (Neu et al. 2023, Table 1). A first-release date was not found.
+year: 2015
+creators:
+  - name: USC Alzheimer's Disease Research Center (PIs Helena Chui and Arthur Toga)
+    url: https://adrc.usc.edu/
+  - name: Laboratory of Neuro Imaging (LONI), USC Stevens Neuroimaging and Informatics Institute (image archive)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR]
+# Saca et al. 2025 curated DCE-MRI from the IDA PPG and VCD cohorts and state that all MRI was acquired at 3T.
+contrasts: [dce]
+anatomy: [brain]
+conditions: [healthy, mci]
+tasks: [longitudinal, regression]
+countries: [US]
+field_strengths: [3]
+access:
+  type: application
+  url: https://adrc.usc.edu/resources/raw-data-access-ida/
+licenses:
+  - license: LicenseRef-USC-ADRC-DUA
+citation:
+  text: >-
+    Data used in the preparation of this article were obtained from the University of Southern California Alzheimer's
+    Disease Research Center (USC ADRC) database (ida.loni.usc.edu).
+sources:
+  usc-adrc-vcd-page:
+    title: USC ADRC, Vascular Cohort Study (VCD) study page
+    url: https://adrc.usc.edu/?p=470
+    kind: website
+  usc-adrc-ida-page:
+    title: USC ADRC, Raw Data Access (IDA) page
+    url: https://adrc.usc.edu/resources/raw-data-access-ida/
+    kind: website
+  loni-vcd:
+    title: LONI Image and Data Archive, VCD project login page
+    url: https://ida.loni.usc.edu/login.jsp?project=VCD
+    kind: website
+  neu2023:
+    title: Neu SC, Crawford KL, Toga AW 2023, The image and data archive at the laboratory of neuro imaging, Frontiers
+      in Neuroinformatics
+    url: https://doi.org/10.3389/fninf.2023.1173623
+    kind: paper
+  saca2025:
+    title: Saca L et al. 2025, Automatic detection of arterial input function for brain DCE-MRI in multi-site cohorts,
+      Magnetic Resonance in Medicine
+    url: https://doi.org/10.1002/mrm.70020
+    kind: paper
+related: []
+keywords:
+  [vascular risk, blood-brain barrier, DCE-MRI, mild cognitive impairment, Alzheimer's disease, USC ADRC]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
