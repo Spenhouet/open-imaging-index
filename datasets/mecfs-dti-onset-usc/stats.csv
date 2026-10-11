@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,142,zenodo-12791948,Description,"sum of 43 post-infectious ME/CFS, 33 gradual onset ME/CFS and 66 healthy controls"
+subjects,condition=me_cfs,76,zenodo-12791948,Description,sum of 43 post-infectious and 33 gradual onset patients
+subjects,condition=healthy,66,zenodo-12791948,Description,healthy controls with sedentary lifestyles
+subjects,condition=me_cfs;sex=female,63,yu2025,Tables 1 and 2,sum of 37 post-infectious and 26 gradual onset women
+subjects,condition=me_cfs;sex=male,13,yu2025,Tables 1 and 2,sum of 6 post-infectious and 7 gradual onset men
+subjects,contrast=dwi,142,zenodo-12791948,Description,"derived DTI maps, raw DWI not shared"
+subjects,field_strength=3,142,yu2025,MRI acquisition,Siemens Skyra 3T
+subjects,vendor=siemens,142,yu2025,MRI acquisition,
+subjects,country=AU,142,yu2025,Methods,"University of the Sunshine Coast ethics approval, Australian New Zealand Clinical Trials Registry"
