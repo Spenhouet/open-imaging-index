@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,267,barnes2023,Results: Brain Imaging,participants with baseline brain MRI; 604 people were enrolled in the trial
+studies,,468,barnes2023,Results: Brain Imaging,sum of 267 baseline and 201 year-3 MRI sessions
+subjects,country=US,267,barnes2023,Methods: Eligibility Criteria,two US sites (Chicago and Boston metropolitan areas)
+subjects,condition=healthy,267,barnes2023,Methods: Eligibility Criteria,cognitively unimpaired at enrollment (Montreal Cognitive Assessment score of at least 22)
