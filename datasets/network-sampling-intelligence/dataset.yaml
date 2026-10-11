@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: network-sampling-intelligence
+name: Network Sampling Intelligence fMRI
+full_name: Neuroimaging evidence for network sampling theory of human intelligence
+summary: >-
+  Task fMRI and T1-weighted MRI of healthy young adults who each performed twelve cognitive tasks of planning,
+  reasoning, attention and working memory in separate runs, acquired at 3T in London, Ontario (60 subjects).
+homepage: https://openneuro.org/datasets/ds003148
+doi: 10.18112/openneuro.ds003148.v1.0.1
+# CHANGES file: snapshots 1.0.0 and 1.0.1 both dated 2020-09-16.
+year: 2020
+version: 1.0.1
+status: active
+creators:
+  - name: Imperial College London (Hampshire A, Soreq E)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 24.17
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003148
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Soreq E, Violante IR, Daws RE, Hampshire A. Neuroimaging evidence for a network sampling theory of individual
+    differences in human intelligence test performance. Nature Communications 12, 2072 (2021).
+    doi:10.1038/s41467-021-22199-9
+sources:
+  soreq2021:
+    title: >-
+      Soreq et al. 2021, Neuroimaging evidence for a network sampling theory of individual differences in human
+      intelligence test performance (Nature Communications)
+    url: https://doi.org/10.1038/s41467-021-22199-9
+    kind: paper
+  openneuro-ds003148-v1-0-1:
+    title: OpenNeuro ds003148 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003148/versions/1.0.1
+    kind: website
+  ds003148-file-tree:
+    title: BIDS file tree and JSON sidecars of ds003148 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds003148
+    kind: computed
+keywords: [intelligence, task fMRI, cognitive battery, reasoning, working memory, planning, attention, multiple demand]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
