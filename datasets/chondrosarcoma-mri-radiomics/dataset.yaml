@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chondrosarcoma-mri-radiomics
+name: Bone chondrosarcoma MRI radiomics (Milan)
+full_name: MRI radiomics-based machine-learning classification of bone chondrosarcoma
+summary: >-
+  Unenhanced T1- and T2-weighted MRI of cartilaginous bone tumours, collected to grade low-grade atypical
+  cartilaginous tumours against higher-grade chondrosarcoma with radiomics and machine learning. Files are restricted
+  on Zenodo and not openly available.
+homepage: https://zenodo.org/records/4269911
+doi: 10.5281/zenodo.4269911
+year: 2020
+creators:
+  - name: Università degli Studi di Milano and IRCCS Istituto Ortopedico Galeazzi
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [skeleton]
+conditions: [chondrosarcoma]
+tasks: [classification]
+access:
+  type: not_shared
+  url: https://zenodo.org/records/4269911
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Zenodo record is public but its files are restricted, access requests are switched off and no license is
+      stated. The contents of the restricted files are not described.
+citation:
+  text: >-
+    Gitto S, Albano D, Messina C, Sconfienza LM. MRI radiomics-based machine-learning classification of bone
+    chondrosarcoma. Zenodo (2020). doi:10.5281/zenodo.4269911
+sources:
+  zenodo-4269911:
+    title: Zenodo record 4269911
+    url: https://zenodo.org/records/4269911
+    kind: website
+  gitto2020:
+    title: Gitto et al. 2020, European Journal of Radiology (abstract)
+    url: https://doi.org/10.1016/j.ejrad.2020.109043
+    kind: paper
+related: []
+keywords: [chondrosarcoma, atypical cartilaginous tumor, bone tumor grading, radiomics, texture analysis]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

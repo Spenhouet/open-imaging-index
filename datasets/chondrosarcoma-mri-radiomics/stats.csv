@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,58,zenodo-4269911,Description: Methods,patients with histologically proven cartilaginous bone tumours
+subjects,condition=chondrosarcoma,58,zenodo-4269911,Description: Methods,26 low-grade or atypical cartilaginous tumours of the appendicular skeleton and 32 higher-grade chondrosarcomas (16 appendicular and 16 axial)
+subjects,contrast=T1w,58,zenodo-4269911,Description: Methods,all tumours segmented on T1-weighted images
+subjects,contrast=T2w,58,zenodo-4269911,Description: Methods,all tumours segmented on T2-weighted images
+subjects,contrast_set=T1w+T2w,58,zenodo-4269911,Description: Methods,
+subjects,split=train,42,zenodo-4269911,Description: Methods,random split
+subjects,split=test,16,zenodo-4269911,Description: Methods,random split
