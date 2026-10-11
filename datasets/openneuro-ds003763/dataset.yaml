@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003763
+name: Interoception during aging (ds003763)
+full_name: 'Interoception during aging: The heartbeat detection task'
+summary: >-
+  Task fMRI and structural brain MRI of middle-aged and young adults attending to their own heartbeat versus tones,
+  collected to study how interoception relates to emotion and brain aging. 62 participants from Moscow, with
+  depression, anxiety and interoceptive accuracy scores, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003763
+doi: 10.18112/openneuro.ds003763.v1.0.5
+# First public snapshot (1.0.0) on OpenNeuro, 2021-08-12; latest snapshot 1.0.5, 2022-03-23.
+year: 2021
+updated: 2022
+version: 1.0.5
+status: active
+creators:
+  - name: >-
+      Dobrushina OR, Dobrynina LA, Arina GA, Gubanova MV, Belopasova AV, Novikova ES, Suslina AD, Kremneva EI,
+      Pechenkova EV, Krotenkova MV (Research Center of Neurology, Moscow)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003763
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Dobrushina OR, Arina GA, Dobrynina LA, Novikova ES, Gubanova MV, Belopasova AV, Vorobeva VP, Suslina AD,
+    Pechenkova EV, Perepelkina OS, Kremneva EI, Krotenkova MV. Sensory integration in interoception: Interplay between
+    top-down and bottom-up processing. Cortex (2021). doi:10.1016/j.cortex.2021.08.009
+sources:
+  openneuro-ds003763-v1-0-5:
+    title: OpenNeuro ds003763 snapshot 1.0.5 (dataset_description.json, README, CHANGES, sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds003763/versions/1.0.5
+    kind: website
+  dobrushina2021:
+    title: >-
+      Dobrushina et al. 2021, Sensory integration in interoception: Interplay between top-down and bottom-up
+      processing, Cortex
+    url: https://doi.org/10.1016/j.cortex.2021.08.009
+    kind: paper
+  ds003763-participants:
+    title: participants.tsv of ds003763 (CC0), counted per row from the Age, Sex and Group columns
+    url: https://github.com/OpenNeuroDatasets/ds003763/blob/main/participants.tsv
+    kind: computed
+  ds003763-file-tree:
+    title: File listing of the ds003763 BIDS repository (CC0), counted per T1w, bold and fieldmap NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003763
+    kind: computed
+related: []
+keywords: [interoception, heartbeat detection, cardioception, aging, task fMRI, insula, emotion]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
