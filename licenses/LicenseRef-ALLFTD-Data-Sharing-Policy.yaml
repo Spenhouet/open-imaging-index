@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-ALLFTD-Data-Sharing-Policy
+name: ALLFTD Data Sharing and Publication Policies
+short_name: ALLFTD data policy
+url: https://www.allftd.org/policies
+version: 'ALLFTD Data Sharing & Publication Policies web page, with the Resource Sharing page, read 2026-10-11'
+summary: >-
+  Data, including MR images, are released for analyses approved by the ALLFTD Executive Committee after a data
+  request and a signed data use agreement. Research use only, no re-identification, no sharing with third parties
+  without permission, new data go back to ALLFTD and publications credit the consortium and its grants.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: Recipient of data will provide a signed code access agreement for data usage – code access agreements are a
+      simple statement that the recipient of the data will use the data only for research purposes and will not
+      attempt to identify any individual participant.
+    note: The policy neither allows nor forbids commercial use. It limits use to research within an approved request.
+  product_validation:
+    value: unspecified
+    note: The policy limits use to research within an approved request but does not address testing or validating a
+      product.
+  model_training:
+    value: unspecified
+    note: The policy does not mention machine learning or model training.
+  derivatives:
+    value: conditional
+    quote: New data generated through analyses of ALLFTD data sets must be returned to the ALLFTD Executive Committee
+      for possible inclusion in the project database or into another NIH-approved government database such as dbGap or
+      NIAGADS.
+    note: Generating new data is expected, but it must be returned to ALLFTD and is under a six-month embargo.
+  publication:
+    value: conditional
+    quote: Acceptance of ALLFTD data obligates the recipient to cite/reference the
+    note: The sentence continues with a link to the grant. Publications need the required acknowledgement text,
+      "on behalf of the ALLFTD Consortium" as an author, and notification of the Executive Committee on acceptance.
+  redistribute_original:
+    value: 'no'
+    quote: No sharing of data with a third party is allowed without permission of the ALLFTD Executive Committee.
+    note: Only with permission of the ALLFTD Executive Committee.
+  redistribute_derivatives:
+    value: unspecified
+    quote: No sharing of data with a third party is allowed without permission of the ALLFTD Executive Committee.
+    note: The policy defines data to include data derived from analyses of neuroimaging measures, but does not say
+      whether labels or segmentations made by the recipient count. New data must be returned to ALLFTD.
+  share_model_weights:
+    value: unspecified
+    note: The policy does not address trained models.
+  attribution:
+    value: 'yes'
+    quote: All publications from ALLFTD investigators or collaborators based on ALLFTD data must also include “on behalf
+      of the ALLFTD Consortium,” as an author, which allows for the association and pubmed indexing of authors within
+      the ALLFTD consortium.
+    note: External investigators must also acknowledge ALLFTD as the data source and use the required acknowledgement
+      text naming the ALLFTD, ARTFL and LEFFTDS grants.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: These datasets with clinical and volumetric MRI data will be available to any qualified investigator who
+      completes an approved ALLFTD clinical data request and signs the data use agreement.
+    source: https://www.allftd.org/data
+    note: The policy page also asks for a signed code access agreement. Raw images are released through the LONI IDA
+      "FTLD" project after an approved request.
+  ethics_approval:
+    value: conditional
+    quote: Recipient of data will provide assurance of ability to secure the data set in accordance with the most
+      stringent protections possible compliant with local IRB and Health Insurance Portability and Accountability Act
+      (HIPAA for US sites) standards for such sensitive data.
+    note: The policy asks for data security that complies with local IRB standards; it does not require a separate IRB
+      approval document.
+  publication_review:
+    value: conditional
+    quote: The ALLFTD Executive Committee reserves the right to require changes in the manuscript to avoid substantial
+      conflict or overlap with other publications and to ensure proper description of informed consent, approach to
+      confidentiality, acknowledgements of ALLFTD investigators and funding sources, and disclosure of potential and
+      actual conflicts of interest.
+    note: ALLFTD investigators submit manuscripts to the Executive Committee before submission. External investigators
+      notify the Executive Committee upon acceptance and may be asked to share results.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: New data generated through analyses of ALLFTD data sets must be returned to the ALLFTD Executive Committee
+      for possible inclusion in the project database or into another NIH-approved government database such as dbGap or
+      NIAGADS.
+    note: Negative findings must also be reported within one year of data distribution.
+  delete_after_use:
+    value: conditional
+    quote: Recipient of data will guarantee that mutation data will be destroyed when analyses are complete.
+    note: Applies to genetic mutation data only.
+  no_reidentification:
+    value: 'yes'
+    quote: Recipient of data will provide a signed code access agreement for data usage – code access agreements are a
+      simple statement that the recipient of the data will use the data only for research purposes and will not
+      attempt to identify any individual participant.
+  geographic_restriction:
+    value: 'no'
+    note: The policy names no countries or regions.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
