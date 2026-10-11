@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,187,openneuro-ds004711-v1,README,189 enrolled for the MRI session; sub-007 and sub-025 did not enter the scanner
+subjects,contrast=T1w,187,ds004711-file-tree,,one T1w per subject folder; sub-112 has two
+subjects,contrast=bold,187,ds004711-file-tree,,two BART runs per subject folder
+subjects,contrast_set=bold+T1w,187,ds004711-file-tree,,
+subjects,sex=female,97,ds004711-participants,"gender, bart_run1",subjects with MRI data
+subjects,sex=male,90,ds004711-participants,"gender, bart_run1",subjects with MRI data
+subjects,age=16-19,20,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=20-29,36,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=30-39,28,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=40-49,21,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=50-59,24,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=60-69,33,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=70-79,22,ds004711-participants,"age, bart_run1",age at the MRI session
+subjects,age=80-89,3,ds004711-participants,"age, bart_run1",age at the MRI session
+scans,,740,ds004711-file-tree,,"188 T1w, 374 BART BOLD and 178 delay discounting BOLD NIfTI files"
+age_mean,,45.1,ds004711-participants,"age, bart_run1",subjects with MRI data
+age_min,,16.22,ds004711-participants,"age, bart_run1",
+age_max,,81.48,ds004711-participants,"age, bart_run1",
