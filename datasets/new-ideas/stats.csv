@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,5757,windon2025,Section 3.1 and Table 1,"participants with complete pre-PET data included in the analysis, out of 6,023 registered by March 1, 2024 (ClinicalTrials.gov lists 6,061 actually enrolled). Image archiving needed separate consent, and the size of the LONI release is not stated"
+subjects,condition=mci,3606,windon2025,Table 1,
+subjects,condition=dementia,2151,windon2025,Table 1,
+subjects,sex=female,3219,windon2025,Table 1,
+subjects,sex=male,2535,windon2025,Table 1,
+age_median,,75,windon2025,Table 1,IQR 70 to 80
+age_min,,35,windon2025,Table 1,
+age_max,,98,windon2025,Table 1,

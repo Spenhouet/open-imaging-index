@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-New-IDEAS-DUA
+name: Data Use Agreement for Images and Clinical Data - New IDEAS Study
+short_name: New IDEAS DUA
+url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NEW_IDEAS
+version: 'Online agreement on the LONI IDA NEW_IDEAS application page, read 2026-10-11'
+summary: >-
+  Agreement between the American College of Radiology, USC (LONI) and the requestor, accepted online. The selected
+  images and clinical data may be used only for the scientific investigation, teaching or clinical study planning
+  described in the request, shared only with third parties working toward that purpose, and publications must
+  acknowledge ACR, the Alzheimer's Association and New IDEAS.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    quote: Nothing herein shall be construed to give permission to Requestor to re-sell the data.
+    note: The agreement forbids reselling the data and limits use to the stated purpose, but does not say whether that
+      purpose may be commercial. The study's data sharing policy accepts requests from industry investigators for
+      research, technology development or education.
+  product_validation:
+    value: unspecified
+    note: The agreement limits use to scientific investigation, teaching or the planning of clinical research studies
+      but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning or model training.
+  derivatives:
+    value: unspecified
+    quote: Neither Requestor nor any third party in receipt of the images and clinical data shall use the images and
+      clinical data for any other purpose.
+    note: Use is limited to the purpose in the request. The agreement does not address derived data.
+  publication:
+    value: conditional
+    quote: All publications must include acknowledgement of ACR, ALZ, and use of the New IDEAS data.
+    note: Allowed with the required acknowledgement text, which names the study, NCT04426539 and its funders.
+  redistribute_original:
+    value: conditional
+    quote: Requestor may only share the images and clinical data provided with a third party in furtherance of the
+      Purpose set forth this Section.
+    note: Third parties must be bound by written terms substantially similar to the confidentiality section. Public
+      re-hosting is not covered by this permission.
+  redistribute_derivatives:
+    value: unspecified
+    note: The sharing clause covers the images and clinical data provided. Derived data are not addressed.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not address trained models.
+  attribution:
+    value: 'yes'
+    quote: All publications must include acknowledgement of ACR, ALZ, and use of the New IDEAS data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: This Data Use Agreement for Images and Clinical Data - New IDEAS Study (the "Agreement") is effective as of
+      the date of acceptance and submission of this form below
+    note: Accepted online ("I Agree") on the LONI IDA.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: The agreement asks only that publications be sent after they appear (see return_results). The study's
+      separate data sharing policy asks for manuscripts one month before journal submission, with non-binding
+      feedback, in its section on biospecimen data.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: Publications should be submitted to newideas@acr.org upon publication.
+    note: Only published papers have to be sent. Derived data need not be returned.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The agreement states that patient identifiers are removed before delivery but contains no clause that
+      forbids attempts at re-identification.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions. It is governed by the laws of Pennsylvania.
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

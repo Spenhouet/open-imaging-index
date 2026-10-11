@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: new-ideas
+name: New IDEAS
+full_name: >-
+  New IDEAS: Imaging Dementia - Evidence for Amyloid Scanning Study, A Study to Improve Precision in Amyloid PET
+  Coverage and Patient Care
+summary: >-
+  Clinical amyloid PET scans and visit data from a racially and ethnically diverse group of Medicare beneficiaries
+  with mild cognitive impairment or dementia, collected to test whether amyloid PET changes care and outcomes. Images
+  are shared through LONI after an application.
+homepage: https://www.ideas-study.org/
+# The first release date on LONI was not verified. The LONI agreement cites a coded data use agreement between ACR
+# and USC dated October 14, 2025, so images cannot have been shared before then.
+year: 2025
+creators:
+  - name: American College of Radiology (sponsor and operations center)
+    url: https://www.acr.org/
+  - name: Alzheimer's Association (study direction)
+    url: https://www.alz.org/
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California (image dissemination)
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [PT]
+tracers: [florbetapir, florbetaben, flutemetamol]
+anatomy: [brain]
+conditions: [mci, dementia]
+tasks: [classification]
+countries: [US]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NEW_IDEAS
+licenses:
+  - license: LicenseRef-New-IDEAS-DUA
+citation:
+  text: >-
+    Windon CC, Gatsonis C, Carrillo MC, et al. Amyloid PET and clinical management in a diverse, cognitively impaired
+    population: The New IDEAS Study. Alzheimer's & Dementia. 2025;21(7):e70504. The data use agreement also requires
+    an acknowledgement of ACR, the Alzheimer's Association and the New IDEAS study (NCT04426539) with its funders.
+sources:
+  windon2025:
+    title: Windon CC et al. 2025, Amyloid PET and clinical management in a diverse, cognitively impaired population,
+      The New IDEAS Study, Alzheimer's & Dementia
+    url: https://doi.org/10.1002/alz.70504
+    kind: paper
+  ctgov-nct04426539:
+    title: ClinicalTrials.gov record NCT04426539, New IDEAS
+    url: https://clinicaltrials.gov/study/NCT04426539
+    kind: website
+  new-ideas-sharing-policy:
+    title: New IDEAS Study Data Sharing and Publications Policy, version 1.1, January 2026
+    url: https://edge.sitecorecloud.io/americancoldc58-microsites81c8-productiond86e-273f/media/Project/ACR/ideas-study/New-IDEAS-Study-Data-Sharing-and-Publications-Policy_FINAL.pdf
+    kind: website
+  loni-new-ideas-dua:
+    title: LONI IDA, New IDEAS Data Use Agreement
+    url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=NEW_IDEAS
+    kind: website
+related: []
+keywords: [amyloid PET, Medicare, real-world imaging, visual read, health disparities, Black, Latinx, lecanemab]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
