@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,140,physionet-cerebral-perfusion-diabetes,Methods,70 patients with type 2 diabetes and 70 healthy controls aged 50 to 85
+subjects,condition=type_2_diabetes,70,physionet-cerebral-perfusion-diabetes,Methods,
+subjects,condition=healthy,70,physionet-cerebral-perfusion-diabetes,Methods,
+subjects,field_strength=3,140,physionet-cerebral-perfusion-diabetes,Methods,continuous arterial spin labeling at 3 Tesla
+subjects,country=US,140,ge75-protocol,Study design and methods,"recruited from the greater Boston area, single center (BIDMC)"
+subjects,sex=male,50,ge75-summary-table,sex,"counted over the 88 subject rows of the summary table, not the full 140"
+subjects,sex=female,38,ge75-summary-table,sex,"counted over the 88 subject rows of the summary table, not the full 140"
+subjects,condition=type_2_diabetes;sex=male,42,ge75-summary-table,Group and sex,88 summary table rows
+subjects,condition=type_2_diabetes;sex=female,33,ge75-summary-table,Group and sex,88 summary table rows
+subjects,age=50-59,24,ge75-summary-table,age,88 summary table rows
+subjects,age=60-69,32,ge75-summary-table,age,88 summary table rows
+subjects,age=70-79,26,ge75-summary-table,age,88 summary table rows
+subjects,age=80-89,6,ge75-summary-table,age,88 summary table rows
+subjects,condition=type_2_diabetes;age=50-59,18,ge75-summary-table,Group and age,88 summary table rows
+subjects,condition=type_2_diabetes;age=60-69,30,ge75-summary-table,Group and age,88 summary table rows
+subjects,condition=type_2_diabetes;age=70-79,23,ge75-summary-table,Group and age,88 summary table rows
+age_min,,50,ge75-summary-table,age,88 summary table rows
+age_median,,66,ge75-summary-table,age,88 summary table rows
+age_mean,,65.8,ge75-summary-table,age,88 summary table rows
+age_max,,83,ge75-summary-table,age,88 summary table rows
