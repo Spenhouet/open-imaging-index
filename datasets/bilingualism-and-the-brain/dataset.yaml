@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bilingualism-and-the-brain
+name: Bilingualism and the Brain (ds001796)
+full_name: Bilingualism and the brain
+summary: >-
+  Brain MRI of bilingual adults scanned at the University of Reading, collected to relate individual differences in
+  second-language experience to brain structure and function, with T1w, diffusion, resting-state and flanker task
+  fMRI for 64 people.
+homepage: https://openneuro.org/datasets/ds001796
+doi: 10.18112/openneuro.ds001796.v1.7.0
+year: 2019
+updated: 2022
+version: 1.7.0
+status: active
+creators:
+  - name: University of Reading (DeLuca V, Pliatsikas C)
+    url: https://openneuro.org/datasets/ds001796
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 50.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001796
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.7.0 states "License" CC0.
+citation:
+  text: >-
+    DeLuca V, Pliatsikas C. Bilingualism and the brain. OpenNeuro, version 1.7.0 (2022).
+    doi:10.18112/openneuro.ds001796.v1.7.0
+sources:
+  openneuro-ds001796-v170:
+    title: OpenNeuro ds001796 snapshot 1.7.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds001796/versions/1.7.0
+    kind: website
+  ds001796-participants:
+    title: participants.tsv of ds001796 snapshot 1.7.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001796/blob/1.7.0/participants.tsv
+    kind: computed
+  ds001796-file-tree:
+    title: File tree and JSON sidecars of ds001796 snapshot 1.7.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds001796/tree/1.7.0
+    kind: computed
+related: []
+keywords:
+  [bilingualism, second language, language experience, flanker task, resting-state fMRI, diffusion MRI, neuroplasticity]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
