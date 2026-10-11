@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mcsa
+name: MCSA
+full_name: Mayo Clinic Study of Aging (MCSA) shared data
+summary: >-
+  Brain MRI, diffusion MRI, PET and longitudinal clinical data of residents of Olmsted County, Minnesota, from a
+  population-based study of cognitive aging, mild cognitive impairment and dementia, shared de-identified and defaced
+  on the LONI Image and Data Archive.
+homepage: https://www.mayo.edu/research/centers-programs/alzheimers-disease-research-center/research-activities/mayo-clinic-study-aging
+# The first phase of the public release was described at AAIC 2024 (Schwarz et al., Alzheimer's & Dementia 20, 2024).
+year: 2024
+status: active
+creators:
+  - name: Mayo Clinic Study of Aging, Mayo Clinic Alzheimer's Disease Research Center
+    url: https://www.mayo.edu/research/centers-programs/alzheimers-disease-research-center/research-activities/mayo-clinic-study-aging
+  - name: Laboratory of Neuro Imaging (LONI), University of Southern California
+    url: https://ida.loni.usc.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [healthy, mci, dementia]
+tasks: [longitudinal]
+formats: [DICOM]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=MCSA
+licenses:
+  - license: LicenseRef-MCSA-DUA
+citation:
+  text: >-
+    Schwarz CG, Kremers WK, Prakaashana CM, Przybelski SA, Christenson LR, Wiliams JM, Gunter JL, Senjem ML, Arani A,
+    Reid RI, Machulda MM, Fields JA, Lowe VJ, Kantarci K, Graff-Radford J, Vemuri P, Petersen RC, Knopman DS, Jack CR
+    Jr. A Large Public Release of Clinical and Imaging Data from the Mayo Clinic Study of Aging. Alzheimer's & Dementia
+    20(Suppl 9):e093966 (2024). doi:10.1002/alz.093966
+sources:
+  ida-mcsa-study:
+    title: LONI IDA study record for MCSA (subjects, cohort, modalities and ages)
+    url: https://ida.loni.usc.edu/ajax2/xml/home/getStudy?project=MCSA
+    kind: website
+  schwarz2024:
+    title: Schwarz et al. 2024, A Large Public Release of Clinical and Imaging Data from the Mayo Clinic Study of Aging, Alzheimer's & Dementia (conference abstract)
+    url: https://doi.org/10.1002/alz.093966
+    kind: paper
+related: []
+keywords: [ageing, cognitive aging, mild cognitive impairment, dementia, Alzheimer's disease, population-based, longitudinal, brain MRI, diffusion MRI, amyloid PET, defaced]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
