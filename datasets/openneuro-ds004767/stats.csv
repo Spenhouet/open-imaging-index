@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,55,ravikumar2024,Results: Brain donor cohorts,"one temporal lobe specimen per donor; the snapshot has 55 subject folders"
+scans,,55,ds004767-file-tree,anat/*_T2w.nii.gz,one ex vivo T2w volume per specimen
+subjects,contrast=T2w,55,ds004767-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast_set=T2w,55,ds004767-file-tree,anat/*_T2w.nii.gz,
+subjects,country=US,34,ravikumar2024,Results: Brain donor cohorts,"Center for Neurodegenerative Disease Research, University of Pennsylvania (CNDR)"
+subjects,country=ES,21,ravikumar2024,Results: Brain donor cohorts,"Human Neuroanatomy Laboratory, University of Castilla-La Mancha, Albacete (HNL)"
+subjects,field_strength=9.4,55,ravikumar2024,Methods: specimen preparation and MRI,"sidecars state MagneticFieldStrength 9.384"
+subjects,condition=alzheimers,31,ravikumar2024,Table 2,"low (11), intermediate (10) or high (10) AD neuropathologic change as primary diagnosis among the 47 AD-continuum donors"
+subjects,sex=male,29,ravikumar2024,Table 2,of the 47 AD-continuum donors; sex of the remaining donors is not summarised
+subjects,sex=female,18,ravikumar2024,Table 2,of the 47 AD-continuum donors
+age_mean,,78.6,ravikumar2024,Table 2,of the 47 AD-continuum donors
+age_sd,,10.1,ravikumar2024,Table 2,of the 47 AD-continuum donors
+age_min,,57,ravikumar2024,Results: Brain donor cohorts,"text gives 57-99 years for all 55 donors, but Supplementary Table 1 lists donor HNL21 at 45 years"
+age_max,,99,ravikumar2024,Results: Brain donor cohorts,

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004767
+name: Ex vivo MTL tau atlas (ds004767)
+full_name: >-
+  Characterizing medial temporal lobe vulnerability to neurofibrillary tangle pathology in Alzheimer's disease using a
+  3-D ex vivo MRI atlas and serial histology
+summary: >-
+  Postmortem high-resolution MRI of human medial temporal lobe specimens, collected to build an atlas that links
+  neurofibrillary tangle burden from serial histology to cortical thinning in Alzheimer's disease. Includes manual
+  segmentations, a histology-labelled atlas and tau burden maps.
+homepage: https://openneuro.org/datasets/ds004767
+doi: 10.18112/openneuro.ds004767.v1.0.0
+# Only snapshot 1.0.0 on OpenNeuro, 2023-09-18.
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Ravikumar S, Yushkevich PA et al. (Penn Image Computing and Science Laboratory, University of Pennsylvania; Human
+      Neuroanatomy Laboratory, University of Castilla-La Mancha)
+species: human
+modalities: [MR]
+contrasts: [T2w]
+anatomy: [brain, hippocampus]
+conditions: [alzheimers]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [US, ES]
+field_strengths: [9.4]
+size_gb: 3.55
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004767
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ravikumar S, Denning AE, Lim S, et al. Postmortem imaging reveals patterns of medial temporal lobe vulnerability to
+    tau pathology in Alzheimer's disease. Nature Communications 15, 4803 (2024). doi:10.1038/s41467-024-49205-0
+sources:
+  ravikumar2024:
+    title: >-
+      Ravikumar et al. 2024, Postmortem imaging reveals patterns of medial temporal lobe vulnerability to tau pathology
+      in Alzheimer's disease, Nature Communications
+    url: https://doi.org/10.1038/s41467-024-49205-0
+    kind: paper
+  ravikumar2024-supplement:
+    title: Ravikumar et al. 2024, Supplementary Information (Supplementary Methods 1.1 and Supplementary Table 1)
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-49205-0/MediaObjects/41467_2024_49205_MOESM1_ESM.pdf
+    kind: paper
+  openneuro-ds004767-v1-0-0:
+    title: OpenNeuro ds004767 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004767/versions/1.0.0
+    kind: website
+  ds004767-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds004767 BIDS snapshot 1.0.0 (CC0), counted per subject folder and per
+      T2w NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004767
+    kind: computed
+related: []
+keywords:
+  [
+    ex vivo MRI,
+    postmortem,
+    medial temporal lobe,
+    neurofibrillary tangles,
+    tau,
+    histology,
+    atlas,
+    entorhinal cortex,
+    cortical thickness,
+  ]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
