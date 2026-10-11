@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,152,glick2024,Abstract,"152 participants; participants.tsv has 152 rows and the snapshot 2.0.0 summary lists 152 subjects"
+studies,,314,ds005498-file-tree,sub-*/ses-* folders with imaging,one to five sessions per subject
+scans,,1735,ds005498-file-tree,anat/ and func/ NIfTI files,T1w and bold volumes
+scans,contrast=T1w,159,ds005498-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,1576,ds005498-file-tree,func/*_bold.nii(.gz),151 resting runs and 1425 single-pulse TMS runs
+subjects,contrast=T1w,147,ds005498-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,152,ds005498-file-tree,func/*_bold.nii(.gz),148 subjects have a resting run and 152 at least one TMS run
+subjects,contrast_set=bold+T1w,147,ds005498-file-tree,,
+subjects,contrast_set=bold,5,ds005498-file-tree,,
+subjects,condition=healthy,75,ds005498-participants,No Diagnosis,No Diagnosis = 1
+subjects,condition=depression,63,ds005498-participants,Current MDD,Current MDD = 1
+subjects,condition=ptsd,27,ds005498-participants,Current PTSD Diagnosis,Current PTSD Diagnosis = 1
+subjects,condition=anxiety_disorder,38,ds005498-participants,Current GAD,generalized anxiety disorder; Current GAD = 1
+subjects,age=10-19,6,ds005498-participants,Age,
+subjects,age=20-29,83,ds005498-participants,Age,
+subjects,age=30-39,30,ds005498-participants,Age,
+subjects,age=40-49,21,ds005498-participants,Age,
+subjects,age=50-59,11,ds005498-participants,Age,
+subjects,age=60-69,1,ds005498-participants,Age,
+age_min,,18,ds005498-participants,Age,
+age_max,,61,ds005498-participants,Age,
+age_mean,,31.1,ds005498-participants,Age,
+subjects,country=US,152,openneuro-ds005498-v2-0-0,dataset_description.json,Stanford IRB-31244; T1w sidecars name the Stanford Lucas Center

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005498
+name: Single-Pulse TMS fMRI (ds005498)
+full_name: >-
+  Concurrent single-pulse (sp) TMS/fMRI to reveal the causal connectome in healthy and patient populations
+summary: >-
+  Brain fMRI recorded while single pulses of transcranial magnetic stimulation (TMS) hit one of 11 cortical sites,
+  plus resting fMRI and T1w MRI, from healthy, trauma-exposed and depressed adults, collected to map causal circuit
+  connections in mood and anxiety disorders.
+homepage: https://openneuro.org/datasets/ds005498
+doi: 10.18112/openneuro.ds005498.v2.0.0
+# First public snapshot on OpenNeuro published 2024-10-01; latest snapshot 2.0.0, 2025-03-06.
+year: 2024
+updated: 2025
+version: 2.0.0
+status: active
+creators:
+  - name: >-
+      Gajawelli N, Glick CC, Sun Y, Badami F, Etkin A, Saggar M (Stanford University; Etkin Lab, Brain Dynamics Lab,
+      Alto Neuroscience)
+    url: https://braindynamicslab.github.io/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy, depression, ptsd, anxiety_disorder]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 47.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005498
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Glick CC, Gajawelli N, Sun Y, Badami F, Saggar M, Etkin A. Concurrent single-pulse (sp) TMS/fMRI to reveal the
+    causal connectome in healthy and patient populations. bioRxiv (2024). doi:10.1101/2024.09.25.614833. Data:
+    OpenNeuro ds005498, doi:10.18112/openneuro.ds005498.v2.0.0
+sources:
+  glick2024:
+    title: >-
+      Glick et al. 2024, Concurrent single-pulse (sp) TMS/fMRI to reveal the causal connectome in healthy and patient
+      populations, bioRxiv (abstract)
+    url: https://doi.org/10.1101/2024.09.25.614833
+    kind: paper
+  openneuro-ds005498-v2-0-0:
+    title: OpenNeuro ds005498 snapshot 2.0.0 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds005498/versions/2.0.0
+    kind: website
+  ds005498-participants:
+    title: participants.tsv of ds005498 (CC0), columns Age, Current MDD, Current PTSD Diagnosis, Current GAD, No Diagnosis
+    url: https://github.com/OpenNeuroDatasets/ds005498/blob/main/participants.tsv
+    kind: computed
+  ds005498-file-tree:
+    title: File listing and JSON sidecars of the ds005498 BIDS repository (CC0), subjects counted per T1w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds005498
+    kind: computed
+related: []
+keywords:
+  [transcranial magnetic stimulation, TMS/fMRI, causal connectivity, resting-state fMRI, depression, PTSD, trauma]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
