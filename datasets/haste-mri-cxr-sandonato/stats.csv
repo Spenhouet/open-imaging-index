@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,287,ali2020,Abstract (Methods),patients with both axial HASTE-MRI and chest x-ray less than 7 days apart
+subjects,modality=MR,287,ali2020,Abstract (Methods),axial HASTE-MRI
+subjects,modality=DX,287,ali2020,Abstract (Methods),chest x-ray
+age_median,,53,ali2020,Abstract (Methods),

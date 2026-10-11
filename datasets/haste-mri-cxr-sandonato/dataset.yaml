@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: haste-mri-cxr-sandonato
+name: Fast thoracic MRI versus chest x-ray (San Donato)
+full_name: >-
+  Dataset from Alì et al., Fast thoracic MRI as an alternative to chest x-ray: a retrospective evaluation of 287
+  patients
+summary: >-
+  Chest MRI with a fast single-shot turbo spin-echo sequence and chest x-ray from the same patients, collected to
+  compare how often each detects lung nodules, consolidation, pleural effusion, cardiac enlargement and aortic
+  dilation. Retrospective, single country. Access restricted.
+homepage: https://zenodo.org/records/4555169
+doi: 10.5281/zenodo.4555169
+# Year the restricted Zenodo record was published; the paper appeared in 2020.
+year: 2021
+creators:
+  - name: Radiology Unit, IRCCS Policlinico San Donato, and Università degli Studi di Milano
+    url: https://zenodo.org/communities/irccspoliclinicosandonato
+species: human
+modalities: [MR, DX]
+anatomy: [chest, lung, heart]
+conditions: [pulmonary_nodule, consolidation, pleural_effusion, cardiomegaly]
+countries: [IT]
+access:
+  type: on_request
+  url: https://zenodo.org/records/4555169
+  note: >-
+    The Zenodo record is restricted and lists no files. It describes its content as the dataset from the article and
+    states no access conditions or license; access is at the discretion of the record owners. Whether MRI or x-ray
+    images are part of it is not stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record and the paper abstract publish no license or data use terms.
+citation:
+  text: >-
+    Alì M, Monti CB, Secchi F, Spairani R, Speciani M, Di Leo G, Sardanelli F. Fast thoracic MRI as an alternative to
+    chest x-ray: A retrospective evaluation of 287 patients. Clin Imaging 60(2), 244-248 (2020).
+    doi:10.1016/j.clinimag.2019.12.016
+sources:
+  ali2020:
+    title: Alì et al. 2020, Clinical Imaging 60(2) (abstract)
+    url: https://doi.org/10.1016/j.clinimag.2019.12.016
+    kind: paper
+  zenodo-4555169:
+    title: Zenodo record 4555169, dataset from the Alì et al. 2020 article
+    url: https://zenodo.org/records/4555169
+    kind: website
+related: []
+keywords: [HASTE, chest x-ray, thoracic MRI, detection rate, inter-reader agreement, pleural effusion, aortic dilation]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
