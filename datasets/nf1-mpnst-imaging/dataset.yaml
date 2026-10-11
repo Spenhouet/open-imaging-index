@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nf1-mpnst-imaging
+name: NF1 MPNST Imaging Predictors (NTAP)
+full_name: Imaging predictors of malignant peripheral nerve sheath tumors
+summary: >-
+  MRI and clinical data of people with neurofibromatosis type 1 (NF1), gathered from several centers to find
+  radiomic features that tell malignant peripheral nerve sheath tumors from benign plexiform neurofibromas. Held on
+  the NF Data Portal under embargo.
+homepage: https://www.synapse.org/#!Synapse:syn17098100
+# Year the Synapse project was created; the image files have not been publicly released.
+year: 2018
+creators:
+  - name: Ina Ly, Massachusetts General Hospital
+  - name: Neurofibromatosis Therapeutic Acceleration Program (NTAP)
+    url: https://www.n-tap.org
+modalities: [MR]
+anatomy: [whole_body]
+conditions: [neurofibromatosis_type_1, mpnst, plexiform_neurofibroma]
+tasks: [classification]
+access:
+  type: on_request
+  url: https://www.synapse.org/#!Synapse:syn17098100
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The NF Data Portal lists the study data status as "Under Embargo" and says that anyone granted access by the data
+      contributor must agree with them how to acknowledge the collaboration. No data use terms are published and the
+      data folders are not visible without access.
+sources:
+  synapse-syn17098100:
+    title: Synapse project syn17098100, Imaging predictors of malignant peripheral nerve sheath tumors
+    url: https://www.synapse.org/#!Synapse:syn17098100
+    kind: website
+  ly2023:
+    title: Ly et al. 2023, AAN Annual Meeting abstract (STIR and T1 radiomics models for PNF versus MPNST in NF1)
+    url: https://index.mirasmart.com/aan2023/PDFfiles/AAN2023-004040.html
+    kind: paper
+related: []
+keywords: [neurofibromatosis type 1, MPNST, plexiform neurofibroma, radiomics, NF Data Portal]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent
