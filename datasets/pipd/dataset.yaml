@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pipd
+name: Precision Imaging Parkinson's Disease (PIPD)
+full_name: Precision Imaging Parkinson's disease (PIPD) dataset
+summary: >-
+  Structural and resting-state functional brain MRI of people with Parkinson's disease and healthy controls, collected
+  to map how subcortical targets of Parkinson's treatments connect to the motor cortex. Five resting-state runs per
+  person; files withdrawn from public access, available on request.
+homepage: https://www.scidb.cn/detail?dataSetId=33adb8f5043a4ec6b0cdbb243be8d6bb
+doi: 10.57760/sciencedb.28929
+year: 2025
+version: V1
+creators:
+  - name: Changping Laboratory, Beijing (Jianxun Ren, Hesheng Liu)
+    url: https://cpl.ac.cn/
+  - name: Department of Medical Imaging, Henan Provincial People's Hospital, Zhengzhou (Yan Bai, Meiyun Wang)
+modalities: [MR]
+contrasts: [MP2RAGE, bold]
+anatomy: [brain]
+conditions: [parkinsons, healthy]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://www.scidb.cn/detail?dataSetId=33adb8f5043a4ec6b0cdbb243be8d6bb
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Science Data Bank record was published under CC0 1.0, but its files have since been withdrawn from public
+      access. The record now states that, following hospital requirements, the dataset is not available for public
+      access and that requests go to the corresponding authors of the paper. No terms are published for data shared on
+      request, so the CC0 label is not taken to apply to them.
+citation:
+  text: >-
+    Ren J, Bai Y, Wang M, Liu H. Precision Imaging Parkinson's Disease (PIPD) dataset. Science Data Bank (2025).
+    https://doi.org/10.57760/sciencedb.28929
+sources:
+  scidb-pipd:
+    title: Science Data Bank record of the PIPD dataset, V1
+    url: https://www.scidb.cn/detail?dataSetId=33adb8f5043a4ec6b0cdbb243be8d6bb
+    kind: website
+  ren2026:
+    title: Ren et al. 2026, Parkinson's disease as a somato-cognitive action network disorder, Nature 651
+    url: https://doi.org/10.1038/s41586-025-10059-1
+    kind: paper
+related: []
+keywords: [Parkinson's disease, resting-state fMRI, functional connectivity, somato-cognitive action network, MP2RAGE]
+verified:
+  date: '2026-10-11'
+  by: Spenhouet-agent

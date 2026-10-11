@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,226,ren2026,"Methods, PIPD dataset",166 patients and 60 controls kept after exclusions; summed from the two disjoint groups. 180 patients and 71 controls were enrolled; whether excluded participants are in the deposit is not stated
+subjects,condition=parkinsons,166,ren2026,"Methods, PIPD dataset, Patients",180 recruited; 4 did not complete MRI and 10 were excluded for head motion
+subjects,condition=healthy,60,ren2026,"Methods, PIPD dataset, HC participants",71 enrolled; 11 excluded for head motion
+subjects,sex=female,98,ren2026,"Methods, PIPD dataset",sum of 64 patients and 34 controls
+subjects,sex=male,128,ren2026,"Methods, PIPD dataset",sum of 102 patients and 26 controls
+subjects,condition=parkinsons;sex=female,64,ren2026,"Methods, PIPD dataset, Patients",
+subjects,condition=parkinsons;sex=male,102,ren2026,"Methods, PIPD dataset, Patients",
+subjects,condition=healthy;sex=female,34,ren2026,"Methods, PIPD dataset, HC participants",
+subjects,condition=healthy;sex=male,26,ren2026,"Methods, PIPD dataset, HC participants",
+subjects,contrast=MP2RAGE,226,ren2026,"Methods, PIPD dataset, MRI acquisition",one MP2RAGE T1-weighted scan per participant
+subjects,contrast=bold,226,ren2026,"Methods, PIPD dataset, MRI acquisition",five resting-state runs of 6 min 14 s per participant
+subjects,contrast_set=bold+MP2RAGE,226,ren2026,"Methods, PIPD dataset, MRI acquisition",
+subjects,field_strength=3,226,ren2026,"Methods, PIPD dataset, MRI acquisition",Siemens Prisma 3 T with a 64-channel head coil
+subjects,country=CN,226,ren2026,"Methods, PIPD dataset, Patients",recruited at Henan Provincial People's Hospital
+age_mean,condition=parkinsons,61.8,ren2026,"Methods, PIPD dataset, Patients",
+age_sd,condition=parkinsons,7.84,ren2026,"Methods, PIPD dataset, Patients",
+age_mean,condition=healthy,56.10,ren2026,"Methods, PIPD dataset, HC participants",
+age_sd,condition=healthy,6.64,ren2026,"Methods, PIPD dataset, HC participants",
