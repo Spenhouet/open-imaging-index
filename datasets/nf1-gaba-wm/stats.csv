@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,31,garg2022,Results; Table 1,Adolescents with NF1 who took part in the experimental sessions
+subjects,condition=neurofibromatosis_type_1,31,garg2022,Methods (Subjects),
+subjects,sex=male,15,garg2022,Table 1,
+subjects,condition=adhd,8,garg2022,Table 1,Pre-existing diagnosis
+subjects,condition=autism,3,garg2022,Table 1,Pre-existing diagnosis
+studies,,60,garg2022,Results,"Sum of 29 participants with two visits and 2 participants with one visit (disjoint, complete)"
+age_mean,,14.7,garg2022,Table 1,Years
+age_min,,11.4,garg2022,Table 1,Lower bound of the range given in brackets; the Methods state 11 to 17 years
+age_max,,18.3,garg2022,Table 1,Upper bound of the range given in brackets; the Methods state 11 to 17 years
