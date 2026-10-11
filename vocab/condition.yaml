@@ -164,6 +164,12 @@ terms:
   - { id: dysthymia, label: Dysthymic disorder, synonyms: [dysthymia, persistent depressive disorder], mappings: { mondo: 'MONDO:0001442' } }
   - { id: anxiety_disorder, label: Anxiety disorder, mappings: { mondo: 'MONDO:0005618' } }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
+  - {
+      id: functional_neurological_disorder,
+      label: Functional neurological disorder,
+      synonyms: [FND, conversion disorder, functional movement disorder, FMD],
+      mappings: { mondo: 'MONDO:0002104' }
+    }
   - { id: ptsd, label: Post-traumatic stress disorder, synonyms: [PTSD], mappings: { mondo: 'MONDO:0005146' } }
   - {
       id: childhood_trauma,

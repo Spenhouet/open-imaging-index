@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,113,mueller2022,2.1. Participants,48 FMD patients and 65 controls
+subjects,modality=MR,113,mueller2022,2.2. Image acquisition,
+subjects,contrast=bold,113,mueller2022,2.2. Image acquisition,"resting-state T2*-weighted gradient-echo EPI, 304 volumes per participant"
+subjects,condition=functional_neurological_disorder,48,mueller2022,Table 1,"functional movement disorder; 28 with functional weakness, 20 without"
+subjects,condition=healthy,65,mueller2022,Table 1,
+subjects,sex=female,78,mueller2022,Table 1,sum of 41 controls and 37 FMD patients
+subjects,sex=male,35,mueller2022,Table 1,sum of 24 controls and 11 FMD patients
+subjects,condition=functional_neurological_disorder;sex=female,37,mueller2022,Table 1,
+subjects,condition=functional_neurological_disorder;sex=male,11,mueller2022,Table 1,
+subjects,condition=healthy;sex=female,41,mueller2022,Table 1,
+subjects,condition=healthy;sex=male,24,mueller2022,Table 1,
+age_mean,condition=functional_neurological_disorder,45.3,mueller2022,Table 1,
+age_sd,condition=functional_neurological_disorder,9.7,mueller2022,Table 1,
+age_mean,condition=healthy,46.0,mueller2022,Table 1,
+age_sd,condition=healthy,9.4,mueller2022,Table 1,
+subjects,field_strength=3,113,mueller2022,2.2. Image acquisition,
+subjects,vendor=siemens,113,mueller2022,2.2. Image acquisition,MAGNETOM Skyra with a 32-channel head coil
+subjects,country=CZ,113,mueller2022,2.1. Participants,"General University Hospital in Prague"
