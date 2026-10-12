@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,136,ds003826-participants,,136 rows; the dataset name and README also state 136 participants
+subjects,condition=healthy,136,openneuro-ds003826-v3-0-1,README,all participants are healthy young adults without reported psychiatric or neurological history
+subjects,sex=female,87,ds003826-participants,,the README also states 87 females
+subjects,sex=male,49,ds003826-participants,,
+subjects,age=18-19,4,ds003826-participants,,
+subjects,age=20-29,115,ds003826-participants,,
+subjects,age=30-39,17,ds003826-participants,,
+subjects,sex=female;age=20-29,76,ds003826-participants,,
+subjects,sex=female;age=30-39,10,ds003826-participants,,
+subjects,sex=male;age=20-29,39,ds003826-participants,,
+subjects,contrast=T1w,136,ds003826-file-tree,,one T1w NIfTI and JSON sidecar per subject; the snapshot summary lists 277 files
+subjects,contrast_set=T1w,136,ds003826-file-tree,,
+subjects,field_strength=3,136,openneuro-ds003826-v3-0-1,sidecar JSON files,MagneticFieldStrength 3 in all 136 sidecars
+subjects,vendor=siemens,136,openneuro-ds003826-v3-0-1,sidecar JSON files,Siemens Skyra in all 136 sidecars
+subjects,country=PL,136,openneuro-ds003826-v3-0-1,sidecar JSON files,InstitutionName Malopolskie Centrum Biotechnologii in Krakow
+scans,,136,ds003826-file-tree,,one T1w volume per subject
+scans,contrast=T1w,136,ds003826-file-tree,,
+age_mean,,24.3,ds003826-participants,,
+age_sd,,3.7,ds003826-participants,,
+age_median,,23,ds003826-participants,,
+age_min,,18,ds003826-participants,,
+age_max,,35,ds003826-participants,,
