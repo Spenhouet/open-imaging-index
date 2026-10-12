@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bean-morphometry-growth
+name: BEAN Brain Morphometry and Diminished Growth
+full_name: BrainMorphometry_DiminishedGrowth_BEANstudy_2021
+summary: >-
+  Structural brain MRI of six-year-old children growing up in extreme poverty in Dhaka, Bangladesh, collected to relate
+  brain size and shape to stunting and other signs of early malnutrition. Includes growth z-scores, socioeconomic
+  measures and IQ.
+homepage: https://openneuro.org/datasets/ds003877
+doi: 10.18112/openneuro.ds003877.v1.2.0
+# CHANGES file: 1.0.0 dated 2021-11-10 (initial upload); 1.1.0 added head circumference; 1.2.0 dated 2026-03-23 added to README.
+year: 2021
+updated: 2026
+version: 1.2.0
+status: active
+creators:
+  - name: >-
+      Boston Children's Hospital, Harvard Graduate School of Education, icddr,b, National Institute of Neuroscience and
+      Hospital Dhaka and University of Virginia (Turesky TK, Shama T, Kakon SH, Haque R, Islam N, Someshwar A, Gagoski B,
+      Petri WA, Nelson CA, Gaab N)
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [short_stature]
+formats: [BIDS, NIfTI]
+countries: [BD]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1.04
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003877
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.2.0 states "License" CC0. The README asks users to tell Charles Nelson
+      their research question and states that this has no bearing on access.
+citation:
+  text: >-
+    Turesky TK, Shama T, Kakon SH, Haque R, Islam N, Someshwar A, Gagoski B, Petri WA, Nelson CA, Gaab N. Brain
+    morphometry and diminished physical growth in Bangladeshi children growing up in extreme poverty: a longitudinal
+    study. Developmental Cognitive Neuroscience 52, 101029 (2021). doi:10.1016/j.dcn.2021.101029
+sources:
+  turesky2021:
+    title: >-
+      Turesky et al. 2021, Brain morphometry and diminished physical growth in Bangladeshi children growing up in extreme
+      poverty, Developmental Cognitive Neuroscience (PMC8605388, CC BY)
+    url: https://doi.org/10.1016/j.dcn.2021.101029
+    kind: paper
+  openneuro-ds003877-v1-2-0:
+    title: OpenNeuro ds003877 snapshot 1.2.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003877/versions/1.2.0
+    kind: website
+  ds003877-participants:
+    title: >-
+      participants.tsv of ds003877 (CC0), counted per row; Age_at_MRI_(months) converted to years, Sex coded female=1,
+      male=2
+    url: https://github.com/OpenNeuroDatasets/ds003877/blob/main/participants.tsv
+    kind: computed
+  ds003877-file-tree:
+    title: BIDS file tree of ds003877 (CC0), raw NIfTI files under sub-*/anat counted
+    url: https://github.com/OpenNeuroDatasets/ds003877/tree/main
+    kind: computed
+related: [bean-gonogo-fmri]
+keywords:
+  [brain morphometry, stunting, malnutrition, poverty, socioeconomic status, children, low-resource setting, Bangladesh]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
