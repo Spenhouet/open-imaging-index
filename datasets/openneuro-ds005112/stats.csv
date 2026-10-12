@@ -1,0 +1,31 @@
+measure,by,value,source,where,note
+subjects,,135,openneuro-ds005112-v1-0-1,README: Dataset summary,135 rows in participants.tsv and 135 subject folders
+studies,,244,openneuro-ds005112-v1-0-1,README: Dataset summary,1 to 6 sessions per subject; 244 session folders with images in the file tree
+subjects,sex=male,75,ds005112-participants,sex,
+subjects,sex=female,60,ds005112-participants,sex,
+subjects,age=0-9,8,ds005112-participants,age,one age per subject; the session it refers to is not stated
+subjects,age=10-19,64,ds005112-participants,age,
+subjects,age=20-29,32,ds005112-participants,age,
+subjects,age=30-39,21,ds005112-participants,age,
+subjects,age=40-49,7,ds005112-participants,age,
+subjects,age=50-59,3,ds005112-participants,age,
+subjects,sex=female;age=10-19,30,ds005112-participants,sex and age,Cells below 10 left out
+subjects,sex=female;age=20-29,16,ds005112-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=10-19,34,ds005112-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=20-29,16,ds005112-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=30-39,14,ds005112-participants,sex and age,Cells below 10 left out
+age_min,,8,openneuro-ds005112-v1-0-1,README: Dataset summary,
+age_max,,55,openneuro-ds005112-v1-0-1,README: Dataset summary,
+age_median,,16,openneuro-ds005112-v1-0-1,README: Dataset summary,
+age_mean,,21.2,ds005112-participants,age,
+age_sd,,11.16,ds005112-participants,age,
+scans,,1006,ds005112-file-tree,sub-*/ses-*/anat/*.nii.gz,912 T1w and 94 T2w files
+scans,contrast=T1w,912,ds005112-file-tree,anat/*_T1w.nii.gz,"901 multi-echo MP-RAGE runs, 9 axial, 1 sagittal and 1 MEMPRAGE acquisition; many sessions hold both an original and a filtered reconstruction"
+scans,contrast=T2w,94,ds005112-file-tree,anat/*_acq-FatSuppressed_T2w.nii.gz,one per session in 94 sessions
+subjects,contrast=T1w,135,ds005112-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,91,ds005112-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast_set=T1w+T2w,91,ds005112-file-tree,sub-*/,
+subjects,contrast_set=T1w,44,ds005112-file-tree,sub-*/,
+subjects,field_strength=3,135,openneuro-ds005112-v1-0-1,README: Apparatus and anat sidecars,GE MR-750 3 T; sidecars state MagneticFieldStrength 3
+subjects,vendor=ge,135,openneuro-ds005112-v1-0-1,README: Apparatus and anat sidecars,Manufacturer GE; ManufacturersModelName DISCOVERY MR750
+subjects,country=US,135,openneuro-ds005112-v1-0-1,README,"Acquired at NIMH in Bethesda, Maryland"

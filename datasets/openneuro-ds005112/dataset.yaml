@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005112
+name: NIMH CTNB and BEB Structural MRI (ds005112)
+full_name: >-
+  Structural MRI dataset from NIMH: Clinical and Translational Neuroscience Branch and Behavioral Endocrinology Branch
+summary: >-
+  Structural brain MRI of children, adolescents and adults aged 8 to 55, pooled from two NIMH intramural protocols on
+  neuropsychiatric imaging and on brain development across puberty, with T1-weighted scans in every session and
+  fat-suppressed T2-weighted scans in some.
+homepage: https://openneuro.org/datasets/ds005112
+doi: 10.18112/openneuro.ds005112.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Berman KF, Schmidt PJ; Clinical and Translational Neuroscience Branch and Behavioral Endocrinology Branch, NIMH Intramural Research Program
+    url: https://openneuro.org/datasets/ds005112
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [brain]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 7.26
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005112
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Berman K, Schmidt P. Structural MRI dataset from NIMH: Clinical and Translational Neuroscience Branch and Behavioral
+    Endocrinology Branch. OpenNeuro dataset ds005112, version 1.0.1 (2024). doi:10.18112/openneuro.ds005112.v1.0.1
+sources:
+  openneuro-ds005112-v1-0-1:
+    title: OpenNeuro ds005112 snapshot 1.0.1 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005112/versions/1.0.1
+    kind: website
+  ds005112-participants:
+    title: participants.tsv of ds005112 snapshot 1.0.1 (CC0), counted per row
+    url: https://s3.amazonaws.com/openneuro.org/ds005112/participants.tsv
+    kind: computed
+  ds005112-file-tree:
+    title: File tree of ds005112 snapshot 1.0.1 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://openneuro.org/datasets/ds005112/versions/1.0.1/file-display
+    kind: computed
+  nct01434368:
+    title: ClinicalTrials.gov NCT01434368, NIH protocol 11-M-0251 (longitudinal study of puberty)
+    url: https://clinicaltrials.gov/study/NCT01434368
+    kind: website
+  nct00004571:
+    title: ClinicalTrials.gov NCT00004571, NIH protocol 00-M-0085 (3 T MRI of neuropsychiatric patients and volunteers)
+    url: https://clinicaltrials.gov/study/NCT00004571
+    kind: website
+related: []
+keywords:
+  [
+    structural MRI,
+    MP-RAGE,
+    multi-echo MP-RAGE,
+    puberty,
+    adolescence,
+    brain development,
+    NIMH Intramural Research Program,
+    NCT01434368,
+    NCT00004571,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
