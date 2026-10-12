@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: huffnagel2019-ald-dmri
+name: Diffusion MRI of Myelopathy in Adrenoleukodystrophy
+full_name: Longitudinal diffusion MRI as surrogate outcome measure for myelopathy in adrenoleukodystrophy
+summary: >-
+  Brain and cervical spinal cord diffusion MRI from men with adrenoleukodystrophy and controls, collected
+  to test diffusion metrics as outcome measures for myelopathy progression over two years. Images are not shared;
+  derived tables are public.
+homepage: https://doi.org/10.5061/dryad.kp648r5
+doi: 10.5061/dryad.kp648r5
+# Publication date of the Dryad data package (supplementary tables). The images themselves have no public release.
+year: 2020
+creators:
+  - name: Irene C. Huffnagel, Amsterdam UMC
+  - name: Wouter J.C. van Ballegoij, Amsterdam UMC
+  - name: Johanna M.B.W. Vos, Amsterdam UMC
+  - name: Stephan Kemp, Amsterdam UMC
+  - name: Matthan W.A. Caan, Amsterdam UMC
+  - name: Marc Engelen, Amsterdam UMC
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain, spinal_cord]
+conditions: [adrenoleukodystrophy, healthy]
+access:
+  type: not_shared
+  url: https://doi.org/10.5061/dryad.kp648r5
+  note: >-
+    The Dryad deposit (mirrored on Zenodo record 3893857) holds no MRI images. It contains four supplementary tables:
+    subject enrollment and imaging availability, change of diffusion metrics and clinical measures during follow-up,
+    and per-patient diffusion and clinical values, released under CC0. No public route to the images was found; the
+    paper's full text is behind a subscription, so its data availability statement could not be checked.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the MRI images. The CC0 dedication of the Dryad deposit covers only
+      the supplementary tables.
+citation:
+  text: >-
+    Huffnagel IC, van Ballegoij WJC, Vos JMBW, Kemp S, Caan MWA, Engelen M. Longitudinal diffusion MRI as surrogate
+    outcome measure for myelopathy in adrenoleukodystrophy. Neurology. 2019;93(23):e2133-e2143.
+    https://doi.org/10.1212/WNL.0000000000008572
+sources:
+  huffnagel2019:
+    title: Huffnagel et al. 2019, Neurology 93(23):e2133-e2143, abstract (PubMed 31719133)
+    url: https://pubmed.ncbi.nlm.nih.gov/31719133/
+    kind: paper
+  dryad-kp648r5-table1:
+    title: Supplementary table 1 of the Dryad data package doi:10.5061/dryad.kp648r5 (CC0), subject enrollment
+    url: https://zenodo.org/records/3893857/files/Supplementary%20table%201.docx
+    kind: data
+related: []
+keywords: [adrenoleukodystrophy, myelopathy, diffusion tensor imaging, spinal cord, corticospinal tract, longitudinal]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
