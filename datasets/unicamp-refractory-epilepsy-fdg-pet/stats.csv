@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,110,carvalho2022,Results (Patients); Table 1,151 patients scanned; 41 excluded because the reference standards could not localize the epileptogenic zone
+subjects,modality=PT,110,carvalho2022,Materials and Methods (Patient preparation and image acquisition),one head bed position per patient
+subjects,modality=CT,110,carvalho2022,Materials and Methods (Patient preparation and image acquisition),CT for attenuation correction and anatomical correlation
+subjects,tracer=fdg,110,carvalho2022,Materials and Methods (Patient preparation and image acquisition),185 MBq; 10 postictal and 100 interictal injections
+subjects,vendor=siemens,110,carvalho2022,Materials and Methods (Patient preparation and image acquisition),Siemens Biograph 40 TruePoint mCT
+subjects,country=BR,110,carvalho2022,Affiliations; Materials and Methods,"FCM-Unicamp, Campinas"
+subjects,condition=epilepsy,110,carvalho2022,Table 1,refractory focal epilepsy
+subjects,condition=temporal_lobe_epilepsy,64,carvalho2022,Table 1,the remaining 46 had extratemporal lobe epilepsy
+subjects,sex=male,43,carvalho2022,Table 1,
+subjects,sex=female,67,carvalho2022,Table 1,
+age_mean,,35.0,carvalho2022,Table 1,age at inclusion
+age_sd,,15.0,carvalho2022,Table 1,age at inclusion
+age_median,,36,carvalho2022,Table 1,age at inclusion
+age_min,,3,carvalho2022,Table 1,age at inclusion
+age_max,,63,carvalho2022,Table 1,age at inclusion

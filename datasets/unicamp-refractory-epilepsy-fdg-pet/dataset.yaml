@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: unicamp-refractory-epilepsy-fdg-pet
+name: Refractory epilepsy FDG PET/CT (Unicamp)
+full_name: Interictal and postictal 18F-FDG PET/CT in epileptogenic zone localization
+summary: >-
+  Brain FDG PET/CT of surgical candidates with drug-refractory focal epilepsy at a university hospital in Campinas,
+  Brazil, acquired under EEG monitoring to compare postictal with interictal localization of the epileptogenic zone.
+  110 patients. Images not shared.
+homepage: https://doi.org/10.1590/0100-3984.2021.0141
+year: 2022
+creators:
+  - name: Faculdade de Ciências Médicas, Universidade Estadual de Campinas (FCM-Unicamp)
+    url: https://doi.org/10.1590/0100-3984.2021.0141
+species: human
+modalities: [PT, CT]
+tracers: [fdg]
+anatomy: [brain]
+conditions: [epilepsy, temporal_lobe_epilepsy]
+countries: [BR]
+vendors: [siemens]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/0100-3984.2021.0141
+  note: >-
+    The paper has no data availability statement. Its figshare record (SciELO) holds only the article's figures, no
+    patient images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms for the images are published. The CC BY 4.0 label of the figshare record covers the
+      article figures only.
+citation:
+  text: >-
+    Carvalho MS, Alvim MKM, Etchebehere E, et al. Interictal and postictal 18F-FDG PET/CT in epileptogenic zone
+    localization. Radiologia Brasileira 55(5), 273-279 (2022). doi:10.1590/0100-3984.2021.0141
+sources:
+  carvalho2022:
+    title: Carvalho et al. 2022, Radiologia Brasileira 55(5), 273-279
+    url: https://doi.org/10.1590/0100-3984.2021.0141
+    kind: paper
+  figshare-20278213:
+    title: SciELO figshare record 20278213, figures of the article
+    url: https://scielo.figshare.com/articles/dataset/Interictal_and_postictal_18F-FDG_PET_CT_in_epileptogenic_zone_localization/20278213
+    kind: website
+related: []
+keywords:
+  [
+    epilepsy,
+    refractory epilepsy,
+    epileptogenic zone,
+    postictal,
+    interictal,
+    FDG PET/CT,
+    hypometabolism,
+    hypermetabolism,
+    EEG monitoring
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
