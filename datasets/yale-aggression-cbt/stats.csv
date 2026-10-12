@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,129,ibrahim2022,Participants,"sum of 100 children with aggressive behavior and 29 healthy controls with usable fMRI; 136 were scanned"
+subjects,condition=aggressive_behavior,100,ibrahim2022,Table 1,CBCL Aggressive Behavior T-score of 65 or higher
+subjects,condition=healthy,29,ibrahim2022,Table 1,
+subjects,condition=oppositional_defiant_disorder,76,ibrahim2022,Table 1,76% of the 100 children with aggressive behavior
+subjects,condition=conduct_disorder,4,ibrahim2022,Table 1,4% of the 100 children with aggressive behavior
+subjects,condition=disruptive_mood_dysregulation_disorder,18,ibrahim2022,Table 1,18% of the 100 children with aggressive behavior
+subjects,condition=adhd,78,ibrahim2022,Table 1,78% of the 100 children with aggressive behavior
+subjects,condition=autism,18,ibrahim2022,Participants,confirmed by ADI-R and ADOS-2
+subjects,condition=anxiety_disorder,26,ibrahim2022,Table 1,26% of the 100 children with aggressive behavior
+subjects,condition=depression,4,ibrahim2022,Table 1,"depression disorder, 4% of the 100 children with aggressive behavior"
+subjects,sex=female,40,ibrahim2022,Participants,sum of 27 in the aggressive behavior group and 13 healthy controls
+subjects,sex=male,89,ibrahim2022,Participants,129 minus 40 females; Table 1 gives 69% male
+subjects,condition=aggressive_behavior;sex=female,27,ibrahim2022,Participants,
+subjects,condition=aggressive_behavior;sex=male,73,ibrahim2022,Table 1,73% of 100
+subjects,condition=healthy;sex=female,13,ibrahim2022,Participants,
+subjects,condition=healthy;sex=male,16,ibrahim2022,Participants,29 minus 13 females
+subjects,contrast=bold,129,ibrahim2022,Data Acquisition and Preprocessing,face emotion perception task fMRI at baseline
+subjects,field_strength=3,129,ibrahim2022,Data Acquisition and Preprocessing,Siemens MAGNETOM Tim Trio
+subjects,vendor=siemens,129,ibrahim2022,Data Acquisition and Preprocessing,
+subjects,country=US,129,ibrahim2022,Participants,
+age_min,,8,ibrahim2022,Participants,
+age_max,,16,ibrahim2022,Participants,
+age_mean,,11.9,ibrahim2022,Table 1,
+age_sd,,2.2,ibrahim2022,Table 1,
+age_mean,condition=aggressive_behavior,11.7,ibrahim2022,Table 1,
+age_sd,condition=aggressive_behavior,2.3,ibrahim2022,Table 1,
+age_mean,condition=healthy,12.8,ibrahim2022,Table 1,
+age_sd,condition=healthy,1.8,ibrahim2022,Table 1,
