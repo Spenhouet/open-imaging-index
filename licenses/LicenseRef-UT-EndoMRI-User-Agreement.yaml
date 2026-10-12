@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-UT-EndoMRI-User-Agreement
+name: UT-EndoMRI User Agreement (Zenodo record description)
+short_name: UT-EndoMRI terms
+url: https://zenodo.org/records/15750762
+version: User Agreement section of Zenodo record 15750762, published 2025-06-26
+summary: >-
+  A short statement in the Zenodo record that limits use of the dataset to non-commercial scientific research and
+  requires publications to cite the data descriptor by Liang et al. (Scientific Data 2025). It is silent on
+  redistribution, derived data and trained models. The same record lists CC BY 4.0 as its license.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: The UT-EndoMRI dataset is available for free use exclusively in non-commercial scientific research.
+  product_validation:
+    value: unspecified
+    note: The text limits use to non-commercial research but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: Not mentioned. Non-commercial scientific research is permitted, and the release was made for segmentation research.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    note: Publications are expected; they must cite the data descriptor.
+    quote: Any publications resulting from its use must cite the following paper.
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Any publications resulting from its use must cite the following paper.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The statement sets no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

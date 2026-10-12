@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ut-endomri
+name: UT-EndoMRI
+full_name: UTHealth Endometriosis MRI Dataset
+summary: >-
+  Pelvic MRI of women with suspected or confirmed endometriosis, released to develop and test automatic segmentation of
+  the ovaries, uterus and endometriomas, with manual labels from up to three raters for studying interrater agreement.
+homepage: https://zenodo.org/records/15750762
+doi: 10.5281/zenodo.15750762
+year: 2024
+updated: 2025
+creators:
+  - name: McWilliams School of Biomedical Informatics, The University of Texas Health Science Center at Houston
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [uterus, ovary]
+conditions: [endometriosis]
+tasks: [segmentation]
+formats: [NIfTI]
+countries: [US]
+vendors: [ge, philips, siemens]
+field_strengths: [1.5, 3]
+size_gb: 7.98
+access:
+  type: open
+  url: https://zenodo.org/records/15750762
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Whole release, per the license field of the Zenodo record.
+    url: https://zenodo.org/records/15750762
+  - license: LicenseRef-UT-EndoMRI-User-Agreement
+    applies_to: Whole release, per the User Agreement section of the Zenodo record description.
+    url: https://zenodo.org/records/15750762
+    note: >-
+      The record carries CC BY 4.0 in its license field, while its description limits use to non-commercial
+      scientific research. Both are listed so the stricter terms are shown.
+citation:
+  text: >-
+    Liang X, Alpuing Radilla LA, Khalaj K, Dawoodally H, Mokashi C, Guan X, Roberts KE, Sheth SA, Tammisetti VS,
+    Giancardo L. A Multi-Modal Pelvic MRI Dataset for Deep Learning-Based Pelvic Organ Segmentation in Endometriosis.
+    Scientific Data 12, 1292 (2025). https://doi.org/10.1038/s41597-025-05623-3
+  bibtex: |
+    @article{liang2025,
+      title={A Multi-Modal Pelvic MRI Dataset for Deep Learning-Based Pelvic Organ Segmentation in Endometriosis},
+      author={Liang, Xiaomin and Alpuing Radilla, Linda A. and Khalaj, Kamand and Dawoodally, Haaniya and Mokashi, Chinmay and Guan, Xiaoming and Roberts, Kirk E. and Sheth, Sunil A. and Tammisetti, Varaha S. and Giancardo, Luca},
+      journal={Scientific Data},
+      volume={12},
+      pages={1292},
+      year={2025},
+      doi={10.1038/s41597-025-05623-3}
+    }
+sources:
+  liang2025:
+    title: Liang et al. 2025, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-05623-3
+    kind: paper
+  zenodo-15750762:
+    title: Zenodo record 15750762 (UT-EndoMRI)
+    url: https://zenodo.org/records/15750762
+    kind: website
+related: []
+keywords: [endometrioma, ovary segmentation, interrater agreement, fat suppression, pelvic MRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

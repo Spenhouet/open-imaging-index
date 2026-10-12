@@ -369,6 +369,7 @@ terms:
   - { id: breast_cancer, label: Breast cancer, mappings: { mondo: 'MONDO:0007254' } }
   - { id: prostate_cancer, label: Prostate cancer, mappings: { mondo: 'MONDO:0008315' } }
   - { id: ovarian_cancer, label: Ovarian cancer, mappings: { mondo: 'MONDO:0008170' } }
+  - { id: endometriosis, label: Endometriosis, mappings: { mondo: 'MONDO:0005133' } }
   - { id: liver_cancer, label: Liver cancer, mappings: { mondo: 'MONDO:0002691' } }
   - { id: gastric_cancer, label: Gastric cancer, synonyms: [stomach cancer], mappings: { mondo: 'MONDO:0001056' } }
   - {
