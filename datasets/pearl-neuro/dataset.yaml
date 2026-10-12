@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pearl-neuro
+name: PEARL-Neuro (ds004796)
+full_name: >-
+  A Polish Electroencephalography, Alzheimer's Risk-genes, Lifestyle and Neuroimaging (PEARL-Neuro) Database
+summary: >-
+  Resting-state and task fMRI with EEG from healthy middle-aged adults genotyped for Alzheimer's disease risk genes
+  (APOE, PICALM), collected to study how genetic risk relates to brain function, with health, blood and psychometric
+  data.
+homepage: https://openneuro.org/datasets/ds004796
+doi: 10.18112/openneuro.ds004796.v1.1.0
+# OpenNeuro dataset created 2023-10-15, public release 2024-02-18 (README release history); latest snapshot 1.1.0, 2025-06-22.
+year: 2024
+updated: 2025
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Patrycja Dzianok, Ewa Kublik (Laboratory of Emotions Neurobiology, Nencki Institute of Experimental Biology PAS,
+      Warsaw)
+    url: https://github.com/PTDZ/PEARL-Neuro
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [PL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 257.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004796
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Dzianok P, Kublik E. PEARL-Neuro Database: EEG, fMRI, health and lifestyle data of middle-aged people at risk of
+    dementia. Scientific Data 11, 276 (2024). doi:10.1038/s41597-024-03106-5
+sources:
+  dzianok2024:
+    title: >-
+      Dzianok & Kublik 2024, PEARL-Neuro Database: EEG, fMRI, health and lifestyle data of middle-aged people at risk of
+      dementia, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03106-5
+    kind: paper
+  openneuro-ds004796-v1-1-0:
+    title: OpenNeuro ds004796 snapshot 1.1.0 (dataset_description.json, README, BOLD sidecars, file tree, snapshot size)
+    url: https://openneuro.org/datasets/ds004796/versions/1.1.0
+    kind: website
+  ds004796-participants:
+    title: >-
+      participants.tsv of ds004796 snapshot 1.1.0 (CC0), counted per row; subjects matched to sub-* folders and
+      sub-*/func folders in the file tree
+    url: https://github.com/OpenNeuroDatasets/ds004796/blob/main/participants.tsv
+    kind: computed
+related: []
+keywords:
+  [
+    APOE,
+    PICALM,
+    Alzheimer's disease risk,
+    imaging genetics,
+    middle age,
+    EEG,
+    resting state,
+    MSIT,
+    Sternberg task,
+    blood tests,
+    psychometrics,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
