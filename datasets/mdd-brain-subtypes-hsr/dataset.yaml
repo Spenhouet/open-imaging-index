@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mdd-brain-subtypes-hsr
+name: MDD brain-derived subtypes (San Raffaele)
+full_name: >-
+  Multimodal brain-derived subtypes of Major depressive disorder unveil multivariate associations between anergic
+  symptoms, childhood trauma, immune-inflammatory markers and treatment-resistance
+summary: >-
+  Structural and diffusion brain MRI features of 102 inpatients with major depressive disorder, used to cluster
+  patients into neuroimaging subtypes linked to treatment resistance and inflammation. Only regional feature tables
+  and clinical variables are open; the images are not shared.
+homepage: https://data.mendeley.com/datasets/dcbmjws425
+doi: 10.17632/dcbmjws425.1
+year: 2025
+creators:
+  - name: IRCCS Ospedale San Raffaele, Milan
+    url: https://ror.org/039zxt351
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [depression]
+tasks: [classification]
+countries: [IT]
+access:
+  type: not_shared
+  url: https://data.mendeley.com/datasets/dcbmjws425
+  note: >-
+    The Mendeley Data record holds three CSV files: about 400 regional grey matter volume, cortical thickness and
+    fractional anisotropy values per patient, clinical variables (age, sex, scanner, symptom and childhood trauma
+    scores, treatment resistance) and the cluster label. They download openly under CC BY-NC 3.0. No route to the MR
+    images is published; the record names the corresponding author for clarifications.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MR images.
+    note: Neither the data record nor the paper abstract offers the images or states terms for them.
+  - license: CC-BY-NC-3.0
+    applies_to: CSV files of regional MRI features, clinical variables and cluster labels on Mendeley Data.
+citation:
+  text: >-
+    Colombo F, Calesella F, Bravi B, Fortaner-Uyà L, Monopoli C, Tassi E, Carminati M, Zanardi R, Bollettini I,
+    Poletti S, Lorenzi C, Spadini S, Brambilla P, Serretti A, Maggioni E, Fabbri C, Benedetti F, Vai B. Multimodal
+    brain-derived subtypes of Major depressive disorder differentiate patients for anergic symptoms,
+    immune-inflammatory markers, history of childhood trauma and treatment-resistance. European
+    Neuropsychopharmacology 85, 45-57 (2024). doi:10.1016/j.euroneuro.2024.05.015
+sources:
+  colombo2024:
+    title: Colombo et al. 2024, European Neuropsychopharmacology 85, 45-57 (abstract)
+    url: https://doi.org/10.1016/j.euroneuro.2024.05.015
+    kind: paper
+  mendeley-dcbmjws425:
+    title: Mendeley Data record dcbmjws425, version 1
+    url: https://data.mendeley.com/datasets/dcbmjws425
+    kind: website
+  mendeley-dcbmjws425-clinical:
+    title: clinical_variables.csv from Mendeley Data record dcbmjws425 (CC BY-NC 3.0)
+    url: https://data.mendeley.com/public-files/datasets/dcbmjws425/files/0bbc71c4-b0c8-4f64-bc73-654c997a564a/file_downloaded
+    kind: computed
+related: []
+keywords:
+  [
+    major depressive disorder,
+    treatment-resistant depression,
+    clustering,
+    cortical thickness,
+    fractional anisotropy,
+    childhood trauma,
+    inflammation
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
