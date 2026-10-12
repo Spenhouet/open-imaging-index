@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ismett-hepatic-encephalopathy-mri
+name: Hepatic encephalopathy brain MRI radiomics (ISMETT)
+full_name: >-
+  Raw Data for the article: Brain magnetic resonance imaging radiomics features associated with hepatic encephalopathy
+  in adult cirrhotic patients
+summary: >-
+  Brain MRI of adult cirrhotic patients and non-cirrhotic controls from a transplant centre in Palermo, all on one 3T scanner, with
+  texture features of the lentiform nuclei on T1-weighted images used to detect and grade chronic hepatic
+  encephalopathy. 124 patients. Access restricted.
+homepage: https://zenodo.org/records/7615841
+doi: 10.5281/zenodo.7615841
+year: 2023
+creators:
+  - name: Istituto Mediterraneo per i Trapianti e Terapie ad Alta Specializzazione (IRCCS-ISMETT)
+    url: https://zenodo.org/records/7615841
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [liver_cirrhosis, hepatic_encephalopathy]
+tasks: [classification]
+countries: [IT]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://zenodo.org/records/7615841
+  note: >-
+    The Zenodo record is restricted, lists no files and does not accept access requests through Zenodo. The paper's
+    data availability statement says the data are available if requested. Whether MRI images, ROI data or only the
+    extracted texture features are part of the record is not stated.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Zenodo record is labelled CC BY 4.0, which applies once access has been granted. No other terms are
+      published.
+citation:
+  text: >-
+    Sparacia G, Parla G, Cannella R, et al. Brain magnetic resonance imaging radiomics features associated with
+    hepatic encephalopathy in adult cirrhotic patients. Neuroradiology 64, 1969-1978 (2022).
+    doi:10.1007/s00234-022-02949-2
+sources:
+  sparacia2022:
+    title: Sparacia et al. 2022, Neuroradiology 64, 1969-1978
+    url: https://doi.org/10.1007/s00234-022-02949-2
+    kind: paper
+  zenodo-7615841:
+    title: Zenodo record 7615841, raw data for the article
+    url: https://zenodo.org/records/7615841
+    kind: website
+related: []
+keywords:
+  [
+    hepatic encephalopathy,
+    cirrhosis,
+    radiomics,
+    texture analysis,
+    globus pallidus,
+    lentiform nucleus,
+    T1 hyperintensity,
+    West Haven criteria
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

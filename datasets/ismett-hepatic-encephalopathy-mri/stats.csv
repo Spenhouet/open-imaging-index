@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,124,sparacia2022,Results; Table 1,70 cirrhotic patients and 54 non-cirrhotic controls; one 3T MRI exam per patient
+subjects,condition=liver_cirrhosis,70,sparacia2022,Table 1,
+subjects,condition=hepatic_encephalopathy,38,sparacia2022,Table 1,chronic HE in cirrhotic patients; West Haven grade 1: 16; grade 2: 16; grade 3: 4; grade 4: 2
+subjects,condition=hypoxic_ischemic_encephalopathy,31,sparacia2022,Results (Patients' characteristics),clinical indication for MRI in the control group
+subjects,condition=migraine,11,sparacia2022,Results (Patients' characteristics),clinical indication for MRI in the control group
+subjects,sex=male,89,sparacia2022,Table 1,summed from the disjoint cirrhotic (52) and control (37) groups
+subjects,sex=female,35,sparacia2022,Table 1,summed from the disjoint cirrhotic (18) and control (17) groups
+subjects,condition=liver_cirrhosis;sex=male,52,sparacia2022,Table 1,
+subjects,condition=liver_cirrhosis;sex=female,18,sparacia2022,Table 1,
+subjects,contrast=T1w,124,sparacia2022,MR imaging acquisition,identical protocol for all patients; axial non-contrast FSE T1w used for texture analysis
+subjects,vendor=ge,124,sparacia2022,MR imaging acquisition,GE Discovery 750w
+subjects,field_strength=3,124,sparacia2022,MR imaging acquisition,
+subjects,country=IT,124,sparacia2022,Materials and methods,"IRCCS-ISMETT, Palermo"
+age_mean,condition=liver_cirrhosis,66.2,sparacia2022,Table 1,
+age_sd,condition=liver_cirrhosis,8.4,sparacia2022,Table 1,
+age_min,condition=liver_cirrhosis,40,sparacia2022,Table 1,
+age_max,condition=liver_cirrhosis,86,sparacia2022,Table 1,
