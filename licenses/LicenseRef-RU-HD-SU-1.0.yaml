@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-RU-HD-SU-1.0
+name: Radboud University Data Use Agreement for Identifiable Human Data, Scientific Use
+short_name: RU-HD-SU-1.0
+url: https://data.ru.nl/dua/RU-HD-SU-1.0
+version: 'RU-HD-SU-1.0'
+summary: >-
+  For bona fide researchers at bona fide research organisations, who accept the agreement when requesting access in the
+  Radboud Data Repository. No re-identification, no sharing with anyone who has not been granted access themselves, and
+  every presentation of results must acknowledge Radboud University.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: I am a bona fide(*) researcher working within a bona fide research organization.
+    note: >-
+      The agreement does not mention commercial use. It limits users to bona fide researchers and organisations, and
+      says such an organisation need not be publicly funded nor have research as its primary business.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    quote: >-
+      I will acknowledge the use of the data and data derived from the data when publicly presenting any results or
+      algorithms that benefitted from their use.
+    note: The agreement does not mention machine learning; it only expects algorithms that used the data to acknowledge it.
+  derivatives:
+    value: 'yes'
+    quote: >-
+      I will acknowledge the use of the data and data derived from the data when publicly presenting any results or
+      algorithms that benefitted from their use.
+    note: The agreement assumes that users create data derived from the data.
+  publication:
+    value: conditional
+    quote: >-
+      Papers, book chapters, books, posters, oral presentations, and all other presentations of results derived from the
+      data should acknowledge the origin of the data as follows: "Data were provided (in part) by the Radboud University,
+      Nijmegen, The Netherlands".
+    note: With the required acknowledgement and citation of the methods publications listed in the collection.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not redistribute or share the data with others, including individuals in my research group, unless they
+      have independently applied and been granted access to this data.
+    note: Only people who have been granted access themselves may receive the data.
+  redistribute_derivatives:
+    value: unspecified
+    quote: >-
+      An intention to publish the research findings and share the derived data in the scientific community, without
+      restrictions and with minimal delay, for wider scientific and eventual public benefit.
+    note: >-
+      This sentence describes bona fide research rather than granting a right. The agreement does not say whether
+      derived data count as the data that may not be shared.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Papers, book chapters, books, posters, oral presentations, and all other presentations of results derived from the
+      data should acknowledge the origin of the data as follows: "Data were provided (in part) by the Radboud University,
+      Nijmegen, The Netherlands".
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      I request access to the data collected in the digital repository of the Radboud University, established at
+      Nijmegen, the Netherlands (hereinafter referred to as the Radboud University), and I agree to the following:
+  ethics_approval:
+    value: conditional
+    quote: >-
+      This may mean that I need my research to be approved or declared exempt by a committee that oversees research on
+      human subjects, e.g. my Institutional Review Board or Ethics Committee.
+    note: When the rules of the user's institution or government require it.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will not attempt to establish the identity of or attempt to contact any of the included human subjects. I will
+      not link this data to any other database in a way that could provide identifying information.
+  geographic_restriction:
+    value: 'no'
+    note: The agreement names no countries or regions.
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

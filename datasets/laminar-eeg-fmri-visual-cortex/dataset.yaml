@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: laminar-eeg-fmri-visual-cortex
+name: Laminar EEG-fMRI of Visual Features (Clausner et al.)
+full_name: >-
+  Frequency and Laminar Profile of Feature Specific and nonspecific Neural Activity in Human Visual Cortex Revealed by
+  Interleaved EEG-fMRI
+summary: >-
+  Submillimetre visual cortex fMRI with simultaneous EEG from healthy young adults viewing oriented gratings, collected
+  to relate alpha and gamma oscillations to orientation-specific BOLD signals across cortical layers. Includes
+  T1-weighted scans and receptive field mapping runs.
+homepage: https://data.ru.nl/collections/di/dccn/DSC_3018037.01_020
+doi: 10.34973/w2z2-2c91
+# Collection created 2024-10-31 in the Radboud Data Repository; version 1 published 2026-06-10.
+year: 2026
+version: '1'
+status: active
+creators:
+  - name: Clausner T, Marques JP, Scheeringa R, Bonnefond M (Donders Institute, Radboud University; Lyon Neuroscience Research Center)
+    url: https://data.ru.nl/collections/di/dccn/DSC_3018037.01_020
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1619.4
+access:
+  type: signed_agreement
+  url: https://data.ru.nl/collections/di/dccn/DSC_3018037.01_020
+licenses:
+  - license: LicenseRef-RU-HD-SU-1.0
+    note: >-
+      The repository lists the collection as restricted access under the Radboud University data use agreement for
+      identifiable human data, scientific use, version RU-HD-SU-1.0.
+citation:
+  text: >-
+    Clausner T, Marques JP, Scheeringa R, Bonnefond M. Frequency and Laminar Profile of Feature Specific and nonspecific
+    Neural Activity in Human Visual Cortex Revealed by Interleaved EEG-fMRI. Radboud University, Version 1 (2026).
+    doi:10.34973/w2z2-2c91. Paper: Clausner T, Marques JP, Scheeringa R, Bonnefond M. Frequency and laminar profile of
+    feature-specific visual activity revealed by interleaved EEG-fMRI. eLife (2026). doi:10.7554/eLife.108408
+sources:
+  clausner2026:
+    title: >-
+      Clausner et al. 2026, Frequency and laminar profile of feature-specific visual activity revealed by interleaved
+      EEG-fMRI, eLife (version of record)
+    url: https://elifesciences.org/articles/108408
+    kind: paper
+  rdr-dsc-3018037-01-020:
+    title: Radboud Data Repository collection DSC_3018037.01_020 (description and metadata)
+    url: https://data.ru.nl/collections/di/dccn/DSC_3018037.01_020
+    kind: website
+related: []
+keywords:
+  [
+    laminar fMRI,
+    cortical layers,
+    simultaneous EEG-fMRI,
+    alpha oscillations,
+    gamma oscillations,
+    visual cortex,
+    orientation,
+    population receptive field mapping,
+    3D gradient-echo EPI,
+    young adults
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

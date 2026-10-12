@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,52,clausner2026,Results: first paragraph,the repository description gives the same count; no participant was excluded from the analyses (Materials and methods: Data processing)
+subjects,condition=healthy,52,clausner2026,Results: first paragraph,right-handed adults without neurological or psychiatric history or neurosurgery
+subjects,sex=female,34,clausner2026,Results: first paragraph,34 identified as female; the paper does not state the sex of the others
+subjects,field_strength=3,52,clausner2026,Materials and methods: Data acquisition,Siemens MAGNETOM Prismafit 3T with a 64-channel head and neck coil
+subjects,vendor=siemens,52,clausner2026,Materials and methods: Data acquisition,Siemens MAGNETOM Prismafit 3T
+subjects,country=NL,52,clausner2026,Ethics statement,approved by the CMO Arnhem-Nijmegen; collection held by the Donders Centre for Cognitive Neuroimaging
+subjects,contrast=bold,52,clausner2026,Materials and methods: Experimental procedure,four EEG-fMRI task blocks and three pRF mapping blocks per participant; 3D gradient-echo EPI at 0.9 mm
+subjects,contrast=T1w,52,clausner2026,Materials and methods: Data acquisition,0.8 mm MPRAGE recorded during the practice block of every participant
+subjects,contrast_set=bold+T1w,52,clausner2026,Materials and methods: Experimental procedure,every participant followed the same protocol and none was excluded
+age_mean,,24.0,clausner2026,Results: first paragraph,
+age_sd,,4.0,clausner2026,Results: first paragraph,
+age_min,,18,clausner2026,Results: first paragraph,
+age_max,,35,clausner2026,Results: first paragraph,
