@@ -75,7 +75,7 @@ sources:
     title: Smith R et al. 2020, The accumulation rate of tau aggregates is higher in females and younger amyloid-positive subjects, Brain
     url: https://doi.org/10.1093/brain/awaa327
     kind: paper
-related: []
+related: [biofinder-2]
 keywords: [tau PET, amyloid PET, Alzheimer's disease, Parkinson's disease, memory clinic, longitudinal, CSF biomarkers, Sweden]
 verified:
   date: '2026-10-12'

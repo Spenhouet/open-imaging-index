@@ -50,7 +50,7 @@ sources:
     title: MIDUS Neuroscience Repository page
     url: https://midus.wisc.edu/midus-neuroscience-repository/
     kind: website
-related: [midus-refresher-1-neuroscience]
+related: [midus-refresher-1-neuroscience, midus-2-neuroscience]
 keywords: [MIDUS, affective neuroscience, emotion regulation, brain ageing, task fMRI, resting-state fMRI, diffusion MRI, midlife]
 verified:
   date: '2026-10-12'

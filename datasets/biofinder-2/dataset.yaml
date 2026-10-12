@@ -31,7 +31,8 @@ conditions:
     vascular_dementia,
     parkinsons,
     progressive_supranuclear_palsy,
-    multiple_system_atrophy
+    multiple_system_atrophy,
+    lewy_body_dementia
   ]
 tasks: [classification, longitudinal, regression]
 countries: [SE]
@@ -75,7 +76,7 @@ sources:
     title: Ossenkoppele R et al. 2021, Tau PET correlates with different Alzheimer's disease-related features compared to CSF and plasma p-tau biomarkers, EMBO Molecular Medicine
     url: https://doi.org/10.15252/emmm.202114398
     kind: paper
-related: []
+related: [biofinder-1]
 keywords: [tau PET, amyloid PET, RO948, Alzheimer's disease, Parkinson's disease, memory clinic, longitudinal, CSF biomarkers, Sweden]
 verified:
   date: '2026-10-12'
