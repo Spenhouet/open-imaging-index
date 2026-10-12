@@ -45,6 +45,29 @@ terms:
       description: 'Also used for corticobasal syndrome, the clinical presentation, when the pathology is not confirmed.',
       mappings: { mondo: 'MONDO:0022308' }
     }
+  - { id: multiple_system_atrophy, label: Multiple system atrophy, synonyms: [MSA], mappings: { mondo: 'MONDO:0007803' } }
+  - {
+      id: multiple_system_atrophy_cerebellar,
+      label: 'Multiple system atrophy, cerebellar type',
+      parent: multiple_system_atrophy,
+      synonyms: [MSA-C],
+      mappings: { mondo: 'MONDO:0016418' }
+    }
+  - { id: cerebellar_ataxia, label: Cerebellar ataxia, mappings: { mondo: 'MONDO:0000437' } }
+  - {
+      id: spinocerebellar_ataxia_type_2,
+      label: Spinocerebellar ataxia type 2,
+      parent: cerebellar_ataxia,
+      synonyms: [SCA2],
+      mappings: { mondo: 'MONDO:0008458' }
+    }
+  - {
+      id: spinocerebellar_ataxia_type_6,
+      label: Spinocerebellar ataxia type 6,
+      parent: cerebellar_ataxia,
+      synonyms: [SCA6],
+      mappings: { mondo: 'MONDO:0008457' }
+    }
   - { id: multiple_sclerosis, label: Multiple sclerosis, synonyms: [MS], mappings: { mondo: 'MONDO:0005301' } }
   - { id: cns_infection, label: Central nervous system infection, synonyms: [neuroinfection, brain infection], mappings: { mondo: 'MONDO:0024619' } }
   - {

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: asan-cerebellar-ataxia-fdg
+name: Cerebellar ataxia FDG PET (Asan)
+full_name: >-
+  Different subregional metabolism patterns in patients with cerebellar ataxia by 18F-fluorodeoxyglucose positron
+  emission tomography
+summary: >-
+  Retrospective brain FDG PET of patients with cerebellar-type multiple system atrophy and spinocerebellar ataxia types
+  2 and 6, compared with crossed cerebellar diaschisis and healthy controls to map cerebellar subregional metabolism.
+  171 subjects from Seoul. Images on request.
+homepage: https://doi.org/10.1371/journal.pone.0173275
+year: 2017
+creators:
+  - name: Department of Nuclear Medicine and Department of Neurology, Asan Medical Center, University of Ulsan College of Medicine
+    url: https://doi.org/10.1371/journal.pone.0173275
+species: human
+modalities: [PT]
+tracers: [fdg]
+anatomy: [brain]
+conditions:
+  [
+    multiple_system_atrophy_cerebellar,
+    spinocerebellar_ataxia_type_2,
+    spinocerebellar_ataxia_type_6,
+    brain_tumor,
+    healthy
+  ]
+countries: [KR]
+vendors: [siemens, ge]
+access:
+  type: on_request
+  url: https://doi.org/10.1371/journal.pone.0173275
+  note: >-
+    The paper's data availability statement says ethical and legal restrictions prevent public release and that the
+    analysis data are available on request from the Correlative Neuroimaging Lab data monitoring committee at Asan
+    Medical Center. The PLOS figshare record holds only the three supplementary figures.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms for the images are published. The CC BY 4.0 license of the article and its figshare
+      record covers the text and figures only.
+citation:
+  text: >-
+    Oh M, Kim JS, Oh JS, Lee CS, Chung SJ. Different subregional metabolism patterns in patients with cerebellar ataxia
+    by 18F-fluorodeoxyglucose positron emission tomography. PLoS ONE 12(3), e0173275 (2017).
+    doi:10.1371/journal.pone.0173275
+sources:
+  oh2017:
+    title: Oh et al. 2017, PLoS ONE 12(3), e0173275
+    url: https://doi.org/10.1371/journal.pone.0173275
+    kind: paper
+  figshare-4766518:
+    title: PLOS figshare record 4766518, supplementary figures of the article
+    url: https://plos.figshare.com/articles/dataset/Different_subregional_metabolism_patterns_in_patients_with_cerebellar_ataxia_by_sup_18_sup_F-fluorodeoxyglucose_positron_emission_tomography/4766518
+    kind: website
+related: []
+keywords:
+  [
+    cerebellar ataxia,
+    multiple system atrophy,
+    MSA-C,
+    spinocerebellar ataxia,
+    SCA2,
+    SCA6,
+    crossed cerebellar diaschisis,
+    FDG PET,
+    cerebellum,
+    glucose metabolism
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
