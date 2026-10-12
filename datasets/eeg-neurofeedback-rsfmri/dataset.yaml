@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: eeg-neurofeedback-rsfmri
+name: EEG neurofeedback pre/post resting-state fMRI (ds001408)
+full_name: rsfMRI_single_session_EEG_NF
+summary: >-
+  Resting-state fMRI and T1-weighted brain MRI of 52 healthy adults scanned right before and after a single 30-minute
+  session of real or sham infra-low frequency EEG neurofeedback, shared in BIDS on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds001408
+doi: 10.18112/openneuro.ds001408.v1.0.3
+# OpenNeuro dataset created 2018-06-22; snapshot 1.0.0 dated 2019-07-02 in CHANGES; latest snapshot 1.0.3, 2020-05-15.
+year: 2019
+updated: 2020
+version: 1.0.3
+status: active
+creators:
+  - name: >-
+      Dobrushina OR, Vlasova RM, Rumshiskaya AD, Litvinova LD, Mershina EA, Sinitsyn VE, Pechenkova EV (Research Center
+      of Neurology, Federal Center of Treatment and Rehabilitation, Lomonosov Moscow State University, Higher School of
+      Economics, Moscow)
+    url: https://openneuro.org/datasets/ds001408
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 9.39
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001408
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Dobrushina OR, Vlasova RM, Rumshiskaya AD, Litvinova LD, Mershina EA, Sinitsyn VE, Pechenkova EV. Modulation of
+    Intrinsic Brain Connectivity by Implicit Electroencephalographic Neurofeedback. Frontiers in Human Neuroscience 14,
+    192 (2020). doi:10.3389/fnhum.2020.00192
+sources:
+  dobrushina2020:
+    title: >-
+      Dobrushina et al. 2020, Modulation of Intrinsic Brain Connectivity by Implicit Electroencephalographic
+      Neurofeedback, Frontiers in Human Neuroscience
+    url: https://doi.org/10.3389/fnhum.2020.00192
+    kind: paper
+  openneuro-ds001408-v1-0-3:
+    title: >-
+      OpenNeuro ds001408 snapshot 1.0.3 (dataset_description.json, README, CHANGES, T1w and BOLD sidecars, file listing
+      and snapshot size)
+    url: https://openneuro.org/datasets/ds001408/versions/1.0.3
+    kind: website
+  ds001408-participants:
+    title: participants.tsv of ds001408 snapshot 1.0.3 (CC0); columns participant_id, age, sex and group
+    url: https://github.com/OpenNeuroDatasets/ds001408/blob/master/participants.tsv
+    kind: computed
+related: []
+keywords: [neurofeedback, infra-low frequency neurofeedback, EEG, resting-state fMRI, functional connectivity, sham]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
