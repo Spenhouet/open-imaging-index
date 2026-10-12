@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,84,openneuro-ds006905-v1-1-0,README: Overview of the dataset,30 in the open single-arm phase and 54 in the randomized waitlist-controlled phase; participants.tsv also has 84 rows
+studies,,168,ds006905-file-tree,,ses-pre and ses-post for every subject
+subjects,sex=female,30,ds006905-participants,sex,
+subjects,sex=male,54,ds006905-participants,sex,
+subjects,condition=adhd,73,ds006905-participants,ADHD,"rows coded Y, C (44) or Y, I (29); all children had deficient organizational skills"
+subjects,age=0-9,45,ds006905-participants,age_years,whole years; 7 to 9 years
+subjects,age=10-19,39,ds006905-participants,age_years,whole years; 10 to 11 years
+age_min,,7,ds006905-participants,age_years,the README states an inclusion range of 8 to 12 years
+age_max,,11,ds006905-participants,age_years,
+age_mean,,9.27,ds006905-participants,age_years,from whole-year values
+subjects,sex=female;condition=adhd,25,ds006905-participants,sex; ADHD,
+subjects,sex=male;condition=adhd,48,ds006905-participants,sex; ADHD,
+subjects,contrast=T1w,84,ds006905-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,84,ds006905-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,84,ds006905-file-tree,,epi fieldmaps not counted as a contrast
+scans,,637,ds006905-file-tree,,sum of the disjoint T1w and bold NIfTI counts below; 442 fieldmap NIfTI files not included
+scans,contrast=T1w,168,ds006905-file-tree,,one per session
+scans,contrast=bold,469,ds006905-file-tree,,"task-fix 163, task-inscapes 161, task-films 145"
+subjects,field_strength=3,84,openneuro-ds006905-v1-1-0,README: Image acquisition,
+subjects,vendor=siemens,84,openneuro-ds006905-v1-1-0,README: Image acquisition,Siemens 3T Prisma with XR gradients and a 32-channel head coil
+subjects,country=US,84,openneuro-ds006905-v1-1-0,dataset_description.json: EthicsApprovals,NYU Langone Health Institutional Review Board

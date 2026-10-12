@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: organizational-skills-training
+name: Organizational Skills Training
+full_name: Brain plasticity underlying acquisition of new organizational skills in children
+summary: >-
+  Resting-state and naturalistic-viewing fMRI with T1-weighted MRI of children with deficient organizational skills,
+  scanned before and after Organizational Skills Training in a clinical trial of how the behavioral intervention
+  changes brain connectivity.
+homepage: https://openneuro.org/datasets/ds006905
+doi: 10.18112/openneuro.ds006905.v1.1.0
+# CHANGES file: 1.0.0 (2025-12-25) initial upload, 1.1.0 (2025-12-25) added how to cite.
+year: 2025
+version: 1.1.0
+creators:
+  - name: NYU Langone Health (Martinez Agulleiro L, Di Martino A, Zhao Y, Castellanos FX and colleagues)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [adhd]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 195.05
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006905
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Martinez Agulleiro L, Deng B, Gallagher R, Abikoff HB, Yoncheva Y, Robinson L, Conlon G, Haroon M, Yan CG, Di
+    Martino A, Zhao Y, Castellanos FX. Brain plasticity underlying acquisition of new organizational skills in
+    children: A Rashomon analysis. Frontiers in Neuroimaging 4, 1671310 (2025). doi:10.3389/fnimg.2025.1671310
+sources:
+  martinezagulleiro2025:
+    title: >-
+      Martinez Agulleiro et al. 2025, Brain plasticity underlying acquisition of new organizational skills in
+      children: A Rashomon analysis, Frontiers in Neuroimaging
+    url: https://doi.org/10.3389/fnimg.2025.1671310
+    kind: paper
+  openneuro-ds006905-v1-1-0:
+    title: OpenNeuro ds006905 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006905/versions/1.1.0
+    kind: website
+  ds006905-participants:
+    title: participants.tsv of ds006905 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds006905/blob/main/participants.tsv
+    kind: computed
+  ds006905-file-tree:
+    title: File tree of ds006905 (CC0), NIfTI files under sub-*/ses-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds006905/tree/main
+    kind: computed
+keywords:
+  [
+    organizational skills,
+    behavioral intervention,
+    clinical trial,
+    resting-state fMRI,
+    naturalistic viewing,
+    Inscapes,
+    ADHD,
+    children,
+    pre-post,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
