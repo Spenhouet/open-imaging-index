@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mnd-mfhc-healthy-controls
+name: MND-MFHC Healthy Controls
+full_name: Multimodal Neuroimaging Dataset of Healthy Controls
+summary: >-
+  Structural, resting-state functional, diffusion and arterial spin labeling brain MRI of healthy community volunteers
+  aged 3 to 84, collected as the control group for studies of Meige syndrome and facial paralysis, with MRIQC quality
+  reports.
+homepage: https://www.scidb.cn/en/detail?dataSetId=4d9430ae0f814ca6a5c269b961b9e3c9
+doi: 10.57760/sciencedb.10872
+year: 2023
+version: V2
+status: active
+creators:
+  - name: Department of Radiology, China-Japan Friendship Hospital, Beijing
+  - name: Ji-Xin Luan, Peng Gao, Ao-Cai Yang, Xi-Nian Zuo, Guo-Lin Ma
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi, asl]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [ge]
+field_strengths: [3]
+# Science Data Bank record metadata (V2): 33082321462 bytes in 1373 files.
+size_gb: 33.1
+access:
+  type: signed_agreement
+  url: https://doi.org/10.57760/sciencedb.o00133.00020
+  note: >-
+    The Science Data Bank record is restricted. Applicants sign the Chinese Color Nest Data Community data use
+    agreement with their institutional official, submit it for community review, and then request the files on
+    Science Data Bank, where the data managers approve access.
+licenses:
+  - license: LicenseRef-CCNDC-DUA
+    applies_to: All imaging data and quality reports on the Science Data Bank record
+citation:
+  text: >-
+    Gao P, Luan JX, Yang AC, et al. A multi-modal neuroimaging data release for Meige Syndrome and Facial Paralysis
+    Research. Scientific Data 12:62 (2025). doi:10.1038/s41597-025-04383-4. Data: Luan JX, Gao P, Yang AC, Zuo XN,
+    Ma GL. Multimodal Neuroimaging Dataset of Healthy Controls. V2. Science Data Bank, 2023.
+    doi:10.57760/sciencedb.10872
+sources:
+  gao2025:
+    title: Gao et al. 2025, A multi-modal neuroimaging data release for Meige Syndrome and Facial Paralysis Research, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-04383-4
+    kind: paper
+  scidb-10872:
+    title: Science Data Bank record 10.57760/sciencedb.10872 (V2), its description and DataCite metadata
+    url: https://doi.org/10.57760/sciencedb.10872
+    kind: website
+related: [mnd-mfhc-facial-paralysis]
+keywords: [healthy controls, lifespan, resting-state fMRI, diffusion MRI, arterial spin labeling, Chinese Color Nest Project, MND-MFHC]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
