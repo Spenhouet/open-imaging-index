@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,51,openneuro-ds003709-v1-0-0,participants.tsv and snapshot summary,"the paper's lab-based adolescent sample had 72 participants with behavioral data; 51 are in the release"
+scans,,306,ds003709-file-tree,anat/ fmap/ and func/ NIfTI files,"51 T1w, 153 bold and 102 fmap epi volumes"
+scans,contrast=T1w,51,ds003709-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,153,ds003709-file-tree,func/*_bold.nii.gz,three task runs per subject
+subjects,contrast=T1w,51,ds003709-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,51,ds003709-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,51,ds003709-file-tree,,
+subjects,condition=depression,31,ds003709-participants,group,"group MDD: current, ongoing or historical depression (participants.json)"
+subjects,condition=healthy,20,ds003709-participants,group,group HV: healthy volunteers
+subjects,sex=female,40,ds003709-participants,sex,
+subjects,sex=male,11,ds003709-participants,sex,
+subjects,age=10-19,51,ds003709-participants,age,ages 12 to 18
+subjects,sex=female;age=10-19,40,ds003709-participants,sex and age,
+subjects,sex=male;age=10-19,11,ds003709-participants,sex and age,
+subjects,sex=female;condition=depression,24,ds003709-participants,sex and group,
+subjects,sex=female;condition=healthy,16,ds003709-participants,sex and group,cells below 10 left out
+subjects,country=US,51,keren2021,Author affiliations and Materials and methods,"NIMH, Bethesda; NIH Institutional Review Board protocol"
+subjects,vendor=ge,51,openneuro-ds003709-v1-0-0,BIDS sidecars (Manufacturer),GE Discovery MR750
+subjects,field_strength=3,51,openneuro-ds003709-v1-0-0,BIDS sidecars (MagneticFieldStrength),
+age_mean,,15.57,ds003709-participants,age,
+age_median,,16,ds003709-participants,age,
+age_min,,12,ds003709-participants,age,
+age_max,,18,ds003709-participants,age,
