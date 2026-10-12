@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,32,tremblay2021,Abstract,"Experiment 2 MRI subset of the Experiment 1 participants; the deposit description gives the same 32"
+subjects,modality=MR,32,tremblay2021,Abstract,
+subjects,contrast=bold,32,tremblay2021,Abstract,Cortical thickness and BOLD signal were examined in the 32 participants
+subjects,contrast=dwi,29,tremblay2019,Abstract,"HARDI in 14 young and 15 elderly adults; the deposit readme names this paper as the diffusion MRI report for Experiment 2"
+subjects,condition=healthy,32,tremblay2021,Abstract,Healthy participants

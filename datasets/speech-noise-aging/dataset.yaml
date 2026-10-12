@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: speech-noise-aging
+name: Brain Aging and Speech Perception in Noise
+full_name: >-
+  Brain aging and speech perception in noise: effects of background noise and talker variability
+summary: >-
+  Task fMRI and structural and diffusion MRI of healthy younger and older adults, collected to study how age, background
+  noise and talker variability affect syllable discrimination. Scans are not public; group surface maps and task
+  stimuli are open under CC BY-NC 4.0.
+homepage: https://doi.org/10.5683/SP2/SNW3YO
+doi: 10.5683/SP2/SNW3YO
+year: 2021
+creators:
+  - name: Speech Neuroscience Laboratory, CERVO Brain Research Center and Université Laval (Pascale Tremblay)
+    url: https://www.speechneurolab.ca
+modalities: [MR]
+contrasts: [bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+countries: [CA]
+size_gb: 0.25
+access:
+  type: not_shared
+  url: https://doi.org/10.5683/SP2/SNW3YO
+  note: >-
+    The Borealis deposit (CC BY-NC 4.0) holds the auditory stimuli, the Presentation experiment files, a FreeSurfer
+    group average surface of the 32 MRI participants and group-level cortical thickness and BOLD maps in AFNI/SUMA
+    surface formats. The deposit states that individual behavioural and MRI data cannot be shared because participants
+    did not consent to individual data sharing.
+licenses:
+  - license: CC-BY-NC-4.0
+    applies_to: Stimuli, experiment files and group-level surface maps on Borealis
+    url: https://doi.org/10.5683/SP2/SNW3YO
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Participants' MRI scans, which are not shared
+    note: The deposit states that individual data cannot be shared; no terms are given for them.
+citation:
+  text: >-
+    Tremblay P, Brisson V, Deschamps I. Brain aging and speech perception: Effects of background noise and talker
+    variability. NeuroImage 227:117675 (2021). doi:10.1016/j.neuroimage.2020.117675. Data: Borealis, V1 (2021).
+    doi:10.5683/SP2/SNW3YO
+sources:
+  tremblay2021:
+    title: Tremblay et al. 2021, NeuroImage 227:117675 (abstract, PMID 33359849)
+    url: https://doi.org/10.1016/j.neuroimage.2020.117675
+    kind: paper
+  tremblay2019:
+    title: Tremblay et al. 2019, Human Brain Mapping 40(1):226-241 (abstract, PMID 30277622)
+    url: https://doi.org/10.1002/hbm.24367
+    kind: paper
+  borealis-snw3yo:
+    title: Borealis dataset doi:10.5683/SP2/SNW3YO, version 1.2 (description, readme, file list, license)
+    url: https://doi.org/10.5683/SP2/SNW3YO
+    kind: website
+related: []
+keywords: [speech perception, aging, background noise, talker variability, task fMRI, cortical thickness, HARDI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
