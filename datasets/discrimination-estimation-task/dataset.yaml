@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: discrimination-estimation-task
+name: Discrimination-Estimation Task (ds005381)
+summary: >-
+  Brain MRI and task fMRI of young adults in Seoul who discriminated and then estimated remembered grating
+  orientations, plus retinotopic mapping and resting-state runs, collected to study how decisions bias working memory.
+  Covers 50 participants scanned at 3T.
+homepage: https://openneuro.org/datasets/ds005381
+doi: 10.18112/openneuro.ds005381.v1.1.0
+# CHANGES file: 1.0.0 (2024-11-13) release, 1.1.0 (2025-08-08) publication info updated.
+year: 2024
+version: 1.1.0
+status: active
+creators:
+  - name: Seoul National University (Gu H, Lee J, Kim S, Lim J, Lee HJ, Lee H, Choe MJ, Yoo DG, Ryu JH, Lim S, Lee SH)
+    url: https://openneuro.org/datasets/ds005381
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [KR]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 143.02
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005381
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Gu H, Lee J, Kim S, Lim J, Lee HJ, Lee H, Choe MJ, Yoo DG, Ryu JH, Lim S, Lee SH. Attractor dynamics of working
+    memory explain a concurrent evolution of stimulus-specific and decision-consistent biases in visual estimation.
+    Neuron 113, 3476-3490.e9 (2025). doi:10.1016/j.neuron.2025.07.003
+sources:
+  openneuro-ds005381-v1-1-0:
+    title: OpenNeuro ds005381 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005381/versions/1.1.0
+    kind: website
+  gu2025:
+    title: >-
+      Gu et al. 2025, Attractor dynamics of working memory explain a concurrent evolution of stimulus-specific and
+      decision-consistent biases in visual estimation, Neuron
+    url: https://doi.org/10.1016/j.neuron.2025.07.003
+    kind: paper
+  ds005381-participants:
+    title: participants.tsv of ds005381 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005381/blob/main/participants.tsv
+    kind: computed
+  ds005381-file-tree:
+    title: File tree of ds005381 snapshot 1.1.0 (CC0), raw NIfTI files under sub-*/ counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds005381/versions/1.1.0/file-display
+    kind: computed
+related: []
+keywords:
+  [working memory, decision making, orientation estimation, attractor dynamics, retinotopy, resting-state fMRI, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
