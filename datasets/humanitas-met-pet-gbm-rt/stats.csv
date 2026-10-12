@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,93,pessina2021,Results; Table 1,97 newly diagnosed glioblastoma patients were enrolled in the trial between August 2013 and April 2016; 93 had MRI and methionine PET available
+subjects,condition=glioblastoma,93,pessina2021,Table 1,all IDH wild type; MGMT methylated 53 and unmethylated 40
+subjects,sex=female,33,pessina2021,Table 1,
+subjects,sex=male,60,pessina2021,Table 1,
+subjects,tracer=methionine,93,pessina2021,Results; Section 2.3,300-500 MBq; images acquired 10-15 minutes after injection within 1 month of surgery
+subjects,modality=PT,93,pessina2021,Results; Section 2.3,
+subjects,modality=MR,93,pessina2021,Results; Section 2.3,postoperative MRI for radiotherapy planning
+subjects,contrast=T1w_ce,93,pessina2021,Section 2.3,post-contrast T1-weighted MPRAGE
+subjects,contrast=FLAIR,93,pessina2021,Section 2.3,3D FLAIR
+subjects,country=IT,93,pessina2021,Institutional Review Board Statement,single centre: IRCCS Humanitas Research Hospital
+age_median,,61,pessina2021,Table 1,range 23-77 years

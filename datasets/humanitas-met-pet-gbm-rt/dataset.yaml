@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: humanitas-met-pet-gbm-rt
+name: Methionine PET for glioblastoma radiotherapy (Humanitas)
+full_name: >-
+  Dataset related to article "Role of 11C Methionine Positron Emission Tomography (11CMETPET) for Surgery and Radiation
+  Therapy Planning in Newly Diagnosed Glioblastoma Patients Enrolled into a Phase II Clinical Study"
+summary: >-
+  Postoperative amino acid PET/CT and brain MRI of adults with newly diagnosed glioblastoma treated with
+  hypofractionated radiotherapy and temozolomide in a phase II trial, used to relate methionine uptake to residual
+  tumour, target volumes and survival. 93 patients. Data on request.
+homepage: https://zenodo.org/records/5993214
+doi: 10.5281/zenodo.5993214
+# Year the restricted Zenodo record was published; the article appeared in 2021.
+year: 2022
+creators:
+  - name: IRCCS Humanitas Research Hospital and Humanitas University
+    url: https://zenodo.org/records/5993214
+species: human
+modalities: [PT, CT, MR]
+tracers: [methionine]
+contrasts: [T1w_ce, FLAIR]
+anatomy: [brain]
+conditions: [glioblastoma]
+tasks: [survival]
+countries: [IT]
+access:
+  type: on_request
+  url: https://zenodo.org/records/5993214
+  note: >-
+    The Zenodo record is public but lists no files and its content is restricted. The record states that the raw data
+    are accessible on request because they include sensitive data, and asks for requests by e-mail to the Humanitas
+    library. Whether the files hold PET, CT and MR images or only the study tables is not stated. The article's data
+    availability statement points to an IRCCS Humanitas Research Hospital dataset.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record lists no license and no terms beyond the access request.
+citation:
+  text: >-
+    Pessina F, Navarria P, Clerici E, et al. Role of 11C Methionine Positron Emission Tomography (11CMETPET) for
+    Surgery and Radiation Therapy Planning in Newly Diagnosed Glioblastoma Patients Enrolled into a Phase II Clinical
+    Study. J Clin Med 10(11), 2313 (2021). doi:10.3390/jcm10112313
+sources:
+  pessina2021:
+    title: Pessina et al. 2021, Journal of Clinical Medicine 10(11), 2313
+    url: https://doi.org/10.3390/jcm10112313
+    kind: paper
+  zenodo-5993214:
+    title: Zenodo record 5993214, dataset related to the article
+    url: https://zenodo.org/records/5993214
+    kind: website
+related: []
+keywords:
+  [
+    glioblastoma,
+    methionine PET,
+    amino acid PET,
+    radiotherapy planning,
+    biological tumour volume,
+    extent of resection,
+    hypofractionated radiotherapy,
+    temozolomide,
+    overall survival
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
