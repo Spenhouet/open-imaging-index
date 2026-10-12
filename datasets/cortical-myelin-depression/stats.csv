@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,87,ds003653-participants,participant_id,the paper analyses 86 of them and excludes the participant who converted from control to MDD
+subjects,condition=healthy,47,ds003653-participants,group_dx,controls at baseline; one more participant (group HCconvertedMDD) was a control at baseline and later diagnosed with MDD
+subjects,condition=depression,26,ds003653-participants,group_dx,major depressive disorder at baseline; matches Table 1 of baranger2021
+subjects,condition=dysthymia,13,ds003653-participants,group_dx,persistent depressive disorder at baseline; matches Table 1 of baranger2021
+subjects,sex=female,65,ds003653-participants,sex,
+subjects,sex=male,22,ds003653-participants,sex,
+subjects,sex=female;condition=healthy,36,ds003653-participants,sex; group_dx,
+subjects,sex=male;condition=healthy,11,ds003653-participants,sex; group_dx,
+subjects,sex=female;condition=depression,19,ds003653-participants,sex; group_dx,
+subjects,sex=female;condition=dysthymia,10,ds003653-participants,sex; group_dx,
+subjects,age=10-19,4,ds003653-participants,age,age in years with one decimal; binned by completed years
+subjects,age=20-29,49,ds003653-participants,age,
+subjects,age=30-39,29,ds003653-participants,age,
+subjects,age=40-49,5,ds003653-participants,age,
+subjects,sex=female;age=20-29,33,ds003653-participants,sex; age,
+subjects,sex=male;age=20-29,16,ds003653-participants,sex; age,
+subjects,sex=female;age=30-39,25,ds003653-participants,sex; age,
+age_min,,19.1,ds003653-participants,age,
+age_max,,44.3,ds003653-participants,age,
+age_median,,27.7,ds003653-participants,age,
+age_mean,,28.78,ds003653-participants,age,
+subjects,contrast=T1w,87,ds003653-file-tree,,
+subjects,contrast=T2w,87,ds003653-file-tree,,
+subjects,contrast_set=T1w+T2w,87,ds003653-file-tree,,every session also has spin-echo field maps in AP and PA directions
+studies,,88,ds003653-file-tree,,87 baseline sessions and one 6-month follow-up session of the converted participant
+scans,,176,ds003653-file-tree,,sum of the disjoint T1w and T2w counts below; field maps not counted
+scans,contrast=T1w,88,ds003653-file-tree,,
+scans,contrast=T2w,88,ds003653-file-tree,,
+subjects,field_strength=3,87,baranger2021,Section 2.3,
+subjects,vendor=siemens,87,baranger2021,Section 2.3,3 T Siemens Prisma with a 64-channel head coil; T1w sidecars give Prisma_fit
+subjects,country=US,87,baranger2021,Section 2.3,University of Pittsburgh/UPMC Magnetic Resonance Research Center
