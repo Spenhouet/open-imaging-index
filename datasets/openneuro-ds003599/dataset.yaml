@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003599
+name: Cocaine use disorder white matter DTI (ds003599)
+full_name: White matter deficits in cocaine use disorder V1.0
+summary: >-
+  Diffusion MRI of adults in inpatient treatment for crack-cocaine use disorder and of healthy controls from southern
+  Brazil, collected to study white matter damage in men and women. 133 subjects, released on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds003599
+doi: 10.18112/openneuro.ds003599.v1.0.0
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Developmental Cognitive Neuroscience Lab, Pontifical Catholic University of Rio Grande do Sul (PUCRS), Porto
+      Alegre (Tondo LP, Viola TW, Franco AR, Grassi-Oliveira R, et al.)
+    url: https://openneuro.org/datasets/ds003599
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [cocaine_use_disorder, healthy]
+formats: [BIDS, NIfTI]
+countries: [BR]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 42.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003599
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" as "CC0".
+citation:
+  text: >-
+    Tondo LP, Viola TW, Fries GR, et al. White matter deficits in cocaine use disorder: convergent evidence from in vivo
+    diffusion tensor imaging and ex vivo proteomic analysis. Translational Psychiatry 11, 252 (2021).
+    https://doi.org/10.1038/s41398-021-01367-x
+sources:
+  tondo2021:
+    title: >-
+      Tondo et al. 2021, White matter deficits in cocaine use disorder: convergent evidence from in vivo diffusion
+      tensor imaging and ex vivo proteomic analysis, Translational Psychiatry
+    url: https://doi.org/10.1038/s41398-021-01367-x
+    kind: paper
+  tondo2021-supplement:
+    title: Tondo et al. 2021, Supplemental Methods (MOESM1)
+    url: https://static-content.springer.com/esm/art%3A10.1038%2Fs41398-021-01367-x/MediaObjects/41398_2021_1367_MOESM1_ESM.docx
+    kind: paper
+  openneuro-ds003599-v100:
+    title: OpenNeuro ds003599 snapshot 1.0.0 (dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds003599/versions/1.0.0
+    kind: website
+  ds003599-files:
+    title: File tree and bval files of ds003599 snapshot 1.0.0 (CC0), subject folders with a dwi NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003599/tree/1.0.0
+    kind: computed
+related: [sudmex-conn]
+keywords: [cocaine use disorder, crack cocaine, addiction, substance use disorder, diffusion tensor imaging, white matter]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

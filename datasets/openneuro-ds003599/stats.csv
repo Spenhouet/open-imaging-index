@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,133,ds003599-files,sub-*/,133 subject folders; the paper's neuroimaging sample is also 133
+subjects,condition=cocaine_use_disorder,75,tondo2021,Table 1,crack-cocaine users in inpatient detoxification; the release has no participants file assigning subjects to groups
+subjects,condition=healthy,58,tondo2021,Table 1,
+subjects,sex=male,58,tondo2021,Table 1,sum of 37 CUD and 21 control men; groups are disjoint and complete
+subjects,sex=female,75,tondo2021,Table 1,sum of 38 CUD and 37 control women derived from group sizes and male counts
+subjects,condition=cocaine_use_disorder;sex=male,37,tondo2021,Table 1,49.3%
+subjects,condition=cocaine_use_disorder;sex=female,38,tondo2021,Table 1,75 minus 37 men
+subjects,condition=healthy;sex=male,21,tondo2021,Table 1,36.2%
+subjects,condition=healthy;sex=female,37,tondo2021,Table 1,58 minus 21 men
+subjects,contrast=dwi,133,ds003599-files,sub-*/dwi,
+subjects,contrast_set=dwi,133,ds003599-files,sub-*/dwi,T1w scans described in the paper are not in the release
+scans,,133,ds003599-files,sub-*/dwi,one dwi run per subject
+age_mean,condition=cocaine_use_disorder,32.86,tondo2021,Table 1,SD 7.08
+age_mean,condition=healthy,27.98,tondo2021,Table 1,SD 7.12
