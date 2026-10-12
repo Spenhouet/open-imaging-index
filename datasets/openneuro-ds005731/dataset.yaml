@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005731
+name: Round-robin interpersonal perception (ds005731)
+full_name: Round-robin interpersonal perception
+summary: >-
+  Brain MRI and task fMRI of people performing a round-robin trait judgement task and a localizer, collected for a study
+  of interpersonal perception, with subject labels that place participants in 20 groups of up to six members.
+homepage: https://openneuro.org/datasets/ds005731
+doi: 10.18112/openneuro.ds005731.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Chavez RS, University of Oregon
+    url: https://openneuro.org/datasets/ds005731
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 158.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005731
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Chavez RS. Round-robin interpersonal perception. OpenNeuro dataset ds005731, version 1.0.1 (2024).
+    doi:10.18112/openneuro.ds005731.v1.0.1
+sources:
+  openneuro-ds005731-v101:
+    title: OpenNeuro ds005731 snapshot 1.0.1 (dataset_description.json, CHANGES, scripts/README, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005731/versions/1.0.1
+    kind: website
+  ds005731-file-tree:
+    title: File tree of ds005731 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005731
+    kind: computed
+related: []
+keywords: [interpersonal perception, round-robin design, social networks, trait judgment, self-reference, person perception, medial prefrontal cortex, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,114,ds005731-file-tree,sub-*/,114 subject folders in 20 groups (G01 to G20)
+scans,,1019,ds005731-file-tree,sub-*/**/*.nii.gz,"114 T1w, 683 bold and 222 spin-echo EPI field maps"
+scans,contrast=T1w,114,ds005731-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,683,ds005731-file-tree,func/*_bold.nii.gz,five round-robin runs and one localizer run per subject; sub-G06S03 lacks run B
+subjects,contrast=T1w,114,ds005731-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,114,ds005731-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,114,ds005731-file-tree,sub-*/,
+subjects,field_strength=3,114,openneuro-ds005731-v101,T1w.json and task-*_bold.json,MagneticFieldStrength 3; Siemens Skyra
+subjects,vendor=siemens,114,openneuro-ds005731-v101,T1w.json and task-*_bold.json,Manufacturer Siemens; ManufacturersModelName Skyra
+subjects,country=US,114,openneuro-ds005731-v101,T1w.json and task-*_bold.json,InstitutionName University_of_Oregon
