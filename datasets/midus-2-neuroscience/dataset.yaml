@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: midus-2-neuroscience
+name: MIDUS 2 Neuroscience
+full_name: 'Midlife in the United States (MIDUS 2): Neuroscience Project, 2004-2009'
+summary: >-
+  Brain MRI and psychophysiology of US adults from the MIDUS 2 wave, collected to study individual differences in
+  emotional reactivity and recovery and their links to health. 331 project participants; T1w, emotion task fMRI and
+  ASL. Raw images by application.
+homepage: https://midus.wisc.edu/midus-neuroscience-repository/
+doi: 10.3886/ICPSR28683
+# Year the ICPSR study (psychophysiological and behavioral variables, no images) was issued. The release date of the
+# raw imaging data on the restricted repository is not published.
+year: 2010
+status: active
+creators:
+  - name: Carol D. Ryff, University of Wisconsin-Madison
+  - name: Richard J. Davidson, University of Wisconsin-Madison
+  - name: MIDUS Administrative Core, Institute on Aging, University of Wisconsin-Madison
+    url: https://midus.wisc.edu/
+modalities: [MR]
+contrasts: [T1w, bold, asl]
+anatomy: [brain]
+formats: [BIDS]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://midus.wisc.edu/midus-neuroscience-repository/
+licenses:
+  - license: LicenseRef-MIDUS-Brain-Imaging-DUA
+    applies_to: Raw structural, task fMRI and perfusion MRI data on the restricted Globus repository
+    note: >-
+      Psychophysiological and behavioral summary variables (ICPSR 28683) are public, and raw EEG is shared under a
+      separate MIDUS 2 EEG agreement; their terms were not reviewed for this entry.
+citation:
+  text: >-
+    Ryff CD, Davidson RJ. Midlife in the United States (MIDUS 2): Neuroscience Project, 2004-2009. Inter-university
+    Consortium for Political and Social Research [distributor], 2010. doi:10.3886/ICPSR28683
+sources:
+  icpsr28683:
+    title: ICPSR 28683 study record (DataCite metadata), MIDUS 2 Neuroscience Project
+    url: https://doi.org/10.3886/ICPSR28683
+    kind: data
+  midus-neuroscience-repository:
+    title: MIDUS Neuroscience Repository page
+    url: https://midus.wisc.edu/midus-neuroscience-repository/
+    kind: website
+  vanreekum2018:
+    title: >-
+      van Reekum CM et al. Aging is associated with a prefrontal lateral-medial shift during picture-induced negative
+      affect. Soc Cogn Affect Neurosci 2018
+    url: https://doi.org/10.1093/scan/nsx144
+    kind: paper
+related: [midus-refresher-1-neuroscience]
+keywords: [MIDUS, affective neuroscience, emotion regulation, task fMRI, ageing, midlife]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
