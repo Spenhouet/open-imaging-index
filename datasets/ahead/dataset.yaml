@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ahead
+name: AHEAD
+full_name: >-
+  The Amsterdam Ultra-high field adult lifespan database (AHEAD): A freely available multimodal 7 Tesla submillimeter
+  magnetic resonance imaging database
+summary: >-
+  Quantitative whole-brain MRI maps (T1, T2*, susceptibility) of healthy adults aged 18 to 80, built as a normative
+  resource for mapping the human subcortex across the lifespan, with probability maps of five basal ganglia nuclei.
+  7 T, submillimeter, 105 people.
+homepage: https://doi.org/10.21942/uva.10007840
+doi: 10.21942/uva.10007840
+year: 2020
+updated: 2022
+version: '2'
+status: active
+creators:
+  - name: Integrative Model-based Cognitive Neuroscience research unit, University of Amsterdam (Alkemade A, Forstmann BU et al.)
+    url: https://doi.org/10.21942/uva.10007840
+species: human
+modalities: [MR]
+contrasts: [T1w, T1map, T2starmap, Chimap, MP2RAGE, MEGRE]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [NIfTI]
+countries: [NL]
+vendors: [philips]
+field_strengths: [7]
+size_gb: 24.8
+access:
+  type: open
+  url: https://doi.org/10.21942/uva.10007840
+licenses:
+  - license: CC-BY-4.0
+    url: https://uvaauas.figshare.com/articles/dataset/The_Amsterdam_Ultra-high_field_adult_lifespan_database_AHEAD_A_freely_available_multimodal_7_Tesla_submillimeter_magnetic_resonance_imaging_database/10007840
+    note: The Figshare record states CC BY 4.0 for both version 1 (2020) and version 2 (2022).
+citation:
+  text: >-
+    Alkemade A, Mulder MJ, Groot JM, Isaacs BR, van Berendonk N, Lute N, Isherwood SJS, Bazin PL, Forstmann BU. The
+    Amsterdam Ultra-high field adult lifespan database (AHEAD): A freely available multimodal 7 Tesla submillimeter
+    magnetic resonance imaging database. NeuroImage 221:117200 (2020). doi:10.1016/j.neuroimage.2020.117200
+sources:
+  alkemade2020:
+    title: Alkemade et al. 2020, The Amsterdam Ultra-high field adult lifespan database (AHEAD), NeuroImage 221, 117200 (CC BY)
+    url: https://doi.org/10.1016/j.neuroimage.2020.117200
+    kind: paper
+  figshare-10007840:
+    title: Figshare record 10.21942/uva.10007840, versions 1 and 2 (description, file list, Readme.txt, Readme_v2.txt)
+    url: https://api.figshare.com/v2/articles/10007840
+    kind: website
+related: [ahead-raw-mp2rageme]
+keywords:
+  [7 Tesla, ultra-high field, quantitative MRI, MP2RAGEME, QSM, T1 mapping, T2* mapping, subcortex, basal ganglia, probabilistic atlas, lifespan]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

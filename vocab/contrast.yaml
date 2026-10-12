@@ -42,6 +42,7 @@ terms:
   - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }
+  - { id: T2starmap, label: T2* map, group: MR, description: Quantitative T2* relaxation time map, mappings: { bids: T2starmap } }
   - id: MTR
     label: Magnetization transfer
     group: MR
