@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: neuroengage
+name: NeuroEngage (ds004996)
+full_name: >-
+  NeuroEngage: A Multimodal Dataset Integrating fMRI for Analyzing Conversational Engagement in Human-Human and
+  Human-Robot Interactions
+summary: >-
+  Task fMRI and structural brain MRI of healthy adults holding free spoken conversations with a human or a teleoperated
+  robot, collected to study how the partner's level of engagement shapes brain activity and speech. Includes eye
+  tracking, audio and video.
+homepage: https://openneuro.org/datasets/ds004996
+doi: 10.18112/openneuro.ds004996.v2.0.0
+year: 2024
+updated: 2025
+version: 2.0.0
+status: active
+creators:
+  - name: >-
+      KTH Royal Institute of Technology and Stockholm University (Torubarova E, Arvidsson C, Berrebi J, Uddén J,
+      Pereira A)
+    url: https://openneuro.org/datasets/ds004996
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [SE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 51.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004996
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Torubarova E, Arvidsson C, Berrebi J, Uddén J, Pereira A. NeuroEngage: A Multimodal Dataset Integrating fMRI for
+    Analyzing Conversational Engagement in Human-Human and Human-Robot Interactions. Proceedings of the 2025 ACM/IEEE
+    International Conference on Human-Robot Interaction (HRI), pp. 849-858 (2025). doi:10.1109/HRI61500.2025.10974251
+sources:
+  torubarova2025:
+    title: >-
+      Torubarova et al. 2025, NeuroEngage: A Multimodal Dataset Integrating fMRI for Analyzing Conversational
+      Engagement in Human-Human and Human-Robot Interactions, HRI 2025 (open full text in KTH DiVA)
+    url: https://kth.diva-portal.org/smash/record.jsf?pid=diva2:1959850
+    kind: paper
+  openneuro-ds004996-v200:
+    title: OpenNeuro ds004996 snapshot 2.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004996/versions/2.0.0
+    kind: website
+  ds004996-participants:
+    title: participants.tsv of ds004996 (CC0), columns sex, age and group
+    url: https://github.com/OpenNeuroDatasets/ds004996/blob/2.0.0/participants.tsv
+    kind: computed
+  ds004996-file-tree:
+    title: BIDS file tree and JSON sidecars of ds004996 snapshot 2.0.0 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004996/tree/2.0.0
+    kind: computed
+related: []
+keywords: [conversation, human-robot interaction, engagement, naturalistic language, task fMRI, eye tracking, Swedish]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
