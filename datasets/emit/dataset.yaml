@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: emit
+name: EMIT
+full_name: Exemplar Microscopy Images of Tissues (EMIT)
+summary: >-
+  Multiplexed immunofluorescence microscopy of a human tissue microarray with cores from 34 types of cancer,
+  non-neoplastic disease and normal tissue, released as reference data for developing and benchmarking tissue image
+  processing methods such as cell segmentation.
+homepage: https://www.synapse.org/#!Synapse:syn22345748
+year: 2021
+creators:
+  - name: Laboratory of Systems Pharmacology, Harvard Medical School
+    url: https://labsyspharm.org/
+species: human
+modalities: [SM]
+contrasts: [multiplex_if]
+anatomy: [lung, colon, spleen, lymph_node]
+conditions: [cancer, lung_cancer, colorectal_cancer]
+tasks: [segmentation]
+formats: [TIFF]
+countries: [US]
+access:
+  type: registration
+  url: https://www.synapse.org/#!Synapse:syn22345748/wiki/609239
+  note: >-
+    Files are hosted in the Synapse project syn22345748, which has no access requirements; downloads need a free
+    Synapse account. Neither the Synapse project, the MCMICRO dataset page nor the paper states a license for the
+    images. The CC BY-NC 4.0 notice at the foot of mcmicro.org covers the contents of that website, and the CC BY 4.0
+    license of the paper covers the article.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+citation:
+  text: >-
+    Schapiro D, Sokolov A, Yapp C, et al. MCMICRO: a scalable, modular image-processing pipeline for multiplexed
+    tissue imaging. Nat Methods 19, 311-315 (2022). https://doi.org/10.1038/s41592-021-01308-y
+sources:
+  schapiro2022:
+    title: Schapiro et al. 2022, Nature Methods (MCMICRO)
+    url: https://doi.org/10.1038/s41592-021-01308-y
+    kind: paper
+  synapse-emit-tma:
+    title: Synapse project syn22345748, EMIT wiki page TMA11 / TMA22
+    url: https://www.synapse.org/#!Synapse:syn22345748/wiki/609239
+    kind: website
+  mcmicro-datasets:
+    title: MCMICRO example datasets page
+    url: https://mcmicro.org/datasets/
+    kind: website
+related: []
+keywords:
+  [
+    tissue microarray,
+    TMA,
+    CyCIF,
+    cyclic immunofluorescence,
+    multiplexed tissue imaging,
+    cell segmentation,
+    single-cell quantification,
+    MCMICRO,
+    pan-cancer
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
