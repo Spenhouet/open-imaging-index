@@ -1,0 +1,35 @@
+measure,by,value,source,where,note
+subjects,,51,ds006131-participants,participant_id,49 study participants and 2 pilot subjects (README); 51 sub-* folders in the file tree
+subjects,sex=female,36,ds006131-participants,sex,
+subjects,sex=male,14,ds006131-participants,sex,
+subjects,sex=other,1,ds006131-participants,sex,coded O (one pilot subject)
+subjects,age=10-19,20,ds006131-participants,age,age at the initial session
+subjects,age=20-29,30,ds006131-participants,age,age at the initial session
+subjects,age=30-39,1,ds006131-participants,age,age at the initial session
+age_mean,,20.7,ds006131-participants,age,
+age_median,,21,ds006131-participants,age,
+age_min,,15,ds006131-participants,age,
+age_max,,31,ds006131-participants,age,
+subjects,country=US,51,brook2026,Methods: Participants,recruited in Philadelphia; imaged at the Hospital of the University of Pennsylvania
+subjects,vendor=siemens,51,brook2026,Methods: Imaging Acquisition,3T Siemens Magnetom Prisma with a 64-channel receiver array
+subjects,field_strength=3,51,brook2026,Methods: Imaging Acquisition,
+subjects,contrast=T1w,51,ds006131-file-tree,anat,
+subjects,contrast=T2w,41,ds006131-file-tree,anat,
+subjects,contrast=T2starw,46,ds006131-file-tree,anat,5-echo MEGRE with magnitude and phase for susceptibility mapping
+subjects,contrast=bold,51,ds006131-file-tree,func,multi-echo; 50 with the Bao run and 51 with the Your Friend the Rat run; one pilot has a resting-state run instead of Bao
+subjects,contrast=dwi,50,ds006131-file-tree,dwi,92-direction compressed sensing DSI with magnitude and phase
+subjects,contrast=asl,49,ds006131-file-tree,perf,single-delay background-suppressed PCASL
+subjects,contrast_set=asl+bold+dwi+T1w+T2starw+T2w,40,ds006131-file-tree,,
+subjects,contrast_set=asl+bold+dwi+T1w+T2starw,6,ds006131-file-tree,,
+subjects,contrast_set=asl+bold+dwi+T1w,2,ds006131-file-tree,,
+subjects,contrast_set=asl+bold+dwi+T1w+T2w,1,ds006131-file-tree,,
+subjects,contrast_set=bold+dwi+T1w,1,ds006131-file-tree,,
+subjects,contrast_set=bold+T1w,1,ds006131-file-tree,,
+studies,,51,ds006131-file-tree,,one session (ses-1) per subject
+scans,,339,ds006131-file-tree,,"sum of the disjoint per-contrast series counts below; echoes, magnitude/phase parts and the rec-norm copy are counted as one series; field maps, sbref, M0, TDP and scanner CBF maps not counted"
+scans,contrast=T1w,51,ds006131-file-tree,anat,
+scans,contrast=T2w,41,ds006131-file-tree,anat,
+scans,contrast=T2starw,46,ds006131-file-tree,anat,
+scans,contrast=bold,102,ds006131-file-tree,func,
+scans,contrast=dwi,50,ds006131-file-tree,dwi,
+scans,contrast=asl,49,ds006131-file-tree,perf,
