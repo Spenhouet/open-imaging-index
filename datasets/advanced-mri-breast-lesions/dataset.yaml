@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: advanced-mri-breast-lesions
+name: Advanced-MRI-Breast-Lesions (AMBL)
+full_name: >-
+  Standard and Delayed Contrast-Enhanced MRI of Malignant and Benign Breast Lesions with Histological and Clinical
+  Supporting Data (Advanced-MRI-Breast-Lesions)
+summary: >-
+  Breast MRI of women with malignant or benign lesions, collected to improve the specificity of breast cancer
+  diagnosis, with standard DCE and delayed contrast series, treatment response assessment maps and lesion masks.
+homepage: https://www.cancerimagingarchive.net/collection/advanced-mri-breast-lesions/
+doi: 10.7937/C7X1-YN57
+year: 2024
+version: '2'
+status: active
+creators:
+  - name: Daniels D, Last D, Cohen K, Mardor Y, Sklair-Levy M
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR]
+contrasts: [dce, T1w_ce, T2w, STIR]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [segmentation, classification]
+formats: [DICOM, NIfTI]
+vendors: [ge]
+field_strengths: [1.5]
+size_gb: 645.62
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/advanced-mri-breast-lesions/
+  note: >-
+    DICOM images and SEG masks are downloaded with the TCIA Data Retriever from a manifest file; the clinical XLSX is
+    a direct download. A NIfTI subset of 88 patients with lesion masks split into all-lesion and malignant-only
+    labels (BreastDCEDL_AMBL) is an open Zenodo download under CC BY 4.0.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/advanced-mri-breast-lesions/
+citation:
+  text: >-
+    Daniels, D., Last, D., Cohen, K., Mardor, Y., & Sklair-Levy, M. (2024). Standard and Delayed Contrast-Enhanced MRI
+    of Malignant and Benign Breast Lesions with Histological and Clinical Supporting Data (Advanced-MRI-Breast-Lesions)
+    (Version 2) [dataset]. The Cancer Imaging Archive. https://doi.org/10.7937/C7X1-YN57
+sources:
+  tcia-ambl:
+    title: TCIA Advanced-MRI-Breast-Lesions collection page (version 2, updated 2024/04/15)
+    url: https://www.cancerimagingarchive.net/collection/advanced-mri-breast-lesions/
+    kind: website
+  tcia-ambl-digest:
+    title: >-
+      TCIA Advanced-MRI-Breast-Lesions metadata digest (Advanced-MRI-Breast-Lesions-DA-RAD-APR2024-nbia-digest.xlsx,
+      open download, CC BY 4.0), counted per unique Patient ID
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/Advanced-MRI-Breast-Lesions-DA-RAD-APR2024-nbia-digest.xlsx
+    kind: computed
+  fridman2025:
+    title: >-
+      Fridman and Goldstein 2025, Transformer Classification of Breast Lesions: The BreastDCEDL_AMBL Benchmark Dataset
+      and 0.92 AUC Baseline (arXiv:2509.26440v2)
+    url: https://arxiv.org/abs/2509.26440
+    kind: paper
+  zenodo-breastdcedl-ambl:
+    title: 'BreastDCEDL_AMBL: Curated Breast DCE-MRI Dataset with lesion segmentation, malignant and bening (Zenodo)'
+    url: https://zenodo.org/records/17253223
+    kind: data
+related: []
+keywords:
+  [
+    breast cancer,
+    benign breast lesions,
+    DCE-MRI,
+    delayed contrast,
+    treatment response assessment maps,
+    TRAM,
+    lesion segmentation,
+    BreastDCEDL_AMBL,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
