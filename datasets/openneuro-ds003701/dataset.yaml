@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003701
+name: C-PRO (ds003701)
+full_name: Concrete Permuted Rule Operations task and resting-state fMRI
+summary: >-
+  Multiband task and resting-state fMRI with T1w and T2w brain MRI of healthy young adults who performed the Concrete
+  Permuted Rule Operations (C-PRO) rule-learning task. 96 participants from Rutgers University at 3T, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003701
+doi: 10.18112/openneuro.ds003701.v1.0.1
+# CHANGES: 1.0.0 dated 2021-06-22 (initial upload), 1.0.1 dated 2021-06-24 (references updated).
+year: 2021
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Ito T, Winfield E, Lalta N, Kulkarni KR, Schultz DH, Mill RD, Chen RH, Solomyak L, Cole MW (Cole Neurocognition
+      Lab, Rutgers University)
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 449.26
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003701
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Ito T, Kulkarni KR, Schultz DH, Mill RD, Chen RH, Solomyak LI, Cole MW. Cognitive task information is transferred
+    between brain regions via resting-state network topology. Nature Communications 8:1027 (2017).
+    doi:10.1038/s41467-017-01000-w
+sources:
+  ito2017:
+    title: >-
+      Ito et al. 2017, Cognitive task information is transferred between brain regions via resting-state network
+      topology, Nature Communications (PMC5715061), Methods
+    url: https://doi.org/10.1038/s41467-017-01000-w
+    kind: paper
+  openneuro-ds003701-v1-0-1:
+    title: >-
+      OpenNeuro ds003701 snapshot 1.0.1 (dataset_description.json, README, CHANGES, participants.json, BIDS sidecars and
+      snapshot size)
+    url: https://openneuro.org/datasets/ds003701/versions/1.0.1
+    kind: website
+  ds003701-participants:
+    title: participants.tsv of ds003701 (CC0), counted per row for the 96 subjects with image folders
+    url: https://github.com/OpenNeuroDatasets/ds003701/blob/master/participants.tsv
+    kind: computed
+  ds003701-file-tree:
+    title: File listing of the ds003701 BIDS repository (CC0), counted per T1w, T2w, bold and fmap epi NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003701
+    kind: computed
+related: []
+keywords: [cognitive control, rule learning, C-PRO, task fMRI, resting-state fMRI, multiband EPI, activity flow]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
