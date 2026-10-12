@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: neurocovid-ds005364
+name: neuroCOVID dMRI and reversal learning fMRI (ds005364)
+full_name: neuroCOVID MRI dWI and fMRI with reversal learning
+summary: >-
+  Structural, diffusion and task fMRI brain scans of adults recovering from COVID-19 or from other respiratory
+  infections, collected to relate anosmia and hospitalization to brain structure and reversal learning. 100
+  participants scanned in Santiago, Chile.
+homepage: https://openneuro.org/datasets/ds005364
+doi: 10.18112/openneuro.ds005364.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Universidad del Desarrollo and Clínica Alemana de Santiago (Figueroa-Vargas A, Kausel L, Martínez-Molina MP,
+      Zamorano F, Stecher X, Soto-Icaza P, Billeke P)
+    url: https://openneuro.org/datasets/ds005364
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [covid19, respiratory_infection, olfactory_dysfunction]
+formats: [BIDS, NIfTI]
+countries: [CL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 17.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005364
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Kausel L, Figueroa-Vargas A, Zamorano F, Stecher X, et al., Billeke P. Patients recovering from COVID-19 who
+    presented with anosmia during their acute episode have behavioral, functional, and structural brain alterations.
+    Scientific Reports 14, 19049 (2024). doi:10.1038/s41598-024-69772-y
+sources:
+  kausel2024:
+    title: >-
+      Kausel et al. 2024, Patients recovering from COVID-19 who presented with anosmia during their acute episode have
+      behavioral, functional, and structural brain alterations, Scientific Reports 14, 19049
+    url: https://doi.org/10.1038/s41598-024-69772-y
+    kind: paper
+  openneuro-ds005364-v100:
+    title: OpenNeuro ds005364 snapshot 1.0.0 (dataset_description.json, participants.json, file tree and sidecars)
+    url: https://openneuro.org/datasets/ds005364/versions/1.0.0
+    kind: website
+  ds005364-participants:
+    title: participants.tsv of OpenNeuro ds005364 snapshot 1.0.0 (CC0)
+    url: https://openneuro.org/crn/datasets/ds005364/snapshots/1.0.0/files/participants.tsv
+    kind: computed
+keywords: [COVID-19, long COVID, anosmia, hospitalization, reversal learning, decision making, diffusion tensor imaging]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

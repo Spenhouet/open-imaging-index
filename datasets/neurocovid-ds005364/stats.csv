@@ -1,0 +1,40 @@
+measure,by,value,source,where,note
+subjects,,100,kausel2024,Methods: Sample,100 subject folders in snapshot 1.0.0
+subjects,condition=respiratory_infection,100,kausel2024,Methods: Sample,all participants had a respiratory infection; 73 caused by SARS-CoV-2 and 27 by another agent
+subjects,condition=covid19,73,kausel2024,Methods: Sample,PCR-confirmed SARS-CoV-2; participants.tsv COVID=1 for 73
+subjects,condition=olfactory_dysfunction,43,kausel2024,Results: Persistent symptoms,anosmia (29) or hyposmia/microsmia (14) during the acute COVID-19 episode; participants.tsv flags Anosmia=1 for 44
+subjects,sex=female,54,ds005364-participants,sex,
+subjects,sex=male,46,ds005364-participants,sex,
+subjects,condition=covid19;sex=female,36,ds005364-participants,COVID; sex,
+subjects,condition=covid19;sex=male,37,ds005364-participants,COVID; sex,
+subjects,age=10-19,1,ds005364-participants,age,
+subjects,age=20-29,16,ds005364-participants,age,
+subjects,age=30-39,32,ds005364-participants,age,
+subjects,age=40-49,27,ds005364-participants,age,
+subjects,age=50-59,13,ds005364-participants,age,
+subjects,age=60-69,11,ds005364-participants,age,
+subjects,condition=covid19;age=30-39,24,ds005364-participants,COVID; age,other condition and age cells below 10 left out
+subjects,condition=covid19;age=40-49,22,ds005364-participants,COVID; age,other condition and age cells below 10 left out
+subjects,sex=female;age=30-39,19,ds005364-participants,sex; age,other sex and age cells below 10 left out
+subjects,sex=female;age=40-49,14,ds005364-participants,sex; age,other sex and age cells below 10 left out
+subjects,sex=male;age=30-39,13,ds005364-participants,sex; age,other sex and age cells below 10 left out
+subjects,sex=male;age=40-49,13,ds005364-participants,sex; age,other sex and age cells below 10 left out
+age_mean,,40.1,kausel2024,Methods: Sample,participants.tsv gives a mean of 41.6
+age_median,,39,kausel2024,Methods: Sample,participants.tsv gives a median of 40
+age_min,,19,kausel2024,Methods: Sample,
+age_max,,65,kausel2024,Methods: Sample,participants.tsv lists one participant aged 66
+subjects,contrast=T1w,100,openneuro-ds005364-v100,sub-*/anat,
+subjects,contrast=T2w,100,openneuro-ds005364-v100,sub-*/anat,
+subjects,contrast=dwi,90,openneuro-ds005364-v100,sub-*/dwi,
+subjects,contrast=bold,97,openneuro-ds005364-v100,sub-*/func,task-rl (reversal learning)
+subjects,contrast_set=bold+dwi+T1w+T2w,87,openneuro-ds005364-v100,sub-*,fieldmap images are not counted as a contrast
+subjects,contrast_set=bold+T1w+T2w,10,openneuro-ds005364-v100,sub-*,
+subjects,contrast_set=dwi+T1w+T2w,3,openneuro-ds005364-v100,sub-*,
+subjects,vendor=siemens,100,kausel2024,Methods: Imaging acquisition,3 T Siemens Skyra
+subjects,field_strength=3,100,kausel2024,Methods: Imaging acquisition,
+subjects,country=CL,100,kausel2024,Methods: Sample,"public and private hospitals in Santiago, Chile"
+scans,,387,openneuro-ds005364-v100,sub-*,"sum of the disjoint T1w, T2w, dwi and bold NIfTI counts below; fieldmaps (magnitude1, magnitude2, phase1) not counted"
+scans,contrast=T1w,100,openneuro-ds005364-v100,sub-*/anat,
+scans,contrast=T2w,100,openneuro-ds005364-v100,sub-*/anat,
+scans,contrast=dwi,90,openneuro-ds005364-v100,sub-*/dwi,
+scans,contrast=bold,97,openneuro-ds005364-v100,sub-*/func,

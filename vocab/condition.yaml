@@ -419,6 +419,7 @@ terms:
   # Chest and other findings
   - { id: pneumonia, label: Pneumonia, mappings: { mondo: 'MONDO:0005249' } }
   - { id: covid19, label: COVID-19, mappings: { mondo: 'MONDO:0100096' } }
+  - { id: respiratory_infection, label: Respiratory tract infection, synonyms: [respiratory infection], mappings: { mondo: 'MONDO:0024355' } }
   - { id: tuberculosis, label: Tuberculosis, mappings: { mondo: 'MONDO:0018076' } }
   - { id: pneumothorax, label: Pneumothorax, mappings: { mondo: 'MONDO:0002076' } }
   - { id: pleural_effusion, label: Pleural effusion, mappings: { hp: 'HP:0002202' } }
