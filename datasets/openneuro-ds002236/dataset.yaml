@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002236
+name: Cross-Sectional Multidomain Lexical Processing (ds002236)
+full_name: Cross-Sectional Multidomain Lexical Processing
+summary: >-
+  Brain MRI and task fMRI of typically developing school-aged children judging rhyme, spelling and meaning of word
+  pairs, heard or seen, collected to study how reading develops. 91 children aged 8.7 to 15.5 years from the Chicago
+  area, with reading and cognitive tests, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002236
+doi: 10.18112/openneuro.ds002236.v1.1.1
+year: 2019
+updated: 2022
+version: 1.1.1
+status: active
+creators:
+  - name: Brain Development Lab, Northwestern University (Lytle MN, Bitan T, Booth JR)
+    url: https://openneuro.org/datasets/ds002236
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [1.5]
+size_gb: 20.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002236
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.1 states "License" CC0.
+citation:
+  text: >-
+    Lytle MN, Bitan T, Booth JR. A neuroimaging dataset on orthographic, phonological and semantic word processing in
+    school-aged children. Data in Brief 28, 105091 (2020). doi:10.1016/j.dib.2019.105091
+sources:
+  lytle2020:
+    title: >-
+      Lytle et al. 2020, A neuroimaging dataset on orthographic, phonological and semantic word processing in
+      school-aged children, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2019.105091
+    kind: paper
+  openneuro-ds002236-v111:
+    title: OpenNeuro ds002236 snapshot 1.1.1 (dataset_description.json, sidecar JSON and snapshot summary)
+    url: https://openneuro.org/datasets/ds002236/versions/1.1.1
+    kind: website
+  ds002236-participants:
+    title: participants.tsv of ds002236 snapshot 1.1.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds002236/blob/1.1.1/participants.tsv
+    kind: computed
+  ds002236-file-tree:
+    title: File tree of ds002236 snapshot 1.1.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds002236/tree/1.1.1
+    kind: computed
+related: [openneuro-ds001894]
+keywords: [reading development, children, pediatric, task fMRI, language, rhyming, spelling, semantic]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

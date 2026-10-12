@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,91,lytle2020,2.1 Participants,91 subject folders in the snapshot 1.1.1 file tree; 91 rows in participants.tsv
+subjects,sex=female,39,lytle2020,2.1 Participants,participants.tsv sex 2 (female) gives the same count
+subjects,sex=male,52,ds002236-participants,sex,sex 1 (male)
+subjects,condition=healthy,91,lytle2020,Abstract,typically developing children
+subjects,contrast=T1w,91,ds002236-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,91,ds002236-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,91,ds002236-file-tree,anat and func folders,
+subjects,age=8-9,27,ds002236-participants,age,age at the standardized testing visit
+subjects,age=10-11,30,ds002236-participants,age,age at the standardized testing visit
+subjects,age=12-13,21,ds002236-participants,age,age at the standardized testing visit
+subjects,age=14-15,13,ds002236-participants,age,age at the standardized testing visit
+studies,,91,ds002236-file-tree,sub-* folders,one subject-level folder without sessions; the paper states scanning was spread over three days
+scans,,937,ds002236-file-tree,sub-*/*/*.nii.gz,all image files: 91 T1w and 846 bold
+scans,contrast=T1w,91,ds002236-file-tree,*_T1w.nii.gz,one T1w per subject
+scans,contrast=bold,846,ds002236-file-tree,*_bold.nii.gz,runs of six tasks with two runs each; runs with excess motion were removed
+age_min,,8.7,lytle2020,Abstract,participants.tsv gives 8.67
+age_max,,15.5,lytle2020,Abstract,
+age_mean,,11.4,lytle2020,2.1 Participants,
+age_sd,,2.1,lytle2020,2.1 Participants,
