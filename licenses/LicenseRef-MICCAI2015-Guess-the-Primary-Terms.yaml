@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-MICCAI2015-Guess-the-Primary-Terms
+name: 2015 MICCAI Guess the Primary Challenge Terms of Use and Rules
+short_name: Guess the Primary terms
+url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234781
+version: >-
+  Rules and How to Participate pages of Synapse project syn4112414, last modified August 2015. The Terms of Use PDF
+  (syn4843138, version 2, July 2015) requires a Synapse login and was not read.
+summary: >-
+  Participants register on Synapse and return a signed copy of the Terms of Use. The data may be used only within
+  the MICCAI 2015 challenge, any publication or other study needs permission from the data steward, and the data had
+  to be destroyed by 31 December 2015 unless further use was authorized.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      The terms of use agreement does not allow use of data outside the context of the MICCAI challenge.
+    note: Any use beyond the challenge needs permission of the lead data curator.
+  product_validation:
+    value: unspecified
+    note: >-
+      The Rules page does not address testing or validating a product; it limits all use to the challenge unless the
+      data steward agrees.
+  model_training:
+    value: conditional
+    quote: >-
+      The terms of use agreement does not allow use of data outside the context of the MICCAI challenge.
+    note: Training algorithms for the challenge task was the purpose of the release; other use needs permission.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: >-
+      However, participants may request to use the data for publication or study with permission of the lead data
+      curator/steward, Dr. Kristin Swanson (swanson.kristin@mayo.edu).
+    note: Publishing with the data needs permission of the data steward.
+  redistribute_original:
+    value: unspecified
+    note: The Rules page does not address passing on the data; the Terms of Use PDF could not be read.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+  share_alike:
+    value: unspecified
+    note: Not addressed on the Rules page; the Terms of Use PDF could not be read.
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      All participants must agree to the Terms of Use and return a signed copy of the Terms of Use to Russell Rockne
+      at rrockne@coh.org.
+    source: https://www.synapse.org/#!Synapse:syn4112414/wiki/234738
+  ethics_approval:
+    value: unspecified
+    note: Not addressed on the Rules page; the Terms of Use PDF could not be read.
+  publication_review:
+    value: conditional
+    quote: >-
+      However, participants may request to use the data for publication or study with permission of the lead data
+      curator/steward, Dr. Kristin Swanson (swanson.kristin@mayo.edu).
+    note: The data steward must agree before the data are used in a publication.
+  code_release:
+    value: unspecified
+    note: Not addressed on the Rules page; the Terms of Use PDF could not be read.
+  return_results:
+    value: 'yes'
+    quote: Each team must submit a 1-page abstract detailing their approach.
+    note: Challenge participants submitted predictions and a one-page method abstract.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      Data must be destroyed by December 31 2015 23:39 pm PDT unless otherwise authorized by Dr. Kristin Swanson.
+  no_reidentification:
+    value: unspecified
+  geographic_restriction:
+    value: unspecified
+    note: Not addressed on the Rules page; the Terms of Use PDF could not be read.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
