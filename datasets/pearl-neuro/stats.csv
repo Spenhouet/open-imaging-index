@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,79,dzianok2024,"Methods, General information","second-phase participants with EEG and/or fMRI; 79 sub-* folders in the file tree. participants.tsv covers the full cohort of 192, of whom 113 have no imaging"
+subjects,modality=MR,69,openneuro-ds004796-v1-1-0,file tree,sub-*/func present for 69 of 79 subjects; the paper lists the 10 without fMRI under Missing data
+subjects,contrast=bold,69,openneuro-ds004796-v1-1-0,file tree,sub-*/func/*_bold.nii.gz
+subjects,contrast_set=bold,69,openneuro-ds004796-v1-1-0,file tree,no anatomical images are shared
+scans,,414,openneuro-ds004796-v1-1-0,file tree,"6 BOLD runs per fMRI subject: rest, MSIT and Sternberg, each in AP and PA phase encoding"
+scans,contrast=bold,414,openneuro-ds004796-v1-1-0,file tree,
+subjects,condition=healthy,79,dzianok2024,Abstract,healthy middle-aged volunteers
+subjects,country=PL,79,dzianok2024,"Methods, General information",Nencki Institute (EEG) and Institute of Physiology and Pathology of Hearing (fMRI)
+subjects,vendor=siemens,69,dzianok2024,"Methods, Recording software and devices",Siemens Prisma FIT
+subjects,field_strength=3,69,dzianok2024,"Methods, Recording software and devices",
+subjects,sex=male,39,dzianok2024,"Technical Validation, Participants profile",participants.tsv gives the same for the 79 subjects with imaging folders
+subjects,sex=female,40,dzianok2024,"Technical Validation, Participants profile",
+subjects,age=50-59,72,ds004796-participants,"age, second_phase",
+subjects,age=60-69,7,ds004796-participants,"age, second_phase",
+subjects,contrast=bold;sex=male,35,ds004796-participants,"sex, sub-*/func",
+subjects,contrast=bold;sex=female,34,ds004796-participants,"sex, sub-*/func",
+subjects,contrast=bold;age=50-59,62,ds004796-participants,"age, sub-*/func",
+subjects,sex=male;age=50-59,34,ds004796-participants,"sex, age, second_phase",
+subjects,sex=female;age=50-59,38,ds004796-participants,"sex, age, second_phase",
+age_mean,,55.3,dzianok2024,Table 6,phase II (N = 79)
+age_sd,,3.12,dzianok2024,Table 6,
+age_median,,56,dzianok2024,Table 6,
+age_min,,50,ds004796-participants,"age, second_phase",
+age_max,,63,ds004796-participants,"age, second_phase",
