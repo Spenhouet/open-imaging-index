@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003345
+name: PenaltyKik.02 (ds003345)
+full_name: PenaltyKik.02
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy young adults playing a real-time competitive penalty shot video game
+  against human and computer opponents, collected to study the neural basis of dynamic strategic social behavior.
+homepage: https://openneuro.org/datasets/ds003345
+doi: 10.18112/openneuro.ds003345.v1.0.2
+year: 2020
+version: 1.0.2
+status: active
+creators:
+  - name: Kelsey McDonald, William Broderick, Scott Huettel and John Pearson, Duke University
+    url: https://openneuro.org/datasets/ds003345
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 16.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003345
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds003345
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    McDonald KR, Broderick WF, Huettel SA, Pearson JM. Dorsolateral and dorsomedial prefrontal cortex track distinct
+    properties of dynamic social behavior. Social Cognitive and Affective Neuroscience 15(4):383-393 (2020).
+sources:
+  openneuro-ds003345-v102:
+    title: >-
+      OpenNeuro ds003345 snapshot 1.0.2 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003345/versions/1.0.2
+    kind: website
+  ds003345-file-tree:
+    title: >-
+      File tree and JSON sidecars of ds003345 snapshot 1.0.2 (CC0), NIfTI files counted per subject folder, T1w
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds003345/tree/1.0.2
+    kind: computed
+  mcdonald2020:
+    title: >-
+      McDonald et al. 2020, Dorsolateral and dorsomedial prefrontal cortex track distinct properties of dynamic
+      social behavior, Social Cognitive and Affective Neuroscience
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7308662/
+    kind: paper
+  mcdonald2019:
+    title: >-
+      McDonald et al. 2019, Bayesian nonparametric models characterize instantaneous strategies in a competitive
+      dynamic game, Nature Communications
+    url: https://doi.org/10.1038/s41467-019-09789-4
+    kind: paper
+related: []
+keywords: [social decision-making, competitive game, strategic behavior, task fMRI, penalty shot]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

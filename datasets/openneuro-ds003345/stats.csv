@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,75,ds003345-file-tree,sub-* folders,"matches the 75 analysed participants in mcdonald2020 (Methods: Participants), after 7 of 82 were excluded for head motion"
+subjects,contrast=T1w,75,ds003345-file-tree,anat folders,
+subjects,contrast=bold,75,ds003345-file-tree,func folders,
+subjects,contrast_set=bold+T1w,75,ds003345-file-tree,subject folders,
+subjects,condition=healthy,75,mcdonald2020,Methods: Participants,"right-handed and free of neurological and psychiatric disorders by self-report"
+subjects,sex=female,41,mcdonald2020,Methods: Participants,
+age_mean,,25.9,mcdonald2020,Methods: Participants,
+age_sd,,6.8,mcdonald2020,Methods: Participants,
+age_min,,18,mcdonald2020,Methods: Participants,
+age_max,,48,mcdonald2020,Methods: Participants,
+scans,,298,ds003345-file-tree,NIfTI files,
+scans,contrast=T1w,75,ds003345-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,223,ds003345-file-tree,*_bold.nii.gz,"three task runs for most subjects; two subjects each miss one run"
+subjects,country=US,75,ds003345-file-tree,T1w sidecars: InstitutionName,"Duke University Hospital"
+scans,contrast=T1w;vendor=ge,75,ds003345-file-tree,T1w sidecars: Manufacturer,"GE Discovery MR750"
+scans,contrast=T1w;field_strength=3,75,ds003345-file-tree,T1w sidecars: MagneticFieldStrength,
