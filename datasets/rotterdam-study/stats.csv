@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,8000,ikram2020,Population imaging in epidemiology,"lower bound: the paper reports brain MRI in over 8000 individuals; CT (2500 persons), carotid MRI (over 1500) and knee MRI (over 800) were done in the same cohort and are not added because their overlap is not reported"
+subjects,modality=MR,8000,ikram2020,Population imaging in epidemiology,lower bound for brain MRI alone ('over 8000 individuals')
+subjects,anatomy=brain,8000,ikram2020,Population imaging in epidemiology,lower bound ('over 8000 individuals')
+scans,,12174,ikram2015,Design and study population,"lower bound: brain MRI scans on the research scanner as of July 2015; CT, carotid and knee scans are not counted"
+scans,anatomy=brain,12174,ikram2015,Design and study population,"brain MRI scans on the research scanner as of July 2015, in over 5800 individuals; the 2020 update reports more than 12,000 scans"
+subjects,modality=CT,2500,ikram2020,Population imaging in epidemiology,CT-assessed arterial calcification; follow-up imaging in progress
+subjects,anatomy=heart,2500,ikram2020,Population imaging in epidemiology; Cardiovascular diseases,coronary artery calcification on CT
+subjects,anatomy=carotid_artery,2500,ikram2020,Population imaging in epidemiology; Cardiovascular diseases,"intra- and extracranial carotid calcification on CT, plus carotid MRI in over 1500 persons"
+subjects,anatomy=knee,800,ikram2020,Population imaging in epidemiology,lower bound: knee MRI 'in over 800 subjects'
+subjects,contrast=dwi,4415,cremers2020-supplement,Abstract,"lower bound: non-demented participants with diffusion MRI from 2005-2011 analysed for dementia risk"
+subjects,condition=dementia,101,cremers2020-supplement,Abstract,incident dementia during a mean 6.7 years of follow-up among the 4415 participants with diffusion MRI
+subjects,condition=alzheimers,83,cremers2020-supplement,Abstract,incident Alzheimer's disease among the 101 dementia cases
+subjects,field_strength=1.5,5800,ikram2015,Design and study population; Scan protocol,"lower bound: over 5800 individuals scanned on the dedicated 1.5 T research scanner by July 2015"
+subjects,country=NL,8000,ikram2020,Introduction,"Ommoord district, Rotterdam; lower bound"
+subjects,vendor=ge,5800,ikram2015,Design and study population; Scan protocol,"lower bound: GE Healthcare 1.5 T research unit, over 5800 individuals by July 2015"

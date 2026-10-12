@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rotterdam-study
+name: Rotterdam Study (Rotterdam Scan Study)
+full_name: The Rotterdam Study and its brain imaging arm, the Rotterdam Scan Study
+summary: >-
+  Repeated brain MRI of middle-aged and older adults from a Dutch population-based cohort, collected to study causes
+  and early signs of dementia, stroke and small vessel disease, with long clinical follow-up. Also CT and MRI of
+  arteries and knees. On request.
+homepage: https://www.ergo-onderzoek.nl/research
+doi: 10.1007/s10654-015-0105-7
+# Year of the Rotterdam Scan Study design update that was read; the images have no public release.
+year: 2015
+creators:
+  - name: Rotterdam Study, Department of Epidemiology, Erasmus MC University Medical Center
+    url: https://www.ergo-onderzoek.nl/
+modalities: [MR, CT]
+contrasts: [T1w, PDw, FLAIR, T2starw, dwi, bold]
+anatomy: [brain, carotid_artery, heart, knee]
+conditions: [dementia, alzheimers]
+countries: [NL]
+vendors: [ge]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://doi.org/10.1007/s11357-025-01707-5
+  note: >-
+    Rotterdam Study papers state that data can be obtained on request from the management team
+    (datamanagement.ergo@erasmusmc.nl), which follows a protocol for approving requests, and that privacy rules and
+    participant consent rule out a public repository. The protocol itself is not published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The data availability statement names a request route and an internal approval protocol but publishes no terms
+      of use. The study website gives no license or data use agreement.
+citation:
+  text: >-
+    Ikram MA, van der Lugt A, Niessen WJ, Koudstaal PJ, Krestin GP, Hofman A, Bos D, Vernooij MW. The Rotterdam Scan
+    Study: design update 2016 and main findings. European Journal of Epidemiology 30(12):1299-1315 (2015).
+    doi:10.1007/s10654-015-0105-7
+sources:
+  ikram2015:
+    title: Ikram et al. 2015, The Rotterdam Scan Study, design update 2016 and main findings, European Journal of Epidemiology
+    url: https://doi.org/10.1007/s10654-015-0105-7
+    kind: paper
+  ikram2020:
+    title: Ikram et al. 2020, Objectives, design and main findings until 2020 from the Rotterdam Study, European Journal of Epidemiology
+    url: https://doi.org/10.1007/s10654-020-00640-5
+    kind: paper
+  cremers2020-supplement:
+    title: Cremers et al. 2020, Structural disconnectivity and the risk of dementia in the general population, Neurology, supplement record
+    url: https://doi.org/10.5061/dryad.7wm37pvpq
+    kind: website
+  boons2026:
+    title: Boons et al. 2026, Loss of microstructural integrity in left hemispheric white matter tracts is associated with poorer digits in noise understanding, GeroScience 2026, data availability statement
+    url: https://doi.org/10.1007/s11357-025-01707-5
+    kind: paper
+  ergo-research:
+    title: Rotterdam Study (ERGO) website, research lines
+    url: https://www.ergo-onderzoek.nl/research
+    kind: website
+related: []
+keywords:
+  [
+    population-based cohort,
+    aging,
+    dementia,
+    cerebral small vessel disease,
+    white matter lesions,
+    cerebral microbleeds,
+    diffusion tensor imaging,
+    resting-state fMRI,
+    arterial calcification,
+    longitudinal,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
