@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: liver-transplant-qmri
+name: Brain qMRI after Liver Transplantation (Hannover)
+full_name: Quantitative magnetic resonance imaging indicates brain tissue alterations in patients after liver transplantation
+summary: >-
+  Quantitative brain MRI of adults about ten years after liver transplantation on different calcineurin inhibitor
+  doses and matched healthy controls, collected to study long-term effects of immunosuppression on brain tissue.
+  Images are not shared; only group-level result tables are public.
+homepage: https://doi.org/10.1371/journal.pone.0222934
+# Year of the paper. The images themselves have no public release.
+year: 2019
+creators:
+  - name: Lukas Laurids Goede, Hannover Medical School
+  - name: Henning Pflugrad, Hannover Medical School
+  - name: Karin Weissenborn, Hannover Medical School
+  - name: Xiao-Qi Ding, Hannover Medical School
+modalities: [MR]
+contrasts: [T2w, T2map, MEGRE, dwi, ADC]
+anatomy: [brain]
+conditions: [liver_transplant_recipient, healthy]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://plos.figshare.com/articles/dataset/Quantitative_magnetic_resonance_imaging_indicates_brain_tissue_alterations_in_patients_after_liver_transplantation/9903692
+  note: >-
+    The data availability statement says all relevant data are in the paper and its supporting files. The figshare
+    record holds only two supporting tables (cognitive test results and group-wise t-test results of the qMRI values,
+    CC BY 4.0). No images, parameter maps or per-subject values are released, and no route to request them is given.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI data. The CC BY 4.0 license of the paper and its figshare
+      record covers only the article and the two supporting tables.
+citation:
+  text: >-
+    Goede, L. L., Pflugrad, H., Schmitz, B., Lanfermann, H., Tryc, A. B., Barg-Hock, H., Klempnauer, J., Weissenborn,
+    K., & Ding, X.-Q. (2019). Quantitative magnetic resonance imaging indicates brain tissue alterations in patients
+    after liver transplantation. PLOS ONE, 14(9), e0222934. https://doi.org/10.1371/journal.pone.0222934
+sources:
+  goede2019:
+    title: Goede et al. 2019, PLOS ONE 14(9):e0222934
+    url: https://doi.org/10.1371/journal.pone.0222934
+    kind: paper
+  figshare-goede2019:
+    title: PLOS figshare record 9903692, supporting information of Goede et al. 2019
+    url: https://plos.figshare.com/articles/dataset/Quantitative_magnetic_resonance_imaging_indicates_brain_tissue_alterations_in_patients_after_liver_transplantation/9903692
+    kind: website
+related: []
+keywords: [liver transplantation, calcineurin inhibitors, immunosuppression, relaxometry, diffusion tensor imaging]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,116,goede2019,Table 1,85 liver transplant patients and 31 healthy controls with complete qMRI examinations
+subjects,condition=liver_transplant_recipient,85,goede2019,Methods: Subjects,"CNI-free 19, CNI-low 36, CNI-standard 30; 91 patients were enrolled"
+subjects,condition=healthy,31,goede2019,Methods: Subjects,"matched for sex, age and education"
+subjects,sex=male,71,goede2019,Table 1,summed over the four disjoint study groups (14 + 24 + 18 + 15)
+subjects,sex=female,45,goede2019,Table 1,summed over the four disjoint study groups (5 + 12 + 12 + 16)
+subjects,condition=liver_transplant_recipient;sex=male,56,goede2019,Table 1,summed over the three disjoint patient groups (14 + 24 + 18)
+subjects,condition=liver_transplant_recipient;sex=female,29,goede2019,Table 1,summed over the three disjoint patient groups (5 + 12 + 12)
+subjects,condition=healthy;sex=male,15,goede2019,Table 1,
+subjects,condition=healthy;sex=female,16,goede2019,Table 1,
+age_mean,condition=healthy,58.48,goede2019,Table 1,
+age_sd,condition=healthy,7.8,goede2019,Table 1,
+subjects,field_strength=3,116,goede2019,Methods: MRI examination,Siemens Verio 3T with a 12-channel head coil
+subjects,vendor=siemens,116,goede2019,Methods: MRI examination,Siemens Verio
+subjects,country=DE,116,goede2019,Methods: Subjects,single center at Hannover Medical School
