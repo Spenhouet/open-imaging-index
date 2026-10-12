@@ -1,0 +1,2 @@
+measure,by,value,source,where,note
+subjects,contrast=bold,60,hku-datahub-29901281,Description: Dataset of Chapter 3,"Preprocessed fMRI during extinction and re-extinction from 60 participants. Chapter 4 derived resting-state connectivity and event-related BOLD signals also from 60 participants; the record does not say whether these are the same people"
