@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,318,basaia2020,Table 1,sum of the four disjoint groups: 79 healthy controls and 173 ALS + 38 PLS + 28 PMA patients
+subjects,condition=motor_neuron_disease,239,basaia2020,Methods: Participants,"173 amyotrophic lateral sclerosis, 38 primary lateral sclerosis, 28 progressive muscular atrophy, all sporadic"
+subjects,condition=healthy,79,basaia2020,Methods: Participants,61 from Milan/Turin and 18 from Naples
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2w,318,basaia2020,Methods: MRI analysis,all five sequences were obtained from all participants
+subjects,contrast=T1w,318,basaia2020,Methods: MRI analysis,
+subjects,contrast=T2w,318,basaia2020,Methods: MRI analysis,
+subjects,contrast=FLAIR,318,basaia2020,Methods: MRI analysis,
+subjects,contrast=dwi,318,basaia2020,Methods: MRI analysis,diffusion tensor imaging
+subjects,contrast=bold,318,basaia2020,Methods: MRI analysis,resting-state fMRI
+subjects,field_strength=3,318,basaia2020,Methods,two 3T scanners
+subjects,vendor=philips,258,basaia2020,Methods: Participants,"Philips Intera in Milan and Turin; summed from the Milan/Turin counts (131 ALS, 38 PLS, 28 PMA, 61 controls)"
+subjects,vendor=ge,60,basaia2020,Methods: Participants,GE Signa HDxt in Naples; summed from the Naples counts (42 ALS and 18 controls)
+subjects,country=IT,318,basaia2020,Methods,"three Italian centres in Milan, Turin and Naples"
+subjects,sex=female,146,basaia2020,Table 1,summed over the four groups (46 + 72 + 20 + 8)
+subjects,sex=male,172,basaia2020,Table 1,summed over the four groups (33 + 101 + 18 + 20)
+subjects,condition=motor_neuron_disease;sex=female,100,basaia2020,Table 1,summed over ALS (72) PLS (20) and PMA (8)
+subjects,condition=motor_neuron_disease;sex=male,139,basaia2020,Table 1,summed over ALS (101) PLS (18) and PMA (20)
+subjects,condition=healthy;sex=female,46,basaia2020,Table 1,
+subjects,condition=healthy;sex=male,33,basaia2020,Table 1,
+age_mean,condition=healthy,61.84,basaia2020,Table 1,SD 8.82
+age_sd,condition=healthy,8.82,basaia2020,Table 1,
+age_min,condition=healthy,42.00,basaia2020,Table 1,
+age_max,condition=healthy,81.81,basaia2020,Table 1,
+age_min,,28.47,basaia2020,Table 1,lowest group minimum (ALS)
+age_max,,86.12,basaia2020,Table 1,highest group maximum (ALS)

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mnd-connectome-italy-multicenter
+name: Motor neuron disease connectome (Milan, Turin, Naples)
+full_name: >-
+  Structural and functional brain connectome in motor neuron diseases: a multicenter MRI study
+summary: >-
+  Structural, diffusion and resting-state functional brain MRI of patients with amyotrophic lateral sclerosis, primary
+  lateral sclerosis or progressive muscular atrophy and healthy controls, collected to map brain network changes in
+  motor neuron diseases. Images shared on request.
+homepage: https://doi.org/10.5061/dryad.v15dv41t3
+doi: 10.1212/WNL.0000000000010731
+# Year the article and its supplementary Dryad record appeared; the images themselves were never posted.
+year: 2020
+creators:
+  - name: Neuroimaging Research Unit, IRCCS San Raffaele Scientific Institute, Milan
+    url: https://doi.org/10.1212/WNL.0000000000010731
+  - name: ALS Center, University of Torino
+  - name: University of Campania Luigi Vanvitelli, Naples
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, dwi, bold]
+anatomy: [brain]
+conditions: [motor_neuron_disease, healthy]
+countries: [IT]
+vendors: [philips, ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1212/WNL.0000000000010731
+  note: >-
+    The article states that the data will be made available by the corresponding author on request to qualified
+    researchers affiliated with a university, research institution or hospital. The Dryad record (mirrored on Zenodo)
+    holds only supplementary tables and figures, released under CC0, and no images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the imaging data. The CC0 label of the Dryad record covers the
+      supplementary tables and figures only, and the CC BY-NC-ND 4.0 license of the article covers its text.
+citation:
+  text: >-
+    Basaia S, Agosta F, Cividini C, et al. Structural and functional brain connectome in motor neuron diseases: a
+    multicenter MRI study. Neurology 95(18), e2552-e2564 (2020). doi:10.1212/WNL.0000000000010731
+sources:
+  basaia2020:
+    title: Basaia et al. 2020, Neurology 95(18), e2552-e2564 (open access full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7682834/
+    kind: paper
+  dryad-v15dv41t3:
+    title: Dryad record of the supplementary tables and figures (Zenodo record 5090085)
+    url: https://zenodo.org/records/5090085
+    kind: website
+related: [mnd-emotional-lability-besta]
+keywords:
+  [
+    amyotrophic lateral sclerosis,
+    primary lateral sclerosis,
+    progressive muscular atrophy,
+    connectomics,
+    graph analysis,
+    diffusion tensor imaging,
+    resting-state fMRI
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
