@@ -1,0 +1,42 @@
+measure,by,value,source,where,note
+subjects,,82,openneuro-ds005026-v100,sub-* folders,matches the 52 + 30 participants of ponticorvo2022 (Abstract)
+subjects,condition=hearing_loss,52,ds005026-participants,gp,"gp = hl; age-related sensorineural hearing loss, 52 in ponticorvo2022 (Abstract)"
+subjects,condition=healthy,30,ds005026-participants,gp,"gp = nh, normal hearing; 30 in ponticorvo2022 (Abstract)"
+subjects,sex=female,36,ds005026-participants,sex,
+subjects,sex=male,46,ds005026-participants,sex,
+subjects,condition=hearing_loss;sex=female,16,ds005026-participants,gp; sex,
+subjects,condition=hearing_loss;sex=male,36,ds005026-participants,gp; sex,
+subjects,condition=healthy;sex=female,20,ds005026-participants,gp; sex,
+subjects,condition=healthy;sex=male,10,ds005026-participants,gp; sex,
+subjects,age=40-49,5,ds005026-participants,age,
+subjects,age=50-59,28,ds005026-participants,age,
+subjects,age=60-69,35,ds005026-participants,age,
+subjects,age=70-79,14,ds005026-participants,age,
+subjects,condition=hearing_loss;age=50-59,11,ds005026-participants,gp; age,other group and age cells below 10 left out
+subjects,condition=hearing_loss;age=60-69,26,ds005026-participants,gp; age,
+subjects,condition=hearing_loss;age=70-79,12,ds005026-participants,gp; age,
+subjects,condition=healthy;age=50-59,17,ds005026-participants,gp; age,
+subjects,sex=female;age=50-59,13,ds005026-participants,sex; age,other sex and age cells below 10 left out
+subjects,sex=female;age=60-69,12,ds005026-participants,sex; age,
+subjects,sex=male;age=50-59,15,ds005026-participants,sex; age,
+subjects,sex=male;age=60-69,23,ds005026-participants,sex; age,
+age_mean,,62.2,ds005026-participants,age,
+age_median,,62,ds005026-participants,age,
+age_min,,47,ds005026-participants,age,
+age_max,,78,ds005026-participants,age,
+age_mean,condition=hearing_loss,63.7,ds005026-participants,gp; age,
+age_sd,condition=hearing_loss,7.8,ds005026-participants,gp; age,
+age_mean,condition=healthy,59.5,ds005026-participants,gp; age,
+age_sd,condition=healthy,7.2,ds005026-participants,gp; age,
+subjects,contrast=T1w,82,openneuro-ds005026-v100,sub-*/ses-01/anat,
+subjects,contrast=dwi,82,openneuro-ds005026-v100,sub-*/ses-01/dwi,
+subjects,contrast=bold,82,openneuro-ds005026-v100,sub-*/ses-01/func,
+subjects,contrast_set=bold+dwi+T1w,82,openneuro-ds005026-v100,sub-*/ses-01,single-band reference (sbref) images are not counted as a contrast
+subjects,vendor=siemens,82,openneuro-ds005026-v100,JSON sidecars,Siemens Skyra
+subjects,field_strength=3,82,openneuro-ds005026-v100,JSON sidecars,MagneticFieldStrength 3
+subjects,country=IT,82,openneuro-ds005026-v100,dataset_description.json; JSON sidecars,"ethics approval by the University of Salerno; InstitutionName Azienda Ospedaliera San Giovanni"
+studies,,82,openneuro-ds005026-v100,sub-*/ses-01,one session per participant
+scans,,246,openneuro-ds005026-v100,sub-*,"sum of the disjoint T1w, dwi and bold NIfTI counts below; sbref images not included"
+scans,contrast=T1w,82,openneuro-ds005026-v100,sub-*/ses-01/anat,
+scans,contrast=dwi,82,openneuro-ds005026-v100,sub-*/ses-01/dwi,
+scans,contrast=bold,82,openneuro-ds005026-v100,sub-*/ses-01/func,
