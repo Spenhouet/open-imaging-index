@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fairy-tale-reading-fmri
+name: Children and Adults Reading Fairy Tales fMRI
+full_name: Brain Imaging Dataset of Children and Adults Reading Fairy Tales (2026)
+summary: >-
+  Task fMRI of children and adults reading Chinese passages from four Hans Christian Andersen fairy tales, acquired
+  at Peking University and preprocessed with SPM12, deposited to study the brain during naturalistic story reading,
+  with restricted access through Science Data Bank.
+homepage: https://www.scidb.cn/en/detail?dataSetId=d5cc3c795c2e49adad7852f37eabceb3
+doi: 10.57760/sciencedb.34823
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Wei Zhou, Capital Normal University
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+# DataCite metadata of the ScienceDB record: 3500587353 bytes in 5 files.
+size_gb: 3.5
+access:
+  type: application
+  url: https://www.scidb.cn/en/detail?dataSetId=d5cc3c795c2e49adad7852f37eabceb3
+  note: >-
+    Restricted access on Science Data Bank. Requesters give their name, institution and purpose of use through the
+    record's Request Access form, and the data depositor alone decides whether to grant access.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The record states no license (empty rights in its DataCite metadata and no copyright entry on the record). The
+      only condition shown is that applicants provide their name, institutional information and purpose of use; no
+      terms of use are published.
+citation:
+  text: >-
+    zhou wei. Brain Imaging Dataset of Children and Adults Reading Fairy Tales (2026). V1. Science Data Bank, 2026.
+    doi:10.57760/sciencedb.34823
+sources:
+  scidb-34823:
+    title: Science Data Bank record 10.57760/sciencedb.34823 and its DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.34823
+    kind: website
+related: []
+keywords: [reading, naturalistic reading, story reading, Chinese, children, reading development, language models, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
