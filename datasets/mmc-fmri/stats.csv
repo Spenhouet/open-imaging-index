@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,50,meliss2024,Methods: Participants and design,"final sample; 25 control and 25 experimental (incentive) group, matching the 50 sub-* folders of snapshot 1.0.1"
+subjects,condition=healthy,50,meliss2024,Methods: Participants and design,inclusion required healthy adults aged 18 to 45 without chronic illness or psychiatric disorder
+subjects,country=GB,50,meliss2024,MRI acquisition,"scanned at CINN, University of Reading"
+subjects,vendor=siemens,50,meliss2024,MRI acquisition,Siemens Magnetom Prisma_fit with a 32-channel head coil
+subjects,field_strength=3,50,meliss2024,MRI acquisition,
+subjects,sex=female,36,meliss2024,Methods: Participants and design,
+subjects,sex=male,14,ds004182-file-tree,participants.tsv,"participants.tsv lists 51 rows; sub-control030 has no image folder and is left out"
+subjects,age=10-19,4,ds004182-file-tree,participants.tsv,50 subjects with image folders
+subjects,age=20-29,37,ds004182-file-tree,participants.tsv,50 subjects with image folders
+subjects,age=30-39,9,ds004182-file-tree,participants.tsv,50 subjects with image folders
+subjects,contrast=T1w,50,ds004182-file-tree,anat,
+subjects,contrast=bold,50,ds004182-file-tree,func,"two resting-state runs and three magic trick watching runs per subject"
+subjects,contrast_set=bold+T1w,50,ds004182-file-tree,,
+scans,,301,ds004182-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; field map volumes (magnitude1, magnitude2, phasediff) not counted"
+scans,contrast=T1w,50,ds004182-file-tree,anat,defaced MPRAGE
+scans,contrast=bold,251,ds004182-file-tree,func,"100 rest runs and 151 task runs; one subject's second task run is split into two files"
+age_mean,,25.32,meliss2024,Methods: Participants and design,
+age_sd,,5.19,meliss2024,Methods: Participants and design,
+age_min,,18,meliss2024,Methods: Participants and design,
+age_max,,37,meliss2024,Methods: Participants and design,
