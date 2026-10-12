@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: wu120
+name: Washington University 120 (ds000243)
+full_name: Washington University 120 (WU120)
+summary: >-
+  Resting-state fMRI and T1-weighted brain MRI of healthy right-handed young adults, released with a study of how
+  slice-timing interpolation alters head-motion estimates and artifact detection. 120 adults from Saint Louis, under
+  CC0.
+homepage: https://openneuro.org/datasets/ds000243
+doi: 10.18112/openneuro.ds000243.v1.0.0
+year: 2017
+updated: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Petersen/Schlaggar group, Washington University in Saint Louis (Petersen S, Schlaggar B, Power J)
+    url: https://openneuro.org/datasets/ds000243
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 6.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000243
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Power JD, Plitt M, Kundu P, Bandettini PA, Martin A. Temporal interpolation alters motion in fMRI scans:
+    Magnitudes and consequences for artifact detection. PLoS One 12(9):e0182939 (2017).
+    doi:10.1371/journal.pone.0182939
+sources:
+  power2017:
+    title: Power et al. 2017, Temporal interpolation alters motion in fMRI scans, PLoS One
+    url: https://doi.org/10.1371/journal.pone.0182939
+    kind: paper
+  openneuro-ds000243-v1:
+    title: OpenNeuro ds000243 snapshot 1.0.0 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds000243/versions/1.0.0
+    kind: website
+  ds000243-participants:
+    title: participants.tsv of ds000243 (CC0), counted per row from the Age and Gender columns
+    url: https://github.com/OpenNeuroDatasets/ds000243/blob/main/participants.tsv
+    kind: computed
+  ds000243-files:
+    title: File listing of the ds000243 repository (CC0), counting sub-*/anat/*_T1w.nii.gz and sub-*/func/*_bold.nii.gz
+    url: https://github.com/OpenNeuroDatasets/ds000243
+    kind: computed
+keywords: [resting-state fMRI, head motion, slice timing, healthy adults, functional connectivity]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

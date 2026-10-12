@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,120,ds000243-participants,,120 rows; the paper (Methods) and the OpenNeuro snapshot summary also give 120
+subjects,condition=healthy,120,openneuro-ds000243-v1,README,typical young adults without significant neurological or psychiatric history
+subjects,sex=female,61,ds000243-participants,,Gender F
+subjects,sex=male,59,ds000243-participants,,Gender M
+subjects,age=10-19,2,ds000243-participants,,
+subjects,age=20-29,115,ds000243-participants,,
+subjects,age=30-39,3,ds000243-participants,,
+subjects,sex=female;age=20-29,60,ds000243-participants,,
+subjects,sex=male;age=20-29,55,ds000243-participants,,
+age_mean,,24.7,ds000243-participants,,
+age_sd,,2.4,ds000243-participants,,
+age_median,,24.5,ds000243-participants,,
+age_min,,18.6,ds000243-participants,,
+age_max,,31.7,ds000243-participants,,
+subjects,contrast=T1w,120,ds000243-files,,one MP-RAGE per subject
+subjects,contrast=bold,120,ds000243-files,,one or two resting-state runs per subject
+subjects,contrast_set=bold+T1w,120,ds000243-files,,
+scans,,323,ds000243-files,,sum of the 120 T1w and 203 BOLD NIfTI files (disjoint and complete)
+scans,contrast=T1w,120,ds000243-files,,
+scans,contrast=bold,203,ds000243-files,,83 subjects with two runs and 37 with one
+subjects,field_strength=3,120,power2017,Methods (WU cohort),Siemens MAGNETOM Trio 3T in Saint Louis
+subjects,vendor=siemens,120,power2017,Methods (WU cohort),
+subjects,country=US,120,power2017,Methods (WU cohort),
