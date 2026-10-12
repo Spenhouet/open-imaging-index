@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: breast-dce-mri-radiomics-naples
+name: Breast lesion DCE-MRI radiomics (Naples)
+full_name: >-
+  Radiomic and Artificial Intelligence Analysis with Textural Metrics, Morphological and Dynamic Perfusion Features
+  Extracted by Dynamic Contrast-Enhanced Magnetic Resonance Imaging in the Classification of Breast Lesions
+summary: >-
+  Breast dynamic contrast-enhanced MRI of 85 women with histologically proven lesions, used to tell benign from
+  malignant lesions with texture, shape and perfusion features. Only per-lesion shape features are open; the images
+  are not shared.
+homepage: https://zenodo.org/records/5151715
+doi: 10.5281/zenodo.5151715
+year: 2021
+creators:
+  - name: Istituto Nazionale Tumori IRCCS Fondazione G. Pascale, Naples
+  - name: Universita degli Studi di Napoli Federico II
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dce]
+anatomy: [breast]
+conditions: [breast_cancer]
+tasks: [classification]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://zenodo.org/records/5151715
+  note: >-
+    The Zenodo record holds one spreadsheet with the 15 morphological features of the 91 lesions, with BI-RADS and
+    histology per lesion. It is openly downloadable under CC BY 4.0. The paper states that no additional data are
+    available, and no route to the MR images is published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MR images and lesion segmentations.
+    note: Neither the Zenodo record nor the paper offers the images or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Spreadsheet of per-lesion morphological features with BI-RADS and histology on Zenodo.
+citation:
+  text: >-
+    Fusco R, Piccirillo A, Sansone M, Granata V, Vallone P, Barretta ML, Petrosino T, Siani C, Di Giacomo R, Di
+    Bonito M, Botti G, Petrillo A. Radiomic and Artificial Intelligence Analysis with Textural Metrics, Morphological
+    and Dynamic Perfusion Features Extracted by Dynamic Contrast-Enhanced Magnetic Resonance Imaging in the
+    Classification of Breast Lesions. Applied Sciences 11(4), 1880 (2021). doi:10.3390/app11041880
+sources:
+  fusco2021:
+    title: Fusco et al. 2021, Applied Sciences 11(4), 1880
+    url: https://doi.org/10.3390/app11041880
+    kind: paper
+  zenodo-5151715:
+    title: Zenodo record 5151715, morphological feature spreadsheet for the article
+    url: https://zenodo.org/records/5151715
+    kind: website
+related: []
+keywords: [breast lesions, benign versus malignant, radiomics, texture analysis, time-intensity curve, Gd-DOTA]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
