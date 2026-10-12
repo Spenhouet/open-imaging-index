@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: 101-dalmatians
+name: 101 Dalmatians
+full_name: '101 Dalmatians: a multimodal naturalistic fMRI dataset in typical development and congenital sensory loss'
+summary: >-
+  Brain fMRI of congenitally blind, congenitally deaf and typically developed adults watching or listening to the movie
+  101 Dalmatians, collected to study how sensory experience shapes brain organisation. Includes T1w and T2w anatomy,
+  movie feature models and annotations.
+homepage: https://doi.org/10.6084/m9.figshare.28264178.v1
+doi: 10.6084/m9.figshare.28264178.v1
+# figshare record published 2025-11-18; the paper appeared 2025-11-17.
+year: 2025
+version: '1'
+status: active
+creators:
+  - name: Department of Psychology, University of Turin, and MoMiLab, IMT School for Advanced Studies Lucca (Setti F, Bottari D, Handjaras G, et al.)
+    url: https://github.com/giacomohandjaras/101_Dalmatians
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [blindness, hearing_loss, healthy]
+formats: [BIDS, NIfTI]
+countries: [IT]
+vendors: [philips]
+field_strengths: [3]
+# 28,799,075,393 bytes raw archive plus 61,619,169,280 bytes derivatives archive (figshare API).
+size_gb: 90.4
+access:
+  type: open
+  url: https://springernature.figshare.com/articles/dataset/101_Dalmatians_a_multimodal_naturalistic_fMRI_dataset_in_typical_development_and_congenital_sensory_loss/28264178
+licenses:
+  - license: CC-BY-4.0
+    note: The figshare record states the license CC BY 4.0. The original movie video and audio are not shared and are available from the corresponding author on request.
+citation:
+  text: >-
+    Setti F, Bottari D, Leo A, Diano M, Bruno V, Tinti C, Cecchetti L, Garbarini F, Pietrini P, Ricciardi E,
+    Handjaras G. 101 Dalmatians: a multimodal naturalistic fMRI dataset in typical development and congenital sensory
+    loss. Scientific Data 12, 1792 (2025). doi:10.1038/s41597-025-06077-3
+sources:
+  setti2025:
+    title: Setti et al. 2025, 101 Dalmatians, a multimodal naturalistic fMRI dataset in typical development and congenital sensory loss, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-06077-3
+    kind: paper
+  figshare-28264178:
+    title: figshare record 28264178 version 1 (description, license, file list and sizes, README.txt)
+    url: https://springernature.figshare.com/articles/dataset/101_Dalmatians_a_multimodal_naturalistic_fMRI_dataset_in_typical_development_and_congenital_sensory_loss/28264178
+    kind: website
+related: []
+keywords:
+  [
+    naturalistic viewing,
+    movie watching,
+    congenital blindness,
+    congenital deafness,
+    sensory deprivation,
+    cross-modal plasticity,
+    audio description,
+    inter-subject correlation,
+    task fMRI,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

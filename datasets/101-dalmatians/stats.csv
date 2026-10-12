@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,50,setti2025,Methods: Participants,
+subjects,condition=healthy,30,setti2025,Methods: Participants,"typically developed participants in three groups of 10, one per movie version (audiovisual, auditory, visual)"
+subjects,condition=blindness,11,setti2025,Methods: Participants,congenitally blind; watched the auditory version; Table 1 lists 9 of the 11
+subjects,condition=hearing_loss,9,setti2025,Methods: Participants,congenitally deaf; watched the visual version with subtitles
+subjects,sex=female,28,setti2025,Methods: Participants,"sum over the five disjoint groups (8, 7, 5, 3, 5)"
+subjects,sex=male,22,setti2025,Methods: Participants,total 50 minus 28 female; the paper reports female counts only
+age_mean,condition=blindness,46,setti2025,Methods: Participants,mean ± 14 years
+age_sd,condition=blindness,14,setti2025,Methods: Participants,
+age_mean,condition=hearing_loss,24,setti2025,Methods: Participants,
+age_sd,condition=hearing_loss,4,setti2025,Methods: Participants,
