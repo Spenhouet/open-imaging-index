@@ -20,6 +20,13 @@ terms:
       mappings: { mondo: 'MONDO:0017276' }
     }
   - { id: vascular_dementia, label: Vascular dementia, parent: dementia, mappings: { mondo: 'MONDO:0004648' } }
+  - {
+      id: lewy_body_dementia,
+      label: Lewy body dementia,
+      parent: dementia,
+      synonyms: [dementia with Lewy bodies, DLB],
+      mappings: { mondo: 'MONDO:0007488' }
+    }
   - { id: down_syndrome, label: Down syndrome, synonyms: [trisomy 21], mappings: { mondo: 'MONDO:0008608' } }
   - {
       id: mci,
