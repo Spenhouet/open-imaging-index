@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,51,ds003612-file-tree,sub-*/,"51 subject folders; participants.tsv lists 50 and omits sub-108TUSW011049; the paper also reports 51 (26 right-handed and 25 left-handed, Section 2.1)"
+subjects,condition=healthy,51,crotti2022,Section 2.1,healthy volunteers without neurological or psychiatric conditions
+subjects,sex=female,26,crotti2022,Section 2.1,13 right-handed and 13 left-handed; participants.tsv lists 25 female among its 50 rows
+subjects,sex=male,25,crotti2022,Section 2.1,13 right-handed and 12 left-handed; participants.tsv lists 25 male among its 50 rows
+subjects,age=10-19,4,ds003612-participants,age,all aged 19; 50 subjects listed in participants.tsv
+subjects,age=20-29,46,ds003612-participants,age,50 subjects listed in participants.tsv
+subjects,sex=female;age=20-29,21,ds003612-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=20-29,25,ds003612-participants,sex and age,Cells below 10 left out
+age_min,,19,crotti2022,Section 2.1,all 51 participants; participants.tsv gives 19 to 29 for its 50 rows
+age_max,,32,crotti2022,Section 2.1,all 51 participants; participants.tsv gives 19 to 29 for its 50 rows
+age_mean,,24.61,crotti2022,Section 2.1 and Table 1,all 51 participants; participants.tsv gives 19 to 29 for its 50 rows
+age_sd,,3.09,crotti2022,Section 2.1 and Table 1,all 51 participants; participants.tsv gives 19 to 29 for its 50 rows
+studies,,51,ds003612-file-tree,sub-*/ses-1/,one session per subject
+scans,,253,ds003612-file-tree,sub-*/**/*.nii.gz,"51 T1w, 101 bold and 101 reverse phase-encoding field map (fmap/*_epi) files"
+scans,contrast=T1w,51,ds003612-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,101,ds003612-file-tree,func/*_bold.nii.gz,one imagery and one execution run per subject; sub-108TUSW011043 has no imagery run
+subjects,contrast=T1w,51,ds003612-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,51,ds003612-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,51,ds003612-file-tree,sub-*/,
+subjects,field_strength=3,51,crotti2022,Section 2.5,3 T Siemens Magnetom Vida with 64-channel head coil
+subjects,vendor=siemens,51,crotti2022,Section 2.5,3 T Siemens Magnetom Vida with 64-channel head coil
+subjects,country=AT,51,crotti2022,Section 2.5,MRI Lab Graz
