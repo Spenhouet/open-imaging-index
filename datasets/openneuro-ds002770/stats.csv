@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,86,brevers2021,Abstract,"86 subject folders in the snapshot; ids run from 1 to 87, sub-47 is absent"
+scans,,344,openneuro-ds002770-v2-0-0,file listing,"NIfTI files: one T1w, one task BOLD run, and a field-map magnitude and phase-difference image per subject"
+subjects,contrast=T1w,86,openneuro-ds002770-v2-0-0,file listing,sub-*/anat/*_T1w.nii
+subjects,contrast=bold,86,openneuro-ds002770-v2-0-0,file listing,sub-*/func/*_task-cueexposure_bold.nii
+subjects,contrast_set=bold+T1w,86,openneuro-ds002770-v2-0-0,file listing,all subjects also have a gradient-echo field map
+subjects,country=BE,86,ds002770-sidecars,InstitutionName,"UZ_Gent or UGent in every T1w and BOLD sidecar"
+subjects,vendor=siemens,86,ds002770-sidecars,Manufacturer,Siemens Prisma Fit
+subjects,field_strength=3,86,ds002770-sidecars,MagneticFieldStrength,
