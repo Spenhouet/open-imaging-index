@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,74,ds003831-file-tree,,"subject folders with images; participants.tsv lists 77 (sub-030, sub-031 and sub-033 have no folder)"
+subjects,condition=healthy,74,openneuro-ds003831-v1,README,all participants were medically healthy with no current Axis I disorder
+subjects,contrast=bold,74,ds003831-file-tree,,
+subjects,contrast=T1w,73,ds003831-file-tree,,
+subjects,contrast_set=bold+T1w,73,ds003831-file-tree,,
+subjects,contrast_set=bold,1,ds003831-file-tree,,
+scans,,436,ds003831-file-tree,,"NIfTI volumes: 363 BOLD runs and 73 T1w"
+scans,contrast=bold,363,ds003831-file-tree,,"73 identify1, 73 identify2, 73 rest, 72 modulate1, 72 modulate2 runs"
+scans,contrast=T1w,73,ds003831-file-tree,,
+subjects,sex=female,50,ds003831-participants,sex,74 subjects with images
+subjects,sex=male,24,ds003831-participants,sex,74 subjects with images
+subjects,age=10-19,2,ds003831-participants,age,74 subjects with images; aged 18 or 19
+subjects,age=20-29,25,ds003831-participants,age,
+subjects,age=30-39,14,ds003831-participants,age,
+subjects,age=40-49,11,ds003831-participants,age,
+subjects,age=50-59,14,ds003831-participants,age,
+subjects,age=60-69,8,ds003831-participants,age,
+subjects,sex=female;age=20-29,16,ds003831-participants,"sex, age",
+subjects,sex=female;age=50-59,11,ds003831-participants,"sex, age",
+age_mean,,38.6,ds003831-participants,age,74 subjects with images
+age_min,,18,ds003831-participants,age,
+age_max,,64,ds003831-participants,age,

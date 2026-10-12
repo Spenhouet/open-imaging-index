@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ctm-rtfmri
+name: CTM real-time fMRI neuromodulation, UAMS (ds003831)
+full_name: Cognitive Control Theoretic Mechanisms of Real-time fMRI-Guided Neuromodulation (CTM)
+summary: >-
+  Brain MRI of healthy adults with T1-weighted scans and task and resting-state BOLD fMRI, recorded during
+  affective picture viewing, cued recall and real-time fMRI neurofeedback of decoded valence and arousal, with
+  physiological recordings.
+homepage: https://openneuro.org/datasets/ds003831
+doi: 10.18112/openneuro.ds003831.v1.0.0
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: University of Arkansas for Medical Sciences (Fialkowski K, Messias I, Bush KA)
+    url: https://openneuro.org/datasets/ds003831
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003831/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds003831/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Fialkowski K, Messias I, Bush KA. Cognitive Control Theoretic Mechanisms of Real-time fMRI-Guided
+    Neuromodulation (CTM). OpenNeuro ds003831, version 1.0.0 (2021). doi:10.18112/openneuro.ds003831.v1.0.0
+sources:
+  openneuro-ds003831-v1:
+    title: OpenNeuro ds003831 snapshot 1.0.0 (README, dataset_description.json and CHANGES)
+    url: https://openneuro.org/datasets/ds003831/versions/1.0.0
+    kind: website
+  ds003831-participants:
+    title: participants.tsv of ds003831 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds003831/blob/main/participants.tsv
+    kind: computed
+  ds003831-file-tree:
+    title: File tree of ds003831 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds003831
+    kind: computed
+related: []
+keywords:
+  [
+    real-time fMRI,
+    neurofeedback,
+    affect regulation,
+    emotion,
+    valence,
+    arousal,
+    IAPS,
+    resting state,
+    sham feedback,
+    physiological recordings
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
