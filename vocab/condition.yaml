@@ -246,6 +246,12 @@ terms:
       description: No MONDO term exists. Mapped to the broader HPO term Addictive non-substance behaviors.,
       mappings: { hp: 'HP:5200332' }
     }
+  - {
+      id: alcohol_use_disorder,
+      label: Alcohol use disorder,
+      synonyms: [AUD, alcohol dependence, alcoholism],
+      mappings: { mondo: 'MONDO:0007079' }
+    }
   # Tumors
   - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
   - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }

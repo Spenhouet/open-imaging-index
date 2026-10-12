@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: exalt
+name: EXALT exenatide trial in alcohol use disorder
+full_name: Exenatide once weekly for alcohol use disorder investigated in a randomized, placebo-controlled clinical trial
+summary: >-
+  Brain fMRI, structural MRI and dopamine transporter SPECT from a Copenhagen trial of weekly exenatide versus placebo
+  in alcohol use disorder, scanned at baseline and week 26, with healthy controls. Imaging on request; clinical tables
+  are open under CC BY 4.0.
+homepage: https://data.mendeley.com/datasets/hck4tvrhbb
+doi: 10.17632/hck4tvrhbb.1
+# First public release of the clinical tables on Mendeley Data; the images are shared only on request.
+year: 2022
+creators:
+  - name: Mette Kruse Klausen, Anders Fink-Jensen and the EXALT trial group, Copenhagen
+    url: https://data.mendeley.com/datasets/hck4tvrhbb
+species: human
+modalities: [MR, NM]
+contrasts: [T1w, bold]
+tracers: [datscan]
+anatomy: [brain]
+conditions: [alcohol_use_disorder, healthy]
+tasks: [longitudinal]
+countries: [DK]
+vendors: [siemens, philips]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://data.mendeley.com/datasets/hck4tvrhbb
+  note: >-
+    Raw fMRI and SPECT data are not on Mendeley Data. Requests go to the corresponding authors with a methodologically
+    sound proposal; requestors may have to sign a data access agreement whose terms are not published. The paper states
+    the data stay available for 5 years. Clinical, questionnaire and blood test tables are an open download.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Brain imaging (fMRI with structural MRI, and DAT SPECT), shared on request only.
+    url: https://doi.org/10.1172/jci.insight.159863
+  - license: CC-BY-4.0
+    applies_to: Clinical, questionnaire, blood test and dropout tables, the protocol and the analysis plan on Mendeley Data.
+    url: https://data.mendeley.com/datasets/hck4tvrhbb
+citation:
+  text: >-
+    Klausen MK, Jensen ME, Møller M, et al. Exenatide once weekly for alcohol use disorder investigated in a randomized,
+    placebo-controlled clinical trial. JCI Insight 7(19):e159863 (2022). doi:10.1172/jci.insight.159863
+sources:
+  klausen2022:
+    title: Klausen et al. 2022, JCI Insight, Exenatide once weekly for alcohol use disorder (PMC9675448)
+    url: https://doi.org/10.1172/jci.insight.159863
+    kind: paper
+  klausen2022-supplement:
+    title: Klausen et al. 2022, JCI Insight, supplemental appendices 1 (fMRI) and 2 (SPECT)
+    url: https://doi.org/10.1172/jci.insight.159863DS1
+    kind: paper
+  mendeley-hck4tvrhbb:
+    title: Mendeley Data record hck4tvrhbb, version 1
+    url: https://data.mendeley.com/datasets/hck4tvrhbb
+    kind: website
+related: []
+keywords: [alcohol use disorder, GLP-1 receptor agonist, exenatide, alcohol cue reactivity, N-back, dopamine transporter, randomized controlled trial]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
