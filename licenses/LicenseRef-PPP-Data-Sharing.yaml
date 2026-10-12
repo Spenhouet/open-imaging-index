@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-PPP-Data-Sharing
+name: Personalized Parkinson Project data sharing procedure and Qualified Researcher Agreement
+short_name: PPP QRA
+url: https://www.personalizedparkinsonproject.com/data-sharing/requesting-data
+version: 'PPP Data Sharing website pages (Requesting data, Costs, Using data), read 2026-10-12; the QRA text is not public'
+summary: >-
+  Data are released for Parkinson's disease or PSP research projects approved by Radboudumc or its review committee,
+  after signing a Qualified Researcher Agreement and paying a release fee. Data stay with the approved project, derived
+  data go back to the repository, and manuscripts are submitted for review 45 days before submission.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: conditional
+    quote: For commercial parties, a tailored quote will be provided.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/requesting-data/additional-information-on-the-procedure/costs-of-data-release
+    note: Commercial parties can apply, and project partners include Verily and UCB. The design paper says signed
+      agreements ensure that no commercialization of the raw data is attempted. Use is limited to the approved project.
+  product_validation:
+    value: unspecified
+    note: The public pages do not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The public pages do not mention machine learning or model training.
+  derivatives:
+    value: conditional
+    quote: All data derived from (sample) analyses, including relevant documentation, must be uploaded to the data
+      repository (PEP) for future use by other applicants.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+    note: Derived data are allowed within the approved project but must be returned to the repository.
+  publication:
+    value: conditional
+    quote: Researchers have the right to make disclosures of data in scientific journals or other publications.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+    note: Manuscripts must acknowledge the data as the QRA describes and go to the Research Support office at least 45
+      days before first submission.
+  redistribute_original:
+    value: 'no'
+    quote: Data can therefore not be shared openly and its use is restricted to the dissemination of the data and
+      samples only to the researchers involved in executing the research described in the application.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+  redistribute_derivatives:
+    value: unspecified
+    quote: All data derived from (sample) analyses, including relevant documentation, must be uploaded to the data
+      repository (PEP) for future use by other applicants.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+    note: Derived data go back to the PPP repository; the public pages do not say whether recipients may share them
+      elsewhere.
+  share_model_weights:
+    value: unspecified
+    note: The public pages do not address trained models.
+  attribution:
+    value: 'yes'
+    quote: Every manuscript should acknowledge the used data as described in the Qualified Researcher Agreement.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: After approval of the application, all researchers (pre-approved and non pre-approved) will sign a Qualified
+      Researcher Agreement (QRA), which includes the terms for accessing and using the data.
+  ethics_approval:
+    value: unspecified
+    note: The public pages list a non-WMO declaration only as an optional addition to the application. The QRA text is
+      not public.
+  publication_review:
+    value: 'yes'
+    quote: Moreover, manuscripts should be submitted to the Research Support office at least 45 days before first
+      submission.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: All data derived from (sample) analyses, including relevant documentation, must be uploaded to the data
+      repository (PEP) for future use by other applicants.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/using-data
+  delete_after_use:
+    value: unspecified
+    quote: After payment of the invoice, the researcher will be granted access to the data for the duration of the
+      project.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/requesting-data/additional-information-on-the-procedure/costs-of-data-release
+    note: Access is limited to the project duration; the public pages do not say whether downloaded data must be
+      deleted afterwards.
+  no_reidentification:
+    value: 'yes'
+    quote: signed contractual agreements with researchers are in place to ensure that no attempts towards
+      de-identification or commercialization of the raw data will be attempted
+    source: https://doi.org/10.1186/s12883-019-1394-3
+  geographic_restriction:
+    value: 'no'
+    quote: Data and samples are available for researchers worldwide at cost price.
+    source: https://www.personalizedparkinsonproject.com/data-sharing/requesting-data/additional-information-on-the-procedure/costs-of-data-release
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

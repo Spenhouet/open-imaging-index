@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: personalized-parkinson-project
+name: Personalized Parkinson Project (PPP)
+full_name: Personalized Parkinson Project ("Parkinson op Maat")
+summary: >-
+  Brain MRI (structural, diffusion and task fMRI), biospecimens, smartwatch sensor data and deep
+  clinical phenotyping of people with early Parkinson's disease, followed for two years at one Dutch centre to study
+  progression. Shared with approved researchers.
+homepage: https://www.personalizedparkinsonproject.com/data-sharing/available-data/overview-of-the-project-and-available-data/ppp
+doi: 10.1186/s12883-019-1394-3
+# Inclusion started in October 2017 (Bloem et al. 2019). A first data release date was not found.
+year: 2017
+status: active
+creators:
+  - name: Radboud university medical center, Center of Expertise for Parkinson's Disease and Movement Disorders
+    url: https://www.personalizedparkinsonproject.com/
+  - name: Verily Life Sciences (project partner)
+  - name: Donders Institute for Brain, Cognition and Behaviour (MRI acquisition)
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [parkinsons]
+tasks: [longitudinal]
+countries: [NL]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://www.personalizedparkinsonproject.com/data-sharing/requesting-data
+licenses:
+  - license: LicenseRef-PPP-Data-Sharing
+citation:
+  text: >-
+    Bloem BR, Marks WJ Jr, Silva de Lima AL, et al. The Personalized Parkinson Project: examining disease progression
+    through broad biomarkers in early Parkinson's disease. BMC Neurology 19, 160 (2019).
+    doi:10.1186/s12883-019-1394-3. Acknowledge the data as described in the Qualified Researcher Agreement.
+sources:
+  bloem2019:
+    title: Bloem BR et al. 2019, The Personalized Parkinson Project, BMC Neurology
+    url: https://doi.org/10.1186/s12883-019-1394-3
+    kind: paper
+  ppp-available-data:
+    title: PPP Data Sharing website, Personalized Parkinson Project ("Parkinson op Maat") cohort page
+    url: https://www.personalizedparkinsonproject.com/data-sharing/available-data/overview-of-the-project-and-available-data/ppp
+    kind: website
+  ppp-available-data-overview:
+    title: PPP Data Sharing website, Overview of available data (PDF)
+    url: https://www.personalizedparkinsonproject.com/getmedia/c3109c16-70a0-4752-80f8-69907241ab8d/Overview_available_data.pdf
+    kind: website
+  johansson2025:
+    title: Johansson ME et al. 2025, Parkinson's disease progression is shaped by longitudinal changes in cerebral
+      compensation, Brain
+    url: https://doi.org/10.1093/brain/awaf302
+    kind: paper
+  tichelaar2023:
+    title: Tichelaar JG et al. 2023, Impulse control disorder in Parkinson's disease is associated with abnormal
+      frontal value signalling, Brain
+    url: https://doi.org/10.1093/brain/awad162
+    kind: paper
+related: []
+keywords: [Parkinson's disease progression, task fMRI, wearable sensors, biobank, deep phenotyping]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
