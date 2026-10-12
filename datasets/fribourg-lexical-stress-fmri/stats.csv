@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,91,zenodo-7031880-participants,participant_id,"one row per subject; the Zenodo description also states 91 participants, 51 with French and 40 with Swiss-German as native language"
+subjects,condition=healthy,91,zenodo-7031880,record description,students without knowledge of Spanish; no clinical group
+subjects,sex=female,60,zenodo-7031880-participants,sex,
+subjects,sex=male,31,zenodo-7031880-participants,sex,
+subjects,age=10-19,5,zenodo-7031880-participants,age,
+subjects,age=20-29,86,zenodo-7031880-participants,age,
+subjects,sex=female;age=20-29,55,zenodo-7031880-participants,sex; age,
+subjects,sex=male;age=20-29,31,zenodo-7031880-participants,sex; age,
+subjects,contrast=T1w,91,zenodo-7031880-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,91,zenodo-7031880-file-tree,sub-*/func/*.nii.gz,two task runs per subject; the two runs of sub-63 lack the _bold suffix in their file names
+subjects,contrast_set=bold+T1w,91,zenodo-7031880-file-tree,sub-*/,gradient-echo fieldmap images (real/imaginary/magnitude) for all 91 subjects are not counted as a contrast
+subjects,vendor=ge,91,zenodo-7031880,acq_fieldmap-correction.json,GE Discovery MR750
+subjects,field_strength=3,91,zenodo-7031880,acq_fieldmap-correction.json,
+scans,,273,zenodo-7031880-file-tree,sub-*/,sum of the disjoint T1w scans (91) and functional runs (182); fieldmaps not counted
+scans,contrast=T1w,91,zenodo-7031880-file-tree,sub-*/anat/*_T1w.nii.gz,
+scans,contrast=bold,182,zenodo-7031880-file-tree,sub-*/func/*.nii.gz,91 subjects times 2 runs
+age_mean,,22.87,zenodo-7031880-participants,age,
+age_sd,,2.44,zenodo-7031880-participants,age,
+age_median,,23,zenodo-7031880-participants,age,
+age_min,,18,zenodo-7031880-participants,age,
+age_max,,29,zenodo-7031880-participants,age,

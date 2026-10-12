@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fribourg-lexical-stress-fmri
+name: Foreign-language lexical stress fMRI (Fribourg)
+full_name: functional MRI study on the language stress perception in a foreign language
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy young French and Swiss-German speakers judging Spanish word pairs
+  for stress or vowel differences, collected to study the brain basis of hearing word stress in an unknown language.
+homepage: https://zenodo.org/records/7031880
+doi: 10.5281/zenodo.7031880
+year: 2022
+version: '1.0'
+creators:
+  - name: Mouthon M, Annoni JM, Schwab S (University of Fribourg)
+    url: https://zenodo.org/records/7031880
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 20.28
+access:
+  type: open
+  url: https://zenodo.org/records/7031880
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Whole release, per the license field of the Zenodo record.
+  - license: ODC-By-1.0
+    applies_to: Whole release, per README.txt and the License field of dataset_description.json in the release.
+citation:
+  text: >-
+    Schwab S, Mouthon M, Jost LB, Salvadori J, Stefanos-Yakoub I, Ferreira da Silva E, Giroud N, Perriard B, Annoni JM.
+    Neural correlates of lexical stress processing in a foreign free-stress language. Brain and Behavior 13(1), e2854
+    (2023). doi:10.1002/brb3.2854
+sources:
+  zenodo-7031880:
+    title: Zenodo record 7031880 (record metadata, README.txt, dataset_description.json and BIDS sidecar JSON files)
+    url: https://zenodo.org/records/7031880
+    kind: website
+  zenodo-7031880-participants:
+    title: participants.tsv of Zenodo record 7031880 (CC BY 4.0 / ODC-By 1.0)
+    url: https://zenodo.org/records/7031880/files/participants.tsv
+    kind: computed
+  zenodo-7031880-file-tree:
+    title: File list of data.zip in Zenodo record 7031880, read from the archive's central directory
+    url: https://zenodo.org/records/7031880/files/data.zip
+    kind: computed
+  schwab2023:
+    title: >-
+      Schwab et al. 2023, Neural correlates of lexical stress processing in a foreign free-stress language, Brain and
+      Behavior
+    url: https://doi.org/10.1002/brb3.2854
+    kind: paper
+related: []
+keywords: [lexical stress, speech perception, prosody, stress deafness, second language, Spanish, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
