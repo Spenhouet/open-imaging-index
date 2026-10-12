@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dynamic-passive-threat
+name: Dynamic_Passive_Threat
+full_name: Dynamic threat-of-shock fMRI (Dynamic Threat Processing)
+summary: >-
+  Task fMRI with T1- and T2-weighted brain MRI of healthy adults watching two moving circles whose collision triggers
+  an electric shock, collected to study how threat proximity, direction (approach or retreat) and speed shape brain
+  responses during anticipation of threat.
+homepage: https://openneuro.org/datasets/ds002320
+doi: 10.18112/openneuro.ds002320.v1.1.0
+# CHANGES file: 1.0.0 (2019-11-14) initial snapshot, 1.1.0 (2019-12-13) added sub-16 and sub-44.
+year: 2019
+version: 1.1.0
+creators:
+  - name: Laboratory of Cognition and Emotion, University of Maryland (Pessoa L, Meyer C, Padmala S)
+    url: http://lce.umd.edu
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 138.51
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002320
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Meyer C, Padmala S, Pessoa L. Dynamic Threat Processing. Journal of Cognitive Neuroscience 31(4), 522-542 (2019).
+    doi:10.1162/jocn_a_01363
+sources:
+  meyer2019:
+    title: Meyer, Padmala and Pessoa 2019, Dynamic Threat Processing, Journal of Cognitive Neuroscience
+    url: https://doi.org/10.1162/jocn_a_01363
+    kind: paper
+  openneuro-ds002320-v1-1-0:
+    title: OpenNeuro ds002320 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds002320/versions/1.1.0
+    kind: website
+  ds002320-file-tree:
+    title: File tree of ds002320 snapshot 1.1.0 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://openneuro.org/datasets/ds002320/versions/1.1.0/file-display
+    kind: computed
+keywords:
+  [
+    threat of shock,
+    anticipatory anxiety,
+    task fMRI,
+    multiband EPI,
+    skin conductance,
+    amygdala,
+    anterior insula,
+    healthy adults,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

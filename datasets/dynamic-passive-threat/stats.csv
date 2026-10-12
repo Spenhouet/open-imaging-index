@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,82,openneuro-ds002320-v1-1-0,README,82 subject folders in snapshot 1.1.0; the paper analyses 85 of 93 recruited participants
+subjects,condition=healthy,82,openneuro-ds002320-v1-1-0,README,healthy adult volunteers
+subjects,contrast=T1w,82,ds002320-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T2w,82,ds002320-file-tree,,subjects with a *_T2w.nii.gz
+subjects,contrast=bold,82,ds002320-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w+T2w,82,ds002320-file-tree,,double-echo fieldmaps not counted as a contrast
+scans,,644,ds002320-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below; 246 fieldmap NIfTI files not included"
+scans,contrast=T1w,82,ds002320-file-tree,,one per subject
+scans,contrast=T2w,82,ds002320-file-tree,,one per subject
+scans,contrast=bold,480,ds002320-file-tree,,"task-circles runs: 71 subjects with 6, 10 with 5 and 1 with 4"
+subjects,field_strength=3,82,meyer2019,Methods: MRI data acquisition,
+subjects,vendor=siemens,82,meyer2019,Methods: MRI data acquisition,3T Siemens TRIO with a 32-channel head coil
+subjects,country=US,82,meyer2019,Methods: Participants,recruited from the University of Maryland community
