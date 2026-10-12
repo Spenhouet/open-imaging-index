@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bilingual-resting-state
+name: Monolinguals and Early and Late Bilinguals (ds001747)
+full_name: Exploring the Resting State Neural Activity of Monolinguals and Late and Early Bilinguals
+summary: >-
+  Brain MRI of young healthy adults at Brigham Young University in three language groups (monolinguals, early and late
+  bilinguals), with one T1w scan and one 12-minute multiband resting-state fMRI run per participant.
+homepage: https://openneuro.org/datasets/ds001747
+doi: 10.18112/openneuro.ds001747.v1.1.0
+year: 2019
+updated: 2023
+version: 1.1.0
+status: active
+creators:
+  - name: Brigham Young University MRI Research Facility (Gold CE, Howell AL, Burdis J, Kirwan CB, Thompson GL)
+    url: https://openneuro.org/datasets/ds001747
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 64.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001747
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Gold CE, Howell AL, Burdis J, Kirwan CB, Thompson GL. Exploring the Resting State Neural Activity of Monolinguals
+    and Late and Early Bilinguals. OpenNeuro, version 1.1.0 (2023). doi:10.18112/openneuro.ds001747.v1.1.0
+sources:
+  openneuro-ds001747-v110:
+    title: OpenNeuro ds001747 snapshot 1.1.0 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds001747/versions/1.1.0
+    kind: website
+  ds001747-participants:
+    title: participants.tsv of ds001747 snapshot 1.1.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001747/blob/1.1.0/participants.tsv
+    kind: computed
+  ds001747-file-tree:
+    title: File tree and JSON sidecars of ds001747 snapshot 1.1.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds001747/tree/1.1.0
+    kind: computed
+related: [bilingualism-and-the-brain, late-unbalanced-bilinguals]
+keywords: [bilingualism, second language, age of acquisition, resting-state fMRI, default mode network, multiband]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
