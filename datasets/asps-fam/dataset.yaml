@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: asps-fam
+name: Austrian Stroke Prevention Family Study (ASPS-Fam)
+full_name: Austrian Stroke Prevention Family Study
+summary: >-
+  Brain MRI, including diffusion and R2* iron mapping, and cardiac CT from stroke- and dementia-free adults and their
+  relatives in Graz, collected to study how vascular risk factors and family history affect brain structure and
+  vessels. Images on request only.
+homepage: https://doi.org/10.1111/ene.70094
+# Year of the earliest study paper used here; the images have no public release.
+year: 2022
+creators:
+  - name: Department of Neurology, Medical University of Graz
+    url: https://ror.org/02n0bts35
+modalities: [MR, CT]
+contrasts: [T1w, T2w, FLAIR, MEGRE, dwi]
+anatomy: [brain, heart]
+conditions: [healthy]
+tasks: [longitudinal]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1111/ene.70094
+  note: >-
+    Hofer et al. 2022 and Kneihsl et al. 2024 state that the study data are available from the corresponding author
+    on reasonable request. Leitner et al. 2025 published only derived free-water and DTI values of 188 participants on
+    Mendeley Data (CC BY 4.0); no images are public.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the images. The CC BY 4.0 license of the Mendeley Data table
+      (doi:10.17632/j8bsyyxzvn.1) covers only the derived diffusion values, and the CC BY licenses of the articles
+      cover their text.
+citation:
+  text: >-
+    Leitner M, Pirpamer L, Hofer E, Ropele S, Pasternak O, Schmidt R, Koini M. Free Water as a Marker of Early Small
+    Vessel Disease in Healthy Aging. European Journal of Neurology 32(3): e70094 (2025). doi:10.1111/ene.70094
+sources:
+  leitner2025:
+    title: Leitner et al. 2025, European Journal of Neurology 32(3) e70094
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11880618/
+    kind: paper
+  hofer2022:
+    title: Hofer et al. 2022, Aging 14(16) 6415-6426
+    url: https://doi.org/10.18632/aging.204212
+    kind: paper
+  kneihsl2024:
+    title: Kneihsl et al. 2024, Scientific Reports 14 4664
+    url: https://doi.org/10.1038/s41598-024-55305-0
+    kind: paper
+  leitner2024-mendeley:
+    title: Free water in healthy aging, Mendeley Data v1 (derived values)
+    url: https://data.mendeley.com/datasets/j8bsyyxzvn/1
+    kind: data
+related: []
+keywords:
+  [
+    population cohort,
+    family study,
+    cerebral small vessel disease,
+    white matter hyperintensities,
+    free water,
+    DTI,
+    R2* relaxometry,
+    brain iron,
+    heritability,
+    coronary artery calcification,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
