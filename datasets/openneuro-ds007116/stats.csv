@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,132,sevchik2025,Abstract,132 subject folders in the snapshot 1.0.6 file tree; 132 rows in participants.tsv
+subjects,sex=female,65,ds007116-participants,sex,sex F
+subjects,sex=male,67,ds007116-participants,sex,sex M
+subjects,age=0-9,23,ds007116-participants,age,age in years at baseline intake
+subjects,age=10-19,109,ds007116-participants,age,age in years at baseline intake
+subjects,condition=healthy,36,ds007116-participants,study_group,study_group TD/NC (typically developing comparator)
+subjects,condition=adhd,68,ds007116-participants,dx_adhd,ADHD diagnosis at timepoint 1; the ADHD study group itself has 27 participants
+subjects,condition=clinical_high_risk_psychosis,61,ds007116-participants,dx_prodromal,prodromal or subthreshold psychosis spectrum disorder at timepoint 1
+subjects,condition=psychotic_disorder,8,ds007116-participants,dx_psychosis,threshold psychosis spectrum disorder at timepoint 1
+subjects,condition=depression,15,ds007116-participants,dx_mdd,major depressive disorder at timepoint 1
+subjects,condition=bipolar_disorder,3,ds007116-participants,dx_bp,bipolar disorder at timepoint 1
+subjects,contrast=T1w,132,ds007116-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,132,ds007116-file-tree,sub-*/ses-*/anat/*_T2w.nii.gz,
+subjects,contrast=bold,127,ds007116-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast=dwi,128,ds007116-file-tree,sub-*/ses-*/dwi/*_dwi.nii.gz,
+subjects,contrast=asl,116,ds007116-file-tree,sub-*/ses-*/perf/*_asl.nii.gz,
+subjects,contrast=MEGRE,113,ds007116-file-tree,sub-*/ses-*/anat/*_MEGRE.nii.gz,
+subjects,contrast_set=asl+bold+dwi+MEGRE+T1w+T2w,113,ds007116-file-tree,"anat, func, dwi and perf folders","field maps and M0 scans not counted as contrasts"
+subjects,contrast_set=bold+dwi+T1w+T2w,11,ds007116-file-tree,"anat, func, dwi and perf folders",
+subjects,contrast_set=asl+bold+dwi+T1w+T2w,3,ds007116-file-tree,"anat, func, dwi and perf folders",
+subjects,contrast_set=T1w+T2w,4,ds007116-file-tree,"anat, func, dwi and perf folders",
+subjects,contrast_set=dwi+T1w+T2w,1,ds007116-file-tree,"anat, func, dwi and perf folders",
+studies,,225,sevchik2025,Abstract,"225 sub-*/ses-* folders with images: ses-1: 132, ses-2: 73, ses-3: 20"
+scans,,4200,ds007116-file-tree,sub-*/ses-*/*/*.nii.gz,"all raw image files: 223 T1w, 444 T2w, 623 bold, 219 dwi, 188 asl, 188 m0scan, 1448 MEGRE echo/part files and 867 epi field maps"
+scans,contrast=T1w,223,ds007116-file-tree,*_T1w.nii.gz,
+scans,contrast=T2w,444,ds007116-file-tree,*_T2w.nii.gz,normalized and non-normalized T2w images
+scans,contrast=bold,623,ds007116-file-tree,*_bold.nii.gz,resting-state and n-back runs
+scans,contrast=dwi,219,ds007116-file-tree,*_dwi.nii.gz,
+scans,contrast=asl,188,ds007116-file-tree,*_asl.nii.gz,
+scans,contrast=MEGRE,1448,ds007116-file-tree,*_MEGRE.nii.gz,one file per echo and per magnitude or phase part
+age_min,,8,sevchik2025,Abstract,age at enrollment
+age_max,,16,sevchik2025,Abstract,age at enrollment
