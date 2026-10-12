@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,80,scidb-dmh-00825,Description,retrospectively enrolled patients with unilateral temporal lobe necrosis after radiotherapy for nasopharyngeal carcinoma
+subjects,contrast=dwi,80,scidb-dmh-00825,Description,all patients had multi-model diffusion MRI; ADC and the other models were fitted from the same diffusion data
+subjects,condition=radiation_necrosis,80,scidb-dmh-00825,Description,unilateral temporal lobe necrosis
+subjects,condition=nasopharyngeal_carcinoma,80,scidb-dmh-00825,Description,all patients were treated with radiotherapy for nasopharyngeal carcinoma

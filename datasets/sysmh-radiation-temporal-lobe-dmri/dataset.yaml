@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sysmh-radiation-temporal-lobe-dmri
+name: Radiation Temporal Lobe Injury Diffusion MRI (SYSMH)
+full_name: >-
+  Comparative Study of Multi-Model Diffusion Magnetic Resonance Imaging in the Diagnosis of Radiation-Induced Temporal
+  Lobe Injury
+summary: >-
+  Diffusion MRI of patients with unilateral temporal lobe necrosis after radiotherapy for nasopharyngeal carcinoma,
+  used to compare ADC, DTI, DKI, MAP-MRI and NODDI parameters between the injured and the healthy side. Only a table
+  of per-lobe parameter values is public; the scans are not shared.
+homepage: https://www.scidb.cn/en/detail?dataSetId=OA_d4a63ec75d184ca3b3c34f9c79f27ad5
+doi: 10.57760/sciencedb.dmh.00825
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Department of Radiology, Sun Yat-sen Memorial Hospital, Sun Yat-sen University
+  - name: Minhui Liu, Xinyin Chen, Yanru Pei, Lixiang Wang, Zhuoheng Yan, Weifeng Su, Yun Su, Yusong Jiang
+species: human
+modalities: [MR]
+contrasts: [dwi, ADC]
+anatomy: [brain]
+conditions: [radiation_necrosis, nasopharyngeal_carcinoma]
+countries: [CN]
+access:
+  type: not_shared
+  url: https://www.scidb.cn/en/detail?dataSetId=OA_d4a63ec75d184ca3b3c34f9c79f27ad5
+  note: >-
+    The Science Data Bank record holds one results table (6958 bytes) with diffusion parameter values (DKI radial
+    kurtosis, DTI radial diffusivity, MAP-MRI non-Gaussianity anisotropy, NODDI intracellular volume fraction and ADC)
+    for the affected and the contralateral temporal lobe of each patient. No images are deposited and no route to
+    them is given.
+licenses:
+  - license: CC0-1.0
+    applies_to: Results table on Science Data Bank
+    url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Patients' MRI scans, which are not shared
+    note: No release or terms are stated for the scans themselves.
+citation:
+  text: >-
+    Liu M, Chen X, Pei Y, Wang L, Yan Z, Su W, Su Y, Jiang Y. Comparative Study of Multi-Model Diffusion Magnetic
+    Resonance Imaging in the Diagnosis of Radiation-Induced Temporal Lobe Injury. V1. Science Data Bank, 2026.
+    doi:10.57760/sciencedb.dmh.00825
+sources:
+  scidb-dmh-00825:
+    title: Science Data Bank record 10.57760/sciencedb.dmh.00825 (V1), its description, file listing and DataCite metadata
+    url: https://doi.org/10.57760/sciencedb.dmh.00825
+    kind: website
+related: []
+keywords: [radiation-induced brain injury, temporal lobe necrosis, nasopharyngeal carcinoma, radiotherapy, DKI, MAP-MRI, NODDI, DTI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

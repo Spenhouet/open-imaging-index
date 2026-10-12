@@ -166,6 +166,13 @@ terms:
       mappings: { ncit: 'NCIT:C35549' }
     }
   - {
+      id: radiation_necrosis,
+      label: Radiation necrosis,
+      description: 'Tissue necrosis caused by radiotherapy, e.g. temporal lobe necrosis after radiotherapy for nasopharyngeal carcinoma. MONDO and HPO have no matching term, so the NCIt code is given.',
+      synonyms: [radionecrosis, radiation-induced brain injury, temporal lobe necrosis],
+      mappings: { ncit: 'NCIT:C94479' }
+    }
+  - {
       id: germinal_matrix_hemorrhage,
       label: Germinal matrix-intraventricular hemorrhage,
       parent: intracranial_hemorrhage,
