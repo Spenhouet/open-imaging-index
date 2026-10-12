@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,102,gao2025,Participant recruitment,HC dataset of the three-repository MND-MFHC release (Data Records)
+subjects,condition=healthy,102,gao2025,Participant recruitment,recruited from local communities
+subjects,sex=female,65,gao2025,Participant recruitment,
+subjects,modality=MR,102,scidb-10872,Description,
+age_min,,3,gao2025,Participant recruitment,
+age_max,,84,gao2025,Participant recruitment,
+age_mean,,43.58,gao2025,Participant recruitment,
+age_sd,,19.75,gao2025,Participant recruitment,

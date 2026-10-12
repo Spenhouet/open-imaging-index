@@ -51,7 +51,7 @@ sources:
     title: Science Data Bank record 10.57760/sciencedb.10796 (V2), its description and DataCite metadata
     url: https://doi.org/10.57760/sciencedb.10796
     kind: website
-related: []
+related: [mnd-mfhc-healthy-controls]
 keywords: [facial paralysis, Bell's palsy, facial nerve, resting-state fMRI, diffusion MRI, arterial spin labeling, Chinese Color Nest Project, MND-MFHC]
 verified:
   date: '2026-10-11'
