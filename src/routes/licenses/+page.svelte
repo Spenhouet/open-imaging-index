@@ -18,6 +18,9 @@
         (data.usage[b.id] ?? 0) - (data.usage[a.id] ?? 0)
     )
   );
+  // Header cells stay below the site header (h-14) while the table scrolls past. The inset shadow draws the bottom rule,
+  // since a row border does not move with sticky cells.
+  const head = 'sticky top-14 bg-card shadow-[inset_0_-1px_0_var(--border)]';
 </script>
 
 <Seo
@@ -72,20 +75,24 @@
     {/each}
   </ul>
 
-  <div class="mt-4 hidden overflow-x-auto surface lg:block">
+  <!-- The table fits from lg up, so the wrapper clips instead of scrolling: a scrolling wrapper would keep the
+       header row from sticking to the page. -->
+  <div class="mt-4 hidden overflow-clip surface lg:block">
     <table class="w-full text-sm">
       <thead>
-        <tr class="border-b border-border">
-          <th class="sticky left-0 z-10 w-full min-w-56 bg-card px-4 py-3 text-left align-bottom font-semibold">License</th>
+        <tr>
+          <th class="{head} left-0 z-30 w-full min-w-56 px-4 py-3 text-left align-bottom font-semibold">License</th>
           {#each rules as r (r.id)}
-            <th class="h-36 w-9 px-1 align-bottom">
+            <th class="{head} z-20 h-36 w-9 px-1 align-bottom">
               <span
                 class="block w-6 rotate-180 text-left text-xs font-medium whitespace-nowrap text-muted-foreground [writing-mode:vertical-rl]"
                 title={r.question}>{r.label}</span
               >
             </th>
           {/each}
-          <th class="w-16 px-3 py-3 text-right align-bottom text-xs font-medium whitespace-nowrap text-muted-foreground">Datasets</th>
+          <th class="{head} z-20 w-16 px-3 py-3 text-right align-bottom text-xs font-medium whitespace-nowrap text-muted-foreground"
+            >Datasets</th
+          >
         </tr>
       </thead>
       <tbody>
