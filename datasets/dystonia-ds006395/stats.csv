@@ -1,0 +1,39 @@
+measure,by,value,source,where,note
+subjects,,91,ds006395-participants,participant_id,"91 rows and 91 subject folders; README.txt states 112 enrolled and 20 excluded (4 incidental findings, 16 artifacts)"
+subjects,condition=healthy,37,ds006395-participants,group (HC),README.txt also states 37 healthy controls
+subjects,condition=cervical_dystonia,25,ds006395-participants,group (CD),README.txt also states 25
+subjects,condition=upper_limb_dystonia,29,ds006395-participants,group (ULD),README.txt also states 29
+subjects,sex=female,59,ds006395-participants,sex,
+subjects,sex=male,32,ds006395-participants,sex,two rows coded lowercase m
+subjects,condition=healthy;sex=female,20,ds006395-participants,group and sex,
+subjects,condition=healthy;sex=male,17,ds006395-participants,group and sex,
+subjects,condition=cervical_dystonia;sex=female,19,ds006395-participants,group and sex,
+subjects,condition=upper_limb_dystonia;sex=female,20,ds006395-participants,group and sex,cells below 10 left out
+subjects,age=10-19,2,ds006395-participants,age,age at acquisition
+subjects,age=20-29,8,ds006395-participants,age,age at acquisition
+subjects,age=30-39,24,ds006395-participants,age,age at acquisition
+subjects,age=40-49,14,ds006395-participants,age,age at acquisition
+subjects,age=50-59,27,ds006395-participants,age,age at acquisition
+subjects,age=60-69,13,ds006395-participants,age,age at acquisition
+subjects,age=70-79,3,ds006395-participants,age,age at acquisition
+subjects,condition=healthy;age=30-39,13,ds006395-participants,group and age,cells below 10 left out
+subjects,condition=upper_limb_dystonia;age=50-59,12,ds006395-participants,group and age,cells below 10 left out
+subjects,sex=female;age=30-39,15,ds006395-participants,sex and age,
+subjects,sex=female;age=50-59,22,ds006395-participants,sex and age,cells below 10 left out
+age_min,,19,ds006395-participants,age,
+age_max,,78,ds006395-participants,age,
+age_mean,,46.18,ds006395-participants,age,
+age_sd,,13.88,ds006395-participants,age,sample standard deviation
+age_median,,48,ds006395-participants,age,
+scans,,453,ds006395-file-tree,sub-*/*/*.nii.gz,"91 T1w, 90 diffusion series, 91 reverse phase-encoding b0 images, 91 finger-tapping and 90 resting-state BOLD runs"
+scans,contrast=T1w,91,ds006395-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=dwi,181,ds006395-file-tree,dwi/*_dwi.nii.gz,90 diffusion series plus 91 single-volume b0 images with reversed phase encoding (dir-PA)
+scans,contrast=bold,181,ds006395-file-tree,func/*_bold.nii.gz,91 finger-tapping and 90 resting-state runs
+subjects,contrast=T1w,91,ds006395-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=dwi,90,ds006395-file-tree,dwi/*_dwi.nii.gz,subjects with the diffusion series; sub-P00790 has only the reverse phase-encoding b0
+subjects,contrast=bold,91,ds006395-file-tree,func/*_bold.nii.gz,sub-P00927 has no resting-state run
+subjects,contrast_set=bold+dwi+T1w,90,ds006395-file-tree,sub-*/,
+subjects,contrast_set=bold+T1w,1,ds006395-file-tree,sub-*/,
+subjects,field_strength=3,91,openneuro-ds006395-v1-0-8,README.txt,Siemens MAGNETOM Prisma 3 T with a 64-channel head coil
+subjects,vendor=siemens,91,openneuro-ds006395-v1-0-8,README.txt,Siemens MAGNETOM Prisma 3 T
+subjects,country=BR,91,openneuro-ds006395-v1-0-8,README.txt and *_T1w.json InstitutionAddress,all data collected at Hospital Israelita Albert Einstein
