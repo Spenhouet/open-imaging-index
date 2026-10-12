@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,88,ryu2017,Results,cancer patients in the medical oncology ICU who had brain MRI for suspected cerebral infarction
+subjects,condition=cancer,88,ryu2017,Table 1,33 solid tumors and 55 hematologic malignancies
+subjects,condition=ischemic_stroke,43,ryu2017,Table 2,cerebral infarction diagnosed on DWI and ADC
+subjects,condition=brain_metastasis,7,ryu2017,Table 2,central nervous system metastasis among patients without infarction
+subjects,country=KR,88,ryu2017,Methods,"single center, Samsung Medical Center, Seoul"
+subjects,sex=male,51,ryu2017,Table 1,
+subjects,sex=female,37,dataverse-ssigrv-table,Sex,88 patient rows
+subjects,condition=ischemic_stroke;sex=male,26,ryu2016,Table 2,
+subjects,age=20-29,5,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=30-39,6,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=40-49,7,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=50-59,14,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=60-69,35,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=70-79,21,dataverse-ssigrv-table,Age,88 patient rows
+subjects,age=50-59;sex=male,11,dataverse-ssigrv-table,Age and Sex,88 patient rows
+subjects,age=60-69;sex=male,21,dataverse-ssigrv-table,Age and Sex,88 patient rows
+subjects,age=60-69;sex=female,14,dataverse-ssigrv-table,Age and Sex,88 patient rows
+subjects,age=70-79;sex=female,12,dataverse-ssigrv-table,Age and Sex,88 patient rows
+age_min,,25,dataverse-ssigrv-table,Age,88 patient rows
+age_median,,64,dataverse-ssigrv-table,Age,"88 patient rows; the papers report a median of 63"
+age_mean,,59.7,dataverse-ssigrv-table,Age,88 patient rows
+age_max,,78,dataverse-ssigrv-table,Age,88 patient rows
