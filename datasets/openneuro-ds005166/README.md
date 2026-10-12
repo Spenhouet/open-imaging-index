@@ -10,7 +10,7 @@ The paper analysed 200 youth aged 8 to 20 referred with an anxiety disorder, dis
 (DMDD), ADHD, irritability below the DMDD threshold, or no diagnosis. Of these, 160 agreed to public sharing and are
 in the release, with age, sex, race, ethnicity, parental education and income. Diagnostic group is not part of the
 shared participant table, so the group sizes in the paper (for example 56 with ADHD) refer to all 200, not to the
-release. MRI was optional: the paper reports 77 youth with a flanker fMRI scan, and 39 of the shared participants have
+release. MRI was optional: the paper reports 77 youth with a flanker fMRI scan. The release has 160 participants, of whom 39 were scanned and have
 images. Parent-reported anxiety (SCARED), irritability (ARI) and ADHD (CBRS) items, CALM-IT measures and lab task
 data, including anti-saccade eye tracking, are included for those who completed them.
 
