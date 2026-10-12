@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-DecNef-DRMD-Data-Use-Terms
+name: DecNef-Project Consortium Application Form for Data Usage, DecNef Realtime MRI Database (DRMD)
+short_name: DecNef DRMD Terms
+url: https://bicr-resource.atr.jp/var/www/webapp/bicrresource/bicrresource/staticfiles/pdf/ApplicationForm_DataUsage_DRMD.pdf
+version: 'ApplicationForm_DataUsage_DRMD.pdf (4 pages), read 2026-10-12'
+summary: >-
+  Signed application approved by ATR, for principal investigators or researchers named by one. The data may be used
+  for scientific research, technology development and education at academic, research, government or commercial
+  entities, may not be redistributed and must be kept password protected. ATR must be told about publications.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    quote: I will use the DRMD exclusively for the purposes of scientific research, technology development, and
+      education under the auspices of an academic, research, government or commercial entity.
+    note: >-
+      Commercial entities may use the data, but only for scientific research, technology development and education.
+      Selling or other commercial uses are not addressed.
+  product_validation:
+    value: unspecified
+    note: The form allows technology development but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The form does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The form does not mention derived data.
+  publication:
+    value: conditional
+    quote: I will contact ATR by email when I publish manuscripts, conference presentations, or other publicly
+      available documents.
+    note: Only study-specific subject IDs may be used when publishing data of individual subjects.
+  redistribute_original:
+    value: 'no'
+    quote: I will not redistribute the DRMD.
+  redistribute_derivatives:
+    value: unspecified
+    note: The form forbids redistributing the data but does not mention derived data.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: I will cite DecNef DR using the expressions given on the DRMD website
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: I, the undersigned, understand that the DecNef-Project Consortium requires that the following Data Use Terms
+      be signed, submitted and approved before applicants may receive access to the Data Repository
+    note: Applicants who are not principal investigators also need an application from their PI.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+    note: ATR must be informed of publications by email, but no review before publication is required.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: unspecified
+    note: >-
+      The form requires secure storage and study-specific subject IDs in publications but does not forbid attempts to
+      identify participants.
+  geographic_restriction:
+    value: 'no'
+    note: The terms name no countries or regions.
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
