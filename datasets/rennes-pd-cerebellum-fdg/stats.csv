@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,90,riou2021,Abstract (Methods),patients with Parkinson's disease included in the analysis; 27 further patients were excluded (supplement Table e-1)
+subjects,condition=parkinsons,90,riou2021,Abstract (Methods),
+subjects,tracer=fdg,90,riou2021,Abstract (Methods),resting-state 18F-FDG PET
+subjects,modality=PT,90,riou2021,Abstract (Methods),

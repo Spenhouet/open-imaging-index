@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: rennes-pd-cerebellum-fdg
+name: Cerebellum in Parkinson's disease FDG-PET (Rennes)
+full_name: 'Functional role of the cerebellum in Parkinson disease: a PET study (Riou et al. 2021)'
+summary: >-
+  Resting-state FDG-PET brain scans of patients with Parkinson's disease, analysed to relate cerebellar glucose
+  metabolism to motor, cognitive and psychiatric scores. The images are not public; the data deposit holds only the
+  supplementary tables and figures.
+homepage: https://doi.org/10.5061/dryad.djh9w0vxg
+doi: 10.5061/dryad.djh9w0vxg
+# Year of the paper; the deposit (2022) contains no images.
+year: 2021
+creators:
+  - name: Behaviour and Basal Ganglia Research Unit, University of Rennes and Rennes University Hospital (Riou A, Robert G et al.)
+    url: https://ror.org/05qec5a53
+modalities: [PT]
+tracers: [fdg]
+anatomy: [brain]
+conditions: [parkinsons]
+tasks: [regression]
+access:
+  type: not_shared
+  url: https://doi.org/10.1212/WNL.0000000000012036
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Dryad and Zenodo deposit (CC0) holds only the supplementary document of the paper, with no images or
+      subject-level data. No terms or request process for the PET images were found in the deposit. The paper's data
+      availability statement could not be opened in this check.
+citation:
+  text: >-
+    Riou A, Houvenaghel JF, Dondaine T, Drapier S, Sauleau P, Drapier D, Duprez J, Guillery M, Le Jeune F, Verin M,
+    Robert G. Functional Role of the Cerebellum in Parkinson Disease: A PET Study. Neurology 96(23) (2021).
+    doi:10.1212/WNL.0000000000012036
+sources:
+  riou2021:
+    title: Riou et al. 2021, Neurology, abstract (PMID 33910940)
+    url: https://doi.org/10.1212/WNL.0000000000012036
+    kind: paper
+  dryad-riou2021:
+    title: 'Dryad deposit: Data from Functional role of the cerebellum in Parkinson''s disease, supplementary data'
+    url: https://doi.org/10.5061/dryad.djh9w0vxg
+    kind: data
+related: []
+keywords: [Parkinson's disease, cerebellum, FDG-PET, glucose metabolism, cognition, motor symptoms]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
