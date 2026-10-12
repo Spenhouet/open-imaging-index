@@ -21,6 +21,13 @@ terms:
   - { id: PDw, label: Proton density weighted, group: MR, mappings: { bids: PDw } }
   - { id: STIR, label: STIR, group: MR, description: Short tau inversion recovery (fat-suppressed), synonyms: [T2 STIR] }
   - {
+      id: WMn,
+      label: White-matter-nulled,
+      group: MR,
+      description: 'Inversion-recovery T1-weighted image with the inversion time set to null white matter, giving high contrast between deep gray matter nuclei such as the thalamic nuclei',
+      synonyms: [white matter nulled, WMn-MPRAGE, FGATIR]
+    }
+  - {
       id: dixon,
       label: Dixon fat-water,
       group: MR,

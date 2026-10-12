@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,55,manjon2026,"Materials and methods, Dataset description",young healthy volunteers
+subjects,condition=healthy,55,manjon2026,"Materials and methods, Dataset description",
+subjects,contrast=T1w,55,manjon2026,"Materials and methods, Dataset description","0.6 mm isotropic, matrix 256 x 376 x 368"
+subjects,contrast=T2w,55,manjon2026,"Materials and methods, Dataset description","0.6 mm isotropic, matrix 256 x 376 x 368"
+subjects,contrast=WMn,55,manjon2026,"Materials and methods, Dataset description","0.4 mm isotropic, matrix 448 x 548 x 400"
+subjects,contrast_set=T1w+T2w+WMn,55,manjon2026,"Materials and methods, Dataset description",each subject had all three contrasts
+subjects,vendor=canon,55,manjon2026,"Materials and methods, Dataset description",Vantage Galan 3T/ZGO
+subjects,field_strength=3,55,manjon2026,"Materials and methods, Dataset description",
+subjects,country=FR,55,manjon2026,"Materials and methods, Dataset description",Bordeaux Hospital
