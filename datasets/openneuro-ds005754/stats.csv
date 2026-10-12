@@ -26,4 +26,4 @@ subjects,condition=generalized_anxiety_disorder,46,ds005754-file-tree,phenotype/
 subjects,condition=social_anxiety_disorder,32,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_SOCIAL_PHOBIA),K-SADS-PL flags; a subject can carry several
 subjects,condition=separation_anxiety_disorder,19,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_SAD),K-SADS-PL flags; a subject can carry several
 subjects,condition=adhd,26,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_ADHD),K-SADS-PL flags; a subject can carry several
-subjects,condition=dmdd,8,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_DMDD),K-SADS-PL flags; a subject can carry several
+subjects,condition=disruptive_mood_dysregulation_disorder,8,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_DMDD),K-SADS-PL flags; a subject can carry several

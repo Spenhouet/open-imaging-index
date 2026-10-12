@@ -201,12 +201,6 @@ terms:
       parent: anxiety_disorder,
       mappings: { mondo: 'MONDO:0001098' }
     }
-  - id: dmdd
-    label: Disruptive mood dysregulation disorder
-    description: >-
-      Childhood disorder of severe, chronic irritability with frequent temper outbursts (DSM-5). No MONDO or HPO term
-      exists.
-    synonyms: [DMDD]
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
   - {
       id: functional_neurological_disorder,
