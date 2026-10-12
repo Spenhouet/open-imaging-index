@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,77,guo2025,Methods: Participants,
+subjects,modality=MR,77,ds005455-file-tree,sub-*/ folders,
+subjects,contrast=T1w,77,ds005455-file-tree,sub-*/anat/*_T1w.nii.gz,one defaced T1-weighted scan per subject
+subjects,contrast=bold,77,ds005455-file-tree,sub-*/func/*_bold.nii.gz,"two language control and two cognitive control runs per subject"
+subjects,contrast_set=bold+T1w,77,ds005455-file-tree,sub-*/anat and sub-*/func,
+subjects,condition=healthy,77,guo2025,Methods: Participants,no reported psychiatric or neurological disorders
+subjects,sex=female,43,ds005455-file-tree,participants.tsv: sex,"the paper states 34 females; participants.tsv codes 43 F and 34 M"
+subjects,sex=male,34,ds005455-file-tree,participants.tsv: sex,"the paper states 34 females; participants.tsv codes 43 F and 34 M"
+subjects,age=10-19,6,ds005455-file-tree,participants.tsv: age,one subject is coded 18 although the paper gives a range of 19 to 30
+subjects,age=20-29,70,ds005455-file-tree,participants.tsv: age,
+subjects,age=30-39,1,ds005455-file-tree,participants.tsv: age,
+subjects,field_strength=3,77,guo2025,Methods: Neuroimaging data collection,
+subjects,vendor=siemens,77,guo2025,Methods: Neuroimaging data collection,Siemens Trio
+subjects,country=CN,77,guo2025,Methods: Neuroimaging data collection,MRI Center of Beijing Normal University
+scans,,385,ds005455-file-tree,sub-*/*/*.nii.gz,77 T1-weighted and 308 BOLD runs
+scans,contrast=bold,308,ds005455-file-tree,sub-*/func/*_bold.nii.gz,
+scans,contrast=T1w,77,ds005455-file-tree,sub-*/anat/*_T1w.nii.gz,
+age_mean,,22.2,guo2025,Methods: Participants,
+age_sd,,2.2,guo2025,Methods: Participants,
+age_min,,19,guo2025,Methods: Participants,
+age_max,,30,guo2025,Methods: Participants,

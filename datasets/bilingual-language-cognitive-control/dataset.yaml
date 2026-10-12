@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bilingual-language-cognitive-control
+name: Bilingual Language and Cognitive Control fMRI (ds005455)
+full_name: An fMRI dataset for investigating language control and cognitive control in bilinguals
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy Chinese-English bilingual young adults, collected to compare the
+  neural basis of switching between languages with switching between response rules, with behavioral and language
+  proficiency scores.
+homepage: https://openneuro.org/datasets/ds005455
+doi: 10.18112/openneuro.ds005455.v1.1.6
+# First OpenNeuro snapshot 1.0.0 on 5 September 2024; latest snapshot 1.1.6 on 1 June 2025.
+year: 2024
+updated: 2025
+version: 1.1.6
+status: active
+creators:
+  - name: >-
+      Tingting Guo, Xuedi Liu, Mo Chen, Yongben Fu and Taomei Guo; the first and last author at the State Key
+      Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University
+    url: https://openneuro.org/datasets/ds005455
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+# OpenNeuro snapshot 1.1.6 summary: 8926687896 bytes in 1163 files.
+size_gb: 8.93
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005455/versions/1.1.6
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005455/versions/1.1.6
+    note: >-
+      dataset_description.json of snapshot 1.1.6 states "License" CC0. Its Disclaimer field adds: "Although OpenNeuro
+      requires CC0 licensing, users are ethically expected to comply with CC BY-NC-ND terms as specified in our
+      publication [https://doi.org/10.1038/s41597-025-05245-9]. Commercial use prohibited." The data descriptor
+      article itself is published under CC BY-NC-ND 4.0. The CC0 dedication is the license of record; the
+      non-commercial expectation is a stated request of the authors.
+citation:
+  text: >-
+    Guo T, Liu X, Chen M, Fu Y, Guo T. An fMRI dataset for investigating language control and cognitive control in
+    bilinguals. Scientific Data 12, 889 (2025). doi:10.1038/s41597-025-05245-9
+  bibtex: |
+    @article{guo2025,
+      title={An fMRI dataset for investigating language control and cognitive control in bilinguals},
+      author={Guo, Tingting and Liu, Xuedi and Chen, Mo and Fu, Yongben and Guo, Taomei},
+      journal={Scientific Data},
+      volume={12},
+      pages={889},
+      year={2025},
+      doi={10.1038/s41597-025-05245-9}
+    }
+sources:
+  guo2025:
+    title: >-
+      Guo et al. 2025, An fMRI dataset for investigating language control and cognitive control in bilinguals,
+      Scientific Data 12:889
+    url: https://doi.org/10.1038/s41597-025-05245-9
+    kind: paper
+  ds005455-file-tree:
+    title: >-
+      File tree and participants.tsv (columns sex and age) of OpenNeuro ds005455 snapshot 1.1.6 (CC0), raw NIfTI files
+      counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds005455/tree/1.1.6
+    kind: computed
+related: []
+keywords: [bilingualism, language switching, cognitive control, task switching, picture naming, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
