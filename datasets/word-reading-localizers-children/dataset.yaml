@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: word-reading-localizers-children
+name: Child Word Reading fMRI with Localizers (ds006239)
+full_name: A fMRI neuroimaging dataset of word reading with semantic and phonological localizers in children and adolescents
+summary: >-
+  Task fMRI, T1-weighted and diffusion MRI of typically hearing children and adolescents performing visual word
+  rhyming and meaning judgments plus picture, speech reading and signed language localizer tasks, for studying the
+  brain basis of phonological and semantic processing in reading.
+homepage: https://openneuro.org/datasets/ds006239
+doi: 10.18112/openneuro.ds006239.v1.0.7
+year: 2025
+version: 1.0.7
+status: active
+creators:
+  - name: Jiuru Wang, Avery Vess, Avantika Mathur, Neelima Wagley, David Quinto-Pozos and James R. Booth
+    url: https://openneuro.org/datasets/ds006239
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 90.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006239
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006239
+    note: dataset_description.json of snapshot 1.0.7 states "License" CC0.
+citation:
+  text: >-
+    Wang J, Vess A, Mathur A, Wagley N, Quinto-Pozos D, Booth JR. A fMRI neuroimaging dataset of word reading with
+    semantic and phonological localizers in children and adolescents. Data in Brief 63, 112248 (2025).
+    doi:10.1016/j.dib.2025.112248
+sources:
+  wang2025:
+    title: Wang et al. 2025, Data in Brief 63, 112248
+    url: https://doi.org/10.1016/j.dib.2025.112248
+    kind: paper
+  openneuro-ds006239-v107:
+    title: OpenNeuro ds006239 snapshot 1.0.7 (dataset_description.json, README, CHANGES, participants.tsv and snapshot summary)
+    url: https://openneuro.org/datasets/ds006239/versions/1.0.7
+    kind: website
+  ds006239-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds006239 snapshot 1.0.7 (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds006239
+    kind: computed
+related: []
+keywords: [reading, phonology, semantics, language, child development, task fMRI, diffusion MRI, speech reading, sign language]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
