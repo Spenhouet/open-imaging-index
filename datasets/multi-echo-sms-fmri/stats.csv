@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,50,ds004499-participants,participant_id,50 rows; the file tree has 50 sub-* folders
+subjects,country=CZ,50,openneuro-ds004499-v104,README,"acquired at MAFIL, CEITEC, Masaryk University, Brno"
+subjects,vendor=siemens,50,openneuro-ds004499-v104,README,3T Siemens Magnetom Prisma with a 64-channel head-neck coil
+subjects,field_strength=3,50,openneuro-ds004499-v104,README,
+subjects,sex=female,23,ds004499-participants,sex,
+subjects,sex=male,27,ds004499-participants,sex,
+subjects,age=10-19,1,ds004499-participants,age,
+subjects,age=20-29,26,ds004499-participants,age,
+subjects,age=30-39,21,ds004499-participants,age,
+subjects,age=40-49,2,ds004499-participants,age,
+subjects,sex=female;age=20-29,16,ds004499-participants,"sex, age",cells below 10 left out
+subjects,sex=male;age=20-29,10,ds004499-participants,"sex, age",cells below 10 left out
+subjects,sex=male;age=30-39,16,ds004499-participants,"sex, age",cells below 10 left out
+age_mean,,28.98,ds004499-participants,age,
+age_median,,28,ds004499-participants,age,
+age_min,,18,ds004499-participants,age,
+age_max,,41,ds004499-participants,age,
+subjects,contrast=T1w,50,ds004499-file-tree,anat,
+subjects,contrast=bold,50,ds004499-file-tree,func,7 runs with 3 echoes each per subject
+subjects,contrast_set=bold+T1w,50,ds004499-file-tree,,
+scans,,1100,ds004499-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; field map volumes (magnitude1, magnitude2, phasediff) not counted"
+scans,contrast=T1w,50,ds004499-file-tree,anat,
+scans,contrast=bold,1050,ds004499-file-tree,func,one NIfTI per echo: 50 subjects x 7 runs x 3 echoes
