@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: miccai-2015-guess-the-primary
+name: MICCAI 2015 Guess the Primary Challenge
+full_name: 2015 MICCAI Guess the Primary Challenge (CBTC Challenge 3, brain metastases MRI)
+summary: >-
+  Brain MRI of metastases from lung cancer or melanoma, released for a challenge on telling the primary cancer from
+  the imaging of the brain lesion. Contrast-enhanced T1, some with T2 and FLAIR, plus tumor masks for the training
+  image sets.
+homepage: https://www.synapse.org/#!Synapse:syn4112414
+year: 2015
+status: retired
+creators:
+  - name: Computational Brain Tumor Cluster of Events (CBTC) 2015 organizers, with City of Hope, MGH Harvard, Mayo Clinic and Sage Bionetworks
+  - name: Northwestern University (data contributor)
+modalities: [MR]
+contrasts: [T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [brain_metastasis, lung_cancer, melanoma]
+tasks: [classification, segmentation]
+formats: [NIfTI]
+access:
+  type: signed_agreement
+  url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234738
+licenses:
+  - license: LicenseRef-MICCAI2015-Guess-the-Primary-Terms
+    note: >-
+      The signed Terms of Use PDF (syn4843138) can only be downloaded by logged-in Synapse users and was not read.
+      The rule answers rest on the challenge Rules page.
+sources:
+  synapse-gtp-home:
+    title: 2015 MICCAI Guess the Primary Challenge, Synapse project home page (syn4112414)
+    url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234616
+    kind: website
+  synapse-gtp-participate:
+    title: 2015 MICCAI Guess the Primary Challenge, How to Participate page
+    url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234738
+    kind: website
+  synapse-gtp-rules:
+    title: 2015 MICCAI Guess the Primary Challenge, Rules page
+    url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234781
+    kind: website
+  synapse-gtp-results:
+    title: 2015 MICCAI Guess the Primary Challenge, Results page
+    url: https://www.synapse.org/#!Synapse:syn4112414/wiki/234740
+    kind: website
+related: []
+keywords: [brain metastases, primary tumor classification, melanoma, lung cancer, MICCAI 2015, CBTC, Synapse]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

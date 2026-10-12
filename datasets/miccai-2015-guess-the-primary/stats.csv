@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+studies,,87,synapse-gtp-participate,Step 2 (Data),"Image sets; some are repeat scans of the same patient, so patients are fewer than 87"
+studies,split=train,57,synapse-gtp-participate,Step 2 (Data),Training image sets with tumor masks and lung/melanoma key
+studies,split=test,30,synapse-gtp-participate,Step 2 (Data),
