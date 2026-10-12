@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: edinburgh-pvs-1-5t-vs-3t
+name: Edinburgh PVS 1.5T vs 3T Pilot
+full_name: >-
+  Harmonisation of Enlarged Perivascular Spaces Quantified from Brain Magnetic Resonance Images acquired at 1.5T vs.
+  3T, Data from a pilot study
+summary: >-
+  Brain MRI of healthy adult volunteers scanned back to back at 1.5T and 3T, collected to test whether perivascular
+  space measurements can be harmonised across field strengths. Images are not shared; PVS scores, measurements and
+  harmonisation scripts are public.
+homepage: https://datashare.ed.ac.uk/handle/10283/8833
+doi: 10.7488/ds/7782
+year: 2024
+creators:
+  - name: Centre for Clinical Brain Sciences, University of Edinburgh
+    url: https://datashare.ed.ac.uk/handle/10283/8833
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, swi]
+anatomy: [brain]
+conditions: [healthy, enlarged_perivascular_spaces]
+countries: [GB]
+vendors: [ge, siemens]
+field_strengths: [1.5, 3]
+access:
+  type: not_shared
+  url: https://datashare.ed.ac.uk/handle/10283/8833
+  note: >-
+    The Edinburgh DataShare release holds no MRI images. It contains the imaging protocol table, per-scan PVS visual
+    scores and automated PVS counts, volumes and lengths before and after harmonisation, and Matlab scripts, openly
+    downloadable under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC BY 4.0 license of the DataShare item covers
+      only the released measurements, documents and scripts.
+citation:
+  text: >-
+    Valdés Hernández, M. C., Duarte Coello, R., Morozova, A., McFadden, J., Jardine, C., Barclay, G., MacIntyre, D.,
+    Chappell, F. M., Stringer, M., Thrippleton, M. J., & Wardlaw, J. M. (2024). Harmonisation of Enlarged
+    Perivascular Spaces Quantified from Brain Magnetic Resonance Images acquired at 1.5T vs. 3T, Data from a pilot
+    study [dataset]. University of Edinburgh. https://doi.org/10.7488/ds/7782
+sources:
+  datashare-8833:
+    title: Edinburgh DataShare item 10283/8833, record page and abstract
+    url: https://datashare.ed.ac.uk/handle/10283/8833
+    kind: website
+  datashare-8833-readme:
+    title: 1_5Tvs3T_Readme.pdf, README shipped with the DataShare item
+    url: https://datashare.ed.ac.uk/bitstreams/28c56724-4150-4d40-8743-3e1cc883a404/download
+    kind: website
+  datashare-8833-protocols:
+    title: Imaging_protocols.pdf, protocol table shipped with the DataShare item
+    url: https://datashare.ed.ac.uk/bitstreams/f110da42-39ec-4134-998e-05c2aea6e5f8/download
+    kind: website
+  datashare-8833-confounders:
+    title: Confounders.csv in Input_Output_data_csv_files.zip (DataShare, CC BY 4.0), counted per participant row
+    url: https://datashare.ed.ac.uk/bitstreams/094ddc3f-8755-46bf-a8f7-25d7e7bcefd1/download
+    kind: computed
+related: []
+keywords: [perivascular spaces, field strength, ComBat harmonisation, visual rating, small vessel disease]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

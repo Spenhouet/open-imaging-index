@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,100,datashare-8833,Abstract,adult volunteers analysed; each scanned at 1.5T and at 3T
+subjects,field_strength=1.5,100,datashare-8833-confounders,1_5T_Protocol,every participant row has a 1.5T protocol
+subjects,field_strength=3,100,datashare-8833-confounders,3T_Protocol,every participant row has a 3T protocol
+subjects,country=GB,100,datashare-8833-readme,Authors and Methods,"single site, Edinburgh Imaging Facility"
+subjects,condition=healthy,100,datashare-8833-readme,Methods: Sample,healthy volunteers with no chronic disease or past brain disease
+subjects,sex=female,81,datashare-8833-readme,Methods: Sample,of the 130 recruited volunteers (62.31%); not given for the 100 analysed
+age_mean,,45.44,datashare-8833-readme,Methods: Sample,of the 130 recruited volunteers
+age_sd,,13.71,datashare-8833-readme,Methods: Sample,of the 130 recruited volunteers
