@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,75,openneuro-ds006948-v1-0-1,README,"75 of 84 recruited participants consented to data sharing; four shared participants were excluded from the paper's analyses (incorrect TR, failed preprocessing, high motion)"
+subjects,modality=MR,75,ds006948-files,,
+subjects,contrast=T1w,75,ds006948-files,,subjects with a *_T1w.nii.gz (MPRAGE)
+subjects,contrast=bold,75,ds006948-files,,"subjects with at least one *_bold.nii.gz; all 75 have task-francis and task-restpre, 74 have task-restpost"
+subjects,contrast_set=bold+T1w,75,ds006948-files,,AP/PA EPI field maps not counted as a contrast
+scans,,299,ds006948-files,,"sum of the disjoint T1w and bold counts below, counting each multi-echo run once; 300 field map NIfTI files not included"
+scans,contrast=T1w,75,ds006948-files,,one per subject
+scans,contrast=bold,224,ds006948-files,,"multi-echo runs (75 movie, 75 pre-movie rest, 74 post-movie rest), each stored as three echo files (672 NIfTI files)"
+studies,,75,ds006948-files,,one session (ses-1) per subject
+subjects,condition=anxiety_disorder,33,ds006948-files,,clinical_status in participants.tsv
+subjects,condition=healthy,42,ds006948-files,,clinical_status in participants.tsv
+subjects,sex=female,48,ds006948-files,,sex at birth in participants.tsv
+subjects,sex=male,27,ds006948-files,,sex at birth in participants.tsv
+subjects,condition=anxiety_disorder;sex=female,23,ds006948-files,,
+subjects,condition=anxiety_disorder;sex=male,10,ds006948-files,,
+subjects,condition=healthy;sex=female,25,ds006948-files,,
+subjects,condition=healthy;sex=male,17,ds006948-files,,
+subjects,age=5-9,4,ds006948-files,,age at scan in participants.tsv
+subjects,age=10-14,41,ds006948-files,,
+subjects,age=15-19,30,ds006948-files,,
+subjects,sex=female;age=10-14,30,ds006948-files,,
+subjects,sex=female;age=15-19,18,ds006948-files,,
+subjects,sex=male;age=10-14,11,ds006948-files,,
+subjects,sex=male;age=15-19,12,ds006948-files,,
+age_min,,8.1,ds006948-files,,
+age_max,,18,ds006948-files,,
+age_median,,14.4,ds006948-files,,
+age_mean,,14.2,ds006948-files,,
+subjects,vendor=ge,75,openneuro-ds006948-v1-0-1,"README, Imaging",one of two GE MR750 3T scanners
+subjects,field_strength=3,75,openneuro-ds006948-v1-0-1,"README, Imaging",
+subjects,country=US,75,openneuro-ds006948-v1-0-1,"README, Experimental location","recruited from the greater Washington, D.C., area"
