@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,109,ds004589-file-tree,sub-*/,"109 subject folders, all listed in participants.tsv; the preprint also reports a final sample of 109 (54 left-handed, 55 right-handed), Participants"
+subjects,condition=healthy,109,goulding2023,Participants,inclusion required good overall health and no history of physiological or neurological disorders
+subjects,sex=female,61,ds004589-participants,sex,the preprint also reports 61 female (Participants)
+subjects,sex=male,48,ds004589-participants,sex,
+subjects,age=10-19,21,ds004589-participants,age,
+subjects,age=20-29,86,ds004589-participants,age,
+subjects,age=30-39,1,ds004589-participants,age,
+subjects,age=40-49,1,ds004589-participants,age,
+subjects,sex=female;age=10-19,19,ds004589-participants,sex and age,Cells below 10 left out
+subjects,sex=female;age=20-29,41,ds004589-participants,sex and age,Cells below 10 left out
+subjects,sex=male;age=20-29,45,ds004589-participants,sex and age,Cells below 10 left out
+age_min,,18,goulding2023,Participants,participants.tsv also gives 18
+age_max,,47,goulding2023,Participants,participants.tsv also gives 47
+age_mean,,21.8,goulding2023,Participants,
+age_sd,,3.4,goulding2023,Participants,
+studies,,109,ds004589-file-tree,sub-*/,one session per subject (no session folders)
+scans,,1494,ds004589-file-tree,sub-*/**/*.nii.gz,"109 T1w, 97 T2w, 763 bold and 525 field map files (198 reverse phase-encoding EPI, 218 magnitude, 109 phase difference)"
+scans,contrast=T1w,109,ds004589-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=T2w,97,ds004589-file-tree,anat/*_T2w.nii.gz,one per subject; 12 subjects have none
+scans,contrast=bold,763,ds004589-file-tree,func/*_bold.nii.gz,"seven runs per subject: FaceStudy, FaceTest (2 runs), SemanticFluency, WordStudy, WordTest (2 runs)"
+subjects,contrast=T1w,109,ds004589-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,97,ds004589-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,109,ds004589-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,97,ds004589-file-tree,sub-*/,
+subjects,contrast_set=bold+T1w,12,ds004589-file-tree,sub-*/,
+subjects,field_strength=3,109,goulding2023,Imaging Procedures,3 T Siemens TIM Trio with 32-channel head coil for all scanning
+subjects,vendor=siemens,109,goulding2023,Imaging Procedures,3 T Siemens TIM Trio with 32-channel head coil for all scanning
+subjects,country=US,109,goulding2023,Participants,"recruited at Brigham Young University, Provo, UT, USA"
