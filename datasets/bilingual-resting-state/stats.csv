@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,92,openneuro-ds001747-v110,Snapshot summary,92 subject folders; participants.tsv also has 92 rows
+subjects,contrast=T1w,92,ds001747-file-tree,,one sub-*_run-01_T1w.nii.gz per subject folder
+subjects,contrast=bold,92,ds001747-file-tree,,one sub-*_task-rest_run-01_bold.nii.gz per subject folder
+subjects,contrast_set=bold+T1w,92,ds001747-file-tree,,
+scans,,184,ds001747-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,92,ds001747-file-tree,,
+scans,contrast=bold,92,ds001747-file-tree,,resting-state runs of 823 volumes each according to the README
+subjects,condition=healthy,92,openneuro-ds001747-v110,README abstract,the README describes the participants as young healthy adults
+subjects,vendor=siemens,92,ds001747-file-tree,sub-*_T1w.json Manufacturer,all T1w sidecars state Siemens TrioTim
+subjects,field_strength=3,92,ds001747-file-tree,sub-*_T1w.json MagneticFieldStrength,
+subjects,country=US,92,ds001747-file-tree,sub-*_T1w.json InstitutionAddress,sidecars name Brigham Young University in Provo UT US
+subjects,sex=female,51,ds001747-participants,,sex F
+subjects,sex=male,41,ds001747-participants,,sex M
+subjects,age=10-19,16,ds001747-participants,,
+subjects,age=20-29,76,ds001747-participants,,
+age_mean,,21.71,ds001747-participants,,ages in whole years
+age_sd,,2.52,ds001747-participants,,
+age_min,,18,ds001747-participants,,
+age_median,,21,ds001747-participants,,
+age_max,,29,ds001747-participants,,
