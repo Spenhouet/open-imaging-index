@@ -528,6 +528,7 @@ terms:
   - { id: type_1_diabetes, label: Type 1 diabetes mellitus, synonyms: [T1D, T1DM, type 1 diabetes], mappings: { mondo: 'MONDO:0005147' } }
   - { id: glaucoma, label: Glaucoma, mappings: { mondo: 'MONDO:0005041' } }
   - { id: amd, label: Age-related macular degeneration, synonyms: [AMD], mappings: { mondo: 'MONDO:0005150' } }
+  - { id: macular_degeneration, label: Macular degeneration, synonyms: [MD, juvenile macular degeneration, JMD], mappings: { mondo: 'MONDO:0003004' } }
   - { id: chronic_pain, label: Chronic pain, mappings: { hp: 'HP:0012532' } }
   - { id: back_pain, label: Back pain, mappings: { hp: 'HP:0003418' } }
   - { id: low_back_pain, label: Low back pain, synonyms: [LBP], mappings: { hp: 'HP:0003419' } }

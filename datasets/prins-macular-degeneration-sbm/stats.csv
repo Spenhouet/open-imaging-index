@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,113,prins2016,"Methods, Subjects",same subjects as Hernowo et al. 2014; the DataverseNL file list describes 113 MRI scans
+subjects,condition=macular_degeneration,58,prins2016,"Methods, Subjects",34 juvenile and 24 age-related macular degeneration
+subjects,condition=amd,24,prins2016,Table 1,
+subjects,condition=healthy,55,prins2016,"Methods, Subjects",split by age into 33 young controls matched to the juvenile group and 22 older controls matched to the age-related group
+subjects,contrast=T1w,113,prins2016,"Methods, Data acquisition",
+subjects,field_strength=3,113,prins2016,"Methods, Data acquisition",all three scanners are 3 T
+scans,,113,dataversenl-jtvnf2,file list,113 MRI scans in nii.gz format
+scans,contrast=T1w,113,dataversenl-jtvnf2,file list,
+age_min,,12,prins2016,"Methods, Subjects",youngest juvenile macular degeneration patient; lowest of the four group ranges
+age_max,,91,prins2016,"Methods, Subjects",oldest age-related macular degeneration patient; highest of the four group ranges
