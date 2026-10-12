@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brainlinks-trust-fmri
+name: Brainlinks Adolescent Trust fMRI
+full_name: Neural mechanisms underlying trust to friends, community members, and unknown peers in adolescence
+summary: >-
+  Task and resting-state fMRI with T1-weighted MRI from adolescents and young adults playing a trust game with a friend,
+  a community member and an unknown peer, collected to study how trust and its brain basis differ by partner and age.
+  Shared on request.
+homepage: https://doi.org/10.34894/CPARII
+doi: 10.34894/CPARII
+year: 2023
+creators:
+  - name: Sophie Sweijen, Suzanne van de Groep, Lysanne te Brinke, Andrew Fuligni and Eveline A. Crone (Erasmus University Rotterdam)
+    url: https://ror.org/057w15z03
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.34894/CPARII
+  note: >-
+    The processed data package on DataverseNL is restricted to the study authors; access is requested by e-mail to the
+    first author with a reason. The preprint's data availability statement says data access can be requested from the
+    authors. The deposit does not state whether MRI images are part of the shareable data. The task materials and the
+    analysis code are public in separate DataverseNL records.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The DataverseNL records are marked In Copyright (rightsstatements.org InC 1.0) and state no data use terms.
+citation:
+  text: >-
+    Sweijen S, van de Groep S, te Brinke L, Fuligni A, Crone EA. Neural mechanisms underlying trust to friends,
+    community members, and unknown peers in adolescence. Journal of Cognitive Neuroscience 35(12):1936-1959 (2023).
+    doi:10.1162/jocn_a_02055
+sources:
+  sweijen2023:
+    title: Sweijen et al. 2023, PsyArXiv preprint of the Journal of Cognitive Neuroscience article
+    url: https://doi.org/10.31234/osf.io/jk46g
+    kind: paper
+  dataversenl-cparii:
+    title: DataverseNL record, Processed data
+    url: https://doi.org/10.34894/CPARII
+    kind: website
+related: []
+keywords: [trust game, adolescence, social decision making, task fMRI, prosocial development]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

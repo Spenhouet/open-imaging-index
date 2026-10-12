@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,94,sweijen2023,Method: Participants,final MRI sample; 106 took part in the behavioral study and 10 played the task outside the scanner
+subjects,modality=MR,94,sweijen2023,Method: Participants,
+subjects,contrast=bold,94,sweijen2023,MRI data acquisition,two task fMRI runs of 210 volumes each
+subjects,contrast=T1w,94,sweijen2023,MRI data acquisition,3D T1-weighted anatomical scan in every session
+subjects,sex=female,60,sweijen2023,Method: Participants,
+age_mean,,18.26,sweijen2023,Method: Participants,
+age_sd,,2.59,sweijen2023,Method: Participants,
+age_min,,12.74,sweijen2023,Method: Participants,
+age_max,,22.55,sweijen2023,Method: Participants,
+subjects,field_strength=3,94,sweijen2023,MRI data acquisition,
+subjects,vendor=philips,94,sweijen2023,MRI data acquisition,Philips Achieva TX
+subjects,country=NL,94,sweijen2023,Method: Participants,
