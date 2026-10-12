@@ -165,6 +165,13 @@ terms:
   - { id: autism, label: Autism spectrum disorder, synonyms: [ASD], mappings: { mondo: 'MONDO:0005258' } }
   - { id: adhd, label: ADHD, mappings: { mondo: 'MONDO:0007743' } }
   - { id: neurodevelopmental_disorder, label: Neurodevelopmental disorder, mappings: { mondo: 'MONDO:0700092' } }
+  - {
+      id: developmental_delay,
+      label: Global developmental delay,
+      parent: neurodevelopmental_disorder,
+      synonyms: [developmental delay, DD],
+      mappings: { hp: 'HP:0001263' }
+    }
   - id: developmental_language_disorder
     label: Developmental language disorder
     description: >-

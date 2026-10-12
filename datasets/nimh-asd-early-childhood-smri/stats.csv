@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,173,nimh-dsst-1887-repo,README: Creating a Data Package,"173 subjects in the NDA download cart for the study; equals the 102 + 18 + 53 diagnostic groups in the study description"
+subjects,condition=autism,102,nda-study-1887,Description,children with autism spectrum disorder
+subjects,condition=developmental_delay,18,nda-study-1887,Description,children with a non-autism developmental delay
+subjects,condition=healthy,53,nda-study-1887,Description,typical controls
