@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,67,alves2020,Methods (Image bank); Table 1,30 inflammatory and 37 tumoral lesions; retrospective exams from 2010 to 2020
+subjects,condition=brain_tumor,37,alves2020,Table 1,anaplastic astrocytoma 11; anaplastic ependymoma 1; glioblastoma 15; gliosarcoma 2; low-grade astrocytoma 8
+subjects,condition=glioma,37,alves2020,Table 1,all tumors in Table 1 are glial tumors
+subjects,condition=glioblastoma,15,alves2020,Table 1,grade IV; the 2 gliosarcomas are listed separately
+subjects,condition=cns_infection,24,alves2020,Table 1,"summed from the disjoint infectious subtypes: aspergillosis 2, cryptococcosis 2, neurocysticercosis 3, pyogenic abscess 3, septic-embolic abscess 2, toxoplasmosis 8, tuberculous abscess 4"
+subjects,condition=multiple_sclerosis,3,alves2020,Table 1,
+subjects,vendor=philips,67,alves2020,Methods (Image bank),single scanner
+subjects,field_strength=1.5,67,alves2020,Methods (Image bank),single scanner
+subjects,country=BR,67,alves2020,Affiliations; Methods (Image bank),

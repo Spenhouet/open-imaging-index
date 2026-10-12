@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: unicamp-ring-enhancing-brain-lesion-mri
+name: Ring-enhancing brain lesion MRI (UNESP/Unicamp)
+full_name: >-
+  Inflammatory lesions and brain tumors: is it possible to differentiate them based on texture features in magnetic
+  resonance imaging?
+summary: >-
+  Brain MRI of patients with a ring-enhancing lesion from one Brazilian medical school hospital, used to tell
+  inflammatory lesions from brain tumors with texture features and machine learning. 67 patients on one 1.5T scanner.
+  Not shared.
+homepage: https://doi.org/10.1590/1678-9199-jvatitd-2020-0011
+year: 2020
+creators:
+  - name: Department of Tropical Disease and Imaging Diagnosis, Botucatu Medical School, São Paulo State University (UNESP)
+    url: https://doi.org/10.1590/1678-9199-jvatitd-2020-0011
+  - name: Department of Radiology, School of Medical Sciences, University of Campinas (Unicamp)
+    url: https://doi.org/10.1590/1678-9199-jvatitd-2020-0011
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, dwi]
+anatomy: [brain]
+conditions: [brain_tumor, glioma, glioblastoma, cns_infection, multiple_sclerosis]
+tasks: [classification]
+formats: [DICOM]
+countries: [BR]
+vendors: [philips]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/1678-9199-jvatitd-2020-0011
+  note: >-
+    The paper's availability statement says no patient data (DICOM images) are available on request, because the
+    ethics committee approved their use for this study only. The linked figshare record holds only the article's
+    figures and result tables.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The images are not released and no data use terms are published.
+citation:
+  text: >-
+    Alves AFF, Miranda JRA, Reis F, de Souza SAS, Alves LLR, Feitoza LM, de Castro JTS, de Pina DR. Inflammatory
+    lesions and brain tumors: is it possible to differentiate them based on texture features in magnetic resonance
+    imaging? J Venom Anim Toxins incl Trop Dis 26, e20200011 (2020). doi:10.1590/1678-9199-JVATITD-2020-0011
+sources:
+  alves2020:
+    title: Alves et al. 2020, J Venom Anim Toxins incl Trop Dis 26, e20200011
+    url: https://doi.org/10.1590/1678-9199-jvatitd-2020-0011
+    kind: paper
+  figshare-14287405:
+    title: SciELO figshare record 14287405, figures and tables of the article
+    url: https://doi.org/10.6084/m9.figshare.14287405.v1
+    kind: website
+related: []
+keywords:
+  [
+    ring-enhancing lesion,
+    texture analysis,
+    radiomics,
+    GLCM,
+    GLRL,
+    neuroinfection,
+    toxoplasmosis,
+    brain abscess,
+    neurocysticercosis,
+    astrocytoma
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
