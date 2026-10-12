@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,105,ds006533-participants,participant_id,105 rows; the Cortex paper (Section 2.1) reports 104 and snapshot 2.0.0 added sub-105
+subjects,modality=MR,102,ds006533-participants,image_modality,81 research_MR and 21 clinical_MR
+subjects,modality=CT,3,ds006533-participants,image_modality,clinical_CT
+subjects,contrast=T1w,81,ds006533-participants,image_modality,research_MR; the paper segmented lesions on research-grade T1-weighted volumes (Section 2.4)
+subjects,condition=stroke,105,ds006533-participants,participant_id,all participants are left hemisphere chronic stroke survivors
+subjects,sex=male,59,duricy2025,Table 1,of the 104-subject paper cohort
+subjects,sex=female,45,duricy2025,Table 1,of the 104-subject paper cohort
+subjects,field_strength=3,80,duricy2025,Section 2.3,research-grade MRI of the 104-subject paper cohort
+subjects,vendor=siemens,80,duricy2025,Section 2.3,32 on a Siemens 3T Allegra and 48 on a Siemens 3T Prisma
+subjects,age=20-29,2,ds006533-participants,age,
+subjects,age=30-39,4,ds006533-participants,age,
+subjects,age=40-49,7,ds006533-participants,age,
+subjects,age=50-59,28,ds006533-participants,age,
+subjects,age=60-69,34,ds006533-participants,age,
+subjects,age=70-79,25,ds006533-participants,age,
+subjects,age=80-89,5,ds006533-participants,age,
+age_min,,25,ds006533-participants,age,
+age_max,,82,ds006533-participants,age,
+age_mean,,61.59,duricy2025,Table 1,of the 104-subject paper cohort
+age_sd,,12.12,duricy2025,Table 1,of the 104-subject paper cohort
+scans,,105,ds006533-file-tree,,one normalized skull-stripped sub-*_T1w.nii.gz per subject; plus 105 lesion masks and 105 smoothed lesion masks under derivatives
