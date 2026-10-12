@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sgul-copd-cad
+name: St George's COPD and CAD brain cohort
+full_name: >-
+  Factors associated with brain damage in smoking-related diseases: chronic obstructive pulmonary disease (COPD) and
+  coronary artery disease (CAD)
+summary: >-
+  Brain MRI (T1, FLAIR, diffusion tensor, arterial spin labelling) and retinal photographs of smokers with chronic
+  obstructive pulmonary disease or coronary artery disease, collected to find vascular, respiratory and inflammatory
+  causes of brain damage. Only derived measures are open.
+homepage: https://doi.org/10.24376/rd.sgul.14510190
+doi: 10.24376/rd.sgul.14510190
+year: 2021
+updated: 2022
+creators:
+  - name: St George's, University of London (Spilling CA, Dhillon M-PK, Burrage DR, Ruickbie S, Baker EH, Barrick TR, Jones PW)
+    url: https://www.sgul.ac.uk
+modalities: [MR, OP]
+contrasts: [T1w, FLAIR, dwi, asl, PDw]
+anatomy: [brain, retina]
+conditions: [copd, coronary_artery_disease]
+countries: [GB]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.24376/rd.sgul.14510190
+  note: >-
+    Two figshare records of St George's research data repository hold spreadsheets of derived values for the same 100
+    patients under CC BY 4.0: 10.24376/rd.sgul.14510190 (2021, 81 variables including brain tissue, white matter
+    hyperintensity, diffusion and blood flow measures and retinal vessel measures) and 10.24376/rd.sgul.20067605
+    (2022, 15 variables including white matter lesion volume, diffusion measures and MoCA). The readmes state that
+    age, sex and brain scans are not provided. No route to the images is published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Brain MR images and retinal photographs.
+    note: Neither figshare record nor the paper offers the images or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Spreadsheets of derived clinical, retinal and brain MRI measures on figshare.
+citation:
+  text: >-
+    Spilling CA, Dhillon M-PK, Burrage DR, Ruickbie S, Baker EH, Barrick TR, Jones PW. Factors affecting brain
+    structure in smoking-related diseases: Chronic Obstructive Pulmonary Disease (COPD) and coronary artery disease.
+    PLoS ONE 16(11), e0259375 (2021). doi:10.1371/journal.pone.0259375
+sources:
+  spilling2021:
+    title: Spilling et al. 2021, PLoS ONE 16(11), e0259375 (PMC8570465)
+    url: https://doi.org/10.1371/journal.pone.0259375
+    kind: paper
+  spilling2021-s1:
+    title: Spilling et al. 2021, S1 Appendix (supplementary methods)
+    url: https://journals.plos.org/plosone/article/file?type=supplementary&id=10.1371/journal.pone.0259375.s001
+    kind: paper
+  sgul-14510190:
+    title: figshare record 10.24376/rd.sgul.14510190, data supporting the 2021 paper
+    url: https://doi.org/10.24376/rd.sgul.14510190
+    kind: website
+  sgul-20067605:
+    title: figshare record 10.24376/rd.sgul.20067605, COPD_&_CAD_data
+    url: https://doi.org/10.24376/rd.sgul.20067605
+    kind: website
+  sgul-14510190-xlsx:
+    title: COPD_&_CAD_data.xlsx, sheet 1, from figshare record 14510190 (CC BY 4.0)
+    url: https://ndownloader.figshare.com/files/27797715
+    kind: computed
+related: []
+keywords:
+  [
+    chronic obstructive pulmonary disease,
+    coronary artery disease,
+    smoking,
+    white matter hyperintensities,
+    diffusion tensor imaging,
+    pseudo-continuous arterial spin labelling,
+    cerebral blood flow,
+    retinal microvasculature,
+    systemic inflammation
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
