@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hku-unaware-fear-extinction
+name: Unaware Fear Extinction fMRI (HKU)
+full_name: Supporting data for "harnessing visual unawareness in the modulation of fear-related memories"
+summary: >-
+  Preprocessed task and resting-state fMRI with pupil and rating data from a two-day threat conditioning study, testing
+  whether fear memories can be extinguished while the feared image is hidden from awareness by continuous flash
+  suppression.
+homepage: https://datahub.hku.hk/articles/dataset/Supporting_data_for_harnessing_visual_unawareness_in_the_modulation_of_fear-related_memories_/29901281
+doi: 10.25442/hku.29901281.v1
+year: 2025
+version: '1'
+creators:
+  - name: Letian Lei, The University of Hong Kong
+    url: https://datahub.hku.hk/
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+# figshare API metadata of the record: 37366090266 bytes.
+size_gb: 37.4
+access:
+  type: not_shared
+  url: https://datahub.hku.hk/articles/dataset/Supporting_data_for_harnessing_visual_unawareness_in_the_modulation_of_fear-related_memories_/29901281
+  note: >-
+    The files are under embargo until 2028-08-31 ("Data contains unpublished work"). The record offers no request
+    option during the embargo.
+licenses:
+  - license: CC-BY-NC-4.0
+    note: License stated on the HKU DataHub record; it applies once the files leave embargo.
+citation:
+  text: >-
+    Lei, Letian (2025). Supporting data for "harnessing visual unawareness in the modulation of fear-related
+    memories". HKU DataHub. Dataset. https://doi.org/10.25442/hku.29901281.v1
+sources:
+  hku-datahub-29901281:
+    title: HKU DataHub record 29901281 (metadata via the figshare API)
+    url: https://api.figshare.com/v2/articles/29901281
+    kind: website
+related: []
+keywords: [fear, threat extinction, unaware extinction, continuous flash suppression, task fMRI, resting-state fMRI, pupillometry]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
