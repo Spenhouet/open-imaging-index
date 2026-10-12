@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pittsburgh-infant-caregiving
+name: Infant caregiving brain MRI (NDA 2340)
+full_name: Impact of Maternal Caregiving on Brain-Behavior Relationships in Infants
+summary: >-
+  Brain MRI of 3-month-old infants scanned in natural sleep, with mother questionnaires and observed caregiving,
+  collected to relate early emotion circuitry to infant emotional behavior at 3 and 9 months and to maternal
+  caregiving. Infants of young mothers from the Pittsburgh Girls Study.
+homepage: https://nda.nih.gov/edit_collection.html?id=2340
+doi: 10.15154/ccnw-sq97
+year: 2019
+status: active
+creators:
+  - name: Mary L. Phillips, Alison E. Hipwell and colleagues, University of Pittsburgh
+    url: https://nda.nih.gov/edit_collection.html?id=2340
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2340
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      NIMH Data Archive collection 2340 (grant R21 MH106570). Download needs an approved NDA data access request, whose
+      data use terms every request accepts. Collection-specific permission clauses are not public and are not broken
+      down here.
+citation:
+  text: >-
+    Hanford LC, Schmithorst VJ, Panigrahy A, Lee V, Ridley J, Bonar L, Versace A, Hipwell AE, Phillips ML. The Impact
+    of Caregiving on the Association Between Infant Emotional Behavior and Resting State Neural Network Functional
+    Topology. Frontiers in Psychology 9:1968 (2018). doi:10.3389/fpsyg.2018.01968. Data: NDA collection 2340,
+    doi:10.15154/ccnw-sq97.
+sources:
+  nda-collection-2340:
+    title: NIMH Data Archive collection 2340 record (API), description and shared subject count
+    url: https://nda.nih.gov/api/collection/2340
+    kind: website
+  nda-collection-2340-structures:
+    title: NIMH Data Archive collection 2340 shared data structures (API)
+    url: https://nda.nih.gov/api/nda/collection/2340/data-structures
+    kind: website
+  nda-collection-2340-studies:
+    title: NIMH Data Archive collection 2340 associated studies (API)
+    url: https://nda.nih.gov/api/nda/collection/2340/studies
+    kind: website
+  nda-experiment-428:
+    title: NIMH Data Archive experiment 428 (Resting State Baby Brain), experiment definition
+    url: https://nda.nih.gov/api/experiment/428
+    kind: website
+  hanford2018:
+    title: >-
+      Hanford et al. 2018, The Impact of Caregiving on the Association Between Infant Emotional Behavior and Resting
+      State Neural Network Functional Topology, Frontiers in Psychology (PMC6196255)
+    url: https://doi.org/10.3389/fpsyg.2018.01968
+    kind: paper
+  zhang2023:
+    title: >-
+      Zhang et al. 2023, Early infant prefrontal gray matter volume is associated with concurrent and future infant
+      emotionality, Translational Psychiatry (PMC10110602)
+    url: https://doi.org/10.1038/s41398-023-02427-0
+    kind: paper
+  bezanson2023:
+    title: >-
+      Bezanson et al. 2023, Postnatal maternal distress, infant subcortical brain macrostructure and emotional
+      regulation, Psychiatry Research: Neuroimaging (PMC10711747)
+    url: https://doi.org/10.1016/j.pscychresns.2022.111577
+    kind: paper
+related: []
+keywords:
+  [
+    infant,
+    infant MRI,
+    natural sleep,
+    resting-state fMRI,
+    maternal caregiving,
+    postpartum depression,
+    emotional reactivity,
+    temperament,
+    Pittsburgh Girls Study,
+    NIMH Data Archive
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

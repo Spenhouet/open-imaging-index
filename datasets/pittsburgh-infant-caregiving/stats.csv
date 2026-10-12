@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,88,nda-collection-2340,shared_subject_count,subjects with shared data of any kind; infants and mothers are not separated
+subjects,modality=MR,48,nda-collection-2340-structures,image03,subjects with shared imaging records
+subjects,country=US,88,hanford2018,Materials and Methods: Participants,"research visit at the Children's Hospital of Pittsburgh, Pennsylvania"
+subjects,vendor=siemens,48,nda-experiment-428,Acquisition: Equipment/Scanner,Siemens MAGNETOM Skyra
+subjects,field_strength=3,48,nda-experiment-428,Acquisition: Equipment/Scanner,3 T
