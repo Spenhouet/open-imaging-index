@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: frontoparietal-plasticity
+name: Frontoparietal Plasticity (ds003849)
+full_name: Individual differences in frontoparietal plasticity in humans
+summary: >-
+  Brain MRI and fMRI of young adults scanned before and after 50 minutes of adaptive n-back training, collected to
+  test whether ventral tegmental connectivity and T1w/T2w myelin maps predict working memory learning. 46 adults aged
+  18 to 25 from Philadelphia.
+homepage: https://openneuro.org/datasets/ds003849
+doi: 10.18112/openneuro.ds003849.v1.0.1
+year: 2021
+version: 1.0.1
+status: active
+creators:
+  - name: Mackey Lab, University of Pennsylvania (Boroshok AL, Mackey AP, et al.)
+    url: https://openneuro.org/datasets/ds003849
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 35.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003849/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds003849/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Boroshok AL, Park AT, Fotiadis P, et al. Individual differences in frontoparietal plasticity in humans. npj
+    Science of Learning 7, 14 (2022). doi:10.1038/s41539-022-00130-1
+sources:
+  boroshok2022:
+    title: Boroshok et al. 2022, Individual differences in frontoparietal plasticity in humans, npj Science of Learning
+    url: https://doi.org/10.1038/s41539-022-00130-1
+    kind: paper
+  openneuro-ds003849-v1:
+    title: OpenNeuro ds003849 snapshot 1.0.1 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003849/versions/1.0.1
+    kind: website
+  ds003849-file-tree:
+    title: File tree of ds003849 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds003849
+    kind: computed
+related: []
+keywords:
+  [neuroplasticity, working memory training, n-back, ventral tegmental area, myelin map, T1w/T2w ratio, resting-state fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,46,boroshok2022,"Methods, Participants",final sample; 15 further participants were excluded
+subjects,sex=female,30,boroshok2022,"Results, first paragraph",
+subjects,contrast_set=bold+T1w+T2w,46,ds003849-file-tree,,"each participant has two BIDS subject folders (suffix A and B), each with T1w, T2w, rest BOLD and n-back BOLD"
+studies,,92,ds003849-file-tree,,"92 subject folders (46 with suffix A, 46 with suffix B), one per scan session"
+scans,,368,ds003849-file-tree,,"92 T1w, 92 T2w, 92 rest BOLD and 92 n-back BOLD NIfTI files"
+age_mean,,21.39,boroshok2022,"Methods, Participants",
+age_sd,,1.91,boroshok2022,"Methods, Participants",
+age_min,,18,boroshok2022,"Methods, Participants",recruitment range 18 to 25
+age_max,,25,boroshok2022,"Methods, Participants",recruitment range 18 to 25
