@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: Apache-2.0
+name: Apache License, Version 2.0
+short_name: Apache 2.0
+url: https://www.apache.org/licenses/LICENSE-2.0
+version: '2.0, January 2004'
+summary: >-
+  A permissive software license, sometimes applied to data. It allows any use, copying, adaptation and redistribution,
+  including commercial, as long as copies carry the license, keep the original notices and mark changed files.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    note: The grant has no purpose limit, and the license does not exclude commercial use.
+    quote: >-
+      each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and
+      distribute the Work and such Derivative Works in Source or Object form.
+  product_validation:
+    value: 'yes'
+    note: The grant has no purpose limit, which covers testing or validating a product.
+    quote: >-
+      each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and
+      distribute the Work and such Derivative Works in Source or Object form.
+  model_training:
+    value: 'yes'
+    note: The license does not mention machine learning; the grant has no purpose limit.
+    quote: >-
+      each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and
+      distribute the Work and such Derivative Works in Source or Object form.
+  derivatives:
+    value: 'yes'
+    quote: >-
+      copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and
+      distribute the Work and such Derivative Works in Source or Object form.
+  publication:
+    value: 'yes'
+    note: The license does not restrict publishing results.
+  redistribute_original:
+    value: conditional
+    note: Pass on a copy of the license and keep the copyright, attribution and NOTICE content.
+    quote: >-
+      You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You meet the following conditions
+  redistribute_derivatives:
+    value: conditional
+    note: Changed files must say that they were changed, and the license and original notices travel with them.
+    quote: You must cause any modified files to carry prominent notices stating that You changed the files
+  share_model_weights:
+    value: unspecified
+    note: The license does not say whether trained model weights are Derivative Works of the data.
+  attribution:
+    value: conditional
+    note: Applies when you redistribute the data or derived works; the license does not ask for a citation in papers.
+    quote: >-
+      You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent,
+      trademark, and attribution notices from the Source form of the Work
+  share_alike:
+    value: 'no'
+    quote: >-
+      You may add Your own copyright statement to Your modifications and may provide additional or different license
+      terms and conditions for use, reproduction, or distribution of Your modifications
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

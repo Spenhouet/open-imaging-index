@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,100,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,condition=glioma,50,sagiroglu2025,"Materials and Methods, The released dataset",histologically proven high-grade glioma
+subjects,condition=healthy,50,sagiroglu2025,"Materials and Methods, The released dataset",normal subjects
+subjects,contrast=FLAIR,100,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,contrast=T1w,100,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,contrast=T2w,100,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,contrast=T1w_ce,62,sagiroglu2025,"Materials and Methods, The released dataset","sum of the disjoint groups: all 50 high-grade glioma patients and 12 normal subjects have post-contrast T1w"
+subjects,condition=glioma;contrast=T1w_ce,50,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,condition=healthy;contrast=T1w_ce,12,sagiroglu2025,"Materials and Methods, The released dataset",
+subjects,contrast_set=FLAIR+T1w+T1w_ce+T2w,62,kaggle-gazi-brains-2020,,"all 50 high-grade glioma scans and 12 normal scans have a contrast-enhanced series, all scans have FLAIR, T1w and T2w"
+images,,7261,sagiroglu2025,"Materials and Methods, The released dataset","sum of the seven disjoint per-group, per-sequence 2D slice counts"
+subjects,contrast_set=FLAIR+T1w+T2w,38,kaggle-gazi-brains-2020,,"the 50 normal subjects minus the 12 with a contrast-enhanced series"
+images,condition=healthy;contrast=FLAIR,1016,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=healthy;contrast=T1w,1008,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=healthy;contrast=T2w,1008,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=glioma;contrast=FLAIR,1062,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=glioma;contrast=T1w,1054,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=glioma;contrast=T1w_ce,1057,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+images,condition=glioma;contrast=T2w,1056,sagiroglu2025,"Materials and Methods, The released dataset",2D slices
+age_mean,condition=healthy,38.7,sagiroglu2025,"Materials and Methods, The released dataset; Figure 1A",
+age_mean,condition=glioma,56.8,sagiroglu2025,"Materials and Methods, The released dataset; Figure 1A",
