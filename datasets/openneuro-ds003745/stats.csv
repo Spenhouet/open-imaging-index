@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,50,smith2024,Methods: Participants,scanned participants; the sub-2xx folders hold behavioural data of the friends only
+studies,,50,ds003745-file-tree,sub-1* folders,one MRI session per subject (no session folders)
+scans,,620,ds003745-file-tree,"sub-*/anat/*_T1w.nii.gz, *_T2w.nii.gz, sub-*/func/*_bold.nii.gz","50 T1w, 50 T2w and 420 BOLD runs; B0 field maps (magnitude1, magnitude2 and phasediff for 50 subjects) not counted"
+subjects,modality=MR,50,ds003745-file-tree,sub-1* folders,
+subjects,contrast=T1w,50,ds003745-file-tree,anat/*_T1w.nii.gz,"MPRAGE, defaced with PyDeface"
+subjects,contrast=T2w,50,ds003745-file-tree,anat/*_T2w.nii.gz,defaced with PyDeface
+subjects,contrast=bold,50,ds003745-file-tree,func/*_bold.nii.gz,"every subject has runs of all three tasks (trust, sharedreward, ultimatum)"
+subjects,contrast_set=bold+T1w+T2w,50,ds003745-file-tree,anat and func NIfTI files,field maps are not counted as a contrast
+scans,contrast=T1w,50,ds003745-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,50,ds003745-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,420,ds003745-file-tree,func/*_bold.nii.gz,"220 trust, 100 sharedreward and 100 ultimatum runs"
+subjects,vendor=siemens,50,smith2024,Methods: Neuroimaging data collection,"Siemens Prisma 3T with a 20-channel head coil; Manufacturer Siemens, ManufacturersModelName Prisma in the sidecars"
+subjects,field_strength=3,50,smith2024,Methods: Neuroimaging data collection,
+subjects,country=US,50,smith2024,Methods: Participants,"Temple University, Philadelphia, Pennsylvania"
+subjects,condition=healthy,50,smith2024,Methods: Participants,screened to rule out current major psychiatric or neurologic illness; older adults also screened for dementia
+subjects,sex=female,27,ds003745-participants,sex,
+subjects,sex=male,23,ds003745-participants,sex,
+subjects,age=18-19,1,ds003745-participants,age,age in years as recorded in participants.tsv
+subjects,age=20-29,22,ds003745-participants,age,
+subjects,age=30-39,3,ds003745-participants,age,
+subjects,age=60-69,14,ds003745-participants,age,
+subjects,age=70-79,9,ds003745-participants,age,
+subjects,age=80-89,1,ds003745-participants,age,
+age_min,,18,smith2024,Methods: Participants,
+age_max,,80,smith2024,Methods: Participants,"younger group 18 to 34 years (n=26), older group 63 to 80 years (n=24)"
