@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcfmrp-ms-qmri
+name: Ribeirão Preto Multiple Sclerosis Quantitative MRI Cohort
+full_name: Clinics Hospital of Ribeirão Preto Medical School, quantitative brain MRI of multiple sclerosis patients and controls
+summary: >-
+  Brain MRI of multiple sclerosis patients and neurologically normal controls, used to classify patients from regional
+  quantitative measures (diffusion, T2 relaxometry, magnetization transfer, morphometry). Images are not shared; only
+  the paper's figures and result tables are public.
+homepage: https://doi.org/10.1590/2446-4740.07117
+doi: 10.1590/2446-4740.07117
+# Year of the paper that describes the cohort. The images themselves have no public release.
+year: 2018
+creators:
+  - name: Rodrigo Antonio Pessini, Clinics Hospital, Ribeirão Preto Medical School, University of São Paulo
+  - name: Antonio Carlos dos Santos, Clinics Hospital, Ribeirão Preto Medical School, University of São Paulo
+  - name: Carlos Ernesto Garrido Salmon, University of São Paulo
+modalities: [MR]
+contrasts: [T1w, dwi, MTR, T2map]
+anatomy: [brain]
+conditions: [multiple_sclerosis, healthy]
+tasks: [classification]
+countries: [BR]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/2446-4740.07117
+  note: >-
+    The paper has no data availability statement and the images were used retrospectively from the hospital's
+    clinical archive. The figshare record that accompanies the paper holds only its figures and four result tables.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the images. The CC BY 4.0 license of the paper and the figshare
+      record covers only the article, figures and tables.
+citation:
+  text: >-
+    Pessini, R. A., Santos, A. C., & Salmon, C. E. G. (2018). Quantitative MRI data in multiple sclerosis patients: a
+    pattern recognition study. Research on Biomedical Engineering, 34(2). https://doi.org/10.1590/2446-4740.07117
+sources:
+  pessini2018:
+    title: Pessini et al. 2018, Research on Biomedical Engineering 34(2)
+    url: https://www.scielo.br/scielo.php?script=sci_arttext&pid=S2446-47402018005008104&lng=en&tlng=en
+    kind: paper
+  figshare-6388574:
+    title: SciELO figshare record 6388574, figures and tables of Pessini et al. 2018
+    url: https://doi.org/10.6084/m9.figshare.6388574.v1
+    kind: website
+related: []
+keywords: [multiple sclerosis, quantitative MRI, magnetization transfer ratio, T2 relaxometry, diffusion tensor imaging, k-nearest neighbors]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
