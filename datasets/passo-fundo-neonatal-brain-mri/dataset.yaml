@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: passo-fundo-neonatal-brain-mri
+name: Neonatal brain MRI and cranial ultrasound (Passo Fundo)
+full_name: >-
+  Alterations on magnetic resonance imaging of the neonatal brain: correlations with prenatal risk factors and
+  transfontanellar ultrasound findings
+summary: >-
+  Brain MRI and transfontanellar ultrasound of mostly preterm newborns at a Brazilian tertiary hospital for high-risk
+  pregnancy, read for germinal matrix hemorrhage, hydrocephalus and leukomalacia to judge ultrasound against MRI. 51
+  neonates. Images not shared.
+homepage: https://doi.org/10.1590/0100-3984.2021.0149-en
+year: 2022
+creators:
+  - name: Universidade Federal da Fronteira Sul, Hospital São Vicente de Paulo and Universidade de Passo Fundo
+species: human
+modalities: [MR, US]
+contrasts: [T1w, T2w, FLAIR, swi, dwi, ADC]
+anatomy: [brain]
+conditions: [preterm_birth, germinal_matrix_hemorrhage, intracranial_hemorrhage, hydrocephalus]
+tasks: [classification]
+countries: [BR]
+field_strengths: [1.5, 3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/0100-3984.2021.0149-en
+  note: >-
+    The article has no data availability statement and offers no route to the images. The SciELO figshare record
+    10.6084/m9.figshare.19959855 holds only the article's figures and tables, not subject data.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MRI and ultrasound examinations of the 51 neonates.
+    note: >-
+      No terms are published for the images. The CC BY 4.0 license of the article and its figshare record covers the
+      published text and figures only.
+citation:
+  text: >-
+    Sartori JT, Ambros LE, Callegaro GIS. Alterations on magnetic resonance imaging of the neonatal brain: correlations
+    with prenatal risk factors and transfontanellar ultrasound findings. Radiol Bras 55(5) (2022).
+    doi:10.1590/0100-3984.2021.0149-en
+sources:
+  sartori2022:
+    title: Sartori et al. 2022, Radiologia Brasileira 55(5)
+    url: https://doi.org/10.1590/0100-3984.2021.0149-en
+    kind: paper
+  figshare-19959855:
+    title: SciELO figshare record 19959855, figures and tables of the article
+    url: https://doi.org/10.6084/m9.figshare.19959855.v1
+    kind: website
+related: []
+keywords:
+  [
+    neonatal brain,
+    preterm infant,
+    germinal matrix hemorrhage,
+    intraventricular hemorrhage,
+    Papile grade,
+    transfontanellar ultrasound,
+    cranial ultrasound,
+    leukomalacia,
+    low birth weight
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
