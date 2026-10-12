@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: dystonia-ds006395
+name: Upper Limb and Cervical Dystonia MRI (ds006395)
+full_name: Upper limb dystonia, cervical dystonia and healthy controls dataset
+summary: >-
+  Brain MRI, diffusion MRI and task and resting-state fMRI of adults with focal upper limb or cervical dystonia and
+  healthy controls, collected in São Paulo to study the brain basis of focal dystonia. Includes dystonia severity
+  scores.
+homepage: https://openneuro.org/datasets/ds006395
+doi: 10.18112/openneuro.ds006395.v1.0.8
+year: 2025
+updated: 2026
+version: 1.0.8
+status: active
+creators:
+  - name: Hospital Israelita Albert Einstein and Universidade Federal de São Paulo (de Faria DD, Paulo AJM, de Carvalho Aguiar P et al.)
+    url: https://openneuro.org/datasets/ds006395
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy, cervical_dystonia, upper_limb_dystonia]
+tasks: []
+formats: [BIDS, NIfTI]
+countries: [BR]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 66.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006395
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.8 states "License" CC0, and the README names CC0 v1.0.
+citation:
+  text: >-
+    de Faria DD, Paulo AJM, de Paiva JPQ, Winkler A, Borges V, Silva SMA, Ballalai H, de Carvalho Aguiar P. Upper limb
+    dystonia, cervical dystonia and healthy controls dataset (ds006395, version 1.0.8). OpenNeuro (2026).
+    doi:10.18112/openneuro.ds006395.v1.0.8
+sources:
+  openneuro-ds006395-v1-0-8:
+    title: OpenNeuro ds006395 snapshot 1.0.8 (dataset_description.json, README.txt, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds006395/versions/1.0.8
+    kind: website
+  ds006395-participants:
+    title: participants.tsv of ds006395 snapshot 1.0.8 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds006395/blob/1.0.8/participants.tsv
+    kind: computed
+  ds006395-file-tree:
+    title: File tree of ds006395 snapshot 1.0.8 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds006395/tree/1.0.8
+    kind: computed
+related: []
+keywords: [focal dystonia, cervical dystonia, upper limb dystonia, finger tapping, resting-state fMRI, diffusion MRI, Burke-Fahn-Marsden]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

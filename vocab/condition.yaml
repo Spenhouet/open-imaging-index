@@ -30,6 +30,15 @@ terms:
   - { id: scd, label: Subjective cognitive decline, synonyms: [SCD], mappings: { mondo: 'MONDO:0850292' } }
   - { id: cognitive_impairment, label: Cognitive impairment, mappings: { hp: 'HP:0100543' } }
   - { id: parkinsons, label: Parkinson's disease, synonyms: [PD], mappings: { mondo: 'MONDO:0005180' } }
+  - { id: focal_dystonia, label: Focal dystonia, mappings: { mondo: 'MONDO:0000477' } }
+  - { id: cervical_dystonia, label: Cervical dystonia, parent: focal_dystonia, synonyms: [spasmodic torticollis, CD], mappings: { mondo: 'MONDO:0000481' } }
+  - {
+      id: upper_limb_dystonia,
+      label: Upper limb dystonia,
+      parent: focal_dystonia,
+      synonyms: [focal hand dystonia, writer's cramp, ULD],
+      description: Focal dystonia of the arm or hand. Closest MONDO term is focal hand dystonia (MONDO:0000482).
+    }
   - { id: motor_neuron_disease, label: Motor neuron disease, synonyms: [MND, motor neuron disorder], mappings: { mondo: 'MONDO:0020128' } }
   - { id: huntington_disease, label: Huntington disease, synonyms: [HD, Huntington's disease], mappings: { mondo: 'MONDO:0007739' } }
   - {
