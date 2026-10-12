@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,78,ds005265-file-tree,sub-* folders and participants.tsv,the OpenNeuro README also states 78 participants
+studies,,78,ds005265-file-tree,sub-* folders,one MRI session per subject
+scans,,701,ds005265-file-tree,anat/ and func/ NIfTI files,78 T1w and 623 bold volumes
+subjects,condition=healthy,78,ds005265-file-tree,participants.tsv (Group),all in group control
+subjects,country=US,78,ds005265-file-tree,anat/*_T1w.json (InstitutionName),UCSB Brain Imaging Center (one sidecar reads UCSB Psychology and Brain Imaging)
+subjects,vendor=siemens,78,ds005265-file-tree,anat/*_T1w.json (Manufacturer),Siemens Prisma fit
+subjects,field_strength=3,78,ds005265-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,contrast=T1w,78,ds005265-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,78,ds005265-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,78,ds005265-file-tree,,
+scans,contrast=T1w,78,ds005265-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,623,ds005265-file-tree,func/*_bold.nii.gz,eight runs for 77 subjects and seven for one
+subjects,sex=female,58,ds005265-file-tree,participants.tsv (Gender),
+subjects,sex=male,20,ds005265-file-tree,participants.tsv (Gender),
+subjects,age=10-19,22,ds005265-file-tree,participants.tsv (Age),
+subjects,age=20-29,55,ds005265-file-tree,participants.tsv (Age),
+age_mean,,20.6,ds005265-file-tree,participants.tsv (Age),77 subjects with a stated age
+age_median,,20,ds005265-file-tree,participants.tsv (Age),77 subjects with a stated age
+age_min,,18,ds005265-file-tree,participants.tsv (Age),
+age_max,,26,ds005265-file-tree,participants.tsv (Age),
+subjects,sex=female;age=10-19,18,ds005265-file-tree,participants.tsv (Gender; Age),
+subjects,sex=female;age=20-29,39,ds005265-file-tree,participants.tsv (Gender; Age),
+subjects,sex=male;age=20-29,16,ds005265-file-tree,participants.tsv (Gender; Age),
