@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,95,vanschuerbeek2016,"Materials and Methods, Participants",25 from an earlier VBM study and 70 from ongoing fMRI studies; the OpenNeuro snapshot summary also lists 95 subjects
+subjects,sex=female,95,vanschuerbeek2016,"Materials and Methods, Participants",All participants are healthy females
+subjects,condition=healthy,95,vanschuerbeek2016,"Materials and Methods, Participants","Free of psychiatric disorder (MINI), no psychiatric history, BDI below 9"
+age_min,,18,vanschuerbeek2016,"Materials and Methods, Participants",Reported as age range 18-30 years
+age_max,,30,vanschuerbeek2016,"Materials and Methods, Participants",Reported as age range 18-30 years
+subjects,contrast=T1w,95,vanschuerbeek2016,"Materials and Methods, Imaging Protocol",One 3D T1-TFE anatomical scan per participant
+subjects,field_strength=3,95,vanschuerbeek2016,"Materials and Methods, Imaging Protocol",3T Achieva
+subjects,vendor=philips,95,vanschuerbeek2016,"Materials and Methods, Imaging Protocol","3T Achieva (Philips, Best, The Netherlands)"
+subjects,country=BE,95,vanschuerbeek2016,"Materials and Methods, Participants; Imaging Protocol","Recruited at UZ Brussel, VUB and Ghent University; scanned on the 3T system of the authors' radiology department at UZ Brussel"
