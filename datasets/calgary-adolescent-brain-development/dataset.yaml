@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: calgary-adolescent-brain-development
+name: Adolescent Brain Development (Calgary)
+full_name: Adolescent Brain Development
+summary: >-
+  Longitudinal multimodal brain MRI of typically developing children and adolescents, scanned up to three times two
+  years apart to study white matter development and its links to reading and cognition. Diffusion, myelin-sensitive
+  ihMT and mcDESPOT, QSM, ASL and resting-state fMRI from 51 children, in BIDS.
+homepage: https://portal.conp.ca/dataset?id=projects/AdolescentBrainDevelopment
+year: 2024
+version: '1.0'
+status: active
+creators:
+  - name: Developmental Neuroimaging Lab, University of Calgary (Catherine Lebel)
+    url: https://www.developmentalneuroimaginglab.ca/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold, asl, T2starw, ihMTw, VFA]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 55.7
+access:
+  type: open
+  url: https://github.com/conpdatasets/AdolescentBrainDevelopment
+licenses:
+  - license: PDDL-1.0
+    note: >-
+      dataset_description.json and the CONP DATS.json both name PDDL. The files are served over HTTPS from
+      sftp.conp.ca without an account; DATS.json marks the distribution as public.
+citation:
+  text: >-
+    Geeraert BL, Chamberland M, Lebel RM, Lebel C. Multimodal principal component analysis to identify major features
+    of white matter structure and links to reading. PLOS ONE 15(8), e0233244 (2020). doi:10.1371/journal.pone.0233244
+sources:
+  conp-adolescent-brain-development:
+    title: CONP repository of the Adolescent Brain Development dataset (README, DATS.json, dataset_description.json)
+    url: https://github.com/conpdatasets/AdolescentBrainDevelopment
+    kind: website
+  geeraert2020:
+    title: >-
+      Geeraert et al. 2020, Multimodal principal component analysis to identify major features of white matter
+      structure and links to reading, PLOS ONE
+    url: https://doi.org/10.1371/journal.pone.0233244
+    kind: paper
+  abd-participants:
+    title: >-
+      participants.tsv of the CONP release (PDDL), one row per session with age in days and sex; restricted to the 96
+      sessions that have image files
+    url: https://sftp.conp.ca/users/lebel-lab/AdolescentBrainDevelopment/participants.tsv
+    kind: computed
+  abd-file-tree:
+    title: >-
+      File listing of the CONP BIDS repository (PDDL), subjects and sessions counted per NIfTI file type
+    url: https://github.com/conpdatasets/AdolescentBrainDevelopment/tree/main
+    kind: computed
+related: [calgary-preschool-mri]
+keywords:
+  [adolescence, brain development, pediatric, longitudinal, white matter, myelin, diffusion MRI, ihMT, mcDESPOT, QSM]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

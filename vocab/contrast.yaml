@@ -40,6 +40,18 @@ terms:
   - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }
+  - id: ihMTw
+    label: Inhomogeneous magnetization transfer
+    group: MR
+    description: Gradient echo images with single- and dual-frequency magnetization transfer saturation, used for myelin-sensitive ihMT ratio maps.
+    synonyms: [ihMT]
+    mappings: { bids: ihMTw }
+  - id: VFA
+    label: Variable flip angle
+    group: MR
+    description: Spoiled gradient echo and/or balanced SSFP images at several flip angles for T1, T2 or myelin water mapping.
+    synonyms: [mcDESPOT, DESPOT1, DESPOT2]
+    mappings: { bids: VFA }
   - { id: angio, label: MR angiography, group: MR, synonyms: [TOF, MRA], mappings: { bids: angio } }
   # MR diffusion, function, perfusion
   - { id: dwi, label: Diffusion-weighted, group: MR, synonyms: [DWI, DTI], mappings: { bids: dwi } }
