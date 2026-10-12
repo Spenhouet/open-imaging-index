@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: yale-aggression-cbt
+name: Yale Childhood Aggression CBT fMRI
+full_name: Using CBT to Examine Circuitry of Frustrative Non-reward in Aggressive Children (RDoC-CBT, NCT01965184)
+summary: >-
+  Task fMRI of children with clinically significant aggression across psychiatric diagnoses and healthy controls,
+  scanned before a randomized trial of cognitive-behavioral therapy versus supportive psychotherapy at the Yale Child
+  Study Center. 100 aggressive children and 29 controls aged 8 to 16.
+homepage: https://nda.nih.gov/edit_collection.html?id=2139
+year: 2017
+status: active
+creators:
+  - name: Sukhodolsky lab, Yale University Child Study Center
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions:
+  [
+    aggressive_behavior,
+    oppositional_defiant_disorder,
+    conduct_disorder,
+    disruptive_mood_dysregulation_disorder,
+    adhd,
+    autism,
+    anxiety_disorder,
+    depression,
+    healthy,
+  ]
+tasks: [regression, classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2139
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The study data are NIMH Data Archive collection 2139. Access needs an approved NDA data access request; the paper
+      also offers anonymized data from the authors on reasonable request.
+citation:
+  text: >-
+    Ibrahim K, Noble S, He G, Lacadie C, Crowley MJ, McCarthy G, Scheinost D, Sukhodolsky DG. Large-scale functional
+    brain networks of maladaptive childhood aggression identified by connectome-based predictive modeling. Mol
+    Psychiatry 27(2):985-999 (2022). doi:10.1038/s41380-021-01317-5
+sources:
+  ibrahim2022:
+    title: Ibrahim et al. 2022, connectome-based predictive modeling of childhood aggression, Mol Psychiatry (author manuscript PMC9035467)
+    url: https://doi.org/10.1038/s41380-021-01317-5
+    kind: paper
+  nct01965184:
+    title: ClinicalTrials.gov record NCT01965184 (RDoC-CBT)
+    url: https://clinicaltrials.gov/study/NCT01965184
+    kind: website
+  nda-collection-2139:
+    title: NIMH Data Archive collection 2139 page, General tab
+    url: https://nda.nih.gov/edit_collection.html?id=2139
+    kind: website
+related: []
+keywords:
+  [
+    childhood aggression,
+    disruptive behavior,
+    irritability,
+    cognitive-behavioral therapy,
+    face emotion perception,
+    task fMRI,
+    connectome-based predictive modeling,
+    RDoC,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
