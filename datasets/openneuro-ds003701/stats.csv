@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,96,openneuro-ds003701-v1-0-1,README and snapshot summary,"participants.tsv lists 105 rows, of which 96 have image folders; the 2017 paper analysed 32 of 35 recruited participants"
+scans,,1440,ds003701-file-tree,anat/ fmap/ and func/ NIfTI files,"96 T1w, 96 T2w, 864 bold and 192 fmap epi volumes"
+scans,contrast=T1w,96,ds003701-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,96,ds003701-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,864,ds003701-file-tree,func/*_bold.nii.gz,"one resting-state run and eight C-PRO task runs per subject"
+subjects,contrast=T1w,96,ds003701-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,96,ds003701-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,96,ds003701-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,96,ds003701-file-tree,,
+subjects,condition=healthy,96,ds003701-participants,group,all rows are in the control group (participants.json: only a control group)
+subjects,sex=female,54,ds003701-participants,sex,
+subjects,sex=male,42,ds003701-participants,sex,
+subjects,age=10-19,26,ds003701-participants,age,ages 18 and 19
+subjects,age=20-29,66,ds003701-participants,age,
+subjects,age=30-39,4,ds003701-participants,age,
+subjects,sex=female;age=10-19,16,ds003701-participants,sex and age,
+subjects,sex=male;age=10-19,10,ds003701-participants,sex and age,
+subjects,sex=female;age=20-29,37,ds003701-participants,sex and age,
+subjects,sex=male;age=20-29,29,ds003701-participants,sex and age,cells below 10 left out
+subjects,country=US,96,ito2017,Methods (Participants),Rutgers University-Newark community
+subjects,vendor=siemens,96,openneuro-ds003701-v1-0-1,BIDS sidecars (Manufacturer),Siemens TrioTim
+subjects,field_strength=3,96,openneuro-ds003701-v1-0-1,BIDS sidecars (MagneticFieldStrength),
+age_mean,,22.22,ds003701-participants,age,
+age_median,,21,ds003701-participants,age,
+age_min,,18,ds003701-participants,age,
+age_max,,38,ds003701-participants,age,
