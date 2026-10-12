@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,98,scidb-15487,Description,healthy Chinese medical students
+subjects,condition=healthy,98,scidb-15487,Description,
+subjects,modality=MR,98,scidb-15487,Description,
+subjects,field_strength=3,98,scidb-15487,Description,"""3.0-Tesla scanner (Prisma)"""
