@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: florbetaben-phase-2b
+name: Florbetaben Phase IIb Trial (diagnostic confidence add-on)
+full_name: >-
+  Phase IIb clinical trial of florbetaben (BAY 94-9172) amyloid PET in probable Alzheimer's disease and unimpaired
+  controls, with an add-on questionnaire study on diagnostic confidence (Schipke et al. 2012)
+summary: >-
+  Amyloid PET with florbetaben in people with probable Alzheimer's disease and cognitively unimpaired controls,
+  acquired in a phase IIb diagnostic trial and used to study how scan results change referring physicians'
+  diagnostic confidence. 272 people. The images are not shared.
+homepage: https://doi.org/10.1159/000339367
+doi: 10.1159/000339367
+# Year of the questionnaire study publication; the images have no public release.
+year: 2012
+creators:
+  - name: Schipke CG, Peters O, Heuser I, Grimmer T, Sabbagh MN, Sabri O, Hock C, Kunz M, Kuhlmann J, Reininger C
+    url: https://doi.org/10.1159/000339367
+species: human
+modalities: [PT]
+tracers: [florbetaben]
+anatomy: [brain]
+conditions: [alzheimers, healthy]
+# Countries of the centres that returned questionnaires (Supplementary Table 2).
+countries: [AU, DE, JP, CH]
+access:
+  type: not_shared
+  url: https://doi.org/10.1159/000339367
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No data sharing route for the PET images is published. The figshare record that holds the erratum and the
+      supplementary tables is licensed CC BY 4.0, but it contains no images.
+citation:
+  text: >-
+    Schipke CG, Peters O, Heuser I, Grimmer T, Sabbagh MN, Sabri O, Hock C, Kunz M, Kuhlmann J, Reininger C. Impact of
+    Beta-Amyloid-Specific Florbetaben PET Imaging on Confidence in Early Diagnosis of Alzheimer's Disease. Dement
+    Geriatr Cogn Disord 33:416-422 (2012). doi:10.1159/000339367
+sources:
+  schipke2012:
+    title: Schipke et al. 2012, Dementia and Geriatric Cognitive Disorders (abstract)
+    url: https://doi.org/10.1159/000339367
+    kind: paper
+  karger-figshare-5241433:
+    title: >-
+      Karger figshare record 5241433, erratum and supplementary material of Schipke et al. 2012 (CC BY 4.0)
+    url: https://karger.figshare.com/articles/dataset/Erratum_Impact_of_Beta-Amyloid-Specific_Florbetaben_PET_Imaging_on_Confidence_in_Early_Diagnosis_of_Alzheimer_s_Disease/5241433
+    kind: paper
+related: []
+keywords: [florbetaben, amyloid PET, diagnostic confidence, clinical trial, Alzheimer's disease]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
