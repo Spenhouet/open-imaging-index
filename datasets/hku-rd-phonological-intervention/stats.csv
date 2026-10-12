@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,123,hku-datahub-32953021,Description: Participants,Sum of 84 participants with reading disability and 39 neurotypical controls (disjoint groups)
+subjects,condition=dyslexia,84,hku-datahub-32953021,Description: Participants,46 adults and 38 children; randomized to phonological intervention or waitlist
+subjects,condition=healthy,39,hku-datahub-32953021,Description: Participants,Age-matched neurotypical controls: 20 adults and 19 children
+subjects,field_strength=3,123,hku-datahub-32953021,Description: MRI data acquisition,All neuroimaging on one 3 T Siemens Prisma
+subjects,vendor=siemens,123,hku-datahub-32953021,Description: MRI data acquisition,
+subjects,country=CN,123,hku-datahub-32953021,Description: Participants,Recruited in Guangdong Province; scanned in Guangzhou

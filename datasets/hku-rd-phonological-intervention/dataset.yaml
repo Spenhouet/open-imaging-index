@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hku-rd-phonological-intervention
+name: Chinese Reading Disability Phonological Intervention
+full_name: >-
+  Support data for "Responsiveness to phonological intervention in Chinese children and adults with reading
+  disability"
+summary: >-
+  Task fMRI and structural brain MRI from Chinese children and adults with reading disability, scanned before and after
+  a four-week online phonological training program or a waitlist period, with age-matched typical readers as controls.
+homepage: https://datahub.hku.hk/articles/dataset/Support_data_for_Responsiveness_to_phonological_intervention_in_Chinese_children_and_adults_with_reading_disability_/32953021
+doi: 10.25442/hku.32953021.v1
+year: 2026
+version: '1'
+creators:
+  - name: Mingyang Hua, The University of Hong Kong
+    url: https://datahub.hku.hk/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [dyslexia, healthy]
+tasks: [longitudinal]
+countries: [CN]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 53.5
+access:
+  type: on_request
+  url: https://datahub.hku.hk/articles/dataset/Support_data_for_Responsiveness_to_phonological_intervention_in_Chinese_children_and_adults_with_reading_disability_/32953021
+licenses:
+  - license: CC-BY-NC-4.0
+citation:
+  text: >-
+    Hua, Mingyang (2026). Support data for "Responsiveness to phonological intervention in Chinese children and adults
+    with reading disability". HKU DataHub. Dataset. https://doi.org/10.25442/hku.32953021.v1
+sources:
+  hku-datahub-32953021:
+    title: HKU DataHub record 32953021 (metadata via the figshare API)
+    url: https://api.figshare.com/v2/articles/32953021
+    kind: website
+related: []
+keywords: [reading disability, dyslexia, phonological intervention, Chinese, task fMRI, rhyming judgment, children]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
