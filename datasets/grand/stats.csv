@@ -1,0 +1,38 @@
+measure,by,value,source,where,note
+subjects,,109,openneuro-ds007831-v104,README: Summary,"109 subject folders in the snapshot; the preprint abstract (anderson2026) describes reading and MRI data from 116 adults aged 22 to 84 (mean 59)"
+subjects,sex=female,56,ds007831-participants,sex,sex F
+subjects,sex=male,53,ds007831-participants,sex,sex M
+subjects,age=20-29,2,ds007831-participants,age_mri,age in years at MRI
+subjects,age=30-39,7,ds007831-participants,age_mri,age in years at MRI
+subjects,age=40-49,17,ds007831-participants,age_mri,age in years at MRI
+subjects,age=50-59,20,ds007831-participants,age_mri,age in years at MRI
+subjects,age=60-69,40,ds007831-participants,age_mri,age in years at MRI
+subjects,age=70-79,20,ds007831-participants,age_mri,age in years at MRI
+subjects,age=80-89,3,ds007831-participants,age_mri,age in years at MRI
+subjects,sex=female;age=40-49,11,ds007831-participants,"sex, age_mri",cells below 10 left out
+subjects,sex=female;age=60-69,20,ds007831-participants,"sex, age_mri",
+subjects,sex=female;age=70-79,12,ds007831-participants,"sex, age_mri",
+subjects,sex=male;age=50-59,11,ds007831-participants,"sex, age_mri",
+subjects,sex=male;age=60-69,20,ds007831-participants,"sex, age_mri",
+age_mean,,59.67,ds007831-participants,age_mri,
+age_sd,,13.02,ds007831-participants,age_mri,sample standard deviation
+age_median,,61.95,ds007831-participants,age_mri,
+age_min,,22.45,ds007831-participants,age_mri,
+age_max,,84.15,ds007831-participants,age_mri,
+subjects,condition=healthy,109,openneuro-ds007831-v104,README: Summary,healthy neurotypical older adults
+subjects,contrast=T1w,109,ds007831-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=FLAIR,109,ds007831-file-tree,sub-*/anat/*_FLAIR.nii.gz,
+subjects,contrast=T2w,109,ds007831-file-tree,sub-*/anat/*_acq-coplanar_T2w.nii.gz,coplanar T2w at 2.6 mm slices
+subjects,contrast=dwi,108,ds007831-file-tree,sub-*/dwi/*_dwi.nii.gz,
+subjects,contrast=bold,109,ds007831-file-tree,sub-*/func/*_task-SemDec_bold.nii.gz,
+subjects,contrast_set=bold+dwi+FLAIR+T1w+T2w,108,ds007831-file-tree,"anat, func and dwi folders",field maps not counted as contrasts
+subjects,contrast_set=bold+FLAIR+T1w+T2w,1,ds007831-file-tree,"anat, func and dwi folders",
+scans,,964,ds007831-file-tree,sub-*/*/*.nii.gz,"all raw image files: 109 T1w, 109 FLAIR, 109 T2w, 109 bold, 108 dwi and 420 spin-echo field maps"
+scans,contrast=T1w,109,ds007831-file-tree,*_T1w.nii.gz,
+scans,contrast=FLAIR,109,ds007831-file-tree,*_FLAIR.nii.gz,
+scans,contrast=T2w,109,ds007831-file-tree,*_T2w.nii.gz,
+scans,contrast=bold,109,ds007831-file-tree,*_bold.nii.gz,one Adaptive Language Mapping run per subject
+scans,contrast=dwi,108,ds007831-file-tree,*_dwi.nii.gz,
+subjects,field_strength=3,109,openneuro-ds007831-v104,README: Acquisition details,3T Siemens MAGNETOM Prisma
+subjects,vendor=siemens,109,openneuro-ds007831-v104,README: Acquisition details,3T Siemens MAGNETOM Prisma
+subjects,country=US,109,openneuro-ds007831-v104,README: Summary,collected at Georgetown University Medical Center
