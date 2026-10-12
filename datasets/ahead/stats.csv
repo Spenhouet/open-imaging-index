@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,105,alkemade2020,Table 2,106 healthy participants were scanned; one was excluded for low image quality (Section 3.1)
+subjects,sex=female,60,alkemade2020,Table 2,
+subjects,sex=male,45,alkemade2020,Table 2,
+subjects,age=18-30,42,alkemade2020,Table 2,
+subjects,age=31-40,12,alkemade2020,Table 2,
+subjects,age=41-50,13,alkemade2020,Table 2,
+subjects,age=51-60,12,alkemade2020,Table 2,
+subjects,age=61-70,13,alkemade2020,Table 2,
+subjects,age=71-80,13,alkemade2020,Table 2,
+subjects,sex=female;age=18-30,27,alkemade2020,Table 2,
+subjects,sex=female;age=31-40,6,alkemade2020,Table 2,
+subjects,sex=female;age=41-50,6,alkemade2020,Table 2,
+subjects,sex=female;age=51-60,7,alkemade2020,Table 2,
+subjects,sex=female;age=61-70,7,alkemade2020,Table 2,
+subjects,sex=female;age=71-80,7,alkemade2020,Table 2,
+subjects,sex=male;age=18-30,15,alkemade2020,Table 2,
+subjects,sex=male;age=31-40,6,alkemade2020,Table 2,
+subjects,sex=male;age=41-50,7,alkemade2020,Table 2,
+subjects,sex=male;age=51-60,5,alkemade2020,Table 2,
+subjects,sex=male;age=61-70,6,alkemade2020,Table 2,
+subjects,sex=male;age=71-80,6,alkemade2020,Table 2,
+subjects,field_strength=7,105,alkemade2020,Section 2.2,
+subjects,vendor=philips,105,alkemade2020,Section 2.2,Philips Achieva 7T with a 32-channel head coil
+subjects,condition=healthy,105,alkemade2020,Section 2.1,self-reported health at inclusion
+subjects,contrast=T1w,105,alkemade2020,Section 3.1 and Table 3,
+subjects,contrast=T1map,105,alkemade2020,Section 3.1 and Table 3,R1 maps are shared as well
+subjects,contrast=T2starmap,105,alkemade2020,Section 3.1 and Table 3,R2* maps are shared as well
+subjects,contrast=Chimap,105,alkemade2020,Section 3.1 and Table 3,quantitative susceptibility map (QSM)
