@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nick
+name: NiCK Study
+full_name: >-
+  Magnetic Resonance Imaging (MRI) Analysis and Neurocognitive Assessment of Children and Young Adults with Chronic
+  Kidney Disease (CKD) "NiCK" Study
+summary: >-
+  Multimodal brain MRI of children and young adults aged 8 to 25 with chronic kidney disease and matched healthy
+  controls, collected to relate kidney function, anemia and blood pressure to brain structure, perfusion, connectivity
+  and neurocognitive test results.
+homepage: https://doi.org/10.7910/DVN/E7TAHQ
+doi: 10.7910/DVN/E7TAHQ
+year: 2025
+updated: 2026
+version: '1.1'
+status: active
+creators:
+  - name: Susan Furth, Children's Hospital of Philadelphia
+  - name: Erum Hartung, Children's Hospital of Philadelphia
+  - name: NiCK Study investigators, Children's Hospital of Philadelphia and University of Pennsylvania
+modalities: [MR]
+contrasts: [T1w, T2w, PDw, FLAIR, dwi, bold, asl]
+anatomy: [brain]
+conditions: [ckd, healthy]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 35.2
+access:
+  type: registration
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/E7TAHQ
+  note: >-
+    Files are downloaded from Harvard Dataverse after filling in a guestbook with name, email and institution and
+    accepting the CHOP terms of use. The file listing sums to about 35.2 GB.
+licenses:
+  - license: LicenseRef-CHOP-Dataverse-NiCK-Terms
+citation:
+  text: >-
+    Furth S, Laney N, Hartung E, Moodalbail D, Ruebner R, Radcliffe J, Hooper S, Gur R, Davatzikos C, Erus G, Doshi J,
+    Detre J, Liu H-S, Herrington J, Jawad A. Magnetic Resonance Imaging (MRI) Analysis and Neurocognitive Assessment
+    of Children and Young Adults with Chronic Kidney Disease (CKD) "NiCK" Study. Version 1.1. Harvard Dataverse; 2025.
+    https://doi.org/10.7910/DVN/E7TAHQ
+sources:
+  dataverse-nick:
+    title: NiCK Study dataset page on Harvard Dataverse, version 1.1
+    url: https://doi.org/10.7910/DVN/E7TAHQ
+    kind: website
+  hartung2015:
+    title: Hartung et al. 2015, Design and methods of the NiCK study, BMC Nephrology 16:66
+    url: https://doi.org/10.1186/s12882-015-0061-1
+    kind: paper
+  hartung2018:
+    title: Hartung et al. 2018, Brain MRI findings in children and young adults with CKD, Am J Kidney Dis
+    url: https://doi.org/10.1053/j.ajkd.2017.11.024
+    kind: paper
+  liu2018:
+    title: Liu et al. 2018, Regional cerebral blood flow in children and young adults with CKD, Radiology
+    url: https://doi.org/10.1148/radiol.2018171339
+    kind: paper
+related: []
+keywords:
+  [chronic kidney disease, pediatric, neurocognition, cerebral blood flow, pCASL, resting-state fMRI, kidney transplant]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

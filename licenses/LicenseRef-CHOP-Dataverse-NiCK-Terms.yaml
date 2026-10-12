@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-CHOP-Dataverse-NiCK-Terms
+name: Children's Hospital of Philadelphia terms of use for the NiCK Study on Harvard Dataverse
+short_name: CHOP NiCK terms
+url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/E7TAHQ
+version: 'Terms of use of dataset version 1.1 (released 2026-07-13), read 2026-10-12'
+summary: >-
+  A revocable license from the Children's Hospital of Philadelphia for non-profit research only, accepted through a
+  Dataverse guestbook that records name, email and institution. Copies may not be passed on, re-identification is
+  forbidden, publications must cite and acknowledge CHOP, and the data must be destroyed after use.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: User may not use the dataset for commercial purposes.
+  product_validation:
+    value: unspecified
+    note: The terms limit use to non-profit research but do not address testing or validating a product.
+  model_training:
+    value: unspecified
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: If the use of this dataset results in publication, a citation to CHOP is required unless explicitly
+      prohibited by the journal’s submission guidelines.
+    note: Publications must cite and acknowledge CHOP.
+  redistribute_original:
+    value: 'no'
+    quote: 'The dataset shall not be shared with any third party; all Users must obtain the data directly from CHOP
+      through the Harvard Dataverse page.'
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: If the use of this dataset results in publication, the following acknowledgment statement is required
+      unless explicitly prohibited by the journal’s submission guidelines
+    note: Both a data citation (authors, year, title, version, publisher) and an acknowledgment naming Arcus at CHOP
+      and Harvard Dataverse are required.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: 'By downloading or previewing this dataset, the User agrees to the following terms and conditions:'
+    note: The terms are accepted online through a Dataverse guestbook asking for name, email and institution.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'yes'
+    quote: Upon conclusion of use of the dataset for scholarly purposes the data will be destroyed.
+    note: Where destruction is infeasible, the protections continue for as long as the data are kept.
+  no_reidentification:
+    value: 'yes'
+    quote: The dataset may not be used for re-identifying individuals or discerning individual attributes.
+  geographic_restriction:
+    value: conditional
+    quote: Additionally, the User specifically agrees not to knowingly share, disclose, transfer, or otherwise permit
+      access to the dataset to or by any entity, organization, individual, or governmental representative that meets
+      the criteria of a “Covered Person” as defined in 28 CFR Part 202, and to comply with the requirements of 28 CFR
+      Part 202 and any amendments thereto.
+    note: Access by persons covered by the US rule on countries of concern (28 CFR Part 202) is barred. CHOP may also
+      terminate the license at any time.
+commercial_license:
+  available: unspecified
+  note: The terms state that exceptions may be granted with express permission from CHOP; no paid commercial license is
+    advertised.
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
