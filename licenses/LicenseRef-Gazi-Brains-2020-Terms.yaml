@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Gazi-Brains-2020-Terms
+name: Gazi Brains 2020 data availability statement (Sagiroglu et al., PeerJ Computer Science 2025)
+short_name: Gazi Brains 2020 terms
+url: https://doi.org/10.7717/peerj-cs.2920
+version: Sagiroglu et al. 2025, section "Benchmark dataset", read 2026-10-12
+summary: >-
+  Not a formal license. The creators' data descriptor states that the open-access data are available to researchers
+  and experts except for commercial use, within the scope of the original license. The Synapse project page states no
+  further terms.
+purpose: noncommercial
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      Except for commercial uses, open-access data is available to researchers/experts within the scope of the original
+      license.
+  product_validation:
+    value: unspecified
+    note: The statement excludes commercial use but does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: >-
+      The statement does not mention model training. The same paper trains and publishes deep learning benchmarks on
+      the data.
+  derivatives:
+    value: unspecified
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: unspecified
+    note: The statement does not ask for a citation.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'no'
+    note: The statement asks for no agreement. Downloading from Synapse or Kaggle needs a free account.
+  ethics_approval:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: The terms set no such condition. Your institution or local law may still require it for data about people.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

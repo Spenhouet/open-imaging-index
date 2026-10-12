@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gazi-brains-2020
+name: Gazi Brains 2020
+full_name: Gazi Brains 2020 Dataset (Turkish Brain Project)
+summary: >-
+  Brain MRI of adults with high-grade glioma and of people without a brain tumor, built as a benchmark for tumor
+  detection, classification and segmentation, with expert labels for tumor components, anatomy and non-tumoral
+  findings. 100 subjects from 24 Turkish institutions.
+homepage: https://www.synapse.org/#!Synapse:syn22159468
+doi: 10.7303/syn22159468
+# The Synapse project was created in June 2020; the image folder on Synapse was uploaded in June 2021.
+year: 2021
+# Kaggle copy, version 2, last updated June 2024.
+updated: 2024
+status: active
+creators:
+  - name: Gazi University (Faculty of Medicine and Department of Computer Engineering), Turkish Brain Project
+    url: https://cbddo.gov.tr/en/projects/turkish-brain-project
+species: human
+modalities: [MR]
+contrasts: [FLAIR, T1w, T1w_ce, T2w]
+anatomy: [brain]
+conditions: [glioma, healthy]
+tasks: [segmentation, classification, detection]
+formats: [BIDS, NIfTI]
+countries: [TR]
+field_strengths: [1.5, 3]
+size_gb: 10.5
+access:
+  type: registration
+  url: https://www.synapse.org/#!Synapse:syn22159468
+licenses:
+  - license: LicenseRef-Gazi-Brains-2020-Terms
+    applies_to: >-
+      All copies. The creators' data descriptor excludes commercial use; the Synapse project page states no license.
+  - license: Apache-2.0
+    applies_to: >-
+      The Kaggle copy (gazibrains2020/gazi-brains-2020), whose license field reads Apache 2.0.
+license_combine: all
+citation:
+  text: >-
+    Sagiroglu S, Terzi R, Celtikci E, Börcek AÖ, Atay Y, Arslan B, Sahin MC, Nernekli K, Demirezen U, Ozdemir OB,
+    Özdem Karaca K, Azgınoğlu N. A novel brain tumor magnetic resonance imaging dataset (Gazi Brains 2020): initial
+    benchmark results and comprehensive analysis. PeerJ Computer Science 11, e2920 (2025). doi:10.7717/peerj-cs.2920
+sources:
+  sagiroglu2025:
+    title: Sagiroglu et al. 2025, PeerJ Computer Science
+    url: https://doi.org/10.7717/peerj-cs.2920
+    kind: paper
+  synapse-syn22159468:
+    title: Gazi Brains 2020 Dataset, Synapse project page and wiki
+    url: https://www.synapse.org/#!Synapse:syn22159468
+    kind: website
+  kaggle-gazi-brains-2020:
+    title: Gazi Brains 2020 Dataset on Kaggle (version 2)
+    url: https://www.kaggle.com/datasets/gazibrains2020/gazi-brains-2020
+    kind: website
+related: []
+keywords: [high-grade glioma, brain tumor segmentation, anatomical labels, Turkish Brain Project]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
