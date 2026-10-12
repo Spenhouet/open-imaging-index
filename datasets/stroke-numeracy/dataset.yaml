@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: stroke-numeracy
+name: Precise vs. Approximate Numeracy in Stroke
+full_name: Precise vs. Approximate Numeracy in Stroke Participants
+summary: >-
+  Normalized structural brain scans and manual lesion masks of chronic left hemisphere stroke survivors, with
+  numeracy, aphasia and education scores, shared for lesion-symptom mapping of precise and approximate number skills
+  and their link to language.
+homepage: https://openneuro.org/datasets/ds006533
+doi: 10.18112/openneuro.ds006533.v2.1.0
+# OpenNeuro ds006533 snapshot 1.0.0 dated 2025-08-14; latest snapshot 2.1.0 dated 2026-08-04.
+year: 2025
+updated: 2026
+version: 2.1.0
+status: active
+creators:
+  - name: Erin Duricy, Corrine Durisko and Julie A. Fiez (University of Pittsburgh)
+    url: https://openneuro.org/datasets/ds006533
+species: human
+modalities: [MR, CT]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [stroke]
+tasks: [segmentation, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+# Snapshot size of ds006533 2.1.0 (270,758,727 bytes).
+size_gb: 0.27
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006533
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of the OpenNeuro snapshot states "License" CC0.
+citation:
+  text: >-
+    Duricy E, Durisko C, Fiez JA. Lesion-symptom mapping reveals differential relationships between language and
+    precise versus approximate numeracy. Cortex 193, 117-133 (2025). doi:10.1016/j.cortex.2025.10.008. And: Duricy E,
+    Durisko C, Fiez JA. Using data-driven, lesion-symptom mapping to study the relationship between neural and
+    theoretical components of numeracy. Neuropsychologia (2026). doi:10.1016/j.neuropsychologia.2026.109609.
+sources:
+  duricy2025:
+    title: >-
+      Duricy et al. 2025, Lesion-symptom mapping reveals differential relationships between language and precise
+      versus approximate numeracy, Cortex 193
+    url: https://doi.org/10.1016/j.cortex.2025.10.008
+    kind: paper
+  ds006533-participants:
+    title: participants.tsv of OpenNeuro ds006533 snapshot 2.1.0 (CC0), columns participant_id, image_modality and age
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds006533/2.1.0/participants.tsv
+    kind: computed
+  ds006533-file-tree:
+    title: >-
+      BIDS file tree of OpenNeuro ds006533 snapshot 2.1.0 (CC0), sub-*/anat T1w NIfTI files and lesion masks under
+      derivatives counted
+    url: https://github.com/OpenNeuroDatasets/ds006533/tree/2.1.0
+    kind: computed
+related: [ccnrp-lesions, arc-aphasia]
+keywords: [chronic stroke, lesion-symptom mapping, numeracy, aphasia, manual lesion mask, clinical scans]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
