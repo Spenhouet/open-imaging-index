@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ultracortex-9t
+name: UltraCortex
+full_name: >-
+  UltraCortex: Submillimeter Ultra-High Field 9.4T Brain MR Image Collection and Manual Cortical Segmentations
+summary: >-
+  T1-weighted brain MRI of healthy adults at 9.4 tesla and 0.6 to 0.8 mm resolution, shared to develop and benchmark
+  analysis methods for ultra-high field data, with expert-validated manual gray and white matter segmentations of 12
+  brains.
+homepage: https://ultracortex.org
+doi: 10.18112/openneuro.ds005216.v1.1.0
+# OpenNeuro snapshot 1.0.0 dated 2024-06-03 in the CHANGES file.
+year: 2024
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Max Planck Institute for Biological Cybernetics and University Hospital Tübingen (Mahler L, Steiglechner J, et
+      al.)
+    url: https://ultracortex.org
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [9.4]
+size_gb: 4.62
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005216
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.0 states "License" CC0, and the paper states the data are released under
+      CC0, including for commercial use.
+citation:
+  text: >-
+    Mahler L, Steiglechner J, Bender B, Lindig T, Ramadan D, Bause J, Birk F, Heule R, Charyasz E, Erb M, Kumar VJ,
+    Hagberg GE, Martin P, Lohmann G, Scheffler K. UltraCortex: Submillimeter Ultra-High Field 9.4 T Brain MR Image
+    Collection and Manual Cortical Segmentations. arXiv:2406.18571 (2024).
+sources:
+  mahler2024:
+    title: >-
+      Mahler, Steiglechner et al. 2024, UltraCortex: Submillimeter Ultra-High Field 9.4 T Brain MR Image Collection and
+      Manual Cortical Segmentations, arXiv:2406.18571v3
+    url: https://arxiv.org/abs/2406.18571
+    kind: paper
+  openneuro-ds005216-v1-1-0:
+    title: OpenNeuro ds005216 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005216/versions/1.1.0
+    kind: website
+  ds005216-participants:
+    title: participants.tsv of ds005216 snapshot 1.1.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005216/blob/1.1.0/participants.tsv
+    kind: computed
+  ds005216-scanning-parameters:
+    title: derivatives/scanning_parameters.tsv of ds005216 snapshot 1.1.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005216/blob/1.1.0/derivatives/scanning_parameters.tsv
+    kind: computed
+related: []
+keywords: [9.4T MRI, ultra-high field, MP2RAGE, MP-RAGE, cortical segmentation, gray matter, white matter]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

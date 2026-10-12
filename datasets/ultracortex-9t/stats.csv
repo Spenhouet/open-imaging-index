@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,78,mahler2024,Methods: Demographics,participants.tsv also lists 78 subjects
+subjects,condition=healthy,78,mahler2024,Methods: Demographics,
+subjects,field_strength=9.4,78,mahler2024,Methods: Data Acquisition,
+subjects,vendor=siemens,78,mahler2024,Methods: Data Acquisition,
+subjects,contrast=T1w,78,mahler2024,Data Records,one T1-weighted image per session
+subjects,contrast_set=T1w,78,mahler2024,Data Records,
+subjects,country=DE,78,mahler2024,Methods: Data Acquisition,acquired at the MPI for Biological Cybernetics in Tübingen
+subjects,sex=female,28,mahler2024,Methods: Demographics,
+subjects,sex=male,50,mahler2024,Methods: Demographics,
+subjects,age=20-29,43,ds005216-participants,age column,
+subjects,age=30-39,24,ds005216-participants,age column,
+subjects,age=40-49,10,ds005216-participants,age column,
+subjects,age=50-59,1,ds005216-participants,age column,
+age_median,,29,mahler2024,Methods: Demographics,interquartile range 7.8 years
+age_min,,20,mahler2024,Methods: Demographics,
+age_max,,53,mahler2024,Methods: Demographics,
+age_mean,,30.4,ds005216-participants,age column,
+age_sd,,7.1,ds005216-participants,age column,sample standard deviation
+studies,,86,mahler2024,Methods: Demographics,"71 subjects with one session, 6 with two and 1 with three"
+scans,,86,mahler2024,Methods,"18 MP-RAGE (5 at 0.7 mm, 13 at 0.6 mm) and 68 MP2RAGE (31 at 0.8 mm, 37 at 0.6 mm)"
+scans,contrast=T1w,86,ds005216-scanning-parameters,Sequence column,one row per session; 68 MP2RAGE and 18 MP-RAGE
