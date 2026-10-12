@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,52,openneuro-ds001408-v1-0-3,README,"26 neurofeedback and 26 sham; the paper enrolled 53 and excluded one for head motion"
+studies,,104,openneuro-ds001408-v1-0-3,file listing,two sessions per subject (ses-1preEEG and ses-2postEEG)
+scans,,208,openneuro-ds001408-v1-0-3,file listing,one T1w and one resting-state BOLD run per session
+subjects,contrast=T1w,52,openneuro-ds001408-v1-0-3,file listing,sub-*/ses-*/anat/*_T1w.nii.gz
+subjects,contrast=bold,52,openneuro-ds001408-v1-0-3,file listing,sub-*/ses-*/func/*_task-rest_bold.nii.gz
+subjects,contrast_set=bold+T1w,52,openneuro-ds001408-v1-0-3,file listing,
+scans,contrast=T1w,104,openneuro-ds001408-v1-0-3,file listing,
+scans,contrast=bold,104,openneuro-ds001408-v1-0-3,file listing,
+subjects,condition=healthy,52,dobrushina2020,Participants and Experimental Design,no history of neurological or psychiatric disorders
+subjects,sex=male,22,openneuro-ds001408-v1-0-3,README,participants.tsv also lists 22 male
+subjects,sex=female,30,ds001408-participants,sex column,
+subjects,country=RU,52,dobrushina2020,fMRI Acquisition and Preprocessing,Federal Center of Treatment and Rehabilitation (Moscow)
+subjects,vendor=ge,52,dobrushina2020,fMRI Acquisition and Preprocessing,GE Discovery MR750
+subjects,field_strength=3,52,dobrushina2020,fMRI Acquisition and Preprocessing,
+subjects,age=10-19,5,ds001408-participants,age column,age is n/a for 10 subjects
+subjects,age=20-29,25,ds001408-participants,age column,
+subjects,age=30-39,10,ds001408-participants,age column,
+subjects,age=40-49,2,ds001408-participants,age column,
+age_min,,18,ds001408-participants,age column,42 subjects with a recorded age
+age_max,,44,ds001408-participants,age column,42 subjects with a recorded age
+age_mean,,26.69,ds001408-participants,age column,42 subjects with a recorded age
+age_sd,,6.42,ds001408-participants,age column,"42 subjects with a recorded age, sample standard deviation"
