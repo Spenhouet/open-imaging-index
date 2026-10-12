@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,87,horta2023,Section 2 (Participants),44 younger and 43 older adults
+subjects,contrast=T1w,87,ds004725-file-tree,,one T1w per subject folder
+subjects,contrast=bold,87,ds004725-file-tree,,one resting-state BOLD run per subject folder
+subjects,contrast_set=bold+T1w,87,ds004725-file-tree,,
+subjects,sex=female,45,ds004725-participants,sex,
+subjects,sex=male,42,ds004725-participants,sex,
+subjects,age=18-19,9,ds004725-participants,age,
+subjects,age=20-29,33,ds004725-participants,age,
+subjects,age=30-39,2,ds004725-participants,age,
+subjects,age=60-69,20,ds004725-participants,age,
+subjects,age=70-79,21,ds004725-participants,age,
+subjects,age=80-89,2,ds004725-participants,age,
+scans,,174,ds004725-file-tree,,87 T1w and 87 resting-state BOLD NIfTI files
+age_mean,,46.5,ds004725-participants,age,whole sample of younger and older adults
+age_min,,18.29,ds004725-participants,age,
+age_max,,80.73,ds004725-participants,age,
