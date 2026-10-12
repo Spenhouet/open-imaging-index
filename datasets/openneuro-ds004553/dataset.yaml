@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004553
+name: Social Exchange Rules of Engagement fMRI (ds004553)
+full_name: Learning rules of engagement for social exchange within and between groups
+summary: >-
+  Task fMRI and T1-weighted brain MRI from adults making repeated ultimatum-game offers to responders from unfamiliar
+  groups or to a computer, collected to study how people learn what others will accept in social exchange.
+homepage: https://openneuro.org/datasets/ds004553
+doi: 10.18112/openneuro.ds004553.v1.0.1
+year: 2023
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Michael Rojek-Giffin, Maël Lebreton, Andrea Fariña, Jörg Gross, Jean Daunizeau and Carsten K. W. De Dreu (Leiden
+      University and collaborators)
+    url: https://openneuro.org/datasets/ds004553
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 11.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004553/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004553/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Rojek-Giffin M, Lebreton M, Daunizeau J, Fariña A, Gross J, De Dreu CKW. Learning rules of engagement for social
+    exchange within and between groups. PNAS 120(19), e2218443120 (2023). doi:10.1073/pnas.2218443120
+  bibtex: |
+    @article{rojekgiffin2023,
+      title={Learning rules of engagement for social exchange within and between groups},
+      author={Rojek-Giffin, Michael and Lebreton, Ma{\"e}l and Daunizeau, Jean and Fari{\~n}a, Andrea and Gross, J{\"o}rg and De Dreu, Carsten K. W.},
+      journal={Proceedings of the National Academy of Sciences},
+      volume={120},
+      number={19},
+      pages={e2218443120},
+      year={2023},
+      doi={10.1073/pnas.2218443120}
+    }
+sources:
+  rojekgiffin2023:
+    title: >-
+      Rojek-Giffin et al. 2023, Learning rules of engagement for social exchange within and between groups, PNAS
+    url: https://doi.org/10.1073/pnas.2218443120
+    kind: paper
+  ds004553-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds004553 BIDS repository (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004553
+    kind: computed
+related: []
+keywords: [social decision-making, ultimatum game, bargaining, intergroup, Bayesian learning, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
