@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,231,icpsr38862,Abstract (universe),"all Neuroscience Project participants: RDD 74, twin 96 and Milwaukee 61; not all completed the MRI session"
+subjects,country=US,231,icpsr38862,Abstract (universe),
+subjects,contrast=T1w,160,midus-m3-p5-restricted,"p. 2, Introduction table",
+subjects,contrast=dwi,153,midus-m3-p5-restricted,"p. 2, Introduction table",
+subjects,contrast=asl,149,midus-m3-p5-restricted,"p. 2, Introduction table",

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: midus-3-neuroscience
+name: MIDUS 3 Neuroscience
+full_name: 'Midlife in the United States (MIDUS 3): Neuroscience Project, 2017-2022'
+summary: >-
+  Brain MRI and psychophysiology of US adults from the MIDUS 3 wave, collected to study brain ageing and individual
+  differences in emotional reactivity and recovery. 231 project participants; T1w, T2w, FLAIR, task and resting-state
+  fMRI, diffusion and ASL in BIDS. Raw images by application.
+homepage: https://midus.wisc.edu/midus-neuroscience-repository/
+doi: 10.3886/ICPSR38862
+# Year the ICPSR study (summary and behavioral variables, no images) was issued. The release date of the raw imaging
+# data on the restricted repository is not published.
+year: 2023
+status: active
+creators:
+  - name: Carol D. Ryff, University of Wisconsin-Madison
+  - name: Richard J. Davidson, University of Wisconsin-Madison
+  - name: MIDUS Administrative Core, Institute on Aging, University of Wisconsin-Madison
+    url: https://midus.wisc.edu/
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, bold, dwi, asl]
+anatomy: [brain]
+formats: [BIDS]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://midus.wisc.edu/midus-neuroscience-repository/
+licenses:
+  - license: LicenseRef-MIDUS-Brain-Imaging-DUA
+    applies_to: Raw imaging, physiological and trial-level behavioral data on the restricted Globus repository
+    note: >-
+      Summary variables (ICPSR 38862) and FreeSurfer, diffusion tensor and brain age measures (MIDUS Colectica Portal)
+      are public; their terms were not reviewed for this entry.
+citation:
+  text: >-
+    Ryff CD, Davidson RJ. Midlife in the United States (MIDUS 3): Neuroscience Project, 2017-2022. Inter-university
+    Consortium for Political and Social Research [distributor], 2023. doi:10.3886/ICPSR38862
+sources:
+  icpsr38862:
+    title: ICPSR 38862 study record (DataCite metadata), MIDUS 3 Neuroscience Project
+    url: https://doi.org/10.3886/ICPSR38862
+    kind: data
+  midus-m3-p5-restricted:
+    title: Documentation of Restricted Access Data in MIDUS 3 Neuroscience Project (P5), January 2026
+    url: https://midus.wisc.edu/wp-content/uploads/2026/01/M3_P5_RESTRICTED_ACCESS_20260106.pdf
+    kind: website
+  midus-neuroscience-repository:
+    title: MIDUS Neuroscience Repository page
+    url: https://midus.wisc.edu/midus-neuroscience-repository/
+    kind: website
+related: [midus-refresher-1-neuroscience]
+keywords: [MIDUS, affective neuroscience, emotion regulation, brain ageing, task fMRI, resting-state fMRI, diffusion MRI, midlife]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
