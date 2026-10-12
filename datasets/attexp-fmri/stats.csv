@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,52,ds005386-file-tree,,52 sub-* folders; no participants.tsv is shared. The paper analysed 46 participants and reports 6 more who completed the task but were discarded (2.1 Participants)
+subjects,country=ES,52,penalver2024,2.1 Participants,recruited from the University of Granada
+subjects,vendor=siemens,52,penalver2024,2.3 Data acquisition and preprocessing,3T Siemens Prisma with a 64-channel head coil
+subjects,field_strength=3,52,penalver2024,2.3 Data acquisition and preprocessing,
+subjects,contrast=T1w,52,ds005386-file-tree,anat,
+subjects,contrast=T2w,52,ds005386-file-tree,anat,
+subjects,contrast=bold,52,ds005386-file-tree,func,8 task-attexp runs per subject
+subjects,contrast_set=bold+T1w+T2w,52,ds005386-file-tree,,
+scans,,520,ds005386-file-tree,,"sum of the disjoint T1w, T2w and bold NIfTI counts below; field map volumes (magnitude1, magnitude2, phasediff) not counted"
+scans,contrast=T1w,52,ds005386-file-tree,anat,
+scans,contrast=T2w,52,ds005386-file-tree,anat,
+scans,contrast=bold,416,ds005386-file-tree,func,
+age_mean,,21.98,penalver2024,2.1 Participants,analysed sample of 46
+age_min,,18,penalver2024,2.1 Participants,analysed sample of 46
+age_max,,30,penalver2024,2.1 Participants,analysed sample of 46
