@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: longitudinal-early-brain-development-language
+name: Longitudinal Early Brain Development and Language
+full_name: Longitudinal-Trajectories-Early-Brain-Development-Language (New England cohort)
+summary: >-
+  Brain MRI of children scanned repeatedly from infancy to school age, collected to relate early brain growth to
+  later literacy and language skills, with half the children having a family history of dyslexia. T1-weighted and
+  diffusion MRI from 80 children over 234 sessions, in BIDS.
+homepage: https://openneuro.org/datasets/ds006169
+doi: 10.18112/openneuro.ds006169.v1.0.9
+year: 2025
+updated: 2026
+version: 1.0.9
+status: active
+creators:
+  - name: Gaab Lab, Harvard Graduate School of Education (Ted K. Turesky, Elizabeth Escalante, Megan Loh, Nadine Gaab)
+    url: https://openneuro.org/datasets/ds006169
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 6.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006169
+licenses:
+  - license: CC0-1.0
+    note: 'dataset_description.json of the OpenNeuro release states the license as "CC0".'
+citation:
+  text: >-
+    Turesky TK, Escalante ES, Loh M, Gaab N. Longitudinal trajectories of brain development from infancy to school age
+    and their relationship with literacy development. Proc Natl Acad Sci USA 122(24), e2414598122 (2025).
+    doi:10.1073/pnas.2414598122
+sources:
+  turesky2025:
+    title: >-
+      Turesky et al. 2025, Longitudinal trajectories of brain development from infancy to school age and their
+      relationship with literacy development, PNAS (PMC full text)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12184337/
+    kind: paper
+  turesky2025-preprint:
+    title: >-
+      Turesky et al., bioRxiv preprint v3 (2025-04-06) of the same study, including the Supplementary Methods on the
+      New England cohort and its MRI acquisition
+    url: https://doi.org/10.1101/2024.06.29.601366
+    kind: paper
+  ds006169-page:
+    title: OpenNeuro ds006169 snapshot 1.0.9 (README, dataset_description.json, CHANGES, snapshot summary)
+    url: https://github.com/OpenNeuroDatasets/ds006169
+    kind: website
+  ds006169-participants:
+    title: >-
+      participants.tsv of OpenNeuro ds006169 (CC0), one row per session with age in months and sex coded 0 = male, 1 =
+      female
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds006169/main/participants.tsv
+    kind: computed
+  ds006169-file-tree:
+    title: File listing of OpenNeuro ds006169 snapshot 1.0.9 (CC0), subjects and sessions counted per NIfTI file type
+    url: https://github.com/OpenNeuroDatasets/ds006169/tree/main
+    kind: computed
+related: [calgary-preschool-mri]
+keywords: [infancy, early childhood, brain development, pediatric, longitudinal, literacy, dyslexia, diffusion MRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,80,ds006169-page,snapshot summary,each with images from at least two time points that passed the study's quality control
+studies,,234,ds006169-file-tree,sub-*/ses-*,sessions with at least one NIfTI file
+subjects,sex=female,41,ds006169-participants,Sex,
+subjects,sex=male,39,ds006169-participants,Sex,
+subjects,country=US,80,turesky2025-preprint,Supplementary Methods 1,recruited in New England; scanned at Boston Children's Hospital and Harvard University
+subjects,vendor=siemens,80,turesky2025-preprint,Supplementary Methods 3,
+subjects,field_strength=3,80,turesky2025-preprint,Supplementary Methods 3,32-channel head coil
+subjects,contrast=T1w,80,ds006169-file-tree,anat/*_T1w.nii.gz,MPRAGE
+subjects,contrast=dwi,80,ds006169-file-tree,dwi/*_dwi.nii.gz,30 directions at b=1000 plus 10 to 11 b=0 volumes
+subjects,contrast_set=dwi+T1w,80,ds006169-file-tree,,over all sessions of a subject
+scans,,457,ds006169-file-tree,"anat/*_T1w.nii.gz, dwi/*_dwi.nii.gz",T1w and dwi images; sum of the two disjoint counts below; the 178 reverse phase-encoded field map volumes are not counted
+studies,contrast=T1w,232,ds006169-file-tree,anat/*_T1w.nii.gz,
+studies,contrast=dwi,225,ds006169-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=T1w,232,ds006169-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=dwi,225,ds006169-file-tree,dwi/*_dwi.nii.gz,
+studies,age=0-1,98,ds006169-participants,age,age at the session (infant and toddler time points)
+studies,age=2-3,1,ds006169-participants,age,age at the session
+studies,age=4-5,49,ds006169-participants,age,age at the session
+studies,age=6-7,57,ds006169-participants,age,age at the session
+studies,age=8-9,23,ds006169-participants,age,age at the session
+studies,age=10-11,5,ds006169-participants,age,age at the session
+age_min,,0.21,ds006169-participants,age,youngest session in years (2.5 months)
+age_max,,10.36,ds006169-participants,age,oldest session in years
+age_mean,,0.98,ds006169-participants,age,age in years at each subject's first session
+age_median,,0.78,ds006169-participants,age,age in years at each subject's first session
