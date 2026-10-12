@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003709
+name: NIMH-CompyPsych MMI (ds003709)
+full_name: NIMH-CompyPsych MMI, adolescent mood and reward task fMRI
+summary: >-
+  Task fMRI with T1-weighted brain MRI of adolescents with or without depression who played a gambling game and rated
+  their mood, collected to test whether early or recent outcomes drive momentary mood. 51 participants from NIMH at 3T,
+  in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003709
+doi: 10.18112/openneuro.ds003709.v1.0.0
+# Only snapshot 1.0.0 on OpenNeuro, 2021-06-28.
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Keren H, Chang K, Vitale A, Camp CC, Rutledge RB, Nielson DM, Stringaris A (Section of Clinical and Computational
+      Psychiatry, National Institute of Mental Health)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [depression, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 7.09
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003709
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Keren H, Zheng C, Jangraw DC, Chang K, Vitale A, Rutledge RB, Pereira F, Nielson DM, Stringaris A. The temporal
+    representation of experience in subjective mood. eLife 10:e62051 (2021). doi:10.7554/eLife.62051
+sources:
+  keren2021:
+    title: >-
+      Keren et al. 2021, The temporal representation of experience in subjective mood, eLife (PMC8241441), Materials and
+      methods and Table 2
+    url: https://doi.org/10.7554/eLife.62051
+    kind: paper
+  openneuro-ds003709-v1-0-0:
+    title: >-
+      OpenNeuro ds003709 snapshot 1.0.0 (dataset_description.json, README, CHANGES, participants.json, BIDS sidecars and
+      snapshot size)
+    url: https://openneuro.org/datasets/ds003709/versions/1.0.0
+    kind: website
+  ds003709-participants:
+    title: participants.tsv of ds003709 (CC0), counted per row from the sex, age and group columns
+    url: https://github.com/OpenNeuroDatasets/ds003709/blob/master/participants.tsv
+    kind: computed
+  ds003709-file-tree:
+    title: File listing of the ds003709 BIDS repository (CC0), counted per T1w, bold and fmap epi NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003709
+    kind: computed
+related: []
+keywords: [mood, reward prediction error, gambling task, adolescent depression, task fMRI, computational psychiatry]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
