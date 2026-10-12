@@ -78,8 +78,8 @@ test('catalog pages through results, keeps the page in the URL and resets it on 
   await expect(page.locator('article')).toHaveCount(30);
   const first = await page.locator('article h3').first().innerText();
 
-  await page.getByRole('link', { name: 'Page 2' }).click();
-  await expect(page).toHaveURL(/[?&]page=2/);
+  await page.getByRole('link', { name: 'Page 2', exact: true }).click();
+  await expect(page).toHaveURL(/[?&]page=2(&|$)/);
   await expect(page.locator('article h3').first()).not.toHaveText(first);
   const second = await page.locator('article h3').first().innerText();
 
