@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,90,nussenbaum2021,Materials and methods: Participants,"90 rows in participants.tsv and 90 subject folders in snapshot 1.0.1; 10 further tested participants were excluded and are not in the paper sample"
+subjects,sex=female,47,ds003499-participants,sex,"sex F; the paper reports 16 female children, 16 female adolescents and 15 female adults"
+subjects,sex=male,43,ds003499-participants,sex,sex M
+subjects,age=8-12,30,nussenbaum2021,Materials and methods: Participants,children aged 8.0 to 12.7 years
+subjects,age=13-17,30,nussenbaum2021,Materials and methods: Participants,adolescents aged 13.0 to 17.7 years
+subjects,age=18-25,30,nussenbaum2021,Materials and methods: Participants,adults aged 18.3 to 25.9 years
+subjects,sex=female;age=8-12,16,nussenbaum2021,Materials and methods: Participants,
+subjects,sex=female;age=13-17,16,nussenbaum2021,Materials and methods: Participants,
+subjects,sex=female;age=18-25,15,nussenbaum2021,Materials and methods: Participants,
+subjects,contrast=T1w,90,ds003499-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=T2w,88,ds003499-file-tree,sub-*/anat/*_T2w.nii.gz,
+subjects,contrast=bold,90,ds003499-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,88,ds003499-file-tree,anat and func folders,
+subjects,contrast_set=bold+T1w,2,ds003499-file-tree,anat and func folders,
+subjects,vendor=siemens,90,nussenbaum2021,Materials and methods: Image acquisition,"all participants scanned on a Siemens Prisma 3T with a 64-channel head coil"
+subjects,field_strength=3,90,nussenbaum2021,Materials and methods: Image acquisition,
+subjects,country=US,90,nussenbaum2021,Materials and methods: Participants,recruited in New York City and scanned at the NYU Center for Brain Imaging
+scans,,2993,ds003499-file-tree,"*_T1w, *_T2w and *_bold.nii.gz","sum of the T1w, T2w and bold files; sbref, field map and bias calibration files not counted"
+scans,contrast=T1w,93,ds003499-file-tree,*_T1w.nii.gz,3 subjects have a second T1w run
+scans,contrast=T2w,88,ds003499-file-tree,*_T2w.nii.gz,
+scans,contrast=bold,2812,ds003499-file-tree,*_bold.nii.gz,"703 runs with one file per echo (4 echoes); 85 subjects have all 8 runs"
+age_min,,8.0,nussenbaum2021,Materials and methods: Participants,
+age_max,,25.9,nussenbaum2021,Materials and methods: Participants,

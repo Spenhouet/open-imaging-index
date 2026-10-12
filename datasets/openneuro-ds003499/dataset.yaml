@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003499
+name: Value-guided memory development fMRI (ds003499)
+full_name: Developmental change in prefrontal cortex recruitment supports the emergence of value-guided memory
+summary: >-
+  Brain fMRI of children, adolescents and adults learning item frequencies and then encoding and retrieving associations,
+  collected to study how the use of learned value to guide memory develops. 90 participants aged 8 to 25 from NYU,
+  multi-echo BOLD with T1w and T2w, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds003499
+doi: 10.18112/openneuro.ds003499.v1.0.1
+year: 2021
+version: 1.0.1
+status: active
+creators:
+  - name: Hartley Lab, New York University (Nussenbaum K, Hartley CA)
+    url: https://openneuro.org/datasets/ds003499
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 146.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003499
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Nussenbaum K, Hartley CA. Developmental change in prefrontal cortex recruitment supports the emergence of
+    value-guided memory. eLife 10, e69796 (2021). doi:10.7554/eLife.69796
+sources:
+  nussenbaum2021:
+    title: Nussenbaum and Hartley 2021, Developmental change in prefrontal cortex recruitment supports the emergence of value-guided memory, eLife
+    url: https://doi.org/10.7554/eLife.69796
+    kind: paper
+  openneuro-ds003499-v101:
+    title: OpenNeuro ds003499 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003499/versions/1.0.1
+    kind: website
+  ds003499-participants:
+    title: participants.tsv of ds003499 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003499/blob/1.0.1/participants.tsv
+    kind: computed
+  ds003499-file-tree:
+    title: File tree of ds003499 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003499/tree/1.0.1
+    kind: computed
+related: []
+keywords: [task fMRI, multi-echo fMRI, value-guided memory, associative memory, reward, brain development, children, adolescents]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
