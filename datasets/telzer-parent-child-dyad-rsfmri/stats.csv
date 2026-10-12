@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,62,lee2017,"Methods, Participants","31 parent-child dyads completed the resting-state scan, out of 76 recruited for a larger study (37 adolescents, 39 caregivers)"
+subjects,modality=MR,62,lee2017,"Methods, Participants",
+subjects,contrast=bold,62,lee2017,"Methods, Data acquisition","6-minute eyes-open resting-state scan; 15 dyads with TR 2 s and 180 volumes, 16 dyads with TR 3 s and 120 volumes"
+subjects,contrast=T1w,62,lee2017,"Methods, Data acquisition",T1-MPRAGE acquired first in each session
+subjects,condition=healthy,62,lee2017,"Methods, Participants",No participant reported a current mental health diagnosis or psychiatric medication
+subjects,sex=female,42,lee2017,"Methods, Participants","27 mothers (87.10% of 31 parents) and 15 girls (48.39% of 31 children), counts derived from the reported percentages; NeuroVault metadata gives a different male proportion"
+subjects,sex=male,20,lee2017,"Methods, Participants","4 fathers (12.90% of 31 parents) and 16 boys, counts derived from the reported percentages"
+subjects,age=13-17,31,lee2017,"Methods, Participants",Adolescent children
+subjects,age=33-57,31,lee2017,"Methods, Participants",Parents
+subjects,vendor=siemens,62,lee2017,"Methods, Data acquisition",Siemens Trio with a 32-channel coil
+subjects,field_strength=3,62,lee2017,"Methods, Data acquisition",
+age_min,,13,lee2017,"Methods, Participants",
+age_max,,57,lee2017,"Methods, Participants",

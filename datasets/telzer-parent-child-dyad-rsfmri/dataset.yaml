@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: telzer-parent-child-dyad-rsfmri
+name: Parent-Child Dyad Resting-State fMRI
+full_name: >-
+  Families that fire together smile together: Resting state connectome similarity and daily emotional synchrony in
+  parent-child dyads
+summary: >-
+  Resting-state brain fMRI and T1-weighted MRI of adolescents and their biological parents, collected to test whether
+  parent-child similarity of intrinsic network connectivity tracks day-to-day mood synchrony. Raw images are not
+  shared; group network maps are on NeuroVault.
+homepage: https://neurovault.org/collections/2525/
+doi: 10.1016/j.neuroimage.2017.02.078
+# Year the paper went online and the group maps were added to NeuroVault; the raw images have no public release.
+year: 2017
+creators:
+  - name: >-
+      Tae-Ho Lee, Michelle E. Miernicki and Eva H. Telzer (University of North Carolina at Chapel Hill; University of
+      Illinois at Urbana-Champaign)
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://neurovault.org/collections/2525/
+  note: >-
+    The NeuroVault collection holds only 13 derived group-level resting-state network z maps in MNI space from a
+    temporal concatenation independent component analysis. These maps are under CC0 like all public NeuroVault data.
+    The paper gives no route to the individual functional or structural images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC0 dedication of NeuroVault covers only the
+      derived group maps.
+citation:
+  text: >-
+    Lee TH, Miernicki ME, Telzer EH. Families that fire together smile together: Resting state connectome similarity
+    and daily emotional synchrony in parent-child dyads. NeuroImage 152, 31-37 (2017).
+    doi:10.1016/j.neuroimage.2017.02.078
+sources:
+  lee2017:
+    title: Lee et al. 2017, NeuroImage 152:31-37, author manuscript PMC5555750
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5555750/
+    kind: paper
+  neurovault-2525:
+    title: NeuroVault collection 2525 page and API, including collection metadata and image list
+    url: https://neurovault.org/api/collections/2525/
+    kind: website
+  neurovault-faq:
+    title: NeuroVault FAQ (data license)
+    url: https://neurovault.org/FAQ
+    kind: website
+related: []
+keywords: [parent-child dyads, adolescents, resting-state fMRI, functional connectome, emotional synchrony, daily diary]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
