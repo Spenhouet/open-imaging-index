@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,123,gera2022,Results: Participants,final sample after exclusions from 161 recruited; participants.tsv also has 123 rows
+subjects,condition=healthy,123,gera2022,Results: Participants,healthy volunteers; two recruits found to be outside the healthy scope were excluded
+subjects,sex=female,61,gera2022,Results: Participants,
+subjects,contrast=T1w,123,ds004299-file-tree,,"223 T1w files: 120 in session 1, 51 in session 2, 52 in session 3"
+subjects,contrast=dwi,123,ds004299-file-tree,,AP and PA diffusion runs in every session folder
+subjects,contrast=bold,123,ds004299-file-tree,,"task runs (training, extinction, reacquisition) and resting-state runs"
+subjects,contrast_set=bold+dwi+T1w,123,ds004299-file-tree,,spin-echo field maps and single-band references are not counted as a contrast
+subjects,field_strength=3,123,gera2022,MRI data acquisition,Siemens 3T Prisma; sidecars state MagneticFieldStrength 3
+subjects,vendor=siemens,123,gera2022,MRI data acquisition,Siemens Prisma with a 64-channel head coil
+subjects,country=IL,123,gera2022,MRI data acquisition,Strauss imaging center at Tel Aviv University
+studies,,247,ds004299-file-tree,,session folders: 123 subjects with session 1 and 62 with sessions 2 and 3
+scans,,2557,ds004299-file-tree,,"sum of the disjoint T1w (223), dwi (978) and bold (1356) NIfTI files; field maps and single-band references are not counted"
+scans,contrast=T1w,223,ds004299-file-tree,,
+scans,contrast=dwi,978,ds004299-file-tree,,
+scans,contrast=bold,1356,ds004299-file-tree,,
+age_mean,,24.7,gera2022,Results: Participants,
+age_sd,,3.81,gera2022,Results: Participants,
+age_min,,18,gera2022,Results: Participants,
+age_max,,39,gera2022,Results: Participants,

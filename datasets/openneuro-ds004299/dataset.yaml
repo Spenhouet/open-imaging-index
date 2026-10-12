@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004299
+name: Habit Learning Multi-Modal MRI (ds004299)
+full_name: 'Characterizing habit learning in the human brain at the individual and group levels: a multi-modal MRI study'
+summary: >-
+  Task and resting-state fMRI, diffusion MRI and T1-weighted brain MRI of healthy young adults trained on a free-operant
+  snack task for one or three days, collected to test whether extensive training forms habits and how this shows in the
+  brain. 123 adults from Tel Aviv, CC0.
+homepage: https://openneuro.org/datasets/ds004299
+doi: 10.18112/openneuro.ds004299.v1.0.0
+# CHANGES: snapshot 1.0.0 dated 2022-10-20, the only snapshot.
+year: 2022
+version: 1.0.0
+status: active
+creators:
+  - name: Gera R, Bar Or M, Tavor I, Roll D, Cockburn J, Barak S, Tricomi E, O'Doherty JP, Schonberg T (Tel Aviv University)
+    url: https://openneuro.org/datasets/ds004299
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [IL]
+vendors: [siemens]
+field_strengths: [3]
+# OpenNeuro snapshot 1.0.0 size: 792,973,054,255 bytes.
+size_gb: 793.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004299
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Gera R, Bar Or M, Tavor I, Roll D, Cockburn J, Barak S, Tricomi E, O'Doherty JP, Schonberg T. Characterizing habit
+    learning in the human brain at the individual and group levels: A multi-modal MRI study. NeuroImage 272, 120002
+    (2023). doi:10.1016/j.neuroimage.2023.120002
+sources:
+  gera2022:
+    title: >-
+      Gera et al. 2022, Characterizing habit learning in the human brain at the individual and group levels: a
+      multi-modal MRI study, bioRxiv preprint (CC BY 4.0) of the registered report published in NeuroImage 2023
+    url: https://doi.org/10.1101/2022.12.12.520188
+    kind: paper
+  openneuro-ds004299-v1-0-0:
+    title: OpenNeuro ds004299 snapshot 1.0.0 (dataset_description.json, README, CHANGES, sidecar JSON files and size)
+    url: https://openneuro.org/datasets/ds004299/versions/1.0.0
+    kind: website
+  ds004299-file-tree:
+    title: File listing of the ds004299 BIDS repository (CC0), counted per session folder and per anat, dwi and func NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004299
+    kind: computed
+keywords: [habit learning, goal-directed behavior, outcome devaluation, free-operant task, registered report, DTI, resting-state fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
