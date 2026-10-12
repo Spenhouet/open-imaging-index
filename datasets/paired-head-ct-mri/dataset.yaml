@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: paired-head-ct-mri
+name: Paired Head CT-MRI
+full_name: A Paired Head CT-MRI Dataset for Cross-Modality Image Synthesis
+summary: >-
+  Thin-slice head CT matched with T1-weighted brain MRI of neurosurgical patients before surgery, released to train
+  and test methods that synthesize CT from MRI for MRI-guided radiotherapy and surgical planning. Covers pituitary
+  tumors, meningiomas, vestibular schwannomas and cerebrovascular disease.
+homepage: https://zenodo.org/records/17486320
+doi: 10.5281/zenodo.17486320
+year: 2025
+version: v1
+creators:
+  - name: Yao S, Tan Y, Wang J (The First Affiliated Hospital, Sun Yat-sen University)
+species: human
+modalities: [MR, CT]
+contrasts: [T1w, T1w_ce]
+anatomy: [head, brain]
+conditions: [pituitary_tumor, meningioma, vestibular_schwannoma, cerebrovascular_disorder]
+tasks: [synthesis]
+formats: [NIfTI]
+countries: [CN]
+vendors: [siemens, canon, philips, ge]
+size_gb: 40.06
+access:
+  type: open
+  url: https://zenodo.org/records/17486320
+  note: >-
+    Direct download from Zenodo without an account: one ZIP archive per diagnosis group and a participants.xlsx
+    file with sex, age and acquisition parameters per subject.
+licenses:
+  - license: CC-BY-NC-4.0
+    url: https://zenodo.org/records/17486320
+citation:
+  text: >-
+    Yao S, Tan Y, Wang J. A Paired Head CT-MRI Dataset for Cross-Modality Image Synthesis (v1) [Data set]. Zenodo
+    (2025). https://doi.org/10.5281/zenodo.17486320
+sources:
+  zenodo-paired-head-ct-mri:
+    title: Zenodo record 17486320, dataset description and file list
+    url: https://zenodo.org/records/17486320
+    kind: website
+  zenodo-paired-head-ct-mri-archives:
+    title: Contents of the four ZIP archives of Zenodo record 17486320 (CC BY-NC 4.0, open download), as listed in the Zenodo file preview
+    url: https://zenodo.org/records/17486320/preview/pituitary-tumor.zip
+    kind: computed
+  zenodo-paired-head-ct-mri-participants:
+    title: participants.xlsx of Zenodo record 17486320 (CC BY-NC 4.0, open download), 120 subjects
+    url: https://zenodo.org/records/17486320/files/participants.xlsx
+    kind: computed
+related: []
+keywords: [synthetic CT, MRI-to-CT, MRI-guided radiotherapy, surgical planning, pituitary tumor, meningioma, vestibular schwannoma]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

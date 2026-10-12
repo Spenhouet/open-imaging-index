@@ -1,0 +1,46 @@
+measure,by,value,source,where,note
+subjects,,120,zenodo-paired-head-ct-mri,Description,Preoperative neurosurgical patients
+subjects,modality=MR,120,zenodo-paired-head-ct-mri-participants,Modality column,
+subjects,modality=CT,120,zenodo-paired-head-ct-mri-participants,Modality column,
+subjects,condition=pituitary_tumor,60,zenodo-paired-head-ct-mri-participants,Population column,
+subjects,condition=meningioma,20,zenodo-paired-head-ct-mri-participants,Population column,
+subjects,condition=vestibular_schwannoma,20,zenodo-paired-head-ct-mri-participants,Population column,
+subjects,condition=cerebrovascular_disorder,20,zenodo-paired-head-ct-mri-participants,Population column,
+subjects,contrast=T1w_ce,120,zenodo-paired-head-ct-mri-archives,CE-T1W.nii.gz per subject folder,
+subjects,contrast=T1w,60,zenodo-paired-head-ct-mri-archives,NCE-T1W.nii.gz per subject folder,Only in the pituitary tumor archive
+subjects,contrast_set=T1w+T1w_ce,60,zenodo-paired-head-ct-mri-archives,files per subject folder,MR contrasts only; every subject also has two CT reconstructions
+subjects,contrast_set=T1w_ce,60,zenodo-paired-head-ct-mri-archives,files per subject folder,MR contrasts only; every subject also has two CT reconstructions
+scans,,420,zenodo-paired-head-ct-mri-archives,files per subject folder,"NIfTI volumes: 180 MR and 240 CT, summed from the disjoint archives"
+scans,modality=MR,180,zenodo-paired-head-ct-mri-archives,CE-T1W.nii.gz and NCE-T1W.nii.gz,
+scans,modality=CT,240,zenodo-paired-head-ct-mri-archives,CT-BRAIN.nii.gz and CT-BONE.nii.gz,Soft-kernel and sharp-kernel reconstructions of one CT per subject
+subjects,sex=female,74,zenodo-paired-head-ct-mri-participants,Patient Sex column,
+subjects,sex=male,46,zenodo-paired-head-ct-mri-participants,Patient Sex column,
+subjects,age=10-19,2,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=20-29,14,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=30-39,21,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=40-49,29,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=50-59,28,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=60-69,21,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,age=70-79,5,zenodo-paired-head-ct-mri-participants,Patient Age column,
+age_mean,,46.9,zenodo-paired-head-ct-mri-participants,Patient Age column,
+age_sd,,14.2,zenodo-paired-head-ct-mri-participants,Patient Age column,
+age_median,,49,zenodo-paired-head-ct-mri-participants,Patient Age column,
+age_min,,18,zenodo-paired-head-ct-mri-participants,Patient Age column,
+age_max,,77,zenodo-paired-head-ct-mri-participants,Patient Age column,
+subjects,vendor=siemens,120,zenodo-paired-head-ct-mri-participants,Manufacturer columns,All MRI on Siemens; 30 CT on Siemens
+subjects,vendor=canon,78,zenodo-paired-head-ct-mri-participants,CT Manufacturer column,CT listed as TOSHIBA
+subjects,vendor=philips,10,zenodo-paired-head-ct-mri-participants,CT Manufacturer column,
+subjects,vendor=ge,2,zenodo-paired-head-ct-mri-participants,CT Manufacturer column,
+subjects,country=CN,120,zenodo-paired-head-ct-mri,Creators,"The First Affiliated Hospital, Sun Yat-sen University"
+subjects,condition=pituitary_tumor;sex=female,35,zenodo-paired-head-ct-mri-participants,Population and Patient Sex columns,
+subjects,condition=pituitary_tumor;sex=male,25,zenodo-paired-head-ct-mri-participants,Population and Patient Sex columns,
+subjects,condition=meningioma;sex=female,12,zenodo-paired-head-ct-mri-participants,Population and Patient Sex columns,
+subjects,condition=vestibular_schwannoma;sex=female,14,zenodo-paired-head-ct-mri-participants,Population and Patient Sex columns,
+subjects,condition=cerebrovascular_disorder;sex=female,13,zenodo-paired-head-ct-mri-participants,Population and Patient Sex columns,
+subjects,sex=female;age=20-29,10,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=female;age=30-39,14,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=female;age=40-49,18,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=female;age=50-59,15,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=female;age=60-69,14,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=male;age=40-49,11,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
+subjects,sex=male;age=50-59,13,zenodo-paired-head-ct-mri-participants,Patient Sex and Patient Age columns,
