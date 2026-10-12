@@ -650,3 +650,9 @@ terms:
       synonyms: [HE, portosystemic encephalopathy],
       mappings: { mondo: 'MONDO:0001711', hp: 'HP:0002480' }
     }
+  - {
+      id: liver_transplant_recipient,
+      label: Liver transplant recipient,
+      synonyms: [after liver transplantation, OLT recipient],
+      description: 'Person living with a transplanted liver, usually under long-term immunosuppression. A post-procedure state, not a disease, so MONDO and HPO have no term for it.'
+    }
