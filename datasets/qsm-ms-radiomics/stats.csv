@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,150,fiscone2024,Table 1,
+subjects,condition=multiple_sclerosis,100,fiscone2024,Table 1,
+subjects,condition=healthy,50,fiscone2024,Table 1,
+subjects,sex=female,89,fiscone2024,Table 1,Sum of 31 healthy and 58 MS women (disjoint groups).
+subjects,sex=male,61,fiscone2024,Table 1,Sum of 19 healthy and 42 MS men (disjoint groups).
+subjects,condition=healthy;sex=female,31,fiscone2024,Table 1,
+subjects,condition=healthy;sex=male,19,fiscone2024,Table 1,
+subjects,condition=multiple_sclerosis;sex=female,58,fiscone2024,Table 1,
+subjects,condition=multiple_sclerosis;sex=male,42,fiscone2024,Table 1,
+subjects,contrast_set=Chimap+dwi+FLAIR+MEGRE+T1w,150,fiscone2024,Data Records,"Every subject folder holds T1w, FLAIR, multi-echo GRE magnitude and phase, the QSM map and DWI."
+subjects,field_strength=3,150,fiscone2024,MRI data acquisition,
+subjects,vendor=siemens,150,fiscone2024,MRI data acquisition,Siemens Magnetom Skyra.
+subjects,country=IT,150,fiscone2024,Participants,
+age_min,,23,fiscone2024,Table 1,Lower of the two group minimums (24 healthy and 23 MS).
+age_max,,86,fiscone2024,Table 1,Higher of the two group maximums (86 healthy and 73 MS).
+age_mean,condition=healthy,57.1,fiscone2024,Table 1,SD 16.7; range 24-86
+age_sd,condition=healthy,16.7,fiscone2024,Table 1,
+age_min,condition=healthy,24,fiscone2024,Table 1,
+age_max,condition=healthy,86,fiscone2024,Table 1,
+age_mean,condition=multiple_sclerosis,47.6,fiscone2024,Table 1,SD 11.4; range 23-73
+age_sd,condition=multiple_sclerosis,11.4,fiscone2024,Table 1,
+age_min,condition=multiple_sclerosis,23,fiscone2024,Table 1,
+age_max,condition=multiple_sclerosis,73,fiscone2024,Table 1,

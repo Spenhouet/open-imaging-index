@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: qsm-ms-radiomics
+name: QSM radiomics in multiple sclerosis (Bologna)
+full_name: MRI dataset for susceptibility-based radiomic feature extraction in healthy controls and patients with multiple sclerosis
+summary: >-
+  Brain MRI with quantitative susceptibility mapping (QSM) from adults with multiple sclerosis and healthy controls,
+  collected to extract and test radiomic features of normal-appearing white matter and six white matter tracts.
+homepage: https://zenodo.org/records/10931121
+doi: 10.5281/zenodo.10931121
+# Zenodo record published 2024-04-05.
+year: 2024
+status: active
+creators:
+  - name: Functional and Molecular Neuroimaging Unit, IRCCS Istituto delle Scienze Neurologiche di Bologna (Fiscone C, Sighinolfi G, Manners DN, Tonon C, et al.)
+    url: https://zenodo.org/records/10931121
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi, MEGRE, Chimap]
+anatomy: [brain]
+conditions: [multiple_sclerosis, healthy]
+formats: [BIDS, NIfTI]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [3]
+# "The size of the dataset is ~30GB" (Fiscone et al. 2024, Data Records).
+size_gb: 30
+access:
+  type: signed_agreement
+  url: https://doi.org/10.5281/zenodo.11278906
+  note: >-
+    The Zenodo record is restricted. Users create a Zenodo account with a public username or email, email the signed
+    Data Use Agreement to the data holders and are then added as readers of the Zenodo community that holds the data.
+licenses:
+  - license: LicenseRef-Bologna-QSM-Radiomics-DUA
+citation:
+  text: >-
+    Fiscone C, Sighinolfi G, Manners DN, Motta L, Venturi G, Panzera I, Zaccagna F, Rundo L, Lugaresi A, Lodi R, Tonon
+    C, Castelli M. Multiparametric MRI dataset for susceptibility-based radiomic feature extraction and analysis.
+    Scientific Data 11, 575 (2024). doi:10.1038/s41597-024-03418-6
+sources:
+  fiscone2024:
+    title: Fiscone et al. 2024, Multiparametric MRI dataset for susceptibility-based radiomic feature extraction and analysis, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03418-6
+    kind: paper
+  zenodo-10931121:
+    title: Zenodo record 10931121 (dataset description)
+    url: https://zenodo.org/records/10931121
+    kind: website
+related: []
+keywords:
+  [quantitative susceptibility mapping, QSM, radiomics, normal-appearing white matter, tractography, multiple sclerosis]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
