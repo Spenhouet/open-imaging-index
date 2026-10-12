@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,52,openneuro-ds001242-v100,snapshot summary,52 subject folders and 52 participant rows; matches the 28 younger and 24 older adults of the paper
+subjects,contrast=T1w,52,ds001242-file-tree,sub-*/anat/*T1w.nii.gz,MPRAGE and neuromelanin-sensitive T1-weighted fast spin echo for every subject
+subjects,contrast=bold,52,ds001242-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast=dwi,52,ds001242-file-tree,sub-*/dwi/*_dwi.nii.gz,
+subjects,contrast_set=bold+dwi+T1w,52,ds001242-file-tree,"anat, dwi and func folders",
+subjects,sex=female,18,ds001242-participants,sex,
+subjects,sex=male,34,ds001242-participants,sex,
+subjects,age=18-34,28,lee2018,Methods: Participants,younger group; individual ages are not released
+subjects,age=55-75,24,lee2018,Methods: Participants,older group; individual ages are not released
+subjects,sex=female;age=18-34,9,lee2018,Methods: Participants,
+subjects,sex=female;age=55-75,9,lee2018,Methods: Participants,
+subjects,sex=male;age=18-34,19,ds001242-participants,group and sex,
+subjects,sex=male;age=55-75,15,ds001242-participants,group and sex,
+subjects,vendor=siemens,52,lee2018,Methods: MRI data acquisition,Siemens 3T Magnetom Trio
+subjects,field_strength=3,52,lee2018,Methods: MRI data acquisition,
+subjects,country=US,52,lee2018,Methods: Participants,University of Southern California
+scans,,540,ds001242-file-tree,sub-*/*/*.nii.gz,"128 T1w, 360 bold and 52 dwi NIfTI files, counting the hidden neuromelanin files"
+scans,contrast=T1w,128,ds001242-file-tree,*T1w.nii.gz,"54 MPRAGE (two each for sub-01 and sub-44) and 74 neuromelanin-sensitive fast spin echo images stored as hidden .bidsignore files"
+scans,contrast=bold,360,ds001242-file-tree,*_bold.nii.gz,"one fear-conditioning run, one place localizer run and up to five spatial detection runs per subject"
+scans,contrast=dwi,52,ds001242-file-tree,*_dwi.nii.gz,
+age_min,,18,lee2018,Methods: Participants,
+age_max,,75,lee2018,Methods: Participants,
