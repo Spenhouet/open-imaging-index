@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: karolinska-rsfmri-hierarchical-clustering
+name: Resting-State fMRI Clustering Cohort (Karolinska)
+full_name: Analysis of Whole-Brain Resting-State fMRI Data Using Hierarchical Clustering Approach
+summary: >-
+  Brain BOLD fMRI at rest from healthy adults aged 21 to 84, collected to test voxel-wise hierarchical clustering of
+  whole-brain functional connectivity networks. The scans are not public; only the paper and its supplementary
+  figures are.
+homepage: https://doi.org/10.1371/journal.pone.0076315
+doi: 10.1371/journal.pone.0076315
+year: 2013
+creators:
+  - name: Yanlu Wang and Tie-Qiang Li, Karolinska Institutet and Karolinska University Hospital Huddinge
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+countries: [SE]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1371/journal.pone.0076315
+  note: >-
+    The paper has no data availability statement and does not release the scans. The PLOS figshare item holds only
+    two supplementary figures and a supporting-information document under CC BY 4.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Participants' resting-state fMRI, which is not shared
+    note: No release or terms are stated for the scans.
+citation:
+  text: >-
+    Wang Y, Li T-Q. Analysis of Whole-Brain Resting-State fMRI Data Using Hierarchical Clustering Approach. PLoS ONE
+    8(10): e76315 (2013). doi:10.1371/journal.pone.0076315
+sources:
+  wang2013:
+    title: Wang and Li 2013, PLoS ONE 8(10):e76315
+    url: https://doi.org/10.1371/journal.pone.0076315
+    kind: paper
+  figshare-828461:
+    title: PLOS figshare item 828461 (supplementary files of Wang and Li 2013)
+    url: https://plos.figshare.com/articles/dataset/_Analysis_of_Whole_Brain_Resting_State_fMRI_Data_Using_Hierarchical_Clustering_Approach_/828461
+    kind: website
+related: [karolinska-rsfmri-normal-adults]
+keywords: [resting-state fMRI, functional connectivity, hierarchical clustering, default mode network, healthy adults]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,86,wang2013,"Materials and Methods, Data acquisition",
+subjects,contrast=bold,86,wang2013,"Materials and Methods, Data acquisition",At least one resting-state run per subject
+subjects,condition=healthy,86,wang2013,"Materials and Methods, Data acquisition",Described as normal adult subjects
+subjects,sex=male,40,wang2013,"Materials and Methods, Data acquisition",
+subjects,sex=female,46,wang2013,"Materials and Methods, Data acquisition",
+age_min,,21,wang2013,"Materials and Methods, Data acquisition",
+age_max,,84,wang2013,"Materials and Methods, Data acquisition",
+subjects,vendor=siemens,86,wang2013,"Materials and Methods, Data acquisition",Magnetom Trio
+subjects,field_strength=3,86,wang2013,"Materials and Methods, Data acquisition",
+subjects,country=SE,86,wang2013,Affiliations and ethical statement,Karolinska University Hospital Huddinge; approved by the Central Ethical Review Board in Sweden
