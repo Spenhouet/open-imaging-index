@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001838
+name: Handedness and symbolic number fMRI (ds001838)
+full_name: Handedness and Symbolic Number Representation
+summary: >-
+  Brain MRI and task fMRI of right-handed and left-handed young adults passively viewing Arabic digits, collected to
+  test whether the hand used for writing shapes how the brain lateralizes symbolic number processing.
+homepage: https://openneuro.org/datasets/ds001838
+doi: 10.18112/openneuro.ds001838.v1.0.1
+year: 2019
+version: 1.0.1
+status: active
+creators:
+  - name: Goffin C, Sokolowski HM, Slipenkyj M, Ansari D
+    url: https://openneuro.org/datasets/ds001838
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 29.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001838
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" as "CCO", read as CC0.
+citation:
+  text: >-
+    Goffin C, Sokolowski HM, Slipenkyj M, Ansari D. Does writing handedness affect neural representation of symbolic
+    number? An fMRI adaptation study. Cortex 121, 27-43 (2019). https://doi.org/10.1016/j.cortex.2019.07.017
+sources:
+  openneuro-ds001838-v101:
+    title: OpenNeuro ds001838 snapshot 1.0.1 (dataset_description.json, participants.json, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds001838/versions/1.0.1
+    kind: website
+  goffin2019:
+    title: Goffin et al. 2019, Cortex (abstract)
+    url: https://doi.org/10.1016/j.cortex.2019.07.017
+    kind: paper
+  ds001838-participants:
+    title: participants.tsv of ds001838 snapshot 1.0.1 (CC0), counted per row for the 53 released subjects
+    url: https://openneuro.org/crn/datasets/ds001838/snapshots/1.0.1/files/participants.tsv
+    kind: computed
+  ds001838-file-tree:
+    title: File tree of ds001838 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://openneuro.org/datasets/ds001838/versions/1.0.1/file-display
+    kind: computed
+related: []
+keywords: [handedness, numerical cognition, symbolic number, Arabic digits, fMRI adaptation, intraparietal sulcus, lateralization, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
