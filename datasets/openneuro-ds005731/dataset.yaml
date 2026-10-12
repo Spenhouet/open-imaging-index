@@ -3,22 +3,20 @@ id: openneuro-ds005731
 name: Round-robin interpersonal perception (ds005731)
 full_name: Round-robin interpersonal perception
 summary: >-
-  Brain MRI and task fMRI of adults who judged traits of themselves and of every member of their own existing social group in a
-  round-robin design, collected to study how relationship strength shapes neural representations of other people.
+  Brain MRI and task fMRI of people performing a round-robin trait judgement task and a localizer, collected for a study
+  of interpersonal perception, with subject labels that place participants in 20 groups of up to six members.
 homepage: https://openneuro.org/datasets/ds005731
 doi: 10.18112/openneuro.ds005731.v1.0.1
 year: 2024
 version: 1.0.1
 status: active
 creators:
-  - name: Chavez RS, Computational Social Neuroscience Lab, University of Oregon
+  - name: Chavez RS, University of Oregon
     url: https://openneuro.org/datasets/ds005731
 species: human
 modalities: [MR]
 contrasts: [T1w, bold]
 anatomy: [brain]
-conditions: [healthy]
-tasks: [normative]
 formats: [BIDS, NIfTI]
 countries: [US]
 vendors: [siemens]
@@ -43,10 +41,6 @@ sources:
     title: File tree of ds005731 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
     url: https://github.com/OpenNeuroDatasets/ds005731
     kind: computed
-  guthrie2024:
-    title: Guthrie and Chavez 2024, Social Cognitive and Affective Neuroscience
-    url: https://doi.org/10.1093/scan/nsae045
-    kind: paper
 related: []
 keywords: [interpersonal perception, round-robin design, social networks, trait judgment, self-reference, person perception, medial prefrontal cortex, task fMRI]
 verified:

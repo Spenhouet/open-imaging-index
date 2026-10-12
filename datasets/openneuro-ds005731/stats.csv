@@ -1,10 +1,5 @@
 measure,by,value,source,where,note
-subjects,,114,ds005731-file-tree,sub-*/,114 subject folders in 20 groups (G01 to G20); the paper reports 120 recruited and 111 analysed
-subjects,condition=healthy,114,guthrie2024,Methods: Participants,right-handed adults recruited from pre-existing social groups; no clinical group
-age_min,,18,guthrie2024,Methods: Participants,of the 120 recruited participants
-age_max,,51,guthrie2024,Methods: Participants,of the 120 recruited participants
-age_mean,,23.5,guthrie2024,Methods: Participants,of the 120 recruited participants
-age_sd,,7.2,guthrie2024,Methods: Participants,of the 120 recruited participants
+subjects,,114,ds005731-file-tree,sub-*/,114 subject folders in 20 groups (G01 to G20)
 scans,,1019,ds005731-file-tree,sub-*/**/*.nii.gz,"114 T1w, 683 bold and 222 spin-echo EPI field maps"
 scans,contrast=T1w,114,ds005731-file-tree,anat/*_T1w.nii.gz,one per subject
 scans,contrast=bold,683,ds005731-file-tree,func/*_bold.nii.gz,five round-robin runs and one localizer run per subject; sub-G06S03 lacks run B
