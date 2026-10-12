@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: opal
+name: OPAL
+full_name: OPAL – The Oxygen-15 PET/MR Cerebral Perfusion Atlas
+summary: >-
+  Brain perfusion imaging on a simultaneous PET/MRI system with oxygen-15 water in healthy controls and Moyamoya
+  patients, shared to develop and test non-invasive perfusion methods. 120 participants with PET CBF maps, ASL, DSC
+  and diffusion MRI around acetazolamide. Non-commercial research use.
+homepage: https://stanford.redivis.com/datasets/2mah-d6525pvn2
+doi: 10.57761/2g6b-bm61
+year: 2026
+version: '1.0'
+status: active
+creators:
+  - name: Jiang B., Zhao M., Fan A., Khalighi M., Steinberg G. K., Zaharchuk G. (Stanford University)
+    url: https://stanford.redivis.com/datasets/2mah-d6525pvn2
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/
+species: human
+modalities: [MR, PT]
+contrasts: [asl, dsc, dwi]
+tracers: [o15_water]
+anatomy: [brain]
+conditions: [healthy, moyamoya]
+tasks: [synthesis]
+formats: [BIDS]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 8.34
+access:
+  type: registration
+  url: https://stanford.redivis.com/datasets/2mah-d6525pvn2
+  note: >-
+    Sign in to Redivis, join the Stanford AIMI organization and complete the per-dataset Stanford research agreement
+    requirement. Metadata are public; files are visible only after both steps.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+    url: https://stanford.redivis.com/datasets/2mah-d6525pvn2
+    note: >-
+      The Redivis access panel names the requirement "Stanford_Research_Agreement"; its text is shown only after
+      sign-in and was not read for this entry. Stanford AIMI states that its datasets are free for non-commercial
+      research use under the applicable data use terms and that commercial use needs a separate commercial license.
+citation:
+  text: >-
+    Stanford AIMI. (2026). OPAL – The Oxygen-15 PET/MR Cerebral Perfusion Atlas (Version 1.0) [Dataset]. Redivis.
+    https://doi.org/10.57761/2g6b-bm61
+sources:
+  redivis-opal:
+    title: Redivis dataset page of OPAL v1.0 (Stanford AIMI), overview and access panel
+    url: https://stanford.redivis.com/datasets/2mah-d6525pvn2?v=1.0
+    kind: website
+  datacite-opal:
+    title: DataCite record of the OPAL dataset DOI (version 1.0, 2026)
+    url: https://api.datacite.org/dois/10.57761/2g6b-bm61
+    kind: website
+  jiang2025:
+    title: Jiang et al. 2025, Developing a Public Dataset for 15O-H2O PET/MRI with ASL Perfusion in Healthy Controls and Moyamoya Patients (ISMRM 2025, abstract 1521)
+    url: https://doi.org/10.58530/2025/1521
+    kind: paper
+  aimi-data:
+    title: Stanford AIMI shared datasets page
+    url: https://aimi.stanford.edu/shared-datasets
+    kind: website
+related: []
+keywords: [cerebral blood flow, perfusion, PET/MRI, arterial spin labeling, cerebrovascular reactivity, acetazolamide, Moyamoya]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -53,6 +53,7 @@ terms:
       mappings: { mondo: 'MONDO:0005098' }
     }
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
+  - { id: moyamoya, label: Moyamoya disease, synonyms: [moyamoya angiopathy], mappings: { mondo: 'MONDO:0016820' } }
   - { id: aphasia, label: Aphasia, description: 'Impaired production or comprehension of language, a finding often caused by stroke.', mappings: { hp: 'HP:0002381' } }
   - {
       id: bells_palsy,
