@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006045
+name: NIMH CBT Outcome Prediction in Youth Anxiety (ds006045)
+full_name: >-
+  Brain Functional Connectivity and Anatomical Features as Predictors of Cognitive Behavioral Therapy Outcome for
+  Anxiety in Youths
+summary: >-
+  Resting-state fMRI and T1-weighted brain MRI of 83 youths from an NIMH anxiety treatment protocol, used to test
+  whether connectivity and cortical anatomy predict response to cognitive behavioral therapy. Most have a second
+  session. BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds006045
+doi: 10.18112/openneuro.ds006045.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Andre Zugman, Grace Ringlein, Daniel S. Pine and Anderson Winkler (NIMH Intramural Research Program)
+    url: https://openneuro.org/datasets/ds006045
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [anxiety_disorder]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 21.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006045/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006045/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Zugman A, Ringlein GV, Finn ES, et al. Brain functional connectivity and anatomical features as predictors of
+    cognitive behavioral therapy outcome for anxiety in youths. Psychological Medicine 55:e91 (2025).
+    doi:10.1017/S0033291724003131
+sources:
+  openneuro-ds006045-v100:
+    title: OpenNeuro ds006045 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006045/versions/1.0.0
+    kind: website
+  zugman2025:
+    title: Zugman et al. 2025, Psychological Medicine 55:e91
+    url: https://doi.org/10.1017/S0033291724003131
+    kind: paper
+  ds006045-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds006045 snapshot 1.0.0 (CC0), raw NIfTI files counted per subject and
+      session folder, sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds006045/tree/1.0.0
+    kind: computed
+related: []
+keywords: [pediatric anxiety, cognitive behavioral therapy, treatment response, resting-state fMRI, multi-echo fMRI, connectome predictive modeling, youth]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
