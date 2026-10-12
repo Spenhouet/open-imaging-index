@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,80,mccarthy2023,Methods: Patient population; Results,Adults hospitalized with PCR-confirmed COVID-19 between March 2020 and April 2021 who had brain MRI and neurological manifestations
+subjects,condition=covid19,80,mccarthy2023,Methods: Patient population,All confirmed by RT-PCR
+subjects,condition=cancer,40,mccarthy2023,Results,"Non-CNS primary cancers of various types; 20 with and 20 without ventilatory support"
+subjects,condition=ischemic_stroke,21,mccarthy2023,Table 2,"Acute or subacute infarct on MRI; 20 further patients had chronic infarcts (Table 2), overlap not reported"
+subjects,condition=intracranial_hemorrhage,6,mccarthy2023,Table 2,"Acute macrohemorrhage on MRI; 8 had chronic macrohemorrhage, overlap not reported"
+subjects,condition=cerebral_microbleeds,19,mccarthy2023,Table 2,Microhemorrhages on MRI
+subjects,sex=male,44,mccarthy2023,Results,
+subjects,sex=female,36,mccarthy2023,Results,
+subjects,country=US,80,mccarthy2023,Methods: Patient population,"Mount Sinai Health System, New York"
