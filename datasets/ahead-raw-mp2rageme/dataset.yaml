@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ahead-raw-mp2rageme
+name: AHEAD raw MP2RAGE-ME
+full_name: Quantitative motion-corrected 7T sub-millimeter raw MRI database of the adult lifespan
+summary: >-
+  Raw multi-coil brain k-space of an ultra-high-field multi-echo MP2RAGE scan in adults across the life span, with
+  coil sensitivity maps, for reconstruction and quantitative T1, T2* and susceptibility mapping research. 7 T,
+  fat-navigator motion corrected, defaced per coil.
+homepage: https://doi.org/10.34894/IHZGQM
+doi: 10.34894/IHZGQM
+year: 2022
+status: active
+creators:
+  - name: Amsterdam UMC (Matthan Caan)
+    url: https://doi.org/10.34894/IHZGQM
+species: human
+modalities: [MR]
+contrasts: [MP2RAGE, MEGRE]
+anatomy: [brain]
+tasks: [reconstruction]
+formats: [HDF5]
+countries: [NL]
+vendors: [philips]
+field_strengths: [7]
+size_gb: 2149.6
+access:
+  type: open
+  url: https://doi.org/10.34894/IHZGQM
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Caan M. Quantitative motion-corrected 7T sub-millimeter raw MRI database of the adult lifespan. DataverseNL, V1
+    (2022). https://doi.org/10.34894/IHZGQM. The record also asks users to cite Alkemade et al., NeuroImage 2020
+    (doi:10.1016/j.neuroimage.2020.117200), Bazin et al., NeuroImage 2020 (doi:10.1016/j.neuroimage.2020.117227) and
+    Caan et al., Hum Brain Mapp 2019 (doi:10.1002/hbm.24490).
+sources:
+  dataversenl-ihzgqm:
+    title: DataverseNL record doi:10.34894/IHZGQM, V1 (description, README.txt and file listing)
+    url: https://doi.org/10.34894/IHZGQM
+    kind: data
+  ahead-demographics:
+    title: demographics.csv of the DataverseNL record (CC BY 4.0), columns Sex and AgeDecade, one row per subject
+    url: https://dataverse.nl/api/access/datafile/253000
+    kind: computed
+  ahead-file-listing:
+    title: File listing of the DataverseNL record (CC BY 4.0) and the ISMRMRD XML header of mp2rageme_001_inv1_te1.h5
+    url: https://dataverse.nl/api/datasets/:persistentId/?persistentId=doi:10.34894/IHZGQM
+    kind: computed
+  alkemade2020:
+    title: Alkemade et al. 2020 (abstract), The Amsterdam Ultra-high field adult lifespan database (AHEAD), NeuroImage 222, 117200
+    url: https://doi.org/10.1016/j.neuroimage.2020.117200
+    kind: paper
+related: []
+keywords: [k-space, raw data, 7 Tesla, MP2RAGEME, quantitative MRI, QSM, T1 mapping, T2* mapping, motion correction, FatNavs, lifespan, ISMRMRD]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

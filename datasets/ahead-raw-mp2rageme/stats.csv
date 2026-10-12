@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,77,dataversenl-ihzgqm,Description,
+subjects,contrast=MP2RAGE,77,ahead-file-listing,mp2rageme_<id>_inv1_te1.h5 and inv2_te1.h5 files,"both inversions of the MP2RAGE-ME, one k-space file each"
+subjects,contrast=MEGRE,77,ahead-file-listing,mp2rageme_<id>_inv2_te1..te4.h5 files,four echoes of the second inversion
+subjects,contrast_set=MEGRE+MP2RAGE,77,ahead-file-listing,mp2rageme_<id>_*.h5 files,all subjects have the full five-file set
+subjects,field_strength=7,77,dataversenl-ihzgqm,README.txt Main sequence parameters,
+subjects,sex=female,43,ahead-demographics,Sex,
+subjects,sex=male,34,ahead-demographics,Sex,
+subjects,age=20-29,19,ahead-demographics,AgeDecade,"AgeDecade value 20, read as 20 to 29 years"
+subjects,age=30-39,10,ahead-demographics,AgeDecade,"AgeDecade value 30, read as 30 to 39 years"
+subjects,age=40-49,6,ahead-demographics,AgeDecade,"AgeDecade value 40, read as 40 to 49 years"
+subjects,age=50-59,12,ahead-demographics,AgeDecade,"AgeDecade value 50, read as 50 to 59 years"
+subjects,age=60-69,10,ahead-demographics,AgeDecade,"AgeDecade value 60, read as 60 to 69 years"
+subjects,age=70-79,18,ahead-demographics,AgeDecade,"AgeDecade value 70, read as 70 to 79 years"
+subjects,age=80-89,2,ahead-demographics,AgeDecade,"AgeDecade value 80, read as 80 to 89 years"
+scans,,385,ahead-file-listing,mp2rageme_*.h5 files,"k-space files, five per subject (inv1 echo 1, inv2 echoes 1 to 4); 77 coil sensitivity files come in addition"
