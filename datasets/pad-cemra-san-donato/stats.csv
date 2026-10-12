@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,82,secchi2020,Methods (Study population),consecutive patients with known or suspected PAD; amputees and patients with bilaterally normal vessels excluded
+subjects,condition=peripheral_artery_disease,82,secchi2020,Methods (Study population),known or suspected PAD
+subjects,sex=male,60,secchi2020,Methods (Study population),
+subjects,sex=female,22,secchi2020,Methods (Study population),
+age_mean,,69,secchi2020,Methods (Study population),
+age_sd,,9,secchi2020,Methods (Study population),
+subjects,contrast=angio,82,secchi2020,Methods (Image acquisition),three-station gadobenate-enhanced 3D FLASH MR angiography
+subjects,vendor=siemens,82,secchi2020,Methods (Image acquisition),Magnetom Sonata Maestro Class
+subjects,field_strength=1.5,82,secchi2020,Methods (Image acquisition),
+subjects,country=IT,82,secchi2020,Methods (Study population),single centre

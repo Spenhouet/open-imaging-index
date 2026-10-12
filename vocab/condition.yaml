@@ -688,3 +688,9 @@ terms:
       synonyms: [after liver transplantation, OLT recipient],
       description: 'Person living with a transplanted liver, usually under long-term immunosuppression. A post-procedure state, not a disease, so MONDO and HPO have no term for it.'
     }
+  - {
+      id: peripheral_artery_disease,
+      label: Peripheral artery disease,
+      synonyms: [PAD, peripheral arterial disease, lower extremity arterial disease],
+      mappings: { mondo: 'MONDO:0005386' }
+    }
