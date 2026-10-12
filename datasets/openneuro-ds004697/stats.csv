@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,84,openneuro-ds004697-v102,snapshot summary,"84 subject folders with images; participants.tsv lists 94 children, 10 of whom have no image folder"
+subjects,contrast=T1w,84,ds004697-file-listing,anat/sub-*_ses-1_T1w.nii.gz,
+subjects,contrast=bold,84,ds004697-file-listing,func/sub-*_ses-1_task-*_bold.nii.gz,"82 with the food-cue task, 82 with the resting-state run"
+subjects,contrast_set=bold+T1w,84,ds004697-file-listing,anat and func NIfTI files,
+subjects,condition=healthy,84,fuchs2024,Section 2.1,"children aged 7-8 without obesity (BMI-for-age percentile below 90) and without ADHD, psychological diagnoses or appetite-affecting medication"
+subjects,sex=female,42,ds004697-participants,sex,
+subjects,sex=male,42,ds004697-participants,sex,
+subjects,age=7-8,84,ds004697-participants,age,age at baseline (visit 1)
+subjects,country=US,84,openneuro-ds004697-v102,README,"collected at The Pennsylvania State University, University Park, PA"
+subjects,field_strength=3,84,ds004697-sidecars,MagneticFieldStrength,
+subjects,vendor=siemens,84,ds004697-sidecars,Manufacturer,
+scans,,803,ds004697-file-listing,sub-*/ses-1/*/*.nii.gz,"84 T1w, 482 BOLD runs and 237 field map images (magnitude1, magnitude2, phasediff for 79 subjects)"
+scans,contrast=T1w,84,ds004697-file-listing,anat/sub-*_ses-1_T1w.nii.gz,
+scans,contrast=bold,482,ds004697-file-listing,func/sub-*_ses-1_task-*_bold.nii.gz,400 food-cue runs and 82 resting-state runs
+age_mean,,7.81,ds004697-participants,age,age in years at baseline
+age_sd,,0.58,ds004697-participants,age,age in years at baseline
+age_median,,7.705,ds004697-participants,age,age in years at baseline
+age_min,,7,ds004697-participants,age,age in years at baseline
+age_max,,8.99,ds004697-participants,age,age in years at baseline

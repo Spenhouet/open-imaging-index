@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004697
+name: Food and Brain Study (ds004697)
+full_name: Food and Brain Study
+summary: >-
+  Task and resting-state fMRI with T1-weighted brain MRI of 7- to 8-year-old children without obesity, scanned while
+  viewing food images of larger and smaller portions to study brain responses linked to overeating. 84 children from
+  Penn State, 3T Siemens, BIDS, under CC0.
+homepage: https://openneuro.org/datasets/ds004697
+doi: 10.18112/openneuro.ds004697.v1.0.2
+year: 2023
+version: 1.0.2
+status: active
+creators:
+  - name: Keller lab, The Pennsylvania State University (Fuchs B, Pearce A, Rolls B, Wilson S, Rose EJ, Geier C, Garavan H, Keller K)
+    url: https://osf.io/ynjqw/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 10.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004697
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Fuchs BA, Pearce AL, Rolls BJ, Wilson SJ, Rose EJ, Geier CF, Garavan H, Keller KL. The Cerebellar Response to Visual
+    Portion Size Cues Is Associated with the Portion Size Effect in Children. Nutrients 16(5):738 (2024).
+    doi:10.3390/nu16050738. Dataset: OpenNeuro ds004697, doi:10.18112/openneuro.ds004697.v1.0.2.
+sources:
+  fuchs2024:
+    title: Fuchs et al. 2024, The Cerebellar Response to Visual Portion Size Cues Is Associated with the Portion Size Effect in Children, Nutrients
+    url: https://doi.org/10.3390/nu16050738
+    kind: paper
+  openneuro-ds004697-v102:
+    title: OpenNeuro ds004697 snapshot 1.0.2 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds004697/versions/1.0.2
+    kind: website
+  ds004697-file-listing:
+    title: File listing of ds004697 snapshot 1.0.2 (CC0), counted per subject folder from anat, func and fmap NIfTI files
+    url: https://s3.amazonaws.com/openneuro.org?prefix=ds004697/&list-type=2
+    kind: computed
+  ds004697-participants:
+    title: participants.tsv of ds004697 snapshot 1.0.2 (CC0), restricted to the 84 subjects with image folders
+    url: https://raw.githubusercontent.com/OpenNeuroDatasets/ds004697/main/participants.tsv
+    kind: computed
+  ds004697-sidecars:
+    title: BIDS JSON sidecars of ds004697 snapshot 1.0.2 (CC0)
+    url: https://s3.amazonaws.com/openneuro.org/ds004697/sub-001/ses-1/anat/sub-001_ses-1_T1w.json
+    kind: computed
+related: []
+keywords: [task fMRI, resting-state fMRI, food cue reactivity, portion size, childhood obesity risk, children]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
