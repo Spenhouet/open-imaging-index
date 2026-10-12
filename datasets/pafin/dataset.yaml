@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pafin
+name: PAFIN (ds006131)
+full_name: 'PAFIN: PennLINC AFfective INstability'
+summary: >-
+  Multimodal brain MRI of adolescents and young adults, collected to study how mood instability, emotion regulation and
+  sleep relate to brain development, with multi-echo movie fMRI, diffusion, perfusion, actigraphy and self-report
+  questionnaires. Ongoing study in Philadelphia.
+homepage: https://openneuro.org/datasets/ds006131
+doi: 10.18112/openneuro.ds006131.v2.0.1
+year: 2025
+updated: 2026
+version: 2.0.1
+status: active
+creators:
+  - name: >-
+      Penn Lifespan Informatics and Neuroimaging Center (PennLINC), University of Pennsylvania (Brook JBH, Salo T, ...,
+      Roalf DR, Satterthwaite TD)
+    url: https://openneuro.org/datasets/ds006131
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, T2starw, bold, dwi, asl]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 491.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006131
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.1 states "License" CC0. The fMRIPrep derivatives (ds006185) are also CC0.
+citation:
+  text: >-
+    Brook JBH, Salo T, Luo AC, et al. An open, fully-processed data resource for studying mood and sleep variability in
+    the developing brain. Aperture Neuro 6 (2026). doi:10.52294/001c.151820
+sources:
+  brook2026:
+    title: Brook et al. 2026, An open, fully-processed data resource for studying mood and sleep variability in the developing brain, Aperture Neuro
+    url: https://doi.org/10.52294/001c.151820
+    kind: paper
+  openneuro-ds006131-v201:
+    title: OpenNeuro ds006131 snapshot 2.0.1 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006131/versions/2.0.1
+    kind: website
+  ds006131-participants:
+    title: participants.tsv of ds006131 (CC0), columns age and sex
+    url: https://github.com/OpenNeuroDatasets/ds006131/blob/2.0.1/participants.tsv
+    kind: computed
+  ds006131-file-tree:
+    title: BIDS file tree of ds006131 snapshot 2.0.1 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds006131/tree/2.0.1
+    kind: computed
+related: []
+keywords:
+  [affective instability, emotion regulation, sleep, actigraphy, multi-echo fMRI, naturalistic viewing, CS-DSI, PCASL, QSM, fMRIPrep]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
