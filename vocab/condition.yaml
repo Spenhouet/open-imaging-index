@@ -254,6 +254,7 @@ terms:
       mappings: { mondo: 'MONDO:0007079' }
     }
   # Tumors
+  - { id: cancer, label: Cancer, description: 'Malignant neoplasm of any type or site', mappings: { mondo: 'MONDO:0004992' } }
   - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
   - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }
   - { id: glioblastoma, label: Glioblastoma, parent: glioma, synonyms: [GBM], mappings: { mondo: 'MONDO:0018177' } }

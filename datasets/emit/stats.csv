@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,42,schapiro2022,"Methods, EMIT dataset",Patients whose excess tissue built the microarray HTMA427
+slides,,2,synapse-emit-tma,,"Two sections of the same microarray (TMA11 and TMA22), each stained with a different antibody panel"
+images,,246,synapse-emit-tma,dearray/ description,"123 dearrayed core images per section (TMA11 and TMA22), summed; each section holds 120 tissue cores plus 3 orientation marker cores (Schapiro et al. 2022, Methods)"

@@ -78,6 +78,11 @@ terms:
   # Pathology stains
   - { id: he, label: H&E stain, group: SM, synonyms: [hematoxylin and eosin] }
   - { id: ihc, label: Immunohistochemistry, group: SM, synonyms: [IHC] }
+  - id: multiplex_if
+    label: Multiplexed immunofluorescence
+    group: SM
+    synonyms: [mIF, mxIF, CyCIF, cyclic immunofluorescence, highly multiplexed tissue imaging]
+    description: Immunofluorescence imaging of many protein markers on one tissue section, e.g. by cyclic staining rounds
   # Ultrasound
   - { id: b_mode, label: B-mode, group: US }
   - { id: doppler, label: Doppler, group: US }
