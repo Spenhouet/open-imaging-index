@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,100,phillips2013,Abstract,"25 presymptomatic gene carriers, 25 manifest HD patients and 50 healthy controls"
+subjects,condition=huntington_disease,25,phillips2013,Abstract; Table 1,"manifest HD patients; the 25 presymptomatic gene carriers (CAG > 40, UHDRS motor score < 5) are not counted here"
+subjects,condition=healthy,50,phillips2013,Abstract; Table 1,"Table 1 header prints n = 25 for controls, but its sex split (30/20) and the abstract give 50"
+subjects,sex=male,60,phillips2013,Table 1,"sum of men in the disjoint groups: presymptomatic 16, HD 14, controls 30"
+subjects,sex=female,40,phillips2013,Table 1,"sum of women in the disjoint groups: presymptomatic 9, HD 11, controls 20"
+subjects,condition=huntington_disease;sex=male,14,phillips2013,Table 1,manifest HD patients
+subjects,condition=huntington_disease;sex=female,11,phillips2013,Table 1,manifest HD patients
+subjects,condition=healthy;sex=male,30,phillips2013,Table 1,
+subjects,condition=healthy;sex=female,20,phillips2013,Table 1,
+subjects,field_strength=3,100,phillips2013,MRI Data Acquisition,3 T Siemens Allegra
+subjects,vendor=siemens,100,phillips2013,MRI Data Acquisition,3 T Siemens Allegra
+subjects,country=IT,100,phillips2013,Ethics Statement,"study approved by the Santa Lucia Foundation Research Ethics Committee, Rome; all author institutions are Italian"

@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: huntington-cc-tractography
+name: Tractography of the Corpus Callosum in Huntington's Disease
+summary: >-
+  Brain MRI with diffusion tensor imaging of presymptomatic and manifest Huntington's disease gene carriers and healthy
+  controls, collected to map damage along the corpus callosum tracts. Images are not shared; only summary tract tables
+  are public.
+homepage: https://doi.org/10.1371/journal.pone.0073280
+# Year of the paper. The images themselves have no public release.
+year: 2013
+creators:
+  - name: Owen Phillips, IRCCS Santa Lucia Foundation, Rome
+  - name: Ferdinando Squitieri, IRCCS Neuromed, Pozzilli
+  - name: Margherita Di Paola, IRCCS Santa Lucia Foundation, Rome
+modalities: [MR]
+contrasts: [T1w, T2w, PDw, FLAIR, dwi]
+anatomy: [brain]
+conditions: [huntington_disease, healthy]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://plos.figshare.com/articles/dataset/_Tractography_of_the_Corpus_Callosum_in_Huntington_8217_s_Disease_/787624
+  note: >-
+    The figshare record holds only the two supplementary tables of the paper (intra-rater reliability and group-level
+    tract measures) under CC BY 4.0. The paper has no data availability statement and no MRI images are released.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC BY 4.0 license of the figshare record covers
+      only the supplementary tables.
+citation:
+  text: >-
+    Phillips O, Sanchez-Castaneda C, Elifani F, Maglione V, Di Pardo A, Caltagirone C, Squitieri F, Sabatini U, Di Paola
+    M. Tractography of the Corpus Callosum in Huntington's Disease. PLoS ONE 8(9): e73280 (2013).
+    https://doi.org/10.1371/journal.pone.0073280
+sources:
+  phillips2013:
+    title: Phillips et al. 2013, Tractography of the Corpus Callosum in Huntington's Disease, PLoS ONE 8(9) e73280
+    url: https://doi.org/10.1371/journal.pone.0073280
+    kind: paper
+  figshare-787624:
+    title: PLOS figshare record 787624, supplementary tables S1 and S2
+    url: https://plos.figshare.com/articles/dataset/_Tractography_of_the_Corpus_Callosum_in_Huntington_8217_s_Disease_/787624
+    kind: website
+related: []
+keywords: [Huntington's disease, presymptomatic, corpus callosum, tractography, diffusion tensor imaging, CAG repeat]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
