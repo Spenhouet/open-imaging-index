@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,51,ds004073-file-tree,sub-*/,"51 sub-* folders (27 Oxford, 24 Bangor); participants.tsv lists 50 and has no row for sub-BAN24"
+subjects,condition=healthy,51,openneuro-ds004073-v110,README Participants,"neurotypical adults without neurological, psychiatric or language disorders"
+subjects,country=GB,51,openneuro-ds004073-v110,README,scanned at Oxford and Bangor
+subjects,field_strength=3,51,ds004073-file-tree,anat/*_T1w.json MagneticFieldStrength,
+subjects,vendor=siemens,27,ds004073-file-tree,anat/*_T1w.json Manufacturer,Oxford: Siemens Prisma
+subjects,vendor=philips,24,ds004073-file-tree,anat/*_T1w.json Manufacturer,Bangor: Philips Ingenia Elition X
+subjects,sex=female,25,ds004073-participants,sex,
+subjects,sex=male,25,ds004073-participants,sex,
+subjects,sex=female;vendor=siemens,13,ds004073-participants,sex and site,site Oxford
+subjects,sex=male;vendor=siemens,14,ds004073-participants,sex and site,site Oxford
+subjects,sex=female;vendor=philips,12,ds004073-participants,sex and site,site Bangor
+subjects,sex=male;vendor=philips,11,ds004073-participants,sex and site,site Bangor
+subjects,contrast=T1w,51,ds004073-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,51,ds004073-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,51,ds004073-file-tree,sub-*/,
+scans,,356,ds004073-file-tree,sub-*/*/*.nii.gz,"sum of the disjoint T1w and bold counts below; single-band reference images and field map volumes not counted"
+scans,contrast=T1w,51,ds004073-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,305,ds004073-file-tree,func/*_bold.nii.gz,six task runs per subject; sub-OXF13 has no WC run

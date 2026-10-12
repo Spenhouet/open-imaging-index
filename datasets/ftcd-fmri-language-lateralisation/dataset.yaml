@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ftcd-fmri-language-lateralisation
+name: Language lateralisation fMRI and fTCD (ds004073)
+full_name: Comparing language lateralisation using fMRI and fTCD
+summary: >-
+  Task fMRI and structural brain MRI of healthy left- and right-handed adults performing six language tasks, collected
+  to test how well laterality indices from functional transcranial Doppler ultrasound (fTCD) agree with fMRI. Two UK
+  sites, with fTCD laterality indices per participant.
+homepage: https://openneuro.org/datasets/ds004073
+doi: 10.18112/openneuro.ds004073.v1.1.0
+year: 2022
+updated: 2026
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      CANDICE project, University of Oxford and Bangor University (Woodhead Z, Sablik M, Watkins K, Carey D, Bishop D,
+      Karlsson E)
+    url: https://openneuro.org/datasets/ds004073
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens, philips]
+field_strengths: [3]
+size_gb: 105.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004073
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Woodhead Z, Sablik M, Watkins K, Carey D, Bishop D, Karlsson E. Comparing language lateralisation using fMRI and
+    fTCD. OpenNeuro ds004073, version 1.1.0. doi:10.18112/openneuro.ds004073.v1.1.0
+sources:
+  openneuro-ds004073-v110:
+    title: OpenNeuro ds004073 snapshot 1.1.0 (dataset_description.json, README, CHANGES, sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds004073/versions/1.1.0
+    kind: website
+  ds004073-participants:
+    title: participants.tsv of ds004073 snapshot 1.1.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004073/blob/1.1.0/participants.tsv
+    kind: computed
+  ds004073-file-tree:
+    title: BIDS file tree of ds004073 snapshot 1.1.0 (CC0), NIfTI files under sub-*/ counted per subject and suffix
+    url: https://github.com/OpenNeuroDatasets/ds004073/tree/1.1.0
+    kind: computed
+related: []
+keywords:
+  [
+    language lateralisation,
+    laterality index,
+    functional transcranial Doppler,
+    fTCD,
+    task fMRI,
+    handedness,
+    word generation,
+    sentence comprehension,
+    field map
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
