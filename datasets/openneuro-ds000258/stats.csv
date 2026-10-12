@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,89,openneuro-ds000258-v101,README (Subjects),"89 sub-* folders in the file tree; the paper also reports 89 four-echo datasets (Materials and Methods, In brief)"
+subjects,condition=healthy,89,openneuro-ds000258-v101,README (Subjects),neurotypical; no history of neurological or psychiatric illness
+subjects,country=GB,89,openneuro-ds000258-v101,README (Subjects),approved by the Cambridge ethics committee (LREC 11/EE/0198)
+subjects,vendor=siemens,89,openneuro-ds000258-v101,README (Data Acquisition),Siemens Trio 3T with a 32-channel receive-only head coil
+subjects,field_strength=3,89,openneuro-ds000258-v101,README (Data Acquisition),
+subjects,contrast=T1w,89,ds000258-file-tree,anat,
+subjects,contrast=bold,89,ds000258-file-tree,func,one rest run with 4 echoes per subject
+subjects,contrast_set=bold+T1w,89,ds000258-file-tree,,
+scans,,445,ds000258-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,89,ds000258-file-tree,anat,
+scans,contrast=bold,356,ds000258-file-tree,func,one NIfTI per echo: 89 subjects x 4 echoes
