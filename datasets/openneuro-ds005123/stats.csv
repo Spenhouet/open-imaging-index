@@ -1,0 +1,34 @@
+measure,by,value,source,where,note
+subjects,,114,smith2024,Section 4.1,all participants with brain data
+studies,,114,ds005123-file-tree,sub-* folders,one session per subject (no session folders)
+scans,,1184,ds005123-file-tree,"sub-*/anat, sub-*/dwi and sub-*/func NIfTI files","114 T1w, 109 FLAIR, 108 DWI and 853 multi-echo BOLD runs (each run holds four echoes with magnitude and phase images); single-band references and field maps not counted"
+subjects,modality=MR,114,ds005123-file-tree,sub-* folders,
+subjects,contrast=T1w,114,ds005123-file-tree,anat/*_T1w.nii.gz,"MPRAGE, defaced with PyDeface"
+subjects,contrast=FLAIR,109,ds005123-file-tree,anat/*_FLAIR.nii.gz,"axial T2-weighted FLAIR, defaced with PyDeface"
+subjects,contrast=dwi,108,ds005123-file-tree,dwi/*_dwi.nii.gz,multi-shell DWI with b = 250 to 5000 s/mm2
+subjects,contrast=bold,113,ds005123-file-tree,func/*_bold.nii.gz,"subjects with at least one run per task: ugr 113, sharedreward 112, doors 111, socialdoors 111, trust 111"
+subjects,contrast_set=bold+dwi+FLAIR+T1w,108,ds005123-file-tree,anat dwi and func NIfTI files,field maps are not counted as a contrast
+subjects,contrast_set=bold+T1w,4,ds005123-file-tree,anat dwi and func NIfTI files,
+subjects,contrast_set=bold+FLAIR+T1w,1,ds005123-file-tree,anat dwi and func NIfTI files,
+subjects,contrast_set=T1w,1,ds005123-file-tree,anat dwi and func NIfTI files,
+scans,contrast=T1w,114,ds005123-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=FLAIR,109,ds005123-file-tree,anat/*_FLAIR.nii.gz,
+scans,contrast=dwi,108,ds005123-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=bold,853,ds005123-file-tree,func/*_echo-1_part-mag_bold.nii.gz,"one per run: 214 sharedreward, 212 ugr, 205 trust, 111 doors and 111 socialdoors runs; 6820 NIfTI files across four echoes and magnitude and phase parts"
+subjects,vendor=siemens,114,smith2024,Section 4.2.5,"Siemens Prisma 3T with a 20-channel head coil; Manufacturer Siemens, ManufacturersModelName Prisma in the sidecars"
+subjects,field_strength=3,114,smith2024,Section 4.2.5,
+subjects,country=US,114,smith2024,Specifications table,"Temple University, Philadelphia, Pennsylvania"
+subjects,sex=female,70,smith2024,Table 1,
+subjects,sex=male,40,smith2024,Table 1,
+subjects,sex=other,4,smith2024,Table 1,other or non-binary
+subjects,age=20-29,35,ds005123-participants,age,age at the scan session in years
+subjects,age=30-39,26,ds005123-participants,age,
+subjects,age=40-49,13,ds005123-participants,age,
+subjects,age=50-59,12,ds005123-participants,age,
+subjects,age=60-69,20,ds005123-participants,age,
+subjects,age=70-79,6,ds005123-participants,age,
+subjects,age=80-89,2,ds005123-participants,age,
+age_mean,,42.78,smith2024,Section 4.1,
+age_sd,,17.13,smith2024,Section 4.1,
+age_min,,21,smith2024,Section 4.1,
+age_max,,80,smith2024,Section 4.1,

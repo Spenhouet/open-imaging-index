@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005123
+name: Social Reward Across the Lifespan Multi-echo fMRI (ds005123)
+full_name: >-
+  Social Reward and Nonsocial Reward Processing Across the Adult Lifespan: An Interim Multi-echo fMRI and Diffusion
+  Dataset
+summary: >-
+  Multi-echo task fMRI, multi-shell diffusion MRI, T1-weighted and FLAIR brain MRI from adults aged 21 to 80 playing
+  social and monetary reward games, the interim release of an NIA-funded study of social reward and aging.
+homepage: https://openneuro.org/datasets/ds005123
+doi: 10.18112/openneuro.ds005123.v1.1.3
+year: 2024
+version: 1.1.3
+status: active
+creators:
+  - name: David V. Smith, Johanna M. Jarcho and colleagues (DVS Lab, Temple University)
+    url: https://github.com/DVS-Lab/SRPAL-DataInBrief
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 891.13
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005123/versions/1.1.3
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds005123/versions/1.1.3
+    note: dataset_description.json of snapshot 1.1.3 states "License" CC0.
+citation:
+  text: >-
+    Smith DV, Sharp CJ, Dachs A, Wyngaarden J, Sazhin D, Yang Y, Kos M, Tropea T, Kohli I, Clithero JA, Olson I,
+    Giovannetti T, Fareri D, Jarcho JM. Social reward and nonsocial reward processing across the adult lifespan: An
+    interim multi-echo fMRI and diffusion dataset. Data in Brief 56, 110810 (2024). doi:10.1016/j.dib.2024.110810
+  bibtex: |
+    @article{smith2024,
+      title={Social reward and nonsocial reward processing across the adult lifespan: An interim multi-echo fMRI and diffusion dataset},
+      author={Smith, David V. and Sharp, Cooper J. and Dachs, Abraham and Wyngaarden, James and Sazhin, Daniel and Yang, Yi and Kos, Melanie and Tropea, Tia and Kohli, Ishika and Clithero, John A. and Olson, Ingrid and Giovannetti, Tania and Fareri, Dominic and Jarcho, Johanna M.},
+      journal={Data in Brief},
+      volume={56},
+      pages={110810},
+      year={2024},
+      doi={10.1016/j.dib.2024.110810}
+    }
+sources:
+  smith2024:
+    title: >-
+      Smith et al. 2024, Social reward and nonsocial reward processing across the adult lifespan: An interim
+      multi-echo fMRI and diffusion dataset, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2024.110810
+    kind: paper
+  openneuro-ds005123-v1-1-3:
+    title: OpenNeuro ds005123 snapshot 1.1.3 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005123/versions/1.1.3
+    kind: website
+  ds005123-participants:
+    title: participants.tsv of the ds005123 BIDS repository (CC0), columns age and sex
+    url: https://github.com/OpenNeuroDatasets/ds005123/blob/main/participants.tsv
+    kind: computed
+  ds005123-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds005123 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName and MagneticFieldStrength
+    url: https://github.com/OpenNeuroDatasets/ds005123
+    kind: computed
+related: [openneuro-ds003745, openneuro-ds004920]
+keywords:
+  [
+    social reward,
+    aging,
+    adult lifespan,
+    multi-echo fMRI,
+    multi-shell diffusion,
+    trust game,
+    ultimatum game,
+    shared reward,
+    financial exploitation,
+    white matter hyperintensities,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
