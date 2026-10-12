@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: skip-approach-avoid
+name: 'SKIP: Approach-Avoid (ds005265)'
+full_name: "SoCal Kinesia and Incentivization for Parkinson's Disease (SKIP): Approach-Avoid"
+summary: >-
+  Task fMRI and T1w brain MRI of healthy young adults moving a joystick toward or away from positive and negative
+  pictures, one of the task releases of the SKIP Parkinson's disease project. 78 participants, Siemens Prisma 3T, BIDS, CC0.
+homepage: https://openneuro.org/datasets/ds005265
+doi: 10.18112/openneuro.ds005265.v1.0.0
+# Snapshot 1.0.0 on OpenNeuro, 2024-06-20.
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Dundon NM, Rizor E, Stasiak J, Wang J, Sabugo K, Villaneuva C, Barandon P, Bostan AC, Lapate R, Grafton ST (UC
+      Santa Barbara)
+    url: http://www.socalkinesia.org
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 48.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005265
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Dundon NM, Rizor E, Stasiak J, Wang J, Sabugo K, Villaneuva C, Barandon P, Bostan AC, Lapate RC, Grafton ST.
+    Dissociation of novel open loop from ventral putamen to motor areas from classic closed loop in humans II:
+    task-based function. bioRxiv (2024). doi:10.1101/2024.06.18.599622
+sources:
+  openneuro-ds005265-v1-0-0:
+    title: OpenNeuro ds005265 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005265/versions/1.0.0
+    kind: website
+  ds005265-file-tree:
+    title: >-
+      File listing, participants.tsv and JSON sidecars of the ds005265 BIDS repository (CC0), subjects counted per T1w
+      and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds005265
+    kind: computed
+related: [skip-incentivized-reaching, openneuro-ds005266]
+keywords:
+  [Parkinson's disease, SKIP, approach-avoid, emotion, valence, joystick, motor response, task fMRI, incentives]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
