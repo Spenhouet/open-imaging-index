@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,39,ds005166-file-tree,sub-*/ses-1/anat and func NIfTI files,"participants with MRI; the release holds 160 participants (README), the other 121 have no images"
+subjects,modality=MR,39,ds005166-file-tree,sub-*/ses-1/anat and func NIfTI files,matches the fMRI_data column of participants.tsv
+studies,,39,ds005166-file-tree,sub-*/ses-1 folders with MRI,one MRI session per imaged subject
+scans,,195,ds005166-file-tree,anat/ and func/ NIfTI files,39 T1w and 156 bold volumes (four flanker runs each)
+subjects,contrast=T1w,39,ds005166-file-tree,anat/*_rec-norm_run-1_T1w.nii.gz,
+subjects,contrast=bold,39,ds005166-file-tree,func/*_task-flanker_run-*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,39,ds005166-file-tree,,
+subjects,vendor=ge,39,ds005166-file-tree,anat/*_T1w.json (Manufacturer),GE Discovery MR750
+subjects,field_strength=3,39,ds005166-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,country=US,39,ds005166-file-tree,anat/*_T1w.json (InstitutionName),NIH FMRIF
+subjects,sex=female,20,ds005166-participants,sex (rows with fMRI_data=1),
+subjects,sex=male,19,ds005166-participants,sex (rows with fMRI_data=1),
+subjects,age=0-9,3,ds005166-participants,age (rows with fMRI_data=1),
+subjects,age=10-19,36,ds005166-participants,age (rows with fMRI_data=1),
+age_mean,,13.72,ds005166-participants,age (rows with fMRI_data=1),
+age_min,,8.35,ds005166-participants,age (rows with fMRI_data=1),
+age_max,,19.4,ds005166-participants,age (rows with fMRI_data=1),

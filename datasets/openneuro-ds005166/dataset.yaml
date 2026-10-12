@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005166
+name: Youth inhibitory control fMRI (ds005166)
+full_name: 'A framework for leveraging technology to probe mechanism: A proof of concept study of inhibitory control'
+summary: >-
+  Brain fMRI during a flanker task, T1w MRI, symptom scales and cognitive test scores from youth with anxiety, ADHD,
+  irritability or no diagnosis, collected to validate a mobile app that measures inhibitory control against lab
+  tasks and brain function.
+homepage: https://openneuro.org/datasets/ds005166
+doi: 10.18112/openneuro.ds005166.v1.0.1
+# Snapshot 1.0.0 on OpenNeuro, 2024-05-21; current snapshot 1.0.1, 2026-04-21.
+year: 2024
+updated: 2026
+version: 1.0.1
+status: active
+creators:
+  - name: Cardinale EM, Brotman MA et al. (NIMH Intramural Research Program)
+    url: https://openneuro.org/datasets/ds005166
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [anxiety_disorder, adhd, disruptive_mood_dysregulation_disorder, irritability, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 12.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005166/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Cardinale EM, Meigs JM, Haller SP, et al. Leveraging technology to probe mechanisms of psychopathology: A proof of
+    concept study of inhibitory control. PLoS One 20(6): e0319004 (2025). doi:10.1371/journal.pone.0319004
+  bibtex: |
+    @article{cardinale2025,
+      title={Leveraging technology to probe mechanisms of psychopathology: A proof of concept study of inhibitory control},
+      author={Cardinale, Elise M. and Meigs, Jennifer M. and Haller, Simone P. and others},
+      journal={PLoS One},
+      volume={20},
+      number={6},
+      pages={e0319004},
+      year={2025},
+      doi={10.1371/journal.pone.0319004}
+    }
+sources:
+  cardinale2025:
+    title: Cardinale et al. 2025, PLoS One
+    url: https://doi.org/10.1371/journal.pone.0319004
+    kind: paper
+  openneuro-ds005166-v1-0-1:
+    title: OpenNeuro ds005166 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005166/versions/1.0.1
+    kind: website
+  ds005166-participants:
+    title: participants.tsv of the ds005166 BIDS repository (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005166/blob/main/participants.tsv
+    kind: computed
+  ds005166-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds005166 BIDS repository (CC0), subjects counted per T1w and bold NIfTI
+      file
+    url: https://github.com/OpenNeuroDatasets/ds005166
+    kind: computed
+related: []
+keywords: [inhibitory control, flanker task, mobile assessment, irritability, ADHD, anxiety, pediatric fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
