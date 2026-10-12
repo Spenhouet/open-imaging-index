@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,52,granata2020,Section 2.1,patients with pathologically proven colorectal liver metastases and hepatic resection; 106 metastases in total
+subjects,condition=colorectal_cancer,52,granata2020,Table 1,28 colon and 24 rectal primaries; 28 patients with RAS mutation and 24 wild-type
+subjects,sex=male,27,granata2020,Table 1,
+subjects,sex=female,25,granata2020,Table 1,
+age_mean,,59,granata2020,Section 2.1,
+age_min,,36,granata2020,Section 2.1,
+age_max,,80,granata2020,Section 2.1,
+subjects,contrast=dwi,52,granata2020,Section 2.2,"EPI DWI at b = 0, 50, 100, 200, 400, 600, 1000 and 2000 s/mm2"
+subjects,vendor=siemens,52,granata2020,Section 2.2,single Siemens Magnetom Symphony scanner
+subjects,field_strength=1.5,52,granata2020,Section 2.2,
+subjects,country=IT,52,granata2020,Section 2.1,National Cancer Institute of Naples

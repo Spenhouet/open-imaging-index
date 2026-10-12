@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: crclm-dwi-dki-ras-naples
+name: Colorectal liver metastasis DWI-DKI RAS (Naples)
+full_name: Diffusion-Weighted MRI and Diffusion Kurtosis Imaging to Detect RAS Mutation in Colorectal Liver Metastasis
+summary: >-
+  Liver MRI with multi-b-value diffusion of 52 patients with resected colorectal liver metastases, used to predict
+  RAS mutation from diffusion, IVIM and kurtosis parameters. Only per-lesion parameter values are open; the images
+  are not shared.
+homepage: https://zenodo.org/records/5151584
+doi: 10.5281/zenodo.5151584
+year: 2020
+creators:
+  - name: Istituto Nazionale Tumori IRCCS Fondazione G. Pascale, Naples
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, dwi]
+anatomy: [liver]
+conditions: [colorectal_cancer]
+tasks: [classification]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://zenodo.org/records/5151584
+  note: >-
+    The Zenodo record holds one spreadsheet of derived values: the mean and standard deviation of ADC, S0, DP, FP,
+    DT, MD and MK inside each segmented lesion, with the RAS status. It is openly downloadable under CC BY 4.0. The
+    paper has no data availability statement and no route to the MR images is published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MR images and lesion segmentations.
+    note: Neither the Zenodo record nor the paper offers the images or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Spreadsheet of DWI, IVIM and DKI parameter values with RAS status on Zenodo.
+citation:
+  text: >-
+    Granata V, Fusco R, Risi C, Ottaiano A, Avallone A, De Stefano A, Grimm R, Grassi R, Brunese L, Izzo F, Petrillo
+    A. Diffusion-Weighted MRI and Diffusion Kurtosis Imaging to Detect RAS Mutation in Colorectal Liver Metastasis.
+    Cancers 12(9), 2420 (2020). doi:10.3390/cancers12092420
+sources:
+  granata2020:
+    title: Granata et al. 2020, Cancers 12(9), 2420
+    url: https://doi.org/10.3390/cancers12092420
+    kind: paper
+  zenodo-5151584:
+    title: Zenodo record 5151584, parameter spreadsheet for the article
+    url: https://zenodo.org/records/5151584
+    kind: website
+related: []
+keywords:
+  [
+    colorectal liver metastases,
+    RAS mutation,
+    radiogenomics,
+    diffusion kurtosis imaging,
+    intravoxel incoherent motion,
+    Gd-EOB-DTPA,
+    hepatobiliary contrast
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
