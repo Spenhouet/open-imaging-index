@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,49,cohen2023,Methods: Participants,49 individuals completed the study; the release has 50 subject folders because sub-023 is split into sub-023 (political moralization runs) and sub-023part2 (clip runs)
+scans,,491,ds005040-file-tree,anat/ and func/ NIfTI files,"50 T1w and 441 bold volumes; 100 EPI fieldmaps (dir-A and dir-P) not included"
+scans,contrast=T1w,50,ds005040-file-tree,anat/*_T1w.nii.gz,one per subject folder; sub-023 has two
+scans,contrast=bold,441,ds005040-file-tree,func/*_bold.nii.gz,245 political moralization runs (5 per subject) and 196 clip runs (4 per subject)
+subjects,contrast=T1w,49,ds005040-file-tree,anat/*_T1w.nii.gz,sub-023 and sub-023part2 counted as one participant
+subjects,contrast=bold,49,ds005040-file-tree,func/*_bold.nii.gz,sub-023 and sub-023part2 counted as one participant
+subjects,contrast_set=bold+T1w,49,ds005040-file-tree,sub-*/,EPI fieldmaps are not counted as a contrast
+subjects,sex=female,27,cohen2023,Methods: Participants,"19 of the 34 primary and 8 of the first 12 participants; sex of the 3 excluded participants not reported"
+subjects,sex=male,18,cohen2023,Methods: Participants,"14 of the 34 primary and 4 of the first 12 participants; sex of the 3 excluded participants not reported"
+subjects,sex=other,1,cohen2023,Methods: Participants,non-binary
+subjects,field_strength=3,49,openneuro-ds005040-v1-2-0,T1w.json and bold.json sidecars,MagneticFieldStrength 3 in all 50 T1w sidecars
+subjects,vendor=philips,49,openneuro-ds005040-v1-2-0,T1w.json and bold.json sidecars,Philips Achieva dStream
+subjects,country=US,49,openneuro-ds005040-v1-2-0,T1w.json sidecars,"InstitutionName University of Chicago"
