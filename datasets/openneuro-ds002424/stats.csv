@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,79,ds002424-participants,participants.tsv,79 subject folders in the snapshot 1.2.0 file tree
+subjects,sex=male,65,ds002424-participants,sex,sex 1 (male)
+subjects,sex=female,14,ds002424-participants,sex,sex 2 (female)
+subjects,condition=adhd,35,ds002424-participants,ADHD_diagnosis,previous ADHD diagnosis as reported by parent or guardian
+subjects,condition=healthy,44,ds002424-participants,ADHD_diagnosis,no reported ADHD diagnosis
+subjects,age=8-9,31,ds002424-participants,age_ses-T1,age at the imaging session
+subjects,age=10-11,48,ds002424-participants,age_ses-T1,age at the imaging session
+subjects,contrast=T1w,79,ds002424-file-tree,sub-*/ses-T1/anat/*_T1w.nii.gz,
+subjects,contrast=bold,79,ds002424-file-tree,sub-*/ses-T1/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,79,ds002424-file-tree,anat and func folders,
+studies,,79,ds002424-file-tree,sub-*/ses-T1 folders,one imaging session per child; ses-T2 holds only phenotype data
+scans,,625,ds002424-file-tree,sub-*/ses-T1/*/*.nii.gz,79 T1w and 546 bold
+scans,contrast=T1w,79,ds002424-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,546,ds002424-file-tree,*_bold.nii.gz,"54 children have all eight task runs, 25 have two to seven"
+age_min,,8.59,ds002424-participants,age_ses-T1,
+age_max,,11.96,ds002424-participants,age_ses-T1,
+age_mean,,10.4,ds002424-participants,age_ses-T1,

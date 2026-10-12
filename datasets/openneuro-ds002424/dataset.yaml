@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002424
+name: Working Memory and Reward in ADHD (ds002424)
+full_name: Working Memory and Reward in Children with and without Attention Deficit Hyperactivity Disorder (ADHD)
+summary: >-
+  Brain MRI and task fMRI of children with and without ADHD performing verbal and visuospatial n-back working memory
+  tasks under large or small monetary reward with immediate or delayed feedback, collected to study how reward and
+  feedback shape working memory in ADHD. BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002424
+doi: 10.18112/openneuro.ds002424.v1.2.0
+year: 2020
+updated: 2021
+version: 1.2.0
+status: active
+creators:
+  - name: Brain Development Lab, Northwestern University (Booth JR, Cooke GE, Gayda J, Hammer R, Lytle MN, Stein MA, Tennekoon M)
+    url: https://openneuro.org/datasets/ds002424
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [adhd, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 43.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002424
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.0 states "License" CC0.
+citation:
+  text: >-
+    Booth JR, Cooke GE, Gayda J, Hammer R, Lytle MN, Stein MA, Tennekoon M. Working Memory and Reward in Children with
+    and without Attention Deficit Hyperactivity Disorder (ADHD). OpenNeuro ds002424, version 1.2.0 (2021).
+    doi:10.18112/openneuro.ds002424.v1.2.0
+sources:
+  ds002424-description:
+    title: OpenNeuro ds002424 snapshot 1.2.0, dataset_description.json, README, CHANGES and task sidecars
+    url: https://openneuro.org/datasets/ds002424/versions/1.2.0
+    kind: website
+  ds002424-participants:
+    title: participants.tsv of ds002424 snapshot 1.2.0 (CC0), counted per row
+    url: https://openneuro.org/datasets/ds002424/versions/1.2.0/file-display/participants.tsv
+    kind: computed
+  ds002424-file-tree:
+    title: File tree of ds002424 snapshot 1.2.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds002424
+    kind: computed
+  hammer2015nicl:
+    title: Hammer et al. 2015, Functional neuroimaging of visuospatial working memory tasks enables accurate detection of ADHD, NeuroImage Clinical
+    url: https://doi.org/10.1016/j.nicl.2015.08.015
+    kind: paper
+  hammer2015dcn:
+    title: Hammer et al. 2015, Feedback associated with expectation for larger-reward improves visuospatial working memory performances in children with ADHD, Developmental Cognitive Neuroscience
+    url: https://doi.org/10.1016/j.dcn.2015.06.002
+    kind: paper
+related: []
+keywords: [ADHD, attention deficit hyperactivity disorder, working memory, n-back, reward, feedback, children, pediatric, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
