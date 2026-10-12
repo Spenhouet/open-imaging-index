@@ -14,3 +14,4 @@ terms:
   - { id: MINC, label: MINC }
   - { id: ANALYZE, label: Analyze 7.5 }
   - { id: MAT, label: MATLAB MAT-file, synonyms: [.mat] }
+  - { id: TRK, label: TrackVis TRK, description: Streamline tractography files, synonyms: [.trk] }

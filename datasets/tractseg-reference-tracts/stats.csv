@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+subjects,,105,wasserthal2018,Section 2.4,Subjects from the Human Connectome Project young adult study; the same 105 are listed in five folds of 21 on the Zenodo record.
+subjects,contrast=dwi,105,wasserthal2018,Section 2.4,Tracts were derived from the diffusion MRI of every subject; the diffusion images themselves are not in this record.

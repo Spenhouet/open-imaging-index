@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tractseg-reference-tracts
+name: TractSeg reference tracts (HCP105)
+full_name: High quality white matter reference tracts
+summary: >-
+  Streamline reconstructions of major white matter tracts dissected from diffusion MRI of young adults, made as
+  reference labels for training and testing automatic tract segmentation (TractSeg). Covers 72 tracts in 105 Human
+  Connectome Project subjects; the images are not included.
+homepage: https://zenodo.org/records/1477956
+doi: 10.5281/zenodo.1477956
+# Version 1.0.0 of the Zenodo concept record 10.5281/zenodo.1088277 was published on 2017-12-19.
+year: 2017
+updated: 2018
+version: 1.2.0
+status: active
+creators:
+  - name: Wasserthal J, Neher P, Maier-Hein KH, Division of Medical Image Computing, German Cancer Research Center (DKFZ)
+    url: https://zenodo.org/records/1477956
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+tasks: [segmentation]
+formats: [TRK]
+size_gb: 43.98
+access:
+  type: open
+  url: https://zenodo.org/records/1477956
+licenses:
+  - license: CC-BY-NC-4.0
+    applies_to: The tract files on Zenodo.
+    note: >-
+      The Zenodo record states CC BY-NC 4.0. The matching diffusion MRI is not part of this record and must be obtained
+      from the Human Connectome Project under its own terms.
+citation:
+  text: >-
+    Wasserthal J, Neher P, Maier-Hein KH. TractSeg - Fast and accurate white matter tract segmentation. NeuroImage
+    183:239-253 (2018). doi:10.1016/j.neuroimage.2018.07.070
+sources:
+  wasserthal2018:
+    title: Wasserthal et al. 2018, TractSeg - Fast and accurate white matter tract segmentation (arXiv 1805.07103)
+    url: https://arxiv.org/abs/1805.07103
+    kind: paper
+  zenodo-1477956:
+    title: Zenodo record 1477956, High quality white matter reference tracts, version 1.2.0
+    url: https://zenodo.org/records/1477956
+    kind: website
+related: [hcp-young-adult]
+keywords: [tractography, white matter tracts, bundle segmentation, TractSeg, streamlines, Human Connectome Project]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
