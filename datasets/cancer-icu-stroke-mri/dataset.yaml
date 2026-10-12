@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cancer-icu-stroke-mri
+name: D-dimer and Cerebral Infarction in ICU Cancer Patients
+full_name: D-dimer Levels and Cerebral Infarction in Critically Ill Cancer Patients
+summary: >-
+  Brain MRI of adults with cancer in a medical oncology intensive care unit, scanned for suspected acute ischemic
+  stroke, collected to study stroke patterns and D-dimer levels. Images are not shared; a per-patient clinical table is
+  public.
+homepage: https://doi.org/10.7910/DVN/SSIGRV
+doi: 10.7910/DVN/SSIGRV
+# Harvard Dataverse release of the per-patient table (July 2017). The images themselves have no public release.
+year: 2017
+creators:
+  - name: Geun-Ho Lee, Department of Neurology, Dankook University College of Medicine
+  - name: Jeong-Am Ryu, Samsung Medical Center
+  - name: Oh Young Bang, Samsung Medical Center
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [cancer, ischemic_stroke, brain_metastasis]
+countries: [KR]
+vendors: [ge, philips]
+field_strengths: [1.5, 3]
+access:
+  type: not_shared
+  url: https://doi.org/10.7910/DVN/SSIGRV
+  note: >-
+    The Harvard Dataverse release holds no MRI images. It contains one spreadsheet with per-patient clinical,
+    laboratory and MRI reading data (stroke diagnosis, lesion location, DWI pattern, stroke mechanism), openly
+    downloadable under CC0 1.0.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC0 1.0 waiver on the Dataverse record covers
+      only the released spreadsheet.
+citation:
+  text: >-
+    Ryu, J.-A., Bang, O. Y., & Lee, G.-H. (2017). D-dimer levels and cerebral infarction in critically ill cancer
+    patients. BMC Cancer, 17, 591. https://doi.org/10.1186/s12885-017-3588-7
+sources:
+  dataverse-ssigrv:
+    title: Harvard Dataverse record, D-dimer Levels and Cerebral Infarction in Critically Ill Cancer Patients, version 1.0
+    url: https://doi.org/10.7910/DVN/SSIGRV
+    kind: website
+  ryu2017:
+    title: Ryu et al. 2017, BMC Cancer 17:591
+    url: https://doi.org/10.1186/s12885-017-3588-7
+    kind: paper
+  ryu2016:
+    title: Ryu et al. 2016, PLOS ONE 11(1):e0146836
+    url: https://doi.org/10.1371/journal.pone.0146836
+    kind: paper
+  dataverse-ssigrv-table:
+    title: >-
+      D-dimer levels and ischemic stroke HDN.xlsx (Harvard Dataverse, CC0 1.0), counted per patient row
+    url: https://doi.org/10.7910/DVN/SSIGRV/KOI07O
+    kind: computed
+related: []
+keywords: [ischemic stroke, cancer-associated stroke, intensive care unit, D-dimer, diffusion-weighted imaging]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
