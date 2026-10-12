@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,79,fitzgerald2017,"Methods, Participants",43 younger and 36 older adults; the README of the release gives the same numbers
+subjects,contrast=T1w,79,ds000222-file-tree,,one T1w NIfTI per subject folder
+subjects,contrast_set=T1w,79,ds000222-file-tree,,
+subjects,condition=healthy,79,fitzgerald2017,"Methods, Participants",no reported neurological or psychiatric history
+subjects,sex=female,41,ds000222-participants,sex,
+subjects,sex=male,38,ds000222-participants,sex,paper: 18 younger and 20 older men
+subjects,age=20-29,37,ds000222-participants,age,
+subjects,age=30-39,6,ds000222-participants,age,
+subjects,age=60-69,32,ds000222-participants,age,
+subjects,age=70-79,4,ds000222-participants,age,
+scans,,79,ds000222-file-tree,,T1w NIfTI files
+age_mean,,44.4,ds000222-participants,age,all 79 subjects
+age_min,,21,ds000222-participants,age,paper gives 20 as the lower bound of the younger group
+age_max,,73,ds000222-participants,age,

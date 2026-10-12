@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: sequential-inference-vbm
+name: Sequential Inference VBM (ds000222)
+summary: >-
+  Brain MRI of healthy younger and older adults with T1-weighted scans and behaviour on a probabilistic reversal
+  task, plus Raven's matrices and n-back scores, from a voxel-based morphometry study of sequential inference. 79
+  subjects scanned at 3 T in Germany.
+homepage: https://openneuro.org/datasets/ds000222
+doi: 10.18112/openneuro.ds000222.v1.0.1
+year: 2017
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Wellcome Trust Centre for Neuroimaging, UCL, and Max Planck Institute for Human Development, Berlin
+      (FitzGerald THB, Haemmerer D, Friston KJ, Li S-C, Dolan RJ)
+    url: https://openneuro.org/datasets/ds000222
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.86
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000222/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds000222/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0; CHANGES records the switch to CC0 in 1.0.1.
+citation:
+  text: >-
+    FitzGerald THB, Hämmerer D, Friston KJ, Li S-C, Dolan RJ. Sequential inference as a mode of cognition and its
+    correlates in fronto-parietal and hippocampal brain regions. PLoS Computational Biology 13(5):e1005418 (2017).
+    doi:10.1371/journal.pcbi.1005418
+sources:
+  fitzgerald2017:
+    title: >-
+      FitzGerald et al. 2017, Sequential inference as a mode of cognition and its correlates in fronto-parietal and
+      hippocampal brain regions, PLoS Computational Biology
+    url: https://doi.org/10.1371/journal.pcbi.1005418
+    kind: paper
+  openneuro-ds000222-v1:
+    title: OpenNeuro ds000222 snapshot 1.0.1 (README, CHANGES, dataset_description.json, T1w.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds000222/versions/1.0.1
+    kind: website
+  ds000222-participants:
+    title: participants.tsv of ds000222 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds000222/blob/master/participants.tsv
+    kind: computed
+  ds000222-file-tree:
+    title: File tree of ds000222 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds000222
+    kind: computed
+related: []
+keywords:
+  [
+    sequential inference,
+    probabilistic reversal learning,
+    voxel-based morphometry,
+    grey matter density,
+    ageing,
+    working memory,
+    Raven's matrices,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
