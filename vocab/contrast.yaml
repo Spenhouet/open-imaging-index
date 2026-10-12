@@ -37,6 +37,7 @@ terms:
       synonyms: [SWI, SWAN]
     }
   - { id: Chimap, label: QSM susceptibility map, group: MR, synonyms: [QSM], mappings: { bids: Chimap } }
+  - { id: MEGRE, label: Multi-echo gradient echo, group: MR, description: 'Multi-echo gradient-echo magnitude and phase images, e.g. for QSM or R2* mapping', synonyms: [ME-GRE, multi-echo GRE], mappings: { bids: MEGRE } }
   - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }

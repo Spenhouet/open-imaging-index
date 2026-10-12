@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007116
+name: Penn LEAD (ds007116)
+full_name: 'Penn LEAD: Penn Longitudinal Executive functioning in Adolescent Development'
+summary: >-
+  Longitudinal multimodal brain MRI of adolescents who are typically developing, have ADHD or are on the psychosis
+  spectrum, collected to study how executive function develops across psychiatric diagnoses. Structural, diffusion,
+  task and resting fMRI, ASL and multi-echo GRE, with cognitive and clinical data.
+homepage: https://openneuro.org/datasets/ds007116
+doi: 10.18112/openneuro.ds007116.v1.0.6
+year: 2025
+updated: 2026
+version: 1.0.6
+status: active
+creators:
+  - name: Penn Lifespan Informatics and Neuroimaging Center (PennLINC), University of Pennsylvania (Sevchik BL, Satterthwaite TD et al.)
+    url: https://openneuro.org/datasets/ds007116
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi, asl, MEGRE]
+anatomy: [brain]
+conditions: [healthy, adhd, clinical_high_risk_psychosis, psychotic_disorder, depression, bipolar_disorder]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 179.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007116
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.6 states "License" CC0.
+citation:
+  text: >-
+    Sevchik BL, Shafiei G, Murtha K, et al., Satterthwaite TD. A longitudinal data resource to study brain development
+    and transdiagnostic variation in executive function. bioRxiv (2025). doi:10.1101/2025.11.10.687633
+sources:
+  sevchik2025:
+    title: Sevchik et al., A longitudinal data resource to study brain development and transdiagnostic variation in executive function, bioRxiv preprint (v3, 2026)
+    url: https://doi.org/10.1101/2025.11.10.687633
+    kind: paper
+  openneuro-ds007116-v106:
+    title: OpenNeuro ds007116 snapshot 1.0.6 (README, dataset_description.json and snapshot summary)
+    url: https://openneuro.org/datasets/ds007116/versions/1.0.6
+    kind: website
+  ds007116-participants:
+    title: participants.tsv of ds007116 snapshot 1.0.6 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds007116/blob/1.0.6/participants.tsv
+    kind: computed
+  ds007116-file-tree:
+    title: File tree of ds007116 snapshot 1.0.6 (CC0), raw NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds007116/tree/1.0.6
+    kind: computed
+related: []
+keywords: [executive function, adolescence, ADHD, psychosis spectrum, n-back, resting-state fMRI, diffusion MRI, arterial spin labeling, longitudinal]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
