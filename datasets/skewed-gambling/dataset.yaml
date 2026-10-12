@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: skewed-gambling
+name: Skewed Gambling Task (ds006105)
+summary: >-
+  Brain fMRI of healthy right-handed adults at Stanford choosing between a safe option and monetary gambles of equal
+  expected value but different skewness, released to study neural predictors of risky choice. 75 subjects, each with
+  one task run and a T1-weighted scan.
+homepage: https://openneuro.org/datasets/ds006105
+doi: 10.18112/openneuro.ds006105.v1.0.1
+year: 2025
+version: 1.0.1
+status: active
+creators:
+  - name: Stanford University (Mortazavi L, Wu CC, Ghasemi E, Knutson B)
+    url: https://openneuro.org/datasets/ds006105
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 12.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006105/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006105/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Mortazavi L, Wu CC, Ghasemi E, Knutson B. Deconstructing neural predictors of risky choice. PNAS Nexus 4(7):pgaf204
+    (2025). doi:10.1093/pnasnexus/pgaf204
+sources:
+  mortazavi2025:
+    title: Mortazavi et al. 2025, Deconstructing neural predictors of risky choice, PNAS Nexus
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12230699/
+    kind: paper
+  openneuro-ds006105-v101:
+    title: OpenNeuro ds006105 snapshot 1.0.1 (README, dataset_description.json, CHANGES, BOLD sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds006105/versions/1.0.1
+    kind: website
+  ds006105-participants:
+    title: participants.tsv of ds006105 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds006105/blob/main/participants.tsv
+    kind: computed
+  ds006105-file-tree:
+    title: File tree of ds006105 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds006105
+    kind: computed
+related: [narps]
+keywords: [risky choice, decision-making, gambling, skewness, nucleus accumbens, anterior insula, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
