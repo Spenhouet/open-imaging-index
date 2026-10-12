@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Bologna-QSM-Radiomics-DUA
+name: 'MRI dataset for susceptibility-based radiomic feature extraction: Data Use Agreement'
+short_name: QSM radiomics DUA
+url: https://doi.org/10.5281/zenodo.11278906
+version: 'DUA.pdf on Zenodo record 11278906, read 2026-10-12'
+summary: >-
+  Investigators who want to use the data for research or education sign the agreement and email it to the data
+  holders, who then grant read access on Zenodo. The agreement forbids re-identification, contacting participants and
+  passing the data to anyone else, including colleagues at the same institution, and requires acknowledging the data
+  source and citing the data paper.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The agreement does not mention commercial use. The accompanying page says access is for investigators who wish
+      to use the data "for the purposes of research or education".
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The agreement does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: >-
+      The agreement mentions "results and/or derived data" only to say that the data providers are not liable for
+      them; it neither grants nor forbids creating derived data.
+  publication:
+    value: conditional
+    quote: >-
+      I will reference the specific source of the accessed data when publicly presenting any results or algorithms
+      that benefited from their use
+    note: Results may be published when the data source is acknowledged and the data paper is cited.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I will not redistribute these data or share access to these data with others, including individuals in my
+      institution and my colleagues working elsewhere.
+  redistribute_derivatives:
+    value: unspecified
+    note: The agreement does not say whether derived data count as "these data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      Authors of publications or presentations using the data should cite the article Fiscone et al.,
+      'Multiparametric MRI dataset for susceptibility-based radiomic feature extraction and analysis', describing the
+      methods developed and used to acquire and process the data
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Complete and sign the Data Use Agreement below, and send a PDF of the signed copy to
+      radiomicsdataset@live.unibo.it.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      I commit to adhering to all pertinent rules and regulations established by both my institution and the
+      government.
+    note: Approval by an ethics board is not named as a precondition; the user must follow their institution's rules.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: conditional
+    quote: >-
+      I understand that if I do not abide by these terms then the agreement is no longer effective and I undertake to
+      remove the data I obtained from any device or archive on which they have been stored.
+    note: Deletion is required when the terms are breached; the agreement sets no deletion at the end of a project.
+  no_reidentification:
+    value: 'yes'
+    quote: I will refrain from trying to determine the identity of the study participants.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
