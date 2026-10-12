@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: attexp-fmri
+name: AttExp_fMRI (ds005386)
+full_name: AttExp_fMRI
+summary: >-
+  Task fMRI and structural brain MRI of young adults who prepared for face or name targets under attention and
+  expectation cues, collected to compare anticipatory brain activity across the two contexts. 52 subjects from Granada,
+  Spain, in BIDS on OpenNeuro.
+homepage: https://openneuro.org/datasets/ds005386
+doi: 10.18112/openneuro.ds005386.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Mind, Brain and Behavior Research Center (CIMCYC), University of Granada (Peñalver JMG, López-García D,
+      Becerra Losada M, Ruz M)
+    url: https://openneuro.org/datasets/ds005386
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [ES]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 82.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005386
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.0 states "License" CC0. The snapshot also contains a LICENSE file with
+      the Creative Commons Attribution 4.0 International text.
+citation:
+  text: >-
+    Peñalver JMG, González-García C, Palenciano AF, López-García D, Ruz M. Context-dependent neural preparation for
+    information relevance vs. probability. Imaging Neuroscience 2, 1-21 (2024). doi:10.1162/imag_a_00302
+sources:
+  penalver2024:
+    title: Peñalver et al. 2024, Context-dependent neural preparation for information relevance vs. probability, Imaging Neuroscience
+    url: https://doi.org/10.1162/imag_a_00302
+    kind: paper
+  openneuro-ds005386-v100:
+    title: OpenNeuro ds005386 snapshot 1.0.0 (dataset_description.json, LICENSE, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005386/versions/1.0.0
+    kind: website
+  ds005386-file-tree:
+    title: BIDS file tree of ds005386 snapshot 1.0.0 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005386/tree/1.0.0
+    kind: computed
+related: []
+keywords: [attention, expectation, anticipatory preparation, MVPA, task fMRI, field map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
