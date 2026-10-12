@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: utah-autism-temporal-synchrony
+name: Utah autism temporal synchrony fMRI (NDA Study 614)
+full_name: >-
+  Evaluation of Differences in Temporal Synchrony Between Brain Regions in Individuals With Autism and Typical
+  Development
+summary: >-
+  Long multiband multi-echo resting-state brain fMRI of adolescent and adult males with autism and typically
+  developing controls, collected to measure how long functional connections between brain regions persist. Shared
+  through the NIMH Data Archive as NDA Study 614.
+homepage: https://nda.nih.gov/study.html?id=614
+doi: 10.15154/1475202
+year: 2019
+status: active
+creators:
+  - name: >-
+      Janet Lainhart and Jeffrey Anderson with the Atypical Late
+      Neurodevelopment in Autism longitudinal study team, University of Utah
+    url: https://nda.nih.gov/edit_collection.html?id=2400
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [autism, healthy]
+tasks: [classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/study.html?id=614
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The study links 90 subjects from NIMH Data Archive collections 2400 and 1906 (Atypical Late Neurodevelopment in
+      Autism, PI Janet Lainhart). Download needs an approved NDA data access request, whose data use terms every
+      request accepts. Collection-specific permission clauses are not public and are not broken down here.
+citation:
+  text: >-
+    King JB, Prigge MBD, King CK, Morgan J, Dean DC 3rd, Freeman A, Villaruz JAM, Kane KL, Bigler ED, Alexander AL,
+    Lange N, Zielinski BA, Lainhart JE, Anderson JS. Evaluation of Differences in Temporal Synchrony Between Brain
+    Regions in Individuals With Autism and Typical Development. JAMA Network Open 1(7):e184777 (2018).
+    doi:10.1001/jamanetworkopen.2018.4777. Data: NDA Study 614, doi:10.15154/1475202.
+sources:
+  nda-study-614:
+    title: NDA Study 614 (doi:10.15154/1475202), DataCite record with the study description
+    url: https://doi.org/10.15154/1475202
+    kind: website
+  nda-collection-2400-studies:
+    title: NIMH Data Archive collection 2400 associated studies (API), entry for study 614 with its subject count
+    url: https://nda.nih.gov/api/nda/collection/2400/studies
+    kind: website
+  nda-collection-2400-structures:
+    title: NIMH Data Archive collection 2400 shared data structures (API)
+    url: https://nda.nih.gov/api/nda/collection/2400/data-structures
+    kind: website
+  nda-experiment-1074:
+    title: NIMH Data Archive experiment 1074 (Resting State fMRI), experiment definition
+    url: https://nda.nih.gov/api/experiment/1074
+    kind: website
+  king2018:
+    title: >-
+      King et al. 2018, Evaluation of Differences in Temporal Synchrony Between Brain Regions in Individuals With
+      Autism and Typical Development, JAMA Network Open (PMC6324391)
+    url: https://doi.org/10.1001/jamanetworkopen.2018.4777
+    kind: paper
+related: [abide-i, abide-ii]
+keywords:
+  [
+    autism,
+    ASD,
+    resting-state fMRI,
+    multiband,
+    multi-echo,
+    sustained connectivity,
+    functional connectivity,
+    adults,
+    NIMH Data Archive,
+    University of Utah
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

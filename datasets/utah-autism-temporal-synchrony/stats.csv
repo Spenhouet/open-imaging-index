@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,90,nda-study-614,Description,90 adolescent and adult males from the Utah cohort; the NDA study record lists the same 90 subjects
+subjects,sex=male,90,king2018,Abstract,all participants were male
+subjects,condition=autism,52,king2018,Table,
+subjects,condition=healthy,38,king2018,Table,typically developing controls
+subjects,contrast=bold,90,king2018,Methods: Data Analysis,all included participants had both resting-state runs
+age_mean,condition=autism,27.73,king2018,Table,
+age_sd,condition=autism,8.66,king2018,Table,
+age_min,condition=autism,15.33,king2018,Table,
+age_max,condition=autism,57.92,king2018,Table,
+age_mean,condition=healthy,27.09,king2018,Table,
+age_sd,condition=healthy,7.49,king2018,Table,
+age_min,condition=healthy,16.33,king2018,Table,
+age_max,condition=healthy,46.9,king2018,Table,
+age_min,,15.33,king2018,Table,lowest of the two group minimums
+age_max,,57.92,king2018,Table,highest of the two group maximums
+subjects,field_strength=3,90,king2018,Methods: Imaging Data,Siemens Prisma 3 T
+subjects,vendor=siemens,90,king2018,Methods: Imaging Data,
+subjects,country=US,90,king2018,Methods: Participants,University of Utah
