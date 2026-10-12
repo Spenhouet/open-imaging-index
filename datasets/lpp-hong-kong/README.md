@@ -2,7 +2,9 @@ Le Petit Prince Hong Kong (LPPHK) records brain activity of older native Cantone
 about 20 minutes of The Little Prince read aloud in Cantonese. It extends the Le Petit Prince family of naturalistic
 listening datasets to an older, non-Indo-European speaking group, so that language comprehension in healthy aging can
 be studied. Researchers from The Hong Kong Polytechnic University and City University of Hong Kong shared it on
-OpenNeuro as ds004718 under a CC0 waiver in 2023 and described it in Scientific Data in 2024.
+OpenNeuro as ds004718 under a CC0 waiver in 2023 and described it in Scientific Data in 2024. The earlier release with
+young English, Chinese and French speakers is indexed as
+[Le Petit Prince multilingual fMRI corpus](https://spenhouet.com/open-imaging-index/datasets/lpp-multilingual/).
 
 ## Composition
 

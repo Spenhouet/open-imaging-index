@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lpp-multilingual
+name: Le Petit Prince multilingual fMRI corpus (ds003643)
+full_name: 'Le Petit Prince: A multilingual fMRI corpus using ecological stimuli (LPPC-fMRI)'
+summary: >-
+  Multi-echo fMRI and T1-weighted MRI of healthy young English, Chinese and French speakers listening to The Little
+  Prince audiobook in their native language, with word-level speech and linguistic annotations for cross-language
+  studies of comprehension.
+homepage: https://openneuro.org/datasets/ds003643
+doi: 10.18112/openneuro.ds003643.v2.0.7
+year: 2021
+updated: 2025
+version: 2.0.7
+status: active
+creators:
+  - name: Cornell University, Jiangsu Normal University and NeuroSpin (Li J, Hale J, Pallier C, et al.)
+    url: https://openneuro.org/datasets/ds003643
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US, CN, FR]
+vendors: [ge, siemens]
+field_strengths: [3]
+size_gb: 154.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003643
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.7 states "License" CC0.
+citation:
+  text: >-
+    Li J, Bhattasali S, Zhang S, Franzluebbers B, Luh W, Spreng RN, Brennan JR, Yang Y, Pallier C, Hale J. Le Petit
+    Prince multilingual naturalistic fMRI corpus. Scientific Data 9, 530 (2022). doi:10.1038/s41597-022-01625-7
+sources:
+  li2022:
+    title: Li et al. 2022, Le Petit Prince multilingual naturalistic fMRI corpus, Scientific Data
+    url: https://doi.org/10.1038/s41597-022-01625-7
+    kind: paper
+  openneuro-ds003643-v207:
+    title: OpenNeuro ds003643 snapshot 2.0.7 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds003643/versions/2.0.7
+    kind: website
+  ds003643-participants:
+    title: participants.tsv of ds003643 2.0.7 (CC0), counted per row from the participant_id, age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds003643/blob/2.0.7/participants.tsv
+    kind: computed
+  ds003643-files:
+    title: File listing of ds003643 2.0.7 (CC0), counted from sub-*/anat and sub-*/func NIfTI files
+    url: https://github.com/OpenNeuroDatasets/ds003643/tree/2.0.7
+    kind: computed
+related: [lpp-hong-kong]
+keywords:
+  [naturalistic fMRI, language comprehension, multilingual, English, Chinese, French, story listening, multi-echo fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

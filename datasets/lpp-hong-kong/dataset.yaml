@@ -51,7 +51,7 @@ sources:
     title: File listing of ds004718 1.1.2 (CC0), counted from sub-*/anat and sub-*/func NIfTI files
     url: https://github.com/OpenNeuroDatasets/ds004718/tree/1.1.2
     kind: computed
-related: []
+related: [lpp-multilingual]
 keywords: [naturalistic fMRI, language comprehension, aging, Cantonese, story listening, resting-state fMRI, EEG]
 verified:
   date: '2026-10-12'
