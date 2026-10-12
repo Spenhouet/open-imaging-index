@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: framingham-heart-study
+name: Framingham Heart Study (FHS)
+full_name: 'Framingham Heart Study, Framingham Cohort (dbGaP phs000007) and FHS-Cohort Imaging (dbGaP phs003593)'
+summary: >-
+  Echocardiograms, CT, and brain and cardiac MRI from a three-generation community cohort in Framingham,
+  Massachusetts, followed since 1948 to find the causes of cardiovascular disease. Images are shared through dbGaP or a
+  research application to the study.
+homepage: https://www.framinghamheartstudy.org/
+year: 2024
+updated: 2025
+version: phs003593.v2.p1
+status: active
+creators:
+  - name: Framingham Heart Study, National Heart, Lung, and Blood Institute and Boston University
+    url: https://www.framinghamheartstudy.org/
+species: human
+modalities: [US, CT, MR]
+anatomy: [heart, brain]
+tasks: [longitudinal]
+formats: [DICOM]
+countries: [US]
+access:
+  type: application
+  url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs003593
+  note: >-
+    Echocardiogram and CT images are requested through dbGaP study phs003593: a principal investigator submits a Data
+    Access Request that the NHLBI Data Access Committee reviews, and approved data are hosted on NHLBI BioData Catalyst.
+    Brain and cardiac MRI scans are not in dbGaP; they are requested with a proposal through the FHS research
+    application, reviewed by an FHS committee, followed by a signed Data and Materials Distribution Agreement and data
+    transfer fees. Phenotypes, including imaging measures, are in dbGaP study phs000007.
+licenses:
+  - license: LicenseRef-dbGaP-DUC-phs003593
+    url: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?view_pdf&stacc=phs003593.v2.p1
+    applies_to: Echocardiogram and CT images (dbGaP phs003593)
+  - license: LicenseRef-FHS-DMDA
+    url: https://fhsbap.bu.edu/assets/files/FHS-NHLBI-DMDA-V20240702-d0a0e7e3076a2ae1eb889814fcd035a8.pdf
+    applies_to: Brain and cardiac MRI scans requested through the FHS research application
+license_combine: all
+citation:
+  text: >-
+    Murabito J (2024). Framingham Heart Study-Cohort (FHS-Cohort) - Imaging 1. NHLBI BioData Catalyst. Dataset.
+    https://doi.org/10.60645/BDC-S0O1-JK48. Cite the dbGaP accession phs000007 and use its acknowledgement statement.
+sources:
+  dbgap-phs003593:
+    title: dbGaP study page phs003593.v2.p1, Framingham Heart Study-Cohort (FHS-Cohort) - Imaging
+    url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs003593.v2.p1
+    kind: website
+  dbgap-phs000007:
+    title: dbGaP study page phs000007.v35.p16, Framingham Cohort
+    url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000007.v35.p16
+    kind: website
+  fhs-bap-digital-data:
+    title: FHS Brain Aging Program, Digital Data at Framingham Heart Study
+    url: https://www.bumc.bu.edu/fhs-bap/for-researchers/access-our-data/digital-data-at-framingham-heart-study/
+    kind: website
+  fhs-data-requests:
+    title: FHS Brain Aging Program, Requesting Data/Biospecimens from Framingham Heart Study
+    url: https://www.bumc.bu.edu/fhs-bap/for-researchers/access-our-data/requesting-data-biospecimens-from-framingham-heart-study
+    kind: website
+  bdc-phs003593:
+    title: NHLBI BioData Catalyst discovery record phs003593.v2.p1.c1
+    url: https://gen3.biodatacatalyst.nhlbi.nih.gov/discovery/phs003593.v2.p1.c1/
+    kind: website
+related: []
+keywords: [cardiovascular disease, population cohort, echocardiography, computed tomography, brain aging, family study]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

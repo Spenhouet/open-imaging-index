@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,15448,dbgap-phs003593,Study summary,"consented subjects in the dbGaP imaging study across all six cohorts; not every subject has images, and the page gives no count of subjects with echocardiograms"
+subjects,modality=CT,4427,dbgap-phs003593,Study description,"CT image data at one or two timepoints; Offspring, Third Generation, OMNI-1 and OMNI-2 cohorts"
+subjects,country=US,15448,dbgap-phs003593,Study description,"recruited in Framingham, Massachusetts and the surrounding community"

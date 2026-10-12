@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-FHS-DMDA
+name: Framingham Heart Study Data and Materials Distribution Agreement
+short_name: FHS DMDA
+url: https://fhsbap.bu.edu/assets/files/FHS-NHLBI-DMDA-V20240702-d0a0e7e3076a2ae1eb889814fcd035a8.pdf
+version: 'FHS NHLBI DMDA Template, Version Date: 2024-07-02'
+summary: >-
+  Agreement between the recipient institution, the FHS Coordinating Center and the NHLBI for data or materials
+  requested through an approved FHS research proposal. Use only for that project, with local IRB approval. No
+  transfer to others, no re-identification, yearly reports and return of resultant data, manuscripts sent to FHS in
+  advance, and destruction of the data when the agreement ends (at most five years).
+purpose: approved_project
+rules:
+  commercial_use:
+    value: unspecified
+    note: >-
+      The agreement neither allows nor forbids commercial use. Its signature page lets the recipient be "a [non-profit]
+      OR [for-profit] corporation/institution", and section 16 mentions "any resulting commercial product(s)". All use
+      is limited to the approved Research Project.
+  product_validation:
+    value: unspecified
+    note: The agreement does not address testing or validating a product. Any use must be part of the approved Research
+      Project.
+  model_training:
+    value: unspecified
+    quote: >-
+      Recipient and Recipient’s PI agree that Data, Materials, their progeny, or derivatives thereof will not be used in
+      any experiments or procedures unless said experiments or procedures are disclosed and approved as part of the
+      Research Project.
+    note: The agreement does not mention machine learning. Training is possible only if the approved proposal describes
+      it.
+  derivatives:
+    value: conditional
+    quote: >-
+      “Resultant Data” refers to analyze Data derived in whole or in part by Recipient from Data and/or Materials
+      provided under this DMDA.
+    note: Derived data may be created within the approved Research Project, must be reported yearly and provided to FHS.
+  publication:
+    value: 'yes'
+    quote: >-
+      Nothing in this section precludes Recipient from publishing results of the Research Project through the usual
+      channels of scientific publication.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      Recipient and Recipient’s PI further agree not to transfer Data, Materials and their progeny, and derivatives
+      thereof, with or without charge, to any other entity or individual, except for Data and/or Materials as provided
+      for in section 4.2 above.
+  redistribute_derivatives:
+    value: 'no'
+    quote: >-
+      Recipient and Recipient’s PI further agree not to transfer Data, Materials and their progeny, and derivatives
+      thereof, with or without charge, to any other entity or individual, except for Data and/or Materials as provided
+      for in section 4.2 above.
+    note: FHS and NHLBI may themselves distribute the resultant data that the recipient returns.
+  share_model_weights:
+    value: unspecified
+    note: The agreement does not mention models. Its ban on transferring "derivatives thereof" may cover them.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Recipient and Recipient’s PI agree to acknowledge the contribution of Framingham Heart Study in any and all oral
+      and written presentations, disclosures, and publications resulting from any and all analyses of Data or
+      Materials, in accordance with the guidelines established by the study.
+    note: The agreement gives fixed acknowledgement texts, including the NHLBI contract numbers.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      The undersigned parties entering into this DMDA include: the Recipient (defined in the next section), the NHLBI,
+      and the Coordinating Center for the FHS, on behalf of the FHS and under the direction of the FHS Steering
+      Committee.
+    note: Signed after an FHS research proposal is approved. A separate agreement is needed for each Research Project.
+  ethics_approval:
+    value: 'yes'
+    quote: >-
+      Recipient and Recipient’s PI agrees to use the Data and/or Materials only in conjunction with the Research Project
+      that has been reviewed by the Recipient's Institutional Review Board (IRB) or similar human subjects oversight
+      body in accordance with Department of Health and Human Services regulations at 45 CFR Part 46.
+  publication_review:
+    value: 'yes'
+    quote: >-
+      FHS and NHLBI request that the Recipient’s PI provide to the authorized representative for the FHS Coordinating
+      Center (named below) a copy of any abstract ten (10) days in advance of submission for publication and any
+      manuscript or other disclosure document thirty (30) days in advance of submission for publication, in order to
+      permit review and comment and ensure compliance with the confidentiality requirements of this DMDA.
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'yes'
+    quote: >-
+      Recipient and Recipient’s PI agree to provide Resultant Data to FHS in accordance with applicable NIH and NHLBI
+      data sharing policies in place as of the effective date of this agreement.
+    note: Also a report on the resultant data every twelve months.
+  delete_after_use:
+    value: 'yes'
+    quote: Recipient agrees to destroy all copies of all Data received from FHS
+    note: Upon termination, which happens at the end of the project or at the latest five years after the effective
+      date.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      Recipient and Recipient’s PI agree that Materials and/or Data will not be used, either alone or in conjunction
+      with any other information, in any effort to determine the individual identities of any of the participants from
+      whom Data and/or Materials were obtained or derived.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
