@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,80,mueller2023,Materials and methods: Patient cohort,patients from the Leipzig Heart Center
+subjects,modality=MR,80,mueller2023,Materials and methods: Image acquisition,
+subjects,contrast=bold,80,mueller2023,Materials and methods: Image acquisition,"resting-state T2*-weighted gradient-echo EPI, 300 volumes per participant"
+subjects,contrast=T1w,80,mueller2023,Materials and methods: Image acquisition,MPRAGE acquired for registration and normalization
+subjects,condition=coronary_artery_disease,58,mueller2023,Materials and methods: Patient cohort,22 further patients had no coronary artery disease
+subjects,condition=heart_failure,35,mueller2023,Materials and methods: Patient cohort,"coronary artery disease patients with heart failure by NT-proBNP; 2 were excluded from the heart failure group for cerebral lesions, leaving 33"
+subjects,sex=female,22,mueller2023,Materials and methods: Patient cohort,
+subjects,sex=male,58,mueller2023,Materials and methods: Patient cohort,total of 80 minus 22 females
+subjects,condition=coronary_artery_disease;sex=female,14,mueller2023,Materials and methods: Patient cohort,
+age_mean,,54.9,mueller2023,Materials and methods: Patient cohort,
+age_sd,,5.3,mueller2023,Materials and methods: Patient cohort,
+age_mean,condition=coronary_artery_disease,54.6,mueller2023,Materials and methods: Patient cohort,
+age_sd,condition=coronary_artery_disease,5.4,mueller2023,Materials and methods: Patient cohort,
+subjects,field_strength=3,80,mueller2023,Materials and methods: Image acquisition,
+subjects,vendor=siemens,80,mueller2023,Materials and methods: Image acquisition,MAGNETOM Verio with a 32-channel head coil
+subjects,country=DE,80,mueller2023,Materials and methods: Patient cohort,Leipzig Heart Center
