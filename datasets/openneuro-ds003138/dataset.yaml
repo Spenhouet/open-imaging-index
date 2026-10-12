@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003138
+name: Slackline training white matter plasticity (ds003138)
+full_name: >-
+  Tidying Up White Matter: Neuroplastic Transformations in Sensorimotor Tracts following Slackline Skill Acquisition
+summary: >-
+  Longitudinal brain MRI with multi-shell diffusion imaging of young adults randomized to slackline balance training or
+  a control group, scanned before training, after reaching a set skill level and three weeks later to track white
+  matter plasticity.
+homepage: https://openneuro.org/datasets/ds003138
+doi: 10.18112/openneuro.ds003138.v1.0.1
+year: 2020
+updated: 2023
+version: 1.0.1
+status: active
+creators:
+  - name: MRI-Lab Graz, University of Graz (Koschutnig K, Weber B, Fink A)
+    url: https://psychologie.uni-graz.at/de/mri-lab/
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 12.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003138
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Koschutnig K, Weber B, Fink A. Tidying up white matter: Neuroplastic transformations in sensorimotor tracts
+    following slackline skill acquisition. Human Brain Mapping (2024). doi:10.1002/hbm.26791
+sources:
+  koschutnig2024:
+    title: Koschutnig et al. 2024, Tidying up white matter, Human Brain Mapping
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11551625/
+    kind: paper
+  openneuro-ds003138-v101:
+    title: OpenNeuro ds003138 snapshot 1.0.1 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003138/versions/1.0.1
+    kind: website
+  ds003138-participants:
+    title: participants.tsv of ds003138 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003138/blob/1.0.1/participants.tsv
+    kind: computed
+  ds003138-file-tree:
+    title: File tree of ds003138 snapshot 1.0.1 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003138/tree/1.0.1
+    kind: computed
+related: []
+keywords:
+  [slackline, balance training, motor learning, white matter plasticity, multi-shell diffusion, fixel-based analysis, NODDI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
