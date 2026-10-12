@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004285
+name: Motion feedback word repetition fMRI (ds004285)
+full_name: Listening task
+summary: >-
+  Task fMRI with T1- and T2-weighted brain MRI of young and older adults who repeated spoken words heard in noise,
+  collected to test whether real-time head motion feedback reduces motion. 78 participants from St. Louis at 3T, in BIDS
+  under CC0.
+homepage: https://openneuro.org/datasets/ds004285
+doi: 10.18112/openneuro.ds004285.v1.0.0
+# Snapshot 1.0.0 created on OpenNeuro 2022-10-05 and made public 2023-01-12; it is the only snapshot.
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: Rogers CS, Jones MS, McConkey S, Peelle JE (Washington University in St. Louis)
+    url: https://openneuro.org/datasets/ds004285
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 86.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004285
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Rogers CS, Jones MS, McConkey S, McLaughlin DJ, Peelle JE. Real-time feedback reduces participant motion during
+    task-based fMRI. bioRxiv preprint (2023). doi:10.1101/2023.01.12.523791
+sources:
+  rogers2023:
+    title: >-
+      Rogers et al. 2023, Real-time feedback reduces participant motion during task-based fMRI, bioRxiv preprint
+      version 3 (PMC9882243)
+    url: https://doi.org/10.1101/2023.01.12.523791
+    kind: paper
+  openneuro-ds004285-v1-0-0:
+    title: OpenNeuro ds004285 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004285/versions/1.0.0
+    kind: website
+  ds004285-participants:
+    title: participants.tsv of ds004285 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds004285/blob/main/participants.tsv
+    kind: computed
+  ds004285-file-tree:
+    title: File listing of the ds004285 BIDS repository (CC0), counted per T1w, T2w and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004285
+    kind: computed
+related: []
+keywords: [head motion, real-time feedback, FIRMM, framewise displacement, word repetition, speech in noise, task fMRI, cognitive aging, sparse imaging]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
