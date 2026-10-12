@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: leipzig-heart-failure-rsfmri
+name: Leipzig Heart Failure Resting-State fMRI
+full_name: 'Brain dysconnectivity with heart failure: Centrality and seed-based correlation maps obtained with functional MRI'
+summary: >-
+  Resting-state BOLD fMRI of cardiac patients with and without coronary artery disease and heart failure, used to relate
+  brain network centrality to heart function and cognition. Images are shared on request; per-subject connectivity maps
+  are public.
+homepage: https://data.mendeley.com/datasets/6h782nrb24
+doi: 10.17632/6h782nrb24
+year: 2022
+version: '1'
+creators:
+  - name: Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig
+    url: https://ror.org/0387jng26
+  - name: Heart Center Leipzig
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [heart_failure, coronary_artery_disease]
+countries: [DE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.83
+access:
+  type: on_request
+  url: https://doi.org/10.1093/braincomms/fcad103
+  note: >-
+    The data availability statement of Mueller et al. (2023) says the analysed data are available on reasonable request,
+    with the functional MRI given as anonymized pre-processed NIfTI files. The per-subject connectivity maps (global
+    correlation, eigenvector centrality and precuneus seed-based correlation) and the SPM12 group analyses are an open
+    download on Mendeley Data under CC BY 4.0.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Per-subject connectivity maps and SPM12 group analyses on Mendeley Data
+    url: https://data.mendeley.com/datasets/6h782nrb24
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Pre-processed functional MRI, shared on request
+    note: No license or data use terms are stated for the functional MRI data shared on request.
+citation:
+  text: >-
+    Mueller K, Thiel F, Taskin B, Beutner F, Teren A, Dubovoy VK, Möller HE, Villringer A, Schroeter ML. Brain
+    dysconnectivity with heart failure. Brain Communications 5(2), fcad103 (2023). doi:10.1093/braincomms/fcad103. Data:
+    Mendeley Data, V1 (2022). doi:10.17632/6h782nrb24.1
+sources:
+  mueller2023:
+    title: Mueller et al. 2023, Brain Communications (PMC10116577)
+    url: https://doi.org/10.1093/braincomms/fcad103
+    kind: paper
+  mendeley-6h782nrb24:
+    title: 'Brain dysconnectivity with heart failure: Centrality and seed-based correlation maps obtained with functional MRI, Mendeley Data V1'
+    url: https://data.mendeley.com/datasets/6h782nrb24
+    kind: website
+related: []
+keywords: [heart failure, coronary artery disease, resting-state fMRI, eigenvector centrality, precuneus, functional connectivity]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
