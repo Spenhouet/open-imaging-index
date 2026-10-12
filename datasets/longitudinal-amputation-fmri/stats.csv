@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,75,ds008022-participants,participant_id column,the README of snapshot 1.0.5 also states 30 amputees and 45 controls; every listed subject has image files
+subjects,condition=upper_limb_amputation,30,ds008022-participants,group column,3 longitudinal case studies and 27 chronic amputees from two cross-sectional cohorts
+subjects,condition=healthy,45,ds008022-participants,group column,"16 longitudinal controls, 11 younger piano-training controls and 18 controls from two cross-sectional cohorts"
+subjects,contrast=T1w,74,ds008022-file-tree,,subjects with at least one *_T1w.nii.gz
+subjects,contrast=bold,74,ds008022-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,73,ds008022-file-tree,,
+subjects,contrast_set=T1w,1,ds008022-file-tree,,
+subjects,contrast_set=bold,1,ds008022-file-tree,,
+subjects,sex=male,41,ds008022-participants,sex column,
+subjects,sex=female,23,ds008022-participants,sex column,
+subjects,sex=unknown,11,ds008022-participants,sex column,sex is n/a for the 11 younger piano-training controls
+subjects,sex=male;condition=upper_limb_amputation,23,ds008022-participants,sex and group columns,
+subjects,sex=male;condition=healthy,18,ds008022-participants,sex and group columns,
+subjects,sex=female;condition=healthy,16,ds008022-participants,sex and group columns,
+subjects,sex=unknown;condition=healthy,11,ds008022-participants,sex and group columns,
+subjects,age=10-19,2,ds008022-participants,age column,age at initial study participation
+subjects,age=20-29,16,ds008022-participants,age column,
+subjects,age=30-39,6,ds008022-participants,age column,
+subjects,age=40-49,16,ds008022-participants,age column,
+subjects,age=50-59,24,ds008022-participants,age column,
+subjects,age=60-69,11,ds008022-participants,age column,
+age_mean,,44.9,ds008022-participants,age column,
+age_sd,,14.4,ds008022-participants,age column,sample standard deviation
+age_median,,49,ds008022-participants,age column,
+age_min,,18,ds008022-participants,age column,
+age_max,,69,ds008022-participants,age column,
+subjects,field_strength=3,19,schone2025,Methods: MRI data acquisition,"Siemens 3T Prisma with a 32-channel head coil, stated for the longitudinal study (3 amputees and 16 controls)"
+subjects,vendor=siemens,19,schone2025,Methods: MRI data acquisition,longitudinal study only
+studies,,145,ds008022-file-tree,,sub-*/ses-* folders with T1w or BOLD images
+scans,,734,ds008022-file-tree,,raw T1w and BOLD NIfTI files under sub-*/ses-*/
+scans,contrast=T1w,143,ds008022-file-tree,,*_T1w.nii.gz files; brain-extracted in the two cross-sectional cohorts
+scans,contrast=bold,591,ds008022-file-tree,,*_bold.nii.gz runs of the fingers and bodyloc tasks

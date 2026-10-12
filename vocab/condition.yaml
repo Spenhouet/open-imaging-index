@@ -662,6 +662,12 @@ terms:
       synonyms: [peripheral nerve injury, PNI, traumatic nerve injury],
       mappings: { mondo: 'MONDO:0100634' }
     }
+  - {
+      id: upper_limb_amputation,
+      label: Upper limb amputation,
+      description: 'Acquired loss of part or all of an arm or hand through surgery or trauma, e.g. transradial or transhumeral amputation. MONDO and HPO only have terms for congenital or spontaneous limb loss.',
+      synonyms: [arm amputation, hand amputation, upper-limb amputee, acquired limb loss],
+    }
   - id: writing_disorder
     label: Writing disorder
     description: >-

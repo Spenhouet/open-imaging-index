@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: longitudinal-amputation-fmri
+name: Longitudinal amputation fMRI (ds008022)
+full_name: >-
+  Longitudinal functional MRI datasets of finger tapping and whole-body movement before and after upper-limb
+  amputation
+summary: >-
+  Task fMRI and T1w brain MRI of adults scanned before and up to five years after planned arm amputation, collected to
+  test whether cortical body maps stay stable after limb loss, with longitudinal controls and chronic amputee cohorts.
+homepage: https://openneuro.org/datasets/ds008022
+doi: 10.18112/openneuro.ds008022.v1.0.5
+# First OpenNeuro snapshot 1.0.0 dated 2026-06-26 in the CHANGES file.
+year: 2026
+version: 1.0.5
+status: active
+creators:
+  - name: Hunter R. Schone, Tamar R. Makin and colleagues, Institute of Cognitive Neuroscience, University College London
+    url: https://doi.org/10.1038/s41593-025-02037-7
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [upper_limb_amputation, healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+# Ethics approval from the NHS National Research Ethics Committee; authors at University College London.
+countries: [GB]
+# The paper states a Siemens 3T Prisma for the longitudinal study; scanners of the pooled cross-sectional cohorts are
+# described only in the paper's external Supplementary Methods.
+vendors: [siemens]
+field_strengths: [3]
+# 236,358,511,469 bytes for snapshot 1.0.5 (OpenNeuro GraphQL summary).
+size_gb: 236.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008022
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Schone HR, Maimon-Mor RO, Kollamkulam M, et al. Stable cortical body maps before and after arm amputation. Nature
+    Neuroscience 28, 2015-2021 (2025). doi:10.1038/s41593-025-02037-7
+sources:
+  schone2025:
+    title: Schone et al. 2025, Stable cortical body maps before and after arm amputation, Nature Neuroscience
+    url: https://doi.org/10.1038/s41593-025-02037-7
+    kind: paper
+  openneuro-ds008022-v1-0-5:
+    title: OpenNeuro ds008022 snapshot 1.0.5 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds008022/versions/1.0.5
+    kind: website
+  ds008022-participants:
+    title: participants.tsv of ds008022 snapshot 1.0.5 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds008022/blob/1.0.5/participants.tsv
+    kind: computed
+  ds008022-file-tree:
+    title: BIDS file tree of ds008022 snapshot 1.0.5 (CC0), *_T1w.nii.gz and *_bold.nii.gz files under sub-*/ses-*/
+    url: https://github.com/OpenNeuroDatasets/ds008022/tree/1.0.5
+    kind: computed
+related: []
+keywords:
+  [
+    arm amputation,
+    phantom limb,
+    somatosensory cortex,
+    cortical reorganization,
+    finger mapping,
+    body localizer,
+    task fMRI,
+    longitudinal fMRI,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
