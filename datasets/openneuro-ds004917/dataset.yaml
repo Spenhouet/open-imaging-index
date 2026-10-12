@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004917
+name: Probability Decision-making with Ambiguity (ds004917)
+full_name: Probability Decision-making Task with ambiguity
+summary: >-
+  Structural, diffusion and task fMRI from healthy young adults choosing between gambles with known or partly hidden
+  odds, collected to study how the parietal cortex handles ambiguity; a second group has EEG during parietal TMS.
+homepage: https://openneuro.org/datasets/ds004917
+doi: 10.18112/openneuro.ds004917.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Alejandra Figueroa-Vargas, Gabriela Valdebenito-Oyarzo, María Paz Martínez-Molina, Francisco Zamorano and Pablo
+      Billeke (Social Neuroscience and Neuromodulation Laboratory, Universidad del Desarrollo)
+    url: https://openneuro.org/datasets/ds004917
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 40.21
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004917/versions/1.0.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004917/versions/1.0.1
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Figueroa-Vargas A, Valdebenito-Oyarzo G, Martínez-Molina MP, Zamorano F, Billeke P. A comprehensive multimodal MRI
+    and EEG-TMS dataset on the impact of parietal cortex inhibition on decision-making under ambiguity. Data in Brief
+    65, 112535 (2026). doi:10.1016/j.dib.2026.112535. Also cite Valdebenito-Oyarzo G et al. The parietal cortex has a
+    causal role in ambiguity computations in humans. PLOS Biology 22, e3002452 (2024).
+    doi:10.1371/journal.pbio.3002452
+  bibtex: |
+    @article{figueroavargas2026,
+      title={A comprehensive multimodal MRI and EEG-TMS dataset on the impact of parietal cortex inhibition on decision-making under ambiguity},
+      author={Figueroa-Vargas, Alejandra and Valdebenito-Oyarzo, Gabriela and Mart{\'i}nez-Molina, Mar{\'i}a Paz and Zamorano, Francisco and Billeke, Pablo},
+      journal={Data in Brief},
+      volume={65},
+      pages={112535},
+      year={2026},
+      doi={10.1016/j.dib.2026.112535}
+    }
+    @article{valdebenitooyarzo2024,
+      title={The parietal cortex has a causal role in ambiguity computations in humans},
+      author={Valdebenito-Oyarzo, Gabriela and Mart{\'i}nez-Molina, Mar{\'i}a Paz and Soto-Icaza, Patricia and Zamorano, Francisco and Figueroa-Vargas, Alejandra and Larra{\'i}n-Valenzuela, Josefina and Stecher, Ximena and Salinas, C{\'e}sar and Bastin, Julien and Valero-Cabr{\'e}, Antoni and Polania, Rafael and Billeke, Pablo},
+      journal={PLOS Biology},
+      volume={22},
+      pages={e3002452},
+      year={2024},
+      doi={10.1371/journal.pbio.3002452}
+    }
+sources:
+  figueroavargas2026:
+    title: >-
+      Figueroa-Vargas et al. 2026, A comprehensive multimodal MRI and EEG-TMS dataset on the impact of parietal cortex
+      inhibition on decision-making under ambiguity, Data in Brief
+    url: https://doi.org/10.1016/j.dib.2026.112535
+    kind: paper
+  valdebenitooyarzo2024:
+    title: Valdebenito-Oyarzo et al. 2024, The parietal cortex has a causal role in ambiguity computations in humans, PLOS Biology
+    url: https://doi.org/10.1371/journal.pbio.3002452
+    kind: paper
+  ds004917-participants:
+    title: participants.tsv of the ds004917 BIDS repository (CC0), columns age, sex, T1w, T2w, dwi, func, eeg
+    url: https://github.com/OpenNeuroDatasets/ds004917/blob/main/participants.tsv
+    kind: computed
+  ds004917-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds004917 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds004917
+    kind: computed
+related: []
+keywords:
+  [
+    decision-making,
+    ambiguity,
+    risk,
+    uncertainty,
+    parietal cortex,
+    task fMRI,
+    diffusion MRI,
+    EEG,
+    TMS,
+    young adults,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
