@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nda-hyperactivity-autism-nyu
+name: Hyperactivity/Inattention in Autism, NYU (NDA 1551)
+full_name: Neural Dissection of Hyperactivity/Inattention in Autism
+summary: >-
+  Structural and resting-state brain MRI of children with autism, collected at New York University to study the
+  brain basis of hyperactivity and inattention in autism, with diagnostic interviews and behaviour rating scales.
+  Shared through the NIMH Data Archive as collection 1551.
+homepage: https://nda.nih.gov/edit_collection.html?id=1551
+year: 2013
+creators:
+  - name: F. Xavier Castellanos and team, New York University (NIH grant R01HD065282)
+    url: https://nda.nih.gov/edit_collection.html?id=1551
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [autism]
+countries: [US]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=1551
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      Download needs an approved NIMH Data Archive data access request, whose data use terms every request accepts.
+      Collection-specific permission clauses are not public and are not broken down here.
+citation:
+  text: >-
+    Castellanos FX et al. Neural Dissection of Hyperactivity/Inattention in Autism. NIMH Data Archive collection
+    1551 (grant R01HD065282).
+sources:
+  nda-collection-1551:
+    title: NIMH Data Archive collection 1551 record (API), with description and shared subject count
+    url: https://nda.nih.gov/api/collection/1551
+    kind: website
+  nda-collection-1551-structures:
+    title: NIMH Data Archive collection 1551 shared data structures (API), subjects per structure
+    url: https://nda.nih.gov/api/nda/collection/1551/data-structures
+    kind: website
+  nda-collection-1551-studies:
+    title: NIMH Data Archive collection 1551 associated studies (API), subjects per study
+    url: https://nda.nih.gov/api/nda/collection/1551/studies
+    kind: website
+  nda-study-342:
+    title: >-
+      NDA Study 342 (doi:10.15154/1165646), Derivation of Brain Structure Volumes from MRI Neuroimages hosted by NDAR
+      using C-PAC pipeline and ANTs, DataCite record
+    url: https://doi.org/10.15154/1165646
+    kind: website
+  supekar2013:
+    title: >-
+      Supekar et al. 2013, Brain Hyperconnectivity in Children with Autism and its Links to Social Deficits, Cell
+      Reports (PMC3894787)
+    url: https://doi.org/10.1016/j.celrep.2013.10.001
+    kind: paper
+related: [adhd-200]
+keywords:
+  [
+    autism,
+    ASD,
+    ADHD,
+    hyperactivity,
+    inattention,
+    resting-state fMRI,
+    structural MRI,
+    children,
+    NIMH Data Archive,
+    NDAR,
+    New York University
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

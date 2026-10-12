@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,210,nda-collection-1551,shared_subject_count,subjects with shared data of any kind
+subjects,modality=MR,135,nda-collection-1551-structures,image03,subjects with records in the image03 imaging structure
+subjects,contrast=T1w,117,nda-collection-1551-studies,study 342,"lower bound: subjects of this collection in NDA Study 342, which derived cortical thickness from T1-weighted images (nda-study-342)"
+subjects,condition=autism,15,supekar2013,Experimental Procedures: NYU/NDAR Cohort,"lower bound: children aged 7 to 13 with autism and resting-state fMRI found in this collection in 2013"
