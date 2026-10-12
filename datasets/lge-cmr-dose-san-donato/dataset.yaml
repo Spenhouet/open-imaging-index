@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lge-cmr-dose-san-donato
+name: LGE gadobutrol dose CMR in chronic MI (San Donato)
+full_name: >-
+  Image quality of late gadolinium enhancement in cardiac magnetic resonance with different doses of contrast material
+  in patients with chronic myocardial infarction
+summary: >-
+  Cardiac MRI with cine and late gadolinium enhancement of 79 patients with chronic transmural myocardial infarction,
+  scanned after 0.10, 0.15 or 0.20 mmol/kg gadobutrol, with scar segmentation and SNR/CNR measures. One Italian centre.
+  Access on request.
+homepage: https://zenodo.org/records/4556916
+doi: 10.5281/zenodo.4556916
+year: 2021
+creators:
+  - name: IRCCS Policlinico San Donato
+    url: https://zenodo.org/records/4556916
+species: human
+modalities: [MR]
+contrasts: [cine, lge]
+anatomy: [heart]
+conditions: [myocardial_infarction]
+tasks: [segmentation]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://zenodo.org/records/4556916
+  note: >-
+    The Zenodo record is public but its files are restricted and not listed. Its access request form states that the
+    data are available on a duly motivated request to Prof. Francesco Sardanelli. The paper states that all data are
+    included in the article. Whether CMR images are part of the shared data is not stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record and the paper publish no license or data use terms for the dataset.
+citation:
+  text: >-
+    Monti CB, Codari M, Cozzi A, Alì M, Saggiante L, Sardanelli F, Secchi F. Image quality of late gadolinium
+    enhancement in cardiac magnetic resonance with different doses of contrast material in patients with chronic
+    myocardial infarction. Eur Radiol Exp 4, 21 (2020). doi:10.1186/s41747-020-00149-2
+sources:
+  monti2020:
+    title: Monti et al. 2020, European Radiology Experimental 4, 21
+    url: https://doi.org/10.1186/s41747-020-00149-2
+    kind: paper
+  zenodo-4556916:
+    title: Zenodo record 4556916
+    url: https://zenodo.org/records/4556916
+    kind: website
+related: []
+keywords:
+  [
+    chronic myocardial infarction,
+    late gadolinium enhancement,
+    LGE,
+    cardiac MRI,
+    gadobutrol,
+    contrast dose,
+    myocardial scar,
+    image quality
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,79,monti2020,Results (Study population),79 of 124 retrieved patients; 35 excluded for non-transmural infarction and 10 for artefacts (Figure 2)
+studies,,79,monti2020,Abstract (Results),one CMR examination per patient
+subjects,condition=myocardial_infarction,79,monti2020,Results (Study population),chronic transmural infarction
+subjects,contrast=lge,79,monti2020,Methods (Image acquisition),"gadobutrol dose groups: 22 at 0.10, 26 at 0.15, 31 at 0.20 mmol/kg (Table 1)"
+subjects,contrast=cine,79,monti2020,Methods (Image acquisition),protocol of all patients included cine and LGE
+subjects,contrast_set=cine+lge,79,monti2020,Methods (Image acquisition),protocol of all patients included cine and LGE
+subjects,vendor=siemens,79,monti2020,Methods (Image acquisition),Magnetom Aera
+subjects,field_strength=1.5,79,monti2020,Methods (Image acquisition),
+subjects,country=IT,79,monti2020,Methods (Study population),single centre
