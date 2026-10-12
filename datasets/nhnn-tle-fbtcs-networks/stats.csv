@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,112,sinha2021,Section 2.1,83 patients and 29 controls; the Zenodo record gives the same counts
+subjects,condition=temporal_lobe_epilepsy,83,sinha2021,Table 1,drug-resistant unilateral TLE; 60 with and 23 without focal to bilateral tonic-clonic seizures; 42 left and 41 right
+subjects,condition=healthy,29,sinha2021,Table 1,
+subjects,contrast=dwi,112,sinha2021,Section 2.2,diffusion MRI acquired for each participant
+subjects,sex=female,68,sinha2021,Table 1,sum of 36 FBTCS+ and 15 FBTCS- patients and 17 controls
+subjects,sex=male,44,sinha2021,Table 1,sum of 24 FBTCS+ and 8 FBTCS- patients and 12 controls
+subjects,condition=temporal_lobe_epilepsy;sex=female,51,sinha2021,Table 1,sum of the two patient groups
+subjects,condition=temporal_lobe_epilepsy;sex=male,32,sinha2021,Table 1,sum of the two patient groups
+subjects,condition=healthy;sex=female,17,sinha2021,Table 1,
+subjects,condition=healthy;sex=male,12,sinha2021,Table 1,
+age_mean,condition=healthy,38.0,sinha2021,Table 1,age at diffusion MRI
+age_sd,condition=healthy,12.0,sinha2021,Table 1,age at diffusion MRI
+subjects,country=GB,112,sinha2021,Section 2.1,"National Hospital for Neurology and Neurosurgery, London"
+subjects,vendor=ge,112,sinha2021,Section 2.2,GE Signa HDx
+subjects,field_strength=3,112,sinha2021,Section 2.2,
