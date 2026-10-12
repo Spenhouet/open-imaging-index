@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nndb
+name: Naturalistic Neuroimaging Database
+full_name: Naturalistic Neuroimaging Database (NNDb)
+summary: >-
+  Brain fMRI of healthy adults each watching one of ten full-length feature films, collected to study how the brain
+  processes real-world audiovisual narratives. Over 1.5 hours of movie fMRI per person, plus a T1w anatomical scan and
+  NIH Toolbox behavioural scores.
+homepage: https://openneuro.org/datasets/ds002837
+doi: 10.18112/openneuro.ds002837.v2.0.0
+# OpenNeuro snapshot 1.0.0 dated 2020-07-21 and 2.0.0 dated 2021-04-20 in the CHANGES file.
+year: 2020
+updated: 2021
+version: 2.0.0
+status: active
+creators:
+  - name: Experimental Psychology, University College London (Aliko S, Huang J, Gheorghiu F, Meliss S, Skipper JI)
+    url: http://naturalistic-neuroimaging-database.org/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [1.5]
+size_gb: 95.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002837
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Aliko S, Huang J, Gheorghiu F, Meliss S, Skipper JI. A naturalistic neuroimaging database for understanding the
+    brain using ecological stimuli. Scientific Data 7, 347 (2020). doi:10.1038/s41597-020-00680-2
+sources:
+  aliko2020:
+    title: Aliko et al. 2020, A naturalistic neuroimaging database for understanding the brain using ecological stimuli, Scientific Data
+    url: https://doi.org/10.1038/s41597-020-00680-2
+    kind: paper
+  openneuro-ds002837-v2-0-0:
+    title: OpenNeuro ds002837 snapshot 2.0.0 (README, dataset_description.json, CHANGES, sidecar JSON and snapshot size)
+    url: https://openneuro.org/datasets/ds002837/versions/2.0.0
+    kind: website
+  ds002837-participants:
+    title: participants.tsv of ds002837 snapshot 2.0.0 (CC0), counted per row; ages from age, sex from sex
+    url: https://github.com/OpenNeuroDatasets/ds002837/blob/2.0.0/participants.tsv
+    kind: computed
+  ds002837-file-tree:
+    title: BIDS file tree of ds002837 snapshot 2.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds002837/tree/2.0.0
+    kind: computed
+related: []
+keywords: [naturalistic viewing, movie watching, feature films, task fMRI, multiband EPI, inter-subject correlation, NIH Toolbox, language, face perception]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

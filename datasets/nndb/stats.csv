@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,86,aliko2020,Methods: Participants,91 enrolled and completed the study; 5 excluded; participants.tsv also has 86 rows
+subjects,condition=healthy,86,aliko2020,Methods: Participants,"right-handed native English speakers with no psychiatric or neurological illness, not taking medication"
+subjects,contrast=T1w,86,ds002837-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=bold,86,ds002837-file-tree,,subjects with at least one *_bold.nii.gz
+subjects,contrast_set=bold+T1w,86,ds002837-file-tree,,
+subjects,field_strength=1.5,86,aliko2020,Methods: Acquisition,1.5 T Siemens MAGNETOM Avanto
+subjects,vendor=siemens,86,aliko2020,Methods: Acquisition,
+subjects,country=GB,86,aliko2020,Methods: Participants,ethics approval by University College London
+scans,,350,ds002837-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,86,ds002837-file-tree,,defaced
+scans,contrast=bold,264,ds002837-file-tree,,"one file per movie run, 2 to 6 runs per subject"
+subjects,sex=female,42,aliko2020,Methods: Participants,participants.tsv also has 42 rows with sex F
+subjects,sex=male,44,ds002837-participants,sex,sex M
+subjects,age=10-19,12,ds002837-participants,age,
+subjects,age=20-29,54,ds002837-participants,age,
+subjects,age=30-39,9,ds002837-participants,age,
+subjects,age=40-49,4,ds002837-participants,age,
+subjects,age=50-59,7,ds002837-participants,age,
+subjects,sex=female;age=20-29,28,ds002837-participants,"sex, age",
+subjects,sex=male;age=20-29,26,ds002837-participants,"sex, age",
+age_mean,,26.81,aliko2020,Methods: Participants,participants.tsv gives 26.73
+age_sd,,10.09,aliko2020,Methods: Participants,
+age_min,,18,aliko2020,Methods: Participants,
+age_max,,58,aliko2020,Methods: Participants,
+age_median,,23,ds002837-participants,age,86 rows with an age
