@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,120,redivis-opal,Dataset abstract,66 healthy controls and 54 Moyamoya patients
+subjects,condition=healthy,66,redivis-opal,Methodology,
+subjects,condition=moyamoya,54,redivis-opal,Methodology,pre-operative patients
+subjects,tracer=o15_water,120,redivis-opal,Dataset abstract,[15O]H2O PET CBF maps for all participants
+subjects,contrast=asl,120,redivis-opal,Methodology,every subject has at least one paired pre-acetazolamide ASL and PET acquisition (run labelling)
+subjects,contrast=dsc,103,redivis-opal,Methodology,post-acetazolamide DSC; sum of the disjoint groups 61 healthy controls and 42 Moyamoya patients
+subjects,condition=healthy;contrast=dsc,61,redivis-opal,Methodology,post-acetazolamide DSC
+subjects,condition=moyamoya;contrast=dsc,42,redivis-opal,Methodology,post-acetazolamide DSC
+subjects,field_strength=3,120,redivis-opal,Methodology,3T GE PET/MRI
+studies,,142,redivis-opal,Methodology,"sum: one session for each of the 120 participants plus a follow-up session about one week later for 22 healthy controls; no Moyamoya follow-up"
