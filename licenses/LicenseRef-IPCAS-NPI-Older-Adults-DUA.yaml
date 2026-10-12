@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-IPCAS-NPI-Older-Adults-DUA
+name: Data Usage Agreement of the non-pharmacological intervention datasets in older adults (Institute of Psychology, CAS)
+short_name: IPCAS NPI DUA
+url: https://www.scidb.cn/en/detail?dataSetId=d9a1fe878af54105b3260ced214d809d
+version: 'DUA.pdf in the Science Data Bank record 10.57760/sciencedb.psych.00866, V2 (MD5 5b8adf6d80c107f0eb2d3a1b3cdf3160), read 2026-10-12'
+summary: >-
+  Terms that users accept by downloading or using the data. They forbid re-identification, ask users to protect
+  participant identity and to report identifying content, limit use to lawful scientific research and education, and
+  ask for citation of the datasets. The same text states that the data are distributed under CC BY 4.0.
+purpose: research
+rules:
+  commercial_use:
+    value: conditional
+    quote: The database should be used solely for lawful scientific research and educational purposes.
+    note: >-
+      Commercial use is not named. The purpose clause limits use to research and education, while the license section
+      of the same text says users may share and adapt the data "for any purpose".
+  product_validation:
+    value: unspecified
+    note: The terms do not address testing or validating a product.
+  model_training:
+    value: conditional
+    quote: The database should be used solely for lawful scientific research and educational purposes.
+    note: Machine learning is not mentioned; any use must fall within scientific research or education.
+  derivatives:
+    value: 'yes'
+    quote: >-
+      Users are free to share and adapt the data for any purpose, provided that appropriate credit is given to the
+      original authors and source.
+  publication:
+    value: 'yes'
+    quote: >-
+      When publishing results derived from this database, users are encouraged to share analysis code and processing
+      workflows in a publicly accessible repository whenever possible.
+  redistribute_original:
+    value: conditional
+    quote: >-
+      Users are free to share and adapt the data for any purpose, provided that appropriate credit is given to the
+      original authors and source.
+    note: Sharing requires credit to the authors and source.
+  redistribute_derivatives:
+    value: conditional
+    quote: >-
+      Users are free to share and adapt the data for any purpose, provided that appropriate credit is given to the
+      original authors and source.
+    note: Sharing requires credit to the authors and source.
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: 'If you use this database in your research, please cite the corresponding database as follows:'
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: conditional
+    quote: 'By downloading or using these data, users agree to the following principles:'
+    note: No signature, account or click-through is required; the terms bind by downloading or using the data.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      Users are responsible for complying with all applicable regulations and institutional policies regarding the use
+      of human research data.
+    note: Ethics approval is not named as a precondition; users must follow the rules that apply to them.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+    quote: >-
+      When publishing results derived from this database, users are encouraged to share analysis code and processing
+      workflows in a publicly accessible repository whenever possible.
+    note: Code sharing is encouraged, not required.
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: Users must not attempt to identify any individual participant represented in the database.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

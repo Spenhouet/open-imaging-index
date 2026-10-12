@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,98,scidb-psych-00866,Description,community-dwelling older adults assigned to the four trial groups; Figure 1 of jin2026 gives the same 98 at baseline
+subjects,contrast=T1w,98,jin2026,Procedures; Figure 1,enrolment required a baseline T1-weighted scan; the database includes baseline scans of participants without follow-up
+subjects,contrast=bold,98,jin2026,Procedures; Figure 1,enrolment required a baseline resting-state fMRI scan; the database includes baseline scans of participants without follow-up
+subjects,sex=female,70,jin2026,Supplementary Table S2,"sum of training (52) and control (18) groups among the 86 participants with two usable resting-state scans, not all 98"

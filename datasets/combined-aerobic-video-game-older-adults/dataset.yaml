@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: combined-aerobic-video-game-older-adults
+name: Aerobic Exercise and Video Game Training in Older Adults
+full_name: An Open Dataset for Combined Aerobic Exercise and Video Game Intervention in Older Adults
+summary: >-
+  Structural and resting-state functional brain MRI of healthy community-dwelling older adults before and after a
+  16-week trial of aerobic cycling, 3D video game training, both combined, or no training, with demographics and
+  neuropsychological test scores.
+homepage: https://www.scidb.cn/en/detail?dataSetId=d9a1fe878af54105b3260ced214d809d
+doi: 10.57760/sciencedb.psych.00866
+year: 2026
+updated: 2026
+version: V2
+status: active
+creators:
+  - name: Institute of Psychology, Chinese Academy of Sciences
+    url: https://ror.org/03j7v5j15
+  - name: Xinhu Jin, Wei Tang, Xiaoyu Cui, Wenjun Gui, Juan Li
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS]
+countries: [CN]
+vendors: [ge]
+field_strengths: [3]
+# Science Data Bank record V2: 11897369213 bytes in 3 files.
+size_gb: 11.9
+access:
+  type: open
+  url: https://www.scidb.cn/en/detail?dataSetId=d9a1fe878af54105b3260ced214d809d
+  note: >-
+    The Science Data Bank record is public and its files (COMBIDS.zip, a neuropsychological test table and DUA.pdf)
+    download without an account. The DUA.pdf in the record sets terms that apply by downloading or using the data.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: All files of the Science Data Bank record (license stated on the record and in DUA.pdf)
+    url: https://creativecommons.org/licenses/by/4.0/
+  - license: LicenseRef-IPCAS-NPI-Older-Adults-DUA
+    applies_to: All files of the Science Data Bank record, by downloading or using them
+citation:
+  text: >-
+    Jin X, Tang W, Cui X, Gui W, Li J. An Open Dataset for Combined Aerobic Exercise and Video Game Intervention in
+    Older Adults. V2. Science Data Bank, 2026. doi:10.57760/sciencedb.psych.00866
+sources:
+  scidb-psych-00866:
+    title: Science Data Bank record 10.57760/sciencedb.psych.00866 (V2), its description, file listing and DataCite metadata
+    url: https://doi.org/10.57760/sciencedb.psych.00866
+    kind: website
+  jin2026:
+    title: >-
+      Jin et al. 2026, An open multimodal database of non-pharmacological interventions in older adults, Scientific
+      Data (accepted manuscript) and Supplementary Tables S1 and S2
+    url: https://doi.org/10.1038/s41597-026-08150-x
+    kind: paper
+  cui2023:
+    title: >-
+      Cui et al. 2023, A Combined Intervention of Aerobic Exercise and Video Game in Older Adults: The Efficacy and
+      Neural Basis on Improving Mnemonic Discrimination, Journals of Gerontology: Series A 78:1436-1444
+    url: https://doi.org/10.1093/gerona/glac232
+    kind: paper
+related: []
+keywords: [cognitive aging, aerobic exercise, video game training, combined intervention, mnemonic discrimination, resting-state fMRI, longitudinal, ChiCTR1900022702]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
