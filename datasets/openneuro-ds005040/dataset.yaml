@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005040
+name: Political Moralization (ds005040)
+full_name: Political Moralization (PMM)
+summary: >-
+  Task fMRI and structural brain MRI of adults choosing which of two protest causes they support more and watching ISIS
+  propaganda videos, collected to study political moralization and what makes propaganda persuasive. 49 participants
+  from Chicago, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds005040
+doi: 10.18112/openneuro.ds005040.v1.2.0
+# First public snapshot (1.0.0) on OpenNeuro, 2024-03-21; latest snapshot 1.2.0, 2024-12-04.
+year: 2024
+version: 1.2.0
+status: active
+creators:
+  - name: Cohen MS, Cao Q, Decety J (University of Chicago)
+    url: https://openneuro.org/datasets/ds005040
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 9.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005040
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.0 states "License" CC0.
+citation:
+  text: >-
+    Cohen MS, Cao Q, Decety J. Political Moralization (PMM). OpenNeuro, ds005040, version 1.2.0 (2024).
+    doi:10.18112/openneuro.ds005040.v1.2.0
+sources:
+  openneuro-ds005040-v1-2-0:
+    title: OpenNeuro ds005040 snapshot 1.2.0 (dataset_description.json, README, CHANGES, sidecars and snapshot size)
+    url: https://openneuro.org/datasets/ds005040/versions/1.2.0
+    kind: website
+  cohen2023:
+    title: >-
+      Cohen et al. 2023, Intersubject correlations in reward and mentalizing brain circuits separately predict
+      persuasiveness of two types of ISIS video propaganda, PsyArXiv preprint
+    url: https://doi.org/10.31234/osf.io/2hvfe
+    kind: paper
+  ds005040-file-tree:
+    title: File listing of the ds005040 BIDS repository (CC0), counted per T1w and bold NIfTI file and subject folder
+    url: https://github.com/OpenNeuroDatasets/ds005040
+    kind: computed
+related: []
+keywords: [moral conviction, political attitudes, protest, propaganda, persuasion, intersubject correlation, task fMRI, fMRIPrep]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
