@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,50,ds004553-file-tree,sub-* folders,sub-003 to sub-052; the paper analyses 49 participants
+scans,,249,ds004553-file-tree,"sub-*/anat, sub-*/func NIfTI files",50 T1w and 199 BOLD volumes; B0 field maps (fieldmap and magnitude images) not counted
+subjects,modality=MR,50,ds004553-file-tree,sub-* folders,
+subjects,contrast=T1w,50,ds004553-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,50,ds004553-file-tree,func/*_bold.nii.gz,"49 subjects have four BOLD runs (two social, two non-social), one has three"
+subjects,contrast_set=bold+T1w,50,ds004553-file-tree,anat/func NIfTI files,
+scans,contrast=T1w,50,ds004553-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,199,ds004553-file-tree,func/*_bold.nii.gz,100 task-social and 99 task-nonsoc runs
+subjects,sex=female,35,rojekgiffin2023,Materials and Methods,of the 49 participants in the fMRI experiment (Experiment 5)
+subjects,vendor=philips,49,rojekgiffin2023,"Materials and Methods, Neuroimaging",3-T Philips Achieva at Leiden University Medical Center
+subjects,field_strength=3,49,rojekgiffin2023,"Materials and Methods, Neuroimaging",
+subjects,country=NL,49,rojekgiffin2023,"Materials and Methods, Neuroimaging",Leiden University Medical Center
