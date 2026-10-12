@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: frontostriatal-reward-learning-fmri
+name: Frontostriatal Reward Learning fMRI (IPCAS)
+full_name: >-
+  Imaging data for Non-invasive modulation of the frontostriatal dynamic loop enhances reward learning and alleviates
+  depressive symptoms
+summary: >-
+  Task fMRI of healthy participants performing a probabilistic instrumental learning task with reward, punishment
+  and neutral outcomes (80 scanned), deposited with EEG and brain stimulation study data from the Institute of
+  Psychology, Chinese Academy of Sciences, with restricted access through Science Data Bank.
+homepage: https://www.scidb.cn/en/detail?dataSetId=ab2598dc71db4cfebfc9e23f352903b3
+doi: 10.57760/sciencedb.psych.01071
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Wang Feixue, Institute of Psychology, Chinese Academy of Sciences
+  - name: Jiang Mingyan, Institute of Psychology, Chinese Academy of Sciences
+  - name: Tu Yiheng, Institute of Psychology, Chinese Academy of Sciences
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+# DataCite metadata of the ScienceDB record: 1509777537 bytes in 395 files.
+size_gb: 1.51
+access:
+  type: application
+  url: https://www.scidb.cn/en/detail?dataSetId=ab2598dc71db4cfebfc9e23f352903b3
+  note: >-
+    Restricted access on Science Data Bank. Requesters give their name, institutional affiliation and a short
+    statement of intended use through the record's Request Access form, and the data depositor alone decides whether
+    to grant access.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The record states no license (empty rights in its DataCite metadata, an empty license in its Croissant metadata
+      and no copyright entry on the record). The only condition shown is that requests include the applicant's name,
+      affiliation and intended use; no terms of use are published.
+citation:
+  text: >-
+    Wang Feixue, Jiang Mingyan, Tu Yiheng. Imaging data for Non-invasive modulation of the frontostriatal dynamic loop
+    enhances reward learning and alleviates depressive symptoms. V1. Science Data Bank, 2026.
+    doi:10.57760/sciencedb.psych.01071
+sources:
+  scidb-psych-01071:
+    title: Science Data Bank record 10.57760/sciencedb.psych.01071, its record API and DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.psych.01071
+    kind: website
+related: []
+keywords: [reward learning, reward prediction error, instrumental learning, frontostriatal circuit, non-invasive brain stimulation, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
