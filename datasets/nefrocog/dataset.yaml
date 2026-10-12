@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nefrocog
+name: NEFROCOG Pre-dialysis CKD Brain MRI
+full_name: >-
+  Cross-sectional assessment of mild cognitive impairment in pre-dialysis chronic kidney disease and its association
+  with inflammation and changes seen on MRI
+summary: >-
+  Brain MRI of adults with chronic kidney disease not yet on dialysis, collected to test whether mild cognitive
+  impairment relates to kidney function, inflammatory markers and visible brain changes. Images are not shared; only
+  the article figures and tables are public.
+homepage: https://doi.org/10.1590/2175-8239-jbn-2021-0194
+doi: 10.1590/2175-8239-jbn-2021-0194
+# Year of the article. The MRI images have no public release.
+year: 2022
+creators:
+  - name: Leopoldo Antônio Pires, Federal University of Juiz de Fora
+  - name: Natália Maria da Silva Fernandes, Federal University of Juiz de Fora
+modalities: [MR]
+anatomy: [brain]
+conditions: [ckd, mci]
+countries: [BR]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/2175-8239-jbn-2021-0194
+  note: >-
+    The article has no data availability statement. The SciELO figshare record holds only the article's figures and
+    tables under CC BY 4.0, no images or per-subject data.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the MRI images. The CC BY 4.0 license of the figshare record
+      covers only the article figures and tables.
+citation:
+  text: >-
+    Pires LA, Almeida ALM, Paraízo MA, Corrêa JOA, Dias DS, Fernandes NS, Ezequiel DGA, de Paula RB, Fernandes NMS.
+    Cross-sectional assessment of mild cognitive impairment in pre-dialysis chronic kidney disease and its association
+    with inflammation and changes seen on MRI: what the eyes cannot see. Brazilian Journal of Nephrology.
+    2022;44(3):336-348. https://doi.org/10.1590/2175-8239-jbn-2021-0194
+sources:
+  pires2022:
+    title: Pires et al. 2022, Brazilian Journal of Nephrology 44(3):336-348
+    url: https://doi.org/10.1590/2175-8239-jbn-2021-0194
+    kind: paper
+  scielo-figshare-19964394:
+    title: SciELO figshare record of the article's figures and tables (CC BY 4.0)
+    url: https://doi.org/10.6084/m9.figshare.19964394.v1
+    kind: website
+related: []
+keywords: [chronic kidney disease, mild cognitive impairment, MoCA, inflammation, Fazekas, medial temporal atrophy]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
