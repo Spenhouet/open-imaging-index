@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,391,nda-collection-1890,shared_subject_count,all subjects with shared data in the collection; includes mothers with pregnancy and adult assessments
+subjects,modality=MR,118,nda-collection-1890-structures,image03,unique subjects in the Image data structure
+subjects,condition=healthy,118,nda-collection-1890,description,the collection describes the images as from healthy 0 to 4 week old infants
+subjects,country=US,391,nda-collection-1890,description,single-site study at the University of California Irvine (rasmussen2019 Section 2.1)
+subjects,vendor=siemens,118,rasmussen2019,Section 2.5,Siemens Tim Trio for all newborn and 12-month scans
+subjects,field_strength=3,118,rasmussen2019,Section 2.5,
