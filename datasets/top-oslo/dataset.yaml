@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: top-oslo
+name: TOP bipolar faces-matching fMRI (Oslo)
+full_name: >-
+  NORMENT TOP study (TOP3 sample), 1.5 T faces-matching task fMRI of bipolar disorder and healthy controls, Oslo
+  University Hospital
+summary: >-
+  Task fMRI with an emotional faces-matching paradigm plus T1w structural scans of 85 people with bipolar disorder
+  and 121 healthy controls from the Oslo TOP study, analysed against diagnosis and polygenic risk. Raw images are
+  available only on request; group z maps are on NeuroVault.
+homepage: https://doi.org/10.1371/journal.pone.0134202
+doi: 10.1371/journal.pone.0134202
+# Year of the paper and of the NeuroVault group maps; the raw images have no public release.
+year: 2015
+creators:
+  - name: NORMENT, KG Jebsen Centre for Psychosis Research, University of Oslo and Oslo University Hospital (Ole A. Andreassen)
+    url: https://doi.org/10.1371/journal.pone.0134202
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [bipolar_disorder, healthy]
+tasks: [classification]
+countries: [NO]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://doi.org/10.1371/journal.pone.0134202
+  note: >-
+    The paper's data availability statement says that, because of ethics committee restrictions, the raw fMRI data
+    are available only on request to the study data manager at the University of Oslo. NeuroVault collection 648 holds
+    16 derived whole-sample group z maps (diagnosis and polygenic risk contrasts), under CC0 like all public NeuroVault
+    data.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the MRI images. The CC0 dedication of NeuroVault covers only the
+      derived group maps.
+citation:
+  text: >-
+    Tesli M, Kauppi K, Bettella F, Brandt CL, Kaufmann T, Espeseth T, Mattingsdal M, Agartz I, Melle I, Djurovic S,
+    Westlye LT, Andreassen OA. Altered brain activation during emotional face processing in relation to both
+    diagnosis and polygenic risk of bipolar disorder. PLOS ONE 10(7), e0134202 (2015).
+    doi:10.1371/journal.pone.0134202
+sources:
+  tesli2015:
+    title: Tesli et al. 2015, PLOS ONE, emotional face processing, diagnosis and polygenic risk of bipolar disorder
+    url: https://doi.org/10.1371/journal.pone.0134202
+    kind: paper
+  neurovault-648:
+    title: NeuroVault collection 648 page and API, including image metadata
+    url: https://neurovault.org/api/collections/648/
+    kind: website
+  neurovault-faq:
+    title: NeuroVault FAQ (data license)
+    url: https://neurovault.org/FAQ
+    kind: website
+related: []
+keywords: [bipolar disorder, emotional faces matching, task fMRI, polygenic risk score, amygdala, precuneus, imaging genetics, NORMENT]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

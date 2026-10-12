@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,206,tesli2015,Sample characteristics and Table 1,participants included in the fMRI analysis
+subjects,condition=bipolar_disorder,85,tesli2015,Sample characteristics and Table 1,"43 bipolar I, 36 bipolar II and 6 bipolar disorder not otherwise specified"
+subjects,condition=healthy,121,tesli2015,Sample characteristics and Table 1,
+subjects,sex=female,105,tesli2015,Table 1,"sum of 52 patient and 53 control women; the two groups are disjoint and complete"
+subjects,sex=male,101,tesli2015,Table 1,"sum of 33 patient and 68 control men, each derived from the group size minus the women; the two groups are disjoint and complete"
+subjects,condition=bipolar_disorder;sex=female,52,tesli2015,Table 1,
+subjects,condition=bipolar_disorder;sex=male,33,tesli2015,Table 1,85 patients minus 52 women
+subjects,condition=healthy;sex=female,53,tesli2015,Table 1,
+subjects,condition=healthy;sex=male,68,tesli2015,Table 1,121 controls minus 53 women
+subjects,contrast=bold,206,tesli2015,Image acquisition,"faces-matching EPI, two runs of 164 volumes, TR 2040 ms, 24 axial slices"
+subjects,contrast=T1w,206,tesli2015,Image acquisition,"sagittal MPRAGE acquired twice and averaged, used for co-registration"
+subjects,contrast_set=bold+T1w,206,tesli2015,Image acquisition,contrasts used in this paper only
+subjects,field_strength=1.5,206,tesli2015,Image acquisition,
+subjects,vendor=siemens,206,tesli2015,Image acquisition,Siemens Magnetom Sonata
+subjects,country=NO,206,tesli2015,Image acquisition,Oslo University Hospital
+age_mean,condition=bipolar_disorder,34.8,tesli2015,Table 1,age at fMRI scanning
+age_sd,condition=bipolar_disorder,11.2,tesli2015,Table 1,
+age_mean,condition=healthy,35.0,tesli2015,Table 1,age at fMRI scanning
+age_sd,condition=healthy,8.8,tesli2015,Table 1,
+age_min,,18,tesli2015,Table 1 footnote a,
+age_max,,63,tesli2015,Table 1 footnote a,
