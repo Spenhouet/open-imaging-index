@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: agam2014-error-processing
+name: MGH antisaccade error processing (fMRI and MEG/EEG)
+full_name: 'Dissociable Genetic Contributions to Error Processing: A Multimodal Neuroimaging Study'
+summary: >-
+  Brain MRI with antisaccade task fMRI of healthy adults and people with schizophrenia, OCD or autism, who also did the
+  same task during simultaneous MEG and EEG, collected to test how DRD4 and MTHFR variants relate to two error markers.
+  On request only.
+homepage: https://doi.org/10.1371/journal.pone.0101784
+doi: 10.1371/journal.pone.0101784
+# Year of the study paper; the images have no public release.
+year: 2014
+creators:
+  - name: Department of Psychiatry, Massachusetts General Hospital, Harvard Medical School (Manoach DS)
+  - name: Athinoula A. Martinos Center for Biomedical Imaging
+modalities: [MR]
+contrasts: [T1w, MEGRE, bold]
+anatomy: [brain]
+conditions: [healthy, schizophrenia, ocd, autism]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1371/journal.pone.0101784
+  note: >-
+    The data availability statement says the data are available on request from the corresponding author (Dara S.
+    Manoach) for researchers who meet the criteria of the Partners Human Research Committee for access to confidential
+    data. The linked figshare item holds only the supplementary figure and table.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The paper names the Partners Human Research Committee criteria as the condition for access but publishes no
+      license or data use terms. The CC BY 4.0 license of the article and figshare item covers the text and
+      supplementary files, not the participant data.
+citation:
+  text: >-
+    Agam Y, Vangel M, Roffman JL, Gallagher PJ, Chaponis J, Haddad S, Goff DC, Greenberg JL, Wilhelm S, Smoller JW,
+    Manoach DS. Dissociable Genetic Contributions to Error Processing: A Multimodal Neuroimaging Study. PLoS ONE 9(7):
+    e101784 (2014). doi:10.1371/journal.pone.0101784
+sources:
+  agam2014:
+    title: Agam et al. 2014, PLoS ONE 9(7) e101784
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0101784
+    kind: paper
+  agam2014-figshare:
+    title: Agam et al. 2014, supplementary files on figshare (Figure S1, Table S1)
+    url: https://plos.figshare.com/articles/dataset/_Dissociable_Genetic_Contributions_to_Error_Processing_A_Multimodal_Neuroimaging_Study_/1099577
+    kind: website
+related: []
+keywords: [error processing, error-related negativity, antisaccade, anterior cingulate, imaging genetics, DRD4, MTHFR, MEG, EEG, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
