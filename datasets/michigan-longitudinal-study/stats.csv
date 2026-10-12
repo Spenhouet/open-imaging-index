@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,81,ds005027-participants,participant_id,81 subjects in 175 rows; matches the final MLS sample of 81 (demidenko2024 Section 3.2)
+studies,,175,ds005027-file-tree,sub-*/ses-*/,68 subjects with sessions 1 and 2 and 13 with sessions 1 to 3
+subjects,sex=female,31,ds005027-participants,Sex (1 = female),same as demidenko2024 Supplementary Table S4
+subjects,sex=male,50,ds005027-participants,Sex (2 = male),same as demidenko2024 Supplementary Table S4
+subjects,age=10-19,43,ds005027-participants,ScanAge,age at session 1
+subjects,age=20-29,38,ds005027-participants,ScanAge,age at session 1
+subjects,sex=female;age=10-19,18,ds005027-participants,Sex and ScanAge,age at session 1
+subjects,sex=female;age=20-29,13,ds005027-participants,Sex and ScanAge,age at session 1
+subjects,sex=male;age=10-19,25,ds005027-participants,Sex and ScanAge,age at session 1
+subjects,sex=male;age=20-29,25,ds005027-participants,Sex and ScanAge,age at session 1
+age_min,,18.0,ds005027-participants,ScanAge,age at session 1
+age_max,,24.7,ds005027-participants,ScanAge,age at session 1
+age_mean,,19.93,ds005027-participants,ScanAge,age at session 1; demidenko2024 Supplementary Table S4 gives 20.7 (SD 2.3) for its first analysed session
+age_sd,,1.34,ds005027-participants,ScanAge,age at session 1
+age_median,,19.9,ds005027-participants,ScanAge,age at session 1
+scans,,674,ds005027-file-tree,sub-*/*.nii.gz,"175 T1w, 175 inplaneT1 and 324 bold"
+scans,contrast=T1w,350,ds005027-file-tree,anat/*_T1w.nii.gz and anat/*_inplaneT1.nii.gz,175 3D SPGR and 175 2D inplane T1 scans; one of each per session
+scans,contrast=bold,324,ds005027-file-tree,func/*_bold.nii.gz,two MID runs in each of 162 sessions; the 13 third sessions have no BOLD runs
+subjects,contrast=T1w,81,ds005027-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,81,ds005027-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,81,ds005027-file-tree,sub-*/,
+subjects,vendor=ge,81,demidenko2024,Supplementary Table S3,GE Signa
+subjects,country=US,81,openneuro-ds005027-v1-0-3,README: Provenance,collected at the University of Michigan
