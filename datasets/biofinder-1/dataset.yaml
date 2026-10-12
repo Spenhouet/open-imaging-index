@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: biofinder-1
+name: BioFINDER-1
+full_name: >-
+  The Swedish BioFINDER Study (Biomarkers For Identifying Neurodegenerative Disorders Early and Reliably), BioFINDER-1
+summary: >-
+  Brain MRI, amyloid and tau PET with CSF, blood and cognitive tests from older adults who are cognitively healthy or
+  have memory complaints, dementia or parkinsonism, followed for up to 10 years to find early markers of Alzheimer's and
+  Parkinson's disease. Data on request.
+homepage: https://biofinder.se/one/
+# The images have not been publicly released. Recruitment of the parkinsonian cohort started in 2008 (population and
+# study design page); the other cohorts were recruited from 2010.
+year: 2008
+creators:
+  - name: Clinical Memory Research Unit, Lund University, and Skåne University Hospital
+    url: https://biofinder.se/the_biofinder_study_group/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, T2w, FLAIR, T2starw, swi, dwi, bold, asl, MRS]
+tracers: [flutemetamol, flortaucipir]
+anatomy: [brain]
+conditions:
+  [
+    healthy,
+    scd,
+    mci,
+    dementia,
+    alzheimers,
+    vascular_dementia,
+    lewy_body_dementia,
+    frontotemporal_dementia,
+    parkinsons,
+    progressive_supranuclear_palsy,
+    multiple_system_atrophy
+  ]
+tasks: [classification, longitudinal, regression]
+countries: [SE]
+vendors: [siemens, philips]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1093/brain/awaa327
+  note: >-
+    No data access page is published. Papers from the study state that anonymized data are shared on request with
+    qualified academic investigators to replicate the published results, under a material transfer agreement.
+licenses:
+  - license: LicenseRef-BioFINDER-Data-Sharing
+citation:
+  text: >-
+    No dataset citation is requested. Cite the BioFINDER papers whose results you use, e.g. Vogel JW, et al.
+    Data-driven approaches for tau-PET imaging biomarkers in Alzheimer's disease. Human Brain Mapping 40, 638-651
+    (2019). doi:10.1002/hbm.24401
+sources:
+  biofinder-one:
+    title: BioFINDER website, BioFINDER One overview
+    url: https://biofinder.se/one/
+    kind: website
+  biofinder-one-population:
+    title: BioFINDER website, BioFINDER One population and study design
+    url: https://biofinder.se/one/population-study-design/
+    kind: website
+  biofinder-one-methods:
+    title: BioFINDER website, BioFINDER One methods
+    url: https://biofinder.se/one/methods/
+    kind: website
+  nct01208675:
+    title: ClinicalTrials.gov record NCT01208675, The Swedish BioFINDER Study
+    url: https://clinicaltrials.gov/study/NCT01208675
+    kind: website
+  vogel2019:
+    title: Vogel JW et al. 2019, Data-driven approaches for tau-PET imaging biomarkers in Alzheimer's disease, Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.24401
+    kind: paper
+  smith2020:
+    title: Smith R et al. 2020, The accumulation rate of tau aggregates is higher in females and younger amyloid-positive subjects, Brain
+    url: https://doi.org/10.1093/brain/awaa327
+    kind: paper
+related: []
+keywords: [tau PET, amyloid PET, Alzheimer's disease, Parkinson's disease, memory clinic, longitudinal, CSF biomarkers, Sweden]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

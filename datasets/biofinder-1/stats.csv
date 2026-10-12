@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,condition=dementia,300,biofinder-one-population,Dementia cohort,"cohort size stated on the page, plus 50 patients with familial Alzheimer's disease"
+subjects,tracer=flortaucipir,123,vogel2019,Table 1,"analysed subset with complete MRI and [18F]AV1451 PET, not the full tau PET cohort"
+subjects,tracer=flortaucipir;condition=healthy,55,vogel2019,Table 1,cognitively normal controls in the analysed tau PET subset (43.6% amyloid positive)
+subjects,tracer=flortaucipir;condition=mci,21,vogel2019,Table 1,amyloid-positive MCI in the analysed tau PET subset
+subjects,tracer=flortaucipir;condition=alzheimers,47,vogel2019,Table 1,amyloid-positive Alzheimer's dementia in the analysed tau PET subset
