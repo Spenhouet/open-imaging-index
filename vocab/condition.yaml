@@ -609,3 +609,9 @@ terms:
   - { id: cerebrovascular_disorder, label: Cerebrovascular disease, synonyms: [cerebrovascular disorder], mappings: { mondo: 'MONDO:0011057' } }
   - { id: pituitary_tumor, label: Pituitary tumor, mappings: { mondo: 'MONDO:0017611' } }
   - { id: tinnitus, label: Tinnitus, description: Perception of sound without an external source, mappings: { hp: 'HP:0000360' } }
+  - {
+      id: hepatic_encephalopathy,
+      label: Hepatic encephalopathy,
+      synonyms: [HE, portosystemic encephalopathy],
+      mappings: { mondo: 'MONDO:0001711', hp: 'HP:0002480' }
+    }
