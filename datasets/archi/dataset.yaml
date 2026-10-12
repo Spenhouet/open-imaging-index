@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: archi
+name: CONNECT/ARCHI
+full_name: ARCHI database of the European CONNECT project
+summary: >-
+  Multimodal brain MRI of healthy young adults (diffusion, anatomical, relaxometry and resting-state fMRI), acquired to
+  build probabilistic atlases of human white matter and cortical connectivity. Images are not released; derived
+  connectivity data are on EBRAINS.
+homepage: https://search.kg.ebrains.eu/instances/32d1fe08-0fc9-40f2-89fc-869d29e4e803
+# The images have no public release; year of the first abstracts that describe the database.
+year: 2013
+status: active
+creators:
+  - name: CEA NeuroSpin (Cyril Poupon, Jean-François Mangin and colleagues), Gif-sur-Yvette
+    url: https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin.aspx
+modalities: [MR]
+contrasts: [T1w, dwi, bold, T1map, T2map]
+anatomy: [brain]
+conditions: [healthy]
+countries: [FR]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://search.kg.ebrains.eu/instances/32d1fe08-0fc9-40f2-89fc-869d29e4e803
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No release of the MRI volumes and no terms for them were found. Derived data (surface-projected resting-state
+      time series, cortical meshes and connectivity matrices in the Desikan, Constellation and AAL atlases) are on
+      EBRAINS as controlled access: access is requested with an EBRAINS account and use is bound by the EBRAINS Data
+      Use Agreement (version 1.0) and citation of the dataset DOI.
+citation:
+  text: >-
+    Schmitt B, Duclap D, Lebois A, Guevara P, Zhang H, Assaf Y, Poupon F, Rivière D, Cointepas Y, Le Bihan D, Mangin
+    JF, Poupon C. A novel probabilistic connectivity atlas for the human connectome: the CONNECT/ARCHI atlas. Proc.
+    ISMRM 21, 3155 (2013).
+sources:
+  schmitt2013:
+    title: Schmitt et al. 2013, Proc. ISMRM 21, abstract 3155
+    url: https://cds.ismrm.org/protected/13MProceedings/PDFfiles/3155.PDF
+    kind: paper
+  duclap2013:
+    title: Duclap et al. 2013, Proc. ISMRM 21, abstract 3153
+    url: https://cds.ismrm.org/protected/13MProceedings/PDFfiles/3153.PDF
+    kind: paper
+  lebois2013:
+    title: Lebois et al. 2013, Proc. ISMRM 21, abstract 3154
+    url: https://cds.ismrm.org/protected/13MProceedings/PDFfiles/3154.PDF
+    kind: paper
+  ebrains-archi-rsfmri:
+    title: EBRAINS, Surface-based resting-state functional time series of the CONNECT/ARCHI database (v1)
+    url: https://search.kg.ebrains.eu/instances/32d1fe08-0fc9-40f2-89fc-869d29e4e803
+    kind: website
+  ebrains-archi-desikan:
+    title: EBRAINS, Structural and functional connectivity data of the ARCHI database in the Desikan atlas (v1)
+    url: https://search.kg.ebrains.eu/instances/04becffb-6da6-4646-911b-37a2a3347412
+    kind: website
+  ebrains-archi-constellation:
+    title: EBRAINS, Structural and functional connectivity data of the ARCHI database in the Constellation atlas (v1)
+    url: https://search.kg.ebrains.eu/instances/30f5eb5f-f9da-488c-bd1e-f429aab3a927
+    kind: website
+  ebrains-archi-aal:
+    title: EBRAINS, Structural and functional connectivity data of the ARCHI database in the AAL atlas (v1)
+    url: https://search.kg.ebrains.eu/instances/84c2a504-2d79-4f99-a07d-b5d9cca0473f
+    kind: website
+related: []
+keywords: [connectome, structural connectivity, functional connectivity, HARDI, tractography, white matter bundle atlas, relaxometry, resting-state fMRI, cortical parcellation]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

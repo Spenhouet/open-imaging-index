@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,79,schmitt2013,Materials and methods,healthy subjects scanned in two sessions of 1 h 30 each
+subjects,condition=healthy,79,schmitt2013,Materials and methods,
+subjects,contrast=T1w,79,schmitt2013,Materials and methods,1 mm T1-weighted in each session plus one 0.75 mm T1-weighted scan
+subjects,contrast=dwi,79,schmitt2013,Materials and methods,HARDI along 60 directions at b=1500 and 3000 s/mm² and a multi-shell scheme of 20 directions on 10 shells up to 3000 s/mm²
+subjects,contrast=T1map,79,lebois2013,Methods,T1 relaxometry (SE-EPI with 10 inversion times) acquired for all subjects
+subjects,contrast=T2map,79,lebois2013,Methods,T2 relaxometry (GE-EPI with 10 echo times) acquired for all subjects
+subjects,vendor=siemens,79,duclap2013,Material and methods,Siemens Tim Trio with a 12-channel head coil
+subjects,field_strength=3,79,duclap2013,Material and methods,
+age_min,,18,schmitt2013,Materials and methods,
+age_max,,40,schmitt2013,Materials and methods,
+subjects,contrast=bold,78,ebrains-archi-desikan,Description,resting-state functional data released for the 78 subjects of the ARCHI database on EBRAINS
