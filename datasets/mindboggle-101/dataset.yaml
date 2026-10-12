@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mindboggle-101
+name: Mindboggle-101
+full_name: Mindboggle-101 manually labeled individual brains
+summary: >-
+  Brain MRI of healthy adults with manually edited cortical labels, made as atlases and as training and
+  test data for automated brain registration, segmentation and labeling. Labels follow the Desikan-Killiany-Tourville
+  (DKT) protocol on surfaces and volumes.
+homepage: https://mindboggle.info/data.html
+doi: 10.7910/DVN/HMQKCK
+year: 2012
+updated: 2019
+version: '3'
+status: active
+creators:
+  - name: Arno Klein and Jason Tourville, Mindboggle project
+    url: https://mindboggle.info
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation, registration, normative]
+formats: [NIfTI]
+size_gb: 8.0
+access:
+  type: open
+  url: https://osf.io/nhtur/
+licenses:
+  - license: CC-BY-4.0
+    applies_to: All labeled data (T1-weighted volumes, cortical label volumes and surfaces, FreeSurfer files) of every
+      subject group, in native and MNI152 space.
+    url: https://mindboggle.info/data.html
+  - license: CC-BY-NC-ND-3.0
+    applies_to: The manually labeled subcortical portions of the whole-brain OASIS-TRT-20 volume labels
+      (WholeBrain_VolumeLabels_OASIS-TRT-20 archives).
+    url: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/HMQKCK
+citation:
+  text: >-
+    Klein A, Tourville J. 101 labeled brain images and a consistent human cortical labeling protocol. Frontiers in
+    Neuroscience 6:171 (2012). https://doi.org/10.3389/fnins.2012.00171
+sources:
+  klein2012:
+    title: Klein and Tourville 2012, Frontiers in Neuroscience
+    url: https://doi.org/10.3389/fnins.2012.00171
+    kind: paper
+  mindboggle101-dataverse:
+    title: Mindboggle-101 on Harvard Dataverse (version 3)
+    url: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/HMQKCK
+    kind: data
+related: [oasis-1, nki-rockland-sample]
+keywords: [cortical parcellation, brain atlas, DKT protocol, FreeSurfer, manual labels]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
