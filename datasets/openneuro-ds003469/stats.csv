@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,81,ds003469-participants,participant_id,81 rows and 81 subject folders; the README also states 81 healthy participants
+subjects,sex=female,50,ds003469-participants,sex,matches the README (50 females)
+subjects,sex=male,31,ds003469-participants,sex,matches the README (31 males)
+subjects,age=18-19,15,ds003469-participants,age,
+subjects,age=20-29,53,ds003469-participants,age,
+subjects,age=30-39,13,ds003469-participants,age,
+subjects,contrast=T1w,81,ds003469-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,81,ds003469-file-tree,sub-*/func/*_task-rest_bold.nii.gz,
+subjects,contrast_set=bold+T1w,81,ds003469-file-tree,anat and func folders,each subject also has two reverse phase-encoding EPI fieldmaps (fmap/*_epi)
+subjects,vendor=philips,81,openneuro-ds003469-v100,T1w.json (top-level sidecar for all subjects),Philips Ingenia
+subjects,field_strength=3,81,openneuro-ds003469-v100,T1w.json (top-level sidecar for all subjects),MagneticFieldStrength 3
+scans,,324,ds003469-file-tree,sub-*/*/*.nii.gz,"81 T1w, 81 bold and 162 fieldmap (fmap/*_epi) files"
+scans,contrast=T1w,81,ds003469-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,81,ds003469-file-tree,*_bold.nii.gz,one resting-state run per subject
+age_mean,,24.1,ds003469-participants,age,the README states a mean age of 24
+age_median,,22,ds003469-participants,age,
+age_min,,18,ds003469-participants,age,
+age_max,,39,ds003469-participants,age,

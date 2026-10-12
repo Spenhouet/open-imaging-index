@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003469
+name: Speech disfluencies resting-state fMRI (ds003469)
+full_name: 'Speech disfluencies: Neurophysiological aspect in normal population'
+summary: >-
+  Resting-state fMRI and structural brain MRI of healthy young adults, collected as the baseline part of a project on
+  the brain circuits behind understanding speech disfluencies, the signals that steer the flow of conversation. 81 participants in BIDS
+  under CC0.
+homepage: https://openneuro.org/datasets/ds003469
+doi: 10.18112/openneuro.ds003469.v1.0.0
+year: 2021
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Pechenkova EV, Panikratova YR, Fomina MA, Rumshiskaya AD, Bazhenova DA, Makovskaya LA, Lebedeva IS, Sinitsyn VE
+    url: https://openneuro.org/datasets/ds003469
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 5.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003469
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Pechenkova EV, Panikratova YR, Fomina MA, Rumshiskaya AD, Bazhenova DA, Makovskaya LA, Lebedeva IS, Sinitsyn VE.
+    Speech disfluencies: Neurophysiological aspect in normal population. OpenNeuro ds003469, version 1.0.0 (2021).
+    doi:10.18112/openneuro.ds003469.v1.0.0
+sources:
+  openneuro-ds003469-v100:
+    title: OpenNeuro ds003469 snapshot 1.0.0 (dataset_description.json, README, CHANGES and sidecar JSON files)
+    url: https://openneuro.org/datasets/ds003469/versions/1.0.0
+    kind: website
+  ds003469-participants:
+    title: participants.tsv of ds003469 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003469/blob/1.0.0/participants.tsv
+    kind: computed
+  ds003469-file-tree:
+    title: File tree of ds003469 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003469/tree/1.0.0
+    kind: computed
+related: []
+keywords: [speech disfluencies, resting state, healthy adults, language, eyes closed]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
