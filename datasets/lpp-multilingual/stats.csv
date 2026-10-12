@@ -1,0 +1,40 @@
+measure,by,value,source,where,note
+subjects,,112,li2022,Methods: Participants,"49 English, 35 Chinese and 28 French speakers; participants.tsv and the OpenNeuro snapshot summary also list 112 subjects"
+subjects,condition=healthy,112,li2022,Methods: Participants,no history of psychiatric or neurological illness
+subjects,country=US,49,li2022,Table 2,"English speakers, Cornell University"
+subjects,country=CN,35,li2022,Table 2,"Chinese speakers, Jiangsu Normal University"
+subjects,country=FR,28,li2022,Table 2,"French speakers, NeuroSpin"
+subjects,sex=female,60,li2022,Table 2,"sum of 30 English, 15 Chinese and 15 French females, which are disjoint groups; participants.tsv also gives 60 F"
+subjects,sex=male,52,ds003643-participants,sex column,sex M
+subjects,country=US;sex=female,30,li2022,Table 2,
+subjects,country=US;sex=male,19,ds003643-participants,participant_id prefix EN and sex column,
+subjects,country=CN;sex=female,15,li2022,Table 2,
+subjects,country=CN;sex=male,20,ds003643-participants,participant_id prefix CN and sex column,
+subjects,country=FR;sex=female,15,li2022,Table 2,
+subjects,country=FR;sex=male,13,ds003643-participants,participant_id prefix FR and sex column,
+subjects,age=10-19,32,ds003643-participants,age column,all aged 18 or 19
+subjects,age=20-29,74,ds003643-participants,age column,
+subjects,age=30-39,5,ds003643-participants,age column,
+subjects,age=40-49,1,ds003643-participants,age column,
+subjects,sex=female;age=10-19,19,ds003643-participants,age and sex columns,
+subjects,sex=female;age=20-29,38,ds003643-participants,age and sex columns,
+subjects,sex=male;age=10-19,13,ds003643-participants,age and sex columns,
+subjects,sex=male;age=20-29,36,ds003643-participants,age and sex columns,
+subjects,country=US;age=10-19,15,ds003643-participants,participant_id prefix and age column,
+subjects,country=US;age=20-29,32,ds003643-participants,participant_id prefix and age column,
+subjects,country=CN;age=10-19,15,ds003643-participants,participant_id prefix and age column,
+subjects,country=CN;age=20-29,20,ds003643-participants,participant_id prefix and age column,
+subjects,country=FR;age=20-29,22,ds003643-participants,participant_id prefix and age column,
+subjects,contrast=T1w,112,ds003643-files,sub-*/anat/*_T1w.nii.gz,MPRAGE
+subjects,contrast=bold,112,ds003643-files,sub-*/func/*_bold.nii.gz,multi-echo BOLD with three echoes per run
+subjects,contrast_set=bold+T1w,112,ds003643-files,sub-*/anat and sub-*/func,
+subjects,field_strength=3,112,li2022,Table 3,
+subjects,vendor=ge,84,li2022,Table 3,"GE Discovery MR750 for the English and Chinese groups (49 + 35, disjoint)"
+subjects,vendor=siemens,28,li2022,Table 3,Siemens Magnetom Prisma Fit for the French group
+scans,,1123,ds003643-files,sub-*/anat and sub-*/func NIfTI files,"sum of 1011 BOLD runs and 112 T1w images, which are disjoint"
+scans,contrast=bold,1011,ds003643-files,sub-*/func/*_echo-1_bold.nii.gz,"one scan per run; each run is stored as three echo files (3033 NIfTI files); 9 runs per subject, plus one extra run for sub-CN032 and two for sub-EN059"
+scans,contrast=T1w,112,ds003643-files,sub-*/anat/*_T1w.nii.gz,
+age_mean,,21.6,ds003643-participants,age column,
+age_sd,,3.8,ds003643-participants,age column,sample standard deviation
+age_min,,18,ds003643-participants,age column,
+age_max,,40,ds003643-participants,age column,
