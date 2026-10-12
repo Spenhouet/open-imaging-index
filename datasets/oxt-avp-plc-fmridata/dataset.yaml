@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oxt-avp-plc-fmridata
+name: OXT_AVP_PLC_fmridata
+full_name: Oxytocin, vasopressin and placebo effects on social pain empathy (naturalistic fMRI)
+summary: >-
+  Task fMRI of healthy young adults given intranasal oxytocin, vasopressin or placebo while rating empathy for social
+  pain in video clips, collected to compare how the two hormones change empathy and its brain basis. Raw images are not
+  shared; per-subject contrast maps are public.
+homepage: https://figshare.com/articles/dataset/OXT_AVP_PLC_fmridata/27860538
+doi: 10.6084/m9.figshare.27860538.v1
+year: 2024
+version: '1'
+creators:
+  - name: Zhang Xiaodong, University of Electronic Science and Technology of China
+  - name: Zhao W lab (zhaolab205), University of Electronic Science and Technology of China
+    url: https://github.com/zhaolab205/OXT_AVP_effect
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [MAT]
+countries: [CN]
+# figshare API: one file, OTAVPPLC_end_dataset.mat, 686398654 bytes.
+size_gb: 0.69
+access:
+  type: not_shared
+  url: https://doi.org/10.6084/m9.figshare.27860538.v1
+  note: >-
+    The figshare record holds only derived data: one MATLAB file with a CANlab fmri_data object of 816 grey-matter
+    masked first-level contrast images from 94 participants, openly downloadable under CC BY 4.0. The paper's data
+    availability statement points only to this record, and no route to the raw structural, task or resting-state
+    images is given.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the raw images. The CC BY 4.0 license of the figshare record covers
+      only the derived contrast maps.
+citation:
+  text: >-
+    Zhang X, Liu Q, Liu C, Wang Z, Fu K, Lan C, Xu T, Zhou X, Kendrick KM, Yao D, Becker B, Zhao W. Oxytocin and
+    vasopressin enhance social pain empathy via common and distinct of neural expressions, genetic pathways, and
+    networks. PNAS 122(39) (2025). doi:10.1073/pnas.2520651122
+sources:
+  zhang2025:
+    title: >-
+      Zhang et al. 2025, Oxytocin and vasopressin enhance social pain empathy via common and distinct of neural
+      expressions, genetic pathways, and networks, PNAS
+    url: https://doi.org/10.1073/pnas.2520651122
+    kind: paper
+  figshare-27860538:
+    title: figshare record OXT_AVP_PLC_fmridata (version 1) and its API metadata
+    url: https://api.figshare.com/v2/articles/27860538
+    kind: website
+  figshare-27860538-mat:
+    title: OTAVPPLC_end_dataset.mat (CC BY 4.0), image file names in the fmri_data object counted per subject and contrast
+    url: https://ndownloader.figshare.com/files/50645220
+    kind: computed
+related: []
+keywords: [oxytocin, vasopressin, intranasal, placebo, social pain, empathy, naturalistic fMRI, CANlab, SPM12]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
