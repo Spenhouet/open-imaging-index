@@ -219,6 +219,12 @@ terms:
       description: 'Avoidant, dependent or obsessive-compulsive personality disorder (DSM cluster C). No MONDO term exists for the cluster.',
     }
   - { id: irritability, label: Irritability, mappings: { hp: 'HP:0000737' } }
+  - {
+      id: disruptive_mood_dysregulation_disorder,
+      label: Disruptive mood dysregulation disorder,
+      synonyms: [DMDD],
+      description: 'DSM-5 childhood disorder of severe chronic irritability with temper outbursts. No MONDO term exists.',
+    }
   - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
   - { id: anorexia_nervosa, label: Anorexia nervosa, parent: eating_disorder, mappings: { mondo: 'MONDO:0005351' } }
   - {
