@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,53,ds001838-file-tree,sub-*/,53 subject folders; participants.tsv also lists sub-3 and sub-6 without imaging data
+subjects,condition=healthy,51,ds001838-participants,NeurologicalQuestionnaire_Eligibility,eligible on the neurological screening questionnaire; one not eligible and one with no questionnaire data
+subjects,sex=female,26,ds001838-participants,sex,
+subjects,sex=male,27,ds001838-participants,sex,
+subjects,age=10-19,6,ds001838-participants,age,ages 18 and 19
+subjects,age=20-29,39,ds001838-participants,age,
+subjects,age=30-39,7,ds001838-participants,age,
+subjects,sex=female;age=20-29,22,ds001838-participants,sex and age,Cells below 10 left out; one male subject has no age
+subjects,sex=male;age=20-29,17,ds001838-participants,sex and age,Cells below 10 left out; one male subject has no age
+age_min,,18,ds001838-participants,age,52 subjects with an age
+age_max,,35,ds001838-participants,age,52 subjects with an age
+age_mean,,24.3,ds001838-participants,age,52 subjects with an age
+age_sd,,4.23,ds001838-participants,age,52 subjects with an age
+age_median,,23,ds001838-participants,age,52 subjects with an age
+scans,,264,ds001838-file-tree,sub-*/**/*.nii.gz,53 T1w and 211 bold files
+scans,contrast=T1w,53,ds001838-file-tree,anat/*_T1w.nii.gz,one per subject
+scans,contrast=bold,211,ds001838-file-tree,func/*_bold.nii.gz,four adaptation runs per subject; sub-12 has three
+subjects,contrast=T1w,53,ds001838-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,53,ds001838-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,53,ds001838-file-tree,sub-*/,
+subjects,field_strength=3,53,openneuro-ds001838-v101,T1w.json and task-Adaptation_bold.json,MagneticFieldStrength 3; Siemens Prisma fit
+subjects,vendor=siemens,53,openneuro-ds001838-v101,T1w.json and task-Adaptation_bold.json,Manufacturer Siemens; ManufacturersModelName Prisma_fit
+subjects,country=CA,53,openneuro-ds001838-v101,task-Adaptation_bold.json,"InstitutionAddress London, Ontario (Robarts Research Institute)"
