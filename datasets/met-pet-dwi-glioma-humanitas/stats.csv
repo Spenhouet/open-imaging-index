@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,124,castello2020,Abstract (Methods),consecutive patients examined during preoperative work-up; the Zenodo record gives the same count
+subjects,condition=glioma,124,castello2020,Abstract (Results),47 high-grade and 77 low-grade gliomas on histopathology
+subjects,tracer=methionine,124,castello2020,Abstract (Objective and Methods),11C-methionine PET was compared with DWI-MRI in the 124 patients
+subjects,contrast=dwi,124,castello2020,Abstract (Objective and Methods),DWI-MRI was compared with 11C-methionine PET in the 124 patients
+subjects,country=IT,124,castello2020,Author information,authors are at Humanitas Clinical and Research Hospital IRCCS in Rozzano and the University of Milan

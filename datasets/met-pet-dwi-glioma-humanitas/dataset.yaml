@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: met-pet-dwi-glioma-humanitas
+name: 11C-methionine PET and DWI in operated gliomas (Humanitas)
+full_name: >-
+  Dataset related to article "The role of 11C-methionine PET in patients with negative diffusion-weighted magnetic
+  resonance imaging: correlation with histology and molecular biomarkers in operated gliomas"
+summary: >-
+  Preoperative amino acid PET and diffusion-weighted brain MRI of glioma patients from one Milan-area centre, used to
+  compare methionine uptake and diffusion for grading, molecular profiling and progression-free survival against
+  histopathology. 124 patients. Access restricted.
+homepage: https://zenodo.org/records/4536016
+doi: 10.5281/zenodo.4536016
+# Year the restricted Zenodo record was published; the article appeared in 2020.
+year: 2021
+creators:
+  - name: Humanitas Clinical and Research Hospital IRCCS
+    url: https://zenodo.org/records/4536016
+species: human
+modalities: [PT, MR]
+contrasts: [dwi]
+tracers: [methionine]
+anatomy: [brain]
+conditions: [glioma]
+tasks: [classification]
+countries: [IT]
+access:
+  type: on_request
+  url: https://zenodo.org/records/4536016
+  note: >-
+    The Zenodo record is restricted and lists no files. Access is requested through the record's form; its stated
+    condition is that the raw data are accessible on request because they include sensitive data. Whether the record
+    holds PET and MR images or only the visual and semiquantitative readings is not stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Zenodo record carries no license, and no data use terms are published. The article's full text, including
+      any data availability statement, could not be opened.
+citation:
+  text: >-
+    Castello A, Riva M, Fernandes B, Bello L, Lopci E. The role of 11C-methionine PET in patients with negative
+    diffusion-weighted magnetic resonance imaging: correlation with histology and molecular biomarkers in operated
+    gliomas. Nucl Med Commun 41(7), 696-705 (2020). doi:10.1097/MNM.0000000000001202
+sources:
+  castello2020:
+    title: Castello et al. 2020, Nuclear Medicine Communications 41(7), 696-705 (abstract)
+    url: https://doi.org/10.1097/MNM.0000000000001202
+    kind: paper
+  zenodo-4536016:
+    title: Zenodo record 4536016, dataset related to the article
+    url: https://zenodo.org/records/4536016
+    kind: website
+related: []
+keywords:
+  [
+    amino acid PET,
+    SUVmax,
+    metabolic tumor burden,
+    glioma grading,
+    IDH mutation,
+    1p/19q codeletion,
+    progression-free survival
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -23,3 +23,4 @@ terms:
   - { id: pk11195, label: '[11C]PK11195', synonyms: [PK11195, '(R)-[11C]PK11195'], description: TSPO tracer for microglial activation }
   - { id: pbr28, label: '[11C]PBR28', synonyms: [PBR28], description: TSPO tracer for glial and immune cell activation }
   - { id: o15_water, label: '[15O]H2O', synonyms: [15O-water, oxygen-15 water, 'H2[15O]'], description: Cerebral blood flow tracer }
+  - { id: methionine, label: '[11C]methionine', synonyms: [MET, 11C-MET, 11C-METH, 'L-[methyl-11C]methionine'], description: Amino acid tracer }
