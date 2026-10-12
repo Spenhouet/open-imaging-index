@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,160,dataverse-nick,Description,"Sum of 90 CKD participants and 70 matched controls, which are disjoint and complete"
+subjects,condition=ckd,90,dataverse-nick,Description,"CKD stages 2 to 5 (eGFR below 90), including dialysis and post-transplant"
+subjects,condition=healthy,70,dataverse-nick,Description,matched controls
+subjects,field_strength=3,160,dataverse-nick,Research Data series information,3T Siemens Verio
+subjects,vendor=siemens,160,dataverse-nick,Research Data series information,3T Siemens Verio
+subjects,country=US,160,hartung2015,Methods/design,"single site, Children's Hospital of Philadelphia"
+subjects,contrast=T1w,148,hartung2018,Abstract,"Analysed structural MRI sample (85 CKD, 63 controls); a lower bound for subjects with T1w"
+subjects,condition=ckd;contrast=T1w,85,hartung2018,Abstract,analysed structural MRI sample
+subjects,condition=healthy;contrast=T1w,63,hartung2018,Abstract,analysed structural MRI sample
+subjects,contrast=asl,130,liu2018,Abstract,"Recruited ASL sample (73 CKD, 57 controls); a lower bound for subjects with ASL"
+subjects,condition=ckd;contrast=asl,73,liu2018,Abstract,
+subjects,condition=healthy;contrast=asl,57,liu2018,Abstract,
+age_min,condition=ckd;contrast=asl,9,liu2018,Abstract,
+age_max,condition=ckd;contrast=asl,25,liu2018,Abstract,
+age_mean,condition=ckd;contrast=asl,15.80,liu2018,Abstract,
+age_sd,condition=ckd;contrast=asl,3.63,liu2018,Abstract,
+age_min,condition=healthy;contrast=asl,9,liu2018,Abstract,
+age_max,condition=healthy;contrast=asl,25,liu2018,Abstract,
+age_mean,condition=healthy;contrast=asl,15.65,liu2018,Abstract,
+age_sd,condition=healthy;contrast=asl,3.76,liu2018,Abstract,
