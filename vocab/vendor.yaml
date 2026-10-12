@@ -15,4 +15,5 @@ terms:
   - { id: 3dhistech, label: 3DHISTECH, synonyms: [3DHistech, 3D Histech] }
   - { id: bruker, label: Bruker }
   - { id: eigen, label: Eigen, description: Maker of the Artemis fusion biopsy system, synonyms: [Eigen] }
+  - { id: hyperfine, label: Hyperfine, description: Maker of the Swoop 64 mT portable MRI system, synonyms: [Hyperfine Research] }
   - { id: other, label: Other }

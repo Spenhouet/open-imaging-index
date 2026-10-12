@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ulf-brain-templates
+name: Ultra-Low-Field MRI Brain Templates
+full_name: Population-based Brain Templates for Ultra-Low-Field MRI
+summary: >-
+  Portable ultra-low-field brain MRI (T1- and T2-weighted, 64 mT) of healthy adults across the lifespan, averaged into
+  age-group templates for spatial normalization. Only the templates, their segmentations and regional
+  volumes are released; the scans of the 100 participants are not.
+homepage: https://zenodo.org/records/17242555
+doi: 10.5281/zenodo.17242555
+year: 2025
+creators:
+  - name: Monash Biomedical Imaging, Monash University
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [registration, normative]
+formats: [NIfTI]
+countries: [AU]
+vendors: [hyperfine]
+field_strengths: [0.064]
+size_gb: 0.07
+access:
+  type: not_shared
+  url: https://zenodo.org/records/17242555
+  note: >-
+    The Zenodo record holds derived files only: T1- and T2-weighted templates for the young, middle and older age
+    groups, SynthSeg segmentations of each template (33 regions and 18 merged bilateral regions) and a CSV of regional
+    template volumes, openly downloadable under CC BY 4.0. The paper describes these as the derived data and states
+    no route to the subject-level scans.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: Subject-level T1- and T2-weighted 64 mT MRI scans of the 100 participants.
+    note: >-
+      The paper's Data Records section states that "All derived data described in this study are publicly available
+      via Zenodo"; neither the paper nor the Zenodo record offers the individual scans or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Age-group templates, template segmentations and the regional volume CSV on Zenodo.
+citation:
+  text: >-
+    Islam KT, Zakavi P, Zhong S, et al. Population-based Brain Templates for Ultra-Low-Field MRI. Scientific Data 13,
+    1379 (2026). doi:10.1038/s41597-026-07622-4
+sources:
+  islam2026:
+    title: Islam et al. 2026, Scientific Data, data descriptor
+    url: https://doi.org/10.1038/s41597-026-07622-4
+    kind: paper
+  zenodo-17242555:
+    title: Zenodo record 17242555, Population-based Brain Templates for Ultra-Low-Field MRI
+    url: https://zenodo.org/records/17242555
+    kind: website
+  template-ulf-github:
+    title: Template-ULF code repository (MIT License)
+    url: https://github.com/BioMedAnalysis/Template-ULF
+    kind: website
+related: []
+keywords: [ultra-low-field MRI, portable MRI, point-of-care MRI, brain template, atlas, spatial normalization]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

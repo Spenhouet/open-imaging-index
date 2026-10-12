@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,100,islam2026,Methods: Participants and Dataset Composition,
+subjects,condition=healthy,100,islam2026,Methods: Participants and Dataset Composition,no known neurological or psychiatric disorder
+subjects,contrast=T1w,100,islam2026,Methods: Participants and Dataset Composition,
+subjects,contrast=T2w,100,islam2026,Methods: Participants and Dataset Composition,
+subjects,contrast_set=T1w+T2w,100,islam2026,Methods: Participants and Dataset Composition,
+subjects,field_strength=0.064,100,islam2026,Methods: MRI Acquisition,
+subjects,vendor=hyperfine,100,islam2026,Methods: MRI Acquisition,Hyperfine Swoop
+subjects,country=AU,100,islam2026,Methods: Participants and Dataset Composition,Monash University ethics approval and Monash Biomedical Imaging acquisition
+subjects,sex=male,44,islam2026,Table 1,sum of the three disjoint age groups (20 + 12 + 12)
+subjects,sex=female,56,islam2026,Table 1,sum of the three disjoint age groups (27 + 15 + 14)
+subjects,age=18-40,47,islam2026,Table 1,young group
+subjects,age=41-60,27,islam2026,Table 1,middle group
+subjects,age=61-81,26,islam2026,Table 1,older group
+subjects,sex=male;age=18-40,20,islam2026,Table 1,
+subjects,sex=female;age=18-40,27,islam2026,Table 1,
+subjects,sex=male;age=41-60,12,islam2026,Table 1,
+subjects,sex=female;age=41-60,15,islam2026,Table 1,
+subjects,sex=male;age=61-81,12,islam2026,Table 1,
+subjects,sex=female;age=61-81,14,islam2026,Table 1,
