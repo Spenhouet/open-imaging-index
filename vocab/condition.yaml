@@ -586,6 +586,12 @@ terms:
       synonyms: [aortic valve insufficiency, aortic insufficiency],
       mappings: { mondo: 'MONDO:0005648', hp: 'HP:0001659' }
     }
+  - {
+      id: aortic_stenosis,
+      label: Aortic valve stenosis,
+      synonyms: [aortic stenosis],
+      mappings: { mondo: 'MONDO:0042981', hp: 'HP:0001650' }
+    }
   - { id: osteoarthritis, label: Osteoarthritis, mappings: { mondo: 'MONDO:0005178' } }
   - {
       id: knee_osteoarthritis,

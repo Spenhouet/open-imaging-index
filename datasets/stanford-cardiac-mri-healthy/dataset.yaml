@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: stanford-cardiac-mri-healthy
+name: Stanford Cardiac Performance MRI
+full_name: Human MRI Data to Quantify Cardiac Performance
+summary: >-
+  Multiparametric cardiac MRI of healthy adults and a few patients with aortic valve stenosis, acquired as a baseline
+  of myocardial structure, motion and tissue properties, with cine, diffusion tensor, DENSE strain, grid tagging and T1
+  mapping images.
+homepage: https://purl.stanford.edu/xt223hz2438
+doi: 10.25740/xt223hz2438
+year: 2026
+status: active
+creators:
+  - name: Cardiac Magnetic Research Group, Stanford University
+    url: https://purl.stanford.edu/xt223hz2438
+species: human
+modalities: [MR]
+contrasts: [cine, dwi, dense, tagging, T1map]
+anatomy: [heart]
+conditions: [healthy, aortic_stenosis]
+tasks: [normative]
+formats: [DICOM]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 5.4
+access:
+  type: open
+  url: https://purl.stanford.edu/xt223hz2438
+licenses:
+  - license: ODbL-1.0
+sources:
+  stanford-sdr-xt223hz2438:
+    title: Stanford Digital Repository record xt223hz2438, abstract, description and access conditions (version 9)
+    url: https://purl.stanford.edu/xt223hz2438
+    kind: website
+  stanford-sdr-xt223hz2438-readme:
+    title: Read_Me.txt of Stanford Digital Repository record xt223hz2438 (revision of June 3, 2026)
+    url: https://stacks.stanford.edu/file/xt223hz2438/Read_Me.txt
+    kind: website
+  stanford-sdr-xt223hz2438-files:
+    title: >-
+      Public files of Stanford Digital Repository record xt223hz2438 (ODbL 1.0): participant archives counted from the
+      file listing, image folders and DICOM files counted from the archive directories, sex and age read from the
+      per-participant Read_Me.txt files
+    url: https://purl.stanford.edu/xt223hz2438.xml
+    kind: computed
+related: [stanford-cardiac-dti-healthy]
+keywords:
+  [cardiac MRI, cardiac biomechanics, myocardial strain, DENSE, myocardial tagging, cardiac diffusion tensor imaging, T1 mapping, aortic stenosis]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

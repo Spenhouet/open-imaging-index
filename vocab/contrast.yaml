@@ -70,6 +70,18 @@ terms:
   - { id: dsc, label: DSC perfusion, group: MR, description: Dynamic susceptibility contrast MRI }
   - { id: cine, label: Cine MRI, group: MR, description: 'Cardiac cine imaging, e.g. balanced SSFP' }
   - { id: lge, label: Late gadolinium enhancement, group: MR, synonyms: [LGE] }
+  - id: tagging
+    label: Myocardial tagging
+    group: MR
+    parent: cine
+    description: Cine imaging with a saturation grid or lines laid on the myocardium to track its deformation
+    synonyms: [grid tagging, SPAMM, tagged MRI]
+  - id: dense
+    label: DENSE
+    group: MR
+    parent: cine
+    description: Displacement encoding with stimulated echoes, cine phase images that encode myocardial displacement
+    synonyms: [cine DENSE, displacement encoding with stimulated echoes]
   # MR spectroscopy
   - id: MRS
     label: MR spectroscopy
