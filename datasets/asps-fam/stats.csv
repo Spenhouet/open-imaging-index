@@ -1,0 +1,5 @@
+measure,by,value,source,where,note
+subjects,,419,leitner2025,Section 2.1,individuals of the ASPS-Fam who underwent MRI; 381 of them belong to 169 families
+subjects,modality=MR,419,leitner2025,Section 2.1,
+subjects,contrast=dwi,267,leitner2025,Section 2.1,"diffusion-weighted scan (12 directions, b=1000); 237 passed quality assessment"
+subjects,country=AT,419,leitner2025,Section 2.1,single-centre community cohort in Graz
