@@ -1,0 +1,31 @@
+measure,by,value,source,where,note
+subjects,,632,tcia-ambl,Collection Snapshot,
+studies,,632,tcia-ambl,Data Access (Version 2),
+scans,,6811,tcia-ambl,Data Access (Version 2),"DICOM series, including registered copies, TRAM maps and SEG masks"
+images,,1259688,tcia-ambl,Data Access (Version 2),DICOM images
+subjects,anatomy=breast,632,tcia-ambl,Collection Snapshot,
+subjects,condition=breast_cancer,632,tcia-ambl,Collection Snapshot,"listed cancer type; the cohort includes patients with benign lesions only"
+subjects,field_strength=1.5,632,tcia-ambl,Summary,
+subjects,sex=female,632,tcia-ambl-digest,"Patient ID, Patient Sex columns",
+subjects,vendor=ge,632,tcia-ambl-digest,"Patient ID, Manufacturer columns",recorded as GE MEDICAL SYSTEMS Signa HDxt
+subjects,modality=MR,632,tcia-ambl-digest,"Patient ID, Modality columns",
+subjects,contrast=dce,632,tcia-ambl-digest,"Patient ID, Series Description columns",AX Sen Vibrant MultiPhase
+subjects,contrast=T2w,632,tcia-ambl-digest,"Patient ID, Series Description columns",axial T2 FSE and sagittal fat-suppressed T2
+subjects,contrast=T1w_ce,613,tcia-ambl-digest,"Patient ID, Series Description columns",delayed post-contrast Vibrant series
+subjects,contrast=STIR,17,tcia-ambl-digest,"Patient ID, Series Description columns",sagittal STIR silicone series
+subjects,contrast_set=dce+T1w_ce+T2w,603,tcia-ambl-digest,"Patient ID, Series Description columns",
+subjects,contrast_set=dce+T2w,12,tcia-ambl-digest,"Patient ID, Series Description columns",
+subjects,contrast_set=dce+STIR+T1w_ce+T2w,10,tcia-ambl-digest,"Patient ID, Series Description columns",
+subjects,contrast_set=dce+STIR+T2w,7,tcia-ambl-digest,"Patient ID, Series Description columns",
+subjects,age=10-19,1,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=20-29,12,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=30-39,71,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=40-49,179,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=50-59,153,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=60-69,132,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=70-79,75,tcia-ambl-digest,"Patient ID, Patient Age columns",
+subjects,age=80-89,9,tcia-ambl-digest,"Patient ID, Patient Age columns",
+age_min,,19,tcia-ambl-digest,"Patient ID, Patient Age columns",
+age_max,,86,tcia-ambl-digest,"Patient ID, Patient Age columns",
+age_median,,52,tcia-ambl-digest,"Patient ID, Patient Age columns",
+age_mean,,53.5,tcia-ambl-digest,"Patient ID, Patient Age columns",
