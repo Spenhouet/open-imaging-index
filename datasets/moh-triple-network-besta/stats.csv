@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,126,demichelis2025,Results (Demographic and clinical data),91 patients plus 35 healthy controls after excluding 3 of 94 eligible patients; the Zenodo record gives the same counts
+subjects,condition=migraine,91,demichelis2025,Results (Demographic and clinical data),"chronic migraine with medication overuse headache: 28 triptan, 40 NSAID and 23 multiple-drug overusers"
+subjects,condition=healthy,35,demichelis2025,Results (Demographic and clinical data),
+subjects,condition=migraine;sex=female,80,demichelis2025,Results (Demographic and clinical data),
+subjects,condition=healthy;sex=female,30,demichelis2025,Results (Demographic and clinical data),
+subjects,sex=female,110,demichelis2025,Results (Demographic and clinical data),sum of 80 patients and 30 controls
+subjects,sex=male,16,demichelis2025,Results (Demographic and clinical data),sum of 11 patients and 5 controls
+subjects,contrast=T1w,126,demichelis2025,Methods (MRI assessment),all participants
+subjects,contrast=bold,126,demichelis2025,Methods (MRI assessment),"resting-state, eyes open, 450 volumes"
+subjects,field_strength=3,126,demichelis2025,Methods (MRI assessment),Philips Achieva dStream
+subjects,vendor=philips,126,demichelis2025,Methods (MRI assessment),
+subjects,country=IT,126,demichelis2025,Methods (Participants),recruited at Fondazione IRCCS Istituto Neurologico C. Besta in Milan
+subjects,contrast_set=bold+T1w,126,demichelis2025,Methods (MRI assessment),
+age_mean,condition=migraine,46.5,demichelis2025,Results (Demographic and clinical data),SD 10.8
+age_mean,condition=healthy,43.5,demichelis2025,Results (Demographic and clinical data),SD 11.8
