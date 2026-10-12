@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004604
+name: Cerebrovascular Reactivity Normative Dataset (ds004604)
+full_name: Cerebrovascular Reactivity Normative Dataset
+summary: >-
+  Brain BOLD fMRI during carbon dioxide inhalation, with breath CO2 recordings and T1-weighted MRI, from healthy adults,
+  shared as normative data for cerebrovascular reactivity maps. Includes fMRIPrep and CVRmap outputs, in BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds004604
+doi: 10.18112/openneuro.ds004604.v2.0.0
+year: 2023
+updated: 2024
+version: 2.0.0
+status: active
+creators:
+  - name: >-
+      Laboratoire de Neuroanatomie et de Neuroimagerie translationnelles, Université libre de Bruxelles (Rovai A,
+      Lolli V, Trotta N, Goldman S, De Tiège X)
+    url: https://openneuro.org/datasets/ds004604
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 4.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004604
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Rovai A, Lolli V, Trotta N, Goldman S, De Tiège X. CVRmap - a complete cerebrovascular reactivity mapping
+    post-processing BIDS toolbox. Scientific Reports 14, 7252 (2024). doi:10.1038/s41598-024-57572-3
+sources:
+  rovai2024:
+    title: Rovai et al. 2024, CVRmap - a complete cerebrovascular reactivity mapping post-processing BIDS toolbox, Scientific Reports
+    url: https://doi.org/10.1038/s41598-024-57572-3
+    kind: paper
+  openneuro-ds004604-v200:
+    title: OpenNeuro ds004604 snapshot 2.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004604/versions/2.0.0
+    kind: website
+  ds004604-participants:
+    title: participants.tsv of ds004604 snapshot 2.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004604/blob/2.0.0/participants.tsv
+    kind: computed
+  ds004604-file-tree:
+    title: File tree and JSON sidecars of ds004604 snapshot 2.0.0 (CC0), raw NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds004604/tree/2.0.0
+    kind: computed
+related: []
+keywords: [cerebrovascular reactivity, CVR, hypercapnia, CO2 challenge, capnography, normative, fMRI, CVRmap]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

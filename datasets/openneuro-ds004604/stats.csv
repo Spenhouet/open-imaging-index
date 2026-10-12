@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,50,rovai2024,Results,50 healthy adults; participants.tsv of snapshot 2.0.0 has 50 rows
+subjects,sex=female,23,ds004604-participants,sex,The paper reports 25 females (Results); participants.tsv lists 23 F and 27 M
+subjects,sex=male,27,ds004604-participants,sex,The paper reports 25 females (Results); participants.tsv lists 23 F and 27 M
+subjects,age=20-29,23,ds004604-participants,age,
+subjects,age=30-39,17,ds004604-participants,age,
+subjects,age=40-49,5,ds004604-participants,age,
+subjects,age=50-59,4,ds004604-participants,age,
+subjects,age=60-69,1,ds004604-participants,age,
+subjects,sex=female;age=20-29,15,ds004604-participants,sex; age,Cells below 10 left out
+subjects,sex=male;age=30-39,13,ds004604-participants,sex; age,Cells below 10 left out
+age_mean,,33.6,rovai2024,Results,
+age_min,,21,rovai2024,Results,
+age_max,,67,rovai2024,Results,
+age_median,,30,ds004604-participants,age,
+subjects,condition=healthy,50,rovai2024,Results,
+scans,,100,ds004604-file-tree,sub-*/*/*.nii.gz,50 T1w and 50 bold files; derivatives not counted
+scans,contrast=T1w,50,ds004604-file-tree,anat/*_T1w.nii.gz,One per subject
+scans,contrast=bold,50,ds004604-file-tree,func/*_task-gas_bold.nii.gz,One CO2 challenge run per subject
+subjects,contrast=T1w,50,ds004604-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,50,ds004604-file-tree,func/*_task-gas_bold.nii.gz,
+subjects,contrast_set=bold+T1w,50,ds004604-file-tree,sub-*/,Every subject has one T1w and one bold file plus a breath CO2 physio file
+subjects,field_strength=3,50,ds004604-file-tree,MagneticFieldStrength in *_T1w.json and *_bold.json,All sidecars state 3 T
+subjects,vendor=ge,50,ds004604-file-tree,Manufacturer in *_T1w.json and *_bold.json,All sidecars state GE SIGNA PET/MR
+subjects,country=BE,50,ds004604-file-tree,InstitutionName in *_T1w.json,ULB Erasme hospital in Brussels
