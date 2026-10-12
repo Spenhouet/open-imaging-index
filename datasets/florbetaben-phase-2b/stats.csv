@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,272,karger-figshare-5241433,Supplementary Table 1,full phase IIb analysis set
+subjects,tracer=florbetaben,272,karger-figshare-5241433,Supplementary Table 1,all trial participants were imaged with florbetaben PET
+subjects,condition=alzheimers,147,karger-figshare-5241433,Supplementary Table 1,probable AD (NINCDS-ADRDA)
+subjects,condition=healthy,125,karger-figshare-5241433,Supplementary Table 1,unimpaired controls
+subjects,sex=male,147,karger-figshare-5241433,Supplementary Table 1,sum of 74 AD patients and 73 controls
+subjects,sex=female,125,karger-figshare-5241433,Supplementary Table 1,sum of 73 AD patients and 52 controls
+subjects,condition=alzheimers;sex=male,74,karger-figshare-5241433,Supplementary Table 1,
+subjects,condition=alzheimers;sex=female,73,karger-figshare-5241433,Supplementary Table 1,
+subjects,condition=healthy;sex=male,73,karger-figshare-5241433,Supplementary Table 1,
+subjects,condition=healthy;sex=female,52,karger-figshare-5241433,Supplementary Table 1,
+age_mean,condition=alzheimers,73.9,karger-figshare-5241433,Supplementary Table 1,
+age_sd,condition=alzheimers,7.8,karger-figshare-5241433,Supplementary Table 1,
+age_mean,condition=healthy,70.7,karger-figshare-5241433,Supplementary Table 1,
+age_sd,condition=healthy,6.6,karger-figshare-5241433,Supplementary Table 1,
