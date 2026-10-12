@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,54,drntu-h0cpdv,Files,"54 per-participant archives CUET_0001 to CUET_0056, with 0039 and 0040 absent; the paper analysed 48"
+subjects,sex=female,24,cuet-participantinfo,Gender,the table lists 48 of the 54 archived participants
+subjects,sex=male,24,cuet-participantinfo,Gender,the table lists 48 of the 54 archived participants
+subjects,age=20-29,48,rigo2020,Methods: Participants,analysed sample aged 21 to 26
+subjects,country=SG,48,rigo2020,Methods: Participants,recruited at Nanyang Technological University
+subjects,condition=healthy,48,rigo2020,Methods: Participants,no history of psychological or neurological disorders
+subjects,vendor=siemens,48,rigo2020,Methods: MRI and fMRI Data acquisition,Siemens Magnetom Prisma with a 64-channel head coil
+subjects,field_strength=3,48,rigo2020,Methods: MRI and fMRI Data acquisition,
+subjects,contrast=T1w,48,rigo2020,Methods: MRI and fMRI Data acquisition,MPRAGE
+subjects,contrast=bold,48,rigo2020,Methods: MRI and fMRI Data acquisition,
+age_mean,,22.81,rigo2020,Methods: Participants,analysed sample of 48
+age_sd,,1.17,rigo2020,Methods: Participants,analysed sample of 48
+age_min,,21,rigo2020,Methods: Participants,analysed sample of 48
+age_max,,26,rigo2020,Methods: Participants,analysed sample of 48
