@@ -182,6 +182,8 @@ terms:
     mappings: { hp: 'HP:0002463' }
   - { id: dyslexia, label: Dyslexia, synonyms: [developmental dyslexia, reading disability], mappings: { mondo: 'MONDO:0005489' } }
   - { id: dyscalculia, label: Dyscalculia, synonyms: [developmental dyscalculia, math learning disability, mathematical learning difficulty], mappings: { mondo: 'MONDO:0001552', hp: 'HP:0002442' } }
+  - { id: blindness, label: Blindness, synonyms: [congenital blindness, early blindness, visual deprivation], mappings: { hp: 'HP:0000618' } }
+  - { id: hearing_loss, label: Hearing impairment, synonyms: [deafness, congenital deafness, hearing loss, auditory deprivation], mappings: { hp: 'HP:0000365' } }
   - { id: prosopagnosia, label: Prosopagnosia, synonyms: [developmental prosopagnosia, face blindness, DP], mappings: { mondo: 'MONDO:0003227' } }
   - { id: depression, label: Major depressive disorder, synonyms: [MDD], mappings: { mondo: 'MONDO:0002009' } }
   - { id: dysthymia, label: Dysthymic disorder, synonyms: [dysthymia, persistent depressive disorder], mappings: { mondo: 'MONDO:0001442' } }
