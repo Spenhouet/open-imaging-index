@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: truecrime
+name: Truecrime (ds004965)
+full_name: >-
+  Horror as creative emotion regulation: Can true crime consumption help boost adaptive coping with fear and stress?
+summary: >-
+  Structural brain MRI and resting-state fMRI of adults from Graz, Austria, scanned within a study of why people
+  consume true crime stories and how this relates to personality, emotion regulation, anxiety and well-being.
+  Questionnaire and behavioral data are shared separately on OSF.
+homepage: https://openneuro.org/datasets/ds004965
+doi: 10.18112/openneuro.ds004965.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: University of Graz (Perchtold-Stefan C, Rominger C, Koschutnig K, Fink A)
+    url: https://openneuro.org/datasets/ds004965
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: []
+tasks: []
+formats: [BIDS, NIfTI]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 25.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004965
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0; the README states no data user agreement.
+citation:
+  text: >-
+    Perchtold-Stefan C, Rominger C, Koschutnig K, Fink A. Truecrime (ds004965, version 1.0.1). OpenNeuro (2024).
+    doi:10.18112/openneuro.ds004965.v1.0.1
+sources:
+  openneuro-ds004965-v1-0-1:
+    title: OpenNeuro ds004965 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004965/versions/1.0.1
+    kind: website
+  ds004965-participants:
+    title: participants.tsv of ds004965 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds004965/blob/1.0.1/participants.tsv
+    kind: computed
+  ds004965-file-tree:
+    title: File tree and JSON sidecars of ds004965 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds004965/tree/1.0.1
+    kind: computed
+related: []
+keywords: [true crime, resting-state fMRI, emotion regulation, morbid curiosity, personality]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

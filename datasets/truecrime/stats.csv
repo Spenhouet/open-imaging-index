@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,133,ds004965-participants,participant_id,133 rows and 133 subject folders; the README states MRI of 133 participants was acquired
+studies,,133,ds004965-file-tree,sub-*/ses-1/,one session per subject
+subjects,sex=female,88,ds004965-participants,sex (F),
+subjects,sex=male,45,ds004965-participants,sex (M),
+subjects,age=10-19,6,ds004965-participants,age,
+subjects,age=20-29,103,ds004965-participants,age,
+subjects,age=30-39,12,ds004965-participants,age,
+subjects,age=40-49,6,ds004965-participants,age,
+subjects,age=50-59,4,ds004965-participants,age,
+subjects,age=60-69,2,ds004965-participants,age,
+subjects,sex=female;age=20-29,62,ds004965-participants,sex and age,cells below 10 left out
+subjects,sex=male;age=20-29,41,ds004965-participants,sex and age,cells below 10 left out
+age_min,,18,ds004965-participants,age,
+age_max,,65,ds004965-participants,age,
+age_mean,,26.98,ds004965-participants,age,
+age_sd,,8.8,ds004965-participants,age,
+age_median,,24,ds004965-participants,age,
+scans,,399,ds004965-file-tree,sub-*/ses-1/*/*.nii.gz,"133 T1w, 133 resting-state BOLD and 133 reverse phase-encoded EPI fieldmaps"
+scans,contrast=T1w,133,ds004965-file-tree,anat/*_acq-mprage_T1w.nii.gz,
+scans,contrast=bold,133,ds004965-file-tree,func/*_task-rest_bold.nii.gz,
+subjects,contrast=T1w,133,ds004965-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,133,ds004965-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,133,ds004965-file-tree,sub-*/,
+subjects,field_strength=3,133,ds004965-file-tree,*_T1w.json MagneticFieldStrength,Siemens MAGNETOM Vida in every T1w sidecar
+subjects,vendor=siemens,133,ds004965-file-tree,*_T1w.json Manufacturer,Siemens MAGNETOM Vida in every T1w sidecar
+subjects,country=AT,133,openneuro-ds004965-v1-0-1,README: Experimental location,University of Graz and Graz University of Technology
