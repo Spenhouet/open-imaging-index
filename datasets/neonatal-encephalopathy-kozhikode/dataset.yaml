@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: neonatal-encephalopathy-kozhikode
+name: Neonatal Encephalopathy MRI, Kozhikode (South India)
+full_name: >-
+  Neonatal Encephalopathic Cerebral Injury in South India Assessed by Perinatal Magnetic Resonance Biomarkers and Early
+  Childhood Neurodevelopmental Outcome
+summary: >-
+  Brain MRI, diffusion tensor imaging and thalamic MR spectroscopy of term newborns with encephalopathy after perinatal
+  asphyxia, collected to describe the pattern of brain injury and its link to outcome at age 3.5 years in a
+  low- and middle-income setting. Images are not shared.
+homepage: https://doi.org/10.1371/journal.pone.0087874
+doi: 10.1371/journal.pone.0087874
+# Year of the paper. The images have no public release.
+year: 2014
+creators:
+  - name: Peter J. Lally, Imperial College London
+  - name: Sudhin Thayyil, Imperial College London
+  - name: Neonatal Medicine, Government Medical College, Kozhikode
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, MRS]
+anatomy: [brain]
+conditions: [hypoxic_ischemic_encephalopathy]
+countries: [IN]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1371/journal.pone.0087874
+  note: >-
+    The paper (2014) has no data availability statement and offers no route to the images. The associated PLOS
+    figshare record holds only the supplementary figures and tables of the paper, no images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the images. The CC BY 4.0 license of the article and its figshare
+      supplement covers only the published text, figures and tables.
+citation:
+  text: >-
+    Lally PJ, Price DL, Pauliah SS, Bainbridge A, Kurien J, Sivasamy N, et al. (2014) Neonatal Encephalopathic Cerebral
+    Injury in South India Assessed by Perinatal Magnetic Resonance Biomarkers and Early Childhood Neurodevelopmental
+    Outcome. PLoS ONE 9(2): e87874. https://doi.org/10.1371/journal.pone.0087874
+sources:
+  lally2014:
+    title: Lally et al. 2014, PLoS ONE 9(2):e87874
+    url: https://doi.org/10.1371/journal.pone.0087874
+    kind: paper
+  figshare-926941:
+    title: PLOS figshare record of the paper's supplementary figures and tables
+    url: https://plos.figshare.com/articles/dataset/_Neonatal_Encephalopathic_Cerebral_Injury_in_South_India_Assessed_by_Perinatal_Magnetic_Resonance_Biomarkers_and_Early_Childhood_Neurodevelopmental_Outcome_/926941
+    kind: website
+related: [bonbid-hie]
+keywords: [neonatal encephalopathy, perinatal asphyxia, diffusion tensor imaging, MR spectroscopy, Bayley III, India]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

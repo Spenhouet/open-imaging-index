@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,44,lally2014,Results: Conventional MR Imaging,"47 of 48 survivors were scanned; images of 3 were lost before analysis, leaving 44 (54 recruited, 6 died before imaging)"
+subjects,condition=hypoxic_ischemic_encephalopathy,44,lally2014,Methods: Study Design,Thompson encephalopathy score above 5 within 6 hours after perinatal asphyxia
+subjects,contrast=T1w,44,lally2014,Methods: Study Design,3D T1-weighted FLASH in the protocol; all 44 retained scans reported
+subjects,contrast=T2w,44,lally2014,Methods: Study Design,Axial and coronal T2-weighted fast spin echo in the protocol
+subjects,contrast=dwi,31,lally2014,Results: DTI and Thalamic MR Spectroscopy,"Infants with good quality DTI (20 directions, b=1000)"
+subjects,contrast=MRS,22,lally2014,Results: DTI and Thalamic MR Spectroscopy,"Single-voxel PRESS in the left thalamus; 20 of these also had DTI"
+subjects,age=0-0.5,44,lally2014,Results: Conventional MR Imaging,Scanned at age 1 to 3 weeks; mean age at scan 9.3 (SD 3.6) days over the 47 scanned
+subjects,country=IN,44,lally2014,Methods: Study Design,"Government Medical College, Kozhikode, Kerala"
+subjects,field_strength=1.5,44,lally2014,Methods: Study Design,Siemens Avanto 1.5 T
+subjects,vendor=siemens,44,lally2014,Methods: Study Design,
