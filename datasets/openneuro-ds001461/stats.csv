@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,81,ds001461-participants,participant_id,81 rows; 81 subject folders in the snapshot 1.0.3 file tree
+subjects,sex=female,28,ds001461-participants,sex,
+subjects,sex=male,53,ds001461-participants,sex,
+subjects,condition=schizophrenia,47,ds001461-participants,diagnosis,25 nonsmoking (sub-1xx) and 22 smoking (sub-2xx)
+subjects,condition=healthy,34,ds001461-participants,diagnosis,12 nonsmoking (sub-3xx) and 22 smoking (sub-4xx)
+subjects,condition=schizophrenia;sex=female,19,ds001461-participants,"diagnosis, sex",
+subjects,condition=schizophrenia;sex=male,28,ds001461-participants,"diagnosis, sex",
+subjects,condition=healthy;sex=male,25,ds001461-participants,"diagnosis, sex",
+subjects,contrast=bold,81,ds001461-file-tree,sub-*/func/*_task-rest_bold.nii.gz,
+subjects,contrast_set=bold,81,ds001461-file-tree,sub-*/func,no anatomical images are shared
+subjects,vendor=ge,81,ds001461-file-tree,Manufacturer in *_bold.json,ManufacturersModelName Signa_HDxt
+subjects,field_strength=3,81,ds001461-file-tree,MagneticFieldStrength in *_bold.json,
+subjects,age=10-19,5,ds001461-participants,age,
+subjects,age=20-29,31,ds001461-participants,age,
+subjects,age=30-39,29,ds001461-participants,age,
+subjects,age=40-49,10,ds001461-participants,age,
+subjects,age=50-59,5,ds001461-participants,age,
+subjects,age=60-69,1,ds001461-participants,age,
+scans,,81,ds001461-file-tree,sub-*/func/*_bold.nii.gz,one resting-state run per subject
+scans,contrast=bold,81,ds001461-file-tree,sub-*/func/*_bold.nii.gz,
+age_min,,17,ds001461-participants,age,
+age_max,,60,ds001461-participants,age,
+age_mean,,32.3,ds001461-participants,age,
+age_sd,,9.7,ds001461-participants,age,sample standard deviation

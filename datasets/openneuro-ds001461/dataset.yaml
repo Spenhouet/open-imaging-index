@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001461
+name: Smoking and Schizophrenia rs-fMRI (ds001461)
+full_name: rsfMRI_comrobidity-SmokingandSchizophrenia
+summary: >-
+  Resting-state BOLD fMRI of adults with schizophrenia and healthy controls, each group split into smokers and
+  nonsmokers (81 subjects), acquired on one GE 3T scanner, shared in BIDS with sex, age, diagnosis and smoking status under
+  CC0.
+homepage: https://openneuro.org/datasets/ds001461
+doi: 10.18112/openneuro.ds001461.v1.0.3
+year: 2018
+updated: 2020
+version: 1.0.3
+status: active
+creators:
+  - name: Wei Liao, Yun-Shuang Fan
+    url: https://openneuro.org/datasets/ds001461
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+formats: [BIDS, NIfTI]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 2.39
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001461
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Liao W, Fan YS. rsfMRI_comrobidity-SmokingandSchizophrenia. OpenNeuro, snapshot 1.0.3 (2020).
+    doi:10.18112/openneuro.ds001461.v1.0.3
+sources:
+  ds001461-participants:
+    title: participants.tsv of ds001461 snapshot 1.0.3 (CC0), counted per row
+    url: https://openneuro.org/datasets/ds001461/versions/1.0.3/file-display/participants.tsv
+    kind: computed
+  ds001461-file-tree:
+    title: File tree and BOLD JSON sidecars of ds001461 snapshot 1.0.3 (CC0), counted per subject
+    url: https://openneuro.org/datasets/ds001461/versions/1.0.3
+    kind: computed
+related: []
+keywords: [schizophrenia, smoking, tobacco, nicotine, comorbidity, resting state, rs-fMRI, psychiatry]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
