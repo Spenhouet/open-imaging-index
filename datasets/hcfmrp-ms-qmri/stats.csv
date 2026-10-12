@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,347,pessini2018,Methods and Table 1,"sum of 144 MS patients and 203 controls, disjoint groups; the abstract gives 124 patients"
+subjects,condition=multiple_sclerosis,144,pessini2018,Table 1,the abstract gives 124
+subjects,condition=healthy,203,pessini2018,Table 1,subjects with no detected neurological abnormalities
+subjects,sex=male,152,pessini2018,Table 1,sum of 44 patients and 108 controls
+subjects,sex=female,195,pessini2018,Table 1,sum of 100 patients and 95 controls
+subjects,condition=multiple_sclerosis;sex=male,44,pessini2018,Table 1,
+subjects,condition=multiple_sclerosis;sex=female,100,pessini2018,Table 1,
+subjects,condition=healthy;sex=male,108,pessini2018,Table 1,
+subjects,condition=healthy;sex=female,95,pessini2018,Table 1,
+subjects,field_strength=3,347,pessini2018,Methods,all images from one 3 T Philips Achieva
+subjects,vendor=philips,347,pessini2018,Methods,
+subjects,country=BR,347,pessini2018,Methods,"Clinics Hospital, Ribeirão Preto Medical School"
+subjects,contrast=T1w,303,pessini2018,Table 3,"instances in the volumetry classification (165 controls, 138 patients), after quality exclusions"
+subjects,contrast=dwi,166,pessini2018,Table 3,"instances in the PaD and PeD classifications (76 controls, 90 patients), after quality exclusions"
+subjects,contrast=MTR,200,pessini2018,Table 3,"instances in the MTR classification (91 controls, 109 patients), after quality exclusions"
+subjects,contrast=T2map,198,pessini2018,Table 3,"instances in the T2 classification (90 controls, 108 patients), after quality exclusions"
+subjects,contrast=dwi;condition=multiple_sclerosis,90,pessini2018,Table 3,after quality exclusions
+subjects,contrast=dwi;condition=healthy,76,pessini2018,Table 3,after quality exclusions
+subjects,contrast=MTR;condition=multiple_sclerosis,109,pessini2018,Table 3,after quality exclusions
+subjects,contrast=MTR;condition=healthy,91,pessini2018,Table 3,after quality exclusions
+subjects,contrast=T2map;condition=multiple_sclerosis,108,pessini2018,Table 3,after quality exclusions
+subjects,contrast=T2map;condition=healthy,90,pessini2018,Table 3,after quality exclusions
+subjects,contrast=T1w;condition=multiple_sclerosis,138,pessini2018,Table 3,after quality exclusions
+subjects,contrast=T1w;condition=healthy,165,pessini2018,Table 3,after quality exclusions
+age_min,,7,pessini2018,Table 1,same interval in both groups
+age_max,,65,pessini2018,Table 1,same interval in both groups
+age_mean,condition=multiple_sclerosis,41.5,pessini2018,Table 1,SD 11.6
+age_mean,condition=healthy,29.3,pessini2018,Table 1,SD 16.2
