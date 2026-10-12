@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,83,ds006926-participants,participant_id,83 rows and 83 subject folders; the README also states 83 subjects
+subjects,sex=female,41,ds006926-participants,sex,
+subjects,sex=male,42,ds006926-participants,sex,
+subjects,age=20-29,51,ds006926-participants,age,
+subjects,age=30-39,28,ds006926-participants,age,
+subjects,age=40-49,4,ds006926-participants,age,
+subjects,sex=female;age=20-29,28,ds006926-participants,sex and age,
+subjects,sex=male;age=20-29,23,ds006926-participants,sex and age,
+subjects,sex=female;age=30-39,12,ds006926-participants,sex and age,
+subjects,sex=male;age=30-39,16,ds006926-participants,sex and age,cells below 10 left out
+age_min,,20,ds006926-participants,age,
+age_max,,41,ds006926-participants,age,
+age_mean,,27.35,ds006926-participants,age,
+age_sd,,6.28,ds006926-participants,age,sample standard deviation
+age_median,,26,ds006926-participants,age,
+subjects,contrast=T1w,83,ds006926-file-tree,anat/*_rec-norm_T1w.nii.gz,
+subjects,contrast=MEGRE,83,ds006926-file-tree,anat/*_MEGRE.nii.gz,10 echoes per subject; an R2* map is also provided
+subjects,contrast=bold,83,ds006926-file-tree,func/*_bold.nii.gz,six runs per subject
+subjects,contrast_set=bold+MEGRE+T1w,83,ds006926-file-tree,sub-*/,every subject folder holds the same 87 NIfTI files
+scans,,7221,ds006926-file-tree,sub-*/*/*.nii.gz,"87 NIfTI files per subject: 1 T1w, 10 MEGRE echoes, 1 R2* map, 3 field map images, 36 BOLD and 36 single-band reference images (3 echoes x magnitude and phase x 6 runs)"
+scans,contrast=T1w,83,ds006926-file-tree,anat/*_rec-norm_T1w.nii.gz,
+scans,contrast=MEGRE,830,ds006926-file-tree,anat/*_MEGRE.nii.gz,one file per echo (10 per subject)
+scans,contrast=bold,2988,ds006926-file-tree,func/*_bold.nii.gz,"498 runs (6 per subject), each stored as 3 echoes in magnitude and phase; single-band reference images not counted"
+subjects,field_strength=3,83,openneuro-ds006926-v1-0-0,README,two 3 T Siemens Magnetom Prisma scanners
+subjects,vendor=siemens,83,openneuro-ds006926-v1-0-0,README,
+subjects,country=CZ,83,openneuro-ds006926-v1-0-0,README,"all data acquired at MAFIL, CEITEC Masaryk University"

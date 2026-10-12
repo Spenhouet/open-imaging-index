@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: complex-multi-echo-fmri
+name: Complex Multi-Echo fMRI (ds006926)
+full_name: 'Complex multi-echo fMRI dataset: New strategies in processing of multi-echo data'
+summary: >-
+  Multi-echo task and resting-state fMRI of adults with both magnitude and phase images, collected to develop
+  processing methods for complex-valued multi-echo data. Each run was repeated at two repetition times, with
+  structural scans, field maps and cardiac and respiratory recordings.
+homepage: https://openneuro.org/datasets/ds006926
+doi: 10.18112/openneuro.ds006926.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Multimodal and Functional Imaging Laboratory (MAFIL), CEITEC Masaryk University (Mikl M, Kovarova A, Gajdos M,
+      Marecek R, Schejbalova M, Slavicek T, Ingrova K)
+    url: https://mafil.ceitec.cz
+species: human
+modalities: [MR]
+contrasts: [T1w, MEGRE, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [CZ]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 337.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006926
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Mikl M, Kovarova A, Gajdos M, Marecek R, Schejbalova M, Slavicek T, Ingrova K. Complex multi-echo fMRI dataset: New
+    strategies in processing of multi-echo data (ds006926, version 1.0.0). OpenNeuro (2025).
+    doi:10.18112/openneuro.ds006926.v1.0.0
+sources:
+  openneuro-ds006926-v1-0-0:
+    title: OpenNeuro ds006926 snapshot 1.0.0 (dataset_description.json, README, participants.json, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds006926/versions/1.0.0
+    kind: website
+  ds006926-participants:
+    title: participants.tsv of ds006926 snapshot 1.0.0 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds006926/blob/1.0.0/participants.tsv
+    kind: computed
+  ds006926-file-tree:
+    title: File tree of ds006926 snapshot 1.0.0 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds006926/tree/1.0.0
+    kind: computed
+related: []
+keywords: [multi-echo fMRI, complex-valued fMRI, phase fMRI, oddball, visual-motor task, resting-state fMRI, physiological recordings, R2* map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
