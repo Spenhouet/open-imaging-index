@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: michigan-longitudinal-study
+name: Michigan Longitudinal Study (ds005027)
+full_name: 'Michigan Longitudinal Study: Monetary Incentive Delay Task'
+summary: >-
+  Brain MRI and task fMRI of young adults from a Michigan study of development, scanned in two or three waves
+  years apart while performing the monetary incentive delay task, released to study test-retest reliability of reward
+  activation. Includes fMRIPrep and MRIQC outputs.
+homepage: https://openneuro.org/datasets/ds005027
+doi: 10.18112/openneuro.ds005027.v1.0.3
+# First snapshot 1.0.0 on OpenNeuro, 2024-03-11; latest snapshot 1.0.3, 2024-08-13.
+year: 2024
+version: 1.0.3
+status: active
+creators:
+  - name: University of Michigan (Demidenko MI, Klaus R, Soules M, Heitzeg MM)
+    url: https://openneuro.org/datasets/ds005027
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: []
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+# OpenNeuro snapshot 1.0.3: 9115829895 bytes in 1678 files.
+size_gb: 9.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005027
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Demidenko MI, Klaus R, Soules M, Heitzeg MM. Michigan Longitudinal Study (ds005027, version 1.0.3). OpenNeuro
+    (2024). doi:10.18112/openneuro.ds005027.v1.0.3
+sources:
+  openneuro-ds005027-v1-0-3:
+    title: OpenNeuro ds005027 snapshot 1.0.3 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005027/versions/1.0.3
+    kind: website
+  ds005027-participants:
+    title: participants.tsv of ds005027 snapshot 1.0.3 (CC0), counted per subject
+    url: https://github.com/OpenNeuroDatasets/ds005027/blob/1.0.3/participants.tsv
+    kind: computed
+  ds005027-file-tree:
+    title: File tree of ds005027 snapshot 1.0.3 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005027/tree/1.0.3
+    kind: computed
+  demidenko2024:
+    title: >-
+      Demidenko, Mumford, Poldrack 2024, Impact of analytic decisions on test-retest reliability of individual and
+      group estimates in fMRI, Imaging Neuroscience (with Supplementary Material)
+    url: https://doi.org/10.1162/imag_a_00262
+    kind: paper
+related: [ahrb]
+keywords: [monetary incentive delay, reward processing, test-retest reliability, task fMRI, longitudinal]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
