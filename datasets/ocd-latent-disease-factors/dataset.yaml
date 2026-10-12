@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ocd-latent-disease-factors
+name: OCD baseline and capsulotomy resting-state fMRI
+full_name: >-
+  Quantitative Expression of Latent Disease Factors in Individuals Associated with Psychopathology Dimensions and
+  Treatment Response
+summary: >-
+  Preprocessed resting-state brain fMRI of people with obsessive-compulsive disorder (OCD) and healthy controls, shared
+  to study latent disease factors behind symptom dimensions and response to ventral capsulotomy, with pre- and
+  post-surgery scans for a surgical subgroup.
+homepage: https://zenodo.org/records/8217579
+doi: 10.5281/zenodo.8217579
+year: 2023
+version: '1'
+status: active
+creators:
+  - name: >-
+      Zhao S, Lv Q, Zhang G, Zhang J, Wang H, Zhang J, Wang M, Wang Z (Institute of Neuroscience, Chinese Academy of
+      Sciences; Peking University; Henan Provincial People's Hospital; Tongde Hospital of Zhejiang Province)
+    url: https://zenodo.org/records/8217579
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [ocd, healthy]
+formats: [NIfTI]
+countries: [CN]
+size_gb: 8.2
+access:
+  type: open
+  url: https://zenodo.org/records/8217579
+licenses:
+  - license: CC-BY-4.0
+    url: https://zenodo.org/records/8217579
+    note: The Zenodo record 8217579 states the license Creative Commons Attribution 4.0 International.
+citation:
+  text: >-
+    Zhao S, Lv Q, Zhang G, Zhang J, Wang H, Zhang J, Wang M, Wang Z. Quantitative Expression of Latent Disease Factors
+    in Individuals Associated with Psychopathology Dimensions and Treatment Response. Zenodo (2023).
+    doi:10.5281/zenodo.8217579
+sources:
+  zenodo-8217579:
+    title: Zenodo record 8217579 (description, file list and file sizes)
+    url: https://zenodo.org/records/8217579
+    kind: website
+  zenodo-8217579-baseline-phenotypic:
+    title: >-
+      baselineOCD_local_phenotypic.csv of Zenodo record 8217579 (CC BY 4.0), columns Diagnosis, age, gender, site and
+      if used
+    url: https://zenodo.org/api/records/8217579/files/baselineOCD_local_phenotypic.csv/content
+    kind: computed
+  zenodo-8217579-baseline-zip:
+    title: >-
+      Central directory of baselineOCD_local.zip of Zenodo record 8217579 (CC BY 4.0), NIfTI files counted per
+      HC and OCD folder
+    url: https://zenodo.org/api/records/8217579/files/baselineOCD_local.zip/content
+    kind: computed
+related: []
+keywords:
+  [obsessive-compulsive disorder, capsulotomy, resting state, psychosurgery, treatment response, Y-BOCS, latent factors]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
