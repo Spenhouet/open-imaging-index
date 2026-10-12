@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mica-mics
+name: MICA-MICs
+full_name: 'MICA-MICs: a dataset for Microstructure-Informed Connectomics'
+summary: >-
+  Multimodal brain MRI of healthy adults, collected to study brain organization across scales by linking cortical
+  microstructure, structural and functional connectivity. Raw T1-weighted, quantitative T1, diffusion and resting-state
+  scans come with ready-made connectomes in 18 parcellations.
+homepage: https://portal.conp.ca/dataset?id=projects/mica-mics
+doi: 10.1038/s41597-022-01682-y
+# The CONP repository was created in June 2021 and the preprint was posted in August 2021.
+year: 2021
+version: '1.1'
+status: active
+creators:
+  - name: Multimodal Imaging and Connectome Analysis Lab (MICA), Montreal Neurological Institute, McGill University (Royer J, Bernhardt BC, et al.)
+    url: https://github.com/conpdatasets/mica-mics
+species: human
+modalities: [MR]
+contrasts: [T1w, T1map, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 70
+access:
+  type: open
+  url: https://osf.io/j532r/
+licenses:
+  - license: CC0-1.0
+    note: >-
+      license.txt of the release states "This work is licensed under the CC0 1.0 Universal license", with a request to
+      cite the paper. The OSF project and the CONP DATS.json also list CC0.
+citation:
+  text: >-
+    Royer J, Rodriguez-Cruces R, Tavakol S, et al. An Open MRI Dataset For Multiscale Neuroscience. Scientific Data 9,
+    569 (2022). doi:10.1038/s41597-022-01682-y
+sources:
+  royer2022:
+    title: Royer et al. 2022, An Open MRI Dataset For Multiscale Neuroscience, Scientific Data
+    url: https://doi.org/10.1038/s41597-022-01682-y
+    kind: paper
+  conp-mica-mics-dats:
+    title: DATS.json of the CONP mica-mics repository (version, license, size)
+    url: https://github.com/conpdatasets/mica-mics/blob/master/DATS.json
+    kind: website
+  mica-mics-participants:
+    title: participants.tsv of the MICA-MICs release (CC0), counted per row; sex from sex
+    url: https://sftp.conp.ca/users/MICA/MICs_release/rawdata/participants.tsv
+    kind: computed
+  mica-mics-file-tree:
+    title: BIDS file tree of the CONP mica-mics repository (CC0), raw NIfTI files under MICs_release/rawdata/sub-*/ counted per suffix
+    url: https://github.com/conpdatasets/mica-mics/tree/master/MICs_release/rawdata
+    kind: computed
+related: []
+keywords: [connectomics, microstructure, quantitative T1, MP2RAGE, diffusion MRI, resting-state fMRI, gradients, micapipe]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

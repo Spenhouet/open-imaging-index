@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,50,royer2022,Methods: Participants,participants.tsv also has 50 rows
+subjects,contrast=T1w,50,mica-mics-file-tree,,subjects with a *_T1w.nii.gz
+subjects,contrast=T1map,50,mica-mics-file-tree,,"subjects with MP2RAGE images (inv1, inv2, uni and T1 map), stored with the T1map suffix"
+subjects,contrast=dwi,50,mica-mics-file-tree,,subjects with a *_dwi.nii.gz
+subjects,contrast=bold,50,mica-mics-file-tree,,subjects with a resting-state *_bold.nii.gz
+subjects,contrast_set=bold+dwi+T1map+T1w,50,mica-mics-file-tree,,spin-echo distortion-correction images are not counted as a contrast
+scans,,548,mica-mics-file-tree,,"sum of the disjoint T1w, T1map, dwi and resting-state bold counts below; spin-echo fieldmap images not included"
+scans,contrast=T1w,99,mica-mics-file-tree,,two MP-RAGE runs per subject; one subject has only run 1
+scans,contrast=T1map,200,mica-mics-file-tree,,"four MP2RAGE images per subject: inv1, inv2, uni and T1 map"
+scans,contrast=dwi,200,mica-mics-file-tree,,three shells (b=300; 700; 2000) plus one reverse phase-encoded b0 per subject
+scans,contrast=bold,50,mica-mics-file-tree,,one resting-state run per subject
+subjects,sex=female,23,royer2022,Methods: Participants,participants.tsv also has 23 rows with sex F
+subjects,sex=male,27,mica-mics-participants,,sex M
+age_mean,,29.54,royer2022,Methods: Participants,
+age_sd,,5.62,royer2022,Methods: Participants,
