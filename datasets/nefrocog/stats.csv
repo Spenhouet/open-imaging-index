@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,56,pires2022,Results; Figure 1,"111 invited, 80 completed neuropsychological assessment, 56 had brain MRI and form the final sample"
+subjects,condition=ckd,56,pires2022,Patients and Methods; Results,"CKD categories 1 to 5, non-dialysis"
+subjects,condition=mci,29,pires2022,Abstract,altered MoCA score (51.8%)
+subjects,field_strength=1.5,56,pires2022,Magnetic resonance evaluation of the brain,
+subjects,vendor=siemens,56,pires2022,Magnetic resonance evaluation of the brain,Siemens Avanto
+subjects,country=BR,56,pires2022,Patients and Methods,"single center, Hiperdia Minas Center, Juiz de Fora"
+age_mean,,56.3,pires2022,Abstract,
+age_sd,,8.3,pires2022,Abstract,
