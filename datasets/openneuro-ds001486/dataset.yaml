@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001486
+name: Brain Correlates of Math Development (ds001486)
+full_name: Brain Correlates of Math Development
+summary: >-
+  Longitudinal brain MRI and task fMRI of school children solving single-digit multiplication and subtraction
+  problems, with rhyming and numerosity localizer tasks, collected to study how arithmetic develops in the brain.
+  Scans about two years apart, with math and reading tests, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds001486
+doi: 10.18112/openneuro.ds001486.v1.3.1
+year: 2018
+updated: 2021
+version: 1.3.1
+status: active
+creators:
+  - name: Brain Development Lab, Northwestern University (Suárez-Pellicioni M, Lytle MN, Younger JW, Booth JR)
+    url: https://openneuro.org/datasets/ds001486
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 96.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001486
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.3.1 states "License" CC0.
+citation:
+  text: >-
+    Suárez-Pellicioni M, Lytle MN, Younger JW, Booth JR. A longitudinal neuroimaging dataset on arithmetic processing
+    in school children. Scientific Data 6, 190040 (2019). doi:10.1038/sdata.2019.40
+sources:
+  suarezpellicioni2019:
+    title: Suárez-Pellicioni et al. 2019, A longitudinal neuroimaging dataset on arithmetic processing in school children, Scientific Data
+    url: https://doi.org/10.1038/sdata.2019.40
+    kind: paper
+  ds001486-participants:
+    title: participants.tsv of ds001486 snapshot 1.3.1 (CC0), counted per row
+    url: https://openneuro.org/datasets/ds001486/versions/1.3.1/file-display/participants.tsv
+    kind: computed
+  ds001486-file-tree:
+    title: File tree of ds001486 snapshot 1.3.1 (CC0), NIfTI files counted per subject, session and BIDS suffix
+    url: https://openneuro.org/datasets/ds001486/versions/1.3.1
+    kind: computed
+related: []
+keywords: [arithmetic, math, numerical cognition, children, pediatric, longitudinal, task fMRI, multiplication, subtraction, rhyming, numerosity]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
