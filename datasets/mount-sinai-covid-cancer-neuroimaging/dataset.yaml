@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mount-sinai-covid-cancer-neuroimaging
+name: Mount Sinai COVID-19 Neuroimaging, Cancer vs Non-Cancer
+full_name: >-
+  Neuroimaging findings and neurological manifestations in hospitalized COVID-19 patients: Impact of cancer and
+  ventilatory support status
+summary: >-
+  Clinical brain MRI of adults hospitalized with COVID-19 and neurological symptoms at Mount Sinai, New York, in four
+  groups of 20 by cancer and ventilatory support status, read by neuroradiologists for infarcts, hemorrhages and
+  hyperintensities. Images are not shared.
+homepage: https://doi.org/10.1371/journal.pone.0283614
+doi: 10.1371/journal.pone.0283614
+# Year of the paper. The images have no public release.
+year: 2023
+creators:
+  - name: Lily McCarthy, Icahn School of Medicine at Mount Sinai
+  - name: Oleksandr Khegai, Icahn School of Medicine at Mount Sinai
+  - name: Nathalie Jette, Icahn School of Medicine at Mount Sinai
+  - name: Priti Balchandani, Icahn School of Medicine at Mount Sinai
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, T2starw, dwi, ADC]
+anatomy: [brain]
+conditions: [covid19, cancer, ischemic_stroke, intracranial_hemorrhage, cerebral_microbleeds]
+countries: [US]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1371/journal.pone.0283614
+  note: >-
+    The data availability statement says all relevant data are within the paper and its supporting information. The
+    only supplement (S1 Dataset) is a spreadsheet of group-level counts and Fisher's exact tests, and the PLOS figshare
+    record holds Table 2 of the paper. No images or per-patient data are released.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the images. The CC BY 4.0 license of the article and its
+      supplement covers only the published text, tables and summary spreadsheet.
+citation:
+  text: >-
+    McCarthy L, Khegai O, Goldstein J, Belani P, Pawha P, Kihira S, et al. (2023) Neuroimaging findings and
+    neurological manifestations in hospitalized COVID-19 patients: Impact of cancer and ventilatory support status.
+    PLoS ONE 18(3): e0283614. https://doi.org/10.1371/journal.pone.0283614
+sources:
+  mccarthy2023:
+    title: McCarthy et al. 2023, PLoS ONE 18(3):e0283614
+    url: https://doi.org/10.1371/journal.pone.0283614
+    kind: paper
+  figshare-22334443:
+    title: PLOS figshare record of Table 2 (Neuroimaging findings) of the paper
+    url: https://plos.figshare.com/articles/dataset/Neuroimaging_findings_/22334443
+    kind: website
+related: [covid-19-ny-sbu, neurocovid-ds005364]
+keywords: [COVID-19, SARS-CoV-2, cancer, ventilatory support, encephalopathy, infarct, microhemorrhage, neuroradiology]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
