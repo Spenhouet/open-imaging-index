@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,53,kilthub-7851515-bids,BIDS/participants.tsv,1 patient and 52 healthy controls; matches the record description
+subjects,condition=glioma,1,kilthub-7851515-v2,Description,left inferior parietal glioma infiltrating the left arcuate fasciculus
+subjects,condition=healthy,52,kilthub-7851515-v2,Description,
+subjects,sex=female,28,kilthub-7851515-bids,BIDS/participants.tsv (sex),
+subjects,sex=male,25,kilthub-7851515-bids,BIDS/participants.tsv (sex),
+subjects,age=10-19,11,kilthub-7851515-bids,BIDS/participants.tsv (age),
+subjects,age=20-29,40,kilthub-7851515-bids,BIDS/participants.tsv (age),
+subjects,age=30-39,1,kilthub-7851515-bids,BIDS/participants.tsv (age),
+subjects,age=50-59,1,kilthub-7851515-bids,BIDS/participants.tsv (age),
+age_mean,,22.1,kilthub-7851515-bids,BIDS/participants.tsv (age),
+age_median,,21,kilthub-7851515-bids,BIDS/participants.tsv (age),
+age_min,,18,kilthub-7851515-bids,BIDS/participants.tsv (age),
+age_max,,57,kilthub-7851515-bids,BIDS/participants.tsv (age),
+subjects,contrast=T1w,53,kilthub-7851515-bids,sub-*/ses-*/anat,subjects with an MPRAGE T1w NIfTI (named *_T1w_defaced or *_T1w_defacemask)
+subjects,contrast=dwi,53,kilthub-7851515-bids,sub-*/ses-*/dwi,subjects with a *_dwi.nii.gz
+subjects,contrast=bold,1,kilthub-7851515-bids,sub-patient01/ses-*/func,only the patient has task fMRI
+subjects,contrast_set=dwi+T1w,52,kilthub-7851515-bids,sub-control*,fieldmaps are not counted as a contrast
+subjects,contrast_set=bold+dwi+T1w,1,kilthub-7851515-bids,sub-patient01,
+scans,,165,kilthub-7851515-bids,sub-*/ses-*,"sum of the disjoint T1w (53), dwi (53) and bold (59) NIfTI counts; fieldmaps not included"
+scans,contrast=T1w,53,kilthub-7851515-bids,sub-*/ses-*/anat,
+scans,contrast=dwi,53,kilthub-7851515-bids,sub-*/ses-*/dwi,
+scans,contrast=bold,59,kilthub-7851515-bids,sub-patient01/ses-*/func,"task runs over nine patient sessions, 32 of them the TAFP task"
+studies,,65,kilthub-7851515-bids,sub-*/ses-*,"session folders holding NIfTI files: 9 for the patient and 56 for the controls, where four controls have T1w in ses-001 and dwi plus fieldmap in ses-002 although the README says controls were scanned once"
+studies,condition=glioma,9,kilthub-7851515-bids,BIDS/README,"sessions 1 to 4 labelled pre-operative and 5 to 9 post-operative; the same README also says the patient was scanned six times, two before and four after surgery"

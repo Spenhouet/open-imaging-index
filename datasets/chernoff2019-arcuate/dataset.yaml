@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chernoff2019-arcuate
+name: Arcuate Fasciculus Resection Case Study
+full_name: 'Reorganized language network connectivity after left arcuate fasciculus resection: A case study'
+summary: >-
+  Brain MRI of one adult with a left parietal glioma, scanned before and after awake resection that cut part of the
+  arcuate fasciculus, plus T1-weighted and diffusion MRI of 52 healthy young adults used as a tractography reference.
+homepage: https://kilthub.cmu.edu/articles/dataset/Reorganized_language_network_connectivity_after_left_arcuate_fasciculus_resection_A_case_study/7851515
+doi: 10.1184/R1/7851515
+# Version 1 published on KiltHub 2019-03-29, version 2 (adds the stimuli archive and an updated README) 2019-10-15.
+year: 2019
+updated: 2019
+version: '2'
+status: active
+creators:
+  - name: Mahon lab, Carnegie Mellon University and University of Rochester (Chernoff BL, Mahon BZ, et al.)
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [glioma, healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens, ge]
+field_strengths: [3]
+size_gb: 5.5
+access:
+  type: open
+  url: https://kilthub.cmu.edu/articles/dataset/Reorganized_language_network_connectivity_after_left_arcuate_fasciculus_resection_A_case_study/7851515
+licenses:
+  - license: CC-BY-4.0
+    note: The KiltHub record and the dataset_description.json inside All_MRI.zip both state CC BY 4.0.
+citation:
+  text: >-
+    Chernoff BL, Teghipco A, Garcea FE, Belkhir R, Sims MH, Paul DA, Tivarus ME, Smith SO, Hintz E, Pilcher WH, Mahon
+    BZ. Reorganized language network connectivity after left arcuate fasciculus resection: A case study. Cortex 123,
+    173-184 (2020). doi:10.1016/j.cortex.2019.07.022. Data: doi:10.1184/R1/7851515.v2
+sources:
+  chernoff2020:
+    title: Chernoff et al. 2020, Reorganized language network connectivity after left arcuate fasciculus resection, Cortex (PubMed abstract)
+    url: https://pubmed.ncbi.nlm.nih.gov/31812105/
+    kind: paper
+  kilthub-7851515-v2:
+    title: KiltHub (Carnegie Mellon University) record 7851515 version 2, description, license, file list and README.txt
+    url: https://doi.org/10.1184/R1/7851515.v2
+    kind: website
+  kilthub-7851515-bids:
+    title: All_MRI.zip of KiltHub record 7851515 v2 (CC BY 4.0), BIDS/participants.tsv and the file listing of the archive
+    url: https://ndownloader.figshare.com/files/14737364
+    kind: computed
+keywords: [arcuate fasciculus, awake craniotomy, conduction aphasia, sentence repetition, tractography, DTI, task fMRI, functional connectivity, language recovery, case study]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
