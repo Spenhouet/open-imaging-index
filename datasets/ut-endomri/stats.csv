@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,132,liang2025,Table 1,"Sum of Dataset 1 (51, Memorial Hermann) and Dataset 2 (81, Texas Children's Pavilion for Women), which are disjoint; the Zenodo record gives 82 for Dataset 2"
+subjects,sex=female,132,liang2025,Abstract,Female pelvic MRI of endometriosis patients
+subjects,country=US,132,liang2025,"Methods, Image acquisition",Both institutions are in Texas
+subjects,condition=endometriosis,124,liang2025,"Methods, Image acquisition","43 of 51 in Dataset 1 (eight were not diagnosed with endometriosis) plus all 81 in Dataset 2"
+scans,,400,liang2025,Table 1,Sum of all scan counts per sequence in both datasets
+scans,contrast=T2w,172,liang2025,Table 1,"Dataset 1 T2w 45; Dataset 2 T2w 50 and fat-suppressed T2w 77"
+scans,contrast=T1w,228,liang2025,Table 1,"Dataset 1 T1w 42 and fat-suppressed T1w 42; Dataset 2 T1w 76 and fat-suppressed T1w 68. The paper text lists only fat-suppressed T1w for Dataset 1"
