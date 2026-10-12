@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: masivar
+name: MASiVar
+full_name: >-
+  MASiVar: Multisite, Multiscanner, and Multisubject Acquisitions for Studying Variability in Diffusion Weighted
+  Magnetic Resonance Imaging
+summary: >-
+  Repeated diffusion MRI of healthy adults and young children, acquired to measure how much diffusion measures vary
+  within a session, between sessions, between scanners and between people, with raw and preprocessed scans from four
+  3 T scanners at three sites.
+homepage: https://openneuro.org/datasets/ds003416
+doi: 10.18112/openneuro.ds003416.v2.0.2
+# OpenNeuro snapshot 1.0.0 is dated 2020-12-03 and snapshot 2.0.2 (the latest) 2021-07-21 in the CHANGES file.
+year: 2020
+updated: 2021
+version: 2.0.2
+status: active
+creators:
+  - name: >-
+      Leon Y. Cai, Bennett A. Landman and colleagues, Medical-image Analysis and Statistical Interpretation (MASI)
+      Lab, Vanderbilt University
+    url: https://openneuro.org/datasets/ds003416
+species: human
+modalities: [MR]
+contrasts: [dwi, T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+vendors: [philips, ge, siemens]
+field_strengths: [3]
+size_gb: 18.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003416
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.2 states "License" CC0.
+citation:
+  text: >-
+    Cai LY, Yang Q, Kanakaraj P, Nath V, Newton AT, Edmonson HA, Luci J, Conrad BN, Price GR, Hansen CB, Kerley CI,
+    Ramadass K, Yeh FC, Kang H, Garyfallidis E, Descoteaux M, Rheault F, Schilling KG, Landman BA. MASiVar:
+    Multisite, multiscanner, and multisubject acquisitions for studying variability in diffusion weighted MRI.
+    Magnetic Resonance in Medicine 86(6), 3304-3320 (2021). doi:10.1002/mrm.28926
+sources:
+  cai2021:
+    title: >-
+      Cai et al. 2021, MASiVar: Multisite, multiscanner, and multisubject acquisitions for studying variability in
+      diffusion weighted MRI, Magnetic Resonance in Medicine (PMC9087815)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9087815/
+    kind: paper
+  openneuro-ds003416-v2-0-2:
+    title: OpenNeuro ds003416 snapshot 2.0.2 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003416/versions/2.0.2
+    kind: website
+  ds003416-participants:
+    title: participants.tsv of ds003416 snapshot 2.0.2 (CC0), one row per subject and session
+    url: https://github.com/OpenNeuroDatasets/ds003416/blob/2.0.2/participants.tsv
+    kind: computed
+  ds003416-file-tree:
+    title: >-
+      BIDS file tree of ds003416 snapshot 2.0.2 (CC0), raw dwi and T1w NIfTI files under sub-*/ses-*/ and PreQual
+      outputs under derivatives/
+    url: https://github.com/OpenNeuroDatasets/ds003416/tree/2.0.2
+    kind: computed
+related: []
+keywords:
+  [
+    diffusion MRI,
+    DTI,
+    NODDI,
+    multi-shell,
+    reproducibility,
+    scan-rescan,
+    multisite,
+    harmonization,
+    tractography,
+    connectomics,
+    PreQual,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
