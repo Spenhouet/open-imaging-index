@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: numerical-magnitude-fmr-adaptation
+name: Parallel Adaptation of Symbols, Quantities and Size
+full_name: Parallel Adaptation of Symbols, Quantities, and Physical Size
+summary: >-
+  Brain MRI and task fMRI from a passive fMRI adaptation study comparing how the brain represents digit identity,
+  the number of items and physical size. Covers 52 healthy adults from London, Ontario, each with a T1w image and three runs.
+homepage: https://openneuro.org/datasets/ds001848
+doi: 10.18112/openneuro.ds001848.v1.0.1
+# CHANGES file: 1.0.0 (2019-04-11) initial snapshot, 1.0.1 (2019-04-12) added the DOI.
+year: 2019
+version: 1.0.1
+creators:
+  - name: Western University (Sokolowski HM, Hawes Z, Peters L, Ansari D)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CA]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 72.25
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001848
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" as "CCO" (CC0).
+citation:
+  text: >-
+    Sokolowski HM, Hawes Z, Peters L, Ansari D. Symbols Are Special: An fMRI Adaptation Study of Symbolic, Nonsymbolic,
+    and Non-Numerical Magnitude Processing in the Human Brain. Cerebral Cortex Communications 2(3), tgab048 (2021).
+    doi:10.1093/texcom/tgab048
+sources:
+  sokolowski2021:
+    title: >-
+      Sokolowski et al. 2021, Symbols Are Special: An fMRI Adaptation Study of Symbolic, Nonsymbolic, and Non-Numerical
+      Magnitude Processing in the Human Brain, Cerebral Cortex Communications
+    url: https://doi.org/10.1093/texcom/tgab048
+    kind: paper
+  openneuro-ds001848-v1-0-1:
+    title: OpenNeuro ds001848 snapshot 1.0.1 (dataset_description.json, CHANGES, sidecar JSON files and snapshot size)
+    url: https://openneuro.org/datasets/ds001848/versions/1.0.1
+    kind: website
+  ds001848-participants:
+    title: participants.tsv of ds001848 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001848/blob/main/participants.tsv
+    kind: computed
+  ds001848-file-tree:
+    title: File tree of ds001848 snapshot 1.0.1 (CC0), NIfTI files under sub-*/ses-01/ counted per suffix
+    url: https://openneuro.org/datasets/ds001848/versions/1.0.1/file-display
+    kind: computed
+keywords: [numerical cognition, symbolic number, nonsymbolic number, physical size, fMRI adaptation, task fMRI, adults]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
