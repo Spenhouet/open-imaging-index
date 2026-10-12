@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,124,ds005754-file-tree,sub-*/anat and sub-*/func,"subjects with MRI; participants.tsv lists 220 participants, 96 of them without MRI files (fmri_data = 0)"
+studies,,124,ds005754-file-tree,sub-*/,one MRI session per imaged subject
+scans,,496,ds005754-file-tree,anat/ and func/ NIfTI files,124 T1w and 372 bold echo volumes
+scans,contrast=T1w,124,ds005754-file-tree,anat/*_T1w.nii.gz,"one T1w per subject: 114 plain, 6 acq-PURE and 4 acq-ABCD"
+scans,contrast=bold,372,ds005754-file-tree,func/*_task-rest_echo-*_bold.nii.gz,one resting-state run per subject stored as 3 echo files
+subjects,contrast=T1w,124,ds005754-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,124,ds005754-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,124,ds005754-file-tree,sub-*/,
+subjects,vendor=ge,124,ds005754-file-tree,anat/*_T1w.json (Manufacturer),GE DISCOVERY MR750
+subjects,field_strength=3,124,ds005754-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,country=US,124,ds005754-file-tree,anat/*_T1w.json (InstitutionName),NIH FMRIF
+subjects,sex=female,66,ds005754-file-tree,participants.tsv (sex),
+subjects,sex=male,58,ds005754-file-tree,participants.tsv (sex),
+subjects,age=0-9,21,ds005754-file-tree,participants.tsv (age),
+subjects,age=10-19,103,ds005754-file-tree,participants.tsv (age),
+subjects,sex=female;age=0-9,12,ds005754-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=10-19,54,ds005754-file-tree,participants.tsv (sex; age),
+subjects,sex=male;age=10-19,49,ds005754-file-tree,participants.tsv (sex; age),Cells below 10 left out
+age_mean,,13.14,ds005754-file-tree,participants.tsv (age),
+age_sd,,2.69,ds005754-file-tree,participants.tsv (age),
+age_median,,13.25,ds005754-file-tree,participants.tsv (age),
+age_min,,8.1,ds005754-file-tree,participants.tsv (age),
+age_max,,18,ds005754-file-tree,participants.tsv (age),
+subjects,condition=generalized_anxiety_disorder,46,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_GAD),K-SADS-PL flags; a subject can carry several
+subjects,condition=social_anxiety_disorder,32,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_SOCIAL_PHOBIA),K-SADS-PL flags; a subject can carry several
+subjects,condition=separation_anxiety_disorder,19,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_SAD),K-SADS-PL flags; a subject can carry several
+subjects,condition=adhd,26,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_ADHD),K-SADS-PL flags; a subject can carry several
+subjects,condition=disruptive_mood_dysregulation_disorder,8,ds005754-file-tree,phenotype/KSADS.tsv (K_SADS_PL_DMDD),K-SADS-PL flags; a subject can carry several

@@ -196,6 +196,12 @@ terms:
   - { id: specific_phobia, label: Specific phobia, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0012000' } }
   - { id: panic_disorder, label: Panic disorder, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0005383' } }
   - { id: agoraphobia, label: Agoraphobia, parent: anxiety_disorder, mappings: { mondo: 'MONDO:0003709' } }
+  - {
+      id: separation_anxiety_disorder,
+      label: Separation anxiety disorder,
+      parent: anxiety_disorder,
+      mappings: { mondo: 'MONDO:0001098' }
+    }
   - { id: ocd, label: Obsessive-compulsive disorder, synonyms: [OCD], mappings: { mondo: 'MONDO:0008114' } }
   - {
       id: functional_neurological_disorder,

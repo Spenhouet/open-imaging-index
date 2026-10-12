@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005754
+name: Inhibitory Control in Youth (ds005754)
+full_name: >-
+  Multivariate Assessment of Inhibitory Control in Youth: Links with Psychopathology and Brain Function Dataset
+summary: >-
+  T1w MRI and multi-echo resting-state fMRI of children and adolescents with anxiety, ADHD, disruptive mood
+  dysregulation or irritability and youth without a diagnosis, shared with inhibitory control task data and parent
+  symptom ratings from an NIMH study.
+homepage: https://openneuro.org/datasets/ds005754
+doi: 10.18112/openneuro.ds005754.v1.1.1
+# First public snapshot 1.0.2 on OpenNeuro, 2024-12-22.
+year: 2024
+version: 1.1.1
+status: active
+creators:
+  - name: >-
+      Cardinale EM, Bezek J, Linke JO, Siegal O, Freitag G, Subar A, Parmis K, Mallidi A, Peterson O, Morales I,
+      Haller SP, Filippi C, Lee K, Brotman MA, Pine DS, Leibenluft E, Kircanski K (NIMH Intramural Research Program)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions:
+  [
+    anxiety_disorder,
+    generalized_anxiety_disorder,
+    social_anxiety_disorder,
+    separation_anxiety_disorder,
+    disruptive_mood_dysregulation_disorder,
+    irritability,
+    adhd,
+    healthy,
+  ]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 17.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005754
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.1 states "License" CC0.
+citation:
+  text: >-
+    Cardinale EM, Bezek J, Siegal O, Freitag G, Subar A, Khosravi P, Mallidi A, Peterson O, Morales I, Haller SP,
+    Filippi C, Lee K, Brotman MA, Leibenluft E, Pine DS, Linke JO, Kircanski K. Multivariate Assessment of Inhibitory
+    Control in Youth: Links With Psychopathology and Brain Function. Psychological Science 35(4), 376-389 (2024).
+    doi:10.1177/09567976241231574
+sources:
+  openneuro-ds005754-v1-1-1:
+    title: OpenNeuro ds005754 snapshot 1.1.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005754/versions/1.1.1
+    kind: website
+  cardinale2024:
+    title: Cardinale et al. 2024, Psychological Science
+    url: https://doi.org/10.1177/09567976241231574
+    kind: paper
+  ds005754-file-tree:
+    title: >-
+      File listing, participants.tsv, phenotype/KSADS.tsv and JSON sidecars of the ds005754 BIDS repository (CC0),
+      counted over the 124 subjects with MRI files
+    url: https://github.com/OpenNeuroDatasets/ds005754
+    kind: computed
+related: []
+keywords:
+  [
+    inhibitory control,
+    irritability,
+    disruptive mood dysregulation disorder,
+    pediatric anxiety,
+    ADHD,
+    resting-state fMRI,
+    multi-echo,
+    antisaccade,
+    stop signal,
+    flanker,
+    AX-CPT,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
