@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,3992,white2018,Study design; Subjects,"lower bound: children scanned in the second wave (age 9 to 11) with valid parental research consent; wave 1 (1070 children) overlaps with wave 2 by an unreported number beyond the 640 with two T1-weighted scans"
+subjects,modality=MR,3992,white2018,Study design; Subjects,second wave with research consent
+subjects,anatomy=brain,3992,white2018,Study design; Subjects,second wave with research consent
+subjects,contrast=T1w,3959,white2018,Study design; Subjects; Table 7,second wave: complete T1-weighted IR-FSPGR scan
+subjects,contrast=T2w,3687,white2018,Study design; Subjects; Table 7,second wave: 3D turbo spin echo (CUBE)
+subjects,contrast=dwi,3777,white2018,Study design; Subjects; Table 7,second wave: 35-direction diffusion
+subjects,contrast=bold,3439,white2018,Study design; Subjects; Table 7,second wave: resting-state fMRI
+subjects,sex=male,1975,white2018,Table 2,second wave
+subjects,sex=female,2017,white2018,Table 2,second wave
+subjects,condition=autism,41,white2018,Table 5,second wave: clinically confirmed autism spectrum disorder from medical records
+subjects,sex=male;condition=autism,32,white2018,Table 5,second wave
+subjects,sex=female;condition=autism,9,white2018,Table 5,second wave
+subjects,country=NL,3992,white2018,Study design; Subjects,"Rotterdam; second wave"
+subjects,field_strength=3,3992,white2018,Magnetic resonance facility; Scanner hardware and software,second wave on a GE Discovery MR750w 3 T research scanner
+subjects,vendor=ge,3992,white2018,Scanner hardware and software,second wave on a GE Discovery MR750w
+studies,,5157,white2018,Abstract; Introduction,"sum of the two disjoint waves reported: 1070 children scanned in wave 1 (age 6 to 9, from 2009) and 4087 children scanned in wave 2 (age 9 to 11, from 2013); the third wave at age 13 is not counted"

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: generation-r
+name: Generation R Study (neuroimaging)
+full_name: Neuroimaging component of the Generation R Study, a population-based birth cohort in Rotterdam
+summary: >-
+  Repeated brain MRI of children from a population-based birth cohort in Rotterdam, collected to study how prenatal
+  and early-life exposures, genetics and behaviour relate to brain development. Structural, diffusion and
+  resting-state functional MRI. Access through collaboration requests.
+homepage: https://generationr.nl/researchers/collaboration/
+doi: 10.1007/s10654-017-0319-y
+# Year of the second-wave design paper; the images have no public release.
+year: 2018
+creators:
+  - name: The Generation R Study Group, Erasmus MC University Medical Center Rotterdam
+    url: https://generationr.nl/
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [autism]
+countries: [NL]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: application
+  url: https://generationr.nl/researchers/collaboration/
+  note: >-
+    Collaboration requests go to the study's principal investigator and are reviewed by the Generation R Study
+    Management Team and then by the Erasmus MC medical ethics committee. The 2018 design paper states that the data are
+    not openly available, that de-identified data are shared under a data-sharing agreement, and that potentially
+    identifying data stay within Erasmus MC.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The collaboration page and the design papers describe a review process but publish no data use agreement or
+      license text.
+citation:
+  text: >-
+    White T, Muetzel RL, El Marroun H, Blanken LME, Jansen P, Bolhuis K, Kocevska D, Mous SE, Mulder R, Jaddoe VWV,
+    van der Lugt A, Verhulst FC, Tiemeier H. Paediatric population neuroimaging and the Generation R Study: the second
+    wave. European Journal of Epidemiology 33(1):99-125 (2018). doi:10.1007/s10654-017-0319-y
+sources:
+  white2018:
+    title: White et al. 2018, Paediatric population neuroimaging and the Generation R Study, the second wave, European Journal of Epidemiology
+    url: https://doi.org/10.1007/s10654-017-0319-y
+    kind: paper
+  kooijman2016:
+    title: Kooijman et al. 2016, The Generation R Study, design and cohort update 2017, European Journal of Epidemiology
+    url: https://doi.org/10.1007/s10654-016-0224-9
+    kind: paper
+  generationr-collaboration:
+    title: Generation R website, collaboration page
+    url: https://generationr.nl/researchers/collaboration/
+    kind: website
+related: []
+keywords:
+  [
+    population-based cohort,
+    birth cohort,
+    paediatric neuroimaging,
+    brain development,
+    diffusion tensor imaging,
+    resting-state fMRI,
+    longitudinal,
+    autism spectrum disorder,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
