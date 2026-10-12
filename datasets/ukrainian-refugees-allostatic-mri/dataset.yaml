@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: ukrainian-refugees-allostatic-mri
+name: Ukrainian Refugees Trauma and Allostatic Load MRI Study
+full_name: >-
+  Anonymized Dataset on Trauma, Coping, Psychopathology, Allostatic Load, and MRI-Derived Measures in Ukrainian
+  Refugees and Healthy Controls
+summary: >-
+  Structural brain MRI, questionnaires and stress biomarkers from a cross-sectional Wroclaw study of 60 Ukrainian refugees and 50 matched controls. Participant-level tables with MRI-derived measures are open under CC BY 4.0;
+  the scans are available from the authors on request.
+homepage: https://doi.org/10.60956/a79t-qm52
+doi: 10.60956/a79t-qm52
+year: 2026
+creators:
+  - name: Department of Psychiatry, Wroclaw Medical University (Julian Maciaszek, Błażej Misiak)
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [ptsd, healthy]
+countries: [PL]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.3389/fpsyt.2026.1717949
+  note: >-
+    The Wroclaw Medical University repository deposit (CC BY 4.0) holds anonymized participant-level tables:
+    demographics, questionnaires, biochemical markers, the allostatic load and coping flexibility indices and selected
+    processed structural MRI variables. The MRI scans are not in the deposit. The study papers state that the raw data
+    will be made available by the authors; no procedure or terms are published.
+licenses:
+  - license: CC-BY-4.0
+    applies_to: Anonymized participant-level tables with MRI-derived measures in the repository deposit
+    url: https://doi.org/10.60956/a79t-qm52
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MRI scans, available from the authors on request
+    note: The papers' data availability statements give no terms for the raw data.
+citation:
+  text: >-
+    Maciaszek JP. Anonymized Dataset on Trauma, Coping, Psychopathology, Allostatic Load, and MRI-Derived Measures in
+    Ukrainian Refugees and Healthy Controls. Version 1.0. Wroclaw Medical University (2026). doi:10.60956/a79t-qm52
+sources:
+  datacite-a79t-qm52:
+    title: DataCite record of doi:10.60956/a79t-qm52, version 1.0 (description, rights, dates)
+    url: https://api.datacite.org/dois/10.60956/a79t-qm52
+    kind: website
+  maciaszek2026a:
+    title: >-
+      Maciaszek et al. 2026, Frontiers in Psychiatry 17, Lower right insular thickness is associated with more severe
+      post-traumatic stress disorder symptoms among Ukrainian refugees
+    url: https://doi.org/10.3389/fpsyt.2026.1717949
+    kind: paper
+  maciaszek2026b:
+    title: >-
+      Maciaszek et al. 2026, Frontiers in Psychiatry 17, Belief inflexibility reduces the impact of allostatic overload
+      on psychotic-like experiences among Ukrainian refugees
+    url: https://doi.org/10.3389/fpsyt.2026.1761027
+    kind: paper
+related: []
+keywords: [Ukrainian refugees, forced displacement, trauma, allostatic load, coping flexibility, PTSD, cortical thickness, structural MRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

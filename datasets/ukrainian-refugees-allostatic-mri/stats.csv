@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,110,datacite-a79t-qm52,Description,"60 Ukrainian refugees and 50 healthy controls matched for age and sex"
+subjects,sex=male,25,maciaszek2026b,Section 2.1,"Sum of 11 refugees and 14 controls"
+subjects,sex=female,85,maciaszek2026b,Table 1,"Sum of 49 refugees and 36 controls"
+subjects,condition=healthy,50,maciaszek2026b,Section 2.1,
+subjects,condition=ptsd,34,maciaszek2026a,Table 1,"Refugees with PTSD symptoms; 22 refugees were classed without PTSD"
+subjects,contrast=T1w,60,maciaszek2026a,Section 2,"Refugees analysed for cortical thickness; the papers do not report how many controls were scanned"
+subjects,field_strength=3,60,maciaszek2026a,Section 2,Philips Ingenia
+subjects,vendor=philips,60,maciaszek2026a,Section 2,
+age_mean,condition=healthy,26.1,maciaszek2026b,Table 1,
+age_sd,condition=healthy,3.4,maciaszek2026b,Table 1,
