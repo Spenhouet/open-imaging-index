@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,101,klein2012,Table 1,
+subjects,contrast=T1w,101,klein2012,Methods (Data),
+subjects,condition=healthy,101,klein2012,Methods (Data),
+subjects,sex=male,57,klein2012,Table 1,Sum of the male column over all nine subject groups
+subjects,sex=female,44,klein2012,Table 1,Sum of the female column over all nine subject groups
+age_min,,19,klein2012,Table 1,Lowest bound of the group age ranges
+age_max,,61,klein2012,Table 1,Highest bound of the group age ranges
