@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pk11195-mitochondrial-disease
+name: '[11C]PK11195 PET-MRI in mitochondrial disease'
+full_name: '[11C]PK11195-PET brain imaging of the mitochondrial translocator protein in mitochondrial disease'
+summary: >-
+  Brain PET-MRI of the mitochondrial translocator protein (TSPO) in patients with genetically confirmed mitochondrial
+  disease and matched healthy controls, to test TSPO radioligand binding as an in vivo biomarker of mitochondrial
+  pathology. Raw data on request.
+homepage: https://doi.org/10.1212/WNL.0000000000012033
+doi: 10.1212/WNL.0000000000012033
+# Year of the paper; the images have no public release.
+year: 2021
+creators:
+  - name: Department of Clinical Neurosciences and MRC Mitochondrial Biology Unit, University of Cambridge
+    url: https://www.neuroscience.cam.ac.uk/
+modalities: [MR, PT]
+contrasts: [T1w, T2w]
+tracers: [pk11195]
+anatomy: [brain]
+conditions: [mitochondrial_disease, healthy]
+countries: [GB]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.1212/WNL.0000000000012033
+  note: >-
+    The paper's data availability statement says the raw data are available on request from the corresponding author.
+    The Dryad/Zenodo record holds only the supplementary figures and per-patient p-value map overlays, not images.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The data availability statement gives no terms for the raw data. The supplementary material deposited on
+      Dryad/Zenodo (figures only) is released under CC0.
+citation:
+  text: >-
+    van den Ameele J, Hong YT, Manavaki R, Kouli A, Biggs H, MacIntyre Z, Horvath R, Yu-Wai-Man P, Reid E,
+    Williams-Gray CH, Bullmore ET, Aigbirhio FI, Fryer TD, Chinnery PF. [11C]PK11195-PET brain imaging of the
+    mitochondrial translocator protein in mitochondrial disease. Neurology 96(22), e2761-e2773 (2021).
+    doi:10.1212/WNL.0000000000012033
+sources:
+  vandenameele2021:
+    title: van den Ameele et al. 2021, Neurology (PMC8205464)
+    url: https://doi.org/10.1212/WNL.0000000000012033
+    kind: paper
+  zenodo-4958230:
+    title: 'Data from: 11C-PK11195-PET brain imaging of the mitochondrial translocator protein in mitochondrial disease (Dryad/Zenodo)'
+    url: https://zenodo.org/records/4958230
+    kind: website
+related: [biodep]
+keywords: [TSPO PET, translocator protein, mitochondrial disease, PET-MRI, MELAS, POLG, SPG7]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
