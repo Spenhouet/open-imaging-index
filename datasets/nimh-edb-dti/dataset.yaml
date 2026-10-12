@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-edb-dti
+name: NIMH EDB Phenotyping and DTI
+full_name: Emotion and Development Branch Phenotyping and DTI (2012-2017)
+summary: >-
+  Diffusion, T1-weighted and T2-weighted brain MRI of 132 youths aged 8 to 20 with ADHD, disruptive mood dysregulation
+  disorder or no psychiatric diagnosis, scanned at the NIMH, with irritability and attention ratings for 583 youths. BIDS
+  on OpenNeuro under CC0.
+homepage: https://openneuro.org/datasets/ds004605
+doi: 10.18112/openneuro.ds004605.v1.0.1
+# Snapshot 1.0.0 was created 2023-06-16; OpenNeuro gives the publish date 2024-03-06 together with snapshot 1.0.1.
+year: 2024
+updated: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Emotion and Development Branch, National Institute of Mental Health (McKay CC, Linke JO, Leibenluft E, et al.)
+    url: https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb
+species: human
+modalities: [MR]
+contrasts: [dwi, T1w, T2w]
+anatomy: [brain]
+conditions: [adhd, disruptive_mood_dysregulation_disorder, anxiety_disorder, healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 10.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004605
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json and README of snapshot 1.0.1 state the CC0 license.
+citation:
+  text: >-
+    McKay CC, Scheinberg B, Xu EP, Kircanski K, Pine DS, Brotman MA, Leibenluft E, Linke JO. Emotion and Development
+    Branch Phenotyping and DTI (2012-2017). OpenNeuro, ds004605 v1.0.1 (2024). doi:10.18112/openneuro.ds004605.v1.0.1
+sources:
+  mckay2024:
+    title: >-
+      McKay et al. 2024, Modeling shared and specific variances of irritability, inattention, and hyperactivity yields
+      novel insights into white matter perturbations, JAACAP
+    url: https://doi.org/10.1016/j.jaac.2024.02.010
+    kind: paper
+  openneuro-ds004605-v1-0-1:
+    title: OpenNeuro ds004605 snapshot 1.0.1 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004605/versions/1.0.1
+    kind: website
+  ds004605-participants:
+    title: >-
+      participants.tsv and phenotype/phenotype.tsv of ds004605 (CC0), restricted to subjects with images; ages from age,
+      sex from sex, diagnoses from the DX.* columns
+    url: https://github.com/OpenNeuroDatasets/ds004605/blob/main/participants.tsv
+    kind: computed
+  ds004605-file-tree:
+    title: BIDS file tree of ds004605 (CC0), NIfTI files under sub-*/ses-01/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004605/tree/main
+    kind: computed
+related: []
+keywords: [irritability, inattention, hyperactivity, youth, white matter, fractional anisotropy, diffusion tensor imaging, psychopathology]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

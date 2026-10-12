@@ -68,6 +68,7 @@ terms:
       mappings: { hp: 'HP:0004408' }
     }
   - { id: parosmia, label: Parosmia, parent: olfactory_dysfunction, mappings: { hp: 'HP:0034004' } }
+  - { id: synesthesia, label: Synesthesia, description: 'A stimulus in one sense or concept reliably triggers an additional experience, such as letters evoking colours.', synonyms: [synaesthesia], mappings: { hp: 'HP:6000024' } }
   - { id: transient_ischemic_attack, label: Transient ischemic attack, synonyms: [TIA], mappings: { mondo: 'MONDO:0005264' } }
   - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
   - {
@@ -225,6 +226,12 @@ terms:
       description: 'Avoidant, dependent or obsessive-compulsive personality disorder (DSM cluster C). No MONDO term exists for the cluster.',
     }
   - { id: irritability, label: Irritability, mappings: { hp: 'HP:0000737' } }
+  - {
+      id: disruptive_mood_dysregulation_disorder,
+      label: Disruptive mood dysregulation disorder,
+      synonyms: [DMDD],
+      description: 'DSM-5 childhood disorder of severe chronic irritability with temper outbursts. No MONDO term exists.',
+    }
   - { id: eating_disorder, label: Eating disorder, mappings: { mondo: 'MONDO:0005451' } }
   - { id: anorexia_nervosa, label: Anorexia nervosa, parent: eating_disorder, mappings: { mondo: 'MONDO:0005351' } }
   - {
