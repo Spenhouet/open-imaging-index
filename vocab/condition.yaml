@@ -501,6 +501,12 @@ terms:
       mappings: { mondo: 'MONDO:0005416' }
     }
   - { id: fracture, label: Bone fracture, mappings: { mondo: 'MONDO:0005315' } }
+  - {
+      id: periprosthetic_joint_infection,
+      label: Periprosthetic joint infection,
+      synonyms: [prosthetic joint infection, PJI, infected arthroplasty],
+      mappings: { mondo: 'MONDO:0800179' }
+    }
   - { id: meniscal_tear, label: Meniscal tear, synonyms: [torn meniscus], mappings: { hp: 'HP:0032191' } }
   - {
       id: acl_tear,
