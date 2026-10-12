@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: oxytocin-younger-older-adults
+name: Intranasal Oxytocin in Younger and Older Adults (ds004725)
+full_name: 'Single Dose Intranasal Oxytocin Administration: Data from Healthy Younger and Older Adults'
+summary: >-
+  Structural and resting-state brain MRI of healthy younger and older adults scanned after a single dose of intranasal
+  oxytocin or placebo, collected in a randomized double-blind trial on how oxytocin affects the brain and cognition
+  in aging. With cognitive tests, plasma hormone levels and ApoE genotype.
+homepage: https://openneuro.org/datasets/ds004725
+doi: 10.18112/openneuro.ds004725.v1.0.2
+year: 2023
+updated: 2026
+version: 1.0.2
+status: active
+creators:
+  - name: Social-Cognitive and Affective Development Lab, University of Florida (Horta M, Polk R, Ebner NC)
+    url: https://openneuro.org/datasets/ds004725
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 11.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004725/versions/1.0.2
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004725/versions/1.0.2
+    note: dataset_description.json of snapshot 1.0.2 states "License" CC0.
+citation:
+  text: >-
+    Horta M, Polk R, Ebner NC. Single dose intranasal oxytocin administration: Data from healthy younger and older
+    adults. Data in Brief 51:109669 (2023). doi:10.1016/j.dib.2023.109669
+sources:
+  horta2023:
+    title: Horta, Polk and Ebner 2023, Single dose intranasal oxytocin administration, Data in Brief
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10630614/
+    kind: paper
+  openneuro-ds004725-v1:
+    title: OpenNeuro ds004725 snapshot 1.0.2 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004725/versions/1.0.2
+    kind: website
+  ds004725-participants:
+    title: participants.tsv of ds004725 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004725/blob/main/participants.tsv
+    kind: computed
+  ds004725-file-tree:
+    title: File tree of ds004725 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004725
+    kind: computed
+related: []
+keywords: [oxytocin, intranasal administration, placebo-controlled, aging, resting-state fMRI, ApoE, neuropeptide]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
