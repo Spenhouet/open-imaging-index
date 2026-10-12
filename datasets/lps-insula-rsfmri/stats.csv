@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,48,neurovault-807,Description,"resting-state fMRI available for 48 of 52 randomized healthy volunteers: 28 received LPS, 20 placebo"
+subjects,modality=MR,48,neurovault-807,Description,
+subjects,contrast=bold,48,neurovault-807,Description,resting state; image metadata gives the paradigm as rest with eyes closed
+subjects,condition=healthy,48,neurovault-807,Description,healthy volunteers given 0.6 ng/kg LPS or placebo
+subjects,field_strength=3,48,neurovault-807,Collection metadata (field_strength),
