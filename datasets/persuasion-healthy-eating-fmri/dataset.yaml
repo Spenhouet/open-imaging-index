@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: persuasion-healthy-eating-fmri
+name: Persuasive Healthy Eating Call fMRI
+full_name: Deciphering the neural responses to a naturalistic persuasive message
+summary: >-
+  Brain MRI and narrative-listening fMRI of healthy young adults who listened to a persuasive healthy eating narrative between two blocks
+  of a food bidding task, recorded in Moscow to study neural synchrony in persuaded and unpersuaded listeners.
+homepage: https://openneuro.org/datasets/ds005518
+doi: 10.18112/openneuro.ds005518.v1.0.1
+# CHANGES file: snapshot 1.0.0 dated 2024-09-22 (initial); snapshot 1.0.1 dated 2024-10-17 only added the article.
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      HSE University (Ntoumanis I, Sheronova J, Davydova A, Dolgaleva M, Jaaskelainen IP, Kosonogov V, Shestakova AN,
+      Klucharev V)
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [RU]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 30.25
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005518
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Ntoumanis I, Sheronova J, Davydova A, Dolgaleva M, Jaaskelainen IP, Kosonogov V, Shestakova AN, Klucharev V.
+    Deciphering the neural responses to a naturalistic persuasive message. Proc Natl Acad Sci U S A.
+    2024;121(43):e2401317121. doi:10.1073/pnas.2401317121
+sources:
+  ntoumanis2024:
+    title: Ntoumanis et al. 2024, Deciphering the neural responses to a naturalistic persuasive message (PNAS)
+    url: https://doi.org/10.1073/pnas.2401317121
+    kind: paper
+  openneuro-ds005518-v1-0-1:
+    title: OpenNeuro ds005518 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005518/versions/1.0.1
+    kind: website
+  ds005518-participants:
+    title: participants.tsv of ds005518 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005518/blob/main/participants.tsv
+    kind: computed
+  ds005518-file-tree:
+    title: BIDS file tree and JSON sidecars of ds005518 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005518/tree/main
+    kind: computed
+keywords: [persuasion, health communication, naturalistic stimuli, narrative listening, intersubject correlation, willingness to pay, task fMRI, food choice]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

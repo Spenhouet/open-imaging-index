@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,50,ntoumanis2024,Materials and Methods: Participants,participants.tsv also has 50 rows
+subjects,contrast=T1w,50,ds005518-file-tree,,subjects with a sub-*_T1w.nii
+subjects,contrast=bold,50,ds005518-file-tree,,subjects with a *_task-narrative_bold.nii.gz
+subjects,contrast_set=bold+T1w,50,ds005518-file-tree,,
+scans,,100,ds005518-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,50,ds005518-file-tree,,
+scans,contrast=bold,50,ds005518-file-tree,,one run per subject covering both bidding blocks and the narrative
+subjects,sex=female,25,ntoumanis2024,Materials and Methods: Participants,participants.tsv gives the same split
+subjects,sex=male,25,ntoumanis2024,Materials and Methods: Participants,
+subjects,age=10-19,16,ds005518-participants,age,ages 18 and 19
+subjects,age=20-29,33,ds005518-participants,age,
+subjects,age=30-39,1,ds005518-participants,age,
+subjects,condition=healthy,50,ntoumanis2024,Materials and Methods: Participants,"right-handed, no psychiatric, neurological or metabolic illness or eating disorder"
+subjects,field_strength=3,50,ntoumanis2024,Materials and Methods: MRI Data Acquisition,sidecars of all 50 subjects give 3 T
+subjects,vendor=siemens,50,ntoumanis2024,Materials and Methods: MRI Data Acquisition,Siemens Prisma with a 20-channel head coil; sidecars of all 50 subjects name Prisma
+subjects,country=RU,50,ds005518-file-tree,sub-*_T1w.json InstitutionAddress,Research Center of Neurology in Moscow
+subjects,sex=male;age=20-29,16,ds005518-participants,sex and age,cells below 10 in the 10-19 and 30-39 bins left out
+subjects,sex=female;age=20-29,17,ds005518-participants,sex and age,
+age_mean,,21.4,ntoumanis2024,Materials and Methods: Participants,
+age_min,,18,ntoumanis2024,Materials and Methods: Participants,
+age_max,,32,ntoumanis2024,Materials and Methods: Participants,
