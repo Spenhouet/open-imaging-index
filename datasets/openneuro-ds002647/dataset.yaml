@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002647
+name: Isometric handgrip and oddball fMRI in women (ds002647)
+full_name: Isometric exercise facilitates attention to salient events in women via the noradrenergic system
+summary: >-
+  Brain fMRI and neuromelanin-sensitive MRI of younger and postmenopausal women, collected to test whether a brief
+  handgrip squeeze boosts noradrenergic arousal and attention to rare sounds in an auditory oddball task. 91 women in
+  BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds002647
+doi: 10.18112/openneuro.ds002647.v1.0.1
+year: 2020
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Emotion and Cognition Lab, University of Southern California (Mather M, Huang R, Clewett D, Nielsen S, Velasco R,
+      Tu K, Han S, Kennedy B)
+    url: https://openneuro.org/datasets/ds002647
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 8.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002647
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Mather M, Huang R, Clewett DV, Nielsen S, Velasco R, Tu K, Han S, Kennedy BL. Isometric exercise facilitates
+    attention to salient events in women via the noradrenergic system. NeuroImage 210, 116560 (2020).
+    doi:10.1016/j.neuroimage.2020.116560
+sources:
+  mather2020:
+    title: >-
+      Mather et al. 2020, Isometric exercise facilitates attention to salient events in women via the noradrenergic
+      system, NeuroImage
+    url: https://doi.org/10.1016/j.neuroimage.2020.116560
+    kind: paper
+  openneuro-ds002647-v101:
+    title: OpenNeuro ds002647 snapshot 1.0.1 (dataset_description.json, README, CHANGES and sidecar JSON files)
+    url: https://openneuro.org/datasets/ds002647/versions/1.0.1
+    kind: website
+  ds002647-participants:
+    title: participants.tsv of ds002647 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds002647/blob/1.0.1/participants.tsv
+    kind: computed
+  ds002647-file-tree:
+    title: File tree of ds002647 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds002647/tree/1.0.1
+    kind: computed
+related: []
+keywords:
+  [
+    isometric handgrip,
+    auditory oddball,
+    locus coeruleus,
+    neuromelanin,
+    noradrenaline,
+    menopause,
+    hormonal contraception,
+    women,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
