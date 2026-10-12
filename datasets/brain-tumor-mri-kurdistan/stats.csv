@@ -1,0 +1,6 @@
+measure,by,value,source,where,note
+subjects,,90,mendeley-b3z27t8vpb,Description,sum of 50 tumor patients and 40 individuals without tumors
+subjects,condition=brain_tumor,50,mendeley-b3z27t8vpb,Description,
+subjects,country=IQ,90,mendeley-b3z27t8vpb,Description,Hiwa Hospital and Asia International Hospital in Sulaymaniyah region
+images,,542,mendeley-b3z27t8vpb,Description,"original slices before augmentation; with augmented copies the release holds 6,606 images"
+images,condition=brain_tumor,305,mendeley-b3z27t8vpb,Description,original tumor slices before augmentation

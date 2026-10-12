@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: brain-tumor-mri-kurdistan
+name: Multi-Sequence Brain Tumor MRI (Kurdistan)
+full_name: Multi-Sequence MRI Dataset for AI-Driven Brain Tumor Analysis Applications
+summary: >-
+  Clinical brain MRI slices labelled tumor or non-tumor, released to train deep learning classifiers for brain tumor
+  detection. 542 original JPEG slices from 50 patients with brain tumors and 40 people without, from hospitals in
+  Sulaymaniyah, Iraq, plus augmented copies.
+homepage: https://data.mendeley.com/datasets/b3z27t8vpb/1
+doi: 10.17632/b3z27t8vpb.1
+year: 2025
+version: '1'
+status: active
+creators:
+  - name: Hiwa Omer Hassan and colleagues, University of Human Development
+    url: https://ror.org/02jz38b76
+  - name: University of Halabja
+    url: https://ror.org/037fm3958
+  - name: University of Sulaimani
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, T1w_ce, ADC, dwi]
+anatomy: [brain]
+conditions: [brain_tumor]
+tasks: [classification]
+formats: [JPEG]
+countries: [IQ]
+size_gb: 0.09
+access:
+  type: open
+  url: https://data.mendeley.com/datasets/b3z27t8vpb/1
+licenses:
+  - license: CC-BY-4.0
+citation:
+  text: >-
+    Omer Hassan H, Abdalrahman Mohammed B, Abdalaziz Salih M, Abdullah Ali H, Muhedin Hama sur S, Saman Ahmed S,
+    Hassan Mohammed R. Multi-Sequence MRI Dataset for AI-Driven Brain Tumor Analysis Applications. Mendeley Data, V1
+    (2025). doi:10.17632/b3z27t8vpb.1
+sources:
+  mendeley-b3z27t8vpb:
+    title: Multi-Sequence MRI Dataset for AI-Driven Brain Tumor Analysis Applications, Mendeley Data V1
+    url: https://data.mendeley.com/datasets/b3z27t8vpb/1
+    kind: website
+related: []
+keywords: [brain tumor classification, data augmentation, 2D MRI slices]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
