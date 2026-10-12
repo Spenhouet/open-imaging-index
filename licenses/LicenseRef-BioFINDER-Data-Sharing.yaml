@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-BioFINDER-Data-Sharing
+name: Swedish BioFINDER data availability statement (sharing on request under a material transfer agreement)
+short_name: BioFINDER on request
+url: https://doi.org/10.1093/brain/awaa327
+version: 'Data availability statement as printed in Smith et al., Brain 2020'
+summary: >-
+  BioFINDER publishes no license or data use agreement. Its papers state that anonymized data are shared on request
+  with qualified academic investigators, only to replicate the procedures and results of the article, when the transfer
+  complies with the GDPR and Swedish ethics and Region Skåne decisions, under a material transfer agreement whose terms
+  are not published.
+purpose: approved_project
+rules:
+  commercial_use:
+    value: 'no'
+    quote: Anonymized data will be shared by request from a qualified academic investigator for the sole purpose of
+      replicating procedures and results presented in the article
+    note: Sharing is limited to academic investigators and to replicating a published article.
+  product_validation:
+    value: unspecified
+    note: The statement does not address testing or validating a product. Requests are limited to academic
+      investigators replicating a published article.
+  model_training:
+    value: conditional
+    quote: for the sole purpose of replicating procedures and results presented in the article
+    note: Only as far as the published article being replicated trained a model.
+  derivatives:
+    value: unspecified
+    note: The material transfer agreement is not published.
+  publication:
+    value: unspecified
+  redistribute_original:
+    value: unspecified
+    note: The material transfer agreement is not published.
+  redistribute_derivatives:
+    value: unspecified
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'no'
+    note: The statement asks for no citation; the unpublished material transfer agreement may.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: which should be regulated in a material transfer agreement
+  ethics_approval:
+    value: conditional
+    quote: as long as data transfer is in agreement with EU legislation on the general data protection regulation and
+      decisions by the Ethical Review Board of Sweden and Region Skane
+    note: The transfer must fit the Swedish ethics decisions for the study. Whether the requester needs their own
+      approval is not stated.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: Data are shared anonymized; the statement does not itself forbid re-identification.
+  geographic_restriction:
+    value: conditional
+    quote: as long as data transfer is in agreement with EU legislation on the general data protection regulation
+    note: Transfers must comply with the GDPR, which limits transfers outside the EU and EEA.
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
