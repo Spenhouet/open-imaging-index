@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: tinnitus-mrs
+name: Tinnitus PRESS MR Spectroscopy
+full_name: Magnetic resonance spectroscopy data acquired in tinnitus subjects and healthy volunteers using PRESS sequence
+summary: >-
+  Raw proton MR spectroscopy signals from temporal and frontal brain regions of adults with chronic unilateral or
+  bilateral tinnitus and healthy volunteers, collected to compare neurotransmitter and metabolite levels between the
+  groups.
+homepage: https://zenodo.org/records/8379543
+doi: 10.5281/zenodo.8379543
+year: 2023
+version: v1
+status: active
+creators:
+  - name: Wójcik J, Kochański B, Cieśla K, Lewandowska M, Karpiesz L, Niedziałek I, Raj-Koziak D, Skarżyński PH, Wolak T; Institute of Physiology and Pathology of Hearing, World Hearing Center, Poland
+    url: https://zenodo.org/records/8379543
+species: human
+modalities: [MR]
+contrasts: [MRS]
+anatomy: [brain]
+conditions: [tinnitus, healthy]
+countries: [PL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 0.003
+access:
+  type: open
+  url: https://zenodo.org/records/8379543
+licenses:
+  - license: CC-BY-NC-SA-4.0
+    note: The Zenodo record states the license CC BY-NC-SA 4.0.
+citation:
+  text: >-
+    Wójcik J, Kochański B, Cieśla K, et al. An MR spectroscopy study of temporal areas excluding primary auditory cortex
+    and frontal regions in subjective bilateral and unilateral tinnitus. Sci Rep 13, 18417 (2023).
+    doi:10.1038/s41598-023-45024-3
+sources:
+  wojcik2023:
+    title: Wójcik et al. 2023, Scientific Reports 13, 18417
+    url: https://doi.org/10.1038/s41598-023-45024-3
+    kind: paper
+  zenodo-8379543:
+    title: Zenodo record 8379543 (description and file list)
+    url: https://zenodo.org/records/8379543
+    kind: website
+  zenodo-8379543-files:
+    title: RDA_dataset.zip and participants.tsv of Zenodo record 8379543 (CC BY-NC-SA 4.0), counted per file and row
+    url: https://zenodo.org/api/records/8379543/files
+    kind: computed
+related: []
+keywords: [tinnitus, MR spectroscopy, PRESS, single-voxel spectroscopy, free induction decay, RDA, glutamate, GABA]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

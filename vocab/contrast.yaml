@@ -69,6 +69,12 @@ terms:
   - { id: dsc, label: DSC perfusion, group: MR, description: Dynamic susceptibility contrast MRI }
   - { id: cine, label: Cine MRI, group: MR, description: 'Cardiac cine imaging, e.g. balanced SSFP' }
   - { id: lge, label: Late gadolinium enhancement, group: MR, synonyms: [LGE] }
+  # MR spectroscopy
+  - id: MRS
+    label: MR spectroscopy
+    group: MR
+    description: 'Proton or other nuclear magnetic resonance spectra from a single voxel (SVS, e.g. PRESS, STEAM, MEGA-PRESS) or a spectroscopic imaging grid (MRSI). BIDS stores these with the svs and mrsi suffixes.'
+    synonyms: [MR spectroscopy, 1H-MRS, SVS, MRSI, PRESS, STEAM, MEGA-PRESS]
   # CT phases
   - { id: ct_noncontrast, label: Non-contrast CT, group: CT, synonyms: [native CT, NCCT] }
   - {

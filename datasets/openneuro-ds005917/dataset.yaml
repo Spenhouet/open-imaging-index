@@ -17,7 +17,7 @@ creators:
     url: https://openneuro.org/datasets/ds005917
 species: human
 modalities: [MR]
-contrasts: [T1w, T2w, dwi, bold]
+contrasts: [T1w, T2w, dwi, bold, MRS]
 anatomy: [brain]
 conditions: [depression, bipolar_disorder, healthy]
 tasks: [longitudinal]
