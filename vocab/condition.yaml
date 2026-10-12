@@ -493,6 +493,13 @@ terms:
       mappings: { mondo: 'MONDO:0005453' }
     }
   - {
+      id: coronary_artery_anomaly,
+      label: Coronary artery anomaly,
+      parent: congenital_heart_disease,
+      synonyms: [AAOCA, anomalous aortic origin of a coronary artery, coronary artery congenital malformation],
+      mappings: { mondo: 'MONDO:0015203' }
+    }
+  - {
       id: tetralogy_of_fallot,
       label: Tetralogy of Fallot,
       parent: congenital_heart_disease,

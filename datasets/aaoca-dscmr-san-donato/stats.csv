@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,100,attanasio2025,Abstract (Methods and results),consecutive AAOCA patients who underwent dobutamine stress CMR between April 2015 and January 2024; the Zenodo record gives the same count
+subjects,condition=coronary_artery_anomaly,100,attanasio2025,Table 1,anomalous right coronary artery 70; left coronary artery 15; left circumflex artery 10; left anterior descending artery 5
+subjects,sex=male,73,attanasio2025,Table 1,
+subjects,sex=female,27,attanasio2025,Table 1,100 minus 73 men
+age_median,,36,attanasio2025,Table 1,interquartile range 15 to 51 years
+subjects,contrast=cine,100,attanasio2025,Methods (Stress-CMR acquisition protocol),SSFP cine at rest and at each dobutamine step
+subjects,contrast=dce,100,attanasio2025,Methods (Stress-CMR acquisition protocol),first-pass T1-weighted TurboFLASH perfusion at peak stress and at rest
+subjects,contrast=lge,100,attanasio2025,Methods (Stress-CMR acquisition protocol),inversion-recovery late gadolinium enhancement
+subjects,contrast=angio,36,attanasio2025,Methods (Stress-CMR acquisition protocol),3D radial whole-heart research sequence to assess the coronary origin
+subjects,vendor=siemens,100,attanasio2025,Methods (Stress-CMR acquisition protocol),Siemens Aera
+subjects,field_strength=1.5,100,attanasio2025,Methods (Stress-CMR acquisition protocol),
+subjects,country=IT,100,attanasio2025,Methods (Study design),single centre
