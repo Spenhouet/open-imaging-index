@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,90,zhang2025,Methods (Participants and MRI acquisition),"final sample after 50 of 140 recruited were excluded; 90 sub-* folders in the repository"
+studies,,90,ds005747-file-tree,sub-*/,one session per subject (no ses- folders)
+scans,,360,ds005747-file-tree,anat/ and func/ NIfTI files,90 T1w and 270 bold volumes; 90 preprocessed BOLD derivatives not counted
+scans,contrast=T1w,90,ds005747-file-tree,anat/*_T1w.nii.gz,one inversion-recovery EPI T1-weighted image per subject
+scans,contrast=bold,270,ds005747-file-tree,func/*_task-rest_run-*_bold.nii.gz,three resting-state runs per subject
+subjects,contrast=T1w,90,ds005747-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,90,ds005747-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,90,ds005747-file-tree,sub-*/,
+subjects,vendor=siemens,90,ds005747-file-tree,*.json (Manufacturer),Investigational_Device_7T
+subjects,field_strength=7,90,ds005747-file-tree,*.json (MagneticFieldStrength),6.98 T in the sidecars
+subjects,country=US,90,ds005747-file-tree,*.json (InstitutionAddress),"MGH Martinos Center, Charlestown, Massachusetts"
+subjects,sex=female,40,zhang2025,Methods (Participants and MRI acquisition),
+subjects,sex=male,50,zhang2025,Methods (Participants and MRI acquisition),
+subjects,age=10-19,8,ds005747-file-tree,participants.tsv (age),
+subjects,age=20-29,55,ds005747-file-tree,participants.tsv (age),
+subjects,age=30-39,25,ds005747-file-tree,participants.tsv (age),
+subjects,age=40-49,2,ds005747-file-tree,participants.tsv (age),
+subjects,sex=female;age=20-29,21,ds005747-file-tree,participants.tsv (gender; age),cells below 10 left out
+subjects,sex=female;age=30-39,13,ds005747-file-tree,participants.tsv (gender; age),cells below 10 left out
+subjects,sex=male;age=20-29,34,ds005747-file-tree,participants.tsv (gender; age),cells below 10 left out
+subjects,sex=male;age=30-39,12,ds005747-file-tree,participants.tsv (gender; age),cells below 10 left out
+age_mean,,26.9,zhang2025,Methods (Participants and MRI acquisition),
+age_sd,,6.2,zhang2025,Methods (Participants and MRI acquisition),
+age_min,,18,zhang2025,Main (age range),
+age_max,,40,zhang2025,Main (age range),
+age_median,,26,ds005747-file-tree,participants.tsv (age),

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005747
+name: 7T fMRI Resting-state Dataset (ds005747)
+full_name: 7T fMRI Resting-state Dataset
+summary: >-
+  Ultra-high field brain MRI from healthy young adults, with one T1-weighted image and three eyes-open
+  resting-state fMRI runs per person plus preprocessed BOLD, collected at 7 tesla at the MGH Martinos Center to map
+  the allostatic-interoceptive system. 90 people aged 18 to 40.
+homepage: https://openneuro.org/datasets/ds005747
+doi: 10.18112/openneuro.ds005747.v1.2.1
+# First public snapshot 1.0.0 on OpenNeuro, 2024-12-21.
+year: 2024
+version: 1.2.1
+status: active
+creators:
+  - name: >-
+      Zhang J, Chen D, Deming P, Srirangarajan T, Theriault J, Kragel PA, Hartley L, Lee KM, McVeigh K, Wager TD,
+      Wald LL, Satpute AB, Quigley KS, Whitfield-Gabrieli S, Barrett LF, Bianciardi M
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [7]
+size_gb: 354.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005747
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.2.1 states "License" CC0.
+citation:
+  text: >-
+    Zhang J, Chen D, Srirangarajan T, Theriault J, Kragel PA, Hartley L, Lee KM, McVeigh K, Wager TD, Wald LL,
+    Satpute AB, Quigley KS, Whitfield-Gabrieli S, Barrett LF, Bianciardi M. Cortical and subcortical mapping of the
+    human allostatic-interoceptive system using 7 Tesla fMRI. Nature Neuroscience 28, 2380-2391 (2025).
+    doi:10.1038/s41593-025-02087-x
+sources:
+  openneuro-ds005747-v1-2-1:
+    title: OpenNeuro ds005747 snapshot 1.2.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005747/versions/1.2.1
+    kind: website
+  zhang2025:
+    title: >-
+      Zhang et al. 2025, Cortical and subcortical mapping of the human allostatic-interoceptive system using 7 Tesla
+      fMRI, Nature Neuroscience
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12586188/
+    kind: paper
+  ds005747-file-tree:
+    title: File listing, participants.tsv and JSON sidecars of the ds005747 BIDS repository at tag 1.2.1 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005747
+    kind: computed
+related: []
+keywords:
+  [
+    resting-state fMRI,
+    ultra-high field,
+    7 tesla,
+    allostasis,
+    interoception,
+    brainstem,
+    functional connectivity,
+    FLEET,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
