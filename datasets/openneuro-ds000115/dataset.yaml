@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000115
+name: Working memory in schizophrenia and siblings (ds000115)
+full_name: Working memory in healthy and schizophrenic individuals
+summary: >-
+  Brain MRI and N-back working memory fMRI of people with schizophrenia, their siblings, healthy controls and the
+  controls' siblings, collected to study how brain network connectivity changes with working memory load and with
+  familial risk for schizophrenia.
+homepage: https://openneuro.org/datasets/ds000115
+# The OpenNeuro dataset was created on 2016-10-25 (CHANGES lists the BIDS conversion on 2016-10-18); snapshot 00001
+# is dated 2018-07-14.
+year: 2016
+updated: 2018
+version: '00001'
+status: active
+creators:
+  - name: Grega Repovš, Deanna M. Barch (Washington University in St. Louis, University of Ljubljana)
+    url: https://openneuro.org/datasets/ds000115
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [schizophrenia, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 9.11
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000115
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      dataset_description.json of snapshot 00001 has no "License" field and the README names no license. The OpenNeuro
+      FAQ says early datasets were released as CC0, PDDL or CC BY and that only newly published datasets and versions
+      are CC0, so the license of this snapshot cannot be inferred. brainlife.io hosts a copy of the earlier OpenNeuro
+      snapshot 580f8a81cce88d000a0fa730, also without a license.
+citation:
+  text: >-
+    Repovš G, Barch DM. Working memory related brain network connectivity in individuals with schizophrenia and their
+    siblings. Frontiers in Human Neuroscience 6:137 (2012). doi:10.3389/fnhum.2012.00137
+sources:
+  repovs2012:
+    title: >-
+      Repovš and Barch 2012, Working memory related brain network connectivity in individuals with schizophrenia and
+      their siblings, Frontiers in Human Neuroscience
+    url: https://doi.org/10.3389/fnhum.2012.00137
+    kind: paper
+  openneuro-ds000115-00001:
+    title: OpenNeuro ds000115 snapshot 00001 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds000115/versions/00001
+    kind: website
+related: []
+keywords: [schizophrenia, siblings, familial risk, working memory, N-back, functional connectivity, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

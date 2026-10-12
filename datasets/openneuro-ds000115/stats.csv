@@ -1,0 +1,2 @@
+measure,by,value,source,where,note
+subjects,,99,openneuro-ds000115-00001,snapshot summary,the README lists sub-23 and sub-25 and sub-48 as missing; the paper analyses 74 participants (Materials and Methods: Participants)
