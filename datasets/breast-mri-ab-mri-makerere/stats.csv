@@ -1,0 +1,3 @@
+measure,by,value,source,where,note
+studies,,52,dataverse-puyoeu,Description,The record speaks of 52 patient studies; the number of distinct patients is not stated.
+studies,field_strength=3,52,dataverse-puyoeu,Description,All studies were acquired on one Siemens 3.0 T scanner.
