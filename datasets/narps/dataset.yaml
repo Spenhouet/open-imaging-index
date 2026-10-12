@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: narps
+name: NARPS (ds001734)
+full_name: Neuroimaging Analysis Replication and Prediction Study
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy young adults performing a mixed gambles task, collected so that many
+  independent teams could analyse the same data to measure analytic variability. 108 subjects from Tel Aviv, in BIDS
+  on OpenNeuro with fMRIPrep and MRIQC outputs.
+homepage: https://openneuro.org/datasets/ds001734
+doi: 10.18112/openneuro.ds001734.v1.0.5
+year: 2019
+updated: 2020
+version: 1.0.5
+status: active
+creators:
+  - name: >-
+      NARPS team, Tel Aviv University and Stanford University (Botvinik-Nezer R, Iwanir R, Poldrack RA, Schonberg T
+      and others)
+    url: https://openneuro.org/datasets/ds001734
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [IL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 293.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001734
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Botvinik-Nezer R, Iwanir R, Holzmeister F, Huber J, Johannesson M, Kirchler M, Dreber A, Camerer CF, Poldrack RA,
+    Schonberg T. fMRI data of mixed gambles from the Neuroimaging Analysis Replication and Prediction Study. Scientific
+    Data 6, 106 (2019). doi:10.1038/s41597-019-0113-7
+sources:
+  botviniknezer2019:
+    title: >-
+      Botvinik-Nezer et al. 2019, fMRI data of mixed gambles from the Neuroimaging Analysis Replication and Prediction
+      Study, Scientific Data
+    url: https://doi.org/10.1038/s41597-019-0113-7
+    kind: paper
+  openneuro-ds001734-v105:
+    title: OpenNeuro ds001734 snapshot 1.0.5 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds001734/versions/1.0.5
+    kind: website
+  ds001734-participants:
+    title: participants.tsv of ds001734 snapshot 1.0.5 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds001734/blob/1.0.5/participants.tsv
+    kind: computed
+  ds001734-file-tree:
+    title: BIDS file tree of ds001734 snapshot 1.0.5 (CC0), raw NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds001734/tree/1.0.5
+    kind: computed
+related: []
+keywords: [mixed gambles, decision making under risk, loss aversion, analytic variability, reproducibility, task fMRI, field map, fMRIPrep]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

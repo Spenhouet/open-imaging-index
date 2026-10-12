@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,108,botviniknezer2019,Methods: Participants,119 completed the experiment; 11 were excluded before release (preregistered criteria or failed preprocessing)
+subjects,sex=female,60,ds001734-participants,gender,
+subjects,sex=male,48,ds001734-participants,gender,
+subjects,age=10-19,2,ds001734-participants,age,
+subjects,age=20-29,88,ds001734-participants,age,
+subjects,age=30-39,18,ds001734-participants,age,
+subjects,sex=female;age=20-29,48,ds001734-participants,gender; age,cells below 10 left out
+subjects,sex=female;age=30-39,11,ds001734-participants,gender; age,cells below 10 left out
+subjects,sex=male;age=20-29,40,ds001734-participants,gender; age,cells below 10 left out
+subjects,condition=healthy,108,botviniknezer2019,Methods: Participants,no reported history of psychiatric or neurologic diagnoses
+subjects,country=IL,108,botviniknezer2019,Methods: Participants,Tel Aviv University
+subjects,vendor=siemens,108,botviniknezer2019,Methods: MRI data acquisition,3T Siemens Prisma with a 64-channel head coil
+subjects,field_strength=3,108,botviniknezer2019,Methods: MRI data acquisition,
+subjects,contrast=T1w,108,ds001734-file-tree,anat,
+subjects,contrast=bold,108,ds001734-file-tree,func,4 task-MGT runs per subject
+subjects,contrast_set=bold+T1w,108,ds001734-file-tree,,
+scans,,540,ds001734-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; sbref and field map volumes (magnitude1, magnitude2, phasediff) not counted"
+scans,contrast=T1w,108,ds001734-file-tree,anat,
+scans,contrast=bold,432,ds001734-file-tree,func,
+age_mean,,25.55,ds001734-participants,age,
+age_median,,25,ds001734-participants,age,
+age_min,,18,ds001734-participants,age,
+age_max,,37,ds001734-participants,age,
