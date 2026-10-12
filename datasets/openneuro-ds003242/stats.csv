@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,32,ds003242-file-tree,sub-SAXSISO<NN><b|f|s> folders,"96 BIDS subject folders, one per participant and session (b baseline, f fasting, s isolation), from 32 participants; the paper (Methods, Participants) analysed 40, 27 of them female"
+subjects,sex=female,22,ds003242-participants,sex,sex F of the 32 participants with image folders
+subjects,sex=male,10,ds003242-participants,sex,sex M of the 32 participants with image folders
+subjects,age=10-19,3,ds003242-participants,age,age in whole years; all 18
+subjects,age=20-29,21,ds003242-participants,age,age in whole years
+subjects,age=30-39,7,ds003242-participants,age,age in whole years
+subjects,age=40-49,1,ds003242-participants,age,age in whole years
+subjects,contrast=T1w,32,ds003242-file-tree,*_T1w.nii.gz,
+subjects,contrast=T2w,32,ds003242-file-tree,*_T2w.nii.gz,
+subjects,contrast=bold,32,ds003242-file-tree,*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,32,ds003242-file-tree,"anat, func and fmap folders",fieldmaps (magnitude and phasediff) not counted as a contrast
+studies,,96,ds003242-file-tree,sub-* folders,"three sessions per participant (baseline, fasting, isolation), each stored as its own BIDS subject"
+scans,,1182,ds003242-file-tree,sub-*/*/*.nii.gz,"all image files: 96 T1w, 96 T2w, 606 bold and 384 field map files (128 each of magnitude1, magnitude2 and phasediff)"
+scans,contrast=T1w,96,ds003242-file-tree,*_T1w.nii.gz,one per session
+scans,contrast=T2w,96,ds003242-file-tree,*_T2w.nii.gz,one per session
+scans,contrast=bold,606,ds003242-file-tree,*_bold.nii.gz,574 craving task runs (one fasting session has 4 instead of 6) and 32 midbrain localizer runs on the baseline day
+age_min,,18,ds003242-participants,age,whole years
+age_max,,40,ds003242-participants,age,whole years
+age_mean,,26.8,ds003242-participants,age,"whole years, mean over the 32 participants with image folders"
