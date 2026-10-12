@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,120,ds005449-file-tree,anat and func,"122 subject folders, of which sub-016 and sub-073 hold only event files and no images; the paper reports 121 recruited and 71 analysed"
+subjects,condition=healthy,120,ehlers2024,Section 2.1,"recruited as young, healthy participants"
+subjects,contrast=T1w,113,ds005449-file-tree,anat,one T1w file per subject
+subjects,contrast=bold,115,ds005449-file-tree,func,
+subjects,contrast_set=bold+T1w,108,ds005449-file-tree,anat and func,
+subjects,contrast_set=T1w,5,ds005449-file-tree,anat and func,
+subjects,contrast_set=bold,7,ds005449-file-tree,anat and func,
+subjects,sex=female,66,ds005449-participants,sex,
+subjects,sex=male,34,ds005449-participants,sex,
+subjects,sex=unknown,20,ds005449-participants,sex,"17 rows with n/a plus sub-002, sub-003 and sub-048, which have no participants.tsv row"
+subjects,age=18-19,45,ds005449-participants,age,
+subjects,age=20-24,44,ds005449-participants,age,
+subjects,age=25-29,11,ds005449-participants,age,
+age_mean,,20.6,ds005449-participants,age,100 imaged subjects with a reported age
+age_median,,20,ds005449-participants,age,100 imaged subjects with a reported age
+age_min,,18,ds005449-participants,age,
+age_max,,29,ds005449-participants,age,
+subjects,vendor=ge,120,ehlers2024,Section 2.4.1,GE Discovery 3 T with 32-channel head coil
+subjects,field_strength=3,120,ehlers2024,Section 2.4.1,
+subjects,country=US,120,ehlers2024,Section 2.1,recruited and scanned at Cornell University
+scans,,723,ds005449-file-tree,anat and func,"sum of the disjoint T1w (113) and bold (610) runs; each bold run is stored as three echo files (1,830 files)"
+scans,contrast=T1w,113,ds005449-file-tree,anat,
+scans,contrast=bold,610,ds005449-file-tree,func,"runs across tasks pain, brush, NA, morph, funcloc, rest and error"

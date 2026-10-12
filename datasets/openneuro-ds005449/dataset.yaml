@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005449
+name: Valenced tactile conditioning fMRI (ds005449)
+full_name: Valenced tactile information is evoked by neutral visual cues following emotional learning
+summary: >-
+  Multi-echo task fMRI and T1-weighted MRI of young healthy adults at Cornell University undergoing appetitive (soft
+  brush) and aversive (painful pressure) conditioning to face images, plus localizer and resting runs, in BIDS.
+homepage: https://openneuro.org/datasets/ds005449
+doi: 10.18112/openneuro.ds005449.v1.0.0
+# First and latest snapshot (1.0.0) on OpenNeuro, 2024-09-05.
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Ehlers MR, Kryklywy JH, Beukers AO, Moore SR, Forys BJ, Anderson AK, Todd RM
+    url: https://openneuro.org/datasets/ds005449
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 122.55
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005449
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ehlers MR, Kryklywy JH, Beukers AO, Moore SR, Forys BJ, Anderson AK, Todd RM. Valenced tactile information is
+    evoked by neutral visual cues following emotional learning. Imaging Neuroscience 2 (2024). doi:10.1162/imag_a_00320
+sources:
+  ehlers2024:
+    title: >-
+      Ehlers et al. 2024, Valenced tactile information is evoked by neutral visual cues following emotional learning,
+      Imaging Neuroscience 2
+    url: https://doi.org/10.1162/imag_a_00320
+    kind: paper
+  openneuro-ds005449-v1-0-0:
+    title: OpenNeuro ds005449 snapshot 1.0.0 (dataset_description.json, README and snapshot summary)
+    url: https://openneuro.org/datasets/ds005449/versions/1.0.0
+    kind: website
+  ds005449-file-tree:
+    title: File listing of ds005449 snapshot 1.0.0 (CC0), counted per anat and func NIfTI file
+    url: https://openneuro.org/datasets/ds005449/versions/1.0.0/file-display
+    kind: computed
+  ds005449-participants:
+    title: participants.tsv of ds005449 snapshot 1.0.0 (CC0), joined to the subject folders that hold images
+    url: https://github.com/OpenNeuroDatasets/ds005449/blob/1.0.0/participants.tsv
+    kind: computed
+related: []
+keywords: [fear conditioning, appetitive conditioning, affective touch, pain, representational similarity analysis, multi-echo fMRI, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
