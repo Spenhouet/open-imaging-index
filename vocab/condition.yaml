@@ -556,3 +556,7 @@ terms:
     label: Recurrent pregnancy loss
     synonyms: [RPL, uRPL, recurrent miscarriage, habitual abortion]
     mappings: { mondo: 'MONDO:0006774' }
+  - id: adrenoleukodystrophy
+    label: Adrenoleukodystrophy
+    synonyms: [ALD, X-linked adrenoleukodystrophy, X-ALD]
+    mappings: { mondo: 'MONDO:0018544' }

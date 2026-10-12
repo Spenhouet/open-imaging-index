@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,85,huffnagel2019,Abstract,33 controls and 52 patients with data available; groups are disjoint
+subjects,condition=adrenoleukodystrophy,52,huffnagel2019,Abstract,
+subjects,condition=healthy,33,huffnagel2019,Abstract,
+subjects,condition=adrenoleukodystrophy;sex=male,52,huffnagel2019,Abstract,the study enrolled men with adrenoleukodystrophy
+subjects,anatomy=brain,85,dryad-kp648r5-table1,Supplementary Table 1,"brain MR session 1: 52 patients, 33 controls"
+subjects,anatomy=spinal_cord,71,dryad-kp648r5-table1,Supplementary Table 1,"spinal cord MR session 1: 41 patients, 30 controls"
+subjects,condition=adrenoleukodystrophy;anatomy=spinal_cord,41,dryad-kp648r5-table1,Supplementary Table 1,spinal cord MR session 1
+subjects,condition=healthy;anatomy=spinal_cord,30,dryad-kp648r5-table1,Supplementary Table 1,spinal cord MR session 1
+studies,condition=adrenoleukodystrophy;anatomy=brain,131,dryad-kp648r5-table1,Supplementary Table 1,"sum of patient brain MR sessions 1, 2 and 3 (52 + 43 + 36)"
+studies,condition=adrenoleukodystrophy;anatomy=spinal_cord,64,dryad-kp648r5-table1,Supplementary Table 1,"sum of patient spinal cord MR sessions 1 and 2 (41 + 23)"
