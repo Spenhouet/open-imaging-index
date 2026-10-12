@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: failed-tha-infection-mri
+name: Failed total hip arthroplasty MRI (Milan)
+full_name: >-
+  Failed Total Hip Arthroplasty: Diagnostic Performance of Conventional MRI Features and Locoregional Lymphadenopathy
+  to Identify Infected Implants
+summary: >-
+  Pelvis MRI of patients with a failed total hip arthroplasty, read for periprosthetic findings and regional lymph
+  nodes to tell infected from aseptic failure, using a metal artifact reduction protocol at 1.5 T. Only a spreadsheet
+  of readings is public; images are not shared.
+homepage: https://zenodo.org/records/4270257
+doi: 10.5281/zenodo.4270257
+year: 2020
+creators:
+  - name: IRCCS Istituto Ortopedico Galeazzi and Università degli Studi di Milano
+modalities: [MR]
+contrasts: [T1w, T2w, STIR]
+anatomy: [hip]
+conditions: [periprosthetic_joint_infection]
+tasks: [classification]
+countries: [IT]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://zenodo.org/records/4270257
+  note: >-
+    The Zenodo record holds one spreadsheet with one row per patient: sex, age, inflammatory blood markers, infection
+    status, failure cause, lymph node counts and sizes, and the presence of each MRI feature. It is openly downloadable
+    under CC BY 4.0. No route to the MR images is published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MR images.
+    note: Neither the Zenodo record nor the paper abstract offers the images or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Spreadsheet of per-patient clinical data and MRI readings on Zenodo.
+citation:
+  text: >-
+    Albano D, Messina C, Zagra L, Andreata M, De Vecchi E, Gitto S, Sconfienza LM. Failed Total Hip Arthroplasty:
+    Diagnostic Performance of Conventional MRI Features and Locoregional Lymphadenopathy to Identify Infected Implants.
+    J Magn Reson Imaging 53(1):201-210 (2021). doi:10.1002/jmri.27314
+sources:
+  zenodo-4270257:
+    title: Zenodo record 4270257
+    url: https://zenodo.org/records/4270257
+    kind: website
+  albano2021:
+    title: Albano et al. 2021, Journal of Magnetic Resonance Imaging (abstract)
+    url: https://doi.org/10.1002/jmri.27314
+    kind: paper
+  repository-xlsx:
+    title: Infected PTA repository.xlsx (CC BY 4.0), one row per patient
+    url: https://zenodo.org/records/4270257/files/Infected%20PTA%20repository.xlsx
+    kind: computed
+related: []
+keywords: [total hip arthroplasty, prosthetic joint infection, aseptic loosening, lymphadenopathy, metal artifact reduction]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

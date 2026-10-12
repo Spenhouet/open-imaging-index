@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,119,albano2021,Abstract: Population,patients with failed total hip arthroplasty who had pelvis MRI before revision
+subjects,condition=periprosthetic_joint_infection,38,repository-xlsx,column PTA Settica,"rows marked infected; the other 81 are aseptic failures"
+subjects,sex=female,66,albano2021,Abstract: Population,
+subjects,sex=male,53,repository-xlsx,column Sesso,"code 1; code 2 counts 66, matching the 66 females in the abstract"
+age_mean,,66.9,albano2021,Abstract: Population,
+age_sd,,12.4,albano2021,Abstract: Population,
+subjects,field_strength=1.5,119,albano2021,Abstract: Field strength/sequences,
+subjects,contrast_set=STIR+T1w+T2w,119,albano2021,Abstract: Field strength/sequences,"MARS protocol with STIR and turbo spin-echo T1- and T2-weighted sequences"
