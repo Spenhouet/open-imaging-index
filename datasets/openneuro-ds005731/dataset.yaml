@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005731
+name: Round-robin interpersonal perception (ds005731)
+full_name: Round-robin interpersonal perception
+summary: >-
+  Brain MRI and task fMRI of adults who judged traits of themselves and of every member of their own existing social group in a
+  round-robin design, collected to study how relationship strength shapes neural representations of other people.
+homepage: https://openneuro.org/datasets/ds005731
+doi: 10.18112/openneuro.ds005731.v1.0.1
+year: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: Chavez RS, Computational Social Neuroscience Lab, University of Oregon
+    url: https://openneuro.org/datasets/ds005731
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 158.5
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005731
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Chavez RS. Round-robin interpersonal perception. OpenNeuro dataset ds005731, version 1.0.1 (2024).
+    doi:10.18112/openneuro.ds005731.v1.0.1
+sources:
+  openneuro-ds005731-v101:
+    title: OpenNeuro ds005731 snapshot 1.0.1 (dataset_description.json, CHANGES, scripts/README, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005731/versions/1.0.1
+    kind: website
+  ds005731-file-tree:
+    title: File tree of ds005731 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005731
+    kind: computed
+  guthrie2024:
+    title: Guthrie and Chavez 2024, Social Cognitive and Affective Neuroscience
+    url: https://doi.org/10.1093/scan/nsae045
+    kind: paper
+related: []
+keywords: [interpersonal perception, round-robin design, social networks, trait judgment, self-reference, person perception, medial prefrontal cortex, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
