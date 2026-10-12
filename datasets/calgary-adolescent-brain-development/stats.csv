@@ -1,0 +1,42 @@
+measure,by,value,source,where,note
+subjects,,51,conp-adolescent-brain-development,README: Dataset contents,16 with one time point; 23 with two; 12 with three
+studies,,96,abd-file-tree,sub-*/ses-*,sessions with at least one NIfTI file; the README time points add up to 98 and participants.tsv has 99 rows
+subjects,sex=female,24,abd-participants,sex,subjects with image files
+subjects,sex=male,27,abd-participants,sex,subjects with image files
+subjects,country=CA,51,conp-adolescent-brain-development,README: Overview,
+subjects,vendor=ge,51,conp-adolescent-brain-development,README: Data acquisition,GE 3T Discovery MR750w
+subjects,field_strength=3,51,conp-adolescent-brain-development,README: Data acquisition,
+subjects,contrast=T1w,51,abd-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,47,abd-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=dwi,51,abd-file-tree,dwi/*_dwi.nii.gz,b=900 and b=2000 shells for all 51
+subjects,contrast=bold,46,abd-file-tree,func/*_task-rest_fMRI.nii.gz,resting state
+subjects,contrast=asl,42,abd-file-tree,perf/*_ASL.nii.gz,
+subjects,contrast=T2starw,51,abd-file-tree,anat/*_QSM.nii.gz,multi-echo gradient echo acquired for QSM; raw echoes; no susceptibility maps
+subjects,contrast=ihMTw,51,abd-file-tree,anat/*_ihMT.nii.gz,raw images plus MTR; ihMTR; qMT and qihMT maps
+subjects,contrast=VFA,43,abd-file-tree,anat/*_acq-MCDESPOT_*.nii.gz,mcDESPOT SPGR; bSSFP and IR images
+subjects,contrast_set=asl+bold+dwi+ihMTw+T1w+T2starw+T2w+VFA,37,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=asl+bold+dwi+ihMTw+T1w+T2starw+T2w,5,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=dwi+ihMTw+T1w+T2starw+VFA,3,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=bold+dwi+ihMTw+T1w+T2starw+T2w,2,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=bold+dwi+ihMTw+T1w+T2starw+T2w+VFA,2,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=dwi+ihMTw+T1w+T2starw,1,abd-file-tree,,over all sessions of a subject
+subjects,contrast_set=dwi+ihMTw+T1w+T2starw+T2w+VFA,1,abd-file-tree,,over all sessions of a subject
+studies,contrast=T1w,96,abd-file-tree,anat/*_T1w.nii.gz,
+studies,contrast=T2w,79,abd-file-tree,anat/*_T2w.nii.gz,
+studies,contrast=dwi,96,abd-file-tree,dwi/*_dwi.nii.gz,
+studies,contrast=bold,77,abd-file-tree,func/*_task-rest_fMRI.nii.gz,
+studies,contrast=asl,69,abd-file-tree,perf/*_ASL.nii.gz,
+studies,contrast=T2starw,89,abd-file-tree,anat/*_QSM.nii.gz,
+studies,contrast=ihMTw,93,abd-file-tree,anat/*_ihMT.nii.gz,
+studies,contrast=VFA,70,abd-file-tree,anat/*_acq-MCDESPOT_*.nii.gz,
+studies,age=6-7,11,abd-participants,age,age at the session
+studies,age=8-9,20,abd-participants,age,age at the session
+studies,age=10-11,22,abd-participants,age,age at the session
+studies,age=12-13,23,abd-participants,age,age at the session
+studies,age=14-15,15,abd-participants,age,age at the session
+studies,age=16-17,5,abd-participants,age,age at the session
+age_min,,6.04,abd-participants,age,youngest session
+age_max,,17.71,abd-participants,age,oldest session
+age_mean,,10.15,abd-participants,age,age at each subject's first session
+age_sd,,2.37,abd-participants,age,age at each subject's first session
+age_median,,9.86,abd-participants,age,age at each subject's first session
