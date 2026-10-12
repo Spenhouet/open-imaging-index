@@ -41,6 +41,12 @@ terms:
   - { id: MP2RAGE, label: MP2RAGE, group: MR, mappings: { bids: MP2RAGE } }
   - { id: T1map, label: T1 map, group: MR, mappings: { bids: T1map } }
   - { id: T2map, label: T2 map, group: MR, mappings: { bids: T2map } }
+  - id: MTR
+    label: Magnetization transfer
+    group: MR
+    description: Paired images acquired with and without a magnetization transfer pulse (mt-on, mt-off), used for magnetization transfer ratio maps.
+    synonyms: [MT, MTI, magnetization transfer ratio]
+    mappings: { bids: MTR }
   - id: ihMTw
     label: Inhomogeneous magnetization transfer
     group: MR

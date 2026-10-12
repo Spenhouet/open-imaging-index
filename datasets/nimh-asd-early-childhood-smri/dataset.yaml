@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nimh-asd-early-childhood-smri
+name: NIMH Autism Subtypes structural MRI (NDA Study 1887)
+full_name: Structural MRI scans in autism during early childhood in BIDS format
+summary: >-
+  Longitudinal structural brain MRI of young children with autism, non-autism developmental delay or typical
+  development, from an NIMH intramural natural history study of autism subtypes. Defaced T1w, T2w, FLAIR, proton
+  density and magnetization transfer scans in BIDS.
+homepage: https://nda.nih.gov/study.html?id=1887
+doi: 10.15154/1528371
+year: 2023
+status: active
+creators:
+  - name: >-
+      NIMH Intramural Research Program (Pediatrics and Developmental Neuroscience Branch, Audrey Thurm) with the NIMH
+      Data Science and Sharing Team (Eric Earl, Arshitha Basavaraj, Adam Thomas)
+    url: https://github.com/nimh-dsst/nda-study-1887
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, FLAIR, PDw, MTR]
+anatomy: [brain]
+conditions: [autism, developmental_delay, healthy]
+tasks: [classification, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [1.5]
+access:
+  type: application
+  url: https://nda.nih.gov/study.html?id=1887
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The study is NDA Study 1887, drawn from NIMH Data Archive collection 2368 (Clinical and Immunological
+      Investigations of Subtypes of Autism). Download needs the "NIMH Data Archive" data permission, requested through
+      NDA, whose data use terms every access request accepts. Study-specific clauses of the permission group are not
+      broken down here.
+citation:
+  text: >-
+    Data from the Clinical and Immunological Investigations of Subtypes of Autism study (NCT00298246) were obtained
+    from the National Institute of Mental Health Data Archive (NDA), NDA Study 1887 (doi:10.15154/1528371). Raznahan
+    A, Lenroot R, Thurm A, Gozzi M, Hanley A, Spence SJ, Swedo SE, Giedd JN. Mapping cortical anatomy in preschool aged
+    children with autism using surface-based morphometry. NeuroImage: Clinical 2:111-119 (2013).
+    doi:10.1016/j.nicl.2012.10.005
+sources:
+  nda-study-1887:
+    title: NDA Study 1887 (doi:10.15154/1528371), DataCite record with the study description
+    url: https://doi.org/10.15154/1528371
+    kind: website
+  nda-collection-2368:
+    title: NIMH Data Archive collection 2368 (Clinical and Immunological Investigations of Subtypes of Autism), collection API record
+    url: https://nda.nih.gov/api/collection/2368
+    kind: website
+  nimh-dsst-1887-repo:
+    title: nimh-dsst/nda-study-1887 GitHub repository, README and BIDS dataset_description.json
+    url: https://github.com/nimh-dsst/nda-study-1887
+    kind: website
+  raznahan2013:
+    title: Raznahan et al. 2013, Mapping cortical anatomy in preschool aged children with autism using surface-based morphometry, NeuroImage Clinical (PMC3777762)
+    url: https://doi.org/10.1016/j.nicl.2012.10.005
+    kind: paper
+  smith2016:
+    title: Smith et al. 2016, Cortical thickness change in autism during early childhood, Human Brain Mapping (PMC4905793)
+    url: https://doi.org/10.1002/hbm.23195
+    kind: paper
+related: [abide-i, abide-ii, ibis]
+keywords: [autism, ASD, developmental delay, preschool, early childhood, longitudinal, defaced, BIDS, magnetization transfer, NIMH Data Archive, NCT00298246]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
