@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: superstition-neurofeedback
+name: Superstition of control in sham neurofeedback fMRI
+full_name: The role of superstition of cognitive control during neurofeedback training (parts 1 and 2)
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults who believed they controlled a feedback bar with their
+  brain activity while the feedback was sham, collected to test whether mere belief in control activates reward
+  networks seen in neurofeedback training.
+homepage: https://openneuro.org/datasets/ds004556
+doi: 10.18112/openneuro.ds004556.v1.0.1
+# Two OpenNeuro accessions of one study: part 1 is ds004556 (snapshot 1.0.1), part 2 is ds004557 (snapshot 1.1.0,
+# doi 10.18112/openneuro.ds004557.v1.1.0). Both were published on 2023-04-24 and got events files on 2023-04-26.
+year: 2023
+version: ds004556 1.0.1, ds004557 1.1.0
+creators:
+  - name: >-
+      Groessinger D, Fischmeister FPS, Witte M, Koschutnig K, Ninaus M, Neuper C, Kober SE, Wood G (University of
+      Graz)
+    url: https://openneuro.org/datasets/ds004556
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [AT]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 31.24
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004556
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of ds004556 snapshot 1.0.1 and of ds004557 snapshot 1.1.0 both state "License" CC0.
+citation:
+  text: >-
+    Groessinger D, Fischmeister FPS, Witte M, Koschutnig K, Ninaus M, Neuper C, Kober SE, Wood G. The role of
+    superstition of cognitive control during neurofeedback training. bioRxiv (2021). doi:10.1101/2021.09.14.460252.
+    Data: doi:10.18112/openneuro.ds004556.v1.0.1 and doi:10.18112/openneuro.ds004557.v1.1.0
+sources:
+  groessinger2021:
+    title: >-
+      Groessinger et al. 2021, The role of superstition of cognitive control during neurofeedback training, bioRxiv
+      preprint (abstract)
+    url: https://doi.org/10.1101/2021.09.14.460252
+    kind: paper
+  openneuro-ds004556-v1-0-1:
+    title: >-
+      OpenNeuro ds004556 snapshot 1.0.1, part 1 (dataset_description.json, README, CHANGES, sidecars and snapshot
+      summary)
+    url: https://openneuro.org/datasets/ds004556/versions/1.0.1
+    kind: website
+  openneuro-ds004557-v1-1-0:
+    title: >-
+      OpenNeuro ds004557 snapshot 1.1.0, part 2 (dataset_description.json, README, CHANGES, sidecars and snapshot
+      summary)
+    url: https://openneuro.org/datasets/ds004557/versions/1.1.0
+    kind: website
+  superstition-file-trees:
+    title: >-
+      File trees of ds004556 and ds004557 (CC0), NIfTI files under sub-*/ counted per suffix and summed over both
+      parts
+    url: https://github.com/OpenNeuroDatasets/ds004556
+    kind: computed
+  superstition-participants:
+    title: >-
+      participants.tsv of ds004556 and ds004557 (CC0), rows of subjects with image files counted and pooled over both
+      parts
+    url: https://github.com/OpenNeuroDatasets/ds004556/blob/main/participants.tsv
+    kind: computed
+keywords: [neurofeedback, sham feedback, illusion of control, superstition, ventral striatum, task fMRI, triathletes]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,88,superstition-file-trees,,sum of 53 subjects in ds004556 and 35 in ds004557; the READMEs describe different groups (triathletes and non-athlete controls in part 1; university students in part 2)
+subjects,contrast=T1w,88,superstition-file-trees,,one MPRAGE T1w per subject
+subjects,contrast=T2w,88,superstition-file-trees,,one SPACE T2w per subject
+subjects,contrast=bold,88,superstition-file-trees,,one task-feedback run per subject
+subjects,contrast_set=bold+T1w+T2w,88,superstition-file-trees,,
+scans,,264,superstition-file-trees,,"sum of the disjoint T1w, T2w and bold NIfTI counts below"
+scans,contrast=T1w,88,superstition-file-trees,,
+scans,contrast=T2w,88,superstition-file-trees,,
+scans,contrast=bold,88,superstition-file-trees,,
+subjects,condition=healthy,88,openneuro-ds004556-v1-0-1,README,both READMEs describe healthy adults
+subjects,sex=female,42,superstition-participants,sex,24 in ds004556 and 18 in ds004557
+subjects,sex=male,46,superstition-participants,sex,29 in ds004556 and 17 in ds004557
+subjects,age=10-19,2,superstition-participants,age,
+subjects,age=20-29,61,superstition-participants,age,
+subjects,age=30-39,20,superstition-participants,age,
+subjects,age=40-49,3,superstition-participants,age,
+subjects,age=50-59,2,superstition-participants,age,
+age_min,,19,superstition-participants,age,
+age_max,,53,superstition-participants,age,
+age_mean,,27.74,superstition-participants,age,
+age_median,,26,superstition-participants,age,
+age_sd,,6.83,superstition-participants,age,
+subjects,field_strength=3,88,openneuro-ds004556-v1-0-1,sidecar JSON,MagneticFieldStrength 3 in the sidecars of both parts
+subjects,vendor=siemens,88,openneuro-ds004556-v1-0-1,sidecar JSON,Siemens Skyra in the sidecars of both parts
+subjects,country=AT,88,openneuro-ds004556-v1-0-1,sidecar JSON,InstitutionName KFU (University of Graz) in the sidecars of both parts
