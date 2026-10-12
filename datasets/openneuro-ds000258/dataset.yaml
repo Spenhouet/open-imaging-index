@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000258
+name: Multi-echo Cambridge (ds000258)
+full_name: Multi-echo Cambridge
+summary: >-
+  Resting-state multi-echo fMRI and T1w brain MRI of neurotypical adults scanned in Cambridge, used to separate BOLD
+  signal from motion and other non-BOLD influences. Each of 89 subjects has one four-echo rest run and one MPRAGE.
+homepage: https://openneuro.org/datasets/ds000258
+doi: 10.18112/openneuro.ds000258.v1.0.1
+# CHANGES lists the initial OpenfMRI release on 2018-01-22; snapshot 1.0.1 is dated 2023-08-01.
+year: 2018
+updated: 2023
+version: 1.0.1
+status: active
+creators:
+  - name: Jonathan Power, Valerie Voon, Prantik Kundu, Suyash Bhogawar, Peter Bandettini, Alex Martin
+    url: https://openneuro.org/datasets/ds000258
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 12.15
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000258
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Power JD, Plitt M, Gotts SJ, Kundu P, Voon V, Bandettini PA, Martin A. Ridding fMRI data of motion-related
+    influences: Removal of signals with distinct spatial and physical bases in multiecho data. PNAS 115(9):E2105-E2114
+    (2018). doi:10.1073/pnas.1720985115
+sources:
+  openneuro-ds000258-v101:
+    title: OpenNeuro ds000258 snapshot 1.0.1 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds000258/versions/1.0.1
+    kind: website
+  ds000258-file-tree:
+    title: BIDS file tree of ds000258 snapshot 1.0.1 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds000258/tree/1.0.1
+    kind: computed
+  power2018:
+    title: >-
+      Power et al. 2018, Ridding fMRI data of motion-related influences: Removal of signals with distinct spatial and
+      physical bases in multiecho data, PNAS
+    url: https://doi.org/10.1073/pnas.1720985115
+    kind: paper
+related: []
+keywords: [multi-echo fMRI, ME-ICA, resting state, motion artifact, denoising]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
