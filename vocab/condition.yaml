@@ -548,6 +548,7 @@ terms:
       mappings: { mondo: 'MONDO:0005416' }
     }
   - { id: fracture, label: Bone fracture, mappings: { mondo: 'MONDO:0005315' } }
+  - { id: osteoporosis, label: Osteoporosis, mappings: { mondo: 'MONDO:0005298' } }
   - {
       id: periprosthetic_joint_infection,
       label: Periprosthetic joint infection,

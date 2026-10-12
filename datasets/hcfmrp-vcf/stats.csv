@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,91,zenodo-13274445,,patients with a recent nontraumatic lumbar vertebral compression fracture
+subjects,sex=male,36,zenodo-13274445,,
+subjects,sex=female,55,zenodo-13274445,,
+subjects,condition=fracture,91,zenodo-13274445,,
+subjects,condition=osteoporosis,47,zenodo-13274445,,benign osteoporotic fractures; osteoporosis confirmed by DEXA per the paper
+subjects,condition=cancer,44,zenodo-13274445,,malignant fractures from neoplastic infiltration confirmed by spine biopsy
+subjects,contrast=T1w,91,zenodo-13274445,,sagittal T1-weighted only
+subjects,contrast_set=T1w,91,zenodo-13274445,,
+subjects,vendor=philips,91,chiaricorreia2023,Material and Methods: Study Design,Philips Achieva 1.5 T and 3 T
+subjects,split=train,61,chiaricorreia2023,Material and Methods: Study Design,split used in the paper; not marked in the Zenodo description
+subjects,split=test,30,chiaricorreia2023,Material and Methods: Study Design,15 benign and 15 malignant; split used in the paper
+age_mean,,64.24,zenodo-13274445,,the paper reports a mean of 64.75 years for the same 91 patients
+age_sd,,11.75,zenodo-13274445,,

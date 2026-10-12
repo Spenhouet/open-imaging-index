@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcfmrp-vcf
+name: Lumbar Spine VCF MRI (HCFMRP)
+full_name: >-
+  Lumbar Spine Vertebral Compression Fractures (VCFs) Dataset: MRI T1-Weighted Images for Benign and Malignant
+  Classification
+summary: >-
+  Sagittal T1-weighted lumbar spine MRI of adults with vertebral compression fractures, collected to tell
+  osteoporotic from cancer-related fractures with 3D radiomics, with semi-automatic segmentations of each fractured
+  vertebral body.
+homepage: https://zenodo.org/records/13274445
+doi: 10.5281/zenodo.13274445
+year: 2024
+version: v1.0_2024-08-08
+creators:
+  - name: >-
+      Chiari-Correia NS, Nogueira-Barbosa MH, Azevedo-Marques PM, Chiari-Correia RD, Cordeiro SS, Lima LL (Ribeirão
+      Preto Medical School, University of São Paulo)
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [spine]
+conditions: [fracture, osteoporosis, cancer]
+tasks: [classification, segmentation]
+formats: [DICOM, NRRD]
+countries: [BR]
+vendors: [philips]
+field_strengths: [1.5, 3]
+size_gb: 1.3
+access:
+  type: open
+  url: https://zenodo.org/records/13274445
+  note: >-
+    Direct download from Zenodo without an account: one RAR archive (about 1.3 GB) with the anonymized DICOM exams,
+    intensity-requantized NRRD volumes, seg.nrrd segmentations and a per-patient spreadsheet.
+licenses:
+  - license: CC-BY-4.0
+    url: https://zenodo.org/records/13274445
+citation:
+  text: >-
+    Chiari-Correia NS, Nogueira-Barbosa MH, Chiari-Correia RD, Azevedo-Marques PM. A 3D Radiomics-Based Artificial
+    Neural Network Model for Benign Versus Malignant Vertebral Compression Fracture Classification in MRI. J Digit
+    Imaging. 2023;36(4):1565-1577. doi:10.1007/s10278-023-00847-4
+sources:
+  zenodo-13274445:
+    title: Zenodo record 13274445, dataset description
+    url: https://zenodo.org/records/13274445
+    kind: website
+  chiaricorreia2023:
+    title: Chiari-Correia et al. 2023, Journal of Digital Imaging
+    url: https://doi.org/10.1007/s10278-023-00847-4
+    kind: paper
+related: []
+keywords: [vertebral compression fracture, osteoporotic fracture, pathological fracture, bone metastasis, radiomics]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
