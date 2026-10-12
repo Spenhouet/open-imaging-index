@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,53,zenodo-7884627,README_(4).txt: Data & file overview,"one folder per subject; the paper analysed the same 53 of 60 scanned participants, 7 excluded for technical problems, motion or task compliance"
+subjects,condition=healthy,53,ross2022-preprint,Materials and Methods: Participants,no history of neurological or psychiatric problems or substance abuse
+subjects,sex=female,25,ross2022-preprint,Materials and Methods: Participants,
+subjects,age=20-35,53,ross2022-preprint,Materials and Methods: Participants,age range 20 to 35 years
+subjects,contrast=T1w,53,zenodo-7884627,README_(4).txt: Data & file overview,one defaced T1w NIfTI in Talairach space per subject folder
+subjects,contrast=bold,53,zenodo-7884627,README_(4).txt: Data & file overview,three functional runs in Analyze format per subject folder
+subjects,contrast_set=bold+T1w,53,zenodo-7884627,README_(4).txt: Data & file overview,
+subjects,vendor=philips,53,ross2022-preprint,Materials and Methods: MRI acquisition,Philips Achieva TX with a 32-channel head coil
+subjects,field_strength=3,53,ross2022-preprint,Materials and Methods: MRI acquisition,
+scans,,212,zenodo-7884627,README_(4).txt: Data & file overview,sum of the disjoint T1w scans (53) and functional runs (159)
+scans,contrast=T1w,53,zenodo-7884627,README_(4).txt: Data & file overview,
+scans,contrast=bold,159,zenodo-7884627,README_(4).txt: Data & file overview,"53 subjects times 3 runs of 158, 172 and 146 volumes"
+age_mean,,25,ross2022-preprint,Materials and Methods: Participants,
+age_sd,,3.8,ross2022-preprint,Materials and Methods: Participants,
+age_min,,20,ross2022-preprint,Materials and Methods: Participants,
+age_max,,35,ross2022-preprint,Materials and Methods: Participants,

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: av-narrative-speech-fmri
+name: Audiovisual narrative speech fMRI (LORAX)
+full_name: >-
+  Data from: Neural correlates of multisensory enhancement in audiovisual narrative speech perception: a fMRI
+  investigation
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy young adults hearing and watching a narrated story in auditory,
+  visual, synchronous and asynchronous audiovisual blocks, collected to map multisensory enhancement in speech
+  perception.
+homepage: https://datadryad.org/dataset/doi:10.5061/dryad.sj3tx967q
+doi: 10.5061/dryad.sj3tx967q
+# Published on Dryad and mirrored on Zenodo on 2023-05-01.
+year: 2023
+creators:
+  - name: >-
+      Ross LA, Molholm S, Butler JS, Del Bene VA, Foxe JJ (Albert Einstein College of Medicine; University of Rochester
+      Medical Center)
+    url: https://datadryad.org/dataset/doi:10.5061/dryad.sj3tx967q
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [ANALYZE, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 16.66
+access:
+  type: open
+  url: https://zenodo.org/records/7884627
+licenses:
+  - license: CC0-1.0
+    applies_to: Whole release, per the license field of the Dryad and Zenodo records and the release README.
+citation:
+  text: >-
+    Ross LA, Molholm S, Butler JS, Del Bene VA, Foxe JJ. Neural correlates of multisensory enhancement in audiovisual
+    narrative speech perception: A fMRI investigation. NeuroImage 263, 119598 (2022).
+    doi:10.1016/j.neuroimage.2022.119598
+sources:
+  ross2022-preprint:
+    title: >-
+      Ross et al. 2022, Neural correlates of multisensory enhancement in audiovisual narrative speech perception: a fMRI
+      investigation, bioRxiv preprint (version 1, 2022-02-15)
+    url: https://doi.org/10.1101/2022.02.14.480408
+    kind: paper
+  zenodo-7884627:
+    title: Zenodo record 7884627 (record metadata and README_(4).txt)
+    url: https://zenodo.org/records/7884627
+    kind: website
+related: []
+keywords: [multisensory integration, audiovisual speech, speech perception, naturalistic narrative, task fMRI, language network]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
