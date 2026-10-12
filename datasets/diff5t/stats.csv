@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,50,wang2025,"Methods, Participants",Healthy volunteers
+subjects,condition=healthy,50,wang2025,"Methods, Participants",
+subjects,contrast=dwi,50,wang2025,Background & Summary,
+subjects,contrast=T1w,50,wang2025,Background & Summary,
+subjects,contrast=T2w,50,wang2025,Background & Summary,
+subjects,contrast_set=dwi+T1w+T2w,50,wang2025,Background & Summary,
+subjects,field_strength=5,50,wang2025,"Methods, Hardware",
+subjects,vendor=united_imaging,50,wang2025,"Methods, Hardware",uMR Jupiter
+subjects,country=CN,50,wang2025,"Methods, Participants",Recruited under the Shenzhen Institutes of Advanced Technology ethics approval
+age_min,,18,wang2025,"Methods, Participants",
+age_max,,38,wang2025,"Methods, Participants",

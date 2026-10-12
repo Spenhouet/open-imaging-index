@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Diff5T-DUA
+name: Data Usage Agreement (DUA) of Diff5T Dataset
+short_name: Diff5T DUA
+url: https://www.scidb.cn/detail?dataSetId=1c21479da5734d15bd093aff5bf36c8f
+version: 'Text on the Science Data Bank record, dataset version V4, read 2026-10-12'
+summary: >-
+  Access is requested on Science Data Bank with a short description of a non-commercial research purpose and explicit
+  commitments to cite the paper, use the data non-commercially, never re-identify participants and follow the
+  agreement. The data may not be passed to any other group, misuse must be reported within 15 days, and publications
+  must cite and acknowledge the Diff5T paper.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: I affirm that I will use the data strictly for non-commercial purposes.
+  product_validation:
+    value: unspecified
+    note: The terms do not address testing or validating a product beyond the non-commercial commitment.
+  model_training:
+    value: unspecified
+    note: >-
+      The agreement allows use "for the purpose of scientific investigation, teaching or the planning of clinical
+      research studies" and does not mention machine learning.
+  derivatives:
+    value: unspecified
+    note: The terms do not mention creating derived data.
+  publication:
+    value: conditional
+    quote: >-
+      All publications using these data must cite the original Diff5T publication and include an acknowledgment
+      substantially similar to the following
+    note: Publishing is allowed when the Diff5T paper is cited and acknowledged as the data source.
+  redistribute_original:
+    value: 'no'
+    quote: >-
+      I agree to retain control over the data, and further agree not to transfer the data, with or without charge, to
+      any other entity or research group.
+  redistribute_derivatives:
+    value: unspecified
+    note: The terms do not say whether derived data count as "the data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: >-
+      I will acknowledge and cite the Sharing Entity as the source of data in papers, book chapters, books, posters,
+      oral presentations, and all other printed and digital presentations of results derived from the data.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      I affirm that I will fully adhere to all the terms and conditions specified in the Data Usage Agreement (DUA) of
+      Diff5T dataset.
+    note: The commitments are stated in the access request on Science Data Bank, which the depositor approves or denies.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      I will comply with any rules and regulations imposed by my institution and its institutional review board when
+      requesting these data.
+    note: Approval by an ethics board is not named as a precondition; the user must follow their own institution's IRB rules.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      I will receive access de-identified data and will not attempt to establish the identity of, or attempt to
+      contact any of the subjects.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

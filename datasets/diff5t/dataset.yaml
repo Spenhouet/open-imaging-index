@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: diff5t
+name: Diff5T
+full_name: 'Diff5T: Benchmarking human brain diffusion MRI with an extensive 5.0 Tesla k-space and spatial dataset'
+summary: >-
+  Brain diffusion MRI with raw multi-channel k-space from healthy young adults, released to benchmark reconstruction,
+  artifact correction, preprocessing, microstructure modelling and tractography at an intermediate field strength,
+  with high-resolution T1w and T2w scans.
+homepage: https://www.scidb.cn/detail?dataSetId=1c21479da5734d15bd093aff5bf36c8f
+doi: 10.57760/sciencedb.25122
+year: 2025
+updated: 2026
+version: V4
+status: active
+creators:
+  - name: Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+  - name: School of Computer Science and Engineering, Beihang University
+modalities: [MR]
+contrasts: [dwi, T1w, T2w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [reconstruction]
+formats: [NIfTI, MAT]
+countries: [CN]
+vendors: [united_imaging]
+field_strengths: [5]
+size_gb: 23204
+access:
+  type: application
+  url: https://www.scidb.cn/detail?dataSetId=1c21479da5734d15bd093aff5bf36c8f
+  note: >-
+    Restricted access on Science Data Bank. The request states a non-commercial research purpose and the commitments
+    listed on the record, including adherence to the Diff5T data usage agreement. The depositor decides whether to
+    grant access.
+licenses:
+  - license: LicenseRef-Diff5T-DUA
+citation:
+  text: >-
+    Wang, S., Yu, S., Cheng, J. et al. Diff5T: Benchmarking human brain diffusion MRI with an extensive 5.0 Tesla
+    k-space and spatial dataset. Scientific Data 12, 1352 (2025). doi:10.1038/s41597-025-05640-2.
+sources:
+  wang2025:
+    title: Wang et al. 2025, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-05640-2
+    kind: paper
+  scidb-diff5t:
+    title: Science Data Bank record of Diff5T (V4)
+    url: https://www.scidb.cn/detail?dataSetId=1c21479da5734d15bd093aff5bf36c8f
+    kind: website
+related: []
+keywords: [diffusion MRI, k-space, 5 T, multi-shell, tractography, raw data]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
