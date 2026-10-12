@@ -1,0 +1,9 @@
+measure,by,value,source,where,note
+subjects,,31,gao2025,Participant recruitment,MS dataset of the three-repository MND-MFHC release (Data Records)
+subjects,condition=meige_syndrome,31,gao2025,Participant recruitment,primary Meige syndrome
+subjects,sex=female,23,gao2025,Participant recruitment,
+subjects,modality=MR,31,scidb-09677,Description,
+age_min,,31,gao2025,Participant recruitment,
+age_max,,74,gao2025,Participant recruitment,
+age_mean,,58.32,gao2025,Participant recruitment,
+age_sd,,9.60,gao2025,Participant recruitment,

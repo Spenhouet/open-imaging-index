@@ -39,6 +39,12 @@ terms:
       synonyms: [focal hand dystonia, writer's cramp, ULD],
       description: Focal dystonia of the arm or hand. Closest MONDO term is focal hand dystonia (MONDO:0000482).
     }
+  - {
+      id: meige_syndrome,
+      label: Meige syndrome,
+      synonyms: [blepharospasm-oromandibular dystonia, segmental cranial dystonia],
+      mappings: { mondo: 'MONDO:0019772' }
+    }
   - { id: motor_neuron_disease, label: Motor neuron disease, synonyms: [MND, motor neuron disorder], mappings: { mondo: 'MONDO:0020128' } }
   - { id: huntington_disease, label: Huntington disease, synonyms: [HD, Huntington's disease], mappings: { mondo: 'MONDO:0007739' } }
   - {
