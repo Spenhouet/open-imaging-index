@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,100,spilling2021,"Methods, Participants",103 enrolled; 3 without MRI were excluded
+subjects,condition=copd,76,sgul-14510190-xlsx,Patient Group column,53 with a primary diagnosis of COPD plus 23 with both COPD and CAD (groups 3 and 1)
+subjects,condition=coronary_artery_disease,47,spilling2021,"Methods, Participants","primary diagnosis of CAD, 23 of whom also had COPD"
+subjects,sex=male,69,spilling2021,Table 1,69% of 100
+subjects,sex=female,31,spilling2021,Table 1,31% of 100 (100 minus 69% male)
+age_mean,,68,spilling2021,Table 1,
+age_sd,,8,spilling2021,Table 1,
+subjects,contrast=T1w,100,sgul-14510190-xlsx,Grey matter volume column,subjects with a non-missing T1-derived grey matter volume
+subjects,contrast=FLAIR,99,sgul-14510190-xlsx,White matter hyperintensity volume column,subjects with a non-missing white matter hyperintensity volume
+subjects,contrast=dwi,99,sgul-14510190-xlsx,Median Fractional Anisotropy column,subjects with a non-missing diffusion tensor measure
+subjects,contrast=asl,94,sgul-14510190-xlsx,Median Cerebral Blood Flow column,subjects with a non-missing pCASL cerebral blood flow value
+subjects,modality=OP,84,spilling2021,"Results, Principal component analysis",retinal data unavailable for 16 patients because images were ungradable
+subjects,vendor=philips,100,spilling2021-s1,MRI acquisition,3 T Philips Achieva dual TX
+subjects,field_strength=3,100,spilling2021-s1,MRI acquisition,
+subjects,country=GB,100,spilling2021,"Methods, Participants","St George's Hospital NHS Foundation Trust, London"
