@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-SciDB-00znq-Restricted-Access
+name: Restricted access conditions of Science Data Bank record 10.57760/sciencedb.00znq
+short_name: SciDB 00znq access terms
+url: https://www.scidb.cn/en/detail?dataSetId=44101306cc1d48d0a7ef8a3ce486e5fe
+version: Access conditions shown on the record page for version V1 (published 2026-08-20), read 2026-10-12
+summary: >-
+  Access is granted by the data depositor after a request that states the applicant's name, affiliation, contact
+  details and research purpose. Use is limited to scientific research. Re-identification is forbidden, redistribution
+  needs permission and publications must acknowledge and cite the dataset.
+purpose: research
+rules:
+  commercial_use:
+    value: unspecified
+    quote: The data may only be used for scientific research.
+    note: The conditions limit use to scientific research but do not address commercial research.
+  product_validation:
+    value: unspecified
+    note: The conditions do not mention testing or validating a product.
+  model_training:
+    value: unspecified
+    note: The conditions do not mention machine learning.
+  derivatives:
+    value: unspecified
+  publication:
+    value: conditional
+    quote: Publications resulting from use of the dataset should appropriately acknowledge and cite the dataset.
+    note: Publication is allowed with citation.
+  redistribute_original:
+    value: conditional
+    quote: Users must protect participant privacy, must not attempt to re-identify participants, and must not redistribute the data without permission.
+    note: Redistribution requires the depositor's permission.
+  redistribute_derivatives:
+    value: unspecified
+    quote: must not redistribute the data without permission
+    note: The conditions do not say whether derived data count as "the data".
+  share_model_weights:
+    value: unspecified
+  attribution:
+    value: 'yes'
+    quote: Publications resulting from use of the dataset should appropriately acknowledge and cite the dataset.
+  share_alike:
+    value: 'no'
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      Applicants should provide their name, institutional affiliation, contact information, and a brief description
+      of the research purpose.
+    note: An access request reviewed by the depositor, not a signed agreement in the strict sense.
+  ethics_approval:
+    value: 'no'
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'yes'
+    quote: Users must protect participant privacy, must not attempt to re-identify participants, and must not redistribute the data without permission.
+  geographic_restriction:
+    value: 'no'
+commercial_license:
+  available: unspecified
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

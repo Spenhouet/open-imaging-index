@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,~100,scidb-5t-structural-brain-mri,Description,"the record says ""approximately 100 participants"""
+subjects,field_strength=5,~100,scidb-5t-structural-brain-mri,Description,
+age_min,,6,scidb-5t-structural-brain-mri,Description,"ages range ""from 6 years to adulthood""; no upper bound is given"

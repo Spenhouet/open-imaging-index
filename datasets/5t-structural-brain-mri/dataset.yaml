@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: 5t-structural-brain-mri
+name: 5T High-Resolution Structural Brain MRI
+full_name: 5T High-Resolution Structural Brain MRI Dataset
+summary: >-
+  High-resolution structural brain MRI from about 100 participants aged 6 years to adulthood, acquired on a 5 T
+  scanner and deposited with derived images on Science Data Bank under restricted access.
+homepage: https://www.scidb.cn/en/detail?dataSetId=44101306cc1d48d0a7ef8a3ce486e5fe
+doi: 10.57760/sciencedb.00znq
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Xinmao Ma, West China Second University Hospital of Sichuan University
+  - name: Rui Wang, West China Second University Hospital
+species: human
+modalities: [MR]
+anatomy: [brain]
+field_strengths: [5]
+# DataCite metadata of the ScienceDB record: 1948028529 bytes in 1 file.
+size_gb: 1.95
+access:
+  type: application
+  url: https://www.scidb.cn/en/detail?dataSetId=44101306cc1d48d0a7ef8a3ce486e5fe
+  note: >-
+    Restricted access on Science Data Bank. Requesters give their name, affiliation, contact details and a short
+    research purpose through the record's Request Access form; the data depositor alone decides whether to grant
+    access.
+licenses:
+  - license: LicenseRef-SciDB-00znq-Restricted-Access
+citation:
+  text: >-
+    Xinmao Ma, Rui Wang. 5T High-Resolution Structural Brain MRI Dataset. V1. Science Data Bank, 2026.
+    doi:10.57760/sciencedb.00znq
+sources:
+  scidb-5t-structural-brain-mri:
+    title: Science Data Bank record 10.57760/sciencedb.00znq and its DataCite metadata (V1)
+    url: https://doi.org/10.57760/sciencedb.00znq
+    kind: website
+related: []
+keywords: [5 T, ultra-high field, structural MRI, MP2RAGE, brain development]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
