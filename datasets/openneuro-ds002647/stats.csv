@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,91,ds002647-participants,participant_id,91 rows and 91 subject folders in snapshot 1.0.1; the paper reports 92 recruited and 87 analysed (Section 2.1)
+subjects,sex=female,91,ds002647-participants,sex,all participants are women
+subjects,age=18-19,18,ds002647-participants,age,
+subjects,age=20-29,41,ds002647-participants,age,
+subjects,age=30-39,2,ds002647-participants,age,
+subjects,age=40-49,1,ds002647-participants,age,
+subjects,age=50-59,9,ds002647-participants,age,
+subjects,age=60-69,15,ds002647-participants,age,
+subjects,age=70-79,5,ds002647-participants,age,
+subjects,contrast=T1w,91,ds002647-file-tree,sub-*/anat/*_T1w.nii.gz,each subject has an MPRAGE and a neuromelanin-sensitive FSE scan of the brainstem
+subjects,contrast=bold,91,ds002647-file-tree,sub-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,91,ds002647-file-tree,anat and func folders,
+subjects,vendor=siemens,91,mather2020,Section 2.2,3T Siemens Prisma fit at the USC Dornsife Cognitive Neuroscience Imaging Center
+subjects,field_strength=3,91,mather2020,Section 2.2,
+subjects,country=US,91,mather2020,Section 2.2,
+scans,,424,ds002647-file-tree,sub-*/*/*.nii.gz,182 T1w and 242 bold
+scans,contrast=T1w,182,ds002647-file-tree,*_T1w.nii.gz,91 MPRAGE and 91 acq-FSE
+scans,contrast=bold,242,ds002647-file-tree,*_bold.nii.gz,"91 handgrip runs, 91 oddball run 1 and 60 oddball run 2"
+age_min,,18,mather2020,Section 2.1,younger women aged 18 to 33; participants.tsv minimum 18
+age_max,,75,mather2020,Section 2.1,older women aged 49 to 75 (mean 62.5); participants.tsv maximum 75
