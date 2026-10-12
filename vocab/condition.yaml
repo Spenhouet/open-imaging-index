@@ -46,6 +46,7 @@ terms:
       mappings: { mondo: 'MONDO:0022308' }
     }
   - { id: multiple_sclerosis, label: Multiple sclerosis, synonyms: [MS], mappings: { mondo: 'MONDO:0005301' } }
+  - { id: cns_infection, label: Central nervous system infection, synonyms: [neuroinfection, brain infection], mappings: { mondo: 'MONDO:0024619' } }
   - {
       id: stroke,
       label: Stroke,
