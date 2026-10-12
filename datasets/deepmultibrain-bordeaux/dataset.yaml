@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: deepmultibrain-bordeaux
+name: DeepMultiBrain Bordeaux 3T multimodal MRI
+full_name: DeepMultiBrain Bordeaux ultra-high resolution T1w, T2w and white-matter-nulled brain MRI cohort
+summary: >-
+  Brain MRI of young healthy volunteers at Bordeaux Hospital on a Canon 3T scanner: 0.6 mm T1w and T2w plus 0.4 mm
+  white-matter-nulled scans for 55 subjects, used to train WMn synthesis for the holiAtlas. Private, not shared.
+homepage: https://doi.org/10.1038/s41598-026-40186-2
+# First description of the cohort (arXiv preprint, January 2025). The images have no public release.
+year: 2025
+creators:
+  - name: DeepMultiBrain project, University of Bordeaux and CHU de Bordeaux
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, WMn]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [synthesis]
+countries: [FR]
+vendors: [canon]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://doi.org/10.1038/s41598-026-40186-2
+  note: >-
+    The paper calls the cohort a private dataset and gives no route to the images. Its data availability statement
+    covers only the holiAtlas templates and labels, which are built from Human Connectome Project images, not from this
+    cohort.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: No license or data use terms are published for the DeepMultiBrain Bordeaux images.
+citation:
+  text: >-
+    Manjón JV, Morell-Ortega S, Ruiz-Perez M, et al. Ultra-high resolution multimodal MRI densely labelled holistic
+    structural brain atlas. Scientific Reports 16, 9457 (2026). https://doi.org/10.1038/s41598-026-40186-2
+sources:
+  manjon2026:
+    title: Manjón et al. 2026, Scientific Reports 16, 9457 (holiAtlas)
+    url: https://doi.org/10.1038/s41598-026-40186-2
+    kind: paper
+  manjon2025-arxiv:
+    title: Manjón et al. 2025, arXiv:2501.16879 (holiAtlas preprint, v3)
+    url: https://arxiv.org/abs/2501.16879
+    kind: paper
+related: [hcp-young-adult]
+keywords: [white-matter-nulled MRI, ultra-high resolution, thalamic nuclei, image synthesis, brain atlas]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
