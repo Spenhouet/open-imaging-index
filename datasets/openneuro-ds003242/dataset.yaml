@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003242
+name: Social Isolation and Fasting Craving fMRI (ds003242)
+full_name: >-
+  MRI data of 40 adult participants in response to a cue induced craving task following food fasting, social
+  isolation and baseline (within-subject design)
+summary: >-
+  Task fMRI and structural brain MRI of healthy adults scanned after 10 hours of social isolation, after 10 hours of
+  fasting and on a baseline day, collected to test whether isolation evokes midbrain craving responses to social cues
+  similar to hunger.
+homepage: https://openneuro.org/datasets/ds003242
+doi: 10.18112/openneuro.ds003242.v1.0.0
+year: 2020
+version: 1.0.0
+status: active
+creators:
+  - name: Tomova L, Wang KL, Thompson T, Matthews GA, Tye KM, Saxe R
+    url: https://openneuro.org/datasets/ds003242
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 28.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003242
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Tomova L, Wang KL, Thompson T, Matthews GA, Takahashi A, Tye KM, Saxe R. Acute social isolation evokes midbrain
+    craving responses similar to hunger. Nature Neuroscience 23, 1597-1605 (2020). doi:10.1038/s41593-020-00742-z
+sources:
+  tomova2020:
+    title: Tomova et al. 2020, Nature Neuroscience (author manuscript PMC8580014)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8580014/
+    kind: paper
+  openneuro-ds003242-v100:
+    title: OpenNeuro ds003242 snapshot 1.0.0 (README, dataset_description.json, BIDS sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds003242/versions/1.0.0
+    kind: website
+  ds003242-participants:
+    title: >-
+      participants.tsv of ds003242 snapshot 1.0.0 (CC0), rows joined to the 32 participants with image folders
+    url: https://github.com/OpenNeuroDatasets/ds003242/blob/1.0.0/participants.tsv
+    kind: computed
+  ds003242-file-tree:
+    title: File tree of ds003242 snapshot 1.0.0 (CC0), NIfTI files counted per subject folder and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds003242/tree/1.0.0
+    kind: computed
+related: []
+keywords: [social isolation, loneliness, fasting, craving, cue reactivity, midbrain, task fMRI, reward]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
