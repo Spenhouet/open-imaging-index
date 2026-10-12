@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,117,kliemann2022,Abstract; Methods: Participants,final sample after exclusions and attrition from 191 enrolled; the file tree also holds 117 subject folders
+studies,,153,ds003798-file-tree,sub-*/ses-* folders,"90 subjects with one session, 18 with two, 9 with three"
+scans,,742,ds003798-file-tree,anat/ and func/ NIfTI files,"T1w, T2w and bold volumes; field maps not counted"
+scans,contrast=T1w,249,ds003798-file-tree,anat/*_T1w.nii.gz,two T1w acquisitions per session in early protocol versions
+scans,contrast=T2w,73,ds003798-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,420,ds003798-file-tree,func/*_bold.nii.gz,"305 resting-state, 58 Bang! You're Dead and 57 Partly Cloudy runs"
+subjects,condition=healthy,117,kliemann2022,Methods: Participants,healthy community-dwelling adults screened against psychiatric and neurological criteria
+subjects,country=US,117,kliemann2022,Methods: Participants,recruited from the Los Angeles area
+subjects,vendor=siemens,117,kliemann2022,Methods: Structural magnetic resonance imaging,Siemens 3T TIM Trio (2012 to 2017) or Prisma.Fit (2018 to 2019)
+subjects,field_strength=3,117,kliemann2022,Methods: Structural magnetic resonance imaging,
+subjects,contrast=T1w,117,ds003798-file-tree,anat/*_T1w.nii.gz,kliemann2022 also states T1w imaging in all 117 participants
+subjects,contrast=T2w,65,ds003798-file-tree,anat/*_T2w.nii.gz,kliemann2022 reports T2w passed to FreeSurfer for 59 subjects
+subjects,contrast=bold,117,ds003798-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w+T2w,65,ds003798-file-tree,,
+subjects,contrast_set=bold+T1w,52,ds003798-file-tree,,
+subjects,sex=female,49,ds003798-behdata,Sex_at_Birth,
+subjects,sex=male,68,ds003798-behdata,Sex_at_Birth,
+subjects,age=10-19,4,ds003798-behdata,Enroll_Age_Est,"age at enrollment, estimated as enrollment year minus year of birth"
+subjects,age=20-29,71,ds003798-behdata,Enroll_Age_Est,"age at enrollment, estimated as enrollment year minus year of birth"
+subjects,age=30-39,35,ds003798-behdata,Enroll_Age_Est,"age at enrollment, estimated as enrollment year minus year of birth"
+subjects,age=40-49,7,ds003798-behdata,Enroll_Age_Est,"age at enrollment, estimated as enrollment year minus year of birth"
+age_min,,18,ds003798-behdata,Enroll_Age_Est,estimated age at enrollment
+age_max,,48,ds003798-behdata,Enroll_Age_Est,estimated age at enrollment
+age_median,,27,ds003798-behdata,Enroll_Age_Est,estimated age at enrollment
+age_mean,,28.5,ds003798-behdata,Enroll_Age_Est,estimated age at enrollment

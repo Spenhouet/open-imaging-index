@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: caltech-conte
+name: Caltech Conte Center (ds003798)
+full_name: Caltech Conte Center - A multimodal data resource for exploring social cognition and decision-making
+summary: >-
+  Structural, resting-state and movie-viewing brain MRI of healthy adults with in-depth psychological testing,
+  collected to study how individual differences in brain structure and function relate to social cognition and
+  decision-making. Some participants were rescanned over several years.
+homepage: https://openneuro.org/datasets/ds003798
+doi: 10.18112/openneuro.ds003798.v1.0.5
+# First public snapshot (1.0.0) on OpenNeuro, 2021-10-01; latest snapshot 1.0.5, 2021-12-20 (CHANGES).
+year: 2021
+updated: 2021
+version: 1.0.5
+status: active
+creators:
+  - name: >-
+      Kliemann D, Adolphs R, Armstrong T, Galdi P, Kahn DA, Rusch T, et al., Paul LK, Tyszka JM (Caltech Conte Center,
+      California Institute of Technology)
+    url: https://openneuro.org/datasets/ds003798
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, regression]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 107.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003798
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.5 states "License" CC0.
+citation:
+  text: >-
+    Kliemann D, Adolphs R, Armstrong T, Galdi P, Kahn DA, Rusch T, Enkavi AZ, Liang D, Lograsso S, Zhu W, Yu R, Nair R,
+    Paul LK, Tyszka JM. Caltech Conte Center, a multimodal data resource for exploring social cognition and
+    decision-making. Scientific Data 9, 138 (2022). doi:10.1038/s41597-022-01171-2
+sources:
+  kliemann2022:
+    title: >-
+      Kliemann et al. 2022, Caltech Conte Center, a multimodal data resource for exploring social cognition and
+      decision-making, Scientific Data
+    url: https://doi.org/10.1038/s41597-022-01171-2
+    kind: paper
+  openneuro-ds003798-v1-0-5:
+    title: OpenNeuro ds003798 snapshot 1.0.5 (dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003798/versions/1.0.5
+    kind: website
+  ds003798-file-tree:
+    title: >-
+      File listing of the ds003798 BIDS repository (CC0), subjects and sessions counted per T1w, T2w and bold NIfTI
+      file
+    url: https://github.com/OpenNeuroDatasets/ds003798
+    kind: computed
+  ds003798-behdata:
+    title: behData.csv of OpenNeuro ds003798 (CC0), columns Sex_at_Birth and Enroll_Age_Est
+    url: https://s3.amazonaws.com/openneuro.org/ds003798/behData.csv
+    kind: computed
+related: []
+keywords:
+  [social cognition, decision making, resting-state fMRI, naturalistic viewing, individual differences, personality]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
