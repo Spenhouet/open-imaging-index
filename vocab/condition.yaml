@@ -702,3 +702,4 @@ terms:
       synonyms: [PAD, peripheral arterial disease, lower extremity arterial disease],
       mappings: { mondo: 'MONDO:0005386' }
     }
+  - { id: short_stature, label: Short stature, synonyms: [stunting, stunted growth], description: 'Height well below the norm for age and sex, e.g. a height-for-age z-score below -2 (stunting).', mappings: { hp: 'HP:0004322' } }

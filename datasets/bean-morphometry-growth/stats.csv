@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,79,turesky2021,Table 1,81 children scanned at about six years; 2 excluded for head motion; participants.tsv also has 79 rows
+subjects,contrast=T1w,79,ds003877-file-tree,,subjects with a sub-*_T1w.nii.gz
+subjects,contrast_set=T1w,79,ds003877-file-tree,,
+scans,,79,ds003877-file-tree,,one T1w NIfTI per subject
+scans,contrast=T1w,79,ds003877-file-tree,,
+subjects,sex=female,36,turesky2021,Table 1,participants.tsv gives the same split
+subjects,sex=male,43,turesky2021,Table 1,
+subjects,age=0-9,79,ds003877-participants,Age_at_MRI_(months),ages 66 to 84 months
+subjects,condition=short_stature,24,turesky2021,Section 2.2,"stunted: height-for-age z-score below -2, from measures taken at 21, 30 and 36 months"
+subjects,field_strength=3,79,turesky2021,Section 2.5,
+subjects,vendor=siemens,79,turesky2021,Section 2.5,3T Siemens MAGNETOM Verio with a 12-channel head coil
+subjects,country=BD,79,turesky2021,Section 2.1,Dhaka
+age_mean,,6.7,turesky2021,Table 1,SD 0.40
+age_min,,5.5,turesky2021,Table 1,
+age_max,,7,turesky2021,Table 1,
+age_median,,6.92,ds003877-participants,Age_at_MRI_(months),83 months
