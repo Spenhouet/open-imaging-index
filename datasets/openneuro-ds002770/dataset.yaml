@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds002770
+name: Sustainable behaviour prospection fMRI (ds002770)
+full_name: Brain mechanisms underlying episodic future thinking of sustainable behaviors
+summary: >-
+  Task fMRI, T1-weighted MRI and field maps of 86 adults imagining doing more sustainable or less unsustainable
+  behaviours in a cue-exposure task, scanned in Ghent to study the brain basis of prospective thinking. BIDS under
+  CC0.
+homepage: https://openneuro.org/datasets/ds002770
+doi: 10.18112/openneuro.ds002770.v2.0.0
+# First snapshot (1.0.0) on OpenNeuro, 2020-04-30; latest snapshot 2.0.0, 2020-05-02.
+year: 2020
+version: 2.0.0
+status: active
+creators:
+  - name: Brevers D, Vögele C, Maurage P, Sescousse G, Baeken C, Billieux J
+    url: https://openneuro.org/datasets/ds002770
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 29.64
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002770
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Brevers D, Baeken C, Maurage P, Sescousse G, Vögele C, Billieux J. Brain mechanisms underlying prospective
+    thinking of sustainable behaviours. Nature Sustainability 4, 433-439 (2021). doi:10.1038/s41893-020-00658-3
+sources:
+  brevers2021:
+    title: >-
+      Brevers et al. 2021, Brain mechanisms underlying prospective thinking of sustainable behaviours, Nature
+      Sustainability (abstract and data availability statement; methods not openly accessible)
+    url: https://doi.org/10.1038/s41893-020-00658-3
+    kind: paper
+  openneuro-ds002770-v2-0-0:
+    title: >-
+      OpenNeuro ds002770 snapshot 2.0.0 (dataset_description.json, file listing, snapshot size and summary)
+    url: https://openneuro.org/datasets/ds002770/versions/2.0.0
+    kind: website
+  ds002770-sidecars:
+    title: >-
+      BIDS JSON sidecars and NIfTI headers of ds002770 snapshot 2.0.0 (CC0); fields Manufacturer,
+      ManufacturersModelName, MagneticFieldStrength, InstitutionName and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds002770/tree/2.0.0
+    kind: computed
+related: []
+keywords:
+  [episodic future thinking, prospective thinking, sustainable behaviour, cue exposure, task fMRI, inhibitory control]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
