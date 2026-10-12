@@ -1,0 +1,26 @@
+measure,by,value,source,where,note
+subjects,,101,rampinini2025,Methods: Participants,104 recruited; 1 withdrew consent to sharing and 2 could not be scanned (claustrophobia); participants.tsv has 101 rows
+subjects,condition=healthy,101,rampinini2025,Methods: Participants,healthy adults without neurological or psychiatric diagnosis
+subjects,sex=female,68,rampinini2025,Methods: Participants,
+subjects,sex=male,33,ds005613-participants,sex,
+age_mean,,23.35,rampinini2025,Methods: Participants,
+age_sd,,4.08,rampinini2025,Methods: Participants,
+age_min,,18.2,ds005613-participants,age,
+age_max,,38.5,ds005613-participants,age,
+age_median,,22,ds005613-participants,age,
+subjects,age=10-19,15,ds005613-participants,age,ages 18 and 19
+subjects,age=20-29,80,ds005613-participants,age,
+subjects,age=30-39,6,ds005613-participants,age,
+subjects,sex=female;age=10-19,11,ds005613-participants,sex and age,
+subjects,sex=female;age=20-29,53,ds005613-participants,sex and age,
+subjects,sex=male;age=20-29,27,ds005613-participants,sex and age,
+scans,,606,ds005613-file-tree,sub-*/ses-01/{anat;dwi;func}/*.nii.gz,"101 T1w, 101 dwi and 404 BOLD runs; phase-difference field maps not counted"
+scans,contrast=T1w,101,ds005613-file-tree,anat/*_rec-defaced_T1w.nii.gz,defaced MPRAGE at 1 mm
+scans,contrast=dwi,101,ds005613-file-tree,dwi/*_dwi.nii.gz,"one multi-shell run per subject (b = 0, 700, 1000, 2800 and 2850 s/mm² in the bval file)"
+scans,contrast=bold,404,ds005613-file-tree,func/*_bold.nii.gz,per subject one resting-state run and three language localiser (aliceloc) runs
+subjects,contrast=T1w,101,ds005613-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=dwi,101,ds005613-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=bold,101,ds005613-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+dwi+T1w,101,ds005613-file-tree,sub-*/,phase-difference field maps (101 subjects) are not counted as a contrast
+subjects,field_strength=3,101,rampinini2025,Session 4: Magnetic resonance imaging,Siemens 3 T Magnetom Prisma with a 64-channel head coil
+subjects,vendor=siemens,101,rampinini2025,Session 4: Magnetic resonance imaging,Siemens 3 T Magnetom Prisma

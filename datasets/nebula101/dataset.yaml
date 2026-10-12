@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nebula101
+name: NEBULA101 (ds005613)
+full_name: NEBULA101 NeuroBehavioural Understanding of Language Aptitude
+summary: >-
+  Brain MRI and extensive language and cognitive testing of healthy, largely multilingual young adults in Geneva,
+  collected to study individual differences in language aptitude, with anatomical, diffusion, resting-state and
+  language localiser functional scans.
+homepage: https://openneuro.org/datasets/ds005613
+doi: 10.18112/openneuro.ds005613.v1.0.1
+year: 2024
+updated: 2024
+version: 1.0.1
+status: active
+creators:
+  - name: University of Geneva, University of Fribourg and University of Vienna (Rampinini A, Balboni I, Kepinska O, Berthele R, Golestani N)
+    url: https://openneuro.org/datasets/ds005613
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 119.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005613
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.1 states "License" CC0, and the Data Records section of rampinini2025
+      states a Creative Commons CC0 1.0 license.
+citation:
+  text: >-
+    Rampinini A, Balboni I, Kepinska O, Berthele R, Golestani N. NEBULA101: an open dataset for the study of language
+    aptitude in behaviour, brain structure and function. Scientific Data 12, 19 (2025). doi:10.1038/s41597-024-04357-y
+sources:
+  rampinini2025:
+    title: >-
+      Rampinini et al. 2025, NEBULA101: an open dataset for the study of language aptitude in behaviour, brain structure
+      and function, Scientific Data 12, 19
+    url: https://doi.org/10.1038/s41597-024-04357-y
+    kind: paper
+  openneuro-ds005613-v1-0-1:
+    title: OpenNeuro ds005613 snapshot 1.0.1 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds005613/versions/1.0.1
+    kind: website
+  ds005613-participants:
+    title: participants.tsv of ds005613 snapshot 1.0.1 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds005613/blob/1.0.1/participants.tsv
+    kind: computed
+  ds005613-file-tree:
+    title: File tree of ds005613 snapshot 1.0.1 (CC0), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds005613/tree/1.0.1
+    kind: computed
+related: [language-learning-aptitude]
+keywords:
+  [
+    language aptitude,
+    multilingualism,
+    individual differences,
+    language localiser,
+    Alice in Wonderland,
+    resting-state fMRI,
+    diffusion MRI,
+    behavioural phenotyping
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
