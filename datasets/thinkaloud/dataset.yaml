@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: thinkaloud
+name: ThinkAloud (ds006067)
+full_name: ThinkAloud
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults who spoke their spontaneous thoughts aloud for 10 minutes
+  in the scanner, collected to study the neural dynamics of memory recall and future thinking. 118 subjects from
+  Johns Hopkins University (Baltimore, USA), with timed transcripts and fMRIPrep outputs.
+homepage: https://openneuro.org/datasets/ds006067
+doi: 10.18112/openneuro.ds006067.v2.0.0
+year: 2025
+version: 2.0.0
+status: active
+creators:
+  - name: Johns Hopkins University (Lee H, Li X, Born S, Honey CJ, Chen J)
+    url: https://openneuro.org/datasets/ds006067
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: []
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 80.6
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006067
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 2.0.0 states "License" CC0.
+citation:
+  text: >-
+    Su H, Li X, Born S, Honey CJ, Chen J, Lee H. Neural dynamics of spontaneous memory recall and future thinking in
+    the continuous flow of thoughts. Nature Communications 16, 6433 (2025). doi:10.1038/s41467-025-61807-w
+sources:
+  su2025:
+    title: >-
+      Su et al. 2025, Neural dynamics of spontaneous memory recall and future thinking in the continuous flow of
+      thoughts, Nature Communications
+    url: https://doi.org/10.1038/s41467-025-61807-w
+    kind: paper
+  openneuro-ds006067-v2-0-0:
+    title: OpenNeuro ds006067 snapshot 2.0.0 (dataset_description.json, README, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds006067/versions/2.0.0
+    kind: website
+  ds006067-files:
+    title: >-
+      ds006067 snapshot 2.0.0 (CC0) participants.tsv and BIDS file tree, NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds006067/tree/2.0.0
+    kind: computed
+related: []
+keywords: [think-aloud, spontaneous thought, episodic memory, future thinking, naturalistic speech, task fMRI, field map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
