@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: multi-echo-sms-fmri
+name: Multi-echo SMS fMRI acquisition parameters (ds004499)
+full_name: 'Multi-echo simultaneous multislice fMRI dataset: Effect of acquisition parameters on fMRI data'
+summary: >-
+  Task fMRI with three echoes and structural brain MRI of adult volunteers, collected to compare how slice acceleration and
+  flip angle change fMRI data quality. Each of 50 subjects has seven visual-motor task runs with three echoes, a T1w
+  scan, a field map and physiological recordings.
+homepage: https://openneuro.org/datasets/ds004499
+doi: 10.18112/openneuro.ds004499.v1.0.4
+year: 2024
+updated: 2026
+version: 1.0.4
+status: active
+creators:
+  - name: >-
+      Multimodal and Functional Imaging Laboratory (MAFIL), CEITEC, Masaryk University (Mikl M, Kovarova A, Gajdos M,
+      Marecek R, Novakova M, Slavicek T)
+    url: https://mafil.ceitec.cz
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [CZ]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 163.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004499
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.4 states "License" CC0.
+citation:
+  text: >-
+    Mikl M, Kovarova A, Gajdos M, Marecek R, Novakova M, Slavicek T. Multi-echo simultaneous multislice fMRI dataset:
+    Effect of acquisition parameters on fMRI data. OpenNeuro, ds004499 (2024). doi:10.18112/openneuro.ds004499.v1.0.4
+sources:
+  openneuro-ds004499-v104:
+    title: OpenNeuro ds004499 snapshot 1.0.4 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004499/versions/1.0.4
+    kind: website
+  ds004499-participants:
+    title: participants.tsv of ds004499 (CC0), columns sex and age
+    url: https://github.com/OpenNeuroDatasets/ds004499/blob/main/participants.tsv
+    kind: computed
+  ds004499-file-tree:
+    title: BIDS file tree of ds004499 snapshot 1.0.4 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004499/tree/1.0.4
+    kind: computed
+related: []
+keywords: [multi-echo fMRI, simultaneous multislice, multiband, flip angle, acquisition parameters, physiological recordings, field map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
