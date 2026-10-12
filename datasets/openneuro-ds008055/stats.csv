@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,108,ds008055-file-tree,,108 sub- folders; the OpenNeuro snapshot 1.0.4 summary also lists 108 subjects
+subjects,contrast=T1w,108,ds008055-file-tree,,one defaced T1w file per subject
+subjects,contrast=bold,108,ds008055-file-tree,,every subject has a resting-state run
+subjects,contrast_set=bold+T1w,108,ds008055-file-tree,,
+subjects,field_strength=3,108,ds008055-file-tree,T1w sidecar JSON files,MagneticFieldStrength 3 in all T1w sidecars
+subjects,vendor=siemens,108,ds008055-file-tree,T1w sidecar JSON files,Siemens Prisma_fit in all T1w sidecars
+subjects,country=US,108,ds008055-file-tree,T1w sidecar JSON files,InstitutionName PSU-SLEIC (75) or Penn_State_SLEIC (33)
+scans,,544,ds008055-file-tree,,sum of the disjoint T1w (108) and bold (436) NIfTI files; SBRef and field map files are not counted
+scans,contrast=T1w,108,ds008055-file-tree,,
+scans,contrast=bold,436,ds008055-file-tree,,rest 108 + SCT 108 + ID 150 + TVC 70 runs

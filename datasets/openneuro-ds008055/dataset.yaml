@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds008055
+name: Scientific Creativity MRI (ds008055)
+full_name: Scientific Creativity MRI Dataset
+summary: >-
+  Anatomical, resting-state and task fMRI of adults performing scientific hypothesis generation, idea diversity and
+  verbal creativity tasks, collected to map the brain networks behind creative thinking. 108 participants scanned at
+  Penn State, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds008055
+doi: 10.18112/openneuro.ds008055.v1.0.4
+# First public snapshot (1.0.0) on OpenNeuro, 2026-06-28; latest snapshot 1.0.4, 2026-06-29.
+year: 2026
+updated: 2026
+version: 1.0.4
+status: active
+creators:
+  - name: Luchini SA, Beaty RE (Pennsylvania State University)
+    url: https://openneuro.org/datasets/ds008055
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 189.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds008055
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.4 states "License" CC0.
+citation:
+  text: >-
+    Luchini SA, Beaty R. Scientific Creativity MRI Dataset. OpenNeuro ds008055, version 1.0.4 (2026).
+    doi:10.18112/openneuro.ds008055.v1.0.4
+sources:
+  openneuro-ds008055-v1-0-4:
+    title: >-
+      OpenNeuro ds008055 snapshot 1.0.4 (dataset_description.json, README, CHANGES, sidecar JSON files and snapshot
+      summary)
+    url: https://openneuro.org/datasets/ds008055/versions/1.0.4
+    kind: website
+  ds008055-file-tree:
+    title: File listing of the ds008055 BIDS repository (CC0), counted per anat and func NIfTI file, with the T1w sidecar JSON files of all subjects tallied for scanner and institution
+    url: https://github.com/OpenNeuroDatasets/ds008055
+    kind: computed
+related: []
+keywords: [creativity, scientific creativity, task fMRI, resting-state fMRI, idea generation, multiband]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
