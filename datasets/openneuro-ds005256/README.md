@@ -3,7 +3,8 @@ watching with a battery of controlled tasks in the same people, so that brains c
 effects compared across many conditions. Each participant came back for four scanning sessions, about six hours of scanning in total.
 The tasks cover emotion ratings during movie clips, spoken and written narratives, dynamic faces, social judgements of
 movie characters, thermal pain together with vicarious pain and mental rotation, and paired subtasks on attention,
-memory and theory of mind. The raw BIDS data, events files and stimuli are on OpenNeuro as ds005256 under CC0.
+memory and theory of mind. The raw BIDS data, events files and stimuli are on OpenNeuro as ds005256 under CC0. fMRIPrep 25.1.4 outputs for this dataset are
+released separately as OpenNeuro ds007070, also under CC0.
 
 ## Composition
 

@@ -37,7 +37,7 @@ citation:
   text: >-
     Jung H, Amini M, Hunt BJ, Murphy EI, Sadil P, Halchenko YO, Petre B, Miao Z, Kragel PA, Han X, Heilicher MO, Sun M,
     Collins OG, Lindquist MA, Wager TD. A multimodal fMRI dataset unifying naturalistic processes with a rich array of
-    experimental tasks. Scientific Data (2025). doi:10.1038/s41597-025-05154-x
+    experimental tasks. Scientific Data 12, 1465 (2025). doi:10.1038/s41597-025-05154-x
 sources:
   jung2025:
     title: Jung et al. 2025, Scientific Data
@@ -46,6 +46,10 @@ sources:
   openneuro-ds005256-v1-1-0:
     title: OpenNeuro ds005256 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
     url: https://openneuro.org/datasets/ds005256/versions/1.1.0
+    kind: website
+  openneuro-ds007070:
+    title: OpenNeuro ds007070, fMRIPrep Derivatives for SpaceTop (snapshot 1.0.3, dataset_description.json)
+    url: https://doi.org/10.18112/openneuro.ds007070.v1.0.3
     kind: website
   ds005256-file-tree:
     title: >-
