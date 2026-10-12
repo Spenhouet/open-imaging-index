@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: bobs-repo
+name: BOBs Repository (ds005450)
+full_name: 'Baby Open Brains: An open-source repository of infant brain segmentations'
+summary: >-
+  Brain MRI of healthy infants with manually corrected whole-brain tissue and subcortical segmentations, made as a
+  benchmark and training set for infant segmentation pipelines. T1w and T2w from 71 visits of 51 Baby Connectome
+  Project infants aged 1 to 9 months.
+homepage: https://bobsrepository.readthedocs.io/
+doi: 10.17605/OSF.IO/WDR78
+# First OpenNeuro snapshot (0.9.0) is dated 2025-03-12.
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Baby Open Brains team, University of Minnesota and collaborators (Feczko E, Stoyell SM, et al.; Fair DA, Elison
+      JT)
+    url: https://bobsrepository.readthedocs.io/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [segmentation, longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005450
+licenses:
+  - license: CC-BY-4.0
+    note: dataset_description.json of OpenNeuro snapshot 1.0.0 states "CC-By Attribution 4.0 International".
+citation:
+  text: >-
+    Feczko E, Stoyell SM, Moore LA, Alexopoulos D, Bagonis M, et al. Baby Open Brains: An open-source dataset of infant
+    brain segmentations. Scientific Data (2025). doi:10.1038/s41597-025-05404-y
+sources:
+  feczko2025:
+    title: Feczko et al. 2025, Baby Open Brains, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-05404-y
+    kind: paper
+  openneuro-ds005450-v100:
+    title: OpenNeuro ds005450 snapshot 1.0.0 (dataset_description.json and snapshot list)
+    url: https://openneuro.org/datasets/ds005450/versions/1.0.0
+    kind: website
+  ds005450-file-tree:
+    title: BIDS file tree of ds005450 (CC BY 4.0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds005450
+    kind: computed
+  ds005450-sessions:
+    title: phenotype/sessions.tsv of ds005450 (CC BY 4.0)
+    url: https://s3.amazonaws.com/openneuro.org/ds005450/phenotype/sessions.tsv
+    kind: computed
+related: [bcp]
+keywords: [infant, brain segmentation, manual segmentation, myelination, BIBSNet, benchmark]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
