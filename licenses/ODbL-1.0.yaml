@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: ODbL-1.0
+name: Open Data Commons Open Database License v1.0
+short_name: ODbL 1.0
+url: https://opendatacommons.org/licenses/odbl/1-0/
+version: '1.0'
+summary: >-
+  Use, change and share the database for any purpose, including commercial use, as long as you credit it and keep
+  the license notice. A derived database that is used publicly must stay under this license and be offered in machine
+  readable form. The license covers the database rights, not separate rights in the individual contents.
+purpose: any
+rules:
+  commercial_use:
+    value: 'yes'
+    quote: These rights explicitly include commercial use, and do not exclude any field of endeavour.
+  product_validation:
+    value: 'yes'
+    note: Commercial use is allowed, which covers testing or validating a product.
+    quote: These rights explicitly include commercial use, and do not exclude any field of endeavour.
+  model_training:
+    value: 'yes'
+    quote: These rights explicitly include commercial use, and do not exclude any field of endeavour.
+  derivatives:
+    value: 'yes'
+    quote: b. Creation of Derivative Databases;
+  publication:
+    value: 'yes'
+    note: >-
+      The license does not restrict publishing results. Section 4.3 asks for a notice that names the database when a
+      Produced Work is used publicly.
+  redistribute_original:
+    value: 'yes'
+    quote: >-
+      e. Distribution, communication, display, lending, making available, or performance to the public by any means
+      and in any form, in whole or in part, including of any Derivative Database or as a part of Collective Databases.
+  redistribute_derivatives:
+    value: conditional
+    note: A derived database that is used publicly must be shared under this license or a compatible one.
+    quote: >-
+      a. Any Derivative Database that You Publicly Use must be only under the terms of: i. This License; ii. A later
+      version of this License similar in spirit to this License; or iii. A compatible license.
+  share_model_weights:
+    value: conditional
+    note: >-
+      The license does not mention models. If a model counts as a Produced Work, publishing it needs a notice that it
+      used content from the database.
+    quote: >-
+      However, if you Publicly Use a Produced Work, You must include a notice associated with the Produced Work
+      reasonably calculated to make any Person that uses, views, accesses, interacts with, or is otherwise exposed to
+      the Produced Work aware that Content was obtained from the Database, Derivative Database, or the Database as part
+      of a Collective Database, and that it is available under this License.
+  attribution:
+    value: 'yes'
+    quote: >-
+      Include a copy of this License (or, as applicable, a license permitted under Section 4.4) or its Uniform Resource
+      Identifier (URI) with the Database or Derivative Database, including both in the Database or Derivative Database
+      and in any relevant documentation;
+  share_alike:
+    value: conditional
+    note: >-
+      Applies to derived databases that are used publicly. Produced Works such as images, figures or results do not
+      create a derived database and only need the notice of Section 4.3. Internal use within an organisation is not
+      public use.
+    quote: >-
+      a. Any Derivative Database that You Publicly Use must be only under the terms of: i. This License; ii. A later
+      version of this License similar in spirit to this License; or iii. A compatible license.
+  signed_agreement:
+    value: 'no'
+    note: Public license, no agreement to sign.
+  ethics_approval:
+    value: 'no'
+    note: The license itself sets no such condition. Your institution or local law may still require it for data
+      about people.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: conditional
+    note: >-
+      Applies only when a derived database, or a Produced Work from it, is used publicly. Recipients must then be
+      offered the derived database itself or a file describing the changes, such as the algorithm that made them.
+    quote: >-
+      b. A file containing all of the alterations made to the Database or the method of making the alterations to the
+      Database (such as an algorithm), including any additional Contents, that make up all the differences between the
+      Database and the Derivative Database.
+  return_results:
+    value: 'no'
+    note: The offer of Section 4.6 goes to recipients of the derived database, not to the licensor.
+  delete_after_use:
+    value: 'no'
+  no_reidentification:
+    value: 'no'
+    note: >-
+      The license itself sets no such condition, and it states that privacy and data protection rights in the contents
+      are not covered by it. The repository hosting the data or local law may add such terms.
+  geographic_restriction:
+    value: 'no'
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,57,stanford-sdr-xt223hz2438-files,file names *.zip,"52 Healthy_Volunteer and 5 Aortic_Stenosis_Patient archives in version 9; the abstract states 55 participants (51 healthy, 4 aortic stenosis)"
+subjects,condition=healthy,52,stanford-sdr-xt223hz2438-files,file names Healthy_Volunteer_*.zip,"Healthy_Volunteer_048 has only cine images and is left out of the cohort statistics of the abstract, which counts 51"
+subjects,condition=aortic_stenosis,5,stanford-sdr-xt223hz2438-files,file names Aortic_Stenosis_Patient_*.zip,the abstract states 4 patients
+subjects,sex=male,33,stanford-sdr-xt223hz2438-files,Subject Sex line of each participant Read_Me.txt,
+subjects,sex=female,24,stanford-sdr-xt223hz2438-files,Subject Sex line of each participant Read_Me.txt,
+subjects,age=10-19,1,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=20-29,20,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=30-39,6,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=40-49,12,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=50-59,10,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=60-69,5,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=70-79,1,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,age=80-89,2,stanford-sdr-xt223hz2438-files,Subject Age line of each participant Read_Me.txt,
+subjects,contrast=cine,57,stanford-sdr-xt223hz2438-files,archive folder 01_bSSFP_Cine,
+subjects,contrast=dwi,54,stanford-sdr-xt223hz2438-files,archive folder 02_cDTI,cardiac diffusion tensor imaging
+subjects,contrast=dense,53,stanford-sdr-xt223hz2438-files,archive folder 03_DENSE,
+subjects,contrast=tagging,48,stanford-sdr-xt223hz2438-files,archive folder 04_Grid_Tagging,
+subjects,contrast=T1map,50,stanford-sdr-xt223hz2438-files,archive folder 05_T1_Mapping,native T1 mapping
+subjects,contrast_set=cine+dense+dwi+T1map+tagging,47,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,contrast_set=cine+dense+dwi+T1map,2,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,contrast_set=cine+dense+dwi,3,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,contrast_set=cine+dense+T1map+tagging,1,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,contrast_set=cine+dwi,2,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,contrast_set=cine,2,stanford-sdr-xt223hz2438-files,archive folders 01 to 05,
+subjects,field_strength=3,57,stanford-sdr-xt223hz2438,Abstract,
+subjects,vendor=siemens,57,stanford-sdr-xt223hz2438,Abstract,MAGNETOM Vida Fit
+age_mean,condition=healthy,39,stanford-sdr-xt223hz2438,Abstract,"51 healthy volunteers, without Healthy_Volunteer_048"
+age_sd,condition=healthy,14,stanford-sdr-xt223hz2438,Abstract,"51 healthy volunteers, without Healthy_Volunteer_048"
