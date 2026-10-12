@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds006577
+name: NIMH Gamified ABMT for Youth Anxiety (ds006577)
+full_name: NIMH Gamified Attention Bias Modification Training to Augment CBT for Youth Anxiety Disorders
+summary: >-
+  Task fMRI and T1-weighted brain MRI of youth with anxiety disorders and healthy peers, scanned before and after
+  cognitive behavioral therapy with active or sham gamified attention bias training, plus clinical rating schedules.
+homepage: https://openneuro.org/datasets/ds006577
+doi: 10.18112/openneuro.ds006577.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Meghan E. Byrne, Simone P. Haller, Julia O. Linke, Melissa A. Brotman, Daniel S. Pine and colleagues, National
+      Institute of Mental Health Intramural Research Program
+    url: https://openneuro.org/datasets/ds006577
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [anxiety_disorder, healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 26.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006577/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds006577/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Byrne ME, Haller SP, Linke JO, et al. Gamified Attention Bias Modification Training to Augment Cognitive Behavioral
+    Therapy for Youth Anxiety Disorders: A Randomized Controlled Trial. Journal of the American Academy of Child and
+    Adolescent Psychiatry 65(8):1017-1030 (2026). doi:10.1016/j.jaac.2025.08.010
+sources:
+  byrne2026:
+    title: >-
+      Byrne et al. 2026, Gamified Attention Bias Modification Training to Augment Cognitive Behavioral Therapy for
+      Youth Anxiety Disorders: A Randomized Controlled Trial, JAACAP (PubMed 40850530)
+    url: https://pubmed.ncbi.nlm.nih.gov/40850530/
+    kind: paper
+  linke2019:
+    title: >-
+      Linke et al. 2019, Efficacy and mechanisms underlying a gamified attention bias modification training in anxious
+      youth: protocol for a randomized controlled trial, BMC Psychiatry 19:246
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6686536/
+    kind: paper
+  openneuro-ds006577-v100:
+    title: OpenNeuro ds006577 snapshot 1.0.0 (dataset_description.json, README, task sidecar and snapshot summary)
+    url: https://openneuro.org/datasets/ds006577/versions/1.0.0
+    kind: website
+  ds006577-file-tree:
+    title: >-
+      File tree, participants.tsv (columns sex and group) and sessions.tsv (column age) of ds006577 snapshot 1.0.0
+      (CC0), raw NIfTI files counted per subject and session folder
+    url: https://github.com/OpenNeuroDatasets/ds006577/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [
+    anxiety,
+    pediatric anxiety,
+    attention bias,
+    attention bias modification,
+    dot-probe,
+    cognitive behavioral therapy,
+    randomized controlled trial,
+    amygdala,
+    task fMRI,
+    children,
+    adolescents,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

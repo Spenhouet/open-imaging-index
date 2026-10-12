@@ -1,0 +1,27 @@
+measure,by,value,source,where,note
+subjects,,100,ds006577-file-tree,sub-*/ses-*/ folders with NIfTI files,"subjects with MRI; participants.tsv lists 185 (113 anxiety, 72 healthy), the rest have clinical data only"
+subjects,condition=anxiety_disorder,28,ds006577-file-tree,participants.tsv: group (Anx) and MRI folders,"17 active and 11 sham ABMT; the trial randomized 121 patients (byrne2026, Abstract)"
+subjects,condition=healthy,72,ds006577-file-tree,participants.tsv: group (HV) and MRI folders,
+subjects,sex=female,63,ds006577-file-tree,participants.tsv: sex,subjects with MRI
+subjects,sex=male,37,ds006577-file-tree,participants.tsv: sex,subjects with MRI
+subjects,condition=anxiety_disorder;sex=female,20,ds006577-file-tree,participants.tsv: group and sex,Cells below 10 left out
+subjects,condition=healthy;sex=female,43,ds006577-file-tree,participants.tsv: group and sex,Cells below 10 left out
+subjects,condition=healthy;sex=male,29,ds006577-file-tree,participants.tsv: group and sex,Cells below 10 left out
+subjects,age=0-9,14,ds006577-file-tree,sessions.tsv: age,age at the first MRI session (pre; post for three subjects without a pre scan)
+subjects,age=10-14,53,ds006577-file-tree,sessions.tsv: age,age at the first MRI session
+subjects,age=15-19,33,ds006577-file-tree,sessions.tsv: age,age at the first MRI session
+age_min,,8.3,ds006577-file-tree,sessions.tsv: age,age at the first MRI session of the 100 imaged subjects
+age_max,,18.0,ds006577-file-tree,sessions.tsv: age,age at the first MRI session of the 100 imaged subjects
+subjects,contrast=T1w,100,ds006577-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,100,ds006577-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast=T2w,1,ds006577-file-tree,sub-*/ses-*/anat/*_T2w.nii.gz,
+subjects,contrast_set=bold+T1w,99,ds006577-file-tree,anat and func folders,
+subjects,contrast_set=bold+T1w+T2w,1,ds006577-file-tree,anat and func folders,
+studies,,163,ds006577-file-tree,sub-*/ses-pre and sub-*/ses-post folders,97 pre and 66 post sessions
+scans,contrast=T1w,163,ds006577-file-tree,*_T1w.nii.gz,one per session
+scans,contrast=T2w,1,ds006577-file-tree,*_T2w.nii.gz,
+scans,contrast=bold,326,ds006577-file-tree,*_bold.nii.gz,two dot-probe runs per session
+scans,,490,ds006577-file-tree,sub-*/ses-*/*/*.nii.gz,"all raw image files: 163 T1w, 1 T2w and 326 bold"
+subjects,vendor=ge,100,openneuro-ds006577-v100,README: Imaging Studies,two identical 3 T GE scanners with 32-channel head coils
+subjects,field_strength=3,100,openneuro-ds006577-v100,README: Imaging Studies,
+subjects,country=US,100,linke2019,Methods: Study setting and trial design,"trial conducted at the National Institute of Mental Health, Bethesda, Maryland"
