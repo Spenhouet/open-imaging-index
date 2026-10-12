@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pagb-ketosis
+name: Protecting the Aging Brain (PAgB) ketosis fMRI
+full_name: Protecting the Aging Brain - fMRI study of the brain in ketosis
+summary: >-
+  Resting-state functional and structural brain MRI from healthy adults aged 21 to 79, scanned fasted and again after a
+  ketone ester or calorie-matched glucose drink, to test whether ketones stabilize brain networks across the lifespan.
+homepage: https://openneuro.org/datasets/ds005405
+doi: 10.18112/openneuro.ds005405.v1.0.3
+# OpenNeuro CHANGES lists 1.0.0 on 2025-02-03 as the first release and 1.0.3 on 2026-05-08 as the latest.
+year: 2025
+updated: 2026
+version: 1.0.3
+status: active
+creators:
+  - name: >-
+      Botond Antal, Helena van Nieuwenhuizen, Antoine Hone-Blanchet, Anar Amgalan, Liam McMahon, Andrew Lithen, Sofia
+      Nikolaidou, Ken A. Dill, Steven M. Stufflebeam, Kieran Clarke, Eva-Maria Ratai, Lilianne R. Mujica-Parodi
+    url: https://www.lcneuro.org/
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [longitudinal]
+formats: [BIDS, NIfTI]
+# Participants were recruited in the Boston metropolitan area under the Massachusetts General Hospital IRB (antal2025, Methods).
+countries: [US]
+field_strengths: [7]
+size_gb: 491.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005405
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+# dataset_description.json (HowToAcknowledge) asks users to cite the 2020 paper.
+citation:
+  text: >-
+    Mujica-Parodi LR, Amgalan A, Sultan SF, Antal B, Sun X, Skiena S, Lithen A, Adra N, Ratai EM, Weistuch C,
+    Govindarajan ST, Strey HH, Dill KA, Stufflebeam SM, Veech RL, Clarke K. Diet modulates brain network stability, a
+    biomarker for brain aging, in young adults. Proceedings of the National Academy of Sciences 117(11), 6170-6177
+    (2020). doi:10.1073/pnas.1913042117
+sources:
+  antal2025:
+    title: >-
+      Antal et al. 2025, Brain aging shows nonlinear transitions, suggesting a midlife "critical window" for metabolic
+      intervention, PNAS
+    url: https://doi.org/10.1073/pnas.2416433122
+    kind: paper
+  mujicaparodi2020:
+    title: >-
+      Mujica-Parodi et al. 2020, Diet modulates brain network stability, a biomarker for brain aging, in young adults,
+      PNAS
+    url: https://doi.org/10.1073/pnas.1913042117
+    kind: paper
+  openneuro-ds005405-v1-0-3:
+    title: OpenNeuro ds005405 snapshot 1.0.3 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005405/versions/1.0.3
+    kind: website
+  ds005405-participants:
+    title: participants.tsv of ds005405 snapshot 1.0.3 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds005405/blob/1.0.3/participants.tsv
+    kind: computed
+  ds005405-file-tree:
+    title: BIDS file tree of ds005405 snapshot 1.0.3 (CC0), NIfTI files under sub-*/ses-*/
+    url: https://github.com/OpenNeuroDatasets/ds005405/tree/1.0.3
+    kind: computed
+related: []
+keywords:
+  [7T MRI, resting-state fMRI, ketosis, ketone ester, beta-hydroxybutyrate, glucose, brain aging, network stability, MEMPRAGE]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
