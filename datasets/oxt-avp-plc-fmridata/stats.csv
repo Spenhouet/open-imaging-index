@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,94,zhang2025,"Materials and Methods, Participant Recruitment and Group Assignment","Dataset 1: 103 recruited, 9 excluded; 31 oxytocin, 31 vasopressin, 32 placebo. The figshare file holds images of 94 distinct subjects"
+subjects,sex=female,46,zhang2025,"Materials and Methods, Participant Recruitment and Group Assignment","sum of 16 oxytocin, 15 vasopressin and 15 placebo females, disjoint groups"
+subjects,condition=healthy,94,zhang2025,"Materials and Methods, Participant Recruitment and Group Assignment",no history of psychiatric or medical conditions
+subjects,country=CN,94,zhang2025,"Materials and Methods, Participant Recruitment and Group Assignment",recruited at UESTC Chengdu
+subjects,contrast=bold,94,figshare-27860538-mat,OTAVPPLC_end_dataset image_names,
+scans,,816,figshare-27860538-mat,OTAVPPLC_end_dataset image_names,"first-level contrast images: 398 from GLM folder 1st_level_eex and 418 from 1st_level_sep"
+scans,contrast=bold,816,figshare-27860538-mat,OTAVPPLC_end_dataset image_names,
