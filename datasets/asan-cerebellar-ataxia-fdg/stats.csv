@@ -1,0 +1,36 @@
+measure,by,value,source,where,note
+subjects,,171,oh2017,Materials and methods (Subjects; 18F-FDG PET image acquisition); Table 1,sum of the five disjoint groups (89 + 15 + 44 + 9 + 14); matches 159 ECAT HR+ plus 12 Discovery 690 scans
+subjects,modality=PT,171,oh2017,Materials and methods (18F-FDG PET image acquisition),
+subjects,tracer=fdg,171,oh2017,Materials and methods (18F-FDG PET image acquisition),370 MBq on the ECAT HR+
+subjects,vendor=siemens,159,oh2017,Materials and methods (18F-FDG PET image acquisition),ECAT HR+ (CTI-Siemens)
+subjects,vendor=ge,12,oh2017,Materials and methods (18F-FDG PET image acquisition),GE Discovery 690 PET/CT
+subjects,country=KR,171,oh2017,Affiliations; Materials and methods (Subjects),"Asan Medical Center, Seoul"
+subjects,condition=healthy,89,oh2017,Table 1; Materials and methods (Subjects),from the institutional normal FDG PET data pool
+subjects,condition=brain_tumor,15,oh2017,Table 1; Materials and methods (Subjects),crossed cerebellar diaschisis due to frontal brain tumors
+subjects,condition=multiple_system_atrophy_cerebellar,44,oh2017,Table 1,probable MSA-C
+subjects,condition=spinocerebellar_ataxia_type_2,9,oh2017,Table 1,molecularly confirmed CAG repeat expansion
+subjects,condition=spinocerebellar_ataxia_type_6,14,oh2017,Table 1,molecularly confirmed CAG repeat expansion
+subjects,sex=male,98,oh2017,Table 1,sum over the five groups
+subjects,sex=female,73,oh2017,Table 1,sum over the five groups
+subjects,condition=healthy;sex=male,55,oh2017,Table 1,
+subjects,condition=healthy;sex=female,34,oh2017,Table 1,
+subjects,condition=brain_tumor;sex=male,7,oh2017,Table 1,
+subjects,condition=brain_tumor;sex=female,8,oh2017,Table 1,
+subjects,condition=multiple_system_atrophy_cerebellar;sex=male,24,oh2017,Table 1,
+subjects,condition=multiple_system_atrophy_cerebellar;sex=female,20,oh2017,Table 1,
+subjects,condition=spinocerebellar_ataxia_type_2;sex=male,4,oh2017,Table 1,
+subjects,condition=spinocerebellar_ataxia_type_2;sex=female,5,oh2017,Table 1,
+subjects,condition=spinocerebellar_ataxia_type_6;sex=male,8,oh2017,Table 1,
+subjects,condition=spinocerebellar_ataxia_type_6;sex=female,6,oh2017,Table 1,
+age_mean,condition=healthy,49.9,oh2017,Table 1,
+age_mean,condition=brain_tumor,49.3,oh2017,Table 1,
+age_mean,condition=multiple_system_atrophy_cerebellar,55.9,oh2017,Table 1,
+age_mean,condition=spinocerebellar_ataxia_type_2,38.2,oh2017,Table 1,
+age_mean,condition=spinocerebellar_ataxia_type_6,58.3,oh2017,Table 1,
+age_min,condition=healthy,17,oh2017,Materials and methods (Subjects),
+age_max,condition=healthy,85,oh2017,Materials and methods (Subjects),
+age_sd,condition=healthy,14.0,oh2017,Table 1,
+age_sd,condition=brain_tumor,11.3,oh2017,Table 1,
+age_sd,condition=multiple_system_atrophy_cerebellar,7.0,oh2017,Table 1,
+age_sd,condition=spinocerebellar_ataxia_type_2,12.7,oh2017,Table 1,
+age_sd,condition=spinocerebellar_ataxia_type_6,9.4,oh2017,Table 1,
