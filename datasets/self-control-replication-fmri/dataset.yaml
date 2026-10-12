@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: self-control-replication-fmri
+name: Self-Control Replication fMRI (ds002643)
+full_name: Can we have a second helping? A replication study on the neurobiological mechanisms underlying self-control
+summary: >-
+  Task and resting-state brain fMRI with a T1-weighted scan from a preregistered replication of Hare et al. 2009 on
+  dietary self-control. 80 dieting adults aged 18 to 43 rated foods for health and taste and made food choices.
+homepage: https://openneuro.org/datasets/ds002643
+doi: 10.18112/openneuro.ds002643.v1.1.0
+year: 2022
+version: 1.1.0
+status: active
+creators:
+  - name: Scholz C, Chan HY, Poldrack RA, de Ridder DTD, Smidts A, van der Laan LN (University of Amsterdam, Erasmus University Rotterdam, Utrecht University, Stanford University)
+    url: https://openneuro.org/datasets/ds002643
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [NL]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 32.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds002643/versions/1.1.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds002643/versions/1.1.0
+    note: >-
+      dataset_description.json of snapshot 1.1.0 states "License" CC0. It asks users to cite OpenNeuro and the study
+      paper; this is a request, not a license condition.
+citation:
+  text: >-
+    Scholz C, Chan HY, Poldrack RA, de Ridder DTD, Smidts A, van der Laan LN. Can we have a second helping? A
+    preregistered direct replication study on the neurobiological mechanisms underlying self-control. Human Brain
+    Mapping 43(16):4995-5016 (2022). doi:10.1002/hbm.26065
+sources:
+  scholz2022:
+    title: Scholz et al. 2022, Can we have a second helping? A preregistered direct replication study on the neurobiological mechanisms underlying self-control, Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.26065
+    kind: paper
+  openneuro-ds002643-v1:
+    title: OpenNeuro ds002643 snapshot 1.1.0 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds002643/versions/1.1.0
+    kind: website
+  ds002643-participants:
+    title: participants.tsv of ds002643 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds002643/blob/1.1.0/participants.tsv
+    kind: computed
+  ds002643-file-tree:
+    title: File tree of ds002643 1.1.0 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds002643/tree/1.1.0
+    kind: computed
+related: []
+keywords: [self-control, dietary self-control, food choice, value-based decision-making, replication, task fMRI, resting-state fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
