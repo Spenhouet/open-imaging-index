@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,110,ds004636-file-tree,,"subject folders in the release; 113 recruited, 3 dropped in the first session (Data descriptor, Participants)"
+subjects,contrast=bold,110,ds004636-file-tree,,every subject has a resting-state BOLD run
+subjects,contrast=T1w,108,ds004636-file-tree,,
+subjects,contrast=T2w,102,ds004636-file-tree,,
+subjects,contrast_set=bold+T1w+T2w,102,ds004636-file-tree,,
+subjects,contrast_set=bold+T1w,6,ds004636-file-tree,,
+subjects,contrast_set=bold,2,ds004636-file-tree,,
+subjects,sex=female,71,ds004636-participants,Gender,self-reported gender
+subjects,sex=male,38,ds004636-participants,Gender,self-reported gender
+subjects,sex=unknown,1,ds004636-participants,Gender,gender n/a
+subjects,age=18-19,27,ds004636-participants,Age,
+subjects,age=20-29,68,ds004636-participants,Age,
+subjects,age=30-39,12,ds004636-participants,Age,
+subjects,age=40-49,3,ds004636-participants,Age,
+studies,,217,ds004636-file-tree,,"session folders; 97 subjects have 2 sessions, 8 have 1 and 5 have 3"
+scans,,1589,ds004636-file-tree,,"181 T1w, 140 T2w and 1268 BOLD NIfTI files; single-band references and fieldmaps not counted"
+age_mean,,23.8,ds004636-participants,Age,
+age_min,,18,ds004636-participants,Age,
+age_max,,45,ds004636-participants,Age,

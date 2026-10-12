@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: self-regulation-fmri
+name: Self-Regulation fMRI (ds004636)
+full_name: Cognitive tasks, anatomical MRI, and functional MRI data evaluating the construct of self-regulation
+summary: >-
+  Brain fMRI of healthy adults at rest, during nine self-regulation tasks and during an in-scanner survey, collected
+  to map the neural basis of self-regulation, with T1-weighted and T2-weighted scans. 110 people aged 18 to 45,
+  scanned in two sessions at Stanford.
+homepage: https://openneuro.org/datasets/ds004636
+doi: 10.18112/openneuro.ds004636.v1.0.4
+year: 2023
+version: 1.0.4
+status: active
+creators:
+  - name: Poldrack Lab, Department of Psychology, Stanford University (Bissett PG, Poldrack RA et al.)
+    url: https://openneuro.org/datasets/ds004636
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 2447.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004636/versions/1.0.4
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004636/versions/1.0.4
+    note: >-
+      dataset_description.json of snapshot 1.0.4 states "License" CC0. The data descriptor asks users to follow the
+      ODC Attribution-Sharealike Community Norms and cite it; these norms are a request, not a license condition.
+citation:
+  text: >-
+    Bissett PG, Eisenberg IW, Shim S, Rios JAH, Jones HM, Hagen MP, Enkavi AZ, Li JK, Mumford JA, MacKinnon DP,
+    Marsch LA, Poldrack RA. Cognitive tasks, anatomical MRI, and functional MRI data evaluating the construct of
+    self-regulation. Scientific Data 11:809 (2024). doi:10.1038/s41597-024-03636-y
+sources:
+  bissett2024:
+    title: Bissett et al. 2024, Cognitive tasks, anatomical MRI, and functional MRI data evaluating the construct of self-regulation, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03636-y
+    kind: paper
+  openneuro-ds004636-v1:
+    title: OpenNeuro ds004636 snapshot 1.0.4 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004636/versions/1.0.4
+    kind: website
+  ds004636-participants:
+    title: participants.tsv of ds004636 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004636/blob/1.0.4/participants.tsv
+    kind: computed
+  ds004636-file-tree:
+    title: File tree of ds004636 1.0.4 (CC0), NIfTI files counted per subject and session folder
+    url: https://github.com/OpenNeuroDatasets/ds004636/tree/1.0.4
+    kind: computed
+related: []
+keywords:
+  [
+    self-regulation,
+    response inhibition,
+    stop-signal task,
+    Stroop,
+    task switching,
+    delay discounting,
+    attention network test,
+    task fMRI,
+    resting-state fMRI
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
