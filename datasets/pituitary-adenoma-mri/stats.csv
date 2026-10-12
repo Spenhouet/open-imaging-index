@@ -1,0 +1,32 @@
+measure,by,value,source,where,note
+subjects,,50,openneuro-ds006248-v1-0-0,README,
+subjects,condition=nonfunctioning_pituitary_adenoma,50,ds006248-participants,hormonal_activity,all rows are NFPA
+subjects,sex=female,22,ds006248-participants,sex,
+subjects,sex=male,28,ds006248-participants,sex,
+subjects,age=20-29,2,ds006248-participants,age_at_surgery,age at surgery
+subjects,age=30-39,5,ds006248-participants,age_at_surgery,
+subjects,age=40-49,9,ds006248-participants,age_at_surgery,
+subjects,age=50-59,13,ds006248-participants,age_at_surgery,
+subjects,age=60-69,13,ds006248-participants,age_at_surgery,
+subjects,age=70-79,6,ds006248-participants,age_at_surgery,
+subjects,age=80-89,2,ds006248-participants,age_at_surgery,
+subjects,contrast=T1w,50,ds006248-file-tree,sub-*/anat/*_acq-Cor_T1w.nii.gz,non-contrast coronal T1w
+subjects,contrast=T1w_ce,50,ds006248-file-tree,sub-*/anat/*_acq-CE*_T1w.nii.gz,"coronal, sagittal and 3D axial contrast-enhanced T1w"
+subjects,contrast=T2w,48,ds006248-file-tree,sub-*/anat/*_T2w.nii.gz,"coronal T2w, FIESTA or contrast-enhanced FIESTA"
+subjects,contrast=ADC,33,ds006248-file-tree,derivatives/adcmaps/sub-*/dwi/*.nii.gz,ADC maps at b=200 and b=1000 and exponential ADC at b=1000
+subjects,contrast_set=ADC+T1w+T1w_ce+T2w,33,ds006248-file-tree,sub-*/anat and derivatives/adcmaps,
+subjects,contrast_set=T1w+T1w_ce+T2w,15,ds006248-file-tree,sub-*/anat and derivatives/adcmaps,
+subjects,contrast_set=T1w+T1w_ce,2,ds006248-file-tree,sub-*/anat and derivatives/adcmaps,
+subjects,field_strength=3,50,openneuro-ds006248-v1-0-0,README: Imaging Data,GE 750w
+subjects,vendor=ge,50,openneuro-ds006248-v1-0-0,README: Imaging Data,
+subjects,country=CZ,50,openneuro-ds006248-v1-0-0,dataset_description.json: EthicsApprovals,Military University Hospital Prague
+scans,,398,ds006248-file-tree,sub-*/anat/*.nii.gz and derivatives/adcmaps/*.nii.gz,310 raw anatomical images and 88 ADC maps; masks and predictions not counted
+scans,contrast=T1w,50,ds006248-file-tree,sub-*/anat/*_acq-Cor_T1w.nii.gz,
+scans,contrast=T1w_ce,148,ds006248-file-tree,sub-*/anat/*_acq-CE*_T1w.nii.gz,"50 coronal, 49 sagittal, 49 3D axial"
+scans,contrast=T2w,112,ds006248-file-tree,sub-*/anat/*_T2w.nii.gz,"43 coronal T2w, 34 FIESTA, 35 contrast-enhanced FIESTA"
+scans,contrast=ADC,88,ds006248-file-tree,derivatives/adcmaps/sub-*/dwi/*.nii.gz,"28 ADC b=200, 30 ADC b=1000, 30 exponential ADC b=1000"
+age_mean,,56.1,ds006248-participants,age_at_surgery,age at surgery
+age_sd,,14.3,ds006248-participants,age_at_surgery,sample standard deviation
+age_median,,55.5,ds006248-participants,age_at_surgery,
+age_min,,22,ds006248-participants,age_at_surgery,
+age_max,,80,ds006248-participants,age_at_surgery,

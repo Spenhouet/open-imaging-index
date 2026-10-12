@@ -282,6 +282,14 @@ terms:
     }
   - { id: meningioma, label: Meningioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0016642' } }
   - { id: brain_metastasis, label: Brain metastases, parent: brain_tumor, mappings: { mondo: 'MONDO:1040026' } }
+  - { id: pituitary_adenoma, label: Pituitary adenoma, parent: brain_tumor, synonyms: [pituitary neuroendocrine tumor, PitNET], mappings: { mondo: 'MONDO:0006373' } }
+  - {
+      id: nonfunctioning_pituitary_adenoma,
+      label: Non-functioning pituitary adenoma,
+      parent: pituitary_adenoma,
+      synonyms: [NFPA],
+      mappings: { mondo: 'MONDO:0019613' }
+    }
   - {
       id: vestibular_schwannoma,
       label: Vestibular schwannoma,

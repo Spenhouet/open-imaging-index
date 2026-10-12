@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pituitary-adenoma-mri
+name: Pituitary Adenoma Multimodal MRI (ds006248)
+full_name: Open-Access Multimodal Dataset of Pituitary Adenoma
+summary: >-
+  Preoperative sellar MRI of patients with non-functioning pituitary adenoma, released to train and benchmark
+  segmentation of the tumor, normal gland, internal carotid arteries and optic pathway, with expert masks and the
+  outputs of five published models.
+homepage: https://openneuro.org/datasets/ds006248
+doi: 10.18112/openneuro.ds006248.v1.0.0
+# First and only snapshot (1.0.0) on OpenNeuro, 2025-05-19.
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Černý M, Májovský M, Valošek J, et al. (Military University Hospital Prague)
+    url: https://openneuro.org/datasets/ds006248
+species: human
+modalities: [MR]
+contrasts: [T1w, T1w_ce, T2w, ADC]
+anatomy: [pituitary_gland]
+conditions: [nonfunctioning_pituitary_adenoma]
+tasks: [segmentation]
+formats: [BIDS, NIfTI]
+countries: [CZ]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 6.9
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006248
+licenses:
+  - license: CC-BY-NC-4.0
+    note: >-
+      The dataset README states "Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)", while
+      dataset_description.json of snapshot 1.0.0 states "License" CC0. This entry records the more restrictive
+      license.
+citation:
+  text: >-
+    Černý M, Májovský M, Valošek J, et al. Open-access multiparametric MRI dataset of pituitary adenoma and benchmark
+    analysis of five segmentation models. Scientific Data (under review at release). OpenNeuro ds006248,
+    doi:10.18112/openneuro.ds006248.v1.0.0
+sources:
+  openneuro-ds006248-v1-0-0:
+    title: OpenNeuro ds006248 snapshot 1.0.0 (README, dataset_description.json, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds006248/versions/1.0.0
+    kind: website
+  ds006248-participants:
+    title: participants.tsv of ds006248 (CC BY-NC 4.0 per README, CC0 per dataset_description.json), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds006248/blob/main/participants.tsv
+    kind: computed
+  ds006248-file-tree:
+    title: File listing of the ds006248 BIDS repository, counted per image NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds006248
+    kind: computed
+related: []
+keywords: [pituitary adenoma, sellar region, internal carotid artery, optic chiasm, tumor segmentation, benchmark]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
