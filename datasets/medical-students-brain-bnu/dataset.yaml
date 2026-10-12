@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: medical-students-brain-bnu
+name: Brain Image Database of Medical Students
+full_name: Brain image database of medical students
+summary: >-
+  Structural, resting-state functional and diffusion tensor brain MRI of 98 healthy Chinese medical students, acquired
+  on a 3 T scanner and deposited on Science Data Bank under restricted access.
+homepage: https://www.scidb.cn/en/detail?dataSetId=0e7b88d993ad4e189c52d4ec5c930aff
+doi: 10.57760/sciencedb.15487
+year: 2024
+version: V1
+status: active
+creators:
+  - name: Peng Gao, State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University
+  - name: Xi-Nian Zuo, State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+countries: [CN]
+field_strengths: [3]
+access:
+  type: signed_agreement
+  url: https://www.scidb.cn/en/detail?dataSetId=0e7b88d993ad4e189c52d4ec5c930aff
+  note: >-
+    The Science Data Bank record is restricted. Applicants give their name, institution and purpose, complete the
+    data use agreement and have it approved by the State Key Laboratory of Cognitive Neuroscience and Learning,
+    Beijing Normal University, then request the files through the record's Request Access form. The record is
+    curated by the Chinese Color Nest Data Community.
+licenses:
+  - license: LicenseRef-CCNDC-DUA
+    applies_to: All files on the Science Data Bank record
+citation:
+  text: >-
+    Peng Gao, Xi-Nian Zuo. Brain image database of medical students. V1. Science Data Bank, 2024.
+    doi:10.57760/sciencedb.15487
+sources:
+  scidb-15487:
+    title: Science Data Bank record 10.57760/sciencedb.15487 (V1), its description, access conditions and DataCite metadata
+    url: https://doi.org/10.57760/sciencedb.15487
+    kind: website
+related: [mnd-mfhc-healthy-controls]
+keywords: [medical students, healthy young adults, resting-state fMRI, diffusion tensor imaging, Chinese Color Nest Data Community]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
