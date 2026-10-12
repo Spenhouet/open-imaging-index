@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,86,klausen2022-supplement,Appendix 1 Table 17,"Sum of the disjoint groups of 61 patients and 25 healthy controls in the fMRI substudy; every SPECT patient was also in the fMRI substudy"
+subjects,condition=alcohol_use_disorder,61,klausen2022-supplement,Appendix 1 Table 17,patients with a baseline fMRI scan (33 placebo; 28 exenatide)
+subjects,condition=healthy,25,klausen2022-supplement,Appendix 1 Table 17,"matched for sex, age and education; scanned once"
+subjects,sex=male,51,klausen2022-supplement,Appendix 1 Table 17,sum of 36 male patients and 15 male controls
+subjects,sex=female,35,klausen2022-supplement,Appendix 1 Table 17,61 + 25 participants minus 51 men
+subjects,condition=alcohol_use_disorder;sex=male,36,klausen2022-supplement,Appendix 1 Table 17,
+subjects,condition=healthy;sex=male,15,klausen2022-supplement,Appendix 1 Table 17,
+age_mean,condition=alcohol_use_disorder,50.2,klausen2022-supplement,Appendix 1 Table 17,SD 11.0
+age_mean,condition=healthy,49.3,klausen2022-supplement,Appendix 1 Table 17,SD 9.01
+subjects,modality=MR,86,klausen2022-supplement,Appendix 1 fMRI acquisition,"same 3 T protocol (T1w, field map, resting state, ALCUE and N-back BOLD) for every scanned participant"
+subjects,field_strength=3,86,klausen2022-supplement,Appendix 1 fMRI acquisition,
+subjects,vendor=siemens,86,klausen2022-supplement,Appendix 1 fMRI acquisition,Siemens Prisma with 64-channel head coil
+subjects,contrast=T1w,86,klausen2022-supplement,Appendix 1 fMRI acquisition,
+subjects,contrast=bold,86,klausen2022-supplement,Appendix 1 fMRI acquisition,
+subjects,modality=NM,45,klausen2022-supplement,Appendix 2 SPECT results,patients with a usable baseline SPECT scan; one of 46 baseline scans was excluded for technical issues
+subjects,tracer=datscan,45,klausen2022-supplement,Appendix 2 SPECT results,[123I]FP-CIT
+subjects,vendor=philips,45,klausen2022-supplement,Appendix 2 SPECT equipment,triple-head IRIX gamma camera
+subjects,country=DK,86,klausen2022,Methods,four alcohol outpatient clinics in Copenhagen; scans at Rigshospitalet
