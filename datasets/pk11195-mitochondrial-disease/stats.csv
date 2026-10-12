@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,47,vandenameele2021,Abstract,"14 patients and 33 controls, disjoint groups summed; a 15th consented patient was not scanned"
+subjects,condition=mitochondrial_disease,14,vandenameele2021,Results: Patient Characteristics,"genetically confirmed; 13 symptomatic patients and 1 asymptomatic carrier (patient 6, MT-ND6 m.14487T>C)"
+subjects,condition=healthy,33,vandenameele2021,Methods: Standard Protocol Approvals,"healthy volunteers from a depression project (25) and a Parkinson disease project (8) scanned with the same protocol"
+subjects,modality=PT,47,vandenameele2021,Methods: PET Data Acquisition,all participants scanned on one PET-MR scanner
+subjects,modality=MR,47,vandenameele2021,Methods: PET Data Acquisition,
+subjects,tracer=pk11195,47,vandenameele2021,Methods: PET Data Acquisition,75-minute list-mode acquisition
+subjects,contrast=T1w,47,vandenameele2021,Methods: Image Processing and Kinetic Analysis,1.0 mm isotropic volumetric T1-weighted MRI acquired during PET
+subjects,vendor=ge,47,vandenameele2021,Methods: PET Data Acquisition,GE Signa PET-MR
+subjects,field_strength=3,47,vandenameele2021,Methods: PET Data Acquisition,
+subjects,country=GB,47,vandenameele2021,Methods: Standard Protocol Approvals,"patients recruited at Addenbrooke's Hospital, Cambridge; all scanned on the same scanner"
