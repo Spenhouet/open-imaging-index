@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,180,whalley2013,Methods: Main analysis,baseline scan data of 110 bipolar high-risk relatives and 70 controls; the two groups are disjoint
+subjects,modality=MR,180,whalley2013,Methods: Main analysis,
+subjects,contrast=bold,180,whalley2013,Methods: Main analysis,baseline task fMRI (Hayling sentence completion)
+subjects,contrast=T1w,156,whalley2013-text-s1,Scanning procedure; Image processing and analysis,"T1 scan used for co-registration and normalisation of each analysed subject; counted for the 156 analysed subjects only"
+subjects,field_strength=1.5,180,whalley2013-text-s1,Scanning procedure,GE 1.5 T Signa
+subjects,vendor=ge,180,whalley2013-text-s1,Scanning procedure,GE 1.5 T Signa
+subjects,condition=healthy,70,whalley2013,Methods: Main analysis,"unrelated controls without personal or family history of bipolar disorder; 4 later developed MDD and 8 had unknown follow-up status"
+subjects,condition=depression,20,whalley2013,Results,"high-risk relatives who developed major depressive disorder after the baseline scan; all were unaffected at scanning"
+subjects,condition=bipolar_disorder,2,whalley2013,Methods: Main analysis,"high-risk relatives who developed bipolar I (1) or bipolar II (1) disorder after the baseline scan"
+subjects,sex=female,81,whalley2013,Table 1,"analysed sample of 156 only (33 controls, 36 high-risk well, 12 high-risk who developed MDD)"
+subjects,sex=male,75,whalley2013,Table 1,"analysed sample of 156 only (25 controls, 42 high-risk well, 8 high-risk who developed MDD)"
