@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: magic-carpet
+name: magic_carpet (ds004455)
+full_name: magic_carpet
+summary: >-
+  Task fMRI and structural brain MRI of healthy young adults playing a two-stage reward learning game under abstract
+  or story instructions, collected to test model-based and model-free learning signals in the striatum. 94 subjects
+  from Zurich, in BIDS on OpenNeuro.
+homepage: https://openneuro.org/datasets/ds004455
+doi: 10.18112/openneuro.ds004455.v1.1.0
+year: 2023
+updated: 2023
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Zurich Center for Neuroeconomics, University of Zurich, and School of Psychology, University of Nottingham
+      (Feher da Silva C, Lombardi G, Edelson M, Hare TA)
+    url: https://openneuro.org/datasets/ds004455
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [CH]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 17.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004455
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Feher da Silva C, Lombardi G, Edelson M, Hare TA. Rethinking model-based and model-free influences on mental effort
+    and striatal prediction errors. Nature Human Behaviour 7, 956-969 (2023). doi:10.1038/s41562-023-01573-1
+sources:
+  feherdasilva2023:
+    title: >-
+      Feher da Silva et al. 2023, Rethinking model-based and model-free influences on mental effort and striatal
+      prediction errors, Nature Human Behaviour (article page, abstract and figure captions)
+    url: https://doi.org/10.1038/s41562-023-01573-1
+    kind: paper
+  feherdasilva2023-reporting-summary:
+    title: Feher da Silva et al. 2023, Nature Portfolio Reporting Summary (MOESM2)
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41562-023-01573-1/MediaObjects/41562_2023_1573_MOESM2_ESM.pdf
+    kind: paper
+  openneuro-ds004455-v110:
+    title: OpenNeuro ds004455 snapshot 1.1.0 (dataset_description.json, README, CHANGES, participants.tsv and snapshot size)
+    url: https://openneuro.org/datasets/ds004455/versions/1.1.0
+    kind: website
+  ds004455-file-tree:
+    title: BIDS file tree of ds004455 snapshot 1.1.0 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004455/tree/1.1.0
+    kind: computed
+related: []
+keywords: [two-stage task, reinforcement learning, model-based learning, reward prediction error, task fMRI, eye tracking]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,94,ds004455-file-tree,,94 sub-* folders; participants.tsv lists 96 ids (two without image folders) and has no age or sex values. The reporting summary gives 94 as the final sample after excluding 6 participants
+subjects,country=CH,94,feherdasilva2023-reporting-summary,Research sample,recruited through the University of Zurich's Registration Center for Study Participants
+subjects,vendor=philips,94,feherdasilva2023-reporting-summary,Data collection,3T Philips Achieva with an eight-channel SENSE head coil
+subjects,field_strength=3,94,feherdasilva2023-reporting-summary,Data collection,
+subjects,contrast=T1w,94,ds004455-file-tree,anat,
+subjects,contrast=bold,94,ds004455-file-tree,func,3 task-fMRI runs per subject
+subjects,contrast_set=bold+T1w,94,ds004455-file-tree,,
+scans,,376,ds004455-file-tree,,sum of the disjoint T1w and bold NIfTI counts below
+scans,contrast=T1w,94,ds004455-file-tree,anat,
+scans,contrast=bold,282,ds004455-file-tree,func,
+age_min,,18,feherdasilva2023-reporting-summary,Research sample,inclusion range 18 to 30 years
+age_max,,30,feherdasilva2023-reporting-summary,Research sample,inclusion range 18 to 30 years
