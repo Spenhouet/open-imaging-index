@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,75,openneuro-ds006105-v101,README,"original sample of Mortazavi et al. 2025, Table 1"
+subjects,contrast=T1w,75,ds006105-file-tree,,one T1w per subject folder
+subjects,contrast=bold,75,ds006105-file-tree,,one Skewed Gambling Task run per subject folder
+subjects,contrast_set=bold+T1w,75,ds006105-file-tree,,
+subjects,sex=female,25,mortazavi2025,Table 1,participants.tsv gives the same count
+subjects,sex=male,50,mortazavi2025,Table 1,participants.tsv gives the same count
+subjects,age=18-19,12,ds006105-participants,age,age in whole years
+subjects,age=20-29,43,ds006105-participants,age,age in whole years
+subjects,age=30-39,16,ds006105-participants,age,age in whole years
+subjects,age=40-49,3,ds006105-participants,age,age in whole years
+subjects,age=50-59,1,ds006105-participants,age,age in whole years
+scans,,150,ds006105-file-tree,,75 T1w and 75 BOLD NIfTI files
+age_mean,,26.31,mortazavi2025,Table 1,SD 7.05
+age_min,,18,ds006105-participants,age,
+age_max,,52,ds006105-participants,age,
