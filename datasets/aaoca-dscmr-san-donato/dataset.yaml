@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: aaoca-dscmr-san-donato
+name: AAOCA dobutamine stress CMR (San Donato)
+full_name: Dobutamine stress cardiac magnetic resonance role in patients with anomalous aortic origin of coronary arteries
+summary: >-
+  Dobutamine stress cardiac MRI of children and adults with an anomalous aortic origin of a coronary artery, collected
+  to detect inducible myocardial ischaemia and the factors linked to it. 100 consecutive patients from one Italian
+  centre, 2015 to 2024. Access restricted.
+homepage: https://zenodo.org/records/18773182
+doi: 10.5281/zenodo.18773182
+year: 2026
+creators:
+  - name: IRCCS Policlinico San Donato
+    url: https://zenodo.org/records/18773182
+species: human
+modalities: [MR]
+contrasts: [cine, dce, lge, angio]
+anatomy: [heart]
+conditions: [coronary_artery_anomaly]
+tasks: [classification]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://zenodo.org/records/18773182
+  note: >-
+    The Zenodo record is public but its files are restricted, the record does not list or describe them, and access
+    requests through Zenodo are switched off. The paper says the data underlying the article will be shared on
+    reasonable request to the corresponding author. Whether CMR images are part of the shared data is not stated.
+licenses:
+  - license: CC-BY-4.0
+    note: >-
+      The Zenodo record is labelled CC BY 4.0, which applies to its restricted files once access is granted. No other
+      terms are published.
+citation:
+  text: >-
+    Attanasio A, Zannoni J, Disabato G, et al. Dobutamine stress cardiac magnetic resonance role in patients with
+    anomalous aortic origin of coronary arteries. Eur Heart J Cardiovasc Imaging 26, 1292-1302 (2025).
+    doi:10.1093/ehjci/jeaf134
+sources:
+  attanasio2025:
+    title: Attanasio et al. 2025, European Heart Journal - Cardiovascular Imaging 26, 1292-1302
+    url: https://doi.org/10.1093/ehjci/jeaf134
+    kind: paper
+  zenodo-18773182:
+    title: Zenodo record 18773182
+    url: https://zenodo.org/records/18773182
+    kind: website
+related: []
+keywords:
+  [
+    anomalous aortic origin of a coronary artery,
+    AAOCA,
+    dobutamine stress,
+    stress perfusion,
+    inducible myocardial ischaemia,
+    intramural course,
+    late gadolinium enhancement
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
