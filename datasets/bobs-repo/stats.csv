@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,51,feczko2025,Data Records,
+studies,,71,feczko2025,Data Records,"imaging visits; 34 subjects with one visit, 14 with two and 3 with three"
+subjects,sex=female,31,ds005450-sessions,"participant_id, sex",
+subjects,sex=male,20,ds005450-sessions,"participant_id, sex",
+subjects,age=0-0,51,ds005450-sessions,"participant_id, age",age at scan 1.0 to 9.4 months
+studies,age=0-0.5,42,ds005450-sessions,age,visits at under 6 months of age
+studies,age=0.5-1,29,ds005450-sessions,age,visits at 6 to 9.4 months of age
+subjects,contrast=T1w,51,feczko2025,Methods,
+subjects,contrast=T2w,51,feczko2025,Methods,
+subjects,contrast_set=T1w+T2w,51,feczko2025,Methods,one T1w and one T2w per visit
+subjects,country=US,51,feczko2025,Methods,all scanned at the University of Minnesota site of the Baby Connectome Project
+subjects,vendor=siemens,51,feczko2025,Methods,Siemens 3 T Prisma with a 32-channel head coil
+subjects,field_strength=3,51,feczko2025,Methods,
+subjects,condition=healthy,51,feczko2025,Methods,"Baby Connectome Project eligibility: born at 37 to 42 weeks, weight appropriate for gestational age, no major pregnancy or delivery complications"
+scans,contrast=T1w,71,ds005450-file-tree,anat,
+scans,contrast=T2w,71,ds005450-file-tree,anat,
+scans,,142,ds005450-file-tree,anat,"sum of the disjoint T1w and T2w counts; the 71 dseg segmentation volumes are not counted"
