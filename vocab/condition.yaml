@@ -132,6 +132,16 @@ terms:
       mappings: { ncit: 'NCIT:C35549' }
     }
   - {
+      id: germinal_matrix_hemorrhage,
+      label: Germinal matrix-intraventricular hemorrhage,
+      parent: intracranial_hemorrhage,
+      description: 'Bleeding from the germinal matrix of the preterm brain, with or without extension into the ventricles, usually graded I to IV after Papile.',
+      synonyms: [GMH, GMH-IVH, preterm intraventricular hemorrhage],
+      mappings: { hp: 'HP:0030747' }
+    }
+  - { id: hydrocephalus, label: Hydrocephalus, mappings: { mondo: 'MONDO:0001150' } }
+  - { id: preterm_birth, label: Preterm birth, description: 'Birth before 37 completed weeks of gestation.', synonyms: [premature birth, prematurity], mappings: { hp: 'HP:0001622' } }
+  - {
       id: cerebral_cavernous_malformation,
       label: Cerebral cavernous malformation,
       synonyms: [CCM, cavernoma],

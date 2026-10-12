@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,51,sartori2022,Results,"52 newborns included, one excluded for transfer after day 30; one neonatal brain MRI per patient, January 2016 to March 2019"
+subjects,modality=MR,51,sartori2022,Results,all scans done with the neonatal protocol under anesthesia
+subjects,modality=US,51,sartori2022,Table 4,last transfontanellar ultrasound before MRI; findings taken from radiology reports
+subjects,contrast_set=ADC+dwi+FLAIR+swi+T1w+T2w,51,sartori2022,Materials and Methods,sagittal and axial T1w; axial T2w; FLAIR; SWI; DWI; ADC map in the neonatal protocol
+subjects,field_strength=1.5,35,sartori2022,Results,
+subjects,field_strength=3,16,sartori2022,Results,
+subjects,sex=female,25,sartori2022,Results,
+subjects,sex=male,26,sartori2022,Results,
+subjects,country=BR,51,sartori2022,Materials and Methods,"tertiary referral hospital for high-risk pregnancy; authors in Passo Fundo, RS"
+subjects,condition=preterm_birth,48,sartori2022,Table 2,"summed from the disjoint gestational age bins under 37 weeks: under 28 weeks 21, 28 to under 32 weeks 18, 32 to under 37 weeks 9; 3 were term"
+subjects,condition=intracranial_hemorrhage,22,sartori2022,Table 4,hemorrhage on MRI; 8 on ultrasound
+subjects,condition=germinal_matrix_hemorrhage,19,sartori2022,Table 4,"summed from the MRI Papile grades: grade I 7, grade II 10, grade III 0, grade IV 2"
+subjects,condition=hydrocephalus,2,sartori2022,Table 4,on MRI and on ultrasound
