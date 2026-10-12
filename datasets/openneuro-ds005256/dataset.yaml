@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds005256
+name: Spacetop (ds005256)
+full_name: A multimodal fMRI dataset unifying naturalistic processes with a rich array of experimental tasks
+summary: >-
+  Task fMRI, T1w and multi-shell diffusion MRI of healthy adults scanned over four sessions with naturalistic movies,
+  narratives and tasks on pain, faces, social judgement and theory of mind, built for functional alignment across
+  people.
+homepage: https://openneuro.org/datasets/ds005256
+doi: 10.18112/openneuro.ds005256.v1.1.0
+# First snapshot 1.0.0 on OpenNeuro, 2024-11-12; latest snapshot 1.1.0, 2025-03-13.
+year: 2024
+version: 1.1.0
+status: active
+creators:
+  - name: >-
+      Jung H, Amini M, Hung BJ, Murphy EI, Sadil P, Halchenko YO, Petre B, Miao Z, Kragel PA, Han X, Heilicher MO, Sun
+      M, Collins OG, Lindquist MA, Wager TD (Dartmouth College)
+    url: https://github.com/spatialtopology
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 2231.1
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005256
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.0 states "License" CC0.
+citation:
+  text: >-
+    Jung H, Amini M, Hunt BJ, Murphy EI, Sadil P, Halchenko YO, Petre B, Miao Z, Kragel PA, Han X, Heilicher MO, Sun M,
+    Collins OG, Lindquist MA, Wager TD. A multimodal fMRI dataset unifying naturalistic processes with a rich array of
+    experimental tasks. Scientific Data (2025). doi:10.1038/s41597-025-05154-x
+sources:
+  jung2025:
+    title: Jung et al. 2025, Scientific Data
+    url: https://doi.org/10.1038/s41597-025-05154-x
+    kind: paper
+  openneuro-ds005256-v1-1-0:
+    title: OpenNeuro ds005256 snapshot 1.1.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds005256/versions/1.1.0
+    kind: website
+  ds005256-file-tree:
+    title: >-
+      File listing, participants.tsv and JSON sidecars of the ds005256 BIDS repository at tag 1.1.0 (CC0), subjects
+      counted per T1w, dwi and bold NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds005256/tree/1.1.0
+    kind: computed
+related: []
+keywords:
+  [
+    Spacetop,
+    naturalistic viewing,
+    movie fMRI,
+    narratives,
+    pain,
+    faces,
+    theory of mind,
+    functional alignment,
+    multi-session,
+    task fMRI,
+    diffusion MRI,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

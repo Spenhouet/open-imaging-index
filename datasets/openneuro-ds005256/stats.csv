@@ -1,0 +1,29 @@
+measure,by,value,source,where,note
+subjects,,117,ds005256-file-tree,sub-* folders and participants.tsv,"jung2025 (Fig. 1) reports 185 enrolled and 101 who completed all four sessions; the release also holds partial completers"
+studies,,423,ds005256-file-tree,ses-* folders with NIfTI files,"117 ses-01, 106 ses-02, 100 ses-03 and 100 ses-04"
+scans,,4411,ds005256-file-tree,"anat/, dwi/ and func/ NIfTI files","117 T1w, 116 dwi and 4178 bold volumes; fieldmaps, sbrefs and deface masks not counted"
+subjects,condition=healthy,117,ds005256-file-tree,participants.tsv (group),all in group control
+subjects,country=US,117,ds005256-file-tree,anat/*_T1w.json (InstitutionName),Dartmouth Brain Imaging Center
+subjects,vendor=siemens,117,ds005256-file-tree,anat/*_T1w.json (Manufacturer),Siemens Prisma
+subjects,field_strength=3,117,ds005256-file-tree,anat/*_T1w.json (MagneticFieldStrength),
+subjects,contrast=T1w,117,ds005256-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=dwi,116,ds005256-file-tree,dwi/*_dwi.nii.gz,
+subjects,contrast=bold,117,ds005256-file-tree,func/*_bold.nii.gz,
+subjects,contrast_set=bold+dwi+T1w,116,ds005256-file-tree,,
+scans,contrast=T1w,117,ds005256-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=dwi,116,ds005256-file-tree,dwi/*_dwi.nii.gz,
+scans,contrast=bold,4178,ds005256-file-tree,func/*_bold.nii.gz,"41 runs for 61 subjects; alignvideo 1361, social 1780, narratives 423, faces 315, fractional 200, shortvideo 99"
+subjects,sex=female,70,ds005256-file-tree,participants.tsv (sex),"the paper reports 69 males and 45 females"
+subjects,sex=male,45,ds005256-file-tree,participants.tsv (sex),
+subjects,sex=other,2,ds005256-file-tree,participants.tsv (sex),
+subjects,age=10-19,22,ds005256-file-tree,participants.tsv (age),age at the first session
+subjects,age=20-29,81,ds005256-file-tree,participants.tsv (age),
+subjects,age=30-39,9,ds005256-file-tree,participants.tsv (age),
+subjects,age=40-49,5,ds005256-file-tree,participants.tsv (age),
+subjects,sex=female;age=10-19,15,ds005256-file-tree,participants.tsv (sex; age),
+subjects,sex=female;age=20-29,46,ds005256-file-tree,participants.tsv (sex; age),
+subjects,sex=male;age=20-29,34,ds005256-file-tree,participants.tsv (sex; age),
+age_min,,17,ds005256-file-tree,participants.tsv (age),
+age_max,,44,ds005256-file-tree,participants.tsv (age),
+age_mean,,24.2,ds005256-file-tree,participants.tsv (age),
+age_median,,23,ds005256-file-tree,participants.tsv (age),
