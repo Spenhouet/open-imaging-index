@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003745
+name: Social Reward and Decision Making in Aging fMRI (ds003745)
+full_name: An fMRI Dataset on Social Reward Processing and Decision Making in Younger and Older Adults
+summary: >-
+  Task fMRI and T1- and T2-weighted MRI from younger and older adults playing a trust game, a shared-reward card game
+  and an ultimatum game with a friend, a stranger and a computer, collected to study age differences in social and
+  economic decisions.
+homepage: https://openneuro.org/datasets/ds003745
+doi: 10.18112/openneuro.ds003745.v2.1.1
+year: 2021
+updated: 2024
+version: 2.1.1
+status: active
+creators:
+  - name: David V. Smith, Dominic S. Fareri and colleagues (DVS Lab, Temple University)
+    url: https://github.com/DVS-Lab/srndna-datapaper
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 20.69
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003745/versions/2.1.1
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds003745/versions/2.1.1
+    note: dataset_description.json of snapshot 2.1.1 states "License" CC0.
+citation:
+  text: >-
+    Smith DV, Ludwig RM, Dennison JB, Reeck C, Fareri DS. An fMRI Dataset on Social Reward Processing and Decision
+    Making in Younger and Older Adults. Scientific Data 11, 158 (2024). doi:10.1038/s41597-024-02931-y. The dataset
+    also asks users to cite Fareri et al. 2022, NeuroImage, doi:10.1016/j.neuroimage.2022.119267.
+  bibtex: |
+    @article{smith2024,
+      title={An fMRI Dataset on Social Reward Processing and Decision Making in Younger and Older Adults},
+      author={Smith, David V. and Ludwig, Rita M. and Dennison, Jeffrey B. and Reeck, Crystal and Fareri, Dominic S.},
+      journal={Scientific Data},
+      volume={11},
+      pages={158},
+      year={2024},
+      doi={10.1038/s41597-024-02931-y}
+    }
+sources:
+  smith2024:
+    title: >-
+      Smith et al. 2024, An fMRI Dataset on Social Reward Processing and Decision Making in Younger and Older Adults,
+      Scientific Data
+    url: https://doi.org/10.1038/s41597-024-02931-y
+    kind: paper
+  openneuro-ds003745-v2-1-1:
+    title: OpenNeuro ds003745 snapshot 2.1.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003745/versions/2.1.1
+    kind: website
+  ds003745-participants:
+    title: participants.tsv of the ds003745 BIDS repository (CC0), columns age and sex
+    url: https://github.com/OpenNeuroDatasets/ds003745/blob/main/participants.tsv
+    kind: computed
+  ds003745-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds003745 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName and MagneticFieldStrength
+    url: https://github.com/OpenNeuroDatasets/ds003745
+    kind: computed
+related: []
+keywords:
+  [
+    social reward,
+    trust game,
+    ultimatum game,
+    shared reward,
+    aging,
+    older adults,
+    decision making,
+    task fMRI,
+    single-trial estimates,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
