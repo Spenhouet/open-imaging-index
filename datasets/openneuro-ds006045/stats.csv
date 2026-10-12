@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,83,openneuro-ds006045-v100,snapshot summary: subjects,83 sub-* folders
+subjects,contrast=T1w,83,ds006045-file-tree,sub-*/ses-*/anat/*_rec-defaced_T1w.nii.gz,
+subjects,contrast=bold,83,ds006045-file-tree,sub-*/ses-*/func/*_task-rest_*bold.nii.gz,
+subjects,contrast_set=bold+T1w,83,ds006045-file-tree,anat and func folders,
+studies,,145,ds006045-file-tree,sub-*/ses-* folders,83 first sessions and 62 second sessions
+scans,,582,ds006045-file-tree,sub-*/ses-*/*/*.nii.gz,"all raw image files: 145 T1w, 423 bold and 14 EPI field maps"
+scans,contrast=T1w,145,ds006045-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,423,ds006045-file-tree,*_bold.nii.gz,"one resting-state run per session; 139 runs with three echo files each, 6 single-echo runs"
+scans,contrast=T1w;vendor=ge,145,ds006045-file-tree,T1w sidecars: Manufacturer,"139 Discovery MR750, 6 Signa HDxt"
+scans,contrast=T1w;field_strength=3,145,ds006045-file-tree,T1w sidecars: MagneticFieldStrength,
+scans,contrast=T1w;country=US,145,ds006045-file-tree,T1w sidecars: InstitutionName,NIH FMRIF
