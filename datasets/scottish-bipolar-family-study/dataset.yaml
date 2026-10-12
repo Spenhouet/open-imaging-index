@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: scottish-bipolar-family-study
+name: Scottish Bipolar Family Study fMRI (Whalley 2013)
+full_name: >-
+  Scottish Bipolar Family Study, baseline task fMRI of young relatives at high familial risk of bipolar disorder and
+  controls (Whalley et al. 2013, PLOS ONE)
+summary: >-
+  Task fMRI and structural brain MRI of young unaffected relatives of people with bipolar disorder and matched controls,
+  followed for about two years to test whether baseline brain activation predicts later major depression.
+homepage: https://doi.org/10.1371/journal.pone.0057357
+doi: 10.1371/journal.pone.0057357
+# Year of the paper (published 6 March 2013); the scans have no public release.
+year: 2013
+creators:
+  - name: Whalley HC, Sussmann JE, McIntosh AM, et al., Division of Psychiatry, University of Edinburgh
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy, depression]
+tasks: [longitudinal]
+countries: [GB]
+vendors: [ge]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1371/journal.pone.0057357
+  note: >-
+    The paper has no data availability statement and names no repository for the scans. The PLOS figshare record
+    (https://plos.figshare.com/articles/dataset/645725) holds only the supplementary methods text, one table and two
+    figure documents, not imaging data.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      Neither the paper nor its figshare supplement states terms for the imaging data. The CC BY license on the article
+      covers the publication, not the scans.
+citation:
+  text: >-
+    Whalley HC, Sussmann JE, Romaniuk L, Stewart T, Papmeyer M, Sprooten E, Hackett S, Hall J, Lawrie SM, McIntosh AM.
+    Prediction of Depression in Individuals at High Familial Risk of Mood Disorders Using Functional Magnetic Resonance
+    Imaging. PLoS ONE 8(3): e57357 (2013). doi:10.1371/journal.pone.0057357
+sources:
+  whalley2013:
+    title: Whalley et al. 2013, PLOS ONE
+    url: https://doi.org/10.1371/journal.pone.0057357
+    kind: paper
+  whalley2013-text-s1:
+    title: Whalley et al. 2013, PLOS ONE, Supplementary Text S1 (methods)
+    url: https://plos.figshare.com/articles/dataset/Prediction_of_Depression_in_Individuals_at_High_Familial_Risk_of_Mood_Disorders_Using_Functional_Magnetic_Resonance_Imaging__/645725
+    kind: paper
+keywords: [bipolar disorder, familial high risk, major depressive disorder, conversion, task fMRI, Hayling sentence completion, insula]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
