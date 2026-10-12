@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds001242
+name: Arousal and Salience Across Age fMRI (ds001242)
+full_name: Examining effects of arousal on responses to salient and non-salient stimuli in younger and older adults
+summary: >-
+  Task fMRI of younger and older adults detecting salient images after a tone conditioned to predict shock, collected
+  to test how arousal and the locus coeruleus shape attention with age. 52 healthy participants with T1-weighted,
+  neuromelanin-sensitive and diffusion MRI.
+homepage: https://openneuro.org/datasets/ds001242
+doi: 10.18112/openneuro.ds001242.v1.0.0
+year: 2018
+version: 1.0.0
+status: active
+creators:
+  - name: University of Southern California (Lee TH, Greening S, Ueno T, Clewett D, Ponzio A, Sakaki M, Mather M)
+    url: https://openneuro.org/datasets/ds001242
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 17.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds001242/versions/1.0.0
+licenses:
+  - license: PDDL-1.0
+    url: https://openneuro.org/datasets/ds001242/versions/1.0.0
+    note: >-
+      dataset_description.json of snapshot 1.0.0 states "This dataset is made available under the Public Domain
+      Dedication and License v1.0". It adds a non-binding request to cite the associated papers and acknowledge the
+      funders.
+citation:
+  text: >-
+    Lee TH, Greening SG, Ueno T, Clewett D, Ponzio A, Sakaki M, Mather M. Arousal increases neural gain via the locus
+    coeruleus-norepinephrine system in younger adults but not in older adults. Nature Human Behaviour 2:356-366 (2018).
+    doi:10.1038/s41562-018-0344-1
+sources:
+  lee2018:
+    title: Lee et al. 2018, Arousal increases neural gain via the locus coeruleus-norepinephrine system in younger adults but not in older adults, Nature Human Behaviour (PMC author manuscript)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6176734/
+    kind: paper
+  openneuro-ds001242-v100:
+    title: OpenNeuro ds001242 snapshot 1.0.0 (README, dataset_description.json, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds001242/versions/1.0.0
+    kind: website
+  ds001242-participants:
+    title: participants.tsv of ds001242 snapshot 1.0.0 (PDDL), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds001242/blob/1.0.0/participants.tsv
+    kind: computed
+  ds001242-file-tree:
+    title: File tree of ds001242 snapshot 1.0.0 (PDDL), NIfTI files counted per subject and BIDS suffix
+    url: https://github.com/OpenNeuroDatasets/ds001242/tree/1.0.0
+    kind: computed
+related: []
+keywords:
+  [arousal, salience, fear conditioning, locus coeruleus, neuromelanin, aging, pupillometry, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
