@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,92,agam2014,Methods: Participants,final sample with at least 10 usable error trials in fMRI and in EEG; 144 enrolled and 105 completed both sessions
+subjects,modality=MR,92,agam2014,Methods: Participants,
+subjects,contrast=T1w,92,agam2014,Methods: MRI acquisition,MP-RAGE structural scan
+subjects,contrast=MEGRE,92,agam2014,Methods: MRI acquisition,"multi-echo FLASH (8 echoes, 5 degree flip angle) for the MEG/EEG boundary-element model"
+subjects,contrast=bold,92,agam2014,Methods: MRI acquisition,six antisaccade runs per participant
+subjects,condition=healthy,33,agam2014,Methods: Participants; Table 2,
+subjects,condition=schizophrenia,28,agam2014,Methods: Participants; Table 2,
+subjects,condition=ocd,18,agam2014,Methods: Participants; Table 2,
+subjects,condition=autism,13,agam2014,Methods: Participants; Table 2,autism spectrum disorder
+subjects,sex=male,62,agam2014,Methods: Participants,
+age_mean,,36,agam2014,Methods: Participants,
+age_sd,,13,agam2014,Methods: Participants,
+subjects,vendor=siemens,92,agam2014,Methods: MRI acquisition,Siemens Trio
+subjects,field_strength=3,92,agam2014,Methods: MRI acquisition,
+subjects,country=US,92,agam2014,Methods: Participants,approved by the Partners Human Research Committee; MGH and Martinos Center affiliations
