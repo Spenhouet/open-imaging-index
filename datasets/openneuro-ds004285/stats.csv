@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,78,rogers2023,Participants,"48 young and 30 older adults; participants.tsv and the OpenNeuro 1.0.0 summary also list 78; the OpenNeuro README says 82 were tested"
+subjects,condition=healthy,78,rogers2023,Participants,self-reported normal hearing and no history of neurological disease
+subjects,sex=female,62,ds004285-participants,sex,"sex F; Table 1 of the preprint sums to 63 women"
+subjects,sex=male,16,ds004285-participants,sex,"sex M; Table 1 of the preprint sums to 15 men"
+subjects,age=10-19,4,ds004285-participants,age,
+subjects,age=20-29,42,ds004285-participants,age,
+subjects,age=30-39,1,ds004285-participants,age,
+subjects,age=60-69,12,ds004285-participants,age,
+subjects,age=70-79,18,ds004285-participants,age,
+subjects,age=80-89,1,ds004285-participants,age,
+subjects,sex=female;age=20-29,35,ds004285-participants,sex and age,cells below 10 left out
+subjects,sex=female;age=60-69,11,ds004285-participants,sex and age,
+subjects,sex=female;age=70-79,11,ds004285-participants,sex and age,
+subjects,contrast=T1w,78,ds004285-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=T2w,78,ds004285-file-tree,anat/*_T2w.nii.gz,
+subjects,contrast=bold,78,ds004285-file-tree,func/*_bold.nii.gz,six task runs (SESS01 to SESS06) per subject
+subjects,contrast_set=bold+T1w+T2w,78,ds004285-file-tree,anat/ and func/,
+subjects,field_strength=3,78,rogers2023,MRI acquisition and analysis,Siemens Prisma at 3 T
+subjects,vendor=siemens,78,rogers2023,MRI acquisition and analysis,Siemens Prisma at 3 T
+subjects,country=US,78,rogers2023,Participants,approved by the Washington University in St. Louis IRB
+scans,,624,ds004285-file-tree,anat/ and func/ NIfTI files,"sum of the disjoint T1w (78), T2w (78) and bold (468) files"
+scans,contrast=T1w,78,ds004285-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=T2w,78,ds004285-file-tree,anat/*_T2w.nii.gz,
+scans,contrast=bold,468,ds004285-file-tree,func/*_bold.nii.gz,
+age_mean,,42.0,ds004285-participants,age,
+age_sd,,24.2,ds004285-participants,age,
+age_median,,25,ds004285-participants,age,
+age_min,,19,rogers2023,Participants,participants.tsv agrees
+age_max,,81,rogers2023,Participants,participants.tsv agrees
