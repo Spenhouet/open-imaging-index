@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,118,ds006067-files,participants.tsv,118 participant rows and 118 sub-* folders; the paper recruited 126 and excluded 8 before release (Methods: Participants)
+subjects,condition=healthy,118,su2025,Methods: Participants,recruited as healthy participants from the Johns Hopkins University community
+subjects,country=US,118,su2025,Methods: Participants,Johns Hopkins University community
+subjects,vendor=philips,118,su2025,Methods: MRI data acquisition,3 T Philips Ingenia Elition with a 32-channel head coil
+subjects,field_strength=3,118,su2025,Methods: MRI data acquisition,
+subjects,contrast=T1w,118,ds006067-files,anat,
+subjects,contrast=bold,118,ds006067-files,func,one 10-minute task-thinkaloud run per subject
+subjects,contrast_set=bold+T1w,118,ds006067-files,,
+subjects,sex=female,73,ds006067-files,participants.tsv,matches the paper's behavioural sample (Methods: Participants)
+subjects,sex=male,45,ds006067-files,participants.tsv,
+subjects,age=10-19,23,ds006067-files,participants.tsv,ages 18 and 19
+subjects,age=20-29,86,ds006067-files,participants.tsv,
+subjects,age=30-39,9,ds006067-files,participants.tsv,
+subjects,sex=female;age=10-19,13,ds006067-files,participants.tsv,cells below 10 left out
+subjects,sex=female;age=20-29,57,ds006067-files,participants.tsv,
+subjects,sex=male;age=10-19,10,ds006067-files,participants.tsv,
+subjects,sex=male;age=20-29,29,ds006067-files,participants.tsv,
+age_mean,,23.4,su2025,Methods: Participants,118 participants in the behavioural analyses
+age_min,,18,ds006067-files,participants.tsv,
+age_max,,39,ds006067-files,participants.tsv,
+scans,,236,ds006067-files,,sum of the disjoint T1w and bold NIfTI counts below; 236 pepolar field map volumes (dir-AP and dir-PA) not counted
+scans,contrast=T1w,118,ds006067-files,anat,
+scans,contrast=bold,118,ds006067-files,func,
