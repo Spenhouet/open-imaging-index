@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,67,cortese2021,Table 2,"sum of the five disjoint studies (24, 12, 9, 10, 12) whose participants consented to sharing; the Table 5 model also lists 67 participants"
+subjects,sex=female,15,cortese2021,Table 2,sum of the per-study counts (4 + 1 + 3 + 3 + 4)
+subjects,sex=male,52,cortese2021,Table 2,sum of the per-study counts (20 + 11 + 6 + 7 + 8)
+subjects,contrast=bold,67,cortese2021,Figure 2,decoder and neurofeedback fMRI runs for every participant
+subjects,contrast=T1w,67,cortese2021,Figure 2,"defaced MP-RAGE; Figure 2 states the folder structure is identical for all participants"
+subjects,contrast_set=bold+T1w,67,cortese2021,Figure 2,
+subjects,field_strength=3,67,cortese2021,Table 3,
+subjects,vendor=siemens,67,cortese2021,Table 3,"MAGNETOM Verio, Trio and Prisma"
+subjects,country=JP,67,cortese2021,Methods,scanned at the ATR Brain Activation Imaging Center in Kyoto

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: decnef-collection
+name: DecNef data collection
+full_name: 'The DecNef collection: fMRI data from closed-loop decoded neurofeedback experiments (DecNef Realtime MRI Dataset)'
+summary: >-
+  Task fMRI and structural brain MRI of young adults trained with closed-loop decoded fMRI neurofeedback, released to
+  study how reinforcing a target brain activity pattern changes brain dynamics. Five studies, each with a decoder
+  session and 3 to 5 neurofeedback days per participant.
+homepage: https://bicr-resource.atr.jp/drmd/
+doi: 10.1038/s41597-021-00845-7
+# The DRMD page dates the first release to 2019-12-05 and the latest update (Studies 1 and 4) to 2024-10-24.
+year: 2019
+updated: 2024
+status: active
+creators:
+  - name: >-
+      Cortese A, Tanaka SC, Amano K, Koizumi A, Lau H, Sasaki Y, Shibata K, Taschereau-Dumouchel V, Watanabe T,
+      Kawato M (ATR Institute International and collaborators)
+    url: https://bicr.atr.jp/decnefpro/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [NIfTI]
+countries: [JP]
+vendors: [siemens]
+field_strengths: [3]
+# Sum of the five per-study archives listed on the DRMD download table (27.7 + 15.4 + 11.5 + 14.8 + 17.4 GB).
+size_gb: 86.8
+access:
+  type: signed_agreement
+  url: https://bicr-resource.atr.jp/drmd/
+  note: >-
+    Register and send a signed Application Form for Data Usage to ATR; the same files are on Synapse (syn23530650)
+    under the same terms. A 2020 G-Node GIN record (doi:10.12751/g-node.7a5393) is labeled CC BY-NC-SA 4.0, but its
+    browse and download links are disabled and the archive returned HTTP 403 on 2026-10-12.
+licenses:
+  - license: LicenseRef-DecNef-DRMD-Data-Use-Terms
+    url: https://bicr-resource.atr.jp/drmd/
+citation:
+  text: >-
+    Cortese A, Tanaka SC, Amano K, Koizumi A, Lau H, Sasaki Y, Shibata K, Taschereau-Dumouchel V, Watanabe T, Kawato
+    M. The DecNef collection, fMRI data from closed-loop decoded neurofeedback experiments. Scientific Data 8:65
+    (2021). doi:10.1038/s41597-021-00845-7
+sources:
+  cortese2021:
+    title: Cortese et al. 2021, Scientific Data
+    url: https://doi.org/10.1038/s41597-021-00845-7
+    kind: paper
+  atr-drmd:
+    title: DecNef Realtime MRI Dataset page, DecNef Project Brain Data Repository (ATR)
+    url: https://bicr-resource.atr.jp/drmd/
+    kind: website
+related: [srpbs]
+keywords: [decoded neurofeedback, DecNef, real-time fMRI, closed-loop, multivoxel pattern analysis, task fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
