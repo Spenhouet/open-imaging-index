@@ -525,6 +525,7 @@ terms:
     synonyms: [No Finding]
   - { id: copd, label: COPD, mappings: { mondo: 'MONDO:0005002' } }
   - { id: pulmonary_embolism, label: Pulmonary embolism, mappings: { mondo: 'MONDO:0005279' } }
+  - { id: pulmonary_arterial_hypertension, label: Pulmonary arterial hypertension, synonyms: [PAH], mappings: { mondo: 'MONDO:0015924' } }
   - { id: cardiomyopathy, label: Cardiomyopathy, mappings: { mondo: 'MONDO:0004994' } }
   - {
       id: dilated_cardiomyopathy,

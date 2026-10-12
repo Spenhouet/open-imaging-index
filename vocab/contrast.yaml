@@ -120,3 +120,4 @@ terms:
   # Ultrasound
   - { id: b_mode, label: B-mode, group: US }
   - { id: doppler, label: Doppler, group: US }
+  - { id: phase_contrast, label: Phase-contrast flow MRI, group: MR, description: 'Velocity-encoded phase-contrast imaging of blood flow', synonyms: [PC-MRI, flow, velocity encoding] }

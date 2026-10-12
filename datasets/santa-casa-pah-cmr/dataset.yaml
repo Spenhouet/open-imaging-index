@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: santa-casa-pah-cmr
+name: Porto Alegre PAH Cardiac MRI Cohort
+full_name: >-
+  Santa Casa de Misericórdia de Porto Alegre, cardiac MRI of patients with pulmonary arterial hypertension diagnosed by
+  right heart catheterization
+summary: >-
+  Cardiac MRI of patients with pulmonary arterial hypertension, used to compare right atrial area and right ventricular
+  ejection fraction with catheterization, echocardiography, walk test and NT-proBNP markers. Images are not shared;
+  only the paper's figures and tables are public.
+homepage: https://doi.org/10.1590/0100-3984.2018.0128
+doi: 10.1590/0100-3984.2018.0128
+# Year of the paper that describes the cohort. The images themselves have no public release.
+year: 2019
+creators:
+  - name: Marcelo M. Mello, Santa Casa de Misericórdia de Porto Alegre
+  - name: Bruno Hochhegger, Federal University of Health Sciences of Porto Alegre (UFCSPA)
+modalities: [MR]
+contrasts: [cine, T2w, phase_contrast]
+anatomy: [heart]
+conditions: [pulmonary_arterial_hypertension]
+tasks: [segmentation, regression]
+countries: [BR]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: not_shared
+  url: https://doi.org/10.1590/0100-3984.2018.0128
+  note: >-
+    The paper has no data availability statement and the cohort was identified retrospectively from a referral
+    center's records. The figshare record that accompanies the paper holds only its two figures and three tables.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are published for the images. The CC BY 4.0 license of the paper and the figshare
+      record covers only the article, figures and tables.
+citation:
+  text: >-
+    Mello, M. M., Watte, G., Altmayer, S., Pallaoro, Y. L. R., Spilimbergo, F. B., Blanco, D. C., Meyer, G. M. B.,
+    Marchiori, E., & Hochhegger, B. (2019). Relationship between right atrium area and right ventricular ejection
+    fraction on magnetic resonance imaging: comparison with other prognostic markers in patients with pulmonary arterial
+    hypertension. Radiologia Brasileira, 52(6), 351-355. https://doi.org/10.1590/0100-3984.2018.0128
+sources:
+  mello2019:
+    title: Mello et al. 2019, Radiologia Brasileira 52(6)
+    url: http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-39842019000600004&lng=en&tlng=en
+    kind: paper
+  figshare-11267090:
+    title: SciELO figshare record 11267090, figures and tables of Mello et al. 2019
+    url: https://doi.org/10.6084/m9.figshare.11267090.v1
+    kind: website
+related: []
+keywords: [pulmonary arterial hypertension, right ventricular ejection fraction, right atrium, cardiac MRI, right heart catheterization, NT-proBNP]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

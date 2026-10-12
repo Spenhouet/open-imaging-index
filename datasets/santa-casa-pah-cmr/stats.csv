@@ -1,0 +1,8 @@
+measure,by,value,source,where,note
+subjects,,74,mello2019,Materials and Methods; Table 1,"PAH confirmed by right heart catheterization, January to May 2018"
+subjects,condition=pulmonary_arterial_hypertension,74,mello2019,Table 1,"etiology: 32 idiopathic, 24 corrected congenital heart disease, 14 connective tissue disease, 3 HIV, 1 portopulmonary"
+subjects,sex=female,61,mello2019,Table 1,82.4%
+subjects,country=BR,74,mello2019,Affiliations; Materials and Methods,single referral center in Porto Alegre
+subjects,vendor=siemens,74,mello2019,Cardiac MRI protocol,1.5 T Siemens Magnetom Aera
+subjects,field_strength=1.5,74,mello2019,Cardiac MRI protocol,
+age_mean,,42,mello2019,Table 1,SD 15
