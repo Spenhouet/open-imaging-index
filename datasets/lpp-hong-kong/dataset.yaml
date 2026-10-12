@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: lpp-hong-kong
+name: Le Petit Prince Hong Kong (ds004718)
+full_name: 'Le Petit Prince Hong Kong (LPPHK): Naturalistic fMRI and EEG data from older Cantonese speakers'
+summary: >-
+  Task and resting-state fMRI, T1-weighted MRI and EEG of healthy older Cantonese speakers listening to an audiobook of
+  The Little Prince, collected to study language comprehension in aging, with word-level stimulus annotations.
+homepage: https://openneuro.org/datasets/ds004718
+doi: 10.18112/openneuro.ds004718.v1.1.2
+year: 2023
+updated: 2025
+version: 1.1.2
+status: active
+creators:
+  - name: Department of Chinese and Bilingual Studies, The Hong Kong Polytechnic University, and Department of Linguistics and Translation, City University of Hong Kong (Momenian M, Li J, et al.)
+    url: https://openneuro.org/datasets/ds004718
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [HK]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 39.8
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004718
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.1.2 states "License" CC0.
+citation:
+  text: >-
+    Momenian M, Ma Z, Wu S, et al. Le Petit Prince Hong Kong (LPPHK): Naturalistic fMRI and EEG data from older
+    Cantonese speakers. Scientific Data 11, 992 (2024). doi:10.1038/s41597-024-03745-8
+sources:
+  momenian2024:
+    title: Momenian et al. 2024, Le Petit Prince Hong Kong (LPPHK) Naturalistic fMRI and EEG data from older Cantonese speakers, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03745-8
+    kind: paper
+  openneuro-ds004718-v112:
+    title: OpenNeuro ds004718 snapshot 1.1.2 (dataset_description.json, README and snapshot summary)
+    url: https://openneuro.org/datasets/ds004718/versions/1.1.2
+    kind: website
+  ds004718-participants:
+    title: participants.tsv of ds004718 1.1.2 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds004718/blob/1.1.2/participants.tsv
+    kind: computed
+  ds004718-files:
+    title: File listing of ds004718 1.1.2 (CC0), counted from sub-*/anat and sub-*/func NIfTI files
+    url: https://github.com/OpenNeuroDatasets/ds004718/tree/1.1.2
+    kind: computed
+related: []
+keywords: [naturalistic fMRI, language comprehension, aging, Cantonese, story listening, resting-state fMRI, EEG]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
