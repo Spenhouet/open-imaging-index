@@ -608,3 +608,4 @@ terms:
     mappings: { mondo: 'MONDO:0018544' }
   - { id: cerebrovascular_disorder, label: Cerebrovascular disease, synonyms: [cerebrovascular disorder], mappings: { mondo: 'MONDO:0011057' } }
   - { id: pituitary_tumor, label: Pituitary tumor, mappings: { mondo: 'MONDO:0017611' } }
+  - { id: tinnitus, label: Tinnitus, description: Perception of sound without an external source, mappings: { hp: 'HP:0000360' } }

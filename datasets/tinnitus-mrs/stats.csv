@@ -1,0 +1,14 @@
+measure,by,value,source,where,note
+subjects,,77,wojcik2023,Material and methods: Participants,
+subjects,condition=tinnitus,52,wojcik2023,Material and methods: Participants,24 unilateral and 28 bilateral
+subjects,condition=healthy,25,wojcik2023,Material and methods: Participants,
+subjects,sex=female,36,wojcik2023,Table 1,"sum of disjoint groups: 10 controls, 16 unilateral, 10 bilateral"
+subjects,sex=male,41,wojcik2023,Table 1,"sum of disjoint groups: 15 controls, 8 unilateral, 18 bilateral"
+subjects,contrast=MRS,77,zenodo-8379543-files,RDA_dataset.zip,one PRESS spectrum from each of four voxels per subject
+subjects,contrast_set=MRS,77,zenodo-8379543-files,RDA_dataset.zip,
+subjects,field_strength=3,77,wojcik2023,Material and methods: MRI and MRS data collection,3 T Siemens Prisma Fit
+subjects,vendor=siemens,77,wojcik2023,Material and methods: MRI and MRS data collection,
+subjects,country=PL,77,wojcik2023,Material and methods: MRI and MRS data collection,
+scans,,308,zenodo-8379543-files,RDA_dataset.zip,"RDA files: left and right frontal, left and right temporal voxel per subject"
+age_min,,21,wojcik2023,Table 1,lowest group minimum
+age_max,,71,wojcik2023,Table 1,highest group maximum
