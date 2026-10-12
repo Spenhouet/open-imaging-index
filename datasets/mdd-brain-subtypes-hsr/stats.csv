@@ -1,0 +1,15 @@
+measure,by,value,source,where,note
+subjects,,102,colombo2024,Abstract,patients with major depressive disorder
+subjects,condition=depression,102,colombo2024,Abstract,"31 treatment-resistant per the Treatment-resistant depression column of clinical_variables.csv"
+subjects,contrast=dwi,102,colombo2024,Abstract,white matter fractional anisotropy for every clustered patient
+subjects,country=IT,102,mendeley-dcbmjws425,,IRCCS Ospedale San Raffaele
+subjects,sex=female,69,mendeley-dcbmjws425-clinical,Sex column,
+subjects,sex=male,33,mendeley-dcbmjws425-clinical,Sex column,
+subjects,age=20-29,4,mendeley-dcbmjws425-clinical,Age column,
+subjects,age=30-39,16,mendeley-dcbmjws425-clinical,Age column,
+subjects,age=40-49,28,mendeley-dcbmjws425-clinical,Age column,
+subjects,age=50-59,37,mendeley-dcbmjws425-clinical,Age column,
+subjects,age=60-69,17,mendeley-dcbmjws425-clinical,Age column,
+age_mean,,49.4,mendeley-dcbmjws425-clinical,Age column,
+age_min,,23,mendeley-dcbmjws425-clinical,Age column,
+age_max,,65,mendeley-dcbmjws425-clinical,Age column,
