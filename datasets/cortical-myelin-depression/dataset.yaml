@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cortical-myelin-depression
+name: Cortical Myelin in Depressive Disorders (ds003653)
+full_name: Cortical myelin measured by the T1w/T2w ratio in individuals with depressive disorders and healthy controls
+summary: >-
+  Structural brain MRI (T1-weighted and T2-weighted) of young adults with unipolar depression and healthy controls,
+  collected to test whether cortical myelin estimated from the T1w/T2w ratio separates patients from controls.
+homepage: https://openneuro.org/datasets/ds003653
+doi: 10.18112/openneuro.ds003653.v1.0.0
+# Snapshot 1.0.0 was created on 2021-07-02 (CHANGES and OpenNeuro snapshot metadata).
+year: 2021
+version: 1.0.0
+creators:
+  - name: University of Pittsburgh (Manelis A, Baranger DAA, Satz S, Ragozzino R, Iyengar S, Swartz HA, Halchenko YO)
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w]
+anatomy: [brain]
+conditions: [depression, dysthymia, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 4.74
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003653
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Baranger DAA, Halchenko YO, Satz S, Ragozzino R, Iyengar S, Swartz HA, Manelis A. Aberrant levels of cortical myelin
+    distinguish individuals with depressive disorders from healthy controls. NeuroImage: Clinical 32, 102790 (2021).
+    doi:10.1016/j.nicl.2021.102790
+sources:
+  baranger2021:
+    title: >-
+      Baranger et al. 2021, Aberrant levels of cortical myelin distinguish individuals with depressive disorders from
+      healthy controls, NeuroImage: Clinical
+    url: https://doi.org/10.1016/j.nicl.2021.102790
+    kind: paper
+  openneuro-ds003653-v1-0-0:
+    title: OpenNeuro ds003653 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds003653/versions/1.0.0
+    kind: website
+  ds003653-participants:
+    title: participants.tsv of ds003653 (CC0), counted per row
+    url: https://github.com/OpenNeuroDatasets/ds003653/blob/master/participants.tsv
+    kind: computed
+  ds003653-file-tree:
+    title: File tree of ds003653 snapshot 1.0.0 (CC0), NIfTI files under sub-*/ses-*/ counted per suffix
+    url: https://openneuro.org/datasets/ds003653/versions/1.0.0/file-display
+    kind: computed
+keywords: [T1w/T2w ratio, cortical myelin, unipolar depression, persistent depressive disorder, HCP pipelines]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
