@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mmc-fmri
+name: MMC Dataset (ds004182)
+full_name: Magic, Memory, and Curiosity (MMC) fMRI Dataset
+summary: >-
+  Task and resting-state fMRI with a T1-weighted scan of healthy young adults watching 36 magic trick videos, with
+  curiosity ratings, an incentive manipulation and a surprise memory test a week later. 50 subjects from Reading, UK,
+  in BIDS on OpenNeuro.
+homepage: https://openneuro.org/datasets/ds004182
+doi: 10.18112/openneuro.ds004182.v1.0.1
+year: 2022
+version: 1.0.1
+status: active
+creators:
+  - name: >-
+      Centre for Integrative Neuroscience and Neurodynamics (CINN), University of Reading (Meliss S, Pascua-Martin C,
+      Skipper JI, Murayama K)
+    url: https://openneuro.org/datasets/ds004182
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 15.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004182
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of snapshot 1.0.1 states "License" CC0, and the data descriptor's Data Records section
+      states the files are shared under a Creative Commons CC0 licence.
+citation:
+  text: >-
+    Meliss S, Pascua-Martin C, Skipper JI, Murayama K. The magic, memory, and curiosity fMRI dataset of people viewing
+    magic tricks. Scientific Data 11, 1063 (2024). doi:10.1038/s41597-024-03675-5
+sources:
+  meliss2024:
+    title: Meliss et al. 2024, The magic, memory, and curiosity fMRI dataset of people viewing magic tricks, Scientific Data
+    url: https://doi.org/10.1038/s41597-024-03675-5
+    kind: paper
+  openneuro-ds004182-v101:
+    title: OpenNeuro ds004182 snapshot 1.0.1 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004182/versions/1.0.1
+    kind: website
+  ds004182-file-tree:
+    title: >-
+      BIDS file tree and participants.tsv of ds004182 snapshot 1.0.1 (CC0), NIfTI files under sub-*/ counted per suffix
+    url: https://github.com/OpenNeuroDatasets/ds004182/tree/1.0.1
+    kind: computed
+related: []
+keywords: [magic tricks, curiosity, incidental memory, reward, naturalistic viewing, resting state, task fMRI, field map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
