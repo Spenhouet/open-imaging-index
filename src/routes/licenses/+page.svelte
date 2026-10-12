@@ -18,9 +18,20 @@
         (data.usage[b.id] ?? 0) - (data.usage[a.id] ?? 0)
     )
   );
-  // Header cells stay below the site header (h-14) while the table scrolls past. The inset shadow draws the bottom rule,
-  // since a row border does not move with sticky cells.
-  const head = 'sticky top-14 bg-card shadow-[inset_0_-1px_0_var(--border)]';
+  // Two header rows stay below the site header (h-14) while the table scrolls past: the rule groups (h-12) and the
+  // rule labels. The inset shadow draws the bottom rule, since a row border does not move with sticky cells.
+  const head = 'sticky top-[6.5rem] bg-card shadow-[inset_0_-1px_0_var(--border)]';
+  const groups = $derived(
+    vocab.licenseRules.groups
+      .map((g) => ({ ...g, span: rules.filter((r) => r.group === g.id).length }))
+      .filter((g) => g.span)
+  );
+  // A thin line before the first rule of each group, and a light stripe on every second rule column.
+  const groupStart = $derived(
+    new Set(rules.filter((r, i) => i === 0 || rules[i - 1].group !== r.group).map((r) => r.id))
+  );
+  const column = (id: string, i: number) =>
+    [groupStart.has(id) && 'border-l border-border', i % 2 === 0 && 'bg-muted/50'].filter(Boolean).join(' ');
 </script>
 
 <Seo
@@ -81,13 +92,34 @@
     <table class="w-full text-sm">
       <thead>
         <tr>
+          <th class="sticky top-14 z-30 h-12 bg-card"></th>
+          {#each groups as g, gi (g.id)}
+            <!-- Group names wrap rather than widen their columns. -->
+            <th
+              colspan={g.span}
+              class="sticky top-14 z-20 h-12 bg-card px-1.5 pb-1.5 text-left align-bottom text-xs leading-tight font-semibold text-muted-foreground {gi
+                ? 'border-l border-border'
+                : ''}"
+            >
+              {g.label}
+            </th>
+          {/each}
+          <th class="sticky top-14 z-20 h-12 bg-card"></th>
+        </tr>
+        <tr>
           <th class="{head} left-0 z-30 w-full min-w-56 px-4 py-3 text-left align-bottom font-semibold">License</th>
-          {#each rules as r (r.id)}
-            <th class="{head} z-20 h-36 w-9 px-1 align-bottom">
-              <span
-                class="block w-6 rotate-180 text-left text-xs font-medium whitespace-nowrap text-muted-foreground [writing-mode:vertical-rl]"
-                title={r.question}>{r.label}</span
-              >
+          {#each rules as r, i (r.id)}
+            <!-- Labels at 60° lean over the columns to their right, so each cell stacks above its right neighbour. -->
+            <th
+              style:z-index={21 + rules.length - i}
+              class="{head} h-36 w-9 p-0 align-bottom {groupStart.has(r.id) ? 'border-l border-border' : ''}"
+            >
+              <div class="relative h-full">
+                <span
+                  class="absolute bottom-2.5 left-1/2 origin-bottom-left -rotate-60 text-xs font-medium whitespace-nowrap text-muted-foreground"
+                  title={r.question}>{r.label}</span
+                >
+              </div>
             </th>
           {/each}
           <th class="{head} z-20 w-16 px-3 py-3 text-right align-bottom text-xs font-medium whitespace-nowrap text-muted-foreground"
@@ -108,8 +140,8 @@
                 </div>{/if}
               <div class="text-xs text-muted-foreground">{purposes.get(lic.purpose) ?? lic.purpose}</div>
             </td>
-            {#each rules as r (r.id)}
-              <td class="px-1 py-2.5 text-center">
+            {#each rules as r, i (r.id)}
+              <td class="px-1 py-2.5 text-center {column(r.id, i)}">
                 {#if lic.rules[r.id]}<Answer
                     value={lic.rules[r.id].value}
                     good={r.good}
