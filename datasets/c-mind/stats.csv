@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,211,nda-collection-2329,General tab (Subjects Shared),Subjects shared through the NIMH Data Archive (API field shared_subject_count)
+subjects,modality=MR,211,nda-2329-data-structures,image03 (Image),Subjects in the shared NDA Image data structure
+subjects,field_strength=3,211,nitrc-cmind,Project description,The project page states the images were collected on 3T MRI scanners

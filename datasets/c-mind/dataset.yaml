@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: c-mind
+name: C-MIND (NDA 2329)
+full_name: Cincinnati MR Imaging of NeuroDevelopment (C-MIND)
+summary: >-
+  Brain MRI and behavioral tests of typically developing children from birth to 18 years, collected to build
+  standardized methods and reference data for normal brain development, with structural, diffusion, functional and
+  perfusion MRI including concurrent ASL/BOLD during language tasks.
+homepage: https://nda.nih.gov/edit_collection.html?id=2329
+doi: 10.15154/t0rp-zh03
+year: 2015
+status: active
+creators:
+  - name: Pediatric Neuroimaging Research Consortium, Cincinnati Children's Hospital Medical Center (Scott K. Holland, Jennifer Vannest)
+    url: https://research.cchmc.org/c-mind/
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold, asl]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative, longitudinal]
+countries: [US]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2329
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The C-MIND website states that all data were transferred to NIMH Data Archive collection 2329, which is accessed
+      under the NDA Data Use Certification.
+citation:
+  text: >-
+    Holland S, Vannest J. Cincinnati MR Imaging of Neurodevelopment (C-MIND). NIMH Data Archive collection 2329
+    (2015). doi:10.15154/t0rp-zh03
+sources:
+  nda-collection-2329:
+    title: NIMH Data Archive collection 2329 record (collection page and its API record https://nda.nih.gov/api/collection/2329)
+    url: https://nda.nih.gov/edit_collection.html?id=2329
+    kind: website
+  nda-2329-data-structures:
+    title: NIMH Data Archive collection 2329, shared data structures (API)
+    url: https://nda.nih.gov/api/nda/collection/2329/data-structures
+    kind: website
+  nitrc-cmind:
+    title: C-MIND Database project page on NITRC, registered by the Pediatric Neuroimaging Research Consortium
+    url: https://www.nitrc.org/projects/cmind_2014/
+    kind: website
+  nichd-cmind-2015:
+    title: NICHD, Studying the Growing Brain, a Q&A on the C-MIND Study (June 2015)
+    url: https://www.nichd.nih.gov/newsroom/resources/spotlight/061215-growing-brain
+    kind: website
+  schmithorst2015:
+    title: Schmithorst et al. 2015, Evidence that neurovascular coupling underlying the BOLD effect increases with age during childhood, Human Brain Mapping (PMC6869617)
+    url: https://doi.org/10.1002/hbm.22608
+    kind: paper
+related: []
+keywords: [child development, infants, typically developing, language fMRI, ASL, neurovascular coupling, natural sleep MRI, NIMH Data Archive]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
