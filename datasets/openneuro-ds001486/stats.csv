@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,132,suarezpellicioni2019,Methods: Participants,132 subject folders in the snapshot 1.3.1 file tree; 132 rows in participants.tsv
+subjects,sex=female,70,suarezpellicioni2019,Table 1,participants.tsv sex 2 (female) gives the same count
+subjects,sex=male,62,suarezpellicioni2019,Table 1,participants.tsv sex 1 (male) gives the same count
+subjects,condition=healthy,132,suarezpellicioni2019,Abstract,typically developing children
+subjects,contrast=T1w,132,ds001486-file-tree,sub-*/ses-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,132,ds001486-file-tree,sub-*/ses-*/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,132,ds001486-file-tree,anat and func folders,
+subjects,age=8-9,31,ds001486-participants,age_ses-T1,age at session T1
+subjects,age=10-11,57,ds001486-participants,age_ses-T1,age at session T1
+subjects,age=12-13,40,ds001486-participants,age_ses-T1,age at session T1
+subjects,age=14-15,4,ds001486-participants,age_ses-T1,age at session T1
+studies,,195,ds001486-file-tree,sub-*/ses-* folders,132 at session T1 plus 63 at session T2 (Data Records gives the same 63 and 69 split)
+scans,,1555,ds001486-file-tree,sub-*/ses-*/*/*.nii.gz,all image files: 195 T1w and 1360 bold
+scans,contrast=T1w,195,ds001486-file-tree,*_T1w.nii.gz,one T1w per session: 132 at T1 and 63 at T2
+scans,contrast=bold,1360,ds001486-file-tree,*_bold.nii.gz,921 runs at T1 and 439 at T2
+age_min,,8.4,suarezpellicioni2019,Table 2,age at session T1
+age_max,,15.0,suarezpellicioni2019,Table 2,age at session T1
+age_mean,,11.3,suarezpellicioni2019,Table 2,age at session T1
+age_sd,,1.5,suarezpellicioni2019,Table 2,age at session T1
