@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: prins-macular-degeneration-sbm
+name: Visual cortex in macular degeneration (Prins et al. 2016)
+full_name: Surface-based analyses of anatomical properties of the visual cortex in macular degeneration
+summary: >-
+  T1-weighted brain MRI of people with juvenile or age-related macular degeneration and age-matched healthy controls,
+  shared to study cortical thickness, surface area and grey matter volume of the visual cortex after central vision
+  loss. Scanned at three European sites.
+homepage: https://doi.org/10.34894/JTVNF2
+doi: 10.34894/JTVNF2
+year: 2015
+creators:
+  - name: Doety Prins and Frans W. Cornelissen, Laboratory of Experimental Ophthalmology, University Medical Center Groningen
+  - name: Tina Plank, Anton Beer and Mark W. Greenlee, Institute for Experimental Psychology, University of Regensburg
+  - name: Heidi A. Baseler, André D. Gouws and Antony B. Morland, University of York and Hull-York Medical School
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [macular_degeneration, amd, healthy]
+formats: [NIfTI]
+countries: [NL, GB, DE]
+vendors: [philips, siemens]
+field_strengths: [3]
+size_gb: 0.34
+access:
+  type: open
+  url: https://doi.org/10.34894/JTVNF2
+  note: >-
+    Published on DataverseNL as one zip of NIfTI images and a CSV of group labels. Both files download without an
+    account.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The DataverseNL record states that the dataset is made available without information on how it can be used and
+      asks users to contact the listed contact before use. The CC BY license of the PLoS ONE article covers the
+      article, not the data.
+citation:
+  text: >-
+    Prins D, Plank T, Baseler HA, Gouws AD, Beer A, Morland AB, Greenlee MW, Cornelissen FW. Surface-Based Analyses of
+    Anatomical Properties of the Visual Cortex in Macular Degeneration. PLoS ONE 11(1): e0146684 (2016).
+    doi:10.1371/journal.pone.0146684
+sources:
+  prins2016:
+    title: Prins et al. 2016, PLoS ONE 11(1) e0146684
+    url: https://doi.org/10.1371/journal.pone.0146684
+    kind: paper
+  dataversenl-jtvnf2:
+    title: DataverseNL dataset doi:10.34894/JTVNF2, version 2.1 (description, terms of use, file list and file descriptions)
+    url: https://doi.org/10.34894/JTVNF2
+    kind: website
+related: []
+keywords: [macular degeneration, visual cortex, cortical thickness, surface-based morphometry, central vision loss, FreeSurfer]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
