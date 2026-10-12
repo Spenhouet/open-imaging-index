@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: humanitas-met-pet-lgg
+name: Methionine PET in lower-grade glioma (Humanitas)
+full_name: >-
+  Dataset related to article "Preoperative [11C]methionine PET to personalize treatment decisions in patients with
+  lower-grade gliomas"
+summary: >-
+  Amino acid PET/CT and brain MRI before surgery in adults with newly diagnosed grade 2 or 3 glioma, used to relate
+  [11C]methionine uptake to tumour type, tumour extent and progression-free survival. 153 patients from one Italian
+  centre. Data on request.
+homepage: https://zenodo.org/records/5642568
+doi: 10.5281/zenodo.5642568
+year: 2021
+creators:
+  - name: IRCCS Humanitas Research Hospital and Humanitas University
+    url: https://zenodo.org/records/5642568
+species: human
+modalities: [PT, CT, MR]
+tracers: [methionine]
+contrasts: [T1w, T1w_ce, T2w, FLAIR]
+anatomy: [brain]
+conditions: [glioma, oligodendroglioma, astrocytoma]
+tasks: [classification, survival]
+countries: [IT]
+vendors: [ge, siemens]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://zenodo.org/records/5642568
+  note: >-
+    The Zenodo record is public but its files are restricted. The record states that the data are accessible only upon
+    request because they include sensitive data, and it accepts access requests through Zenodo. What the files contain
+    (images or tabular study data) is not described. The paper has no data availability statement.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record lists no license and no terms beyond the access request.
+citation:
+  text: >-
+    Ninatti G, Sollini M, Bono B, et al. Preoperative [11C]methionine PET to personalize treatment decisions in
+    patients with lower-grade gliomas. Neuro-Oncology 24(9), 1546-1556 (2022). doi:10.1093/neuonc/noac040
+sources:
+  ninatti2022:
+    title: Ninatti et al. 2022, Neuro-Oncology 24(9)
+    url: https://doi.org/10.1093/neuonc/noac040
+    kind: paper
+  zenodo-5642568:
+    title: Zenodo record 5642568, dataset related to the article
+    url: https://zenodo.org/records/5642568
+    kind: website
+related: []
+keywords:
+  [
+    lower-grade glioma,
+    methionine PET,
+    amino acid PET,
+    IDH-mutant,
+    1p/19q codeletion,
+    tumour-to-background ratio,
+    metabolic tumour volume,
+    progression-free survival
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

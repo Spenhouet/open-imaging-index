@@ -285,6 +285,14 @@ terms:
   - { id: brain_tumor, label: Brain tumor, mappings: { mondo: 'MONDO:0021211' } }
   - { id: glioma, label: Glioma, parent: brain_tumor, mappings: { mondo: 'MONDO:0021042' } }
   - { id: glioblastoma, label: Glioblastoma, parent: glioma, synonyms: [GBM], mappings: { mondo: 'MONDO:0018177' } }
+  - { id: oligodendroglioma, label: Oligodendroglioma, parent: glioma, mappings: { mondo: 'MONDO:0016695' } }
+  - {
+      id: astrocytoma,
+      label: Astrocytoma,
+      parent: glioma,
+      description: 'Astrocytoma other than glioblastoma, including IDH-mutant astrocytoma of grade 2 and 3.',
+      mappings: { mondo: 'MONDO:0019781' }
+    }
   - {
       id: pediatric_high_grade_glioma,
       label: Pediatric high-grade glioma,
