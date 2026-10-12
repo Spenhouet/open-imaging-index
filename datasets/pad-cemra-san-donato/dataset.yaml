@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pad-cemra-san-donato
+name: PAD inter-leg symmetry CE-MRA (San Donato)
+full_name: 'Peripheral artery disease: how much inter-leg symmetry? A contrast-enhanced magnetic resonance angiography study'
+summary: >-
+  Contrast-enhanced MR angiography of the lower limbs from aortic bifurcation to tibial arteries in 82 patients with
+  known or suspected peripheral artery disease, with per-artery stenosis scores for both legs. One Italian centre.
+  Access on request.
+homepage: https://zenodo.org/records/5144948
+doi: 10.5281/zenodo.5144948
+year: 2021
+creators:
+  - name: IRCCS Policlinico San Donato
+    url: https://zenodo.org/records/5144948
+species: human
+modalities: [MR]
+contrasts: [angio]
+anatomy: [lower_limb]
+conditions: [peripheral_artery_disease]
+tasks: [classification]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [1.5]
+access:
+  type: on_request
+  url: https://zenodo.org/records/5144948
+  note: >-
+    The Zenodo record is public but its files are restricted and not listed. Its access request form states that the
+    data are available upon a duly motivated request to the corresponding author of the article, and the paper says
+    the same. Whether MR angiography images are part of the shared data is not stated.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: The Zenodo record and the paper publish no license or data use terms.
+citation:
+  text: >-
+    Secchi F, Di Leo G, Delnevo A, Alì M, D'Angelo ID, Nardella VG, Sardanelli F. Peripheral artery disease: how much
+    inter-leg symmetry? A contrast-enhanced magnetic resonance angiography study. Medicine (Baltimore) 99(16), e19637
+    (2020). doi:10.1097/MD.0000000000019637
+sources:
+  secchi2020:
+    title: Secchi et al. 2020, Medicine (Baltimore) 99(16), e19637
+    url: https://doi.org/10.1097/MD.0000000000019637
+    kind: paper
+  zenodo-5144948:
+    title: Zenodo record 5144948
+    url: https://zenodo.org/records/5144948
+    kind: website
+related: []
+keywords:
+  [
+    peripheral artery disease,
+    PAD,
+    contrast-enhanced MR angiography,
+    CE-MRA,
+    lower limb arteries,
+    stenosis grading,
+    atherosclerosis
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
