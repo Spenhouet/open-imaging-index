@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nav-training
+name: Navigation Training fMRI (ds004639)
+full_name: nav_training
+summary: >-
+  Task and resting-state fMRI with T1-weighted, T2-weighted and diffusion MRI from a navigation training project,
+  with most participants scanned in two sessions at one of two US sites during encoding and retrieval tasks.
+homepage: https://openneuro.org/datasets/ds004639
+doi: 10.18112/openneuro.ds004639.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Arne Ekstrom and Steven Weisberg
+    url: https://openneuro.org/datasets/ds004639
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 123.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004639
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004639
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ekstrom A, Weisberg S. nav_training. OpenNeuro, version 1.0.0 (2025). doi:10.18112/openneuro.ds004639.v1.0.0
+sources:
+  openneuro-ds004639-v100:
+    title: OpenNeuro ds004639 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds004639/versions/1.0.0
+    kind: website
+  ds004639-file-tree:
+    title: >-
+      File tree and T1w JSON sidecars of ds004639 snapshot 1.0.0 (CC0), NIfTI files counted per subject and session
+      folder, sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionName
+    url: https://github.com/OpenNeuroDatasets/ds004639
+    kind: computed
+related: []
+keywords: [spatial navigation, training, memory encoding, memory retrieval, task fMRI, resting-state fMRI, diffusion MRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

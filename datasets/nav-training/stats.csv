@@ -1,0 +1,17 @@
+measure,by,value,source,where,note
+subjects,,84,ds004639-file-tree,sub-* folders,"participants.tsv lists only sub-2101; the snapshot summary also lists 84 subjects"
+subjects,contrast=T1w,84,ds004639-file-tree,anat folders,
+subjects,contrast=T2w,84,ds004639-file-tree,anat folders,
+subjects,contrast=bold,84,ds004639-file-tree,func folders,
+subjects,contrast=dwi,83,ds004639-file-tree,dwi folders,
+subjects,contrast_set=bold+dwi+T1w+T2w,83,ds004639-file-tree,subject folders,"one subject lacks diffusion; that cell is below 10 and left out"
+studies,,158,ds004639-file-tree,ses-* folders,"74 subjects have two sessions and 10 have one"
+studies,contrast=dwi,155,ds004639-file-tree,dwi folders,
+scans,,2200,ds004639-file-tree,NIfTI files,"includes 312 field map volumes (phase-difference and magnitude images or spin-echo EPI)"
+scans,contrast=T1w,158,ds004639-file-tree,*_T1w.nii.gz,
+scans,contrast=T2w,159,ds004639-file-tree,*_T2w.nii.gz,
+scans,contrast=bold,1416,ds004639-file-tree,*_bold.nii.gz,"630 encoding, 630 retrieval and 156 resting-state runs"
+scans,contrast=dwi,155,ds004639-file-tree,*_dwi.nii.gz,
+subjects,country=US,84,ds004639-file-tree,T1w sidecars: InstitutionName,"41 at University of Arizona, 43 at University of Florida"
+scans,contrast=T1w;vendor=siemens,158,ds004639-file-tree,T1w sidecars: Manufacturer,"79 Skyra (University of Arizona) and 79 Prisma (University of Florida)"
+scans,contrast=T1w;field_strength=3,158,ds004639-file-tree,T1w sidecars: MagneticFieldStrength,
