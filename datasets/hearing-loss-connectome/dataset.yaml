@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hearing-loss-connectome
+name: Hearing loss Connectome (ds005026)
+summary: >-
+  Structural, diffusion and resting-state functional brain MRI of older adults with age-related hearing loss and of
+  normal-hearing controls, collected to study whole-brain functional and structural connectivity changes, including
+  cross-modal reorganization of visual networks. 82 participants scanned in Italy.
+homepage: https://openneuro.org/datasets/ds005026
+doi: 10.18112/openneuro.ds005026.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: University of Salerno (Ponticorvo S, Esposito F)
+    url: https://openneuro.org/datasets/ds005026
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [hearing_loss, healthy]
+formats: [BIDS, NIfTI]
+countries: [IT]
+vendors: [siemens]
+field_strengths: [3]
+# 38,675,673,957 bytes for snapshot 1.0.0 (OpenNeuro GraphQL summary.size).
+size_gb: 38.7
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds005026
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Ponticorvo S, Esposito F. Hearing loss Connectome. OpenNeuro ds005026, version 1.0.0 (2024).
+    doi:10.18112/openneuro.ds005026.v1.0.0
+sources:
+  openneuro-ds005026-v100:
+    title: OpenNeuro ds005026 snapshot 1.0.0 (dataset_description.json, CHANGES, file tree and JSON sidecars)
+    url: https://openneuro.org/datasets/ds005026/versions/1.0.0
+    kind: website
+  ds005026-participants:
+    title: participants.tsv of OpenNeuro ds005026 snapshot 1.0.0 (CC0)
+    url: https://openneuro.org/crn/datasets/ds005026/snapshots/1.0.0/files/participants.tsv
+    kind: computed
+  ponticorvo2022:
+    title: Ponticorvo et al. 2022, Cross-modal connectivity effects in age-related hearing loss, Neurobiology of Aging 111:1-13
+    url: https://doi.org/10.1016/j.neurobiolaging.2021.09.024
+    kind: paper
+related: []
+keywords:
+  [
+    age-related hearing loss,
+    presbycusis,
+    connectome,
+    resting-state fMRI,
+    probabilistic tractography,
+    graph theory,
+    cross-modal plasticity,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
