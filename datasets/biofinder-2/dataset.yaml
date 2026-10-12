@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: biofinder-2
+name: BioFINDER-2
+full_name: >-
+  The Swedish BioFINDER 2 Study (Biomarkers For Identifying Neurodegenerative Disorders Early and Reliably),
+  BioFINDER-2
+summary: >-
+  Brain MRI, tau PET and amyloid PET with CSF, blood and cognitive tests from adults who are cognitively healthy or have
+  subjective decline, MCI, Alzheimer's disease or other dementias and parkinsonian disorders, followed for up to 8
+  years. Data on request.
+homepage: https://biofinder.se/two/
+# The images have not been publicly released. The study started recruiting on 15 May 2017 (ClinicalTrials.gov).
+year: 2017
+status: active
+creators:
+  - name: Clinical Memory Research Unit, Lund University, and Skåne University Hospital
+    url: https://biofinder.se/the_biofinder_study_group/
+species: human
+modalities: [MR, PT]
+contrasts: [T1w, FLAIR, swi, dwi, bold, asl, MRS]
+tracers: [ro948, flutemetamol]
+anatomy: [brain]
+conditions:
+  [
+    healthy,
+    scd,
+    mci,
+    dementia,
+    alzheimers,
+    frontotemporal_dementia,
+    vascular_dementia,
+    parkinsons,
+    progressive_supranuclear_palsy,
+    multiple_system_atrophy
+  ]
+tasks: [classification, longitudinal, regression]
+countries: [SE]
+vendors: [siemens, ge]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://doi.org/10.15252/emmm.202114398
+  note: >-
+    No data access page is published. Papers from the study state that anonymized data are shared on request with
+    qualified academic investigators, under a material transfer agreement.
+licenses:
+  - license: LicenseRef-BioFINDER-Data-Sharing
+citation:
+  text: >-
+    No dataset citation is requested. Cite the BioFINDER-2 papers whose results you use, e.g. Leuzy A, et al.
+    Diagnostic performance of RO948 F 18 tau positron emission tomography in the differentiation of Alzheimer disease
+    from other neurodegenerative disorders. JAMA Neurology 77, 955-965 (2020). doi:10.1001/jamaneurol.2020.0989
+sources:
+  biofinder-two:
+    title: BioFINDER website, BioFINDER Two overview
+    url: https://biofinder.se/two/
+    kind: website
+  biofinder-two-population:
+    title: BioFINDER website, BioFINDER Two population and study design
+    url: https://biofinder.se/two/population-study-design/
+    kind: website
+  biofinder-two-methods:
+    title: BioFINDER website, BioFINDER Two methods
+    url: https://biofinder.se/two/methods/
+    kind: website
+  nct03174938:
+    title: ClinicalTrials.gov record NCT03174938, The Swedish BioFINDER 2 Study
+    url: https://clinicaltrials.gov/study/NCT03174938
+    kind: website
+  leuzy2020:
+    title: Leuzy A et al. 2020, Diagnostic performance of RO948 F 18 tau PET in the differentiation of Alzheimer disease from other neurodegenerative disorders, JAMA Neurology
+    url: https://doi.org/10.1001/jamaneurol.2020.0989
+    kind: paper
+  ossenkoppele2021:
+    title: Ossenkoppele R et al. 2021, Tau PET correlates with different Alzheimer's disease-related features compared to CSF and plasma p-tau biomarkers, EMBO Molecular Medicine
+    url: https://doi.org/10.15252/emmm.202114398
+    kind: paper
+related: []
+keywords: [tau PET, amyloid PET, RO948, Alzheimer's disease, Parkinson's disease, memory clinic, longitudinal, CSF biomarkers, Sweden]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

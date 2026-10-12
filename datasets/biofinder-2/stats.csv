@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,2960,biofinder-two,,participants stated on the overview page; enrolment and follow-up are ongoing
+subjects,tracer=ro948,613,leuzy2020,Table 1,"analysed subset enrolled September 2017 to August 2019 with [18F]RO948 PET, not the full tau PET cohort"
+subjects,tracer=ro948;condition=healthy,257,leuzy2020,Table 1,cognitively unimpaired controls in the analysed tau PET subset
+subjects,tracer=ro948;condition=mci,154,leuzy2020,Table 1,MCI in the analysed tau PET subset
+subjects,tracer=ro948;condition=alzheimers,100,leuzy2020,Table 1,Alzheimer's disease dementia in the analysed tau PET subset
+subjects,tracer=ro948;condition=frontotemporal_dementia,12,leuzy2020,Results,behavioural variant FTD in the analysed tau PET subset; 7 semantic variant PPA are not counted here
+subjects,tracer=ro948;condition=progressive_supranuclear_palsy,16,leuzy2020,Results,in the analysed tau PET subset
+subjects,tracer=ro948;condition=parkinsons,26,leuzy2020,Results,Parkinson's disease with or without cognitive impairment in the analysed tau PET subset
+subjects,tracer=ro948;condition=multiple_system_atrophy,6,leuzy2020,Results,in the analysed tau PET subset
+subjects,tracer=ro948;condition=vascular_dementia,10,leuzy2020,Results,in the analysed tau PET subset
+subjects,tracer=ro948;sex=female,316,leuzy2020,Table 1,"sum of the four disjoint diagnostic groups (140, 72, 43, 61)"
+subjects,tracer=ro948;sex=male,297,leuzy2020,Table 1,"sum of the four disjoint diagnostic groups (117, 82, 57, 41)"
