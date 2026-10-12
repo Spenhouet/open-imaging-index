@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds003826
+name: Chronotype structural MRI (ds003826)
+full_name: >-
+  Structural (t1) images of 136 young healthy adults; study of effects of chronotype, sleep quality and daytime
+  sleepiness on brain structure
+summary: >-
+  T1-weighted brain MRI of healthy young adults, collected to relate chronotype, sleep quality and daytime sleepiness
+  to brain structure, with questionnaire scores for each person. 136 adults aged 18 to 35 scanned in Krakow, in BIDS
+  under CC0.
+homepage: https://openneuro.org/datasets/ds003826
+doi: 10.18112/openneuro.ds003826.v3.0.1
+# First public snapshot (1.0.0) on OpenNeuro, 2021-10-01 per CHANGES; latest snapshot 3.0.1, 2022-03-30.
+year: 2021
+updated: 2022
+version: 3.0.1
+status: active
+creators:
+  - name: Zareba MR, Fafrowicz M, Marek T, Beldzik E, Oginska H, Domagalik A (Jagiellonian University)
+    url: https://openneuro.org/datasets/ds003826
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [PL]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1.27
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds003826
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 3.0.1 states "License" CC0.
+citation:
+  text: >-
+    Zareba MR, Fafrowicz M, Marek T, Beldzik E, Oginska H, Domagalik A. Late chronotype is linked to greater cortical
+    thickness in the left fusiform and entorhinal gyri. Biological Rhythm Research 53(10), 1626-1638 (2022).
+    doi:10.1080/09291016.2021.1990501
+sources:
+  zareba2022:
+    title: >-
+      Zareba et al. 2022, Late chronotype is linked to greater cortical thickness in the left fusiform and entorhinal
+      gyri, Biological Rhythm Research (abstract of the preprint doi:10.21203/rs.3.rs-588446/v1)
+    url: https://doi.org/10.1080/09291016.2021.1990501
+    kind: paper
+  openneuro-ds003826-v3-0-1:
+    title: >-
+      OpenNeuro ds003826 snapshot 3.0.1 (dataset_description.json, README, CHANGES, participants.json, sidecar JSON
+      files and snapshot summary)
+    url: https://openneuro.org/datasets/ds003826/versions/3.0.1
+    kind: website
+  ds003826-participants:
+    title: participants.tsv of ds003826 (CC0), counted per row from the age and sex columns
+    url: https://github.com/OpenNeuroDatasets/ds003826/blob/main/participants.tsv
+    kind: computed
+  ds003826-file-tree:
+    title: File listing of the ds003826 BIDS repository (CC0), counted per anat NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds003826
+    kind: computed
+related: []
+keywords: [chronotype, circadian rhythm, sleep quality, daytime sleepiness, cortical thickness, young adults]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
