@@ -1,0 +1,16 @@
+measure,by,value,source,where,note
+subjects,,103,ds004946-file-tree,,103 sub-* folders (sub-1 to sub-104 without sub-31); no participants.tsv is shared. The paper reports 104 scanned and 1 excluded for a head coil problem (2.1 Participants)
+subjects,sex=female,62,philips2024,2.1 Participants,of the 104 scanned participants
+subjects,country=BE,103,philips2024,2.1 Participants,first-year students of UCLouvain scanned at Ghent University Hospital
+subjects,vendor=siemens,103,ds004946-file-tree,sub-*/anat/*_T1w.json,Manufacturer Siemens and model Prisma_fit in every T1w sidecar
+subjects,field_strength=3,103,ds004946-file-tree,sub-*/anat/*_T1w.json,MagneticFieldStrength 3 in every T1w sidecar
+subjects,contrast=T1w,103,ds004946-file-tree,anat,
+subjects,contrast=bold,103,ds004946-file-tree,func,one task-cueexposure run per subject
+subjects,contrast_set=bold+T1w,103,ds004946-file-tree,,
+scans,,206,ds004946-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; field map volumes (magnitude1, phasediff) not counted"
+scans,contrast=T1w,103,ds004946-file-tree,anat,
+scans,contrast=bold,103,ds004946-file-tree,func,
+age_mean,,19.30,philips2024,2.1 Participants,of the 104 scanned participants
+age_sd,,1.44,philips2024,2.1 Participants,of the 104 scanned participants
+age_min,,18,philips2024,2.1 Participants,of the 104 scanned participants
+age_max,,26,philips2024,2.1 Participants,of the 104 scanned participants

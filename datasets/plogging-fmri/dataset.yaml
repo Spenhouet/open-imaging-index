@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: plogging-fmri
+name: Running and Plogging Mental Simulation fMRI (ds004946)
+full_name: Brain mechanisms discriminating enactive mental simulations of running and plogging
+summary: >-
+  Task fMRI of healthy young adults imagining themselves running or plogging (running while picking up litter) along a
+  photographed trail, collected to find brain activity that separates the two simulated actions. 103 students, each
+  with one T1-weighted scan and a field map.
+homepage: https://openneuro.org/datasets/ds004946
+doi: 10.18112/openneuro.ds004946.v1.0.0
+year: 2024
+version: 1.0.0
+status: active
+creators:
+  - name: Philips R, Baeken C, Billieux J, Harris J, Maurage P, Muela I, Oz IT, Pabst A, Sescousse G, Vögele C, Brevers D (University of Luxembourg, Ghent University, UCLouvain)
+    url: https://openneuro.org/datasets/ds004946
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 31.3
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004946/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004946/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Philips R, Baeken C, Billieux J, Harris J, Maurage P, Muela I, Oz IT, Pabst A, Sescousse G, Vögele C, Brevers D.
+    Brain mechanisms discriminating enactive mental simulations of running and plogging. Human Brain Mapping 45(12),
+    e26807 (2024). doi:10.1002/hbm.26807
+sources:
+  philips2024:
+    title: Philips et al. 2024, Brain mechanisms discriminating enactive mental simulations of running and plogging, Human Brain Mapping
+    url: https://doi.org/10.1002/hbm.26807
+    kind: paper
+  openneuro-ds004946-v100:
+    title: OpenNeuro ds004946 snapshot 1.0.0 (dataset_description.json, CHANGES, sidecars and snapshot summary)
+    url: https://openneuro.org/datasets/ds004946/versions/1.0.0
+    kind: website
+  ds004946-file-tree:
+    title: BIDS file tree of ds004946 snapshot 1.0.0 (CC0), NIfTI files and T1w sidecars under sub-*/ counted
+    url: https://github.com/OpenNeuroDatasets/ds004946
+    kind: computed
+related: []
+keywords: [motor imagery, action simulation, running, plogging, physical activity, insula, task fMRI, field map]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
