@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: grand
+name: GRAND (ds007831)
+full_name: The Georgetown Reading in Aging Neuroimaging Dataset (GRAND)
+summary: >-
+  Reading-in-aging brain MRI from Georgetown University: T1w, FLAIR, T2w, multi-shell diffusion and a
+  language-mapping task fMRI of 109 neurotypical adults aged 22 to 84, with structural connectomes and task statistic
+  maps, as a normative reference.
+homepage: https://openneuro.org/datasets/ds007831
+doi: 10.18112/openneuro.ds007831.v1.0.4
+year: 2026
+version: 1.0.4
+status: active
+creators:
+  - name: >-
+      Georgetown University Medical Center (Anderson EJ, Staples R, Dyslin SM,
+      Chang EHT, Laks AB, Dickens JV, Mathur D, Paul S, Dvorak E, Turkeltaub PE)
+    url: https://openneuro.org/datasets/ds007831
+species: human
+modalities: [MR]
+contrasts: [T1w, FLAIR, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 37.0
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007831
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.4 states "License" CC0.
+citation:
+  text: >-
+    Anderson EJ, Staples R, Dyslin SM, Chang EHT, Laks AB, Dickens JV, Mathur D, Paul S, Dvorak E, Turkeltaub PE. The
+    Georgetown Reading in Aging Neuroimaging Dataset (GRAND): Reading and multimodal MRI data in older adults. bioRxiv
+    (2026). doi:10.64898/2026.05.18.725986
+sources:
+  anderson2026:
+    title: >-
+      Anderson et al. 2026, The Georgetown Reading in Aging Neuroimaging Dataset (GRAND): Reading and multimodal MRI
+      data in older adults, bioRxiv preprint (abstract)
+    url: https://doi.org/10.64898/2026.05.18.725986
+    kind: paper
+  openneuro-ds007831-v104:
+    title: OpenNeuro ds007831 snapshot 1.0.4 (README, dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds007831/versions/1.0.4
+    kind: website
+  ds007831-participants:
+    title: participants.tsv of ds007831 snapshot 1.0.4 (CC0), counted per row without the removed participant sub-KPH
+    url: https://github.com/OpenNeuroDatasets/ds007831/blob/1.0.4/participants.tsv
+    kind: computed
+  ds007831-file-tree:
+    title: File tree of ds007831 snapshot 1.0.4 (CC0), NIfTI files counted per subject
+    url: https://github.com/OpenNeuroDatasets/ds007831/tree/1.0.4
+    kind: computed
+related: []
+keywords:
+  [reading, oral reading, lexical decision, language mapping, aging, normative, task fMRI, HARDI, structural connectome]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
