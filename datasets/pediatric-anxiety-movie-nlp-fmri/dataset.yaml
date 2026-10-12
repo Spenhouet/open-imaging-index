@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: pediatric-anxiety-movie-nlp-fmri
+name: NIMH pediatric anxiety movie fMRI (Kirk 2025)
+full_name: Linking Subjective Experience of Anxiety to Brain Function using Natural Language Processing
+summary: >-
+  Multi-echo fMRI of children and adolescents with and without anxiety disorders watching an anxiety-provoking animated
+  film between two resting-state runs, with T1-weighted MRI, anxiety ratings and language-model scores of post-scan
+  interviews about the film.
+homepage: https://openneuro.org/datasets/ds006948
+doi: 10.18112/openneuro.ds006948.v1.0.1
+# CHANGES file: 1.0.0 (2026-04-07) anatomical MRI, 1.0.1 (2026-06-30) added functional, field map and phenotype data.
+year: 2026
+version: 1.0.1
+creators:
+  - name: >-
+      NIMH Intramural Research Program, National Institute of Mental Health (Kirk PA, Qamar P, Lentz J,
+      Zugman A, Abend R, Kircanski K, Pine DS)
+    url: https://www.nimh.nih.gov/
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [anxiety_disorder, healthy]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 18.07
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006948
+  note: >-
+    Only the 75 of 84 participants who consented to data sharing are included. Phenotype tables (SCARED, PARS and
+    interview appraisal and recall scores) are part of the release.
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.1 states "License" CC0.
+citation:
+  text: >-
+    Kirk PA, Qamar P, Lentz J, Zugman A, Abend R, Kircanski K, Pine DS. Linking subjective experience of anxiety to
+    brain function using natural language processing. Social Cognitive and Affective Neuroscience 21(1), nsaf099
+    (2025). doi:10.1093/scan/nsaf099
+sources:
+  kirk2025:
+    title: Kirk et al. 2025, Social Cognitive and Affective Neuroscience 21(1), nsaf099
+    url: https://doi.org/10.1093/scan/nsaf099
+    kind: paper
+  openneuro-ds006948-v1-0-1:
+    title: OpenNeuro ds006948 snapshot 1.0.1 (dataset_description.json, README, CHANGES, T1w sidecar and snapshot size)
+    url: https://openneuro.org/datasets/ds006948/versions/1.0.1
+    kind: website
+  ds006948-files:
+    title: >-
+      participants.tsv and file tree of ds006948 snapshot 1.0.1 (CC0), participants and NIfTI files under sub-*/
+      counted
+    url: https://github.com/OpenNeuroDatasets/ds006948/tree/1.0.1
+    kind: computed
+keywords:
+  [
+    pediatric anxiety,
+    naturalistic viewing,
+    movie fMRI,
+    multi-echo fMRI,
+    resting-state fMRI,
+    natural language processing,
+    subjective experience,
+    SCARED,
+    PARS,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
