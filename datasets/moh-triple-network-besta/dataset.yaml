@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: moh-triple-network-besta
+name: Medication overuse headache triple network fMRI (Besta)
+full_name: >-
+  Dataset related to article: Triple network disruption in medication overuse headache functional signatures and
+  clinical impact
+summary: >-
+  Resting-state fMRI and structural brain MRI of adults with chronic migraine and medication overuse headache and of
+  healthy controls, collected to study default mode, salience and executive network connectivity and its links to
+  drug overuse, allodynia and mood. Access restricted.
+homepage: https://zenodo.org/records/20543967
+doi: 10.5281/zenodo.20543967
+# Year of the article; the restricted Zenodo record followed in 2026.
+year: 2025
+creators:
+  - name: Fondazione IRCCS Istituto Neurologico Carlo Besta
+    url: https://zenodo.org/records/20543967
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [migraine, healthy]
+countries: [IT]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: on_request
+  url: https://zenodo.org/records/20543967
+  note: >-
+    The Zenodo record is restricted and lists no files; access is requested through the record. It describes a
+    spreadsheet with demographic and clinical data and within- and between-network connectivity values, not images.
+    The article states that data may be made available upon reasonable request.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      The Zenodo record shows no license, and the article's data availability statement gives no terms.
+citation:
+  text: >-
+    Demichelis G, Fedeli D, Ciullo G, Medina Carrion JP, et al. Triple network disruption in medication overuse
+    headache: functional signatures and clinical impact. J Headache Pain 26, 268 (2025).
+    doi:10.1186/s10194-025-02207-9
+sources:
+  demichelis2025:
+    title: Demichelis et al. 2025, The Journal of Headache and Pain 26, 268
+    url: https://doi.org/10.1186/s10194-025-02207-9
+    kind: paper
+  zenodo-20543967:
+    title: Zenodo record 20543967, dataset related to the article
+    url: https://zenodo.org/records/20543967
+    kind: website
+related: []
+keywords:
+  [
+    medication overuse headache,
+    chronic migraine,
+    resting-state fMRI,
+    functional connectivity,
+    default mode network,
+    salience network,
+    allodynia
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
