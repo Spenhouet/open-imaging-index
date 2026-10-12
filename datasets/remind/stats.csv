@@ -1,0 +1,33 @@
+measure,by,value,source,where,note
+subjects,,114,juvekar2024,"Methods, Patient cohort",123 consecutive patients minus 9 excluded for corrupted or poor-quality data
+subjects,modality=MR,114,juvekar2024,Abstract,
+subjects,modality=US,114,juvekar2024,Abstract,"3D iUS at up to three surgical time points; 22 cases lack iUS at some time point (Methods, Intraoperative Ultrasound)"
+studies,,228,tcia-remind,Data Access,one preoperative and one intraoperative study per patient
+scans,,1346,tcia-remind,Data Access,"DICOM series of MR, US and SEG"
+images,,85733,tcia-remind,Data Access,DICOM image files
+scans,modality=MR,670,juvekar2024,Abstract,369 preoperative and 301 intraoperative MRI series
+scans,modality=US,320,juvekar2024,Abstract,reconstructed 3D iUS volumes
+subjects,contrast=T1w_ce,105,juvekar2024,Table 3,preoperative MP-RAGE ceT1
+subjects,sex=male,61,juvekar2024,Table 2,
+subjects,sex=female,53,juvekar2024,Table 2,
+age_min,,20,juvekar2024,"Methods, Clinical, demographic, and pathology data",age at surgery
+age_max,,76,juvekar2024,"Methods, Clinical, demographic, and pathology data",age at surgery
+age_median,,47.5,juvekar2024,Table 2,IQR 32.75-59.00
+age_mean,,46.8,tcia-remind-clinical,Age,completed years at surgery
+age_sd,,14.8,tcia-remind-clinical,Age,completed years at surgery
+subjects,age=20-29,18,tcia-remind-clinical,Age,
+subjects,age=30-39,18,tcia-remind-clinical,Age,
+subjects,age=40-49,24,tcia-remind-clinical,Age,
+subjects,age=50-59,27,tcia-remind-clinical,Age,
+subjects,age=60-69,21,tcia-remind-clinical,Age,
+subjects,age=70-79,6,tcia-remind-clinical,Age,
+subjects,condition=glioma,92,juvekar2024,Abstract,gliomas
+subjects,condition=brain_metastasis,11,juvekar2024,Table 2,
+subjects,condition=astrocytoma,33,juvekar2024,Table 2,
+subjects,condition=glioblastoma,31,juvekar2024,Table 2,
+subjects,condition=oligodendroglioma,24,juvekar2024,Table 2,
+subjects,condition=meningioma,1,juvekar2024,Table 2,
+subjects,field_strength=3,81,juvekar2024,Table 2,preoperative MRI; intraoperative MRI is 3 T for all patients
+subjects,field_strength=1.5,24,juvekar2024,Table 2,preoperative MRI
+subjects,field_strength=7,2,juvekar2024,Table 2,preoperative MRI
+subjects,field_strength=1.16,2,juvekar2024,Table 2,preoperative MRI

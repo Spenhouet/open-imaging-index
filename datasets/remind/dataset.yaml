@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: remind
+name: ReMIND
+full_name: The Brain Resection Multimodal Imaging Database (ReMIND)
+summary: >-
+  Preoperative MRI, intraoperative MRI and tracked 3D intraoperative ultrasound of brain tumor patients who had
+  image-guided resection, shared for brain shift, registration and segmentation research. 114 patients from one
+  hospital, with tumor, residual tumor, cerebrum and ventricle segmentations.
+homepage: https://www.cancerimagingarchive.net/collection/remind/
+doi: 10.7937/3RAG-D070
+year: 2023
+version: '1'
+status: active
+creators:
+  - name: Brigham and Women's Hospital, AMIGO suite (Juvekar P., Dorent R., Kögl F., Golby A.J., Frisken S., Kapur T. et al.)
+  - name: The Cancer Imaging Archive (TCIA)
+    url: https://www.cancerimagingarchive.net/
+species: human
+modalities: [MR, US]
+contrasts: [T1w, T1w_ce, T2w, FLAIR, b_mode]
+anatomy: [brain]
+conditions: [brain_tumor, glioma, astrocytoma, glioblastoma, oligodendroglioma, brain_metastasis, meningioma]
+tasks: [segmentation, registration, synthesis]
+formats: [DICOM, NRRD]
+countries: [US]
+vendors: [siemens, ge, hitachi, philips]
+field_strengths: [1.16, 1.5, 3, 7]
+size_gb: 43.73
+access:
+  type: open
+  url: https://www.cancerimagingarchive.net/collection/remind/
+  note: >-
+    DICOM images and DICOM SEG segmentations via the TCIA Data Retriever, NRRD segmentations via IBM Aspera, and the
+    clinical table as a direct download. The collection is also listed in the NCI Imaging Data Commons.
+licenses:
+  - license: CC-BY-4.0
+    url: https://www.cancerimagingarchive.net/collection/remind/
+    note: >-
+      Every item on the TCIA collection page (images and segmentations, NRRD segmentations, clinical data) is listed
+      under CC BY 4.0. TCIA also asks users to follow its Data Usage Policy and to cite the dataset DOI.
+citation:
+  text: >-
+    Juvekar P, Dorent R, Kögl F, et al. ReMIND: The Brain Resection Multimodal Imaging Database. Scientific Data 11,
+    494 (2024). https://doi.org/10.1038/s41597-024-03295-z. Data: Juvekar P, Dorent R, Kögl F, et al. (2023). The
+    Brain Resection Multimodal Imaging Database (ReMIND) (Version 1) [Data set]. The Cancer Imaging Archive.
+    https://doi.org/10.7937/3RAG-D070
+sources:
+  juvekar2024:
+    title: Juvekar et al. 2024, ReMIND, Scientific Data 11, 494 (preprint medRxiv 10.1101/2023.09.14.23295596)
+    url: https://doi.org/10.1038/s41597-024-03295-z
+    kind: paper
+  tcia-remind:
+    title: TCIA ReMIND collection page (version 1, updated 2023-09-26)
+    url: https://www.cancerimagingarchive.net/collection/remind/
+    kind: website
+  tcia-remind-clinical:
+    title: ReMIND clinical data table, September 2023 (CC BY 4.0, open download)
+    url: https://www.cancerimagingarchive.net/wp-content/uploads/ReMIND-Dataset-Clinical-Data-September-2023.xlsx
+    kind: computed
+related: [neuriphy]
+keywords: [brain shift, intraoperative MRI, intraoperative ultrasound, neurosurgery, MRI-ultrasound registration, glioma, residual tumor]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
