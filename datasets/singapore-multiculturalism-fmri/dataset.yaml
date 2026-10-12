@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: singapore-multiculturalism-fmri
+name: Multiculturalism in Singapore fMRI (CUET)
+full_name: 'The Brain Mechanisms Behind Multiculturalism in Singapore: fMRI data and MRI data'
+summary: >-
+  Raw DICOM brain MRI and task fMRI of young Singaporean Chinese adults who viewed same- and other-race faces primed by
+  ethnic or shared-culture contexts, from Nanyang Technological University. 54 participant archives, open under CC
+  BY-NC 4.0.
+homepage: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/H0CPDV
+doi: 10.21979/N9/H0CPDV
+year: 2022
+version: '1.0'
+status: active
+creators:
+  - name: Nanyang Technological University (Esposito G)
+    url: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/H0CPDV
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+formats: [DICOM]
+countries: [SG]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 26.9
+access:
+  type: open
+  url: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/H0CPDV
+licenses:
+  - license: CC-BY-NC-4.0
+    note: License field of the DR-NTU (Data) dataset record, version 1.0.
+citation:
+  text: >-
+    Esposito G. The Brain Mechanisms Behind Multiculturalism in Singapore: fMRI data and MRI data. DR-NTU (Data), V1
+    (2022). doi:10.21979/N9/H0CPDV
+sources:
+  rigo2020:
+    title: Rigo et al. 2020, Enlarged Ingroup Effect, How a Shared Culture Shapes In-Group Perception, bioRxiv
+    url: https://doi.org/10.1101/2020.06.12.148601
+    kind: paper
+  drntu-h0cpdv:
+    title: DR-NTU (Data) dataset record doi:10.21979/N9/H0CPDV, version 1.0 (description, license and file list)
+    url: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/H0CPDV
+    kind: website
+  cuet-participantinfo:
+    title: CuEt_anonymized_ParticipantInfo.csv from the dataset record (CC BY-NC 4.0)
+    url: https://researchdata.ntu.edu.sg/api/access/datafile/62057?format=original
+    kind: computed
+related: []
+keywords: [multiculturalism, in-group bias, face perception, social neuroscience, task fMRI, resting-state fMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
