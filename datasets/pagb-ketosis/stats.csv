@@ -1,0 +1,25 @@
+measure,by,value,source,where,note
+subjects,,101,antal2025,Table 1,"104 scanned, 3 excluded for motion (Methods); participants.tsv and the file tree of snapshot 1.0.3 also have 101 subjects"
+subjects,condition=healthy,101,antal2025,Methods,"cognitively normal adults without neurological, psychiatric or metabolic disease"
+subjects,field_strength=7,101,antal2025,Table 1,
+subjects,country=US,101,antal2025,Methods,recruited in the Boston metropolitan area
+subjects,sex=female,48,antal2025,Table 1,participants.tsv agrees
+subjects,sex=male,53,ds005405-participants,sex column,
+subjects,contrast=bold,101,ds005405-file-tree,func,"task-rest runs 1 and 2 in both sessions (ses-bhb, ses-glc)"
+subjects,contrast=T1w,101,ds005405-file-tree,anat,runs 1 and 2 in both sessions
+subjects,contrast_set=bold+T1w,101,ds005405-file-tree,,phase-difference field maps are not counted as a contrast
+subjects,age=20-29,25,ds005405-participants,age column,
+subjects,age=30-39,13,ds005405-participants,age column,
+subjects,age=40-49,21,ds005405-participants,age column,
+subjects,age=50-59,18,ds005405-participants,age column,
+subjects,age=60-69,16,ds005405-participants,age column,
+subjects,age=70-79,8,ds005405-participants,age column,
+age_median,,44,antal2025,Table 1,
+age_min,,21,antal2025,Table 1,
+age_max,,79,antal2025,Table 1,
+age_mean,,45.2,ds005405-participants,age column,
+age_sd,,16.5,ds005405-participants,age column,sample standard deviation
+studies,,202,ds005405-file-tree,,"two sessions per subject: ses-bhb (ketone ester day) and ses-glc (glucose day)"
+scans,,808,ds005405-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; field map volumes (magnitude1, magnitude2, phasediff) not counted"
+scans,contrast=T1w,404,ds005405-file-tree,anat,
+scans,contrast=bold,404,ds005405-file-tree,func,
