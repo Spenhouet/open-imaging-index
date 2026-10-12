@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: utah-autism-longitudinal
+name: Utah longitudinal autism MRI (NDA 1906 and 2400)
+full_name: >-
+  Atypical Late Neurodevelopment in Autism: A Longitudinal Clinical Phenotype and Multimodal Brain Imaging Study
+summary: >-
+  Repeated brain MRI with structural, diffusion and resting-state fMRI scans, plus clinical and cognitive testing, of
+  males with autism and typically developing males followed from childhood into adulthood since 2003 at the University
+  of Utah. Shared through NIMH Data Archive collections 1906 and 2400.
+homepage: https://nda.nih.gov/edit_collection.html?id=2400
+year: 2019
+status: active
+creators:
+  - name: Janet E. Lainhart and colleagues, University of Utah and University of Wisconsin-Madison
+    url: https://nda.nih.gov/edit_collection.html?id=1906
+species: human
+modalities: [MR]
+contrasts: [T1w, dwi, bold]
+anatomy: [brain]
+conditions: [autism, healthy]
+tasks: [longitudinal, classification]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=2400
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The data are held in NIMH Data Archive collections 1906 and 2400 and are accessed through an approved NDA data
+      access request under the NDA Data Use Certification. Collection-specific permission clauses are not public and
+      are not broken down here.
+citation:
+  text: >-
+    Prigge MBD, Lange N, Bigler ED, King JB, Dean DC 3rd, Adluru N, Alexander AL, Lainhart JE, Zielinski BA. A 16-year
+    study of longitudinal volumetric brain development in males with autism. NeuroImage 236:118067 (2021).
+    doi:10.1016/j.neuroimage.2021.118067. Data: NIMH Data Archive collections 1906 and 2400.
+sources:
+  nda-collection-1906:
+    title: NIMH Data Archive collection 1906 (Atypical Late Neurodevelopment in Autism), collection record (API)
+    url: https://nda.nih.gov/api/collection/1906
+    kind: website
+  nda-collection-2400:
+    title: >-
+      NIMH Data Archive collection 2400 (Atypical Late Neurodevelopment in Autism: A Longitudinal Clinical Phenotype
+      and Multimodal Brain Imaging Study), collection record (API)
+    url: https://nda.nih.gov/api/collection/2400
+    kind: website
+  nda-collection-1906-structures:
+    title: NIMH Data Archive collection 1906 shared data structures (API)
+    url: https://nda.nih.gov/api/nda/collection/1906/data-structures
+    kind: website
+  nda-collection-2400-structures:
+    title: NIMH Data Archive collection 2400 shared data structures (API)
+    url: https://nda.nih.gov/api/nda/collection/2400/data-structures
+    kind: website
+  nda-collection-2400-experiments:
+    title: NIMH Data Archive collection 2400 experiments (API), listing experiment 1074 Resting State fMRI
+    url: https://nda.nih.gov/api/nda/collection/2400/experiments
+    kind: website
+  prigge2021:
+    title: >-
+      Prigge et al. 2021, A 16-year study of longitudinal volumetric brain development in males with autism,
+      NeuroImage (author manuscript PMC8489006)
+    url: https://doi.org/10.1016/j.neuroimage.2021.118067
+    kind: paper
+  travers2015:
+    title: >-
+      Travers et al. 2015, Atypical development of white matter microstructure of the corpus callosum in males with
+      autism: a longitudinal investigation, Molecular Autism (PMC4359536)
+    url: https://doi.org/10.1186/s13229-015-0001-8
+    kind: paper
+  king2018:
+    title: >-
+      King et al. 2018, Evaluation of Differences in Temporal Synchrony Between Brain Regions in Individuals With
+      Autism and Typical Development, JAMA Network Open (PMC6324391)
+    url: https://doi.org/10.1001/jamanetworkopen.2018.4777
+    kind: paper
+related: [utah-autism-temporal-synchrony]
+keywords:
+  [
+    autism,
+    ASD,
+    longitudinal MRI,
+    brain development,
+    diffusion tensor imaging,
+    resting-state fMRI,
+    NIMH Data Archive,
+    University of Utah
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
