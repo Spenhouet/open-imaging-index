@@ -1,0 +1,21 @@
+measure,by,value,source,where,note
+subjects,,97,cai2021,Abstract,14 healthy adults and 83 healthy children; participants.tsv and the file tree of snapshot 2.0.2 also list 97 subjects
+subjects,condition=healthy,97,cai2021,Abstract,
+subjects,field_strength=3,97,cai2021,Abstract,
+subjects,modality=MR,97,ds003416-file-tree,,
+subjects,contrast=dwi,97,ds003416-file-tree,,subjects with at least one *_dwi.nii.gz
+subjects,contrast=T1w,97,ds003416-file-tree,,subjects with at least one *_T1w.nii.gz
+subjects,contrast_set=dwi+T1w,97,ds003416-file-tree,,
+subjects,vendor=philips,97,cai2021,Section 2.1,scanners A and B at site 1 (Philips Achieva); every subject has a session there
+subjects,vendor=ge,4,ds003416-file-tree,ses-s2* folders,site 2 is a GE Discovery MR750 per the paper; cohort II subjects with a site 2 session
+subjects,vendor=siemens,5,cai2021,Section 2.1,site 3 is a Siemens Skyra; all 5 cohort II subjects have a site 3 session in the file tree
+subjects,sex=male,56,cai2021,Section 2.1,"sum of disjoint cohorts I (1), II (3), III (4) and IV (48); participants.tsv agrees"
+subjects,sex=female,41,cai2021,Section 2.1,"sum of disjoint cohorts II (2), III (4) and IV (35); participants.tsv agrees"
+subjects,age=0-9,83,ds003416-participants,age column,age at the first listed session; the 83 children of cohort IV
+subjects,age=20-29,9,ds003416-participants,age column,age at the first listed session
+subjects,age=30-39,3,ds003416-participants,age column,age at the first listed session
+subjects,age=40-49,2,ds003416-participants,age column,age at the first listed session
+age_min,,5.4,ds003416-participants,age column,over all sessions
+age_max,,47,ds003416-participants,age column,over all sessions
+studies,,169,ds003416-participants,"participant_id, session_id",one row per subject and session; the raw file tree has the same 169 session folders
+scans,,319,cai2021,Abstract,"diffusion scans; each scan is stored as several acquisitions (one per shell plus reverse phase-encoded b0 volumes), so the file tree has 1,134 raw dwi NIfTI files"
