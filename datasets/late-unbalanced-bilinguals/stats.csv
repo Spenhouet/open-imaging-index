@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,118,openneuro-ds007446-v110,Snapshot summary,118 subject folders; participants.tsv also has 118 rows. The README still says 119; CHANGES for 1.1.0 records the removal of sub-A03
+studies,,160,ds007446-file-tree,,"session folders: 76 subjects with one session, 42 with two"
+subjects,contrast=T1w,118,ds007446-file-tree,,at least one sub-*_T1w.nii.gz per subject folder
+subjects,contrast=bold,117,ds007446-file-tree,,language and multiple demand localizer runs; sub-A60 has no functional runs
+subjects,contrast_set=bold+T1w,117,ds007446-file-tree,,
+subjects,contrast_set=T1w,1,ds007446-file-tree,,
+scans,,627,ds007446-file-tree,,"sum of the disjoint T1w and bold NIfTI counts below; field maps and single-band reference images are not counted"
+scans,contrast=T1w,160,ds007446-file-tree,,one T1w per session folder
+scans,contrast=bold,467,ds007446-file-tree,,233 language localizer runs and 234 multiple demand localizer runs
+subjects,vendor=siemens,118,ds007446-file-tree,sub-*_T1w.json Manufacturer,
+subjects,field_strength=3,118,ds007446-file-tree,sub-*_T1w.json MagneticFieldStrength,"76 subjects on a MAGNETOM Prisma, 42 on a Skyra"
+subjects,sex=female,87,ds007446-participants,,sex f
+subjects,sex=male,31,ds007446-participants,,sex m
+subjects,age=10-19,12,ds007446-participants,,
+subjects,age=20-29,97,ds007446-participants,,
+subjects,age=30-39,9,ds007446-participants,,
+age_mean,,22.98,ds007446-participants,,ages in whole years
+age_sd,,3.45,ds007446-participants,,
+age_min,,18,ds007446-participants,,
+age_median,,22,ds007446-participants,,
+age_max,,34,ds007446-participants,,
