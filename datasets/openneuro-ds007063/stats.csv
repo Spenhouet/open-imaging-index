@@ -1,0 +1,23 @@
+measure,by,value,source,where,note
+subjects,,52,ds007063-participants,participant_id,subject ids are not consecutive (sub-1 to sub-70)
+studies,,52,ds007063-file-tree,sub-* folders,one session per subject
+scans,,312,ds007063-file-tree,"sub-*/anat/*.nii.gz, sub-*/func/*_bold.nii.gz","52 T1w, 208 passive-viewing runs and 52 resting-state runs"
+subjects,modality=MR,52,ds007063-file-tree,sub-* folders,
+subjects,contrast=T1w,52,ds007063-file-tree,anat/*_T1w.nii.gz,
+subjects,contrast=bold,52,ds007063-file-tree,func/*_bold.nii.gz,four task-expo runs and one task-rest run per subject
+subjects,contrast_set=bold+T1w,52,ds007063-file-tree,anat and func NIfTI files,
+scans,contrast=T1w,52,ds007063-file-tree,anat/*_T1w.nii.gz,
+scans,contrast=bold,260,ds007063-file-tree,func/*_bold.nii.gz,208 passive-viewing runs (task-expo) and 52 resting-state runs (task-rest)
+subjects,vendor=siemens,52,ds007063-file-tree,anat/*_T1w.json,Manufacturer Siemens and ManufacturersModelName Skyra in every T1w sidecar
+subjects,field_strength=3,52,ds007063-file-tree,anat/*_T1w.json,MagneticFieldStrength 3 in every T1w sidecar
+subjects,country=US,52,ds007063-file-tree,anat/*_T1w.json,"InstitutionAddress Franklin Blvd 1440, Eugene, US in every T1w sidecar"
+subjects,sex=male,33,ds007063-participants,gender,self-reported gender (level 0 = male in participants.json)
+subjects,sex=female,18,ds007063-participants,gender,self-reported gender (level 1 = female in participants.json)
+subjects,sex=other,1,ds007063-participants,gender,self-reported gender (level 2 = other in participants.json)
+subjects,age=10-19,30,ds007063-participants,age,
+subjects,age=20-29,22,ds007063-participants,age,
+age_mean,,19.8,ds007063-participants,age,
+age_median,,19,ds007063-participants,age,
+age_sd,,2.1,ds007063-participants,age,
+age_min,,18,ds007063-participants,age,
+age_max,,28,ds007063-participants,age,

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds007063
+name: Hippocampal Connectivity Face-Blend fMRI (ds007063)
+full_name: Hippocampal connectivity predicting memory specificity and memory generalization abilities
+summary: >-
+  T1-weighted MRI, resting-state fMRI and four runs of passive-viewing task fMRI with blended face images from 52
+  young adults, collected to relate hippocampal connectivity to memory specificity and generalization. BIDS, CC0.
+homepage: https://openneuro.org/datasets/ds007063
+doi: 10.18112/openneuro.ds007063.v1.0.0
+year: 2025
+version: 1.0.0
+status: active
+creators:
+  - name: Kelsey R. Brannigan, Lea E. Frank and Dagmar Zeithamova (University of Oregon)
+    url: https://openneuro.org/datasets/ds007063
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+formats: [BIDS, NIfTI]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 43.27
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds007063/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds007063/versions/1.0.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Brannigan KR, Frank LE, Zeithamova D. Hippocampal connectivity predicting memory specificity and memory
+    generalization abilities. OpenNeuro ds007063, version 1.0.0 (2025). doi:10.18112/openneuro.ds007063.v1.0.0
+sources:
+  openneuro-ds007063-v1-0-0:
+    title: >-
+      OpenNeuro ds007063 snapshot 1.0.0 (dataset_description.json, README, CHANGES, participants.json and snapshot
+      size)
+    url: https://openneuro.org/datasets/ds007063/versions/1.0.0
+    kind: website
+  ds007063-participants:
+    title: participants.tsv of the ds007063 BIDS repository (CC0), columns age and gender
+    url: https://github.com/OpenNeuroDatasets/ds007063/blob/main/participants.tsv
+    kind: computed
+  ds007063-file-tree:
+    title: >-
+      File listing and JSON sidecars of the ds007063 BIDS repository (CC0), NIfTI files counted per subject folder,
+      sidecar fields Manufacturer, ManufacturersModelName, MagneticFieldStrength and InstitutionAddress
+    url: https://github.com/OpenNeuroDatasets/ds007063
+    kind: computed
+related: []
+keywords: [hippocampus, functional connectivity, memory generalization, memory specificity, face blends, task fMRI, resting state]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
