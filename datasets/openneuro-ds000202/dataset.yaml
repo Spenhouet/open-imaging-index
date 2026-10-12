@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000202
+name: Harm avoidance and gray matter volume (ds000202)
+full_name: >-
+  The heterogeneity in retrieved relations between the personality trait 'Harm avoidance' and gray matter volumes due
+  to variations in the VBM and ROI labeling processing settings
+summary: >-
+  Brain T1-weighted MRI of young healthy women with Temperament and Character Inventory scores, collected to test how
+  VBM and ROI processing choices change the link between harm avoidance and gray matter volume. 95 subjects, 3T
+  Philips, in BIDS.
+homepage: https://openneuro.org/datasets/ds000202
+year: 2015
+version: '00001'
+status: active
+creators:
+  - name: Department of Radiology, UZ Brussel - VUB (Van Schuerbeek P, Baeken C, De Mey J)
+    url: https://openneuro.org/datasets/ds000202
+species: human
+modalities: [MR]
+contrasts: [T1w]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [regression]
+formats: [BIDS, NIfTI]
+countries: [BE]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 0.49
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000202
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      dataset_description.json of snapshot 00001 states "License": "Not Specified", and the README and the paper's
+      data availability statement give no terms. The OpenNeuro FAQ says new versions of previously released datasets
+      are released under CC0, but no newer snapshot exists, so CC0 is not assumed.
+citation:
+  text: >-
+    Van Schuerbeek P, Baeken C, De Mey J. The Heterogeneity in Retrieved Relations between the Personality Trait 'Harm
+    Avoidance' and Gray Matter Volumes Due to Variations in the VBM and ROI Labeling Processing Settings. PLoS ONE
+    11(4): e0153865 (2016). doi:10.1371/journal.pone.0153865
+  bibtex: |
+    @article{vanschuerbeek2016,
+      title={The Heterogeneity in Retrieved Relations between the Personality Trait 'Harm Avoidance' and Gray Matter Volumes Due to Variations in the VBM and ROI Labeling Processing Settings},
+      author={Van Schuerbeek, Peter and Baeken, Chris and De Mey, Johan},
+      journal={PLoS ONE},
+      volume={11},
+      number={4},
+      pages={e0153865},
+      year={2016},
+      doi={10.1371/journal.pone.0153865}
+    }
+sources:
+  vanschuerbeek2016:
+    title: >-
+      Van Schuerbeek et al. 2016, The heterogeneity in retrieved relations between the personality trait 'Harm
+      avoidance' and gray matter volumes, PLoS ONE
+    url: https://doi.org/10.1371/journal.pone.0153865
+    kind: paper
+  openneuro-ds000202-00001:
+    title: OpenNeuro ds000202 snapshot 00001 (dataset_description.json, README, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds000202/versions/00001
+    kind: website
+  openneuro-faq:
+    title: OpenNeuro FAQ, Why can I not use CC-BY (or other CC license)?
+    url: https://github.com/OpenNeuroOrg/openneuro/blob/master/docs/faq.md
+    kind: website
+related: []
+keywords: [personality, harm avoidance, temperament and character inventory, voxel-based morphometry, gray matter volume, OpenfMRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
