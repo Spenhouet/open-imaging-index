@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: breast-mri-ab-mri-makerere
+name: Breast AB-MRI (Makerere, Harvard Dataverse)
+full_name: 'Breast MRI Dataset: De-identified Multiparametric DCE-MRI for Machine Learning Research'
+summary: >-
+  Multiparametric breast MRI with ultrafast dynamic contrast-enhanced imaging, acquired with an abbreviated breast MRI
+  protocol and de-identified for machine learning research. Includes T2-weighted, diffusion-weighted, native and
+  post-contrast T1-weighted series.
+homepage: https://doi.org/10.7910/DVN/PUYOEU
+doi: 10.7910/DVN/PUYOEU
+year: 2026
+version: V1
+creators:
+  - name: Ainekirabo Mbabazi, Makerere University
+species: human
+modalities: [MR]
+contrasts: [T2w, dwi, T1w, dce, T1w_ce]
+anatomy: [breast]
+formats: [DICOM]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 1.12
+access:
+  type: on_request
+  url: https://doi.org/10.7910/DVN/PUYOEU
+  note: >-
+    The Harvard Dataverse record is public, but its single ZIP file is restricted and has to be requested through the
+    Dataverse access request, which the depositor grants. The record publishes no terms of access or access criteria.
+licenses:
+  - license: CC0-1.0
+    url: https://doi.org/10.7910/DVN/PUYOEU
+    note: The Harvard Dataverse record lists CC0 1.0 as its license.
+citation:
+  text: >-
+    Mbabazi, Ainekirabo, 2026, "Breast MRI Dataset: De-identified Multiparametric DCE-MRI for Machine Learning
+    Research", https://doi.org/10.7910/DVN/PUYOEU, Harvard Dataverse, V1
+sources:
+  dataverse-puyoeu:
+    title: Harvard Dataverse record doi:10.7910/DVN/PUYOEU, version 1 (dataset metadata and description)
+    url: https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/PUYOEU
+    kind: website
+related: []
+keywords: [abbreviated breast MRI, ultrafast DCE, de-identification, multiparametric MRI]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
