@@ -1,0 +1,24 @@
+measure,by,value,source,where,note
+subjects,,52,momenian2024,Methods: Participants,all participants of the EEG session; participants.tsv and the OpenNeuro snapshot summary also list 52 subjects
+subjects,condition=healthy,52,momenian2024,Methods: Participants,"healthy, right-handed native Cantonese speakers who reported no cognitive decline"
+subjects,sex=female,40,momenian2024,Methods: Participants,participants.tsv also gives 40 F
+subjects,sex=male,12,ds004718-participants,sex column,sex M
+subjects,age=60-69,33,ds004718-participants,age column,
+subjects,age=70-79,19,ds004718-participants,age column,
+subjects,contrast=T1w,50,ds004718-files,sub-*/anat/*_T1w.nii.gz,two participants did not take part in the fMRI session
+subjects,contrast=bold,50,ds004718-files,sub-*/func/*_bold.nii.gz,"the paper keeps 46 participants for fMRI analysis after excluding 4 for head movement, while the release holds raw fMRI for 50"
+subjects,contrast_set=bold+T1w,50,ds004718-files,sub-*/anat and sub-*/func,
+subjects,sex=female;contrast_set=bold+T1w,39,ds004718-participants,sex column joined with the file listing,
+subjects,sex=female;age=60-69,23,ds004718-participants,age and sex columns,
+subjects,sex=male;age=60-69,10,ds004718-participants,age and sex columns,
+subjects,sex=female;age=70-79,17,ds004718-participants,age and sex columns,
+subjects,field_strength=3,50,momenian2024,Methods: Acquisition,"3 T Siemens MAGNETOM Prisma; 52 recruited minus the 2 who did not take part in the fMRI session (Methods: Participants)"
+subjects,vendor=siemens,50,momenian2024,Methods: Acquisition,
+subjects,country=HK,52,momenian2024,Methods: Participants,recruited from Hong Kong
+scans,,300,ds004718-files,sub-*/anat and sub-*/func NIfTI files,"sum of 250 BOLD and 50 T1w files, which are disjoint and are all NIfTI files under anat and func"
+scans,contrast=bold,250,ds004718-files,sub-*/func/*_bold.nii.gz,4 story-listening runs and 1 resting-state run per subject
+scans,contrast=T1w,50,ds004718-files,sub-*/anat/*_T1w.nii.gz,
+age_mean,,69.12,momenian2024,Methods: Participants,
+age_sd,,3.52,momenian2024,Methods: Participants,
+age_min,,65,ds004718-participants,age column,
+age_max,,77,ds004718-participants,age column,
