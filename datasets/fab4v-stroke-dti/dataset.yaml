@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: fab4v-stroke-dti
+name: FAB4V Stroke Diffusion MRI
+full_name: Reliability and validity of DTI-based indirect disconnection measures, FAB4V stroke patient subset
+summary: >-
+  Diffusion MRI and FLAIR of first-ever ischemic stroke patients with manual lesion masks, used to test how well
+  healthy-control tractography predicts white matter disconnection. Images are not shared; a lesion overlap map and
+  statistical maps are public.
+homepage: https://data.mendeley.com/datasets/ggzr68kmrt
+doi: 10.17632/ggzr68kmrt.1
+# Mendeley Data release of the derived maps (March 2023). The images themselves have no public release.
+year: 2023
+creators:
+  - name: Anouk R. Smits, University Medical Center Utrecht
+  - name: Mathijs Raemaekers, University Medical Center Utrecht
+modalities: [MR]
+contrasts: [dwi, FLAIR]
+anatomy: [brain]
+conditions: [ischemic_stroke, visual_field_defect]
+tasks: [segmentation]
+countries: [NL]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://data.mendeley.com/datasets/ggzr68kmrt
+  note: >-
+    The MRI images and lesion masks are not released, and the paper gives no route to request them. Mendeley Data
+    holds, under CC BY 4.0, a lesion overlap map of the 95 patients, SnPM statistical maps of the visual field defect
+    analysis and the IDL code of the prediction tool.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images or lesion masks. The CC BY 4.0 license of the Mendeley
+      Data record covers only the released derived maps and code.
+citation:
+  text: >-
+    Smits, A. R., van Zandvoort, M. J. E., Ramsey, N. F., de Haan, E. H. F., & Raemaekers, M. (2023). Reliability and
+    validity of DTI-based indirect disconnection measures. NeuroImage: Clinical, 39, 103470.
+    https://doi.org/10.1016/j.nicl.2023.103470
+sources:
+  smits2023:
+    title: Smits et al. 2023, NeuroImage Clinical 39:103470
+    url: https://doi.org/10.1016/j.nicl.2023.103470
+    kind: paper
+  mendeley-ggzr68kmrt:
+    title: Mendeley Data record, Reliability and validity of DTI-based indirect disconnection measures, version 1
+    url: https://data.mendeley.com/datasets/ggzr68kmrt/1
+    kind: website
+related: [hcp-young-adult]
+keywords: [stroke, structural disconnection, tractography, diffusion tensor imaging, hemianopia, lesion-symptom mapping]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

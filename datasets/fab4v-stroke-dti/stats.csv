@@ -1,0 +1,10 @@
+measure,by,value,source,where,note
+subjects,,95,smits2023,Section 2.2,"first-ever symptomatic ischemic stroke patients with diffusion MRI, a subset of the FAB4V project"
+subjects,condition=ischemic_stroke,95,smits2023,Section 2.2,
+subjects,condition=visual_field_defect,11,smits2023,Section 2.7,stroke-induced visual field defect; 84 patients had none
+subjects,contrast=dwi,95,smits2023,Table 1,"one complete diffusion series at b = 1000 s/mm2, 34 volumes"
+subjects,contrast=FLAIR,95,smits2023,Section 2.3,
+subjects,field_strength=3,95,smits2023,Table 1,
+subjects,country=NL,95,smits2023,Section 2.2,Amsterdam UMC and UMC Utrecht
+age_mean,,55,smits2023,Table 1,standard deviation 15
+age_sd,,15,smits2023,Table 1,

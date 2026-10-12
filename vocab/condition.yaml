@@ -56,6 +56,7 @@ terms:
   - { id: ischemic_stroke, label: Ischemic stroke, synonyms: [stroke], mappings: { mondo: 'MONDO:1060198' } }
   - { id: moyamoya, label: Moyamoya disease, synonyms: [moyamoya angiopathy], mappings: { mondo: 'MONDO:0016820' } }
   - { id: aphasia, label: Aphasia, description: 'Impaired production or comprehension of language, a finding often caused by stroke.', mappings: { hp: 'HP:0002381' } }
+  - { id: visual_field_defect, label: Visual field defect, synonyms: [hemianopia, hemianopsia, quadrantanopia], description: 'Loss of part of the visual field, such as hemianopia after a lesion of the visual pathway.', mappings: { hp: 'HP:0001123' } }
   - {
       id: bells_palsy,
       label: Bell's palsy,
