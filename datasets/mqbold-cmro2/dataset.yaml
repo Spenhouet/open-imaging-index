@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mqbold-cmro2
+name: BOLD versus oxygen metabolism, TUM (ds004873)
+full_name: BOLD signal changes can oppose oxygen metabolism across the human cortex
+summary: >-
+  Brain MRI of healthy adults doing arithmetic, autobiographical memory and control tasks, with task fMRI and
+  quantitative blood flow, blood volume and oxygen extraction scans, collected to test whether BOLD signal changes
+  track cortical oxygen metabolism.
+homepage: https://openneuro.org/datasets/ds004873
+doi: 10.18112/openneuro.ds004873.v2.0.7
+year: 2023
+updated: 2026
+version: 2.0.7
+status: active
+creators:
+  - name: Neuroenergetics Lab, Klinikum rechts der Isar, Technical University of Munich (Epp SM, Riedl V et al.)
+    url: https://openneuro.org/datasets/ds004873
+species: human
+modalities: [MR]
+contrasts: [T1w, bold, MESE, MEGRE, asl, dsc]
+anatomy: [brain]
+conditions: [healthy]
+tasks: [normative]
+formats: [BIDS, NIfTI]
+countries: [DE]
+vendors: [philips]
+field_strengths: [3]
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004873/versions/2.0.7
+licenses:
+  - license: CC0-1.0
+    url: https://openneuro.org/datasets/ds004873/versions/2.0.7
+    note: dataset_description.json of snapshot 2.0.7 states "License" CC0.
+citation:
+  text: >-
+    Epp SM, Castrillón G, Yuan B, Andrews-Hanna J, Preibisch C, Riedl V. BOLD signal changes can oppose oxygen
+    metabolism across the human cortex. Nature Neuroscience 29:1225-1236 (2026). doi:10.1038/s41593-025-02132-9
+sources:
+  epp2025:
+    title: Epp et al. 2025, BOLD signal changes can oppose oxygen metabolism across the human cortex, Nature Neuroscience
+    url: https://www.nature.com/articles/s41593-025-02132-9
+    kind: paper
+  openneuro-ds004873-v2:
+    title: OpenNeuro ds004873 snapshot 2.0.7 (README, dataset_description.json and snapshot list)
+    url: https://openneuro.org/datasets/ds004873/versions/2.0.7
+    kind: website
+  ds004873-participants:
+    title: participants.tsv of ds004873 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004873/blob/main/participants.tsv
+    kind: computed
+  ds004873-file-tree:
+    title: File tree of ds004873 (CC0), NIfTI files counted per subject folder
+    url: https://github.com/OpenNeuroDatasets/ds004873
+    kind: computed
+related: []
+keywords:
+  [
+    BOLD fMRI,
+    oxygen metabolism,
+    CMRO2,
+    oxygen extraction fraction,
+    quantitative BOLD,
+    neurovascular coupling,
+    default mode network,
+    arterial spin labeling,
+    dynamic susceptibility contrast
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
