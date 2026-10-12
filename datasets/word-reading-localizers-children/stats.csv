@@ -1,0 +1,22 @@
+measure,by,value,source,where,note
+subjects,,91,ds006239-file-tree,sub-* folders,"participants.tsv lists 92 IDs; sub-1286 has no MRI date and no imaging folder. The paper describes 83 participants for snapshot 1.0.2"
+subjects,contrast=T1w,91,ds006239-file-tree,anat folders,
+subjects,contrast=bold,91,ds006239-file-tree,func folders,
+subjects,contrast=dwi,75,ds006239-file-tree,dwi folders,
+subjects,contrast_set=bold+dwi+T1w,75,ds006239-file-tree,subject folders,
+subjects,contrast_set=bold+T1w,16,ds006239-file-tree,subject folders,
+studies,,91,ds006239-file-tree,ses-* folders,one session (ses-1) per subject spread over up to three scan days
+scans,,1704,ds006239-file-tree,NIfTI files,"includes 368 spin-echo EPI field maps"
+scans,contrast=T1w,93,ds006239-file-tree,*_T1w.nii.gz,
+scans,contrast=bold,1091,ds006239-file-tree,*_bold.nii.gz,"195 ReadMean, 190 ReadPhon, 185 LocalSR0, 182 LocalSem, 172 LocalASL and 167 LocalEng runs"
+scans,contrast=dwi,152,ds006239-file-tree,*_dwi.nii.gz,"77 64-direction and 75 6-direction acquisitions"
+subjects,sex=male,41,wang2025,Table 2,N = 83 participants of snapshot 1.0.2
+subjects,sex=female,42,wang2025,Table 2,N = 83 participants of snapshot 1.0.2
+age_mean,,12.7,wang2025,Section 4.1,N = 83
+age_sd,,2.0,wang2025,Section 4.1,N = 83
+age_min,,10,wang2025,Abstract,ages 10 to 17
+age_max,,17,wang2025,Abstract,ages 10 to 17
+subjects,condition=healthy,83,wang2025,Section 4.1,"typical hearing, English-speaking, no developmental or intellectual disability"
+scans,contrast=T1w;vendor=philips,93,ds006239-file-tree,T1w sidecars: Manufacturer,"47 MR7700 and 46 Ingenia Elition X; the paper names a 3 T Philips Elition"
+scans,contrast=T1w;field_strength=3,93,ds006239-file-tree,T1w sidecars: MagneticFieldStrength,
+scans,contrast=T1w;country=US,93,ds006239-file-tree,T1w sidecars: InstitutionName,Vanderbilt Institute of Imaging
