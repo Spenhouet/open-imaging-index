@@ -1,0 +1,30 @@
+measure,by,value,source,where,note
+subjects,,75,openneuro-ds004873-v2,README,"47 main study (40 analysed, 7 excluded), 18 control study and 10 replication study subjects, each with a subject folder"
+subjects,condition=healthy,75,openneuro-ds004873-v2,README,
+subjects,contrast=bold,75,ds004873-file-tree,,raw BOLD runs in func/
+subjects,contrast=T1w,74,ds004873-file-tree,,raw T1w in anat/
+subjects,contrast=MESE,56,ds004873-file-tree,,raw multi-echo spin-echo (8 echoes) in anat/
+subjects,contrast=MEGRE,49,ds004873-file-tree,,raw multi-echo gradient-echo (12 echoes) under derivatives/sub-*/anat/
+subjects,contrast=asl,47,ds004873-file-tree,,raw pCASL under derivatives/sub-*/qmri/
+subjects,contrast=dsc,40,ds004873-file-tree,,raw DSC under derivatives/sub-*/perf/
+subjects,contrast_set=asl+bold+dsc+MEGRE+MESE+T1w,37,ds004873-file-tree,,
+subjects,contrast_set=bold+dsc+MEGRE+MESE+T1w,3,ds004873-file-tree,,
+subjects,contrast_set=bold+MESE+T1w,6,ds004873-file-tree,,
+subjects,contrast_set=bold,1,ds004873-file-tree,,
+subjects,contrast_set=asl+bold+MEGRE+MESE+T1w,9,ds004873-file-tree,,
+subjects,contrast_set=asl+bold+MESE+T1w,1,ds004873-file-tree,,
+subjects,contrast_set=bold+T1w,18,ds004873-file-tree,,control study
+subjects,sex=female,42,ds004873-participants,sex,all 75 subjects
+subjects,sex=male,33,ds004873-participants,sex,all 75 subjects
+subjects,age=20-29,42,ds004873-participants,age,
+subjects,age=30-39,21,ds004873-participants,age,
+subjects,age=40-49,9,ds004873-participants,age,
+subjects,age=50-59,2,ds004873-participants,age,
+subjects,age=60-69,1,ds004873-participants,age,
+subjects,sex=female;age=20-29,26,ds004873-participants,"sex, age",
+subjects,sex=female;age=30-39,10,ds004873-participants,"sex, age",
+subjects,sex=male;age=20-29,16,ds004873-participants,"sex, age",
+subjects,sex=male;age=30-39,11,ds004873-participants,"sex, age",
+age_mean,,31.0,ds004873-participants,age,all 75 subjects
+age_min,,21,ds004873-participants,age,
+age_max,,60,ds004873-participants,age,
