@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: nhnn-tle-fbtcs-networks
+name: TLE structural networks and tonic-clonic seizures (NHNN)
+full_name: >-
+  Data: Focal to bilateral tonic-clonic seizures are associated with widespread network abnormality in temporal lobe
+  epilepsy
+summary: >-
+  Diffusion MRI structural brain networks of adults with drug-resistant temporal lobe epilepsy and healthy controls,
+  built to test whether seizures that spread to both hemispheres come with wider network abnormality. Only the
+  connectivity matrices are open; the images are not shared.
+homepage: https://zenodo.org/records/4432083
+doi: 10.5281/zenodo.4432083
+year: 2021
+creators:
+  - name: >-
+      CNNP Lab, Newcastle University, and UCL Queen Square Institute of Neurology / National Hospital for Neurology
+      and Neurosurgery (Sinha N, Wang Y, Duncan JS, Taylor PN, et al.)
+    url: https://zenodo.org/records/4432083
+species: human
+modalities: [MR]
+contrasts: [dwi]
+anatomy: [brain]
+conditions: [temporal_lobe_epilepsy, healthy]
+tasks: [classification]
+formats: [MAT]
+countries: [GB]
+vendors: [ge]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://zenodo.org/records/4432083
+  note: >-
+    The Zenodo record holds one MATLAB file (networkData.mat, about 4 MB) with fractional anisotropy and mean
+    diffusivity weighted 90-region connectivity matrices and metadata for 83 patients and 29 controls, open under CC BY
+    4.0. No route to the MR images is published.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    applies_to: MR images.
+    note: Neither the Zenodo record nor the paper offers the images or states terms for them.
+  - license: CC-BY-4.0
+    applies_to: Connectivity matrices and metadata in networkData.mat on Zenodo.
+    note: The Zenodo record states the license cc-by-4.0 and asks users to cite the article and the data.
+citation:
+  text: >-
+    Sinha N, Peternell N, Schroeder GM, de Tisi J, Vos SB, Winston GP, Duncan JS, Wang Y, Taylor PN. Focal to
+    bilateral tonic-clonic seizures are associated with widespread network abnormality in temporal lobe epilepsy.
+    Epilepsia 62(3), 729-741 (2021). doi:10.1111/epi.16819. Data: doi:10.5281/zenodo.4432083
+sources:
+  sinha2021:
+    title: Sinha et al. 2021, Focal to bilateral tonic-clonic seizures are associated with widespread network abnormality in temporal lobe epilepsy, Epilepsia
+    url: https://doi.org/10.1111/epi.16819
+    kind: paper
+  zenodo-4432083:
+    title: Zenodo record 4432083
+    url: https://zenodo.org/records/4432083
+    kind: website
+related: [ideas-epilepsy]
+keywords:
+  [
+    temporal lobe epilepsy,
+    focal to bilateral tonic-clonic seizures,
+    structural connectome,
+    diffusion MRI,
+    network abnormality,
+    epilepsy surgery
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
