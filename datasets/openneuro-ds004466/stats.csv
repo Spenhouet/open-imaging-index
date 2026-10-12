@@ -1,0 +1,39 @@
+measure,by,value,source,where,note
+subjects,,127,racey2023,Participants,102 synaesthetes and 25 non-synaesthetes completed the imaging session; participants.tsv also has 127 rows
+subjects,condition=synesthesia,102,racey2023,Participants,synaesthesia verified by a consistency test before enrolment
+subjects,condition=healthy,25,racey2023,Participants,non-synaesthete controls; people with known neurological conditions were excluded from scanning
+subjects,sex=female,98,ds004466-participants,sex,sex F in snapshot 1.0.3; the paper reports 97 women across both groups
+subjects,sex=male,28,ds004466-participants,sex,sex M in snapshot 1.0.3; the paper reports 29 men across both groups
+subjects,sex=other,1,ds004466-participants,sex,sex O
+subjects,condition=synesthesia;sex=female,79,ds004466-participants,group and sex,the paper reports 78
+subjects,condition=synesthesia;sex=male,22,ds004466-participants,group and sex,the paper reports 23
+subjects,condition=healthy;sex=female,19,ds004466-participants,group and sex,
+subjects,age=10-19,7,ds004466-participants,age,ages 18 and 19
+subjects,age=20-29,47,ds004466-participants,age,
+subjects,age=30-39,29,ds004466-participants,age,
+subjects,age=40-49,14,ds004466-participants,age,
+subjects,age=50-59,25,ds004466-participants,age,
+subjects,age=60-69,5,ds004466-participants,age,
+subjects,sex=female;age=20-29,37,ds004466-participants,sex and age,
+subjects,sex=female;age=30-39,22,ds004466-participants,sex and age,
+subjects,sex=female;age=40-49,11,ds004466-participants,sex and age,
+subjects,sex=female;age=50-59,21,ds004466-participants,sex and age,
+subjects,condition=synesthesia;age=20-29,41,ds004466-participants,group and age,
+subjects,condition=synesthesia;age=30-39,22,ds004466-participants,group and age,
+subjects,condition=synesthesia;age=50-59,22,ds004466-participants,group and age,
+subjects,contrast=T1w,127,ds004466-file-tree,,one T1w file per subject
+subjects,contrast=T2w,127,ds004466-file-tree,,one T2w file per subject
+subjects,contrast=bold,127,ds004466-file-tree,,four resting-state runs per subject
+subjects,contrast_set=bold+T1w+T2w,127,ds004466-file-tree,,
+subjects,field_strength=3,127,racey2023,MRI hardware and image acquisition,Siemens 3T Prisma; sidecars state MagneticFieldStrength 3
+subjects,vendor=siemens,127,racey2023,MRI hardware and image acquisition,Siemens Prisma with a 32-channel head coil
+subjects,country=GB,127,openneuro-ds004466-v1-0-3,sidecar JSON files,InstitutionAddress Falmer Brighton GB in the sidecars
+scans,,762,ds004466-file-tree,,sum of the disjoint T1w (127) T2w (127) and bold (508) NIfTI files; field maps and single-band references are not counted
+scans,contrast=T1w,127,ds004466-file-tree,,
+scans,contrast=T2w,127,ds004466-file-tree,,
+scans,contrast=bold,508,ds004466-file-tree,,
+age_mean,,35.6,ds004466-participants,age,
+age_sd,,13.4,ds004466-participants,age,
+age_median,,33,ds004466-participants,age,
+age_min,,18,ds004466-participants,age,
+age_max,,68,ds004466-participants,age,

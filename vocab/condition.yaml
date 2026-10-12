@@ -68,6 +68,7 @@ terms:
       mappings: { hp: 'HP:0004408' }
     }
   - { id: parosmia, label: Parosmia, parent: olfactory_dysfunction, mappings: { hp: 'HP:0034004' } }
+  - { id: synesthesia, label: Synesthesia, description: 'A stimulus in one sense or concept reliably triggers an additional experience, such as letters evoking colours.', synonyms: [synaesthesia], mappings: { hp: 'HP:6000024' } }
   - { id: transient_ischemic_attack, label: Transient ischemic attack, synonyms: [TIA], mappings: { mondo: 'MONDO:0005264' } }
   - { id: intracranial_hemorrhage, label: Intracranial hemorrhage, synonyms: [ICH], mappings: { hp: 'HP:0002170' } }
   - {
