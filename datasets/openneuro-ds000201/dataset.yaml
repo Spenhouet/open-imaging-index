@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds000201
+name: Stockholm Sleepy Brain Study (ds000201)
+full_name: >-
+  The Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old
+summary: >-
+  Brain MRI and task and resting-state fMRI of healthy younger and older adults, each scanned after normal sleep and
+  after partial sleep deprivation, collected to study how sleepiness affects emotional and cognitive processing. Adds
+  diffusion imaging and questionnaires.
+homepage: https://openneuro.org/datasets/ds000201
+doi: 10.18112/openneuro.ds000201.v1.0.3
+# First released on OpenfMRI as ds000201; the Stanford Digital Repository archive of that release cites it as
+# Nilsonne et al. (2016). OpenNeuro snapshot 1.0.3 is dated 2020-02-18.
+year: 2016
+updated: 2020
+version: 1.0.3
+status: active
+creators:
+  - name: >-
+      Nilsonne G, Tamm S, d'Onofrio P, Thuné HÅ, Schwarz J, Lavebratt C, Liu JJ, Månsson KNT, Sundelin T, Axelsson J,
+      Fransson P, Kecklund G, Fischer H, Lekander M, Åkerstedt T (Karolinska Institutet, Stockholm University)
+    url: https://openneuro.org/datasets/ds000201
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold, dwi]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [SE]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 172.4
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds000201
+licenses:
+  - license: CC0-1.0
+    note: >-
+      dataset_description.json of OpenNeuro snapshot 1.0.3 states "License" CC0. The earlier OpenfMRI release and the
+      OpenNeuro snapshots 00003 and 00004 state PDDL.
+citation:
+  text: >-
+    Nilsonne G, Tamm S, d'Onofrio P, Thuné HÅ, Schwarz J, Lavebratt C, Liu JJ, Månsson KNT, Sundelin T, Axelsson J,
+    Fransson P, Kecklund G, Fischer H, Lekander M, Åkerstedt T. A multimodal brain imaging dataset on sleep
+    deprivation in young and old humans: The Sleepy Brain Project I. Stanford Digital Repository (2016).
+    http://purl.stanford.edu/vq518cf9512
+sources:
+  nilsonne2016-sdr:
+    title: >-
+      Nilsonne et al. 2016, A multimodal brain imaging dataset on sleep deprivation in young and old humans: The Sleepy
+      Brain Project I, Stanford Digital Repository (abstract and license)
+    url: https://purl.stanford.edu/vq518cf9512
+    kind: website
+  openneuro-ds000201-v1-0-3:
+    title: >-
+      OpenNeuro ds000201 snapshot 1.0.3 (dataset_description.json, README, CHANGES, participants.json, sidecar JSON
+      files and snapshot summary)
+    url: https://openneuro.org/datasets/ds000201/versions/1.0.3
+    kind: website
+  ds000201-participants:
+    title: participants.tsv of ds000201 (CC0), counted per row from the Sex and AgeGroup columns
+    url: https://github.com/OpenNeuroDatasets/ds000201/blob/main/participants.tsv
+    kind: computed
+  ds000201-file-tree:
+    title: File listing of the ds000201 BIDS repository (CC0), counted per NIfTI file under sub-*/ses-*
+    url: https://github.com/OpenNeuroDatasets/ds000201
+    kind: computed
+related: []
+keywords:
+  [
+    sleep deprivation,
+    sleepiness,
+    aging,
+    emotional contagion,
+    empathy for pain,
+    emotion regulation,
+    resting state,
+    crossover design,
+  ]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

@@ -1,0 +1,28 @@
+measure,by,value,source,where,note
+subjects,,86,ds000201-participants,,86 rows; the snapshot summary lists the same 86 subjects. The abstract describes 48 younger and 36 older participants (84)
+subjects,condition=healthy,86,nilsonne2016-sdr,Abstract,the abstract describes all participants as healthy
+subjects,sex=female,44,ds000201-participants,,
+subjects,sex=male,42,ds000201-participants,,
+subjects,age=20-30,47,ds000201-participants,,AgeGroup Young; participants.json defines it as 20 to 30 years inclusive. The abstract states 48
+subjects,age=65-75,39,ds000201-participants,,AgeGroup Old; participants.json defines it as 65 to 75 years inclusive. The abstract states 36
+subjects,sex=female;age=20-30,24,ds000201-participants,,
+subjects,sex=male;age=20-30,23,ds000201-participants,,
+subjects,sex=female;age=65-75,20,ds000201-participants,,
+subjects,sex=male;age=65-75,19,ds000201-participants,,
+subjects,contrast=T1w,86,ds000201-file-tree,,
+subjects,contrast=T2w,83,ds000201-file-tree,,
+subjects,contrast=bold,85,ds000201-file-tree,,"any of the tasks arrows, faces, hands, rest and sleepiness"
+subjects,contrast=dwi,76,ds000201-file-tree,,
+subjects,contrast_set=bold+dwi+T1w+T2w,74,ds000201-file-tree,,
+subjects,contrast_set=bold+T1w+T2w,9,ds000201-file-tree,,
+subjects,contrast_set=bold+dwi+T1w,2,ds000201-file-tree,,
+subjects,contrast_set=T1w,1,ds000201-file-tree,,
+subjects,field_strength=3,86,openneuro-ds000201-v1-0-3,sidecar JSON files,MagneticFieldStrength 3 in the top-level T1w and T2w and dwi and bold sidecars
+subjects,vendor=ge,86,openneuro-ds000201-v1-0-3,sidecar JSON files,GE Discovery MR750 in the top-level sidecars
+subjects,country=SE,86,openneuro-ds000201-v1-0-3,dataset_description.json,dataset name places the study in Stockholm
+studies,,167,ds000201-file-tree,,sessions with at least one NIfTI file; two sessions per subject planned (normal sleep and sleep deprivation)
+scans,,1783,ds000201-file-tree,,NIfTI files under sub-*/ses-*; includes 634 field map magnitude and phase images
+scans,contrast=T1w,167,ds000201-file-tree,,
+scans,contrast=T2w,86,ds000201-file-tree,,
+scans,contrast=dwi,76,ds000201-file-tree,,
+scans,contrast=bold,820,ds000201-file-tree,,"runs: arrows 162, faces 166, hands 165, rest 165, sleepiness 162"
