@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,15,martinezheras2015,Abstract; Subjects,10 healthy volunteers and 5 MS patients
+subjects,condition=healthy,10,martinezheras2015,Subjects,
+subjects,condition=multiple_sclerosis,5,martinezheras2015,Subjects,recruited from the MS Unit at Hospital Clinic Barcelona
+subjects,sex=male,5,martinezheras2015,Subjects,sum of men in the disjoint groups: healthy 3 and MS 2
+subjects,sex=female,10,martinezheras2015,Subjects,sum of women in the disjoint groups: healthy 7 and MS 3
+subjects,condition=healthy;sex=male,3,martinezheras2015,Subjects,
+subjects,condition=healthy;sex=female,7,martinezheras2015,Subjects,
+subjects,condition=multiple_sclerosis;sex=male,2,martinezheras2015,Subjects,
+subjects,condition=multiple_sclerosis;sex=female,3,martinezheras2015,Subjects,
+subjects,field_strength=3,15,martinezheras2015,MRI acquisition,3 T Siemens Magnetom Trio
+subjects,vendor=siemens,15,martinezheras2015,MRI acquisition,3 T Siemens Magnetom Trio
+subjects,country=ES,15,martinezheras2015,Subjects,study approved by the Ethics Committee of Hospital Clinic of Barcelona

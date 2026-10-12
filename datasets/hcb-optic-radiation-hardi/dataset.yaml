@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: hcb-optic-radiation-hardi
+name: Optic Radiation HARDI Tractography (Hospital Clinic)
+summary: >-
+  Brain MRI with two single-shell HARDI diffusion protocols and 3D T1-weighted imaging of healthy volunteers and
+  multiple sclerosis patients, collected to reconstruct the optic radiation. Images are not shared; only a group
+  tractography template is public.
+homepage: https://doi.org/10.1371/journal.pone.0137064
+# Year of the paper. The images themselves have no public release.
+year: 2015
+creators:
+  - name: Eloy Martínez-Heras, Hospital Clinic and IDIBAPS, Barcelona
+  - name: Sara Llufriu, Hospital Clinic and IDIBAPS, Barcelona
+modalities: [MR]
+contrasts: [T1w, dwi]
+anatomy: [brain]
+conditions: [healthy, multiple_sclerosis]
+countries: [ES]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: not_shared
+  url: https://plos.figshare.com/articles/dataset/_Improved_Framework_for_Tractography_Reconstruction_of_the_Optic_Radiation_/1545949
+  note: >-
+    The figshare record holds only the supplementary files of the paper: a binarized optic radiation template in MNI152
+    space for each HARDI protocol and three tables, under CC BY 4.0. The data availability statement said the image
+    datasets would be posted at http://www.neuroimmunologybcn.org/projects after acceptance; that page now returns 404
+    and no image release was found.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The CC BY 4.0 license of the figshare record covers
+      only the supplementary template and tables.
+citation:
+  text: >-
+    Martínez-Heras E, Varriano F, Prčkovska V, Laredo C, Andorrà M, Martínez-Lapiscina EH, Calvo A, Lampert E,
+    Villoslada P, Saiz A, Prats-Galino A, Llufriu S. Improved Framework for Tractography Reconstruction of the Optic
+    Radiation. PLoS ONE 10(9): e0137064 (2015). https://doi.org/10.1371/journal.pone.0137064
+sources:
+  martinezheras2015:
+    title: Martínez-Heras et al. 2015, Improved Framework for Tractography Reconstruction of the Optic Radiation, PLoS ONE 10(9) e0137064
+    url: https://doi.org/10.1371/journal.pone.0137064
+    kind: paper
+  figshare-1545949:
+    title: PLOS figshare record 1545949, supplementary files S1 File and S1 to S3 Tables
+    url: https://plos.figshare.com/articles/dataset/_Improved_Framework_for_Tractography_Reconstruction_of_the_Optic_Radiation_/1545949
+    kind: website
+related: []
+keywords: [optic radiation, Meyer's loop, tractography, HARDI, constrained spherical deconvolution, multiple sclerosis]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
