@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: uci-fetal-programming-brain
+name: UCI Fetal Programming of the Newborn and Infant Brain
+full_name: Fetal Programming of the Newborn and Infant Human Brain
+summary: >-
+  Brain MRI of newborns and one-year-olds from a University of California, Irvine pregnancy cohort, collected to relate the
+  maternal endocrine and immune milieu in pregnancy to infant brain structure and development. 118 children with
+  shared images in NIMH Data Archive collection 1890.
+homepage: https://nda.nih.gov/edit_collection.html?id=1890
+doi: 10.15154/k5g2-mx13
+year: 2012
+updated: 2019
+status: active
+creators:
+  - name: Claudia Buss and Pathik D. Wadhwa, University of California, Irvine
+    url: https://nda.nih.gov/edit_collection.html?id=1890
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, dwi, bold]
+anatomy: [brain]
+conditions: [healthy]
+countries: [US]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: application
+  url: https://nda.nih.gov/edit_collection.html?id=1890
+licenses:
+  - license: LicenseRef-NDA-Data-Use-Terms
+    note: >-
+      The data are held in NIMH Data Archive collection 1890 and are released under the NDA data access request and
+      Data Use Certification. Study-specific clauses of the permission group are not broken down here.
+citation:
+  text: >-
+    Buss C. Fetal Programming of the Newborn and Infant Human Brain. NIMH Data Repositories (2012).
+    doi:10.15154/k5g2-mx13
+sources:
+  nda-collection-1890:
+    title: NIMH Data Archive collection 1890 record (Fetal Programming of the Newborn and Infant Human Brain)
+    url: https://nda.nih.gov/api/collection/1890
+    kind: website
+  nda-collection-1890-structures:
+    title: NIMH Data Archive collection 1890, data structures with unique subject counts
+    url: https://nda.nih.gov/api/nda/collection/1890/data-structures
+    kind: website
+  nda-experiment-1133:
+    title: NIMH Data Archive experiment 1133 (resting fMRI) linked to collection 1890
+    url: https://nda.nih.gov/api/experiment/1133
+    kind: website
+  rasmussen2019:
+    title: >-
+      Rasmussen et al. 2019, Maternal Interleukin-6 concentration during pregnancy is associated with variation in
+      frontolimbic white matter and cognitive development in early life, NeuroImage (author manuscript PMC6181792)
+    url: https://doi.org/10.1016/j.neuroimage.2018.04.020
+    kind: paper
+  graham2018:
+    title: >-
+      Graham et al. 2018, Maternal Systemic Interleukin-6 During Pregnancy Is Associated With Newborn Amygdala
+      Phenotypes and Subsequent Behavior at 2 Years of Age, Biological Psychiatry (author manuscript PMC5723539)
+    url: https://doi.org/10.1016/j.biopsych.2017.05.027
+    kind: paper
+related: []
+keywords: [newborn, neonatal MRI, infant, fetal programming, pregnancy cohort, maternal stress, interleukin-6, diffusion MRI, resting-state fMRI, natural sleep, NIMH Data Archive]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
