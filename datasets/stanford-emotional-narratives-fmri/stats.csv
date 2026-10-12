@@ -1,0 +1,18 @@
+measure,by,value,source,where,note
+subjects,,100,reddan2025,Methods: Experimental model and subject details,"100 subject folders in the release; the paper reports no subjects excluded"
+subjects,condition=healthy,100,reddan2025,Methods: Experimental model and subject details,adult healthy members of the Stanford University community
+subjects,sex=female,59,reddan2025,Methods: Experimental model and subject details,self-reported gender
+subjects,sex=male,37,reddan2025,Methods: Experimental model and subject details,self-reported gender
+subjects,sex=unknown,4,reddan2025,Methods: Experimental model and subject details,no response
+subjects,contrast=T1w,100,ds006111-file-tree,sub-*/ses-1/anat/*_T1w.nii,
+subjects,contrast=bold,100,ds006111-file-tree,sub-*/ses-1/func/*_bold.nii.gz,
+subjects,contrast_set=bold+T1w,100,ds006111-file-tree,sub-*/ses-1/,
+subjects,vendor=ge,100,ds006111-file-tree,ManufacturersModelName in T1w JSON sidecars,GE Discovery MR750 in all 100 sidecars
+subjects,field_strength=3,100,ds006111-file-tree,MagneticFieldStrength in T1w JSON sidecars,
+subjects,country=US,100,reddan2025,Methods: Participants,recruited near Stanford University in Stanford CA
+studies,,100,openneuro-ds006111-v1-0-0,Snapshot summary,one session (ses-1) per subject
+scans,,300,ds006111-file-tree,sub-*/ses-1/,sum of the disjoint T1w scans (100) and functional runs (200)
+scans,contrast=T1w,100,ds006111-file-tree,sub-*/ses-1/anat/*_T1w.nii,
+scans,contrast=bold,200,ds006111-file-tree,sub-*/ses-1/func/*_bold.nii.gz,two runs of the empathic accuracy task (empacc) per subject
+age_mean,,25.23,reddan2025,Methods: Experimental model and subject details,
+age_sd,,9.96,reddan2025,Methods: Experimental model and subject details,

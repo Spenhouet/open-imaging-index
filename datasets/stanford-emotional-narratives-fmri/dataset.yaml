@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: stanford-emotional-narratives-fmri
+name: Stanford Emotional Narratives fMRI
+full_name: Stanford Emotional Narratives fMRI Dataset
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy adults rating, moment by moment, how people in videos felt while
+  telling emotional life stories, collected to model the brain basis of empathic accuracy and emotional inference.
+homepage: https://openneuro.org/datasets/ds006111
+doi: 10.18112/openneuro.ds006111.v1.0.0
+# OpenNeuro snapshot 1.0.0 was created on 2025-04-12.
+year: 2025
+version: 1.0.0
+creators:
+  - name: Reddan MC, Ong DC, Wager TD, Zaki J (Stanford University)
+    url: https://openneuro.org/datasets/ds006111
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [NIfTI, BIDS]
+countries: [US]
+vendors: [ge]
+field_strengths: [3]
+size_gb: 28.43
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds006111/versions/1.0.0
+licenses:
+  - license: CC0-1.0
+    applies_to: Whole OpenNeuro release, per the License field of dataset_description.json.
+citation:
+  text: >-
+    Reddan MC, Ong DC, Wager TD, Mattek S, Kahhale I, Zaki J. Neural signatures of emotional intent and inference
+    align during social consensus. Nature Communications 16, 6156 (2025). doi:10.1038/s41467-025-59931-8
+sources:
+  reddan2025:
+    title: >-
+      Reddan et al. 2025, Neural signatures of emotional intent and inference align during social consensus, Nature
+      Communications 16, 6156 (full text via PMC12238612)
+    url: https://doi.org/10.1038/s41467-025-59931-8
+    kind: paper
+  openneuro-ds006111-v1-0-0:
+    title: OpenNeuro ds006111 snapshot 1.0.0 (dataset_description.json, CHANGES and snapshot summary)
+    url: https://openneuro.org/datasets/ds006111/versions/1.0.0
+    kind: website
+  ds006111-file-tree:
+    title: >-
+      BIDS file tree of ds006111 snapshot 1.0.0 (CC0), raw NIfTI files under sub-*/ counted per suffix; scanner from
+      the T1w JSON sidecars
+    url: https://github.com/OpenNeuroDatasets/ds006111/tree/1.0.0
+    kind: computed
+related: []
+keywords: [empathic accuracy, emotion inference, social cognition, naturalistic stimuli, task fMRI, multivariate pattern analysis]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
