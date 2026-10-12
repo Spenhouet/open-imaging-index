@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: gut-microbiota-hrv-fmri-colombia
+name: Gut microbiota, HRV and resting fMRI in healthy men
+full_name: >-
+  Sympathovagal quotient and functional connectivity of control networks are related to gut Ruminococcaceae abundance
+  in healthy men
+summary: >-
+  Structural and resting-state functional brain MRI from healthy young Colombian men, collected to relate heart rate
+  variability and brain network connectivity to gut microbiota composition and diet, with per-subject heart rate,
+  microbiome and dietary measures.
+homepage: https://openneuro.org/datasets/ds004648
+doi: 10.18112/openneuro.ds004648.v1.0.0
+# OpenNeuro snapshot 1.0.0 dated 2023-07-31 in the CHANGES file; it is the only snapshot.
+year: 2023
+version: 1.0.0
+status: active
+creators:
+  - name: >-
+      Ana L. Miranda-Angulo, Juan D. Sánchez-López, Daniel A. Vargas-Tejada, Juan C. Calderón, Jaime Gallo-Villegas,
+      Juan F. Alzate-Restrepo, Jazmin X. Suarez-Revelo, Gabriel Castrillón (Universidad de Antioquia)
+    url: https://openneuro.org/datasets/ds004648
+species: human
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI]
+countries: [CO]
+vendors: [philips]
+field_strengths: [3]
+size_gb: 10.32
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004648
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.0 states "License" CC0.
+citation:
+  text: >-
+    Miranda-Angulo AL, Sánchez-López JD, Vargas-Tejada DA, Hawkins-Caicedo V, Calderón JC, Gallo-Villegas J,
+    Alzate-Restrepo JF, Suarez-Revelo JX, Castrillón G. Sympathovagal quotient and resting-state functional
+    connectivity of control networks are related to gut Ruminococcaceae abundance in healthy men.
+    Psychoneuroendocrinology 164, 107003 (2024). doi:10.1016/j.psyneuen.2024.107003
+sources:
+  mirandaangulo2024:
+    title: >-
+      Miranda-Angulo et al. 2024, Sympathovagal quotient and resting-state functional connectivity of control networks
+      are related to gut Ruminococcaceae abundance in healthy men, Psychoneuroendocrinology
+    url: https://doi.org/10.1016/j.psyneuen.2024.107003
+    kind: paper
+  openneuro-ds004648-v1-0-0:
+    title: OpenNeuro ds004648 snapshot 1.0.0 (dataset_description.json, README, CHANGES and snapshot size)
+    url: https://openneuro.org/datasets/ds004648/versions/1.0.0
+    kind: website
+  ds004648-participants:
+    title: participants.tsv of ds004648 snapshot 1.0.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004648/blob/1.0.0/participants.tsv
+    kind: computed
+  ds004648-file-tree:
+    title: BIDS file tree and JSON sidecars of ds004648 snapshot 1.0.0 (CC0)
+    url: https://github.com/OpenNeuroDatasets/ds004648/tree/1.0.0
+    kind: computed
+related: []
+keywords: [resting-state fMRI, functional connectivity, heart rate variability, gut microbiota, 16S rRNA, diet, brain-gut axis]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent

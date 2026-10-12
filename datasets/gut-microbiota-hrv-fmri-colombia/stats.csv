@@ -1,0 +1,20 @@
+measure,by,value,source,where,note
+subjects,,88,mirandaangulo2024,Abstract,participants.tsv and the file tree of snapshot 1.0.0 also have 88 subjects
+subjects,sex=male,88,mirandaangulo2024,Abstract,all participants are men
+subjects,condition=healthy,88,mirandaangulo2024,Abstract,
+subjects,country=CO,88,mirandaangulo2024,Abstract,Colombian men
+subjects,contrast=T1w,88,ds004648-file-tree,sub-*/anat/*_T1w.nii.gz,
+subjects,contrast=bold,88,ds004648-file-tree,sub-*/func/*_task-rest_bold.nii.gz,one resting-state run per subject
+subjects,contrast_set=bold+T1w,88,ds004648-file-tree,sub-*/,
+subjects,field_strength=3,88,ds004648-file-tree,JSON sidecars,MagneticFieldStrength 3 in all 176 sidecars
+subjects,vendor=philips,88,ds004648-file-tree,JSON sidecars,Philips Ingenia in all 176 sidecars
+subjects,age=20-29,43,ds004648-participants,Age column,
+subjects,age=30-39,44,ds004648-participants,Age column,
+subjects,age=40-49,1,ds004648-participants,Age column,
+age_mean,,29.6,ds004648-participants,Age column,
+age_sd,,5.4,ds004648-participants,Age column,sample standard deviation
+age_median,,30,ds004648-participants,Age column,
+age_min,,21,ds004648-participants,Age column,
+age_max,,40,ds004648-participants,Age column,
+studies,,88,ds004648-file-tree,sub-*/,one session per subject (no session folders)
+scans,,176,ds004648-file-tree,sub-*/*/*.nii.gz,88 T1w and 88 resting-state BOLD images
