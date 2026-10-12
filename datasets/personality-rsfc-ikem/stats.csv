@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,84,tomecek2020,Methods (Participants),healthy controls
+subjects,condition=healthy,84,tomecek2020,Methods (Participants),
+subjects,modality=MR,84,tomecek2020,Methods (Participants),
+subjects,contrast=T1w,84,tomecek2020,Methods (MRI acquisition),MPRAGE 1 mm isotropic
+subjects,contrast=bold,84,tomecek2020,Methods (MRI acquisition),"resting state, 240 volumes per subject"
+subjects,sex=male,48,tomecek2020,Methods (Participants),
+subjects,vendor=siemens,84,tomecek2020,Methods (MRI acquisition),Siemens TrioTim
+subjects,field_strength=3,84,tomecek2020,Methods (MRI acquisition),
+subjects,country=CZ,84,tomecek2020,Methods (Participants),"scanned at IKEM, Prague"
+age_mean,,30.83,tomecek2020,Methods (Participants),
+age_sd,,8.48,tomecek2020,Methods (Participants),

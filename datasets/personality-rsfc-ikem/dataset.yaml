@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: personality-rsfc-ikem
+name: Prague Personality Resting-State fMRI
+full_name: Personality reflection in the brain's intrinsic functional architecture remains elusive
+summary: >-
+  Resting-state brain fMRI and structural MRI of healthy adults with Big Five personality scores, collected in Prague
+  to replicate a reported link between personality and seed-based functional connectivity. Raw images are not
+  shared; per-subject seed beta maps are public.
+homepage: https://osf.io/69kj8/
+doi: 10.1371/journal.pone.0232570
+# Year of the PLOS ONE paper and of the data upload to OSF; the raw images have no public release.
+year: 2020
+creators:
+  - name: David Tomeček, Jaroslav Hlinka and co-authors (Institute of Computer Science, Czech Academy of Sciences; IKEM Prague)
+modalities: [MR]
+contrasts: [T1w, bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [NIfTI, MAT]
+vendors: [siemens]
+countries: [CZ]
+field_strengths: [3]
+size_gb: 2.8
+access:
+  type: not_shared
+  url: https://osf.io/69kj8/
+  note: >-
+    The OSF project holds only derived data in one data.zip of about 2.8 GB: first-level beta maps for each subject
+    and each of 18 seeds under two denoising schemes, and a covariates.mat file with sex, age and the five
+    personality scores. The structural and functional images themselves are not deposited and no other route to
+    them is given.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: >-
+      No license or data use terms are stated for the MRI images. The OSF project is marked CC BY 4.0, which covers
+      only the deposited derived beta maps and covariates.
+citation:
+  text: >-
+    Tomeček D, Androvičová R, Fajnerová I, Děchtěrenko F, Rydlo J, Horáček J, Lukavský J, Tintěra J, Hlinka J.
+    Personality reflection in the brain's intrinsic functional architecture remains elusive. PLOS ONE 15(6),
+    e0232570 (2020). doi:10.1371/journal.pone.0232570
+sources:
+  tomecek2020:
+    title: Tomeček et al. 2020, PLOS ONE (full text on PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7266317/
+    kind: paper
+  osf-69kj8:
+    title: OSF project 69kj8, metadata, license and data.zip file listing
+    url: https://api.osf.io/v2/nodes/69kj8/
+    kind: website
+related: []
+keywords: [personality, Big Five, NEO-FFI, replication, resting-state fMRI, functional connectivity, default mode network]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
