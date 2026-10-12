@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: openneuro-ds004466
+name: Synaesthesia Connectome MRI (ds004466)
+full_name: 'Mapping the Connectome of Synaesthesia: An Open Access MRI Dataset'
+summary: >-
+  Structural and resting-state brain MRI of adults with verified synaesthesia and non-synaesthete controls, collected
+  with Human Connectome Project protocols to map brain areas and connectivity linked to synaesthesia. 127 adults from
+  Brighton, UK, in BIDS under CC0.
+homepage: https://openneuro.org/datasets/ds004466
+doi: 10.18112/openneuro.ds004466.v1.0.3
+# First public snapshot (1.0.0) on OpenNeuro, 2023-02-07; latest snapshot 1.0.3, 2025-04-23.
+year: 2023
+updated: 2025
+version: 1.0.3
+status: active
+creators:
+  - name: Racey C, Rae C, Simpson I, Bowen-Hill O, Bauer M, Simner J, Kampoureli C, Ward J (University of Sussex)
+    url: https://openneuro.org/datasets/ds004466
+species: human
+modalities: [MR]
+contrasts: [T1w, T2w, bold]
+anatomy: [brain]
+conditions: [synesthesia, healthy]
+tasks: [classification]
+formats: [BIDS, NIfTI]
+countries: [GB]
+vendors: [siemens]
+field_strengths: [3]
+size_gb: 294.2
+access:
+  type: open
+  url: https://openneuro.org/datasets/ds004466
+licenses:
+  - license: CC0-1.0
+    note: dataset_description.json of snapshot 1.0.3 states "License" CC0.
+citation:
+  text: >-
+    Racey C, Kampoureli C, Bowen-Hill O, et al. An Open Science MRI Database of over 100 Synaesthetic Brains and
+    Accompanying Deep Phenotypic Information. Scientific Data 10, 766 (2023). doi:10.1038/s41597-023-02664-4
+sources:
+  racey2023:
+    title: >-
+      Racey et al. 2023, An Open Science MRI Database of over 100 Synaesthetic Brains and Accompanying Deep Phenotypic
+      Information, Scientific Data
+    url: https://doi.org/10.1038/s41597-023-02664-4
+    kind: paper
+  openneuro-ds004466-v1-0-3:
+    title: OpenNeuro ds004466 snapshot 1.0.3 (dataset_description.json, README, CHANGES, sidecar JSON files and size)
+    url: https://openneuro.org/datasets/ds004466/versions/1.0.3
+    kind: website
+  ds004466-participants:
+    title: participants.tsv of ds004466 (CC0), counted per row from the age, sex and group columns
+    url: https://github.com/OpenNeuroDatasets/ds004466/blob/main/participants.tsv
+    kind: computed
+  ds004466-file-tree:
+    title: File listing of the ds004466 BIDS repository (CC0), counted per anat and func NIfTI file
+    url: https://github.com/OpenNeuroDatasets/ds004466
+    kind: computed
+related: [hcp-development, hcp-aging]
+keywords: [synaesthesia, synesthesia, resting-state fMRI, HCP parcellation, connectome, multiband, individual differences]
+verified:
+  date: '2026-10-12'
+  by: Spenhouet-agent
