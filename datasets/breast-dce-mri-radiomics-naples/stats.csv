@@ -1,0 +1,11 @@
+measure,by,value,source,where,note
+subjects,,85,fusco2021,Section 2.1,women with histologically proven breast lesions; 91 lesions in total (35 benign and 56 malignant)
+subjects,sex=female,85,fusco2021,Section 2.1,all enrolled patients were women
+age_mean,,52,fusco2021,Section 2.1,
+age_sd,,11,fusco2021,Section 2.1,
+age_min,,26,fusco2021,Section 2.1,
+age_max,,78,fusco2021,Section 2.1,
+subjects,contrast=dce,85,fusco2021,Section 2.2,one pre-contrast and nine post-contrast coronal 3D FLASH series 56 s apart
+subjects,vendor=siemens,85,fusco2021,Section 2.2,single Siemens Magnetom Symphony scanner
+subjects,field_strength=1.5,85,fusco2021,Section 2.2,
+subjects,country=IT,85,fusco2021,Section 2.1,National Cancer Institute of Naples
