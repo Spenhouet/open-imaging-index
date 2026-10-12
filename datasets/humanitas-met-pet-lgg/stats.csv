@@ -1,0 +1,19 @@
+measure,by,value,source,where,note
+subjects,,153,ninatti2022,Results (Patient Characteristics); Table 1,"201 patients met the selection criteria; 48 re-classified as glioblastoma under the 2021 WHO classification were excluded"
+subjects,condition=glioma,153,ninatti2022,Table 1,WHO grade 2: 87; grade 3: 66
+subjects,condition=oligodendroglioma,93,ninatti2022,Table 1,"IDH-mutant, 1p/19q-codeleted"
+subjects,condition=astrocytoma,60,ninatti2022,Table 1,"IDH-mutant, 1p/19q-non-codeleted"
+subjects,modality=PT,153,ninatti2022,Materials and Methods ([11C]MET PET Imaging),preoperative PET/CT less than 100 days before surgery
+subjects,modality=CT,153,ninatti2022,Materials and Methods ([11C]MET PET Imaging),CT of the PET/CT exam
+subjects,modality=MR,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),preoperative MRI for all patients
+subjects,tracer=methionine,153,ninatti2022,Materials and Methods ([11C]MET PET Imaging),300-500 MBq; acquisition 10 minutes after injection
+subjects,contrast=T1w,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),
+subjects,contrast=T1w_ce,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),post-gadolinium T1-weighted
+subjects,contrast=T2w,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),
+subjects,contrast=FLAIR,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),
+subjects,vendor=siemens,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),MRI on a Siemens MAGNETOM Verio; some PET on a Siemens Biograph 6
+subjects,field_strength=3,153,ninatti2022,Materials and Methods (Magnetic Resonance Imaging),
+subjects,country=IT,153,ninatti2022,Materials and Methods (Study Design and Patient Population),single centre: IRCCS Humanitas Research Hospital
+age_median,,40,ninatti2022,Table 1,age at surgery; IQR 31-49
+age_median,condition=oligodendroglioma,41,ninatti2022,Table 1,age at surgery; IQR 34-50
+age_median,condition=astrocytoma,36,ninatti2022,Table 1,age at surgery; IQR 28-46
