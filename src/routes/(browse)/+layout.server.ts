@@ -1,7 +1,7 @@
 import { getCatalog, summaries } from '#lib/server/catalog.js';
 import { overview } from '#lib/server/overview.js';
 
+// Filter options and the dataset count, shared by the Datasets and Explore views.
 export function load() {
-  // Only the small overview: filter options and counts. The datasets load in the browser.
   return { overview: overview(summaries(), getCatalog().vocab) };
 }

@@ -133,14 +133,24 @@ export function facetValues(d: DatasetSummary, facet: FacetId): string[] {
   }
 }
 
-export function makeSearch(datasets: DatasetSummary[]) {
-  const ms = new MiniSearch<{ id: string; name: string; text: string }>({
-    fields: ['name', 'text'],
-    storeFields: ['id'],
-    searchOptions: { boost: { name: 3 }, prefix: true, fuzzy: 0.15, combineWith: 'AND' }
-  });
-  ms.addAll(datasets.map((d) => ({ id: d.id, name: `${d.meta.name} ${d.meta.full_name ?? ''}`, text: d.searchText })));
-  return ms;
+/** Full-text search over the catalog. */
+export type Searcher = Pick<MiniSearch, 'search'>;
+
+/** The index is built on the first query, so loading the catalog does not pay for it when nobody searches. */
+export function makeSearch(datasets: DatasetSummary[]): Searcher {
+  let ms: MiniSearch | undefined;
+  const build = () => {
+    const index = new MiniSearch<{ id: string; name: string; text: string }>({
+      fields: ['name', 'text'],
+      storeFields: ['id'],
+      searchOptions: { boost: { name: 3 }, prefix: true, fuzzy: 0.15, combineWith: 'AND' }
+    });
+    index.addAll(
+      datasets.map((d) => ({ id: d.id, name: `${d.meta.name} ${d.meta.full_name ?? ''}`, text: d.searchText }))
+    );
+    return index;
+  };
+  return { search: (...args: Parameters<MiniSearch['search']>) => (ms ??= build()).search(...args) } as Searcher;
 }
 
 export interface Result {
@@ -194,7 +204,7 @@ function passesRules(d: DatasetSummary, f: FilterState, vocab: VocabData): boole
 
 export function run(
   datasets: DatasetSummary[],
-  search: MiniSearch,
+  search: Searcher,
   f: FilterState,
   vocab: VocabData,
   options: { counts?: boolean } = {}

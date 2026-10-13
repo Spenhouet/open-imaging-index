@@ -21,8 +21,8 @@ Static SvelteKit 3 site (adapter-static, every page prerendered) deployed to Git
 - Loaded catalog data is kept in `$state.raw`: deep proxies over thousands of datasets made Explore 4 to 7 times slower.
 - `src/lib/server/`: catalog cache, docs rendering and the catalog overview for page loads.
 - `vite.catalog.ts`: serves the vocabulary and license list as `virtual:catalog-meta` (re-exported by `src/lib/catalog/meta.ts`), so it is bundled once instead of copied into every page.
-- Catalog data flow: the catalog page prerenders only the largest datasets plus an overview. The browser then loads `summaries.json` (all datasets, prerendered) for filtering, and Explore does the same. Results show in pages of 30, with the page in the URL (`?page=2`).
-- `src/routes/`: catalog (`/`), `datasets/[id]`, `explore`, `licenses`, `licenses/[id]`, `standard` and `contribute` (rendered from `docs/*.md`), `vocabulary`, `about`, `compare` (shortlist side by side), `disclaimer`, `skills`, `datasets` (A to Z), plus `catalog.json`, `sitemap.xml`, `robots.txt`.
+- Datasets (`/`) and Explore (`/explore/`) are two views of one selection, under the route group `src/routes/(browse)/`. Its layout owns the search and filter column and the view switch. The selection, the shortlist and the loaded catalog live in `src/lib/catalog/browse.svelte.ts` for the browser session (also in session storage), so switching views or visiting a dataset page keeps them. `summaries.json` is preloaded and fetched once. It leaves out empty stats fields, which `restoreSummaries` (`summaries.ts`) puts back. The catalog page prerenders the largest datasets, and results show in pages of 30 with the page in the URL (`?page=2`). The search index is built on the first query.
+- `src/routes/`: `(browse)` with the catalog (`/`) and `explore`, `datasets/[id]`, `licenses`, `licenses/[id]`, `standard` and `contribute` (rendered from `docs/*.md`), `vocabulary`, `about`, `compare` (shortlist side by side), `disclaimer`, `skills`, `datasets` (A to Z), plus `catalog.json`, `sitemap.xml`, `robots.txt`.
 
 ## Conventions
 

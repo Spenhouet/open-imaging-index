@@ -54,6 +54,8 @@
       return opts.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
     }
     if (facet === 'field_strength') return opts.sort((a, b) => Number(a.id) - Number(b.id));
+    // Before counts arrive, keep the server's order (most used first), which matches the order with counts.
+    if (!countsReady) return opts;
     return opts.sort((a, b) => (b.count ?? 0) - (a.count ?? 0) || a.label.localeCompare(b.label));
   }
 

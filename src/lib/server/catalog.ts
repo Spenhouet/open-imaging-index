@@ -22,6 +22,25 @@ export function getDataset(id: string): DatasetEntry | undefined {
   return getCatalog().datasets.find((d) => d.id === id);
 }
 
+function pickMeta(m: DatasetEntry['meta']): DatasetEntry['meta'] {
+  const keep = {
+    name: m.name,
+    full_name: m.full_name,
+    summary: m.summary,
+    status: m.status,
+    year: m.year,
+    updated: m.updated,
+    homepage: m.homepage,
+    access: { type: m.access.type },
+    license_combine: m.license_combine,
+    size_gb: m.size_gb,
+    formats: m.formats,
+    tasks: m.tasks,
+    citation: m.citation
+  };
+  return keep as DatasetEntry['meta'];
+}
+
 export function summarize(d: DatasetEntry, catalog: Catalog): DatasetSummary {
   const v = catalog.vocab;
   const words = [
@@ -37,7 +56,8 @@ export function summarize(d: DatasetEntry, catalog: Catalog): DatasetSummary {
   ];
   return {
     id: d.id,
-    meta: d.meta,
+    // Only the fields the catalog, Explore and Compare pages read. The full entry is on the dataset page.
+    meta: pickMeta(d.meta),
     // Only what the estimator and charts need.
     stats: d.stats.map((r) => ({ ...r, source: '', where: '', note: '', line: 0 })),
     facets: d.facets,

@@ -11,7 +11,12 @@ export function overview(datasets: DatasetSummary[], vocab: VocabData) {
   const order = (vocab.terms.contrast ?? []).map((t) => t.id);
 
   const facetOptions: Record<string, string[]> = {};
-  for (const f of FACETS) facetOptions[f.id] = [...new Set(datasets.flatMap((d) => facetValues(d, f.id)))];
+  // Most used first, the same order the filter column uses once counts are in, so nothing reorders on load.
+  for (const f of FACETS) {
+    const n = new Map<string, number>();
+    for (const d of datasets) for (const v of new Set(facetValues(d, f.id))) n.set(v, (n.get(v) ?? 0) + 1);
+    facetOptions[f.id] = [...n].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([v]) => v);
+  }
 
   return {
     count: datasets.length,

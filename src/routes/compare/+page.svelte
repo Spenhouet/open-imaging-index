@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browse } from '#lib/catalog/browse.svelte.js';
   import { onMount, untrack } from 'svelte';
   import { goto } from '$app/navigation';
   import Download from '@lucide/svelte/icons/download';
@@ -14,19 +15,16 @@
   import { SITE_URL, link } from '#lib/site.js';
 
   // Datasets side by side. The list lives in the URL (?ids=a,b,c), so a comparison can be shared.
-  let all = $state.raw<DatasetSummary[]>([]);
+  // The catalog comes from the shared loader, so coming from Explore needs no second download.
+  const all = $derived(browse.datasets);
+  const loaded = $derived(browse.loaded);
   let ids = $state<string[]>([]);
-  let loaded = $state(false);
   let ready = false;
 
-  onMount(async () => {
+  onMount(() => {
     ids = (new URLSearchParams(window.location.search).get('ids') ?? '').split(',').filter(Boolean);
     ready = true;
-    const res = await fetch(link('summaries.json'));
-    if (res.ok) {
-      all = await res.json();
-      loaded = true;
-    }
+    browse.load();
   });
   $effect(() => {
     const q = ids.length ? `?ids=${ids.join(',')}` : '';

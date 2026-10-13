@@ -3,8 +3,9 @@ import { readFileSync } from 'node:fs';
 import { CHARTS, breakdown, coverage, summarize } from '../src/lib/catalog/cohort';
 import { emptyFilters, makeSearch, run } from '../src/lib/catalog/filter';
 import { loadCatalog } from '../src/lib/catalog/load';
+import { restoreSummaries } from '../src/lib/catalog/summaries';
 
-const datasets = JSON.parse(readFileSync(process.argv[2], 'utf8'));
+const datasets = restoreSummaries(JSON.parse(readFileSync(process.argv[2], 'utf8')));
 const { vocab } = loadCatalog().catalog;
 const search = makeSearch(datasets);
 const time = (label: string, fn: () => unknown) => {

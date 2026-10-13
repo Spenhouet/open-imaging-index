@@ -90,3 +90,21 @@ test('catalog pages through results, keeps the page in the URL and resets it on 
   await expect(page).not.toHaveURL(/page=/);
   await expect(page.getByRole('contentinfo')).toBeVisible();
 });
+
+test('datasets and explore share one selection, also after visiting a dataset page', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('[aria-live=polite]')).not.toContainText('Loading');
+  const search = page.locator('aside').first().locator('input[type=search]');
+  await search.fill('glioma');
+  await page.getByRole('button', { name: 'FLAIR', exact: true }).first().click();
+  await expect(page).toHaveURL(/contrasts=FLAIR/);
+
+  await page.getByRole('navigation', { name: 'View' }).getByRole('link', { name: 'Explore' }).click();
+  await expect(page).toHaveURL(/explore\/\?q=glioma&contrasts=FLAIR/);
+  await expect(search).toHaveValue('glioma');
+
+  await page.goto('/datasets/brats-2021/');
+  await page.getByRole('banner').getByRole('link', { name: 'Datasets' }).first().click();
+  await expect(page).toHaveURL(/\?q=glioma&contrasts=FLAIR/);
+  await expect(search).toHaveValue('glioma');
+});

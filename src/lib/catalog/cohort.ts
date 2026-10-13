@@ -1,9 +1,8 @@
 import { tone } from './rules';
 import { estimate, type Constraint, type Estimate } from './stats';
 import type { DatasetSummary, VocabData } from './types';
-import { cohortConstraints, dimsInfo, facetValues, run, type FacetId, type FilterState } from './filter';
+import { cohortConstraints, dimsInfo, facetValues, run, type FacetId, type FilterState, type Searcher } from './filter';
 import { withDescendants } from './vocab';
-import type MiniSearch from 'minisearch';
 
 // The Explore page: one cohort built from the catalog filters, summed over datasets and broken down by attribute.
 
@@ -81,7 +80,7 @@ export interface CohortSummary {
 
 export function summarize(
   datasets: DatasetSummary[],
-  search: MiniSearch,
+  search: Searcher,
   f: FilterState,
   vocab: VocabData,
   needs: string[]
@@ -206,7 +205,7 @@ function candidateKeys(chart: ChartDef, datasets: DatasetSummary[], vocab: Vocab
 /** Matching subjects per value of one attribute, over the cohort defined by all other filters. */
 export function breakdown(
   datasets: DatasetSummary[],
-  search: MiniSearch,
+  search: Searcher,
   f: FilterState,
   vocab: VocabData,
   chart: ChartDef
