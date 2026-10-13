@@ -23,7 +23,7 @@
     type FilterState,
     type Sort
   } from '#lib/catalog/filter.js';
-  import { compact, label, modalityColor } from '#lib/catalog/vocab.js';
+  import { label } from '#lib/catalog/vocab.js';
   import type { DatasetSummary } from '#lib/catalog/types.js';
   import { SITE_NAME, SITE_TAGLINE, SITE_URL, link } from '#lib/site.js';
   import { cn } from '#lib/utils.js';
@@ -157,16 +157,6 @@
 
   let sheetOpen = $state(false);
   const reset = () => (filters = { ...emptyFilters(), q: filters.q });
-
-  const examples = [
-    { text: 'Brain MRI with T1w and FLAIR', query: '?modality=MR&anatomy=brain&contrasts=FLAIR,T1w' },
-    { text: "Alzheimer's and dementia", query: '?condition=dementia' },
-    { text: 'Children under 18', query: '?age=0-17' },
-    { text: 'Chest X-ray', query: '?modality=DX&anatomy=chest' }
-  ];
-  function applyExample(query: string) {
-    filters = fromQuery(query);
-  }
 </script>
 
 <Seo
@@ -183,88 +173,26 @@
   }}
 />
 
-<section class="border-b border-border bg-[radial-gradient(ellipse_at_top_left,var(--accent),transparent_65%)]">
-  <div
-    class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pt-12 pb-10 md:px-6 md:pt-16 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end"
-  >
-    <div>
-      <h1 class="text-4xl font-semibold tracking-tight text-balance md:text-5xl">
-        Find the right medical imaging dataset.
-      </h1>
-      <p class="mt-4 max-w-2xl text-lg text-pretty text-muted-foreground">
-        Search by modality, contrast and condition, then narrow down to the subjects you need: how many have T1w and
-        FLAIR, are female, or are between 60 and 80.
-      </p>
-
-      <label class="relative mt-8 block max-w-3xl">
-        <span class="sr-only">Search datasets</span>
-        <Search class="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted-foreground" />
-        <input
-          type="search"
-          bind:value={filters.q}
-          placeholder="Search: glioma, chest x-ray, FLAIR, Alzheimer's..."
-          class="h-14 w-full rounded-2xl border border-input bg-card pr-4 pl-12 text-base shadow-sm transition-shadow outline-none placeholder:text-muted-foreground focus:border-primary/50 focus:ring-4 focus:ring-primary/15"
-        />
-      </label>
-
-      <div class="mt-4 flex flex-wrap items-center gap-2 text-sm">
-        <span class="text-muted-foreground">Try:</span>
-        {#each examples as ex (ex.text)}
-          <button
-            type="button"
-            class="rounded-full border border-border bg-card px-3 py-1 text-foreground/80 transition-colors hover:border-primary/40 hover:text-foreground"
-            onclick={() => applyExample(ex.query)}>{ex.text}</button
-          >
-        {/each}
-      </div>
-    </div>
-
-    <div class="surface p-5">
-      <h2 class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">The index today</h2>
-      <dl class="mt-3 grid grid-cols-2 gap-x-4 gap-y-4">
-        <div>
-          <dt class="text-xs text-muted-foreground">Datasets</dt>
-          <dd class="text-2xl font-semibold tracking-tight tabular">{ov.count}</dd>
-        </div>
-        <div>
-          <dt class="text-xs text-muted-foreground">Subjects covered</dt>
-          <dd class="text-2xl font-semibold tracking-tight tabular">{compact(ov.subjects)}</dd>
-        </div>
-        <div>
-          <dt class="text-xs text-muted-foreground">Conditions</dt>
-          <dd class="text-2xl font-semibold tracking-tight tabular">{ov.conditions}</dd>
-        </div>
-        <div>
-          <dt class="text-xs text-muted-foreground">Countries</dt>
-          <dd class="text-2xl font-semibold tracking-tight tabular">{ov.countries}</dd>
-        </div>
-      </dl>
-      <div class="mt-4 border-t border-border pt-4">
-        <div class="flex h-2 gap-[2px] overflow-hidden rounded-[4px]" aria-hidden="true">
-          {#each ov.modalityMix as m (m.id)}
-            <div class="h-full w-(--w) bg-(--c)" style="--w: {m.share}%; --c: {modalityColor(m.id)}"></div>
-          {/each}
-        </div>
-        <ul class="mt-2.5 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
-          {#each ov.modalityMix as m (m.id)}
-            <li class="flex items-center gap-1.5">
-              <span class="size-2 rounded-full bg-(--c)" style="--c: {modalityColor(m.id)}"></span>{label(
-                vocab,
-                'modality',
-                m.id
-              )}
-              <span class="tabular">{m.count}</span>
-            </li>
-          {/each}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{#snippet searchBox()}
+  <label class="relative block">
+    <span class="sr-only">Search datasets</span>
+    <Search class="pointer-events-none absolute top-1/2 left-3.5 size-4.5 -translate-y-1/2 text-muted-foreground" />
+    <input
+      type="search"
+      bind:value={filters.q}
+      placeholder="Glioma, FLAIR, chest x-ray..."
+      class="h-11 w-full rounded-xl border border-input bg-card pr-3 pl-10 text-sm shadow-sm transition-shadow outline-none placeholder:text-muted-foreground focus:border-primary/50 focus:ring-4 focus:ring-primary/15"
+    />
+  </label>
+{/snippet}
 
 <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pt-8 md:px-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
+  <!-- The search heads the filter column, which stays in view while the results scroll. -->
   <aside class="hidden lg:block">
     <div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 pb-8">
+      <p class="text-lg font-semibold tracking-tight" aria-hidden="true">Medical imaging datasets</p>
+      <div class="mt-3">{@render searchBox()}</div>
+      <div class="my-5 border-t border-border"></div>
       <FilterPanel
         bind:filters
         {vocab}
@@ -279,6 +207,11 @@
   </aside>
 
   <section aria-label="Results" class="min-w-0">
+    <!-- One h1 for the page: visible on phones, where the filter column is hidden, and for screen readers on desktop. -->
+    <div class="mb-4 lg:mb-0">
+      <h1 class="mb-3 text-xl font-semibold tracking-tight lg:sr-only">Medical imaging datasets</h1>
+      <div class="lg:hidden">{@render searchBox()}</div>
+    </div>
     <div class="flex flex-wrap items-center gap-3">
       <Sheet.Root bind:open={sheetOpen}>
         <Sheet.Trigger

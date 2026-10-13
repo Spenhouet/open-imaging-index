@@ -4,7 +4,7 @@ test('catalog filters by cohort and keeps the filters in the URL', async ({ page
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Find the right medical imaging dataset');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Medical imaging datasets');
   // The prerendered page shows only the first datasets, so take the total from the result count.
   const all = Number(await page.locator('[aria-live=polite] .tabular').innerText());
   expect(all).toBeGreaterThan(5);
