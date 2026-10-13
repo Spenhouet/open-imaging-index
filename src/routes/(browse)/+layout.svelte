@@ -7,7 +7,7 @@
   import Search from '@lucide/svelte/icons/search';
   import SlidersHorizontal from '@lucide/svelte/icons/sliders-horizontal';
   import { browse } from '#lib/catalog/browse.svelte.js';
-  import { FACETS, activeCount, emptyFilters, fromQuery, toQuery } from '#lib/catalog/filter.js';
+  import { FACETS, activeCount, emptyFilters, fromQuery, hasCohort, toQuery, type Sort } from '#lib/catalog/filter.js';
   import { licenses, vocab } from '#lib/catalog/meta.js';
   import FilterPanel from '#lib/components/app/FilterPanel.svelte';
   import * as Sheet from '#lib/components/ui/sheet/index.js';
@@ -64,6 +64,18 @@
     { href: 'explore/', label: 'Explore', icon: ChartColumn }
   ];
   const onExplore = $derived(page.url.pathname.startsWith(link('explore/')));
+
+  // Sorting only applies to the card list. Explore's table sorts by its own column headers.
+  const sorts: { id: Sort; label: string }[] = [
+    { id: 'relevance', label: 'Best match' },
+    { id: 'subjects', label: 'Most subjects' },
+    { id: 'newest', label: 'Newest' },
+    { id: 'name', label: 'Name' }
+  ];
+  const filtering = $derived(activeCount(browse.filters) > 0 || browse.filters.q.trim() !== '');
+  // Until the full catalog is here, a filtered count would be incomplete.
+  const waiting = $derived(!browse.loaded && filtering);
+  const count = $derived(browse.loaded ? browse.outcome.results.length : ov.count);
 </script>
 
 <svelte:head>
@@ -80,6 +92,19 @@
       placeholder="BraTS, UK Biobank, k-space..."
       class="h-11 w-full rounded-xl border border-input bg-card pr-3 pl-10 text-sm shadow-sm transition-shadow outline-none placeholder:text-muted-foreground focus:border-primary/50 focus:ring-4 focus:ring-primary/15"
     />
+  </label>
+{/snippet}
+
+{#snippet sortSelect()}
+  <label class="flex items-center justify-between gap-3 text-sm text-muted-foreground">
+    Sort
+    <select
+      class="h-9 min-w-0 flex-1 rounded-lg border border-border bg-card px-2 text-sm text-foreground"
+      bind:value={browse.filters.sort}
+    >
+      {#each sorts as s (s.id)}<option value={s.id}>{s.label}</option>{/each}
+      {#if hasCohort(browse.filters)}<option value="match">Most matching subjects</option>{/if}
+    </select>
   </label>
 {/snippet}
 
@@ -103,6 +128,7 @@
     <div class="sticky top-[89px] -mx-2 max-h-[calc(100vh-89px)] overflow-y-auto px-2 pb-8">
       <p class="text-lg font-semibold tracking-tight" aria-hidden="true">Medical imaging datasets</p>
       <div class="mt-3">{@render searchBox()}</div>
+      {#if !onExplore}<div class="mt-3">{@render sortSelect()}</div>{/if}
       <div class="my-5 border-t border-border"></div>
       {@render filterPanel()}
     </div>
@@ -110,7 +136,7 @@
 
   <div class="min-w-0">
     <div class="mb-4 lg:hidden">{@render searchBox()}</div>
-    <div class="mb-5 flex flex-wrap items-center gap-2">
+    <div class="mb-5 flex flex-wrap items-center gap-x-3 gap-y-2">
       <Sheet.Root bind:open={sheetOpen}>
         <Sheet.Trigger
           class="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-card px-3 text-sm font-medium lg:hidden"
@@ -123,21 +149,38 @@
         </Sheet.Trigger>
         <Sheet.Content side="left" class="w-[22rem] max-w-[90vw] overflow-y-auto p-5">
           <Sheet.Title class="sr-only">Filters</Sheet.Title>
+          {#if !onExplore}
+            {@render sortSelect()}
+            <div class="my-5 border-t border-border"></div>
+          {/if}
           {@render filterPanel()}
         </Sheet.Content>
       </Sheet.Root>
 
+      <!-- Below desktop width the count takes its own line, under the Filters button and the view switch. -->
+      <p class="text-sm text-muted-foreground max-lg:order-last max-lg:w-full" aria-live="polite">
+        {#if waiting}
+          Loading the full catalog...
+        {:else}
+          <span class="font-semibold text-foreground tabular">{count}</span>
+          {count === 1 ? 'dataset' : 'datasets'}
+        {/if}
+        {#if !onExplore && hasCohort(browse.filters)}<span class="max-sm:hidden"
+            >· matching subjects estimated per dataset</span
+          >{/if}
+      </p>
+
       <!-- Two views of the same selection. The query carries over, so switching never loses a filter. -->
-      <nav class="inline-flex rounded-lg bg-muted p-1" aria-label="View">
+      <nav class="ml-auto inline-flex rounded-lg bg-muted p-1" aria-label="View">
         {#each views as v (v.href)}
           {@const active = v.href ? onExplore : !onExplore}
           <a
             href={link(v.href) + toQuery(browse.filters)}
             aria-current={active ? 'page' : undefined}
             class={cn(
-              'inline-flex h-8 items-center gap-1.5 rounded-md px-3 text-sm font-medium transition-colors',
+              'inline-flex h-8 items-center gap-1.5 rounded-md px-2.5 text-sm font-medium transition-colors sm:px-3',
               active ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-            )}><v.icon class="size-4" />{v.label}</a
+            )}><v.icon class="size-4 max-sm:hidden" />{v.label}</a
           >
         {/each}
       </nav>

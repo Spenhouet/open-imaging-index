@@ -7,17 +7,7 @@
   import Pagination from '#lib/components/app/Pagination.svelte';
   import DatasetCard from '#lib/components/app/DatasetCard.svelte';
   import Seo from '#lib/components/app/Seo.svelte';
-  import {
-    FACETS,
-    RULE_FILTERS,
-    activeCount,
-    emptyFilters,
-    hasCohort,
-    makeSearch,
-    run,
-    toQuery,
-    type Sort
-  } from '#lib/catalog/filter.js';
+  import { FACETS, RULE_FILTERS, activeCount, emptyFilters, makeSearch, run, toQuery } from '#lib/catalog/filter.js';
   import { label } from '#lib/catalog/vocab.js';
   import { SITE_NAME, SITE_TAGLINE, SITE_URL, link } from '#lib/site.js';
   import { cn } from '#lib/utils.js';
@@ -80,7 +70,6 @@
     page = p;
     listTop?.scrollIntoView({ block: 'start' });
   }
-  const resultCount = $derived(loaded ? results.length : ov.count);
 
   // Chips that summarize the active browse.filters above the results.
   const chips = $derived.by(() => {
@@ -132,13 +121,6 @@
     return out;
   });
 
-  const sorts: { id: Sort; label: string }[] = [
-    { id: 'relevance', label: 'Best match' },
-    { id: 'subjects', label: 'Most subjects' },
-    { id: 'newest', label: 'Newest' },
-    { id: 'name', label: 'Name' }
-  ];
-
   const reset = () => (browse.filters = { ...emptyFilters(), q: browse.filters.q });
 </script>
 
@@ -158,31 +140,8 @@
 
 <section aria-label="Results" class="min-w-0">
   <h1 class="sr-only">Medical imaging datasets</h1>
-  <div class="flex flex-wrap items-center gap-3">
-    <p class="text-sm text-muted-foreground" aria-live="polite">
-      {#if waiting}
-        Loading the full catalog...
-      {:else}
-        <span class="font-semibold text-foreground tabular">{resultCount}</span>
-        {resultCount === 1 ? 'dataset' : 'datasets'}
-      {/if}
-      {#if hasCohort(browse.filters)}· matching subjects estimated per dataset{/if}
-    </p>
-
-    <label class="ml-auto flex items-center gap-2 text-sm text-muted-foreground">
-      Sort
-      <select
-        class="h-9 rounded-lg border border-border bg-card px-2 text-sm text-foreground"
-        bind:value={browse.filters.sort}
-      >
-        {#each sorts as s (s.id)}<option value={s.id}>{s.label}</option>{/each}
-        {#if hasCohort(browse.filters)}<option value="match">Most matching subjects</option>{/if}
-      </select>
-    </label>
-  </div>
-
   {#if chips.length}
-    <div class="mt-4 flex flex-wrap gap-2">
+    <div class="mb-5 flex flex-wrap gap-2">
       {#each chips as chip (chip.key)}
         <button
           type="button"
