@@ -128,9 +128,11 @@
     <div class="sticky top-[89px] -mx-2 max-h-[calc(100vh-89px)] overflow-y-auto px-2 pb-8">
       <p class="text-lg font-semibold tracking-tight" aria-hidden="true">Medical imaging datasets</p>
       <div class="mt-3">{@render searchBox()}</div>
-      {#if !onExplore}<div class="mt-3">{@render sortSelect()}</div>{/if}
       <div class="my-5 border-t border-border"></div>
       {@render filterPanel()}
+      {#if !onExplore}
+        <div class="mt-6 border-t border-border pt-5">{@render sortSelect()}</div>
+      {/if}
     </div>
   </aside>
 
@@ -149,11 +151,10 @@
         </Sheet.Trigger>
         <Sheet.Content side="left" class="w-[22rem] max-w-[90vw] overflow-y-auto p-5">
           <Sheet.Title class="sr-only">Filters</Sheet.Title>
-          {#if !onExplore}
-            {@render sortSelect()}
-            <div class="my-5 border-t border-border"></div>
-          {/if}
           {@render filterPanel()}
+          {#if !onExplore}
+            <div class="mt-6 border-t border-border pt-5">{@render sortSelect()}</div>
+          {/if}
         </Sheet.Content>
       </Sheet.Root>
 
