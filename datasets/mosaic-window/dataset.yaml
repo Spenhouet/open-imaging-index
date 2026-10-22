@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mosaic-window
+name: MOSAIC Window
+full_name: 'MOSAIC Window: the shared subset of MOSAIC (Multi-Omics Spatial Atlas in Cancer)'
+summary: >-
+  Digitized H&E slides with spatial transcriptomics, single-cell, bulk RNA and exome sequencing and clinical data from
+  cancer patients, shared so academic researchers can study tumor heterogeneity and biomarkers. 60 patients with
+  bladder cancer, ovarian cancer, glioblastoma, DLBCL or mesothelioma, on EGA.
+homepage: https://www.mosaic-research.com/dataset
+year: 2025
+status: active
+creators:
+  - name: >-
+      MOSAIC consortium (Owkin, Charité – Universitätsmedizin Berlin, Lausanne University Hospital - CHUV, Erlangen
+      Hospital, Gustave Roussy Institute, University of Pittsburgh)
+    url: https://www.mosaic-research.com
+species: human
+modalities: [SM]
+contrasts: [he]
+anatomy: [bladder, ovary, brain]
+conditions: [bladder_urothelial_carcinoma, ovarian_cancer, glioblastoma, dlbcl, mesothelioma]
+vendors: [aperio]
+access:
+  type: application
+  url: https://ega-archive.org/studies/EGAS50000000689
+  note: >-
+    Apply on the European Genome-phenome Archive with a project description. The MOSAIC Window Data Access Committee
+    must approve the project, and Owkin and the applying organisation sign the MOSAIC data use agreement.
+licenses:
+  - license: LicenseRef-MOSAIC-Window-DUA
+    note: >-
+      The preprint says researchers from academia and industry can apply, but the agreement limits use to not-for-profit
+      academic research.
+citation:
+  text: >-
+    Hoffmann C, MOSAIC Consortium. MOSAIC: Intra-tumoral heterogeneity characterization through large-scale spatial and
+    cell-resolved multi-omics profiling. bioRxiv 2025. doi:10.1101/2025.05.15.654189
+sources:
+  hoffmann2025:
+    title: Hoffmann et al. 2025, MOSAIC, intra-tumoral heterogeneity characterization through large-scale spatial and cell-resolved multi-omics profiling, bioRxiv
+    url: https://doi.org/10.1101/2025.05.15.654189
+    kind: paper
+  ega-egas50000000689:
+    title: EGA study EGAS50000000689, MOSAIC - Multi-Omics Spatial Atlas In Cancer (dataset list)
+    url: https://ega-archive.org/studies/EGAS50000000689
+    kind: website
+related: [mosaic]
+keywords:
+  [spatial transcriptomics, single-cell RNA-seq, multi-omics, whole-slide images, tumor heterogeneity, histopathology]
+verified:
+  date: '2026-10-23'
+  by: Spenhouet-agent
