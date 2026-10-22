@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,2725,mosaic-dataset-page,Total patients included,the 11 therapy area counts below add up to 2248
+subjects,condition=bladder_cancer,265,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=breast_cancer,206,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=colorectal_cancer,66,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=dlbcl,375,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=gastric_cancer,17,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=glioblastoma,282,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=head_neck_cancer,118,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=mesothelioma,86,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=nsclc,368,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=ovarian_cancer,334,mosaic-dataset-page,Therapy areas,patients represented
+subjects,condition=pancreatic_cancer,131,mosaic-dataset-page,Therapy areas,patients represented

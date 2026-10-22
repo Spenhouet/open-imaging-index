@@ -1,0 +1,7 @@
+measure,by,value,source,where,note
+subjects,,60,hoffmann2025,MOSAIC Window section,"the EGA study summary says 50, but its five datasets list 15, 10, 10, 15 and 10 patients"
+subjects,condition=bladder_urothelial_carcinoma,15,ega-egas50000000689,"Datasets table, EGAD50000001251",muscle-invasive bladder cancer treated with upfront cystectomy
+subjects,condition=glioblastoma,10,ega-egas50000000689,"Datasets table, EGAD50000001352",
+subjects,condition=dlbcl,10,ega-egas50000000689,"Datasets table, EGAD50000001702",
+subjects,condition=ovarian_cancer,15,ega-egas50000000689,"Datasets table, EGAD50000001704",
+subjects,condition=mesothelioma,10,ega-egas50000000689,"Datasets table, EGAD50000001706",

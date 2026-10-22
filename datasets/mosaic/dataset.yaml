@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: mosaic
+name: MOSAIC
+full_name: Multi-Omics Spatial Atlas in Cancer (MOSAIC), full cohort
+summary: >-
+  Digitized H&E slides, spatial transcriptomics, single-cell and bulk RNA and exome sequencing with clinical data from
+  cancer patients, built to find cancer subtypes, drug targets and biomarkers. 2,725 patients across 11 cancer types,
+  through Owkin's paid K Pro platform.
+homepage: https://www.mosaic-research.com/dataset
+# The first public description of the data (bioRxiv preprint). No release date is published for the full cohort.
+year: 2025
+status: active
+creators:
+  - name: >-
+      MOSAIC consortium (Owkin, Charité – Universitätsmedizin Berlin, Lausanne University Hospital - CHUV, Erlangen
+      Hospital, Gustave Roussy Institute, University of Pittsburgh)
+    url: https://www.mosaic-research.com
+species: human
+modalities: [SM]
+contrasts: [he]
+anatomy: [bladder, breast, colon, stomach, brain, head, neck, lung, ovary, pancreas]
+conditions:
+  [
+    bladder_cancer,
+    breast_cancer,
+    colorectal_cancer,
+    dlbcl,
+    gastric_cancer,
+    glioblastoma,
+    head_neck_cancer,
+    mesothelioma,
+    nsclc,
+    ovarian_cancer,
+    pancreatic_cancer
+  ]
+countries: [CH, DE, FR, US]
+vendors: [aperio]
+access:
+  type: paid
+  url: https://www.owkin.com/k-os/k-pro
+  note: >-
+    The full cohort is part of the paid tier of Owkin's K Pro platform, offered through a demo booking or a
+    subscription. Whether it allows downloading the data is not published. A 60-patient subset is available to
+    academic researchers on EGA as MOSAIC Window.
+licenses:
+  - license: LicenseRef-No-Published-Terms
+    note: Owkin publishes no terms for MOSAIC data on K Pro. The MOSAIC Window subset has its own data use agreement.
+citation:
+  text: >-
+    Hoffmann C, MOSAIC Consortium. MOSAIC: Intra-tumoral heterogeneity characterization through large-scale spatial and
+    cell-resolved multi-omics profiling. bioRxiv 2025. doi:10.1101/2025.05.15.654189
+sources:
+  mosaic-dataset-page:
+    title: MOSAIC dataset page (mosaic-research.com/dataset), counts as read on 2026-10-23
+    url: https://www.mosaic-research.com/dataset
+    kind: website
+  hoffmann2025:
+    title: Hoffmann et al. 2025, MOSAIC, intra-tumoral heterogeneity characterization through large-scale spatial and cell-resolved multi-omics profiling, bioRxiv
+    url: https://doi.org/10.1101/2025.05.15.654189
+    kind: paper
+related: [mosaic-window]
+keywords:
+  [spatial transcriptomics, single-cell RNA-seq, multi-omics, whole-slide images, oncology, biomarkers, histopathology]
+verified:
+  date: '2026-10-23'
+  by: Spenhouet-agent
