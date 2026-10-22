@@ -1,0 +1,12 @@
+measure,by,value,source,where,note
+subjects,,3,collas2026,Section 3.1 and Table 2,
+subjects,condition=healthy,3,collas2026,Section 3.1,no history of neurological or psychiatric disorders
+subjects,contrast=bold,3,collas2026,Table 2,
+subjects,country=FR,3,collas2026,Section 3.2,scanned at the Paris Brain Institute
+subjects,vendor=siemens,3,collas2026,Section 3.2,3T Siemens MAGNETOM Cima.X
+subjects,field_strength=3,3,collas2026,Section 3.2,
+studies,,72,collas2026,Table 2,"scanning sessions, 24 per subject"
+scans,,358,collas2026,Table 2,fMRI runs
+scans,contrast=bold,358,collas2026,Table 2,fMRI runs
+age_min,,31,collas2026,Section 3.1,
+age_max,,51,collas2026,Section 3.1,
