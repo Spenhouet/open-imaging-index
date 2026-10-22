@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../schema/license.schema.json
+id: LicenseRef-Cephalonauts-One-Terms
+name: Cephalonauts One terms of use
+short_name: Cephalonauts One terms
+url: https://huggingface.co/datasets/karavela/cephalonauts_one
+version: 'Gated access terms on the Hugging Face dataset card, revision of 2026-10-13'
+summary: >-
+  Non-commercial scientific research only, after accepting the terms on Hugging Face and manual approval. No
+  re-identification, no transfer outside the EEA without adequate GDPR protection, data deleted after use. Data and
+  derived data may be passed on only under the same terms, and publications must carry a fixed acknowledgement.
+purpose: noncommercial_research
+rules:
+  commercial_use:
+    value: 'no'
+    quote: >-
+      You will not use the data for commercial purposes, for decisions affecting individuals (such as in the fields of
+      insurance, employment or credit), for surveillance or biometric identification, or for any other purpose
+      prohibited by applicable law, including the EU AI Act.
+  product_validation:
+    value: unspecified
+    quote: >-
+      You will use the Cephalonauts One data, and any data derived from them, solely for non-commercial scientific
+      research, and in a manner consistent with the rights, dignity and reasonable expectations of the participants.
+    note: The terms do not address testing or validating a product. Ask Karavela before such use.
+  model_training:
+    value: conditional
+    quote: >-
+      You will comply with the applicable data protection laws, including any specific legislation applicable to neural
+      or brain data in your jurisdiction, and the EU AI Act where you build or deploy AI systems on the basis of the
+      data.
+    note: >-
+      The terms expect AI systems to be built on the data, within non-commercial scientific research and in line with
+      the EU AI Act.
+  derivatives:
+    value: conditional
+    quote: >-
+      You will use the Cephalonauts One data, and any data derived from them, solely for non-commercial scientific
+      research, and in a manner consistent with the rights, dignity and reasonable expectations of the participants.
+    note: >-
+      Derived data are allowed under the same restrictions. Facial or morphological reconstruction from structural brain
+      images is forbidden.
+  publication:
+    value: conditional
+    quote: >-
+      Any article, book chapter, poster, or oral presentation, as well as any printed or digital presentation of results
+      derived from Cephalonauts One data, must include the following statement in the acknowledgments section: “The
+      data used were [in part] provided by the Cephalonauts One project, managed and funded by Karavela”.
+    note: With the fixed acknowledgement and a citation of the papers Karavela lists.
+  redistribute_original:
+    value: conditional
+    quote: >-
+      You may redistribute the original Cephalonauts One data, as well as any derived data, provided that the data are
+      redistributed under the same conditions as these.
+    note: Every recipient must accept and comply with the same terms.
+  redistribute_derivatives:
+    value: conditional
+    quote: >-
+      You may redistribute the original Cephalonauts One data, as well as any derived data, provided that the data are
+      redistributed under the same conditions as these.
+    note: Every recipient must accept and comply with the same terms.
+  share_model_weights:
+    value: unspecified
+    note: >-
+      The terms do not mention model weights. Selling them would conflict with the ban on commercial use; whether
+      weights count as derived data is not stated.
+  attribution:
+    value: 'yes'
+    quote: >-
+      You will acknowledge the use of Cephalonauts One data and any derived data when publicly presenting results or
+      algorithms that benefited from their use.
+  share_alike:
+    value: 'yes'
+    quote: >-
+      You may redistribute the original Cephalonauts One data, as well as any derived data, provided that the data are
+      redistributed under the same conditions as these.
+  signed_agreement:
+    value: 'yes'
+    quote: >-
+      By requesting access to the data collected during the Cephalonauts One project, you agree to the following:
+    note: Accepted online on Hugging Face, with a form that asks for affiliation and intended use. Requests are approved manually.
+  ethics_approval:
+    value: conditional
+    quote: >-
+      You will comply with all rules and laws that may be imposed by your institution. This may require that your
+      research be approved by, or exempted from, a committee overseeing research involving human subjects, such as an
+      ethics committee or institutional review board.
+    note: Required when your institution requires it.
+  publication_review:
+    value: 'no'
+  code_release:
+    value: 'no'
+  return_results:
+    value: 'no'
+    note: >-
+      Users must report any incidental re-identification, vulnerability or data breach to Karavela, but need not return
+      results.
+  delete_after_use:
+    value: 'yes'
+    quote: >-
+      You will retain the data only for the time strictly necessary for your research and you will securely destroy all
+      copies (including back-ups) at the end of the retention period.
+  no_reidentification:
+    value: 'yes'
+    quote: >-
+      You will not attempt, by any means and without time limitation, to re-identify, single-out or contact the
+      volunteers who participated in the study.
+  geographic_restriction:
+    value: conditional
+    quote: >-
+      You will not transfer the data outside the European Economic Area unless an adequate level of protection is
+      ensured under Chapter V of the GDPR.
+    note: Use outside the EEA needs an adequate level of protection under the GDPR.
+commercial_license:
+  available: unspecified
+  note: The terms mention no commercial license.
+verified:
+  date: '2026-10-23'
+  by: Spenhouet-agent

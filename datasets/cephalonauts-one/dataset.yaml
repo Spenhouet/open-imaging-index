@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: cephalonauts-one
+name: Cephalonauts One
+full_name: 'Cephalonauts One: a deep fMRI dataset for decoding naturalistic speech in the human brain'
+summary: >-
+  Brain fMRI of healthy adults listening to French podcasts for about 30 hours each, recorded to train and benchmark
+  models that decode heard speech from brain activity. 3 native French speakers, 72 sessions and 358 runs at 3 T, with
+  time-aligned transcripts and audio and text features.
+homepage: https://karavela.ai/en/research/cephalonauts-one
+year: 2026
+status: active
+creators:
+  - name: Karavela (Collas A, Thual A, et al.), with acquisition at the Paris Brain Institute
+    url: https://karavela.ai
+species: human
+modalities: [MR]
+contrasts: [bold]
+anatomy: [brain]
+conditions: [healthy]
+formats: [NIfTI]
+countries: [FR]
+vendors: [siemens]
+field_strengths: [3]
+access:
+  type: signed_agreement
+  url: https://huggingface.co/datasets/karavela/cephalonauts_one
+  note: >-
+    Log in to Hugging Face, fill in a form with affiliation and intended use, and accept the Cephalonauts One terms of
+    use. Karavela approves requests manually.
+licenses:
+  - license: LicenseRef-Cephalonauts-One-Terms
+    note: >-
+      The arXiv record of the paper is CC BY 4.0. That covers the paper only; the data are under the gated terms of use.
+citation:
+  text: >-
+    Collas A, Jalouzot L, Ilinca G, et al. Cephalonauts One: A deep fMRI dataset for decoding naturalistic speech in the
+    human brain. Advances in Neural Information Processing Systems (NeurIPS) 2026, Evaluations and Datasets Track.
+    arXiv:2610.03558
+  bibtex: |
+    @inproceedings{collas2026cephalonauts,
+      title = {{Cephalonauts One}: A deep {fMRI} dataset for decoding naturalistic speech in the human brain},
+      author = {Collas, Antoine and Jalouzot, Louis and Ilinca, Géraud and Caris, Corentin and Valabrègue, Romain and Hassayoune, Ahmed and Goncalves, David and Hueber, Madeleine and Delebarre, Thaddée and Savatovsky, Julien and Fonteneau, Clara and Maussion, Charles and Thirion, Bertrand and Thual, Alexis},
+      booktitle = {Advances in Neural Information Processing Systems},
+      year = {2026},
+      note = {Evaluations and Datasets Track},
+      url = {https://arxiv.org/abs/2610.03558}
+    }
+sources:
+  collas2026:
+    title: Collas et al. 2026, Cephalonauts One, a deep fMRI dataset for decoding naturalistic speech (arXiv:2610.03558v1)
+    url: https://arxiv.org/abs/2610.03558
+    kind: paper
+  hf-cephalonauts-one:
+    title: Hugging Face dataset card karavela/cephalonauts_one (revision of 2026-10-13)
+    url: https://huggingface.co/datasets/karavela/cephalonauts_one
+    kind: website
+related: [narratives]
+keywords: [naturalistic fMRI, speech decoding, brain decoding, podcasts, deep sampling, French]
+verified:
+  date: '2026-10-23'
+  by: Spenhouet-agent

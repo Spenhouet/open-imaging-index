@@ -136,8 +136,9 @@ export function checkLicense(file: string, lic: LicenseFile, vocab: VocabIndex):
 }
 
 function checkDate(file: string, date: string, problems: Problem[]) {
-  if (date > new Date().toISOString().slice(0, 10))
-    problems.push({ file, level: 'error', message: `verified date ${date} is in the future` });
+  // Contributors write their local date (`date +%F`), which can be one day ahead of UTC, the validator's clock.
+  const tomorrow = new Date(Date.now() + 86_400_000).toISOString().slice(0, 10);
+  if (date > tomorrow) problems.push({ file, level: 'error', message: `verified date ${date} is in the future` });
 }
 
 const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '');
