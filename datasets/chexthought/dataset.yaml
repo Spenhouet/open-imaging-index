@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: chexthought
+name: CheXthought
+full_name: >-
+  CheXthought: A global multimodal dataset of clinical chain-of-thought reasoning and visual attention for chest X-ray
+  interpretation
+summary: >-
+  Spoken step-by-step reasoning of radiologists reading chest X-rays, with synchronized click points on the image,
+  collected to train and test vision-language models that explain where and why they see findings. 103,592 reasoning
+  traces from 501 readers in 71 countries.
+homepage: https://stanford.redivis.com/datasets/ds7j-75krm2btv
+year: 2026
+version: '1.0'
+status: active
+creators:
+  - name: Sharma S., Long J., Shih G., Eid S., Bluethgen C., Jacobson F. L., Tsai E. B., Global Radiology Consortium, Alaa A. M., Langlotz C. P.
+    url: https://arxiv.org/abs/2604.26288
+  - name: Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)
+    url: https://aimi.stanford.edu/
+species: human
+modalities: [DX]
+anatomy: [chest]
+tasks: [report_generation]
+size_gb: 0.51
+access:
+  type: registration
+  url: https://stanford.redivis.com/datasets/ds7j-75krm2btv
+  note: >-
+    Sign in to Redivis, join the Stanford AIMI organization and complete the per-dataset Stanford research agreement
+    requirement. Metadata are public; the file is visible only after both steps. The release holds annotations and
+    reports only. The images are downloaded separately from CheXpert Plus by image id.
+licenses:
+  - license: LicenseRef-StanfordAIMI-RUA
+    url: https://stanford.redivis.com/datasets/ds7j-75krm2btv
+    note: >-
+      The Redivis access panel names the requirement "Stanford_Research_Agreement"; its text is shown only after
+      sign-in and was not read for this entry. The images come from CheXpert Plus, which has its own access terms.
+citation:
+  text: >-
+    Sharma S, Long J, Shih G, et al. CheXthought: A global multimodal dataset of clinical chain-of-thought reasoning
+    and visual attention for chest X-ray interpretation. arXiv:2604.26288 (2026). https://arxiv.org/abs/2604.26288
+sources:
+  sharma2026:
+    title: Sharma et al. 2026, CheXthought, arXiv 2604.26288v2
+    url: https://arxiv.org/abs/2604.26288v2
+    kind: paper
+  redivis-chexthought:
+    title: Redivis dataset page of CheXthought v1.0 (Stanford AIMI), overview and access panel
+    url: https://stanford.redivis.com/datasets/ds7j-75krm2btv?v=1.0
+    kind: website
+  chexthought-site:
+    title: CheXthought project website
+    url: https://sonalisharma-3.github.io/CheXthought/
+    kind: website
+related: [chexpert, mimic-cxr, nih-chestxray14]
+keywords: [chest X-ray, chain-of-thought, clinical reasoning, visual attention, vision-language models, radiology reports, multi-reader]
+verified:
+  date: '2026-11-01'
+  by: Spenhouet-agent

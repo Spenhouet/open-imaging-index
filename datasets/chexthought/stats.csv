@@ -1,0 +1,4 @@
+measure,by,value,source,where,note
+subjects,,18046,sharma2026,Section 2.2.2,patients whose images were annotated; 4060 of them have two or more studies
+studies,,45272,sharma2026,Section 2.2.2,distinct imaging studies
+images,,50312,sharma2026,Abstract,chest X-rays from CheXpert Plus with at least one reasoning trace; images are not part of the download
