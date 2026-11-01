@@ -47,5 +47,7 @@
     Code <a class="underline-offset-2 hover:underline" href="{REPO_URL}/blob/main/LICENSE">MIT</a>. Data
     <a class="underline-offset-2 hover:underline" href="{REPO_URL}/blob/main/LICENSE-DATA">CC0 1.0</a>. Quoted license
     texts and citations belong to their authors.
+    <a class="underline-offset-2 hover:underline" href="https://spenhouet.com/impressum/">Legal Notice</a>.
+    <a class="underline-offset-2 hover:underline" href="https://spenhouet.com/datenschutz/">Privacy</a>.
   </div>
 </footer>
