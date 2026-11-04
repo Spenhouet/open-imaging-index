@@ -1,0 +1,13 @@
+measure,by,value,source,where,note
+subjects,,9,shen2026,Section 3.2,"all nine took part in the complex scene split, the localizer and T1w scanning (Table 1, Appendix B.2)"
+subjects,sex=male,5,scidb-33666,Description,
+subjects,sex=female,4,scidb-33666,Description,
+age_min,,18,shen2026,Section 3.2,participants are described as aged 18 to 25
+age_max,,25,shen2026,Section 3.2,participants are described as aged 18 to 25
+subjects,condition=healthy,9,shen2026,Section 3.2,healthy native Mandarin speakers with normal or corrected-to-normal vision and normal hearing
+subjects,contrast=bold,9,shen2026,Table 1,7 of the 9 also completed the simple split
+subjects,contrast=T1w,9,shen2026,Appendix B.2,
+subjects,contrast_set=bold+T1w,9,shen2026,Appendix B.2,
+scans,contrast=T1w,26,shen2026,Appendix B.2,"summed from four T1w scans each for participants 1 to 4 and two each for the other five, as acquired"
+subjects,field_strength=5,9,shen2026,Appendix B.3,
+subjects,vendor=united_imaging,9,shen2026,Appendix B.3,uMR Jupiter with a 48-channel head coil
