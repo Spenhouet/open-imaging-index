@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../schema/dataset.schema.json
+id: avid
+name: AVID
+full_name: 'AVID: Auditory-induced Visual Mental Imagery Dataset'
+summary: >-
+  Task fMRI and T1-weighted brain MRI of healthy young adults imagining scenes and simple objects described in spoken
+  Mandarin with their eyes closed, collected to train and benchmark models that reconstruct imagined images from brain
+  activity. About 67 hours of scanning across nine participants.
+homepage: https://www.scidb.cn/en/detail?dataSetId=4f116696b67f4158ad42ebb8de54c406
+doi: 10.57760/sciencedb.33666
+year: 2026
+version: V1
+status: active
+creators:
+  - name: Shiqi Shen, South China Normal University
+  - name: Shurui Li, ShanghaiTech University
+  - name: Xilin Zhang, South China Normal University
+  - name: Yuanning Li, ShanghaiTech University
+species: human
+modalities: [MR]
+contrasts: [bold, T1w]
+anatomy: [brain]
+conditions: [healthy]
+formats: [BIDS, NIfTI, HDF5]
+vendors: [united_imaging]
+field_strengths: [5]
+# Science Data Bank record API (V1): 832201629621 bytes in 4909 files.
+size_gb: 832.2
+access:
+  type: open
+  url: https://doi.org/10.57760/sciencedb.33666
+  note: >-
+    The Science Data Bank record is public with no embargo (share status PUBLIC, protection period 0 months and no
+    access restriction in its version metadata).
+licenses:
+  - license: CC-BY-4.0
+    applies_to: >-
+      The newly collected fMRI and MRI data, dataset metadata and materials made by the authors. Source images from
+      MS-COCO, captions from COCO-CN and other third-party assets keep their own licenses and terms.
+    note: >-
+      The record lists CC BY 4.0. The paper (Appendix A.4 and A.5) states the same license and that it does not
+      override the terms of third-party assets.
+citation:
+  text: >-
+    Shen S, Li S, Zhang X, Li Y. AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery
+    Decoding. NeurIPS 2026, Track on Evaluations and Datasets. arXiv:2611.02593. Data: Science Data Bank, V1, 2026.
+    doi:10.57760/sciencedb.33666
+sources:
+  shen2026:
+    title: >-
+      Shen et al. 2026, AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding,
+      arXiv:2611.02593v1
+    url: https://arxiv.org/abs/2611.02593
+    kind: paper
+  scidb-33666:
+    title: Science Data Bank record 10.57760/sciencedb.33666 and its record API (V1)
+    url: https://doi.org/10.57760/sciencedb.33666
+    kind: website
+related: []
+keywords: [visual mental imagery, imagery decoding, brain-to-image reconstruction, auditory stimuli, ultra-high field, task fMRI, benchmark]
+verified:
+  date: '2026-11-04'
+  by: Spenhouet-agent
